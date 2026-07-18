@@ -12,8 +12,8 @@
     "build:main": "tsc -p tsconfig.electron.json",
     "build": "npm run build:renderer && npm run build:main",
     "pack:payload": "node scripts/pack-payload.mjs",
-    "dist:win": "npm run build && electron-builder --win --x64 -c electron-builder.yml",
-    "dist:mac": "npm run build && electron-builder --mac -c electron-builder.yml"
+    "dist:win": "npm run build && electron-builder --win --x64 -c electron-builder.yml --publish never",
+    "dist:mac": "npm run build && electron-builder --mac -c electron-builder.yml --publish never"
   },
   "dependencies": {
     "framer-motion": "^11.3.19",
