@@ -1,0 +1,38 @@
+{
+  "name": "yijing-ai-installer",
+  "productName": "艺镜AI-正式版",
+  "private": true,
+  "version": "1.1.0",
+  "description": "艺镜AI-正式版 图形安装引导器",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev:renderer": "vite",
+    "dev:main": "tsc -p tsconfig.electron.json && cross-env NODE_ENV=development electron .",
+    "build:renderer": "tsc -b tsconfig.json && vite build",
+    "build:main": "tsc -p tsconfig.electron.json",
+    "build": "npm run build:renderer && npm run build:main",
+    "pack:payload": "node scripts/pack-payload.mjs",
+    "dist:win": "npm run build && electron-builder --win --x64 -c electron-builder.yml",
+    "dist:mac": "npm run build && electron-builder --mac -c electron-builder.yml"
+  },
+  "dependencies": {
+    "framer-motion": "^11.3.19",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "electron": "28.0.0",
+    "electron-builder": "^24.13.3",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "yijing-ai",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "艺镜AI - 无限画布AI创作工具（重写版）",
   "main": "dist/main/main.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "typecheck": "tsc -p tsconfig.renderer.json --noEmit",
     "pack": "electron-builder --dir",
     "dist:win": "electron-builder --win --x64 --publish never",
-    "dist:mac": "electron-builder --mac --publish never"
+    "dist:mac": "electron-builder --mac --publish never",
+    "pack:win": "electron-builder --win --x64 --dir --publish never"
   },
   "keywords": [
     "ai",

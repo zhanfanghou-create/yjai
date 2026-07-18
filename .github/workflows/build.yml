@@ -1,4 +1,4 @@
-﻿name: Build & Release
+name: Build & Release
 
 on:
   push:
@@ -7,55 +7,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os: windows-latest
-            script: dist:win
-            artifact: yijing-ai-win
-          - os: macos-latest
-            script: dist:mac
-            artifact: yijing-ai-mac
-
-    runs-on: ${{ matrix.os }}
+  build-mac:
+    runs-on: macos-latest
     env:
       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: "npm"
-
       - name: Install deps
         run: npm ci --no-audit --no-fund
         shell: bash
-
       - name: Force clean tsc incremental cache
         run: rm -rf dist tsconfig.main.tsbuildinfo tsconfig.renderer.tsbuildinfo
         shell: bash
-
       - name: Build renderer + main
         run: npm run build
         shell: bash
-
-      - name: Verify main.js exists
-        run: |
-          ls -la dist/main/main.js
-          ls -la dist/renderer/index.html
-        shell: bash
-
-      # 签名策略：仓库没有配置 CSC_* / APPLE_* Secrets 时，直接跳过签名。
-      # electron-builder 24 对空字符串 CSC_LINK 会当路径解析成 cwd，故用 shell 层判断并 export，而不是通过 workflow env 传空串。
-      - name: Package (${{ matrix.os }})
+      - name: Package (mac DMG)
         env:
           CSC_LINK_SECRET: ${{ secrets.CSC_LINK }}
           CSC_KEY_PASSWORD_SECRET: ${{ secrets.CSC_KEY_PASSWORD }}
@@ -64,44 +37,95 @@ jobs:
           APPLE_TEAM_ID_SECRET: ${{ secrets.APPLE_TEAM_ID }}
         run: |
           set -e
-          # 一律先清空可能残留的签名 env（GitHub 有时会注入空串）
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
           unset APPLE_ID APPLE_APP_SPECIFIC_PASSWORD APPLE_TEAM_ID || true
-
-          if [ "${{ matrix.os }}" = "macos-latest" ]; then
-            if [ -n "$CSC_LINK_SECRET" ]; then
-              export CSC_LINK="$CSC_LINK_SECRET"
-              export CSC_KEY_PASSWORD="$CSC_KEY_PASSWORD_SECRET"
-              [ -n "$APPLE_ID_SECRET" ] && export APPLE_ID="$APPLE_ID_SECRET"
-              [ -n "$APPLE_APP_SPECIFIC_PASSWORD_SECRET" ] && export APPLE_APP_SPECIFIC_PASSWORD="$APPLE_APP_SPECIFIC_PASSWORD_SECRET"
-              [ -n "$APPLE_TEAM_ID_SECRET" ] && export APPLE_TEAM_ID="$APPLE_TEAM_ID_SECRET"
-              echo "mac: signing enabled"
-            else
-              export CSC_IDENTITY_AUTO_DISCOVERY=false
-              echo "mac: signing skipped (no CSC_LINK secret)"
-            fi
+          if [ -n "$CSC_LINK_SECRET" ]; then
+            export CSC_LINK="$CSC_LINK_SECRET"
+            export CSC_KEY_PASSWORD="$CSC_KEY_PASSWORD_SECRET"
+            [ -n "$APPLE_ID_SECRET" ] && export APPLE_ID="$APPLE_ID_SECRET"
+            [ -n "$APPLE_APP_SPECIFIC_PASSWORD_SECRET" ] && export APPLE_APP_SPECIFIC_PASSWORD="$APPLE_APP_SPECIFIC_PASSWORD_SECRET"
+            [ -n "$APPLE_TEAM_ID_SECRET" ] && export APPLE_TEAM_ID="$APPLE_TEAM_ID_SECRET"
           else
             export CSC_IDENTITY_AUTO_DISCOVERY=false
-            echo "win: signing skipped"
           fi
-
-          npm run ${{ matrix.script }}
+          npm run dist:mac
         shell: bash
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.artifact }}
+          name: yijing-ai-mac
           path: |
-            release/*.exe
             release/*.dmg
-            release/*.zip
-            release/*.blockmap
-            release/latest*.yml
+            release/*.dmg.blockmap
+            release/latest-mac.yml
           if-no-files-found: warn
 
+  build-win:
+    runs-on: windows-latest
+    env:
+      ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+      ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      # ---- Main App (unpacked) ----
+      - name: Install main app deps
+        run: npm ci --no-audit --no-fund
+        shell: bash
+      - name: Force clean tsc incremental cache
+        run: rm -rf dist tsconfig.main.tsbuildinfo tsconfig.renderer.tsbuildinfo
+        shell: bash
+      - name: Build renderer + main
+        run: npm run build
+        shell: bash
+      - name: Package main app to release/win-unpacked
+        env:
+          CSC_LINK: ""
+          CSC_KEY_PASSWORD: ""
+          WIN_CSC_LINK: ""
+          WIN_CSC_KEY_PASSWORD: ""
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+        run: |
+          unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
+          npm run pack:win
+          ls -la release/win-unpacked || true
+        shell: bash
+
+      # ---- Installer UI (custom graphical portable installer) ----
+      - name: Install installer-ui deps
+        working-directory: installer-ui
+        run: npm install --no-audit --no-fund
+        shell: bash
+      - name: Pack main app into installer payload (app.7z + 7za)
+        working-directory: installer-ui
+        run: node scripts/pack-payload.mjs "$GITHUB_WORKSPACE/release/win-unpacked"
+        shell: bash
+      - name: Build installer-ui portable exe
+        working-directory: installer-ui
+        env:
+          CSC_LINK: ""
+          CSC_KEY_PASSWORD: ""
+          WIN_CSC_LINK: ""
+          WIN_CSC_KEY_PASSWORD: ""
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+        run: |
+          unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
+          npm run dist:win
+          ls -la dist-installer || true
+        shell: bash
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yijing-ai-win
+          path: |
+            installer-ui/dist-installer/*.exe
+          if-no-files-found: error
+
   release:
-    needs: build
+    needs: [build-mac, build-win]
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     permissions:
@@ -110,9 +134,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           path: dist-artifacts
-
-      - name: Release
-        uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v2
         with:
           files: dist-artifacts/**/*
           generate_release_notes: true

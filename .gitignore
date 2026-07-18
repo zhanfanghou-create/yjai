@@ -9,3 +9,14 @@ release/
 .vscode/
 tmp-*
 _*.log
+
+# installer-ui build outputs
+installer-ui/dist/
+installer-ui/dist-electron/
+installer-ui/dist-renderer/
+installer-ui/dist-installer/
+installer-ui/dist-installer*/
+installer-ui/payload/app.7z
+installer-ui/payload/bin/
+installer-ui/payload/trash-*
+installer-ui/payload/_probe*

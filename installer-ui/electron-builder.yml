@@ -1,0 +1,49 @@
+appId: com.yijing.ai.installer
+productName: yijing-ai-installer
+copyright: (c) 2026 艺镜 AI 团队
+directories:
+  buildResources: build
+  output: dist-installer
+asar: true
+files:
+  - dist-electron/**/*
+  - dist-renderer/**/*
+  - public/**/*
+  - package.json
+extraResources:
+  - from: payload
+    to: payload
+    filter:
+      - "**/*"
+      - "!trash-*"
+      - "!trash-*/**"
+      - "!_probe*"
+      - "!_probe*/**"
+  - from: resources
+    to: .
+    filter:
+      - "license.txt"
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: yijing-ai-${version}-windows-x64.${ext}
+portable:
+  artifactName: yijing-ai-${version}-windows-x64.${ext}
+mac:
+  category: public.app-category.graphics-design
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.png
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  artifactName: yijing-ai-${version}-macos-${arch}.${ext}
+dmg:
+  artifactName: yijing-ai-${version}-macos-${arch}.${ext}
