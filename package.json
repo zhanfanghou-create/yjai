@@ -12,8 +12,8 @@
     "build:main": "tsc -b tsconfig.main.json",
     "typecheck": "tsc -p tsconfig.renderer.json --noEmit",
     "pack": "electron-builder --dir",
-    "dist:win": "electron-builder --win --x64",
-    "dist:mac": "electron-builder --mac"
+    "dist:win": "electron-builder --win --x64 --publish never",
+    "dist:mac": "electron-builder --mac --publish never"
   },
   "keywords": [
     "ai",
