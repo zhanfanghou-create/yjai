@@ -1,0 +1,1146 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 66,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1585",
+      "presetNumber": 1585,
+      "label": "Female angel sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female angel is sitting on the stairs, holding her knee and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1585_female-angel-sitting-pose.pma",
+      "localScenePath": "scenes/1585_female-angel-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1585_00_female-angel-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1585_00_female-angel-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1585_00_female-angel-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        91,
+        92
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "angel",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27631,
+      "slug": "female-angel-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1586",
+      "presetNumber": 1586,
+      "label": "Male angel flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male angel with halo and wings is flying upwards and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1586_male-angel-flying-pose.pma",
+      "localScenePath": "scenes/1586_male-angel-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1586_00_male-angel-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1586_00_male-angel-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1586_00_male-angel-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        91,
+        92
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "angel",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24781,
+      "slug": "male-angel-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1587",
+      "presetNumber": 1587,
+      "label": "Male angel swords pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male angel is standing and holding two great swords, ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1587_male-angel-swords-pose.pma",
+      "localScenePath": "scenes/1587_male-angel-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1587_00_male-angel-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1587_00_male-angel-swords-pose.png",
+          "localThumbnailPath": "thumbnails/1587_00_male-angel-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        91,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "angel",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 25225,
+      "slug": "male-angel-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1588",
+      "presetNumber": 1588,
+      "label": "Angel holding female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male angel is holding a female with two hands and flying upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1588_angel-holding-female-pose.pma",
+      "localScenePath": "scenes/1588_angel-holding-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1588_00_angel-holding-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1588_00_angel-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/1588_00_angel-holding-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1588_01_angel-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/1588_01_angel-holding-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        91,
+        92
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "angel",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47444,
+      "slug": "angel-holding-female-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1589",
+      "presetNumber": 1589,
+      "label": "Male angel standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male angel is standing, looking forward, holding a bow in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1589_male-angel-standing-pose.pma",
+      "localScenePath": "scenes/1589_male-angel-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1589_00_male-angel-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1589_00_male-angel-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1589_00_male-angel-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        91,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "angel",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24680,
+      "slug": "male-angel-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1590",
+      "presetNumber": 1590,
+      "label": "Female landing balancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, kneeling, balancing with her hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1590_female-landing-balancing-pose.pma",
+      "localScenePath": "scenes/1590_female-landing-balancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1590_00_female-landing-balancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1590_00_female-landing-balancing-pose.png",
+          "localThumbnailPath": "thumbnails/1590_00_female-landing-balancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23491,
+      "slug": "female-landing-balancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1591",
+      "presetNumber": 1591,
+      "label": "Female landing fist pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, kneeling, landing on right fist and balancing with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1591_female-landing-fist-pose.pma",
+      "localScenePath": "scenes/1591_female-landing-fist-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1591_00_female-landing-fist-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1591_00_female-landing-fist-pose.png",
+          "localThumbnailPath": "thumbnails/1591_00_female-landing-fist-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23442,
+      "slug": "female-landing-fist-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1592",
+      "presetNumber": 1592,
+      "label": "Female squatting landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing in squatting pose, balancing with hands, looking to the left and ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1592_female-squatting-landing-pose.pma",
+      "localScenePath": "scenes/1592_female-squatting-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1592_00_female-squatting-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1592_00_female-squatting-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1592_00_female-squatting-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23458,
+      "slug": "female-squatting-landing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1593",
+      "presetNumber": 1593,
+      "label": "Landing looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, balancing with her hands and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1593_landing-looking-right-pose.pma",
+      "localScenePath": "scenes/1593_landing-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1593_00_landing-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1593_00_landing-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/1593_00_landing-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23433,
+      "slug": "landing-looking-right-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1594",
+      "presetNumber": 1594,
+      "label": "Female landing fists pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, her hands are clenched into fists and she is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1594_female-landing-fists-pose.pma",
+      "localScenePath": "scenes/1594_female-landing-fists-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1594_00_female-landing-fists-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1594_00_female-landing-fists-pose.png",
+          "localThumbnailPath": "thumbnails/1594_00_female-landing-fists-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23382,
+      "slug": "female-landing-fists-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1595",
+      "presetNumber": 1595,
+      "label": "Superhero landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, his right hand is clenched into fist, looking forward, hero landing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1595_superhero-landing-pose.pma",
+      "localScenePath": "scenes/1595_superhero-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1595_00_superhero-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1595_00_superhero-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1595_00_superhero-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23703,
+      "slug": "superhero-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1596",
+      "presetNumber": 1596,
+      "label": "Male landing balancing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, balancing with his hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1596_male-landing-balancing-pose.pma",
+      "localScenePath": "scenes/1596_male-landing-balancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1596_00_male-landing-balancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1596_00_male-landing-balancing-pose.png",
+          "localThumbnailPath": "thumbnails/1596_00_male-landing-balancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23744,
+      "slug": "male-landing-balancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1597",
+      "presetNumber": 1597,
+      "label": "Male landing looking down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is about to land, balancing with his hands and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1597_male-landing-looking-down-pose.pma",
+      "localScenePath": "scenes/1597_male-landing-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1597_00_male-landing-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1597_00_male-landing-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/1597_00_male-landing-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23764,
+      "slug": "male-landing-looking-down-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1598",
+      "presetNumber": 1598,
+      "label": "Male squatting landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing in squatting pose, looking forward and raising his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1598_male-squatting-landing-pose.pma",
+      "localScenePath": "scenes/1598_male-squatting-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1598_00_male-squatting-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1598_00_male-squatting-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1598_00_male-squatting-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23723,
+      "slug": "male-squatting-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1599",
+      "presetNumber": 1599,
+      "label": "Clenched fists landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, kneeling while clenching his fists and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1599_clenched-fists-landing-pose.pma",
+      "localScenePath": "scenes/1599_clenched-fists-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1599_00_clenched-fists-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1599_00_clenched-fists-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1599_00_clenched-fists-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "landing",
+        "pose"
+      ],
+      "bytes": 23674,
+      "slug": "clenched-fists-landing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1600",
+      "presetNumber": 1600,
+      "label": "Anime ballet spinning pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is dancing ballet, spinning around and raising her left hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1600_anime-ballet-spinning-pose.pma",
+      "localScenePath": "scenes/1600_anime-ballet-spinning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1600_00_anime-ballet-spinning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1600_00_anime-ballet-spinning-pose.png",
+          "localThumbnailPath": "thumbnails/1600_00_anime-ballet-spinning-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23686,
+      "slug": "anime-ballet-spinning-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1601",
+      "presetNumber": 1601,
+      "label": "Anime ballet standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female standing ballet pose, raising right hand and looking upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1601_anime-ballet-standing-pose.pma",
+      "localScenePath": "scenes/1601_anime-ballet-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1601_00_anime-ballet-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1601_00_anime-ballet-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1601_00_anime-ballet-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23806,
+      "slug": "anime-ballet-standing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1602",
+      "presetNumber": 1602,
+      "label": "Two females dancing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are dancing together, looking at each other, anime dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1602_two-females-dancing-pose.pma",
+      "localScenePath": "scenes/1602_two-females-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1602_00_two-females-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1602_00_two-females-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1602_00_two-females-dancing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1602_01_two-females-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1602_01_two-females-dancing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 46650,
+      "slug": "two-females-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1603",
+      "presetNumber": 1603,
+      "label": "Anime waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are dancing waltz dance, holding each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1603_anime-waltz-dance-pose.pma",
+      "localScenePath": "scenes/1603_anime-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1603_00_anime-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1603_00_anime-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1603_00_anime-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1603_01_anime-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1603_01_anime-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 47110,
+      "slug": "anime-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1604",
+      "presetNumber": 1604,
+      "label": "Anime couple dancing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are dancing, male is holding the female's right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1604_anime-couple-dancing-pose.pma",
+      "localScenePath": "scenes/1604_anime-couple-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1604_00_anime-couple-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1604_00_anime-couple-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1604_00_anime-couple-dancing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1604_01_anime-couple-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1604_01_anime-couple-dancing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39,
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 46503,
+      "slug": "anime-couple-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1605",
+      "presetNumber": 1605,
+      "label": "Anime male dancing looking down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is dancing and posing, raising hand and looking down, anime dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1605_anime-male-dancing-looking-down-pose.pma",
+      "localScenePath": "scenes/1605_anime-male-dancing-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1605_00_anime-male-dancing-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1605_00_anime-male-dancing-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/1605_00_anime-male-dancing-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23982,
+      "slug": "anime-male-dancing-looking-down-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1606",
+      "presetNumber": 1606,
+      "label": "Anime belly dance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is belly dancing, raising her hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1606_anime-belly-dance-pose.pma",
+      "localScenePath": "scenes/1606_anime-belly-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1606_00_anime-belly-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1606_00_anime-belly-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1606_00_anime-belly-dance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23944,
+      "slug": "anime-belly-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1607",
+      "presetNumber": 1607,
+      "label": "Anime breakdance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is breakdancing, handstanding and posing with crossed legs in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1607_anime-breakdance-pose.pma",
+      "localScenePath": "scenes/1607_anime-breakdance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1607_00_anime-breakdance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1607_00_anime-breakdance-pose.png",
+          "localThumbnailPath": "thumbnails/1607_00_anime-breakdance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23839,
+      "slug": "anime-breakdance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1608",
+      "presetNumber": 1608,
+      "label": "Anime robot dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are robot dancing, anime robot dance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1608_anime-robot-dance-pose.pma",
+      "localScenePath": "scenes/1608_anime-robot-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1608_00_anime-robot-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1608_00_anime-robot-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1608_00_anime-robot-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1608_01_anime-robot-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1608_01_anime-robot-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 46937,
+      "slug": "anime-robot-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    }
+  ]
+}

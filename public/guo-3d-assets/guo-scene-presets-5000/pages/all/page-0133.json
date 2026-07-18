@@ -1,0 +1,1124 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 132,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3169",
+      "presetNumber": 3169,
+      "label": "Mermaid tail lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is lying down, leaning on her elbow, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3169_mermaid-tail-lying-pose.pma",
+      "localScenePath": "scenes/3169_mermaid-tail-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3169_00_mermaid-tail-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3169_00_mermaid-tail-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3169_00_mermaid-tail-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16403,
+      "slug": "mermaid-tail-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3170",
+      "presetNumber": 3170,
+      "label": "Male aiming shotgun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a shotgun, aiming shotgun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3170_male-aiming-shotgun-pose.pma",
+      "localScenePath": "scenes/3170_male-aiming-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3170_00_male-aiming-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3170_00_male-aiming-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3170_00_male-aiming-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24271,
+      "slug": "male-aiming-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3171",
+      "presetNumber": 3171,
+      "label": "Male holding shotgun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a shotgun with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3171_male-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3171_male-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3171_00_male-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3171_00_male-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3171_00_male-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24264,
+      "slug": "male-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3172",
+      "presetNumber": 3172,
+      "label": "Running holding shotgun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a shotgun with both hands, running, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3172_running-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3172_running-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3172_00_running-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3172_00_running-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3172_00_running-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24316,
+      "slug": "running-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3173",
+      "presetNumber": 3173,
+      "label": "Female holding shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a shotgun with both hands, looking to the right, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3173_female-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3173_female-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3173_00_female-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3173_00_female-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3173_00_female-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151,
+        199
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24510,
+      "slug": "female-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3174",
+      "presetNumber": 3174,
+      "label": "Kneeling aiming shotgun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling and aiming, holding the shotgun with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3174_kneeling-aiming-shotgun-pose.pma",
+      "localScenePath": "scenes/3174_kneeling-aiming-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3174_00_kneeling-aiming-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3174_00_kneeling-aiming-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3174_00_kneeling-aiming-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24190,
+      "slug": "kneeling-aiming-shotgun-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3175",
+      "presetNumber": 3175,
+      "label": "Walking aiming shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking, holding a shotgun with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3175_walking-aiming-shotgun-pose.pma",
+      "localScenePath": "scenes/3175_walking-aiming-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3175_00_walking-aiming-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3175_00_walking-aiming-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3175_00_walking-aiming-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 23998,
+      "slug": "walking-aiming-shotgun-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3176",
+      "presetNumber": 3176,
+      "label": "Lying aiming shotgun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying and aiming with his shotgun, holding shotgun reference pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3176_lying-aiming-shotgun-pose.pma",
+      "localScenePath": "scenes/3176_lying-aiming-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3176_00_lying-aiming-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3176_00_lying-aiming-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3176_00_lying-aiming-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24228,
+      "slug": "lying-aiming-shotgun-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3177",
+      "presetNumber": 3177,
+      "label": "Walking holding shotgun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking, holding a shotgun in his right hand and carrying it on his shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3177_walking-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3177_walking-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3177_00_walking-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3177_00_walking-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3177_00_walking-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24229,
+      "slug": "walking-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3178",
+      "presetNumber": 3178,
+      "label": "Crouching holding shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, holding shotgun with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3178_crouching-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3178_crouching-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3178_00_crouching-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3178_00_crouching-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3178_00_crouching-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 23958,
+      "slug": "crouching-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3179",
+      "presetNumber": 3179,
+      "label": "Standing holding shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a shotgun in her right hand and carrying it on her shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3179_standing-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3179_standing-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3179_00_standing-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3179_00_standing-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3179_00_standing-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 23962,
+      "slug": "standing-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3180",
+      "presetNumber": 3180,
+      "label": "Female holding pistols pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding pistols in both hands and looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3180_female-holding-pistols-pose.pma",
+      "localScenePath": "scenes/3180_female-holding-pistols-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3180_00_female-holding-pistols-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3180_00_female-holding-pistols-pose.png",
+          "localThumbnailPath": "thumbnails/3180_00_female-holding-pistols-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24115,
+      "slug": "female-holding-pistols-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3181",
+      "presetNumber": 3181,
+      "label": "Female holding pistol pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a pistol in her right hand, holding pistol reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3181_female-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3181_female-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3181_00_female-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3181_00_female-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3181_00_female-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 23623,
+      "slug": "female-holding-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3182",
+      "presetNumber": 3182,
+      "label": "Male holding pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a a pistol in his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3182_male-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3182_male-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3182_00_male-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3182_00_male-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3182_00_male-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24227,
+      "slug": "male-holding-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3183",
+      "presetNumber": 3183,
+      "label": "Male aiming down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a pistol with both hands and aiming down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3183_male-aiming-down-pose.pma",
+      "localScenePath": "scenes/3183_male-aiming-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3183_00_male-aiming-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3183_00_male-aiming-down-pose.png",
+          "localThumbnailPath": "thumbnails/3183_00_male-aiming-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24236,
+      "slug": "male-aiming-down-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3184",
+      "presetNumber": 3184,
+      "label": "Aiming pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a pistol in his right hand and aiming, holding pistol reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3184_aiming-pistol-pose.pma",
+      "localScenePath": "scenes/3184_aiming-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3184_00_aiming-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3184_00_aiming-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3184_00_aiming-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24331,
+      "slug": "aiming-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3185",
+      "presetNumber": 3185,
+      "label": "Standing holding pistol pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her left hand is on her hip and holding a pistol in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3185_standing-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3185_standing-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3185_00_standing-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3185_00_standing-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3185_00_standing-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 23951,
+      "slug": "standing-holding-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3186",
+      "presetNumber": 3186,
+      "label": "Male kneeling holding pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling, holding a pistol with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3186_male-kneeling-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3186_male-kneeling-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3186_00_male-kneeling-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3186_00_male-kneeling-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3186_00_male-kneeling-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24246,
+      "slug": "male-kneeling-holding-pistol-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3187",
+      "presetNumber": 3187,
+      "label": "Running holding pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a pistol with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3187_running-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3187_running-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3187_00_running-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3187_00_running-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3187_00_running-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24317,
+      "slug": "running-holding-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3188",
+      "presetNumber": 3188,
+      "label": "Walking aiming pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking, holding pistols in both hands and aiming forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3188_walking-aiming-pistol-pose.pma",
+      "localScenePath": "scenes/3188_walking-aiming-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3188_00_walking-aiming-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3188_00_walking-aiming-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3188_00_walking-aiming-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24804,
+      "slug": "walking-aiming-pistol-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3189",
+      "presetNumber": 3189,
+      "label": "Female pistol aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a pistol in her right hand and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3189_female-pistol-aiming-pose.pma",
+      "localScenePath": "scenes/3189_female-pistol-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3189_00_female-pistol-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3189_00_female-pistol-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/3189_00_female-pistol-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24050,
+      "slug": "female-pistol-aiming-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3190",
+      "presetNumber": 3190,
+      "label": "Male standing holding spear pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a spear in his right hand, holding spear pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3190_male-standing-holding-spear-pose.pma",
+      "localScenePath": "scenes/3190_male-standing-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3190_00_male-standing-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3190_00_male-standing-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3190_00_male-standing-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24259,
+      "slug": "male-standing-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3191",
+      "presetNumber": 3191,
+      "label": "Female holding spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a spear in her right hand, holding spear pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3191_female-holding-spear-pose.pma",
+      "localScenePath": "scenes/3191_female-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3191_00_female-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3191_00_female-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3191_00_female-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24085,
+      "slug": "female-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3192",
+      "presetNumber": 3192,
+      "label": "Female spear attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in warrior stance, holding a spear in her right hand, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3192_female-spear-attack-pose.pma",
+      "localScenePath": "scenes/3192_female-spear-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3192_00_female-spear-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3192_00_female-spear-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3192_00_female-spear-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 23950,
+      "slug": "female-spear-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

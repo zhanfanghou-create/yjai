@@ -1,0 +1,1171 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 167,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4009",
+      "presetNumber": 4009,
+      "label": "Females battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female kicks the another female in the head who passes out and drops her sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4009_females-battle-pose.pma",
+      "localScenePath": "scenes/4009_females-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4009_00_females-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4009_00_females-battle-pose.png",
+          "localThumbnailPath": "thumbnails/4009_00_females-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4009_01_females-battle-pose.png",
+          "localThumbnailPath": "thumbnails/4009_01_females-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "battle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46515,
+      "slug": "females-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4010",
+      "presetNumber": 4010,
+      "label": "Strong male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his left hand is on his hip, he is showing his arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4010_strong-male-pose.pma",
+      "localScenePath": "scenes/4010_strong-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4010_00_strong-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4010_00_strong-male-pose.png",
+          "localThumbnailPath": "thumbnails/4010_00_strong-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23947,
+      "slug": "strong-male-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4011",
+      "presetNumber": 4011,
+      "label": "Male back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his hands are behind his head, showing his back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4011_male-back-pose.pma",
+      "localScenePath": "scenes/4011_male-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4011_00_male-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4011_00_male-back-pose.png",
+          "localThumbnailPath": "thumbnails/4011_00_male-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24007,
+      "slug": "male-back-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4012",
+      "presetNumber": 4012,
+      "label": "Male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually and confidently, looking to the left, torso anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4012_male-standing-pose.pma",
+      "localScenePath": "scenes/4012_male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4012_00_male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4012_00_male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4012_00_male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23973,
+      "slug": "male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4013",
+      "presetNumber": 4013,
+      "label": "Running male anatomy pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, male torso anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4013_running-male-anatomy-pose.pma",
+      "localScenePath": "scenes/4013_running-male-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4013_00_running-male-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4013_00_running-male-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4013_00_running-male-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23993,
+      "slug": "running-male-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4014",
+      "presetNumber": 4014,
+      "label": "Crouching male anatomy pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, male torso anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4014_crouching-male-anatomy-pose.pma",
+      "localScenePath": "scenes/4014_crouching-male-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4014_00_crouching-male-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4014_00_crouching-male-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4014_00_crouching-male-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23983,
+      "slug": "crouching-male-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4015",
+      "presetNumber": 4015,
+      "label": "Standing female anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her hands are on her hips, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4015_standing-female-anatomy-pose.pma",
+      "localScenePath": "scenes/4015_standing-female-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4015_00_standing-female-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4015_00_standing-female-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4015_00_standing-female-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27279,
+      "slug": "standing-female-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4016",
+      "presetNumber": 4016,
+      "label": "Female back anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, showing her back, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4016_female-back-anatomy-pose.pma",
+      "localScenePath": "scenes/4016_female-back-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4016_00_female-back-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4016_00_female-back-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4016_00_female-back-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27281,
+      "slug": "female-back-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4017",
+      "presetNumber": 4017,
+      "label": "Female walking anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, looking to the right, torso anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4017_female-walking-anatomy-pose.pma",
+      "localScenePath": "scenes/4017_female-walking-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4017_00_female-walking-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4017_00_female-walking-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4017_00_female-walking-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27295,
+      "slug": "female-walking-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4018",
+      "presetNumber": 4018,
+      "label": "Crouching female anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, female torso anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4018_crouching-female-anatomy-pose.pma",
+      "localScenePath": "scenes/4018_crouching-female-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4018_00_crouching-female-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4018_00_crouching-female-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4018_00_crouching-female-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27288,
+      "slug": "crouching-female-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4019",
+      "presetNumber": 4019,
+      "label": "Female kneeling anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees, female torso anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4019_female-kneeling-anatomy-pose.pma",
+      "localScenePath": "scenes/4019_female-kneeling-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4019_00_female-kneeling-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4019_00_female-kneeling-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/4019_00_female-kneeling-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "torso",
+        "anatomy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27323,
+      "slug": "female-kneeling-anatomy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4020",
+      "presetNumber": 4020,
+      "label": "Cute anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is turning around and adjusting her glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4020_cute-anime-female-pose.pma",
+      "localScenePath": "scenes/4020_cute-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4020_00_cute-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4020_00_cute-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/4020_00_cute-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 24393,
+      "slug": "cute-anime-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4021",
+      "presetNumber": 4021,
+      "label": "Anime female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing casually and looking to the left, her right hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4021_anime-female-standing-pose.pma",
+      "localScenePath": "scenes/4021_anime-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4021_00_anime-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4021_00_anime-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4021_00_anime-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 23892,
+      "slug": "anime-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4022",
+      "presetNumber": 4022,
+      "label": "Anime cute jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is jumping, dynamic reference for drawing anime",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4022_anime-cute-jumping-pose.pma",
+      "localScenePath": "scenes/4022_anime-cute-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4022_00_anime-cute-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4022_00_anime-cute-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/4022_00_anime-cute-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 24074,
+      "slug": "anime-cute-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4023",
+      "presetNumber": 4023,
+      "label": "Anime female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is walking casually, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4023_anime-female-walking-pose.pma",
+      "localScenePath": "scenes/4023_anime-female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4023_00_anime-female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4023_00_anime-female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4023_00_anime-female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 23888,
+      "slug": "anime-female-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4024",
+      "presetNumber": 4024,
+      "label": "Anime female sitting reference pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting in the armchair, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4024_anime-female-sitting-reference-pose.pma",
+      "localScenePath": "scenes/4024_anime-female-sitting-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4024_00_anime-female-sitting-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4024_00_anime-female-sitting-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4024_00_anime-female-sitting-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 24447,
+      "slug": "anime-female-sitting-reference-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4025",
+      "presetNumber": 4025,
+      "label": "Anime female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is sitting on her knees, looking to the right, reference for drawing anime",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4025_anime-female-kneeling-pose.pma",
+      "localScenePath": "scenes/4025_anime-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4025_00_anime-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4025_00_anime-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4025_00_anime-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 24105,
+      "slug": "anime-female-kneeling-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4026",
+      "presetNumber": 4026,
+      "label": "Anime crossed arms pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing, his arms are crossed, he is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4026_anime-crossed-arms-pose.pma",
+      "localScenePath": "scenes/4026_anime-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4026_00_anime-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4026_00_anime-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/4026_00_anime-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 23831,
+      "slug": "anime-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4027",
+      "presetNumber": 4027,
+      "label": "Anime male standing reference pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing, his legs are crossed, his left hand is on his hip, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4027_anime-male-standing-reference-pose.pma",
+      "localScenePath": "scenes/4027_anime-male-standing-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4027_00_anime-male-standing-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4027_00_anime-male-standing-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4027_00_anime-male-standing-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 23735,
+      "slug": "anime-male-standing-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4028",
+      "presetNumber": 4028,
+      "label": "Anime male walking reference pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, looking to the right, reference for drawing anime",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4028_anime-male-walking-reference-pose.pma",
+      "localScenePath": "scenes/4028_anime-male-walking-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4028_00_anime-male-walking-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4028_00_anime-male-walking-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4028_00_anime-male-walking-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 23890,
+      "slug": "anime-male-walking-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4029",
+      "presetNumber": 4029,
+      "label": "Anime male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is sitting on the couch, looking to the right, reference for drawing anime",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4029_anime-male-sitting-pose.pma",
+      "localScenePath": "scenes/4029_anime-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4029_00_anime-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4029_00_anime-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4029_00_anime-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "anime"
+      ],
+      "bytes": 24286,
+      "slug": "anime-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4030",
+      "presetNumber": 4030,
+      "label": "Anime waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, her left hand is on her hip, she is waving with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4030_anime-waving-pose.pma",
+      "localScenePath": "scenes/4030_anime-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4030_00_anime-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4030_00_anime-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4030_00_anime-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 23955,
+      "slug": "anime-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4031",
+      "presetNumber": 4031,
+      "label": "Anime male fighting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is in boxing stance, clenching his hands into fists, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4031_anime-male-fighting-pose.pma",
+      "localScenePath": "scenes/4031_anime-male-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4031_00_anime-male-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4031_00_anime-male-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4031_00_anime-male-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 23660,
+      "slug": "anime-male-fighting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4032",
+      "presetNumber": 4032,
+      "label": "Anime female dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is dancing, raising her hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4032_anime-female-dancing-pose.pma",
+      "localScenePath": "scenes/4032_anime-female-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4032_00_anime-female-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4032_00_anime-female-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/4032_00_anime-female-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 24003,
+      "slug": "anime-female-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

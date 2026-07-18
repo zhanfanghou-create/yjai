@@ -1,0 +1,1143 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 30,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-2220",
+      "presetNumber": 2220,
+      "label": "Bar stool sitting male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bar stool, his left hand is on his hip and he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2220_bar-stool-sitting-male-pose.pma",
+      "localScenePath": "scenes/2220_bar-stool-sitting-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2220_00_bar-stool-sitting-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2220_00_bar-stool-sitting-male-pose.png",
+          "localThumbnailPath": "thumbnails/2220_00_bar-stool-sitting-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24092,
+      "slug": "bar-stool-sitting-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2221",
+      "presetNumber": 2221,
+      "label": "Armchair sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair comfortably with his legs crossed, male sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2221_armchair-sitting-pose.pma",
+      "localScenePath": "scenes/2221_armchair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2221_00_armchair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2221_00_armchair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2221_00_armchair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24209,
+      "slug": "armchair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2222",
+      "presetNumber": 2222,
+      "label": "Couch sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch comfortably, stretching his legs and arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2222_couch-sitting-pose.pma",
+      "localScenePath": "scenes/2222_couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2222_00_couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2222_00_couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2222_00_couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24193,
+      "slug": "couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2223",
+      "presetNumber": 2223,
+      "label": "Chair sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair and looking to the right, his hands are on his knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2223_chair-sitting-pose.pma",
+      "localScenePath": "scenes/2223_chair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2223_00_chair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2223_00_chair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2223_00_chair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24229,
+      "slug": "chair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2224",
+      "presetNumber": 2224,
+      "label": "Crossed legs sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair with his legs crossed, holding his ankle",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2224_crossed-legs-sitting-pose.pma",
+      "localScenePath": "scenes/2224_crossed-legs-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2224_00_crossed-legs-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2224_00_crossed-legs-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2224_00_crossed-legs-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24118,
+      "slug": "crossed-legs-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2225",
+      "presetNumber": 2225,
+      "label": "Bench sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bench comfortably with his legs crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2225_bench-sitting-pose.pma",
+      "localScenePath": "scenes/2225_bench-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2225_00_bench-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2225_00_bench-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2225_00_bench-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24201,
+      "slug": "bench-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2226",
+      "presetNumber": 2226,
+      "label": "Table sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair at the table, leaning on the table and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2226_table-sitting-pose.pma",
+      "localScenePath": "scenes/2226_table-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2226_00_table-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2226_00_table-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2226_00_table-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 42792,
+      "slug": "table-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2227",
+      "presetNumber": 2227,
+      "label": "Male sitting looking right pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the floor, his left hand is on his knee and he is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2227_male-sitting-looking-right-pose.pma",
+      "localScenePath": "scenes/2227_male-sitting-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2227_00_male-sitting-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2227_00_male-sitting-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/2227_00_male-sitting-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23786,
+      "slug": "male-sitting-looking-right-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2228",
+      "presetNumber": 2228,
+      "label": "Casual sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair casually and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2228_casual-sitting-pose.pma",
+      "localScenePath": "scenes/2228_casual-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2228_00_casual-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2228_00_casual-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2228_00_casual-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24225,
+      "slug": "casual-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2230",
+      "presetNumber": 2230,
+      "label": "Running chibi pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, looking forward, chibi running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2230_running-chibi-pose.pma",
+      "localScenePath": "scenes/2230_running-chibi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2230_00_running-chibi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2230_00_running-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/2230_00_running-chibi-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23674,
+      "slug": "running-chibi-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2231",
+      "presetNumber": 2231,
+      "label": "Fast running chibi pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running fast, looking down, fast running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2231_fast-running-chibi-pose.pma",
+      "localScenePath": "scenes/2231_fast-running-chibi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2231_00_fast-running-chibi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2231_00_fast-running-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/2231_00_fast-running-chibi-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23749,
+      "slug": "fast-running-chibi-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2232",
+      "presetNumber": 2232,
+      "label": "Clenched fists running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry chibi is running with his hands clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2232_clenched-fists-running-pose.pma",
+      "localScenePath": "scenes/2232_clenched-fists-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2232_00_clenched-fists-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2232_00_clenched-fists-running-pose.png",
+          "localThumbnailPath": "thumbnails/2232_00_clenched-fists-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23659,
+      "slug": "clenched-fists-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2233",
+      "presetNumber": 2233,
+      "label": "Happy running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy chibi is running, jumping, raising his hands, chibi cheerful running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2233_happy-running-pose.pma",
+      "localScenePath": "scenes/2233_happy-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2233_00_happy-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2233_00_happy-running-pose.png",
+          "localThumbnailPath": "thumbnails/2233_00_happy-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23695,
+      "slug": "happy-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2234",
+      "presetNumber": 2234,
+      "label": "Holding kunai running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, looking forward, holding kunais in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2234_holding-kunai-running-pose.pma",
+      "localScenePath": "scenes/2234_holding-kunai-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2234_00_holding-kunai-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2234_00_holding-kunai-running-pose.png",
+          "localThumbnailPath": "thumbnails/2234_00_holding-kunai-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 24642,
+      "slug": "holding-kunai-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2235",
+      "presetNumber": 2235,
+      "label": "Holding katana running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, looking forward, holding a katana in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2235_holding-katana-running-pose.pma",
+      "localScenePath": "scenes/2235_holding-katana-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2235_00_holding-katana-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2235_00_holding-katana-running-pose.png",
+          "localThumbnailPath": "thumbnails/2235_00_holding-katana-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 24149,
+      "slug": "holding-katana-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2237",
+      "presetNumber": 2237,
+      "label": "Chibi chasing running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, reaching out both hands, chasing someone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2237_chibi-chasing-running-pose.pma",
+      "localScenePath": "scenes/2237_chibi-chasing-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2237_00_chibi-chasing-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2237_00_chibi-chasing-running-pose.png",
+          "localThumbnailPath": "thumbnails/2237_00_chibi-chasing-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23678,
+      "slug": "chibi-chasing-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2238",
+      "presetNumber": 2238,
+      "label": "Chibi running looking back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running and looking backwards over his right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2238_chibi-running-looking-back-pose.pma",
+      "localScenePath": "scenes/2238_chibi-running-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2238_00_chibi-running-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2238_00_chibi-running-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/2238_00_chibi-running-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23757,
+      "slug": "chibi-running-looking-back-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2241",
+      "presetNumber": 2241,
+      "label": "Male drawing katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and drawing his katana from its sheath",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2241_male-drawing-katana-pose.pma",
+      "localScenePath": "scenes/2241_male-drawing-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2241_00_male-drawing-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2241_00_male-drawing-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2241_00_male-drawing-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 25088,
+      "slug": "male-drawing-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2242",
+      "presetNumber": 2242,
+      "label": "Holding both hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding the katana with both hands, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2242_holding-both-hands-pose.pma",
+      "localScenePath": "scenes/2242_holding-both-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2242_00_holding-both-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2242_00_holding-both-hands-pose.png",
+          "localThumbnailPath": "thumbnails/2242_00_holding-both-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24204,
+      "slug": "holding-both-hands-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2243",
+      "presetNumber": 2243,
+      "label": "Crouching holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and holding a katana in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2243_crouching-holding-katana-pose.pma",
+      "localScenePath": "scenes/2243_crouching-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2243_00_crouching-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2243_00_crouching-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2243_00_crouching-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24267,
+      "slug": "crouching-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2244",
+      "presetNumber": 2244,
+      "label": "Male landing holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, holding a katana in his right hand and balancing with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2244_male-landing-holding-katana-pose.pma",
+      "localScenePath": "scenes/2244_male-landing-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2244_00_male-landing-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2244_00_male-landing-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2244_00_male-landing-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24208,
+      "slug": "male-landing-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2245",
+      "presetNumber": 2245,
+      "label": "Jumping holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a katana with both hands, jumping high to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2245_jumping-holding-katana-pose.pma",
+      "localScenePath": "scenes/2245_jumping-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2245_00_jumping-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2245_00_jumping-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2245_00_jumping-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24198,
+      "slug": "jumping-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2250",
+      "presetNumber": 2250,
+      "label": "Injured male walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is walking, holding his stomach with his right hand and limping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2250_injured-male-walking-pose.pma",
+      "localScenePath": "scenes/2250_injured-male-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2250_00_injured-male-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2250_00_injured-male-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2250_00_injured-male-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23773,
+      "slug": "injured-male-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2251",
+      "presetNumber": 2251,
+      "label": "Injured male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is sitting on a chair, holding his stomach with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2251_injured-male-sitting-pose.pma",
+      "localScenePath": "scenes/2251_injured-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2251_00_injured-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2251_00_injured-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2251_00_injured-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24130,
+      "slug": "injured-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

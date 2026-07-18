@@ -1,0 +1,1083 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 17,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0409",
+      "presetNumber": 409,
+      "label": "Gun dagger fighting pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three males are fighting, holding a gun and a dagger, one of them falls from a kick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0409_gun-dagger-fighting-pose.pma",
+      "localScenePath": "scenes/0409_gun-dagger-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0409_00_gun-dagger-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0409_00_gun-dagger-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0409_00_gun-dagger-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0409_01_gun-dagger-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0409_01_gun-dagger-fighting-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0409_02_gun-dagger-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0409_02_gun-dagger-fighting-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143,
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "battle"
+      ],
+      "bytes": 70440,
+      "slug": "gun-dagger-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0410",
+      "presetNumber": 410,
+      "label": "Female standing model pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female standing and posing like a model, female pin-up pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0410_female-standing-model-pose.pma",
+      "localScenePath": "scenes/0410_female-standing-model-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0410_00_female-standing-model-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0410_00_female-standing-model-pose.png",
+          "localThumbnailPath": "thumbnails/0410_00_female-standing-model-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 23557,
+      "slug": "female-standing-model-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0411",
+      "presetNumber": 411,
+      "label": "Two females pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are posing together pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0411_two-females-pose.pma",
+      "localScenePath": "scenes/0411_two-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0411_00_two-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0411_00_two-females-pose.png",
+          "localThumbnailPath": "thumbnails/0411_00_two-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0411_01_two-females-pose.png",
+          "localThumbnailPath": "thumbnails/0411_01_two-females-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 46067,
+      "slug": "two-females-pose"
+    },
+    {
+      "id": "guo-scene-0412",
+      "presetNumber": 412,
+      "label": "Female pinup sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and posing like a model pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0412_female-pinup-sitting-pose.pma",
+      "localScenePath": "scenes/0412_female-pinup-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0412_00_female-pinup-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0412_00_female-pinup-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/0412_00_female-pinup-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 21765,
+      "slug": "female-pinup-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0413",
+      "presetNumber": 413,
+      "label": "Female model pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female posing like a model pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0413_female-model-pose.pma",
+      "localScenePath": "scenes/0413_female-model-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0413_00_female-model-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0413_00_female-model-pose.png",
+          "localThumbnailPath": "thumbnails/0413_00_female-model-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 23717,
+      "slug": "female-model-pose"
+    },
+    {
+      "id": "guo-scene-0414",
+      "presetNumber": 414,
+      "label": "Female sitting flirting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and flirting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0414_female-sitting-flirting-pose.pma",
+      "localScenePath": "scenes/0414_female-sitting-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0414_00_female-sitting-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0414_00_female-sitting-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/0414_00_female-sitting-flirting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 21923,
+      "slug": "female-sitting-flirting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0415",
+      "presetNumber": 415,
+      "label": "Female standing shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and acting shy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0415_female-standing-shy-pose.pma",
+      "localScenePath": "scenes/0415_female-standing-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0415_00_female-standing-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0415_00_female-standing-shy-pose.png",
+          "localThumbnailPath": "thumbnails/0415_00_female-standing-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 23414,
+      "slug": "female-standing-shy-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0416",
+      "presetNumber": 416,
+      "label": "Sitting flirting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the sofa and flirting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0416_sitting-flirting-pose.pma",
+      "localScenePath": "scenes/0416_sitting-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0416_00_sitting-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0416_00_sitting-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/0416_00_sitting-flirting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 24093,
+      "slug": "sitting-flirting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0417",
+      "presetNumber": 417,
+      "label": "Sitting sofa pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the sofa with her right hand on her thigh pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0417_sitting-sofa-pose.pma",
+      "localScenePath": "scenes/0417_sitting-sofa-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0417_00_sitting-sofa-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0417_00_sitting-sofa-pose.png",
+          "localThumbnailPath": "thumbnails/0417_00_sitting-sofa-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 24028,
+      "slug": "sitting-sofa-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0418",
+      "presetNumber": 418,
+      "label": "Female sitting chair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0418_female-sitting-chair-pose.pma",
+      "localScenePath": "scenes/0418_female-sitting-chair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0418_00_female-sitting-chair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0418_00_female-sitting-chair-pose.png",
+          "localThumbnailPath": "thumbnails/0418_00_female-sitting-chair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 24026,
+      "slug": "female-sitting-chair-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0419",
+      "presetNumber": 419,
+      "label": "Three females pinup pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three females are standing and posing like models",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0419_three-females-pinup-pose.pma",
+      "localScenePath": "scenes/0419_three-females-pinup-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0419_00_three-females-pinup-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0419_00_three-females-pinup-pose.png",
+          "localThumbnailPath": "thumbnails/0419_00_three-females-pinup-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0419_01_three-females-pinup-pose.png",
+          "localThumbnailPath": "thumbnails/0419_01_three-females-pinup-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0419_02_three-females-pinup-pose.png",
+          "localThumbnailPath": "thumbnails/0419_02_three-females-pinup-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "pin-up"
+      ],
+      "bytes": 69053,
+      "slug": "three-females-pinup-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0420",
+      "presetNumber": 420,
+      "label": "Female crossed arms standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with crossed arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0420_female-crossed-arms-standing-pose.pma",
+      "localScenePath": "scenes/0420_female-crossed-arms-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0420_00_female-crossed-arms-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0420_00_female-crossed-arms-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0420_00_female-crossed-arms-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 23477,
+      "slug": "female-crossed-arms-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0421",
+      "presetNumber": 421,
+      "label": "Male crossed arms standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with crossed arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0421_male-crossed-arms-standing-pose.pma",
+      "localScenePath": "scenes/0421_male-crossed-arms-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0421_00_male-crossed-arms-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0421_00_male-crossed-arms-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0421_00_male-crossed-arms-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 23936,
+      "slug": "male-crossed-arms-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0422",
+      "presetNumber": 422,
+      "label": "Angry female crossed arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Angry female is standing with crossed arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0422_angry-female-crossed-arms-pose.pma",
+      "localScenePath": "scenes/0422_angry-female-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0422_00_angry-female-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0422_00_angry-female-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/0422_00_angry-female-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 23665,
+      "slug": "angry-female-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0423",
+      "presetNumber": 423,
+      "label": "Female male crossed arms pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing with crossed arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0423_female-male-crossed-arms-pose.pma",
+      "localScenePath": "scenes/0423_female-male-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0423_00_female-male-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0423_00_female-male-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/0423_00_female-male-crossed-arms-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0423_01_female-male-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/0423_01_female-male-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 46381,
+      "slug": "female-male-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0424",
+      "presetNumber": 424,
+      "label": "Two males standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are standing with crossed arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0424_two-males-standing-pose.pma",
+      "localScenePath": "scenes/0424_two-males-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0424_00_two-males-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0424_00_two-males-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0424_00_two-males-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0424_01_two-males-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0424_01_two-males-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 46635,
+      "slug": "two-males-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0425",
+      "presetNumber": 425,
+      "label": "Confident male crossed arms pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Confident male is standing and waiting for something pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0425_confident-male-crossed-arms-pose.pma",
+      "localScenePath": "scenes/0425_confident-male-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0425_00_confident-male-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0425_00_confident-male-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/0425_00_confident-male-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 23744,
+      "slug": "confident-male-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0426",
+      "presetNumber": 426,
+      "label": "Angry female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Angry female is sitting on a chair and waiting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0426_angry-female-sitting-pose.pma",
+      "localScenePath": "scenes/0426_angry-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0426_00_angry-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0426_00_angry-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/0426_00_angry-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 23887,
+      "slug": "angry-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0427",
+      "presetNumber": 427,
+      "label": "Female male couple fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0427_female-male-couple-fighting-pose.pma",
+      "localScenePath": "scenes/0427_female-male-couple-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0427_00_female-male-couple-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0427_00_female-male-couple-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0427_00_female-male-couple-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0427_01_female-male-couple-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0427_01_female-male-couple-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 46379,
+      "slug": "female-male-couple-fighting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0428",
+      "presetNumber": 428,
+      "label": "Female standing waiting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and waiting for something pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0428_female-standing-waiting-pose.pma",
+      "localScenePath": "scenes/0428_female-standing-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0428_00_female-standing-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0428_00_female-standing-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/0428_00_female-standing-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 23478,
+      "slug": "female-standing-waiting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0429",
+      "presetNumber": 429,
+      "label": "Female freezing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is freezing and the male is trying to warm her up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0429_female-freezing-pose.pma",
+      "localScenePath": "scenes/0429_female-freezing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0429_00_female-freezing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0429_00_female-freezing-pose.png",
+          "localThumbnailPath": "thumbnails/0429_00_female-freezing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0429_01_female-freezing-pose.png",
+          "localThumbnailPath": "thumbnails/0429_01_female-freezing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed arms",
+        "reference"
+      ],
+      "bytes": 46459,
+      "slug": "female-freezing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0430",
+      "presetNumber": 430,
+      "label": "Male taekwondo kick pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male taekwondo front kick with right leg pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0430_male-taekwondo-kick-pose.pma",
+      "localScenePath": "scenes/0430_male-taekwondo-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0430_00_male-taekwondo-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0430_00_male-taekwondo-kick-pose.png",
+          "localThumbnailPath": "thumbnails/0430_00_male-taekwondo-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "martial arts"
+      ],
+      "bytes": 23680,
+      "slug": "male-taekwondo-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0431",
+      "presetNumber": 431,
+      "label": "Female taekwondo kick pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female taekwondo front kick with right leg pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0431_female-taekwondo-kick-pose.pma",
+      "localScenePath": "scenes/0431_female-taekwondo-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0431_00_female-taekwondo-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0431_00_female-taekwondo-kick-pose.png",
+          "localThumbnailPath": "thumbnails/0431_00_female-taekwondo-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "martial arts"
+      ],
+      "bytes": 23594,
+      "slug": "female-taekwondo-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0432",
+      "presetNumber": 432,
+      "label": "Male jiu-jitsu standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jiu-jitsu standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0432_male-jiu-jitsu-standing-pose.pma",
+      "localScenePath": "scenes/0432_male-jiu-jitsu-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0432_00_male-jiu-jitsu-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0432_00_male-jiu-jitsu-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0432_00_male-jiu-jitsu-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "martial arts"
+      ],
+      "bytes": 23845,
+      "slug": "male-jiu-jitsu-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    }
+  ]
+}

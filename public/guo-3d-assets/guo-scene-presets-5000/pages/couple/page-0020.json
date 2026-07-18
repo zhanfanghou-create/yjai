@@ -1,0 +1,1211 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 19,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-2239",
+      "presetNumber": 2239,
+      "label": "Cute running pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two cheerful chibis are running, one is chasing the other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2239_cute-running-pose.pma",
+      "localScenePath": "scenes/2239_cute-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2239_00_cute-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2239_00_cute-running-pose.png",
+          "localThumbnailPath": "thumbnails/2239_00_cute-running-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2239_01_cute-running-pose.png",
+          "localThumbnailPath": "thumbnails/2239_01_cute-running-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 46561,
+      "slug": "cute-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2257",
+      "presetNumber": 2257,
+      "label": "Injured leaning walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Injured male is leaning on the other male, injured drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2257_injured-leaning-walking-pose.pma",
+      "localScenePath": "scenes/2257_injured-leaning-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2257_00_injured-leaning-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2257_00_injured-leaning-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2257_00_injured-leaning-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2257_01_injured-leaning-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2257_01_injured-leaning-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46634,
+      "slug": "injured-leaning-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2258",
+      "presetNumber": 2258,
+      "label": "Injured female lying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Injured female is lying on the other female's lap, holding her stomach",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2258_injured-female-lying-pose.pma",
+      "localScenePath": "scenes/2258_injured-female-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2258_00_injured-female-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2258_00_injured-female-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2258_00_injured-female-lying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2258_01_injured-female-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2258_01_injured-female-lying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46131,
+      "slug": "injured-female-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2259",
+      "presetNumber": 2259,
+      "label": "Carrying injured female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is carrying the injured female in his arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2259_carrying-injured-female-pose.pma",
+      "localScenePath": "scenes/2259_carrying-injured-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2259_00_carrying-injured-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2259_00_carrying-injured-female-pose.png",
+          "localThumbnailPath": "thumbnails/2259_00_carrying-injured-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2259_01_carrying-injured-female-pose.png",
+          "localThumbnailPath": "thumbnails/2259_01_carrying-injured-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46170,
+      "slug": "carrying-injured-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2272",
+      "presetNumber": 2272,
+      "label": "Two females lying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are lying on their stomachs and looking at something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2272_two-females-lying-pose.pma",
+      "localScenePath": "scenes/2272_two-females-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2272_00_two-females-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2272_00_two-females-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2272_00_two-females-lying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2272_01_two-females-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2272_01_two-females-lying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "lying",
+        "stomach",
+        "pose"
+      ],
+      "bytes": 46402,
+      "slug": "two-females-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2289",
+      "presetNumber": 2289,
+      "label": "Sword shield fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, holding swords and shields, attacking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2289_sword-shield-fighting-pose.pma",
+      "localScenePath": "scenes/2289_sword-shield-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2289_00_sword-shield-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2289_00_sword-shield-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2289_00_sword-shield-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2289_01_sword-shield-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2289_01_sword-shield-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 48601,
+      "slug": "sword-shield-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2300",
+      "presetNumber": 2300,
+      "label": "Couple cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and cuddling, hugging each other tightly",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2300_couple-cuddling-pose.pma",
+      "localScenePath": "scenes/2300_couple-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2300_00_couple-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2300_00_couple-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2300_00_couple-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2300_01_couple-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2300_01_couple-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46620,
+      "slug": "couple-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2301",
+      "presetNumber": 2301,
+      "label": "Couple kissing cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is cuddling, hugging each other and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2301_couple-kissing-cuddling-pose.pma",
+      "localScenePath": "scenes/2301_couple-kissing-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2301_00_couple-kissing-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2301_00_couple-kissing-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2301_00_couple-kissing-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2301_01_couple-kissing-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2301_01_couple-kissing-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46538,
+      "slug": "couple-kissing-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2302",
+      "presetNumber": 2302,
+      "label": "Cuddling behind pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are cuddling, the male is hugging the female from behind",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2302_cuddling-behind-pose.pma",
+      "localScenePath": "scenes/2302_cuddling-behind-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2302_00_cuddling-behind-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2302_00_cuddling-behind-pose.png",
+          "localThumbnailPath": "thumbnails/2302_00_cuddling-behind-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2302_01_cuddling-behind-pose.png",
+          "localThumbnailPath": "thumbnails/2302_01_cuddling-behind-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46557,
+      "slug": "cuddling-behind-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2303",
+      "presetNumber": 2303,
+      "label": "Females sitting cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are sitting and cuddling, hugging each other and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2303_females-sitting-cuddling-pose.pma",
+      "localScenePath": "scenes/2303_females-sitting-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2303_00_females-sitting-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2303_00_females-sitting-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2303_00_females-sitting-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2303_01_females-sitting-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2303_01_females-sitting-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46197,
+      "slug": "females-sitting-cuddling-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2304",
+      "presetNumber": 2304,
+      "label": "Romantic cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is cuddling, male is holding the female in his arms and they are hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2304_romantic-cuddling-pose.pma",
+      "localScenePath": "scenes/2304_romantic-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2304_00_romantic-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2304_00_romantic-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2304_00_romantic-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2304_01_romantic-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2304_01_romantic-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46080,
+      "slug": "romantic-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2305",
+      "presetNumber": 2305,
+      "label": "Females standing cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are cuddling, standing and hugging each other tightly",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2305_females-standing-cuddling-pose.pma",
+      "localScenePath": "scenes/2305_females-standing-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2305_00_females-standing-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2305_00_females-standing-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2305_00_females-standing-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2305_01_females-standing-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2305_01_females-standing-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46329,
+      "slug": "females-standing-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2306",
+      "presetNumber": 2306,
+      "label": "Cuddling sitting couch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch and cuddling, hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2306_cuddling-sitting-couch-pose.pma",
+      "localScenePath": "scenes/2306_cuddling-sitting-couch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2306_00_cuddling-sitting-couch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2306_00_cuddling-sitting-couch-pose.png",
+          "localThumbnailPath": "thumbnails/2306_00_cuddling-sitting-couch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2306_01_cuddling-sitting-couch-pose.png",
+          "localThumbnailPath": "thumbnails/2306_01_cuddling-sitting-couch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46801,
+      "slug": "cuddling-sitting-couch-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2307",
+      "presetNumber": 2307,
+      "label": "Females kneeling cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are kneeling and cuddling, hugging each other and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2307_females-kneeling-cuddling-pose.pma",
+      "localScenePath": "scenes/2307_females-kneeling-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2307_00_females-kneeling-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2307_00_females-kneeling-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2307_00_females-kneeling-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2307_01_females-kneeling-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2307_01_females-kneeling-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46366,
+      "slug": "females-kneeling-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2308",
+      "presetNumber": 2308,
+      "label": "Lying cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are lying on the couch and cuddling, hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2308_lying-cuddling-pose.pma",
+      "localScenePath": "scenes/2308_lying-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2308_00_lying-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2308_00_lying-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2308_00_lying-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2308_01_lying-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2308_01_lying-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47383,
+      "slug": "lying-cuddling-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2309",
+      "presetNumber": 2309,
+      "label": "Female male sitting cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting in the armchair, female is sitting on male's lap and they are cuddling",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2309_female-male-sitting-cuddling-pose.pma",
+      "localScenePath": "scenes/2309_female-male-sitting-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2309_00_female-male-sitting-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2309_00_female-male-sitting-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2309_00_female-male-sitting-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2309_01_female-male-sitting-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2309_01_female-male-sitting-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        107,
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47240,
+      "slug": "female-male-sitting-cuddling-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2328",
+      "presetNumber": 2328,
+      "label": "Anime fighting kicking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are fighting, they are about to kick each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2328_anime-fighting-kicking-pose.pma",
+      "localScenePath": "scenes/2328_anime-fighting-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2328_00_anime-fighting-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2328_00_anime-fighting-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/2328_00_anime-fighting-kicking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2328_01_anime-fighting-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/2328_01_anime-fighting-kicking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        53,
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "kicking",
+        "pose"
+      ],
+      "bytes": 46888,
+      "slug": "anime-fighting-kicking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2329",
+      "presetNumber": 2329,
+      "label": "Anime head kick pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is kicking the other male in the head who is holding a knife in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2329_anime-head-kick-pose.pma",
+      "localScenePath": "scenes/2329_anime-head-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2329_00_anime-head-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2329_00_anime-head-kick-pose.png",
+          "localThumbnailPath": "thumbnails/2329_00_anime-head-kick-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2329_01_anime-head-kick-pose.png",
+          "localThumbnailPath": "thumbnails/2329_01_anime-head-kick-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kicking",
+        "pose"
+      ],
+      "bytes": 47083,
+      "slug": "anime-head-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2340",
+      "presetNumber": 2340,
+      "label": "Hitting falling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "A male is hitting another male, who is falling backwards in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2340_hitting-falling-pose.pma",
+      "localScenePath": "scenes/2340_hitting-falling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2340_00_hitting-falling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2340_00_hitting-falling-pose.png",
+          "localThumbnailPath": "thumbnails/2340_00_hitting-falling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2340_01_hitting-falling-pose.png",
+          "localThumbnailPath": "thumbnails/2340_01_hitting-falling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 46636,
+      "slug": "hitting-falling-pose"
+    },
+    {
+      "id": "guo-scene-2344",
+      "presetNumber": 2344,
+      "label": "Kneeling hitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is kneeling and punching, hitting another male, male fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2344_kneeling-hitting-pose.pma",
+      "localScenePath": "scenes/2344_kneeling-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2344_00_kneeling-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2344_00_kneeling-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2344_00_kneeling-hitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2344_01_kneeling-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2344_01_kneeling-hitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 46605,
+      "slug": "kneeling-hitting-pose"
+    },
+    {
+      "id": "guo-scene-2355",
+      "presetNumber": 2355,
+      "label": "Two females meditation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are meditating, sitting with their knees on the ground and turning their faces upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2355_two-females-meditation-pose.pma",
+      "localScenePath": "scenes/2355_two-females-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2355_00_two-females-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2355_00_two-females-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2355_00_two-females-meditation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2355_01_two-females-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2355_01_two-females-meditation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47064,
+      "slug": "two-females-meditation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2420",
+      "presetNumber": 2420,
+      "label": "Female healing male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is healing the male, who is lying injured on her lap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2420_female-healing-male-pose.pma",
+      "localScenePath": "scenes/2420_female-healing-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2420_00_female-healing-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2420_00_female-healing-male-pose.png",
+          "localThumbnailPath": "thumbnails/2420_00_female-healing-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2420_01_female-healing-male-pose.png",
+          "localThumbnailPath": "thumbnails/2420_01_female-healing-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46429,
+      "slug": "female-healing-male-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2421",
+      "presetNumber": 2421,
+      "label": "Female healing female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is healing the female who is lying injured on her lap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2421_female-healing-female-pose.pma",
+      "localScenePath": "scenes/2421_female-healing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2421_00_female-healing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2421_00_female-healing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2421_00_female-healing-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2421_01_female-healing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2421_01_female-healing-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46157,
+      "slug": "female-healing-female-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2422",
+      "presetNumber": 2422,
+      "label": "Female healing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is crouching and healing the female who is lying injured",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2422_female-healing-pose.pma",
+      "localScenePath": "scenes/2422_female-healing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2422_00_female-healing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2422_00_female-healing-pose.png",
+          "localThumbnailPath": "thumbnails/2422_00_female-healing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2422_01_female-healing-pose.png",
+          "localThumbnailPath": "thumbnails/2422_01_female-healing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46143,
+      "slug": "female-healing-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    }
+  ]
+}

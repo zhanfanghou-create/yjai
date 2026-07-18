@@ -1,0 +1,1208 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 72,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1729",
+      "presetNumber": 1729,
+      "label": "Anime males hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are hugging each other, holding each other's shoulders and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1729_anime-males-hugging-pose.pma",
+      "localScenePath": "scenes/1729_anime-males-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1729_00_anime-males-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1729_00_anime-males-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1729_00_anime-males-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1729_01_anime-males-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1729_01_anime-males-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46895,
+      "slug": "anime-males-hugging-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1730",
+      "presetNumber": 1730,
+      "label": "Female cooking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in the kitchen, cooking, holding a pan in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1730_female-cooking-pose.pma",
+      "localScenePath": "scenes/1730_female-cooking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1730_00_female-cooking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1730_00_female-cooking-pose.png",
+          "localThumbnailPath": "thumbnails/1730_00_female-cooking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        119,
+        120,
+        122
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 24893,
+      "slug": "female-cooking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1731",
+      "presetNumber": 1731,
+      "label": "Female cooking stirring pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, cooking something in a cooking pot and stirring it with a wooden spoon in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1731_female-cooking-stirring-pose.pma",
+      "localScenePath": "scenes/1731_female-cooking-stirring-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1731_00_female-cooking-stirring-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1731_00_female-cooking-stirring-pose.png",
+          "localThumbnailPath": "thumbnails/1731_00_female-cooking-stirring-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        119,
+        121,
+        123
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 24932,
+      "slug": "female-cooking-stirring-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1732",
+      "presetNumber": 1732,
+      "label": "Female cooking tasting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is cooking something and tastes it with the wooden spoon in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1732_female-cooking-tasting-pose.pma",
+      "localScenePath": "scenes/1732_female-cooking-tasting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1732_00_female-cooking-tasting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1732_00_female-cooking-tasting-pose.png",
+          "localThumbnailPath": "thumbnails/1732_00_female-cooking-tasting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        119,
+        121,
+        122,
+        123
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 25413,
+      "slug": "female-cooking-tasting-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1733",
+      "presetNumber": 1733,
+      "label": "Cooking holding spoon pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in the kitchen, holding a pan in her right hand and a wooden spoon in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1733_cooking-holding-spoon-pose.pma",
+      "localScenePath": "scenes/1733_cooking-holding-spoon-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1733_00_cooking-holding-spoon-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1733_00_cooking-holding-spoon-pose.png",
+          "localThumbnailPath": "thumbnails/1733_00_cooking-holding-spoon-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        120,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 27422,
+      "slug": "cooking-holding-spoon-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1734",
+      "presetNumber": 1734,
+      "label": "Cooking chopping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is cooking in the kitchen and chopping something with a knife on the cutting board",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1734_cooking-chopping-pose.pma",
+      "localScenePath": "scenes/1734_cooking-chopping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1734_00_cooking-chopping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1734_00_cooking-chopping-pose.png",
+          "localThumbnailPath": "thumbnails/1734_00_cooking-chopping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        124,
+        125,
+        126
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 27301,
+      "slug": "cooking-chopping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1735",
+      "presetNumber": 1735,
+      "label": "Standing stirring cooking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a pan in her right hand and stirring with a wooden spoon in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1735_standing-stirring-cooking-pose.pma",
+      "localScenePath": "scenes/1735_standing-stirring-cooking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1735_00_standing-stirring-cooking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1735_00_standing-stirring-cooking-pose.png",
+          "localThumbnailPath": "thumbnails/1735_00_standing-stirring-cooking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        121,
+        122,
+        123,
+        126
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 26209,
+      "slug": "standing-stirring-cooking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1736",
+      "presetNumber": 1736,
+      "label": "Cooking couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are cooking together, the male is chopping, the female is stirring",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1736_cooking-couple-pose.pma",
+      "localScenePath": "scenes/1736_cooking-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1736_00_cooking-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1736_00_cooking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/1736_00_cooking-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1736_01_cooking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/1736_01_cooking-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 8,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 50170,
+      "slug": "cooking-couple-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1737",
+      "presetNumber": 1737,
+      "label": "Male standing stirring pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a pan in his left hand and a wooden spoon in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1737_male-standing-stirring-pose.pma",
+      "localScenePath": "scenes/1737_male-standing-stirring-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1737_00_male-standing-stirring-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1737_00_male-standing-stirring-pose.png",
+          "localThumbnailPath": "thumbnails/1737_00_male-standing-stirring-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        122,
+        123
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 24671,
+      "slug": "male-standing-stirring-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1738",
+      "presetNumber": 1738,
+      "label": "Couple cooking salting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are cooking together, the male is holding the pan and the female is adding a pinch of salt",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1738_couple-cooking-salting-pose.pma",
+      "localScenePath": "scenes/1738_couple-cooking-salting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1738_00_couple-cooking-salting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1738_00_couple-cooking-salting-pose.png",
+          "localThumbnailPath": "thumbnails/1738_00_couple-cooking-salting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1738_01_couple-cooking-salting-pose.png",
+          "localThumbnailPath": "thumbnails/1738_01_couple-cooking-salting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        121,
+        122
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 48310,
+      "slug": "couple-cooking-salting-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1739",
+      "presetNumber": 1739,
+      "label": "Male cooking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, cooking something in a cooking pot and stirring it with a wooden spoon",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1739_male-cooking-pose.pma",
+      "localScenePath": "scenes/1739_male-cooking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1739_00_male-cooking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1739_00_male-cooking-pose.png",
+          "localThumbnailPath": "thumbnails/1739_00_male-cooking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        119,
+        120,
+        121,
+        123
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 25691,
+      "slug": "male-cooking-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1740",
+      "presetNumber": 1740,
+      "label": "Anime hugging kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging and kissing, anime kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1740_anime-hugging-kissing-pose.pma",
+      "localScenePath": "scenes/1740_anime-hugging-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1740_00_anime-hugging-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1740_00_anime-hugging-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1740_00_anime-hugging-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1740_01_anime-hugging-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1740_01_anime-hugging-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46655,
+      "slug": "anime-hugging-kissing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1741",
+      "presetNumber": 1741,
+      "label": "Anime surprise kiss pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is jumping and giving a surprise hug and kiss to the male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1741_anime-surprise-kiss-pose.pma",
+      "localScenePath": "scenes/1741_anime-surprise-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1741_00_anime-surprise-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1741_00_anime-surprise-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/1741_00_anime-surprise-kiss-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1741_01_anime-surprise-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/1741_01_anime-surprise-kiss-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46662,
+      "slug": "anime-surprise-kiss-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1742",
+      "presetNumber": 1742,
+      "label": "Anime dancing kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are dancing, hugging and kissing, romantic kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1742_anime-dancing-kissing-pose.pma",
+      "localScenePath": "scenes/1742_anime-dancing-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1742_00_anime-dancing-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1742_00_anime-dancing-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1742_00_anime-dancing-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1742_01_anime-dancing-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1742_01_anime-dancing-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46731,
+      "slug": "anime-dancing-kissing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1743",
+      "presetNumber": 1743,
+      "label": "Anime romantic kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is hugging the female from behind and they are kissing, romantic kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1743_anime-romantic-kissing-pose.pma",
+      "localScenePath": "scenes/1743_anime-romantic-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1743_00_anime-romantic-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1743_00_anime-romantic-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1743_00_anime-romantic-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1743_01_anime-romantic-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1743_01_anime-romantic-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55,
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46781,
+      "slug": "anime-romantic-kissing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1744",
+      "presetNumber": 1744,
+      "label": "Holding hands kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime couple is kissing, they are holding each others hands, romantic kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1744_holding-hands-kissing-pose.pma",
+      "localScenePath": "scenes/1744_holding-hands-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1744_00_holding-hands-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1744_00_holding-hands-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1744_00_holding-hands-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1744_01_holding-hands-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1744_01_holding-hands-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46665,
+      "slug": "holding-hands-kissing-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1745",
+      "presetNumber": 1745,
+      "label": "Anime holding kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is holding the female in his arms, they are looking at each other and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1745_anime-holding-kissing-pose.pma",
+      "localScenePath": "scenes/1745_anime-holding-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1745_00_anime-holding-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1745_00_anime-holding-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1745_00_anime-holding-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1745_01_anime-holding-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1745_01_anime-holding-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46890,
+      "slug": "anime-holding-kissing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1746",
+      "presetNumber": 1746,
+      "label": "Anime forehead kiss poe",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging each other and the male is giving a forehead kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1746_anime-forehead-kiss-poe.pma",
+      "localScenePath": "scenes/1746_anime-forehead-kiss-poe.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1746_00_anime-forehead-kiss-poe.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1746_00_anime-forehead-kiss-poe.png",
+          "localThumbnailPath": "thumbnails/1746_00_anime-forehead-kiss-poe.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1746_01_anime-forehead-kiss-poe.png",
+          "localThumbnailPath": "thumbnails/1746_01_anime-forehead-kiss-poe.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 47114,
+      "slug": "anime-forehead-kiss-poe",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1747",
+      "presetNumber": 1747,
+      "label": "Anime sitting kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime couple is sitting on the couch and kissing, anime couple kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1747_anime-sitting-kissing-pose.pma",
+      "localScenePath": "scenes/1747_anime-sitting-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1747_00_anime-sitting-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1747_00_anime-sitting-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1747_00_anime-sitting-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1747_01_anime-sitting-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1747_01_anime-sitting-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 47403,
+      "slug": "anime-sitting-kissing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1748",
+      "presetNumber": 1748,
+      "label": "Anime cheek kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are standing, the female is giving a kiss on the cheek",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1748_anime-cheek-kissing-pose.pma",
+      "localScenePath": "scenes/1748_anime-cheek-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1748_00_anime-cheek-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1748_00_anime-cheek-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1748_00_anime-cheek-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1748_01_anime-cheek-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1748_01_anime-cheek-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46802,
+      "slug": "anime-cheek-kissing-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1749",
+      "presetNumber": 1749,
+      "label": "Sitting cheek kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are sitting on the couch, the female is giving a kiss on the cheek",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1749_sitting-cheek-kissing-pose.pma",
+      "localScenePath": "scenes/1749_sitting-cheek-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1749_00_sitting-cheek-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1749_00_sitting-cheek-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1749_00_sitting-cheek-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1749_01_sitting-cheek-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1749_01_sitting-cheek-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 47398,
+      "slug": "sitting-cheek-kissing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1750",
+      "presetNumber": 1750,
+      "label": "Anime superwoman flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is flying, her right hand is clenched into a fist and she is raising it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1750_anime-superwoman-flying-pose.pma",
+      "localScenePath": "scenes/1750_anime-superwoman-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1750_00_anime-superwoman-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1750_00_anime-superwoman-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1750_00_anime-superwoman-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "flying",
+        "pose"
+      ],
+      "bytes": 23707,
+      "slug": "anime-superwoman-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1751",
+      "presetNumber": 1751,
+      "label": "Anime angel flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female with angel wings is flying, looking upwards, anime flying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1751_anime-angel-flying-pose.pma",
+      "localScenePath": "scenes/1751_anime-angel-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1751_00_anime-angel-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1751_00_anime-angel-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1751_00_anime-angel-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        91
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "flying",
+        "pose"
+      ],
+      "bytes": 24192,
+      "slug": "anime-angel-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1752",
+      "presetNumber": 1752,
+      "label": "Anime looking flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female with devil wings is flying and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1752_anime-looking-flying-pose.pma",
+      "localScenePath": "scenes/1752_anime-looking-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1752_00_anime-looking-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1752_00_anime-looking-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1752_00_anime-looking-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        86,
+        91
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "flying",
+        "pose"
+      ],
+      "bytes": 24909,
+      "slug": "anime-looking-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

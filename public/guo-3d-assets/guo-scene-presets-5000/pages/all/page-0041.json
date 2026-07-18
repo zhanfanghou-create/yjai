@@ -1,0 +1,1083 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 40,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0961",
+      "presetNumber": 961,
+      "label": "Leaning dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female waltz dancer is leaning back almost to the floor and raising her left hand, the male dancer is holding her ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0961_leaning-dance-pose.pma",
+      "localScenePath": "scenes/0961_leaning-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0961_00_leaning-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0961_00_leaning-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0961_00_leaning-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0961_01_leaning-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0961_01_leaning-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46696,
+      "slug": "leaning-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0962",
+      "presetNumber": 962,
+      "label": "Front split dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male waltz dance pose, female is doing a front split",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0962_front-split-dance-pose.pma",
+      "localScenePath": "scenes/0962_front-split-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0962_00_front-split-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0962_00_front-split-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0962_00_front-split-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0962_01_front-split-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0962_01_front-split-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46678,
+      "slug": "front-split-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0963",
+      "presetNumber": 963,
+      "label": "Traditional waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male traditional waltz dance movement pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0963_traditional-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0963_traditional-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0963_00_traditional-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0963_00_traditional-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0963_00_traditional-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0963_01_traditional-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0963_01_traditional-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46687,
+      "slug": "traditional-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0964",
+      "presetNumber": 964,
+      "label": "Dancing looking left pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing waltz and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0964_dancing-looking-left-pose.pma",
+      "localScenePath": "scenes/0964_dancing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0964_00_dancing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0964_00_dancing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/0964_00_dancing-looking-left-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0964_01_dancing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/0964_01_dancing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46699,
+      "slug": "dancing-looking-left-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0965",
+      "presetNumber": 965,
+      "label": "Starting waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male waltz dancers are about to start dancing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0965_starting-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0965_starting-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0965_00_starting-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0965_00_starting-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0965_00_starting-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0965_01_starting-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0965_01_starting-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46823,
+      "slug": "starting-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0966",
+      "presetNumber": 966,
+      "label": "Waltz dance spin pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing waltz, female is doing a spin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0966_waltz-dance-spin-pose.pma",
+      "localScenePath": "scenes/0966_waltz-dance-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0966_00_waltz-dance-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0966_00_waltz-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0966_00_waltz-dance-spin-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0966_01_waltz-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0966_01_waltz-dance-spin-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46678,
+      "slug": "waltz-dance-spin-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0967",
+      "presetNumber": 967,
+      "label": "Hand hip dance spin pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Waltz dance pose, female is doing a spin with her right hand on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0967_hand-hip-dance-spin-pose.pma",
+      "localScenePath": "scenes/0967_hand-hip-dance-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0967_00_hand-hip-dance-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0967_00_hand-hip-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0967_00_hand-hip-dance-spin-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0967_01_hand-hip-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0967_01_hand-hip-dance-spin-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46621,
+      "slug": "hand-hip-dance-spin-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0968",
+      "presetNumber": 968,
+      "label": "Classical waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Classical waltz dance pose, male dancer is standing and holding the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0968_classical-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0968_classical-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0968_00_classical-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0968_00_classical-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0968_00_classical-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0968_01_classical-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0968_01_classical-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46525,
+      "slug": "classical-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0969",
+      "presetNumber": 969,
+      "label": "Waltz dance spinning pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male classical waltz dance female spinning pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0969_waltz-dance-spinning-pose.pma",
+      "localScenePath": "scenes/0969_waltz-dance-spinning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0969_00_waltz-dance-spinning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0969_00_waltz-dance-spinning-pose.png",
+          "localThumbnailPath": "thumbnails/0969_00_waltz-dance-spinning-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0969_01_waltz-dance-spinning-pose.png",
+          "localThumbnailPath": "thumbnails/0969_01_waltz-dance-spinning-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46662,
+      "slug": "waltz-dance-spinning-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0970",
+      "presetNumber": 970,
+      "label": "Fitness warming up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is warming up and doing stretches",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0970_fitness-warming-up-pose.pma",
+      "localScenePath": "scenes/0970_fitness-warming-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0970_00_fitness-warming-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0970_00_fitness-warming-up-pose.png",
+          "localThumbnailPath": "thumbnails/0970_00_fitness-warming-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23442,
+      "slug": "fitness-warming-up-pose"
+    },
+    {
+      "id": "guo-scene-0971",
+      "presetNumber": 971,
+      "label": "Fitness stretches ground pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is warming up, sitting on the ground and doing stretches ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0971_fitness-stretches-ground-pose.pma",
+      "localScenePath": "scenes/0971_fitness-stretches-ground-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0971_00_fitness-stretches-ground-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0971_00_fitness-stretches-ground-pose.png",
+          "localThumbnailPath": "thumbnails/0971_00_fitness-stretches-ground-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23500,
+      "slug": "fitness-stretches-ground-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0972",
+      "presetNumber": 972,
+      "label": "Female split stretches pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is warming up, sitting on the ground and doing split and stretches",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0972_female-split-stretches-pose.pma",
+      "localScenePath": "scenes/0972_female-split-stretches-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0972_00_female-split-stretches-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0972_00_female-split-stretches-pose.png",
+          "localThumbnailPath": "thumbnails/0972_00_female-split-stretches-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23482,
+      "slug": "female-split-stretches-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0973",
+      "presetNumber": 973,
+      "label": "Female warming up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is warming up and doing stretches, looking up and raising right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0973_female-warming-up-pose.pma",
+      "localScenePath": "scenes/0973_female-warming-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0973_00_female-warming-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0973_00_female-warming-up-pose.png",
+          "localThumbnailPath": "thumbnails/0973_00_female-warming-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23575,
+      "slug": "female-warming-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0974",
+      "presetNumber": 974,
+      "label": "Fitness female jogging pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is jogging, looking ahead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0974_fitness-female-jogging-pose.pma",
+      "localScenePath": "scenes/0974_fitness-female-jogging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0974_00_fitness-female-jogging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0974_00_fitness-female-jogging-pose.png",
+          "localThumbnailPath": "thumbnails/0974_00_fitness-female-jogging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23475,
+      "slug": "fitness-female-jogging-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0975",
+      "presetNumber": 975,
+      "label": "Fittness female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is standing and posing, looking ahead and her left hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0975_fittness-female-standing-pose.pma",
+      "localScenePath": "scenes/0975_fittness-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0975_00_fittness-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0975_00_fittness-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0975_00_fittness-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23555,
+      "slug": "fittness-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0976",
+      "presetNumber": 976,
+      "label": "Female showing muscles pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is standing and posing, showing her muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0976_female-showing-muscles-pose.pma",
+      "localScenePath": "scenes/0976_female-showing-muscles-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0976_00_female-showing-muscles-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0976_00_female-showing-muscles-pose.png",
+          "localThumbnailPath": "thumbnails/0976_00_female-showing-muscles-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23390,
+      "slug": "female-showing-muscles-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0977",
+      "presetNumber": 977,
+      "label": "Female yoga pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is doing yoga, standing with raised arms and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0977_female-yoga-pose.pma",
+      "localScenePath": "scenes/0977_female-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0977_00_female-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0977_00_female-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/0977_00_female-yoga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23677,
+      "slug": "female-yoga-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0978",
+      "presetNumber": 978,
+      "label": "Female yoga ground pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is doing yoga on the ground, raising her right arm and left leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0978_female-yoga-ground-pose.pma",
+      "localScenePath": "scenes/0978_female-yoga-ground-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0978_00_female-yoga-ground-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0978_00_female-yoga-ground-pose.png",
+          "localThumbnailPath": "thumbnails/0978_00_female-yoga-ground-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23657,
+      "slug": "female-yoga-ground-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0979",
+      "presetNumber": 979,
+      "label": "Fitness side plank pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fitness female is doing side plank with her right hand raised and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0979_fitness-side-plank-pose.pma",
+      "localScenePath": "scenes/0979_fitness-side-plank-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0979_00_fitness-side-plank-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0979_00_fitness-side-plank-pose.png",
+          "localThumbnailPath": "thumbnails/0979_00_fitness-side-plank-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fitness",
+        "pose"
+      ],
+      "bytes": 23679,
+      "slug": "fitness-side-plank-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0980",
+      "presetNumber": 980,
+      "label": "Female pointing hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is standing and pointing with tho hands to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0980_female-pointing-hands-pose.pma",
+      "localScenePath": "scenes/0980_female-pointing-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0980_00_female-pointing-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0980_00_female-pointing-hands-pose.png",
+          "localThumbnailPath": "thumbnails/0980_00_female-pointing-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pointing",
+        "pose"
+      ],
+      "bytes": 23451,
+      "slug": "female-pointing-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0981",
+      "presetNumber": 981,
+      "label": "Male pointing left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, pointing and looking to the left with one hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0981_male-pointing-left-pose.pma",
+      "localScenePath": "scenes/0981_male-pointing-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0981_00_male-pointing-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0981_00_male-pointing-left-pose.png",
+          "localThumbnailPath": "thumbnails/0981_00_male-pointing-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pointing",
+        "pose"
+      ],
+      "bytes": 23723,
+      "slug": "male-pointing-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0982",
+      "presetNumber": 982,
+      "label": "Female pointing up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and pointing upwards with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0982_female-pointing-up-pose.pma",
+      "localScenePath": "scenes/0982_female-pointing-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0982_00_female-pointing-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0982_00_female-pointing-up-pose.png",
+          "localThumbnailPath": "thumbnails/0982_00_female-pointing-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pointing",
+        "pose"
+      ],
+      "bytes": 23440,
+      "slug": "female-pointing-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0983",
+      "presetNumber": 983,
+      "label": "Pointing get out pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Angry female is standing with her left hand on hip and pointing with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0983_pointing-get-out-pose.pma",
+      "localScenePath": "scenes/0983_pointing-get-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0983_00_pointing-get-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0983_00_pointing-get-out-pose.png",
+          "localThumbnailPath": "thumbnails/0983_00_pointing-get-out-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pointing",
+        "pose"
+      ],
+      "bytes": 23435,
+      "slug": "pointing-get-out-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0984",
+      "presetNumber": 984,
+      "label": "Female standing pointing left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with crossed legs and pointing to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0984_female-standing-pointing-left-pose.pma",
+      "localScenePath": "scenes/0984_female-standing-pointing-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0984_00_female-standing-pointing-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0984_00_female-standing-pointing-left-pose.png",
+          "localThumbnailPath": "thumbnails/0984_00_female-standing-pointing-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pointing",
+        "pose"
+      ],
+      "bytes": 23399,
+      "slug": "female-standing-pointing-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

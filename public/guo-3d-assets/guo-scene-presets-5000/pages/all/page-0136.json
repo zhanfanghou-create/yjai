@@ -1,0 +1,1146 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 135,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3241",
+      "presetNumber": 3241,
+      "label": "Male mermaid sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is sitting on a rock, leaning on his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3241_male-mermaid-sitting-pose.pma",
+      "localScenePath": "scenes/3241_male-mermaid-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3241_00_male-mermaid-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3241_00_male-mermaid-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3241_00_male-mermaid-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 37185,
+      "slug": "male-mermaid-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3242",
+      "presetNumber": 3242,
+      "label": "Mermaid floating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating and looking to the right, mermaid anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3242_mermaid-floating-pose.pma",
+      "localScenePath": "scenes/3242_mermaid-floating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3242_00_mermaid-floating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3242_00_mermaid-floating-pose.png",
+          "localThumbnailPath": "thumbnails/3242_00_mermaid-floating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 16364,
+      "slug": "mermaid-floating-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3243",
+      "presetNumber": 3243,
+      "label": "Male mermaid anatomy pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating, his arms are crossed and he is looking forward confidently",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3243_male-mermaid-anatomy-pose.pma",
+      "localScenePath": "scenes/3243_male-mermaid-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3243_00_male-mermaid-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3243_00_male-mermaid-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3243_00_male-mermaid-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 16351,
+      "slug": "male-mermaid-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3244",
+      "presetNumber": 3244,
+      "label": "Female mermaid sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock and looking to the left, mermaid anatomy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3244_female-mermaid-sitting-pose.pma",
+      "localScenePath": "scenes/3244_female-mermaid-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3244_00_female-mermaid-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3244_00_female-mermaid-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3244_00_female-mermaid-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 37247,
+      "slug": "female-mermaid-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3245",
+      "presetNumber": 3245,
+      "label": "Mermaid holding trident pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and holding a trident in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3245_mermaid-holding-trident-pose.pma",
+      "localScenePath": "scenes/3245_mermaid-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3245_00_mermaid-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3245_00_mermaid-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3245_00_mermaid-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 2062019,
+      "slug": "mermaid-holding-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3246",
+      "presetNumber": 3246,
+      "label": "Male mermaid trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and holding a trident in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3246_male-mermaid-trident-pose.pma",
+      "localScenePath": "scenes/3246_male-mermaid-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3246_00_male-mermaid-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3246_00_male-mermaid-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3246_00_male-mermaid-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 2062067,
+      "slug": "male-mermaid-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3247",
+      "presetNumber": 3247,
+      "label": "Female mermaid anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting, leaning on her hands and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3247_female-mermaid-anatomy-pose.pma",
+      "localScenePath": "scenes/3247_female-mermaid-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3247_00_female-mermaid-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3247_00_female-mermaid-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3247_00_female-mermaid-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 16499,
+      "slug": "female-mermaid-anatomy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3248",
+      "presetNumber": 3248,
+      "label": "Mermaid swimming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming and looking slightly to the right, mermaid anatomy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3248_mermaid-swimming-pose.pma",
+      "localScenePath": "scenes/3248_mermaid-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3248_00_mermaid-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3248_00_mermaid-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/3248_00_mermaid-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 16380,
+      "slug": "mermaid-swimming-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3249",
+      "presetNumber": 3249,
+      "label": "Male mermaid attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding a trident with both hands and ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3249_male-mermaid-attack-pose.pma",
+      "localScenePath": "scenes/3249_male-mermaid-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3249_00_male-mermaid-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3249_00_male-mermaid-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3249_00_male-mermaid-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 2062043,
+      "slug": "male-mermaid-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3250",
+      "presetNumber": 3250,
+      "label": "Head turning left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her right hand is on her hip, turning her head to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3250_head-turning-left-pose.pma",
+      "localScenePath": "scenes/3250_head-turning-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3250_00_head-turning-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3250_00_head-turning-left-pose.png",
+          "localThumbnailPath": "thumbnails/3250_00_head-turning-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23703,
+      "slug": "head-turning-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3251",
+      "presetNumber": 3251,
+      "label": "Female looking up head pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her arms crossed and looking up, head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3251_female-looking-up-head-pose.pma",
+      "localScenePath": "scenes/3251_female-looking-up-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3251_00_female-looking-up-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3251_00_female-looking-up-head-pose.png",
+          "localThumbnailPath": "thumbnails/3251_00_female-looking-up-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23534,
+      "slug": "female-looking-up-head-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3252",
+      "presetNumber": 3252,
+      "label": "Head turning right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her arms crossed and turning her head to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3252_head-turning-right-pose.pma",
+      "localScenePath": "scenes/3252_head-turning-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3252_00_head-turning-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3252_00_head-turning-right-pose.png",
+          "localThumbnailPath": "thumbnails/3252_00_head-turning-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23605,
+      "slug": "head-turning-right-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3253",
+      "presetNumber": 3253,
+      "label": "Head looking down pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her left arm and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3253_head-looking-down-pose.pma",
+      "localScenePath": "scenes/3253_head-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3253_00_head-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3253_00_head-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3253_00_head-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23613,
+      "slug": "head-looking-down-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3254",
+      "presetNumber": 3254,
+      "label": "Female left hand holding head pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding the back of her head with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3254_female-left-hand-holding-head-pose.pma",
+      "localScenePath": "scenes/3254_female-left-hand-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3254_00_female-left-hand-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3254_00_female-left-hand-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/3254_00_female-left-hand-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23659,
+      "slug": "female-left-hand-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3255",
+      "presetNumber": 3255,
+      "label": "Male head drawing reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, posing and looking forward, head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3255_male-head-drawing-reference.pma",
+      "localScenePath": "scenes/3255_male-head-drawing-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3255_00_male-head-drawing-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3255_00_male-head-drawing-reference.png",
+          "localThumbnailPath": "thumbnails/3255_00_male-head-drawing-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23717,
+      "slug": "male-head-drawing-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3256",
+      "presetNumber": 3256,
+      "label": "Male looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually and looking to the left, turning his head, male head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3256_male-looking-left-pose.pma",
+      "localScenePath": "scenes/3256_male-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3256_00_male-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3256_00_male-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3256_00_male-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23745,
+      "slug": "male-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3257",
+      "presetNumber": 3257,
+      "label": "Male standing  thinking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his chin and thinking, male head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3257_male-standing-thinking-pose.pma",
+      "localScenePath": "scenes/3257_male-standing-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3257_00_male-standing-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3257_00_male-standing-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/3257_00_male-standing-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23742,
+      "slug": "male-standing-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3258",
+      "presetNumber": 3258,
+      "label": "Male looking up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his hands on his hips and looking up, head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3258_male-looking-up-pose.pma",
+      "localScenePath": "scenes/3258_male-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3258_00_male-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3258_00_male-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3258_00_male-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23805,
+      "slug": "male-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3259",
+      "presetNumber": 3259,
+      "label": "Male right hand holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding the back of his head with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3259_male-right-hand-holding-head-pose.pma",
+      "localScenePath": "scenes/3259_male-right-hand-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3259_00_male-right-hand-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3259_00_male-right-hand-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/3259_00_male-right-hand-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23786,
+      "slug": "male-right-hand-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3260",
+      "presetNumber": 3260,
+      "label": "Muscular female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is standing, her hands are on her hips, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3260_muscular-female-standing-pose.pma",
+      "localScenePath": "scenes/3260_muscular-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3260_00_muscular-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3260_00_muscular-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3260_00_muscular-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24109,
+      "slug": "muscular-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3261",
+      "presetNumber": 3261,
+      "label": "Standing female holding hip pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, his left hand is on her hip, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3261_standing-female-holding-hip-pose.pma",
+      "localScenePath": "scenes/3261_standing-female-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3261_00_standing-female-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3261_00_standing-female-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/3261_00_standing-female-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27324,
+      "slug": "standing-female-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3262",
+      "presetNumber": 3262,
+      "label": "Skinny female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Skinny female is standing, holding her left arm, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3262_skinny-female-standing-pose.pma",
+      "localScenePath": "scenes/3262_skinny-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3262_00_skinny-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3262_00_skinny-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3262_00_skinny-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        47
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        47
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27537,
+      "slug": "skinny-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3263",
+      "presetNumber": 3263,
+      "label": "Teen fit female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Teen fit female is standing, making peace sign with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3263_teen-fit-female-standing-pose.pma",
+      "localScenePath": "scenes/3263_teen-fit-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3263_00_teen-fit-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3263_00_teen-fit-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3263_00_teen-fit-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        41
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        41
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23871,
+      "slug": "teen-fit-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3264",
+      "presetNumber": 3264,
+      "label": "Stocky female standing holding hip pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Stocky female is standing, her right hand is on her hip, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3264_stocky-female-standing-holding-hip-pose.pma",
+      "localScenePath": "scenes/3264_stocky-female-standing-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3264_00_stocky-female-standing-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3264_00_stocky-female-standing-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/3264_00_stocky-female-standing-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23925,
+      "slug": "stocky-female-standing-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

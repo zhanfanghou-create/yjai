@@ -1,0 +1,1152 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 62,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4511",
+      "presetNumber": 4511,
+      "label": "Villain angry jumping attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is angry, jumping and is about to attack, clenching his fists, villain attack pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4511_villain-angry-jumping-attack-pose.pma",
+      "localScenePath": "scenes/4511_villain-angry-jumping-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4511_00_villain-angry-jumping-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4511_00_villain-angry-jumping-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4511_00_villain-angry-jumping-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22975,
+      "slug": "villain-angry-jumping-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4512",
+      "presetNumber": 4512,
+      "label": "Villain holding rock pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is holding a rock with both hands and is about to throw it, villain attack pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4512_villain-holding-rock-pose.pma",
+      "localScenePath": "scenes/4512_villain-holding-rock-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4512_00_villain-holding-rock-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4512_00_villain-holding-rock-pose.png",
+          "localThumbnailPath": "thumbnails/4512_00_villain-holding-rock-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        179
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23514,
+      "slug": "villain-holding-rock-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4513",
+      "presetNumber": 4513,
+      "label": "Villain spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is standing and casting a spell with his right hand, villain pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4513_villain-spell-casting-pose.pma",
+      "localScenePath": "scenes/4513_villain-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4513_00_villain-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4513_00_villain-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/4513_00_villain-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22991,
+      "slug": "villain-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4514",
+      "presetNumber": 4514,
+      "label": "Villain punch attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is jumping and clenching his fists to attack, villain attack pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4514_villain-punch-attack-pose.pma",
+      "localScenePath": "scenes/4514_villain-punch-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4514_00_villain-punch-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4514_00_villain-punch-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4514_00_villain-punch-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22977,
+      "slug": "villain-punch-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4515",
+      "presetNumber": 4515,
+      "label": "Magician villain pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is standing, leaning on a stick and wearing a magician hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4515_magician-villain-pose.pma",
+      "localScenePath": "scenes/4515_magician-villain-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4515_00_magician-villain-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4515_00_magician-villain-pose.png",
+          "localThumbnailPath": "thumbnails/4515_00_magician-villain-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        161
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24056,
+      "slug": "magician-villain-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4516",
+      "presetNumber": 4516,
+      "label": "Magician villain casting spell pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Magician villain is standing and casting a spell with his hands, wearing a magician hat, villain pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4516_magician-villain-casting-spell-pose.pma",
+      "localScenePath": "scenes/4516_magician-villain-casting-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4516_00_magician-villain-casting-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4516_00_magician-villain-casting-spell-pose.png",
+          "localThumbnailPath": "thumbnails/4516_00_magician-villain-casting-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 12,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        161
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 29456,
+      "slug": "magician-villain-casting-spell-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4517",
+      "presetNumber": 4517,
+      "label": "Villain holding axes pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is standing and holding axes in his hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4517_villain-holding-axes-pose.pma",
+      "localScenePath": "scenes/4517_villain-holding-axes-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4517_00_villain-holding-axes-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4517_00_villain-holding-axes-pose.png",
+          "localThumbnailPath": "thumbnails/4517_00_villain-holding-axes-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23929,
+      "slug": "villain-holding-axes-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4518",
+      "presetNumber": 4518,
+      "label": "Villain kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is jumping and kicking with his left foot, villain pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4518_villain-kicking-pose.pma",
+      "localScenePath": "scenes/4518_villain-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4518_00_villain-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4518_00_villain-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/4518_00_villain-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22964,
+      "slug": "villain-kicking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4519",
+      "presetNumber": 4519,
+      "label": "Villain holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Villain is standing and holding katana in both hands, ready to attack pose, villain pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4519_villain-holding-katana-pose.pma",
+      "localScenePath": "scenes/4519_villain-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4519_00_villain-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4519_00_villain-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/4519_00_villain-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "villain",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24031,
+      "slug": "villain-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4525",
+      "presetNumber": 4525,
+      "label": "Sitting beginners reference pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground, holding his leg with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4525_sitting-beginners-reference-pose.pma",
+      "localScenePath": "scenes/4525_sitting-beginners-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4525_00_sitting-beginners-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4525_00_sitting-beginners-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4525_00_sitting-beginners-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "drawing",
+        "reference",
+        "for",
+        "beginners"
+      ],
+      "bytes": 20283,
+      "slug": "sitting-beginners-reference-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4527",
+      "presetNumber": 4527,
+      "label": "Crossed legs beginners reference pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting casually in the armchair with his legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4527_crossed-legs-beginners-reference-pose.pma",
+      "localScenePath": "scenes/4527_crossed-legs-beginners-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4527_00_crossed-legs-beginners-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4527_00_crossed-legs-beginners-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4527_00_crossed-legs-beginners-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "drawing",
+        "reference",
+        "for",
+        "beginners"
+      ],
+      "bytes": 20734,
+      "slug": "crossed-legs-beginners-reference-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4542",
+      "presetNumber": 4542,
+      "label": "Holding spears male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding spears in both hands, spear fighting stance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4542_holding-spears-male-pose.pma",
+      "localScenePath": "scenes/4542_holding-spears-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4542_00_holding-spears-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4542_00_holding-spears-male-pose.png",
+          "localThumbnailPath": "thumbnails/4542_00_holding-spears-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24415,
+      "slug": "holding-spears-male-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4543",
+      "presetNumber": 4543,
+      "label": "Holding spear landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, holding a spear in his left hand, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4543_holding-spear-landing-pose.pma",
+      "localScenePath": "scenes/4543_holding-spear-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4543_00_holding-spear-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4543_00_holding-spear-landing-pose.png",
+          "localThumbnailPath": "thumbnails/4543_00_holding-spear-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "spear",
+        "pose"
+      ],
+      "bytes": 23486,
+      "slug": "holding-spear-landing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4545",
+      "presetNumber": 4545,
+      "label": "Spear attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a spear with both hands, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4545_spear-attack-pose.pma",
+      "localScenePath": "scenes/4545_spear-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4545_00_spear-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4545_00_spear-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4545_00_spear-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "spear",
+        "pose"
+      ],
+      "bytes": 23474,
+      "slug": "spear-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4547",
+      "presetNumber": 4547,
+      "label": "Jumping spear attack male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a spear with both hands, is about to stab it into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4547_jumping-spear-attack-male-pose.pma",
+      "localScenePath": "scenes/4547_jumping-spear-attack-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4547_00_jumping-spear-attack-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4547_00_jumping-spear-attack-male-pose.png",
+          "localThumbnailPath": "thumbnails/4547_00_jumping-spear-attack-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "spear",
+        "pose"
+      ],
+      "bytes": 23500,
+      "slug": "jumping-spear-attack-male-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4548",
+      "presetNumber": 4548,
+      "label": "Male spear fighting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding double-sided spears in both hands, spear fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4548_male-spear-fighting-pose.pma",
+      "localScenePath": "scenes/4548_male-spear-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4548_00_male-spear-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4548_00_male-spear-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4548_00_male-spear-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "spear",
+        "pose"
+      ],
+      "bytes": 23976,
+      "slug": "male-spear-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4565",
+      "presetNumber": 4565,
+      "label": "Male huddled sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting huddled on the floor, holding his legs, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4565_male-huddled-sitting-pose.pma",
+      "localScenePath": "scenes/4565_male-huddled-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4565_00_male-huddled-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4565_00_male-huddled-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4565_00_male-huddled-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "huddled",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23024,
+      "slug": "male-huddled-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4566",
+      "presetNumber": 4566,
+      "label": "Sad male huddled sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad male is sitting huddled on the couch, hugging his knees, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4566_sad-male-huddled-sitting-pose.pma",
+      "localScenePath": "scenes/4566_sad-male-huddled-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4566_00_sad-male-huddled-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4566_00_sad-male-huddled-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4566_00_sad-male-huddled-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "huddled",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23459,
+      "slug": "sad-male-huddled-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4570",
+      "presetNumber": 4570,
+      "label": "Old man walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Old man is walking with a walking stick, old man drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4570_old-man-walking-pose.pma",
+      "localScenePath": "scenes/4570_old-man-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4570_00_old-man-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4570_00_old-man-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4570_00_old-man-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68926,
+      "slug": "old-man-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4571",
+      "presetNumber": 4571,
+      "label": "Old man sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Old man is sitting on a bench and leaning on his walking stick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4571_old-man-sitting-pose.pma",
+      "localScenePath": "scenes/4571_old-man-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4571_00_old-man-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4571_00_old-man-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4571_00_old-man-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 69329,
+      "slug": "old-man-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4572",
+      "presetNumber": 4572,
+      "label": "Old man standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Old man is standing and leaning on his walking stick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4572_old-man-standing-pose.pma",
+      "localScenePath": "scenes/4572_old-man-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4572_00_old-man-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4572_00_old-man-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4572_00_old-man-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68910,
+      "slug": "old-man-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4574",
+      "presetNumber": 4574,
+      "label": "Old man reading pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Old man is sitting in the armchair and reading, wearing glasses, his legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4574_old-man-reading-pose.pma",
+      "localScenePath": "scenes/4574_old-man-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4574_00_old-man-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4574_00_old-man-reading-pose.png",
+          "localThumbnailPath": "thumbnails/4574_00_old-man-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        98,
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24503,
+      "slug": "old-man-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4575",
+      "presetNumber": 4575,
+      "label": "Angry old man pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry old man is standing with his hands clenched and swinging his walking stick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4575_angry-old-man-pose.pma",
+      "localScenePath": "scenes/4575_angry-old-man-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4575_00_angry-old-man-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4575_00_angry-old-man-pose.png",
+          "localThumbnailPath": "thumbnails/4575_00_angry-old-man-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68857,
+      "slug": "angry-old-man-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4577",
+      "presetNumber": 4577,
+      "label": "Old man bending pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Old man is bending down to retrieve his dropped walking stick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4577_old-man-bending-pose.pma",
+      "localScenePath": "scenes/4577_old-man-bending-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4577_00_old-man-bending-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4577_00_old-man-bending-pose.png",
+          "localThumbnailPath": "thumbnails/4577_00_old-man-bending-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68931,
+      "slug": "old-man-bending-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

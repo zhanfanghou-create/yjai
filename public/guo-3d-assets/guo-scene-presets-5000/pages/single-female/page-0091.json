@@ -1,0 +1,1154 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 90,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4720",
+      "presetNumber": 4720,
+      "label": "Fairy sitting reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is sitting on a stump with her legs crossed and reading, surrounded by mushrooms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4720_fairy-sitting-reading-pose.pma",
+      "localScenePath": "scenes/4720_fairy-sitting-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4720_00_fairy-sitting-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4720_00_fairy-sitting-reading-pose.png",
+          "localThumbnailPath": "thumbnails/4720_00_fairy-sitting-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 23,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5,
+        80,
+        88,
+        361,
+        362,
+        414,
+        415,
+        417,
+        418,
+        419
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 31422,
+      "slug": "fairy-sitting-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4721",
+      "presetNumber": 4721,
+      "label": "Fairy tree sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is sitting on a tree branch, holding a fairy wand in her hand, lanterns are hanging from the tree branches",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4721_fairy-tree-sitting-pose.pma",
+      "localScenePath": "scenes/4721_fairy-tree-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4721_00_fairy-tree-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4721_00_fairy-tree-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4721_00_fairy-tree-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 21,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5,
+        88,
+        89,
+        200,
+        247,
+        409
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 31239,
+      "slug": "fairy-tree-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4722",
+      "presetNumber": 4722,
+      "label": "Fairy mushroom sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is sitting on a mushroom, holding a fairy wand in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4722_fairy-mushroom-sitting-pose.pma",
+      "localScenePath": "scenes/4722_fairy-mushroom-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4722_00_fairy-mushroom-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4722_00_fairy-mushroom-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4722_00_fairy-mushroom-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87,
+        89,
+        415,
+        416,
+        417
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 23632,
+      "slug": "fairy-mushroom-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4723",
+      "presetNumber": 4723,
+      "label": "Fairy holding scroll pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is walking and holding a scroll in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4723_fairy-holding-scroll-pose.pma",
+      "localScenePath": "scenes/4723_fairy-holding-scroll-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4723_00_fairy-holding-scroll-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4723_00_fairy-holding-scroll-pose.png",
+          "localThumbnailPath": "thumbnails/4723_00_fairy-holding-scroll-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87,
+        404
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 21168,
+      "slug": "fairy-holding-scroll-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4725",
+      "presetNumber": 4725,
+      "label": "Fairy cage pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is sitting in an open cage with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4725_fairy-cage-pose.pma",
+      "localScenePath": "scenes/4725_fairy-cage-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4725_00_fairy-cage-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4725_00_fairy-cage-pose.png",
+          "localThumbnailPath": "thumbnails/4725_00_fairy-cage-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        449,
+        450
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 21549,
+      "slug": "fairy-cage-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4726",
+      "presetNumber": 4726,
+      "label": "Fairy mushroom dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is dancing ballet on top of a mushroom",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4726_fairy-mushroom-dancing-pose.pma",
+      "localScenePath": "scenes/4726_fairy-mushroom-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4726_00_fairy-mushroom-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4726_00_fairy-mushroom-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/4726_00_fairy-mushroom-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        417
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 21282,
+      "slug": "fairy-mushroom-dancing-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4727",
+      "presetNumber": 4727,
+      "label": "Fairy fountain pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is resting on top of a fountain, watching something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4727_fairy-fountain-pose.pma",
+      "localScenePath": "scenes/4727_fairy-fountain-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4727_00_fairy-fountain-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4727_00_fairy-fountain-pose.png",
+          "localThumbnailPath": "thumbnails/4727_00_fairy-fountain-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        335
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 21135,
+      "slug": "fairy-fountain-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4728",
+      "presetNumber": 4728,
+      "label": "Sad fairy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy is sitting sadly on a well, hugging her knees and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4728_sad-fairy-pose.pma",
+      "localScenePath": "scenes/4728_sad-fairy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4728_00_sad-fairy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4728_00_sad-fairy-pose.png",
+          "localThumbnailPath": "thumbnails/4728_00_sad-fairy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        341
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fairy",
+        "drawing",
+        "ideas"
+      ],
+      "bytes": 21657,
+      "slug": "sad-fairy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4740",
+      "presetNumber": 4740,
+      "label": "Ice cream eating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a bar stool and eating ice cream with a spoon",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4740_ice-cream-eating-pose.pma",
+      "localScenePath": "scenes/4740_ice-cream-eating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4740_00_ice-cream-eating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4740_00_ice-cream-eating-pose.png",
+          "localThumbnailPath": "thumbnails/4740_00_ice-cream-eating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77,
+        123,
+        135
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "eating",
+        "poses"
+      ],
+      "bytes": 21571,
+      "slug": "ice-cream-eating-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4744",
+      "presetNumber": 4744,
+      "label": "Eating soup pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair at the table and eating soup with a spoon",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4744_eating-soup-pose.pma",
+      "localScenePath": "scenes/4744_eating-soup-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4744_00_eating-soup-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4744_00_eating-soup-pose.png",
+          "localThumbnailPath": "thumbnails/4744_00_eating-soup-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        126,
+        136,
+        137,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "eating",
+        "poses"
+      ],
+      "bytes": 22078,
+      "slug": "eating-soup-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4745",
+      "presetNumber": 4745,
+      "label": "Eating sushi pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing at the bar table and eating sushi with chopsticks",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4745_eating-sushi-pose.pma",
+      "localScenePath": "scenes/4745_eating-sushi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4745_00_eating-sushi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4745_00_eating-sushi-pose.png",
+          "localThumbnailPath": "thumbnails/4745_00_eating-sushi-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 13,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        3,
+        5,
+        75,
+        78,
+        126
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "eating",
+        "poses"
+      ],
+      "bytes": 26308,
+      "slug": "eating-sushi-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4749",
+      "presetNumber": 4749,
+      "label": "Female eating drinking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bench, eating noodles and drinking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4749_female-eating-drinking-pose.pma",
+      "localScenePath": "scenes/4749_female-eating-drinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4749_00_female-eating-drinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4749_00_female-eating-drinking-pose.png",
+          "localThumbnailPath": "thumbnails/4749_00_female-eating-drinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        75,
+        106,
+        123,
+        268
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "eating",
+        "poses"
+      ],
+      "bytes": 22093,
+      "slug": "female-eating-drinking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4750",
+      "presetNumber": 4750,
+      "label": "Female standing sideways pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her right arm and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4750_female-standing-sideways-pose.pma",
+      "localScenePath": "scenes/4750_female-standing-sideways-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4750_00_female-standing-sideways-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4750_00_female-standing-sideways-pose.png",
+          "localThumbnailPath": "thumbnails/4750_00_female-standing-sideways-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sideway",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20103,
+      "slug": "female-standing-sideways-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4751",
+      "presetNumber": 4751,
+      "label": "Female sitting sideways pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting casually on a chair, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4751_female-sitting-sideways-pose.pma",
+      "localScenePath": "scenes/4751_female-sitting-sideways-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4751_00_female-sitting-sideways-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4751_00_female-sitting-sideways-pose.png",
+          "localThumbnailPath": "thumbnails/4751_00_female-sitting-sideways-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sideway",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20620,
+      "slug": "female-sitting-sideways-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4752",
+      "presetNumber": 4752,
+      "label": "Female walking sideways pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, female sideway pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4752_female-walking-sideways-pose.pma",
+      "localScenePath": "scenes/4752_female-walking-sideways-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4752_00_female-walking-sideways-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4752_00_female-walking-sideways-pose.png",
+          "localThumbnailPath": "thumbnails/4752_00_female-walking-sideways-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sideway",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20178,
+      "slug": "female-walking-sideways-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4753",
+      "presetNumber": 4753,
+      "label": "Female reading sideways pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and holding a book in her right hand, reading, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4753_female-reading-sideways-pose.pma",
+      "localScenePath": "scenes/4753_female-reading-sideways-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4753_00_female-reading-sideways-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4753_00_female-reading-sideways-pose.png",
+          "localThumbnailPath": "thumbnails/4753_00_female-reading-sideways-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        362
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sideway",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21214,
+      "slug": "female-reading-sideways-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4754",
+      "presetNumber": 4754,
+      "label": "Female kneeling sideways pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, sitting on her knees, female sideways pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4754_female-kneeling-sideways-pose.pma",
+      "localScenePath": "scenes/4754_female-kneeling-sideways-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4754_00_female-kneeling-sideways-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4754_00_female-kneeling-sideways-pose.png",
+          "localThumbnailPath": "thumbnails/4754_00_female-kneeling-sideways-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sideway",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20192,
+      "slug": "female-kneeling-sideways-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4760",
+      "presetNumber": 4760,
+      "label": "Woman model walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female model walking pose, female is walking elegantly and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4760_woman-model-walking-pose.pma",
+      "localScenePath": "scenes/4760_woman-model-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4760_00_woman-model-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4760_00_woman-model-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4760_00_woman-model-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20290,
+      "slug": "woman-model-walking-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4761",
+      "presetNumber": 4761,
+      "label": "Woman sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sittiing on sitting on cushions, her hands are on her knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4761_woman-sitting-pose.pma",
+      "localScenePath": "scenes/4761_woman-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4761_00_woman-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4761_00_woman-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4761_00_woman-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 21286,
+      "slug": "woman-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4762",
+      "presetNumber": 4762,
+      "label": "Woman bar stool pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bar stool, holding her hip with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4762_woman-bar-stool-pose.pma",
+      "localScenePath": "scenes/4762_woman-bar-stool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4762_00_woman-bar-stool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4762_00_woman-bar-stool-pose.png",
+          "localThumbnailPath": "thumbnails/4762_00_woman-bar-stool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20859,
+      "slug": "woman-bar-stool-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4763",
+      "presetNumber": 4763,
+      "label": "Woman holding hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hips, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4763_woman-holding-hips-pose.pma",
+      "localScenePath": "scenes/4763_woman-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4763_00_woman-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4763_00_woman-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/4763_00_woman-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20214,
+      "slug": "woman-holding-hips-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4766",
+      "presetNumber": 4766,
+      "label": "Woman lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on the couch, leaning on her right hand, lying woman pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4766_woman-lying-pose.pma",
+      "localScenePath": "scenes/4766_woman-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4766_00_woman-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4766_00_woman-lying-pose.png",
+          "localThumbnailPath": "thumbnails/4766_00_woman-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20791,
+      "slug": "woman-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4767",
+      "presetNumber": 4767,
+      "label": "Woman standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4767_woman-standing-pose.pma",
+      "localScenePath": "scenes/4767_woman-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4767_00_woman-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4767_00_woman-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4767_00_woman-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20348,
+      "slug": "woman-standing-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4768",
+      "presetNumber": 4768,
+      "label": "Woman holding hip pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and holding her hip with her left hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4768_woman-holding-hip-pose.pma",
+      "localScenePath": "scenes/4768_woman-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4768_00_woman-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4768_00_woman-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/4768_00_woman-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20220,
+      "slug": "woman-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

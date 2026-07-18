@@ -1,0 +1,1141 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 185,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4441",
+      "presetNumber": 4441,
+      "label": "Female lighting cigarette pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are standing next to each other, one is lighting the other female's cigarette, holding lighter in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4441_female-lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/4441_female-lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4441_00_female-lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4441_00_female-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/4441_00_female-lighting-cigarette-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4441_01_female-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/4441_01_female-lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 371228,
+      "slug": "female-lighting-cigarette-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4442",
+      "presetNumber": 4442,
+      "label": "Male standing holding lighter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a lighter in his right hand, male holding lighter pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4442_male-standing-holding-lighter-pose.pma",
+      "localScenePath": "scenes/4442_male-standing-holding-lighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4442_00_male-standing-holding-lighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4442_00_male-standing-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4442_00_male-standing-holding-lighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 235830,
+      "slug": "male-standing-holding-lighter-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4443",
+      "presetNumber": 4443,
+      "label": "Female lighting candle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding a birthday cake and female is lighting the candle on it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4443_female-lighting-candle-pose.pma",
+      "localScenePath": "scenes/4443_female-lighting-candle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4443_00_female-lighting-candle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4443_00_female-lighting-candle-pose.png",
+          "localThumbnailPath": "thumbnails/4443_00_female-lighting-candle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4443_01_female-lighting-candle-pose.png",
+          "localThumbnailPath": "thumbnails/4443_01_female-lighting-candle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        127,
+        129,
+        132
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 259726,
+      "slug": "female-lighting-candle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4444",
+      "presetNumber": 4444,
+      "label": "Sad male holding lighter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad male is sitting on the bench lonely, holding a lighter and looking at its flame",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4444_sad-male-holding-lighter-pose.pma",
+      "localScenePath": "scenes/4444_sad-male-holding-lighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4444_00_sad-male-holding-lighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4444_00_sad-male-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4444_00_sad-male-holding-lighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 236233,
+      "slug": "sad-male-holding-lighter-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4445",
+      "presetNumber": 4445,
+      "label": "Armchair lighting cigarette pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting comfortably in the armchair, holding a lighter in his right hand, lighting his cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4445_armchair-lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/4445_armchair-lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4445_00_armchair-lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4445_00_armchair-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/4445_00_armchair-lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 349422,
+      "slug": "armchair-lighting-cigarette-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4446",
+      "presetNumber": 4446,
+      "label": "Concert holding lighter pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two excited females are having fun at a concert, holding lighters in the air, hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4446_concert-holding-lighter-pose.pma",
+      "localScenePath": "scenes/4446_concert-holding-lighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4446_00_concert-holding-lighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4446_00_concert-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4446_00_concert-holding-lighter-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4446_01_concert-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4446_01_concert-holding-lighter-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 471075,
+      "slug": "concert-holding-lighter-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4447",
+      "presetNumber": 4447,
+      "label": "Female sitting holding lighter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair, holding a lighter in her right hand, lighting her cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4447_female-sitting-holding-lighter-pose.pma",
+      "localScenePath": "scenes/4447_female-sitting-holding-lighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4447_00_female-sitting-holding-lighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4447_00_female-sitting-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4447_00_female-sitting-holding-lighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 349463,
+      "slug": "female-sitting-holding-lighter-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4448",
+      "presetNumber": 4448,
+      "label": "Holding lighter burning paper pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing at a cauldron, holding a lighter and a paper",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4448_holding-lighter-burning-paper-pose.pma",
+      "localScenePath": "scenes/4448_holding-lighter-burning-paper-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4448_00_holding-lighter-burning-paper-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4448_00_holding-lighter-burning-paper-pose.png",
+          "localThumbnailPath": "thumbnails/4448_00_holding-lighter-burning-paper-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        165
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 239522,
+      "slug": "holding-lighter-burning-paper-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4449",
+      "presetNumber": 4449,
+      "label": "Holding lighter smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are sitting in armchairs, one is lighting the other male's cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4449_holding-lighter-smoking-pose.pma",
+      "localScenePath": "scenes/4449_holding-lighter-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4449_00_holding-lighter-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4449_00_holding-lighter-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4449_00_holding-lighter-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4449_01_holding-lighter-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4449_01_holding-lighter-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 372036,
+      "slug": "holding-lighter-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4450",
+      "presetNumber": 4450,
+      "label": "Couple picnic pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the floor, looking at each other, having a picnic",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4450_couple-picnic-pose.pma",
+      "localScenePath": "scenes/4450_couple-picnic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4450_00_couple-picnic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4450_00_couple-picnic-pose.png",
+          "localThumbnailPath": "thumbnails/4450_00_couple-picnic-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4450_01_couple-picnic-pose.png",
+          "localThumbnailPath": "thumbnails/4450_01_couple-picnic-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 45191,
+      "slug": "couple-picnic-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4451",
+      "presetNumber": 4451,
+      "label": "Sad female floor sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is sitting on the floor, holding her arm and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4451_sad-female-floor-sitting-pose.pma",
+      "localScenePath": "scenes/4451_sad-female-floor-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4451_00_sad-female-floor-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4451_00_sad-female-floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4451_00_sad-female-floor-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 23059,
+      "slug": "sad-female-floor-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4452",
+      "presetNumber": 4452,
+      "label": "Happy females floor sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two happy females are sitting, kneeling on the floor and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4452_happy-females-floor-sitting-pose.pma",
+      "localScenePath": "scenes/4452_happy-females-floor-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4452_00_happy-females-floor-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4452_00_happy-females-floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4452_00_happy-females-floor-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4452_01_happy-females-floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4452_01_happy-females-floor-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 45343,
+      "slug": "happy-females-floor-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4453",
+      "presetNumber": 4453,
+      "label": "Floor sitting holding phone pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor and holding her phone in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4453_floor-sitting-holding-phone-pose.pma",
+      "localScenePath": "scenes/4453_floor-sitting-holding-phone-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4453_00_floor-sitting-holding-phone-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4453_00_floor-sitting-holding-phone-pose.png",
+          "localThumbnailPath": "thumbnails/4453_00_floor-sitting-holding-phone-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        102
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 23480,
+      "slug": "floor-sitting-holding-phone-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4454",
+      "presetNumber": 4454,
+      "label": "Floor sitting reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor and reading, holding a book with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4454_floor-sitting-reading-pose.pma",
+      "localScenePath": "scenes/4454_floor-sitting-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4454_00_floor-sitting-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4454_00_floor-sitting-reading-pose.png",
+          "localThumbnailPath": "thumbnails/4454_00_floor-sitting-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 24103,
+      "slug": "floor-sitting-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4455",
+      "presetNumber": 4455,
+      "label": "Floor sitting male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the floor casually, looking to the right, sitting on the floor pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4455_floor-sitting-male-pose.pma",
+      "localScenePath": "scenes/4455_floor-sitting-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4455_00_floor-sitting-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4455_00_floor-sitting-male-pose.png",
+          "localThumbnailPath": "thumbnails/4455_00_floor-sitting-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 23015,
+      "slug": "floor-sitting-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4456",
+      "presetNumber": 4456,
+      "label": "Floor sitting female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor casually, holding her hand, sitting on the floor pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4456_floor-sitting-female-pose.pma",
+      "localScenePath": "scenes/4456_floor-sitting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4456_00_floor-sitting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4456_00_floor-sitting-female-pose.png",
+          "localThumbnailPath": "thumbnails/4456_00_floor-sitting-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 23508,
+      "slug": "floor-sitting-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4457",
+      "presetNumber": 4457,
+      "label": "Floor sitting meditating female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor, kneeling, looking up and meditating",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4457_floor-sitting-meditating-female-pose.pma",
+      "localScenePath": "scenes/4457_floor-sitting-meditating-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4457_00_floor-sitting-meditating-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4457_00_floor-sitting-meditating-female-pose.png",
+          "localThumbnailPath": "thumbnails/4457_00_floor-sitting-meditating-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 23068,
+      "slug": "floor-sitting-meditating-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4458",
+      "presetNumber": 4458,
+      "label": "Floor sitting meditating male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the floor and meditating, male sitting on the floor pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4458_floor-sitting-meditating-male-pose.pma",
+      "localScenePath": "scenes/4458_floor-sitting-meditating-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4458_00_floor-sitting-meditating-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4458_00_floor-sitting-meditating-male-pose.png",
+          "localThumbnailPath": "thumbnails/4458_00_floor-sitting-meditating-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 23506,
+      "slug": "floor-sitting-meditating-male-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4459",
+      "presetNumber": 4459,
+      "label": "Floor sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the floor, looking at each other, sitting on the floor pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4459_floor-sitting-pose.pma",
+      "localScenePath": "scenes/4459_floor-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4459_00_floor-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4459_00_floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4459_00_floor-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4459_01_floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4459_01_floor-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 45115,
+      "slug": "floor-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4460",
+      "presetNumber": 4460,
+      "label": "Male desperately sad pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad male is crouching, kneeling, looking down and crying, holding his face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4460_male-desperately-sad-pose.pma",
+      "localScenePath": "scenes/4460_male-desperately-sad-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4460_00_male-desperately-sad-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4460_00_male-desperately-sad-pose.png",
+          "localThumbnailPath": "thumbnails/4460_00_male-desperately-sad-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 22952,
+      "slug": "male-desperately-sad-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4461",
+      "presetNumber": 4461,
+      "label": "Female happy walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is walking, jumping, spreading her arms, happy emotions drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4461_female-happy-walking-pose.pma",
+      "localScenePath": "scenes/4461_female-happy-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4461_00_female-happy-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4461_00_female-happy-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4461_00_female-happy-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23167,
+      "slug": "female-happy-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4462",
+      "presetNumber": 4462,
+      "label": "Male angry pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is standing, clenching his fists, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4462_male-angry-pose.pma",
+      "localScenePath": "scenes/4462_male-angry-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4462_00_male-angry-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4462_00_male-angry-pose.png",
+          "localThumbnailPath": "thumbnails/4462_00_male-angry-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 22966,
+      "slug": "male-angry-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4463",
+      "presetNumber": 4463,
+      "label": "Female desperately sad pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is sitting on the floor, holding her head with both hands, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4463_female-desperately-sad-pose.pma",
+      "localScenePath": "scenes/4463_female-desperately-sad-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4463_00_female-desperately-sad-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4463_00_female-desperately-sad-pose.png",
+          "localThumbnailPath": "thumbnails/4463_00_female-desperately-sad-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23441,
+      "slug": "female-desperately-sad-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4464",
+      "presetNumber": 4464,
+      "label": "Happy male celebrating pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is kneeling, raising his fists, looking up, celebrating something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4464_happy-male-celebrating-pose.pma",
+      "localScenePath": "scenes/4464_happy-male-celebrating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4464_00_happy-male-celebrating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4464_00_happy-male-celebrating-pose.png",
+          "localThumbnailPath": "thumbnails/4464_00_happy-male-celebrating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 22964,
+      "slug": "happy-male-celebrating-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

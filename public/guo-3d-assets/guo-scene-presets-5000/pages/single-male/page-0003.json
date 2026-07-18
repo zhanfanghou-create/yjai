@@ -1,0 +1,1037 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 2,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-0158",
+      "presetNumber": 158,
+      "label": "Male knockout pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is falling due to knockout",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0158_male-knockout-pose.pma",
+      "localScenePath": "scenes/0158_male-knockout-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0158_00_male-knockout-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0158_00_male-knockout-pose.png",
+          "localThumbnailPath": "thumbnails/0158_00_male-knockout-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "falling"
+      ],
+      "bytes": 23493,
+      "slug": "male-knockout-pose"
+    },
+    {
+      "id": "guo-scene-0162",
+      "presetNumber": 162,
+      "label": "Sad male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male holding his head in a sad pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0162_sad-male-pose.pma",
+      "localScenePath": "scenes/0162_sad-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0162_00_sad-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0162_00_sad-male-pose.png",
+          "localThumbnailPath": "thumbnails/0162_00_sad-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sad"
+      ],
+      "bytes": 23508,
+      "slug": "sad-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0166",
+      "presetNumber": 166,
+      "label": "Sad thinking male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad male is squatting and thinking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0166_sad-thinking-male-pose.pma",
+      "localScenePath": "scenes/0166_sad-thinking-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0166_00_sad-thinking-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0166_00_sad-thinking-male-pose.png",
+          "localThumbnailPath": "thumbnails/0166_00_sad-thinking-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sad"
+      ],
+      "bytes": 23471,
+      "slug": "sad-thinking-male-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0173",
+      "presetNumber": 173,
+      "label": "Male gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0173_male-gun-pose.pma",
+      "localScenePath": "scenes/0173_male-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0173_00_male-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0173_00_male-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0173_00_male-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        188
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23925,
+      "slug": "male-gun-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0174",
+      "presetNumber": 174,
+      "label": "Male standing holding gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Confident male with a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0174_male-standing-holding-gun-pose.pma",
+      "localScenePath": "scenes/0174_male-standing-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0174_00_male-standing-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0174_00_male-standing-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0174_00_male-standing-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        206
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23940,
+      "slug": "male-standing-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0176",
+      "presetNumber": 176,
+      "label": "Male aiming target pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is aiming his gun at the target pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0176_male-aiming-target-pose.pma",
+      "localScenePath": "scenes/0176_male-aiming-target-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0176_00_male-aiming-target-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0176_00_male-aiming-target-pose.png",
+          "localThumbnailPath": "thumbnails/0176_00_male-aiming-target-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        201
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23966,
+      "slug": "male-aiming-target-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0180",
+      "presetNumber": 180,
+      "label": "Samurai holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai is holding a katana with two hands pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0180_samurai-holding-katana-pose.pma",
+      "localScenePath": "scenes/0180_samurai-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0180_00_samurai-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0180_00_samurai-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/0180_00_samurai-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 23948,
+      "slug": "samurai-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0181",
+      "presetNumber": 181,
+      "label": "Samurai two katanas pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai with two katanas pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0181_samurai-two-katanas-pose.pma",
+      "localScenePath": "scenes/0181_samurai-two-katanas-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0181_00_samurai-two-katanas-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0181_00_samurai-two-katanas-pose.png",
+          "localThumbnailPath": "thumbnails/0181_00_samurai-two-katanas-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24425,
+      "slug": "samurai-two-katanas-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0182",
+      "presetNumber": 182,
+      "label": "Samurai katana sheath pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai is pulling his sword out of its sheath pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0182_samurai-katana-sheath-pose.pma",
+      "localScenePath": "scenes/0182_samurai-katana-sheath-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0182_00_samurai-katana-sheath-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0182_00_samurai-katana-sheath-pose.png",
+          "localThumbnailPath": "thumbnails/0182_00_samurai-katana-sheath-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24891,
+      "slug": "samurai-katana-sheath-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0183",
+      "presetNumber": 183,
+      "label": "Samurai ready fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai is ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0183_samurai-ready-fight-pose.pma",
+      "localScenePath": "scenes/0183_samurai-ready-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0183_00_samurai-ready-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0183_00_samurai-ready-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0183_00_samurai-ready-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24445,
+      "slug": "samurai-ready-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0185",
+      "presetNumber": 185,
+      "label": "Samurai katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai with a katana pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0185_samurai-katana-pose.pma",
+      "localScenePath": "scenes/0185_samurai-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0185_00_samurai-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0185_00_samurai-katana-pose.png",
+          "localThumbnailPath": "thumbnails/0185_00_samurai-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24039,
+      "slug": "samurai-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0187",
+      "presetNumber": 187,
+      "label": "Standing samurai pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Samurai is standing with a big sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0187_standing-samurai-pose.pma",
+      "localScenePath": "scenes/0187_standing-samurai-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0187_00_standing-samurai-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0187_00_standing-samurai-pose.png",
+          "localThumbnailPath": "thumbnails/0187_00_standing-samurai-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 23961,
+      "slug": "standing-samurai-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0189",
+      "presetNumber": 189,
+      "label": "Samurai inviting fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Samurai is inviting to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0189_samurai-inviting-fight-pose.pma",
+      "localScenePath": "scenes/0189_samurai-inviting-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0189_00_samurai-inviting-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0189_00_samurai-inviting-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0189_00_samurai-inviting-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 23947,
+      "slug": "samurai-inviting-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0190",
+      "presetNumber": 190,
+      "label": "Anime male sword stabbing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male stabs a sword into the ground pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0190_anime-male-sword-stabbing-pose.pma",
+      "localScenePath": "scenes/0190_anime-male-sword-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0190_00_anime-male-sword-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0190_00_anime-male-sword-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/0190_00_anime-male-sword-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        195
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword",
+        "anime"
+      ],
+      "bytes": 24027,
+      "slug": "anime-male-sword-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0194",
+      "presetNumber": 194,
+      "label": "Anime kneeling holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male on his knee with a sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0194_anime-kneeling-holding-sword-pose.pma",
+      "localScenePath": "scenes/0194_anime-kneeling-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0194_00_anime-kneeling-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0194_00_anime-kneeling-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/0194_00_anime-kneeling-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword",
+        "anime"
+      ],
+      "bytes": 24149,
+      "slug": "anime-kneeling-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0211",
+      "presetNumber": 211,
+      "label": "Dramatic male looking sky pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male looking at the sky dramatic pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0211_dramatic-male-looking-sky-pose.pma",
+      "localScenePath": "scenes/0211_dramatic-male-looking-sky-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0211_00_dramatic-male-looking-sky-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0211_00_dramatic-male-looking-sky-pose.png",
+          "localThumbnailPath": "thumbnails/0211_00_dramatic-male-looking-sky-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dramatic"
+      ],
+      "bytes": 23563,
+      "slug": "dramatic-male-looking-sky-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0212",
+      "presetNumber": 212,
+      "label": "Dramatically injured male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male holding his stomach acting dramatically pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0212_dramatically-injured-male-pose.pma",
+      "localScenePath": "scenes/0212_dramatically-injured-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0212_00_dramatically-injured-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0212_00_dramatically-injured-male-pose.png",
+          "localThumbnailPath": "thumbnails/0212_00_dramatically-injured-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dramatic"
+      ],
+      "bytes": 23501,
+      "slug": "dramatically-injured-male-pose"
+    },
+    {
+      "id": "guo-scene-0214",
+      "presetNumber": 214,
+      "label": "Male looking sky pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Dramatic male looking at he sky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0214_male-looking-sky-pose.pma",
+      "localScenePath": "scenes/0214_male-looking-sky-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0214_00_male-looking-sky-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0214_00_male-looking-sky-pose.png",
+          "localThumbnailPath": "thumbnails/0214_00_male-looking-sky-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dramatic"
+      ],
+      "bytes": 23709,
+      "slug": "male-looking-sky-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0232",
+      "presetNumber": 232,
+      "label": "Superman flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male superman flying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0232_superman-flying-pose.pma",
+      "localScenePath": "scenes/0232_superman-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0232_00_superman-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0232_00_superman-flying-pose.png",
+          "localThumbnailPath": "thumbnails/0232_00_superman-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "flying"
+      ],
+      "bytes": 23732,
+      "slug": "superman-flying-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0233",
+      "presetNumber": 233,
+      "label": "Male hovering pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumped out of the plane and hovering in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0233_male-hovering-pose.pma",
+      "localScenePath": "scenes/0233_male-hovering-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0233_00_male-hovering-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0233_00_male-hovering-pose.png",
+          "localThumbnailPath": "thumbnails/0233_00_male-hovering-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "flying"
+      ],
+      "bytes": 23617,
+      "slug": "male-hovering-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0237",
+      "presetNumber": 237,
+      "label": "Male flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumped from a height and is now flying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0237_male-flying-pose.pma",
+      "localScenePath": "scenes/0237_male-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0237_00_male-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0237_00_male-flying-pose.png",
+          "localThumbnailPath": "thumbnails/0237_00_male-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "flying"
+      ],
+      "bytes": 23752,
+      "slug": "male-flying-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0238",
+      "presetNumber": 238,
+      "label": "Male rising up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with his legs closed rising up into the sky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0238_male-rising-up-pose.pma",
+      "localScenePath": "scenes/0238_male-rising-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0238_00_male-rising-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0238_00_male-rising-up-pose.png",
+          "localThumbnailPath": "thumbnails/0238_00_male-rising-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "flying"
+      ],
+      "bytes": 23809,
+      "slug": "male-rising-up-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0267",
+      "presetNumber": 267,
+      "label": "Male aesthetic standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing aesthetically pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0267_male-aesthetic-standing-pose.pma",
+      "localScenePath": "scenes/0267_male-aesthetic-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0267_00_male-aesthetic-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0267_00_male-aesthetic-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0267_00_male-aesthetic-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "aesthetic"
+      ],
+      "bytes": 23747,
+      "slug": "male-aesthetic-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0268",
+      "presetNumber": 268,
+      "label": "Male aesthetic muscles pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male showing off his muscles pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0268_male-aesthetic-muscles-pose.pma",
+      "localScenePath": "scenes/0268_male-aesthetic-muscles-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0268_00_male-aesthetic-muscles-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0268_00_male-aesthetic-muscles-pose.png",
+          "localThumbnailPath": "thumbnails/0268_00_male-aesthetic-muscles-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "aesthetic"
+      ],
+      "bytes": 23498,
+      "slug": "male-aesthetic-muscles-pose"
+    }
+  ]
+}

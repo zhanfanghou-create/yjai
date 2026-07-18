@@ -1,0 +1,1234 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 2,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0049",
+      "presetNumber": 49,
+      "label": "Woman sitting on chair thumbs up",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Woman sitting on chair thumbs up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0049_woman-sitting-on-chair-thumbs-up.pma",
+      "localScenePath": "scenes/0049_woman-sitting-on-chair-thumbs-up.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0049_00_woman-sitting-on-chair-thumbs-up.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0049_00_woman-sitting-on-chair-thumbs-up.png",
+          "localThumbnailPath": "thumbnails/0049_00_woman-sitting-on-chair-thumbs-up.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 23471,
+      "slug": "woman-sitting-on-chair-thumbs-up",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0050",
+      "presetNumber": 50,
+      "label": "Man and woman sitting on caouch holding hands",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman sitting on caouch holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0050_man-and-woman-sitting-on-caouch-holding-hands.pma",
+      "localScenePath": "scenes/0050_man-and-woman-sitting-on-caouch-holding-hands.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0050_00_man-and-woman-sitting-on-caouch-holding-hands.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0050_00_man-and-woman-sitting-on-caouch-holding-hands.png",
+          "localThumbnailPath": "thumbnails/0050_00_man-and-woman-sitting-on-caouch-holding-hands.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0050_01_man-and-woman-sitting-on-caouch-holding-hands.png",
+          "localThumbnailPath": "thumbnails/0050_01_man-and-woman-sitting-on-caouch-holding-hands.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting",
+        "couple"
+      ],
+      "bytes": 45036,
+      "slug": "man-and-woman-sitting-on-caouch-holding-hands",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0051",
+      "presetNumber": 51,
+      "label": "Man sitting, knees bent to chest",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on floor knees bent to chest",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0051_man-sitting-knees-bent-to-chest.pma",
+      "localScenePath": "scenes/0051_man-sitting-knees-bent-to-chest.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0051_00_man-sitting-knees-bent-to-chest.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0051_00_man-sitting-knees-bent-to-chest.png",
+          "localThumbnailPath": "thumbnails/0051_00_man-sitting-knees-bent-to-chest.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 22772,
+      "slug": "man-sitting-knees-bent-to-chest",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0052",
+      "presetNumber": 52,
+      "label": "Women jump attack from barrels",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two women jump from barrels, one with bat, legs to the back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0052_women-jump-attack-from-barrels.pma",
+      "localScenePath": "scenes/0052_women-jump-attack-from-barrels.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0052_00_women-jump-attack-from-barrels.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0052_00_women-jump-attack-from-barrels.png",
+          "localThumbnailPath": "thumbnails/0052_00_women-jump-attack-from-barrels.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0052_01_women-jump-attack-from-barrels.png",
+          "localThumbnailPath": "thumbnails/0052_01_women-jump-attack-from-barrels.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        160,
+        218
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "fight",
+        "jump",
+        "grroup"
+      ],
+      "bytes": 46968,
+      "slug": "women-jump-attack-from-barrels",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0053",
+      "presetNumber": 53,
+      "label": "Man and woman stand low",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and women stand low and ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0053_man-and-woman-stand-low.pma",
+      "localScenePath": "scenes/0053_man-and-woman-stand-low.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0053_00_man-and-woman-stand-low.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0053_00_man-and-woman-stand-low.png",
+          "localThumbnailPath": "thumbnails/0053_00_man-and-woman-stand-low.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0053_01_man-and-woman-stand-low.png",
+          "localThumbnailPath": "thumbnails/0053_01_man-and-woman-stand-low.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 45282,
+      "slug": "man-and-woman-stand-low",
+      "tagIds": [
+        "group",
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "多人/群体",
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0054",
+      "presetNumber": 54,
+      "label": "Three women in ninja run",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three women in ninja run - one in straight, one to the right and one to the left. ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0054_three-women-in-ninja-run.pma",
+      "localScenePath": "scenes/0054_three-women-in-ninja-run.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0054_00_three-women-in-ninja-run.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0054_00_three-women-in-ninja-run.png",
+          "localThumbnailPath": "thumbnails/0054_00_three-women-in-ninja-run.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0054_01_three-women-in-ninja-run.png",
+          "localThumbnailPath": "thumbnails/0054_01_three-women-in-ninja-run.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0054_02_three-women-in-ninja-run.png",
+          "localThumbnailPath": "thumbnails/0054_02_three-women-in-ninja-run.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67454,
+      "slug": "three-women-in-ninja-run",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0055",
+      "presetNumber": 55,
+      "label": "Three bot in kicking jump",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three bot in kicking jump - one man, two women, one cube - two in the front in kick jump, one in the back in a jump. no field of view.",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0055_three-bot-in-kicking-jump.pma",
+      "localScenePath": "scenes/0055_three-bot-in-kicking-jump.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0055_00_three-bot-in-kicking-jump.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0055_00_three-bot-in-kicking-jump.png",
+          "localThumbnailPath": "thumbnails/0055_00_three-bot-in-kicking-jump.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0055_01_three-bot-in-kicking-jump.png",
+          "localThumbnailPath": "thumbnails/0055_01_three-bot-in-kicking-jump.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0055_02_three-bot-in-kicking-jump.png",
+          "localThumbnailPath": "thumbnails/0055_02_three-bot-in-kicking-jump.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67734,
+      "slug": "three-bot-in-kicking-jump",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0056",
+      "presetNumber": 56,
+      "label": "Three man bot in aerial evade",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three man bot in aerial evade - one in the air, two on the floor",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0056_three-man-bot-in-aerial-evade.pma",
+      "localScenePath": "scenes/0056_three-man-bot-in-aerial-evade.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0056_00_three-man-bot-in-aerial-evade.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0056_00_three-man-bot-in-aerial-evade.png",
+          "localThumbnailPath": "thumbnails/0056_00_three-man-bot-in-aerial-evade.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0056_01_three-man-bot-in-aerial-evade.png",
+          "localThumbnailPath": "thumbnails/0056_01_three-man-bot-in-aerial-evade.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0056_02_three-man-bot-in-aerial-evade.png",
+          "localThumbnailPath": "thumbnails/0056_02_three-man-bot-in-aerial-evade.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67200,
+      "slug": "three-man-bot-in-aerial-evade",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0057",
+      "presetNumber": 57,
+      "label": "Three bot climb a rope",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three bot, 1 woman, 2 men, climb the same rope - top angle view",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0057_three-bot-climb-a-rope.pma",
+      "localScenePath": "scenes/0057_three-bot-climb-a-rope.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0057_00_three-bot-climb-a-rope.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0057_00_three-bot-climb-a-rope.png",
+          "localThumbnailPath": "thumbnails/0057_00_three-bot-climb-a-rope.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0057_01_three-bot-climb-a-rope.png",
+          "localThumbnailPath": "thumbnails/0057_01_three-bot-climb-a-rope.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0057_02_three-bot-climb-a-rope.png",
+          "localThumbnailPath": "thumbnails/0057_02_three-bot-climb-a-rope.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67154,
+      "slug": "three-bot-climb-a-rope",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0058",
+      "presetNumber": 58,
+      "label": "Three bot in boxing stance",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three bot - 1 woman, 2 men - in boxing stance - centered view",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0058_three-bot-in-boxing-stance.pma",
+      "localScenePath": "scenes/0058_three-bot-in-boxing-stance.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0058_00_three-bot-in-boxing-stance.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0058_00_three-bot-in-boxing-stance.png",
+          "localThumbnailPath": "thumbnails/0058_00_three-bot-in-boxing-stance.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0058_01_three-bot-in-boxing-stance.png",
+          "localThumbnailPath": "thumbnails/0058_01_three-bot-in-boxing-stance.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0058_02_three-bot-in-boxing-stance.png",
+          "localThumbnailPath": "thumbnails/0058_02_three-bot-in-boxing-stance.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67541,
+      "slug": "three-bot-in-boxing-stance",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0059",
+      "presetNumber": 59,
+      "label": "Three women casting spells",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three bot women casting spells - one conjuring magic and two casting magic.",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0059_three-women-casting-spells.pma",
+      "localScenePath": "scenes/0059_three-women-casting-spells.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0059_00_three-women-casting-spells.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0059_00_three-women-casting-spells.png",
+          "localThumbnailPath": "thumbnails/0059_00_three-women-casting-spells.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0059_01_three-women-casting-spells.png",
+          "localThumbnailPath": "thumbnails/0059_01_three-women-casting-spells.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0059_02_three-women-casting-spells.png",
+          "localThumbnailPath": "thumbnails/0059_02_three-women-casting-spells.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67337,
+      "slug": "three-women-casting-spells",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0060",
+      "presetNumber": 60,
+      "label": "Two women slide",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two bot women slide - low angle view",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0060_two-women-slide.pma",
+      "localScenePath": "scenes/0060_two-women-slide.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0060_00_two-women-slide.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0060_00_two-women-slide.png",
+          "localThumbnailPath": "thumbnails/0060_00_two-women-slide.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0060_01_two-women-slide.png",
+          "localThumbnailPath": "thumbnails/0060_01_two-women-slide.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action"
+      ],
+      "bytes": 45248,
+      "slug": "two-women-slide",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0061",
+      "presetNumber": 61,
+      "label": "Three man jump ",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three men bot in stylish jumps or lands - low angle view",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0061_three-man-jump.pma",
+      "localScenePath": "scenes/0061_three-man-jump.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0061_00_three-man-jump.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0061_00_three-man-jump.png",
+          "localThumbnailPath": "thumbnails/0061_00_three-man-jump.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0061_01_three-man-jump.png",
+          "localThumbnailPath": "thumbnails/0061_01_three-man-jump.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0061_02_three-man-jump.png",
+          "localThumbnailPath": "thumbnails/0061_02_three-man-jump.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "action",
+        "group"
+      ],
+      "bytes": 67375,
+      "slug": "three-man-jump",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0062",
+      "presetNumber": 62,
+      "label": "Three women crying",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three anime women crying in 3 different positions. all standing. ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0062_three-women-crying.pma",
+      "localScenePath": "scenes/0062_three-women-crying.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0062_00_three-women-crying.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0062_00_three-women-crying.png",
+          "localThumbnailPath": "thumbnails/0062_00_three-women-crying.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0062_01_three-women-crying.png",
+          "localThumbnailPath": "thumbnails/0062_01_three-women-crying.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0062_02_three-women-crying.png",
+          "localThumbnailPath": "thumbnails/0062_02_three-women-crying.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "group"
+      ],
+      "bytes": 38447,
+      "slug": "three-women-crying",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0063",
+      "presetNumber": 63,
+      "label": "Woman standing, leaning forward and saying \"ok\"",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime refrence - a woman standing, leaning forward, one hand going to the back and the other one making an \"ok\" sign",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0063_woman-standing-leaning-forward-and-saying-ok.pma",
+      "localScenePath": "scenes/0063_woman-standing-leaning-forward-and-saying-ok.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0063_00_woman-standing-leaning-forward-and-saying-ok.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0063_00_woman-standing-leaning-forward-and-saying-ok.png",
+          "localThumbnailPath": "thumbnails/0063_00_woman-standing-leaning-forward-and-saying-ok.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime"
+      ],
+      "bytes": 13193,
+      "slug": "woman-standing-leaning-forward-and-saying-ok",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0064",
+      "presetNumber": 64,
+      "label": "Woman standing and saying hi",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime refrence - a woman standing, one leg to the back, one hand saying hi, low angle view",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0064_woman-standing-and-saying-hi.pma",
+      "localScenePath": "scenes/0064_woman-standing-and-saying-hi.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0064_00_woman-standing-and-saying-hi.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0064_00_woman-standing-and-saying-hi.png",
+          "localThumbnailPath": "thumbnails/0064_00_woman-standing-and-saying-hi.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime"
+      ],
+      "bytes": 13190,
+      "slug": "woman-standing-and-saying-hi",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0065",
+      "presetNumber": 65,
+      "label": "Three women lying on the back",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three women lying on the back in different poses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0065_three-women-lying-on-the-back.pma",
+      "localScenePath": "scenes/0065_three-women-lying-on-the-back.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0065_00_three-women-lying-on-the-back.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0065_00_three-women-lying-on-the-back.png",
+          "localThumbnailPath": "thumbnails/0065_00_three-women-lying-on-the-back.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0065_01_three-women-lying-on-the-back.png",
+          "localThumbnailPath": "thumbnails/0065_01_three-women-lying-on-the-back.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0065_02_three-women-lying-on-the-back.png",
+          "localThumbnailPath": "thumbnails/0065_02_three-women-lying-on-the-back.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "group"
+      ],
+      "bytes": 38540,
+      "slug": "three-women-lying-on-the-back",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0066",
+      "presetNumber": 66,
+      "label": "Two women lying on the floor",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two women lying on the floor - one the belly and one on the side.",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0066_two-women-lying-on-the-floor.pma",
+      "localScenePath": "scenes/0066_two-women-lying-on-the-floor.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0066_00_two-women-lying-on-the-floor.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0066_00_two-women-lying-on-the-floor.png",
+          "localThumbnailPath": "thumbnails/0066_00_two-women-lying-on-the-floor.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0066_01_two-women-lying-on-the-floor.png",
+          "localThumbnailPath": "thumbnails/0066_01_two-women-lying-on-the-floor.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime"
+      ],
+      "bytes": 25797,
+      "slug": "two-women-lying-on-the-floor",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0067",
+      "presetNumber": 67,
+      "label": "Three women sitting",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three women sitting in cute poses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0067_three-women-sitting.pma",
+      "localScenePath": "scenes/0067_three-women-sitting.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0067_00_three-women-sitting.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0067_00_three-women-sitting.png",
+          "localThumbnailPath": "thumbnails/0067_00_three-women-sitting.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0067_01_three-women-sitting.png",
+          "localThumbnailPath": "thumbnails/0067_01_three-women-sitting.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0067_02_three-women-sitting.png",
+          "localThumbnailPath": "thumbnails/0067_02_three-women-sitting.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "group"
+      ],
+      "bytes": 38485,
+      "slug": "three-women-sitting",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0068",
+      "presetNumber": 68,
+      "label": "Three women cheerleaders",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three women cheerleaders - two are jumping and one is standing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0068_three-women-cheerleaders.pma",
+      "localScenePath": "scenes/0068_three-women-cheerleaders.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0068_00_three-women-cheerleaders.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0068_00_three-women-cheerleaders.png",
+          "localThumbnailPath": "thumbnails/0068_00_three-women-cheerleaders.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0068_01_three-women-cheerleaders.png",
+          "localThumbnailPath": "thumbnails/0068_01_three-women-cheerleaders.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0068_02_three-women-cheerleaders.png",
+          "localThumbnailPath": "thumbnails/0068_02_three-women-cheerleaders.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "group"
+      ],
+      "bytes": 38527,
+      "slug": "three-women-cheerleaders",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0069",
+      "presetNumber": 69,
+      "label": "Standing woman ",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "A woman crossing her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0069_standing-woman.pma",
+      "localScenePath": "scenes/0069_standing-woman.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0069_00_standing-woman.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0069_00_standing-woman.png",
+          "localThumbnailPath": "thumbnails/0069_00_standing-woman.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime"
+      ],
+      "bytes": 13149,
+      "slug": "standing-woman",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0070",
+      "presetNumber": 70,
+      "label": "Three people in a crouching pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three realistic women in in a crouching pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0070_three-people-in-a-crouching-pose.pma",
+      "localScenePath": "scenes/0070_three-people-in-a-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0070_00_three-people-in-a-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0070_00_three-people-in-a-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/0070_00_three-people-in-a-crouching-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0070_01_three-people-in-a-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/0070_01_three-people-in-a-crouching-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0070_02_three-people-in-a-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/0070_02_three-people-in-a-crouching-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic",
+        "group"
+      ],
+      "bytes": 54032,
+      "slug": "three-people-in-a-crouching-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0071",
+      "presetNumber": 71,
+      "label": "Three people running",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three realistic models in different running position",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0071_three-people-running.pma",
+      "localScenePath": "scenes/0071_three-people-running.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0071_00_three-people-running.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0071_00_three-people-running.png",
+          "localThumbnailPath": "thumbnails/0071_00_three-people-running.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0071_01_three-people-running.png",
+          "localThumbnailPath": "thumbnails/0071_01_three-people-running.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0071_02_three-people-running.png",
+          "localThumbnailPath": "thumbnails/0071_02_three-people-running.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        40,
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic",
+        "group"
+      ],
+      "bytes": 50319,
+      "slug": "three-people-running",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0072",
+      "presetNumber": 72,
+      "label": "Jumping around an obstacle",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "A realistic model jumping around an obstacle",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0072_jumping-around-an-obstacle.pma",
+      "localScenePath": "scenes/0072_jumping-around-an-obstacle.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0072_00_jumping-around-an-obstacle.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0072_00_jumping-around-an-obstacle.png",
+          "localThumbnailPath": "thumbnails/0072_00_jumping-around-an-obstacle.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 15097,
+      "slug": "jumping-around-an-obstacle",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    }
+  ]
+}

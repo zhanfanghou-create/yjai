@@ -1,0 +1,1150 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 170,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4081",
+      "presetNumber": 4081,
+      "label": "Female holding hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, her hands are on her hips, plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4081_female-holding-hips-pose.pma",
+      "localScenePath": "scenes/4081_female-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4081_00_female-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4081_00_female-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/4081_00_female-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 23826,
+      "slug": "female-holding-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4082",
+      "presetNumber": 4082,
+      "label": "Female crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, her legs are crossed, holding her hip with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4082_female-crossed-legs-pose.pma",
+      "localScenePath": "scenes/4082_female-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4082_00_female-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4082_00_female-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4082_00_female-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 23930,
+      "slug": "female-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4083",
+      "presetNumber": 4083,
+      "label": "Plus size female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair, her legs are crossed, female plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4083_plus-size-female-sitting-pose.pma",
+      "localScenePath": "scenes/4083_plus-size-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4083_00_plus-size-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4083_00_plus-size-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4083_00_plus-size-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 24375,
+      "slug": "plus-size-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4084",
+      "presetNumber": 4084,
+      "label": "Plus size female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, female plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4084_plus-size-female-walking-pose.pma",
+      "localScenePath": "scenes/4084_plus-size-female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4084_00_plus-size-female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4084_00_plus-size-female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4084_00_plus-size-female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 23860,
+      "slug": "plus-size-female-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4085",
+      "presetNumber": 4085,
+      "label": "Plus size male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair, his arms are crossed, male plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4085_plus-size-male-sitting-pose.pma",
+      "localScenePath": "scenes/4085_plus-size-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4085_00_plus-size-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4085_00_plus-size-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4085_00_plus-size-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 24423,
+      "slug": "plus-size-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4086",
+      "presetNumber": 4086,
+      "label": "Couple standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and holding each other's hands, plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4086_couple-standing-pose.pma",
+      "localScenePath": "scenes/4086_couple-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4086_00_couple-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4086_00_couple-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4086_00_couple-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4086_01_couple-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4086_01_couple-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        45,
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45,
+        46
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 47065,
+      "slug": "couple-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4087",
+      "presetNumber": 4087,
+      "label": "Female holding umbrella pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding an umbrella in her right hand, female plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4087_female-holding-umbrella-pose.pma",
+      "localScenePath": "scenes/4087_female-holding-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4087_00_female-holding-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4087_00_female-holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/4087_00_female-holding-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 24430,
+      "slug": "female-holding-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4088",
+      "presetNumber": 4088,
+      "label": "Happy females pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and hugging each other, one of them is waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4088_happy-females-pose.pma",
+      "localScenePath": "scenes/4088_happy-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4088_00_happy-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4088_00_happy-females-pose.png",
+          "localThumbnailPath": "thumbnails/4088_00_happy-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4088_01_happy-females-pose.png",
+          "localThumbnailPath": "thumbnails/4088_01_happy-females-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 46932,
+      "slug": "happy-females-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4089",
+      "presetNumber": 4089,
+      "label": "Plus size female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and making a heart with her hands, female plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4089_plus-size-female-pose.pma",
+      "localScenePath": "scenes/4089_plus-size-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4089_00_plus-size-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4089_00_plus-size-female-pose.png",
+          "localThumbnailPath": "thumbnails/4089_00_plus-size-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 23877,
+      "slug": "plus-size-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4090",
+      "presetNumber": 4090,
+      "label": "Female holding guns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently and holding guns, female holding weapons pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4090_female-holding-guns-pose.pma",
+      "localScenePath": "scenes/4090_female-holding-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4090_00_female-holding-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4090_00_female-holding-guns-pose.png",
+          "localThumbnailPath": "thumbnails/4090_00_female-holding-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        169
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24473,
+      "slug": "female-holding-guns-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4091",
+      "presetNumber": 4091,
+      "label": "Male holding gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a gun with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4091_male-holding-gun-pose.pma",
+      "localScenePath": "scenes/4091_male-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4091_00_male-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4091_00_male-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/4091_00_male-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        138
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24230,
+      "slug": "male-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4092",
+      "presetNumber": 4092,
+      "label": "Female holding hammer pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a hammer in her right hand, her left hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4092_female-holding-hammer-pose.pma",
+      "localScenePath": "scenes/4092_female-holding-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4092_00_female-holding-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4092_00_female-holding-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/4092_00_female-holding-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24032,
+      "slug": "female-holding-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4093",
+      "presetNumber": 4093,
+      "label": "Male holding knives",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding guns, looking to the left, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4093_male-holding-knives.pma",
+      "localScenePath": "scenes/4093_male-holding-knives.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4093_00_male-holding-knives.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4093_00_male-holding-knives.png",
+          "localThumbnailPath": "thumbnails/4093_00_male-holding-knives.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24746,
+      "slug": "male-holding-knives",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4094",
+      "presetNumber": 4094,
+      "label": "Female holding spears pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding spears, female holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4094_female-holding-spears-pose.pma",
+      "localScenePath": "scenes/4094_female-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4094_00_female-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4094_00_female-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/4094_00_female-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24557,
+      "slug": "female-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4095",
+      "presetNumber": 4095,
+      "label": "Male holding swords pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding swords, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4095_male-holding-swords-pose.pma",
+      "localScenePath": "scenes/4095_male-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4095_00_male-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4095_00_male-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4095_00_male-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24780,
+      "slug": "male-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4096",
+      "presetNumber": 4096,
+      "label": "Female holding katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is holding katana, ready to attack, female holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4096_female-holding-katana-pose.pma",
+      "localScenePath": "scenes/4096_female-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4096_00_female-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4096_00_female-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/4096_00_female-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24496,
+      "slug": "female-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4097",
+      "presetNumber": 4097,
+      "label": "Male holding scythe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a scythe in his right hand, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4097_male-holding-scythe-pose.pma",
+      "localScenePath": "scenes/4097_male-holding-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4097_00_male-holding-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4097_00_male-holding-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/4097_00_male-holding-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24320,
+      "slug": "male-holding-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4098",
+      "presetNumber": 4098,
+      "label": "Female holding axe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding an axe in her right hand, female holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4098_female-holding-axe-pose.pma",
+      "localScenePath": "scenes/4098_female-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4098_00_female-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4098_00_female-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/4098_00_female-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24035,
+      "slug": "female-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4099",
+      "presetNumber": 4099,
+      "label": "Male holding spears pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding spears, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4099_male-holding-spears-pose.pma",
+      "localScenePath": "scenes/4099_male-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4099_00_male-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4099_00_male-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/4099_00_male-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24805,
+      "slug": "male-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4100",
+      "presetNumber": 4100,
+      "label": "Female chair sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair, her legs are crossed, she is holding her chin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4100_female-chair-sitting-pose.pma",
+      "localScenePath": "scenes/4100_female-chair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4100_00_female-chair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4100_00_female-chair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4100_00_female-chair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23977,
+      "slug": "female-chair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4101",
+      "presetNumber": 4101,
+      "label": "Male armchair sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair comfortably, his legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4101_male-armchair-sitting-pose.pma",
+      "localScenePath": "scenes/4101_male-armchair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4101_00_male-armchair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4101_00_male-armchair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4101_00_male-armchair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24271,
+      "slug": "male-armchair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4102",
+      "presetNumber": 4102,
+      "label": "Cute female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute female is sitting confidently, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4102_cute-female-sitting-pose.pma",
+      "localScenePath": "scenes/4102_cute-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4102_00_cute-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4102_00_cute-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4102_00_cute-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24122,
+      "slug": "cute-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4103",
+      "presetNumber": 4103,
+      "label": "Male couch sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch casually, holding his phone, sitting holding phone pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4103_male-couch-sitting-pose.pma",
+      "localScenePath": "scenes/4103_male-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4103_00_male-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4103_00_male-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4103_00_male-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        102,
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24798,
+      "slug": "male-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4104",
+      "presetNumber": 4104,
+      "label": "Female floor sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor, leaning on her right hand, female sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4104_female-floor-sitting-pose.pma",
+      "localScenePath": "scenes/4104_female-floor-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4104_00_female-floor-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4104_00_female-floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4104_00_female-floor-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23495,
+      "slug": "female-floor-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

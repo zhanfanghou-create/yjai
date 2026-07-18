@@ -1,0 +1,1132 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 31,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-1810",
+      "presetNumber": 1810,
+      "label": "Anime dynamic kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping and kicking in the air with her left foot, dynamic kicking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1810_anime-dynamic-kicking-pose.pma",
+      "localScenePath": "scenes/1810_anime-dynamic-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1810_00_anime-dynamic-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1810_00_anime-dynamic-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1810_00_anime-dynamic-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23873,
+      "slug": "anime-dynamic-kicking-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1811",
+      "presetNumber": 1811,
+      "label": "Anime spell casting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting and casting a spell with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1811_anime-spell-casting-pose.pma",
+      "localScenePath": "scenes/1811_anime-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1811_00_anime-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1811_00_anime-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1811_00_anime-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23906,
+      "slug": "anime-spell-casting-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1813",
+      "presetNumber": 1813,
+      "label": "Anime female attacking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping high and attacking with a katana, dynamic attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1813_anime-female-attacking-pose.pma",
+      "localScenePath": "scenes/1813_anime-female-attacking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1813_00_anime-female-attacking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1813_00_anime-female-attacking-pose.png",
+          "localThumbnailPath": "thumbnails/1813_00_anime-female-attacking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24474,
+      "slug": "anime-female-attacking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1814",
+      "presetNumber": 1814,
+      "label": "Falling anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is falling from a height, looking up and falling into the depths",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1814_falling-anime-female-pose.pma",
+      "localScenePath": "scenes/1814_falling-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1814_00_falling-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1814_00_falling-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/1814_00_falling-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23926,
+      "slug": "falling-anime-female-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1815",
+      "presetNumber": 1815,
+      "label": "Anime female shooting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping high and shooting her bow, dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1815_anime-female-shooting-pose.pma",
+      "localScenePath": "scenes/1815_anime-female-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1815_00_anime-female-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1815_00_anime-female-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/1815_00_anime-female-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24195,
+      "slug": "anime-female-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1818",
+      "presetNumber": 1818,
+      "label": "Anime dynamic stabbing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is stabbing with the katana in her right hand, dynamic stabbing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1818_anime-dynamic-stabbing-pose.pma",
+      "localScenePath": "scenes/1818_anime-dynamic-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1818_00_anime-dynamic-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1818_00_anime-dynamic-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/1818_00_anime-dynamic-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24075,
+      "slug": "anime-dynamic-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1819",
+      "presetNumber": 1819,
+      "label": "Anime dynamic landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is landing, balancing with her hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1819_anime-dynamic-landing-pose.pma",
+      "localScenePath": "scenes/1819_anime-dynamic-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1819_00_anime-dynamic-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1819_00_anime-dynamic-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1819_00_anime-dynamic-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23911,
+      "slug": "anime-dynamic-landing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1821",
+      "presetNumber": 1821,
+      "label": "Anime female running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is running, clenching her hands into fists, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1821_anime-female-running-pose.pma",
+      "localScenePath": "scenes/1821_anime-female-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1821_00_anime-female-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1821_00_anime-female-running-pose.png",
+          "localThumbnailPath": "thumbnails/1821_00_anime-female-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "running",
+        "pose"
+      ],
+      "bytes": 23807,
+      "slug": "anime-female-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1823",
+      "presetNumber": 1823,
+      "label": "Anime female running holding gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is running, holding a gun in her right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1823_anime-female-running-holding-gun-pose.pma",
+      "localScenePath": "scenes/1823_anime-female-running-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1823_00_anime-female-running-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1823_00_anime-female-running-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1823_00_anime-female-running-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "running",
+        "pose"
+      ],
+      "bytes": 24225,
+      "slug": "anime-female-running-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1824",
+      "presetNumber": 1824,
+      "label": "Running jumping obstacle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping over an obstacle while running fast, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1824_running-jumping-obstacle-pose.pma",
+      "localScenePath": "scenes/1824_running-jumping-obstacle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1824_00_running-jumping-obstacle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1824_00_running-jumping-obstacle-pose.png",
+          "localThumbnailPath": "thumbnails/1824_00_running-jumping-obstacle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "running",
+        "pose"
+      ],
+      "bytes": 23688,
+      "slug": "running-jumping-obstacle-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1829",
+      "presetNumber": 1829,
+      "label": "Anime confident running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is confidently running with firm hand gestures, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1829_anime-confident-running-pose.pma",
+      "localScenePath": "scenes/1829_anime-confident-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1829_00_anime-confident-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1829_00_anime-confident-running-pose.png",
+          "localThumbnailPath": "thumbnails/1829_00_anime-confident-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "running",
+        "pose"
+      ],
+      "bytes": 23962,
+      "slug": "anime-confident-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1830",
+      "presetNumber": 1830,
+      "label": "Anime female stretching right hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing. looking up and stretching her right hand high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1830_anime-female-stretching-right-hand-pose.pma",
+      "localScenePath": "scenes/1830_anime-female-stretching-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1830_00_anime-female-stretching-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1830_00_anime-female-stretching-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/1830_00_anime-female-stretching-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 23906,
+      "slug": "anime-female-stretching-right-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1831",
+      "presetNumber": 1831,
+      "label": "Anime stretching hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, stretching her hands forward and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1831_anime-stretching-hands-pose.pma",
+      "localScenePath": "scenes/1831_anime-stretching-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1831_00_anime-stretching-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1831_00_anime-stretching-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1831_00_anime-stretching-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 24091,
+      "slug": "anime-stretching-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1832",
+      "presetNumber": 1832,
+      "label": "Anime stretching arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing with her arms crossed, stretching and looking left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1832_anime-stretching-arms-pose.pma",
+      "localScenePath": "scenes/1832_anime-stretching-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1832_00_anime-stretching-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1832_00_anime-stretching-arms-pose.png",
+          "localThumbnailPath": "thumbnails/1832_00_anime-stretching-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 24021,
+      "slug": "anime-stretching-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1833",
+      "presetNumber": 1833,
+      "label": "Anime female stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing with her legs crossed and stretching her arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1833_anime-female-stretching-pose.pma",
+      "localScenePath": "scenes/1833_anime-female-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1833_00_anime-female-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1833_00_anime-female-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/1833_00_anime-female-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 24085,
+      "slug": "anime-female-stretching-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1834",
+      "presetNumber": 1834,
+      "label": "Full body stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is leaning to the left, looking up, stretching her arms and legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1834_full-body-stretching-pose.pma",
+      "localScenePath": "scenes/1834_full-body-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1834_00_full-body-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1834_00_full-body-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/1834_00_full-body-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 24048,
+      "slug": "full-body-stretching-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1835",
+      "presetNumber": 1835,
+      "label": "Stretching above head pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and stretching her arms above her head and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1835_stretching-above-head-pose.pma",
+      "localScenePath": "scenes/1835_stretching-above-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1835_00_stretching-above-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1835_00_stretching-above-head-pose.png",
+          "localThumbnailPath": "thumbnails/1835_00_stretching-above-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 23843,
+      "slug": "stretching-above-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1836",
+      "presetNumber": 1836,
+      "label": "Anime kneeling stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting, kneeling and stretching her arms above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1836_anime-kneeling-stretching-pose.pma",
+      "localScenePath": "scenes/1836_anime-kneeling-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1836_00_anime-kneeling-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1836_00_anime-kneeling-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/1836_00_anime-kneeling-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 23986,
+      "slug": "anime-kneeling-stretching-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1837",
+      "presetNumber": 1837,
+      "label": "Anime sitting stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting with straight legs and stretching, reaching her left leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1837_anime-sitting-stretching-pose.pma",
+      "localScenePath": "scenes/1837_anime-sitting-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1837_00_anime-sitting-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1837_00_anime-sitting-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/1837_00_anime-sitting-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 23813,
+      "slug": "anime-sitting-stretching-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1838",
+      "presetNumber": 1838,
+      "label": "Anime female split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and stretching her legs, doing a split in the air and holding her left leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1838_anime-female-split-pose.pma",
+      "localScenePath": "scenes/1838_anime-female-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1838_00_anime-female-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1838_00_anime-female-split-pose.png",
+          "localThumbnailPath": "thumbnails/1838_00_anime-female-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "stretching",
+        "pose"
+      ],
+      "bytes": 23701,
+      "slug": "anime-female-split-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1840",
+      "presetNumber": 1840,
+      "label": "Anime female falling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is falling in the air, looking up, reaching up with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1840_anime-female-falling-pose.pma",
+      "localScenePath": "scenes/1840_anime-female-falling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1840_00_anime-female-falling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1840_00_anime-female-falling-pose.png",
+          "localThumbnailPath": "thumbnails/1840_00_anime-female-falling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "falling",
+        "pose"
+      ],
+      "bytes": 23673,
+      "slug": "anime-female-falling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1841",
+      "presetNumber": 1841,
+      "label": "Anime unconscious falling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is falling unconsciously, floating in the air, her head bent back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1841_anime-unconscious-falling-pose.pma",
+      "localScenePath": "scenes/1841_anime-unconscious-falling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1841_00_anime-unconscious-falling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1841_00_anime-unconscious-falling-pose.png",
+          "localThumbnailPath": "thumbnails/1841_00_anime-unconscious-falling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "falling",
+        "pose"
+      ],
+      "bytes": 23873,
+      "slug": "anime-unconscious-falling-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1842",
+      "presetNumber": 1842,
+      "label": "Falling looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is falling, looking up, balancing with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1842_falling-looking-up-pose.pma",
+      "localScenePath": "scenes/1842_falling-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1842_00_falling-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1842_00_falling-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/1842_00_falling-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "falling",
+        "pose"
+      ],
+      "bytes": 23867,
+      "slug": "falling-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1843",
+      "presetNumber": 1843,
+      "label": "Anime falling backwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is falling backwards, floating in the air unconsciously",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1843_anime-falling-backwards-pose.pma",
+      "localScenePath": "scenes/1843_anime-falling-backwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1843_00_anime-falling-backwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1843_00_anime-falling-backwards-pose.png",
+          "localThumbnailPath": "thumbnails/1843_00_anime-falling-backwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "falling",
+        "pose"
+      ],
+      "bytes": 23815,
+      "slug": "anime-falling-backwards-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    }
+  ]
+}

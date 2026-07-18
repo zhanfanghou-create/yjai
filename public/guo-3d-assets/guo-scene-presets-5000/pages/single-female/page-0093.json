@@ -1,0 +1,1128 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 92,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4856",
+      "presetNumber": 4856,
+      "label": "Female dual blade pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is jumping, attacking, holding two swords, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4856_female-dual-blade-pose.pma",
+      "localScenePath": "scenes/4856_female-dual-blade-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4856_00_female-dual-blade-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4856_00_female-dual-blade-pose.png",
+          "localThumbnailPath": "thumbnails/4856_00_female-dual-blade-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blade",
+        "pose"
+      ],
+      "bytes": 21115,
+      "slug": "female-dual-blade-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4859",
+      "presetNumber": 4859,
+      "label": "Female dagger blade pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a dagger in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4859_female-dagger-blade-pose.pma",
+      "localScenePath": "scenes/4859_female-dagger-blade-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4859_00_female-dagger-blade-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4859_00_female-dagger-blade-pose.png",
+          "localThumbnailPath": "thumbnails/4859_00_female-dagger-blade-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blade",
+        "pose"
+      ],
+      "bytes": 20618,
+      "slug": "female-dagger-blade-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4860",
+      "presetNumber": 4860,
+      "label": "Window sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting at the window, hugging her knees, looking outside",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4860_window-sitting-pose.pma",
+      "localScenePath": "scenes/4860_window-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4860_00_window-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4860_00_window-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4860_00_window-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170,
+        297,
+        348
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 21588,
+      "slug": "window-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4861",
+      "presetNumber": 4861,
+      "label": "Resting chin sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the ground, hugging her knees, resting her chin on her hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4861_resting-chin-sitting-pose.pma",
+      "localScenePath": "scenes/4861_resting-chin-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4861_00_resting-chin-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4861_00_resting-chin-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4861_00_resting-chin-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 20145,
+      "slug": "resting-chin-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4863",
+      "presetNumber": 4863,
+      "label": "Outdoor sitting hugging knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting relaxed outside, hugging her knees, holding her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4863_outdoor-sitting-hugging-knees-pose.pma",
+      "localScenePath": "scenes/4863_outdoor-sitting-hugging-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4863_00_outdoor-sitting-hugging-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4863_00_outdoor-sitting-hugging-knees-pose.png",
+          "localThumbnailPath": "thumbnails/4863_00_outdoor-sitting-hugging-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170,
+        409,
+        414,
+        415
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 22473,
+      "slug": "outdoor-sitting-hugging-knees-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4865",
+      "presetNumber": 4865,
+      "label": "One knee up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "One knee pulled to chest, other leg stretched out, arms around the bent knee, female hugging knee pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4865_one-knee-up-pose.pma",
+      "localScenePath": "scenes/4865_one-knee-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4865_00_one-knee-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4865_00_one-knee-up-pose.png",
+          "localThumbnailPath": "thumbnails/4865_00_one-knee-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139,
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 21050,
+      "slug": "one-knee-up-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4867",
+      "presetNumber": 4867,
+      "label": "Hugging knees looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting relaxed, hugging her knees, looking up to the sky",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4867_hugging-knees-looking-up-pose.pma",
+      "localScenePath": "scenes/4867_hugging-knees-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4867_00_hugging-knees-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4867_00_hugging-knees-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/4867_00_hugging-knees-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 20592,
+      "slug": "hugging-knees-looking-up-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4868",
+      "presetNumber": 4868,
+      "label": "Sad sitting hugging knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is sitting, hugging her knees, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4868_sad-sitting-hugging-knees-pose.pma",
+      "localScenePath": "scenes/4868_sad-sitting-hugging-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4868_00_sad-sitting-hugging-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4868_00_sad-sitting-hugging-knees-pose.png",
+          "localThumbnailPath": "thumbnails/4868_00_sad-sitting-hugging-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 20647,
+      "slug": "sad-sitting-hugging-knees-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4869",
+      "presetNumber": 4869,
+      "label": "Crouching hugging knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is crouching, hugging her knees, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4869_crouching-hugging-knees-pose.pma",
+      "localScenePath": "scenes/4869_crouching-hugging-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4869_00_crouching-hugging-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4869_00_crouching-hugging-knees-pose.png",
+          "localThumbnailPath": "thumbnails/4869_00_crouching-hugging-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 20225,
+      "slug": "crouching-hugging-knees-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4870",
+      "presetNumber": 4870,
+      "label": "Female blocking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with arms crossed, blocking an attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4870_female-blocking-pose.pma",
+      "localScenePath": "scenes/4870_female-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4870_00_female-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4870_00_female-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4870_00_female-blocking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 20146,
+      "slug": "female-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4877",
+      "presetNumber": 4877,
+      "label": "Female shield blocking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, blocking with a shield, holding the shield in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4877_female-shield-blocking-pose.pma",
+      "localScenePath": "scenes/4877_female-shield-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4877_00_female-shield-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4877_00_female-shield-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4877_00_female-shield-blocking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 20643,
+      "slug": "female-shield-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4886",
+      "presetNumber": 4886,
+      "label": "Female crouching holding sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, holding the sword with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4886_female-crouching-holding-sword-pose.pma",
+      "localScenePath": "scenes/4886_female-crouching-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4886_00_female-crouching-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4886_00_female-crouching-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/4886_00_female-crouching-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20638,
+      "slug": "female-crouching-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4887",
+      "presetNumber": 4887,
+      "label": "Two handed sword swinging pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding the sword with both hands, swinging it diagonally",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4887_two-handed-sword-swinging-pose.pma",
+      "localScenePath": "scenes/4887_two-handed-sword-swinging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4887_00_two-handed-sword-swinging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4887_00_two-handed-sword-swinging-pose.png",
+          "localThumbnailPath": "thumbnails/4887_00_two-handed-sword-swinging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20608,
+      "slug": "two-handed-sword-swinging-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4888",
+      "presetNumber": 4888,
+      "label": "Two handed sword attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, attacking with a sword, female two handed sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4888_two-handed-sword-attack-pose.pma",
+      "localScenePath": "scenes/4888_two-handed-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4888_00_two-handed-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4888_00_two-handed-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4888_00_two-handed-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20593,
+      "slug": "two-handed-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4889",
+      "presetNumber": 4889,
+      "label": "Sword ground stabbing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is stabbing her sword into the ground with both hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4889_sword-ground-stabbing-pose.pma",
+      "localScenePath": "scenes/4889_sword-ground-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4889_00_sword-ground-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4889_00_sword-ground-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/4889_00_sword-ground-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20587,
+      "slug": "sword-ground-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4890",
+      "presetNumber": 4890,
+      "label": "Female shield defensive pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, defending herself with a shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4890_female-shield-defensive-pose.pma",
+      "localScenePath": "scenes/4890_female-shield-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4890_00_female-shield-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4890_00_female-shield-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4890_00_female-shield-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20694,
+      "slug": "female-shield-defensive-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4892",
+      "presetNumber": 4892,
+      "label": "Female defensive pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, protecting her head with her hands, defending herself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4892_female-defensive-pose.pma",
+      "localScenePath": "scenes/4892_female-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4892_00_female-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4892_00_female-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4892_00_female-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20183,
+      "slug": "female-defensive-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4897",
+      "presetNumber": 4897,
+      "label": "Female fighter defensive pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is holding a spear in her right hand, ready to defend herself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4897_female-fighter-defensive-pose.pma",
+      "localScenePath": "scenes/4897_female-fighter-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4897_00_female-fighter-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4897_00_female-fighter-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4897_00_female-fighter-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20429,
+      "slug": "female-fighter-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4898",
+      "presetNumber": 4898,
+      "label": "Female hands defending pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and defending herself with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4898_female-hands-defending-pose.pma",
+      "localScenePath": "scenes/4898_female-hands-defending-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4898_00_female-hands-defending-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4898_00_female-hands-defending-pose.png",
+          "localThumbnailPath": "thumbnails/4898_00_female-hands-defending-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20225,
+      "slug": "female-hands-defending-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4906",
+      "presetNumber": 4906,
+      "label": "Female wearing gas mask pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hip, wearing a gas mask",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4906_female-wearing-gas-mask-pose.pma",
+      "localScenePath": "scenes/4906_female-wearing-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4906_00_female-wearing-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4906_00_female-wearing-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4906_00_female-wearing-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        577
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20775,
+      "slug": "female-wearing-gas-mask-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4908",
+      "presetNumber": 4908,
+      "label": "Female crouching gas mask pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female soldier is crouching, holding a gun, wearing helmet and gas mask",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4908_female-crouching-gas-mask-pose.pma",
+      "localScenePath": "scenes/4908_female-crouching-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4908_00_female-crouching-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4908_00_female-crouching-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4908_00_female-crouching-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151,
+        199,
+        460
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21619,
+      "slug": "female-crouching-gas-mask-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4911",
+      "presetNumber": 4911,
+      "label": "Devil female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female devil is crouching, wearing horns and devil wings",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4911_devil-female-pose.pma",
+      "localScenePath": "scenes/4911_devil-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4911_00_devil-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4911_00_devil-female-pose.png",
+          "localThumbnailPath": "thumbnails/4911_00_devil-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        86,
+        462
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "horns",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21165,
+      "slug": "devil-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4912",
+      "presetNumber": 4912,
+      "label": "Touching horns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, wearing horns, touching it with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4912_touching-horns-pose.pma",
+      "localScenePath": "scenes/4912_touching-horns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4912_00_touching-horns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4912_00_touching-horns-pose.png",
+          "localThumbnailPath": "thumbnails/4912_00_touching-horns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        462
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "horns",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20616,
+      "slug": "touching-horns-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4913",
+      "presetNumber": 4913,
+      "label": "Female fighter wearing horns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is standing, holding spears, wearing horns, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4913_female-fighter-wearing-horns-pose.pma",
+      "localScenePath": "scenes/4913_female-fighter-wearing-horns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4913_00_female-fighter-wearing-horns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4913_00_female-fighter-wearing-horns-pose.png",
+          "localThumbnailPath": "thumbnails/4913_00_female-fighter-wearing-horns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175,
+        462
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "horns",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 22107,
+      "slug": "female-fighter-wearing-horns-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

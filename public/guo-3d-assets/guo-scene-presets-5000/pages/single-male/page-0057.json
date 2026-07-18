@@ -1,0 +1,1123 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 56,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4095",
+      "presetNumber": 4095,
+      "label": "Male holding swords pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding swords, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4095_male-holding-swords-pose.pma",
+      "localScenePath": "scenes/4095_male-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4095_00_male-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4095_00_male-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4095_00_male-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24780,
+      "slug": "male-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4097",
+      "presetNumber": 4097,
+      "label": "Male holding scythe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a scythe in his right hand, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4097_male-holding-scythe-pose.pma",
+      "localScenePath": "scenes/4097_male-holding-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4097_00_male-holding-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4097_00_male-holding-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/4097_00_male-holding-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24320,
+      "slug": "male-holding-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4099",
+      "presetNumber": 4099,
+      "label": "Male holding spears pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding spears, male holding weapon pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4099_male-holding-spears-pose.pma",
+      "localScenePath": "scenes/4099_male-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4099_00_male-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4099_00_male-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/4099_00_male-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "weapon",
+        "pose"
+      ],
+      "bytes": 24805,
+      "slug": "male-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4101",
+      "presetNumber": 4101,
+      "label": "Male armchair sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair comfortably, his legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4101_male-armchair-sitting-pose.pma",
+      "localScenePath": "scenes/4101_male-armchair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4101_00_male-armchair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4101_00_male-armchair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4101_00_male-armchair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24271,
+      "slug": "male-armchair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4103",
+      "presetNumber": 4103,
+      "label": "Male couch sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch casually, holding his phone, sitting holding phone pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4103_male-couch-sitting-pose.pma",
+      "localScenePath": "scenes/4103_male-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4103_00_male-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4103_00_male-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4103_00_male-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        102,
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24798,
+      "slug": "male-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4105",
+      "presetNumber": 4105,
+      "label": "Male sitting crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair casually, his legs are crossed, male chair sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4105_male-sitting-crossed-legs-pose.pma",
+      "localScenePath": "scenes/4105_male-sitting-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4105_00_male-sitting-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4105_00_male-sitting-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4105_00_male-sitting-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24238,
+      "slug": "male-sitting-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4111",
+      "presetNumber": 4111,
+      "label": "Male crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his arms and legs crossed, male legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4111_male-crossed-legs-pose.pma",
+      "localScenePath": "scenes/4111_male-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4111_00_male-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4111_00_male-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4111_00_male-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23704,
+      "slug": "male-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4113",
+      "presetNumber": 4113,
+      "label": "Male karate leg pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male karate legs pose, male legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4113_male-karate-leg-pose.pma",
+      "localScenePath": "scenes/4113_male-karate-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4113_00_male-karate-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4113_00_male-karate-leg-pose.png",
+          "localThumbnailPath": "thumbnails/4113_00_male-karate-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23819,
+      "slug": "male-karate-leg-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4116",
+      "presetNumber": 4116,
+      "label": "Male crouching legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, looking to the right, male legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4116_male-crouching-legs-pose.pma",
+      "localScenePath": "scenes/4116_male-crouching-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4116_00_male-crouching-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4116_00_male-crouching-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4116_00_male-crouching-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23737,
+      "slug": "male-crouching-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4119",
+      "presetNumber": 4119,
+      "label": "Male sitting legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground, his legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4119_male-sitting-legs-pose.pma",
+      "localScenePath": "scenes/4119_male-sitting-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4119_00_male-sitting-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4119_00_male-sitting-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4119_00_male-sitting-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23843,
+      "slug": "male-sitting-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4131",
+      "presetNumber": 4131,
+      "label": "Male standing curious pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, curious about something, holding his chin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4131_male-standing-curious-pose.pma",
+      "localScenePath": "scenes/4131_male-standing-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4131_00_male-standing-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4131_00_male-standing-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4131_00_male-standing-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23755,
+      "slug": "male-standing-curious-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4133",
+      "presetNumber": 4133,
+      "label": "Male sitting curious pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bench, his legs are crossed, he is curious about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4133_male-sitting-curious-pose.pma",
+      "localScenePath": "scenes/4133_male-sitting-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4133_00_male-sitting-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4133_00_male-sitting-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4133_00_male-sitting-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 24259,
+      "slug": "male-sitting-curious-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4135",
+      "presetNumber": 4135,
+      "label": "Confused curious male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confused, curious about something, spreading his arms, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4135_confused-curious-male-pose.pma",
+      "localScenePath": "scenes/4135_confused-curious-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4135_00_confused-curious-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4135_00_confused-curious-male-pose.png",
+          "localThumbnailPath": "thumbnails/4135_00_confused-curious-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23733,
+      "slug": "confused-curious-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4143",
+      "presetNumber": 4143,
+      "label": "Male praying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his hands folded at his forehead and praying, male praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4143_male-praying-pose.pma",
+      "localScenePath": "scenes/4143_male-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4143_00_male-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4143_00_male-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4143_00_male-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23958,
+      "slug": "male-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4145",
+      "presetNumber": 4145,
+      "label": "Male kneeling praying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling, praying and looking up, male praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4145_male-kneeling-praying-pose.pma",
+      "localScenePath": "scenes/4145_male-kneeling-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4145_00_male-kneeling-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4145_00_male-kneeling-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4145_00_male-kneeling-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23965,
+      "slug": "male-kneeling-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4149",
+      "presetNumber": 4149,
+      "label": "Male praying hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair and praying, male praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4149_male-praying-hands-pose.pma",
+      "localScenePath": "scenes/4149_male-praying-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4149_00_male-praying-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4149_00_male-praying-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4149_00_male-praying-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24809,
+      "slug": "male-praying-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4152",
+      "presetNumber": 4152,
+      "label": "Crossed arms looking back drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his his arms crossed and looking back over his right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4152_crossed-arms-looking-back-drawing-pose.pma",
+      "localScenePath": "scenes/4152_crossed-arms-looking-back-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4152_00_crossed-arms-looking-back-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4152_00_crossed-arms-looking-back-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/4152_00_crossed-arms-looking-back-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23763,
+      "slug": "crossed-arms-looking-back-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4153",
+      "presetNumber": 4153,
+      "label": "Crouching looking back drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and looking back over his right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4153_crouching-looking-back-drawing-pose.pma",
+      "localScenePath": "scenes/4153_crouching-looking-back-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4153_00_crouching-looking-back-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4153_00_crouching-looking-back-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/4153_00_crouching-looking-back-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23756,
+      "slug": "crouching-looking-back-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4154",
+      "presetNumber": 4154,
+      "label": "Walking looking back drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and looking back over his right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4154_walking-looking-back-drawing-pose.pma",
+      "localScenePath": "scenes/4154_walking-looking-back-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4154_00_walking-looking-back-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4154_00_walking-looking-back-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/4154_00_walking-looking-back-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23769,
+      "slug": "walking-looking-back-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4156",
+      "presetNumber": 4156,
+      "label": "Running looking back drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running and looking back over his left shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4156_running-looking-back-drawing-pose.pma",
+      "localScenePath": "scenes/4156_running-looking-back-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4156_00_running-looking-back-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4156_00_running-looking-back-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/4156_00_running-looking-back-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23755,
+      "slug": "running-looking-back-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4158",
+      "presetNumber": 4158,
+      "label": "Fighting looking back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a sword and looking back over his left shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4158_fighting-looking-back-pose.pma",
+      "localScenePath": "scenes/4158_fighting-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4158_00_fighting-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4158_00_fighting-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/4158_00_fighting-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24331,
+      "slug": "fighting-looking-back-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4170",
+      "presetNumber": 4170,
+      "label": "Male sitting clasped hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair with his hands clasped, thinking, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4170_male-sitting-clasped-hands-pose.pma",
+      "localScenePath": "scenes/4170_male-sitting-clasped-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4170_00_male-sitting-clasped-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4170_00_male-sitting-clasped-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4170_00_male-sitting-clasped-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "clasped",
+        "hands",
+        "reference"
+      ],
+      "bytes": 24367,
+      "slug": "male-sitting-clasped-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4172",
+      "presetNumber": 4172,
+      "label": "Holding head clasped hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is clasping his hands on his head, thinking about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4172_holding-head-clasped-hands-pose.pma",
+      "localScenePath": "scenes/4172_holding-head-clasped-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4172_00_holding-head-clasped-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4172_00_holding-head-clasped-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4172_00_holding-head-clasped-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "clasped",
+        "hands",
+        "reference"
+      ],
+      "bytes": 23870,
+      "slug": "holding-head-clasped-hands-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4175",
+      "presetNumber": 4175,
+      "label": "Thinking clasped hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting at the table with his hands clasped, thinking about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4175_thinking-clasped-hands-pose.pma",
+      "localScenePath": "scenes/4175_thinking-clasped-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4175_00_thinking-clasped-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4175_00_thinking-clasped-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4175_00_thinking-clasped-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "clasped",
+        "hands",
+        "reference"
+      ],
+      "bytes": 24753,
+      "slug": "thinking-clasped-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

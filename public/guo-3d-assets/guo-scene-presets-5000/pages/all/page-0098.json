@@ -1,0 +1,1077 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 97,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2329",
+      "presetNumber": 2329,
+      "label": "Anime head kick pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is kicking the other male in the head who is holding a knife in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2329_anime-head-kick-pose.pma",
+      "localScenePath": "scenes/2329_anime-head-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2329_00_anime-head-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2329_00_anime-head-kick-pose.png",
+          "localThumbnailPath": "thumbnails/2329_00_anime-head-kick-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2329_01_anime-head-kick-pose.png",
+          "localThumbnailPath": "thumbnails/2329_01_anime-head-kick-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kicking",
+        "pose"
+      ],
+      "bytes": 47083,
+      "slug": "anime-head-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2330",
+      "presetNumber": 2330,
+      "label": "Anime sexy sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting on the bar stool and posing sexy, anime sexy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2330_anime-sexy-sitting-pose.pma",
+      "localScenePath": "scenes/2330_anime-sexy-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2330_00_anime-sexy-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2330_00_anime-sexy-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2330_00_anime-sexy-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 24050,
+      "slug": "anime-sexy-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2331",
+      "presetNumber": 2331,
+      "label": "Anime sexy kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling and posing sexy, resting her right hand on her thigh",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2331_anime-sexy-kneeling-pose.pma",
+      "localScenePath": "scenes/2331_anime-sexy-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2331_00_anime-sexy-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2331_00_anime-sexy-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2331_00_anime-sexy-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23833,
+      "slug": "anime-sexy-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2332",
+      "presetNumber": 2332,
+      "label": "Anime sexy lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying and posing sexy, leaning on her elbow and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2332_anime-sexy-lying-pose.pma",
+      "localScenePath": "scenes/2332_anime-sexy-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2332_00_anime-sexy-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2332_00_anime-sexy-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2332_00_anime-sexy-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23716,
+      "slug": "anime-sexy-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2333",
+      "presetNumber": 2333,
+      "label": "Anime female sexy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying and posing sexy, leaning on her left hand and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2333_anime-female-sexy-pose.pma",
+      "localScenePath": "scenes/2333_anime-female-sexy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2333_00_anime-female-sexy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2333_00_anime-female-sexy-pose.png",
+          "localThumbnailPath": "thumbnails/2333_00_anime-female-sexy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23663,
+      "slug": "anime-female-sexy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2334",
+      "presetNumber": 2334,
+      "label": "Anime sexy leaning pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is leaning against the wall and posing sexy, looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2334_anime-sexy-leaning-pose.pma",
+      "localScenePath": "scenes/2334_anime-sexy-leaning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2334_00_anime-sexy-leaning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2334_00_anime-sexy-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/2334_00_anime-sexy-leaning-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 24171,
+      "slug": "anime-sexy-leaning-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2335",
+      "presetNumber": 2335,
+      "label": "Anime sexy standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and posing sexy, raising her left hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2335_anime-sexy-standing-pose.pma",
+      "localScenePath": "scenes/2335_anime-sexy-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2335_00_anime-sexy-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2335_00_anime-sexy-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2335_00_anime-sexy-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23648,
+      "slug": "anime-sexy-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2336",
+      "presetNumber": 2336,
+      "label": "Sexy kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling, posing sexy, raising her hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2336_sexy-kneeling-pose.pma",
+      "localScenePath": "scenes/2336_sexy-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2336_00_sexy-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2336_00_sexy-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2336_00_sexy-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23782,
+      "slug": "sexy-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2337",
+      "presetNumber": 2337,
+      "label": "Sexy sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting on the chair and posing sexy, showing her legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2337_sexy-sitting-pose.pma",
+      "localScenePath": "scenes/2337_sexy-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2337_00_sexy-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2337_00_sexy-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2337_00_sexy-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 24195,
+      "slug": "sexy-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2338",
+      "presetNumber": 2338,
+      "label": "Looking back anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and looking back, posing sexy, anime sexy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2338_looking-back-anime-female-pose.pma",
+      "localScenePath": "scenes/2338_looking-back-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2338_00_looking-back-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2338_00_looking-back-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/2338_00_looking-back-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23642,
+      "slug": "looking-back-anime-female-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2339",
+      "presetNumber": 2339,
+      "label": "Anime sexy walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is walking, her hands are on her hips and looking forward, posing sexy",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2339_anime-sexy-walking-pose.pma",
+      "localScenePath": "scenes/2339_anime-sexy-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2339_00_anime-sexy-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2339_00_anime-sexy-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2339_00_anime-sexy-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sexy",
+        "pose"
+      ],
+      "bytes": 23634,
+      "slug": "anime-sexy-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2340",
+      "presetNumber": 2340,
+      "label": "Hitting falling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "A male is hitting another male, who is falling backwards in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2340_hitting-falling-pose.pma",
+      "localScenePath": "scenes/2340_hitting-falling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2340_00_hitting-falling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2340_00_hitting-falling-pose.png",
+          "localThumbnailPath": "thumbnails/2340_00_hitting-falling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2340_01_hitting-falling-pose.png",
+          "localThumbnailPath": "thumbnails/2340_01_hitting-falling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 46636,
+      "slug": "hitting-falling-pose"
+    },
+    {
+      "id": "guo-scene-2341",
+      "presetNumber": 2341,
+      "label": "Female karate hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is hitting with her right hand in a karate move, her hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2341_female-karate-hitting-pose.pma",
+      "localScenePath": "scenes/2341_female-karate-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2341_00_female-karate-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2341_00_female-karate-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2341_00_female-karate-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23464,
+      "slug": "female-karate-hitting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2342",
+      "presetNumber": 2342,
+      "label": "Female boxing hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in boxing stance and hitting with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2342_female-boxing-hitting-pose.pma",
+      "localScenePath": "scenes/2342_female-boxing-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2342_00_female-boxing-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2342_00_female-boxing-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2342_00_female-boxing-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23465,
+      "slug": "female-boxing-hitting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2343",
+      "presetNumber": 2343,
+      "label": "Male boxing hitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing in boxing stance and hitting with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2343_male-boxing-hitting-pose.pma",
+      "localScenePath": "scenes/2343_male-boxing-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2343_00_male-boxing-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2343_00_male-boxing-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2343_00_male-boxing-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23657,
+      "slug": "male-boxing-hitting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2344",
+      "presetNumber": 2344,
+      "label": "Kneeling hitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is kneeling and punching, hitting another male, male fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2344_kneeling-hitting-pose.pma",
+      "localScenePath": "scenes/2344_kneeling-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2344_00_kneeling-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2344_00_kneeling-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2344_00_kneeling-hitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2344_01_kneeling-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2344_01_kneeling-hitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 46605,
+      "slug": "kneeling-hitting-pose"
+    },
+    {
+      "id": "guo-scene-2345",
+      "presetNumber": 2345,
+      "label": "Jumping hitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps in the air and is about to kick and punch, hit someone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2345_jumping-hitting-pose.pma",
+      "localScenePath": "scenes/2345_jumping-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2345_00_jumping-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2345_00_jumping-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2345_00_jumping-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23451,
+      "slug": "jumping-hitting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2346",
+      "presetNumber": 2346,
+      "label": "Female pan hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to hit someone with a frying pan, female hitting with pan pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2346_female-pan-hitting-pose.pma",
+      "localScenePath": "scenes/2346_female-pan-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2346_00_female-pan-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2346_00_female-pan-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2346_00_female-pan-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        122
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23969,
+      "slug": "female-pan-hitting-pose"
+    },
+    {
+      "id": "guo-scene-2347",
+      "presetNumber": 2347,
+      "label": "Baseball bat hitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is about to hit with a baseball bat, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2347_baseball-bat-hitting-pose.pma",
+      "localScenePath": "scenes/2347_baseball-bat-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2347_00_baseball-bat-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2347_00_baseball-bat-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2347_00_baseball-bat-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 24161,
+      "slug": "baseball-bat-hitting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2348",
+      "presetNumber": 2348,
+      "label": "Volleyball hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to hit a volleyball with her right hand while jumping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2348_volleyball-hitting-pose.pma",
+      "localScenePath": "scenes/2348_volleyball-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2348_00_volleyball-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2348_00_volleyball-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2348_00_volleyball-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 24069,
+      "slug": "volleyball-hitting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2349",
+      "presetNumber": 2349,
+      "label": "Hitting ground pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is hitting the ground, crouching and punching with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2349_hitting-ground-pose.pma",
+      "localScenePath": "scenes/2349_hitting-ground-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2349_00_hitting-ground-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2349_00_hitting-ground-pose.png",
+          "localThumbnailPath": "thumbnails/2349_00_hitting-ground-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23610,
+      "slug": "hitting-ground-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2350",
+      "presetNumber": 2350,
+      "label": "Male meditation pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male traditional meditation pose, sitting with the knees on the ground and the feet tucked in close to the body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2350_male-meditation-pose.pma",
+      "localScenePath": "scenes/2350_male-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2350_00_male-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2350_00_male-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2350_00_male-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24196,
+      "slug": "male-meditation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2351",
+      "presetNumber": 2351,
+      "label": "Female meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female traditional meditation pose, sitting with the knees on the ground and the feet tucked in close to the body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2351_female-meditation-pose.pma",
+      "localScenePath": "scenes/2351_female-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2351_00_female-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2351_00_female-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2351_00_female-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23933,
+      "slug": "female-meditation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2352",
+      "presetNumber": 2352,
+      "label": "Female kneeling meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is meditating, kneeling and resting her hands on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2352_female-kneeling-meditation-pose.pma",
+      "localScenePath": "scenes/2352_female-kneeling-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2352_00_female-kneeling-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2352_00_female-kneeling-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2352_00_female-kneeling-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23489,
+      "slug": "female-kneeling-meditation-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

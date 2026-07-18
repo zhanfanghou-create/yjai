@@ -1,0 +1,1149 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 203,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4873",
+      "presetNumber": 4873,
+      "label": "Hand blocking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are boxing, female is blocking a punch with her hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4873_hand-blocking-pose.pma",
+      "localScenePath": "scenes/4873_hand-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4873_00_hand-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4873_00_hand-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4873_00_hand-blocking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4873_01_hand-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4873_01_hand-blocking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 39409,
+      "slug": "hand-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4874",
+      "presetNumber": 4874,
+      "label": "Elbow blocking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting, one of them is blocking an attack with his elbow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4874_elbow-blocking-pose.pma",
+      "localScenePath": "scenes/4874_elbow-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4874_00_elbow-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4874_00_elbow-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4874_00_elbow-blocking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4874_01_elbow-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4874_01_elbow-blocking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 39216,
+      "slug": "elbow-blocking-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4875",
+      "presetNumber": 4875,
+      "label": "Leg blocking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting, one of them is blocking a kicking attack with his shin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4875_leg-blocking-pose.pma",
+      "localScenePath": "scenes/4875_leg-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4875_00_leg-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4875_00_leg-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4875_00_leg-blocking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4875_01_leg-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4875_01_leg-blocking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 39192,
+      "slug": "leg-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4876",
+      "presetNumber": 4876,
+      "label": "Sword blocking pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female and male are fighting with swords, male is blocking an attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4876_sword-blocking-pose.pma",
+      "localScenePath": "scenes/4876_sword-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4876_00_sword-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4876_00_sword-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4876_00_sword-blocking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4876_01_sword-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4876_01_sword-blocking-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 59884,
+      "slug": "sword-blocking-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4877",
+      "presetNumber": 4877,
+      "label": "Female shield blocking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, blocking with a shield, holding the shield in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4877_female-shield-blocking-pose.pma",
+      "localScenePath": "scenes/4877_female-shield-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4877_00_female-shield-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4877_00_female-shield-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4877_00_female-shield-blocking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 20643,
+      "slug": "female-shield-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4878",
+      "presetNumber": 4878,
+      "label": "Wizard staff blocking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is attacking with a sword, wizard is blocking the attack with his wizard staff",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4878_wizard-staff-blocking-pose.pma",
+      "localScenePath": "scenes/4878_wizard-staff-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4878_00_wizard-staff-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4878_00_wizard-staff-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4878_00_wizard-staff-blocking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4878_01_wizard-staff-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4878_01_wizard-staff-blocking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        114,
+        236
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 40692,
+      "slug": "wizard-staff-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4879",
+      "presetNumber": 4879,
+      "label": "Spear blocking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are fighting with spears, spear blocking pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4879_spear-blocking-pose.pma",
+      "localScenePath": "scenes/4879_spear-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4879_00_spear-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4879_00_spear-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4879_00_spear-blocking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4879_01_spear-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4879_01_spear-blocking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 40342,
+      "slug": "spear-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4880",
+      "presetNumber": 4880,
+      "label": "Overhead strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is raising the sword high with both hands, ready to swing down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4880_overhead-strike-pose.pma",
+      "localScenePath": "scenes/4880_overhead-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4880_00_overhead-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4880_00_overhead-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4880_00_overhead-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20544,
+      "slug": "overhead-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4881",
+      "presetNumber": 4881,
+      "label": "Sword guarded stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands diagonally across his body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4881_sword-guarded-stance-pose.pma",
+      "localScenePath": "scenes/4881_sword-guarded-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4881_00_sword-guarded-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4881_00_sword-guarded-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4881_00_sword-guarded-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20564,
+      "slug": "sword-guarded-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4882",
+      "presetNumber": 4882,
+      "label": "Sword thrust forward pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands and pushing forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4882_sword-thrust-forward-pose.pma",
+      "localScenePath": "scenes/4882_sword-thrust-forward-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4882_00_sword-thrust-forward-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4882_00_sword-thrust-forward-pose.png",
+          "localThumbnailPath": "thumbnails/4882_00_sword-thrust-forward-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20530,
+      "slug": "sword-thrust-forward-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4883",
+      "presetNumber": 4883,
+      "label": "Mid-swing slash pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands, swinging it diagonally",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4883_mid-swing-slash-pose.pma",
+      "localScenePath": "scenes/4883_mid-swing-slash-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4883_00_mid-swing-slash-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4883_00_mid-swing-slash-pose.png",
+          "localThumbnailPath": "thumbnails/4883_00_mid-swing-slash-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20547,
+      "slug": "mid-swing-slash-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4884",
+      "presetNumber": 4884,
+      "label": "Sword heroic raise pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands and lifting it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4884_sword-heroic-raise-pose.pma",
+      "localScenePath": "scenes/4884_sword-heroic-raise-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4884_00_sword-heroic-raise-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4884_00_sword-heroic-raise-pose.png",
+          "localThumbnailPath": "thumbnails/4884_00_sword-heroic-raise-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20546,
+      "slug": "sword-heroic-raise-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4885",
+      "presetNumber": 4885,
+      "label": "Sword victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding the sword which is planted tip-down into the ground, he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4885_sword-victory-pose.pma",
+      "localScenePath": "scenes/4885_sword-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4885_00_sword-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4885_00_sword-victory-pose.png",
+          "localThumbnailPath": "thumbnails/4885_00_sword-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20501,
+      "slug": "sword-victory-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4886",
+      "presetNumber": 4886,
+      "label": "Female crouching holding sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, holding the sword with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4886_female-crouching-holding-sword-pose.pma",
+      "localScenePath": "scenes/4886_female-crouching-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4886_00_female-crouching-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4886_00_female-crouching-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/4886_00_female-crouching-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20638,
+      "slug": "female-crouching-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4887",
+      "presetNumber": 4887,
+      "label": "Two handed sword swinging pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding the sword with both hands, swinging it diagonally",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4887_two-handed-sword-swinging-pose.pma",
+      "localScenePath": "scenes/4887_two-handed-sword-swinging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4887_00_two-handed-sword-swinging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4887_00_two-handed-sword-swinging-pose.png",
+          "localThumbnailPath": "thumbnails/4887_00_two-handed-sword-swinging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20608,
+      "slug": "two-handed-sword-swinging-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4888",
+      "presetNumber": 4888,
+      "label": "Two handed sword attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, attacking with a sword, female two handed sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4888_two-handed-sword-attack-pose.pma",
+      "localScenePath": "scenes/4888_two-handed-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4888_00_two-handed-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4888_00_two-handed-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4888_00_two-handed-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20593,
+      "slug": "two-handed-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4889",
+      "presetNumber": 4889,
+      "label": "Sword ground stabbing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is stabbing her sword into the ground with both hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4889_sword-ground-stabbing-pose.pma",
+      "localScenePath": "scenes/4889_sword-ground-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4889_00_sword-ground-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4889_00_sword-ground-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/4889_00_sword-ground-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20587,
+      "slug": "sword-ground-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4890",
+      "presetNumber": 4890,
+      "label": "Female shield defensive pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, defending herself with a shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4890_female-shield-defensive-pose.pma",
+      "localScenePath": "scenes/4890_female-shield-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4890_00_female-shield-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4890_00_female-shield-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4890_00_female-shield-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20694,
+      "slug": "female-shield-defensive-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4891",
+      "presetNumber": 4891,
+      "label": "Male fighter defensive pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on the rocks, defending himself with his shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4891_male-fighter-defensive-pose.pma",
+      "localScenePath": "scenes/4891_male-fighter-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4891_00_male-fighter-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4891_00_male-fighter-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4891_00_male-fighter-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162,
+        363,
+        364
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 21955,
+      "slug": "male-fighter-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4892",
+      "presetNumber": 4892,
+      "label": "Female defensive pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, protecting her head with her hands, defending herself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4892_female-defensive-pose.pma",
+      "localScenePath": "scenes/4892_female-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4892_00_female-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4892_00_female-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4892_00_female-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20183,
+      "slug": "female-defensive-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4893",
+      "presetNumber": 4893,
+      "label": "Shield defensive pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a sword and a shield, standing in defensive stance",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4893_shield-defensive-pose.pma",
+      "localScenePath": "scenes/4893_shield-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4893_00_shield-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4893_00_shield-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4893_00_shield-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 21088,
+      "slug": "shield-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4894",
+      "presetNumber": 4894,
+      "label": "Sword defensive pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding a sword with both hands, defending himself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4894_sword-defensive-pose.pma",
+      "localScenePath": "scenes/4894_sword-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4894_00_sword-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4894_00_sword-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4894_00_sword-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20621,
+      "slug": "sword-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4895",
+      "presetNumber": 4895,
+      "label": "Male fighter defending female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing, holding a spear and a shield, defending the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4895_male-fighter-defending-female-pose.pma",
+      "localScenePath": "scenes/4895_male-fighter-defending-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4895_00_male-fighter-defending-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4895_00_male-fighter-defending-female-pose.png",
+          "localThumbnailPath": "thumbnails/4895_00_male-fighter-defending-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4895_01_male-fighter-defending-female-pose.png",
+          "localThumbnailPath": "thumbnails/4895_01_male-fighter-defending-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        156,
+        174
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 40671,
+      "slug": "male-fighter-defending-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4896",
+      "presetNumber": 4896,
+      "label": "Male defending female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is crouching, holding a shield, defending the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4896_male-defending-female-pose.pma",
+      "localScenePath": "scenes/4896_male-defending-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4896_00_male-defending-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4896_00_male-defending-female-pose.png",
+          "localThumbnailPath": "thumbnails/4896_00_male-defending-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4896_01_male-defending-female-pose.png",
+          "localThumbnailPath": "thumbnails/4896_01_male-defending-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 39911,
+      "slug": "male-defending-female-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    }
+  ]
+}

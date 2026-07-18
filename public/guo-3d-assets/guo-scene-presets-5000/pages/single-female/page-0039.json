@@ -1,0 +1,1122 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 38,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-2152",
+      "presetNumber": 2152,
+      "label": "Dagger attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking, jumping high and holding dagger in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2152_dagger-attack-pose.pma",
+      "localScenePath": "scenes/2152_dagger-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2152_00_dagger-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2152_00_dagger-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2152_00_dagger-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24456,
+      "slug": "dagger-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2155",
+      "presetNumber": 2155,
+      "label": "Stabbing attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to attack, holding a dagger in her right hand and jumping high to stab it into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2155_stabbing-attack-pose.pma",
+      "localScenePath": "scenes/2155_stabbing-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2155_00_stabbing-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2155_00_stabbing-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2155_00_stabbing-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24402,
+      "slug": "stabbing-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2156",
+      "presetNumber": 2156,
+      "label": "Female katana attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to attack, jumping high and raising the katana with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2156_female-katana-attack-pose.pma",
+      "localScenePath": "scenes/2156_female-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2156_00_female-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2156_00_female-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2156_00_female-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23543,
+      "slug": "female-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2160",
+      "presetNumber": 2160,
+      "label": "Anime squatting kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, half kneeling and looking forward, her hands are on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2160_anime-squatting-kneeling-pose.pma",
+      "localScenePath": "scenes/2160_anime-squatting-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2160_00_anime-squatting-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2160_00_anime-squatting-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2160_00_anime-squatting-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23871,
+      "slug": "anime-squatting-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2161",
+      "presetNumber": 2161,
+      "label": "Squatting hugging knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, hugging her knees with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2161_squatting-hugging-knees-pose.pma",
+      "localScenePath": "scenes/2161_squatting-hugging-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2161_00_squatting-hugging-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2161_00_squatting-hugging-knees-pose.png",
+          "localThumbnailPath": "thumbnails/2161_00_squatting-hugging-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23978,
+      "slug": "squatting-hugging-knees-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2162",
+      "presetNumber": 2162,
+      "label": "Squatting anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, resting her hands on her knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2162_squatting-anime-female-pose.pma",
+      "localScenePath": "scenes/2162_squatting-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2162_00_squatting-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2162_00_squatting-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/2162_00_squatting-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23909,
+      "slug": "squatting-anime-female-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2163",
+      "presetNumber": 2163,
+      "label": "Squatting looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, resting her hands on her knees and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2163_squatting-looking-right-pose.pma",
+      "localScenePath": "scenes/2163_squatting-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2163_00_squatting-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2163_00_squatting-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/2163_00_squatting-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23827,
+      "slug": "squatting-looking-right-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2164",
+      "presetNumber": 2164,
+      "label": "Squatting looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, resting her hands on her knees and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2164_squatting-looking-left-pose.pma",
+      "localScenePath": "scenes/2164_squatting-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2164_00_squatting-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2164_00_squatting-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/2164_00_squatting-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23748,
+      "slug": "squatting-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2165",
+      "presetNumber": 2165,
+      "label": "Hand hip squatting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, her right hand is on her knee, left hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2165_hand-hip-squatting-pose.pma",
+      "localScenePath": "scenes/2165_hand-hip-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2165_00_hand-hip-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2165_00_hand-hip-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2165_00_hand-hip-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23550,
+      "slug": "hand-hip-squatting-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2166",
+      "presetNumber": 2166,
+      "label": "Female squatting aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting and aiming her gun with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2166_female-squatting-aiming-pose.pma",
+      "localScenePath": "scenes/2166_female-squatting-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2166_00_female-squatting-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2166_00_female-squatting-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2166_00_female-squatting-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 24145,
+      "slug": "female-squatting-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2170",
+      "presetNumber": 2170,
+      "label": "Anime squatting knife pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting and holding a knife in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2170_anime-squatting-knife-pose.pma",
+      "localScenePath": "scenes/2170_anime-squatting-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2170_00_anime-squatting-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2170_00_anime-squatting-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2170_00_anime-squatting-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24106,
+      "slug": "anime-squatting-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2171",
+      "presetNumber": 2171,
+      "label": "Anime standing knives pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and holding knives in both hands, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2171_anime-standing-knives-pose.pma",
+      "localScenePath": "scenes/2171_anime-standing-knives-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2171_00_anime-standing-knives-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2171_00_anime-standing-knives-pose.png",
+          "localThumbnailPath": "thumbnails/2171_00_anime-standing-knives-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24550,
+      "slug": "anime-standing-knives-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2172",
+      "presetNumber": 2172,
+      "label": "Anime holding knife pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, holding a knife in her left hand and touching its edge with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2172_anime-holding-knife-pose.pma",
+      "localScenePath": "scenes/2172_anime-holding-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2172_00_anime-holding-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2172_00_anime-holding-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2172_00_anime-holding-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24157,
+      "slug": "anime-holding-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2176",
+      "presetNumber": 2176,
+      "label": "Anime kicking knife pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping, kicking while holding knives in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2176_anime-kicking-knife-pose.pma",
+      "localScenePath": "scenes/2176_anime-kicking-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2176_00_anime-kicking-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2176_00_anime-kicking-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2176_00_anime-kicking-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24615,
+      "slug": "anime-kicking-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2178",
+      "presetNumber": 2178,
+      "label": "Anime running knife pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is running, holding a knife in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2178_anime-running-knife-pose.pma",
+      "localScenePath": "scenes/2178_anime-running-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2178_00_anime-running-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2178_00_anime-running-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2178_00_anime-running-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24135,
+      "slug": "anime-running-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2180",
+      "presetNumber": 2180,
+      "label": "Female crossbow standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her left hand on her hip, holding a crowwbow in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2180_female-crossbow-standing-pose.pma",
+      "localScenePath": "scenes/2180_female-crossbow-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2180_00_female-crossbow-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2180_00_female-crossbow-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2180_00_female-crossbow-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24006,
+      "slug": "female-crossbow-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2183",
+      "presetNumber": 2183,
+      "label": "Female holding crossbow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a crossbow in her right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2183_female-holding-crossbow-pose.pma",
+      "localScenePath": "scenes/2183_female-holding-crossbow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2183_00_female-holding-crossbow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2183_00_female-holding-crossbow-pose.png",
+          "localThumbnailPath": "thumbnails/2183_00_female-holding-crossbow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24009,
+      "slug": "female-holding-crossbow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2185",
+      "presetNumber": 2185,
+      "label": "Female holding crossbow aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding the crossbow with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2185_female-holding-crossbow-aiming-pose.pma",
+      "localScenePath": "scenes/2185_female-holding-crossbow-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2185_00_female-holding-crossbow-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2185_00_female-holding-crossbow-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2185_00_female-holding-crossbow-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23973,
+      "slug": "female-holding-crossbow-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2187",
+      "presetNumber": 2187,
+      "label": "Crossbow kneeling aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, holding the crossbow with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2187_crossbow-kneeling-aiming-pose.pma",
+      "localScenePath": "scenes/2187_crossbow-kneeling-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2187_00_crossbow-kneeling-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2187_00_crossbow-kneeling-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2187_00_crossbow-kneeling-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23972,
+      "slug": "crossbow-kneeling-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2193",
+      "presetNumber": 2193,
+      "label": "Anime katana attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping high, she is about to attack, holding a katana with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2193_anime-katana-attack-pose.pma",
+      "localScenePath": "scenes/2193_anime-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2193_00_anime-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2193_00_anime-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2193_00_anime-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24349,
+      "slug": "anime-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2194",
+      "presetNumber": 2194,
+      "label": "Side kick attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping and doing a side kick in the air, anime attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2194_side-kick-attack-pose.pma",
+      "localScenePath": "scenes/2194_side-kick-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2194_00_side-kick-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2194_00_side-kick-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2194_00_side-kick-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 23910,
+      "slug": "side-kick-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2199",
+      "presetNumber": 2199,
+      "label": "Anime kama attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is about to attack with two kamas, jumping high and raising her hands to stab",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2199_anime-kama-attack-pose.pma",
+      "localScenePath": "scenes/2199_anime-kama-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2199_00_anime-kama-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2199_00_anime-kama-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2199_00_anime-kama-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        142
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24658,
+      "slug": "anime-kama-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2200",
+      "presetNumber": 2200,
+      "label": "Female crawling belly pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crawling on her belly, close to the ground crawling pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2200_female-crawling-belly-pose.pma",
+      "localScenePath": "scenes/2200_female-crawling-belly-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2200_00_female-crawling-belly-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2200_00_female-crawling-belly-pose.png",
+          "localThumbnailPath": "thumbnails/2200_00_female-crawling-belly-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23634,
+      "slug": "female-crawling-belly-pose"
+    },
+    {
+      "id": "guo-scene-2202",
+      "presetNumber": 2202,
+      "label": "Female crawling knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crawling on her knees, using her palms and knees to crawl",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2202_female-crawling-knees-pose.pma",
+      "localScenePath": "scenes/2202_female-crawling-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2202_00_female-crawling-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2202_00_female-crawling-knees-pose.png",
+          "localThumbnailPath": "thumbnails/2202_00_female-crawling-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23563,
+      "slug": "female-crawling-knees-pose"
+    }
+  ]
+}

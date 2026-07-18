@@ -1,0 +1,1173 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 200,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4801",
+      "presetNumber": 4801,
+      "label": "Heroic sword strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping and striking with a sword, heroic sword attack reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4801_heroic-sword-strike-pose.pma",
+      "localScenePath": "scenes/4801_heroic-sword-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4801_00_heroic-sword-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4801_00_heroic-sword-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4801_00_heroic-sword-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        197
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 21077,
+      "slug": "heroic-sword-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4802",
+      "presetNumber": 4802,
+      "label": "Overhead sword swing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lifting his sword high and swinging down, overhead sword strike reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4802_overhead-sword-swing-pose.pma",
+      "localScenePath": "scenes/4802_overhead-sword-swing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4802_00_overhead-sword-swing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4802_00_overhead-sword-swing-pose.png",
+          "localThumbnailPath": "thumbnails/4802_00_overhead-sword-swing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 20554,
+      "slug": "overhead-sword-swing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4803",
+      "presetNumber": 4803,
+      "label": "Balanced combat stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is in stable fighting stance, holding sword in her right hand, female balanced sword combat reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4803_balanced-combat-stance-pose.pma",
+      "localScenePath": "scenes/4803_balanced-combat-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4803_00_balanced-combat-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4803_00_balanced-combat-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4803_00_balanced-combat-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        197
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 20637,
+      "slug": "balanced-combat-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4804",
+      "presetNumber": 4804,
+      "label": "Dynamic blade motion pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mid-swing with sword, dynamic blade movement reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4804_dynamic-blade-motion-pose.pma",
+      "localScenePath": "scenes/4804_dynamic-blade-motion-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4804_00_dynamic-blade-motion-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4804_00_dynamic-blade-motion-pose.png",
+          "localThumbnailPath": "thumbnails/4804_00_dynamic-blade-motion-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 20961,
+      "slug": "dynamic-blade-motion-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4805",
+      "presetNumber": 4805,
+      "label": "Final blow strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male delivering a finishing sword strike, final attack reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4805_final-blow-strike-pose.pma",
+      "localScenePath": "scenes/4805_final-blow-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4805_00_final-blow-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4805_00_final-blow-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4805_00_final-blow-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 247594,
+      "slug": "final-blow-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4806",
+      "presetNumber": 4806,
+      "label": "Flanking sword step pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male stepping sideways with sword ready, flanking attack reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4806_flanking-sword-step-pose.pma",
+      "localScenePath": "scenes/4806_flanking-sword-step-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4806_00_flanking-sword-step-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4806_00_flanking-sword-step-pose.png",
+          "localThumbnailPath": "thumbnails/4806_00_flanking-sword-step-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 21086,
+      "slug": "flanking-sword-step-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4807",
+      "presetNumber": 4807,
+      "label": "Power slash attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is swinging his sword with force, power slash reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4807_power-slash-attack-pose.pma",
+      "localScenePath": "scenes/4807_power-slash-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4807_00_power-slash-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4807_00_power-slash-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4807_00_power-slash-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 20486,
+      "slug": "power-slash-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4808",
+      "presetNumber": 4808,
+      "label": "Elegant fencing lunge pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male lunging forward with sword, elegant fencing move reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4808_elegant-fencing-lunge-pose.pma",
+      "localScenePath": "scenes/4808_elegant-fencing-lunge-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4808_00_elegant-fencing-lunge-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4808_00_elegant-fencing-lunge-pose.png",
+          "localThumbnailPath": "thumbnails/4808_00_elegant-fencing-lunge-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4808_01_elegant-fencing-lunge-pose.png",
+          "localThumbnailPath": "thumbnails/4808_01_elegant-fencing-lunge-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        196
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 41091,
+      "slug": "elegant-fencing-lunge-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4809",
+      "presetNumber": 4809,
+      "label": "Intense sword clash pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, clashing swords with intensity, sword duel reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4809_intense-sword-clash-pose.pma",
+      "localScenePath": "scenes/4809_intense-sword-clash-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4809_00_intense-sword-clash-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4809_00_intense-sword-clash-pose.png",
+          "localThumbnailPath": "thumbnails/4809_00_intense-sword-clash-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4809_01_intense-sword-clash-pose.png",
+          "localThumbnailPath": "thumbnails/4809_01_intense-sword-clash-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 40612,
+      "slug": "intense-sword-clash-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4810",
+      "presetNumber": 4810,
+      "label": "Champion body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing tall showing muscular build, champion physique drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4810_champion-body-pose.pma",
+      "localScenePath": "scenes/4810_champion-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4810_00_champion-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4810_00_champion-body-pose.png",
+          "localThumbnailPath": "thumbnails/4810_00_champion-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20274,
+      "slug": "champion-body-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4811",
+      "presetNumber": 4811,
+      "label": "Classic archer pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is pulling back bowstring, classic archery stance reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4811_classic-archer-pose.pma",
+      "localScenePath": "scenes/4811_classic-archer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4811_00_classic-archer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4811_00_classic-archer-pose.png",
+          "localThumbnailPath": "thumbnails/4811_00_classic-archer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20416,
+      "slug": "classic-archer-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4812",
+      "presetNumber": 4812,
+      "label": "Female side bicep pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female flexing side bicep, female side arm muscle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4812_female-side-bicep-pose.pma",
+      "localScenePath": "scenes/4812_female-side-bicep-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4812_00_female-side-bicep-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4812_00_female-side-bicep-pose.png",
+          "localThumbnailPath": "thumbnails/4812_00_female-side-bicep-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20381,
+      "slug": "female-side-bicep-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4813",
+      "presetNumber": 4813,
+      "label": "Back lat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male showing back muscles with lats flexed, back lat spread reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4813_back-lat-pose.pma",
+      "localScenePath": "scenes/4813_back-lat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4813_00_back-lat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4813_00_back-lat-pose.png",
+          "localThumbnailPath": "thumbnails/4813_00_back-lat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20234,
+      "slug": "back-lat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4814",
+      "presetNumber": 4814,
+      "label": "Side chest lift pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male lifting chest and flexing side view, side chest flex reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4814_side-chest-lift-pose.pma",
+      "localScenePath": "scenes/4814_side-chest-lift-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4814_00_side-chest-lift-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4814_00_side-chest-lift-pose.png",
+          "localThumbnailPath": "thumbnails/4814_00_side-chest-lift-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20259,
+      "slug": "side-chest-lift-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4815",
+      "presetNumber": 4815,
+      "label": "Backward glance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is looking back over her shoulder, backward glance reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4815_backward-glance-pose.pma",
+      "localScenePath": "scenes/4815_backward-glance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4815_00_backward-glance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4815_00_backward-glance-pose.png",
+          "localThumbnailPath": "thumbnails/4815_00_backward-glance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20297,
+      "slug": "backward-glance-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4816",
+      "presetNumber": 4816,
+      "label": "Crossed arms flex pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Muscular female and male are standing next to each other with crossed arms, flexing muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4816_crossed-arms-flex-pose.pma",
+      "localScenePath": "scenes/4816_crossed-arms-flex-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4816_00_crossed-arms-flex-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4816_00_crossed-arms-flex-pose.png",
+          "localThumbnailPath": "thumbnails/4816_00_crossed-arms-flex-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4816_01_crossed-arms-flex-pose.png",
+          "localThumbnailPath": "thumbnails/4816_01_crossed-arms-flex-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        40,
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 39836,
+      "slug": "crossed-arms-flex-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4817",
+      "presetNumber": 4817,
+      "label": "Dumbbell curl pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is curling dumbbell with his arm flexed, dumbbell bicep curl reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4817_dumbbell-curl-pose.pma",
+      "localScenePath": "scenes/4817_dumbbell-curl-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4817_00_dumbbell-curl-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4817_00_dumbbell-curl-pose.png",
+          "localThumbnailPath": "thumbnails/4817_00_dumbbell-curl-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        74
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21305,
+      "slug": "dumbbell-curl-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4818",
+      "presetNumber": 4818,
+      "label": "Overhead rock lift pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is lifting a large rock above her head, overhead rock lift reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4818_overhead-rock-lift-pose.pma",
+      "localScenePath": "scenes/4818_overhead-rock-lift-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4818_00_overhead-rock-lift-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4818_00_overhead-rock-lift-pose.png",
+          "localThumbnailPath": "thumbnails/4818_00_overhead-rock-lift-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [
+        363
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20955,
+      "slug": "overhead-rock-lift-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4819",
+      "presetNumber": 4819,
+      "label": "Rock shoulder carry pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is carrying a heavy rock on his shoulder and walking, rock carrying reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4819_rock-shoulder-carry-pose.pma",
+      "localScenePath": "scenes/4819_rock-shoulder-carry-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4819_00_rock-shoulder-carry-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4819_00_rock-shoulder-carry-pose.png",
+          "localThumbnailPath": "thumbnails/4819_00_rock-shoulder-carry-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        360
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20804,
+      "slug": "rock-shoulder-carry-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4820",
+      "presetNumber": 4820,
+      "label": "Horseback archery pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is riding a horse, bow drawn sideways, male archer bow reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4820_horseback-archery-pose.pma",
+      "localScenePath": "scenes/4820_horseback-archery-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4820_00_horseback-archery-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4820_00_horseback-archery-pose.png",
+          "localThumbnailPath": "thumbnails/4820_00_horseback-archery-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [
+        176
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 27871,
+      "slug": "horseback-archery-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-4821",
+      "presetNumber": 4821,
+      "label": "Crouch ambush bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching behind cover, bow aimed through a narrow gap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4821_crouch-ambush-bow-pose.pma",
+      "localScenePath": "scenes/4821_crouch-ambush-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4821_00_crouch-ambush-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4821_00_crouch-ambush-bow-pose.png",
+          "localThumbnailPath": "thumbnails/4821_00_crouch-ambush-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        176,
+        179,
+        369,
+        414,
+        415
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 23077,
+      "slug": "crouch-ambush-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4822",
+      "presetNumber": 4822,
+      "label": "Bow prone sniper shot pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying flat, bow aimed low to the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4822_bow-prone-sniper-shot-pose.pma",
+      "localScenePath": "scenes/4822_bow-prone-sniper-shot-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4822_00_bow-prone-sniper-shot-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4822_00_bow-prone-sniper-shot-pose.png",
+          "localThumbnailPath": "thumbnails/4822_00_bow-prone-sniper-shot-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        176,
+        369
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21616,
+      "slug": "bow-prone-sniper-shot-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4823",
+      "presetNumber": 4823,
+      "label": "Falling shot bow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mid-air, falling backward while releasing arrow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4823_falling-shot-bow-pose.pma",
+      "localScenePath": "scenes/4823_falling-shot-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4823_00_falling-shot-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4823_00_falling-shot-bow-pose.png",
+          "localThumbnailPath": "thumbnails/4823_00_falling-shot-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        159,
+        177
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21515,
+      "slug": "falling-shot-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4824",
+      "presetNumber": 4824,
+      "label": "Three-archer formation pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Group of three males are aiming in synchronized directions",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4824_three-archer-formation-pose.pma",
+      "localScenePath": "scenes/4824_three-archer-formation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4824_00_three-archer-formation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4824_00_three-archer-formation-pose.png",
+          "localThumbnailPath": "thumbnails/4824_00_three-archer-formation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4824_01_three-archer-formation-pose.png",
+          "localThumbnailPath": "thumbnails/4824_01_three-archer-formation-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4824_02_three-archer-formation-pose.png",
+          "localThumbnailPath": "thumbnails/4824_02_three-archer-formation-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        176
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 61212,
+      "slug": "three-archer-formation-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1093 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 99,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2377",
+      "presetNumber": 2377,
+      "label": "Male holding books pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding books with both hands, holding book drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2377_male-holding-books-pose.pma",
+      "localScenePath": "scenes/2377_male-holding-books-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2377_00_male-holding-books-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2377_00_male-holding-books-pose.png",
+          "localThumbnailPath": "thumbnails/2377_00_male-holding-books-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 210388,
+      "slug": "male-holding-books-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2378",
+      "presetNumber": 2378,
+      "label": "Female holding books pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding books in her left hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2378_female-holding-books-pose.pma",
+      "localScenePath": "scenes/2378_female-holding-books-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2378_00_female-holding-books-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2378_00_female-holding-books-pose.png",
+          "localThumbnailPath": "thumbnails/2378_00_female-holding-books-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 85823,
+      "slug": "female-holding-books-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2379",
+      "presetNumber": 2379,
+      "label": "Holding book reading pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a pillow and holding a book, reading, holding book drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2379_holding-book-reading-pose.pma",
+      "localScenePath": "scenes/2379_holding-book-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2379_00_holding-book-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2379_00_holding-book-reading-pose.png",
+          "localThumbnailPath": "thumbnails/2379_00_holding-book-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24813,
+      "slug": "holding-book-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2380",
+      "presetNumber": 2380,
+      "label": "Female hammer standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her left hand on her hip and holding a hammer in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2380_female-hammer-standing-pose.pma",
+      "localScenePath": "scenes/2380_female-hammer-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2380_00_female-hammer-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2380_00_female-hammer-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2380_00_female-hammer-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 208966,
+      "slug": "female-hammer-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2381",
+      "presetNumber": 2381,
+      "label": "Male hammer standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his left hand on his hip and holding a hammer in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2381_male-hammer-standing-pose.pma",
+      "localScenePath": "scenes/2381_male-hammer-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2381_00_male-hammer-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2381_00_male-hammer-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2381_00_male-hammer-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209239,
+      "slug": "male-hammer-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2382",
+      "presetNumber": 2382,
+      "label": "Male hammer strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the hammer with both hands, jumps up and swings it backwards to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2382_male-hammer-strike-pose.pma",
+      "localScenePath": "scenes/2382_male-hammer-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2382_00_male-hammer-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2382_00_male-hammer-strike-pose.png",
+          "localThumbnailPath": "thumbnails/2382_00_male-hammer-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209235,
+      "slug": "male-hammer-strike-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2383",
+      "presetNumber": 2383,
+      "label": "Standing hammer strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the hammer with both hands and swings it to the right to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2383_standing-hammer-strike-pose.pma",
+      "localScenePath": "scenes/2383_standing-hammer-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2383_00_standing-hammer-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2383_00_standing-hammer-strike-pose.png",
+          "localThumbnailPath": "thumbnails/2383_00_standing-hammer-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209191,
+      "slug": "standing-hammer-strike-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2384",
+      "presetNumber": 2384,
+      "label": "Hammer threatening pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the hammer with his right hand and taps it into his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2384_hammer-threatening-pose.pma",
+      "localScenePath": "scenes/2384_hammer-threatening-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2384_00_hammer-threatening-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2384_00_hammer-threatening-pose.png",
+          "localThumbnailPath": "thumbnails/2384_00_hammer-threatening-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209288,
+      "slug": "hammer-threatening-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2385",
+      "presetNumber": 2385,
+      "label": "Male holding hammer walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a hammer in his right hand and walking, holding hammer pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2385_male-holding-hammer-walking-pose.pma",
+      "localScenePath": "scenes/2385_male-holding-hammer-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2385_00_male-holding-hammer-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2385_00_male-holding-hammer-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2385_00_male-holding-hammer-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209204,
+      "slug": "male-holding-hammer-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2386",
+      "presetNumber": 2386,
+      "label": "Female hammer strike pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding the hammer with both hands, jumps up and swings it backwards to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2386_female-hammer-strike-pose.pma",
+      "localScenePath": "scenes/2386_female-hammer-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2386_00_female-hammer-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2386_00_female-hammer-strike-pose.png",
+          "localThumbnailPath": "thumbnails/2386_00_female-hammer-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 208893,
+      "slug": "female-hammer-strike-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2387",
+      "presetNumber": 2387,
+      "label": "Holding shield hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing, holding a hammer in his right hand and a shield in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2387_holding-shield-hammer-pose.pma",
+      "localScenePath": "scenes/2387_holding-shield-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2387_00_holding-shield-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2387_00_holding-shield-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/2387_00_holding-shield-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209640,
+      "slug": "holding-shield-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2388",
+      "presetNumber": 2388,
+      "label": "Brute male strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male jumps up to strike with the hammer, holding a shield in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2388_brute-male-strike-pose.pma",
+      "localScenePath": "scenes/2388_brute-male-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2388_00_brute-male-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2388_00_brute-male-strike-pose.png",
+          "localThumbnailPath": "thumbnails/2388_00_brute-male-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209613,
+      "slug": "brute-male-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2389",
+      "presetNumber": 2389,
+      "label": "Brute male hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing and holding a hammer with both hands, holding hammer pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2389_brute-male-hammer-pose.pma",
+      "localScenePath": "scenes/2389_brute-male-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2389_00_brute-male-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2389_00_brute-male-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/2389_00_brute-male-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 209228,
+      "slug": "brute-male-hammer-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2390",
+      "presetNumber": 2390,
+      "label": "Wizard male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Wizard male is holding a staff in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2390_wizard-male-pose.pma",
+      "localScenePath": "scenes/2390_wizard-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2390_00_wizard-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2390_00_wizard-male-pose.png",
+          "localThumbnailPath": "thumbnails/2390_00_wizard-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 24202,
+      "slug": "wizard-male-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2391",
+      "presetNumber": 2391,
+      "label": "Wizard female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Wizard female is holding a staff in her right hand and casting a spell with it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2391_wizard-female-pose.pma",
+      "localScenePath": "scenes/2391_wizard-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2391_00_wizard-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2391_00_wizard-female-pose.png",
+          "localThumbnailPath": "thumbnails/2391_00_wizard-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 23957,
+      "slug": "wizard-female-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2392",
+      "presetNumber": 2392,
+      "label": "Fairy magic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is flying, floating in the air, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2392_fairy-magic-pose.pma",
+      "localScenePath": "scenes/2392_fairy-magic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2392_00_fairy-magic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2392_00_fairy-magic-pose.png",
+          "localThumbnailPath": "thumbnails/2392_00_fairy-magic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 23963,
+      "slug": "fairy-magic-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2393",
+      "presetNumber": 2393,
+      "label": "Fairy wand magic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Fairy female is flying and casting a spell with her fairy wand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2393_fairy-wand-magic-pose.pma",
+      "localScenePath": "scenes/2393_fairy-wand-magic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2393_00_fairy-wand-magic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2393_00_fairy-wand-magic-pose.png",
+          "localThumbnailPath": "thumbnails/2393_00_fairy-wand-magic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        89
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 24504,
+      "slug": "fairy-wand-magic-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-2394",
+      "presetNumber": 2394,
+      "label": "Flying casting spell pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is flying, looking up and casting a spell with his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2394_flying-casting-spell-pose.pma",
+      "localScenePath": "scenes/2394_flying-casting-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2394_00_flying-casting-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2394_00_flying-casting-spell-pose.png",
+          "localThumbnailPath": "thumbnails/2394_00_flying-casting-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 24357,
+      "slug": "flying-casting-spell-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2395",
+      "presetNumber": 2395,
+      "label": "Female casting spell pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and casting a spell with her hands, female magic pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2395_female-casting-spell-pose.pma",
+      "localScenePath": "scenes/2395_female-casting-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2395_00_female-casting-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2395_00_female-casting-spell-pose.png",
+          "localThumbnailPath": "thumbnails/2395_00_female-casting-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 23954,
+      "slug": "female-casting-spell-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2396",
+      "presetNumber": 2396,
+      "label": "Male casting spell pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and casting a spell with his right hand, holding a wizard staff in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2396_male-casting-spell-pose.pma",
+      "localScenePath": "scenes/2396_male-casting-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2396_00_male-casting-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2396_00_male-casting-spell-pose.png",
+          "localThumbnailPath": "thumbnails/2396_00_male-casting-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 24707,
+      "slug": "male-casting-spell-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2397",
+      "presetNumber": 2397,
+      "label": "Wizard casting spell pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Wizard male is standing and casting a spell with his left hand, holding a wizard staff in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2397_wizard-casting-spell-pose.pma",
+      "localScenePath": "scenes/2397_wizard-casting-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2397_00_wizard-casting-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2397_00_wizard-casting-spell-pose.png",
+          "localThumbnailPath": "thumbnails/2397_00_wizard-casting-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 24749,
+      "slug": "wizard-casting-spell-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2398",
+      "presetNumber": 2398,
+      "label": "Wizard wand magic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Wizard female is standing and casting a spell with her wizard wand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2398_wizard-wand-magic-pose.pma",
+      "localScenePath": "scenes/2398_wizard-wand-magic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2398_00_wizard-wand-magic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2398_00_wizard-wand-magic-pose.png",
+          "localThumbnailPath": "thumbnails/2398_00_wizard-wand-magic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        117
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 23911,
+      "slug": "wizard-wand-magic-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2399",
+      "presetNumber": 2399,
+      "label": "Wizard spell book magic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Wizard female is standing, holding a spell book in her left hand and casting a spell with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2399_wizard-spell-book-magic-pose.pma",
+      "localScenePath": "scenes/2399_wizard-spell-book-magic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2399_00_wizard-spell-book-magic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2399_00_wizard-spell-book-magic-pose.png",
+          "localThumbnailPath": "thumbnails/2399_00_wizard-spell-book-magic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 24520,
+      "slug": "wizard-spell-book-magic-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2400",
+      "presetNumber": 2400,
+      "label": "Standing holding wand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a magic wand in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2400_standing-holding-wand-pose.pma",
+      "localScenePath": "scenes/2400_standing-holding-wand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2400_00_standing-holding-wand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2400_00_standing-holding-wand-pose.png",
+          "localThumbnailPath": "thumbnails/2400_00_standing-holding-wand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        96
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "wand",
+        "pose"
+      ],
+      "bytes": 24055,
+      "slug": "standing-holding-wand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

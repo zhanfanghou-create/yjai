@@ -1,0 +1,1096 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 107,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2569",
+      "presetNumber": 2569,
+      "label": "Shooting action pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding guns in both hands and aiming, shooting forward while jumping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2569_shooting-action-pose.pma",
+      "localScenePath": "scenes/2569_shooting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2569_00_shooting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2569_00_shooting-action-pose.png",
+          "localThumbnailPath": "thumbnails/2569_00_shooting-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shooting",
+        "pose"
+      ],
+      "bytes": 24428,
+      "slug": "shooting-action-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2570",
+      "presetNumber": 2570,
+      "label": "Anime female holding katana fighting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting and holding a katana in her right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2570_anime-female-holding-katana-fighting-pose.pma",
+      "localScenePath": "scenes/2570_anime-female-holding-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2570_00_anime-female-holding-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2570_00_anime-female-holding-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2570_00_anime-female-holding-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24046,
+      "slug": "anime-female-holding-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2571",
+      "presetNumber": 2571,
+      "label": "Anime drawing katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and drawing out her katana from its sheath",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2571_anime-drawing-katana-pose.pma",
+      "localScenePath": "scenes/2571_anime-drawing-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2571_00_anime-drawing-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2571_00_anime-drawing-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2571_00_anime-drawing-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        144,
+        146
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24584,
+      "slug": "anime-drawing-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2572",
+      "presetNumber": 2572,
+      "label": "Anime female standing katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and leaning on her katana with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2572_anime-female-standing-katana-pose.pma",
+      "localScenePath": "scenes/2572_anime-female-standing-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2572_00_anime-female-standing-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2572_00_anime-female-standing-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2572_00_anime-female-standing-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24294,
+      "slug": "anime-female-standing-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2573",
+      "presetNumber": 2573,
+      "label": "Jumping swinging katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping and swinging her katana high in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2573_jumping-swinging-katana-pose.pma",
+      "localScenePath": "scenes/2573_jumping-swinging-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2573_00_jumping-swinging-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2573_00_jumping-swinging-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2573_00_jumping-swinging-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24396,
+      "slug": "jumping-swinging-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2574",
+      "presetNumber": 2574,
+      "label": "Holding katana walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is walking calmly, holding a katana in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2574_holding-katana-walking-pose.pma",
+      "localScenePath": "scenes/2574_holding-katana-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2574_00_holding-katana-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2574_00_holding-katana-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2574_00_holding-katana-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24379,
+      "slug": "holding-katana-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2575",
+      "presetNumber": 2575,
+      "label": "Anime holding katana looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and holding a katana with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2575_anime-holding-katana-looking-left-pose.pma",
+      "localScenePath": "scenes/2575_anime-holding-katana-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2575_00_anime-holding-katana-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2575_00_anime-holding-katana-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/2575_00_anime-holding-katana-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24366,
+      "slug": "anime-holding-katana-looking-left-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2576",
+      "presetNumber": 2576,
+      "label": "Holding katana crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is crouching and looking to the left, holding a katana in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2576_holding-katana-crouching-pose.pma",
+      "localScenePath": "scenes/2576_holding-katana-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2576_00_holding-katana-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2576_00_holding-katana-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/2576_00_holding-katana-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24323,
+      "slug": "holding-katana-crouching-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2577",
+      "presetNumber": 2577,
+      "label": "Anime male katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing and holding katanas in both hands, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2577_anime-male-katana-pose.pma",
+      "localScenePath": "scenes/2577_anime-male-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2577_00_anime-male-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2577_00_anime-male-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2577_00_anime-male-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24699,
+      "slug": "anime-male-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2578",
+      "presetNumber": 2578,
+      "label": "Holding katana standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing, holding a katana in his right hand and a sheath in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2578_holding-katana-standing-pose.pma",
+      "localScenePath": "scenes/2578_holding-katana-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2578_00_holding-katana-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2578_00_holding-katana-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2578_00_holding-katana-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        146,
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24718,
+      "slug": "holding-katana-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2579",
+      "presetNumber": 2579,
+      "label": "Anime katana fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are standing in front of each other, holding katanas and ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2579_anime-katana-fighting-pose.pma",
+      "localScenePath": "scenes/2579_anime-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2579_00_anime-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2579_00_anime-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2579_00_anime-katana-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2579_01_anime-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2579_01_anime-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        56,
+        57
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 47613,
+      "slug": "anime-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2580",
+      "presetNumber": 2580,
+      "label": "Scared female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, raising her hands and looking to the right, scared of something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2580_scared-female-standing-pose.pma",
+      "localScenePath": "scenes/2580_scared-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2580_00_scared-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2580_00_scared-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2580_00_scared-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23524,
+      "slug": "scared-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2581",
+      "presetNumber": 2581,
+      "label": "Scared female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and covering her head, scared of something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2581_scared-female-sitting-pose.pma",
+      "localScenePath": "scenes/2581_scared-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2581_00_scared-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2581_00_scared-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2581_00_scared-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23543,
+      "slug": "scared-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2582",
+      "presetNumber": 2582,
+      "label": "Scared female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Scared female is kneeling and raising her hands, protecting her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2582_scared-female-kneeling-pose.pma",
+      "localScenePath": "scenes/2582_scared-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2582_00_scared-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2582_00_scared-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2582_00_scared-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23509,
+      "slug": "scared-female-kneeling-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2583",
+      "presetNumber": 2583,
+      "label": "Scared female crawling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Scared female is escaping from something, crawling backwards, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2583_scared-female-crawling-pose.pma",
+      "localScenePath": "scenes/2583_scared-female-crawling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2583_00_scared-female-crawling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2583_00_scared-female-crawling-pose.png",
+          "localThumbnailPath": "thumbnails/2583_00_scared-female-crawling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23493,
+      "slug": "scared-female-crawling-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2584",
+      "presetNumber": 2584,
+      "label": "Scared walking backwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is stepping backwards, raising her hands, is scared of something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2584_scared-walking-backwards-pose.pma",
+      "localScenePath": "scenes/2584_scared-walking-backwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2584_00_scared-walking-backwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2584_00_scared-walking-backwards-pose.png",
+          "localThumbnailPath": "thumbnails/2584_00_scared-walking-backwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23486,
+      "slug": "scared-walking-backwards-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2585",
+      "presetNumber": 2585,
+      "label": "Scared running pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are escaping from something, they are running and protecting their heads with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2585_scared-running-pose.pma",
+      "localScenePath": "scenes/2585_scared-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2585_00_scared-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2585_00_scared-running-pose.png",
+          "localThumbnailPath": "thumbnails/2585_00_scared-running-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2585_01_scared-running-pose.png",
+          "localThumbnailPath": "thumbnails/2585_01_scared-running-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 46337,
+      "slug": "scared-running-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2586",
+      "presetNumber": 2586,
+      "label": "Scared couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are scared of something, they are sitting and protecting their head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2586_scared-couple-sitting-pose.pma",
+      "localScenePath": "scenes/2586_scared-couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2586_00_scared-couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2586_00_scared-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2586_00_scared-couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2586_01_scared-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2586_01_scared-couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 46361,
+      "slug": "scared-couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2587",
+      "presetNumber": 2587,
+      "label": "Scared male crawling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is shocked, escaping from something, crawling backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2587_scared-male-crawling-pose.pma",
+      "localScenePath": "scenes/2587_scared-male-crawling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2587_00_scared-male-crawling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2587_00_scared-male-crawling-pose.png",
+          "localThumbnailPath": "thumbnails/2587_00_scared-male-crawling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23808,
+      "slug": "scared-male-crawling-pose"
+    },
+    {
+      "id": "guo-scene-2588",
+      "presetNumber": 2588,
+      "label": "Scared male squatting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Scared male is squatting and covering his head with his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2588_scared-male-squatting-pose.pma",
+      "localScenePath": "scenes/2588_scared-male-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2588_00_scared-male-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2588_00_scared-male-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2588_00_scared-male-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23705,
+      "slug": "scared-male-squatting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2589",
+      "presetNumber": 2589,
+      "label": "Scared female squatting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Scared female is squatting and hugging her knees, hiding from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2589_scared-female-squatting-pose.pma",
+      "localScenePath": "scenes/2589_scared-female-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2589_00_scared-female-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2589_00_scared-female-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2589_00_scared-female-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 23596,
+      "slug": "scared-female-squatting-pose"
+    },
+    {
+      "id": "guo-scene-2590",
+      "presetNumber": 2590,
+      "label": "Frightened female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is frightened by something, she is standing and covering her face with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2590_frightened-female-standing-pose.pma",
+      "localScenePath": "scenes/2590_frightened-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2590_00_frightened-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2590_00_frightened-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2590_00_frightened-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "frightened",
+        "pose"
+      ],
+      "bytes": 23663,
+      "slug": "frightened-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2591",
+      "presetNumber": 2591,
+      "label": "Frightened female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is frightened by something, she is walking backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2591_frightened-female-walking-pose.pma",
+      "localScenePath": "scenes/2591_frightened-female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2591_00_frightened-female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2591_00_frightened-female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2591_00_frightened-female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "frightened",
+        "pose"
+      ],
+      "bytes": 23484,
+      "slug": "frightened-female-walking-pose"
+    },
+    {
+      "id": "guo-scene-2592",
+      "presetNumber": 2592,
+      "label": "Frightened female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is frightened by something, standing and covering her head with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2592_frightened-female-pose.pma",
+      "localScenePath": "scenes/2592_frightened-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2592_00_frightened-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2592_00_frightened-female-pose.png",
+          "localThumbnailPath": "thumbnails/2592_00_frightened-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "frightened",
+        "pose"
+      ],
+      "bytes": 23514,
+      "slug": "frightened-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

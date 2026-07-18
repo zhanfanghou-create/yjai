@@ -1,0 +1,1184 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 20,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-2423",
+      "presetNumber": 2423,
+      "label": "Male wizard healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male healer is casting a spell and healing the female who is floating in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2423_male-wizard-healer-pose.pma",
+      "localScenePath": "scenes/2423_male-wizard-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2423_00_male-wizard-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2423_00_male-wizard-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2423_00_male-wizard-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2423_01_male-wizard-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2423_01_male-wizard-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        115
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46917,
+      "slug": "male-wizard-healer-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2425",
+      "presetNumber": 2425,
+      "label": "Female wizard healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is standing, holding a magic staff and healing the female lying on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2425_female-wizard-healer-pose.pma",
+      "localScenePath": "scenes/2425_female-wizard-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2425_00_female-wizard-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2425_00_female-wizard-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2425_00_female-wizard-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2425_01_female-wizard-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2425_01_female-wizard-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46638,
+      "slug": "female-wizard-healer-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2426",
+      "presetNumber": 2426,
+      "label": "Angel healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Angel female healer is hovering and casting a healing spell on the injured female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2426_angel-healer-pose.pma",
+      "localScenePath": "scenes/2426_angel-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2426_00_angel-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2426_00_angel-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2426_00_angel-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2426_01_angel-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2426_01_angel-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        91,
+        92
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 47049,
+      "slug": "angel-healer-pose"
+    },
+    {
+      "id": "guo-scene-2427",
+      "presetNumber": 2427,
+      "label": "Magic book healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is casting a spell from the magic book with her magic wand and healing the injured male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2427_magic-book-healer-pose.pma",
+      "localScenePath": "scenes/2427_magic-book-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2427_00_magic-book-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2427_00_magic-book-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2427_00_magic-book-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2427_01_magic-book-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2427_01_magic-book-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        80,
+        96
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 47314,
+      "slug": "magic-book-healer-pose"
+    },
+    {
+      "id": "guo-scene-2428",
+      "presetNumber": 2428,
+      "label": "Sitting healing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is sitting and healing the injured female lying on her lap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2428_sitting-healing-pose.pma",
+      "localScenePath": "scenes/2428_sitting-healing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2428_00_sitting-healing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2428_00_sitting-healing-pose.png",
+          "localThumbnailPath": "thumbnails/2428_00_sitting-healing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2428_01_sitting-healing-pose.png",
+          "localThumbnailPath": "thumbnails/2428_01_sitting-healing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46584,
+      "slug": "sitting-healing-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2429",
+      "presetNumber": 2429,
+      "label": "Healer spell casting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is casting magic on the injured female and lifting her up, healing her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2429_healer-spell-casting-pose.pma",
+      "localScenePath": "scenes/2429_healer-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2429_00_healer-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2429_00_healer-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/2429_00_healer-spell-casting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2429_01_healer-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/2429_01_healer-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46177,
+      "slug": "healer-spell-casting-pose"
+    },
+    {
+      "id": "guo-scene-2470",
+      "presetNumber": 2470,
+      "label": "Anime female battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting, one is kicking the other in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2470_anime-female-battle-pose.pma",
+      "localScenePath": "scenes/2470_anime-female-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2470_00_anime-female-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2470_00_anime-female-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2470_00_anime-female-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2470_01_anime-female-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2470_01_anime-female-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 46857,
+      "slug": "anime-female-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2471",
+      "presetNumber": 2471,
+      "label": "Magic staff battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting with magic staffs, anime fantasy battle pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2471_magic-staff-battle-pose.pma",
+      "localScenePath": "scenes/2471_magic-staff-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2471_00_magic-staff-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2471_00_magic-staff-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2471_00_magic-staff-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2471_01_magic-staff-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2471_01_magic-staff-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        114,
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 48012,
+      "slug": "magic-staff-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2472",
+      "presetNumber": 2472,
+      "label": "Anime female katana battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting with katanas, they are about to attack each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2472_anime-female-katana-battle-pose.pma",
+      "localScenePath": "scenes/2472_anime-female-katana-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2472_00_anime-female-katana-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2472_00_anime-female-katana-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2472_00_anime-female-katana-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2472_01_anime-female-katana-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2472_01_anime-female-katana-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 47830,
+      "slug": "anime-female-katana-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2473",
+      "presetNumber": 2473,
+      "label": "Anime sword battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are fighting with swords, female is about to strike with her sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2473_anime-sword-battle-pose.pma",
+      "localScenePath": "scenes/2473_anime-sword-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2473_00_anime-sword-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2473_00_anime-sword-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2473_00_anime-sword-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2473_01_anime-sword-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2473_01_anime-sword-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 47534,
+      "slug": "anime-sword-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2474",
+      "presetNumber": 2474,
+      "label": "Two anime males fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are fighting, punching, hitting each other, anime battle pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2474_two-anime-males-fighting-pose.pma",
+      "localScenePath": "scenes/2474_two-anime-males-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2474_00_two-anime-males-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2474_00_two-anime-males-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2474_00_two-anime-males-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2474_01_two-anime-males-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2474_01_two-anime-males-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 46429,
+      "slug": "two-anime-males-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2475",
+      "presetNumber": 2475,
+      "label": "Anime male punching pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime males are fighting, one hits the other in the head who falls backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2475_anime-male-punching-pose.pma",
+      "localScenePath": "scenes/2475_anime-male-punching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2475_00_anime-male-punching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2475_00_anime-male-punching-pose.png",
+          "localThumbnailPath": "thumbnails/2475_00_anime-male-punching-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2475_01_anime-male-punching-pose.png",
+          "localThumbnailPath": "thumbnails/2475_01_anime-male-punching-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 46710,
+      "slug": "anime-male-punching-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2476",
+      "presetNumber": 2476,
+      "label": "Anime battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are fighting, the female is attacking with kama while the male is doing tai chi",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2476_anime-battle-pose.pma",
+      "localScenePath": "scenes/2476_anime-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2476_00_anime-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2476_00_anime-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2476_00_anime-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2476_01_anime-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2476_01_anime-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        142
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 47639,
+      "slug": "anime-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2477",
+      "presetNumber": 2477,
+      "label": "Anime katana battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime males are fighting with katanas, one dodges the other's katana attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2477_anime-katana-battle-pose.pma",
+      "localScenePath": "scenes/2477_anime-katana-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2477_00_anime-katana-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2477_00_anime-katana-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2477_00_anime-katana-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2477_01_anime-katana-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2477_01_anime-katana-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 47480,
+      "slug": "anime-katana-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2478",
+      "presetNumber": 2478,
+      "label": "Anime axe attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime males are fighting, one of them is attacking with an axe",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2478_anime-axe-attack-pose.pma",
+      "localScenePath": "scenes/2478_anime-axe-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2478_00_anime-axe-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2478_00_anime-axe-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2478_00_anime-axe-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2478_01_anime-axe-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2478_01_anime-axe-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 47053,
+      "slug": "anime-axe-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2479",
+      "presetNumber": 2479,
+      "label": "Anime female male battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are fighting, the female is about to kick the male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2479_anime-female-male-battle-pose.pma",
+      "localScenePath": "scenes/2479_anime-female-male-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2479_00_anime-female-male-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2479_00_anime-female-male-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2479_00_anime-female-male-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2479_01_anime-female-male-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2479_01_anime-female-male-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 46663,
+      "slug": "anime-female-male-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2514",
+      "presetNumber": 2514,
+      "label": "Females folding arms pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing, folding arms and leaning against each other with their backs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2514_females-folding-arms-pose.pma",
+      "localScenePath": "scenes/2514_females-folding-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2514_00_females-folding-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2514_00_females-folding-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2514_00_females-folding-arms-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2514_01_females-folding-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2514_01_females-folding-arms-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 46106,
+      "slug": "females-folding-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2519",
+      "presetNumber": 2519,
+      "label": "Males folding arms pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are standing next to each other, folding arms and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2519_males-folding-arms-pose.pma",
+      "localScenePath": "scenes/2519_males-folding-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2519_00_males-folding-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2519_00_males-folding-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2519_00_males-folding-arms-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2519_01_males-folding-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2519_01_males-folding-arms-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 46642,
+      "slug": "males-folding-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2548",
+      "presetNumber": 2548,
+      "label": "Kissing hand bowing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is bowing respectfully and kissing the female's hand, male bowing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2548_kissing-hand-bowing-pose.pma",
+      "localScenePath": "scenes/2548_kissing-hand-bowing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2548_00_kissing-hand-bowing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2548_00_kissing-hand-bowing-pose.png",
+          "localThumbnailPath": "thumbnails/2548_00_kissing-hand-bowing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2548_01_kissing-hand-bowing-pose.png",
+          "localThumbnailPath": "thumbnails/2548_01_kissing-hand-bowing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bowing",
+        "pose"
+      ],
+      "bytes": 46384,
+      "slug": "kissing-hand-bowing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2549",
+      "presetNumber": 2549,
+      "label": "Two males bowing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are standing and bowing to each other, male bowing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2549_two-males-bowing-pose.pma",
+      "localScenePath": "scenes/2549_two-males-bowing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2549_00_two-males-bowing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2549_00_two-males-bowing-pose.png",
+          "localThumbnailPath": "thumbnails/2549_00_two-males-bowing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2549_01_two-males-bowing-pose.png",
+          "localThumbnailPath": "thumbnails/2549_01_two-males-bowing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bowing",
+        "pose"
+      ],
+      "bytes": 46749,
+      "slug": "two-males-bowing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2579",
+      "presetNumber": 2579,
+      "label": "Anime katana fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are standing in front of each other, holding katanas and ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2579_anime-katana-fighting-pose.pma",
+      "localScenePath": "scenes/2579_anime-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2579_00_anime-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2579_00_anime-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2579_00_anime-katana-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2579_01_anime-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2579_01_anime-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        56,
+        57
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "katana",
+        "pose"
+      ],
+      "bytes": 47613,
+      "slug": "anime-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2585",
+      "presetNumber": 2585,
+      "label": "Scared running pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are escaping from something, they are running and protecting their heads with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2585_scared-running-pose.pma",
+      "localScenePath": "scenes/2585_scared-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2585_00_scared-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2585_00_scared-running-pose.png",
+          "localThumbnailPath": "thumbnails/2585_00_scared-running-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2585_01_scared-running-pose.png",
+          "localThumbnailPath": "thumbnails/2585_01_scared-running-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 46337,
+      "slug": "scared-running-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2586",
+      "presetNumber": 2586,
+      "label": "Scared couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are scared of something, they are sitting and protecting their head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2586_scared-couple-sitting-pose.pma",
+      "localScenePath": "scenes/2586_scared-couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2586_00_scared-couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2586_00_scared-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2586_00_scared-couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2586_01_scared-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2586_01_scared-couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fear",
+        "pose"
+      ],
+      "bytes": 46361,
+      "slug": "scared-couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2638",
+      "presetNumber": 2638,
+      "label": "Female male praying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are kneeling next to each other and praying",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2638_female-male-praying-pose.pma",
+      "localScenePath": "scenes/2638_female-male-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2638_00_female-male-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2638_00_female-male-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2638_00_female-male-praying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2638_01_female-male-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2638_01_female-male-praying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "pose"
+      ],
+      "bytes": 46771,
+      "slug": "female-male-praying-pose"
+    }
+  ]
+}

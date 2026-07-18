@@ -1,0 +1,986 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 13,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0313",
+      "presetNumber": 313,
+      "label": "Heroic standing invincible pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Heroic male standing invincible pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0313_heroic-standing-invincible-pose.pma",
+      "localScenePath": "scenes/0313_heroic-standing-invincible-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0313_00_heroic-standing-invincible-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0313_00_heroic-standing-invincible-pose.png",
+          "localThumbnailPath": "thumbnails/0313_00_heroic-standing-invincible-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23560,
+      "slug": "heroic-standing-invincible-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0314",
+      "presetNumber": 314,
+      "label": "Celebrating victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Heroic male standing and celebrating a victory pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0314_celebrating-victory-pose.pma",
+      "localScenePath": "scenes/0314_celebrating-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0314_00_celebrating-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0314_00_celebrating-victory-pose.png",
+          "localThumbnailPath": "thumbnails/0314_00_celebrating-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23531,
+      "slug": "celebrating-victory-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0315",
+      "presetNumber": 315,
+      "label": "Superwoman flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Superwoman flying into the sky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0315_superwoman-flying-pose.pma",
+      "localScenePath": "scenes/0315_superwoman-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0315_00_superwoman-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0315_00_superwoman-flying-pose.png",
+          "localThumbnailPath": "thumbnails/0315_00_superwoman-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23424,
+      "slug": "superwoman-flying-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0316",
+      "presetNumber": 316,
+      "label": "Superwoman air pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Superwoman floating in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0316_superwoman-air-pose.pma",
+      "localScenePath": "scenes/0316_superwoman-air-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0316_00_superwoman-air-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0316_00_superwoman-air-pose.png",
+          "localThumbnailPath": "thumbnails/0316_00_superwoman-air-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23445,
+      "slug": "superwoman-air-pose"
+    },
+    {
+      "id": "guo-scene-0317",
+      "presetNumber": 317,
+      "label": "Heroic female flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Heroic female flying in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0317_heroic-female-flying-pose.pma",
+      "localScenePath": "scenes/0317_heroic-female-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0317_00_heroic-female-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0317_00_heroic-female-flying-pose.png",
+          "localThumbnailPath": "thumbnails/0317_00_heroic-female-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23432,
+      "slug": "heroic-female-flying-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0318",
+      "presetNumber": 318,
+      "label": "Heroic female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Heroic female is standing proudly pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0318_heroic-female-standing-pose.pma",
+      "localScenePath": "scenes/0318_heroic-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0318_00_heroic-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0318_00_heroic-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0318_00_heroic-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23267,
+      "slug": "heroic-female-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0319",
+      "presetNumber": 319,
+      "label": "Heroic female rising pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Heroic female is rising to the sky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0319_heroic-female-rising-pose.pma",
+      "localScenePath": "scenes/0319_heroic-female-rising-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0319_00_heroic-female-rising-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0319_00_heroic-female-rising-pose.png",
+          "localThumbnailPath": "thumbnails/0319_00_heroic-female-rising-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23443,
+      "slug": "heroic-female-rising-pose"
+    },
+    {
+      "id": "guo-scene-0320",
+      "presetNumber": 320,
+      "label": "Female jumping high pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping high pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0320_female-jumping-high-pose.pma",
+      "localScenePath": "scenes/0320_female-jumping-high-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0320_00_female-jumping-high-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0320_00_female-jumping-high-pose.png",
+          "localThumbnailPath": "thumbnails/0320_00_female-jumping-high-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23609,
+      "slug": "female-jumping-high-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0321",
+      "presetNumber": 321,
+      "label": "Female happy jump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female happily jumps into the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0321_female-happy-jump-pose.pma",
+      "localScenePath": "scenes/0321_female-happy-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0321_00_female-happy-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0321_00_female-happy-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0321_00_female-happy-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23452,
+      "slug": "female-happy-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0322",
+      "presetNumber": 322,
+      "label": "Female sport jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female jumps far, sport jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0322_female-sport-jumping-pose.pma",
+      "localScenePath": "scenes/0322_female-sport-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0322_00_female-sport-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0322_00_female-sport-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0322_00_female-sport-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23416,
+      "slug": "female-sport-jumping-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0323",
+      "presetNumber": 323,
+      "label": "Female acrobatic jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female acrobatic jump into the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0323_female-acrobatic-jumping-pose.pma",
+      "localScenePath": "scenes/0323_female-acrobatic-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0323_00_female-acrobatic-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0323_00_female-acrobatic-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0323_00_female-acrobatic-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23442,
+      "slug": "female-acrobatic-jumping-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0324",
+      "presetNumber": 324,
+      "label": "Raised hands jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female acrobatic jump into the air with raised hands pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0324_raised-hands-jumping-pose.pma",
+      "localScenePath": "scenes/0324_raised-hands-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0324_00_raised-hands-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0324_00_raised-hands-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0324_00_raised-hands-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23442,
+      "slug": "raised-hands-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0325",
+      "presetNumber": 325,
+      "label": "Male action jump pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male action jump in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0325_male-action-jump-pose.pma",
+      "localScenePath": "scenes/0325_male-action-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0325_00_male-action-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0325_00_male-action-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0325_00_male-action-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23678,
+      "slug": "male-action-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0326",
+      "presetNumber": 326,
+      "label": "Male parkour jump pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping far, parkour jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0326_male-parkour-jump-pose.pma",
+      "localScenePath": "scenes/0326_male-parkour-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0326_00_male-parkour-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0326_00_male-parkour-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0326_00_male-parkour-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23721,
+      "slug": "male-parkour-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0327",
+      "presetNumber": 327,
+      "label": "Basketball jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male basketball player is jumping high pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0327_basketball-jumping-pose.pma",
+      "localScenePath": "scenes/0327_basketball-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0327_00_basketball-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0327_00_basketball-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0327_00_basketball-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 24241,
+      "slug": "basketball-jumping-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0328",
+      "presetNumber": 328,
+      "label": "Jumping down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps down from somewhere pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0328_jumping-down-pose.pma",
+      "localScenePath": "scenes/0328_jumping-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0328_00_jumping-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0328_00_jumping-down-pose.png",
+          "localThumbnailPath": "thumbnails/0328_00_jumping-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23727,
+      "slug": "jumping-down-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0329",
+      "presetNumber": 329,
+      "label": "High jump pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps up high with clenched fists pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0329_high-jump-pose.pma",
+      "localScenePath": "scenes/0329_high-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0329_00_high-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0329_00_high-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0329_00_high-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23684,
+      "slug": "high-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0330",
+      "presetNumber": 330,
+      "label": "Left hand karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with left hand raised karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0330_left-hand-karate-pose.pma",
+      "localScenePath": "scenes/0330_left-hand-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0330_00_left-hand-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0330_00_left-hand-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0330_00_left-hand-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23533,
+      "slug": "left-hand-karate-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0331",
+      "presetNumber": 331,
+      "label": "Left foot kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male kicks with left foot karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0331_left-foot-kicking-pose.pma",
+      "localScenePath": "scenes/0331_left-foot-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0331_00_left-foot-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0331_00_left-foot-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/0331_00_left-foot-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23494,
+      "slug": "left-foot-kicking-pose"
+    },
+    {
+      "id": "guo-scene-0332",
+      "presetNumber": 332,
+      "label": "Karate standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Karate male standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0332_karate-standing-pose.pma",
+      "localScenePath": "scenes/0332_karate-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0332_00_karate-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0332_00_karate-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0332_00_karate-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23890,
+      "slug": "karate-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0333",
+      "presetNumber": 333,
+      "label": "Ready fight karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is ready to fight karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0333_ready-fight-karate-pose.pma",
+      "localScenePath": "scenes/0333_ready-fight-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0333_00_ready-fight-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0333_00_ready-fight-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0333_00_ready-fight-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23889,
+      "slug": "ready-fight-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0334",
+      "presetNumber": 334,
+      "label": "Inviting fight karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is inviting to fight karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0334_inviting-fight-karate-pose.pma",
+      "localScenePath": "scenes/0334_inviting-fight-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0334_00_inviting-fight-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0334_00_inviting-fight-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0334_00_inviting-fight-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23812,
+      "slug": "inviting-fight-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0335",
+      "presetNumber": 335,
+      "label": "Air kick karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male kicks in the air with right foot karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0335_air-kick-karate-pose.pma",
+      "localScenePath": "scenes/0335_air-kick-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0335_00_air-kick-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0335_00_air-kick-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0335_00_air-kick-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23747,
+      "slug": "air-kick-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0336",
+      "presetNumber": 336,
+      "label": "Female male karate pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0336_female-male-karate-pose.pma",
+      "localScenePath": "scenes/0336_female-male-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0336_00_female-male-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0336_00_female-male-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0336_00_female-male-karate-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0336_01_female-male-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0336_01_female-male-karate-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 46295,
+      "slug": "female-male-karate-pose"
+    }
+  ]
+}

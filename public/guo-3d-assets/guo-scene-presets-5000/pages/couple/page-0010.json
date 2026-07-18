@@ -1,0 +1,1164 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 9,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-0942",
+      "presetNumber": 942,
+      "label": "Dynamic tango dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male tango dancer is holding the female dancer, dynamic tango pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0942_dynamic-tango-dance-pose.pma",
+      "localScenePath": "scenes/0942_dynamic-tango-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0942_00_dynamic-tango-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0942_00_dynamic-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0942_00_dynamic-tango-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0942_01_dynamic-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0942_01_dynamic-tango-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46481,
+      "slug": "dynamic-tango-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0943",
+      "presetNumber": 943,
+      "label": "Tango holding leg pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing tango, the male is holding the female's right leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0943_tango-holding-leg-pose.pma",
+      "localScenePath": "scenes/0943_tango-holding-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0943_00_tango-holding-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0943_00_tango-holding-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0943_00_tango-holding-leg-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0943_01_tango-holding-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0943_01_tango-holding-leg-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46520,
+      "slug": "tango-holding-leg-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0944",
+      "presetNumber": 944,
+      "label": "Female male tango pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Dynamic tango pose, male is holding the female with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0944_female-male-tango-pose.pma",
+      "localScenePath": "scenes/0944_female-male-tango-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0944_00_female-male-tango-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0944_00_female-male-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0944_00_female-male-tango-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0944_01_female-male-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0944_01_female-male-tango-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46691,
+      "slug": "female-male-tango-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0945",
+      "presetNumber": 945,
+      "label": "Tango dance split pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing tango, female is doing a split, while the male is holding her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0945_tango-dance-split-pose.pma",
+      "localScenePath": "scenes/0945_tango-dance-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0945_00_tango-dance-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0945_00_tango-dance-split-pose.png",
+          "localThumbnailPath": "thumbnails/0945_00_tango-dance-split-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0945_01_tango-dance-split-pose.png",
+          "localThumbnailPath": "thumbnails/0945_01_tango-dance-split-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46668,
+      "slug": "tango-dance-split-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0946",
+      "presetNumber": 946,
+      "label": "Female jump tango pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female tango dancer is jumping high and posing, while male dancer is holding her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0946_female-jump-tango-pose.pma",
+      "localScenePath": "scenes/0946_female-jump-tango-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0946_00_female-jump-tango-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0946_00_female-jump-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0946_00_female-jump-tango-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0946_01_female-jump-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0946_01_female-jump-tango-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46655,
+      "slug": "female-jump-tango-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0948",
+      "presetNumber": 948,
+      "label": "Tango dance invitation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male tango dancer is inviting the female for a dance",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0948_tango-dance-invitation-pose.pma",
+      "localScenePath": "scenes/0948_tango-dance-invitation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0948_00_tango-dance-invitation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0948_00_tango-dance-invitation-pose.png",
+          "localThumbnailPath": "thumbnails/0948_00_tango-dance-invitation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0948_01_tango-dance-invitation-pose.png",
+          "localThumbnailPath": "thumbnails/0948_01_tango-dance-invitation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46638,
+      "slug": "tango-dance-invitation-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0949",
+      "presetNumber": 949,
+      "label": "Starting tango dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male tango dancers are about to start dancing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0949_starting-tango-dance-pose.pma",
+      "localScenePath": "scenes/0949_starting-tango-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0949_00_starting-tango-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0949_00_starting-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0949_00_starting-tango-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0949_01_starting-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0949_01_starting-tango-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46615,
+      "slug": "starting-tango-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0960",
+      "presetNumber": 960,
+      "label": "Couple waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is dancing waltz, the female is leaning back and the male is holding her waist",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0960_couple-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0960_couple-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0960_00_couple-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0960_00_couple-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0960_00_couple-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0960_01_couple-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0960_01_couple-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46730,
+      "slug": "couple-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0961",
+      "presetNumber": 961,
+      "label": "Leaning dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female waltz dancer is leaning back almost to the floor and raising her left hand, the male dancer is holding her ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0961_leaning-dance-pose.pma",
+      "localScenePath": "scenes/0961_leaning-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0961_00_leaning-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0961_00_leaning-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0961_00_leaning-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0961_01_leaning-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0961_01_leaning-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46696,
+      "slug": "leaning-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0962",
+      "presetNumber": 962,
+      "label": "Front split dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male waltz dance pose, female is doing a front split",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0962_front-split-dance-pose.pma",
+      "localScenePath": "scenes/0962_front-split-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0962_00_front-split-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0962_00_front-split-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0962_00_front-split-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0962_01_front-split-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0962_01_front-split-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46678,
+      "slug": "front-split-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0963",
+      "presetNumber": 963,
+      "label": "Traditional waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male traditional waltz dance movement pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0963_traditional-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0963_traditional-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0963_00_traditional-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0963_00_traditional-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0963_00_traditional-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0963_01_traditional-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0963_01_traditional-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46687,
+      "slug": "traditional-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0964",
+      "presetNumber": 964,
+      "label": "Dancing looking left pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing waltz and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0964_dancing-looking-left-pose.pma",
+      "localScenePath": "scenes/0964_dancing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0964_00_dancing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0964_00_dancing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/0964_00_dancing-looking-left-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0964_01_dancing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/0964_01_dancing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46699,
+      "slug": "dancing-looking-left-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0965",
+      "presetNumber": 965,
+      "label": "Starting waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male waltz dancers are about to start dancing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0965_starting-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0965_starting-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0965_00_starting-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0965_00_starting-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0965_00_starting-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0965_01_starting-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0965_01_starting-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46823,
+      "slug": "starting-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0966",
+      "presetNumber": 966,
+      "label": "Waltz dance spin pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing waltz, female is doing a spin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0966_waltz-dance-spin-pose.pma",
+      "localScenePath": "scenes/0966_waltz-dance-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0966_00_waltz-dance-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0966_00_waltz-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0966_00_waltz-dance-spin-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0966_01_waltz-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0966_01_waltz-dance-spin-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46678,
+      "slug": "waltz-dance-spin-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0967",
+      "presetNumber": 967,
+      "label": "Hand hip dance spin pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Waltz dance pose, female is doing a spin with her right hand on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0967_hand-hip-dance-spin-pose.pma",
+      "localScenePath": "scenes/0967_hand-hip-dance-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0967_00_hand-hip-dance-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0967_00_hand-hip-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0967_00_hand-hip-dance-spin-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0967_01_hand-hip-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0967_01_hand-hip-dance-spin-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46621,
+      "slug": "hand-hip-dance-spin-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0968",
+      "presetNumber": 968,
+      "label": "Classical waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Classical waltz dance pose, male dancer is standing and holding the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0968_classical-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0968_classical-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0968_00_classical-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0968_00_classical-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0968_00_classical-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0968_01_classical-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0968_01_classical-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46525,
+      "slug": "classical-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0969",
+      "presetNumber": 969,
+      "label": "Waltz dance spinning pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male classical waltz dance female spinning pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0969_waltz-dance-spinning-pose.pma",
+      "localScenePath": "scenes/0969_waltz-dance-spinning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0969_00_waltz-dance-spinning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0969_00_waltz-dance-spinning-pose.png",
+          "localThumbnailPath": "thumbnails/0969_00_waltz-dance-spinning-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0969_01_waltz-dance-spinning-pose.png",
+          "localThumbnailPath": "thumbnails/0969_01_waltz-dance-spinning-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46662,
+      "slug": "waltz-dance-spinning-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0989",
+      "presetNumber": 989,
+      "label": "Female pointing male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is standing with her left hand on hip and pointing at the male in front of her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0989_female-pointing-male-pose.pma",
+      "localScenePath": "scenes/0989_female-pointing-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0989_00_female-pointing-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0989_00_female-pointing-male-pose.png",
+          "localThumbnailPath": "thumbnails/0989_00_female-pointing-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0989_01_female-pointing-male-pose.png",
+          "localThumbnailPath": "thumbnails/0989_01_female-pointing-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pointing",
+        "pose"
+      ],
+      "bytes": 46416,
+      "slug": "female-pointing-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0998",
+      "presetNumber": 998,
+      "label": "Couple walking phones pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are walking, holding each other's hands and playing on their phones",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0998_couple-walking-phones-pose.pma",
+      "localScenePath": "scenes/0998_couple-walking-phones-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0998_00_couple-walking-phones-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0998_00_couple-walking-phones-pose.png",
+          "localThumbnailPath": "thumbnails/0998_00_couple-walking-phones-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0998_01_couple-walking-phones-pose.png",
+          "localThumbnailPath": "thumbnails/0998_01_couple-walking-phones-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "phone",
+        "pose"
+      ],
+      "bytes": 47342,
+      "slug": "couple-walking-phones-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0999",
+      "presetNumber": 999,
+      "label": "Female male phone pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and talking on their phones",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0999_female-male-phone-pose.pma",
+      "localScenePath": "scenes/0999_female-male-phone-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0999_00_female-male-phone-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0999_00_female-male-phone-pose.png",
+          "localThumbnailPath": "thumbnails/0999_00_female-male-phone-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0999_01_female-male-phone-pose.png",
+          "localThumbnailPath": "thumbnails/0999_01_female-male-phone-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "phone",
+        "pose"
+      ],
+      "bytes": 47340,
+      "slug": "female-male-phone-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1017",
+      "presetNumber": 1017,
+      "label": "Female male squatting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are squatting, looking at something on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1017_female-male-squatting-pose.pma",
+      "localScenePath": "scenes/1017_female-male-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1017_00_female-male-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1017_00_female-male-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/1017_00_female-male-squatting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1017_01_female-male-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/1017_01_female-male-squatting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 46464,
+      "slug": "female-male-squatting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1018",
+      "presetNumber": 1018,
+      "label": "Squatting desperate looking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are looking at something on the ground and holding their heads",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1018_squatting-desperate-looking-pose.pma",
+      "localScenePath": "scenes/1018_squatting-desperate-looking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1018_00_squatting-desperate-looking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1018_00_squatting-desperate-looking-pose.png",
+          "localThumbnailPath": "thumbnails/1018_00_squatting-desperate-looking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1018_01_squatting-desperate-looking-pose.png",
+          "localThumbnailPath": "thumbnails/1018_01_squatting-desperate-looking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 46478,
+      "slug": "squatting-desperate-looking-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1019",
+      "presetNumber": 1019,
+      "label": "Squatting watching together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are squatting and watching something together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1019_squatting-watching-together-pose.pma",
+      "localScenePath": "scenes/1019_squatting-watching-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1019_00_squatting-watching-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1019_00_squatting-watching-together-pose.png",
+          "localThumbnailPath": "thumbnails/1019_00_squatting-watching-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1019_01_squatting-watching-together-pose.png",
+          "localThumbnailPath": "thumbnails/1019_01_squatting-watching-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 46486,
+      "slug": "squatting-watching-together-pose"
+    },
+    {
+      "id": "guo-scene-1028",
+      "presetNumber": 1028,
+      "label": "Female male split pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is doing a standing front split and the male is holding her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1028_female-male-split-pose.pma",
+      "localScenePath": "scenes/1028_female-male-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1028_00_female-male-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1028_00_female-male-split-pose.png",
+          "localThumbnailPath": "thumbnails/1028_00_female-male-split-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1028_01_female-male-split-pose.png",
+          "localThumbnailPath": "thumbnails/1028_01_female-male-split-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 46786,
+      "slug": "female-male-split-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    }
+  ]
+}

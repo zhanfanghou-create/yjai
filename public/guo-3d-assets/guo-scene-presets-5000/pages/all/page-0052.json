@@ -1,0 +1,1082 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 51,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1225",
+      "presetNumber": 1225,
+      "label": "Acrobatic shooting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Acrobatic archery pose, female is handstanding and shooting with her feet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1225_acrobatic-shooting-pose.pma",
+      "localScenePath": "scenes/1225_acrobatic-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1225_00_acrobatic-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1225_00_acrobatic-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/1225_00_acrobatic-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        2,
+        3,
+        5,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26174,
+      "slug": "acrobatic-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1226",
+      "presetNumber": 1226,
+      "label": "Crossbow aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and aiming with the crossbow, holding it with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1226_crossbow-aiming-pose.pma",
+      "localScenePath": "scenes/1226_crossbow-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1226_00_crossbow-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1226_00_crossbow-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1226_00_crossbow-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 24172,
+      "slug": "crossbow-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1227",
+      "presetNumber": 1227,
+      "label": "Female crossbow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently while holding a crossbow in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1227_female-crossbow-pose.pma",
+      "localScenePath": "scenes/1227_female-crossbow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1227_00_female-crossbow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1227_00_female-crossbow-pose.png",
+          "localThumbnailPath": "thumbnails/1227_00_female-crossbow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 24021,
+      "slug": "female-crossbow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1228",
+      "presetNumber": 1228,
+      "label": "Male crossbow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with a crossbow, holding it with two hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1228_male-crossbow-pose.pma",
+      "localScenePath": "scenes/1228_male-crossbow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1228_00_male-crossbow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1228_00_male-crossbow-pose.png",
+          "localThumbnailPath": "thumbnails/1228_00_male-crossbow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 24177,
+      "slug": "male-crossbow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1229",
+      "presetNumber": 1229,
+      "label": "Holding crossbow female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a crossbow in her right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1229_holding-crossbow-female-pose.pma",
+      "localScenePath": "scenes/1229_holding-crossbow-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1229_00_holding-crossbow-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1229_00_holding-crossbow-female-pose.png",
+          "localThumbnailPath": "thumbnails/1229_00_holding-crossbow-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 24188,
+      "slug": "holding-crossbow-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1230",
+      "presetNumber": 1230,
+      "label": "Boxing stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing in boxing position, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1230_boxing-stance-pose.pma",
+      "localScenePath": "scenes/1230_boxing-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1230_00_boxing-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1230_00_boxing-stance-pose.png",
+          "localThumbnailPath": "thumbnails/1230_00_boxing-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23549,
+      "slug": "boxing-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1231",
+      "presetNumber": 1231,
+      "label": "Angry standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing angry with his hands clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1231_angry-standing-pose.pma",
+      "localScenePath": "scenes/1231_angry-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1231_00_angry-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1231_00_angry-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1231_00_angry-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23574,
+      "slug": "angry-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1232",
+      "presetNumber": 1232,
+      "label": "Jumping showing muscles pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is jumping high in the air and showing his muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1232_jumping-showing-muscles-pose.pma",
+      "localScenePath": "scenes/1232_jumping-showing-muscles-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1232_00_jumping-showing-muscles-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1232_00_jumping-showing-muscles-pose.png",
+          "localThumbnailPath": "thumbnails/1232_00_jumping-showing-muscles-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23520,
+      "slug": "jumping-showing-muscles-pose"
+    },
+    {
+      "id": "guo-scene-1233",
+      "presetNumber": 1233,
+      "label": "Male hitting ground pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing and is about to hit the ground with both fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1233_male-hitting-ground-pose.pma",
+      "localScenePath": "scenes/1233_male-hitting-ground-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1233_00_male-hitting-ground-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1233_00_male-hitting-ground-pose.png",
+          "localThumbnailPath": "thumbnails/1233_00_male-hitting-ground-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23508,
+      "slug": "male-hitting-ground-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1234",
+      "presetNumber": 1234,
+      "label": "Angry male running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry brute male is running, looking ahead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1234_angry-male-running-pose.pma",
+      "localScenePath": "scenes/1234_angry-male-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1234_00_angry-male-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1234_00_angry-male-running-pose.png",
+          "localThumbnailPath": "thumbnails/1234_00_angry-male-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23654,
+      "slug": "angry-male-running-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1235",
+      "presetNumber": 1235,
+      "label": "Walking grenade launcher pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is walking calmly with a grenade launcher in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1235_walking-grenade-launcher-pose.pma",
+      "localScenePath": "scenes/1235_walking-grenade-launcher-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1235_00_walking-grenade-launcher-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1235_00_walking-grenade-launcher-pose.png",
+          "localThumbnailPath": "thumbnails/1235_00_walking-grenade-launcher-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [
+        202
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 24071,
+      "slug": "walking-grenade-launcher-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1236",
+      "presetNumber": 1236,
+      "label": "Jump punching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is jumping high and swinging his left hand to punch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1236_jump-punching-pose.pma",
+      "localScenePath": "scenes/1236_jump-punching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1236_00_jump-punching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1236_00_jump-punching-pose.png",
+          "localThumbnailPath": "thumbnails/1236_00_jump-punching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23541,
+      "slug": "jump-punching-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1237",
+      "presetNumber": 1237,
+      "label": "Brute male kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is kicking with his left foot from running, his hands clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1237_brute-male-kicking-pose.pma",
+      "localScenePath": "scenes/1237_brute-male-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1237_00_brute-male-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1237_00_brute-male-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1237_00_brute-male-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23552,
+      "slug": "brute-male-kicking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1238",
+      "presetNumber": 1238,
+      "label": "Brute male angry standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing, his hands are on his hips, clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1238_brute-male-angry-standing-pose.pma",
+      "localScenePath": "scenes/1238_brute-male-angry-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1238_00_brute-male-angry-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1238_00_brute-male-angry-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1238_00_brute-male-angry-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23543,
+      "slug": "brute-male-angry-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1239",
+      "presetNumber": 1239,
+      "label": "Brute males fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Brute males are fighting, one of them is punching the other one, who falls down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1239_brute-males-fighting-pose.pma",
+      "localScenePath": "scenes/1239_brute-males-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1239_00_brute-males-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1239_00_brute-males-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1239_00_brute-males-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1239_01_brute-males-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1239_01_brute-males-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 46371,
+      "slug": "brute-males-fighting-pose"
+    },
+    {
+      "id": "guo-scene-1240",
+      "presetNumber": 1240,
+      "label": "Dagger standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a dagger in his right hand, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1240_dagger-standing-pose.pma",
+      "localScenePath": "scenes/1240_dagger-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1240_00_dagger-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1240_00_dagger-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1240_00_dagger-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24182,
+      "slug": "dagger-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1241",
+      "presetNumber": 1241,
+      "label": "Two daggers standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and ready to attack with two daggers, dagger attacking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1241_two-daggers-standing-pose.pma",
+      "localScenePath": "scenes/1241_two-daggers-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1241_00_two-daggers-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1241_00_two-daggers-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1241_00_two-daggers-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24787,
+      "slug": "two-daggers-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1242",
+      "presetNumber": 1242,
+      "label": "Stroking dagger blade pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a dagger in his left hand and stroking it's blade with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1242_stroking-dagger-blade-pose.pma",
+      "localScenePath": "scenes/1242_stroking-dagger-blade-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1242_00_stroking-dagger-blade-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1242_00_stroking-dagger-blade-pose.png",
+          "localThumbnailPath": "thumbnails/1242_00_stroking-dagger-blade-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24383,
+      "slug": "stroking-dagger-blade-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1243",
+      "presetNumber": 1243,
+      "label": "Jumping dagger attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking with two daggers, jumping from running, holding the daggers upside down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1243_jumping-dagger-attack-pose.pma",
+      "localScenePath": "scenes/1243_jumping-dagger-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1243_00_jumping-dagger-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1243_00_jumping-dagger-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1243_00_jumping-dagger-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24396,
+      "slug": "jumping-dagger-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1244",
+      "presetNumber": 1244,
+      "label": "Female holding two daggers pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding two daggers and ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1244_female-holding-two-daggers-pose.pma",
+      "localScenePath": "scenes/1244_female-holding-two-daggers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1244_00_female-holding-two-daggers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1244_00_female-holding-two-daggers-pose.png",
+          "localThumbnailPath": "thumbnails/1244_00_female-holding-two-daggers-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24327,
+      "slug": "female-holding-two-daggers-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1245",
+      "presetNumber": 1245,
+      "label": "Male holding dagger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a dagger in his right hand and ready to attack with it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1245_male-holding-dagger-pose.pma",
+      "localScenePath": "scenes/1245_male-holding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1245_00_male-holding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1245_00_male-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/1245_00_male-holding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24144,
+      "slug": "male-holding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1246",
+      "presetNumber": 1246,
+      "label": "Dagger stabbing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is attacking with a dagger, stabbing with right hand, holding the dagger upside down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1246_dagger-stabbing-pose.pma",
+      "localScenePath": "scenes/1246_dagger-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1246_00_dagger-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1246_00_dagger-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/1246_00_dagger-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24342,
+      "slug": "dagger-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1247",
+      "presetNumber": 1247,
+      "label": "Dagger threatening pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the dagger straight, threatening and ready to attack ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1247_dagger-threatening-pose.pma",
+      "localScenePath": "scenes/1247_dagger-threatening-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1247_00_dagger-threatening-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1247_00_dagger-threatening-pose.png",
+          "localThumbnailPath": "thumbnails/1247_00_dagger-threatening-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24359,
+      "slug": "dagger-threatening-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1248",
+      "presetNumber": 1248,
+      "label": "Female daggers attacking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding two daggers, turning to the right to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1248_female-daggers-attacking-pose.pma",
+      "localScenePath": "scenes/1248_female-daggers-attacking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1248_00_female-daggers-attacking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1248_00_female-daggers-attacking-pose.png",
+          "localThumbnailPath": "thumbnails/1248_00_female-daggers-attacking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24323,
+      "slug": "female-daggers-attacking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

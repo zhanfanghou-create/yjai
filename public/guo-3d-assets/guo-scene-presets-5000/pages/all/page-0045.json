@@ -1,0 +1,1086 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 44,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1057",
+      "presetNumber": 1057,
+      "label": "Waiting baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and waiting for the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1057_waiting-baseball-pose.pma",
+      "localScenePath": "scenes/1057_waiting-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1057_00_waiting-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1057_00_waiting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1057_00_waiting-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24138,
+      "slug": "waiting-baseball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1058",
+      "presetNumber": 1058,
+      "label": "Males waiting baseball pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male players are playing baseball, waiting for the coming ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1058_males-waiting-baseball-pose.pma",
+      "localScenePath": "scenes/1058_males-waiting-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1058_00_males-waiting-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1058_00_males-waiting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1058_00_males-waiting-baseball-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1058_01_males-waiting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1058_01_males-waiting-baseball-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 47557,
+      "slug": "males-waiting-baseball-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1059",
+      "presetNumber": 1059,
+      "label": "Baseball exercise pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male baseball players are exercising to throw and hit the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1059_baseball-exercise-pose.pma",
+      "localScenePath": "scenes/1059_baseball-exercise-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1059_00_baseball-exercise-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1059_00_baseball-exercise-pose.png",
+          "localThumbnailPath": "thumbnails/1059_00_baseball-exercise-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1059_01_baseball-exercise-pose.png",
+          "localThumbnailPath": "thumbnails/1059_01_baseball-exercise-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 47506,
+      "slug": "baseball-exercise-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1060",
+      "presetNumber": 1060,
+      "label": "Leaning against wall pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and leaning against the wall, keeping her arms crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1060_leaning-against-wall-pose.pma",
+      "localScenePath": "scenes/1060_leaning-against-wall-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1060_00_leaning-against-wall-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1060_00_leaning-against-wall-pose.png",
+          "localThumbnailPath": "thumbnails/1060_00_leaning-against-wall-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24116,
+      "slug": "leaning-against-wall-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1061",
+      "presetNumber": 1061,
+      "label": "Female bar counter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and leaning on the bar counter, her legs are crossed, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1061_female-bar-counter-pose.pma",
+      "localScenePath": "scenes/1061_female-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1061_00_female-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1061_00_female-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1061_00_female-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24034,
+      "slug": "female-bar-counter-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1062",
+      "presetNumber": 1062,
+      "label": "Male bar counter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and leaning on the bar counter, his legs are crossed, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1062_male-bar-counter-pose.pma",
+      "localScenePath": "scenes/1062_male-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1062_00_male-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1062_00_male-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1062_00_male-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24100,
+      "slug": "male-bar-counter-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1063",
+      "presetNumber": 1063,
+      "label": "Female leaning looking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning against the wall with her legs crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1063_female-leaning-looking-pose.pma",
+      "localScenePath": "scenes/1063_female-leaning-looking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1063_00_female-leaning-looking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1063_00_female-leaning-looking-pose.png",
+          "localThumbnailPath": "thumbnails/1063_00_female-leaning-looking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 23984,
+      "slug": "female-leaning-looking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1064",
+      "presetNumber": 1064,
+      "label": "Female leaning leg pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning against the wall with her back and left leg and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1064_female-leaning-leg-pose.pma",
+      "localScenePath": "scenes/1064_female-leaning-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1064_00_female-leaning-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1064_00_female-leaning-leg-pose.png",
+          "localThumbnailPath": "thumbnails/1064_00_female-leaning-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "female-leaning-leg-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1065",
+      "presetNumber": 1065,
+      "label": "Female leaning table pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning on the table and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1065_female-leaning-table-pose.pma",
+      "localScenePath": "scenes/1065_female-leaning-table-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1065_00_female-leaning-table-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1065_00_female-leaning-table-pose.png",
+          "localThumbnailPath": "thumbnails/1065_00_female-leaning-table-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "female-leaning-table-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1066",
+      "presetNumber": 1066,
+      "label": "Male leaning wall pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is leaning against the wall, his right hand is in his pocket, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1066_male-leaning-wall-pose.pma",
+      "localScenePath": "scenes/1066_male-leaning-wall-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1066_00_male-leaning-wall-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1066_00_male-leaning-wall-pose.png",
+          "localThumbnailPath": "thumbnails/1066_00_male-leaning-wall-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24171,
+      "slug": "male-leaning-wall-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1067",
+      "presetNumber": 1067,
+      "label": "Male leaning table pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is leaning on the table, his arms are crossed and he is looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1067_male-leaning-table-pose.pma",
+      "localScenePath": "scenes/1067_male-leaning-table-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1067_00_male-leaning-table-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1067_00_male-leaning-table-pose.png",
+          "localThumbnailPath": "thumbnails/1067_00_male-leaning-table-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24156,
+      "slug": "male-leaning-table-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1068",
+      "presetNumber": 1068,
+      "label": "Female male leaning pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning on the barrier and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1068_female-male-leaning-pose.pma",
+      "localScenePath": "scenes/1068_female-male-leaning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1068_00_female-male-leaning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1068_00_female-male-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/1068_00_female-male-leaning-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1068_01_female-male-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/1068_01_female-male-leaning-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 47652,
+      "slug": "female-male-leaning-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1069",
+      "presetNumber": 1069,
+      "label": "Males bar counter pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are standing, leaning against the bar counter and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1069_males-bar-counter-pose.pma",
+      "localScenePath": "scenes/1069_males-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1069_00_males-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1069_00_males-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1069_00_males-bar-counter-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1069_01_males-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1069_01_males-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 46985,
+      "slug": "males-bar-counter-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1070",
+      "presetNumber": 1070,
+      "label": "Pushing heavy object pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and strongly pushing away a heavy object",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1070_pushing-heavy-object-pose.pma",
+      "localScenePath": "scenes/1070_pushing-heavy-object-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1070_00_pushing-heavy-object-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1070_00_pushing-heavy-object-pose.png",
+          "localThumbnailPath": "thumbnails/1070_00_pushing-heavy-object-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24349,
+      "slug": "pushing-heavy-object-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1071",
+      "presetNumber": 1071,
+      "label": "Whole body pushing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and pushing a heavy object with his whole body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1071_whole-body-pushing-pose.pma",
+      "localScenePath": "scenes/1071_whole-body-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1071_00_whole-body-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1071_00_whole-body-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1071_00_whole-body-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24380,
+      "slug": "whole-body-pushing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1072",
+      "presetNumber": 1072,
+      "label": "Two males pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are pushing a huge and heavy object together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1072_two-males-pushing-pose.pma",
+      "localScenePath": "scenes/1072_two-males-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1072_00_two-males-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1072_00_two-males-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1072_00_two-males-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1072_01_two-males-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1072_01_two-males-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 47210,
+      "slug": "two-males-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1073",
+      "presetNumber": 1073,
+      "label": "Female pushing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and pushing a heavy object",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1073_female-pushing-pose.pma",
+      "localScenePath": "scenes/1073_female-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1073_00_female-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1073_00_female-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1073_00_female-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24066,
+      "slug": "female-pushing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1074",
+      "presetNumber": 1074,
+      "label": "Two females pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are pushing a huge and heavy object together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1074_two-females-pushing-pose.pma",
+      "localScenePath": "scenes/1074_two-females-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1074_00_two-females-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1074_00_two-females-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1074_00_two-females-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1074_01_two-females-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1074_01_two-females-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 46974,
+      "slug": "two-females-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1075",
+      "presetNumber": 1075,
+      "label": "Pushing upwards pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling and pushing a heavy object upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1075_pushing-upwards-pose.pma",
+      "localScenePath": "scenes/1075_pushing-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1075_00_pushing-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1075_00_pushing-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/1075_00_pushing-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24198,
+      "slug": "pushing-upwards-pose"
+    },
+    {
+      "id": "guo-scene-1076",
+      "presetNumber": 1076,
+      "label": "Female kindly pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is kindly pushing forward the other female who is standing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1076_female-kindly-pushing-pose.pma",
+      "localScenePath": "scenes/1076_female-kindly-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1076_00_female-kindly-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1076_00_female-kindly-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1076_00_female-kindly-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1076_01_female-kindly-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1076_01_female-kindly-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 46091,
+      "slug": "female-kindly-pushing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1077",
+      "presetNumber": 1077,
+      "label": "Male push up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is doing push ups on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1077_male-push-up-pose.pma",
+      "localScenePath": "scenes/1077_male-push-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1077_00_male-push-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1077_00_male-push-up-pose.png",
+          "localThumbnailPath": "thumbnails/1077_00_male-push-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 23760,
+      "slug": "male-push-up-pose"
+    },
+    {
+      "id": "guo-scene-1078",
+      "presetNumber": 1078,
+      "label": "Female pushing male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is trying to push the male away, who is standing still",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1078_female-pushing-male-pose.pma",
+      "localScenePath": "scenes/1078_female-pushing-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1078_00_female-pushing-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1078_00_female-pushing-male-pose.png",
+          "localThumbnailPath": "thumbnails/1078_00_female-pushing-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1078_01_female-pushing-male-pose.png",
+          "localThumbnailPath": "thumbnails/1078_01_female-pushing-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 46286,
+      "slug": "female-pushing-male-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1079",
+      "presetNumber": 1079,
+      "label": "Squatting pushing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is squatting and trying to push forward some objects",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1079_squatting-pushing-pose.pma",
+      "localScenePath": "scenes/1079_squatting-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1079_00_squatting-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1079_00_squatting-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1079_00_squatting-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 25970,
+      "slug": "squatting-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1080",
+      "presetNumber": 1080,
+      "label": "Confident female axe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female is standing with her right hand on hip and holding an axe in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1080_confident-female-axe-pose.pma",
+      "localScenePath": "scenes/1080_confident-female-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1080_00_confident-female-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1080_00_confident-female-axe-pose.png",
+          "localThumbnailPath": "thumbnails/1080_00_confident-female-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 23906,
+      "slug": "confident-female-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

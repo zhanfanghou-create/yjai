@@ -1,0 +1,1124 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 83,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4325",
+      "presetNumber": 4325,
+      "label": "Female kneeling crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, looking down and crying, female crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4325_female-kneeling-crying-pose.pma",
+      "localScenePath": "scenes/4325_female-kneeling-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4325_00_female-kneeling-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4325_00_female-kneeling-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4325_00_female-kneeling-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23538,
+      "slug": "female-kneeling-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4329",
+      "presetNumber": 4329,
+      "label": "Female lying crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on the couch and crying, female crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4329_female-lying-crying-pose.pma",
+      "localScenePath": "scenes/4329_female-lying-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4329_00_female-lying-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4329_00_female-lying-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4329_00_female-lying-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23978,
+      "slug": "female-lying-crying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4330",
+      "presetNumber": 4330,
+      "label": "Peace sign anime hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is lying on her stomach, making \"peace\" signs with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4330_peace-sign-anime-hand-pose.pma",
+      "localScenePath": "scenes/4330_peace-sign-anime-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4330_00_peace-sign-anime-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4330_00_peace-sign-anime-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4330_00_peace-sign-anime-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        25
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        25
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23896,
+      "slug": "peace-sign-anime-hand-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4331",
+      "presetNumber": 4331,
+      "label": "Crossed arms hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing casually with her arms crossed, hand reference anime",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4331_crossed-arms-hand-pose.pma",
+      "localScenePath": "scenes/4331_crossed-arms-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4331_00_crossed-arms-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4331_00_crossed-arms-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4331_00_crossed-arms-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        25
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        25
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23979,
+      "slug": "crossed-arms-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4332",
+      "presetNumber": 4332,
+      "label": "Anime elegant hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting elegantly, resting her hands on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4332_anime-elegant-hand-pose.pma",
+      "localScenePath": "scenes/4332_anime-elegant-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4332_00_anime-elegant-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4332_00_anime-elegant-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4332_00_anime-elegant-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        26
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        26
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 24266,
+      "slug": "anime-elegant-hand-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4333",
+      "presetNumber": 4333,
+      "label": "Anime stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling and stretching, anime stretching hand reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4333_anime-stretching-pose.pma",
+      "localScenePath": "scenes/4333_anime-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4333_00_anime-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4333_00_anime-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/4333_00_anime-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        25
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        25
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 24035,
+      "slug": "anime-stretching-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4334",
+      "presetNumber": 4334,
+      "label": "Perfect sign hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and making \"perfect\" signs with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4334_perfect-sign-hand-pose.pma",
+      "localScenePath": "scenes/4334_perfect-sign-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4334_00_perfect-sign-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4334_00_perfect-sign-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4334_00_perfect-sign-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        25
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        25
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23938,
+      "slug": "perfect-sign-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4336",
+      "presetNumber": 4336,
+      "label": "Blowing kiss hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and blowing a kiss with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4336_blowing-kiss-hand-pose.pma",
+      "localScenePath": "scenes/4336_blowing-kiss-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4336_00_blowing-kiss-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4336_00_blowing-kiss-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4336_00_blowing-kiss-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        25
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        25
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23977,
+      "slug": "blowing-kiss-hand-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4338",
+      "presetNumber": 4338,
+      "label": "Holding hips hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and holding her hips, anime female hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4338_holding-hips-hand-pose.pma",
+      "localScenePath": "scenes/4338_holding-hips-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4338_00_holding-hips-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4338_00_holding-hips-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4338_00_holding-hips-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        26
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        26
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23709,
+      "slug": "holding-hips-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4339",
+      "presetNumber": 4339,
+      "label": "Anime reaching hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is reaching up with her left hand, anime hand foreshortened pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4339_anime-reaching-hand-pose.pma",
+      "localScenePath": "scenes/4339_anime-reaching-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4339_00_anime-reaching-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4339_00_anime-reaching-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4339_00_anime-reaching-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        25
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        25
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23998,
+      "slug": "anime-reaching-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4340",
+      "presetNumber": 4340,
+      "label": "Female crazy running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Crazy upset female is running, raising her hands, female crazy pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4340_female-crazy-running-pose.pma",
+      "localScenePath": "scenes/4340_female-crazy-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4340_00_female-crazy-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4340_00_female-crazy-running-pose.png",
+          "localThumbnailPath": "thumbnails/4340_00_female-crazy-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        30
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        30
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23506,
+      "slug": "female-crazy-running-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4342",
+      "presetNumber": 4342,
+      "label": "Crazy female guitar pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Crazy female is about to smash her electric guitar, female crazy pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4342_crazy-female-guitar-pose.pma",
+      "localScenePath": "scenes/4342_crazy-female-guitar-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4342_00_crazy-female-guitar-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4342_00_crazy-female-guitar-pose.png",
+          "localThumbnailPath": "thumbnails/4342_00_crazy-female-guitar-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        30
+      ],
+      "propNumbers": [
+        90
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        30
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24414,
+      "slug": "crazy-female-guitar-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4344",
+      "presetNumber": 4344,
+      "label": "Crazy dance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Crazy female is robot dancing, female crazy dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4344_crazy-dance-pose.pma",
+      "localScenePath": "scenes/4344_crazy-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4344_00_crazy-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4344_00_crazy-dance-pose.png",
+          "localThumbnailPath": "thumbnails/4344_00_crazy-dance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        30
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        30
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23688,
+      "slug": "crazy-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4346",
+      "presetNumber": 4346,
+      "label": "Crazy female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Crazy female is standing on one leg and holding her left leg with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4346_crazy-female-pose.pma",
+      "localScenePath": "scenes/4346_crazy-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4346_00_crazy-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4346_00_crazy-female-pose.png",
+          "localThumbnailPath": "thumbnails/4346_00_crazy-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        30
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        30
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23506,
+      "slug": "crazy-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4348",
+      "presetNumber": 4348,
+      "label": "Female crazy jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is jumping high, clenching her fists, jumping like a crazy",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4348_female-crazy-jumping-pose.pma",
+      "localScenePath": "scenes/4348_female-crazy-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4348_00_female-crazy-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4348_00_female-crazy-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/4348_00_female-crazy-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22966,
+      "slug": "female-crazy-jumping-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4352",
+      "presetNumber": 4352,
+      "label": "Female chair leaning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair with her arms crossed and leaning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4352_female-chair-leaning-back-pose.pma",
+      "localScenePath": "scenes/4352_female-chair-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4352_00_female-chair-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4352_00_female-chair-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4352_00_female-chair-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23160,
+      "slug": "female-chair-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4353",
+      "presetNumber": 4353,
+      "label": "Female stretching leaning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and stretching her arms, leaning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4353_female-stretching-leaning-back-pose.pma",
+      "localScenePath": "scenes/4353_female-stretching-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4353_00_female-stretching-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4353_00_female-stretching-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4353_00_female-stretching-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 22764,
+      "slug": "female-stretching-leaning-back-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4354",
+      "presetNumber": 4354,
+      "label": "Female armchair leaning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair comfortably with her legs crossed and leaning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4354_female-armchair-leaning-back-pose.pma",
+      "localScenePath": "scenes/4354_female-armchair-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4354_00_female-armchair-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4354_00_female-armchair-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4354_00_female-armchair-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23156,
+      "slug": "female-armchair-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4355",
+      "presetNumber": 4355,
+      "label": "Female standing leaning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female model is standing and leaning back, holding her hip with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4355_female-standing-leaning-back-pose.pma",
+      "localScenePath": "scenes/4355_female-standing-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4355_00_female-standing-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4355_00_female-standing-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4355_00_female-standing-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23166,
+      "slug": "female-standing-leaning-back-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4356",
+      "presetNumber": 4356,
+      "label": "Female sitting leaning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a cushion and leaning back, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4356_female-sitting-leaning-back-pose.pma",
+      "localScenePath": "scenes/4356_female-sitting-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4356_00_female-sitting-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4356_00_female-sitting-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4356_00_female-sitting-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23185,
+      "slug": "female-sitting-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4360",
+      "presetNumber": 4360,
+      "label": "Muscular female power pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is standing and showing her arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4360_muscular-female-power-pose.pma",
+      "localScenePath": "scenes/4360_muscular-female-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4360_00_muscular-female-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4360_00_muscular-female-power-pose.png",
+          "localThumbnailPath": "thumbnails/4360_00_muscular-female-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20373,
+      "slug": "muscular-female-power-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4362",
+      "presetNumber": 4362,
+      "label": "Walking female power pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is walking and showing her arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4362_walking-female-power-pose.pma",
+      "localScenePath": "scenes/4362_walking-female-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4362_00_walking-female-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4362_00_walking-female-power-pose.png",
+          "localThumbnailPath": "thumbnails/4362_00_walking-female-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20315,
+      "slug": "walking-female-power-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4363",
+      "presetNumber": 4363,
+      "label": "Female jumping power pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, clenching her fists, dynamic female power pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4363_female-jumping-power-pose.pma",
+      "localScenePath": "scenes/4363_female-jumping-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4363_00_female-jumping-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4363_00_female-jumping-power-pose.png",
+          "localThumbnailPath": "thumbnails/4363_00_female-jumping-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20393,
+      "slug": "female-jumping-power-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4367",
+      "presetNumber": 4367,
+      "label": "Metal bat power pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running and holding a metal bat, swinging it back, female power pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4367_metal-bat-power-pose.pma",
+      "localScenePath": "scenes/4367_metal-bat-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4367_00_metal-bat-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4367_00_metal-bat-power-pose.png",
+          "localThumbnailPath": "thumbnails/4367_00_metal-bat-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        166
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23288,
+      "slug": "metal-bat-power-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

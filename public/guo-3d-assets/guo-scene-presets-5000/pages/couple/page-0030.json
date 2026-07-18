@@ -1,0 +1,1247 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 29,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-4008",
+      "presetNumber": 4008,
+      "label": "Battle holding scythe pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are about to start a battle, one of them is holding a scythe",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4008_battle-holding-scythe-pose.pma",
+      "localScenePath": "scenes/4008_battle-holding-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4008_00_battle-holding-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4008_00_battle-holding-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/4008_00_battle-holding-scythe-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4008_01_battle-holding-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/4008_01_battle-holding-scythe-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "battle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47486,
+      "slug": "battle-holding-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4009",
+      "presetNumber": 4009,
+      "label": "Females battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female kicks the another female in the head who passes out and drops her sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4009_females-battle-pose.pma",
+      "localScenePath": "scenes/4009_females-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4009_00_females-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4009_00_females-battle-pose.png",
+          "localThumbnailPath": "thumbnails/4009_00_females-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4009_01_females-battle-pose.png",
+          "localThumbnailPath": "thumbnails/4009_01_females-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "battle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46515,
+      "slug": "females-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4044",
+      "presetNumber": 4044,
+      "label": "Holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and holding hands, drawing hand reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4044_holding-hands-pose.pma",
+      "localScenePath": "scenes/4044_holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4044_00_holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4044_00_holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4044_00_holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4044_01_holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4044_01_holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "hand",
+        "reference"
+      ],
+      "bytes": 46428,
+      "slug": "holding-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4051",
+      "presetNumber": 4051,
+      "label": "Talking holding wine glass pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other, talking, holding wine glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4051_talking-holding-wine-glass-pose.pma",
+      "localScenePath": "scenes/4051_talking-holding-wine-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4051_00_talking-holding-wine-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4051_00_talking-holding-wine-glass-pose.png",
+          "localThumbnailPath": "thumbnails/4051_00_talking-holding-wine-glass-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4051_01_talking-holding-wine-glass-pose.png",
+          "localThumbnailPath": "thumbnails/4051_01_talking-holding-wine-glass-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "wine",
+        "glass",
+        "reference"
+      ],
+      "bytes": 47434,
+      "slug": "talking-holding-wine-glass-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4058",
+      "presetNumber": 4058,
+      "label": "Wine glass clinking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and clinking glasses, female holding wine glass reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4058_wine-glass-clinking-pose.pma",
+      "localScenePath": "scenes/4058_wine-glass-clinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4058_00_wine-glass-clinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4058_00_wine-glass-clinking-pose.png",
+          "localThumbnailPath": "thumbnails/4058_00_wine-glass-clinking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4058_01_wine-glass-clinking-pose.png",
+          "localThumbnailPath": "thumbnails/4058_01_wine-glass-clinking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "wine",
+        "glass",
+        "reference"
+      ],
+      "bytes": 47158,
+      "slug": "wine-glass-clinking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4059",
+      "presetNumber": 4059,
+      "label": "Couple wine glass pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting at the table and holding wine glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4059_couple-wine-glass-pose.pma",
+      "localScenePath": "scenes/4059_couple-wine-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4059_00_couple-wine-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4059_00_couple-wine-glass-pose.png",
+          "localThumbnailPath": "thumbnails/4059_00_couple-wine-glass-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4059_01_couple-wine-glass-pose.png",
+          "localThumbnailPath": "thumbnails/4059_01_couple-wine-glass-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        76,
+        136,
+        139
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "wine",
+        "glass",
+        "reference"
+      ],
+      "bytes": 48798,
+      "slug": "couple-wine-glass-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4070",
+      "presetNumber": 4070,
+      "label": "Standing people pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing next to each other and posing, reference for drawing people",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4070_standing-people-pose.pma",
+      "localScenePath": "scenes/4070_standing-people-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4070_00_standing-people-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4070_00_standing-people-pose.png",
+          "localThumbnailPath": "thumbnails/4070_00_standing-people-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4070_01_standing-people-pose.png",
+          "localThumbnailPath": "thumbnails/4070_01_standing-people-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "reference",
+        "for",
+        "drawing",
+        "people"
+      ],
+      "bytes": 47333,
+      "slug": "standing-people-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4086",
+      "presetNumber": 4086,
+      "label": "Couple standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and holding each other's hands, plus size body reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4086_couple-standing-pose.pma",
+      "localScenePath": "scenes/4086_couple-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4086_00_couple-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4086_00_couple-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4086_00_couple-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4086_01_couple-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4086_01_couple-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        45,
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45,
+        46
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 47065,
+      "slug": "couple-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4088",
+      "presetNumber": 4088,
+      "label": "Happy females pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and hugging each other, one of them is waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4088_happy-females-pose.pma",
+      "localScenePath": "scenes/4088_happy-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4088_00_happy-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4088_00_happy-females-pose.png",
+          "localThumbnailPath": "thumbnails/4088_00_happy-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4088_01_happy-females-pose.png",
+          "localThumbnailPath": "thumbnails/4088_01_happy-females-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        45
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        45
+      ],
+      "sourceTags": [
+        "plus",
+        "size",
+        "body",
+        "reference"
+      ],
+      "bytes": 46932,
+      "slug": "happy-females-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4107",
+      "presetNumber": 4107,
+      "label": "Bar stool sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on bar stools, couple different sitting poses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4107_bar-stool-sitting-pose.pma",
+      "localScenePath": "scenes/4107_bar-stool-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4107_00_bar-stool-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4107_00_bar-stool-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4107_00_bar-stool-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4107_01_bar-stool-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4107_01_bar-stool-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47490,
+      "slug": "bar-stool-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4108",
+      "presetNumber": 4108,
+      "label": "Couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the floor on cushions and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4108_couple-sitting-pose.pma",
+      "localScenePath": "scenes/4108_couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4108_00_couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4108_00_couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4108_00_couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4108_01_couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4108_01_couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47530,
+      "slug": "couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4109",
+      "presetNumber": 4109,
+      "label": "Couple couch sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch, looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4109_couple-couch-sitting-pose.pma",
+      "localScenePath": "scenes/4109_couple-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4109_00_couple-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4109_00_couple-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4109_00_couple-couch-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4109_01_couple-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4109_01_couple-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47030,
+      "slug": "couple-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4121",
+      "presetNumber": 4121,
+      "label": "Cute female friends pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are standing and making heart shape with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4121_cute-female-friends-pose.pma",
+      "localScenePath": "scenes/4121_cute-female-friends-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4121_00_cute-female-friends-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4121_00_cute-female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4121_00_cute-female-friends-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4121_01_cute-female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4121_01_cute-female-friends-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46236,
+      "slug": "cute-female-friends-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4122",
+      "presetNumber": 4122,
+      "label": "Female friends sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are sitting on the couch and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4122_female-friends-sitting-pose.pma",
+      "localScenePath": "scenes/4122_female-friends-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4122_00_female-friends-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4122_00_female-friends-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4122_00_female-friends-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4122_01_female-friends-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4122_01_female-friends-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46599,
+      "slug": "female-friends-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4123",
+      "presetNumber": 4123,
+      "label": "Female friends walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are walking, hugging each other and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4123_female-friends-walking-pose.pma",
+      "localScenePath": "scenes/4123_female-friends-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4123_00_female-friends-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4123_00_female-friends-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4123_00_female-friends-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4123_01_female-friends-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4123_01_female-friends-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 45809,
+      "slug": "female-friends-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4124",
+      "presetNumber": 4124,
+      "label": "Female friends kneeling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are kneeling and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4124_female-friends-kneeling-pose.pma",
+      "localScenePath": "scenes/4124_female-friends-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4124_00_female-friends-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4124_00_female-friends-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4124_00_female-friends-kneeling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4124_01_female-friends-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4124_01_female-friends-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46403,
+      "slug": "female-friends-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4126",
+      "presetNumber": 4126,
+      "label": "Female male friends pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male friends are standing, hugging each other and waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4126_female-male-friends-pose.pma",
+      "localScenePath": "scenes/4126_female-male-friends-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4126_00_female-male-friends-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4126_00_female-male-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4126_00_female-male-friends-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4126_01_female-male-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4126_01_female-male-friends-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46489,
+      "slug": "female-male-friends-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4127",
+      "presetNumber": 4127,
+      "label": "Male friends standing poseq",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male friends are standing casually, male friendship drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4127_male-friends-standing-poseq.pma",
+      "localScenePath": "scenes/4127_male-friends-standing-poseq.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4127_00_male-friends-standing-poseq.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4127_00_male-friends-standing-poseq.png",
+          "localThumbnailPath": "thumbnails/4127_00_male-friends-standing-poseq.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4127_01_male-friends-standing-poseq.png",
+          "localThumbnailPath": "thumbnails/4127_01_male-friends-standing-poseq.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46351,
+      "slug": "male-friends-standing-poseq",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4128",
+      "presetNumber": 4128,
+      "label": "Friends greeting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male friends are greeting each other, male friendship drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4128_friends-greeting-pose.pma",
+      "localScenePath": "scenes/4128_friends-greeting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4128_00_friends-greeting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4128_00_friends-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/4128_00_friends-greeting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4128_01_friends-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/4128_01_friends-greeting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47099,
+      "slug": "friends-greeting-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4136",
+      "presetNumber": 4136,
+      "label": "Curious females pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing next to each other, thinking, curious about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4136_curious-females-pose.pma",
+      "localScenePath": "scenes/4136_curious-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4136_00_curious-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4136_00_curious-females-pose.png",
+          "localThumbnailPath": "thumbnails/4136_00_curious-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4136_01_curious-females-pose.png",
+          "localThumbnailPath": "thumbnails/4136_01_curious-females-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 46230,
+      "slug": "curious-females-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4138",
+      "presetNumber": 4138,
+      "label": "Males curious pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are crouching, thinking about something, male curious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4138_males-curious-pose.pma",
+      "localScenePath": "scenes/4138_males-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4138_00_males-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4138_00_males-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4138_00_males-curious-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4138_01_males-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4138_01_males-curious-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 46667,
+      "slug": "males-curious-pose"
+    },
+    {
+      "id": "guo-scene-4159",
+      "presetNumber": 4159,
+      "label": "Couple looking back pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are walking, holding hands and looking back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4159_couple-looking-back-pose.pma",
+      "localScenePath": "scenes/4159_couple-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4159_00_couple-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4159_00_couple-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/4159_00_couple-looking-back-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4159_01_couple-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/4159_01_couple-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46503,
+      "slug": "couple-looking-back-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4168",
+      "presetNumber": 4168,
+      "label": "Female male standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing with crossed arms, nude drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4168_female-male-standing-pose.pma",
+      "localScenePath": "scenes/4168_female-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4168_00_female-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4168_00_female-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4168_00_female-male-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4168_01_female-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4168_01_female-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48,
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "nude",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 50282,
+      "slug": "female-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4169",
+      "presetNumber": 4169,
+      "label": "Female male sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting next to each other, nude drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4169_female-male-sitting-pose.pma",
+      "localScenePath": "scenes/4169_female-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4169_00_female-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4169_00_female-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4169_00_female-male-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4169_01_female-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4169_01_female-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        48,
+        49
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "nude",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 50818,
+      "slug": "female-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

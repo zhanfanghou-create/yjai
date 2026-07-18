@@ -1,0 +1,406 @@
+/* ==================== 全景图查看器弹窗 ==================== */
+/* 通过主题变量自适应三套主题：.theme-dark-gray / .theme-light / .theme-blue-dark */
+
+.pano-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  animation: pano-fade-in 0.18s ease;
+}
+
+@keyframes pano-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.pano-modal {
+  width: min(1180px, 94vw);
+  height: min(760px, 90vh);
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--glass-bg-strong, var(--bg-secondary, #1e1e1e));
+  border: 1px solid var(--glass-border, var(--border-color, #444));
+  box-shadow: var(--glass-shadow-strong, 0 20px 60px rgba(0, 0, 0, 0.5));
+  color: var(--text-primary, #fff);
+  animation: pano-scale-in 0.2s ease;
+}
+
+@keyframes pano-scale-in {
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.pano-modal.is-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  border: none;
+}
+
+/* ---- Header ---- */
+.pano-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color, #444);
+  background: var(--bg-secondary, #2a2a2a);
+  flex-shrink: 0;
+}
+
+.pano-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary, #fff);
+}
+
+.pano-modal-title-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  color: var(--primary-color, #7dd3fc);
+  background: var(--primary-color-soft, rgba(125, 211, 252, 0.18));
+}
+
+.pano-modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pano-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary, #a0a0a0);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pano-icon-btn:hover {
+  background: var(--hover-bg, rgba(255, 255, 255, 0.08));
+  color: var(--text-primary, #fff);
+  border-color: var(--border-light, #555);
+}
+
+.pano-close-btn:hover {
+  background: var(--danger-color, #e74c3c);
+  color: #fff;
+  border-color: var(--danger-color, #e74c3c);
+}
+
+/* ---- Body ---- */
+.pano-modal-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.pano-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  background: radial-gradient(circle at 50% 40%, #202020 0%, #0c0c0c 100%);
+  overflow: hidden;
+}
+
+.pano-canvas-mount {
+  position: absolute;
+  inset: 0;
+}
+
+.pano-canvas-mount canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  cursor: grab;
+}
+
+.pano-canvas-mount canvas:active {
+  cursor: grabbing;
+}
+
+.pano-stage-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.pano-stage-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted, #888);
+  font-size: 13px;
+  text-align: center;
+}
+
+.pano-stage-hint svg {
+  opacity: 0.6;
+}
+
+.pano-stage-error {
+  color: var(--danger-color, #e74c3c);
+}
+
+.pano-spinner {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color-soft, rgba(125, 211, 252, 0.25));
+  border-top-color: var(--primary-color, #7dd3fc);
+  animation: pano-spin 0.8s linear infinite;
+}
+
+@keyframes pano-spin {
+  to { transform: rotate(360deg); }
+}
+
+.pano-stage-tip {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--text-secondary, #cfcfcf);
+  background: rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* ---- Param Panel ---- */
+.pano-param-panel {
+  width: 268px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 16px;
+  overflow-y: auto;
+  background: var(--bg-secondary, #262626);
+  border-left: 1px solid var(--border-color, #444);
+}
+
+.pano-param-panel::-webkit-scrollbar {
+  width: 8px;
+}
+.pano-param-panel::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb, #4b5563);
+  border-radius: 4px;
+}
+
+.pano-param-section {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.pano-param-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary, #a0a0a0);
+}
+
+.pano-param-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-color, #7dd3fc);
+}
+
+/* segmented control */
+.pano-segmented {
+  display: flex;
+  padding: 3px;
+  border-radius: 9px;
+  background: var(--bg-tertiary, #333);
+  border: 1px solid var(--border-color, #444);
+}
+
+.pano-segmented button {
+  flex: 1;
+  padding: 7px 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pano-segmented button.active {
+  background: var(--primary-color, #7dd3fc);
+  color: var(--bg-primary, #1a1a1a);
+  font-weight: 600;
+}
+
+/* chips */
+.pano-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pano-chip {
+  padding: 6px 11px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color, #444);
+  background: var(--bg-tertiary, #333);
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pano-chip:hover {
+  border-color: var(--primary-color, #7dd3fc);
+  color: var(--text-primary, #fff);
+}
+
+.pano-chip.active {
+  background: var(--primary-color-soft, rgba(125, 211, 252, 0.18));
+  border-color: var(--primary-color, #7dd3fc);
+  color: var(--primary-color, #7dd3fc);
+  font-weight: 600;
+}
+
+/* size inputs */
+.pano-size-inputs {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.pano-size-inputs label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text-muted, #888);
+}
+
+.pano-size-inputs input {
+  width: 100%;
+  padding: 7px 9px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color, #444);
+  background: var(--bg-primary, #1e1e1e);
+  color: var(--text-primary, #fff);
+  font-size: 12px;
+}
+
+.pano-size-inputs input:focus {
+  outline: none;
+  border-color: var(--primary-color, #7dd3fc);
+}
+
+.pano-size-x {
+  padding-bottom: 8px;
+  color: var(--text-muted, #888);
+}
+
+.pano-size-readout {
+  font-size: 11px;
+  color: var(--text-muted, #888);
+}
+
+/* range */
+.pano-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--bg-tertiary, #333);
+  outline: none;
+  cursor: pointer;
+}
+
+.pano-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--primary-color, #7dd3fc);
+  border: 2px solid var(--bg-secondary, #262626);
+  box-shadow: 0 0 0 3px var(--primary-color-soft, rgba(125, 211, 252, 0.25));
+  cursor: pointer;
+}
+
+.pano-range::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--primary-color, #7dd3fc);
+  border: 2px solid var(--bg-secondary, #262626);
+  cursor: pointer;
+}
+
+/* actions */
+.pano-param-actions {
+  margin-top: auto;
+}
+
+.pano-primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 0;
+  border: none;
+  border-radius: 9px;
+  background: var(--primary-color, #7dd3fc);
+  color: var(--bg-primary, #1a1a1a);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 14px var(--primary-color-glow, rgba(125, 211, 252, 0.35));
+}
+
+.pano-primary-btn:hover:not(:disabled) {
+  background: var(--primary-color-hover, #bae6fd);
+  transform: translateY(-1px);
+}
+
+.pano-primary-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* responsive */
+@media (max-width: 780px) {
+  .pano-param-panel {
+    width: 220px;
+  }
+}

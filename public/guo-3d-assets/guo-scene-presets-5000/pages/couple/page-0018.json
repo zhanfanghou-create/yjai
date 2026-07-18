@@ -1,0 +1,1238 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 17,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-2004",
+      "presetNumber": 2004,
+      "label": "Anime head punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are fighting, one of them punches the other in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2004_anime-head-punch-pose.pma",
+      "localScenePath": "scenes/2004_anime-head-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2004_00_anime-head-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2004_00_anime-head-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2004_00_anime-head-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2004_01_anime-head-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2004_01_anime-head-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "punch",
+        "pose"
+      ],
+      "bytes": 46656,
+      "slug": "anime-head-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2005",
+      "presetNumber": 2005,
+      "label": "Female punch falling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is falling backwards unconsciously from a punch in the face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2005_female-punch-falling-pose.pma",
+      "localScenePath": "scenes/2005_female-punch-falling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2005_00_female-punch-falling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2005_00_female-punch-falling-pose.png",
+          "localThumbnailPath": "thumbnails/2005_00_female-punch-falling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2005_01_female-punch-falling-pose.png",
+          "localThumbnailPath": "thumbnails/2005_01_female-punch-falling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "punch",
+        "pose"
+      ],
+      "bytes": 46829,
+      "slug": "female-punch-falling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2006",
+      "presetNumber": 2006,
+      "label": "Anime stomach punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is punching the enemy in the stomach with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2006_anime-stomach-punch-pose.pma",
+      "localScenePath": "scenes/2006_anime-stomach-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2006_00_anime-stomach-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2006_00_anime-stomach-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2006_00_anime-stomach-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2006_01_anime-stomach-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2006_01_anime-stomach-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "anime",
+        "punch",
+        "pose"
+      ],
+      "bytes": 46773,
+      "slug": "anime-stomach-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2007",
+      "presetNumber": 2007,
+      "label": "Anime female punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "The enemy is falling backwards unconsciously from a head punch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2007_anime-female-punch-pose.pma",
+      "localScenePath": "scenes/2007_anime-female-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2007_00_anime-female-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2007_00_anime-female-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2007_00_anime-female-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2007_01_anime-female-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2007_01_anime-female-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        56,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "anime",
+        "punch",
+        "pose"
+      ],
+      "bytes": 46691,
+      "slug": "anime-female-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2008",
+      "presetNumber": 2008,
+      "label": "Anime male punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is punching the enemy in the head with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2008_anime-male-punch-pose.pma",
+      "localScenePath": "scenes/2008_anime-male-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2008_00_anime-male-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2008_00_anime-male-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2008_00_anime-male-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2008_01_anime-male-punch-pose.png",
+          "localThumbnailPath": "thumbnails/2008_01_anime-male-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "anime",
+        "punch",
+        "pose"
+      ],
+      "bytes": 46838,
+      "slug": "anime-male-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2009",
+      "presetNumber": 2009,
+      "label": "Anime males fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are fighting, punching each other in the head and stomach",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2009_anime-males-fighting-pose.pma",
+      "localScenePath": "scenes/2009_anime-males-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2009_00_anime-males-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2009_00_anime-males-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2009_00_anime-males-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2009_01_anime-males-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2009_01_anime-males-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "punch",
+        "pose"
+      ],
+      "bytes": 46393,
+      "slug": "anime-males-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2017",
+      "presetNumber": 2017,
+      "label": "Female male peace sign pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, hugging each other and showing peace sign",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2017_female-male-peace-sign-pose.pma",
+      "localScenePath": "scenes/2017_female-male-peace-sign-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2017_00_female-male-peace-sign-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2017_00_female-male-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/2017_00_female-male-peace-sign-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2017_01_female-male-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/2017_01_female-male-peace-sign-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "peace",
+        "sign",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46447,
+      "slug": "female-male-peace-sign-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2019",
+      "presetNumber": 2019,
+      "label": "Females peace sign pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing, hugging each other and showing peace sign",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2019_females-peace-sign-pose.pma",
+      "localScenePath": "scenes/2019_females-peace-sign-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2019_00_females-peace-sign-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2019_00_females-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/2019_00_females-peace-sign-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2019_01_females-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/2019_01_females-peace-sign-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "peace",
+        "sign",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46095,
+      "slug": "females-peace-sign-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2045",
+      "presetNumber": 2045,
+      "label": "Male bowing greeting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is greeting the female, bowing respectfully, his left hand is behind his back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2045_male-bowing-greeting-pose.pma",
+      "localScenePath": "scenes/2045_male-bowing-greeting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2045_00_male-bowing-greeting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2045_00_male-bowing-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/2045_00_male-bowing-greeting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2045_01_male-bowing-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/2045_01_male-bowing-greeting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "greeting",
+        "pose"
+      ],
+      "bytes": 46433,
+      "slug": "male-bowing-greeting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2046",
+      "presetNumber": 2046,
+      "label": "Handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are greeting each other, shaking hands and looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2046_handshake-pose.pma",
+      "localScenePath": "scenes/2046_handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2046_00_handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2046_00_handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2046_00_handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2046_01_handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2046_01_handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "greeting",
+        "pose"
+      ],
+      "bytes": 46534,
+      "slug": "handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2047",
+      "presetNumber": 2047,
+      "label": "Female hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are greeting each other with a hug, they both spread their arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2047_female-hugging-pose.pma",
+      "localScenePath": "scenes/2047_female-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2047_00_female-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2047_00_female-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/2047_00_female-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2047_01_female-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/2047_01_female-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "greeting",
+        "pose"
+      ],
+      "bytes": 46475,
+      "slug": "female-hugging-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2048",
+      "presetNumber": 2048,
+      "label": "Male handshake greeting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are greeting each other with a handshake, male greeting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2048_male-handshake-greeting-pose.pma",
+      "localScenePath": "scenes/2048_male-handshake-greeting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2048_00_male-handshake-greeting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2048_00_male-handshake-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/2048_00_male-handshake-greeting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2048_01_male-handshake-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/2048_01_male-handshake-greeting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "greeting",
+        "pose"
+      ],
+      "bytes": 46930,
+      "slug": "male-handshake-greeting-pose"
+    },
+    {
+      "id": "guo-scene-2049",
+      "presetNumber": 2049,
+      "label": "Kissing hand pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is greeting the female with a hand kiss, bending down and kissing her hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2049_kissing-hand-pose.pma",
+      "localScenePath": "scenes/2049_kissing-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2049_00_kissing-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2049_00_kissing-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2049_00_kissing-hand-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2049_01_kissing-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2049_01_kissing-hand-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "greeting",
+        "pose"
+      ],
+      "bytes": 46401,
+      "slug": "kissing-hand-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2055",
+      "presetNumber": 2055,
+      "label": "Anime females heart pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are standing and making a heart with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2055_anime-females-heart-pose.pma",
+      "localScenePath": "scenes/2055_anime-females-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2055_00_anime-females-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2055_00_anime-females-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2055_00_anime-females-heart-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2055_01_anime-females-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2055_01_anime-females-heart-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "heart",
+        "pose"
+      ],
+      "bytes": 46982,
+      "slug": "anime-females-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2056",
+      "presetNumber": 2056,
+      "label": "Anime couple heart pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime couple is standing and kissing, making a heart with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2056_anime-couple-heart-pose.pma",
+      "localScenePath": "scenes/2056_anime-couple-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2056_00_anime-couple-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2056_00_anime-couple-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2056_00_anime-couple-heart-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2056_01_anime-couple-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2056_01_anime-couple-heart-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "heart",
+        "pose"
+      ],
+      "bytes": 46866,
+      "slug": "anime-couple-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2057",
+      "presetNumber": 2057,
+      "label": "Anime heart pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are making a heart with their arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2057_anime-heart-pose.pma",
+      "localScenePath": "scenes/2057_anime-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2057_00_anime-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2057_00_anime-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2057_00_anime-heart-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2057_01_anime-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2057_01_anime-heart-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "heart",
+        "pose"
+      ],
+      "bytes": 46916,
+      "slug": "anime-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2058",
+      "presetNumber": 2058,
+      "label": "Female male heart pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are standing next to each other and making a heart with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2058_female-male-heart-pose.pma",
+      "localScenePath": "scenes/2058_female-male-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2058_00_female-male-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2058_00_female-male-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2058_00_female-male-heart-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2058_01_female-male-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2058_01_female-male-heart-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "heart",
+        "pose"
+      ],
+      "bytes": 46925,
+      "slug": "female-male-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2067",
+      "presetNumber": 2067,
+      "label": "Zombie chasing female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Zombie is chasing a female who is trying to run away from him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2067_zombie-chasing-female-pose.pma",
+      "localScenePath": "scenes/2067_zombie-chasing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2067_00_zombie-chasing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2067_00_zombie-chasing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2067_00_zombie-chasing-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2067_01_zombie-chasing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2067_01_zombie-chasing-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 50403,
+      "slug": "zombie-chasing-female-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2068",
+      "presetNumber": 2068,
+      "label": "Zombie catching female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Zombie is catching the leg of the female, who is trying to break free",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2068_zombie-catching-female-pose.pma",
+      "localScenePath": "scenes/2068_zombie-catching-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2068_00_zombie-catching-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2068_00_zombie-catching-female-pose.png",
+          "localThumbnailPath": "thumbnails/2068_00_zombie-catching-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2068_01_zombie-catching-female-pose.png",
+          "localThumbnailPath": "thumbnails/2068_01_zombie-catching-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 50576,
+      "slug": "zombie-catching-female-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2069",
+      "presetNumber": 2069,
+      "label": "Zombie headshot pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female shoots the zombie in the head with a pistol, who falls backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2069_zombie-headshot-pose.pma",
+      "localScenePath": "scenes/2069_zombie-headshot-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2069_00_zombie-headshot-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2069_00_zombie-headshot-pose.png",
+          "localThumbnailPath": "thumbnails/2069_00_zombie-headshot-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2069_01_zombie-headshot-pose.png",
+          "localThumbnailPath": "thumbnails/2069_01_zombie-headshot-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        48,
+        62
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 50868,
+      "slug": "zombie-headshot-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2072",
+      "presetNumber": 2072,
+      "label": "Anime sad sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Sad anime female is sitting, another female is sitting next to her and puts her hand on her shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2072_anime-sad-sitting-pose.pma",
+      "localScenePath": "scenes/2072_anime-sad-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2072_00_anime-sad-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2072_00_anime-sad-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2072_00_anime-sad-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2072_01_anime-sad-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2072_01_anime-sad-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 46680,
+      "slug": "anime-sad-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2078",
+      "presetNumber": 2078,
+      "label": "Sad couple sitting looking down pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Sad anime female and male are sitting on a bench and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2078_sad-couple-sitting-looking-down-pose.pma",
+      "localScenePath": "scenes/2078_sad-couple-sitting-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2078_00_sad-couple-sitting-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2078_00_sad-couple-sitting-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/2078_00_sad-couple-sitting-looking-down-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2078_01_sad-couple-sitting-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/2078_01_sad-couple-sitting-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 47377,
+      "slug": "sad-couple-sitting-looking-down-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2079",
+      "presetNumber": 2079,
+      "label": "Females sad walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two sad anime females are walking, holding each other's hands and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2079_females-sad-walking-pose.pma",
+      "localScenePath": "scenes/2079_females-sad-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2079_00_females-sad-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2079_00_females-sad-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2079_00_females-sad-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2079_01_females-sad-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2079_01_females-sad-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 46856,
+      "slug": "females-sad-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2082",
+      "presetNumber": 2082,
+      "label": "Female handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are shaking hands, looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2082_female-handshake-pose.pma",
+      "localScenePath": "scenes/2082_female-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2082_00_female-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2082_00_female-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2082_00_female-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2082_01_female-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2082_01_female-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46208,
+      "slug": "female-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

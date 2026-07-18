@@ -1,0 +1,1098 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 101,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2425",
+      "presetNumber": 2425,
+      "label": "Female wizard healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is standing, holding a magic staff and healing the female lying on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2425_female-wizard-healer-pose.pma",
+      "localScenePath": "scenes/2425_female-wizard-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2425_00_female-wizard-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2425_00_female-wizard-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2425_00_female-wizard-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2425_01_female-wizard-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2425_01_female-wizard-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46638,
+      "slug": "female-wizard-healer-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2426",
+      "presetNumber": 2426,
+      "label": "Angel healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Angel female healer is hovering and casting a healing spell on the injured female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2426_angel-healer-pose.pma",
+      "localScenePath": "scenes/2426_angel-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2426_00_angel-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2426_00_angel-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2426_00_angel-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2426_01_angel-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2426_01_angel-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        91,
+        92
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 47049,
+      "slug": "angel-healer-pose"
+    },
+    {
+      "id": "guo-scene-2427",
+      "presetNumber": 2427,
+      "label": "Magic book healer pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is casting a spell from the magic book with her magic wand and healing the injured male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2427_magic-book-healer-pose.pma",
+      "localScenePath": "scenes/2427_magic-book-healer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2427_00_magic-book-healer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2427_00_magic-book-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2427_00_magic-book-healer-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2427_01_magic-book-healer-pose.png",
+          "localThumbnailPath": "thumbnails/2427_01_magic-book-healer-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        80,
+        96
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 47314,
+      "slug": "magic-book-healer-pose"
+    },
+    {
+      "id": "guo-scene-2428",
+      "presetNumber": 2428,
+      "label": "Sitting healing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is sitting and healing the injured female lying on her lap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2428_sitting-healing-pose.pma",
+      "localScenePath": "scenes/2428_sitting-healing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2428_00_sitting-healing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2428_00_sitting-healing-pose.png",
+          "localThumbnailPath": "thumbnails/2428_00_sitting-healing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2428_01_sitting-healing-pose.png",
+          "localThumbnailPath": "thumbnails/2428_01_sitting-healing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46584,
+      "slug": "sitting-healing-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2429",
+      "presetNumber": 2429,
+      "label": "Healer spell casting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female healer is casting magic on the injured female and lifting her up, healing her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2429_healer-spell-casting-pose.pma",
+      "localScenePath": "scenes/2429_healer-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2429_00_healer-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2429_00_healer-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/2429_00_healer-spell-casting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2429_01_healer-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/2429_01_healer-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "healer",
+        "pose"
+      ],
+      "bytes": 46177,
+      "slug": "healer-spell-casting-pose"
+    },
+    {
+      "id": "guo-scene-2430",
+      "presetNumber": 2430,
+      "label": "Male boxing stance clenched fists pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing in boxing stance, his hands are clenched into fists, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2430_male-boxing-stance-clenched-fists-pose.pma",
+      "localScenePath": "scenes/2430_male-boxing-stance-clenched-fists-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2430_00_male-boxing-stance-clenched-fists-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2430_00_male-boxing-stance-clenched-fists-pose.png",
+          "localThumbnailPath": "thumbnails/2430_00_male-boxing-stance-clenched-fists-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 23662,
+      "slug": "male-boxing-stance-clenched-fists-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2431",
+      "presetNumber": 2431,
+      "label": "Female boxing stance clenched fists pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in boxing stance, her hands are clenched into fists, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2431_female-boxing-stance-clenched-fists-pose.pma",
+      "localScenePath": "scenes/2431_female-boxing-stance-clenched-fists-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2431_00_female-boxing-stance-clenched-fists-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2431_00_female-boxing-stance-clenched-fists-pose.png",
+          "localThumbnailPath": "thumbnails/2431_00_female-boxing-stance-clenched-fists-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 23476,
+      "slug": "female-boxing-stance-clenched-fists-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2432",
+      "presetNumber": 2432,
+      "label": "Dagger fighting stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding two daggers and is ready to fight, knife fighting stance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2432_dagger-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2432_dagger-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2432_00_dagger-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2432_00_dagger-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2432_00_dagger-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 24400,
+      "slug": "dagger-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2433",
+      "presetNumber": 2433,
+      "label": "Holding katana fighting stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a katana in his right hand and ready to fight, katana fighting stance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2433_holding-katana-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2433_holding-katana-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2433_00_holding-katana-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2433_00_holding-katana-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2433_00_holding-katana-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 24256,
+      "slug": "holding-katana-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2434",
+      "presetNumber": 2434,
+      "label": "Female holding katana fighting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is pulling her katana out of its sheath, katana fighting stance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2434_female-holding-katana-fighting-pose.pma",
+      "localScenePath": "scenes/2434_female-holding-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2434_00_female-holding-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2434_00_female-holding-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2434_00_female-holding-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144,
+        146
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 24434,
+      "slug": "female-holding-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2435",
+      "presetNumber": 2435,
+      "label": "Sai fighting stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding sais in both hands, ready to fight, female sai fighting stance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2435_sai-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2435_sai-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2435_00_sai-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2435_00_sai-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2435_00_sai-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        153
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 24400,
+      "slug": "sai-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2436",
+      "presetNumber": 2436,
+      "label": "Sword fighting stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a sword with both hands and ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2436_sword-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2436_sword-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2436_00_sword-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2436_00_sword-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2436_00_sword-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 24206,
+      "slug": "sword-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2437",
+      "presetNumber": 2437,
+      "label": "Kunai fighting stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a kunai in her right hand, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2437_kunai-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2437_kunai-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2437_00_kunai-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2437_00_kunai-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2437_00_kunai-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 23730,
+      "slug": "kunai-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2438",
+      "presetNumber": 2438,
+      "label": "Tai chi fighting stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is in tai chi fighting stance, ready to fight, male fighting stance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2438_tai-chi-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2438_tai-chi-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2438_00_tai-chi-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2438_00_tai-chi-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2438_00_tai-chi-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 23937,
+      "slug": "tai-chi-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2439",
+      "presetNumber": 2439,
+      "label": "Kung fu fighting stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female kung fu fighter is in fighting stance, standing on her right leg and ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2439_kung-fu-fighting-stance-pose.pma",
+      "localScenePath": "scenes/2439_kung-fu-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2439_00_kung-fu-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2439_00_kung-fu-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2439_00_kung-fu-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "stance",
+        "pose"
+      ],
+      "bytes": 23682,
+      "slug": "kung-fu-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2440",
+      "presetNumber": 2440,
+      "label": "Female mage pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mage is floating in the air and casting a spell with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2440_female-mage-pose.pma",
+      "localScenePath": "scenes/2440_female-mage-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2440_00_female-mage-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2440_00_female-mage-pose.png",
+          "localThumbnailPath": "thumbnails/2440_00_female-mage-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 27042,
+      "slug": "female-mage-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2441",
+      "presetNumber": 2441,
+      "label": "Female mage attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mage is standing and casting a spell with her hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2441_female-mage-attack-pose.pma",
+      "localScenePath": "scenes/2441_female-mage-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2441_00_female-mage-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2441_00_female-mage-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2441_00_female-mage-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 23491,
+      "slug": "female-mage-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2442",
+      "presetNumber": 2442,
+      "label": "Female mage standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mage is standing and holding a magic staff in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2442_female-mage-standing-pose.pma",
+      "localScenePath": "scenes/2442_female-mage-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2442_00_female-mage-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2442_00_female-mage-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2442_00_female-mage-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 24012,
+      "slug": "female-mage-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2443",
+      "presetNumber": 2443,
+      "label": "Magic book mage pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mage is standing and holding a magic staff in her left hand and a magic book in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2443_magic-book-mage-pose.pma",
+      "localScenePath": "scenes/2443_magic-book-mage-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2443_00_magic-book-mage-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2443_00_magic-book-mage-pose.png",
+          "localThumbnailPath": "thumbnails/2443_00_magic-book-mage-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 24474,
+      "slug": "magic-book-mage-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2444",
+      "presetNumber": 2444,
+      "label": "Female magic staff pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mage is standing and holding a magic staff in her right hand and casting a spell with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2444_female-magic-staff-pose.pma",
+      "localScenePath": "scenes/2444_female-magic-staff-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2444_00_female-magic-staff-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2444_00_female-magic-staff-pose.png",
+          "localThumbnailPath": "thumbnails/2444_00_female-magic-staff-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 23970,
+      "slug": "female-magic-staff-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2445",
+      "presetNumber": 2445,
+      "label": "Pointing magic staff pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mage is hovering and pointing with her magic staff in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2445_pointing-magic-staff-pose.pma",
+      "localScenePath": "scenes/2445_pointing-magic-staff-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2445_00_pointing-magic-staff-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2445_00_pointing-magic-staff-pose.png",
+          "localThumbnailPath": "thumbnails/2445_00_pointing-magic-staff-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 23930,
+      "slug": "pointing-magic-staff-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2446",
+      "presetNumber": 2446,
+      "label": "Mage spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mage is standing, holding a magic staff in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2446_mage-spell-casting-pose.pma",
+      "localScenePath": "scenes/2446_mage-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2446_00_mage-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2446_00_mage-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/2446_00_mage-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 24257,
+      "slug": "mage-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2447",
+      "presetNumber": 2447,
+      "label": "Spellbook mage pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mage is standing and casting a spell from his spellbook",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2447_spellbook-mage-pose.pma",
+      "localScenePath": "scenes/2447_spellbook-mage-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2447_00_spellbook-mage-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2447_00_spellbook-mage-pose.png",
+          "localThumbnailPath": "thumbnails/2447_00_spellbook-mage-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 24245,
+      "slug": "spellbook-mage-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2448",
+      "presetNumber": 2448,
+      "label": "Male mage attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mage is squatting, holding a magic staff and casting a spell",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2448_male-mage-attack-pose.pma",
+      "localScenePath": "scenes/2448_male-mage-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2448_00_male-mage-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2448_00_male-mage-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2448_00_male-mage-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 24286,
+      "slug": "male-mage-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    }
+  ]
+}

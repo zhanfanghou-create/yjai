@@ -1,0 +1,1152 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 50,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1201",
+      "presetNumber": 1201,
+      "label": "Female male angry conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and having an angry conversation, fighting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1201_female-male-angry-conversation-pose.pma",
+      "localScenePath": "scenes/1201_female-male-angry-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1201_00_female-male-angry-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1201_00_female-male-angry-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1201_00_female-male-angry-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1201_01_female-male-angry-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1201_01_female-male-angry-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 46307,
+      "slug": "female-male-angry-conversation-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1202",
+      "presetNumber": 1202,
+      "label": "Female male sad conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and having a sad conversation, talking about sad news",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1202_female-male-sad-conversation-pose.pma",
+      "localScenePath": "scenes/1202_female-male-sad-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1202_00_female-male-sad-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1202_00_female-male-sad-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1202_00_female-male-sad-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1202_01_female-male-sad-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1202_01_female-male-sad-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 46378,
+      "slug": "female-male-sad-conversation-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1203",
+      "presetNumber": 1203,
+      "label": "Two females sad conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are having a sad conversation, talking about sad things, crying",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1203_two-females-sad-conversation-pose.pma",
+      "localScenePath": "scenes/1203_two-females-sad-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1203_00_two-females-sad-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1203_00_two-females-sad-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1203_00_two-females-sad-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1203_01_two-females-sad-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1203_01_two-females-sad-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 46068,
+      "slug": "two-females-sad-conversation-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1204",
+      "presetNumber": 1204,
+      "label": "Three females fun conversation pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three females are having a fun conversation, talking about good news",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1204_three-females-fun-conversation-pose.pma",
+      "localScenePath": "scenes/1204_three-females-fun-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1204_00_three-females-fun-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1204_00_three-females-fun-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1204_00_three-females-fun-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1204_01_three-females-fun-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1204_01_three-females-fun-conversation-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1204_02_three-females-fun-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1204_02_three-females-fun-conversation-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 68753,
+      "slug": "three-females-fun-conversation-pose"
+    },
+    {
+      "id": "guo-scene-1205",
+      "presetNumber": 1205,
+      "label": "Female male intimate conversation",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are having an intimate conversation, talking close to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1205_female-male-intimate-conversation.pma",
+      "localScenePath": "scenes/1205_female-male-intimate-conversation.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1205_00_female-male-intimate-conversation.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1205_00_female-male-intimate-conversation.png",
+          "localThumbnailPath": "thumbnails/1205_00_female-male-intimate-conversation.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1205_01_female-male-intimate-conversation.png",
+          "localThumbnailPath": "thumbnails/1205_01_female-male-intimate-conversation.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 46367,
+      "slug": "female-male-intimate-conversation"
+    },
+    {
+      "id": "guo-scene-1206",
+      "presetNumber": 1206,
+      "label": "Two females casual conversation",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and talking, having a casual conversation",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1206_two-females-casual-conversation.pma",
+      "localScenePath": "scenes/1206_two-females-casual-conversation.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1206_00_two-females-casual-conversation.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1206_00_two-females-casual-conversation.png",
+          "localThumbnailPath": "thumbnails/1206_00_two-females-casual-conversation.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1206_01_two-females-casual-conversation.png",
+          "localThumbnailPath": "thumbnails/1206_01_two-females-casual-conversation.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 46099,
+      "slug": "two-females-casual-conversation",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1207",
+      "presetNumber": 1207,
+      "label": "Males sitting casual conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are sitting on a couch and talking, having a casual conversation",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1207_males-sitting-casual-conversation-pose.pma",
+      "localScenePath": "scenes/1207_males-sitting-casual-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1207_00_males-sitting-casual-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1207_00_males-sitting-casual-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1207_00_males-sitting-casual-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1207_01_males-sitting-casual-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1207_01_males-sitting-casual-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 49086,
+      "slug": "males-sitting-casual-conversation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1208",
+      "presetNumber": 1208,
+      "label": "Females sitting casual conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are sitting on a couch and talking, having a casual conversation",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1208_females-sitting-casual-conversation-pose.pma",
+      "localScenePath": "scenes/1208_females-sitting-casual-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1208_00_females-sitting-casual-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1208_00_females-sitting-casual-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1208_00_females-sitting-casual-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1208_01_females-sitting-casual-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1208_01_females-sitting-casual-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 48564,
+      "slug": "females-sitting-casual-conversation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1209",
+      "presetNumber": 1209,
+      "label": "Two females gossiping conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are sitting on chairs and talking, gossiping, having a conversation",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1209_two-females-gossiping-conversation-pose.pma",
+      "localScenePath": "scenes/1209_two-females-gossiping-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1209_00_two-females-gossiping-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1209_00_two-females-gossiping-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1209_00_two-females-gossiping-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1209_01_two-females-gossiping-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/1209_01_two-females-gossiping-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "conversation",
+        "pose"
+      ],
+      "bytes": 47031,
+      "slug": "two-females-gossiping-conversation-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-1210",
+      "presetNumber": 1210,
+      "label": "Female scythe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her left hand on her hip and holding a scythe in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1210_female-scythe-pose.pma",
+      "localScenePath": "scenes/1210_female-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1210_00_female-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1210_00_female-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/1210_00_female-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 23924,
+      "slug": "female-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1211",
+      "presetNumber": 1211,
+      "label": "Male scythe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and holding a scythe in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1211_male-scythe-pose.pma",
+      "localScenePath": "scenes/1211_male-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1211_00_male-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1211_00_male-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/1211_00_male-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24177,
+      "slug": "male-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1212",
+      "presetNumber": 1212,
+      "label": "Skeleton scythe walking pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is walking casually with a huge scythe",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1212_skeleton-scythe-walking-pose.pma",
+      "localScenePath": "scenes/1212_skeleton-scythe-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1212_00_skeleton-scythe-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1212_00_skeleton-scythe-walking-pose.png",
+          "localThumbnailPath": "thumbnails/1212_00_skeleton-scythe-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 23932,
+      "slug": "skeleton-scythe-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1213",
+      "presetNumber": 1213,
+      "label": "Skeleton scythe strike pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is about to strike with his scythe, swinging the scythe upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1213_skeleton-scythe-strike-pose.pma",
+      "localScenePath": "scenes/1213_skeleton-scythe-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1213_00_skeleton-scythe-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1213_00_skeleton-scythe-strike-pose.png",
+          "localThumbnailPath": "thumbnails/1213_00_skeleton-scythe-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 23883,
+      "slug": "skeleton-scythe-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1214",
+      "presetNumber": 1214,
+      "label": "Skeleton scythe pointing gpose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing and pointing with his scythe in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1214_skeleton-scythe-pointing-gpose.pma",
+      "localScenePath": "scenes/1214_skeleton-scythe-pointing-gpose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1214_00_skeleton-scythe-pointing-gpose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1214_00_skeleton-scythe-pointing-gpose.png",
+          "localThumbnailPath": "thumbnails/1214_00_skeleton-scythe-pointing-gpose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 23919,
+      "slug": "skeleton-scythe-pointing-gpose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1215",
+      "presetNumber": 1215,
+      "label": "Skeleton scythe holding pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing and holding his scythe and waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1215_skeleton-scythe-holding-pose.pma",
+      "localScenePath": "scenes/1215_skeleton-scythe-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1215_00_skeleton-scythe-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1215_00_skeleton-scythe-holding-pose.png",
+          "localThumbnailPath": "thumbnails/1215_00_skeleton-scythe-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 23953,
+      "slug": "skeleton-scythe-holding-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1216",
+      "presetNumber": 1216,
+      "label": "Female fighter scythe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with a scythe in her left hand, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1216_female-fighter-scythe-pose.pma",
+      "localScenePath": "scenes/1216_female-fighter-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1216_00_female-fighter-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1216_00_female-fighter-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/1216_00_female-fighter-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 23956,
+      "slug": "female-fighter-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1217",
+      "presetNumber": 1217,
+      "label": "Male fighter scythe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting and holding a scythe in his right hand, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1217_male-fighter-scythe-pose.pma",
+      "localScenePath": "scenes/1217_male-fighter-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1217_00_male-fighter-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1217_00_male-fighter-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/1217_00_male-fighter-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24250,
+      "slug": "male-fighter-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1218",
+      "presetNumber": 1218,
+      "label": "Male scythe sharpening pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and sharpening the blade of the scythe",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1218_male-scythe-sharpening-pose.pma",
+      "localScenePath": "scenes/1218_male-scythe-sharpening-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1218_00_male-scythe-sharpening-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1218_00_male-scythe-sharpening-pose.png",
+          "localThumbnailPath": "thumbnails/1218_00_male-scythe-sharpening-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24907,
+      "slug": "male-scythe-sharpening-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1219",
+      "presetNumber": 1219,
+      "label": "Male scythe mowing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is mowing, holding the scythe with two hands and cutting the grass",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1219_male-scythe-mowing-pose.pma",
+      "localScenePath": "scenes/1219_male-scythe-mowing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1219_00_male-scythe-mowing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1219_00_male-scythe-mowing-pose.png",
+          "localThumbnailPath": "thumbnails/1219_00_male-scythe-mowing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24366,
+      "slug": "male-scythe-mowing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1220",
+      "presetNumber": 1220,
+      "label": "Female shooting arrow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and shooting an arrow with her bow in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1220_female-shooting-arrow-pose.pma",
+      "localScenePath": "scenes/1220_female-shooting-arrow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1220_00_female-shooting-arrow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1220_00_female-shooting-arrow-pose.png",
+          "localThumbnailPath": "thumbnails/1220_00_female-shooting-arrow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        2,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26563,
+      "slug": "female-shooting-arrow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1221",
+      "presetNumber": 1221,
+      "label": "Male shooting arrow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and shooting an arrow with his bow in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1221_male-shooting-arrow-pose.pma",
+      "localScenePath": "scenes/1221_male-shooting-arrow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1221_00_male-shooting-arrow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1221_00_male-shooting-arrow-pose.png",
+          "localThumbnailPath": "thumbnails/1221_00_male-shooting-arrow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        2,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26642,
+      "slug": "male-shooting-arrow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1222",
+      "presetNumber": 1222,
+      "label": "Male shooting down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching on something and shooting downwards with his bow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1222_male-shooting-down-pose.pma",
+      "localScenePath": "scenes/1222_male-shooting-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1222_00_male-shooting-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1222_00_male-shooting-down-pose.png",
+          "localThumbnailPath": "thumbnails/1222_00_male-shooting-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        2,
+        3,
+        5,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26770,
+      "slug": "male-shooting-down-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1223",
+      "presetNumber": 1223,
+      "label": "Female shooting upwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and shooting her arrow upwards with the bow in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1223_female-shooting-upwards-pose.pma",
+      "localScenePath": "scenes/1223_female-shooting-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1223_00_female-shooting-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1223_00_female-shooting-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/1223_00_female-shooting-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        2,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26369,
+      "slug": "female-shooting-upwards-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1224",
+      "presetNumber": 1224,
+      "label": "Female crouching shooting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and shooting an arrow straight with her bow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1224_female-crouching-shooting-pose.pma",
+      "localScenePath": "scenes/1224_female-crouching-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1224_00_female-crouching-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1224_00_female-crouching-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/1224_00_female-crouching-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        2,
+        3,
+        5,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26474,
+      "slug": "female-crouching-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内"
+      ]
+    }
+  ]
+}

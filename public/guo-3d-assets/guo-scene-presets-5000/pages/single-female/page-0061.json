@@ -1,0 +1,1151 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 60,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-3168",
+      "presetNumber": 3168,
+      "label": "Mermaid tail turning pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is turning backwards, looking back over her left shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3168_mermaid-tail-turning-pose.pma",
+      "localScenePath": "scenes/3168_mermaid-tail-turning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3168_00_mermaid-tail-turning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3168_00_mermaid-tail-turning-pose.png",
+          "localThumbnailPath": "thumbnails/3168_00_mermaid-tail-turning-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16303,
+      "slug": "mermaid-tail-turning-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3169",
+      "presetNumber": 3169,
+      "label": "Mermaid tail lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is lying down, leaning on her elbow, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3169_mermaid-tail-lying-pose.pma",
+      "localScenePath": "scenes/3169_mermaid-tail-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3169_00_mermaid-tail-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3169_00_mermaid-tail-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3169_00_mermaid-tail-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16403,
+      "slug": "mermaid-tail-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3173",
+      "presetNumber": 3173,
+      "label": "Female holding shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a shotgun with both hands, looking to the right, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3173_female-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3173_female-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3173_00_female-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3173_00_female-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3173_00_female-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151,
+        199
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 24510,
+      "slug": "female-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3175",
+      "presetNumber": 3175,
+      "label": "Walking aiming shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking, holding a shotgun with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3175_walking-aiming-shotgun-pose.pma",
+      "localScenePath": "scenes/3175_walking-aiming-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3175_00_walking-aiming-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3175_00_walking-aiming-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3175_00_walking-aiming-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 23998,
+      "slug": "walking-aiming-shotgun-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3178",
+      "presetNumber": 3178,
+      "label": "Crouching holding shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, holding shotgun with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3178_crouching-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3178_crouching-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3178_00_crouching-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3178_00_crouching-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3178_00_crouching-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 23958,
+      "slug": "crouching-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3179",
+      "presetNumber": 3179,
+      "label": "Standing holding shotgun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a shotgun in her right hand and carrying it on her shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3179_standing-holding-shotgun-pose.pma",
+      "localScenePath": "scenes/3179_standing-holding-shotgun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3179_00_standing-holding-shotgun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3179_00_standing-holding-shotgun-pose.png",
+          "localThumbnailPath": "thumbnails/3179_00_standing-holding-shotgun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        151
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "shotgun",
+        "reference"
+      ],
+      "bytes": 23962,
+      "slug": "standing-holding-shotgun-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3180",
+      "presetNumber": 3180,
+      "label": "Female holding pistols pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding pistols in both hands and looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3180_female-holding-pistols-pose.pma",
+      "localScenePath": "scenes/3180_female-holding-pistols-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3180_00_female-holding-pistols-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3180_00_female-holding-pistols-pose.png",
+          "localThumbnailPath": "thumbnails/3180_00_female-holding-pistols-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24115,
+      "slug": "female-holding-pistols-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3181",
+      "presetNumber": 3181,
+      "label": "Female holding pistol pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a pistol in her right hand, holding pistol reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3181_female-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3181_female-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3181_00_female-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3181_00_female-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3181_00_female-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 23623,
+      "slug": "female-holding-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3185",
+      "presetNumber": 3185,
+      "label": "Standing holding pistol pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her left hand is on her hip and holding a pistol in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3185_standing-holding-pistol-pose.pma",
+      "localScenePath": "scenes/3185_standing-holding-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3185_00_standing-holding-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3185_00_standing-holding-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/3185_00_standing-holding-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 23951,
+      "slug": "standing-holding-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3189",
+      "presetNumber": 3189,
+      "label": "Female pistol aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a pistol in her right hand and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3189_female-pistol-aiming-pose.pma",
+      "localScenePath": "scenes/3189_female-pistol-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3189_00_female-pistol-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3189_00_female-pistol-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/3189_00_female-pistol-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pistol",
+        "reference"
+      ],
+      "bytes": 24050,
+      "slug": "female-pistol-aiming-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3191",
+      "presetNumber": 3191,
+      "label": "Female holding spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a spear in her right hand, holding spear pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3191_female-holding-spear-pose.pma",
+      "localScenePath": "scenes/3191_female-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3191_00_female-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3191_00_female-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3191_00_female-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24085,
+      "slug": "female-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3192",
+      "presetNumber": 3192,
+      "label": "Female spear attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in warrior stance, holding a spear in her right hand, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3192_female-spear-attack-pose.pma",
+      "localScenePath": "scenes/3192_female-spear-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3192_00_female-spear-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3192_00_female-spear-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3192_00_female-spear-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 23950,
+      "slug": "female-spear-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3194",
+      "presetNumber": 3194,
+      "label": "Spear throwing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to throw her spear, holding the spear in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3194_spear-throwing-pose.pma",
+      "localScenePath": "scenes/3194_spear-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3194_00_spear-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3194_00_spear-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/3194_00_spear-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24060,
+      "slug": "spear-throwing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3195",
+      "presetNumber": 3195,
+      "label": "Jumping throwing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to throw her spear, holding the spear in her right hand, jumping throwing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3195_jumping-throwing-pose.pma",
+      "localScenePath": "scenes/3195_jumping-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3195_00_jumping-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3195_00_jumping-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/3195_00_jumping-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24059,
+      "slug": "jumping-throwing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3196",
+      "presetNumber": 3196,
+      "label": "Female standing holding spears pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding two double-sided spears, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3196_female-standing-holding-spears-pose.pma",
+      "localScenePath": "scenes/3196_female-standing-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3196_00_female-standing-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3196_00_female-standing-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/3196_00_female-standing-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24556,
+      "slug": "female-standing-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3197",
+      "presetNumber": 3197,
+      "label": "Crouching holding spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, holding a spear in her left hand, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3197_crouching-holding-spear-pose.pma",
+      "localScenePath": "scenes/3197_crouching-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3197_00_crouching-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3197_00_crouching-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3197_00_crouching-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "spear",
+        "pose"
+      ],
+      "bytes": 24039,
+      "slug": "crouching-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3200",
+      "presetNumber": 3200,
+      "label": "Mermaid floating looking down pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating, looking slightly down, mermaid drawing base",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3200_mermaid-floating-looking-down-pose.pma",
+      "localScenePath": "scenes/3200_mermaid-floating-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3200_00_mermaid-floating-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3200_00_mermaid-floating-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3200_00_mermaid-floating-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "base"
+      ],
+      "bytes": 16368,
+      "slug": "mermaid-floating-looking-down-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3201",
+      "presetNumber": 3201,
+      "label": "Female mermaid trident pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water, holding a trident with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3201_female-mermaid-trident-pose.pma",
+      "localScenePath": "scenes/3201_female-mermaid-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3201_00_female-mermaid-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3201_00_female-mermaid-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3201_00_female-mermaid-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "base"
+      ],
+      "bytes": 2062021,
+      "slug": "female-mermaid-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3203",
+      "presetNumber": 3203,
+      "label": "Female mermaid sitting drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock, mermaid drawing base",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3203_female-mermaid-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3203_female-mermaid-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3203_00_female-mermaid-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3203_00_female-mermaid-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3203_00_female-mermaid-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "base"
+      ],
+      "bytes": 58040,
+      "slug": "female-mermaid-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3205",
+      "presetNumber": 3205,
+      "label": "Mermaid raising trident pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is holding a trident in her right hand and is raising it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3205_mermaid-raising-trident-pose.pma",
+      "localScenePath": "scenes/3205_mermaid-raising-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3205_00_mermaid-raising-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3205_00_mermaid-raising-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3205_00_mermaid-raising-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "base"
+      ],
+      "bytes": 2062064,
+      "slug": "mermaid-raising-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3207",
+      "presetNumber": 3207,
+      "label": "Mermaid swimming drawing base pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming, female mermaid drawing base",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3207_mermaid-swimming-drawing-base-pose.pma",
+      "localScenePath": "scenes/3207_mermaid-swimming-drawing-base-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3207_00_mermaid-swimming-drawing-base-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3207_00_mermaid-swimming-drawing-base-pose.png",
+          "localThumbnailPath": "thumbnails/3207_00_mermaid-swimming-drawing-base-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "base"
+      ],
+      "bytes": 16366,
+      "slug": "mermaid-swimming-drawing-base-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3208",
+      "presetNumber": 3208,
+      "label": "Mermaid sitting drawing base pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting, leaning on her right hand, mermaid drawing base",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3208_mermaid-sitting-drawing-base-pose.pma",
+      "localScenePath": "scenes/3208_mermaid-sitting-drawing-base-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3208_00_mermaid-sitting-drawing-base-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3208_00_mermaid-sitting-drawing-base-pose.png",
+          "localThumbnailPath": "thumbnails/3208_00_mermaid-sitting-drawing-base-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "base"
+      ],
+      "bytes": 16455,
+      "slug": "mermaid-sitting-drawing-base-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3210",
+      "presetNumber": 3210,
+      "label": "Female wearing sunglasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her hands are on her hips, wearing sunglasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3210_female-wearing-sunglasses-pose.pma",
+      "localScenePath": "scenes/3210_female-wearing-sunglasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3210_00_female-wearing-sunglasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3210_00_female-wearing-sunglasses-pose.png",
+          "localThumbnailPath": "thumbnails/3210_00_female-wearing-sunglasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sunglasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24029,
+      "slug": "female-wearing-sunglasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3212",
+      "presetNumber": 3212,
+      "label": "Female holding sunglasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking and holding sunglasses in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3212_female-holding-sunglasses-pose.pma",
+      "localScenePath": "scenes/3212_female-holding-sunglasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3212_00_female-holding-sunglasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3212_00_female-holding-sunglasses-pose.png",
+          "localThumbnailPath": "thumbnails/3212_00_female-holding-sunglasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        98
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sunglasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24118,
+      "slug": "female-holding-sunglasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

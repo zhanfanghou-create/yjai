@@ -1,0 +1,1195 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 24,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-3235",
+      "presetNumber": 3235,
+      "label": "Male standing holding female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and holding the female in his arms, holding in arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3235_male-standing-holding-female-pose.pma",
+      "localScenePath": "scenes/3235_male-standing-holding-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3235_00_male-standing-holding-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3235_00_male-standing-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/3235_00_male-standing-holding-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3235_01_male-standing-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/3235_01_male-standing-holding-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "arm",
+        "pose"
+      ],
+      "bytes": 46110,
+      "slug": "male-standing-holding-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3288",
+      "presetNumber": 3288,
+      "label": "Couple running pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are running next to each other, couple action running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3288_couple-running-pose.pma",
+      "localScenePath": "scenes/3288_couple-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3288_00_couple-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3288_00_couple-running-pose.png",
+          "localThumbnailPath": "thumbnails/3288_00_couple-running-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3288_01_couple-running-pose.png",
+          "localThumbnailPath": "thumbnails/3288_01_couple-running-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "running",
+        "pose"
+      ],
+      "bytes": 46519,
+      "slug": "couple-running-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3296",
+      "presetNumber": 3296,
+      "label": "Shy females standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two shy females are standing and looking at each other, shy standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3296_shy-females-standing-pose.pma",
+      "localScenePath": "scenes/3296_shy-females-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3296_00_shy-females-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3296_00_shy-females-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3296_00_shy-females-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3296_01_shy-females-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3296_01_shy-females-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46198,
+      "slug": "shy-females-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3299",
+      "presetNumber": 3299,
+      "label": "Shy female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other, male is reaching out to the shy female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3299_shy-female-pose.pma",
+      "localScenePath": "scenes/3299_shy-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3299_00_shy-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3299_00_shy-female-pose.png",
+          "localThumbnailPath": "thumbnails/3299_00_shy-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3299_01_shy-female-pose.png",
+          "localThumbnailPath": "thumbnails/3299_01_shy-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46431,
+      "slug": "shy-female-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3319",
+      "presetNumber": 3319,
+      "label": "Couple knee sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on their knees and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3319_couple-knee-sitting-pose.pma",
+      "localScenePath": "scenes/3319_couple-knee-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3319_00_couple-knee-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3319_00_couple-knee-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3319_00_couple-knee-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3319_01_couple-knee-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3319_01_couple-knee-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knee",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 46611,
+      "slug": "couple-knee-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3335",
+      "presetNumber": 3335,
+      "label": "Female armchair relaxed sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is sitting relaxed in the armchair with her legs crossed, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3335_female-armchair-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3335_female-armchair-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3335_00_female-armchair-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3335_00_female-armchair-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3335_00_female-armchair-relaxed-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3335_01_female-armchair-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3335_01_female-armchair-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 48100,
+      "slug": "female-armchair-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3336",
+      "presetNumber": 3336,
+      "label": "Couple relaxed sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting relaxed next to each other on the couch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3336_couple-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3336_couple-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3336_00_couple-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3336_00_couple-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3336_00_couple-relaxed-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3336_01_couple-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3336_01_couple-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 48935,
+      "slug": "couple-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-3337",
+      "presetNumber": 3337,
+      "label": "Romantic relaxed sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting relaxed next to each other and looking something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3337_romantic-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3337_romantic-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3337_00_romantic-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3337_00_romantic-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3337_00_romantic-relaxed-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3337_01_romantic-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3337_01_romantic-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 46734,
+      "slug": "romantic-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3346",
+      "presetNumber": 3346,
+      "label": "Couple cross legged sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting cross-legged next to each other, couple cross-legged sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3346_couple-cross-legged-sitting-pose.pma",
+      "localScenePath": "scenes/3346_couple-cross-legged-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3346_00_couple-cross-legged-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3346_00_couple-cross-legged-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3346_00_couple-cross-legged-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3346_01_couple-cross-legged-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3346_01_couple-cross-legged-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 46410,
+      "slug": "couple-cross-legged-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-3359",
+      "presetNumber": 3359,
+      "label": "Couple relaxed standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing relaxed next to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3359_couple-relaxed-standing-pose.pma",
+      "localScenePath": "scenes/3359_couple-relaxed-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3359_00_couple-relaxed-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3359_00_couple-relaxed-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3359_00_couple-relaxed-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3359_01_couple-relaxed-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3359_01_couple-relaxed-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46555,
+      "slug": "couple-relaxed-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3368",
+      "presetNumber": 3368,
+      "label": "Romantic holding chin pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding the female's chin with his right hand and holding her hand with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3368_romantic-holding-chin-pose.pma",
+      "localScenePath": "scenes/3368_romantic-holding-chin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3368_00_romantic-holding-chin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3368_00_romantic-holding-chin-pose.png",
+          "localThumbnailPath": "thumbnails/3368_00_romantic-holding-chin-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3368_01_romantic-holding-chin-pose.png",
+          "localThumbnailPath": "thumbnails/3368_01_romantic-holding-chin-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "chin",
+        "pose"
+      ],
+      "bytes": 46448,
+      "slug": "romantic-holding-chin-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3369",
+      "presetNumber": 3369,
+      "label": "Holding chin kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are kissing, female is holding the male's chin with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3369_holding-chin-kissing-pose.pma",
+      "localScenePath": "scenes/3369_holding-chin-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3369_00_holding-chin-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3369_00_holding-chin-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/3369_00_holding-chin-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3369_01_holding-chin-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/3369_01_holding-chin-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "chin",
+        "pose"
+      ],
+      "bytes": 46370,
+      "slug": "holding-chin-kissing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3380",
+      "presetNumber": 3380,
+      "label": "Male fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, punching each other, male fighting action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3380_male-fighting-action-pose.pma",
+      "localScenePath": "scenes/3380_male-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3380_00_male-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3380_00_male-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3380_00_male-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3380_01_male-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3380_01_male-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46148,
+      "slug": "male-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3383",
+      "presetNumber": 3383,
+      "label": "Female knock out pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female knocks the male out with a side kick, female and male fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3383_female-knock-out-pose.pma",
+      "localScenePath": "scenes/3383_female-knock-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3383_00_female-knock-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3383_00_female-knock-out-pose.png",
+          "localThumbnailPath": "thumbnails/3383_00_female-knock-out-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3383_01_female-knock-out-pose.png",
+          "localThumbnailPath": "thumbnails/3383_01_female-knock-out-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46265,
+      "slug": "female-knock-out-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3384",
+      "presetNumber": 3384,
+      "label": "Male fighting throwing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is picking up and is about to throw the other male, male fighting action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3384_male-fighting-throwing-pose.pma",
+      "localScenePath": "scenes/3384_male-fighting-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3384_00_male-fighting-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3384_00_male-fighting-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/3384_00_male-fighting-throwing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3384_01_male-fighting-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/3384_01_male-fighting-throwing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46781,
+      "slug": "male-fighting-throwing-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3385",
+      "presetNumber": 3385,
+      "label": "Females fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are running towards each other and jumping to collide, female fighting action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3385_females-fighting-pose.pma",
+      "localScenePath": "scenes/3385_females-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3385_00_females-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3385_00_females-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3385_00_females-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3385_01_females-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3385_01_females-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46053,
+      "slug": "females-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3386",
+      "presetNumber": 3386,
+      "label": "Sword fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting with swords, holding medieval shield, fightin action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3386_sword-fighting-action-pose.pma",
+      "localScenePath": "scenes/3386_sword-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3386_00_sword-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3386_00_sword-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3386_00_sword-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3386_01_sword-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3386_01_sword-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 48388,
+      "slug": "sword-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3387",
+      "presetNumber": 3387,
+      "label": "Katana fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, holding katana jumping action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3387_katana-fighting-action-pose.pma",
+      "localScenePath": "scenes/3387_katana-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3387_00_katana-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3387_00_katana-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3387_00_katana-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3387_01_katana-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3387_01_katana-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        144,
+        146,
+        158
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 47885,
+      "slug": "katana-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3388",
+      "presetNumber": 3388,
+      "label": "Karate fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting karate, male karate fighting action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3388_karate-fighting-action-pose.pma",
+      "localScenePath": "scenes/3388_karate-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3388_00_karate-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3388_00_karate-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3388_00_karate-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3388_01_karate-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3388_01_karate-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46961,
+      "slug": "karate-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3389",
+      "presetNumber": 3389,
+      "label": "Werewolf knocking out pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is jumping up, punching and knocking the werewolf out",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3389_werewolf-knocking-out-pose.pma",
+      "localScenePath": "scenes/3389_werewolf-knocking-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3389_00_werewolf-knocking-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3389_00_werewolf-knocking-out-pose.png",
+          "localThumbnailPath": "thumbnails/3389_00_werewolf-knocking-out-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3389_01_werewolf-knocking-out-pose.png",
+          "localThumbnailPath": "thumbnails/3389_01_werewolf-knocking-out-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        36,
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        36
+      ],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 40445,
+      "slug": "werewolf-knocking-out-pose",
+      "tagIds": [
+        "fight-weapon",
+        "animal-creature"
+      ],
+      "tags": [
+        "打斗/武器",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-3397",
+      "presetNumber": 3397,
+      "label": "Female katana fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are fighting with katanas, one attacks the other, katana sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3397_female-katana-fighting-pose.pma",
+      "localScenePath": "scenes/3397_female-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3397_00_female-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3397_00_female-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3397_00_female-katana-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3397_01_female-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3397_01_female-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 46857,
+      "slug": "female-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3398",
+      "presetNumber": 3398,
+      "label": "Male katana attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, one of them attacks the other with a katana",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3398_male-katana-attack-pose.pma",
+      "localScenePath": "scenes/3398_male-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3398_00_male-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3398_00_male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3398_00_male-katana-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3398_01_male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3398_01_male-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 47060,
+      "slug": "male-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3399",
+      "presetNumber": 3399,
+      "label": "Female male katana attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, attacking with katanas, katana sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3399_female-male-katana-attack-pose.pma",
+      "localScenePath": "scenes/3399_female-male-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3399_00_female-male-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3399_00_female-male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3399_00_female-male-katana-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3399_01_female-male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3399_01_female-male-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 47358,
+      "slug": "female-male-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3400",
+      "presetNumber": 3400,
+      "label": "Sword behind attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting with swords, female is attacking male from behind",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3400_sword-behind-attack-pose.pma",
+      "localScenePath": "scenes/3400_sword-behind-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3400_00_sword-behind-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3400_00_sword-behind-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3400_00_sword-behind-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3400_01_sword-behind-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3400_01_sword-behind-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 47204,
+      "slug": "sword-behind-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1018 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 18,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-1138",
+      "presetNumber": 1138,
+      "label": "Mma side kick pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mma high side kick pose, dynamic kicking with left foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1138_mma-side-kick-pose.pma",
+      "localScenePath": "scenes/1138_mma-side-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1138_00_mma-side-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1138_00_mma-side-kick-pose.png",
+          "localThumbnailPath": "thumbnails/1138_00_mma-side-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "kicking",
+        "pose"
+      ],
+      "bytes": 23685,
+      "slug": "mma-side-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1139",
+      "presetNumber": 1139,
+      "label": "Female air kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dynamic side kicking in the air, kicking with left foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1139_female-air-kicking-pose.pma",
+      "localScenePath": "scenes/1139_female-air-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1139_00_female-air-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1139_00_female-air-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1139_00_female-air-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "kicking",
+        "pose"
+      ],
+      "bytes": 23503,
+      "slug": "female-air-kicking-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1151",
+      "presetNumber": 1151,
+      "label": "Female volleyball bump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player is running and passing the ball with a bump",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1151_female-volleyball-bump-pose.pma",
+      "localScenePath": "scenes/1151_female-volleyball-bump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1151_00_female-volleyball-bump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1151_00_female-volleyball-bump-pose.png",
+          "localThumbnailPath": "thumbnails/1151_00_female-volleyball-bump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 23919,
+      "slug": "female-volleyball-bump-pose"
+    },
+    {
+      "id": "guo-scene-1152",
+      "presetNumber": 1152,
+      "label": "Right hand hit pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player is jumping and hitting the ball with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1152_right-hand-hit-pose.pma",
+      "localScenePath": "scenes/1152_right-hand-hit-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1152_00_right-hand-hit-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1152_00_right-hand-hit-pose.png",
+          "localThumbnailPath": "thumbnails/1152_00_right-hand-hit-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24085,
+      "slug": "right-hand-hit-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1153",
+      "presetNumber": 1153,
+      "label": "Hitting floor bump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player hits the floor to catch the ball with a bump",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1153_hitting-floor-bump-pose.pma",
+      "localScenePath": "scenes/1153_hitting-floor-bump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1153_00_hitting-floor-bump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1153_00_hitting-floor-bump-pose.png",
+          "localThumbnailPath": "thumbnails/1153_00_hitting-floor-bump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 23898,
+      "slug": "hitting-floor-bump-pose"
+    },
+    {
+      "id": "guo-scene-1154",
+      "presetNumber": 1154,
+      "label": "Volleyball bump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player hits the ball with a focused bump",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1154_volleyball-bump-pose.pma",
+      "localScenePath": "scenes/1154_volleyball-bump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1154_00_volleyball-bump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1154_00_volleyball-bump-pose.png",
+          "localThumbnailPath": "thumbnails/1154_00_volleyball-bump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 23886,
+      "slug": "volleyball-bump-pose"
+    },
+    {
+      "id": "guo-scene-1155",
+      "presetNumber": 1155,
+      "label": "Female jumping volleying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female player is jumping and volleying the ball with both palms above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1155_female-jumping-volleying-pose.pma",
+      "localScenePath": "scenes/1155_female-jumping-volleying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1155_00_female-jumping-volleying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1155_00_female-jumping-volleying-pose.png",
+          "localThumbnailPath": "thumbnails/1155_00_female-jumping-volleying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24321,
+      "slug": "female-jumping-volleying-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1156",
+      "presetNumber": 1156,
+      "label": "Right hand volleyball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping to hit the ball with one hand, hitting the volleyball with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1156_right-hand-volleyball-pose.pma",
+      "localScenePath": "scenes/1156_right-hand-volleyball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1156_00_right-hand-volleyball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1156_00_right-hand-volleyball-pose.png",
+          "localThumbnailPath": "thumbnails/1156_00_right-hand-volleyball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24033,
+      "slug": "right-hand-volleyball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1157",
+      "presetNumber": 1157,
+      "label": "Starting volleyball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female player is starting the game, is about to throw up and hit the volleyball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1157_starting-volleyball-pose.pma",
+      "localScenePath": "scenes/1157_starting-volleyball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1157_00_starting-volleyball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1157_00_starting-volleyball-pose.png",
+          "localThumbnailPath": "thumbnails/1157_00_starting-volleyball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24061,
+      "slug": "starting-volleyball-pose"
+    },
+    {
+      "id": "guo-scene-1158",
+      "presetNumber": 1158,
+      "label": "Female volleying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player is volleying the ball with both palms above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1158_female-volleying-pose.pma",
+      "localScenePath": "scenes/1158_female-volleying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1158_00_female-volleying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1158_00_female-volleying-pose.png",
+          "localThumbnailPath": "thumbnails/1158_00_female-volleying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24093,
+      "slug": "female-volleying-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1159",
+      "presetNumber": 1159,
+      "label": "Left hand volleyball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player throws the ball and is about to hit with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1159_left-hand-volleyball-pose.pma",
+      "localScenePath": "scenes/1159_left-hand-volleyball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1159_00_left-hand-volleyball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1159_00_left-hand-volleyball-pose.png",
+          "localThumbnailPath": "thumbnails/1159_00_left-hand-volleyball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24177,
+      "slug": "left-hand-volleyball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1170",
+      "presetNumber": 1170,
+      "label": "Female hand pocket pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, her left hand is in her pocket and looking to the left pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1170_female-hand-pocket-pose.pma",
+      "localScenePath": "scenes/1170_female-hand-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1170_00_female-hand-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1170_00_female-hand-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/1170_00_female-hand-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23458,
+      "slug": "female-hand-pocket-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1171",
+      "presetNumber": 1171,
+      "label": "Confident female crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently with her legs crossed and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1171_confident-female-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1171_confident-female-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1171_00_confident-female-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1171_00_confident-female-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1171_00_confident-female-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23674,
+      "slug": "confident-female-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1172",
+      "presetNumber": 1172,
+      "label": "Crossed legs arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with crossed legs and crossed arms, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1172_crossed-legs-arms-pose.pma",
+      "localScenePath": "scenes/1172_crossed-legs-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1172_00_crossed-legs-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1172_00_crossed-legs-arms-pose.png",
+          "localThumbnailPath": "thumbnails/1172_00_crossed-legs-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23438,
+      "slug": "crossed-legs-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1173",
+      "presetNumber": 1173,
+      "label": "Crossed legs holding hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, her hands are on her hips and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1173_crossed-legs-holding-hips-pose.pma",
+      "localScenePath": "scenes/1173_crossed-legs-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1173_00_crossed-legs-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1173_00_crossed-legs-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/1173_00_crossed-legs-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23368,
+      "slug": "crossed-legs-holding-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1174",
+      "presetNumber": 1174,
+      "label": "Shy female crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing with her legs crossed and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1174_shy-female-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1174_shy-female-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1174_00_shy-female-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1174_00_shy-female-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1174_00_shy-female-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23463,
+      "slug": "shy-female-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1183",
+      "presetNumber": 1183,
+      "label": "Female standing pulling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and pulling the chain with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1183_female-standing-pulling-pose.pma",
+      "localScenePath": "scenes/1183_female-standing-pulling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1183_00_female-standing-pulling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1183_00_female-standing-pulling-pose.png",
+          "localThumbnailPath": "thumbnails/1183_00_female-standing-pulling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        200
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 27038,
+      "slug": "female-standing-pulling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1185",
+      "presetNumber": 1185,
+      "label": "Female walking pulling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking and pulling a chain with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1185_female-walking-pulling-pose.pma",
+      "localScenePath": "scenes/1185_female-walking-pulling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1185_00_female-walking-pulling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1185_00_female-walking-pulling-pose.png",
+          "localThumbnailPath": "thumbnails/1185_00_female-walking-pulling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        200
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 26886,
+      "slug": "female-walking-pulling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1186",
+      "presetNumber": 1186,
+      "label": "Female lightly pulling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and lightly pulling something with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1186_female-lightly-pulling-pose.pma",
+      "localScenePath": "scenes/1186_female-lightly-pulling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1186_00_female-lightly-pulling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1186_00_female-lightly-pulling-pose.png",
+          "localThumbnailPath": "thumbnails/1186_00_female-lightly-pulling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        200
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 26222,
+      "slug": "female-lightly-pulling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1187",
+      "presetNumber": 1187,
+      "label": "Pulling large object pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is bending down slightly and pulling a large object backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1187_pulling-large-object-pose.pma",
+      "localScenePath": "scenes/1187_pulling-large-object-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1187_00_pulling-large-object-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1187_00_pulling-large-object-pose.png",
+          "localThumbnailPath": "thumbnails/1187_00_pulling-large-object-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 24273,
+      "slug": "pulling-large-object-pose"
+    },
+    {
+      "id": "guo-scene-1188",
+      "presetNumber": 1188,
+      "label": "Squatting pulling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is squatting, holding an object with two hands and pulling",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1188_squatting-pulling-pose.pma",
+      "localScenePath": "scenes/1188_squatting-pulling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1188_00_squatting-pulling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1188_00_squatting-pulling-pose.png",
+          "localThumbnailPath": "thumbnails/1188_00_squatting-pulling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 24087,
+      "slug": "squatting-pulling-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1189",
+      "presetNumber": 1189,
+      "label": "Female pulling out pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "A female is trying to pull out an object from among the others",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1189_female-pulling-out-pose.pma",
+      "localScenePath": "scenes/1189_female-pulling-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1189_00_female-pulling-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1189_00_female-pulling-out-pose.png",
+          "localThumbnailPath": "thumbnails/1189_00_female-pulling-out-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 26565,
+      "slug": "female-pulling-out-pose"
+    },
+    {
+      "id": "guo-scene-1191",
+      "presetNumber": 1191,
+      "label": "Athletic female sprinter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Professional female sprinter pose, athletic female fast running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1191_athletic-female-sprinter-pose.pma",
+      "localScenePath": "scenes/1191_athletic-female-sprinter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1191_00_athletic-female-sprinter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1191_00_athletic-female-sprinter-pose.png",
+          "localThumbnailPath": "thumbnails/1191_00_athletic-female-sprinter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 24517,
+      "slug": "athletic-female-sprinter-pose"
+    },
+    {
+      "id": "guo-scene-1193",
+      "presetNumber": 1193,
+      "label": "Female long jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is practicing long jumping, athletic female long jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1193_female-long-jumping-pose.pma",
+      "localScenePath": "scenes/1193_female-long-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1193_00_female-long-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1193_00_female-long-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1193_00_female-long-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 24059,
+      "slug": "female-long-jumping-pose"
+    }
+  ]
+}

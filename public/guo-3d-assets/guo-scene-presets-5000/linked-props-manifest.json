@@ -1,0 +1,4430 @@
+{
+  "schema": "guo.threeDirector.mountedPropPackage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000-linked-props",
+  "generatedAt": "2026-06-09T01:07:00.055Z",
+  "counts": {
+    "props": 217,
+    "totalModelBytes": 20009756,
+    "totalThumbnailBytes": 6678751
+  },
+  "categories": [
+    {
+      "id": "environment",
+      "label": "场景环境",
+      "count": 67
+    },
+    {
+      "id": "melee",
+      "label": "冷兵器",
+      "count": 43
+    },
+    {
+      "id": "accessories",
+      "label": "Accessories",
+      "count": 37
+    },
+    {
+      "id": "guns",
+      "label": "Guns",
+      "count": 18
+    },
+    {
+      "id": "kitchen",
+      "label": "餐厨",
+      "count": 15
+    },
+    {
+      "id": "furniture",
+      "label": "家具",
+      "count": 13
+    },
+    {
+      "id": "music",
+      "label": "音乐",
+      "count": 4
+    },
+    {
+      "id": "accessory",
+      "label": "随身配件",
+      "count": 4
+    },
+    {
+      "id": "food-drink",
+      "label": "Food Drink",
+      "count": 4
+    },
+    {
+      "id": "head",
+      "label": "Head",
+      "count": 4
+    },
+    {
+      "id": "sport",
+      "label": "运动",
+      "count": 3
+    },
+    {
+      "id": "equipment",
+      "label": "设备工具",
+      "count": 2
+    },
+    {
+      "id": "vehicle",
+      "label": "交通载具",
+      "count": 1
+    },
+    {
+      "id": "head-post-apocalyptic",
+      "label": "Head Post Apocalyptic",
+      "count": 1
+    },
+    {
+      "id": "head-hairstyle",
+      "label": "Head Hairstyle",
+      "count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "guo-linked-prop-0074",
+      "propNumber": 74,
+      "label": "Dumbbell",
+      "categoryId": "sport",
+      "categoryLabel": "运动",
+      "categoryIds": [
+        "sport"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0074_dumbbell.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0074_dumbbell.png",
+      "localModelPath": "linked-props/props-fbx/0074_dumbbell.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0074_dumbbell.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 41404,
+      "thumbnailBytes": 23216,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0075",
+      "propNumber": 75,
+      "label": "Glass",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0075_glass.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0075_glass.png",
+      "localModelPath": "linked-props/props-fbx/0075_glass.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0075_glass.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 39260,
+      "thumbnailBytes": 25032,
+      "sceneReferenceCount": 39,
+      "sceneCount": 26
+    },
+    {
+      "id": "guo-linked-prop-0076",
+      "propNumber": 76,
+      "label": "Wine Glass",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0076_wine-glass.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0076_wine-glass.png",
+      "localModelPath": "linked-props/props-fbx/0076_wine-glass.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0076_wine-glass.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 98684,
+      "thumbnailBytes": 28563,
+      "sceneReferenceCount": 54,
+      "sceneCount": 36
+    },
+    {
+      "id": "guo-linked-prop-0077",
+      "propNumber": 77,
+      "label": "Bar Stool",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0077_bar-stool.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0077_bar-stool.png",
+      "localModelPath": "linked-props/props-fbx/0077_bar-stool.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0077_bar-stool.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 116812,
+      "thumbnailBytes": 43658,
+      "sceneReferenceCount": 65,
+      "sceneCount": 56
+    },
+    {
+      "id": "guo-linked-prop-0078",
+      "propNumber": 78,
+      "label": "Bar Table",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0078_bar-table.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0078_bar-table.png",
+      "localModelPath": "linked-props/props-fbx/0078_bar-table.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0078_bar-table.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 13388,
+      "thumbnailBytes": 20942,
+      "sceneReferenceCount": 22,
+      "sceneCount": 21
+    },
+    {
+      "id": "guo-linked-prop-0079",
+      "propNumber": 79,
+      "label": "Open Book",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0079_open-book.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0079_open-book.png",
+      "localModelPath": "linked-props/props-fbx/0079_open-book.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0079_open-book.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 45756,
+      "thumbnailBytes": 32829,
+      "sceneReferenceCount": 9,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0080",
+      "propNumber": 80,
+      "label": "Half Open Book",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0080_half-open-book.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0080_half-open-book.png",
+      "localModelPath": "linked-props/props-fbx/0080_half-open-book.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0080_half-open-book.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 47228,
+      "thumbnailBytes": 37999,
+      "sceneReferenceCount": 50,
+      "sceneCount": 50
+    },
+    {
+      "id": "guo-linked-prop-0081",
+      "propNumber": 81,
+      "label": "Microphone",
+      "categoryId": "music",
+      "categoryLabel": "音乐",
+      "categoryIds": [
+        "music"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0081_microphone.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0081_microphone.png",
+      "localModelPath": "linked-props/props-fbx/0081_microphone.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0081_microphone.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 79164,
+      "thumbnailBytes": 35759,
+      "sceneReferenceCount": 19,
+      "sceneCount": 17
+    },
+    {
+      "id": "guo-linked-prop-0082",
+      "propNumber": 82,
+      "label": "Vintage Microphone Stand",
+      "categoryId": "music",
+      "categoryLabel": "音乐",
+      "categoryIds": [
+        "music"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0082_vintage-microphone-stand.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0082_vintage-microphone-stand.png",
+      "localModelPath": "linked-props/props-fbx/0082_vintage-microphone-stand.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0082_vintage-microphone-stand.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 279388,
+      "thumbnailBytes": 16621,
+      "sceneReferenceCount": 10,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0083",
+      "propNumber": 83,
+      "label": "Skateboard",
+      "categoryId": "sport",
+      "categoryLabel": "运动",
+      "categoryIds": [
+        "sport"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0083_skateboard.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0083_skateboard.png",
+      "localModelPath": "linked-props/props-fbx/0083_skateboard.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0083_skateboard.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 77788,
+      "thumbnailBytes": 18958,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0084",
+      "propNumber": 84,
+      "label": "Headphones",
+      "categoryId": "equipment",
+      "categoryLabel": "设备工具",
+      "categoryIds": [
+        "equipment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0084_headphones.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0084_headphones.png",
+      "localModelPath": "linked-props/props-fbx/0084_headphones.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0084_headphones.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 84636,
+      "thumbnailBytes": 41873,
+      "sceneReferenceCount": 14,
+      "sceneCount": 14
+    },
+    {
+      "id": "guo-linked-prop-0085",
+      "propNumber": 85,
+      "label": "Acoustic Guitar",
+      "categoryId": "music",
+      "categoryLabel": "音乐",
+      "categoryIds": [
+        "music"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0085_acoustic-guitar.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0085_acoustic-guitar.png",
+      "localModelPath": "linked-props/props-fbx/0085_acoustic-guitar.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0085_acoustic-guitar.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 183020,
+      "thumbnailBytes": 42005,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0086",
+      "propNumber": 86,
+      "label": "Devil Wings",
+      "categoryId": "accessory",
+      "categoryLabel": "随身配件",
+      "categoryIds": [
+        "accessory"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0086_devil-wings.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0086_devil-wings.png",
+      "localModelPath": "linked-props/props-fbx/0086_devil-wings.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0086_devil-wings.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 57884,
+      "thumbnailBytes": 51396,
+      "sceneReferenceCount": 26,
+      "sceneCount": 26
+    },
+    {
+      "id": "guo-linked-prop-0087",
+      "propNumber": 87,
+      "label": "Fairy Wings",
+      "categoryId": "accessory",
+      "categoryLabel": "随身配件",
+      "categoryIds": [
+        "accessory"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0087_fairy-wings.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0087_fairy-wings.png",
+      "localModelPath": "linked-props/props-fbx/0087_fairy-wings.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0087_fairy-wings.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 146604,
+      "thumbnailBytes": 84531,
+      "sceneReferenceCount": 13,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0088",
+      "propNumber": 88,
+      "label": "Small Fairy Wings",
+      "categoryId": "accessory",
+      "categoryLabel": "随身配件",
+      "categoryIds": [
+        "accessory"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0088_small-fairy-wings.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0088_small-fairy-wings.png",
+      "localModelPath": "linked-props/props-fbx/0088_small-fairy-wings.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0088_small-fairy-wings.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 22796,
+      "thumbnailBytes": 24940,
+      "sceneReferenceCount": 23,
+      "sceneCount": 23
+    },
+    {
+      "id": "guo-linked-prop-0089",
+      "propNumber": 89,
+      "label": "Fairy Wand",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0089_fairy-wand.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0089_fairy-wand.png",
+      "localModelPath": "linked-props/props-fbx/0089_fairy-wand.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0089_fairy-wand.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 117052,
+      "thumbnailBytes": 32710,
+      "sceneReferenceCount": 20,
+      "sceneCount": 19
+    },
+    {
+      "id": "guo-linked-prop-0090",
+      "propNumber": 90,
+      "label": "Electric Guitar",
+      "categoryId": "music",
+      "categoryLabel": "音乐",
+      "categoryIds": [
+        "music"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0090_electric-guitar.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0090_electric-guitar.png",
+      "localModelPath": "linked-props/props-fbx/0090_electric-guitar.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0090_electric-guitar.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 210028,
+      "thumbnailBytes": 43900,
+      "sceneReferenceCount": 20,
+      "sceneCount": 20
+    },
+    {
+      "id": "guo-linked-prop-0091",
+      "propNumber": 91,
+      "label": "Angel Wings",
+      "categoryId": "accessory",
+      "categoryLabel": "随身配件",
+      "categoryIds": [
+        "accessory"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0091_angel-wings.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0091_angel-wings.png",
+      "localModelPath": "linked-props/props-fbx/0091_angel-wings.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0091_angel-wings.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 647244,
+      "thumbnailBytes": 87862,
+      "sceneReferenceCount": 22,
+      "sceneCount": 22
+    },
+    {
+      "id": "guo-linked-prop-0092",
+      "propNumber": 92,
+      "label": "Angel Halo",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0092_angel-halo.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0092_angel-halo.png",
+      "localModelPath": "linked-props/props-fbx/0092_angel-halo.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0092_angel-halo.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 22876,
+      "thumbnailBytes": 13280,
+      "sceneReferenceCount": 12,
+      "sceneCount": 12
+    },
+    {
+      "id": "guo-linked-prop-0093",
+      "propNumber": 93,
+      "label": "Crystal Ball",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0093_crystal-ball.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0093_crystal-ball.png",
+      "localModelPath": "linked-props/props-fbx/0093_crystal-ball.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0093_crystal-ball.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 42044,
+      "thumbnailBytes": 27748,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0094",
+      "propNumber": 94,
+      "label": "Witch Hat",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0094_witch-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0094_witch-hat.png",
+      "localModelPath": "linked-props/props-fbx/0094_witch-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0094_witch-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 63084,
+      "thumbnailBytes": 36726,
+      "sceneReferenceCount": 23,
+      "sceneCount": 23
+    },
+    {
+      "id": "guo-linked-prop-0095",
+      "propNumber": 95,
+      "label": "Witch Broom",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0095_witch-broom.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0095_witch-broom.png",
+      "localModelPath": "linked-props/props-fbx/0095_witch-broom.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0095_witch-broom.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 202172,
+      "thumbnailBytes": 41025,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0096",
+      "propNumber": 96,
+      "label": "Witch Wand",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0096_witch-wand.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0096_witch-wand.png",
+      "localModelPath": "linked-props/props-fbx/0096_witch-wand.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0096_witch-wand.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 86204,
+      "thumbnailBytes": 23869,
+      "sceneReferenceCount": 13,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0097",
+      "propNumber": 97,
+      "label": "Glasses",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0097_glasses.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0097_glasses.png",
+      "localModelPath": "linked-props/props-fbx/0097_glasses.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0097_glasses.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 38204,
+      "thumbnailBytes": 21098,
+      "sceneReferenceCount": 12,
+      "sceneCount": 12
+    },
+    {
+      "id": "guo-linked-prop-0098",
+      "propNumber": 98,
+      "label": "Round Glasses",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0098_round-glasses.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0098_round-glasses.png",
+      "localModelPath": "linked-props/props-fbx/0098_round-glasses.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0098_round-glasses.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 34780,
+      "thumbnailBytes": 24918,
+      "sceneReferenceCount": 31,
+      "sceneCount": 30
+    },
+    {
+      "id": "guo-linked-prop-0099",
+      "propNumber": 99,
+      "label": "Heart Shaped Glasses",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0099_heart-shaped-glasses.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0099_heart-shaped-glasses.png",
+      "localModelPath": "linked-props/props-fbx/0099_heart-shaped-glasses.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0099_heart-shaped-glasses.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 79452,
+      "thumbnailBytes": 30222,
+      "sceneReferenceCount": 17,
+      "sceneCount": 16
+    },
+    {
+      "id": "guo-linked-prop-0100",
+      "propNumber": 100,
+      "label": "Umbrella",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0100_umbrella.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0100_umbrella.png",
+      "localModelPath": "linked-props/props-fbx/0100_umbrella.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0100_umbrella.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 149676,
+      "thumbnailBytes": 49091,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0101",
+      "propNumber": 101,
+      "label": "Closed Umbrella",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0101_closed-umbrella.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0101_closed-umbrella.png",
+      "localModelPath": "linked-props/props-fbx/0101_closed-umbrella.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0101_closed-umbrella.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 180556,
+      "thumbnailBytes": 28304,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0102",
+      "propNumber": 102,
+      "label": "Phone",
+      "categoryId": "equipment",
+      "categoryLabel": "设备工具",
+      "categoryIds": [
+        "equipment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0102_phone.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0102_phone.png",
+      "localModelPath": "linked-props/props-fbx/0102_phone.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0102_phone.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 94108,
+      "thumbnailBytes": 26166,
+      "sceneReferenceCount": 18,
+      "sceneCount": 18
+    },
+    {
+      "id": "guo-linked-prop-0103",
+      "propNumber": 103,
+      "label": "Baseball Cap",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0103_baseball-cap.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0103_baseball-cap.png",
+      "localModelPath": "linked-props/props-fbx/0103_baseball-cap.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0103_baseball-cap.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 169036,
+      "thumbnailBytes": 40487,
+      "sceneReferenceCount": 18,
+      "sceneCount": 18
+    },
+    {
+      "id": "guo-linked-prop-0104",
+      "propNumber": 104,
+      "label": "Medieval Hood",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0104_medieval-hood.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0104_medieval-hood.png",
+      "localModelPath": "linked-props/props-fbx/0104_medieval-hood.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0104_medieval-hood.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 87900,
+      "thumbnailBytes": 64504,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0105",
+      "propNumber": 105,
+      "label": "Hood",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0105_hood.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0105_hood.png",
+      "localModelPath": "linked-props/props-fbx/0105_hood.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0105_hood.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 72076,
+      "thumbnailBytes": 51280,
+      "sceneReferenceCount": 27,
+      "sceneCount": 27
+    },
+    {
+      "id": "guo-linked-prop-0106",
+      "propNumber": 106,
+      "label": "Bench",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0106_bench.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0106_bench.png",
+      "localModelPath": "linked-props/props-fbx/0106_bench.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0106_bench.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 25580,
+      "thumbnailBytes": 23861,
+      "sceneReferenceCount": 36,
+      "sceneCount": 36
+    },
+    {
+      "id": "guo-linked-prop-0107",
+      "propNumber": 107,
+      "label": "Armchair",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0107_armchair.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0107_armchair.png",
+      "localModelPath": "linked-props/props-fbx/0107_armchair.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0107_armchair.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 48092,
+      "thumbnailBytes": 33850,
+      "sceneReferenceCount": 98,
+      "sceneCount": 95
+    },
+    {
+      "id": "guo-linked-prop-0108",
+      "propNumber": 108,
+      "label": "Small Bow",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0108_small-bow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0108_small-bow.png",
+      "localModelPath": "linked-props/props-fbx/0108_small-bow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0108_small-bow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 161084,
+      "thumbnailBytes": 42748,
+      "sceneReferenceCount": 15,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0109",
+      "propNumber": 109,
+      "label": "Magician Cards",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0109_magician-cards.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0109_magician-cards.png",
+      "localModelPath": "linked-props/props-fbx/0109_magician-cards.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0109_magician-cards.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 30204,
+      "thumbnailBytes": 15654,
+      "sceneReferenceCount": 5,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0110",
+      "propNumber": 110,
+      "label": "Magician Hat With Rabbit",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0110_magician-hat-with-rabbit.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0110_magician-hat-with-rabbit.png",
+      "localModelPath": "linked-props/props-fbx/0110_magician-hat-with-rabbit.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0110_magician-hat-with-rabbit.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 122844,
+      "thumbnailBytes": 39459,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0111",
+      "propNumber": 111,
+      "label": "Magician Wand",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0111_magician-wand.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0111_magician-wand.png",
+      "localModelPath": "linked-props/props-fbx/0111_magician-wand.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0111_magician-wand.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 23788,
+      "thumbnailBytes": 15165,
+      "sceneReferenceCount": 6,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0112",
+      "propNumber": 112,
+      "label": "Demon Trident",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0112_demon-trident.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0112_demon-trident.png",
+      "localModelPath": "linked-props/props-fbx/0112_demon-trident.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0112_demon-trident.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 26716,
+      "thumbnailBytes": 25254,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0113",
+      "propNumber": 113,
+      "label": "Wizard Staff 1",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0113_wizard-staff-1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0113_wizard-staff-1.png",
+      "localModelPath": "linked-props/props-fbx/0113_wizard-staff-1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0113_wizard-staff-1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 62412,
+      "thumbnailBytes": 27517,
+      "sceneReferenceCount": 16,
+      "sceneCount": 16
+    },
+    {
+      "id": "guo-linked-prop-0114",
+      "propNumber": 114,
+      "label": "Wizard Staff 2",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0114_wizard-staff-2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0114_wizard-staff-2.png",
+      "localModelPath": "linked-props/props-fbx/0114_wizard-staff-2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0114_wizard-staff-2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 105532,
+      "thumbnailBytes": 21115,
+      "sceneReferenceCount": 17,
+      "sceneCount": 17
+    },
+    {
+      "id": "guo-linked-prop-0115",
+      "propNumber": 115,
+      "label": "Wizard Staff 3",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0115_wizard-staff-3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0115_wizard-staff-3.png",
+      "localModelPath": "linked-props/props-fbx/0115_wizard-staff-3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0115_wizard-staff-3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 274604,
+      "thumbnailBytes": 25566,
+      "sceneReferenceCount": 13,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0116",
+      "propNumber": 116,
+      "label": "Wizard Hat",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0116_wizard-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0116_wizard-hat.png",
+      "localModelPath": "linked-props/props-fbx/0116_wizard-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0116_wizard-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 56188,
+      "thumbnailBytes": 36481,
+      "sceneReferenceCount": 9,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0117",
+      "propNumber": 117,
+      "label": "Wizard Wand",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0117_wizard-wand.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0117_wizard-wand.png",
+      "localModelPath": "linked-props/props-fbx/0117_wizard-wand.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0117_wizard-wand.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 18812,
+      "thumbnailBytes": 16881,
+      "sceneReferenceCount": 5,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0118",
+      "propNumber": 118,
+      "label": "Counter",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0118_counter.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0118_counter.png",
+      "localModelPath": "linked-props/props-fbx/0118_counter.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0118_counter.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 29452,
+      "thumbnailBytes": 15512,
+      "sceneReferenceCount": 5,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0119",
+      "propNumber": 119,
+      "label": "Oven",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0119_oven.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0119_oven.png",
+      "localModelPath": "linked-props/props-fbx/0119_oven.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0119_oven.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 78108,
+      "thumbnailBytes": 22978,
+      "sceneReferenceCount": 9,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0120",
+      "propNumber": 120,
+      "label": "Corner Counter",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0120_corner-counter.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0120_corner-counter.png",
+      "localModelPath": "linked-props/props-fbx/0120_corner-counter.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0120_corner-counter.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 43708,
+      "thumbnailBytes": 15268,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0121",
+      "propNumber": 121,
+      "label": "Cooking Pot",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0121_cooking-pot.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0121_cooking-pot.png",
+      "localModelPath": "linked-props/props-fbx/0121_cooking-pot.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0121_cooking-pot.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 107948,
+      "thumbnailBytes": 25833,
+      "sceneReferenceCount": 7,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0122",
+      "propNumber": 122,
+      "label": "Pan",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0122_pan.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0122_pan.png",
+      "localModelPath": "linked-props/props-fbx/0122_pan.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0122_pan.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 98716,
+      "thumbnailBytes": 35249,
+      "sceneReferenceCount": 10,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0123",
+      "propNumber": 123,
+      "label": "Wooden Spoon",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0123_wooden-spoon.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0123_wooden-spoon.png",
+      "localModelPath": "linked-props/props-fbx/0123_wooden-spoon.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0123_wooden-spoon.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 101292,
+      "thumbnailBytes": 24657,
+      "sceneReferenceCount": 10,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0124",
+      "propNumber": 124,
+      "label": "Cutting Board",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0124_cutting-board.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0124_cutting-board.png",
+      "localModelPath": "linked-props/props-fbx/0124_cutting-board.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0124_cutting-board.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 20060,
+      "thumbnailBytes": 17257,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0125",
+      "propNumber": 125,
+      "label": "Knife",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0125_knife.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0125_knife.png",
+      "localModelPath": "linked-props/props-fbx/0125_knife.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0125_knife.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 19132,
+      "thumbnailBytes": 19583,
+      "sceneReferenceCount": 6,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0126",
+      "propNumber": 126,
+      "label": "Bowl",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0126_bowl.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0126_bowl.png",
+      "localModelPath": "linked-props/props-fbx/0126_bowl.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0126_bowl.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 87452,
+      "thumbnailBytes": 31049,
+      "sceneReferenceCount": 12,
+      "sceneCount": 12
+    },
+    {
+      "id": "guo-linked-prop-0127",
+      "propNumber": 127,
+      "label": "Birthday Cake",
+      "categoryId": "food-drink",
+      "categoryLabel": "Food Drink",
+      "categoryIds": [
+        "food-drink"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0127_birthday-cake.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0127_birthday-cake.png",
+      "localModelPath": "linked-props/props-fbx/0127_birthday-cake.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0127_birthday-cake.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 328284,
+      "thumbnailBytes": 81500,
+      "sceneReferenceCount": 7,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0128",
+      "propNumber": 128,
+      "label": "Birthday Cake Slice",
+      "categoryId": "food-drink",
+      "categoryLabel": "Food Drink",
+      "categoryIds": [
+        "food-drink"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0128_birthday-cake-slice.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0128_birthday-cake-slice.png",
+      "localModelPath": "linked-props/props-fbx/0128_birthday-cake-slice.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0128_birthday-cake-slice.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 52076,
+      "thumbnailBytes": 34805,
+      "sceneReferenceCount": 5,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0129",
+      "propNumber": 129,
+      "label": "Plate",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0129_plate.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0129_plate.png",
+      "localModelPath": "linked-props/props-fbx/0129_plate.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0129_plate.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 53356,
+      "thumbnailBytes": 17575,
+      "sceneReferenceCount": 13,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0130",
+      "propNumber": 130,
+      "label": "Fork",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0130_fork.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0130_fork.png",
+      "localModelPath": "linked-props/props-fbx/0130_fork.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0130_fork.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 18044,
+      "thumbnailBytes": 16668,
+      "sceneReferenceCount": 8,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0131",
+      "propNumber": 131,
+      "label": "Gift",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0131_gift.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0131_gift.png",
+      "localModelPath": "linked-props/props-fbx/0131_gift.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0131_gift.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 61772,
+      "thumbnailBytes": 28743,
+      "sceneReferenceCount": 44,
+      "sceneCount": 17
+    },
+    {
+      "id": "guo-linked-prop-0132",
+      "propNumber": 132,
+      "label": "Candle",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0132_candle.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0132_candle.png",
+      "localModelPath": "linked-props/props-fbx/0132_candle.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0132_candle.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 29116,
+      "thumbnailBytes": 15255,
+      "sceneReferenceCount": 6,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0133",
+      "propNumber": 133,
+      "label": "Pizza Slice",
+      "categoryId": "food-drink",
+      "categoryLabel": "Food Drink",
+      "categoryIds": [
+        "food-drink"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0133_pizza-slice.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0133_pizza-slice.png",
+      "localModelPath": "linked-props/props-fbx/0133_pizza-slice.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0133_pizza-slice.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 66284,
+      "thumbnailBytes": 33935,
+      "sceneReferenceCount": 5,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0134",
+      "propNumber": 134,
+      "label": "Party Hat",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0134_party-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0134_party-hat.png",
+      "localModelPath": "linked-props/props-fbx/0134_party-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0134_party-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 39228,
+      "thumbnailBytes": 30146,
+      "sceneReferenceCount": 10,
+      "sceneCount": 8
+    },
+    {
+      "id": "guo-linked-prop-0135",
+      "propNumber": 135,
+      "label": "Ice Cream In Glass Cup",
+      "categoryId": "food-drink",
+      "categoryLabel": "Food Drink",
+      "categoryIds": [
+        "food-drink"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0135_ice-cream-in-glass-cup.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0135_ice-cream-in-glass-cup.png",
+      "localModelPath": "linked-props/props-fbx/0135_ice-cream-in-glass-cup.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0135_ice-cream-in-glass-cup.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 503084,
+      "thumbnailBytes": 49971,
+      "sceneReferenceCount": 13,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0136",
+      "propNumber": 136,
+      "label": "Dining Table",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0136_dining-table.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0136_dining-table.png",
+      "localModelPath": "linked-props/props-fbx/0136_dining-table.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0136_dining-table.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 17068,
+      "thumbnailBytes": 17308,
+      "sceneReferenceCount": 27,
+      "sceneCount": 27
+    },
+    {
+      "id": "guo-linked-prop-0137",
+      "propNumber": 137,
+      "label": "Spoon",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0137_spoon.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0137_spoon.png",
+      "localModelPath": "linked-props/props-fbx/0137_spoon.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0137_spoon.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 58332,
+      "thumbnailBytes": 25239,
+      "sceneReferenceCount": 5,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0138",
+      "propNumber": 138,
+      "label": "AK47",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0138_ak47.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0138_ak47.png",
+      "localModelPath": "linked-props/props-fbx/0138_ak47.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0138_ak47.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 59628,
+      "thumbnailBytes": 29484,
+      "sceneReferenceCount": 5,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0139",
+      "propNumber": 139,
+      "label": "Chair",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0139_chair.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0139_chair.png",
+      "localModelPath": "linked-props/props-fbx/0139_chair.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0139_chair.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 41788,
+      "thumbnailBytes": 24472,
+      "sceneReferenceCount": 186,
+      "sceneCount": 167
+    },
+    {
+      "id": "guo-linked-prop-0140",
+      "propNumber": 140,
+      "label": "Old Television",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0140_old-television.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0140_old-television.png",
+      "localModelPath": "linked-props/props-fbx/0140_old-television.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0140_old-television.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 60908,
+      "thumbnailBytes": 30703,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0141",
+      "propNumber": 141,
+      "label": "Baseball Bat",
+      "categoryId": "sport",
+      "categoryLabel": "运动",
+      "categoryIds": [
+        "sport"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0141_baseball-bat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0141_baseball-bat.png",
+      "localModelPath": "linked-props/props-fbx/0141_baseball-bat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0141_baseball-bat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 38028,
+      "thumbnailBytes": 20604,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0142",
+      "propNumber": 142,
+      "label": "Kama",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0142_kama.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0142_kama.png",
+      "localModelPath": "linked-props/props-fbx/0142_kama.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0142_kama.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 55164,
+      "thumbnailBytes": 26261,
+      "sceneReferenceCount": 4,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0143",
+      "propNumber": 143,
+      "label": "Dagger",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0143_dagger.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0143_dagger.png",
+      "localModelPath": "linked-props/props-fbx/0143_dagger.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0143_dagger.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 55660,
+      "thumbnailBytes": 24045,
+      "sceneReferenceCount": 115,
+      "sceneCount": 85
+    },
+    {
+      "id": "guo-linked-prop-0144",
+      "propNumber": 144,
+      "label": "Katana",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0144_katana.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0144_katana.png",
+      "localModelPath": "linked-props/props-fbx/0144_katana.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0144_katana.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 47212,
+      "thumbnailBytes": 21035,
+      "sceneReferenceCount": 42,
+      "sceneCount": 39
+    },
+    {
+      "id": "guo-linked-prop-0145",
+      "propNumber": 145,
+      "label": "Grenade",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0145_grenade.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0145_grenade.png",
+      "localModelPath": "linked-props/props-fbx/0145_grenade.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0145_grenade.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 127708,
+      "thumbnailBytes": 44737,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0146",
+      "propNumber": 146,
+      "label": "Sheath",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0146_sheath.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0146_sheath.png",
+      "localModelPath": "linked-props/props-fbx/0146_sheath.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0146_sheath.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 91452,
+      "thumbnailBytes": 21062,
+      "sceneReferenceCount": 12,
+      "sceneCount": 12
+    },
+    {
+      "id": "guo-linked-prop-0147",
+      "propNumber": 147,
+      "label": "Sabre",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0147_sabre.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0147_sabre.png",
+      "localModelPath": "linked-props/props-fbx/0147_sabre.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0147_sabre.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 87548,
+      "thumbnailBytes": 25244,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0149",
+      "propNumber": 149,
+      "label": "Kunai",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0149_kunai.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0149_kunai.png",
+      "localModelPath": "linked-props/props-fbx/0149_kunai.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0149_kunai.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 56092,
+      "thumbnailBytes": 23671,
+      "sceneReferenceCount": 17,
+      "sceneCount": 12
+    },
+    {
+      "id": "guo-linked-prop-0150",
+      "propNumber": 150,
+      "label": "Mini Revolver",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0150_mini-revolver.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0150_mini-revolver.png",
+      "localModelPath": "linked-props/props-fbx/0150_mini-revolver.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0150_mini-revolver.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 105244,
+      "thumbnailBytes": 33346,
+      "sceneReferenceCount": 14,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0151",
+      "propNumber": 151,
+      "label": "Shotgun",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0151_shotgun.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0151_shotgun.png",
+      "localModelPath": "linked-props/props-fbx/0151_shotgun.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0151_shotgun.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 104668,
+      "thumbnailBytes": 25203,
+      "sceneReferenceCount": 15,
+      "sceneCount": 15
+    },
+    {
+      "id": "guo-linked-prop-0152",
+      "propNumber": 152,
+      "label": "Pistol",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0152_pistol.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0152_pistol.png",
+      "localModelPath": "linked-props/props-fbx/0152_pistol.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0152_pistol.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 63548,
+      "thumbnailBytes": 30278,
+      "sceneReferenceCount": 58,
+      "sceneCount": 47
+    },
+    {
+      "id": "guo-linked-prop-0153",
+      "propNumber": 153,
+      "label": "Sai",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0153_sai.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0153_sai.png",
+      "localModelPath": "linked-props/props-fbx/0153_sai.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0153_sai.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 106508,
+      "thumbnailBytes": 25897,
+      "sceneReferenceCount": 22,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0154",
+      "propNumber": 154,
+      "label": "Scythe",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0154_scythe.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0154_scythe.png",
+      "localModelPath": "linked-props/props-fbx/0154_scythe.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0154_scythe.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 63548,
+      "thumbnailBytes": 25598,
+      "sceneReferenceCount": 14,
+      "sceneCount": 14
+    },
+    {
+      "id": "guo-linked-prop-0155",
+      "propNumber": 155,
+      "label": "French Bed",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0155_french-bed.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0155_french-bed.png",
+      "localModelPath": "linked-props/props-fbx/0155_french-bed.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0155_french-bed.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 170780,
+      "thumbnailBytes": 19316,
+      "sceneReferenceCount": 8,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0156",
+      "propNumber": 156,
+      "label": "Medieval Shield",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0156_medieval-shield.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0156_medieval-shield.png",
+      "localModelPath": "linked-props/props-fbx/0156_medieval-shield.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0156_medieval-shield.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 924892,
+      "thumbnailBytes": 48149,
+      "sceneReferenceCount": 72,
+      "sceneCount": 66
+    },
+    {
+      "id": "guo-linked-prop-0157",
+      "propNumber": 157,
+      "label": "Katana 2",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0157_katana-2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0157_katana-2.png",
+      "localModelPath": "linked-props/props-fbx/0157_katana-2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0157_katana-2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 41084,
+      "thumbnailBytes": 19501,
+      "sceneReferenceCount": 68,
+      "sceneCount": 46
+    },
+    {
+      "id": "guo-linked-prop-0158",
+      "propNumber": 158,
+      "label": "Katana 3",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0158_katana-3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0158_katana-3.png",
+      "localModelPath": "linked-props/props-fbx/0158_katana-3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0158_katana-3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 46892,
+      "thumbnailBytes": 25572,
+      "sceneReferenceCount": 8,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0159",
+      "propNumber": 159,
+      "label": "Stylized Bow",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0159_stylized-bow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0159_stylized-bow.png",
+      "localModelPath": "linked-props/props-fbx/0159_stylized-bow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0159_stylized-bow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 313724,
+      "thumbnailBytes": 44015,
+      "sceneReferenceCount": 22,
+      "sceneCount": 22
+    },
+    {
+      "id": "guo-linked-prop-0160",
+      "propNumber": 160,
+      "label": "Barrel",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0160_barrel.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0160_barrel.png",
+      "localModelPath": "linked-props/props-fbx/0160_barrel.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0160_barrel.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 493164,
+      "thumbnailBytes": 43126,
+      "sceneReferenceCount": 24,
+      "sceneCount": 14
+    },
+    {
+      "id": "guo-linked-prop-0161",
+      "propNumber": 161,
+      "label": "Magician Hat",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0161_magician-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0161_magician-hat.png",
+      "localModelPath": "linked-props/props-fbx/0161_magician-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0161_magician-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 78796,
+      "thumbnailBytes": 32619,
+      "sceneReferenceCount": 5,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0162",
+      "propNumber": 162,
+      "label": "Great Sword",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0162_great-sword.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0162_great-sword.png",
+      "localModelPath": "linked-props/props-fbx/0162_great-sword.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0162_great-sword.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 127020,
+      "thumbnailBytes": 26033,
+      "sceneReferenceCount": 149,
+      "sceneCount": 127
+    },
+    {
+      "id": "guo-linked-prop-0163",
+      "propNumber": 163,
+      "label": "Greek Sword",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0163_greek-sword.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0163_greek-sword.png",
+      "localModelPath": "linked-props/props-fbx/0163_greek-sword.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0163_greek-sword.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 97708,
+      "thumbnailBytes": 24173,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0165",
+      "propNumber": 165,
+      "label": "Cauldron",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0165_cauldron.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0165_cauldron.png",
+      "localModelPath": "linked-props/props-fbx/0165_cauldron.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0165_cauldron.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 194316,
+      "thumbnailBytes": 57192,
+      "sceneReferenceCount": 6,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0166",
+      "propNumber": 166,
+      "label": "Metal Bat",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0166_metal-bat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0166_metal-bat.png",
+      "localModelPath": "linked-props/props-fbx/0166_metal-bat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0166_metal-bat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 26124,
+      "thumbnailBytes": 20167,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0168",
+      "propNumber": 168,
+      "label": "Axe",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0168_axe.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0168_axe.png",
+      "localModelPath": "linked-props/props-fbx/0168_axe.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0168_axe.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 38844,
+      "thumbnailBytes": 31521,
+      "sceneReferenceCount": 23,
+      "sceneCount": 21
+    },
+    {
+      "id": "guo-linked-prop-0169",
+      "propNumber": 169,
+      "label": "Galil",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0169_galil.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0169_galil.png",
+      "localModelPath": "linked-props/props-fbx/0169_galil.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0169_galil.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 89260,
+      "thumbnailBytes": 28111,
+      "sceneReferenceCount": 5,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0170",
+      "propNumber": 170,
+      "label": "Pillow",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0170_pillow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0170_pillow.png",
+      "localModelPath": "linked-props/props-fbx/0170_pillow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0170_pillow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 91628,
+      "thumbnailBytes": 49979,
+      "sceneReferenceCount": 61,
+      "sceneCount": 48
+    },
+    {
+      "id": "guo-linked-prop-0171",
+      "propNumber": 171,
+      "label": "Small Table",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0171_small-table.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0171_small-table.png",
+      "localModelPath": "linked-props/props-fbx/0171_small-table.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0171_small-table.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 24348,
+      "thumbnailBytes": 14994,
+      "sceneReferenceCount": 5,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0172",
+      "propNumber": 172,
+      "label": "Book",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0172_book.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0172_book.png",
+      "localModelPath": "linked-props/props-fbx/0172_book.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0172_book.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 22396,
+      "thumbnailBytes": 28768,
+      "sceneReferenceCount": 47,
+      "sceneCount": 15
+    },
+    {
+      "id": "guo-linked-prop-0173",
+      "propNumber": 173,
+      "label": "Fantasy Hammer",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0173_fantasy-hammer.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0173_fantasy-hammer.png",
+      "localModelPath": "linked-props/props-fbx/0173_fantasy-hammer.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0173_fantasy-hammer.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 64780,
+      "thumbnailBytes": 40218,
+      "sceneReferenceCount": 22,
+      "sceneCount": 17
+    },
+    {
+      "id": "guo-linked-prop-0174",
+      "propNumber": 174,
+      "label": "Spear",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0174_spear.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0174_spear.png",
+      "localModelPath": "linked-props/props-fbx/0174_spear.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0174_spear.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 343500,
+      "thumbnailBytes": 17381,
+      "sceneReferenceCount": 18,
+      "sceneCount": 17
+    },
+    {
+      "id": "guo-linked-prop-0175",
+      "propNumber": 175,
+      "label": "Double-Sided Spear",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0175_double-sided-spear.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0175_double-sided-spear.png",
+      "localModelPath": "linked-props/props-fbx/0175_double-sided-spear.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0175_double-sided-spear.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 141548,
+      "thumbnailBytes": 26120,
+      "sceneReferenceCount": 42,
+      "sceneCount": 25
+    },
+    {
+      "id": "guo-linked-prop-0176",
+      "propNumber": 176,
+      "label": "Stylized Bow With Arrow",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0176_stylized-bow-with-arrow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0176_stylized-bow-with-arrow.png",
+      "localModelPath": "linked-props/props-fbx/0176_stylized-bow-with-arrow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0176_stylized-bow-with-arrow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 377196,
+      "thumbnailBytes": 50743,
+      "sceneReferenceCount": 23,
+      "sceneCount": 19
+    },
+    {
+      "id": "guo-linked-prop-0177",
+      "propNumber": 177,
+      "label": "Arrow",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0177_arrow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0177_arrow.png",
+      "localModelPath": "linked-props/props-fbx/0177_arrow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0177_arrow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 84700,
+      "thumbnailBytes": 18461,
+      "sceneReferenceCount": 6,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0178",
+      "propNumber": 178,
+      "label": "Crossbow",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0178_crossbow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0178_crossbow.png",
+      "localModelPath": "linked-props/props-fbx/0178_crossbow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0178_crossbow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 125180,
+      "thumbnailBytes": 36071,
+      "sceneReferenceCount": 15,
+      "sceneCount": 15
+    },
+    {
+      "id": "guo-linked-prop-0179",
+      "propNumber": 179,
+      "label": "Rock",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0179_rock.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0179_rock.png",
+      "localModelPath": "linked-props/props-fbx/0179_rock.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0179_rock.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 20892,
+      "thumbnailBytes": 26110,
+      "sceneReferenceCount": 12,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0180",
+      "propNumber": 180,
+      "label": "Mermaid Trident",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0180_mermaid-trident.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0180_mermaid-trident.png",
+      "localModelPath": "linked-props/props-fbx/0180_mermaid-trident.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0180_mermaid-trident.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 684252,
+      "thumbnailBytes": 30835,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0181",
+      "propNumber": 181,
+      "label": "Christmas Tree",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0181_christmas-tree.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0181_christmas-tree.png",
+      "localModelPath": "linked-props/props-fbx/0181_christmas-tree.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0181_christmas-tree.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 772828,
+      "thumbnailBytes": 67671,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0182",
+      "propNumber": 182,
+      "label": "Treasure Chest",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0182_treasure-chest.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0182_treasure-chest.png",
+      "localModelPath": "linked-props/props-fbx/0182_treasure-chest.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0182_treasure-chest.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 667836,
+      "thumbnailBytes": 43058,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0183",
+      "propNumber": 183,
+      "label": "Pirate Hat",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0183_pirate-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0183_pirate-hat.png",
+      "localModelPath": "linked-props/props-fbx/0183_pirate-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0183_pirate-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 266732,
+      "thumbnailBytes": 64044,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0184",
+      "propNumber": 184,
+      "label": "Pirate Sword",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0184_pirate-sword.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0184_pirate-sword.png",
+      "localModelPath": "linked-props/props-fbx/0184_pirate-sword.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0184_pirate-sword.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 156924,
+      "thumbnailBytes": 32350,
+      "sceneReferenceCount": 4,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0185",
+      "propNumber": 185,
+      "label": "Couch",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0185_couch.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0185_couch.png",
+      "localModelPath": "linked-props/props-fbx/0185_couch.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0185_couch.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 361148,
+      "thumbnailBytes": 27439,
+      "sceneReferenceCount": 39,
+      "sceneCount": 38
+    },
+    {
+      "id": "guo-linked-prop-0186",
+      "propNumber": 186,
+      "label": "Cowboy Hat",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0186_cowboy-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0186_cowboy-hat.png",
+      "localModelPath": "linked-props/props-fbx/0186_cowboy-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0186_cowboy-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 767948,
+      "thumbnailBytes": 41608,
+      "sceneReferenceCount": 14,
+      "sceneCount": 14
+    },
+    {
+      "id": "guo-linked-prop-0187",
+      "propNumber": 187,
+      "label": "AWP Sniper",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0187_awp-sniper.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0187_awp-sniper.png",
+      "localModelPath": "linked-props/props-fbx/0187_awp-sniper.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0187_awp-sniper.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 56092,
+      "thumbnailBytes": 38065,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0188",
+      "propNumber": 188,
+      "label": "AK74u",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0188_ak74u.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0188_ak74u.png",
+      "localModelPath": "linked-props/props-fbx/0188_ak74u.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0188_ak74u.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 58988,
+      "thumbnailBytes": 32984,
+      "sceneReferenceCount": 5,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0190",
+      "propNumber": 190,
+      "label": "Dragunov Sniper",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0190_dragunov-sniper.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0190_dragunov-sniper.png",
+      "localModelPath": "linked-props/props-fbx/0190_dragunov-sniper.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0190_dragunov-sniper.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 62780,
+      "thumbnailBytes": 37179,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0191",
+      "propNumber": 191,
+      "label": "Mustang GT - Low Poly",
+      "categoryId": "vehicle",
+      "categoryLabel": "交通载具",
+      "categoryIds": [
+        "vehicle"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0191_mustang-gt-low-poly.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0191_mustang-gt-low-poly.png",
+      "localModelPath": "linked-props/props-fbx/0191_mustang-gt-low-poly.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0191_mustang-gt-low-poly.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 107996,
+      "thumbnailBytes": 29687,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0192",
+      "propNumber": 192,
+      "label": "Fantasy Sword 1",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0192_fantasy-sword-1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0192_fantasy-sword-1.png",
+      "localModelPath": "linked-props/props-fbx/0192_fantasy-sword-1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0192_fantasy-sword-1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 39980,
+      "thumbnailBytes": 25025,
+      "sceneReferenceCount": 17,
+      "sceneCount": 16
+    },
+    {
+      "id": "guo-linked-prop-0193",
+      "propNumber": 193,
+      "label": "Fantasy Sword 2",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0193_fantasy-sword-2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0193_fantasy-sword-2.png",
+      "localModelPath": "linked-props/props-fbx/0193_fantasy-sword-2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0193_fantasy-sword-2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 34044,
+      "thumbnailBytes": 23256,
+      "sceneReferenceCount": 4,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0194",
+      "propNumber": 194,
+      "label": "Fantasy Sword 3",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0194_fantasy-sword-3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0194_fantasy-sword-3.png",
+      "localModelPath": "linked-props/props-fbx/0194_fantasy-sword-3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0194_fantasy-sword-3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 49852,
+      "thumbnailBytes": 30061,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0195",
+      "propNumber": 195,
+      "label": "Fantasy Sword 4",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0195_fantasy-sword-4.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0195_fantasy-sword-4.png",
+      "localModelPath": "linked-props/props-fbx/0195_fantasy-sword-4.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0195_fantasy-sword-4.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 37228,
+      "thumbnailBytes": 33053,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0196",
+      "propNumber": 196,
+      "label": "Fantasy Sword 5",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0196_fantasy-sword-5.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0196_fantasy-sword-5.png",
+      "localModelPath": "linked-props/props-fbx/0196_fantasy-sword-5.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0196_fantasy-sword-5.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 45052,
+      "thumbnailBytes": 26550,
+      "sceneReferenceCount": 5,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0197",
+      "propNumber": 197,
+      "label": "Fantasy Sword 6",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0197_fantasy-sword-6.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0197_fantasy-sword-6.png",
+      "localModelPath": "linked-props/props-fbx/0197_fantasy-sword-6.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0197_fantasy-sword-6.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 38748,
+      "thumbnailBytes": 25631,
+      "sceneReferenceCount": 8,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0198",
+      "propNumber": 198,
+      "label": "Fedora Hat",
+      "categoryId": "head",
+      "categoryLabel": "Head",
+      "categoryIds": [
+        "head"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0198_fedora-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0198_fedora-hat.png",
+      "localModelPath": "linked-props/props-fbx/0198_fedora-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0198_fedora-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 37692,
+      "thumbnailBytes": 34207,
+      "sceneReferenceCount": 6,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0199",
+      "propNumber": 199,
+      "label": "Old Helmet",
+      "categoryId": "head",
+      "categoryLabel": "Head",
+      "categoryIds": [
+        "head"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0199_old-helmet.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0199_old-helmet.png",
+      "localModelPath": "linked-props/props-fbx/0199_old-helmet.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0199_old-helmet.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 65052,
+      "thumbnailBytes": 44368,
+      "sceneReferenceCount": 9,
+      "sceneCount": 8
+    },
+    {
+      "id": "guo-linked-prop-0200",
+      "propNumber": 200,
+      "label": "Chain",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0200_chain.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0200_chain.png",
+      "localModelPath": "linked-props/props-fbx/0200_chain.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0200_chain.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 43308,
+      "thumbnailBytes": 41190,
+      "sceneReferenceCount": 60,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0201",
+      "propNumber": 201,
+      "label": "Revolver",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0201_revolver.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0201_revolver.png",
+      "localModelPath": "linked-props/props-fbx/0201_revolver.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0201_revolver.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 47564,
+      "thumbnailBytes": 36879,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0202",
+      "propNumber": 202,
+      "label": "BS1 Tishina",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0202_bs1-tishina.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0202_bs1-tishina.png",
+      "localModelPath": "linked-props/props-fbx/0202_bs1-tishina.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0202_bs1-tishina.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 66956,
+      "thumbnailBytes": 43963,
+      "sceneReferenceCount": 4,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0203",
+      "propNumber": 203,
+      "label": "Fn fal",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0203_fn-fal.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0203_fn-fal.png",
+      "localModelPath": "linked-props/props-fbx/0203_fn-fal.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0203_fn-fal.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 48652,
+      "thumbnailBytes": 18943,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0204",
+      "propNumber": 204,
+      "label": "Glock 18",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0204_glock-18.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0204_glock-18.png",
+      "localModelPath": "linked-props/props-fbx/0204_glock-18.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0204_glock-18.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 36108,
+      "thumbnailBytes": 5705,
+      "sceneReferenceCount": 65,
+      "sceneCount": 57
+    },
+    {
+      "id": "guo-linked-prop-0205",
+      "propNumber": 205,
+      "label": "Mini Uzi",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0205_mini-uzi.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0205_mini-uzi.png",
+      "localModelPath": "linked-props/props-fbx/0205_mini-uzi.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0205_mini-uzi.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 31436,
+      "thumbnailBytes": 33830,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0206",
+      "propNumber": 206,
+      "label": "MP5",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0206_mp5.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0206_mp5.png",
+      "localModelPath": "linked-props/props-fbx/0206_mp5.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0206_mp5.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 46780,
+      "thumbnailBytes": 37396,
+      "sceneReferenceCount": 6,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0207",
+      "propNumber": 207,
+      "label": "Rocket Launcher",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0207_rocket-launcher.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0207_rocket-launcher.png",
+      "localModelPath": "linked-props/props-fbx/0207_rocket-launcher.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0207_rocket-launcher.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 49308,
+      "thumbnailBytes": 32314,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0209",
+      "propNumber": 209,
+      "label": "Axe",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0209_axe.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0209_axe.png",
+      "localModelPath": "linked-props/props-fbx/0209_axe.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0209_axe.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 44236,
+      "thumbnailBytes": 29585,
+      "sceneReferenceCount": 15,
+      "sceneCount": 15
+    },
+    {
+      "id": "guo-linked-prop-0210",
+      "propNumber": 210,
+      "label": "Baseball Bat",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0210_baseball-bat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0210_baseball-bat.png",
+      "localModelPath": "linked-props/props-fbx/0210_baseball-bat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0210_baseball-bat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 43612,
+      "thumbnailBytes": 20384,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0211",
+      "propNumber": 211,
+      "label": "Sai",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0211_sai.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0211_sai.png",
+      "localModelPath": "linked-props/props-fbx/0211_sai.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0211_sai.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 108172,
+      "thumbnailBytes": 25073,
+      "sceneReferenceCount": 14,
+      "sceneCount": 6
+    },
+    {
+      "id": "guo-linked-prop-0212",
+      "propNumber": 212,
+      "label": "Old Television",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0212_old-television.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0212_old-television.png",
+      "localModelPath": "linked-props/props-fbx/0212_old-television.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0212_old-television.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 62908,
+      "thumbnailBytes": 29093,
+      "sceneReferenceCount": 11,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0213",
+      "propNumber": 213,
+      "label": "Sombrero",
+      "categoryId": "head",
+      "categoryLabel": "Head",
+      "categoryIds": [
+        "head"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0213_sombrero.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0213_sombrero.png",
+      "localModelPath": "linked-props/props-fbx/0213_sombrero.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0213_sombrero.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 91628,
+      "thumbnailBytes": 26741,
+      "sceneReferenceCount": 7,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0214",
+      "propNumber": 214,
+      "label": "Magician Hat",
+      "categoryId": "head",
+      "categoryLabel": "Head",
+      "categoryIds": [
+        "head"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0214_magician-hat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0214_magician-hat.png",
+      "localModelPath": "linked-props/props-fbx/0214_magician-hat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0214_magician-hat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 87020,
+      "thumbnailBytes": 29613,
+      "sceneReferenceCount": 12,
+      "sceneCount": 12
+    },
+    {
+      "id": "guo-linked-prop-0215",
+      "propNumber": 215,
+      "label": "Small Table",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0215_small-table.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0215_small-table.png",
+      "localModelPath": "linked-props/props-fbx/0215_small-table.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0215_small-table.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 25052,
+      "thumbnailBytes": 17126,
+      "sceneReferenceCount": 12,
+      "sceneCount": 11
+    },
+    {
+      "id": "guo-linked-prop-0216",
+      "propNumber": 216,
+      "label": "AK47",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0216_ak47.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0216_ak47.png",
+      "localModelPath": "linked-props/props-fbx/0216_ak47.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0216_ak47.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 62572,
+      "thumbnailBytes": 21591,
+      "sceneReferenceCount": 9,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0217",
+      "propNumber": 217,
+      "label": "Galil",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0217_galil.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0217_galil.png",
+      "localModelPath": "linked-props/props-fbx/0217_galil.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0217_galil.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 95036,
+      "thumbnailBytes": 22271,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0218",
+      "propNumber": 218,
+      "label": "Metal Bat",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0218_metal-bat.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0218_metal-bat.png",
+      "localModelPath": "linked-props/props-fbx/0218_metal-bat.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0218_metal-bat.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 26860,
+      "thumbnailBytes": 15165,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0220",
+      "propNumber": 220,
+      "label": "Pistol",
+      "categoryId": "guns",
+      "categoryLabel": "Guns",
+      "categoryIds": [
+        "guns"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0220_pistol.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0220_pistol.png",
+      "localModelPath": "linked-props/props-fbx/0220_pistol.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0220_pistol.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 66764,
+      "thumbnailBytes": 23046,
+      "sceneReferenceCount": 15,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0221",
+      "propNumber": 221,
+      "label": "Great Sword",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0221_great-sword.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0221_great-sword.png",
+      "localModelPath": "linked-props/props-fbx/0221_great-sword.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0221_great-sword.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 136108,
+      "thumbnailBytes": 25301,
+      "sceneReferenceCount": 17,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0222",
+      "propNumber": 222,
+      "label": "Sheath",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0222_sheath.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0222_sheath.png",
+      "localModelPath": "linked-props/props-fbx/0222_sheath.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0222_sheath.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 109516,
+      "thumbnailBytes": 18206,
+      "sceneReferenceCount": 14,
+      "sceneCount": 13
+    },
+    {
+      "id": "guo-linked-prop-0231",
+      "propNumber": 231,
+      "label": "Short Couch",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0231_short-couch.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0231_short-couch.png",
+      "localModelPath": "linked-props/props-fbx/0231_short-couch.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0231_short-couch.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 27468,
+      "thumbnailBytes": 31354,
+      "sceneReferenceCount": 93,
+      "sceneCount": 92
+    },
+    {
+      "id": "guo-linked-prop-0232",
+      "propNumber": 232,
+      "label": "Pillow",
+      "categoryId": "furniture",
+      "categoryLabel": "家具",
+      "categoryIds": [
+        "furniture"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0232_pillow.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0232_pillow.png",
+      "localModelPath": "linked-props/props-fbx/0232_pillow.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0232_pillow.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 29932,
+      "thumbnailBytes": 38270,
+      "sceneReferenceCount": 119,
+      "sceneCount": 73
+    },
+    {
+      "id": "guo-linked-prop-0233",
+      "propNumber": 233,
+      "label": "Greek Sword",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0233_greek-sword.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0233_greek-sword.png",
+      "localModelPath": "linked-props/props-fbx/0233_greek-sword.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0233_greek-sword.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 99116,
+      "thumbnailBytes": 24173,
+      "sceneReferenceCount": 6,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0234",
+      "propNumber": 234,
+      "label": "Katana 2",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0234_katana-2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0234_katana-2.png",
+      "localModelPath": "linked-props/props-fbx/0234_katana-2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0234_katana-2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 49212,
+      "thumbnailBytes": 19501,
+      "sceneReferenceCount": 58,
+      "sceneCount": 40
+    },
+    {
+      "id": "guo-linked-prop-0235",
+      "propNumber": 235,
+      "label": "Katana 3",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0235_katana-3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0235_katana-3.png",
+      "localModelPath": "linked-props/props-fbx/0235_katana-3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0235_katana-3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 48140,
+      "thumbnailBytes": 25572,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0236",
+      "propNumber": 236,
+      "label": "Pirate Sword",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0236_pirate-sword.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0236_pirate-sword.png",
+      "localModelPath": "linked-props/props-fbx/0236_pirate-sword.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0236_pirate-sword.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 181964,
+      "thumbnailBytes": 32350,
+      "sceneReferenceCount": 5,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0237",
+      "propNumber": 237,
+      "label": "Sabre",
+      "categoryId": "melee",
+      "categoryLabel": "冷兵器",
+      "categoryIds": [
+        "melee"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0237_sabre.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0237_sabre.png",
+      "localModelPath": "linked-props/props-fbx/0237_sabre.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0237_sabre.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 97804,
+      "thumbnailBytes": 25244,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0238",
+      "propNumber": 238,
+      "label": "Camera",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0238_camera.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0238_camera.png",
+      "localModelPath": "linked-props/props-fbx/0238_camera.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0238_camera.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 117548,
+      "thumbnailBytes": 33540,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0239",
+      "propNumber": 239,
+      "label": "Paper",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0239_paper.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0239_paper.png",
+      "localModelPath": "linked-props/props-fbx/0239_paper.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0239_paper.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12636,
+      "thumbnailBytes": 21553,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0240",
+      "propNumber": 240,
+      "label": "Pencil",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0240_pencil.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0240_pencil.png",
+      "localModelPath": "linked-props/props-fbx/0240_pencil.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0240_pencil.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 67324,
+      "thumbnailBytes": 17892,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0241",
+      "propNumber": 241,
+      "label": "Lighter",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0241_lighter.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0241_lighter.png",
+      "localModelPath": "linked-props/props-fbx/0241_lighter.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0241_lighter.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 88188,
+      "thumbnailBytes": 27981,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0243",
+      "propNumber": 243,
+      "label": "Cigarette",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0243_cigarette.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0243_cigarette.png",
+      "localModelPath": "linked-props/props-fbx/0243_cigarette.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0243_cigarette.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 53916,
+      "thumbnailBytes": 20643,
+      "sceneReferenceCount": 4,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0244",
+      "propNumber": 244,
+      "label": "Helmet",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0244_helmet.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0244_helmet.png",
+      "localModelPath": "linked-props/props-fbx/0244_helmet.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0244_helmet.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 84044,
+      "thumbnailBytes": 35901,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0245",
+      "propNumber": 245,
+      "label": "Walking Stick",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0245_walking-stick.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0245_walking-stick.png",
+      "localModelPath": "linked-props/props-fbx/0245_walking-stick.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0245_walking-stick.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 25532,
+      "thumbnailBytes": 25585,
+      "sceneReferenceCount": 5,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0247",
+      "propNumber": 247,
+      "label": "Lantern",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0247_lantern.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0247_lantern.png",
+      "localModelPath": "linked-props/props-fbx/0247_lantern.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0247_lantern.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 23884,
+      "thumbnailBytes": 24640,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0248",
+      "propNumber": 248,
+      "label": "Cafe Table1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0248_cafe-table1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0248_cafe-table1.png",
+      "localModelPath": "linked-props/props-fbx/0248_cafe-table1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0248_cafe-table1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 22364,
+      "thumbnailBytes": 28563,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0249",
+      "propNumber": 249,
+      "label": "Cafe Table2 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0249_cafe-table2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0249_cafe-table2.png",
+      "localModelPath": "linked-props/props-fbx/0249_cafe-table2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0249_cafe-table2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 14076,
+      "thumbnailBytes": 16420,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0253",
+      "propNumber": 253,
+      "label": "Tavern Bench1 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0253_tavern-bench1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0253_tavern-bench1.png",
+      "localModelPath": "linked-props/props-fbx/0253_tavern-bench1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0253_tavern-bench1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 14380,
+      "thumbnailBytes": 24263,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0255",
+      "propNumber": 255,
+      "label": "Tavern Chair1 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0255_tavern-chair1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0255_tavern-chair1.png",
+      "localModelPath": "linked-props/props-fbx/0255_tavern-chair1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0255_tavern-chair1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 16524,
+      "thumbnailBytes": 21161,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0263",
+      "propNumber": 263,
+      "label": "Bar Stool3 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0263_bar-stool3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0263_bar-stool3.png",
+      "localModelPath": "linked-props/props-fbx/0263_bar-stool3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0263_bar-stool3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 21868,
+      "thumbnailBytes": 31380,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0266",
+      "propNumber": 266,
+      "label": "Bottle1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0266_bottle1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0266_bottle1.png",
+      "localModelPath": "linked-props/props-fbx/0266_bottle1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0266_bottle1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 14620,
+      "thumbnailBytes": 41695,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0268",
+      "propNumber": 268,
+      "label": "Instant Noodles",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0268_instant-noodles.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0268_instant-noodles.png",
+      "localModelPath": "linked-props/props-fbx/0268_instant-noodles.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0268_instant-noodles.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 13132,
+      "thumbnailBytes": 20319,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0275",
+      "propNumber": 275,
+      "label": "Backpack1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0275_backpack1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0275_backpack1.png",
+      "localModelPath": "linked-props/props-fbx/0275_backpack1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0275_backpack1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 29212,
+      "thumbnailBytes": 57496,
+      "sceneReferenceCount": 11,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0290",
+      "propNumber": 290,
+      "label": "Mandolin",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0290_mandolin.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0290_mandolin.png",
+      "localModelPath": "linked-props/props-fbx/0290_mandolin.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0290_mandolin.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 31692,
+      "thumbnailBytes": 57293,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0292",
+      "propNumber": 292,
+      "label": "Bottle2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0292_bottle2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0292_bottle2.png",
+      "localModelPath": "linked-props/props-fbx/0292_bottle2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0292_bottle2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 13820,
+      "thumbnailBytes": 38887,
+      "sceneReferenceCount": 8,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0293",
+      "propNumber": 293,
+      "label": "Bottle Box",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0293_bottle-box.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0293_bottle-box.png",
+      "localModelPath": "linked-props/props-fbx/0293_bottle-box.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0293_bottle-box.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 25628,
+      "thumbnailBytes": 48344,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0294",
+      "propNumber": 294,
+      "label": "Gramophone",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0294_gramophone.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0294_gramophone.png",
+      "localModelPath": "linked-props/props-fbx/0294_gramophone.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0294_gramophone.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 22316,
+      "thumbnailBytes": 43351,
+      "sceneReferenceCount": 3,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0295",
+      "propNumber": 295,
+      "label": "Closet1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0295_closet1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0295_closet1.png",
+      "localModelPath": "linked-props/props-fbx/0295_closet1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0295_closet1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12668,
+      "thumbnailBytes": 12170,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0296",
+      "propNumber": 296,
+      "label": "Closet2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0296_closet2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0296_closet2.png",
+      "localModelPath": "linked-props/props-fbx/0296_closet2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0296_closet2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12748,
+      "thumbnailBytes": 14215,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0297",
+      "propNumber": 297,
+      "label": "Closet3",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0297_closet3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0297_closet3.png",
+      "localModelPath": "linked-props/props-fbx/0297_closet3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0297_closet3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12652,
+      "thumbnailBytes": 15096,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0298",
+      "propNumber": 298,
+      "label": "Closet4",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0298_closet4.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0298_closet4.png",
+      "localModelPath": "linked-props/props-fbx/0298_closet4.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0298_closet4.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 13132,
+      "thumbnailBytes": 14542,
+      "sceneReferenceCount": 8,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0299",
+      "propNumber": 299,
+      "label": "Closet5",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0299_closet5.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0299_closet5.png",
+      "localModelPath": "linked-props/props-fbx/0299_closet5.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0299_closet5.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 13404,
+      "thumbnailBytes": 19239,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0311",
+      "propNumber": 311,
+      "label": "Picture Frame1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0311_picture-frame1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0311_picture-frame1.png",
+      "localModelPath": "linked-props/props-fbx/0311_picture-frame1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0311_picture-frame1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12860,
+      "thumbnailBytes": 31926,
+      "sceneReferenceCount": 4,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0312",
+      "propNumber": 312,
+      "label": "Picture Frame2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0312_picture-frame2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0312_picture-frame2.png",
+      "localModelPath": "linked-props/props-fbx/0312_picture-frame2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0312_picture-frame2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12956,
+      "thumbnailBytes": 35262,
+      "sceneReferenceCount": 10,
+      "sceneCount": 8
+    },
+    {
+      "id": "guo-linked-prop-0313",
+      "propNumber": 313,
+      "label": "Stone Bridge1 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0313_stone-bridge1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0313_stone-bridge1.png",
+      "localModelPath": "linked-props/props-fbx/0313_stone-bridge1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0313_stone-bridge1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 27708,
+      "thumbnailBytes": 31247,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0331",
+      "propNumber": 331,
+      "label": "Basic Fireplace1 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0331_basic-fireplace1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0331_basic-fireplace1.png",
+      "localModelPath": "linked-props/props-fbx/0331_basic-fireplace1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0331_basic-fireplace1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 19756,
+      "thumbnailBytes": 20816,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0332",
+      "propNumber": 332,
+      "label": "Stone Fireplace2 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0332_stone-fireplace2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0332_stone-fireplace2.png",
+      "localModelPath": "linked-props/props-fbx/0332_stone-fireplace2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0332_stone-fireplace2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 27468,
+      "thumbnailBytes": 28686,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0335",
+      "propNumber": 335,
+      "label": "Stone Fountain3 Cascading",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0335_stone-fountain3-cascading.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0335_stone-fountain3-cascading.png",
+      "localModelPath": "linked-props/props-fbx/0335_stone-fountain3-cascading.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0335_stone-fountain3-cascading.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 41836,
+      "thumbnailBytes": 43780,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0341",
+      "propNumber": 341,
+      "label": "Water Well2 Bucket",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0341_water-well2-bucket.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0341_water-well2-bucket.png",
+      "localModelPath": "linked-props/props-fbx/0341_water-well2-bucket.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0341_water-well2-bucket.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 35900,
+      "thumbnailBytes": 37263,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0343",
+      "propNumber": 343,
+      "label": "Medival House1 ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0343_medival-house1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0343_medival-house1.png",
+      "localModelPath": "linked-props/props-fbx/0343_medival-house1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0343_medival-house1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 48876,
+      "thumbnailBytes": 44686,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0346",
+      "propNumber": 346,
+      "label": "Suburban House3 Modern ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0346_suburban-house3-modern.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0346_suburban-house3-modern.png",
+      "localModelPath": "linked-props/props-fbx/0346_suburban-house3-modern.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0346_suburban-house3-modern.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 53868,
+      "thumbnailBytes": 33916,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0347",
+      "propNumber": 347,
+      "label": "Suburban House4 Modern ",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0347_suburban-house4-modern.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0347_suburban-house4-modern.png",
+      "localModelPath": "linked-props/props-fbx/0347_suburban-house4-modern.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0347_suburban-house4-modern.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 43964,
+      "thumbnailBytes": 25047,
+      "sceneReferenceCount": 4,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0348",
+      "propNumber": 348,
+      "label": "Suburban House5 Modern",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0348_suburban-house5-modern.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0348_suburban-house5-modern.png",
+      "localModelPath": "linked-props/props-fbx/0348_suburban-house5-modern.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0348_suburban-house5-modern.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 44124,
+      "thumbnailBytes": 20092,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0352",
+      "propNumber": 352,
+      "label": "Anvil",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0352_anvil.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0352_anvil.png",
+      "localModelPath": "linked-props/props-fbx/0352_anvil.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0352_anvil.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 20332,
+      "thumbnailBytes": 25443,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0360",
+      "propNumber": 360,
+      "label": "Big Rock2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0360_big-rock2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0360_big-rock2.png",
+      "localModelPath": "linked-props/props-fbx/0360_big-rock2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0360_big-rock2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 21196,
+      "thumbnailBytes": 35749,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0361",
+      "propNumber": 361,
+      "label": "Small Rock1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0361_small-rock1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0361_small-rock1.png",
+      "localModelPath": "linked-props/props-fbx/0361_small-rock1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0361_small-rock1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 14844,
+      "thumbnailBytes": 20000,
+      "sceneReferenceCount": 6,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0362",
+      "propNumber": 362,
+      "label": "Small Rock2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0362_small-rock2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0362_small-rock2.png",
+      "localModelPath": "linked-props/props-fbx/0362_small-rock2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0362_small-rock2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 14764,
+      "thumbnailBytes": 21074,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0363",
+      "propNumber": 363,
+      "label": "Small Rock3",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0363_small-rock3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0363_small-rock3.png",
+      "localModelPath": "linked-props/props-fbx/0363_small-rock3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0363_small-rock3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 16028,
+      "thumbnailBytes": 22149,
+      "sceneReferenceCount": 6,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0364",
+      "propNumber": 364,
+      "label": "Small Rock4",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0364_small-rock4.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0364_small-rock4.png",
+      "localModelPath": "linked-props/props-fbx/0364_small-rock4.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0364_small-rock4.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 15356,
+      "thumbnailBytes": 14531,
+      "sceneReferenceCount": 3,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0366",
+      "propNumber": 366,
+      "label": "Small Rock6",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0366_small-rock6.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0366_small-rock6.png",
+      "localModelPath": "linked-props/props-fbx/0366_small-rock6.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0366_small-rock6.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 17964,
+      "thumbnailBytes": 26513,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0369",
+      "propNumber": 369,
+      "label": "Rock Bundle3 Huge",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0369_rock-bundle3-huge.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0369_rock-bundle3-huge.png",
+      "localModelPath": "linked-props/props-fbx/0369_rock-bundle3-huge.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0369_rock-bundle3-huge.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 35100,
+      "thumbnailBytes": 30073,
+      "sceneReferenceCount": 10,
+      "sceneCount": 9
+    },
+    {
+      "id": "guo-linked-prop-0390",
+      "propNumber": 390,
+      "label": "Baloon",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0390_baloon.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0390_baloon.png",
+      "localModelPath": "linked-props/props-fbx/0390_baloon.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0390_baloon.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 24956,
+      "thumbnailBytes": 20999,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0397",
+      "propNumber": 397,
+      "label": "Computer Monitor",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0397_computer-monitor.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0397_computer-monitor.png",
+      "localModelPath": "linked-props/props-fbx/0397_computer-monitor.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0397_computer-monitor.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 12892,
+      "thumbnailBytes": 12944,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0403",
+      "propNumber": 403,
+      "label": "Computer Setup2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0403_computer-setup2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0403_computer-setup2.png",
+      "localModelPath": "linked-props/props-fbx/0403_computer-setup2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0403_computer-setup2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 52156,
+      "thumbnailBytes": 26741,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0404",
+      "propNumber": 404,
+      "label": "Scroll",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0404_scroll.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0404_scroll.png",
+      "localModelPath": "linked-props/props-fbx/0404_scroll.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0404_scroll.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 21708,
+      "thumbnailBytes": 31890,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0409",
+      "propNumber": 409,
+      "label": "Tree1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0409_tree1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0409_tree1.png",
+      "localModelPath": "linked-props/props-fbx/0409_tree1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0409_tree1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 38220,
+      "thumbnailBytes": 54161,
+      "sceneReferenceCount": 8,
+      "sceneCount": 7
+    },
+    {
+      "id": "guo-linked-prop-0410",
+      "propNumber": 410,
+      "label": "Tree2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0410_tree2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0410_tree2.png",
+      "localModelPath": "linked-props/props-fbx/0410_tree2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0410_tree2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 15996,
+      "thumbnailBytes": 20086,
+      "sceneReferenceCount": 5,
+      "sceneCount": 3
+    },
+    {
+      "id": "guo-linked-prop-0411",
+      "propNumber": 411,
+      "label": "Tree3",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0411_tree3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0411_tree3.png",
+      "localModelPath": "linked-props/props-fbx/0411_tree3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0411_tree3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 38556,
+      "thumbnailBytes": 30045,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0412",
+      "propNumber": 412,
+      "label": "Tree4",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0412_tree4.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0412_tree4.png",
+      "localModelPath": "linked-props/props-fbx/0412_tree4.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0412_tree4.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 33724,
+      "thumbnailBytes": 41321,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0413",
+      "propNumber": 413,
+      "label": "Tree5",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0413_tree5.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0413_tree5.png",
+      "localModelPath": "linked-props/props-fbx/0413_tree5.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0413_tree5.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 21852,
+      "thumbnailBytes": 36857,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0414",
+      "propNumber": 414,
+      "label": "Grass1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0414_grass1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0414_grass1.png",
+      "localModelPath": "linked-props/props-fbx/0414_grass1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0414_grass1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 16844,
+      "thumbnailBytes": 22994,
+      "sceneReferenceCount": 15,
+      "sceneCount": 8
+    },
+    {
+      "id": "guo-linked-prop-0415",
+      "propNumber": 415,
+      "label": "Grass2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0415_grass2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0415_grass2.png",
+      "localModelPath": "linked-props/props-fbx/0415_grass2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0415_grass2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 17820,
+      "thumbnailBytes": 25950,
+      "sceneReferenceCount": 18,
+      "sceneCount": 8
+    },
+    {
+      "id": "guo-linked-prop-0416",
+      "propNumber": 416,
+      "label": "Mushroom1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0416_mushroom1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0416_mushroom1.png",
+      "localModelPath": "linked-props/props-fbx/0416_mushroom1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0416_mushroom1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 14844,
+      "thumbnailBytes": 15565,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0417",
+      "propNumber": 417,
+      "label": "Mushroom2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0417_mushroom2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0417_mushroom2.png",
+      "localModelPath": "linked-props/props-fbx/0417_mushroom2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0417_mushroom2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 20060,
+      "thumbnailBytes": 24394,
+      "sceneReferenceCount": 6,
+      "sceneCount": 4
+    },
+    {
+      "id": "guo-linked-prop-0418",
+      "propNumber": 418,
+      "label": "Mushroom3",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0418_mushroom3.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0418_mushroom3.png",
+      "localModelPath": "linked-props/props-fbx/0418_mushroom3.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0418_mushroom3.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 18892,
+      "thumbnailBytes": 25001,
+      "sceneReferenceCount": 5,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0419",
+      "propNumber": 419,
+      "label": "Stump1",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0419_stump1.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0419_stump1.png",
+      "localModelPath": "linked-props/props-fbx/0419_stump1.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0419_stump1.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 16124,
+      "thumbnailBytes": 28297,
+      "sceneReferenceCount": 2,
+      "sceneCount": 2
+    },
+    {
+      "id": "guo-linked-prop-0449",
+      "propNumber": 449,
+      "label": "Big Cage Opened",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0449_big-cage-opened.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0449_big-cage-opened.png",
+      "localModelPath": "linked-props/props-fbx/0449_big-cage-opened.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0449_big-cage-opened.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 65036,
+      "thumbnailBytes": 44942,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0450",
+      "propNumber": 450,
+      "label": "Cage Chain",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0450_cage-chain.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0450_cage-chain.png",
+      "localModelPath": "linked-props/props-fbx/0450_cage-chain.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0450_cage-chain.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 45340,
+      "thumbnailBytes": 43470,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0460",
+      "propNumber": 460,
+      "label": "Gas Mask",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0460_gas-mask.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0460_gas-mask.png",
+      "localModelPath": "linked-props/props-fbx/0460_gas-mask.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0460_gas-mask.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 131212,
+      "thumbnailBytes": 46573,
+      "sceneReferenceCount": 6,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0461",
+      "propNumber": 461,
+      "label": "Wine Bottle",
+      "categoryId": "kitchen",
+      "categoryLabel": "餐厨",
+      "categoryIds": [
+        "kitchen"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0461_wine-bottle.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0461_wine-bottle.png",
+      "localModelPath": "linked-props/props-fbx/0461_wine-bottle.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0461_wine-bottle.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 111820,
+      "thumbnailBytes": 29744,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0462",
+      "propNumber": 462,
+      "label": "Horns",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "categoryIds": [
+        "accessories"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0462_horns.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0462_horns.png",
+      "localModelPath": "linked-props/props-fbx/0462_horns.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0462_horns.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 193484,
+      "thumbnailBytes": 36400,
+      "sceneReferenceCount": 10,
+      "sceneCount": 10
+    },
+    {
+      "id": "guo-linked-prop-0517",
+      "propNumber": 517,
+      "label": "Suitcase2",
+      "categoryId": "environment",
+      "categoryLabel": "场景环境",
+      "categoryIds": [
+        "environment"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0517_suitcase2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0517_suitcase2.png",
+      "localModelPath": "linked-props/props-fbx/0517_suitcase2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0517_suitcase2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 23244,
+      "thumbnailBytes": 18520,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    },
+    {
+      "id": "guo-linked-prop-0577",
+      "propNumber": 577,
+      "label": "Gas Mask2",
+      "categoryId": "head-post-apocalyptic",
+      "categoryLabel": "Head Post Apocalyptic",
+      "categoryIds": [
+        "head-post-apocalyptic"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0577_gas-mask2.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0577_gas-mask2.png",
+      "localModelPath": "linked-props/props-fbx/0577_gas-mask2.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0577_gas-mask2.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 40172,
+      "thumbnailBytes": 56912,
+      "sceneReferenceCount": 6,
+      "sceneCount": 5
+    },
+    {
+      "id": "guo-linked-prop-0771",
+      "propNumber": 771,
+      "label": "Female Hairstyle14 Bob Bangs",
+      "categoryId": "head-hairstyle",
+      "categoryLabel": "Head Hairstyle",
+      "categoryIds": [
+        "head-hairstyle"
+      ],
+      "modelUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-fbx/0771_female-hairstyle14-bob-bangs.fbx",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props/props-thumbnails/0771_female-hairstyle14-bob-bangs.png",
+      "localModelPath": "linked-props/props-fbx/0771_female-hairstyle14-bob-bangs.fbx",
+      "localThumbnailPath": "linked-props/props-thumbnails/0771_female-hairstyle14-bob-bangs.png",
+      "format": "FBX",
+      "defaultScale": 0.01,
+      "bytes": 56044,
+      "thumbnailBytes": 73999,
+      "sceneReferenceCount": 1,
+      "sceneCount": 1
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "guo.threeDirector.scenePresetPagedPackage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "pageSize": 24,
+  "propCatalogUrl": "/guo-3d-assets/guo-scene-presets-5000/linked-props-manifest.json",
+  "characterModelCatalogUrl": "/guo-3d-assets/guo-scene-presets-5000/character-models-manifest.json",
+  "counts": {
+    "presets": 5000,
+    "thumbnails": 6062,
+    "totalSceneBytes": 380367134,
+    "linkedProps": 217,
+    "linkedCharacterModels": 37,
+    "linkedCharacterModelBytes": 36601612,
+    "supportedCharacterModelIds": 12,
+    "referencedCharacterModelIds": 37,
+    "unsupportedReferencedCharacterModelIds": 25
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "全部",
+      "count": 5000,
+      "pageSize": 24,
+      "pageCount": 209,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/all/page-{page}.json",
+      "localPagePathTemplate": "pages/all/page-{page}.json"
+    },
+    {
+      "id": "single-male",
+      "label": "单人物男性",
+      "count": 1664,
+      "pageSize": 24,
+      "pageCount": 70,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/single-male/page-{page}.json",
+      "localPagePathTemplate": "pages/single-male/page-{page}.json"
+    },
+    {
+      "id": "single-female",
+      "label": "单人物女性",
+      "count": 2267,
+      "pageSize": 24,
+      "pageCount": 95,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/single-female/page-{page}.json",
+      "localPagePathTemplate": "pages/single-female/page-{page}.json"
+    },
+    {
+      "id": "couple",
+      "label": "双人/情侣",
+      "count": 856,
+      "pageSize": 24,
+      "pageCount": 36,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/couple/page-{page}.json",
+      "localPagePathTemplate": "pages/couple/page-{page}.json"
+    },
+    {
+      "id": "group",
+      "label": "多人/群体",
+      "count": 113,
+      "pageSize": 24,
+      "pageCount": 5,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/group/page-{page}.json",
+      "localPagePathTemplate": "pages/group/page-{page}.json"
+    },
+    {
+      "id": "sitting-furniture",
+      "label": "坐卧/家具",
+      "count": 4,
+      "pageSize": 24,
+      "pageCount": 1,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/sitting-furniture/page-{page}.json",
+      "localPagePathTemplate": "pages/sitting-furniture/page-{page}.json"
+    },
+    {
+      "id": "hands-body",
+      "label": "手部/身体参考",
+      "count": 9,
+      "pageSize": 24,
+      "pageCount": 1,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/hands-body/page-{page}.json",
+      "localPagePathTemplate": "pages/hands-body/page-{page}.json"
+    },
+    {
+      "id": "animal-creature",
+      "label": "动物/异形",
+      "count": 87,
+      "pageSize": 24,
+      "pageCount": 4,
+      "pageUrlTemplate": "/guo-3d-assets/guo-scene-presets-5000/pages/animal-creature/page-{page}.json",
+      "localPagePathTemplate": "pages/animal-creature/page-{page}.json"
+    }
+  ]
+}

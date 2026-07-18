@@ -1,0 +1,1127 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 127,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3049",
+      "presetNumber": 3049,
+      "label": "Male jumping obstacle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping over an obstacle, male dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3049_male-jumping-obstacle-pose.pma",
+      "localScenePath": "scenes/3049_male-jumping-obstacle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3049_00_male-jumping-obstacle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3049_00_male-jumping-obstacle-pose.png",
+          "localThumbnailPath": "thumbnails/3049_00_male-jumping-obstacle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 24283,
+      "slug": "male-jumping-obstacle-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3050",
+      "presetNumber": 3050,
+      "label": "Perfect finger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is showing \"perfect\" sign with her right hand and pointing with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3050_perfect-finger-pose.pma",
+      "localScenePath": "scenes/3050_perfect-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3050_00_perfect-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3050_00_perfect-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3050_00_perfect-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23454,
+      "slug": "perfect-finger-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3051",
+      "presetNumber": 3051,
+      "label": "Thumbs up finger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and showing thumbs up with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3051_thumbs-up-finger-pose.pma",
+      "localScenePath": "scenes/3051_thumbs-up-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3051_00_thumbs-up-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3051_00_thumbs-up-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3051_00_thumbs-up-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23428,
+      "slug": "thumbs-up-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3052",
+      "presetNumber": 3052,
+      "label": "Peace finger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and making a peace sign with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3052_peace-finger-pose.pma",
+      "localScenePath": "scenes/3052_peace-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3052_00_peace-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3052_00_peace-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3052_00_peace-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23541,
+      "slug": "peace-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3053",
+      "presetNumber": 3053,
+      "label": "Rock finger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and doing rock sign with both hands, rocker hand gesture pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3053_rock-finger-pose.pma",
+      "localScenePath": "scenes/3053_rock-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3053_00_rock-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3053_00_rock-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3053_00_rock-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23740,
+      "slug": "rock-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3054",
+      "presetNumber": 3054,
+      "label": "Call me finger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is imitating a phone with his left hand, saying \"call me\", phone finger pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3054_call-me-finger-pose.pma",
+      "localScenePath": "scenes/3054_call-me-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3054_00_call-me-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3054_00_call-me-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3054_00_call-me-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23760,
+      "slug": "call-me-finger-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3055",
+      "presetNumber": 3055,
+      "label": "Pointing finger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is pointing up with his right index finger, warning about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3055_pointing-finger-pose.pma",
+      "localScenePath": "scenes/3055_pointing-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3055_00_pointing-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3055_00_pointing-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3055_00_pointing-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23756,
+      "slug": "pointing-finger-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3056",
+      "presetNumber": 3056,
+      "label": "Heart finger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3056_heart-finger-pose.pma",
+      "localScenePath": "scenes/3056_heart-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3056_00_heart-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3056_00_heart-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3056_00_heart-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23563,
+      "slug": "heart-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3057",
+      "presetNumber": 3057,
+      "label": "Angry finger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is angry, clenching her right hand into a fist and raising her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3057_angry-finger-pose.pma",
+      "localScenePath": "scenes/3057_angry-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3057_00_angry-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3057_00_angry-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3057_00_angry-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23510,
+      "slug": "angry-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3058",
+      "presetNumber": 3058,
+      "label": "Angry pointing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is angry, clenching his right hand into a fist and pointing with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3058_angry-pointing-pose.pma",
+      "localScenePath": "scenes/3058_angry-pointing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3058_00_angry-pointing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3058_00_angry-pointing-pose.png",
+          "localThumbnailPath": "thumbnails/3058_00_angry-pointing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23758,
+      "slug": "angry-pointing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3059",
+      "presetNumber": 3059,
+      "label": "Finger gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and making a finger gun with his both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3059_finger-gun-pose.pma",
+      "localScenePath": "scenes/3059_finger-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3059_00_finger-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3059_00_finger-gun-pose.png",
+          "localThumbnailPath": "thumbnails/3059_00_finger-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23683,
+      "slug": "finger-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3060",
+      "presetNumber": 3060,
+      "label": "Female mermaid floating looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating and looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3060_female-mermaid-floating-looking-right-pose.pma",
+      "localScenePath": "scenes/3060_female-mermaid-floating-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3060_00_female-mermaid-floating-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3060_00_female-mermaid-floating-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/3060_00_female-mermaid-floating-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16306,
+      "slug": "female-mermaid-floating-looking-right-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3061",
+      "presetNumber": 3061,
+      "label": "Mermaid swimming upwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming upwards in the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3061_mermaid-swimming-upwards-pose.pma",
+      "localScenePath": "scenes/3061_mermaid-swimming-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3061_00_mermaid-swimming-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3061_00_mermaid-swimming-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/3061_00_mermaid-swimming-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16381,
+      "slug": "mermaid-swimming-upwards-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3062",
+      "presetNumber": 3062,
+      "label": "Mermaid swimming downwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming downwards in the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3062_mermaid-swimming-downwards-pose.pma",
+      "localScenePath": "scenes/3062_mermaid-swimming-downwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3062_00_mermaid-swimming-downwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3062_00_mermaid-swimming-downwards-pose.png",
+          "localThumbnailPath": "thumbnails/3062_00_mermaid-swimming-downwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16360,
+      "slug": "mermaid-swimming-downwards-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3063",
+      "presetNumber": 3063,
+      "label": "Mermaid couple holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male mermaid are holding hands and floating, looking upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3063_mermaid-couple-holding-hands-pose.pma",
+      "localScenePath": "scenes/3063_mermaid-couple-holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3063_00_mermaid-couple-holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3063_00_mermaid-couple-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/3063_00_mermaid-couple-holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3063_01_mermaid-couple-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/3063_01_mermaid-couple-holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        34,
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34,
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 31867,
+      "slug": "mermaid-couple-holding-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3064",
+      "presetNumber": 3064,
+      "label": "Female mermaid holding trident pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water, holding a trident in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3064_female-mermaid-holding-trident-pose.pma",
+      "localScenePath": "scenes/3064_female-mermaid-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3064_00_female-mermaid-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3064_00_female-mermaid-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3064_00_female-mermaid-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 2062014,
+      "slug": "female-mermaid-holding-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3065",
+      "presetNumber": 3065,
+      "label": "Male mermaid holding trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water, raising his hands, holding a trident in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3065_male-mermaid-holding-trident-pose.pma",
+      "localScenePath": "scenes/3065_male-mermaid-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3065_00_male-mermaid-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3065_00_male-mermaid-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3065_00_male-mermaid-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 2062020,
+      "slug": "male-mermaid-holding-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3066",
+      "presetNumber": 3066,
+      "label": "Female mermaid waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and waving with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3066_female-mermaid-waving-pose.pma",
+      "localScenePath": "scenes/3066_female-mermaid-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3066_00_female-mermaid-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3066_00_female-mermaid-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3066_00_female-mermaid-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16427,
+      "slug": "female-mermaid-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3067",
+      "presetNumber": 3067,
+      "label": "Mermaids dancing drawing pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three female mermaids are dancing next to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3067_mermaids-dancing-drawing-pose.pma",
+      "localScenePath": "scenes/3067_mermaids-dancing-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3067_00_mermaids-dancing-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3067_00_mermaids-dancing-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3067_00_mermaids-dancing-drawing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3067_01_mermaids-dancing-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3067_01_mermaids-dancing-drawing-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3067_02_mermaids-dancing-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3067_02_mermaids-dancing-drawing-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 47374,
+      "slug": "mermaids-dancing-drawing-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3068",
+      "presetNumber": 3068,
+      "label": "Mermaid crossed arms drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water with his arms crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3068_mermaid-crossed-arms-drawing-pose.pma",
+      "localScenePath": "scenes/3068_mermaid-crossed-arms-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3068_00_mermaid-crossed-arms-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3068_00_mermaid-crossed-arms-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3068_00_mermaid-crossed-arms-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16457,
+      "slug": "mermaid-crossed-arms-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3069",
+      "presetNumber": 3069,
+      "label": "Mermaid lying drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is lying on her stomach and leaning on her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3069_mermaid-lying-drawing-pose.pma",
+      "localScenePath": "scenes/3069_mermaid-lying-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3069_00_mermaid-lying-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3069_00_mermaid-lying-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3069_00_mermaid-lying-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16464,
+      "slug": "mermaid-lying-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3070",
+      "presetNumber": 3070,
+      "label": "Mermaid sitting drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting, leaning on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3070_mermaid-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3070_mermaid-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3070_00_mermaid-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3070_00_mermaid-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3070_00_mermaid-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 16460,
+      "slug": "mermaid-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3071",
+      "presetNumber": 3071,
+      "label": "Mermaid barrel sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a barrel and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3071_mermaid-barrel-sitting-pose.pma",
+      "localScenePath": "scenes/3071_mermaid-barrel-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3071_00_mermaid-barrel-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3071_00_mermaid-barrel-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3071_00_mermaid-barrel-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [
+        160
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 16793,
+      "slug": "mermaid-barrel-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3072",
+      "presetNumber": 3072,
+      "label": "Mermaid sitting waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock and waving with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3072_mermaid-sitting-waving-pose.pma",
+      "localScenePath": "scenes/3072_mermaid-sitting-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3072_00_mermaid-sitting-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3072_00_mermaid-sitting-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3072_00_mermaid-sitting-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 57980,
+      "slug": "mermaid-sitting-waving-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

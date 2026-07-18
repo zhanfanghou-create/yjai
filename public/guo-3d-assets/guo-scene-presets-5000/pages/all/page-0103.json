@@ -1,0 +1,1160 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 102,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2449",
+      "presetNumber": 2449,
+      "label": "Male mage pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mage is floating in the air and holding a magic staff in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2449_male-mage-pose.pma",
+      "localScenePath": "scenes/2449_male-mage-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2449_00_male-mage-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2449_00_male-mage-pose.png",
+          "localThumbnailPath": "thumbnails/2449_00_male-mage-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "mage",
+        "pose"
+      ],
+      "bytes": 24210,
+      "slug": "male-mage-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2450",
+      "presetNumber": 2450,
+      "label": "Anime female standing body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing casually, her right hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2450_anime-female-standing-body-pose.pma",
+      "localScenePath": "scenes/2450_anime-female-standing-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2450_00_anime-female-standing-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2450_00_anime-female-standing-body-pose.png",
+          "localThumbnailPath": "thumbnails/2450_00_anime-female-standing-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23827,
+      "slug": "anime-female-standing-body-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2451",
+      "presetNumber": 2451,
+      "label": "Anime female sitting body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting casually on a chair with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2451_anime-female-sitting-body-pose.pma",
+      "localScenePath": "scenes/2451_anime-female-sitting-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2451_00_anime-female-sitting-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2451_00_anime-female-sitting-body-pose.png",
+          "localThumbnailPath": "thumbnails/2451_00_anime-female-sitting-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 24388,
+      "slug": "anime-female-sitting-body-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2452",
+      "presetNumber": 2452,
+      "label": "Anime female kneeling body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting, kneeling, resting her hands on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2452_anime-female-kneeling-body-pose.pma",
+      "localScenePath": "scenes/2452_anime-female-kneeling-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2452_00_anime-female-kneeling-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2452_00_anime-female-kneeling-body-pose.png",
+          "localThumbnailPath": "thumbnails/2452_00_anime-female-kneeling-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23896,
+      "slug": "anime-female-kneeling-body-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2453",
+      "presetNumber": 2453,
+      "label": "Anime crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting comfortably in an armchair with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2453_anime-crossed-legs-pose.pma",
+      "localScenePath": "scenes/2453_anime-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2453_00_anime-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2453_00_anime-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/2453_00_anime-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 24119,
+      "slug": "anime-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2454",
+      "presetNumber": 2454,
+      "label": "Anime female walking body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is walking casually, anime female body pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2454_anime-female-walking-body-pose.pma",
+      "localScenePath": "scenes/2454_anime-female-walking-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2454_00_anime-female-walking-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2454_00_anime-female-walking-body-pose.png",
+          "localThumbnailPath": "thumbnails/2454_00_anime-female-walking-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23896,
+      "slug": "anime-female-walking-body-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2455",
+      "presetNumber": 2455,
+      "label": "Anime peace sign pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy anime female is standing and showing peace signs with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2455_anime-peace-sign-pose.pma",
+      "localScenePath": "scenes/2455_anime-peace-sign-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2455_00_anime-peace-sign-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2455_00_anime-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/2455_00_anime-peace-sign-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23821,
+      "slug": "anime-peace-sign-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2456",
+      "presetNumber": 2456,
+      "label": "Anime female dancing body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is dancing ballet, anime female body pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2456_anime-female-dancing-body-pose.pma",
+      "localScenePath": "scenes/2456_anime-female-dancing-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2456_00_anime-female-dancing-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2456_00_anime-female-dancing-body-pose.png",
+          "localThumbnailPath": "thumbnails/2456_00_anime-female-dancing-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23994,
+      "slug": "anime-female-dancing-body-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2457",
+      "presetNumber": 2457,
+      "label": "Anime jumping waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy anime female is jumping and waving, saying \"hi\"",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2457_anime-jumping-waving-pose.pma",
+      "localScenePath": "scenes/2457_anime-jumping-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2457_00_anime-jumping-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2457_00_anime-jumping-waving-pose.png",
+          "localThumbnailPath": "thumbnails/2457_00_anime-jumping-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 24078,
+      "slug": "anime-jumping-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2458",
+      "presetNumber": 2458,
+      "label": "Anime female squatting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, resting her hands on her thighs, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2458_anime-female-squatting-pose.pma",
+      "localScenePath": "scenes/2458_anime-female-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2458_00_anime-female-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2458_00_anime-female-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2458_00_anime-female-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23850,
+      "slug": "anime-female-squatting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2459",
+      "presetNumber": 2459,
+      "label": "Anime female heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and making a heart with her fingers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2459_anime-female-heart-pose.pma",
+      "localScenePath": "scenes/2459_anime-female-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2459_00_anime-female-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2459_00_anime-female-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2459_00_anime-female-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "female"
+      ],
+      "bytes": 23946,
+      "slug": "anime-female-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2460",
+      "presetNumber": 2460,
+      "label": "Anime male standing body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing with his hands on his hips, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2460_anime-male-standing-body-pose.pma",
+      "localScenePath": "scenes/2460_anime-male-standing-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2460_00_anime-male-standing-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2460_00_anime-male-standing-body-pose.png",
+          "localThumbnailPath": "thumbnails/2460_00_anime-male-standing-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23722,
+      "slug": "anime-male-standing-body-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2461",
+      "presetNumber": 2461,
+      "label": "Anime crossed arms body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing casually with his arms and legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2461_anime-crossed-arms-body-pose.pma",
+      "localScenePath": "scenes/2461_anime-crossed-arms-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2461_00_anime-crossed-arms-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2461_00_anime-crossed-arms-body-pose.png",
+          "localThumbnailPath": "thumbnails/2461_00_anime-crossed-arms-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23817,
+      "slug": "anime-crossed-arms-body-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2462",
+      "presetNumber": 2462,
+      "label": "Anime male walking body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, anime male body pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2462_anime-male-walking-body-pose.pma",
+      "localScenePath": "scenes/2462_anime-male-walking-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2462_00_anime-male-walking-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2462_00_anime-male-walking-body-pose.png",
+          "localThumbnailPath": "thumbnails/2462_00_anime-male-walking-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23823,
+      "slug": "anime-male-walking-body-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2463",
+      "presetNumber": 2463,
+      "label": "Anime male jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping high, looking to the left, his hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2463_anime-male-jumping-pose.pma",
+      "localScenePath": "scenes/2463_anime-male-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2463_00_anime-male-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2463_00_anime-male-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2463_00_anime-male-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23771,
+      "slug": "anime-male-jumping-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2464",
+      "presetNumber": 2464,
+      "label": "Anime male sitting body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is sitting comfortably in an armchair with his legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2464_anime-male-sitting-body-pose.pma",
+      "localScenePath": "scenes/2464_anime-male-sitting-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2464_00_anime-male-sitting-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2464_00_anime-male-sitting-body-pose.png",
+          "localThumbnailPath": "thumbnails/2464_00_anime-male-sitting-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 24221,
+      "slug": "anime-male-sitting-body-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2465",
+      "presetNumber": 2465,
+      "label": "Anime male squatting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is squatting, looking forward, anime male body pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2465_anime-male-squatting-pose.pma",
+      "localScenePath": "scenes/2465_anime-male-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2465_00_anime-male-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2465_00_anime-male-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2465_00_anime-male-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23750,
+      "slug": "anime-male-squatting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2466",
+      "presetNumber": 2466,
+      "label": "Anime boxing stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing in boxing stance, ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2466_anime-boxing-stance-pose.pma",
+      "localScenePath": "scenes/2466_anime-boxing-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2466_00_anime-boxing-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2466_00_anime-boxing-stance-pose.png",
+          "localThumbnailPath": "thumbnails/2466_00_anime-boxing-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23597,
+      "slug": "anime-boxing-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2467",
+      "presetNumber": 2467,
+      "label": "Angry anime male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry anime male is standing, his hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2467_angry-anime-male-pose.pma",
+      "localScenePath": "scenes/2467_angry-anime-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2467_00_angry-anime-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2467_00_angry-anime-male-pose.png",
+          "localThumbnailPath": "thumbnails/2467_00_angry-anime-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 23768,
+      "slug": "angry-anime-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2468",
+      "presetNumber": 2468,
+      "label": "Anime male attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is attacking with a katana, holding it in his right hand and stabbing with it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2468_anime-male-attack-pose.pma",
+      "localScenePath": "scenes/2468_anime-male-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2468_00_anime-male-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2468_00_anime-male-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2468_00_anime-male-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 24240,
+      "slug": "anime-male-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2469",
+      "presetNumber": 2469,
+      "label": "Anime male sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing and drawing out his sword from its sheath",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2469_anime-male-sword-pose.pma",
+      "localScenePath": "scenes/2469_anime-male-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2469_00_anime-male-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2469_00_anime-male-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2469_00_anime-male-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        146,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "body",
+        "pose",
+        "male"
+      ],
+      "bytes": 24801,
+      "slug": "anime-male-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2470",
+      "presetNumber": 2470,
+      "label": "Anime female battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting, one is kicking the other in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2470_anime-female-battle-pose.pma",
+      "localScenePath": "scenes/2470_anime-female-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2470_00_anime-female-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2470_00_anime-female-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2470_00_anime-female-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2470_01_anime-female-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2470_01_anime-female-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 46857,
+      "slug": "anime-female-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2471",
+      "presetNumber": 2471,
+      "label": "Magic staff battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting with magic staffs, anime fantasy battle pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2471_magic-staff-battle-pose.pma",
+      "localScenePath": "scenes/2471_magic-staff-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2471_00_magic-staff-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2471_00_magic-staff-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2471_00_magic-staff-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2471_01_magic-staff-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2471_01_magic-staff-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        114,
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 48012,
+      "slug": "magic-staff-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2472",
+      "presetNumber": 2472,
+      "label": "Anime female katana battle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting with katanas, they are about to attack each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2472_anime-female-katana-battle-pose.pma",
+      "localScenePath": "scenes/2472_anime-female-katana-battle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2472_00_anime-female-katana-battle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2472_00_anime-female-katana-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2472_00_anime-female-katana-battle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2472_01_anime-female-katana-battle-pose.png",
+          "localThumbnailPath": "thumbnails/2472_01_anime-female-katana-battle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "battle",
+        "pose"
+      ],
+      "bytes": 47830,
+      "slug": "anime-female-katana-battle-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1287 @@
+/* 首页即梦样式 - 简洁扁平 */
+.home-page-jimeng {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  color: var(--text-primary, #f8fafc);
+  background: var(--bg-primary, #1e1e22);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 对话布局 */
+.chat-layout {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 左侧会话面板 */
+.chat-sessions-panel {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in srgb, var(--border-color, rgba(148, 163, 184, 0.18)));
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 10%, transparent), transparent),
+    color-mix(in srgb, var(--bg-secondary, #2a2a2a) 85%, transparent);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.chat-sessions-panel.collapsed {
+  flex: 0 0 0;
+  opacity: 0;
+  padding: 0;
+  border: none;
+}
+
+/* 会话头部 */
+.sessions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 50%, transparent);
+}
+
+.sessions-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary, #ffffff);
+}
+
+.new-session-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--border-color, #3a3a3a));
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 15%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  color: var(--accent-color, var(--accent-secondary));
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.new-session-btn:hover {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 60%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 25%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 90%, transparent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, transparent);
+}
+
+/* 会话列表 */
+.sessions-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 12px;
+}
+
+.no-sessions {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 13px;
+}
+
+/* 会话分组 */
+.session-group {
+  margin-bottom: 12px;
+}
+
+.session-group-label {
+  padding: 6px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary, #a0a0a0);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* 会话项 */
+.session-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
+
+.session-item:hover {
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 70%, transparent);
+  border-color: color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+}
+
+.session-item.active {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 35%, var(--border-color, #3a3a3a));
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent);
+}
+
+.session-item-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.session-icon {
+  font-size: 16px;
+}
+
+.session-title {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-primary, #ffffff);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.session-item:hover .session-close-btn {
+  opacity: 1;
+}
+
+.session-close-btn:hover {
+  background: color-mix(in srgb, var(--danger-color, var(--danger-color)) 20%, transparent);
+  color: var(--danger-color, var(--danger-color));
+}
+
+/* 折叠按钮 */
+.sessions-collapse-btn {
+  padding: 10px 16px;
+  border: none;
+  border-top: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 50%, transparent);
+  background: transparent;
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sessions-collapse-btn:hover {
+  color: var(--accent-color, var(--accent-secondary));
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 50%, transparent);
+}
+
+/* 右侧消息面板 */
+.chat-messages-panel {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in srgb, var(--border-color, rgba(148, 163, 184, 0.18)));
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 8%, transparent), transparent),
+    color-mix(in srgb, var(--bg-secondary, #2a2a2a) 90%, transparent);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  position: relative;
+}
+
+/* 展开按钮 */
+.sessions-expand-btn {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--border-color, #3a3a3a));
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 15%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 85%, transparent);
+  color: var(--accent-color, var(--accent-secondary));
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.sessions-expand-btn:hover {
+  transform: translateY(-50%) translateX(2px);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 25%, transparent);
+}
+
+/* 消息容器 - 优化滚动性能 */
+.messages-container {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  /* 优化滚动性能 */
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  contain: layout style;
+}
+
+/* 使用 content-visibility 优化大量消息的渲染性能 */
+.messages-container > .message-bubble {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 80px;
+}
+
+/* 欢迎消息 */
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.welcome-message h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-color, var(--accent-secondary)), color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 70%, #ffffff));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-message p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: var(--text-secondary, #a0a0a0);
+}
+
+.welcome-message .welcome-hint {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 25%, var(--border-color, #3a3a3a));
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 75%, transparent);
+  font-size: 13px;
+}
+
+/* 消息气泡 - 优化性能 */
+.message-bubble {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  animation: messageFadeIn 0.3s ease;
+  align-items: flex-start;
+  box-sizing: border-box;
+  /* 优化渲染性能 */
+  contain: layout style;
+  will-change: auto;
+}
+
+.message-bubble.user {
+  flex-direction: row-reverse;
+}
+
+.message-bubble.user .message-avatar {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* 用户消息容器右对齐 */
+.message-bubble.user .message-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 用户消息内容去除边框 */
+.message-bubble.user .message-content {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+@keyframes messageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-bubble.user {
+  flex-direction: row-reverse;
+}
+
+.message-avatar {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--border-color, #3a3a3a));
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.message-avatar > .ai-avatar-logo {
+  display: block;
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  object-fit: contain;
+  margin: 0;
+  border-radius: 0;
+}
+
+.message-content-wrapper {
+  flex: 1;
+  min-width: 0;
+  max-width: calc(100% - 48px);
+}
+
+.message-role {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary, #ffffff);
+}
+
+.message-time {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-secondary, #a0a0a0);
+}
+
+/* 用户消息包装器 */
+.user-message-wrapper {
+  width: fit-content;
+  max-width: 85%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 90%, transparent);
+  position: relative;
+}
+
+/* 编辑区域 */
+.message-edit-area {
+  width: 100%;
+}
+
+.message-edit-area textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px 14px;
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 35%, var(--border-color, #3a3a3a));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--bg-primary, #222222) 95%, transparent);
+  color: var(--text-primary, #ffffff);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.message-edit-area textarea:focus {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 60%, var(--border-color, #3a3a3a));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 15%, transparent);
+}
+
+/* 消息内容 - 优化性能：使用 will-change 和 transform 代替频繁重绘 */
+.message-content {
+  width: fit-content;
+  max-width: 85%;
+  padding: 12px 16px;
+  border: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+  border-radius: 16px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 8%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-primary, #ffffff);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  will-change: auto;
+  contain: layout style paint;
+}
+
+.message-content:hover {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 25%, var(--border-color, #3a3a3a));
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 约束消息内容中的图片尺寸，防止撑开布局 */
+.message-content > div {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* 消息内容中的图片 - 优化：与附件预览保持一致 */
+.message-content img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+/* 生成中状态 */
+.message-content.generating {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 85%, transparent);
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--border-color, #3a3a3a));
+}
+
+.dot-flashing {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-color, var(--accent-secondary));
+  color: var(--accent-color, var(--accent-secondary));
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-color, var(--accent-secondary));
+  color: var(--accent-color, var(--accent-secondary));
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-color, var(--accent-secondary));
+  color: var(--accent-color, var(--accent-secondary));
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% { background-color: var(--accent-color, var(--accent-secondary)); }
+  50%, 100% { background-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--bg-tertiary, #333333)); }
+}
+
+/* 消息附件预览 - 优化：宽度与操作按钮对齐，自动等比例缩放 */
+.message-files {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 30%, transparent);
+  width: 100%;
+}
+
+.message-file-preview {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, var(--border-color, #3a3a3a));
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 60%, transparent);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.message-file-preview:hover {
+  transform: scale(1.02);
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 45%, var(--border-color, #3a3a3a));
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent);
+}
+
+.message-file-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  background: color-mix(in srgb, var(--bg-primary, #1e1e22) 80%, transparent);
+}
+
+/* 用户消息内容包装器 */
+.user-message-content {
+  position: relative;
+}
+
+/* 悬浮操作按钮 */
+.message-hover-actions {
+  position: absolute;
+  bottom: -48px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.user-message-wrapper:hover .message-hover-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 50%, transparent);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 10%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 90%, transparent);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hover-action-btn:hover {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 40%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 18%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 95%, transparent);
+  transform: translateY(-2px);
+}
+
+/* 编辑操作按钮 */
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.edit-btn {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-btn.cancel {
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  color: var(--text-secondary, #a0a0a0);
+  border-color: color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+}
+
+.edit-btn.cancel:hover {
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 95%, transparent);
+  color: var(--text-primary, #ffffff);
+}
+
+.edit-btn.confirm {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 25%, transparent), transparent),
+    color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 70%, transparent);
+  color: #ffffff;
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 50%, transparent);
+}
+
+.edit-btn.confirm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 35%, transparent);
+}
+
+/* AI消息包装器 */
+.assistant-message-wrapper {
+  position: relative;
+  max-width: 100%;
+  min-width: 0;
+  width: fit-content;
+  max-width: 85%;
+}
+
+/* 确保AI消息内容区域宽度一致 */
+.assistant-message-wrapper .message-content {
+  width: 100%;
+  max-width: 520px;
+}
+
+.assistant-message-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding-left: 4px;
+}
+
+.assistant-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 70%, transparent);
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.assistant-action-btn:hover {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 85%, transparent);
+  color: var(--accent-color, var(--accent-secondary));
+  transform: translateY(-2px);
+}
+
+.assistant-action-btn.delete:hover {
+  border-color: color-mix(in srgb, var(--danger-color, var(--danger-color)) 40%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--danger-color, var(--danger-color)) 15%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 85%, transparent);
+  color: var(--danger-color, var(--danger-color));
+}
+
+.assistant-action-btn.canvas {
+  border-color: color-mix(in srgb, var(--success-color, #10b981) 30%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--success-color, #10b981) 15%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  color: var(--success-color, #10b981);
+  font-weight: 500;
+}
+
+.assistant-action-btn.canvas:hover {
+  border-color: color-mix(in srgb, var(--success-color, #10b981) 50%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--success-color, #10b981) 25%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 90%, transparent);
+  color: var(--success-color, #10b981);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--success-color, #10b981) 30%, transparent);
+}
+
+/* ==================== 聊天输入区域 - 美化版 ==================== */
+.chat-input-area {
+  padding: 20px 24px;
+  border-top: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 8%, transparent), transparent),
+    color-mix(in srgb, var(--bg-secondary, #2a2a2a) 98%, transparent);
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.chat-input-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, transparent),
+    transparent
+  );
+}
+
+/* 输入包装器 */
+.input-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* ==================== 对话页输入框 - 美化版 ==================== */
+.chat-textarea {
+  width: 100%;
+  min-height: 68px;
+  max-height: 300px;
+  padding: 16px 18px;
+  border: 1.5px solid color-mix(in srgb, var(--border-color, #3a3a3a) 60%, transparent);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 5%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 75%, transparent);
+  color: var(--text-primary, #ffffff);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.03);
+}
+
+.chat-textarea:focus {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 55%, var(--border-color, #3a3a3a));
+  box-shadow: 
+    0 0 0 4px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 15%, transparent),
+    0 4px 16px rgba(0, 0, 0, 0.12),
+    inset 0 1px 2px rgba(255, 255, 255, 0.05);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 10%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 85%, transparent);
+  transform: translateY(-1px);
+}
+
+.chat-textarea::placeholder {
+  color: color-mix(in srgb, var(--text-secondary, #a0a0a0) 70%, transparent);
+  font-style: italic;
+}
+
+/* ==================== 附件标签 - 美化版 ==================== */
+.attached-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.file-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1.5px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 30%, var(--border-color, #3a3a3a));
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 85%, transparent);
+  color: var(--text-primary, #ffffff);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.file-tag:hover {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 45%, var(--border-color, #3a3a3a));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent);
+}
+
+.file-tag span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--danger-color, var(--danger-color)) 20%, transparent);
+  color: var(--danger-color, var(--danger-color));
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.file-tag span:last-child:hover {
+  background: color-mix(in srgb, var(--danger-color, var(--danger-color)) 40%, transparent);
+  transform: scale(1.1);
+}
+
+/* ==================== 输入操作栏 - 美化版 ==================== */
+.input-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.left-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+/* ==================== 上传按钮 - 美化版 ==================== */
+.upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid var(--border-color, #3a3a3e);
+  border-radius: 10px;
+  background: var(--bg-tertiary, #2a2a30);
+  color: var(--text-secondary, #b0b0b5);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+  border-color: #66666a;
+  background: #333338;
+  color: var(--text-primary, #ffffff);
+}
+
+.upload-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent);
+}
+
+/* ==================== 发送按钮 - 美化版（渐变背景+微动画） ==================== */
+.send-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent-color, #7c6cf0);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.send-button:hover:not(:disabled) {
+  background: #6a5ce0;
+}
+
+.send-button:active:not(:disabled) {
+  background: #5a4dd0;
+}
+
+.send-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  filter: grayscale(20%);
+}
+
+.send-icon {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.send-button:hover:not(:disabled) .send-icon {
+  transform: translateX(3px);
+}
+
+/* 控制选择器 */
+.control-group {
+  display: flex;
+  align-items: center;
+}
+
+.control-select {
+  padding: 12px 40px 12px 16px;
+  border: 1px solid var(--border-color, #3a3a3e);
+  border-radius: 10px;
+  background: var(--bg-tertiary, #2a2a30) !important;
+  color: var(--text-primary, #e0e0e0) !important;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5L6 7.5L9 4.5' stroke='%23888888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 14px center !important;
+  background-size: 12px !important;
+}
+
+.control-select:hover {
+  border-color: #555558;
+}
+
+.control-select:focus {
+  border-color: var(--accent-color, #7c6cf0);
+  box-shadow: 0 0 0 2px rgba(124, 108, 240, 0.15);
+}
+
+.control-select option {
+  background: #2a2a30;
+  color: #e0e0e0;
+}
+
+/* ==================== 首页主内容 ==================== */
+.jimeng-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  height: calc(100vh - 120px);
+  padding: 40px 20px;
+}
+
+/* 首页标题区域 */
+.hero-title {
+  display: flex !important;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.hero-logo {
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
+  object-fit: contain;
+}
+
+.hero-text h1 {
+  margin: 0 0 4px;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary, #ffffff);
+}
+
+.hero-subtitle {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-secondary, #999999);
+}
+
+/* ==================== 首页输入容器 - 美化版 ==================== */
+.jimeng-input-container {
+  width: 100%;
+  max-width: 860px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+/* ==================== 首页输入框 - 美化版（更大更精致） ==================== */
+.jimeng-textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 360px;
+  padding: 24px 28px;
+  border: 1.5px solid var(--border-color, #3a3a3e);
+  border-radius: 16px;
+  background: var(--bg-tertiary, #2a2a30);
+  color: var(--text-primary, #ffffff);
+  font-size: 17px;
+  line-height: 1.7;
+  resize: none;
+  outline: none;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.jimeng-textarea:focus {
+  border-color: var(--accent-color, #7c6cf0);
+  box-shadow: 0 0 0 3px rgba(124, 108, 240, 0.15);
+}
+
+.jimeng-textarea::placeholder {
+  color: color-mix(in srgb, var(--text-secondary, #a0a0a0) 65%, transparent);
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* 加载动画点 */
+.loading-dots {
+  display: inline-block;
+}
+
+/* ==================== 历史快速访问 ==================== */
+.history-quick-access {
+  width: 100%;
+  max-width: 700px;
+}
+
+.history-quick-access h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary, #ffffff);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 6%, transparent), transparent),
+    color-mix(in srgb, var(--bg-secondary, #2a2a2a) 80%, transparent);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.history-item:hover {
+  border-color: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 35%, var(--border-color, #3a3a3a));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, transparent), transparent),
+    color-mix(in srgb, var(--bg-secondary, #2a2a2a) 90%, transparent);
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.history-icon {
+  font-size: 18px;
+}
+
+.history-title {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-primary, #ffffff);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-time {
+  font-size: 12px;
+  color: var(--text-secondary, #a0a0a0);
+}
+
+/* 复制提示 */
+.copy-toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: 1px solid color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 35%, var(--border-color, #3a3a3a));
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 15%, transparent), transparent),
+    color-mix(in srgb, var(--bg-tertiary, #333333) 90%, transparent);
+  color: var(--accent-color, var(--accent-secondary));
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1000;
+  animation: toastFadeIn 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes toastFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ==================== 弹窗通用样式 ==================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, #000000 60%, transparent);
+  z-index: 1000;
+  animation: overlayFadeIn 0.25s ease;
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  border: 1px solid color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 8%, transparent), transparent),
+    color-mix(in srgb, var(--bg-secondary, #2a2a2a) 92%, transparent);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-content h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary, #ffffff);
+}
+
+.modal-content p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: var(--text-secondary, #a0a0a0);
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.modal-btn.cancel {
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 80%, transparent);
+  color: var(--text-secondary, #a0a0a0);
+  border-color: color-mix(in srgb, var(--border-color, #3a3a3a) 40%, transparent);
+}
+
+.modal-btn.cancel:hover {
+  background: color-mix(in srgb, var(--bg-tertiary, #333333) 95%, transparent);
+  color: var(--text-primary, #ffffff);
+  transform: translateY(-2px);
+}
+
+.modal-btn.confirm {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--danger-color, var(--danger-color)) 25%, transparent), transparent),
+    color-mix(in srgb, var(--danger-color, var(--danger-color)) 65%, transparent);
+  color: #ffffff;
+  border-color: color-mix(in srgb, var(--danger-color, var(--danger-color)) 45%, transparent);
+}
+
+.modal-btn.confirm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--danger-color, var(--danger-color)) 35%, transparent);
+}

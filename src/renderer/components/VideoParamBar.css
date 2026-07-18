@@ -1,0 +1,421 @@
+/* ===== Video 参数上拉面板（复用 image-param-panel 布局）===== */
+.video-param-panel {
+  min-width: 260px;
+}
+
+.video-param-duration-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  position: relative;
+}
+
+.video-param-duration-row .video-param-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* 滑块刻度点 */
+.video-param-duration-row .video-param-slider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent calc(0% - 3px),
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 6px,
+    transparent 6px,
+    transparent calc(20% - 3px),
+    rgba(255, 255, 255, 0.3) 20%,
+    rgba(255, 255, 255, 0.3) calc(20% + 3px),
+    transparent calc(20% + 3px),
+    transparent calc(40% - 3px),
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.3) calc(40% + 3px),
+    transparent calc(40% + 3px),
+    transparent calc(60% - 3px),
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.3) calc(60% + 3px),
+    transparent calc(60% + 3px),
+    transparent calc(80% - 3px),
+    rgba(255, 255, 255, 0.3) 80%,
+    rgba(255, 255, 255, 0.3) calc(80% + 3px),
+    transparent calc(80% + 3px),
+    transparent calc(100% - 3px),
+    rgba(255, 255, 255, 0.3) 100%,
+    rgba(255, 255, 255, 0.3) calc(100% + 3px),
+    transparent calc(100% + 3px)
+  );
+  pointer-events: none;
+}
+
+.video-param-duration-row .video-param-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color, #7dd3fc);
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(125, 211, 252, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+.video-param-duration-row .video-param-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color, #7dd3fc);
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(125, 211, 252, 0.4);
+}
+
+/* 滑块上方显示当前值 */
+.video-param-slider-value {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--primary-color, #7dd3fc);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.video-param-duration-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  min-width: 32px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 滑块刻度标签 */
+.video-param-ticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  margin-top: 4px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.video-param-ticks span {
+  position: relative;
+}
+
+.video-param-ticks span::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* 音频开关按钮 */
+.video-audio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.video-audio-btn:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.video-audio-btn.active {
+  border-color: var(--primary-color, #7dd3fc);
+  color: var(--primary-color, #7dd3fc);
+  background: rgba(125, 211, 252, 0.1);
+}
+
+/* ===== 运镜按钮 - 横向图标+文字 ===== */
+.camera-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+}
+
+.camera-btn:hover {
+  border-color: var(--primary-color, #7dd3fc) !important;
+  background: rgba(125, 211, 252, 0.1) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.camera-btn-icon {
+  width: 14px;
+  height: 14px;
+  color: currentColor;
+}
+
+.camera-btn-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 运镜按钮已选标记 */
+.camera-badge {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--primary-color, #7dd3fc);
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* ===== Camera Movement Gallery Modal ===== */
+.camera-movement-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.camera-movement-panel {
+  width: min(900px, calc(100vw - 48px));
+  max-height: min(720px, calc(100vh - 80px));
+  background: var(--glass-bg-strong, rgba(40, 40, 40, 0.92));
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.15));
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow-strong, 0 8px 32px rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 精简标题栏 */
+.camera-movement-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--glass-border, rgba(255, 255, 255, 0.15));
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.03) 0%, transparent 50%);
+  min-height: 48px;
+}
+
+/* 内置搜索框 */
+.camera-movement-search-inline {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.camera-movement-search-inline:focus-within {
+  border-color: var(--primary-color, #7dd3fc);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.camera-movement-search-icon {
+  flex-shrink: 0;
+  color: var(--primary-color, #7dd3fc);
+  opacity: 0.7;
+}
+
+.camera-movement-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  padding: 0;
+}
+
+.camera-movement-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.camera-movement-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.camera-movement-close:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--primary-color, #7dd3fc);
+}
+
+/* 运镜网格 - 一行三个，更大更清晰 */
+.camera-movement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px 24px 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .camera-movement-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .camera-movement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.camera-movement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.camera-movement-card:hover {
+  border-color: var(--primary-color, #7dd3fc);
+  background: rgba(125, 211, 252, 0.06);
+  box-shadow: 0 4px 16px rgba(125, 211, 252, 0.12);
+  transform: translateY(-2px);
+}
+
+.camera-movement-card.selected {
+  border-color: var(--primary-color, #7dd3fc);
+  background: rgba(125, 211, 252, 0.1);
+  box-shadow: 0 0 20px rgba(125, 211, 252, 0.2);
+}
+
+/* 更大的预览图 */
+.camera-movement-preview {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.camera-movement-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.camera-movement-card:hover .camera-movement-preview img {
+  transform: scale(1.05);
+}
+
+.camera-movement-preview.img-missing::after {
+  content: '无预览';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+}
+
+.camera-movement-check {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--primary-color, #7dd3fc);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 运镜名称 */
+.camera-movement-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.camera-movement-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  grid-column: 1 / -1;
+}

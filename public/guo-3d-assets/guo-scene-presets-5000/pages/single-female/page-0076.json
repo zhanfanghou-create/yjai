@@ -1,0 +1,1138 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 75,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-3973",
+      "presetNumber": 3973,
+      "label": "Walking female drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3973_walking-female-drawing-pose.pma",
+      "localScenePath": "scenes/3973_walking-female-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3973_00_walking-female-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3973_00_walking-female-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3973_00_walking-female-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 23530,
+      "slug": "walking-female-drawing-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3974",
+      "presetNumber": 3974,
+      "label": "Female elegant sitting drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting elegantly in the armchair, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3974_female-elegant-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3974_female-elegant-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3974_00_female-elegant-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3974_00_female-elegant-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3974_00_female-elegant-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 23962,
+      "slug": "female-elegant-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3975",
+      "presetNumber": 3975,
+      "label": "Sitting female drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is posing, sitting on the stairs, poses for drawing female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3975_sitting-female-drawing-pose.pma",
+      "localScenePath": "scenes/3975_sitting-female-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3975_00_sitting-female-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3975_00_sitting-female-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3975_00_sitting-female-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 24379,
+      "slug": "sitting-female-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3976",
+      "presetNumber": 3976,
+      "label": "Crossed legs female drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bar stool, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3976_crossed-legs-female-drawing-pose.pma",
+      "localScenePath": "scenes/3976_crossed-legs-female-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3976_00_crossed-legs-female-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3976_00_crossed-legs-female-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3976_00_crossed-legs-female-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 24087,
+      "slug": "crossed-legs-female-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3977",
+      "presetNumber": 3977,
+      "label": "Female sitting looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting, lying on her right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3977_female-sitting-looking-left-pose.pma",
+      "localScenePath": "scenes/3977_female-sitting-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3977_00_female-sitting-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3977_00_female-sitting-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3977_00_female-sitting-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 23472,
+      "slug": "female-sitting-looking-left-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3978",
+      "presetNumber": 3978,
+      "label": "Female crouching drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3978_female-crouching-drawing-pose.pma",
+      "localScenePath": "scenes/3978_female-crouching-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3978_00_female-crouching-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3978_00_female-crouching-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3978_00_female-crouching-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 23520,
+      "slug": "female-crouching-drawing-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3979",
+      "presetNumber": 3979,
+      "label": "Female stomach lying drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on her stomach, leaning on her hands, poses for drawing female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3979_female-stomach-lying-drawing-pose.pma",
+      "localScenePath": "scenes/3979_female-stomach-lying-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3979_00_female-stomach-lying-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3979_00_female-stomach-lying-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3979_00_female-stomach-lying-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "poses",
+        "for",
+        "drawing",
+        "female"
+      ],
+      "bytes": 23532,
+      "slug": "female-stomach-lying-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3980",
+      "presetNumber": 3980,
+      "label": "Female holding glass drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a wine glass in her right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3980_female-holding-glass-drawing-pose.pma",
+      "localScenePath": "scenes/3980_female-holding-glass-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3980_00_female-holding-glass-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3980_00_female-holding-glass-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3980_00_female-holding-glass-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "glass",
+        "reference"
+      ],
+      "bytes": 24369,
+      "slug": "female-holding-glass-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3982",
+      "presetNumber": 3982,
+      "label": "Female sitting holding glass pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair and holding a wine glass in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3982_female-sitting-holding-glass-pose.pma",
+      "localScenePath": "scenes/3982_female-sitting-holding-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3982_00_female-sitting-holding-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3982_00_female-sitting-holding-glass-pose.png",
+          "localThumbnailPath": "thumbnails/3982_00_female-sitting-holding-glass-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76,
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "glass",
+        "reference"
+      ],
+      "bytes": 24492,
+      "slug": "female-sitting-holding-glass-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3985",
+      "presetNumber": 3985,
+      "label": "Both hands holding glass pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair and holding a glass with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3985_both-hands-holding-glass-pose.pma",
+      "localScenePath": "scenes/3985_both-hands-holding-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3985_00_both-hands-holding-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3985_00_both-hands-holding-glass-pose.png",
+          "localThumbnailPath": "thumbnails/3985_00_both-hands-holding-glass-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        75,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "glass",
+        "reference"
+      ],
+      "bytes": 24525,
+      "slug": "both-hands-holding-glass-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3987",
+      "presetNumber": 3987,
+      "label": "Holding glass cheers pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a wine glass in her right hand and raising it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3987_holding-glass-cheers-pose.pma",
+      "localScenePath": "scenes/3987_holding-glass-cheers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3987_00_holding-glass-cheers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3987_00_holding-glass-cheers-pose.png",
+          "localThumbnailPath": "thumbnails/3987_00_holding-glass-cheers-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "glass",
+        "reference"
+      ],
+      "bytes": 24010,
+      "slug": "holding-glass-cheers-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3988",
+      "presetNumber": 3988,
+      "label": "Standing holding glass pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and holding a glass in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3988_standing-holding-glass-pose.pma",
+      "localScenePath": "scenes/3988_standing-holding-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3988_00_standing-holding-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3988_00_standing-holding-glass-pose.png",
+          "localThumbnailPath": "thumbnails/3988_00_standing-holding-glass-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        75
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "glass",
+        "reference"
+      ],
+      "bytes": 24057,
+      "slug": "standing-holding-glass-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3990",
+      "presetNumber": 3990,
+      "label": "Female walking elegant pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking elegantly, drawing female pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3990_female-walking-elegant-pose.pma",
+      "localScenePath": "scenes/3990_female-walking-elegant-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3990_00_female-walking-elegant-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3990_00_female-walking-elegant-pose.png",
+          "localThumbnailPath": "thumbnails/3990_00_female-walking-elegant-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23544,
+      "slug": "female-walking-elegant-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3991",
+      "presetNumber": 3991,
+      "label": "Female casual standing drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually, her arms are crossed, she is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3991_female-casual-standing-drawing-pose.pma",
+      "localScenePath": "scenes/3991_female-casual-standing-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3991_00_female-casual-standing-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3991_00_female-casual-standing-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3991_00_female-casual-standing-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23570,
+      "slug": "female-casual-standing-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3992",
+      "presetNumber": 3992,
+      "label": "Female lying looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying, her legs are crossed, she is looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3992_female-lying-looking-up-pose.pma",
+      "localScenePath": "scenes/3992_female-lying-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3992_00_female-lying-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3992_00_female-lying-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3992_00_female-lying-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 24010,
+      "slug": "female-lying-looking-up-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3993",
+      "presetNumber": 3993,
+      "label": "Kneeling female looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, sitting on knees, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3993_kneeling-female-looking-right-pose.pma",
+      "localScenePath": "scenes/3993_kneeling-female-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3993_00_kneeling-female-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3993_00_kneeling-female-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/3993_00_kneeling-female-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23640,
+      "slug": "kneeling-female-looking-right-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3994",
+      "presetNumber": 3994,
+      "label": "Female elegantly sitting drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting elegantly, her legs are crossed, drawing female pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3994_female-elegantly-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3994_female-elegantly-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3994_00_female-elegantly-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3994_00_female-elegantly-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3994_00_female-elegantly-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23958,
+      "slug": "female-elegantly-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3995",
+      "presetNumber": 3995,
+      "label": "Female crouching kneeling drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, kneeling, her left hand is on her hip, she is looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3995_female-crouching-kneeling-drawing-pose.pma",
+      "localScenePath": "scenes/3995_female-crouching-kneeling-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3995_00_female-crouching-kneeling-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3995_00_female-crouching-kneeling-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3995_00_female-crouching-kneeling-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23523,
+      "slug": "female-crouching-kneeling-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3996",
+      "presetNumber": 3996,
+      "label": "Female blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and blowing a kiss with her right hand, drawing female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3996_female-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3996_female-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3996_00_female-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3996_00_female-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3996_00_female-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23586,
+      "slug": "female-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3997",
+      "presetNumber": 3997,
+      "label": "Strong female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently and showing her arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3997_strong-female-pose.pma",
+      "localScenePath": "scenes/3997_strong-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3997_00_strong-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3997_00_strong-female-pose.png",
+          "localThumbnailPath": "thumbnails/3997_00_strong-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23478,
+      "slug": "strong-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3998",
+      "presetNumber": 3998,
+      "label": "Female landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, balancing with her hands, dynamic female pose, drawing female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3998_female-landing-pose.pma",
+      "localScenePath": "scenes/3998_female-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3998_00_female-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3998_00_female-landing-pose.png",
+          "localThumbnailPath": "thumbnails/3998_00_female-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23552,
+      "slug": "female-landing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3999",
+      "presetNumber": 3999,
+      "label": "Female cute waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and waving with her right hand, drawing female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3999_female-cute-waving-pose.pma",
+      "localScenePath": "scenes/3999_female-cute-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3999_00_female-cute-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3999_00_female-cute-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3999_00_female-cute-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23565,
+      "slug": "female-cute-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4001",
+      "presetNumber": 4001,
+      "label": "Female sword attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking, holding a sword and a medieval shield, battle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4001_female-sword-attack-pose.pma",
+      "localScenePath": "scenes/4001_female-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4001_00_female-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4001_00_female-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4001_00_female-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "battle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24639,
+      "slug": "female-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4003",
+      "presetNumber": 4003,
+      "label": "Female holding swords pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking, holding two swords, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4003_female-holding-swords-pose.pma",
+      "localScenePath": "scenes/4003_female-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4003_00_female-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4003_00_female-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4003_00_female-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "battle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24517,
+      "slug": "female-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1088 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 139,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3337",
+      "presetNumber": 3337,
+      "label": "Romantic relaxed sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting relaxed next to each other and looking something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3337_romantic-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3337_romantic-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3337_00_romantic-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3337_00_romantic-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3337_00_romantic-relaxed-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3337_01_romantic-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3337_01_romantic-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 46734,
+      "slug": "romantic-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3338",
+      "presetNumber": 3338,
+      "label": "Female chair relaxed sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting relaxed on the chair, with her hands and legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3338_female-chair-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3338_female-chair-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3338_00_female-chair-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3338_00_female-chair-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3338_00_female-chair-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24402,
+      "slug": "female-chair-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3339",
+      "presetNumber": 3339,
+      "label": "Stairs relaxed sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting relaxed on the stairs and looking to the left, female relaxed sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3339_stairs-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3339_stairs-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3339_00_stairs-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3339_00_stairs-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3339_00_stairs-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24706,
+      "slug": "stairs-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3340",
+      "presetNumber": 3340,
+      "label": "Female relaxed sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting cross-legged and holding her ankles with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3340_female-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3340_female-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3340_00_female-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3340_00_female-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3340_00_female-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23518,
+      "slug": "female-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3341",
+      "presetNumber": 3341,
+      "label": "Male relaxed sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting cross-legged and holding his knees, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3341_male-relaxed-sitting-pose.pma",
+      "localScenePath": "scenes/3341_male-relaxed-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3341_00_male-relaxed-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3341_00_male-relaxed-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3341_00_male-relaxed-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23766,
+      "slug": "male-relaxed-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3342",
+      "presetNumber": 3342,
+      "label": "Female meditating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting cross-legged and meditating, female cross-legged sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3342_female-meditating-pose.pma",
+      "localScenePath": "scenes/3342_female-meditating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3342_00_female-meditating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3342_00_female-meditating-pose.png",
+          "localThumbnailPath": "thumbnails/3342_00_female-meditating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23534,
+      "slug": "female-meditating-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-3343",
+      "presetNumber": 3343,
+      "label": "Male cross legged pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting cross-legged, leaning on his hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3343_male-cross-legged-pose.pma",
+      "localScenePath": "scenes/3343_male-cross-legged-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3343_00_male-cross-legged-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3343_00_male-cross-legged-pose.png",
+          "localThumbnailPath": "thumbnails/3343_00_male-cross-legged-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23921,
+      "slug": "male-cross-legged-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3344",
+      "presetNumber": 3344,
+      "label": "Sitting cross legged pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting cross-legged, leaning on his left hand, resting his right hand on his knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3344_sitting-cross-legged-pose.pma",
+      "localScenePath": "scenes/3344_sitting-cross-legged-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3344_00_sitting-cross-legged-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3344_00_sitting-cross-legged-pose.png",
+          "localThumbnailPath": "thumbnails/3344_00_sitting-cross-legged-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23803,
+      "slug": "sitting-cross-legged-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3345",
+      "presetNumber": 3345,
+      "label": "Female cross legged pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting cross-legged, leaning on her hands, sitting on the floor pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3345_female-cross-legged-pose.pma",
+      "localScenePath": "scenes/3345_female-cross-legged-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3345_00_female-cross-legged-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3345_00_female-cross-legged-pose.png",
+          "localThumbnailPath": "thumbnails/3345_00_female-cross-legged-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23467,
+      "slug": "female-cross-legged-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3346",
+      "presetNumber": 3346,
+      "label": "Couple cross legged sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting cross-legged next to each other, couple cross-legged sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3346_couple-cross-legged-sitting-pose.pma",
+      "localScenePath": "scenes/3346_couple-cross-legged-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3346_00_couple-cross-legged-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3346_00_couple-cross-legged-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3346_00_couple-cross-legged-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3346_01_couple-cross-legged-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3346_01_couple-cross-legged-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 46410,
+      "slug": "couple-cross-legged-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-3347",
+      "presetNumber": 3347,
+      "label": "Holding hip sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting cross-legged and holding his hip with his left hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3347_holding-hip-sitting-pose.pma",
+      "localScenePath": "scenes/3347_holding-hip-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3347_00_holding-hip-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3347_00_holding-hip-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3347_00_holding-hip-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23734,
+      "slug": "holding-hip-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3348",
+      "presetNumber": 3348,
+      "label": "Crossed hands legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor cross-legged, crossing her hands, holding her ankles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3348_crossed-hands-legs-pose.pma",
+      "localScenePath": "scenes/3348_crossed-hands-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3348_00_crossed-hands-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3348_00_crossed-hands-legs-pose.png",
+          "localThumbnailPath": "thumbnails/3348_00_crossed-hands-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23510,
+      "slug": "crossed-hands-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3349",
+      "presetNumber": 3349,
+      "label": "Cute cross legged pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor cross-legged and making a peace sign with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3349_cute-cross-legged-pose.pma",
+      "localScenePath": "scenes/3349_cute-cross-legged-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3349_00_cute-cross-legged-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3349_00_cute-cross-legged-pose.png",
+          "localThumbnailPath": "thumbnails/3349_00_cute-cross-legged-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cross",
+        "legged",
+        "pose"
+      ],
+      "bytes": 23472,
+      "slug": "cute-cross-legged-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3350",
+      "presetNumber": 3350,
+      "label": "Female relaxed standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually, female relaxed standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3350_female-relaxed-standing-pose.pma",
+      "localScenePath": "scenes/3350_female-relaxed-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3350_00_female-relaxed-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3350_00_female-relaxed-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3350_00_female-relaxed-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23572,
+      "slug": "female-relaxed-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3351",
+      "presetNumber": 3351,
+      "label": "Male relaxed standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, male relaxed standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3351_male-relaxed-standing-pose.pma",
+      "localScenePath": "scenes/3351_male-relaxed-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3351_00_male-relaxed-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3351_00_male-relaxed-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3351_00_male-relaxed-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23765,
+      "slug": "male-relaxed-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3352",
+      "presetNumber": 3352,
+      "label": "Holding hips relaxed pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing relaxed, holding her hips, female relaxed standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3352_holding-hips-relaxed-pose.pma",
+      "localScenePath": "scenes/3352_holding-hips-relaxed-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3352_00_holding-hips-relaxed-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3352_00_holding-hips-relaxed-pose.png",
+          "localThumbnailPath": "thumbnails/3352_00_holding-hips-relaxed-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23510,
+      "slug": "holding-hips-relaxed-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3353",
+      "presetNumber": 3353,
+      "label": "Right hand pocket pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing relaxed, his right hand is in his pocket and he is looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3353_right-hand-pocket-pose.pma",
+      "localScenePath": "scenes/3353_right-hand-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3353_00_right-hand-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3353_00_right-hand-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/3353_00_right-hand-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23759,
+      "slug": "right-hand-pocket-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3354",
+      "presetNumber": 3354,
+      "label": "Left hand pocket pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing relaxed, her left hand is in her pocket and she is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3354_left-hand-pocket-pose.pma",
+      "localScenePath": "scenes/3354_left-hand-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3354_00_left-hand-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3354_00_left-hand-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/3354_00_left-hand-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23838,
+      "slug": "left-hand-pocket-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3355",
+      "presetNumber": 3355,
+      "label": "Relaxed female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing relaxed, her hands are in her pockets and she is looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3355_relaxed-female-standing-pose.pma",
+      "localScenePath": "scenes/3355_relaxed-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3355_00_relaxed-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3355_00_relaxed-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3355_00_relaxed-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23479,
+      "slug": "relaxed-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3356",
+      "presetNumber": 3356,
+      "label": "Male stretching arm pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing relaxed, stretching his right arm, male relaxed standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3356_male-stretching-arm-pose.pma",
+      "localScenePath": "scenes/3356_male-stretching-arm-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3356_00_male-stretching-arm-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3356_00_male-stretching-arm-pose.png",
+          "localThumbnailPath": "thumbnails/3356_00_male-stretching-arm-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23766,
+      "slug": "male-stretching-arm-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3357",
+      "presetNumber": 3357,
+      "label": "Female stretching arm pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing relaxed, stretching her left arm, female relaxed standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3357_female-stretching-arm-pose.pma",
+      "localScenePath": "scenes/3357_female-stretching-arm-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3357_00_female-stretching-arm-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3357_00_female-stretching-arm-pose.png",
+          "localThumbnailPath": "thumbnails/3357_00_female-stretching-arm-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23618,
+      "slug": "female-stretching-arm-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3358",
+      "presetNumber": 3358,
+      "label": "Stretching looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing relaxed, stretching her arms and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3358_stretching-looking-up-pose.pma",
+      "localScenePath": "scenes/3358_stretching-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3358_00_stretching-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3358_00_stretching-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3358_00_stretching-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23558,
+      "slug": "stretching-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3359",
+      "presetNumber": 3359,
+      "label": "Couple relaxed standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing relaxed next to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3359_couple-relaxed-standing-pose.pma",
+      "localScenePath": "scenes/3359_couple-relaxed-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3359_00_couple-relaxed-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3359_00_couple-relaxed-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3359_00_couple-relaxed-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3359_01_couple-relaxed-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3359_01_couple-relaxed-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "relaxed",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46555,
+      "slug": "couple-relaxed-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3360",
+      "presetNumber": 3360,
+      "label": "Female holding chin pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and thinking, holding her chin with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3360_female-holding-chin-pose.pma",
+      "localScenePath": "scenes/3360_female-holding-chin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3360_00_female-holding-chin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3360_00_female-holding-chin-pose.png",
+          "localThumbnailPath": "thumbnails/3360_00_female-holding-chin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "chin",
+        "pose"
+      ],
+      "bytes": 23514,
+      "slug": "female-holding-chin-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

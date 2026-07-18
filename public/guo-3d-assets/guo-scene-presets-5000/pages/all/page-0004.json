@@ -1,0 +1,1073 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 3,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0073",
+      "presetNumber": 73,
+      "label": "Jumping from high",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "A bot model jumping from high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0073_jumping-from-high.pma",
+      "localScenePath": "scenes/0073_jumping-from-high.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0073_00_jumping-from-high.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0073_00_jumping-from-high.png",
+          "localThumbnailPath": "thumbnails/0073_00_jumping-from-high.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 23065,
+      "slug": "jumping-from-high",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0074",
+      "presetNumber": 74,
+      "label": "Stabbing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "A realistic woman model in a rotational stabbing pose ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0074_stabbing-pose.pma",
+      "localScenePath": "scenes/0074_stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0074_00_stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0074_00_stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/0074_00_stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 18807,
+      "slug": "stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0075",
+      "presetNumber": 75,
+      "label": "A woman stabing using a katana",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "A realistic woman model holding katana and stabbing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0075_a-woman-stabing-using-a-katana.pma",
+      "localScenePath": "scenes/0075_a-woman-stabing-using-a-katana.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0075_00_a-woman-stabing-using-a-katana.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0075_00_a-woman-stabing-using-a-katana.png",
+          "localThumbnailPath": "thumbnails/0075_00_a-woman-stabing-using-a-katana.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 18852,
+      "slug": "a-woman-stabing-using-a-katana",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0076",
+      "presetNumber": 76,
+      "label": "Throwing positions",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three realistic men models in different throwing positions",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0076_throwing-positions.pma",
+      "localScenePath": "scenes/0076_throwing-positions.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0076_00_throwing-positions.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0076_00_throwing-positions.png",
+          "localThumbnailPath": "thumbnails/0076_00_throwing-positions.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0076_01_throwing-positions.png",
+          "localThumbnailPath": "thumbnails/0076_01_throwing-positions.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0076_02_throwing-positions.png",
+          "localThumbnailPath": "thumbnails/0076_02_throwing-positions.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic",
+        "group"
+      ],
+      "bytes": 43359,
+      "slug": "throwing-positions",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0077",
+      "presetNumber": 77,
+      "label": "Kicking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two realistic women models in two different kicking poses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0077_kicking-pose.pma",
+      "localScenePath": "scenes/0077_kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0077_00_kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0077_00_kicking-pose.png",
+          "localThumbnailPath": "thumbnails/0077_00_kicking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0077_01_kicking-pose.png",
+          "localThumbnailPath": "thumbnails/0077_01_kicking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic",
+        "group"
+      ],
+      "bytes": 36347,
+      "slug": "kicking-pose",
+      "tagIds": [
+        "group",
+        "movement-dance"
+      ],
+      "tags": [
+        "多人/群体",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0078",
+      "presetNumber": 78,
+      "label": "Throwing straight ",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "A realistic man model throwing straight an imagined ball \\ magic",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0078_throwing-straight.pma",
+      "localScenePath": "scenes/0078_throwing-straight.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0078_00_throwing-straight.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0078_00_throwing-straight.png",
+          "localThumbnailPath": "thumbnails/0078_00_throwing-straight.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 14676,
+      "slug": "throwing-straight",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0079",
+      "presetNumber": 79,
+      "label": "Roll poses",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three realistic models in three different rolling poses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0079_roll-poses.pma",
+      "localScenePath": "scenes/0079_roll-poses.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0079_00_roll-poses.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0079_00_roll-poses.png",
+          "localThumbnailPath": "thumbnails/0079_00_roll-poses.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0079_01_roll-poses.png",
+          "localThumbnailPath": "thumbnails/0079_01_roll-poses.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0079_02_roll-poses.png",
+          "localThumbnailPath": "thumbnails/0079_02_roll-poses.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        40,
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic",
+        "group"
+      ],
+      "bytes": 50636,
+      "slug": "roll-poses",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0080",
+      "presetNumber": 80,
+      "label": "Female dance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dance pose on right toes, female dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0080_female-dance-pose.pma",
+      "localScenePath": "scenes/0080_female-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0080_00_female-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0080_00_female-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0080_00_female-dance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 13171,
+      "slug": "female-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0081",
+      "presetNumber": 81,
+      "label": "Dance pose on left toes",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dance pose on left toes, on top of right foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0081_dance-pose-on-left-toes.pma",
+      "localScenePath": "scenes/0081_dance-pose-on-left-toes.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0081_00_dance-pose-on-left-toes.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0081_00_dance-pose-on-left-toes.png",
+          "localThumbnailPath": "thumbnails/0081_00_dance-pose-on-left-toes.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 13137,
+      "slug": "dance-pose-on-left-toes",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0082",
+      "presetNumber": 82,
+      "label": "Female dance pose back arched",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dance pose on toes with back arched",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0082_female-dance-pose-back-arched.pma",
+      "localScenePath": "scenes/0082_female-dance-pose-back-arched.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0082_00_female-dance-pose-back-arched.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0082_00_female-dance-pose-back-arched.png",
+          "localThumbnailPath": "thumbnails/0082_00_female-dance-pose-back-arched.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 13211,
+      "slug": "female-dance-pose-back-arched",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0083",
+      "presetNumber": 83,
+      "label": "Female dance pose left leg raised",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dance pose on right toes with left leg raised",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0083_female-dance-pose-left-leg-raised.pma",
+      "localScenePath": "scenes/0083_female-dance-pose-left-leg-raised.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0083_00_female-dance-pose-left-leg-raised.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0083_00_female-dance-pose-left-leg-raised.png",
+          "localThumbnailPath": "thumbnails/0083_00_female-dance-pose-left-leg-raised.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 13129,
+      "slug": "female-dance-pose-left-leg-raised",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0084",
+      "presetNumber": 84,
+      "label": "Female dance pose arms raised",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dance pose on right standing on right toe with arms raised",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0084_female-dance-pose-arms-raised.pma",
+      "localScenePath": "scenes/0084_female-dance-pose-arms-raised.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0084_00_female-dance-pose-arms-raised.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0084_00_female-dance-pose-arms-raised.png",
+          "localThumbnailPath": "thumbnails/0084_00_female-dance-pose-arms-raised.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 13129,
+      "slug": "female-dance-pose-arms-raised",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0085",
+      "presetNumber": 85,
+      "label": "Female dance pose small back arched",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dance pose with back back arched",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0085_female-dance-pose-small-back-arched.pma",
+      "localScenePath": "scenes/0085_female-dance-pose-small-back-arched.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0085_00_female-dance-pose-small-back-arched.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0085_00_female-dance-pose-small-back-arched.png",
+          "localThumbnailPath": "thumbnails/0085_00_female-dance-pose-small-back-arched.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 13233,
+      "slug": "female-dance-pose-small-back-arched",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0086",
+      "presetNumber": 86,
+      "label": "Male dance pose legs crossed",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose with legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0086_male-dance-pose-legs-crossed.pma",
+      "localScenePath": "scenes/0086_male-dance-pose-legs-crossed.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0086_00_male-dance-pose-legs-crossed.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0086_00_male-dance-pose-legs-crossed.png",
+          "localThumbnailPath": "thumbnails/0086_00_male-dance-pose-legs-crossed.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12824,
+      "slug": "male-dance-pose-legs-crossed",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0087",
+      "presetNumber": 87,
+      "label": "Male dance pose leaning left",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose with legs spread and leaning left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0087_male-dance-pose-leaning-left.pma",
+      "localScenePath": "scenes/0087_male-dance-pose-leaning-left.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0087_00_male-dance-pose-leaning-left.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0087_00_male-dance-pose-leaning-left.png",
+          "localThumbnailPath": "thumbnails/0087_00_male-dance-pose-leaning-left.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12840,
+      "slug": "male-dance-pose-leaning-left",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0088",
+      "presetNumber": 88,
+      "label": "Male dance pose leaning right",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose with legs spread and leaning right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0088_male-dance-pose-leaning-right.pma",
+      "localScenePath": "scenes/0088_male-dance-pose-leaning-right.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0088_00_male-dance-pose-leaning-right.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0088_00_male-dance-pose-leaning-right.png",
+          "localThumbnailPath": "thumbnails/0088_00_male-dance-pose-leaning-right.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12796,
+      "slug": "male-dance-pose-leaning-right",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0089",
+      "presetNumber": 89,
+      "label": "Male dance pose arms extended backwards",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose standing on right foor with arms extended backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0089_male-dance-pose-arms-extended-backwards.pma",
+      "localScenePath": "scenes/0089_male-dance-pose-arms-extended-backwards.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0089_00_male-dance-pose-arms-extended-backwards.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0089_00_male-dance-pose-arms-extended-backwards.png",
+          "localThumbnailPath": "thumbnails/0089_00_male-dance-pose-arms-extended-backwards.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12802,
+      "slug": "male-dance-pose-arms-extended-backwards",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0090",
+      "presetNumber": 90,
+      "label": "Female swing legs",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female sits down in a cute pose, swings her legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0090_female-swing-legs.pma",
+      "localScenePath": "scenes/0090_female-swing-legs.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0090_00_female-swing-legs.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0090_00_female-swing-legs.png",
+          "localThumbnailPath": "thumbnails/0090_00_female-swing-legs.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13597,
+      "slug": "female-swing-legs",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0091",
+      "presetNumber": 91,
+      "label": "Female leg raised",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female in a cute pose, standing on right leg with leg left raised and hand points to the sky",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0091_female-leg-raised.pma",
+      "localScenePath": "scenes/0091_female-leg-raised.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0091_00_female-leg-raised.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0091_00_female-leg-raised.png",
+          "localThumbnailPath": "thumbnails/0091_00_female-leg-raised.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13123,
+      "slug": "female-leg-raised",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0092",
+      "presetNumber": 92,
+      "label": "Female on knees",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female sits in a cute pose, on knees with hands on top of her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0092_female-on-knees.pma",
+      "localScenePath": "scenes/0092_female-on-knees.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0092_00_female-on-knees.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0092_00_female-on-knees.png",
+          "localThumbnailPath": "thumbnails/0092_00_female-on-knees.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13136,
+      "slug": "female-on-knees",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0093",
+      "presetNumber": 93,
+      "label": "Female cute laying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female laying in a cute pose, on right side with right hand supporting head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0093_female-cute-laying-pose.pma",
+      "localScenePath": "scenes/0093_female-cute-laying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0093_00_female-cute-laying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0093_00_female-cute-laying-pose.png",
+          "localThumbnailPath": "thumbnails/0093_00_female-cute-laying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13147,
+      "slug": "female-cute-laying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0094",
+      "presetNumber": 94,
+      "label": "Female laying pose crossed legs",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female laying in a cute pose with crossed legs and arms supporting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0094_female-laying-pose-crossed-legs.pma",
+      "localScenePath": "scenes/0094_female-laying-pose-crossed-legs.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0094_00_female-laying-pose-crossed-legs.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0094_00_female-laying-pose-crossed-legs.png",
+          "localThumbnailPath": "thumbnails/0094_00_female-laying-pose-crossed-legs.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13156,
+      "slug": "female-laying-pose-crossed-legs",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0095",
+      "presetNumber": 95,
+      "label": "Female laying hand above head",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female laying in a cute pose with hand above head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0095_female-laying-hand-above-head.pma",
+      "localScenePath": "scenes/0095_female-laying-hand-above-head.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0095_00_female-laying-hand-above-head.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0095_00_female-laying-hand-above-head.png",
+          "localThumbnailPath": "thumbnails/0095_00_female-laying-hand-above-head.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13123,
+      "slug": "female-laying-hand-above-head",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0096",
+      "presetNumber": 96,
+      "label": "Female laying legs to side",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female laying in a cute pose with legs to side and hands above the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0096_female-laying-legs-to-side.pma",
+      "localScenePath": "scenes/0096_female-laying-legs-to-side.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0096_00_female-laying-legs-to-side.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0096_00_female-laying-legs-to-side.png",
+          "localThumbnailPath": "thumbnails/0096_00_female-laying-legs-to-side.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "cute"
+      ],
+      "bytes": 13132,
+      "slug": "female-laying-legs-to-side",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

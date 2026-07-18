@@ -1,0 +1,1171 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 131,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3145",
+      "presetNumber": 3145,
+      "label": "Hammer swinging upwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, holding the hammer with both hands and swinging it upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3145_hammer-swinging-upwards-pose.pma",
+      "localScenePath": "scenes/3145_hammer-swinging-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3145_00_hammer-swinging-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3145_00_hammer-swinging-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/3145_00_hammer-swinging-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24010,
+      "slug": "hammer-swinging-upwards-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3146",
+      "presetNumber": 3146,
+      "label": "Holding hammer walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a hammer in his right hand and walking, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3146_holding-hammer-walking-pose.pma",
+      "localScenePath": "scenes/3146_holding-hammer-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3146_00_holding-hammer-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3146_00_holding-hammer-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3146_00_holding-hammer-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24223,
+      "slug": "holding-hammer-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3147",
+      "presetNumber": 3147,
+      "label": "Holding two hammers pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding two hammers, male holding hammer pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3147_holding-two-hammers-pose.pma",
+      "localScenePath": "scenes/3147_holding-two-hammers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3147_00_holding-two-hammers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3147_00_holding-two-hammers-pose.png",
+          "localThumbnailPath": "thumbnails/3147_00_holding-two-hammers-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24750,
+      "slug": "holding-two-hammers-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3148",
+      "presetNumber": 3148,
+      "label": "Male swinging hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and swinging a hammer in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3148_male-swinging-hammer-pose.pma",
+      "localScenePath": "scenes/3148_male-swinging-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3148_00_male-swinging-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3148_00_male-swinging-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/3148_00_male-swinging-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24248,
+      "slug": "male-swinging-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3149",
+      "presetNumber": 3149,
+      "label": "Female hammer walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a hammer in her right hand and walking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3149_female-hammer-walking-pose.pma",
+      "localScenePath": "scenes/3149_female-hammer-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3149_00_female-hammer-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3149_00_female-hammer-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3149_00_female-hammer-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 23976,
+      "slug": "female-hammer-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3150",
+      "presetNumber": 3150,
+      "label": "Male holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding an axe with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3150_male-holding-axe-pose.pma",
+      "localScenePath": "scenes/3150_male-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3150_00_male-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3150_00_male-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3150_00_male-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24227,
+      "slug": "male-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3151",
+      "presetNumber": 3151,
+      "label": "Standing holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding an axe in his right hand, resting it on his shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3151_standing-holding-axe-pose.pma",
+      "localScenePath": "scenes/3151_standing-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3151_00_standing-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3151_00_standing-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3151_00_standing-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24318,
+      "slug": "standing-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3152",
+      "presetNumber": 3152,
+      "label": "Holding axe looking down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding an axe in his left hand and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3152_holding-axe-looking-down-pose.pma",
+      "localScenePath": "scenes/3152_holding-axe-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3152_00_holding-axe-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3152_00_holding-axe-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3152_00_holding-axe-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24219,
+      "slug": "holding-axe-looking-down-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3153",
+      "presetNumber": 3153,
+      "label": "Female holding axe walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, holding an axe in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3153_female-holding-axe-walking-pose.pma",
+      "localScenePath": "scenes/3153_female-holding-axe-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3153_00_female-holding-axe-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3153_00_female-holding-axe-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3153_00_female-holding-axe-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 23956,
+      "slug": "female-holding-axe-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3154",
+      "presetNumber": 3154,
+      "label": "Female standing holding axe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding an axe in her left hand, resting it on her shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3154_female-standing-holding-axe-pose.pma",
+      "localScenePath": "scenes/3154_female-standing-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3154_00_female-standing-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3154_00_female-standing-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3154_00_female-standing-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 23982,
+      "slug": "female-standing-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3155",
+      "presetNumber": 3155,
+      "label": "Female standing axe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding an axe in both hands, resting it on her shoulders",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3155_female-standing-axe-pose.pma",
+      "localScenePath": "scenes/3155_female-standing-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3155_00_female-standing-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3155_00_female-standing-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3155_00_female-standing-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 23972,
+      "slug": "female-standing-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3156",
+      "presetNumber": 3156,
+      "label": "Female two axes pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding two axes, female holding axe pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3156_female-two-axes-pose.pma",
+      "localScenePath": "scenes/3156_female-two-axes-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3156_00_female-two-axes-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3156_00_female-two-axes-pose.png",
+          "localThumbnailPath": "thumbnails/3156_00_female-two-axes-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24449,
+      "slug": "female-two-axes-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3157",
+      "presetNumber": 3157,
+      "label": "Holding axe running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding an axe in his right hand, male holding axe pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3157_holding-axe-running-pose.pma",
+      "localScenePath": "scenes/3157_holding-axe-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3157_00_holding-axe-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3157_00_holding-axe-running-pose.png",
+          "localThumbnailPath": "thumbnails/3157_00_holding-axe-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24288,
+      "slug": "holding-axe-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3158",
+      "presetNumber": 3158,
+      "label": "Swinging axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and swinging the axe, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3158_swinging-axe-pose.pma",
+      "localScenePath": "scenes/3158_swinging-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3158_00_swinging-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3158_00_swinging-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3158_00_swinging-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24266,
+      "slug": "swinging-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3159",
+      "presetNumber": 3159,
+      "label": "Male swinging axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and swinging the axe upwards, holding the axe with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3159_male-swinging-axe-pose.pma",
+      "localScenePath": "scenes/3159_male-swinging-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3159_00_male-swinging-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3159_00_male-swinging-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3159_00_male-swinging-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24234,
+      "slug": "male-swinging-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3160",
+      "presetNumber": 3160,
+      "label": "Mermaid tail ballet pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is dancing, mermaid tail water ballet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3160_mermaid-tail-ballet-pose.pma",
+      "localScenePath": "scenes/3160_mermaid-tail-ballet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3160_00_mermaid-tail-ballet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3160_00_mermaid-tail-ballet-pose.png",
+          "localThumbnailPath": "thumbnails/3160_00_mermaid-tail-ballet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16379,
+      "slug": "mermaid-tail-ballet-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3161",
+      "presetNumber": 3161,
+      "label": "Mermaid dolphin swimming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming like a dolphin, mermaid tail drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3161_mermaid-dolphin-swimming-pose.pma",
+      "localScenePath": "scenes/3161_mermaid-dolphin-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3161_00_mermaid-dolphin-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3161_00_mermaid-dolphin-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/3161_00_mermaid-dolphin-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16376,
+      "slug": "mermaid-dolphin-swimming-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3162",
+      "presetNumber": 3162,
+      "label": "Mermaid tail sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock, mermaid tail sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3162_mermaid-tail-sitting-pose.pma",
+      "localScenePath": "scenes/3162_mermaid-tail-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3162_00_mermaid-tail-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3162_00_mermaid-tail-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3162_00_mermaid-tail-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 58011,
+      "slug": "mermaid-tail-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3163",
+      "presetNumber": 3163,
+      "label": "Mermaid tail kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is kicking with her tail on the right side",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3163_mermaid-tail-kicking-pose.pma",
+      "localScenePath": "scenes/3163_mermaid-tail-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3163_00_mermaid-tail-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3163_00_mermaid-tail-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3163_00_mermaid-tail-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16359,
+      "slug": "mermaid-tail-kicking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3164",
+      "presetNumber": 3164,
+      "label": "Mermaid twisting tail pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is doing graceful spins, twisting her tail, creating a spiral motion while dancing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3164_mermaid-twisting-tail-pose.pma",
+      "localScenePath": "scenes/3164_mermaid-twisting-tail-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3164_00_mermaid-twisting-tail-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3164_00_mermaid-twisting-tail-pose.png",
+          "localThumbnailPath": "thumbnails/3164_00_mermaid-twisting-tail-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16404,
+      "slug": "mermaid-twisting-tail-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3165",
+      "presetNumber": 3165,
+      "label": "Mermaid tail floating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating, relaxing her tail and balancing with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3165_mermaid-tail-floating-pose.pma",
+      "localScenePath": "scenes/3165_mermaid-tail-floating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3165_00_mermaid-tail-floating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3165_00_mermaid-tail-floating-pose.png",
+          "localThumbnailPath": "thumbnails/3165_00_mermaid-tail-floating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16373,
+      "slug": "mermaid-tail-floating-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3166",
+      "presetNumber": 3166,
+      "label": "Mermaid swimming drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming, mermaid tail drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3166_mermaid-swimming-drawing-pose.pma",
+      "localScenePath": "scenes/3166_mermaid-swimming-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3166_00_mermaid-swimming-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3166_00_mermaid-swimming-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3166_00_mermaid-swimming-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16387,
+      "slug": "mermaid-swimming-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3167",
+      "presetNumber": 3167,
+      "label": "Mermaid sitting tail pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on her tail, mermaid tail drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3167_mermaid-sitting-tail-pose.pma",
+      "localScenePath": "scenes/3167_mermaid-sitting-tail-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3167_00_mermaid-sitting-tail-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3167_00_mermaid-sitting-tail-pose.png",
+          "localThumbnailPath": "thumbnails/3167_00_mermaid-sitting-tail-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16422,
+      "slug": "mermaid-sitting-tail-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3168",
+      "presetNumber": 3168,
+      "label": "Mermaid tail turning pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is turning backwards, looking back over her left shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3168_mermaid-tail-turning-pose.pma",
+      "localScenePath": "scenes/3168_mermaid-tail-turning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3168_00_mermaid-tail-turning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3168_00_mermaid-tail-turning-pose.png",
+          "localThumbnailPath": "thumbnails/3168_00_mermaid-tail-turning-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "tail",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16303,
+      "slug": "mermaid-tail-turning-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

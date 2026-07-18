@@ -1,0 +1,1128 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 48,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-3546",
+      "presetNumber": 3546,
+      "label": "Male sword attack drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a sword and a shield, running and attacking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3546_male-sword-attack-drawing-pose.pma",
+      "localScenePath": "scenes/3546_male-sword-attack-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3546_00_male-sword-attack-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3546_00_male-sword-attack-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3546_00_male-sword-attack-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24829,
+      "slug": "male-sword-attack-drawing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3552",
+      "presetNumber": 3552,
+      "label": "Male walking holding cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and holding his baseball cap with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3552_male-walking-holding-cap-pose.pma",
+      "localScenePath": "scenes/3552_male-walking-holding-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3552_00_male-walking-holding-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3552_00_male-walking-holding-cap-pose.png",
+          "localThumbnailPath": "thumbnails/3552_00_male-walking-holding-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "fat",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24489,
+      "slug": "male-walking-holding-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3554",
+      "presetNumber": 3554,
+      "label": "Male couch sitting crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch comfortably with his legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3554_male-couch-sitting-crossed-legs-pose.pma",
+      "localScenePath": "scenes/3554_male-couch-sitting-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3554_00_male-couch-sitting-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3554_00_male-couch-sitting-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/3554_00_male-couch-sitting-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "fat",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24446,
+      "slug": "male-couch-sitting-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3556",
+      "presetNumber": 3556,
+      "label": "Male lying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on his back on the couch with his legs crossed and relaxing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3556_male-lying-pose.pma",
+      "localScenePath": "scenes/3556_male-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3556_00_male-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3556_00_male-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3556_00_male-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [
+        170,
+        231
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "fat",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 25004,
+      "slug": "male-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3557",
+      "presetNumber": 3557,
+      "label": "Male boxing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is in boxing stance, clenching his fist, ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3557_male-boxing-pose.pma",
+      "localScenePath": "scenes/3557_male-boxing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3557_00_male-boxing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3557_00_male-boxing-pose.png",
+          "localThumbnailPath": "thumbnails/3557_00_male-boxing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "fat",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23939,
+      "slug": "male-boxing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3560",
+      "presetNumber": 3560,
+      "label": "Male holding head standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding his head with both hands, standing posture drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3560_male-holding-head-standing-pose.pma",
+      "localScenePath": "scenes/3560_male-holding-head-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3560_00_male-holding-head-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3560_00_male-holding-head-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3560_00_male-holding-head-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "posture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23859,
+      "slug": "male-holding-head-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3561",
+      "presetNumber": 3561,
+      "label": "Male holding hip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, holding his hip with his left hand, crossing his legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3561_male-holding-hip-pose.pma",
+      "localScenePath": "scenes/3561_male-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3561_00_male-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3561_00_male-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/3561_00_male-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "posture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23750,
+      "slug": "male-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3564",
+      "presetNumber": 3564,
+      "label": "Male bar stool sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bar stool, holding his hip with his right hand, posture drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3564_male-bar-stool-sitting-pose.pma",
+      "localScenePath": "scenes/3564_male-bar-stool-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3564_00_male-bar-stool-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3564_00_male-bar-stool-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3564_00_male-bar-stool-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "posture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24175,
+      "slug": "male-bar-stool-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3566",
+      "presetNumber": 3566,
+      "label": "Male sitting posture pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair comfortably with his legs crossed and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3566_male-sitting-posture-pose.pma",
+      "localScenePath": "scenes/3566_male-sitting-posture-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3566_00_male-sitting-posture-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3566_00_male-sitting-posture-pose.png",
+          "localThumbnailPath": "thumbnails/3566_00_male-sitting-posture-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "posture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24257,
+      "slug": "male-sitting-posture-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3569",
+      "presetNumber": 3569,
+      "label": "Male crouching posture pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding his chin and looking down, male posture drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3569_male-crouching-posture-pose.pma",
+      "localScenePath": "scenes/3569_male-crouching-posture-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3569_00_male-crouching-posture-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3569_00_male-crouching-posture-pose.png",
+          "localThumbnailPath": "thumbnails/3569_00_male-crouching-posture-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "posture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23728,
+      "slug": "male-crouching-posture-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3572",
+      "presetNumber": 3572,
+      "label": "Male standing drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, looking to the left, his left hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3572_male-standing-drawing-pose.pma",
+      "localScenePath": "scenes/3572_male-standing-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3572_00_male-standing-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3572_00_male-standing-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3572_00_male-standing-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23758,
+      "slug": "male-standing-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3573",
+      "presetNumber": 3573,
+      "label": "Male fighting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is in boxing stance, clenching his fists, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3573_male-fighting-pose.pma",
+      "localScenePath": "scenes/3573_male-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3573_00_male-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3573_00_male-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3573_00_male-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23720,
+      "slug": "male-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3575",
+      "presetNumber": 3575,
+      "label": "Male armchair sitting drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair comfortably with his legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3575_male-armchair-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3575_male-armchair-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3575_00_male-armchair-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3575_00_male-armchair-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3575_00_male-armchair-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24211,
+      "slug": "male-armchair-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3578",
+      "presetNumber": 3578,
+      "label": "Male holding cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually and holding his baseball cap with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3578_male-holding-cap-pose.pma",
+      "localScenePath": "scenes/3578_male-holding-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3578_00_male-holding-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3578_00_male-holding-cap-pose.png",
+          "localThumbnailPath": "thumbnails/3578_00_male-holding-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24323,
+      "slug": "male-holding-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3581",
+      "presetNumber": 3581,
+      "label": "Anime male standing character pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing, crossing his legs, his right hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3581_anime-male-standing-character-pose.pma",
+      "localScenePath": "scenes/3581_anime-male-standing-character-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3581_00_anime-male-standing-character-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3581_00_anime-male-standing-character-pose.png",
+          "localThumbnailPath": "thumbnails/3581_00_anime-male-standing-character-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23853,
+      "slug": "anime-male-standing-character-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3583",
+      "presetNumber": 3583,
+      "label": "Anime male walking character pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3583_anime-male-walking-character-pose.pma",
+      "localScenePath": "scenes/3583_anime-male-walking-character-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3583_00_anime-male-walking-character-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3583_00_anime-male-walking-character-pose.png",
+          "localThumbnailPath": "thumbnails/3583_00_anime-male-walking-character-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23853,
+      "slug": "anime-male-walking-character-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3585",
+      "presetNumber": 3585,
+      "label": "Anime male crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is crouching, casual anime male pose, male anime character pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3585_anime-male-crouching-pose.pma",
+      "localScenePath": "scenes/3585_anime-male-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3585_00_anime-male-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3585_00_anime-male-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/3585_00_anime-male-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23912,
+      "slug": "anime-male-crouching-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3587",
+      "presetNumber": 3587,
+      "label": "Anime male action pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running, looking to the left, holding two katanas",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3587_anime-male-action-pose.pma",
+      "localScenePath": "scenes/3587_anime-male-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3587_00_anime-male-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3587_00_anime-male-action-pose.png",
+          "localThumbnailPath": "thumbnails/3587_00_anime-male-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 24818,
+      "slug": "anime-male-action-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3589",
+      "presetNumber": 3589,
+      "label": "Anime male spear pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is holding a double-sided spear, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3589_anime-male-spear-pose.pma",
+      "localScenePath": "scenes/3589_anime-male-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3589_00_anime-male-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3589_00_anime-male-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3589_00_anime-male-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 24308,
+      "slug": "anime-male-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3603",
+      "presetNumber": 3603,
+      "label": "Male bashful walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking bashfully, holding his hands behind his back and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3603_male-bashful-walking-pose.pma",
+      "localScenePath": "scenes/3603_male-bashful-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3603_00_male-bashful-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3603_00_male-bashful-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3603_00_male-bashful-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bashful",
+        "pose"
+      ],
+      "bytes": 23806,
+      "slug": "male-bashful-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3605",
+      "presetNumber": 3605,
+      "label": "Male bashful pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing bashfully, holding his head with his right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3605_male-bashful-pose.pma",
+      "localScenePath": "scenes/3605_male-bashful-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3605_00_male-bashful-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3605_00_male-bashful-pose.png",
+          "localThumbnailPath": "thumbnails/3605_00_male-bashful-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bashful",
+        "pose"
+      ],
+      "bytes": 23789,
+      "slug": "male-bashful-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3609",
+      "presetNumber": 3609,
+      "label": "Bashful male kneeling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling bashfully and looking down, male bashful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3609_bashful-male-kneeling-pose.pma",
+      "localScenePath": "scenes/3609_bashful-male-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3609_00_bashful-male-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3609_00_bashful-male-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/3609_00_bashful-male-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bashful",
+        "pose"
+      ],
+      "bytes": 23731,
+      "slug": "bashful-male-kneeling-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3611",
+      "presetNumber": 3611,
+      "label": "Male funny dancing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Funny anime male is dancing, holding his head with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3611_male-funny-dancing-pose.pma",
+      "localScenePath": "scenes/3611_male-funny-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3611_00_male-funny-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3611_00_male-funny-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3611_00_male-funny-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "anime",
+        "pose"
+      ],
+      "bytes": 23934,
+      "slug": "male-funny-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3614",
+      "presetNumber": 3614,
+      "label": "Funny egyptian dance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Funny anime male is doing egyptian dance, funny anime male dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3614_funny-egyptian-dance-pose.pma",
+      "localScenePath": "scenes/3614_funny-egyptian-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3614_00_funny-egyptian-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3614_00_funny-egyptian-dance-pose.png",
+          "localThumbnailPath": "thumbnails/3614_00_funny-egyptian-dance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "anime",
+        "pose"
+      ],
+      "bytes": 23951,
+      "slug": "funny-egyptian-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    }
+  ]
+}

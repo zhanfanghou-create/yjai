@@ -1,0 +1,1140 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 82,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4288",
+      "presetNumber": 4288,
+      "label": "Running looking back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running and looking back over her right shoulder, looking over shoulder pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4288_running-looking-back-pose.pma",
+      "localScenePath": "scenes/4288_running-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4288_00_running-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4288_00_running-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/4288_00_running-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "over",
+        "shoulder",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23506,
+      "slug": "running-looking-back-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4289",
+      "presetNumber": 4289,
+      "label": "Female sitting looking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and looking back over her left shoulder, looking over shoulder pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4289_female-sitting-looking-pose.pma",
+      "localScenePath": "scenes/4289_female-sitting-looking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4289_00_female-sitting-looking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4289_00_female-sitting-looking-pose.png",
+          "localThumbnailPath": "thumbnails/4289_00_female-sitting-looking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "over",
+        "shoulder",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23486,
+      "slug": "female-sitting-looking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4290",
+      "presetNumber": 4290,
+      "label": "Witch magic potion pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing and preparing a magic potion in the cauldron, holding a wand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4290_witch-magic-potion-pose.pma",
+      "localScenePath": "scenes/4290_witch-magic-potion-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4290_00_witch-magic-potion-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4290_00_witch-magic-potion-pose.png",
+          "localThumbnailPath": "thumbnails/4290_00_witch-magic-potion-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 10,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5,
+        94,
+        96,
+        165
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 28241,
+      "slug": "witch-magic-potion-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4291",
+      "presetNumber": 4291,
+      "label": "Wearing witch hat pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing, wearing a witch hat and adjusting it with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4291_wearing-witch-hat-pose.pma",
+      "localScenePath": "scenes/4291_wearing-witch-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4291_00_wearing-witch-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4291_00_wearing-witch-hat-pose.png",
+          "localThumbnailPath": "thumbnails/4291_00_wearing-witch-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24038,
+      "slug": "wearing-witch-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4292",
+      "presetNumber": 4292,
+      "label": "Witch crystal ball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is sitting at the table and casting spells with a crystal ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4292_witch-crystal-ball-pose.pma",
+      "localScenePath": "scenes/4292_witch-crystal-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4292_00_witch-crystal-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4292_00_witch-crystal-ball-pose.png",
+          "localThumbnailPath": "thumbnails/4292_00_witch-crystal-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        93,
+        94,
+        95,
+        136,
+        139,
+        165,
+        172
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 27522,
+      "slug": "witch-crystal-ball-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4293",
+      "presetNumber": 4293,
+      "label": "Witch flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is flying on her broom, wearing a witch hat, witch pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4293_witch-flying-pose.pma",
+      "localScenePath": "scenes/4293_witch-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4293_00_witch-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4293_00_witch-flying-pose.png",
+          "localThumbnailPath": "thumbnails/4293_00_witch-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94,
+        95
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24614,
+      "slug": "witch-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4294",
+      "presetNumber": 4294,
+      "label": "Witch wand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing and casting a spell with her wand, witch pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4294_witch-wand-pose.pma",
+      "localScenePath": "scenes/4294_witch-wand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4294_00_witch-wand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4294_00_witch-wand-pose.png",
+          "localThumbnailPath": "thumbnails/4294_00_witch-wand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94,
+        96
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24949,
+      "slug": "witch-wand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4295",
+      "presetNumber": 4295,
+      "label": "Book spell casting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing and casting a spell from a book with her wand, witch pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4295_book-spell-casting-pose.pma",
+      "localScenePath": "scenes/4295_book-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4295_00_book-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4295_00_book-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/4295_00_book-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        94,
+        96
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 25105,
+      "slug": "book-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4296",
+      "presetNumber": 4296,
+      "label": "Witch spell casting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing and casting a spell from a book, witch pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4296_witch-spell-casting-pose.pma",
+      "localScenePath": "scenes/4296_witch-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4296_00_witch-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4296_00_witch-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/4296_00_witch-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 9,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5,
+        80,
+        105
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 27829,
+      "slug": "witch-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4297",
+      "presetNumber": 4297,
+      "label": "Witch walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is walking, holding a broom and a wand, wearing glasses and witch hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4297_witch-walking-pose.pma",
+      "localScenePath": "scenes/4297_witch-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4297_00_witch-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4297_00_witch-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4297_00_witch-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94,
+        95,
+        96,
+        98
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 25599,
+      "slug": "witch-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4298",
+      "presetNumber": 4298,
+      "label": "Witch standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing, her legs are crossed, holding a staff, wearing a witch hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4298_witch-standing-pose.pma",
+      "localScenePath": "scenes/4298_witch-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4298_00_witch-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4298_00_witch-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4298_00_witch-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94,
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24586,
+      "slug": "witch-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4299",
+      "presetNumber": 4299,
+      "label": "Witch casting spells pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is crouching and casting spells with her hands, witch pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4299_witch-casting-spells-pose.pma",
+      "localScenePath": "scenes/4299_witch-casting-spells-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4299_00_witch-casting-spells-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4299_00_witch-casting-spells-pose.png",
+          "localThumbnailPath": "thumbnails/4299_00_witch-casting-spells-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5,
+        94
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24503,
+      "slug": "witch-casting-spells-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4300",
+      "presetNumber": 4300,
+      "label": "Bored female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is sitting on the floor, resting her head on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4300_bored-female-sitting-pose.pma",
+      "localScenePath": "scenes/4300_bored-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4300_00_bored-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4300_00_bored-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4300_00_bored-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23567,
+      "slug": "bored-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4301",
+      "presetNumber": 4301,
+      "label": "Bored female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is standing, her arms are crossed, she is looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4301_bored-female-standing-pose.pma",
+      "localScenePath": "scenes/4301_bored-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4301_00_bored-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4301_00_bored-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4301_00_bored-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23588,
+      "slug": "bored-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4302",
+      "presetNumber": 4302,
+      "label": "Bored sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is sitting on the chair at the table, resting her head on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4302_bored-sitting-pose.pma",
+      "localScenePath": "scenes/4302_bored-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4302_00_bored-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4302_00_bored-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4302_00_bored-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24457,
+      "slug": "bored-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4304",
+      "presetNumber": 4304,
+      "label": "Bored female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is sitting on the chair, looking to the left, bored pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4304_bored-female-pose.pma",
+      "localScenePath": "scenes/4304_bored-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4304_00_bored-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4304_00_bored-female-pose.png",
+          "localThumbnailPath": "thumbnails/4304_00_bored-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23782,
+      "slug": "bored-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4312",
+      "presetNumber": 4312,
+      "label": "Female standing despair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate female is standing and holding her head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4312_female-standing-despair-pose.pma",
+      "localScenePath": "scenes/4312_female-standing-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4312_00_female-standing-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4312_00_female-standing-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4312_00_female-standing-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23598,
+      "slug": "female-standing-despair-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4313",
+      "presetNumber": 4313,
+      "label": "Female sitting despair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate female is sitting on the ground and holding her head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4313_female-sitting-despair-pose.pma",
+      "localScenePath": "scenes/4313_female-sitting-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4313_00_female-sitting-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4313_00_female-sitting-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4313_00_female-sitting-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23579,
+      "slug": "female-sitting-despair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4315",
+      "presetNumber": 4315,
+      "label": "Desperate female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate, sad female is sitting on the bench, looking down, holding her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4315_desperate-female-sitting-pose.pma",
+      "localScenePath": "scenes/4315_desperate-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4315_00_desperate-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4315_00_desperate-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4315_00_desperate-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 24071,
+      "slug": "desperate-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4317",
+      "presetNumber": 4317,
+      "label": "Female kneeling despair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate, shocked female is kneeling, female despair pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4317_female-kneeling-despair-pose.pma",
+      "localScenePath": "scenes/4317_female-kneeling-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4317_00_female-kneeling-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4317_00_female-kneeling-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4317_00_female-kneeling-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23515,
+      "slug": "female-kneeling-despair-pose"
+    },
+    {
+      "id": "guo-scene-4319",
+      "presetNumber": 4319,
+      "label": "Desperate female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate female is kneeling, looking down, leaning on the ground with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4319_desperate-female-kneeling-pose.pma",
+      "localScenePath": "scenes/4319_desperate-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4319_00_desperate-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4319_00_desperate-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4319_00_desperate-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23536,
+      "slug": "desperate-female-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4320",
+      "presetNumber": 4320,
+      "label": "Desperate crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the ground and crying desperately, crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4320_desperate-crying-pose.pma",
+      "localScenePath": "scenes/4320_desperate-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4320_00_desperate-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4320_00_desperate-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4320_00_desperate-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23666,
+      "slug": "desperate-crying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4321",
+      "presetNumber": 4321,
+      "label": "Female sitting crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair and crying, holding her head, crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4321_female-sitting-crying-pose.pma",
+      "localScenePath": "scenes/4321_female-sitting-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4321_00_female-sitting-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4321_00_female-sitting-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4321_00_female-sitting-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23966,
+      "slug": "female-sitting-crying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4324",
+      "presetNumber": 4324,
+      "label": "Female standing crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and crying, female crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4324_female-standing-crying-pose.pma",
+      "localScenePath": "scenes/4324_female-standing-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4324_00_female-standing-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4324_00_female-standing-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4324_00_female-standing-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23531,
+      "slug": "female-standing-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

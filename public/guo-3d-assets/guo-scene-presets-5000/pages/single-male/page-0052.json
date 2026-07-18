@@ -1,0 +1,1122 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 51,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-3764",
+      "presetNumber": 3764,
+      "label": "Cowboy walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cowboy is walking, holding a revolver in his right hand, wearing a cowboy hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3764_cowboy-walking-pose.pma",
+      "localScenePath": "scenes/3764_cowboy-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3764_00_cowboy-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3764_00_cowboy-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3764_00_cowboy-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        150
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cowboy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2281930,
+      "slug": "cowboy-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3766",
+      "presetNumber": 3766,
+      "label": "Cowboy holding guns pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cowboy is standing, holding revolvers and aiming forward, cowboy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3766_cowboy-holding-guns-pose.pma",
+      "localScenePath": "scenes/3766_cowboy-holding-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3766_00_cowboy-holding-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3766_00_cowboy-holding-guns-pose.png",
+          "localThumbnailPath": "thumbnails/3766_00_cowboy-holding-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        150
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cowboy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2282344,
+      "slug": "cowboy-holding-guns-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3768",
+      "presetNumber": 3768,
+      "label": "Cowboy crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cowboy is crouching, wearing a cowboy hat and looking down, thinking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3768_cowboy-crouching-pose.pma",
+      "localScenePath": "scenes/3768_cowboy-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3768_00_cowboy-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3768_00_cowboy-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/3768_00_cowboy-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cowboy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2281318,
+      "slug": "cowboy-crouching-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3769",
+      "presetNumber": 3769,
+      "label": "Cowboy running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cowboy is running, holding a revolver in his right hand, wearing a cowboy hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3769_cowboy-running-pose.pma",
+      "localScenePath": "scenes/3769_cowboy-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3769_00_cowboy-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3769_00_cowboy-running-pose.png",
+          "localThumbnailPath": "thumbnails/3769_00_cowboy-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        150
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cowboy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2281913,
+      "slug": "cowboy-running-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3773",
+      "presetNumber": 3773,
+      "label": "Male couch sitting drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch, his legs are crossed, couch drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3773_male-couch-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3773_male-couch-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3773_00_male-couch-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3773_00_male-couch-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3773_00_male-couch-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035356,
+      "slug": "male-couch-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3776",
+      "presetNumber": 3776,
+      "label": "Male lying reading pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on the couch on his back, his legs are crossed and he is reading a book",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3776_male-lying-reading-pose.pma",
+      "localScenePath": "scenes/3776_male-lying-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3776_00_male-lying-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3776_00_male-lying-reading-pose.png",
+          "localThumbnailPath": "thumbnails/3776_00_male-lying-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1036401,
+      "slug": "male-lying-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3777",
+      "presetNumber": 3777,
+      "label": "Tired male lying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Tired male is lying on his stomach on the couch and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3777_tired-male-lying-pose.pma",
+      "localScenePath": "scenes/3777_tired-male-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3777_00_tired-male-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3777_00_tired-male-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3777_00_tired-male-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035922,
+      "slug": "tired-male-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3783",
+      "presetNumber": 3783,
+      "label": "Male playful jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is jumping playfully, clenching his fists, male playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3783_male-playful-jumping-pose.pma",
+      "localScenePath": "scenes/3783_male-playful-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3783_00_male-playful-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3783_00_male-playful-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3783_00_male-playful-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23740,
+      "slug": "male-playful-jumping-pose"
+    },
+    {
+      "id": "guo-scene-3784",
+      "presetNumber": 3784,
+      "label": "Happy male waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is standing and waving with his right hand, male playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3784_happy-male-waving-pose.pma",
+      "localScenePath": "scenes/3784_happy-male-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3784_00_happy-male-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3784_00_happy-male-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3784_00_happy-male-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23825,
+      "slug": "happy-male-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3790",
+      "presetNumber": 3790,
+      "label": "Wearing pirate hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his hip, wearing a pirate hat and adjusting it with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3790_wearing-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3790_wearing-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3790_00_wearing-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3790_00_wearing-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3790_00_wearing-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748221,
+      "slug": "wearing-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3791",
+      "presetNumber": 3791,
+      "label": "Pirate victory standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on top of a rock, wearing a pirate hat, holding his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3791_pirate-victory-standing-pose.pma",
+      "localScenePath": "scenes/3791_pirate-victory-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3791_00_pirate-victory-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3791_00_pirate-victory-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3791_00_pirate-victory-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 768729,
+      "slug": "pirate-victory-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3792",
+      "presetNumber": 3792,
+      "label": "Pirate standing looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, wearing a pirate hat, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3792_pirate-standing-looking-left-pose.pma",
+      "localScenePath": "scenes/3792_pirate-standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3792_00_pirate-standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3792_00_pirate-standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3792_00_pirate-standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748224,
+      "slug": "pirate-standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3794",
+      "presetNumber": 3794,
+      "label": "Pirate hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a pirate hat and holding a pirate sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3794_pirate-hat-pose.pma",
+      "localScenePath": "scenes/3794_pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3794_00_pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3794_00_pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3794_00_pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1138456,
+      "slug": "pirate-hat-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3799",
+      "presetNumber": 3799,
+      "label": "Adjusting pirate hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a pirate hat, adjusting it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3799_adjusting-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3799_adjusting-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3799_00_adjusting-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3799_00_adjusting-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3799_00_adjusting-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748262,
+      "slug": "adjusting-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3801",
+      "presetNumber": 3801,
+      "label": "Male happy victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, clenching his fists and looking up, male victory pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3801_male-happy-victory-pose.pma",
+      "localScenePath": "scenes/3801_male-happy-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3801_00_male-happy-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3801_00_male-happy-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3801_00_male-happy-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23740,
+      "slug": "male-happy-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3803",
+      "presetNumber": 3803,
+      "label": "Male showing muscles pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing victoriously, showing his muscles and holding his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3803_male-showing-muscles-pose.pma",
+      "localScenePath": "scenes/3803_male-showing-muscles-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3803_00_male-showing-muscles-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3803_00_male-showing-muscles-pose.png",
+          "localThumbnailPath": "thumbnails/3803_00_male-showing-muscles-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23732,
+      "slug": "male-showing-muscles-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3805",
+      "presetNumber": 3805,
+      "label": "Kneeling victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling victoriously, clenching his fists and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3805_kneeling-victory-pose.pma",
+      "localScenePath": "scenes/3805_kneeling-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3805_00_kneeling-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3805_00_kneeling-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3805_00_kneeling-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23742,
+      "slug": "kneeling-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3806",
+      "presetNumber": 3806,
+      "label": "Raising spear victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on top of the rock and raising his spear victoriously",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3806_raising-spear-victory-pose.pma",
+      "localScenePath": "scenes/3806_raising-spear-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3806_00_raising-spear-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3806_00_raising-spear-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3806_00_raising-spear-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 44745,
+      "slug": "raising-spear-victory-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3808",
+      "presetNumber": 3808,
+      "label": "Male victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and posing victoriously, male victory pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3808_male-victory-pose.pma",
+      "localScenePath": "scenes/3808_male-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3808_00_male-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3808_00_male-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3808_00_male-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23772,
+      "slug": "male-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3809",
+      "presetNumber": 3809,
+      "label": "Wizard victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing victoriously and raising his wizard staff, male victory pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3809_wizard-victory-pose.pma",
+      "localScenePath": "scenes/3809_wizard-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3809_00_wizard-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3809_00_wizard-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3809_00_wizard-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24337,
+      "slug": "wizard-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3820",
+      "presetNumber": 3820,
+      "label": "Male standing cool pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his hands are in his pockets, he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3820_male-standing-cool-pose.pma",
+      "localScenePath": "scenes/3820_male-standing-cool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3820_00_male-standing-cool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3820_00_male-standing-cool-pose.png",
+          "localThumbnailPath": "thumbnails/3820_00_male-standing-cool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cool",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23890,
+      "slug": "male-standing-cool-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3822",
+      "presetNumber": 3822,
+      "label": "Male leaning pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, leaning against the wall, his right hand is in his pocket, his legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3822_male-leaning-pose.pma",
+      "localScenePath": "scenes/3822_male-leaning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3822_00_male-leaning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3822_00_male-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/3822_00_male-leaning-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cool",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24211,
+      "slug": "male-leaning-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3824",
+      "presetNumber": 3824,
+      "label": "Male crouching cool pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and looking to the left, male cool pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3824_male-crouching-cool-pose.pma",
+      "localScenePath": "scenes/3824_male-crouching-cool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3824_00_male-crouching-cool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3824_00_male-crouching-cool-pose.png",
+          "localThumbnailPath": "thumbnails/3824_00_male-crouching-cool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cool",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23760,
+      "slug": "male-crouching-cool-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3826",
+      "presetNumber": 3826,
+      "label": "Male sitting cool pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the floor, looking to the left, male cool pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3826_male-sitting-cool-pose.pma",
+      "localScenePath": "scenes/3826_male-sitting-cool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3826_00_male-sitting-cool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3826_00_male-sitting-cool-pose.png",
+          "localThumbnailPath": "thumbnails/3826_00_male-sitting-cool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cool",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23815,
+      "slug": "male-sitting-cool-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

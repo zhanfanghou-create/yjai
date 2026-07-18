@@ -1,0 +1,1145 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 61,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1465",
+      "presetNumber": 1465,
+      "label": "Standing drinking male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his left hand on his hip and drinking from a glass, drinking reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1465_standing-drinking-male-pose.pma",
+      "localScenePath": "scenes/1465_standing-drinking-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1465_00_standing-drinking-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1465_00_standing-drinking-male-pose.png",
+          "localThumbnailPath": "thumbnails/1465_00_standing-drinking-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        75
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drinking",
+        "reference"
+      ],
+      "bytes": 24228,
+      "slug": "standing-drinking-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1466",
+      "presetNumber": 1466,
+      "label": "Holding wine glass female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed and holding a wine glass in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1466_holding-wine-glass-female-pose.pma",
+      "localScenePath": "scenes/1466_holding-wine-glass-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1466_00_holding-wine-glass-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1466_00_holding-wine-glass-female-pose.png",
+          "localThumbnailPath": "thumbnails/1466_00_holding-wine-glass-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drinking",
+        "reference"
+      ],
+      "bytes": 23962,
+      "slug": "holding-wine-glass-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1467",
+      "presetNumber": 1467,
+      "label": "Females toasting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and toasting before drinking, drinking reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1467_females-toasting-pose.pma",
+      "localScenePath": "scenes/1467_females-toasting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1467_00_females-toasting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1467_00_females-toasting-pose.png",
+          "localThumbnailPath": "thumbnails/1467_00_females-toasting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1467_01_females-toasting-pose.png",
+          "localThumbnailPath": "thumbnails/1467_01_females-toasting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drinking",
+        "reference"
+      ],
+      "bytes": 47063,
+      "slug": "females-toasting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1468",
+      "presetNumber": 1468,
+      "label": "Bar table drinking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting at the bar table and drinking from a wine glass, drinking reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1468_bar-table-drinking-pose.pma",
+      "localScenePath": "scenes/1468_bar-table-drinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1468_00_bar-table-drinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1468_00_bar-table-drinking-pose.png",
+          "localThumbnailPath": "thumbnails/1468_00_bar-table-drinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76,
+        77,
+        78
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drinking",
+        "reference"
+      ],
+      "bytes": 24870,
+      "slug": "bar-table-drinking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1469",
+      "presetNumber": 1469,
+      "label": "Female male drinking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing at the bar table in front of each other and drinking something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1469_female-male-drinking-pose.pma",
+      "localScenePath": "scenes/1469_female-male-drinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1469_00_female-male-drinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1469_00_female-male-drinking-pose.png",
+          "localThumbnailPath": "thumbnails/1469_00_female-male-drinking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1469_01_female-male-drinking-pose.png",
+          "localThumbnailPath": "thumbnails/1469_01_female-male-drinking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        75,
+        78
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drinking",
+        "reference"
+      ],
+      "bytes": 47843,
+      "slug": "female-male-drinking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1470",
+      "presetNumber": 1470,
+      "label": "Adjusting sombrero hat pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, adjusting her sombrero hat with her right hand, hat drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1470_adjusting-sombrero-hat-pose.pma",
+      "localScenePath": "scenes/1470_adjusting-sombrero-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1470_00_adjusting-sombrero-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1470_00_adjusting-sombrero-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1470_00_adjusting-sombrero-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        213
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24005,
+      "slug": "adjusting-sombrero-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1471",
+      "presetNumber": 1471,
+      "label": "Holding sombrero hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding his sombrero hat with his right hand, hat drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1471_holding-sombrero-hat-pose.pma",
+      "localScenePath": "scenes/1471_holding-sombrero-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1471_00_holding-sombrero-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1471_00_holding-sombrero-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1471_00_holding-sombrero-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        213
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24263,
+      "slug": "holding-sombrero-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1472",
+      "presetNumber": 1472,
+      "label": "Confident sombrero hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently with his arms crossed and wearing a big sombrero hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1472_confident-sombrero-hat-pose.pma",
+      "localScenePath": "scenes/1472_confident-sombrero-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1472_00_confident-sombrero-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1472_00_confident-sombrero-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1472_00_confident-sombrero-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        213
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24275,
+      "slug": "confident-sombrero-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1473",
+      "presetNumber": 1473,
+      "label": "Lying sombrero hat pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying down, resting and holding a sombrero hat on her head, covering her face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1473_lying-sombrero-hat-pose.pma",
+      "localScenePath": "scenes/1473_lying-sombrero-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1473_00_lying-sombrero-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1473_00_lying-sombrero-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1473_00_lying-sombrero-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        213
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23998,
+      "slug": "lying-sombrero-hat-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1474",
+      "presetNumber": 1474,
+      "label": "Wearing fedora hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and posing while wearing a fedora hat, his left hand is on his hip and adjusting the hat with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1474_wearing-fedora-hat-pose.pma",
+      "localScenePath": "scenes/1474_wearing-fedora-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1474_00_wearing-fedora-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1474_00_wearing-fedora-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1474_00_wearing-fedora-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        198
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24419,
+      "slug": "wearing-fedora-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1475",
+      "presetNumber": 1475,
+      "label": "Greeting politely hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is taking off his hat to greet someone politely, fedora hat drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1475_greeting-politely-hat-pose.pma",
+      "localScenePath": "scenes/1475_greeting-politely-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1475_00_greeting-politely-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1475_00_greeting-politely-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1475_00_greeting-politely-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        198
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24290,
+      "slug": "greeting-politely-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1476",
+      "presetNumber": 1476,
+      "label": "Male fedora hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a fedora hat, covering his face with his hat and posing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1476_male-fedora-hat-pose.pma",
+      "localScenePath": "scenes/1476_male-fedora-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1476_00_male-fedora-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1476_00_male-fedora-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1476_00_male-fedora-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        198
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24202,
+      "slug": "male-fedora-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1477",
+      "presetNumber": 1477,
+      "label": "Adjusting fedora hat pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, wearing a fedora hat and adjusting it with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1477_adjusting-fedora-hat-pose.pma",
+      "localScenePath": "scenes/1477_adjusting-fedora-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1477_00_adjusting-fedora-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1477_00_adjusting-fedora-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1477_00_adjusting-fedora-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        198
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23983,
+      "slug": "adjusting-fedora-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1478",
+      "presetNumber": 1478,
+      "label": "Magician hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male magician is casting a spell from the magician hat with his magic wand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1478_magician-hat-pose.pma",
+      "localScenePath": "scenes/1478_magician-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1478_00_magician-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1478_00_magician-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1478_00_magician-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        214
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24685,
+      "slug": "magician-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1479",
+      "presetNumber": 1479,
+      "label": "Taking off hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and taking off his magician hat with his left hand, hat drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1479_taking-off-hat-pose.pma",
+      "localScenePath": "scenes/1479_taking-off-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1479_00_taking-off-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1479_00_taking-off-hat-pose.png",
+          "localThumbnailPath": "thumbnails/1479_00_taking-off-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        214
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24469,
+      "slug": "taking-off-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1480",
+      "presetNumber": 1480,
+      "label": "Holding reading books pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding two books and reading one of them, reading reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1480_holding-reading-books-pose.pma",
+      "localScenePath": "scenes/1480_holding-reading-books-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1480_00_holding-reading-books-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1480_00_holding-reading-books-pose.png",
+          "localThumbnailPath": "thumbnails/1480_00_holding-reading-books-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        79,
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 28374,
+      "slug": "holding-reading-books-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1481",
+      "presetNumber": 1481,
+      "label": "Reading turning pages pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and reading a book, turning the pages with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1481_reading-turning-pages-pose.pma",
+      "localScenePath": "scenes/1481_reading-turning-pages-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1481_00_reading-turning-pages-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1481_00_reading-turning-pages-pose.png",
+          "localThumbnailPath": "thumbnails/1481_00_reading-turning-pages-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 27830,
+      "slug": "reading-turning-pages-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1482",
+      "presetNumber": 1482,
+      "label": "Sitting reading female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a high chair and reading a book in her left hand, reading reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1482_sitting-reading-female-pose.pma",
+      "localScenePath": "scenes/1482_sitting-reading-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1482_00_sitting-reading-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1482_00_sitting-reading-female-pose.png",
+          "localThumbnailPath": "thumbnails/1482_00_sitting-reading-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        77,
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 28247,
+      "slug": "sitting-reading-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1483",
+      "presetNumber": 1483,
+      "label": "Sitting reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and reading, holding the book with her right hand and turning the pages with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1483_sitting-reading-pose.pma",
+      "localScenePath": "scenes/1483_sitting-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1483_00_sitting-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1483_00_sitting-reading-pose.png",
+          "localThumbnailPath": "thumbnails/1483_00_sitting-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 24564,
+      "slug": "sitting-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1484",
+      "presetNumber": 1484,
+      "label": "Male standing reading pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding an open book with two hands, reading reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1484_male-standing-reading-pose.pma",
+      "localScenePath": "scenes/1484_male-standing-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1484_00_male-standing-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1484_00_male-standing-reading-pose.png",
+          "localThumbnailPath": "thumbnails/1484_00_male-standing-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 24224,
+      "slug": "male-standing-reading-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1485",
+      "presetNumber": 1485,
+      "label": "Lying reading female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying down and reading, leaning on her right hand and turning pages with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1485_lying-reading-female-pose.pma",
+      "localScenePath": "scenes/1485_lying-reading-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1485_00_lying-reading-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1485_00_lying-reading-female-pose.png",
+          "localThumbnailPath": "thumbnails/1485_00_lying-reading-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        79,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 24452,
+      "slug": "lying-reading-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1486",
+      "presetNumber": 1486,
+      "label": "Comfortable sitting reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and reading, holding the book with her right hand, reading reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1486_comfortable-sitting-reading-pose.pma",
+      "localScenePath": "scenes/1486_comfortable-sitting-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1486_00_comfortable-sitting-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1486_00_comfortable-sitting-reading-pose.png",
+          "localThumbnailPath": "thumbnails/1486_00_comfortable-sitting-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 24629,
+      "slug": "comfortable-sitting-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1487",
+      "presetNumber": 1487,
+      "label": "Lying reading pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on the couch and reading, holding the book with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1487_lying-reading-pose.pma",
+      "localScenePath": "scenes/1487_lying-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1487_00_lying-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1487_00_lying-reading-pose.png",
+          "localThumbnailPath": "thumbnails/1487_00_lying-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 25270,
+      "slug": "lying-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1488",
+      "presetNumber": 1488,
+      "label": "Male sitting reading",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair and reading, holding the book with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1488_male-sitting-reading.pma",
+      "localScenePath": "scenes/1488_male-sitting-reading.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1488_00_male-sitting-reading.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1488_00_male-sitting-reading.png",
+          "localThumbnailPath": "thumbnails/1488_00_male-sitting-reading.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 24933,
+      "slug": "male-sitting-reading",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1127 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 88,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2113",
+      "presetNumber": 2113,
+      "label": "Anime couch sleeping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his right side on the couch with pillows and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2113_anime-couch-sleeping-pose.pma",
+      "localScenePath": "scenes/2113_anime-couch-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2113_00_anime-couch-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2113_00_anime-couch-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2113_00_anime-couch-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 25295,
+      "slug": "anime-couch-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2114",
+      "presetNumber": 2114,
+      "label": "Anime male lying back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his back on the couch and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2114_anime-male-lying-back-pose.pma",
+      "localScenePath": "scenes/2114_anime-male-lying-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2114_00_anime-male-lying-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2114_00_anime-male-lying-back-pose.png",
+          "localThumbnailPath": "thumbnails/2114_00_anime-male-lying-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 24724,
+      "slug": "anime-male-lying-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2115",
+      "presetNumber": 2115,
+      "label": "Anime female lying sleeping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying on her right side on the couch with pillows and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2115_anime-female-lying-sleeping-pose.pma",
+      "localScenePath": "scenes/2115_anime-female-lying-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2115_00_anime-female-lying-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2115_00_anime-female-lying-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2115_00_anime-female-lying-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 25115,
+      "slug": "anime-female-lying-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2116",
+      "presetNumber": 2116,
+      "label": "Anime reading sleeping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying on her back on the couch and holding a book while sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2116_anime-reading-sleeping-pose.pma",
+      "localScenePath": "scenes/2116_anime-reading-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2116_00_anime-reading-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2116_00_anime-reading-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2116_00_anime-reading-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        80,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 25876,
+      "slug": "anime-reading-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2117",
+      "presetNumber": 2117,
+      "label": "Anime crossed legs sleeping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying on her back, her legs are crossed, lying on the bed and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2117_anime-crossed-legs-sleeping-pose.pma",
+      "localScenePath": "scenes/2117_anime-crossed-legs-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2117_00_anime-crossed-legs-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2117_00_anime-crossed-legs-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2117_00_anime-crossed-legs-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 492612,
+      "slug": "anime-crossed-legs-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2118",
+      "presetNumber": 2118,
+      "label": "Anime sleeping bed pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his back on the bed and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2118_anime-sleeping-bed-pose.pma",
+      "localScenePath": "scenes/2118_anime-sleeping-bed-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2118_00_anime-sleeping-bed-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2118_00_anime-sleeping-bed-pose.png",
+          "localThumbnailPath": "thumbnails/2118_00_anime-sleeping-bed-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 492784,
+      "slug": "anime-sleeping-bed-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2119",
+      "presetNumber": 2119,
+      "label": "Anime hugging sleeping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male couple is sleeping together, hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2119_anime-hugging-sleeping-pose.pma",
+      "localScenePath": "scenes/2119_anime-hugging-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2119_00_anime-hugging-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2119_00_anime-hugging-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2119_00_anime-hugging-sleeping-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2119_01_anime-hugging-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2119_01_anime-hugging-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 515294,
+      "slug": "anime-hugging-sleeping-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2120",
+      "presetNumber": 2120,
+      "label": "Anime crossed legs feet pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting in the armchair with her legs crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2120_anime-crossed-legs-feet-pose.pma",
+      "localScenePath": "scenes/2120_anime-crossed-legs-feet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2120_00_anime-crossed-legs-feet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2120_00_anime-crossed-legs-feet-pose.png",
+          "localThumbnailPath": "thumbnails/2120_00_anime-crossed-legs-feet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24191,
+      "slug": "anime-crossed-legs-feet-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2121",
+      "presetNumber": 2121,
+      "label": "Anime straight legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting with straight legs, anime female feet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2121_anime-straight-legs-pose.pma",
+      "localScenePath": "scenes/2121_anime-straight-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2121_00_anime-straight-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2121_00_anime-straight-legs-pose.png",
+          "localThumbnailPath": "thumbnails/2121_00_anime-straight-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24151,
+      "slug": "anime-straight-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2122",
+      "presetNumber": 2122,
+      "label": "Anime lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying on her stomach with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2122_anime-lying-pose.pma",
+      "localScenePath": "scenes/2122_anime-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2122_00_anime-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2122_00_anime-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2122_00_anime-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24039,
+      "slug": "anime-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2123",
+      "presetNumber": 2123,
+      "label": "Anime raising legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting in the armchair and raising her legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2123_anime-raising-legs-pose.pma",
+      "localScenePath": "scenes/2123_anime-raising-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2123_00_anime-raising-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2123_00_anime-raising-legs-pose.png",
+          "localThumbnailPath": "thumbnails/2123_00_anime-raising-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24438,
+      "slug": "anime-raising-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2124",
+      "presetNumber": 2124,
+      "label": "Anime showing feet pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting with straight legs, showing her feet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2124_anime-showing-feet-pose.pma",
+      "localScenePath": "scenes/2124_anime-showing-feet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2124_00_anime-showing-feet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2124_00_anime-showing-feet-pose.png",
+          "localThumbnailPath": "thumbnails/2124_00_anime-showing-feet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24027,
+      "slug": "anime-showing-feet-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2125",
+      "presetNumber": 2125,
+      "label": "Anime tiptoe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing on her toes, anime tiptoe feet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2125_anime-tiptoe-pose.pma",
+      "localScenePath": "scenes/2125_anime-tiptoe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2125_00_anime-tiptoe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2125_00_anime-tiptoe-pose.png",
+          "localThumbnailPath": "thumbnails/2125_00_anime-tiptoe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24091,
+      "slug": "anime-tiptoe-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2126",
+      "presetNumber": 2126,
+      "label": "Anime resting legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting in the armchair and resting her legs on a small table",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2126_anime-resting-legs-pose.pma",
+      "localScenePath": "scenes/2126_anime-resting-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2126_00_anime-resting-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2126_00_anime-resting-legs-pose.png",
+          "localThumbnailPath": "thumbnails/2126_00_anime-resting-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        107,
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24667,
+      "slug": "anime-resting-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2127",
+      "presetNumber": 2127,
+      "label": "Anime ballerina feet pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is dancing ballet, anime female ballerina feet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2127_anime-ballerina-feet-pose.pma",
+      "localScenePath": "scenes/2127_anime-ballerina-feet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2127_00_anime-ballerina-feet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2127_00_anime-ballerina-feet-pose.png",
+          "localThumbnailPath": "thumbnails/2127_00_anime-ballerina-feet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 23869,
+      "slug": "anime-ballerina-feet-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2128",
+      "presetNumber": 2128,
+      "label": "Anime right foot pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting and showing her right foot, anime feet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2128_anime-right-foot-pose.pma",
+      "localScenePath": "scenes/2128_anime-right-foot-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2128_00_anime-right-foot-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2128_00_anime-right-foot-pose.png",
+          "localThumbnailPath": "thumbnails/2128_00_anime-right-foot-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 23847,
+      "slug": "anime-right-foot-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2129",
+      "presetNumber": 2129,
+      "label": "Anime male feet pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is sitting on the couch and resting his legs, anime male feet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2129_anime-male-feet-pose.pma",
+      "localScenePath": "scenes/2129_anime-male-feet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2129_00_anime-male-feet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2129_00_anime-male-feet-pose.png",
+          "localThumbnailPath": "thumbnails/2129_00_anime-male-feet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        3,
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24752,
+      "slug": "anime-male-feet-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2130",
+      "presetNumber": 2130,
+      "label": "Male aiming pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a pistol in his right hand and aiming to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2130_male-aiming-pistol-pose.pma",
+      "localScenePath": "scenes/2130_male-aiming-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2130_00_male-aiming-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2130_00_male-aiming-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/2130_00_male-aiming-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24198,
+      "slug": "male-aiming-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2131",
+      "presetNumber": 2131,
+      "label": "Male walking pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking, holding a pistol in his left hand, holding pistol pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2131_male-walking-pistol-pose.pma",
+      "localScenePath": "scenes/2131_male-walking-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2131_00_male-walking-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2131_00_male-walking-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/2131_00_male-walking-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24197,
+      "slug": "male-walking-pistol-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2132",
+      "presetNumber": 2132,
+      "label": "Male landing pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing from a height, holding a pistol in his right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2132_male-landing-pistol-pose.pma",
+      "localScenePath": "scenes/2132_male-landing-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2132_00_male-landing-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2132_00_male-landing-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/2132_00_male-landing-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24228,
+      "slug": "male-landing-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2133",
+      "presetNumber": 2133,
+      "label": "Male pistol action pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is falling backwards while aiming the pistol, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2133_male-pistol-action-pose.pma",
+      "localScenePath": "scenes/2133_male-pistol-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2133_00_male-pistol-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2133_00_male-pistol-action-pose.png",
+          "localThumbnailPath": "thumbnails/2133_00_male-pistol-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24252,
+      "slug": "male-pistol-action-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2134",
+      "presetNumber": 2134,
+      "label": "Male pistol running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a pistol in his right hand and running, action pistol pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2134_male-pistol-running-pose.pma",
+      "localScenePath": "scenes/2134_male-pistol-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2134_00_male-pistol-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2134_00_male-pistol-running-pose.png",
+          "localThumbnailPath": "thumbnails/2134_00_male-pistol-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24210,
+      "slug": "male-pistol-running-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2135",
+      "presetNumber": 2135,
+      "label": "Female pistol standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her left hand is on her hip and holding a pistol in her right hand, pistol pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2135_female-pistol-standing-pose.pma",
+      "localScenePath": "scenes/2135_female-pistol-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2135_00_female-pistol-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2135_00_female-pistol-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2135_00_female-pistol-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23545,
+      "slug": "female-pistol-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2136",
+      "presetNumber": 2136,
+      "label": "Female holding pistol aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a pistol with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2136_female-holding-pistol-aiming-pose.pma",
+      "localScenePath": "scenes/2136_female-holding-pistol-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2136_00_female-holding-pistol-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2136_00_female-holding-pistol-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2136_00_female-holding-pistol-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23929,
+      "slug": "female-holding-pistol-aiming-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1161 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 26,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0625",
+      "presetNumber": 625,
+      "label": "Female goal kick pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female soccer player is kicking the ball into the goal pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0625_female-goal-kick-pose.pma",
+      "localScenePath": "scenes/0625_female-goal-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0625_00_female-goal-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0625_00_female-goal-kick-pose.png",
+          "localThumbnailPath": "thumbnails/0625_00_female-goal-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "soccer"
+      ],
+      "bytes": 23960,
+      "slug": "female-goal-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0626",
+      "presetNumber": 626,
+      "label": "Soccer champion pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male champion is standing confidently with soccer ball pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0626_soccer-champion-pose.pma",
+      "localScenePath": "scenes/0626_soccer-champion-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0626_00_soccer-champion-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0626_00_soccer-champion-pose.png",
+          "localThumbnailPath": "thumbnails/0626_00_soccer-champion-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "soccer"
+      ],
+      "bytes": 24172,
+      "slug": "soccer-champion-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0627",
+      "presetNumber": 627,
+      "label": "Female soccer game ",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female soccer game scene, 3 females are playing soccer",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0627_female-soccer-game.pma",
+      "localScenePath": "scenes/0627_female-soccer-game.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0627_00_female-soccer-game.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0627_00_female-soccer-game.png",
+          "localThumbnailPath": "thumbnails/0627_00_female-soccer-game.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0627_01_female-soccer-game.png",
+          "localThumbnailPath": "thumbnails/0627_01_female-soccer-game.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0627_02_female-soccer-game.png",
+          "localThumbnailPath": "thumbnails/0627_02_female-soccer-game.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "soccer"
+      ],
+      "bytes": 69168,
+      "slug": "female-soccer-game",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0628",
+      "presetNumber": 628,
+      "label": "Male soccer game",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Male soccer game scene, 3 females are playing soccer",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0628_male-soccer-game.pma",
+      "localScenePath": "scenes/0628_male-soccer-game.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0628_00_male-soccer-game.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0628_00_male-soccer-game.png",
+          "localThumbnailPath": "thumbnails/0628_00_male-soccer-game.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0628_01_male-soccer-game.png",
+          "localThumbnailPath": "thumbnails/0628_01_male-soccer-game.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0628_02_male-soccer-game.png",
+          "localThumbnailPath": "thumbnails/0628_02_male-soccer-game.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "soccer"
+      ],
+      "bytes": 69905,
+      "slug": "male-soccer-game",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0629",
+      "presetNumber": 629,
+      "label": "Soccer ball tricks pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three males are standing and playing tricks with the soccer ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0629_soccer-ball-tricks-pose.pma",
+      "localScenePath": "scenes/0629_soccer-ball-tricks-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0629_00_soccer-ball-tricks-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0629_00_soccer-ball-tricks-pose.png",
+          "localThumbnailPath": "thumbnails/0629_00_soccer-ball-tricks-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0629_01_soccer-ball-tricks-pose.png",
+          "localThumbnailPath": "thumbnails/0629_01_soccer-ball-tricks-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0629_02_soccer-ball-tricks-pose.png",
+          "localThumbnailPath": "thumbnails/0629_02_soccer-ball-tricks-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "soccer"
+      ],
+      "bytes": 70820,
+      "slug": "soccer-ball-tricks-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0630",
+      "presetNumber": 630,
+      "label": "Skeleton resting coffin pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is resting in the coffin pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0630_skeleton-resting-coffin-pose.pma",
+      "localScenePath": "scenes/0630_skeleton-resting-coffin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0630_00_skeleton-resting-coffin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0630_00_skeleton-resting-coffin-pose.png",
+          "localThumbnailPath": "thumbnails/0630_00_skeleton-resting-coffin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23668,
+      "slug": "skeleton-resting-coffin-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0631",
+      "presetNumber": 631,
+      "label": "Walking slowly skeleton pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is walking slowly forward and haunting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0631_walking-slowly-skeleton-pose.pma",
+      "localScenePath": "scenes/0631_walking-slowly-skeleton-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0631_00_walking-slowly-skeleton-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0631_00_walking-slowly-skeleton-pose.png",
+          "localThumbnailPath": "thumbnails/0631_00_walking-slowly-skeleton-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23601,
+      "slug": "walking-slowly-skeleton-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0632",
+      "presetNumber": 632,
+      "label": "Crawling skeleton pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is crawling and haunting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0632_crawling-skeleton-pose.pma",
+      "localScenePath": "scenes/0632_crawling-skeleton-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0632_00_crawling-skeleton-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0632_00_crawling-skeleton-pose.png",
+          "localThumbnailPath": "thumbnails/0632_00_crawling-skeleton-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23426,
+      "slug": "crawling-skeleton-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0633",
+      "presetNumber": 633,
+      "label": "Skeleton gun pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing and aiming a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0633_skeleton-gun-pose.pma",
+      "localScenePath": "scenes/0633_skeleton-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0633_00_skeleton-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0633_00_skeleton-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0633_00_skeleton-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23954,
+      "slug": "skeleton-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0634",
+      "presetNumber": 634,
+      "label": "Praying skeleton pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton on his knees looking up and praying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0634_praying-skeleton-pose.pma",
+      "localScenePath": "scenes/0634_praying-skeleton-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0634_00_praying-skeleton-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0634_00_praying-skeleton-pose.png",
+          "localThumbnailPath": "thumbnails/0634_00_praying-skeleton-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23522,
+      "slug": "praying-skeleton-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0635",
+      "presetNumber": 635,
+      "label": "Skeletons swords attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two skeletons with swords ready to attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0635_skeletons-swords-attack-pose.pma",
+      "localScenePath": "scenes/0635_skeletons-swords-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0635_00_skeletons-swords-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0635_00_skeletons-swords-attack-pose.png",
+          "localThumbnailPath": "thumbnails/0635_00_skeletons-swords-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0635_01_skeletons-swords-attack-pose.png",
+          "localThumbnailPath": "thumbnails/0635_01_skeletons-swords-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        236
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 47245,
+      "slug": "skeletons-swords-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0636",
+      "presetNumber": 636,
+      "label": "Warrior skeleton pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing and holding a sword and shield pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0636_warrior-skeleton-pose.pma",
+      "localScenePath": "scenes/0636_warrior-skeleton-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0636_00_warrior-skeleton-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0636_00_warrior-skeleton-pose.png",
+          "localThumbnailPath": "thumbnails/0636_00_warrior-skeleton-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        156,
+        237
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 24366,
+      "slug": "warrior-skeleton-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0637",
+      "presetNumber": 637,
+      "label": "Dancing skeletons pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two skeletons are dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0637_dancing-skeletons-pose.pma",
+      "localScenePath": "scenes/0637_dancing-skeletons-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0637_00_dancing-skeletons-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0637_00_dancing-skeletons-pose.png",
+          "localThumbnailPath": "thumbnails/0637_00_dancing-skeletons-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0637_01_dancing-skeletons-pose.png",
+          "localThumbnailPath": "thumbnails/0637_01_dancing-skeletons-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 46029,
+      "slug": "dancing-skeletons-pose",
+      "tagIds": [
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0638",
+      "presetNumber": 638,
+      "label": "Walking skeleton pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is walking calmly pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0638_walking-skeleton-pose.pma",
+      "localScenePath": "scenes/0638_walking-skeleton-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0638_00_walking-skeleton-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0638_00_walking-skeleton-pose.png",
+          "localThumbnailPath": "thumbnails/0638_00_walking-skeleton-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23404,
+      "slug": "walking-skeleton-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0639",
+      "presetNumber": 639,
+      "label": "Angry skeleton tantrum pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Angry skeleton is having a tantrum pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0639_angry-skeleton-tantrum-pose.pma",
+      "localScenePath": "scenes/0639_angry-skeleton-tantrum-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0639_00_angry-skeleton-tantrum-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0639_00_angry-skeleton-tantrum-pose.png",
+          "localThumbnailPath": "thumbnails/0639_00_angry-skeleton-tantrum-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pose",
+        "skeleton"
+      ],
+      "bytes": 23462,
+      "slug": "angry-skeleton-tantrum-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0640",
+      "presetNumber": 640,
+      "label": "Female casual walk pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0640_female-casual-walk-pose.pma",
+      "localScenePath": "scenes/0640_female-casual-walk-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0640_00_female-casual-walk-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0640_00_female-casual-walk-pose.png",
+          "localThumbnailPath": "thumbnails/0640_00_female-casual-walk-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 23635,
+      "slug": "female-casual-walk-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0641",
+      "presetNumber": 641,
+      "label": "Male casual walk pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking casually pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0641_male-casual-walk-pose.pma",
+      "localScenePath": "scenes/0641_male-casual-walk-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0641_00_male-casual-walk-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0641_00_male-casual-walk-pose.png",
+          "localThumbnailPath": "thumbnails/0641_00_male-casual-walk-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 23902,
+      "slug": "male-casual-walk-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0642",
+      "presetNumber": 642,
+      "label": "Female hands pocket pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually with her hands in her pockets pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0642_female-hands-pocket-pose.pma",
+      "localScenePath": "scenes/0642_female-hands-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0642_00_female-hands-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0642_00_female-hands-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/0642_00_female-hands-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 23452,
+      "slug": "female-hands-pocket-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0643",
+      "presetNumber": 643,
+      "label": "Male hands pocket pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking casually with his hands in his pockets pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0643_male-hands-pocket-pose.pma",
+      "localScenePath": "scenes/0643_male-hands-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0643_00_male-hands-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0643_00_male-hands-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/0643_00_male-hands-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 23722,
+      "slug": "male-hands-pocket-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0644",
+      "presetNumber": 644,
+      "label": "Female stairs walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking up the stairs pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0644_female-stairs-walking-pose.pma",
+      "localScenePath": "scenes/0644_female-stairs-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0644_00_female-stairs-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0644_00_female-stairs-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0644_00_female-stairs-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 27696,
+      "slug": "female-stairs-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0645",
+      "presetNumber": 645,
+      "label": "Male angry walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is walking forward pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0645_male-angry-walking-pose.pma",
+      "localScenePath": "scenes/0645_male-angry-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0645_00_male-angry-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0645_00_male-angry-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0645_00_male-angry-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 23688,
+      "slug": "male-angry-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0646",
+      "presetNumber": 646,
+      "label": "Walking couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is walking together pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0646_walking-couple-pose.pma",
+      "localScenePath": "scenes/0646_walking-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0646_00_walking-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0646_00_walking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/0646_00_walking-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0646_01_walking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/0646_01_walking-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 46430,
+      "slug": "walking-couple-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0647",
+      "presetNumber": 647,
+      "label": "Walking female pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female is walking forward - burst mode",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0647_walking-female-pose.pma",
+      "localScenePath": "scenes/0647_walking-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0647_00_walking-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0647_00_walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/0647_00_walking-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0647_01_walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/0647_01_walking-female-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0647_02_walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/0647_02_walking-female-pose.png"
+        },
+        {
+          "index": 3,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0647_03_walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/0647_03_walking-female-pose.png"
+        },
+        {
+          "index": 4,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0647_04_walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/0647_04_walking-female-pose.png"
+        }
+      ],
+      "modelCount": 5,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 114478,
+      "slug": "walking-female-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0648",
+      "presetNumber": 648,
+      "label": "Walking phone pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male is walking together while they are both on the phone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0648_walking-phone-pose.pma",
+      "localScenePath": "scenes/0648_walking-phone-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0648_00_walking-phone-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0648_00_walking-phone-pose.png",
+          "localThumbnailPath": "thumbnails/0648_00_walking-phone-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0648_01_walking-phone-pose.png",
+          "localThumbnailPath": "thumbnails/0648_01_walking-phone-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 47477,
+      "slug": "walking-phone-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

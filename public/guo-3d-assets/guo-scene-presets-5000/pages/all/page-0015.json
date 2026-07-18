@@ -1,0 +1,1080 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 14,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0337",
+      "presetNumber": 337,
+      "label": "Two males karate pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0337_two-males-karate-pose.pma",
+      "localScenePath": "scenes/0337_two-males-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0337_00_two-males-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0337_00_two-males-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0337_00_two-males-karate-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0337_01_two-males-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0337_01_two-males-karate-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 46528,
+      "slug": "two-males-karate-pose"
+    },
+    {
+      "id": "guo-scene-0338",
+      "presetNumber": 338,
+      "label": "Female karate pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with her right leg in the air karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0338_female-karate-pose.pma",
+      "localScenePath": "scenes/0338_female-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0338_00_female-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0338_00_female-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0338_00_female-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23404,
+      "slug": "female-karate-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0339",
+      "presetNumber": 339,
+      "label": "Female fight karate pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female ready to fight karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0339_female-fight-karate-pose.pma",
+      "localScenePath": "scenes/0339_female-fight-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0339_00_female-fight-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0339_00_female-fight-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0339_00_female-fight-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23444,
+      "slug": "female-fight-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0340",
+      "presetNumber": 340,
+      "label": "Preparing punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is preparing for a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0340_preparing-punch-pose.pma",
+      "localScenePath": "scenes/0340_preparing-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0340_00_preparing-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0340_00_preparing-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0340_00_preparing-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 23637,
+      "slug": "preparing-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0341",
+      "presetNumber": 341,
+      "label": "Male air punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps into the air and punches pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0341_male-air-punch-pose.pma",
+      "localScenePath": "scenes/0341_male-air-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0341_00_male-air-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0341_00_male-air-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0341_00_male-air-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 23696,
+      "slug": "male-air-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0342",
+      "presetNumber": 342,
+      "label": "Male punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is ready to fight, preparing to give a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0342_male-punch-pose.pma",
+      "localScenePath": "scenes/0342_male-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0342_00_male-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0342_00_male-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0342_00_male-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 24014,
+      "slug": "male-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0343",
+      "presetNumber": 343,
+      "label": "Female punch pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is ready to fight, preparing to give a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0343_female-punch-pose.pma",
+      "localScenePath": "scenes/0343_female-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0343_00_female-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0343_00_female-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0343_00_female-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 23423,
+      "slug": "female-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0344",
+      "presetNumber": 344,
+      "label": "Female air punch pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female jumps into the air and punches pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0344_female-air-punch-pose.pma",
+      "localScenePath": "scenes/0344_female-air-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0344_00_female-air-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0344_00_female-air-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0344_00_female-air-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 23423,
+      "slug": "female-air-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0345",
+      "presetNumber": 345,
+      "label": "Dodges punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are fighting, female dodges the punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0345_dodges-punch-pose.pma",
+      "localScenePath": "scenes/0345_dodges-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0345_00_dodges-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0345_00_dodges-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0345_00_dodges-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0345_01_dodges-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0345_01_dodges-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 46010,
+      "slug": "dodges-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0346",
+      "presetNumber": 346,
+      "label": "Head punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting, one hits the other on the head pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0346_head-punch-pose.pma",
+      "localScenePath": "scenes/0346_head-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0346_00_head-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0346_00_head-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0346_00_head-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0346_01_head-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0346_01_head-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 46538,
+      "slug": "head-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0347",
+      "presetNumber": 347,
+      "label": "Falling punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting, one falls backwards after a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0347_falling-punch-pose.pma",
+      "localScenePath": "scenes/0347_falling-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0347_00_falling-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0347_00_falling-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0347_00_falling-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0347_01_falling-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0347_01_falling-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 46557,
+      "slug": "falling-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0348",
+      "presetNumber": 348,
+      "label": "High punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are fighting, one jumps high to give a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0348_high-punch-pose.pma",
+      "localScenePath": "scenes/0348_high-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0348_00_high-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0348_00_high-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0348_00_high-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0348_01_high-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0348_01_high-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 45991,
+      "slug": "high-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0349",
+      "presetNumber": 349,
+      "label": "Female male punch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, female gives a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0349_female-male-punch-pose.pma",
+      "localScenePath": "scenes/0349_female-male-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0349_00_female-male-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0349_00_female-male-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0349_00_female-male-punch-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0349_01_female-male-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0349_01_female-male-punch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 46412,
+      "slug": "female-male-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0350",
+      "presetNumber": 350,
+      "label": "Ready fight anime pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is ready to fight in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0350_ready-fight-anime-pose.pma",
+      "localScenePath": "scenes/0350_ready-fight-anime-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0350_00_ready-fight-anime-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0350_00_ready-fight-anime-pose.png",
+          "localThumbnailPath": "thumbnails/0350_00_ready-fight-anime-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 23875,
+      "slug": "ready-fight-anime-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0351",
+      "presetNumber": 351,
+      "label": "Anime female katana attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female with a katana, ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0351_anime-female-katana-attack-pose.pma",
+      "localScenePath": "scenes/0351_anime-female-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0351_00_anime-female-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0351_00_anime-female-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/0351_00_anime-female-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 24149,
+      "slug": "anime-female-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0352",
+      "presetNumber": 352,
+      "label": "Anime katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female in the air with a katana pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0352_anime-katana-pose.pma",
+      "localScenePath": "scenes/0352_anime-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0352_00_anime-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0352_00_anime-katana-pose.png",
+          "localThumbnailPath": "thumbnails/0352_00_anime-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 24187,
+      "slug": "anime-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0353",
+      "presetNumber": 353,
+      "label": "Anime female sai pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female with sai, ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0353_anime-female-sai-pose.pma",
+      "localScenePath": "scenes/0353_anime-female-sai-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0353_00_anime-female-sai-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0353_00_anime-female-sai-pose.png",
+          "localThumbnailPath": "thumbnails/0353_00_anime-female-sai-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        211
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 24767,
+      "slug": "anime-female-sai-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0354",
+      "presetNumber": 354,
+      "label": "Anime jump gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female jumps backwards and fires the gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0354_anime-jump-gun-pose.pma",
+      "localScenePath": "scenes/0354_anime-jump-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0354_00_anime-jump-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0354_00_anime-jump-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0354_00_anime-jump-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 24446,
+      "slug": "anime-jump-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0355",
+      "presetNumber": 355,
+      "label": "Anime aims gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female stands and aims the gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0355_anime-aims-gun-pose.pma",
+      "localScenePath": "scenes/0355_anime-aims-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0355_00_anime-aims-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0355_00_anime-aims-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0355_00_anime-aims-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 24677,
+      "slug": "anime-aims-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0356",
+      "presetNumber": 356,
+      "label": "Female air kicking fighting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female kicking in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0356_female-air-kicking-fighting-pose.pma",
+      "localScenePath": "scenes/0356_female-air-kicking-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0356_00_female-air-kicking-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0356_00_female-air-kicking-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0356_00_female-air-kicking-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 23813,
+      "slug": "female-air-kicking-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0357",
+      "presetNumber": 357,
+      "label": "Male air kicking fighting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male kicking in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0357_male-air-kicking-fighting-pose.pma",
+      "localScenePath": "scenes/0357_male-air-kicking-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0357_00_male-air-kicking-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0357_00_male-air-kicking-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/0357_00_male-air-kicking-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 23676,
+      "slug": "male-air-kicking-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0358",
+      "presetNumber": 358,
+      "label": "Standing ready fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male standing, ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0358_standing-ready-fight-pose.pma",
+      "localScenePath": "scenes/0358_standing-ready-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0358_00_standing-ready-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0358_00_standing-ready-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0358_00_standing-ready-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 23402,
+      "slug": "standing-ready-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0359",
+      "presetNumber": 359,
+      "label": "Calm ready fight pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Calm anime female is ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0359_calm-ready-fight-pose.pma",
+      "localScenePath": "scenes/0359_calm-ready-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0359_00_calm-ready-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0359_00_calm-ready-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0359_00_calm-ready-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "action"
+      ],
+      "bytes": 23849,
+      "slug": "calm-ready-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0360",
+      "presetNumber": 360,
+      "label": "Couple walking together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple walking together pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0360_couple-walking-together-pose.pma",
+      "localScenePath": "scenes/0360_couple-walking-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0360_00_couple-walking-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0360_00_couple-walking-together-pose.png",
+          "localThumbnailPath": "thumbnails/0360_00_couple-walking-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0360_01_couple-walking-together-pose.png",
+          "localThumbnailPath": "thumbnails/0360_01_couple-walking-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "couple",
+        "drawing"
+      ],
+      "bytes": 46203,
+      "slug": "couple-walking-together-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1182 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 171,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4105",
+      "presetNumber": 4105,
+      "label": "Male sitting crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair casually, his legs are crossed, male chair sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4105_male-sitting-crossed-legs-pose.pma",
+      "localScenePath": "scenes/4105_male-sitting-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4105_00_male-sitting-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4105_00_male-sitting-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4105_00_male-sitting-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24238,
+      "slug": "male-sitting-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4106",
+      "presetNumber": 4106,
+      "label": "Female kneeling sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees, holding her legs, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4106_female-kneeling-sitting-pose.pma",
+      "localScenePath": "scenes/4106_female-kneeling-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4106_00_female-kneeling-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4106_00_female-kneeling-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4106_00_female-kneeling-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23535,
+      "slug": "female-kneeling-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4107",
+      "presetNumber": 4107,
+      "label": "Bar stool sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on bar stools, couple different sitting poses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4107_bar-stool-sitting-pose.pma",
+      "localScenePath": "scenes/4107_bar-stool-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4107_00_bar-stool-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4107_00_bar-stool-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4107_00_bar-stool-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4107_01_bar-stool-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4107_01_bar-stool-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47490,
+      "slug": "bar-stool-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4108",
+      "presetNumber": 4108,
+      "label": "Couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the floor on cushions and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4108_couple-sitting-pose.pma",
+      "localScenePath": "scenes/4108_couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4108_00_couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4108_00_couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4108_00_couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4108_01_couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4108_01_couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47530,
+      "slug": "couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4109",
+      "presetNumber": 4109,
+      "label": "Couple couch sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch, looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4109_couple-couch-sitting-pose.pma",
+      "localScenePath": "scenes/4109_couple-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4109_00_couple-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4109_00_couple-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4109_00_couple-couch-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4109_01_couple-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4109_01_couple-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "different",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47030,
+      "slug": "couple-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4110",
+      "presetNumber": 4110,
+      "label": "Female legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, holding her hips and showing her legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4110_female-legs-pose.pma",
+      "localScenePath": "scenes/4110_female-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4110_00_female-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4110_00_female-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4110_00_female-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23482,
+      "slug": "female-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4111",
+      "presetNumber": 4111,
+      "label": "Male crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his arms and legs crossed, male legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4111_male-crossed-legs-pose.pma",
+      "localScenePath": "scenes/4111_male-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4111_00_male-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4111_00_male-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4111_00_male-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23704,
+      "slug": "male-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4112",
+      "presetNumber": 4112,
+      "label": "Female tiptoe legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute female is standing on tiptoe, female legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4112_female-tiptoe-legs-pose.pma",
+      "localScenePath": "scenes/4112_female-tiptoe-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4112_00_female-tiptoe-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4112_00_female-tiptoe-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4112_00_female-tiptoe-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23601,
+      "slug": "female-tiptoe-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4113",
+      "presetNumber": 4113,
+      "label": "Male karate leg pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male karate legs pose, male legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4113_male-karate-leg-pose.pma",
+      "localScenePath": "scenes/4113_male-karate-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4113_00_male-karate-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4113_00_male-karate-leg-pose.png",
+          "localThumbnailPath": "thumbnails/4113_00_male-karate-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23819,
+      "slug": "male-karate-leg-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4114",
+      "presetNumber": 4114,
+      "label": "Female crouching legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and looking up, female legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4114_female-crouching-legs-pose.pma",
+      "localScenePath": "scenes/4114_female-crouching-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4114_00_female-crouching-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4114_00_female-crouching-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4114_00_female-crouching-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23537,
+      "slug": "female-crouching-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4115",
+      "presetNumber": 4115,
+      "label": "Female walking legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, female legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4115_female-walking-legs-pose.pma",
+      "localScenePath": "scenes/4115_female-walking-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4115_00_female-walking-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4115_00_female-walking-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4115_00_female-walking-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23589,
+      "slug": "female-walking-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4116",
+      "presetNumber": 4116,
+      "label": "Male crouching legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, looking to the right, male legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4116_male-crouching-legs-pose.pma",
+      "localScenePath": "scenes/4116_male-crouching-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4116_00_male-crouching-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4116_00_male-crouching-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4116_00_male-crouching-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23737,
+      "slug": "male-crouching-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4117",
+      "presetNumber": 4117,
+      "label": "Female dancing legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing ballet, female legs drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4117_female-dancing-legs-pose.pma",
+      "localScenePath": "scenes/4117_female-dancing-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4117_00_female-dancing-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4117_00_female-dancing-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4117_00_female-dancing-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23658,
+      "slug": "female-dancing-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4118",
+      "presetNumber": 4118,
+      "label": "Female sitting legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting, leaning on her right hand, showing her legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4118_female-sitting-legs-pose.pma",
+      "localScenePath": "scenes/4118_female-sitting-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4118_00_female-sitting-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4118_00_female-sitting-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4118_00_female-sitting-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21865,
+      "slug": "female-sitting-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4119",
+      "presetNumber": 4119,
+      "label": "Male sitting legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground, his legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4119_male-sitting-legs-pose.pma",
+      "localScenePath": "scenes/4119_male-sitting-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4119_00_male-sitting-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4119_00_male-sitting-legs-pose.png",
+          "localThumbnailPath": "thumbnails/4119_00_male-sitting-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "legs",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23843,
+      "slug": "male-sitting-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4120",
+      "presetNumber": 4120,
+      "label": "Female friends pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three female friends are standing and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4120_female-friends-pose.pma",
+      "localScenePath": "scenes/4120_female-friends-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4120_00_female-friends-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4120_00_female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4120_00_female-friends-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4120_01_female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4120_01_female-friends-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4120_02_female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4120_02_female-friends-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68354,
+      "slug": "female-friends-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4121",
+      "presetNumber": 4121,
+      "label": "Cute female friends pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are standing and making heart shape with their hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4121_cute-female-friends-pose.pma",
+      "localScenePath": "scenes/4121_cute-female-friends-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4121_00_cute-female-friends-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4121_00_cute-female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4121_00_cute-female-friends-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4121_01_cute-female-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4121_01_cute-female-friends-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46236,
+      "slug": "cute-female-friends-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4122",
+      "presetNumber": 4122,
+      "label": "Female friends sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are sitting on the couch and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4122_female-friends-sitting-pose.pma",
+      "localScenePath": "scenes/4122_female-friends-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4122_00_female-friends-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4122_00_female-friends-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4122_00_female-friends-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4122_01_female-friends-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4122_01_female-friends-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46599,
+      "slug": "female-friends-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4123",
+      "presetNumber": 4123,
+      "label": "Female friends walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are walking, hugging each other and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4123_female-friends-walking-pose.pma",
+      "localScenePath": "scenes/4123_female-friends-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4123_00_female-friends-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4123_00_female-friends-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4123_00_female-friends-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4123_01_female-friends-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4123_01_female-friends-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 45809,
+      "slug": "female-friends-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4124",
+      "presetNumber": 4124,
+      "label": "Female friends kneeling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are kneeling and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4124_female-friends-kneeling-pose.pma",
+      "localScenePath": "scenes/4124_female-friends-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4124_00_female-friends-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4124_00_female-friends-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4124_00_female-friends-kneeling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4124_01_female-friends-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4124_01_female-friends-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46403,
+      "slug": "female-friends-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4125",
+      "presetNumber": 4125,
+      "label": "Female friends waving pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three female friends are standing, hugging each other and waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4125_female-friends-waving-pose.pma",
+      "localScenePath": "scenes/4125_female-friends-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4125_00_female-friends-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4125_00_female-friends-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4125_00_female-friends-waving-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4125_01_female-friends-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4125_01_female-friends-waving-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4125_02_female-friends-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4125_02_female-friends-waving-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68377,
+      "slug": "female-friends-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4126",
+      "presetNumber": 4126,
+      "label": "Female male friends pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male friends are standing, hugging each other and waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4126_female-male-friends-pose.pma",
+      "localScenePath": "scenes/4126_female-male-friends-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4126_00_female-male-friends-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4126_00_female-male-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4126_00_female-male-friends-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4126_01_female-male-friends-pose.png",
+          "localThumbnailPath": "thumbnails/4126_01_female-male-friends-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46489,
+      "slug": "female-male-friends-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4127",
+      "presetNumber": 4127,
+      "label": "Male friends standing poseq",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male friends are standing casually, male friendship drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4127_male-friends-standing-poseq.pma",
+      "localScenePath": "scenes/4127_male-friends-standing-poseq.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4127_00_male-friends-standing-poseq.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4127_00_male-friends-standing-poseq.png",
+          "localThumbnailPath": "thumbnails/4127_00_male-friends-standing-poseq.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4127_01_male-friends-standing-poseq.png",
+          "localThumbnailPath": "thumbnails/4127_01_male-friends-standing-poseq.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46351,
+      "slug": "male-friends-standing-poseq",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4128",
+      "presetNumber": 4128,
+      "label": "Friends greeting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male friends are greeting each other, male friendship drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4128_friends-greeting-pose.pma",
+      "localScenePath": "scenes/4128_friends-greeting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4128_00_friends-greeting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4128_00_friends-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/4128_00_friends-greeting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4128_01_friends-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/4128_01_friends-greeting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47099,
+      "slug": "friends-greeting-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

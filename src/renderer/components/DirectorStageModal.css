@@ -1,0 +1,767 @@
+/* ============================================================
+   3D 导演台弹窗样式（dsm- 前缀，与 DirectorStageModal.tsx 对应）
+   ============================================================ */
+
+.dsm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.62);
+  padding: 24px;
+}
+
+.dsm-modal {
+  width: min(1360px, 96vw);
+  height: min(860px, 92vh);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary, #1f2126);
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  color: var(--text-primary, #f2f3f5);
+}
+
+/* ---- Header ---- */
+.dsm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color, #3a3d44);
+  background: var(--bg-secondary, #26282e);
+  flex-shrink: 0;
+}
+
+.dsm-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dsm-title-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-color, #5a5a5a);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--accent-color, #5a5a5a) 70%, transparent);
+}
+
+.dsm-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dsm-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary, #b8bdc7);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.dsm-icon-btn:hover {
+  background: rgba(239, 68, 68, 0.16);
+  color: #ef4444;
+}
+
+/* ---- Body ---- */
+.dsm-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.dsm-left,
+.dsm-right {
+  width: 260px;
+  flex-shrink: 0;
+  padding: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dsm-left {
+  border-right: 1px solid var(--border-color, #3a3d44);
+  background: var(--bg-secondary, #23252b);
+}
+
+.dsm-right {
+  border-left: 1px solid var(--border-color, #3a3d44);
+  background: var(--bg-secondary, #23252b);
+}
+
+.dsm-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+}
+
+.dsm-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary, #9aa0ab);
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+/* ---- 素材库网格 ---- */
+.dsm-lib-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.dsm-lib-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 8px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+}
+
+.dsm-lib-item:hover {
+  border-color: var(--accent-color, #5a5a5a);
+  background: color-mix(in srgb, var(--accent-color, #5a5a5a) 12%, transparent);
+  transform: translateY(-1px);
+}
+
+.dsm-lib-icon {
+  display: inline-flex;
+  color: var(--accent-color, #a5b4fc);
+}
+
+.dsm-lib-label {
+  font-size: 10px;
+  color: var(--text-secondary, #b8bdc7);
+  text-align: center;
+}
+
+/* ---- 颜色行 ---- */
+.dsm-color-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dsm-color-row label {
+  font-size: 12px;
+  color: var(--text-secondary, #9aa0ab);
+}
+
+.dsm-color-row input[type='color'] {
+  width: 40px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+}
+
+.dsm-color-hex {
+  font-size: 12px;
+  color: var(--text-secondary, #9aa0ab);
+  font-family: monospace;
+}
+
+.dsm-hint {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-muted, #7b818c);
+  margin-top: 4px;
+}
+
+/* ---- 工具栏 ---- */
+.dsm-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-color, #3a3d44);
+  background: var(--bg-secondary, #26282e);
+  flex-shrink: 0;
+}
+
+.dsm-toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dsm-tool {
+  padding: 6px 12px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 7px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dsm-tool:hover {
+  border-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-tool.active {
+  background: var(--accent-color, #5a5a5a);
+  border-color: var(--accent-color, #5a5a5a);
+  color: #fff;
+}
+
+.dsm-tool-danger:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+/* ---- 视口 ---- */
+.dsm-viewport {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  background: #1a1c22;
+  overflow: hidden;
+}
+
+.dsm-viewport canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- 镜头预览 ---- */
+.dsm-preview {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 260px;
+  padding: 10px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 10px;
+  background: rgba(30, 32, 38, 0.92);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 5;
+}
+
+.dsm-preview-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary, #b8bdc7);
+}
+
+.dsm-preview-head select {
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 6px;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+.dsm-preview-canvas {
+  width: 100%;
+  border-radius: 6px;
+  background: #000;
+  display: block;
+}
+
+/* ---- 右侧 Tabs ---- */
+.dsm-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.dsm-tab {
+  flex: 1;
+  padding: 7px 4px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 7px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-secondary, #b8bdc7);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dsm-tab:hover {
+  border-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-tab.active {
+  background: var(--accent-color, #5a5a5a);
+  border-color: var(--accent-color, #5a5a5a);
+  color: #fff;
+}
+
+.dsm-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---- 列表 ---- */
+.dsm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.dsm-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 7px;
+  background: var(--bg-primary, #1f2126);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dsm-list-item:hover {
+  border-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-list-item.active {
+  background: color-mix(in srgb, var(--accent-color, #5a5a5a) 20%, transparent);
+  border-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-list-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dsm-list-cam {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.dsm-list-name {
+  flex: 1;
+  font-size: 12px;
+  color: var(--text-primary, #e8eaed);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dsm-list-del {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-muted, #7b818c);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.dsm-list-del:hover {
+  background: rgba(239, 68, 68, 0.18);
+  color: #ef4444;
+}
+
+.dsm-empty {
+  font-size: 12px;
+  color: var(--text-muted, #7b818c);
+  padding: 16px 8px;
+  text-align: center;
+}
+
+/* ---- 属性区块 ---- */
+.dsm-prop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color, #3a3d44);
+}
+
+.dsm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dsm-field label {
+  font-size: 11px;
+  color: var(--text-secondary, #9aa0ab);
+}
+
+.dsm-field input[type='text'],
+.dsm-field select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 6px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  font-size: 12px;
+}
+
+.dsm-field input[type='text']:focus,
+.dsm-field select:focus {
+  border-color: var(--accent-color, #5a5a5a);
+  outline: none;
+}
+
+/* ---- 滑块行 ---- */
+.dsm-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dsm-slider-row label {
+  font-size: 11px;
+  color: var(--text-secondary, #9aa0ab);
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.dsm-slider-row input[type='range'] {
+  flex: 1;
+  accent-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-slider-val {
+  font-size: 11px;
+  color: var(--text-primary, #e8eaed);
+  width: 40px;
+  text-align: right;
+  flex-shrink: 0;
+  font-family: monospace;
+}
+
+/* ---- 关节选择 ---- */
+.dsm-joint-select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 6px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  font-size: 12px;
+}
+
+/* ---- 姿势预设网格 ---- */
+.dsm-pose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.dsm-pose-btn {
+  padding: 8px 4px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 7px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dsm-pose-btn:hover {
+  border-color: var(--accent-color, #5a5a5a);
+  background: color-mix(in srgb, var(--accent-color, #5a5a5a) 12%, transparent);
+}
+
+/* ---- 素体（体型）选择 ---- */
+.dsm-body-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.dsm-body-btn {
+  padding: 7px 3px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 7px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dsm-body-btn:hover {
+  border-color: #d8ad74;
+  background: rgba(216, 173, 116, 0.12);
+}
+
+.dsm-body-btn.active {
+  border-color: #d8ad74;
+  background: rgba(216, 173, 116, 0.22);
+  color: #f5deb8;
+  font-weight: 600;
+}
+
+/* ---- 按钮 ---- */
+.dsm-btn {
+  padding: 8px 14px;
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 7px;
+  background: var(--bg-primary, #1f2126);
+  color: var(--text-primary, #e8eaed);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dsm-btn:hover:not(:disabled) {
+  border-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.dsm-btn-sm {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.dsm-btn-primary {
+  background: var(--accent-color, #5a5a5a);
+  border-color: var(--accent-color, #5a5a5a);
+  color: #fff;
+}
+
+.dsm-btn-primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+  border-color: var(--accent-color, #5a5a5a);
+}
+
+.dsm-btn-row {
+  display: flex;
+  gap: 6px;
+}
+
+.dsm-btn-row .dsm-btn {
+  flex: 1;
+}
+
+/* ---- 滚动条 ---- */
+.dsm-left::-webkit-scrollbar,
+.dsm-right::-webkit-scrollbar,
+.dsm-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dsm-left::-webkit-scrollbar-thumb,
+.dsm-right::-webkit-scrollbar-thumb,
+.dsm-list::-webkit-scrollbar-thumb {
+  background: var(--border-color, #3a3d44);
+  border-radius: 4px;
+}
+
+.dsm-left::-webkit-scrollbar-thumb:hover,
+.dsm-right::-webkit-scrollbar-thumb:hover,
+.dsm-list::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary, #6c727c);
+}
+
+/* ---- 关节悬浮旋转面板（点击视口关节标记后弹出） ---- */
+.dsm-joint-popup {
+  width: 220px;
+  background: rgba(26, 28, 34, 0.96);
+  border: 1px solid var(--border-color, #3a3d44);
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+  padding: 10px 12px;
+  animation: dsm-popup-in 0.14s ease;
+}
+
+@keyframes dsm-popup-in {
+  from { opacity: 0; transform: translateY(-4px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.dsm-joint-popup-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff8a5c;
+  margin-bottom: 8px;
+}
+
+.dsm-joint-popup-close {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary, #9aa0a8);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.dsm-joint-popup-close:hover {
+  color: #fff;
+}
+
+.dsm-joint-popup .dsm-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.dsm-joint-popup .dsm-slider-row label {
+  width: 14px;
+  font-size: 12px;
+  color: var(--text-secondary, #9aa0a8);
+}
+
+.dsm-joint-popup .dsm-slider-row input[type="range"] {
+  flex: 1;
+}
+
+.dsm-joint-popup .dsm-slider-val {
+  width: 38px;
+  text-align: right;
+  font-size: 11px;
+  color: var(--text-secondary, #9aa0a8);
+}
+
+.dsm-joint-popup .dsm-btn {
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* ---- 球形旋转控件（trackball）：以球面拖拽方式旋转关节，替代三轴滑块 ---- */
+.dsm-trackball-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0 2px;
+}
+
+.dsm-trackball {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  background:
+    radial-gradient(circle at 38% 32%, rgba(90, 160, 255, 0.35), rgba(34, 224, 255, 0.06) 55%, rgba(10, 14, 22, 0.9) 100%);
+  box-shadow:
+    inset 0 0 24px rgba(0, 0, 0, 0.55),
+    inset 8px 10px 30px rgba(120, 190, 255, 0.12),
+    0 4px 16px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(120, 170, 255, 0.35);
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.dsm-trackball:active,
+.dsm-trackball.dragging {
+  cursor: grabbing;
+  box-shadow:
+    inset 0 0 26px rgba(0, 0, 0, 0.6),
+    inset 8px 10px 34px rgba(140, 200, 255, 0.2),
+    0 0 0 2px rgba(34, 224, 255, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dsm-trackball-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(120, 190, 255, 0.4);
+  pointer-events: none;
+}
+
+/* 经度环（绕 Y 轴，左右旋转参考线） */
+.dsm-ring-y {
+  inset: 8%;
+  border-color: rgba(90, 200, 255, 0.5);
+  transform: rotateX(72deg);
+}
+
+/* 纬度环（绕 X 轴，上下旋转参考线） */
+.dsm-ring-x {
+  inset: 8%;
+  border-color: rgba(255, 150, 90, 0.45);
+  transform: rotateY(72deg);
+}
+
+/* 赤道环（绕 Z 轴，扭转参考线） */
+.dsm-ring-z {
+  inset: 14%;
+  border-color: rgba(180, 160, 255, 0.4);
+}
+
+.dsm-trackball-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #9fe8ff, #22a8ff 60%, #1466b8);
+  box-shadow: 0 0 10px rgba(34, 224, 255, 0.7);
+  pointer-events: none;
+}
+
+.dsm-trackball-hint {
+  font-size: 10px;
+  color: var(--text-secondary, #8b929c);
+  text-align: center;
+}
+
+.dsm-trackball-wrap .dsm-btn {
+  width: 100%;
+}
+
+.dsm-joint-euler {
+  font-size: 11px;
+  color: var(--text-secondary, #9aa0a8);
+  text-align: center;
+  margin: 6px 0;
+  letter-spacing: 0.3px;
+}

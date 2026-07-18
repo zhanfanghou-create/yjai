@@ -1,0 +1,1167 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 57,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-3057",
+      "presetNumber": 3057,
+      "label": "Angry finger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is angry, clenching her right hand into a fist and raising her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3057_angry-finger-pose.pma",
+      "localScenePath": "scenes/3057_angry-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3057_00_angry-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3057_00_angry-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3057_00_angry-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23510,
+      "slug": "angry-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3060",
+      "presetNumber": 3060,
+      "label": "Female mermaid floating looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating and looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3060_female-mermaid-floating-looking-right-pose.pma",
+      "localScenePath": "scenes/3060_female-mermaid-floating-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3060_00_female-mermaid-floating-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3060_00_female-mermaid-floating-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/3060_00_female-mermaid-floating-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16306,
+      "slug": "female-mermaid-floating-looking-right-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3061",
+      "presetNumber": 3061,
+      "label": "Mermaid swimming upwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming upwards in the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3061_mermaid-swimming-upwards-pose.pma",
+      "localScenePath": "scenes/3061_mermaid-swimming-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3061_00_mermaid-swimming-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3061_00_mermaid-swimming-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/3061_00_mermaid-swimming-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16381,
+      "slug": "mermaid-swimming-upwards-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3062",
+      "presetNumber": 3062,
+      "label": "Mermaid swimming downwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming downwards in the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3062_mermaid-swimming-downwards-pose.pma",
+      "localScenePath": "scenes/3062_mermaid-swimming-downwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3062_00_mermaid-swimming-downwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3062_00_mermaid-swimming-downwards-pose.png",
+          "localThumbnailPath": "thumbnails/3062_00_mermaid-swimming-downwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16360,
+      "slug": "mermaid-swimming-downwards-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3064",
+      "presetNumber": 3064,
+      "label": "Female mermaid holding trident pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water, holding a trident in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3064_female-mermaid-holding-trident-pose.pma",
+      "localScenePath": "scenes/3064_female-mermaid-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3064_00_female-mermaid-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3064_00_female-mermaid-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3064_00_female-mermaid-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 2062014,
+      "slug": "female-mermaid-holding-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3066",
+      "presetNumber": 3066,
+      "label": "Female mermaid waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and waving with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3066_female-mermaid-waving-pose.pma",
+      "localScenePath": "scenes/3066_female-mermaid-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3066_00_female-mermaid-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3066_00_female-mermaid-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3066_00_female-mermaid-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16427,
+      "slug": "female-mermaid-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3069",
+      "presetNumber": 3069,
+      "label": "Mermaid lying drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is lying on her stomach and leaning on her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3069_mermaid-lying-drawing-pose.pma",
+      "localScenePath": "scenes/3069_mermaid-lying-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3069_00_mermaid-lying-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3069_00_mermaid-lying-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3069_00_mermaid-lying-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16464,
+      "slug": "mermaid-lying-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3070",
+      "presetNumber": 3070,
+      "label": "Mermaid sitting drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting, leaning on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3070_mermaid-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3070_mermaid-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3070_00_mermaid-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3070_00_mermaid-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3070_00_mermaid-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 16460,
+      "slug": "mermaid-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3071",
+      "presetNumber": 3071,
+      "label": "Mermaid barrel sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a barrel and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3071_mermaid-barrel-sitting-pose.pma",
+      "localScenePath": "scenes/3071_mermaid-barrel-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3071_00_mermaid-barrel-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3071_00_mermaid-barrel-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3071_00_mermaid-barrel-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [
+        160
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 16793,
+      "slug": "mermaid-barrel-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3072",
+      "presetNumber": 3072,
+      "label": "Mermaid sitting waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock and waving with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3072_mermaid-sitting-waving-pose.pma",
+      "localScenePath": "scenes/3072_mermaid-sitting-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3072_00_mermaid-sitting-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3072_00_mermaid-sitting-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3072_00_mermaid-sitting-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 57980,
+      "slug": "mermaid-sitting-waving-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3073",
+      "presetNumber": 3073,
+      "label": "Sitting holding trident pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock, holding a trident in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3073_sitting-holding-trident-pose.pma",
+      "localScenePath": "scenes/3073_sitting-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3073_00_sitting-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3073_00_sitting-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3073_00_sitting-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 2103718,
+      "slug": "sitting-holding-trident-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3074",
+      "presetNumber": 3074,
+      "label": "Mermaid calm sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on her knees, resting her hands on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3074_mermaid-calm-sitting-pose.pma",
+      "localScenePath": "scenes/3074_mermaid-calm-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3074_00_mermaid-calm-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3074_00_mermaid-calm-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3074_00_mermaid-calm-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 16455,
+      "slug": "mermaid-calm-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3077",
+      "presetNumber": 3077,
+      "label": "Mermaid cute sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock and blowing a kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3077_mermaid-cute-sitting-pose.pma",
+      "localScenePath": "scenes/3077_mermaid-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3077_00_mermaid-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3077_00_mermaid-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3077_00_mermaid-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 58035,
+      "slug": "mermaid-cute-sitting-pose",
+      "tagIds": [
+        "couple",
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "双人/情侣",
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3079",
+      "presetNumber": 3079,
+      "label": "Female mermaid rock sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock and slightly looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3079_female-mermaid-rock-sitting-pose.pma",
+      "localScenePath": "scenes/3079_female-mermaid-rock-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3079_00_female-mermaid-rock-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3079_00_female-mermaid-rock-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3079_00_female-mermaid-rock-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 37232,
+      "slug": "female-mermaid-rock-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3080",
+      "presetNumber": 3080,
+      "label": "Female mermaid floating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating, holding a trident in her right hand and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3080_female-mermaid-floating-pose.pma",
+      "localScenePath": "scenes/3080_female-mermaid-floating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3080_00_female-mermaid-floating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3080_00_female-mermaid-floating-pose.png",
+          "localThumbnailPath": "thumbnails/3080_00_female-mermaid-floating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 2062021,
+      "slug": "female-mermaid-floating-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3081",
+      "presetNumber": 3081,
+      "label": "Female mermaid swimming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming, female mermaid anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3081_female-mermaid-swimming-pose.pma",
+      "localScenePath": "scenes/3081_female-mermaid-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3081_00_female-mermaid-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3081_00_female-mermaid-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/3081_00_female-mermaid-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16370,
+      "slug": "female-mermaid-swimming-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3082",
+      "presetNumber": 3082,
+      "label": "Female mermaid crossed arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water, her arms are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3082_female-mermaid-crossed-arms-pose.pma",
+      "localScenePath": "scenes/3082_female-mermaid-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3082_00_female-mermaid-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3082_00_female-mermaid-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/3082_00_female-mermaid-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16331,
+      "slug": "female-mermaid-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3083",
+      "presetNumber": 3083,
+      "label": "Female mermaid sitting anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock, mermaid anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3083_female-mermaid-sitting-anatomy-pose.pma",
+      "localScenePath": "scenes/3083_female-mermaid-sitting-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3083_00_female-mermaid-sitting-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3083_00_female-mermaid-sitting-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3083_00_female-mermaid-sitting-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 58025,
+      "slug": "female-mermaid-sitting-anatomy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3084",
+      "presetNumber": 3084,
+      "label": "Mermaid floating anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3084_mermaid-floating-anatomy-pose.pma",
+      "localScenePath": "scenes/3084_mermaid-floating-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3084_00_mermaid-floating-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3084_00_mermaid-floating-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3084_00_mermaid-floating-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16290,
+      "slug": "mermaid-floating-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3085",
+      "presetNumber": 3085,
+      "label": "Mermaid stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is stretching, raising her right hand and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3085_mermaid-stretching-pose.pma",
+      "localScenePath": "scenes/3085_mermaid-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3085_00_mermaid-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3085_00_mermaid-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/3085_00_mermaid-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16350,
+      "slug": "mermaid-stretching-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3086",
+      "presetNumber": 3086,
+      "label": "Mermaid raising hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is turning slightly to the right and raising her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3086_mermaid-raising-hands-pose.pma",
+      "localScenePath": "scenes/3086_mermaid-raising-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3086_00_mermaid-raising-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3086_00_mermaid-raising-hands-pose.png",
+          "localThumbnailPath": "thumbnails/3086_00_mermaid-raising-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16491,
+      "slug": "mermaid-raising-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3087",
+      "presetNumber": 3087,
+      "label": "Mermaid turning back anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and looking back over her right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3087_mermaid-turning-back-anatomy-pose.pma",
+      "localScenePath": "scenes/3087_mermaid-turning-back-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3087_00_mermaid-turning-back-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3087_00_mermaid-turning-back-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3087_00_mermaid-turning-back-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16314,
+      "slug": "mermaid-turning-back-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3088",
+      "presetNumber": 3088,
+      "label": "Mermaid sitting anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting, resting her right hand on her thigh",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3088_mermaid-sitting-anatomy-pose.pma",
+      "localScenePath": "scenes/3088_mermaid-sitting-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3088_00_mermaid-sitting-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3088_00_mermaid-sitting-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3088_00_mermaid-sitting-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16427,
+      "slug": "mermaid-sitting-anatomy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3089",
+      "presetNumber": 3089,
+      "label": "Mermaid lying anatomy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is lying down and looking forward, mermaid anatomy drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3089_mermaid-lying-anatomy-pose.pma",
+      "localScenePath": "scenes/3089_mermaid-lying-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3089_00_mermaid-lying-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3089_00_mermaid-lying-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3089_00_mermaid-lying-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "female"
+      ],
+      "bytes": 16445,
+      "slug": "mermaid-lying-anatomy-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

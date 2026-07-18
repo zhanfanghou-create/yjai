@@ -1,0 +1,1121 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 92,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2209",
+      "presetNumber": 2209,
+      "label": "Injured crawling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is holding his stomach and crawling on his knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2209_injured-crawling-pose.pma",
+      "localScenePath": "scenes/2209_injured-crawling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2209_00_injured-crawling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2209_00_injured-crawling-pose.png",
+          "localThumbnailPath": "thumbnails/2209_00_injured-crawling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23838,
+      "slug": "injured-crawling-pose"
+    },
+    {
+      "id": "guo-scene-2210",
+      "presetNumber": 2210,
+      "label": "Sitting bar stool pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting casually on the bar stool and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2210_sitting-bar-stool-pose.pma",
+      "localScenePath": "scenes/2210_sitting-bar-stool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2210_00_sitting-bar-stool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2210_00_sitting-bar-stool-pose.png",
+          "localThumbnailPath": "thumbnails/2210_00_sitting-bar-stool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24019,
+      "slug": "sitting-bar-stool-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2211",
+      "presetNumber": 2211,
+      "label": "Comfortable sitting couch pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting comfortably on the couch with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2211_comfortable-sitting-couch-pose.pma",
+      "localScenePath": "scenes/2211_comfortable-sitting-couch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2211_00_comfortable-sitting-couch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2211_00_comfortable-sitting-couch-pose.png",
+          "localThumbnailPath": "thumbnails/2211_00_comfortable-sitting-couch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23970,
+      "slug": "comfortable-sitting-couch-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2212",
+      "presetNumber": 2212,
+      "label": "Sitting chair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair with her arms and legs crossed, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2212_sitting-chair-pose.pma",
+      "localScenePath": "scenes/2212_sitting-chair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2212_00_sitting-chair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2212_00_sitting-chair-pose.png",
+          "localThumbnailPath": "thumbnails/2212_00_sitting-chair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23939,
+      "slug": "sitting-chair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2213",
+      "presetNumber": 2213,
+      "label": "Kneeling sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees, leaning on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2213_kneeling-sitting-pose.pma",
+      "localScenePath": "scenes/2213_kneeling-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2213_00_kneeling-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2213_00_kneeling-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2213_00_kneeling-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23427,
+      "slug": "kneeling-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2214",
+      "presetNumber": 2214,
+      "label": "Sitting knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2214_sitting-knees-pose.pma",
+      "localScenePath": "scenes/2214_sitting-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2214_00_sitting-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2214_00_sitting-knees-pose.png",
+          "localThumbnailPath": "thumbnails/2214_00_sitting-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23532,
+      "slug": "sitting-knees-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2215",
+      "presetNumber": 2215,
+      "label": "Sitting bench pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bench with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2215_sitting-bench-pose.pma",
+      "localScenePath": "scenes/2215_sitting-bench-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2215_00_sitting-bench-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2215_00_sitting-bench-pose.png",
+          "localThumbnailPath": "thumbnails/2215_00_sitting-bench-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23921,
+      "slug": "sitting-bench-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2216",
+      "presetNumber": 2216,
+      "label": "Sitting armchair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair, resting her hands on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2216_sitting-armchair-pose.pma",
+      "localScenePath": "scenes/2216_sitting-armchair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2216_00_sitting-armchair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2216_00_sitting-armchair-pose.png",
+          "localThumbnailPath": "thumbnails/2216_00_sitting-armchair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23930,
+      "slug": "sitting-armchair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2217",
+      "presetNumber": 2217,
+      "label": "Crossed legs sitting female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bench with her legs crossed and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2217_crossed-legs-sitting-female-pose.pma",
+      "localScenePath": "scenes/2217_crossed-legs-sitting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2217_00_crossed-legs-sitting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2217_00_crossed-legs-sitting-female-pose.png",
+          "localThumbnailPath": "thumbnails/2217_00_crossed-legs-sitting-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23858,
+      "slug": "crossed-legs-sitting-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2218",
+      "presetNumber": 2218,
+      "label": "Sitting stairs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the stairs, resting her hands on her knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2218_sitting-stairs-pose.pma",
+      "localScenePath": "scenes/2218_sitting-stairs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2218_00_sitting-stairs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2218_00_sitting-stairs-pose.png",
+          "localThumbnailPath": "thumbnails/2218_00_sitting-stairs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24367,
+      "slug": "sitting-stairs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2219",
+      "presetNumber": 2219,
+      "label": "Female sitting leaning left hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor and posing, leaning on her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2219_female-sitting-leaning-left-hand-pose.pma",
+      "localScenePath": "scenes/2219_female-sitting-leaning-left-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2219_00_female-sitting-leaning-left-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2219_00_female-sitting-leaning-left-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2219_00_female-sitting-leaning-left-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 21853,
+      "slug": "female-sitting-leaning-left-hand-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2220",
+      "presetNumber": 2220,
+      "label": "Bar stool sitting male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bar stool, his left hand is on his hip and he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2220_bar-stool-sitting-male-pose.pma",
+      "localScenePath": "scenes/2220_bar-stool-sitting-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2220_00_bar-stool-sitting-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2220_00_bar-stool-sitting-male-pose.png",
+          "localThumbnailPath": "thumbnails/2220_00_bar-stool-sitting-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24092,
+      "slug": "bar-stool-sitting-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2221",
+      "presetNumber": 2221,
+      "label": "Armchair sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair comfortably with his legs crossed, male sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2221_armchair-sitting-pose.pma",
+      "localScenePath": "scenes/2221_armchair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2221_00_armchair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2221_00_armchair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2221_00_armchair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24209,
+      "slug": "armchair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2222",
+      "presetNumber": 2222,
+      "label": "Couch sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch comfortably, stretching his legs and arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2222_couch-sitting-pose.pma",
+      "localScenePath": "scenes/2222_couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2222_00_couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2222_00_couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2222_00_couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24193,
+      "slug": "couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2223",
+      "presetNumber": 2223,
+      "label": "Chair sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair and looking to the right, his hands are on his knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2223_chair-sitting-pose.pma",
+      "localScenePath": "scenes/2223_chair-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2223_00_chair-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2223_00_chair-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2223_00_chair-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24229,
+      "slug": "chair-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2224",
+      "presetNumber": 2224,
+      "label": "Crossed legs sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair with his legs crossed, holding his ankle",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2224_crossed-legs-sitting-pose.pma",
+      "localScenePath": "scenes/2224_crossed-legs-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2224_00_crossed-legs-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2224_00_crossed-legs-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2224_00_crossed-legs-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24118,
+      "slug": "crossed-legs-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2225",
+      "presetNumber": 2225,
+      "label": "Bench sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bench comfortably with his legs crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2225_bench-sitting-pose.pma",
+      "localScenePath": "scenes/2225_bench-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2225_00_bench-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2225_00_bench-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2225_00_bench-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24201,
+      "slug": "bench-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2226",
+      "presetNumber": 2226,
+      "label": "Table sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair at the table, leaning on the table and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2226_table-sitting-pose.pma",
+      "localScenePath": "scenes/2226_table-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2226_00_table-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2226_00_table-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2226_00_table-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 42792,
+      "slug": "table-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2227",
+      "presetNumber": 2227,
+      "label": "Male sitting looking right pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the floor, his left hand is on his knee and he is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2227_male-sitting-looking-right-pose.pma",
+      "localScenePath": "scenes/2227_male-sitting-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2227_00_male-sitting-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2227_00_male-sitting-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/2227_00_male-sitting-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23786,
+      "slug": "male-sitting-looking-right-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2228",
+      "presetNumber": 2228,
+      "label": "Casual sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair casually and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2228_casual-sitting-pose.pma",
+      "localScenePath": "scenes/2228_casual-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2228_00_casual-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2228_00_casual-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2228_00_casual-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24225,
+      "slug": "casual-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2229",
+      "presetNumber": 2229,
+      "label": "Males sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are sitting on the couch casually and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2229_males-sitting-pose.pma",
+      "localScenePath": "scenes/2229_males-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2229_00_males-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2229_00_males-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2229_00_males-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2229_01_males-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2229_01_males-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 48604,
+      "slug": "males-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2230",
+      "presetNumber": 2230,
+      "label": "Running chibi pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, looking forward, chibi running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2230_running-chibi-pose.pma",
+      "localScenePath": "scenes/2230_running-chibi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2230_00_running-chibi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2230_00_running-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/2230_00_running-chibi-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23674,
+      "slug": "running-chibi-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2231",
+      "presetNumber": 2231,
+      "label": "Fast running chibi pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running fast, looking down, fast running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2231_fast-running-chibi-pose.pma",
+      "localScenePath": "scenes/2231_fast-running-chibi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2231_00_fast-running-chibi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2231_00_fast-running-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/2231_00_fast-running-chibi-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23749,
+      "slug": "fast-running-chibi-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2232",
+      "presetNumber": 2232,
+      "label": "Clenched fists running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry chibi is running with his hands clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2232_clenched-fists-running-pose.pma",
+      "localScenePath": "scenes/2232_clenched-fists-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2232_00_clenched-fists-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2232_00_clenched-fists-running-pose.png",
+          "localThumbnailPath": "thumbnails/2232_00_clenched-fists-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23659,
+      "slug": "clenched-fists-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

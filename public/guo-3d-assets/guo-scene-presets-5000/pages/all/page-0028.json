@@ -1,0 +1,1131 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 27,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0649",
+      "presetNumber": 649,
+      "label": "Catwalk high heels pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female model is walking on the catwalk in high heels",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0649_catwalk-high-heels-pose.pma",
+      "localScenePath": "scenes/0649_catwalk-high-heels-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0649_00_catwalk-high-heels-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0649_00_catwalk-high-heels-pose.png",
+          "localThumbnailPath": "thumbnails/0649_00_catwalk-high-heels-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0649_01_catwalk-high-heels-pose.png",
+          "localThumbnailPath": "thumbnails/0649_01_catwalk-high-heels-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0649_02_catwalk-high-heels-pose.png",
+          "localThumbnailPath": "thumbnails/0649_02_catwalk-high-heels-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "reference"
+      ],
+      "bytes": 69381,
+      "slug": "catwalk-high-heels-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0650",
+      "presetNumber": 650,
+      "label": "Standing male bodybuilder pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder is posing, standing and showing arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0650_standing-male-bodybuilder-pose.pma",
+      "localScenePath": "scenes/0650_standing-male-bodybuilder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0650_00_standing-male-bodybuilder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0650_00_standing-male-bodybuilder-pose.png",
+          "localThumbnailPath": "thumbnails/0650_00_standing-male-bodybuilder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 23728,
+      "slug": "standing-male-bodybuilder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0651",
+      "presetNumber": 651,
+      "label": "Hands hips bodybuilder pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder is posing, standing with hands on hips, showing muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0651_hands-hips-bodybuilder-pose.pma",
+      "localScenePath": "scenes/0651_hands-hips-bodybuilder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0651_00_hands-hips-bodybuilder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0651_00_hands-hips-bodybuilder-pose.png",
+          "localThumbnailPath": "thumbnails/0651_00_hands-hips-bodybuilder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 23711,
+      "slug": "hands-hips-bodybuilder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0652",
+      "presetNumber": 652,
+      "label": "Hero bodybuilder pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder standing showing muscles, hero pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0652_hero-bodybuilder-pose.pma",
+      "localScenePath": "scenes/0652_hero-bodybuilder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0652_00_hero-bodybuilder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0652_00_hero-bodybuilder-pose.png",
+          "localThumbnailPath": "thumbnails/0652_00_hero-bodybuilder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 23719,
+      "slug": "hero-bodybuilder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0653",
+      "presetNumber": 653,
+      "label": "Female heavy weights pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female bodybuilder is lifting heavy weights with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0653_female-heavy-weights-pose.pma",
+      "localScenePath": "scenes/0653_female-heavy-weights-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0653_00_female-heavy-weights-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0653_00_female-heavy-weights-pose.png",
+          "localThumbnailPath": "thumbnails/0653_00_female-heavy-weights-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 25765,
+      "slug": "female-heavy-weights-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0654",
+      "presetNumber": 654,
+      "label": "Male heavy weights pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder is lifting heavy weights high with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0654_male-heavy-weights-pose.pma",
+      "localScenePath": "scenes/0654_male-heavy-weights-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0654_00_male-heavy-weights-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0654_00_male-heavy-weights-pose.png",
+          "localThumbnailPath": "thumbnails/0654_00_male-heavy-weights-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 26460,
+      "slug": "male-heavy-weights-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0655",
+      "presetNumber": 655,
+      "label": "Bodybuilders pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three male bodybuilders are posing, showing off their muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0655_bodybuilders-pose.pma",
+      "localScenePath": "scenes/0655_bodybuilders-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0655_00_bodybuilders-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0655_00_bodybuilders-pose.png",
+          "localThumbnailPath": "thumbnails/0655_00_bodybuilders-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0655_01_bodybuilders-pose.png",
+          "localThumbnailPath": "thumbnails/0655_01_bodybuilders-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0655_02_bodybuilders-pose.png",
+          "localThumbnailPath": "thumbnails/0655_02_bodybuilders-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 69491,
+      "slug": "bodybuilders-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0656",
+      "presetNumber": 656,
+      "label": "Back muscles pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder is showing his back muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0656_back-muscles-pose.pma",
+      "localScenePath": "scenes/0656_back-muscles-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0656_00_back-muscles-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0656_00_back-muscles-pose.png",
+          "localThumbnailPath": "thumbnails/0656_00_back-muscles-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 23708,
+      "slug": "back-muscles-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0657",
+      "presetNumber": 657,
+      "label": "Half squat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Half-squat bodybuilding pose showing back muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0657_half-squat-pose.pma",
+      "localScenePath": "scenes/0657_half-squat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0657_00_half-squat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0657_00_half-squat-pose.png",
+          "localThumbnailPath": "thumbnails/0657_00_half-squat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 23771,
+      "slug": "half-squat-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0658",
+      "presetNumber": 658,
+      "label": "Female bodybuilder pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female standing bodybuilder pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0658_female-bodybuilder-pose.pma",
+      "localScenePath": "scenes/0658_female-bodybuilder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0658_00_female-bodybuilder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0658_00_female-bodybuilder-pose.png",
+          "localThumbnailPath": "thumbnails/0658_00_female-bodybuilder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 23394,
+      "slug": "female-bodybuilder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0659",
+      "presetNumber": 659,
+      "label": "Training heavy weights pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are training together with heavy weights",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0659_training-heavy-weights-pose.pma",
+      "localScenePath": "scenes/0659_training-heavy-weights-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0659_00_training-heavy-weights-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0659_00_training-heavy-weights-pose.png",
+          "localThumbnailPath": "thumbnails/0659_00_training-heavy-weights-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0659_01_training-heavy-weights-pose.png",
+          "localThumbnailPath": "thumbnails/0659_01_training-heavy-weights-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 22,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "body",
+        "building"
+      ],
+      "bytes": 58721,
+      "slug": "training-heavy-weights-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0660",
+      "presetNumber": 660,
+      "label": "Female crossed legs sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair with her legs crossed pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0660_female-crossed-legs-sitting-pose.pma",
+      "localScenePath": "scenes/0660_female-crossed-legs-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0660_00_female-crossed-legs-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0660_00_female-crossed-legs-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/0660_00_female-crossed-legs-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 23935,
+      "slug": "female-crossed-legs-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0661",
+      "presetNumber": 661,
+      "label": "Crossed legs sitting male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair with his legs crossed pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0661_crossed-legs-sitting-male-pose.pma",
+      "localScenePath": "scenes/0661_crossed-legs-sitting-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0661_00_crossed-legs-sitting-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0661_00_crossed-legs-sitting-male-pose.png",
+          "localThumbnailPath": "thumbnails/0661_00_crossed-legs-sitting-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 24215,
+      "slug": "crossed-legs-sitting-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0662",
+      "presetNumber": 662,
+      "label": "Casual sitting female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting casually with her legs crossed on the couch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0662_casual-sitting-female-pose.pma",
+      "localScenePath": "scenes/0662_casual-sitting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0662_00_casual-sitting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0662_00_casual-sitting-female-pose.png",
+          "localThumbnailPath": "thumbnails/0662_00_casual-sitting-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 25906,
+      "slug": "casual-sitting-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0663",
+      "presetNumber": 663,
+      "label": "Casual sitting male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting casually with his legs crossed on the couch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0663_casual-sitting-male-pose.pma",
+      "localScenePath": "scenes/0663_casual-sitting-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0663_00_casual-sitting-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0663_00_casual-sitting-male-pose.png",
+          "localThumbnailPath": "thumbnails/0663_00_casual-sitting-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 26146,
+      "slug": "casual-sitting-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0664",
+      "presetNumber": 664,
+      "label": "Female male couch sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on a couch with their legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0664_female-male-couch-sitting-pose.pma",
+      "localScenePath": "scenes/0664_female-male-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0664_00_female-male-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0664_00_female-male-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/0664_00_female-male-couch-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0664_01_female-male-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/0664_01_female-male-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 47631,
+      "slug": "female-male-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0665",
+      "presetNumber": 665,
+      "label": "Standing crossed legs female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning against the railing with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0665_standing-crossed-legs-female-pose.pma",
+      "localScenePath": "scenes/0665_standing-crossed-legs-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0665_00_standing-crossed-legs-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0665_00_standing-crossed-legs-female-pose.png",
+          "localThumbnailPath": "thumbnails/0665_00_standing-crossed-legs-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 24765,
+      "slug": "standing-crossed-legs-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0666",
+      "presetNumber": 666,
+      "label": "Lying crossed legs male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on the sofa with his legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0666_lying-crossed-legs-male-pose.pma",
+      "localScenePath": "scenes/0666_lying-crossed-legs-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0666_00_lying-crossed-legs-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0666_00_lying-crossed-legs-male-pose.png",
+          "localThumbnailPath": "thumbnails/0666_00_lying-crossed-legs-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 24870,
+      "slug": "lying-crossed-legs-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0667",
+      "presetNumber": 667,
+      "label": "Sitting leaning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and leaning back, crossing her legs pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0667_sitting-leaning-back-pose.pma",
+      "localScenePath": "scenes/0667_sitting-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0667_00_sitting-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0667_00_sitting-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/0667_00_sitting-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 23913,
+      "slug": "sitting-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0668",
+      "presetNumber": 668,
+      "label": "Confident female couch sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female is sitting on the couch with crossed legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0668_confident-female-couch-sitting-pose.pma",
+      "localScenePath": "scenes/0668_confident-female-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0668_00_confident-female-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0668_00_confident-female-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/0668_00_confident-female-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 24305,
+      "slug": "confident-female-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0669",
+      "presetNumber": 669,
+      "label": "Watching tv pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting with crossed legs and watching tv",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0669_watching-tv-pose.pma",
+      "localScenePath": "scenes/0669_watching-tv-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0669_00_watching-tv-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0669_00_watching-tv-pose.png",
+          "localThumbnailPath": "thumbnails/0669_00_watching-tv-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        212,
+        215,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "crossed",
+        "legs"
+      ],
+      "bytes": 26695,
+      "slug": "watching-tv-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-0670",
+      "presetNumber": 670,
+      "label": "Model walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female model is walking on the runway with her hands on her hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0670_model-walking-pose.pma",
+      "localScenePath": "scenes/0670_model-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0670_00_model-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0670_00_model-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0670_00_model-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "hands",
+        "hips"
+      ],
+      "bytes": 23432,
+      "slug": "model-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0671",
+      "presetNumber": 671,
+      "label": "Looking back female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with hands on hips and looking back over her shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0671_looking-back-female-pose.pma",
+      "localScenePath": "scenes/0671_looking-back-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0671_00_looking-back-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0671_00_looking-back-female-pose.png",
+          "localThumbnailPath": "thumbnails/0671_00_looking-back-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "hands",
+        "hips"
+      ],
+      "bytes": 23630,
+      "slug": "looking-back-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0672",
+      "presetNumber": 672,
+      "label": "Squats hands hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is doing squats with her hands on hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0672_squats-hands-hips-pose.pma",
+      "localScenePath": "scenes/0672_squats-hands-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0672_00_squats-hands-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0672_00_squats-hands-hips-pose.png",
+          "localThumbnailPath": "thumbnails/0672_00_squats-hands-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "hands",
+        "hips"
+      ],
+      "bytes": 23468,
+      "slug": "squats-hands-hips-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

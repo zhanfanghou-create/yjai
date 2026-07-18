@@ -1,0 +1,1090 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 41,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-3005",
+      "presetNumber": 3005,
+      "label": "Running away aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running away from something while aiming his gun backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3005_running-away-aiming-pose.pma",
+      "localScenePath": "scenes/3005_running-away-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3005_00_running-away-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3005_00_running-away-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/3005_00_running-away-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "away",
+        "pose"
+      ],
+      "bytes": 24332,
+      "slug": "running-away-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3010",
+      "presetNumber": 3010,
+      "label": "Thumbs up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is pointing with his left hand and giving a thumbs up with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3010_thumbs-up-pose.pma",
+      "localScenePath": "scenes/3010_thumbs-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3010_00_thumbs-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3010_00_thumbs-up-pose.png",
+          "localThumbnailPath": "thumbnails/3010_00_thumbs-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "gesture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23730,
+      "slug": "thumbs-up-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3011",
+      "presetNumber": 3011,
+      "label": "Waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his right hand is on his hip, waving with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3011_waving-pose.pma",
+      "localScenePath": "scenes/3011_waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3011_00_waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3011_00_waving-pose.png",
+          "localThumbnailPath": "thumbnails/3011_00_waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "gesture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23809,
+      "slug": "waving-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3012",
+      "presetNumber": 3012,
+      "label": "Call me pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, making a phone with his left hand, saying \"call me\"",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3012_call-me-pose.pma",
+      "localScenePath": "scenes/3012_call-me-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3012_00_call-me-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3012_00_call-me-pose.png",
+          "localThumbnailPath": "thumbnails/3012_00_call-me-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        102
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "gesture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24273,
+      "slug": "call-me-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3018",
+      "presetNumber": 3018,
+      "label": "Finger gun hand gesture pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, making a finger gun with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3018_finger-gun-hand-gesture-pose.pma",
+      "localScenePath": "scenes/3018_finger-gun-hand-gesture-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3018_00_finger-gun-hand-gesture-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3018_00_finger-gun-hand-gesture-pose.png",
+          "localThumbnailPath": "thumbnails/3018_00_finger-gun-hand-gesture-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "gesture",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23759,
+      "slug": "finger-gun-hand-gesture-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3024",
+      "presetNumber": 3024,
+      "label": "Excited male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Excited male is standing, clenching his fists and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3024_excited-male-standing-pose.pma",
+      "localScenePath": "scenes/3024_excited-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3024_00_excited-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3024_00_excited-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3024_00_excited-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "excited",
+        "pose"
+      ],
+      "bytes": 23750,
+      "slug": "excited-male-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3025",
+      "presetNumber": 3025,
+      "label": "Male raising hand pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Excited male is standing, clenching his fists and raising his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3025_male-raising-hand-pose.pma",
+      "localScenePath": "scenes/3025_male-raising-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3025_00_male-raising-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3025_00_male-raising-hand-pose.png",
+          "localThumbnailPath": "thumbnails/3025_00_male-raising-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "excited",
+        "pose"
+      ],
+      "bytes": 23734,
+      "slug": "male-raising-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3026",
+      "presetNumber": 3026,
+      "label": "Excited male kneeling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Excited male is kneeling, clenching his fists and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3026_excited-male-kneeling-pose.pma",
+      "localScenePath": "scenes/3026_excited-male-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3026_00_excited-male-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3026_00_excited-male-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/3026_00_excited-male-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "excited",
+        "pose"
+      ],
+      "bytes": 23756,
+      "slug": "excited-male-kneeling-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3031",
+      "presetNumber": 3031,
+      "label": "Anime male standing full body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing with his right hand on his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3031_anime-male-standing-full-body-pose.pma",
+      "localScenePath": "scenes/3031_anime-male-standing-full-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3031_00_anime-male-standing-full-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3031_00_anime-male-standing-full-body-pose.png",
+          "localThumbnailPath": "thumbnails/3031_00_anime-male-standing-full-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "full",
+        "body",
+        "pose"
+      ],
+      "bytes": 23868,
+      "slug": "anime-male-standing-full-body-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3037",
+      "presetNumber": 3037,
+      "label": "Anime male walking full body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3037_anime-male-walking-full-body-pose.pma",
+      "localScenePath": "scenes/3037_anime-male-walking-full-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3037_00_anime-male-walking-full-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3037_00_anime-male-walking-full-body-pose.png",
+          "localThumbnailPath": "thumbnails/3037_00_anime-male-walking-full-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "full",
+        "body",
+        "pose"
+      ],
+      "bytes": 23906,
+      "slug": "anime-male-walking-full-body-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3038",
+      "presetNumber": 3038,
+      "label": "Anime male crouching full body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is crouching, resting his hands on thighs and posing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3038_anime-male-crouching-full-body-pose.pma",
+      "localScenePath": "scenes/3038_anime-male-crouching-full-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3038_00_anime-male-crouching-full-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3038_00_anime-male-crouching-full-body-pose.png",
+          "localThumbnailPath": "thumbnails/3038_00_anime-male-crouching-full-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "full",
+        "body",
+        "pose"
+      ],
+      "bytes": 23855,
+      "slug": "anime-male-crouching-full-body-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3039",
+      "presetNumber": 3039,
+      "label": "Anime crossed arms full body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing with his arms crossed and looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3039_anime-crossed-arms-full-body-pose.pma",
+      "localScenePath": "scenes/3039_anime-crossed-arms-full-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3039_00_anime-crossed-arms-full-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3039_00_anime-crossed-arms-full-body-pose.png",
+          "localThumbnailPath": "thumbnails/3039_00_anime-crossed-arms-full-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "full",
+        "body",
+        "pose"
+      ],
+      "bytes": 23863,
+      "slug": "anime-crossed-arms-full-body-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3046",
+      "presetNumber": 3046,
+      "label": "Male jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping from running, jumping over something, dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3046_male-jumping-pose.pma",
+      "localScenePath": "scenes/3046_male-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3046_00_male-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3046_00_male-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3046_00_male-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23844,
+      "slug": "male-jumping-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3047",
+      "presetNumber": 3047,
+      "label": "Male side kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping and side kicking in the air, dynamic kicking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3047_male-side-kicking-pose.pma",
+      "localScenePath": "scenes/3047_male-side-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3047_00_male-side-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3047_00_male-side-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3047_00_male-side-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23546,
+      "slug": "male-side-kicking-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3048",
+      "presetNumber": 3048,
+      "label": "Jumping landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping from running, landing pose, male dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3048_jumping-landing-pose.pma",
+      "localScenePath": "scenes/3048_jumping-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3048_00_jumping-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3048_00_jumping-landing-pose.png",
+          "localThumbnailPath": "thumbnails/3048_00_jumping-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23871,
+      "slug": "jumping-landing-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3049",
+      "presetNumber": 3049,
+      "label": "Male jumping obstacle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping over an obstacle, male dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3049_male-jumping-obstacle-pose.pma",
+      "localScenePath": "scenes/3049_male-jumping-obstacle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3049_00_male-jumping-obstacle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3049_00_male-jumping-obstacle-pose.png",
+          "localThumbnailPath": "thumbnails/3049_00_male-jumping-obstacle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 24283,
+      "slug": "male-jumping-obstacle-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3053",
+      "presetNumber": 3053,
+      "label": "Rock finger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and doing rock sign with both hands, rocker hand gesture pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3053_rock-finger-pose.pma",
+      "localScenePath": "scenes/3053_rock-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3053_00_rock-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3053_00_rock-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3053_00_rock-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23740,
+      "slug": "rock-finger-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3054",
+      "presetNumber": 3054,
+      "label": "Call me finger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is imitating a phone with his left hand, saying \"call me\", phone finger pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3054_call-me-finger-pose.pma",
+      "localScenePath": "scenes/3054_call-me-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3054_00_call-me-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3054_00_call-me-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3054_00_call-me-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23760,
+      "slug": "call-me-finger-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3055",
+      "presetNumber": 3055,
+      "label": "Pointing finger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is pointing up with his right index finger, warning about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3055_pointing-finger-pose.pma",
+      "localScenePath": "scenes/3055_pointing-finger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3055_00_pointing-finger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3055_00_pointing-finger-pose.png",
+          "localThumbnailPath": "thumbnails/3055_00_pointing-finger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23756,
+      "slug": "pointing-finger-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3058",
+      "presetNumber": 3058,
+      "label": "Angry pointing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is angry, clenching his right hand into a fist and pointing with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3058_angry-pointing-pose.pma",
+      "localScenePath": "scenes/3058_angry-pointing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3058_00_angry-pointing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3058_00_angry-pointing-pose.png",
+          "localThumbnailPath": "thumbnails/3058_00_angry-pointing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23758,
+      "slug": "angry-pointing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3059",
+      "presetNumber": 3059,
+      "label": "Finger gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and making a finger gun with his both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3059_finger-gun-pose.pma",
+      "localScenePath": "scenes/3059_finger-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3059_00_finger-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3059_00_finger-gun-pose.png",
+          "localThumbnailPath": "thumbnails/3059_00_finger-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "finger",
+        "pose"
+      ],
+      "bytes": 23683,
+      "slug": "finger-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3065",
+      "presetNumber": 3065,
+      "label": "Male mermaid holding trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water, raising his hands, holding a trident in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3065_male-mermaid-holding-trident-pose.pma",
+      "localScenePath": "scenes/3065_male-mermaid-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3065_00_male-mermaid-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3065_00_male-mermaid-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3065_00_male-mermaid-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 2062020,
+      "slug": "male-mermaid-holding-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3068",
+      "presetNumber": 3068,
+      "label": "Mermaid crossed arms drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water with his arms crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3068_mermaid-crossed-arms-drawing-pose.pma",
+      "localScenePath": "scenes/3068_mermaid-crossed-arms-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3068_00_mermaid-crossed-arms-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3068_00_mermaid-crossed-arms-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3068_00_mermaid-crossed-arms-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 16457,
+      "slug": "mermaid-crossed-arms-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3076",
+      "presetNumber": 3076,
+      "label": "Male mermaid rock sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is sitting on a rock, holding a trident and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3076_male-mermaid-rock-sitting-pose.pma",
+      "localScenePath": "scenes/3076_male-mermaid-rock-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3076_00_male-mermaid-rock-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3076_00_male-mermaid-rock-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3076_00_male-mermaid-rock-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 2082931,
+      "slug": "male-mermaid-rock-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

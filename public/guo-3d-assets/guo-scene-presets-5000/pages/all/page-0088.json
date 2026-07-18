@@ -1,0 +1,1160 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 87,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2089",
+      "presetNumber": 2089,
+      "label": "Congratulations handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is congratulating the other male, shaking hands and putting his other hand on his shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2089_congratulations-handshake-pose.pma",
+      "localScenePath": "scenes/2089_congratulations-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2089_00_congratulations-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2089_00_congratulations-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2089_00_congratulations-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2089_01_congratulations-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2089_01_congratulations-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46665,
+      "slug": "congratulations-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2090",
+      "presetNumber": 2090,
+      "label": "Female knife standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in boxing stance, holding a knife in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2090_female-knife-standing-pose.pma",
+      "localScenePath": "scenes/2090_female-knife-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2090_00_female-knife-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2090_00_female-knife-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2090_00_female-knife-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23905,
+      "slug": "female-knife-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2091",
+      "presetNumber": 2091,
+      "label": "Female knife landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, holding knives in both hands, female dual knife pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2091_female-knife-landing-pose.pma",
+      "localScenePath": "scenes/2091_female-knife-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2091_00_female-knife-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2091_00_female-knife-landing-pose.png",
+          "localThumbnailPath": "thumbnails/2091_00_female-knife-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24451,
+      "slug": "female-knife-landing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2092",
+      "presetNumber": 2092,
+      "label": "Female knife stabbing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and is about to stab something with her knife, holding it in right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2092_female-knife-stabbing-pose.pma",
+      "localScenePath": "scenes/2092_female-knife-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2092_00_female-knife-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2092_00_female-knife-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/2092_00_female-knife-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23942,
+      "slug": "female-knife-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2093",
+      "presetNumber": 2093,
+      "label": "Female knife jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, holding knives in both hands and is about to stab them into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2093_female-knife-jumping-pose.pma",
+      "localScenePath": "scenes/2093_female-knife-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2093_00_female-knife-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2093_00_female-knife-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2093_00_female-knife-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24457,
+      "slug": "female-knife-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2094",
+      "presetNumber": 2094,
+      "label": "Male gun knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and aiming his gun, holding a knife in his left hand and gun in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2094_male-gun-knife-pose.pma",
+      "localScenePath": "scenes/2094_male-gun-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2094_00_male-gun-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2094_00_male-gun-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2094_00_male-gun-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143,
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24651,
+      "slug": "male-gun-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2095",
+      "presetNumber": 2095,
+      "label": "Knives fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are about to start fighting, the female is holding knives",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2095_knives-fighting-pose.pma",
+      "localScenePath": "scenes/2095_knives-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2095_00_knives-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2095_00_knives-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2095_00_knives-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2095_01_knives-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2095_01_knives-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47382,
+      "slug": "knives-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2096",
+      "presetNumber": 2096,
+      "label": "Male knife jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a knife in his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2096_male-knife-jumping-pose.pma",
+      "localScenePath": "scenes/2096_male-knife-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2096_00_male-knife-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2096_00_male-knife-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2096_00_male-knife-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24186,
+      "slug": "male-knife-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2097",
+      "presetNumber": 2097,
+      "label": "Male knife stabbing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a knife in his right hand and stabbing it into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2097_male-knife-stabbing-pose.pma",
+      "localScenePath": "scenes/2097_male-knife-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2097_00_male-knife-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2097_00_male-knife-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/2097_00_male-knife-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24186,
+      "slug": "male-knife-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2098",
+      "presetNumber": 2098,
+      "label": "Male knife standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a knife in his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2098_male-knife-standing-pose.pma",
+      "localScenePath": "scenes/2098_male-knife-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2098_00_male-knife-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2098_00_male-knife-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2098_00_male-knife-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24394,
+      "slug": "male-knife-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2099",
+      "presetNumber": 2099,
+      "label": "Male dual knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding knives in both hands and is about to stab them into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2099_male-dual-knife-pose.pma",
+      "localScenePath": "scenes/2099_male-dual-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2099_00_male-dual-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2099_00_male-dual-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2099_00_male-dual-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24731,
+      "slug": "male-dual-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2100",
+      "presetNumber": 2100,
+      "label": "Barstool cute sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a bar stool and posing cutely, hands on her thighs and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2100_barstool-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2100_barstool-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2100_00_barstool-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2100_00_barstool-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2100_00_barstool-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24037,
+      "slug": "barstool-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2101",
+      "presetNumber": 2101,
+      "label": "Chairs cute sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are sitting on chairs and posing cutely, one of them is making bunny ears to the other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2101_chairs-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2101_chairs-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2101_00_chairs-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2101_00_chairs-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2101_00_chairs-cute-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2101_01_chairs-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2101_01_chairs-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47124,
+      "slug": "chairs-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2102",
+      "presetNumber": 2102,
+      "label": "Peace cute sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees and showing a peace sign with her left hand, posing cutely",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2102_peace-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2102_peace-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2102_00_peace-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2102_00_peace-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2102_00_peace-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23420,
+      "slug": "peace-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2103",
+      "presetNumber": 2103,
+      "label": "Kneeling cute sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting, kneeling and looking to the left, posing cutely",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2103_kneeling-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2103_kneeling-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2103_00_kneeling-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2103_00_kneeling-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2103_00_kneeling-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23508,
+      "slug": "kneeling-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2104",
+      "presetNumber": 2104,
+      "label": "Heart cute sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair and making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2104_heart-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2104_heart-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2104_00_heart-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2104_00_heart-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2104_00_heart-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23934,
+      "slug": "heart-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2105",
+      "presetNumber": 2105,
+      "label": "Blowing kiss cute pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bench and blowing a kiss to someone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2105_blowing-kiss-cute-pose.pma",
+      "localScenePath": "scenes/2105_blowing-kiss-cute-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2105_00_blowing-kiss-cute-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2105_00_blowing-kiss-cute-pose.png",
+          "localThumbnailPath": "thumbnails/2105_00_blowing-kiss-cute-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23980,
+      "slug": "blowing-kiss-cute-pose",
+      "tagIds": [
+        "couple",
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2106",
+      "presetNumber": 2106,
+      "label": "Cute hugging sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are sitting on the couch and cutely hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2106_cute-hugging-sitting-pose.pma",
+      "localScenePath": "scenes/2106_cute-hugging-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2106_00_cute-hugging-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2106_00_cute-hugging-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2106_00_cute-hugging-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2106_01_cute-hugging-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2106_01_cute-hugging-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 46709,
+      "slug": "cute-hugging-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2107",
+      "presetNumber": 2107,
+      "label": "Female cute sitting crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and posing cutely, her legs are crossed and her left hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2107_female-cute-sitting-crossed-legs-pose.pma",
+      "localScenePath": "scenes/2107_female-cute-sitting-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2107_00_female-cute-sitting-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2107_00_female-cute-sitting-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/2107_00_female-cute-sitting-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23940,
+      "slug": "female-cute-sitting-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2108",
+      "presetNumber": 2108,
+      "label": "Male cute sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair with his legs crossed and showing a peace sign",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2108_male-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2108_male-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2108_00_male-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2108_00_male-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2108_00_male-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24129,
+      "slug": "male-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2109",
+      "presetNumber": 2109,
+      "label": "Cute waving sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair with her legs crossed and waving with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2109_cute-waving-sitting-pose.pma",
+      "localScenePath": "scenes/2109_cute-waving-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2109_00_cute-waving-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2109_00_cute-waving-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2109_00_cute-waving-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24051,
+      "slug": "cute-waving-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2110",
+      "presetNumber": 2110,
+      "label": "Anime male sleeping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his right side in bed and sleeping, anime sleeping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2110_anime-male-sleeping-pose.pma",
+      "localScenePath": "scenes/2110_anime-male-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2110_00_anime-male-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2110_00_anime-male-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2110_00_anime-male-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 492406,
+      "slug": "anime-male-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2111",
+      "presetNumber": 2111,
+      "label": "Anime couple sleeping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male couple is sleeping together, the male is hugging the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2111_anime-couple-sleeping-pose.pma",
+      "localScenePath": "scenes/2111_anime-couple-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2111_00_anime-couple-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2111_00_anime-couple-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2111_00_anime-couple-sleeping-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2111_01_anime-couple-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2111_01_anime-couple-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 515288,
+      "slug": "anime-couple-sleeping-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2112",
+      "presetNumber": 2112,
+      "label": "Anime lying back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is lying on her back and sleeping, anime sleeping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2112_anime-lying-back-pose.pma",
+      "localScenePath": "scenes/2112_anime-lying-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2112_00_anime-lying-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2112_00_anime-lying-back-pose.png",
+          "localThumbnailPath": "thumbnails/2112_00_anime-lying-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 492476,
+      "slug": "anime-lying-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    }
+  ]
+}

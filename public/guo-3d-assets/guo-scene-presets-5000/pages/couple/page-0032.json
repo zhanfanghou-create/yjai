@@ -1,0 +1,1197 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 31,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-4359",
+      "presetNumber": 4359,
+      "label": "Couple leaning back pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch comfortably and leaning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4359_couple-leaning-back-pose.pma",
+      "localScenePath": "scenes/4359_couple-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4359_00_couple-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4359_00_couple-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4359_00_couple-leaning-back-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4359_01_couple-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4359_01_couple-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 45507,
+      "slug": "couple-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4378",
+      "presetNumber": 4378,
+      "label": "Cute anime couple umbrella pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Cute anime couple is standing and holding an umbrella, looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4378_cute-anime-couple-umbrella-pose.pma",
+      "localScenePath": "scenes/4378_cute-anime-couple-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4378_00_cute-anime-couple-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4378_00_cute-anime-couple-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/4378_00_cute-anime-couple-umbrella-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4378_01_cute-anime-couple-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/4378_01_cute-anime-couple-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "anime",
+        "body",
+        "base"
+      ],
+      "bytes": 40174,
+      "slug": "cute-anime-couple-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4382",
+      "presetNumber": 4382,
+      "label": "Male holding dead female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is sitting on a rock and holding dead female in his arms, looking to the sky",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4382_male-holding-dead-female-pose.pma",
+      "localScenePath": "scenes/4382_male-holding-dead-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4382_00_male-holding-dead-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4382_00_male-holding-dead-female-pose.png",
+          "localThumbnailPath": "thumbnails/4382_00_male-holding-dead-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4382_01_male-holding-dead-female-pose.png",
+          "localThumbnailPath": "thumbnails/4382_01_male-holding-dead-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        179
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45379,
+      "slug": "male-holding-dead-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4384",
+      "presetNumber": 4384,
+      "label": "Kneeling holding female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is kneeling and holding the dead female in his arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4384_kneeling-holding-female-pose.pma",
+      "localScenePath": "scenes/4384_kneeling-holding-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4384_00_kneeling-holding-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4384_00_kneeling-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/4384_00_kneeling-holding-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4384_01_kneeling-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/4384_01_kneeling-holding-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 44923,
+      "slug": "kneeling-holding-female-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4385",
+      "presetNumber": 4385,
+      "label": "Walking holding female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is walking, holding dead female in his arms, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4385_walking-holding-female-pose.pma",
+      "localScenePath": "scenes/4385_walking-holding-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4385_00_walking-holding-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4385_00_walking-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/4385_00_walking-holding-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4385_01_walking-holding-female-pose.png",
+          "localThumbnailPath": "thumbnails/4385_01_walking-holding-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 44943,
+      "slug": "walking-holding-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4389",
+      "presetNumber": 4389,
+      "label": "Dead skeleton couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Dead skeleton couple is lying and hugging each other, dead pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4389_dead-skeleton-couple-pose.pma",
+      "localScenePath": "scenes/4389_dead-skeleton-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4389_00_dead-skeleton-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4389_00_dead-skeleton-couple-pose.png",
+          "localThumbnailPath": "thumbnails/4389_00_dead-skeleton-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4389_01_dead-skeleton-couple-pose.png",
+          "localThumbnailPath": "thumbnails/4389_01_dead-skeleton-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 39588,
+      "slug": "dead-skeleton-couple-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4399",
+      "presetNumber": 4399,
+      "label": "Holding camera taking picture pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female model is posing, male is holding the camera and taking a picture of her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4399_holding-camera-taking-picture-pose.pma",
+      "localScenePath": "scenes/4399_holding-camera-taking-picture-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4399_00_holding-camera-taking-picture-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4399_00_holding-camera-taking-picture-pose.png",
+          "localThumbnailPath": "thumbnails/4399_00_holding-camera-taking-picture-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4399_01_holding-camera-taking-picture-pose.png",
+          "localThumbnailPath": "thumbnails/4399_01_holding-camera-taking-picture-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "camera",
+        "reference"
+      ],
+      "bytes": 381885,
+      "slug": "holding-camera-taking-picture-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4407",
+      "presetNumber": 4407,
+      "label": "Discussing holding paper pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are discussing something, female is holding a paper",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4407_discussing-holding-paper-pose.pma",
+      "localScenePath": "scenes/4407_discussing-holding-paper-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4407_00_discussing-holding-paper-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4407_00_discussing-holding-paper-pose.png",
+          "localThumbnailPath": "thumbnails/4407_00_discussing-holding-paper-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4407_01_discussing-holding-paper-pose.png",
+          "localThumbnailPath": "thumbnails/4407_01_discussing-holding-paper-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "paper",
+        "reference"
+      ],
+      "bytes": 48434,
+      "slug": "discussing-holding-paper-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4408",
+      "presetNumber": 4408,
+      "label": "Female giving paper pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is giving a paper to the other female, female holding paper reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4408_female-giving-paper-pose.pma",
+      "localScenePath": "scenes/4408_female-giving-paper-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4408_00_female-giving-paper-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4408_00_female-giving-paper-pose.png",
+          "localThumbnailPath": "thumbnails/4408_00_female-giving-paper-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4408_01_female-giving-paper-pose.png",
+          "localThumbnailPath": "thumbnails/4408_01_female-giving-paper-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        172
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "paper",
+        "reference"
+      ],
+      "bytes": 49140,
+      "slug": "female-giving-paper-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4416",
+      "presetNumber": 4416,
+      "label": "Discussing holding pencil pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and discussing something, one female is holding a pencil, the other is holding a paper",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4416_discussing-holding-pencil-pose.pma",
+      "localScenePath": "scenes/4416_discussing-holding-pencil-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4416_00_discussing-holding-pencil-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4416_00_discussing-holding-pencil-pose.png",
+          "localThumbnailPath": "thumbnails/4416_00_discussing-holding-pencil-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4416_01_discussing-holding-pencil-pose.png",
+          "localThumbnailPath": "thumbnails/4416_01_discussing-holding-pencil-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pencil",
+        "reference"
+      ],
+      "bytes": 241417,
+      "slug": "discussing-holding-pencil-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4418",
+      "presetNumber": 4418,
+      "label": "Giving pencil pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing, one of them is giving a pencil to the other female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4418_giving-pencil-pose.pma",
+      "localScenePath": "scenes/4418_giving-pencil-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4418_00_giving-pencil-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4418_00_giving-pencil-pose.png",
+          "localThumbnailPath": "thumbnails/4418_00_giving-pencil-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4418_01_giving-pencil-pose.png",
+          "localThumbnailPath": "thumbnails/4418_01_giving-pencil-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pencil",
+        "reference"
+      ],
+      "bytes": 238350,
+      "slug": "giving-pencil-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4420",
+      "presetNumber": 4420,
+      "label": "Handcuffed female male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Handcuffed female and male are standing next to each other, handcuff pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4420_handcuffed-female-male-pose.pma",
+      "localScenePath": "scenes/4420_handcuffed-female-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4420_00_handcuffed-female-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4420_00_handcuffed-female-male-pose.png",
+          "localThumbnailPath": "thumbnails/4420_00_handcuffed-female-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4420_01_handcuffed-female-male-pose.png",
+          "localThumbnailPath": "thumbnails/4420_01_handcuffed-female-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handcuff",
+        "pose"
+      ],
+      "bytes": 695130,
+      "slug": "handcuffed-female-male-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4426",
+      "presetNumber": 4426,
+      "label": "Leading handcuffed male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is walking and leading a handcuffed male, male handcuff pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4426_leading-handcuffed-male-pose.pma",
+      "localScenePath": "scenes/4426_leading-handcuffed-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4426_00_leading-handcuffed-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4426_00_leading-handcuffed-male-pose.png",
+          "localThumbnailPath": "thumbnails/4426_00_leading-handcuffed-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4426_01_leading-handcuffed-male-pose.png",
+          "localThumbnailPath": "thumbnails/4426_01_leading-handcuffed-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handcuff",
+        "pose"
+      ],
+      "bytes": 370147,
+      "slug": "leading-handcuffed-male-pose"
+    },
+    {
+      "id": "guo-scene-4429",
+      "presetNumber": 4429,
+      "label": "Female handcuffing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is handcuffing another female, female handcuff pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4429_female-handcuffing-pose.pma",
+      "localScenePath": "scenes/4429_female-handcuffing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4429_00_female-handcuffing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4429_00_female-handcuffing-pose.png",
+          "localThumbnailPath": "thumbnails/4429_00_female-handcuffing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4429_01_female-handcuffing-pose.png",
+          "localThumbnailPath": "thumbnails/4429_01_female-handcuffing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handcuff",
+        "pose"
+      ],
+      "bytes": 370542,
+      "slug": "female-handcuffing-pose"
+    },
+    {
+      "id": "guo-scene-4430",
+      "presetNumber": 4430,
+      "label": "Female male smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and smoking, male is lighting his cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4430_female-male-smoking-pose.pma",
+      "localScenePath": "scenes/4430_female-male-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4430_00_female-male-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4430_00_female-male-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4430_00_female-male-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4430_01_female-male-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4430_01_female-male-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 484538,
+      "slug": "female-male-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4434",
+      "presetNumber": 4434,
+      "label": "Females smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and smoking, one female is lighting the other's cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4434_females-smoking-pose.pma",
+      "localScenePath": "scenes/4434_females-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4434_00_females-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4434_00_females-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4434_00_females-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4434_01_females-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4434_01_females-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 484301,
+      "slug": "females-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4435",
+      "presetNumber": 4435,
+      "label": "Couple walking smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is walking casually, holding cigarettes, smoking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4435_couple-walking-smoking-pose.pma",
+      "localScenePath": "scenes/4435_couple-walking-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4435_00_couple-walking-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4435_00_couple-walking-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4435_00_couple-walking-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4435_01_couple-walking-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4435_01_couple-walking-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 271505,
+      "slug": "couple-walking-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4441",
+      "presetNumber": 4441,
+      "label": "Female lighting cigarette pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are standing next to each other, one is lighting the other female's cigarette, holding lighter in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4441_female-lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/4441_female-lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4441_00_female-lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4441_00_female-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/4441_00_female-lighting-cigarette-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4441_01_female-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/4441_01_female-lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 371228,
+      "slug": "female-lighting-cigarette-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4443",
+      "presetNumber": 4443,
+      "label": "Female lighting candle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding a birthday cake and female is lighting the candle on it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4443_female-lighting-candle-pose.pma",
+      "localScenePath": "scenes/4443_female-lighting-candle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4443_00_female-lighting-candle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4443_00_female-lighting-candle-pose.png",
+          "localThumbnailPath": "thumbnails/4443_00_female-lighting-candle-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4443_01_female-lighting-candle-pose.png",
+          "localThumbnailPath": "thumbnails/4443_01_female-lighting-candle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        127,
+        129,
+        132
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 259726,
+      "slug": "female-lighting-candle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4446",
+      "presetNumber": 4446,
+      "label": "Concert holding lighter pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two excited females are having fun at a concert, holding lighters in the air, hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4446_concert-holding-lighter-pose.pma",
+      "localScenePath": "scenes/4446_concert-holding-lighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4446_00_concert-holding-lighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4446_00_concert-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4446_00_concert-holding-lighter-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4446_01_concert-holding-lighter-pose.png",
+          "localThumbnailPath": "thumbnails/4446_01_concert-holding-lighter-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 471075,
+      "slug": "concert-holding-lighter-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4449",
+      "presetNumber": 4449,
+      "label": "Holding lighter smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are sitting in armchairs, one is lighting the other male's cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4449_holding-lighter-smoking-pose.pma",
+      "localScenePath": "scenes/4449_holding-lighter-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4449_00_holding-lighter-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4449_00_holding-lighter-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4449_00_holding-lighter-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4449_01_holding-lighter-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4449_01_holding-lighter-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "lighter",
+        "reference"
+      ],
+      "bytes": 372036,
+      "slug": "holding-lighter-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4450",
+      "presetNumber": 4450,
+      "label": "Couple picnic pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the floor, looking at each other, having a picnic",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4450_couple-picnic-pose.pma",
+      "localScenePath": "scenes/4450_couple-picnic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4450_00_couple-picnic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4450_00_couple-picnic-pose.png",
+          "localThumbnailPath": "thumbnails/4450_00_couple-picnic-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4450_01_couple-picnic-pose.png",
+          "localThumbnailPath": "thumbnails/4450_01_couple-picnic-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 45191,
+      "slug": "couple-picnic-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4452",
+      "presetNumber": 4452,
+      "label": "Happy females floor sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two happy females are sitting, kneeling on the floor and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4452_happy-females-floor-sitting-pose.pma",
+      "localScenePath": "scenes/4452_happy-females-floor-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4452_00_happy-females-floor-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4452_00_happy-females-floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4452_00_happy-females-floor-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4452_01_happy-females-floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4452_01_happy-females-floor-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 45343,
+      "slug": "happy-females-floor-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4459",
+      "presetNumber": 4459,
+      "label": "Floor sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the floor, looking at each other, sitting on the floor pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4459_floor-sitting-pose.pma",
+      "localScenePath": "scenes/4459_floor-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4459_00_floor-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4459_00_floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4459_00_floor-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4459_01_floor-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4459_01_floor-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sitting",
+        "floor",
+        "pose"
+      ],
+      "bytes": 45115,
+      "slug": "floor-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1143 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 95,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2281",
+      "presetNumber": 2281,
+      "label": "Female shield standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a shield in her left hand and a sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2281_female-shield-standing-pose.pma",
+      "localScenePath": "scenes/2281_female-shield-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2281_00_female-shield-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2281_00_female-shield-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2281_00_female-shield-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24486,
+      "slug": "female-shield-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2282",
+      "presetNumber": 2282,
+      "label": "Male shield kneeling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling, holding a shield and a sword and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2282_male-shield-kneeling-pose.pma",
+      "localScenePath": "scenes/2282_male-shield-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2282_00_male-shield-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2282_00_male-shield-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2282_00_male-shield-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24737,
+      "slug": "male-shield-kneeling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2283",
+      "presetNumber": 2283,
+      "label": "Female shield kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, holding a shield and a sword and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2283_female-shield-kneeling-pose.pma",
+      "localScenePath": "scenes/2283_female-shield-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2283_00_female-shield-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2283_00_female-shield-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2283_00_female-shield-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24463,
+      "slug": "female-shield-kneeling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2284",
+      "presetNumber": 2284,
+      "label": "Male shield crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding a sword and a shield and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2284_male-shield-crouching-pose.pma",
+      "localScenePath": "scenes/2284_male-shield-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2284_00_male-shield-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2284_00_male-shield-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/2284_00_male-shield-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24724,
+      "slug": "male-shield-crouching-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2285",
+      "presetNumber": 2285,
+      "label": "Male shield jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a shield and a sword and jumping, attacking someone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2285_male-shield-jumping-pose.pma",
+      "localScenePath": "scenes/2285_male-shield-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2285_00_male-shield-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2285_00_male-shield-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2285_00_male-shield-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24746,
+      "slug": "male-shield-jumping-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2286",
+      "presetNumber": 2286,
+      "label": "Holding shield pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling and holding the shield with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2286_holding-shield-pose.pma",
+      "localScenePath": "scenes/2286_holding-shield-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2286_00_holding-shield-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2286_00_holding-shield-pose.png",
+          "localThumbnailPath": "thumbnails/2286_00_holding-shield-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24285,
+      "slug": "holding-shield-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2287",
+      "presetNumber": 2287,
+      "label": "Female holding sword shield pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a shield in her left hand and raising the sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2287_female-holding-sword-shield-pose.pma",
+      "localScenePath": "scenes/2287_female-holding-sword-shield-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2287_00_female-holding-sword-shield-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2287_00_female-holding-sword-shield-pose.png",
+          "localThumbnailPath": "thumbnails/2287_00_female-holding-sword-shield-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24477,
+      "slug": "female-holding-sword-shield-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2288",
+      "presetNumber": 2288,
+      "label": "Female axe shield pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a shield and an axe and jumping high, raising the axe to attack someone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2288_female-axe-shield-pose.pma",
+      "localScenePath": "scenes/2288_female-axe-shield-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2288_00_female-axe-shield-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2288_00_female-axe-shield-pose.png",
+          "localThumbnailPath": "thumbnails/2288_00_female-axe-shield-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156,
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 24476,
+      "slug": "female-axe-shield-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2289",
+      "presetNumber": 2289,
+      "label": "Sword shield fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, holding swords and shields, attacking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2289_sword-shield-fighting-pose.pma",
+      "localScenePath": "scenes/2289_sword-shield-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2289_00_sword-shield-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2289_00_sword-shield-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2289_00_sword-shield-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2289_01_sword-shield-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2289_01_sword-shield-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shield",
+        "pose"
+      ],
+      "bytes": 48601,
+      "slug": "sword-shield-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2290",
+      "presetNumber": 2290,
+      "label": "Scared standing female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and getting scared of something, raising her hands to protect her face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2290_scared-standing-female-pose.pma",
+      "localScenePath": "scenes/2290_scared-standing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2290_00_scared-standing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2290_00_scared-standing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2290_00_scared-standing-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23517,
+      "slug": "scared-standing-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2291",
+      "presetNumber": 2291,
+      "label": "Scared kneeling female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling and getting scared of something, raising her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2291_scared-kneeling-female-pose.pma",
+      "localScenePath": "scenes/2291_scared-kneeling-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2291_00_scared-kneeling-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2291_00_scared-kneeling-female-pose.png",
+          "localThumbnailPath": "thumbnails/2291_00_scared-kneeling-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23510,
+      "slug": "scared-kneeling-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2292",
+      "presetNumber": 2292,
+      "label": "Scared terrified female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the floor and getting scared of something, protecting her head with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2292_scared-terrified-female-pose.pma",
+      "localScenePath": "scenes/2292_scared-terrified-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2292_00_scared-terrified-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2292_00_scared-terrified-female-pose.png",
+          "localThumbnailPath": "thumbnails/2292_00_scared-terrified-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23509,
+      "slug": "scared-terrified-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2293",
+      "presetNumber": 2293,
+      "label": "Scared afraid female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Scared female is standing and holding her face with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2293_scared-afraid-female-pose.pma",
+      "localScenePath": "scenes/2293_scared-afraid-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2293_00_scared-afraid-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2293_00_scared-afraid-female-pose.png",
+          "localThumbnailPath": "thumbnails/2293_00_scared-afraid-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23502,
+      "slug": "scared-afraid-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2294",
+      "presetNumber": 2294,
+      "label": "Female scared panic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is scared and panicking, putting her hands on her heart",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2294_female-scared-panic-pose.pma",
+      "localScenePath": "scenes/2294_female-scared-panic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2294_00_female-scared-panic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2294_00_female-scared-panic-pose.png",
+          "localThumbnailPath": "thumbnails/2294_00_female-scared-panic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23488,
+      "slug": "female-scared-panic-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2295",
+      "presetNumber": 2295,
+      "label": "Scared female hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Scared female is hiding under the table and holding her head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2295_scared-female-hiding-pose.pma",
+      "localScenePath": "scenes/2295_scared-female-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2295_00_scared-female-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2295_00_scared-female-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/2295_00_scared-female-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 42107,
+      "slug": "scared-female-hiding-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2296",
+      "presetNumber": 2296,
+      "label": "Scared sitting female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair and getting scared of something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2296_scared-sitting-female-pose.pma",
+      "localScenePath": "scenes/2296_scared-sitting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2296_00_scared-sitting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2296_00_scared-sitting-female-pose.png",
+          "localThumbnailPath": "thumbnails/2296_00_scared-sitting-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23918,
+      "slug": "scared-sitting-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2297",
+      "presetNumber": 2297,
+      "label": "Scared crawling backwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Scared female is crawling backwards on the floor and raising her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2297_scared-crawling-backwards-pose.pma",
+      "localScenePath": "scenes/2297_scared-crawling-backwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2297_00_scared-crawling-backwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2297_00_scared-crawling-backwards-pose.png",
+          "localThumbnailPath": "thumbnails/2297_00_scared-crawling-backwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23493,
+      "slug": "scared-crawling-backwards-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2298",
+      "presetNumber": 2298,
+      "label": "Scared male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and getting scared of something, raising his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2298_scared-male-standing-pose.pma",
+      "localScenePath": "scenes/2298_scared-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2298_00_scared-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2298_00_scared-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2298_00_scared-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23795,
+      "slug": "scared-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2299",
+      "presetNumber": 2299,
+      "label": "Scared male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Scared male is sitting and getting scared of something, protecting his head with his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2299_scared-male-sitting-pose.pma",
+      "localScenePath": "scenes/2299_scared-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2299_00_scared-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2299_00_scared-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2299_00_scared-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scared",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23753,
+      "slug": "scared-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2300",
+      "presetNumber": 2300,
+      "label": "Couple cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and cuddling, hugging each other tightly",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2300_couple-cuddling-pose.pma",
+      "localScenePath": "scenes/2300_couple-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2300_00_couple-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2300_00_couple-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2300_00_couple-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2300_01_couple-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2300_01_couple-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46620,
+      "slug": "couple-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2301",
+      "presetNumber": 2301,
+      "label": "Couple kissing cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is cuddling, hugging each other and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2301_couple-kissing-cuddling-pose.pma",
+      "localScenePath": "scenes/2301_couple-kissing-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2301_00_couple-kissing-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2301_00_couple-kissing-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2301_00_couple-kissing-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2301_01_couple-kissing-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2301_01_couple-kissing-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46538,
+      "slug": "couple-kissing-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2302",
+      "presetNumber": 2302,
+      "label": "Cuddling behind pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are cuddling, the male is hugging the female from behind",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2302_cuddling-behind-pose.pma",
+      "localScenePath": "scenes/2302_cuddling-behind-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2302_00_cuddling-behind-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2302_00_cuddling-behind-pose.png",
+          "localThumbnailPath": "thumbnails/2302_00_cuddling-behind-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2302_01_cuddling-behind-pose.png",
+          "localThumbnailPath": "thumbnails/2302_01_cuddling-behind-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46557,
+      "slug": "cuddling-behind-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2303",
+      "presetNumber": 2303,
+      "label": "Females sitting cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are sitting and cuddling, hugging each other and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2303_females-sitting-cuddling-pose.pma",
+      "localScenePath": "scenes/2303_females-sitting-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2303_00_females-sitting-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2303_00_females-sitting-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2303_00_females-sitting-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2303_01_females-sitting-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2303_01_females-sitting-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46197,
+      "slug": "females-sitting-cuddling-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2304",
+      "presetNumber": 2304,
+      "label": "Romantic cuddling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is cuddling, male is holding the female in his arms and they are hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2304_romantic-cuddling-pose.pma",
+      "localScenePath": "scenes/2304_romantic-cuddling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2304_00_romantic-cuddling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2304_00_romantic-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2304_00_romantic-cuddling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2304_01_romantic-cuddling-pose.png",
+          "localThumbnailPath": "thumbnails/2304_01_romantic-cuddling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cuddling",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46080,
+      "slug": "romantic-cuddling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

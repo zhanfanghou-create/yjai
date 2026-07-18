@@ -1,0 +1,1086 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 48,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1153",
+      "presetNumber": 1153,
+      "label": "Hitting floor bump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player hits the floor to catch the ball with a bump",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1153_hitting-floor-bump-pose.pma",
+      "localScenePath": "scenes/1153_hitting-floor-bump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1153_00_hitting-floor-bump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1153_00_hitting-floor-bump-pose.png",
+          "localThumbnailPath": "thumbnails/1153_00_hitting-floor-bump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 23898,
+      "slug": "hitting-floor-bump-pose"
+    },
+    {
+      "id": "guo-scene-1154",
+      "presetNumber": 1154,
+      "label": "Volleyball bump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player hits the ball with a focused bump",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1154_volleyball-bump-pose.pma",
+      "localScenePath": "scenes/1154_volleyball-bump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1154_00_volleyball-bump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1154_00_volleyball-bump-pose.png",
+          "localThumbnailPath": "thumbnails/1154_00_volleyball-bump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 23886,
+      "slug": "volleyball-bump-pose"
+    },
+    {
+      "id": "guo-scene-1155",
+      "presetNumber": 1155,
+      "label": "Female jumping volleying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female player is jumping and volleying the ball with both palms above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1155_female-jumping-volleying-pose.pma",
+      "localScenePath": "scenes/1155_female-jumping-volleying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1155_00_female-jumping-volleying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1155_00_female-jumping-volleying-pose.png",
+          "localThumbnailPath": "thumbnails/1155_00_female-jumping-volleying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24321,
+      "slug": "female-jumping-volleying-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1156",
+      "presetNumber": 1156,
+      "label": "Right hand volleyball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping to hit the ball with one hand, hitting the volleyball with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1156_right-hand-volleyball-pose.pma",
+      "localScenePath": "scenes/1156_right-hand-volleyball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1156_00_right-hand-volleyball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1156_00_right-hand-volleyball-pose.png",
+          "localThumbnailPath": "thumbnails/1156_00_right-hand-volleyball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24033,
+      "slug": "right-hand-volleyball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1157",
+      "presetNumber": 1157,
+      "label": "Starting volleyball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female player is starting the game, is about to throw up and hit the volleyball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1157_starting-volleyball-pose.pma",
+      "localScenePath": "scenes/1157_starting-volleyball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1157_00_starting-volleyball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1157_00_starting-volleyball-pose.png",
+          "localThumbnailPath": "thumbnails/1157_00_starting-volleyball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24061,
+      "slug": "starting-volleyball-pose"
+    },
+    {
+      "id": "guo-scene-1158",
+      "presetNumber": 1158,
+      "label": "Female volleying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player is volleying the ball with both palms above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1158_female-volleying-pose.pma",
+      "localScenePath": "scenes/1158_female-volleying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1158_00_female-volleying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1158_00_female-volleying-pose.png",
+          "localThumbnailPath": "thumbnails/1158_00_female-volleying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24093,
+      "slug": "female-volleying-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1159",
+      "presetNumber": 1159,
+      "label": "Left hand volleyball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female volleyball player throws the ball and is about to hit with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1159_left-hand-volleyball-pose.pma",
+      "localScenePath": "scenes/1159_left-hand-volleyball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1159_00_left-hand-volleyball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1159_00_left-hand-volleyball-pose.png",
+          "localThumbnailPath": "thumbnails/1159_00_left-hand-volleyball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 24177,
+      "slug": "left-hand-volleyball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1160",
+      "presetNumber": 1160,
+      "label": "Sitting talking flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on chairs and talking, flirting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1160_sitting-talking-flirting-pose.pma",
+      "localScenePath": "scenes/1160_sitting-talking-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1160_00_sitting-talking-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1160_00_sitting-talking-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1160_00_sitting-talking-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1160_01_sitting-talking-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1160_01_sitting-talking-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 47216,
+      "slug": "sitting-talking-flirting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-1161",
+      "presetNumber": 1161,
+      "label": "Flirting bar counter pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning on the bar counter and flirting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1161_flirting-bar-counter-pose.pma",
+      "localScenePath": "scenes/1161_flirting-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1161_00_flirting-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1161_00_flirting-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1161_00_flirting-bar-counter-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1161_01_flirting-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1161_01_flirting-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46920,
+      "slug": "flirting-bar-counter-pose"
+    },
+    {
+      "id": "guo-scene-1162",
+      "presetNumber": 1162,
+      "label": "Female flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, female is flirting with the male, carressing his face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1162_female-flirting-pose.pma",
+      "localScenePath": "scenes/1162_female-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1162_00_female-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1162_00_female-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1162_00_female-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1162_01_female-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1162_01_female-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46590,
+      "slug": "female-flirting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1163",
+      "presetNumber": 1163,
+      "label": "Leaning wall flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning against the wall, male is flirting with the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1163_leaning-wall-flirting-pose.pma",
+      "localScenePath": "scenes/1163_leaning-wall-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1163_00_leaning-wall-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1163_00_leaning-wall-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1163_00_leaning-wall-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1163_01_leaning-wall-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1163_01_leaning-wall-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 47065,
+      "slug": "leaning-wall-flirting-pose"
+    },
+    {
+      "id": "guo-scene-1164",
+      "presetNumber": 1164,
+      "label": "Male flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, male is flirting with the female, carressing her face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1164_male-flirting-pose.pma",
+      "localScenePath": "scenes/1164_male-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1164_00_male-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1164_00_male-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1164_00_male-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1164_01_male-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1164_01_male-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46326,
+      "slug": "male-flirting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1165",
+      "presetNumber": 1165,
+      "label": "Female touching flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, female is flirting, touching his chest",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1165_female-touching-flirting-pose.pma",
+      "localScenePath": "scenes/1165_female-touching-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1165_00_female-touching-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1165_00_female-touching-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1165_00_female-touching-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1165_01_female-touching-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1165_01_female-touching-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46343,
+      "slug": "female-touching-flirting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1166",
+      "presetNumber": 1166,
+      "label": "Kissing hand sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on chairs, the male is about to kiss the female's hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1166_kissing-hand-sitting-pose.pma",
+      "localScenePath": "scenes/1166_kissing-hand-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1166_00_kissing-hand-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1166_00_kissing-hand-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1166_00_kissing-hand-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1166_01_kissing-hand-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1166_01_kissing-hand-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 47300,
+      "slug": "kissing-hand-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1167",
+      "presetNumber": 1167,
+      "label": "Leaning table flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning on a table and talking, the male is flirting with the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1167_leaning-table-flirting-pose.pma",
+      "localScenePath": "scenes/1167_leaning-table-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1167_00_leaning-table-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1167_00_leaning-table-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1167_00_leaning-table-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1167_01_leaning-table-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1167_01_leaning-table-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 47022,
+      "slug": "leaning-table-flirting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-1168",
+      "presetNumber": 1168,
+      "label": "Walking flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are walking and talking, flirting, looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1168_walking-flirting-pose.pma",
+      "localScenePath": "scenes/1168_walking-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1168_00_walking-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1168_00_walking-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1168_00_walking-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1168_01_walking-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1168_01_walking-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46398,
+      "slug": "walking-flirting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1169",
+      "presetNumber": 1169,
+      "label": "Holding hands flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing in front of each other and holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1169_holding-hands-flirting-pose.pma",
+      "localScenePath": "scenes/1169_holding-hands-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1169_00_holding-hands-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1169_00_holding-hands-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1169_00_holding-hands-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1169_01_holding-hands-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1169_01_holding-hands-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46618,
+      "slug": "holding-hands-flirting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1170",
+      "presetNumber": 1170,
+      "label": "Female hand pocket pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, her left hand is in her pocket and looking to the left pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1170_female-hand-pocket-pose.pma",
+      "localScenePath": "scenes/1170_female-hand-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1170_00_female-hand-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1170_00_female-hand-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/1170_00_female-hand-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23458,
+      "slug": "female-hand-pocket-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1171",
+      "presetNumber": 1171,
+      "label": "Confident female crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently with her legs crossed and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1171_confident-female-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1171_confident-female-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1171_00_confident-female-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1171_00_confident-female-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1171_00_confident-female-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23674,
+      "slug": "confident-female-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1172",
+      "presetNumber": 1172,
+      "label": "Crossed legs arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with crossed legs and crossed arms, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1172_crossed-legs-arms-pose.pma",
+      "localScenePath": "scenes/1172_crossed-legs-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1172_00_crossed-legs-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1172_00_crossed-legs-arms-pose.png",
+          "localThumbnailPath": "thumbnails/1172_00_crossed-legs-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23438,
+      "slug": "crossed-legs-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1173",
+      "presetNumber": 1173,
+      "label": "Crossed legs holding hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, her hands are on her hips and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1173_crossed-legs-holding-hips-pose.pma",
+      "localScenePath": "scenes/1173_crossed-legs-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1173_00_crossed-legs-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1173_00_crossed-legs-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/1173_00_crossed-legs-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23368,
+      "slug": "crossed-legs-holding-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1174",
+      "presetNumber": 1174,
+      "label": "Shy female crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing with her legs crossed and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1174_shy-female-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1174_shy-female-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1174_00_shy-female-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1174_00_shy-female-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1174_00_shy-female-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23463,
+      "slug": "shy-female-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1175",
+      "presetNumber": 1175,
+      "label": "Confident male crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Confident male is standing with his legs crossed and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1175_confident-male-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1175_confident-male-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1175_00_confident-male-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1175_00_confident-male-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1175_00_confident-male-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23823,
+      "slug": "confident-male-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1176",
+      "presetNumber": 1176,
+      "label": "Offended standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Offended male is standing with his legs and arms crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1176_offended-standing-pose.pma",
+      "localScenePath": "scenes/1176_offended-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1176_00_offended-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1176_00_offended-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1176_00_offended-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23686,
+      "slug": "offended-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

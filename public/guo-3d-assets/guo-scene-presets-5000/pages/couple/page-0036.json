@@ -1,0 +1,814 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 35,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-4931",
+      "presetNumber": 4931,
+      "label": "Low kick strike pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are fighting, one female is kicking, the other is dodging the attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4941_low-kick-strike-pose.pma",
+      "localScenePath": "scenes/4941_low-kick-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4941_00_low-kick-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4941_00_low-kick-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4941_00_low-kick-strike-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4941_01_low-kick-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4941_01_low-kick-strike-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 39468,
+      "slug": "low-kick-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4932",
+      "presetNumber": 4932,
+      "label": "High kick block pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting, one male is kicking, the other is blocking with his forearm",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4942_high-kick-block-pose.pma",
+      "localScenePath": "scenes/4942_high-kick-block-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4942_00_high-kick-block-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4942_00_high-kick-block-pose.png",
+          "localThumbnailPath": "thumbnails/4942_00_high-kick-block-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4942_01_high-kick-block-pose.png",
+          "localThumbnailPath": "thumbnails/4942_01_high-kick-block-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 39276,
+      "slug": "high-kick-block-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4933",
+      "presetNumber": 4933,
+      "label": "Sword clash pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, clashing swords, sword fight scene reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4943_sword-clash-pose.pma",
+      "localScenePath": "scenes/4943_sword-clash-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4943_00_sword-clash-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4943_00_sword-clash-pose.png",
+          "localThumbnailPath": "thumbnails/4943_00_sword-clash-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4943_01_sword-clash-pose.png",
+          "localThumbnailPath": "thumbnails/4943_01_sword-clash-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 40195,
+      "slug": "sword-clash-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4934",
+      "presetNumber": 4934,
+      "label": "Overhead spear strike pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting with spears, female is attacking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4944_overhead-spear-strike-pose.pma",
+      "localScenePath": "scenes/4944_overhead-spear-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4944_00_overhead-spear-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4944_00_overhead-spear-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4944_00_overhead-spear-strike-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4944_01_overhead-spear-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4944_01_overhead-spear-strike-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 41243,
+      "slug": "overhead-spear-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4935",
+      "presetNumber": 4935,
+      "label": "Grabbing throwing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting, one male is grabbing and throwing the other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4945_grabbing-throwing-pose.pma",
+      "localScenePath": "scenes/4945_grabbing-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4945_00_grabbing-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4945_00_grabbing-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/4945_00_grabbing-throwing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4945_01_grabbing-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/4945_01_grabbing-throwing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 39421,
+      "slug": "grabbing-throwing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4936",
+      "presetNumber": 4936,
+      "label": "Choke hold pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding the other male in a chokehold, male fight scene reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4946_choke-hold-pose.pma",
+      "localScenePath": "scenes/4946_choke-hold-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4946_00_choke-hold-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4946_00_choke-hold-pose.png",
+          "localThumbnailPath": "thumbnails/4946_00_choke-hold-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4946_01_choke-hold-pose.png",
+          "localThumbnailPath": "thumbnails/4946_01_choke-hold-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 39309,
+      "slug": "choke-hold-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4937",
+      "presetNumber": 4937,
+      "label": "Females dagger fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are fighting with daggers, female fight scene reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4947_females-dagger-fighting-pose.pma",
+      "localScenePath": "scenes/4947_females-dagger-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4947_00_females-dagger-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4947_00_females-dagger-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4947_00_females-dagger-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4947_01_females-dagger-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4947_01_females-dagger-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 40888,
+      "slug": "females-dagger-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4938",
+      "presetNumber": 4938,
+      "label": "Shield bash pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is knocking the opponent away with a shield slam",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4948_shield-bash-pose.pma",
+      "localScenePath": "scenes/4948_shield-bash-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4948_00_shield-bash-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4948_00_shield-bash-pose.png",
+          "localThumbnailPath": "thumbnails/4948_00_shield-bash-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4948_01_shield-bash-pose.png",
+          "localThumbnailPath": "thumbnails/4948_01_shield-bash-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 40779,
+      "slug": "shield-bash-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4939",
+      "presetNumber": 4939,
+      "label": "Ground grapple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Males are fighting on the ground, one is on top of the other and punching him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4949_ground-grapple-pose.pma",
+      "localScenePath": "scenes/4949_ground-grapple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4949_00_ground-grapple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4949_00_ground-grapple-pose.png",
+          "localThumbnailPath": "thumbnails/4949_00_ground-grapple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4949_01_ground-grapple-pose.png",
+          "localThumbnailPath": "thumbnails/4949_01_ground-grapple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fight",
+        "scene",
+        "reference"
+      ],
+      "bytes": 39296,
+      "slug": "ground-grapple-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4949",
+      "presetNumber": 4949,
+      "label": "Side aiming archery stance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male archers are standing, one is shooting his bow sideways",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4959_side-aiming-archery-stance-pose.pma",
+      "localScenePath": "scenes/4959_side-aiming-archery-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4959_00_side-aiming-archery-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4959_00_side-aiming-archery-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4959_00_side-aiming-archery-stance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4959_01_side-aiming-archery-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4959_01_side-aiming-archery-stance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        159,
+        176
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "and",
+        "arrow",
+        "reference"
+      ],
+      "bytes": 40307,
+      "slug": "side-aiming-archery-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4957",
+      "presetNumber": 4957,
+      "label": "Ballerina lifting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is lifting the ballerina, ballerina is dancing gracefully, looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4967_ballerina-lifting-pose.pma",
+      "localScenePath": "scenes/4967_ballerina-lifting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4967_00_ballerina-lifting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4967_00_ballerina-lifting-pose.png",
+          "localThumbnailPath": "thumbnails/4967_00_ballerina-lifting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4967_01_ballerina-lifting-pose.png",
+          "localThumbnailPath": "thumbnails/4967_01_ballerina-lifting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "ballerina",
+        "pose",
+        "references"
+      ],
+      "bytes": 39518,
+      "slug": "ballerina-lifting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4958",
+      "presetNumber": 4958,
+      "label": "Romantic ballet pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing ballet, looking into each other's eyes, romantic ballet dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4968_romantic-ballet-pose.pma",
+      "localScenePath": "scenes/4968_romantic-ballet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4968_00_romantic-ballet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4968_00_romantic-ballet-pose.png",
+          "localThumbnailPath": "thumbnails/4968_00_romantic-ballet-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4968_01_romantic-ballet-pose.png",
+          "localThumbnailPath": "thumbnails/4968_01_romantic-ballet-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "ballerina",
+        "pose",
+        "references"
+      ],
+      "bytes": 39398,
+      "slug": "romantic-ballet-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4964",
+      "presetNumber": 4964,
+      "label": "Couple wearing backpacks pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are walking, holding each other's hands, wearing backpacks",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4974_couple-wearing-backpacks-pose.pma",
+      "localScenePath": "scenes/4974_couple-wearing-backpacks-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4974_00_couple-wearing-backpacks-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4974_00_couple-wearing-backpacks-pose.png",
+          "localThumbnailPath": "thumbnails/4974_00_couple-wearing-backpacks-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4974_01_couple-wearing-backpacks-pose.png",
+          "localThumbnailPath": "thumbnails/4974_01_couple-wearing-backpacks-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        275
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "backpack",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 40493,
+      "slug": "couple-wearing-backpacks-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4987",
+      "presetNumber": 4987,
+      "label": "Cowboy figure sketch pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Cowboy is riding a horse and adjusting his hat with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4997_cowboy-figure-sketch-pose.pma",
+      "localScenePath": "scenes/4997_cowboy-figure-sketch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4997_00_cowboy-figure-sketch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4997_00_cowboy-figure-sketch-pose.png",
+          "localThumbnailPath": "thumbnails/4997_00_cowboy-figure-sketch-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        33,
+        40
+      ],
+      "propNumbers": [
+        186
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "figure",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 28536,
+      "slug": "cowboy-figure-sketch-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-4997",
+      "presetNumber": 4997,
+      "label": "Bored females waiting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Bored females are sitting on the floor next to each other and waiting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5007_bored-females-waiting-pose.pma",
+      "localScenePath": "scenes/5007_bored-females-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5007_00_bored-females-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5007_00_bored-females-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5007_00_bored-females-waiting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5007_01_bored-females-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5007_01_bored-females-waiting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 39975,
+      "slug": "bored-females-waiting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4999",
+      "presetNumber": 4999,
+      "label": "Female male standing waiting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other and waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5009_female-male-standing-waiting-pose.pma",
+      "localScenePath": "scenes/5009_female-male-standing-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5009_00_female-male-standing-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5009_00_female-male-standing-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5009_00_female-male-standing-waiting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5009_01_female-male-standing-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5009_01_female-male-standing-waiting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 39374,
+      "slug": "female-male-standing-waiting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "guo.threeDirector.mannequinModelPackage",
+  "version": 1,
+  "packageId": "guo-mannequin-models",
+  "generatedAt": "2026-06-08T22:26:59.652Z",
+  "counts": {
+    "models": 8,
+    "totalBytes": 17147044
+  },
+  "items": [
+    {
+      "id": "broad-low",
+      "label": "broad low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/broad-low.glb",
+      "localPath": "models/broad-low.glb",
+      "bytes": 2013920,
+      "sha256": "92f445cc9b983cecdcf0aedf85837753597a8183189b8f0a96c3aa2655dec094"
+    },
+    {
+      "id": "chibi-low",
+      "label": "chibi low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/chibi-low.glb",
+      "localPath": "models/chibi-low.glb",
+      "bytes": 2087468,
+      "sha256": "6d71502f00dd39a825070a7fcff9ec7d41a4d7e58fb645e09e8545a46a9220e4"
+    },
+    {
+      "id": "child-low",
+      "label": "child low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/child-low.glb",
+      "localPath": "models/child-low.glb",
+      "bytes": 2086120,
+      "sha256": "0c7cc54817ab42e26f9f80f0aa64091ea3805cdb6f6bf9c5b9ae5c2634c0ee73"
+    },
+    {
+      "id": "muscular-low",
+      "label": "muscular low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/muscular-low.glb",
+      "localPath": "models/muscular-low.glb",
+      "bytes": 2041480,
+      "sha256": "b10bf1a4073810068e4527edf649c6a5ad050c0abb6e25d96fc1d49b624fcfe5"
+    },
+    {
+      "id": "slim-low",
+      "label": "slim low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/slim-low.glb",
+      "localPath": "models/slim-low.glb",
+      "bytes": 2090544,
+      "sha256": "9c91e26976353fd1a09c1c2d13ab28ac9baa71e201973bcf12e2b775b699a835"
+    },
+    {
+      "id": "standard-female-low",
+      "label": "standard female low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/standard-female-low.glb",
+      "localPath": "models/standard-female-low.glb",
+      "bytes": 2606908,
+      "sha256": "6409cc9bcfe0fa2087c79965399c7f5e5de4e875a84e0c7d77b2e87203423a18"
+    },
+    {
+      "id": "standard-male-low",
+      "label": "standard male low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/standard-male-low.glb",
+      "localPath": "models/standard-male-low.glb",
+      "bytes": 2106516,
+      "sha256": "37753af2502861dc91ce38b893276e27e425ee367e56f22e2e27e84a90523dec"
+    },
+    {
+      "id": "teen-low",
+      "label": "teen low",
+      "kind": "mannequin",
+      "url": "/guo-3d-assets/guo-mannequin-models/models/teen-low.glb",
+      "localPath": "models/teen-low.glb",
+      "bytes": 2114088,
+      "sha256": "98e8813b3dfd01f66bbb84e76a462e4c154c5d5d897b064eaa63e0cbce82ce9b"
+    }
+  ]
+}

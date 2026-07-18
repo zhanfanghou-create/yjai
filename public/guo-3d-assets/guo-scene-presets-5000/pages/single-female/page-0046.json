@@ -1,0 +1,1103 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 45,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-2494",
+      "presetNumber": 2494,
+      "label": "Falling floating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is floating, falling down unconsciously, anime floating pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2494_falling-floating-pose.pma",
+      "localScenePath": "scenes/2494_falling-floating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2494_00_falling-floating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2494_00_falling-floating-pose.png",
+          "localThumbnailPath": "thumbnails/2494_00_falling-floating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "floating",
+        "pose"
+      ],
+      "bytes": 23843,
+      "slug": "falling-floating-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2495",
+      "presetNumber": 2495,
+      "label": "Magic staff floating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is holding a magic staff in her right hand while floating",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2495_magic-staff-floating-pose.pma",
+      "localScenePath": "scenes/2495_magic-staff-floating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2495_00_magic-staff-floating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2495_00_magic-staff-floating-pose.png",
+          "localThumbnailPath": "thumbnails/2495_00_magic-staff-floating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        115
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "floating",
+        "pose"
+      ],
+      "bytes": 24388,
+      "slug": "magic-staff-floating-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2500",
+      "presetNumber": 2500,
+      "label": "Squatting hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is squatting and looking to the left, hiding from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2500_squatting-hiding-pose.pma",
+      "localScenePath": "scenes/2500_squatting-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2500_00_squatting-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2500_00_squatting-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/2500_00_squatting-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hiding",
+        "pose"
+      ],
+      "bytes": 23409,
+      "slug": "squatting-hiding-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2501",
+      "presetNumber": 2501,
+      "label": "Sitting hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and covering her head with both hands, hiding from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2501_sitting-hiding-pose.pma",
+      "localScenePath": "scenes/2501_sitting-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2501_00_sitting-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2501_00_sitting-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/2501_00_sitting-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hiding",
+        "pose"
+      ],
+      "bytes": 23465,
+      "slug": "sitting-hiding-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2502",
+      "presetNumber": 2502,
+      "label": "Kneeling hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling behind a barrel, hiding from something, female hiding pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2502_kneeling-hiding-pose.pma",
+      "localScenePath": "scenes/2502_kneeling-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2502_00_kneeling-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2502_00_kneeling-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/2502_00_kneeling-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        160
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hiding",
+        "pose"
+      ],
+      "bytes": 23959,
+      "slug": "kneeling-hiding-pose"
+    },
+    {
+      "id": "guo-scene-2505",
+      "presetNumber": 2505,
+      "label": "Female hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is squatting, kneeling behind the armchair, hiding from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2505_female-hiding-pose.pma",
+      "localScenePath": "scenes/2505_female-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2505_00_female-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2505_00_female-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/2505_00_female-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hiding",
+        "pose"
+      ],
+      "bytes": 23998,
+      "slug": "female-hiding-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2509",
+      "presetNumber": 2509,
+      "label": "Hiding behind wall pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking to the right, hiding from something behind the wall",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2509_hiding-behind-wall-pose.pma",
+      "localScenePath": "scenes/2509_hiding-behind-wall-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2509_00_hiding-behind-wall-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2509_00_hiding-behind-wall-pose.png",
+          "localThumbnailPath": "thumbnails/2509_00_hiding-behind-wall-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hiding",
+        "pose"
+      ],
+      "bytes": 24075,
+      "slug": "hiding-behind-wall-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2511",
+      "presetNumber": 2511,
+      "label": "Folding arms sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair and folding her arms, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2511_folding-arms-sitting-pose.pma",
+      "localScenePath": "scenes/2511_folding-arms-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2511_00_folding-arms-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2511_00_folding-arms-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2511_00_folding-arms-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 23863,
+      "slug": "folding-arms-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2512",
+      "presetNumber": 2512,
+      "label": "Female folding arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and folding her arms, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2512_female-folding-arms-pose.pma",
+      "localScenePath": "scenes/2512_female-folding-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2512_00_female-folding-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2512_00_female-folding-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2512_00_female-folding-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 23487,
+      "slug": "female-folding-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2515",
+      "presetNumber": 2515,
+      "label": "Folding arms sad pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is standing and folding her arms, looking down sadly",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2515_folding-arms-sad-pose.pma",
+      "localScenePath": "scenes/2515_folding-arms-sad-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2515_00_folding-arms-sad-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2515_00_folding-arms-sad-pose.png",
+          "localThumbnailPath": "thumbnails/2515_00_folding-arms-sad-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 23480,
+      "slug": "folding-arms-sad-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2516",
+      "presetNumber": 2516,
+      "label": "Confident female standing folding arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently and folding her arms, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2516_confident-female-standing-folding-arms-pose.pma",
+      "localScenePath": "scenes/2516_confident-female-standing-folding-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2516_00_confident-female-standing-folding-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2516_00_confident-female-standing-folding-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2516_00_confident-female-standing-folding-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 23472,
+      "slug": "confident-female-standing-folding-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2517",
+      "presetNumber": 2517,
+      "label": "Folding arms walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is folding her arms and walking, female folding arms pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2517_folding-arms-walking-pose.pma",
+      "localScenePath": "scenes/2517_folding-arms-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2517_00_folding-arms-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2517_00_folding-arms-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2517_00_folding-arms-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "folding",
+        "arms",
+        "pose"
+      ],
+      "bytes": 23481,
+      "slug": "folding-arms-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2520",
+      "presetNumber": 2520,
+      "label": "Angel wings standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with angel wings is standing and looking to the left, human wings drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2520_angel-wings-standing-pose.pma",
+      "localScenePath": "scenes/2520_angel-wings-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2520_00_angel-wings-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2520_00_angel-wings-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2520_00_angel-wings-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        91
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23921,
+      "slug": "angel-wings-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2522",
+      "presetNumber": 2522,
+      "label": "Fairy wings flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is flying, floating in the air, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2522_fairy-wings-flying-pose.pma",
+      "localScenePath": "scenes/2522_fairy-wings-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2522_00_fairy-wings-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2522_00_fairy-wings-flying-pose.png",
+          "localThumbnailPath": "thumbnails/2522_00_fairy-wings-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24035,
+      "slug": "fairy-wings-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2523",
+      "presetNumber": 2523,
+      "label": "Devil wings landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with devil wings is landing, balancing with her hands, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2523_devil-wings-landing-pose.pma",
+      "localScenePath": "scenes/2523_devil-wings-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2523_00_devil-wings-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2523_00_devil-wings-landing-pose.png",
+          "localThumbnailPath": "thumbnails/2523_00_devil-wings-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        86
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23896,
+      "slug": "devil-wings-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2524",
+      "presetNumber": 2524,
+      "label": "Devil wings flying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with devil wings is flying, looking to the left, human wings drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2524_devil-wings-flying-pose.pma",
+      "localScenePath": "scenes/2524_devil-wings-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2524_00_devil-wings-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2524_00_devil-wings-flying-pose.png",
+          "localThumbnailPath": "thumbnails/2524_00_devil-wings-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        86
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23981,
+      "slug": "devil-wings-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2525",
+      "presetNumber": 2525,
+      "label": "Fairy wings walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is walking, looking forward, human wings drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2525_fairy-wings-walking-pose.pma",
+      "localScenePath": "scenes/2525_fairy-wings-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2525_00_fairy-wings-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2525_00_fairy-wings-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2525_00_fairy-wings-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23991,
+      "slug": "fairy-wings-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2526",
+      "presetNumber": 2526,
+      "label": "Fairy wings magic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is flying and casting a spell with her fairy wand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2526_fairy-wings-magic-pose.pma",
+      "localScenePath": "scenes/2526_fairy-wings-magic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2526_00_fairy-wings-magic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2526_00_fairy-wings-magic-pose.png",
+          "localThumbnailPath": "thumbnails/2526_00_fairy-wings-magic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        89
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24543,
+      "slug": "fairy-wings-magic-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2527",
+      "presetNumber": 2527,
+      "label": "Angel wings pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Angel wings from back view, female with angel wings and halo is flying, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2527_angel-wings-pose.pma",
+      "localScenePath": "scenes/2527_angel-wings-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2527_00_angel-wings-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2527_00_angel-wings-pose.png",
+          "localThumbnailPath": "thumbnails/2527_00_angel-wings-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        91,
+        92
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24510,
+      "slug": "angel-wings-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2529",
+      "presetNumber": 2529,
+      "label": "Angel wings landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with angel wings is landing, balancing with her hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2529_angel-wings-landing-pose.pma",
+      "localScenePath": "scenes/2529_angel-wings-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2529_00_angel-wings-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2529_00_angel-wings-landing-pose.png",
+          "localThumbnailPath": "thumbnails/2529_00_angel-wings-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        91
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "wings",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23897,
+      "slug": "angel-wings-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2530",
+      "presetNumber": 2530,
+      "label": "Female standing aiming bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and aiming her bow, female archery pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2530_female-standing-aiming-bow-pose.pma",
+      "localScenePath": "scenes/2530_female-standing-aiming-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2530_00_female-standing-aiming-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2530_00_female-standing-aiming-bow-pose.png",
+          "localThumbnailPath": "thumbnails/2530_00_female-standing-aiming-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "archery",
+        "pose"
+      ],
+      "bytes": 1117036,
+      "slug": "female-standing-aiming-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2531",
+      "presetNumber": 2531,
+      "label": "Female crouching aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and aiming her bow, female archery pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2531_female-crouching-aiming-pose.pma",
+      "localScenePath": "scenes/2531_female-crouching-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2531_00_female-crouching-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2531_00_female-crouching-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2531_00_female-crouching-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "archery",
+        "pose"
+      ],
+      "bytes": 1117033,
+      "slug": "female-crouching-aiming-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2532",
+      "presetNumber": 2532,
+      "label": "Female jumping aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and aiming her bow, female archery pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2532_female-jumping-aiming-pose.pma",
+      "localScenePath": "scenes/2532_female-jumping-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2532_00_female-jumping-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2532_00_female-jumping-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2532_00_female-jumping-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "archery",
+        "pose"
+      ],
+      "bytes": 1117032,
+      "slug": "female-jumping-aiming-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-2533",
+      "presetNumber": 2533,
+      "label": "Female holding bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a bow, looking to the left, preparing the arrow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2533_female-holding-bow-pose.pma",
+      "localScenePath": "scenes/2533_female-holding-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2533_00_female-holding-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2533_00_female-holding-bow-pose.png",
+          "localThumbnailPath": "thumbnails/2533_00_female-holding-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "archery",
+        "pose"
+      ],
+      "bytes": 227905,
+      "slug": "female-holding-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1121 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 39,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0937",
+      "presetNumber": 937,
+      "label": "Watching tv together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is watching tv together on the sofa, female is lying on the male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0937_watching-tv-together-pose.pma",
+      "localScenePath": "scenes/0937_watching-tv-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0937_00_watching-tv-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0937_00_watching-tv-together-pose.png",
+          "localThumbnailPath": "thumbnails/0937_00_watching-tv-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0937_01_watching-tv-together-pose.png",
+          "localThumbnailPath": "thumbnails/0937_01_watching-tv-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        212,
+        215,
+        231,
+        232
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "watching",
+        "tv",
+        "pose"
+      ],
+      "bytes": 48351,
+      "slug": "watching-tv-together-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-0938",
+      "presetNumber": 938,
+      "label": "Sofa watching tv pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the sofa with her legs crossed and watching tv",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0938_sofa-watching-tv-pose.pma",
+      "localScenePath": "scenes/0938_sofa-watching-tv-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0938_00_sofa-watching-tv-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0938_00_sofa-watching-tv-pose.png",
+          "localThumbnailPath": "thumbnails/0938_00_sofa-watching-tv-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        212,
+        215,
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "watching",
+        "tv",
+        "pose"
+      ],
+      "bytes": 24975,
+      "slug": "sofa-watching-tv-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0939",
+      "presetNumber": 939,
+      "label": "Lying watching tv pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on the floor and watching tv closely",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0939_lying-watching-tv-pose.pma",
+      "localScenePath": "scenes/0939_lying-watching-tv-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0939_00_lying-watching-tv-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0939_00_lying-watching-tv-pose.png",
+          "localThumbnailPath": "thumbnails/0939_00_lying-watching-tv-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        212
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "watching",
+        "tv",
+        "pose"
+      ],
+      "bytes": 24103,
+      "slug": "lying-watching-tv-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0940",
+      "presetNumber": 940,
+      "label": "Tango dance step pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing tango, the male is holding the female's back and holds her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0940_tango-dance-step-pose.pma",
+      "localScenePath": "scenes/0940_tango-dance-step-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0940_00_tango-dance-step-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0940_00_tango-dance-step-pose.png",
+          "localThumbnailPath": "thumbnails/0940_00_tango-dance-step-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0940_01_tango-dance-step-pose.png",
+          "localThumbnailPath": "thumbnails/0940_01_tango-dance-step-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46730,
+      "slug": "tango-dance-step-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0941",
+      "presetNumber": 941,
+      "label": "Romantic tango dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing tango and looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0941_romantic-tango-dance-pose.pma",
+      "localScenePath": "scenes/0941_romantic-tango-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0941_00_romantic-tango-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0941_00_romantic-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0941_00_romantic-tango-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0941_01_romantic-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0941_01_romantic-tango-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46630,
+      "slug": "romantic-tango-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0942",
+      "presetNumber": 942,
+      "label": "Dynamic tango dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male tango dancer is holding the female dancer, dynamic tango pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0942_dynamic-tango-dance-pose.pma",
+      "localScenePath": "scenes/0942_dynamic-tango-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0942_00_dynamic-tango-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0942_00_dynamic-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0942_00_dynamic-tango-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0942_01_dynamic-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0942_01_dynamic-tango-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46481,
+      "slug": "dynamic-tango-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0943",
+      "presetNumber": 943,
+      "label": "Tango holding leg pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing tango, the male is holding the female's right leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0943_tango-holding-leg-pose.pma",
+      "localScenePath": "scenes/0943_tango-holding-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0943_00_tango-holding-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0943_00_tango-holding-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0943_00_tango-holding-leg-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0943_01_tango-holding-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0943_01_tango-holding-leg-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46520,
+      "slug": "tango-holding-leg-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0944",
+      "presetNumber": 944,
+      "label": "Female male tango pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Dynamic tango pose, male is holding the female with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0944_female-male-tango-pose.pma",
+      "localScenePath": "scenes/0944_female-male-tango-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0944_00_female-male-tango-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0944_00_female-male-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0944_00_female-male-tango-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0944_01_female-male-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0944_01_female-male-tango-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46691,
+      "slug": "female-male-tango-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0945",
+      "presetNumber": 945,
+      "label": "Tango dance split pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing tango, female is doing a split, while the male is holding her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0945_tango-dance-split-pose.pma",
+      "localScenePath": "scenes/0945_tango-dance-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0945_00_tango-dance-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0945_00_tango-dance-split-pose.png",
+          "localThumbnailPath": "thumbnails/0945_00_tango-dance-split-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0945_01_tango-dance-split-pose.png",
+          "localThumbnailPath": "thumbnails/0945_01_tango-dance-split-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46668,
+      "slug": "tango-dance-split-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0946",
+      "presetNumber": 946,
+      "label": "Female jump tango pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female tango dancer is jumping high and posing, while male dancer is holding her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0946_female-jump-tango-pose.pma",
+      "localScenePath": "scenes/0946_female-jump-tango-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0946_00_female-jump-tango-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0946_00_female-jump-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0946_00_female-jump-tango-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0946_01_female-jump-tango-pose.png",
+          "localThumbnailPath": "thumbnails/0946_01_female-jump-tango-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46655,
+      "slug": "female-jump-tango-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0947",
+      "presetNumber": 947,
+      "label": "Tango dancer walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female tango dancer walking pose with raised hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0947_tango-dancer-walking-pose.pma",
+      "localScenePath": "scenes/0947_tango-dancer-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0947_00_tango-dancer-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0947_00_tango-dancer-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0947_00_tango-dancer-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 23631,
+      "slug": "tango-dancer-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0948",
+      "presetNumber": 948,
+      "label": "Tango dance invitation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male tango dancer is inviting the female for a dance",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0948_tango-dance-invitation-pose.pma",
+      "localScenePath": "scenes/0948_tango-dance-invitation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0948_00_tango-dance-invitation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0948_00_tango-dance-invitation-pose.png",
+          "localThumbnailPath": "thumbnails/0948_00_tango-dance-invitation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0948_01_tango-dance-invitation-pose.png",
+          "localThumbnailPath": "thumbnails/0948_01_tango-dance-invitation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46638,
+      "slug": "tango-dance-invitation-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0949",
+      "presetNumber": 949,
+      "label": "Starting tango dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male tango dancers are about to start dancing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0949_starting-tango-dance-pose.pma",
+      "localScenePath": "scenes/0949_starting-tango-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0949_00_starting-tango-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0949_00_starting-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0949_00_starting-tango-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0949_01_starting-tango-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0949_01_starting-tango-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tango",
+        "pose"
+      ],
+      "bytes": 46615,
+      "slug": "starting-tango-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0950",
+      "presetNumber": 950,
+      "label": "Left handstand spin pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is breakdancing, doing a single handstand spin on his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0950_left-handstand-spin-pose.pma",
+      "localScenePath": "scenes/0950_left-handstand-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0950_00_left-handstand-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0950_00_left-handstand-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0950_00_left-handstand-spin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23733,
+      "slug": "left-handstand-spin-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0951",
+      "presetNumber": 951,
+      "label": "Right handstand leg pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is breakdancing on the floor, both legs are in the air, standing on right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0951_right-handstand-leg-pose.pma",
+      "localScenePath": "scenes/0951_right-handstand-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0951_00_right-handstand-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0951_00_right-handstand-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0951_00_right-handstand-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23737,
+      "slug": "right-handstand-leg-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0952",
+      "presetNumber": 952,
+      "label": "Ground footwork pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is breakdancing, standing on right hand, ground footwork pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0952_ground-footwork-pose.pma",
+      "localScenePath": "scenes/0952_ground-footwork-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0952_00_ground-footwork-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0952_00_ground-footwork-pose.png",
+          "localThumbnailPath": "thumbnails/0952_00_ground-footwork-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23750,
+      "slug": "ground-footwork-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0953",
+      "presetNumber": 953,
+      "label": "Breakdance finishing leg pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male breakdance choreography finishing pose with crossed legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0953_breakdance-finishing-leg-pose.pma",
+      "localScenePath": "scenes/0953_breakdance-finishing-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0953_00_breakdance-finishing-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0953_00_breakdance-finishing-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0953_00_breakdance-finishing-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23698,
+      "slug": "breakdance-finishing-leg-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0954",
+      "presetNumber": 954,
+      "label": "Breakdance finishing arm pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male breakdance choreography finishing pose with crossed arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0954_breakdance-finishing-arm-pose.pma",
+      "localScenePath": "scenes/0954_breakdance-finishing-arm-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0954_00_breakdance-finishing-arm-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0954_00_breakdance-finishing-arm-pose.png",
+          "localThumbnailPath": "thumbnails/0954_00_breakdance-finishing-arm-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23678,
+      "slug": "breakdance-finishing-arm-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0955",
+      "presetNumber": 955,
+      "label": "Single handstand split pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is performing a single handstand and split in the air with left hand on hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0955_single-handstand-split-pose.pma",
+      "localScenePath": "scenes/0955_single-handstand-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0955_00_single-handstand-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0955_00_single-handstand-split-pose.png",
+          "localThumbnailPath": "thumbnails/0955_00_single-handstand-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23762,
+      "slug": "single-handstand-split-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0956",
+      "presetNumber": 956,
+      "label": "Breakdance footwork pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male breakdancing pose, footwork on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0956_breakdance-footwork-pose.pma",
+      "localScenePath": "scenes/0956_breakdance-footwork-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0956_00_breakdance-footwork-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0956_00_breakdance-footwork-pose.png",
+          "localThumbnailPath": "thumbnails/0956_00_breakdance-footwork-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23693,
+      "slug": "breakdance-footwork-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0957",
+      "presetNumber": 957,
+      "label": "Breakdance crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male breakdancer is handstanding and posing with crossed legs ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0957_breakdance-crossed-legs-pose.pma",
+      "localScenePath": "scenes/0957_breakdance-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0957_00_breakdance-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0957_00_breakdance-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/0957_00_breakdance-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23748,
+      "slug": "breakdance-crossed-legs-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0958",
+      "presetNumber": 958,
+      "label": "Breakdance flare pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male breakdancer is handstanding, doing breakdance flare",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0958_breakdance-flare-pose.pma",
+      "localScenePath": "scenes/0958_breakdance-flare-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0958_00_breakdance-flare-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0958_00_breakdance-flare-pose.png",
+          "localThumbnailPath": "thumbnails/0958_00_breakdance-flare-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23704,
+      "slug": "breakdance-flare-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0959",
+      "presetNumber": 959,
+      "label": "Breakdance handstanding leg pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male breakdancer is performing a right handstand leg freezing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0959_breakdance-handstanding-leg-pose.pma",
+      "localScenePath": "scenes/0959_breakdance-handstanding-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0959_00_breakdance-handstanding-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0959_00_breakdance-handstanding-leg-pose.png",
+          "localThumbnailPath": "thumbnails/0959_00_breakdance-handstanding-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "break",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23694,
+      "slug": "breakdance-handstanding-leg-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0960",
+      "presetNumber": 960,
+      "label": "Couple waltz dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is dancing waltz, the female is leaning back and the male is holding her waist",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0960_couple-waltz-dance-pose.pma",
+      "localScenePath": "scenes/0960_couple-waltz-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0960_00_couple-waltz-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0960_00_couple-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0960_00_couple-waltz-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0960_01_couple-waltz-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0960_01_couple-waltz-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waltz",
+        "dance",
+        "pose"
+      ],
+      "bytes": 46730,
+      "slug": "couple-waltz-dance-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1113 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 89,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4665",
+      "presetNumber": 4665,
+      "label": "Axe holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding an axe in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4665_axe-holding-pose.pma",
+      "localScenePath": "scenes/4665_axe-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4665_00_axe-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4665_00_axe-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4665_00_axe-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 20635,
+      "slug": "axe-holding-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4666",
+      "presetNumber": 4666,
+      "label": "Camera holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and holding a camera with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4666_camera-holding-pose.pma",
+      "localScenePath": "scenes/4666_camera-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4666_00_camera-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4666_00_camera-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4666_00_camera-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        238
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 20693,
+      "slug": "camera-holding-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4667",
+      "presetNumber": 4667,
+      "label": "Glasses holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair and holding her glasses in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4667_glasses-holding-pose.pma",
+      "localScenePath": "scenes/4667_glasses-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4667_00_glasses-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4667_00_glasses-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4667_00_glasses-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        98,
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 21180,
+      "slug": "glasses-holding-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4668",
+      "presetNumber": 4668,
+      "label": "Paper holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a paper with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4668_paper-holding-pose.pma",
+      "localScenePath": "scenes/4668_paper-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4668_00_paper-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4668_00_paper-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4668_00_paper-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        239
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 20701,
+      "slug": "paper-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4669",
+      "presetNumber": 4669,
+      "label": "Ice cream fork holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding an ice cream in a glass cup and a fork",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4669_ice-cream-fork-holding-pose.pma",
+      "localScenePath": "scenes/4669_ice-cream-fork-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4669_00_ice-cream-fork-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4669_00_ice-cream-fork-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4669_00_ice-cream-fork-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        130,
+        135
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 21222,
+      "slug": "ice-cream-fork-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4670",
+      "presetNumber": 4670,
+      "label": "Open hand waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and waving with open hand, her right hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4670_open-hand-waving-pose.pma",
+      "localScenePath": "scenes/4670_open-hand-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4670_00_open-hand-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4670_00_open-hand-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4670_00_open-hand-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20130,
+      "slug": "open-hand-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4671",
+      "presetNumber": 4671,
+      "label": "Open hand wondering female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and wondering, with her hands open",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4671_open-hand-wondering-female-pose.pma",
+      "localScenePath": "scenes/4671_open-hand-wondering-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4671_00_open-hand-wondering-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4671_00_open-hand-wondering-female-pose.png",
+          "localThumbnailPath": "thumbnails/4671_00_open-hand-wondering-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20781,
+      "slug": "open-hand-wondering-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4673",
+      "presetNumber": 4673,
+      "label": "Sitting waving female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and waving with her left hand, waving with open hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4673_sitting-waving-female-pose.pma",
+      "localScenePath": "scenes/4673_sitting-waving-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4673_00_sitting-waving-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4673_00_sitting-waving-female-pose.png",
+          "localThumbnailPath": "thumbnails/4673_00_sitting-waving-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20722,
+      "slug": "sitting-waving-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4674",
+      "presetNumber": 4674,
+      "label": "Female resisting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is resisting, raising her open hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4674_female-resisting-pose.pma",
+      "localScenePath": "scenes/4674_female-resisting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4674_00_female-resisting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4674_00_female-resisting-pose.png",
+          "localThumbnailPath": "thumbnails/4674_00_female-resisting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20149,
+      "slug": "female-resisting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4676",
+      "presetNumber": 4676,
+      "label": "Showing open hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is showing her hands, showing 7 with her fingers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4676_showing-open-hand-pose.pma",
+      "localScenePath": "scenes/4676_showing-open-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4676_00_showing-open-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4676_00_showing-open-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4676_00_showing-open-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20155,
+      "slug": "showing-open-hand-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4678",
+      "presetNumber": 4678,
+      "label": "Female open hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is looking down in shame and showing her open hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4678_female-open-hand-pose.pma",
+      "localScenePath": "scenes/4678_female-open-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4678_00_female-open-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4678_00_female-open-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4678_00_female-open-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20134,
+      "slug": "female-open-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4679",
+      "presetNumber": 4679,
+      "label": "Stretching open hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is stretching her arms with her hands open",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4679_stretching-open-hands-pose.pma",
+      "localScenePath": "scenes/4679_stretching-open-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4679_00_stretching-open-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4679_00_stretching-open-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4679_00_stretching-open-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20318,
+      "slug": "stretching-open-hands-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4680",
+      "presetNumber": 4680,
+      "label": "Nude female lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is lying on the couch and posing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4680_nude-female-lying-pose.pma",
+      "localScenePath": "scenes/4680_nude-female-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4680_00_nude-female-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4680_00_nude-female-lying-pose.png",
+          "localThumbnailPath": "thumbnails/4680_00_nude-female-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        170,
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 22156,
+      "slug": "nude-female-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4681",
+      "presetNumber": 4681,
+      "label": "Nude female tiptoe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is walking on tiptoe and holding her hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4681_nude-female-tiptoe-pose.pma",
+      "localScenePath": "scenes/4681_nude-female-tiptoe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4681_00_nude-female-tiptoe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4681_00_nude-female-tiptoe-pose.png",
+          "localThumbnailPath": "thumbnails/4681_00_nude-female-tiptoe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 20209,
+      "slug": "nude-female-tiptoe-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4682",
+      "presetNumber": 4682,
+      "label": "Nude female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is walking casually, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4682_nude-female-walking-pose.pma",
+      "localScenePath": "scenes/4682_nude-female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4682_00_nude-female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4682_00_nude-female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4682_00_nude-female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 20282,
+      "slug": "nude-female-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4683",
+      "presetNumber": 4683,
+      "label": "Nude female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is kneeling and holding her thigh",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4683_nude-female-kneeling-pose.pma",
+      "localScenePath": "scenes/4683_nude-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4683_00_nude-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4683_00_nude-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4683_00_nude-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 20279,
+      "slug": "nude-female-kneeling-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4684",
+      "presetNumber": 4684,
+      "label": "Nude female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is sitting on the couch elegantly and holding a wine glass",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4684_nude-female-sitting-pose.pma",
+      "localScenePath": "scenes/4684_nude-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4684_00_nude-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4684_00_nude-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4684_00_nude-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        76,
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 21230,
+      "slug": "nude-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4685",
+      "presetNumber": 4685,
+      "label": "Nude female smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is sitting in the armchair and smoking, holding a cigarette in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4685_nude-female-smoking-pose.pma",
+      "localScenePath": "scenes/4685_nude-female-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4685_00_nude-female-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4685_00_nude-female-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4685_00_nude-female-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        107,
+        243
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 21231,
+      "slug": "nude-female-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4687",
+      "presetNumber": 4687,
+      "label": "Nude female crouching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is crouching, her right hand is on her knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4687_nude-female-crouching-pose.pma",
+      "localScenePath": "scenes/4687_nude-female-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4687_00_nude-female-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4687_00_nude-female-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4687_00_nude-female-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 20182,
+      "slug": "nude-female-crouching-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4688",
+      "presetNumber": 4688,
+      "label": "Nude female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is standing, her legs are crossed, she is holding her hip and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4688_nude-female-standing-pose.pma",
+      "localScenePath": "scenes/4688_nude-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4688_00_nude-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4688_00_nude-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4688_00_nude-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 20225,
+      "slug": "nude-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4689",
+      "presetNumber": 4689,
+      "label": "Nude female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Nude female is sitting on the cushions, nude female anatomy for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4689_nude-female-pose.pma",
+      "localScenePath": "scenes/4689_nude-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4689_00_nude-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4689_00_nude-female-pose.png",
+          "localThumbnailPath": "thumbnails/4689_00_nude-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "nude",
+        "female",
+        "anatomy",
+        "for",
+        "artists"
+      ],
+      "bytes": 21723,
+      "slug": "nude-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4690",
+      "presetNumber": 4690,
+      "label": "Female warrior holding swords pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female warrior is jumping, holding sword in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4690_female-warrior-holding-swords-pose.pma",
+      "localScenePath": "scenes/4690_female-warrior-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4690_00_female-warrior-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4690_00_female-warrior-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4690_00_female-warrior-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21134,
+      "slug": "female-warrior-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4695",
+      "presetNumber": 4695,
+      "label": "Female warrior hammer pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female warrior is jumping and attacking, holding hammer in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4695_female-warrior-hammer-pose.pma",
+      "localScenePath": "scenes/4695_female-warrior-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4695_00_female-warrior-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4695_00_female-warrior-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/4695_00_female-warrior-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21139,
+      "slug": "female-warrior-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4707",
+      "presetNumber": 4707,
+      "label": "Muscular female drawing reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is standing and showing her muscles, female muscle drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4707_muscular-female-drawing-reference.pma",
+      "localScenePath": "scenes/4707_muscular-female-drawing-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4707_00_muscular-female-drawing-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4707_00_muscular-female-drawing-reference.png",
+          "localThumbnailPath": "thumbnails/4707_00_muscular-female-drawing-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20374,
+      "slug": "muscular-female-drawing-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

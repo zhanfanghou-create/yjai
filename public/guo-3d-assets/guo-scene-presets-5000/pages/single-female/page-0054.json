@@ -1,0 +1,1143 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 53,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-2839",
+      "presetNumber": 2839,
+      "label": "Shy anime female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy anime female is sitting on the bench and holding her face with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2839_shy-anime-female-sitting-pose.pma",
+      "localScenePath": "scenes/2839_shy-anime-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2839_00_shy-anime-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2839_00_shy-anime-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2839_00_shy-anime-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "shy",
+        "pose"
+      ],
+      "bytes": 24420,
+      "slug": "shy-anime-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2840",
+      "presetNumber": 2840,
+      "label": "Dynamic female katana fighting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and kicking while pulling her katana from its sheath",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2840_dynamic-female-katana-fighting-pose.pma",
+      "localScenePath": "scenes/2840_dynamic-female-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2840_00_dynamic-female-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2840_00_dynamic-female-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/2840_00_dynamic-female-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144,
+        146
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 24436,
+      "slug": "dynamic-female-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-2841",
+      "presetNumber": 2841,
+      "label": "Female kunai attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is turning and attacking with a kunai in her right hand, female fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2841_female-kunai-attack-pose.pma",
+      "localScenePath": "scenes/2841_female-kunai-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2841_00_female-kunai-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2841_00_female-kunai-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2841_00_female-kunai-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 23724,
+      "slug": "female-kunai-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2842",
+      "presetNumber": 2842,
+      "label": "Female sai attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and attacking with sai in both hands, dynamic fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2842_female-sai-attack-pose.pma",
+      "localScenePath": "scenes/2842_female-sai-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2842_00_female-sai-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2842_00_female-sai-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2842_00_female-sai-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        153
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 24395,
+      "slug": "female-sai-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2843",
+      "presetNumber": 2843,
+      "label": "Female kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and kicking from running, female dynamic fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2843_female-kicking-pose.pma",
+      "localScenePath": "scenes/2843_female-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2843_00_female-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2843_00_female-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/2843_00_female-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 23524,
+      "slug": "female-kicking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-2852",
+      "presetNumber": 2852,
+      "label": "Holding phone pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a phone in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2852_holding-phone-pose.pma",
+      "localScenePath": "scenes/2852_holding-phone-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2852_00_holding-phone-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2852_00_holding-phone-pose.png",
+          "localThumbnailPath": "thumbnails/2852_00_holding-phone-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        102
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 23994,
+      "slug": "holding-phone-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2853",
+      "presetNumber": 2853,
+      "label": "Holding book pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a book in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2853_holding-book-pose.pma",
+      "localScenePath": "scenes/2853_holding-book-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2853_00_holding-book-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2853_00_holding-book-pose.png",
+          "localThumbnailPath": "thumbnails/2853_00_holding-book-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 24055,
+      "slug": "holding-book-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2855",
+      "presetNumber": 2855,
+      "label": "Holding wine glass hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a wine glass in her right hand, hand holding pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2855_holding-wine-glass-hand-pose.pma",
+      "localScenePath": "scenes/2855_holding-wine-glass-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2855_00_holding-wine-glass-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2855_00_holding-wine-glass-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2855_00_holding-wine-glass-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 23936,
+      "slug": "holding-wine-glass-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2856",
+      "presetNumber": 2856,
+      "label": "Holding glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding her glasses in her right hand, hand holding pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2856_holding-glasses-pose.pma",
+      "localScenePath": "scenes/2856_holding-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2856_00_holding-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2856_00_holding-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/2856_00_holding-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        98
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 24044,
+      "slug": "holding-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2857",
+      "presetNumber": 2857,
+      "label": "Holding fork pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a bowl and a fork, eating pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2857_holding-fork-pose.pma",
+      "localScenePath": "scenes/2857_holding-fork-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2857_00_holding-fork-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2857_00_holding-fork-pose.png",
+          "localThumbnailPath": "thumbnails/2857_00_holding-fork-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        126,
+        130
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 24418,
+      "slug": "holding-fork-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2858",
+      "presetNumber": 2858,
+      "label": "Holding glass pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a glass with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2858_holding-glass-pose.pma",
+      "localScenePath": "scenes/2858_holding-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2858_00_holding-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2858_00_holding-glass-pose.png",
+          "localThumbnailPath": "thumbnails/2858_00_holding-glass-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        75
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 23936,
+      "slug": "holding-glass-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2859",
+      "presetNumber": 2859,
+      "label": "Holding gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a gun in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2859_holding-gun-pose.pma",
+      "localScenePath": "scenes/2859_holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2859_00_holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2859_00_holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2859_00_holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "holding",
+        "pose"
+      ],
+      "bytes": 23983,
+      "slug": "holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2870",
+      "presetNumber": 2870,
+      "label": "Walking holding guns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is walking and holding a galil in one hand and a pistol in the other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2870_walking-holding-guns-pose.pma",
+      "localScenePath": "scenes/2870_walking-holding-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2870_00_walking-holding-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2870_00_walking-holding-guns-pose.png",
+          "localThumbnailPath": "thumbnails/2870_00_walking-holding-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        152,
+        169
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24550,
+      "slug": "walking-holding-guns-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2871",
+      "presetNumber": 2871,
+      "label": "Anime female gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, holding a revolver in her right hand and aiming downwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2871_anime-female-gun-pose.pma",
+      "localScenePath": "scenes/2871_anime-female-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2871_00_anime-female-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2871_00_anime-female-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2871_00_anime-female-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        150
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24229,
+      "slug": "anime-female-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2872",
+      "presetNumber": 2872,
+      "label": "Holding gun walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is walking while holding a gun with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2872_holding-gun-walking-pose.pma",
+      "localScenePath": "scenes/2872_holding-gun-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2872_00_holding-gun-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2872_00_holding-gun-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2872_00_holding-gun-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        206
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24122,
+      "slug": "holding-gun-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2875",
+      "presetNumber": 2875,
+      "label": "Anime standing holding gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, holding a gun with both hands and aiming downwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2875_anime-standing-holding-gun-pose.pma",
+      "localScenePath": "scenes/2875_anime-standing-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2875_00_anime-standing-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2875_00_anime-standing-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2875_00_anime-standing-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24341,
+      "slug": "anime-standing-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2876",
+      "presetNumber": 2876,
+      "label": "Anime aiming gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, holding a gun in her right hand and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2876_anime-aiming-gun-pose.pma",
+      "localScenePath": "scenes/2876_anime-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2876_00_anime-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2876_00_anime-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2876_00_anime-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24327,
+      "slug": "anime-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2877",
+      "presetNumber": 2877,
+      "label": "Standing holding gun right hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing with her left hand on her hip and holding a gun in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2877_standing-holding-gun-right-hand-pose.pma",
+      "localScenePath": "scenes/2877_standing-holding-gun-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2877_00_standing-holding-gun-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2877_00_standing-holding-gun-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2877_00_standing-holding-gun-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24080,
+      "slug": "standing-holding-gun-right-hand-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2878",
+      "presetNumber": 2878,
+      "label": "Anime running holding gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is running, holding a gun in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2878_anime-running-holding-gun-pose.pma",
+      "localScenePath": "scenes/2878_anime-running-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2878_00_anime-running-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2878_00_anime-running-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2878_00_anime-running-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24370,
+      "slug": "anime-running-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2880",
+      "presetNumber": 2880,
+      "label": "Shy female standing looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing, holding her hands and looking to the left, shy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2880_shy-female-standing-looking-left-pose.pma",
+      "localScenePath": "scenes/2880_shy-female-standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2880_00_shy-female-standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2880_00_shy-female-standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/2880_00_shy-female-standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "pose"
+      ],
+      "bytes": 23543,
+      "slug": "shy-female-standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2881",
+      "presetNumber": 2881,
+      "label": "Shy embarrassed female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing and biting her nails, shy female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2881_shy-embarrassed-female-pose.pma",
+      "localScenePath": "scenes/2881_shy-embarrassed-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2881_00_shy-embarrassed-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2881_00_shy-embarrassed-female-pose.png",
+          "localThumbnailPath": "thumbnails/2881_00_shy-embarrassed-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "pose"
+      ],
+      "bytes": 23508,
+      "slug": "shy-embarrassed-female-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2882",
+      "presetNumber": 2882,
+      "label": "Shy standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing and holding her arm, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2882_shy-standing-pose.pma",
+      "localScenePath": "scenes/2882_shy-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2882_00_shy-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2882_00_shy-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2882_00_shy-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "pose"
+      ],
+      "bytes": 23626,
+      "slug": "shy-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2883",
+      "presetNumber": 2883,
+      "label": "Shy female looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing and holding her hands behind her back, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2883_shy-female-looking-right-pose.pma",
+      "localScenePath": "scenes/2883_shy-female-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2883_00_shy-female-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2883_00_shy-female-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/2883_00_shy-female-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "pose"
+      ],
+      "bytes": 23546,
+      "slug": "shy-female-looking-right-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2884",
+      "presetNumber": 2884,
+      "label": "Shy female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is walking with her arms crossed, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2884_shy-female-walking-pose.pma",
+      "localScenePath": "scenes/2884_shy-female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2884_00_shy-female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2884_00_shy-female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2884_00_shy-female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "pose"
+      ],
+      "bytes": 23508,
+      "slug": "shy-female-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

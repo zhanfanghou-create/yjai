@@ -1,0 +1,1128 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 0,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-0001",
+      "presetNumber": 1,
+      "label": "Sword fight jump attack",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "A sword fight between two figures, one jumps attacks and the other defends",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0001_sword-fight-jump-attack.pma",
+      "localScenePath": "scenes/0001_sword-fight-jump-attack.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0001_00_sword-fight-jump-attack.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0001_00_sword-fight-jump-attack.png",
+          "localThumbnailPath": "thumbnails/0001_00_sword-fight-jump-attack.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0001_01_sword-fight-jump-attack.png",
+          "localThumbnailPath": "thumbnails/0001_01_sword-fight-jump-attack.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 41372,
+      "slug": "sword-fight-jump-attack",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0002",
+      "presetNumber": 2,
+      "label": "Man carries woman",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male figure carries a female figure",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0002_man-carries-woman.pma",
+      "localScenePath": "scenes/0002_man-carries-woman.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0002_00_man-carries-woman.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0002_00_man-carries-woman.png",
+          "localThumbnailPath": "thumbnails/0002_00_man-carries-woman.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0002_01_man-carries-woman.png",
+          "localThumbnailPath": "thumbnails/0002_01_man-carries-woman.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 40214,
+      "slug": "man-carries-woman"
+    },
+    {
+      "id": "guo-scene-0003",
+      "presetNumber": 3,
+      "label": "Woman pushed with spell",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female figure pushes another female figure",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0003_woman-pushed-with-spell.pma",
+      "localScenePath": "scenes/0003_woman-pushed-with-spell.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0003_00_woman-pushed-with-spell.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0003_00_woman-pushed-with-spell.png",
+          "localThumbnailPath": "thumbnails/0003_00_woman-pushed-with-spell.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0003_01_woman-pushed-with-spell.png",
+          "localThumbnailPath": "thumbnails/0003_01_woman-pushed-with-spell.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 39864,
+      "slug": "woman-pushed-with-spell",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0004",
+      "presetNumber": 4,
+      "label": "One sided fight",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "One figure in fight mode, other is trying to talk it out",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0004_one-sided-fight.pma",
+      "localScenePath": "scenes/0004_one-sided-fight.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0004_00_one-sided-fight.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0004_00_one-sided-fight.png",
+          "localThumbnailPath": "thumbnails/0004_00_one-sided-fight.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0004_01_one-sided-fight.png",
+          "localThumbnailPath": "thumbnails/0004_01_one-sided-fight.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 28906,
+      "slug": "one-sided-fight",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0006",
+      "presetNumber": 6,
+      "label": "Male female models ad",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male and female pose as models in an ad",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0006_male-female-models-ad.pma",
+      "localScenePath": "scenes/0006_male-female-models-ad.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0006_00_male-female-models-ad.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0006_00_male-female-models-ad.png",
+          "localThumbnailPath": "thumbnails/0006_00_male-female-models-ad.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0006_01_male-female-models-ad.png",
+          "localThumbnailPath": "thumbnails/0006_01_male-female-models-ad.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39,
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Modeling"
+      ],
+      "bytes": 27247,
+      "slug": "male-female-models-ad"
+    },
+    {
+      "id": "guo-scene-0008",
+      "presetNumber": 8,
+      "label": "The calm before the fight",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male and female in intimate pose after the male was angry and the female calms him down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0008_the-calm-before-the-fight.pma",
+      "localScenePath": "scenes/0008_the-calm-before-the-fight.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0008_00_the-calm-before-the-fight.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0008_00_the-calm-before-the-fight.png",
+          "localThumbnailPath": "thumbnails/0008_00_the-calm-before-the-fight.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0008_01_the-calm-before-the-fight.png",
+          "localThumbnailPath": "thumbnails/0008_01_the-calm-before-the-fight.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39,
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Couple",
+        "Intimacy",
+        "Fight",
+        "Calm",
+        "Couple"
+      ],
+      "bytes": 27225,
+      "slug": "the-calm-before-the-fight",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0009",
+      "presetNumber": 9,
+      "label": "Fight two man professional",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males fighting professional posses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0009_fight-two-man-professional.pma",
+      "localScenePath": "scenes/0009_fight-two-man-professional.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0009_00_fight-two-man-professional.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0009_00_fight-two-man-professional.png",
+          "localThumbnailPath": "thumbnails/0009_00_fight-two-man-professional.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0009_01_fight-two-man-professional.png",
+          "localThumbnailPath": "thumbnails/0009_01_fight-two-man-professional.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 28894,
+      "slug": "fight-two-man-professional",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0010",
+      "presetNumber": 10,
+      "label": "Two men fight knockout",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male fight one is knocked out",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0010_two-men-fight-knockout.pma",
+      "localScenePath": "scenes/0010_two-men-fight-knockout.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0010_00_two-men-fight-knockout.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0010_00_two-men-fight-knockout.png",
+          "localThumbnailPath": "thumbnails/0010_00_two-men-fight-knockout.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0010_01_two-men-fight-knockout.png",
+          "localThumbnailPath": "thumbnails/0010_01_two-men-fight-knockout.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 28894,
+      "slug": "two-men-fight-knockout",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0013",
+      "presetNumber": 13,
+      "label": "Man and woman sit on bed",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman sit on bed looking sad",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0013_man-and-woman-sit-on-bed.pma",
+      "localScenePath": "scenes/0013_man-and-woman-sit-on-bed.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0013_00_man-and-woman-sit-on-bed.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0013_00_man-and-woman-sit-on-bed.png",
+          "localThumbnailPath": "thumbnails/0013_00_man-and-woman-sit-on-bed.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0013_01_man-and-woman-sit-on-bed.png",
+          "localThumbnailPath": "thumbnails/0013_01_man-and-woman-sit-on-bed.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        39,
+        40
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Sit",
+        "Sad",
+        "Couple"
+      ],
+      "bytes": 46584,
+      "slug": "man-and-woman-sit-on-bed",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0014",
+      "presetNumber": 14,
+      "label": "Man woman fight kunai katana",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman fight with kunai and katana",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0014_man-woman-fight-kunai-katana.pma",
+      "localScenePath": "scenes/0014_man-woman-fight-kunai-katana.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0014_00_man-woman-fight-kunai-katana.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0014_00_man-woman-fight-kunai-katana.png",
+          "localThumbnailPath": "thumbnails/0014_00_man-woman-fight-kunai-katana.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0014_01_man-woman-fight-kunai-katana.png",
+          "localThumbnailPath": "thumbnails/0014_01_man-woman-fight-kunai-katana.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        39,
+        40
+      ],
+      "propNumbers": [
+        144,
+        149
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 28253,
+      "slug": "man-woman-fight-kunai-katana",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0015",
+      "presetNumber": 15,
+      "label": "Superhero punches the bad guy",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Superhero punches the bad guy",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0015_superhero-punches-the-bad-guy.pma",
+      "localScenePath": "scenes/0015_superhero-punches-the-bad-guy.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0015_00_superhero-punches-the-bad-guy.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0015_00_superhero-punches-the-bad-guy.png",
+          "localThumbnailPath": "thumbnails/0015_00_superhero-punches-the-bad-guy.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0015_01_superhero-punches-the-bad-guy.png",
+          "localThumbnailPath": "thumbnails/0015_01_superhero-punches-the-bad-guy.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 40280,
+      "slug": "superhero-punches-the-bad-guy",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0017",
+      "presetNumber": 17,
+      "label": "Bar fight",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two men fight in a bar",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0017_bar-fight.pma",
+      "localScenePath": "scenes/0017_bar-fight.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0017_00_bar-fight.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0017_00_bar-fight.png",
+          "localThumbnailPath": "thumbnails/0017_00_bar-fight.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0017_01_bar-fight.png",
+          "localThumbnailPath": "thumbnails/0017_01_bar-fight.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        160
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Fight",
+        "Action"
+      ],
+      "bytes": 29897,
+      "slug": "bar-fight",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0018",
+      "presetNumber": 18,
+      "label": "Piggyback ",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man giving woman a piggyback",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0018_piggyback.pma",
+      "localScenePath": "scenes/0018_piggyback.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0018_00_piggyback.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0018_00_piggyback.png",
+          "localThumbnailPath": "thumbnails/0018_00_piggyback.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0018_01_piggyback.png",
+          "localThumbnailPath": "thumbnails/0018_01_piggyback.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "couple"
+      ],
+      "bytes": 44879,
+      "slug": "piggyback"
+    },
+    {
+      "id": "guo-scene-0019",
+      "presetNumber": 19,
+      "label": "Man and woman cuddling",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman cuddling on the couche ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0019_man-and-woman-cuddling.pma",
+      "localScenePath": "scenes/0019_man-and-woman-cuddling.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0019_00_man-and-woman-cuddling.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0019_00_man-and-woman-cuddling.png",
+          "localThumbnailPath": "thumbnails/0019_00_man-and-woman-cuddling.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0019_01_man-and-woman-cuddling.png",
+          "localThumbnailPath": "thumbnails/0019_01_man-and-woman-cuddling.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 45647,
+      "slug": "man-and-woman-cuddling",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0020",
+      "presetNumber": 20,
+      "label": "Man and woman kissing",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman hugging and kissing ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0020_man-and-woman-kissing.pma",
+      "localScenePath": "scenes/0020_man-and-woman-kissing.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0020_00_man-and-woman-kissing.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0020_00_man-and-woman-kissing.png",
+          "localThumbnailPath": "thumbnails/0020_00_man-and-woman-kissing.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0020_01_man-and-woman-kissing.png",
+          "localThumbnailPath": "thumbnails/0020_01_man-and-woman-kissing.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "couple"
+      ],
+      "bytes": 44761,
+      "slug": "man-and-woman-kissing"
+    },
+    {
+      "id": "guo-scene-0021",
+      "presetNumber": 21,
+      "label": "Man and woman walking ",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man putting his arm on woman sholders, walking ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0021_man-and-woman-walking.pma",
+      "localScenePath": "scenes/0021_man-and-woman-walking.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0021_00_man-and-woman-walking.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0021_00_man-and-woman-walking.png",
+          "localThumbnailPath": "thumbnails/0021_00_man-and-woman-walking.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0021_01_man-and-woman-walking.png",
+          "localThumbnailPath": "thumbnails/0021_01_man-and-woman-walking.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 45170,
+      "slug": "man-and-woman-walking",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0022",
+      "presetNumber": 22,
+      "label": "Man and woman sitting togerther",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman sitting and watching the stars ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0022_man-and-woman-sitting-togerther.pma",
+      "localScenePath": "scenes/0022_man-and-woman-sitting-togerther.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0022_00_man-and-woman-sitting-togerther.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0022_00_man-and-woman-sitting-togerther.png",
+          "localThumbnailPath": "thumbnails/0022_00_man-and-woman-sitting-togerther.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0022_01_man-and-woman-sitting-togerther.png",
+          "localThumbnailPath": "thumbnails/0022_01_man-and-woman-sitting-togerther.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 45192,
+      "slug": "man-and-woman-sitting-togerther",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0023",
+      "presetNumber": 23,
+      "label": "Man and woman sitting togerther 2",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man and woman sitting and watching the stars, woman points to the sky",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0023_man-and-woman-sitting-togerther-2.pma",
+      "localScenePath": "scenes/0023_man-and-woman-sitting-togerther-2.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0023_00_man-and-woman-sitting-togerther-2.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0023_00_man-and-woman-sitting-togerther-2.png",
+          "localThumbnailPath": "thumbnails/0023_00_man-and-woman-sitting-togerther-2.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0023_01_man-and-woman-sitting-togerther-2.png",
+          "localThumbnailPath": "thumbnails/0023_01_man-and-woman-sitting-togerther-2.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 45148,
+      "slug": "man-and-woman-sitting-togerther-2",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0024",
+      "presetNumber": 24,
+      "label": "Man carrying woman ",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man carrying woman in arms, kissing ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0024_man-carrying-woman.pma",
+      "localScenePath": "scenes/0024_man-carrying-woman.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0024_00_man-carrying-woman.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0024_00_man-carrying-woman.png",
+          "localThumbnailPath": "thumbnails/0024_00_man-carrying-woman.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0024_01_man-carrying-woman.png",
+          "localThumbnailPath": "thumbnails/0024_01_man-carrying-woman.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 44901,
+      "slug": "man-carrying-woman",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0025",
+      "presetNumber": 25,
+      "label": "Man carrying woman 2",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man carrying woman in arms ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0025_man-carrying-woman-2.pma",
+      "localScenePath": "scenes/0025_man-carrying-woman-2.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0025_00_man-carrying-woman-2.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0025_00_man-carrying-woman-2.png",
+          "localThumbnailPath": "thumbnails/0025_00_man-carrying-woman-2.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0025_01_man-carrying-woman-2.png",
+          "localThumbnailPath": "thumbnails/0025_01_man-carrying-woman-2.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 44905,
+      "slug": "man-carrying-woman-2",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0026",
+      "presetNumber": 26,
+      "label": "Man hugging woman from behind",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man hugging woman from behind ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0026_man-hugging-woman-from-behind.pma",
+      "localScenePath": "scenes/0026_man-hugging-woman-from-behind.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0026_00_man-hugging-woman-from-behind.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0026_00_man-hugging-woman-from-behind.png",
+          "localThumbnailPath": "thumbnails/0026_00_man-hugging-woman-from-behind.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0026_01_man-hugging-woman-from-behind.png",
+          "localThumbnailPath": "thumbnails/0026_01_man-hugging-woman-from-behind.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "couple"
+      ],
+      "bytes": 44816,
+      "slug": "man-hugging-woman-from-behind"
+    },
+    {
+      "id": "guo-scene-0027",
+      "presetNumber": 27,
+      "label": "Man lifting woman in the air",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man lifting woman in the air, woman puts her hand on man face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0027_man-lifting-woman-in-the-air.pma",
+      "localScenePath": "scenes/0027_man-lifting-woman-in-the-air.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0027_00_man-lifting-woman-in-the-air.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0027_00_man-lifting-woman-in-the-air.png",
+          "localThumbnailPath": "thumbnails/0027_00_man-lifting-woman-in-the-air.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0027_01_man-lifting-woman-in-the-air.png",
+          "localThumbnailPath": "thumbnails/0027_01_man-lifting-woman-in-the-air.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "couple"
+      ],
+      "bytes": 44904,
+      "slug": "man-lifting-woman-in-the-air",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0028",
+      "presetNumber": 28,
+      "label": "Man lifting woman in the air 1",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man lifting woman in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0028_man-lifting-woman-in-the-air-1.pma",
+      "localScenePath": "scenes/0028_man-lifting-woman-in-the-air-1.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0028_00_man-lifting-woman-in-the-air-1.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0028_00_man-lifting-woman-in-the-air-1.png",
+          "localThumbnailPath": "thumbnails/0028_00_man-lifting-woman-in-the-air-1.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0028_01_man-lifting-woman-in-the-air-1.png",
+          "localThumbnailPath": "thumbnails/0028_01_man-lifting-woman-in-the-air-1.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "couple"
+      ],
+      "bytes": 44887,
+      "slug": "man-lifting-woman-in-the-air-1"
+    },
+    {
+      "id": "guo-scene-0029",
+      "presetNumber": 29,
+      "label": "Man resting in woman's lap ",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Man resting in woman's lap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0029_man-resting-in-woman-s-lap.pma",
+      "localScenePath": "scenes/0029_man-resting-in-woman-s-lap.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0029_00_man-resting-in-woman-s-lap.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0029_00_man-resting-in-woman-s-lap.png",
+          "localThumbnailPath": "thumbnails/0029_00_man-resting-in-woman-s-lap.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0029_01_man-resting-in-woman-s-lap.png",
+          "localThumbnailPath": "thumbnails/0029_01_man-resting-in-woman-s-lap.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Couple"
+      ],
+      "bytes": 45475,
+      "slug": "man-resting-in-woman-s-lap",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1143 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 64,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4649",
+      "presetNumber": 4649,
+      "label": "Room sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair in the room, room drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4649_room-sitting-pose.pma",
+      "localScenePath": "scenes/4649_room-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4649_00_room-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4649_00_room-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4649_00_room-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 15,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        75,
+        102,
+        107,
+        170,
+        171,
+        172,
+        185,
+        298,
+        312,
+        331,
+        347
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 28001,
+      "slug": "room-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4662",
+      "presetNumber": 4662,
+      "label": "Baseball bat holding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a baseball bat, male holding something pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4662_baseball-bat-holding-pose.pma",
+      "localScenePath": "scenes/4662_baseball-bat-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4662_00_baseball-bat-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4662_00_baseball-bat-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4662_00_baseball-bat-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        141
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 20558,
+      "slug": "baseball-bat-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4663",
+      "presetNumber": 4663,
+      "label": "Bottle holding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a bottle and a glass, pouring himself some water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4663_bottle-holding-pose.pma",
+      "localScenePath": "scenes/4663_bottle-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4663_00_bottle-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4663_00_bottle-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4663_00_bottle-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        75,
+        266
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 21074,
+      "slug": "bottle-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4672",
+      "presetNumber": 4672,
+      "label": "Open hand wondering male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his hip with his left hand, his right hand is open",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4672_open-hand-wondering-male-pose.pma",
+      "localScenePath": "scenes/4672_open-hand-wondering-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4672_00_open-hand-wondering-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4672_00_open-hand-wondering-male-pose.png",
+          "localThumbnailPath": "thumbnails/4672_00_open-hand-wondering-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20126,
+      "slug": "open-hand-wondering-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4675",
+      "presetNumber": 4675,
+      "label": "Clueless male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Clueless male is spreading his arms with open hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4675_clueless-male-pose.pma",
+      "localScenePath": "scenes/4675_clueless-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4675_00_clueless-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4675_00_clueless-male-pose.png",
+          "localThumbnailPath": "thumbnails/4675_00_clueless-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20074,
+      "slug": "clueless-male-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4677",
+      "presetNumber": 4677,
+      "label": "Kneeling open hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling and extending his open hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4677_kneeling-open-hands-pose.pma",
+      "localScenePath": "scenes/4677_kneeling-open-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4677_00_kneeling-open-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4677_00_kneeling-open-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4677_00_kneeling-open-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "open",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20180,
+      "slug": "kneeling-open-hands-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4692",
+      "presetNumber": 4692,
+      "label": "Male warrior holding hammers pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male warrior is holding fantasy hammers, male attacking, swinging hammers pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4692_male-warrior-holding-hammers-pose.pma",
+      "localScenePath": "scenes/4692_male-warrior-holding-hammers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4692_00_male-warrior-holding-hammers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4692_00_male-warrior-holding-hammers-pose.png",
+          "localThumbnailPath": "thumbnails/4692_00_male-warrior-holding-hammers-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21029,
+      "slug": "male-warrior-holding-hammers-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4693",
+      "presetNumber": 4693,
+      "label": "Male warrior holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male warrior is holding katana in both hands, jumping and attacking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4693_male-warrior-holding-katana-pose.pma",
+      "localScenePath": "scenes/4693_male-warrior-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4693_00_male-warrior-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4693_00_male-warrior-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/4693_00_male-warrior-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20853,
+      "slug": "male-warrior-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4694",
+      "presetNumber": 4694,
+      "label": "Male warrior crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male warrior is crouching, holding a shield and a sword, wearing helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4694_male-warrior-crouching-pose.pma",
+      "localScenePath": "scenes/4694_male-warrior-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4694_00_male-warrior-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4694_00_male-warrior-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4694_00_male-warrior-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162,
+        244
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21582,
+      "slug": "male-warrior-crouching-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4697",
+      "presetNumber": 4697,
+      "label": "Male warrior holding spears pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male warrior is standing and holding spear in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4697_male-warrior-holding-spears-pose.pma",
+      "localScenePath": "scenes/4697_male-warrior-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4697_00_male-warrior-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4697_00_male-warrior-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/4697_00_male-warrior-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21119,
+      "slug": "male-warrior-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4698",
+      "presetNumber": 4698,
+      "label": "Male warrior holding bow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male warrior is standing on a rock and aiming his bow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4698_male-warrior-holding-bow-pose.pma",
+      "localScenePath": "scenes/4698_male-warrior-holding-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4698_00_male-warrior-holding-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4698_00_male-warrior-holding-bow-pose.png",
+          "localThumbnailPath": "thumbnails/4698_00_male-warrior-holding-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        176,
+        363,
+        366
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22114,
+      "slug": "male-warrior-holding-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4699",
+      "presetNumber": 4699,
+      "label": "Male warrior holding swords pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male warrior is standing and holding swords, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4699_male-warrior-holding-swords-pose.pma",
+      "localScenePath": "scenes/4699_male-warrior-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4699_00_male-warrior-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4699_00_male-warrior-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4699_00_male-warrior-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162,
+        244
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "warrior",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21562,
+      "slug": "male-warrior-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4700",
+      "presetNumber": 4700,
+      "label": "Muscular male standing reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his arms crossed, muscular male standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4700_muscular-male-standing-reference.pma",
+      "localScenePath": "scenes/4700_muscular-male-standing-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4700_00_muscular-male-standing-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4700_00_muscular-male-standing-reference.png",
+          "localThumbnailPath": "thumbnails/4700_00_muscular-male-standing-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20255,
+      "slug": "muscular-male-standing-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4701",
+      "presetNumber": 4701,
+      "label": "Confident muscular male reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing, his hands are on his hips, he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4701_confident-muscular-male-reference.pma",
+      "localScenePath": "scenes/4701_confident-muscular-male-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4701_00_confident-muscular-male-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4701_00_confident-muscular-male-reference.png",
+          "localThumbnailPath": "thumbnails/4701_00_confident-muscular-male-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20182,
+      "slug": "confident-muscular-male-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4702",
+      "presetNumber": 4702,
+      "label": "Arm muscle reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing and showing his arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4702_arm-muscle-reference.pma",
+      "localScenePath": "scenes/4702_arm-muscle-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4702_00_arm-muscle-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4702_00_arm-muscle-reference.png",
+          "localThumbnailPath": "thumbnails/4702_00_arm-muscle-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        361
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20772,
+      "slug": "arm-muscle-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4703",
+      "presetNumber": 4703,
+      "label": "Back muscle reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing and showing his arm and back muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4703_back-muscle-reference.pma",
+      "localScenePath": "scenes/4703_back-muscle-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4703_00_back-muscle-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4703_00_back-muscle-reference.png",
+          "localThumbnailPath": "thumbnails/4703_00_back-muscle-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20249,
+      "slug": "back-muscle-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4704",
+      "presetNumber": 4704,
+      "label": "Muscular male boxing reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is in boxing stance, male muscle drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4704_muscular-male-boxing-reference.pma",
+      "localScenePath": "scenes/4704_muscular-male-boxing-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4704_00_muscular-male-boxing-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4704_00_muscular-male-boxing-reference.png",
+          "localThumbnailPath": "thumbnails/4704_00_muscular-male-boxing-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20243,
+      "slug": "muscular-male-boxing-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4705",
+      "presetNumber": 4705,
+      "label": "Muscular male sitting reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is sitting on the bar stool, male muscle drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4705_muscular-male-sitting-reference.pma",
+      "localScenePath": "scenes/4705_muscular-male-sitting-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4705_00_muscular-male-sitting-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4705_00_muscular-male-sitting-reference.png",
+          "localThumbnailPath": "thumbnails/4705_00_muscular-male-sitting-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20733,
+      "slug": "muscular-male-sitting-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4706",
+      "presetNumber": 4706,
+      "label": "Muscular male stretching reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing and stretching his arms, arm muscle drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4706_muscular-male-stretching-reference.pma",
+      "localScenePath": "scenes/4706_muscular-male-stretching-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4706_00_muscular-male-stretching-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4706_00_muscular-male-stretching-reference.png",
+          "localThumbnailPath": "thumbnails/4706_00_muscular-male-stretching-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20362,
+      "slug": "muscular-male-stretching-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4708",
+      "presetNumber": 4708,
+      "label": "Muscular male victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing on top of the rock and showing his muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4708_muscular-male-victory-pose.pma",
+      "localScenePath": "scenes/4708_muscular-male-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4708_00_muscular-male-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4708_00_muscular-male-victory-pose.png",
+          "localThumbnailPath": "thumbnails/4708_00_muscular-male-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        369
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20735,
+      "slug": "muscular-male-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4709",
+      "presetNumber": 4709,
+      "label": "Muscular male hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing and holding hammers in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4709_muscular-male-hammer-pose.pma",
+      "localScenePath": "scenes/4709_muscular-male-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4709_00_muscular-male-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4709_00_muscular-male-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/4709_00_muscular-male-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "muscle",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21256,
+      "slug": "muscular-male-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4712",
+      "presetNumber": 4712,
+      "label": "Chibi sitting reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cute chibi is sitting in the armchair, cute chibi sitting pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4712_chibi-sitting-reference.pma",
+      "localScenePath": "scenes/4712_chibi-sitting-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4712_00_chibi-sitting-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4712_00_chibi-sitting-reference.png",
+          "localThumbnailPath": "thumbnails/4712_00_chibi-sitting-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "reference"
+      ],
+      "bytes": 20758,
+      "slug": "chibi-sitting-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4713",
+      "presetNumber": 4713,
+      "label": "Chibi walking reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cute chibi is walking casually, walking chibi reference pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4713_chibi-walking-reference.pma",
+      "localScenePath": "scenes/4713_chibi-walking-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4713_00_chibi-walking-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4713_00_chibi-walking-reference.png",
+          "localThumbnailPath": "thumbnails/4713_00_chibi-walking-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "reference"
+      ],
+      "bytes": 20282,
+      "slug": "chibi-walking-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4714",
+      "presetNumber": 4714,
+      "label": "Chibi jumping reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is jumping, chibi dynamic jumping pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4714_chibi-jumping-reference.pma",
+      "localScenePath": "scenes/4714_chibi-jumping-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4714_00_chibi-jumping-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4714_00_chibi-jumping-reference.png",
+          "localThumbnailPath": "thumbnails/4714_00_chibi-jumping-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "reference"
+      ],
+      "bytes": 20125,
+      "slug": "chibi-jumping-reference",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

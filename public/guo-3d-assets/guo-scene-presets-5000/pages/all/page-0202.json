@@ -1,0 +1,1111 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 201,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4825",
+      "presetNumber": 4825,
+      "label": "Crouched hunter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female crouched low, bow ready, scanning surroundings, female bow reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4825_crouched-hunter-pose.pma",
+      "localScenePath": "scenes/4825_crouched-hunter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4825_00_crouched-hunter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4825_00_crouched-hunter-pose.png",
+          "localThumbnailPath": "thumbnails/4825_00_crouched-hunter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        159,
+        177
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21133,
+      "slug": "crouched-hunter-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4826",
+      "presetNumber": 4826,
+      "label": "Arrow released stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a bow, just after release, bowstring relaxed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4826_arrow-released-stance-pose.pma",
+      "localScenePath": "scenes/4826_arrow-released-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4826_00_arrow-released-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4826_00_arrow-released-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4826_00_arrow-released-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        159,
+        177
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21088,
+      "slug": "arrow-released-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4827",
+      "presetNumber": 4827,
+      "label": "Dual archers pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing back-to-back, bows drawn in opposite directions",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4827_dual-archers-pose.pma",
+      "localScenePath": "scenes/4827_dual-archers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4827_00_dual-archers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4827_00_dual-archers-pose.png",
+          "localThumbnailPath": "thumbnails/4827_00_dual-archers-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4827_01_dual-archers-pose.png",
+          "localThumbnailPath": "thumbnails/4827_01_dual-archers-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        176
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 41328,
+      "slug": "dual-archers-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4828",
+      "presetNumber": 4828,
+      "label": "Low squat bow aim pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting low, bow aimed forward, male archer holding bow reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4828_low-squat-bow-aim-pose.pma",
+      "localScenePath": "scenes/4828_low-squat-bow-aim-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4828_00_low-squat-bow-aim-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4828_00_low-squat-bow-aim-pose.png",
+          "localThumbnailPath": "thumbnails/4828_00_low-squat-bow-aim-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        176,
+        369
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21092,
+      "slug": "low-squat-bow-aim-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4829",
+      "presetNumber": 4829,
+      "label": "Side step shooting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sidestepping while keeping aim locked on target",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4829_side-step-shooting-pose.pma",
+      "localScenePath": "scenes/4829_side-step-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4829_00_side-step-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4829_00_side-step-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/4829_00_side-step-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        176
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 20598,
+      "slug": "side-step-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4830",
+      "presetNumber": 4830,
+      "label": "Relaxed open palm reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting and meditating, his palms are relaxed and open, facing upward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4830_relaxed-open-palm-reference.pma",
+      "localScenePath": "scenes/4830_relaxed-open-palm-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4830_00_relaxed-open-palm-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4830_00_relaxed-open-palm-reference.png",
+          "localThumbnailPath": "thumbnails/4830_00_relaxed-open-palm-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20599,
+      "slug": "relaxed-open-palm-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4831",
+      "presetNumber": 4831,
+      "label": "Clenched fist hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, looking slightly to the left, his hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4831_clenched-fist-hand-reference.pma",
+      "localScenePath": "scenes/4831_clenched-fist-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4831_00_clenched-fist-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4831_00_clenched-fist-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4831_00_clenched-fist-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20084,
+      "slug": "clenched-fist-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4832",
+      "presetNumber": 4832,
+      "label": "Male pointing hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and pointing, his index finger is extended, his right hand is on his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4832_male-pointing-hand-reference.pma",
+      "localScenePath": "scenes/4832_male-pointing-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4832_00_male-pointing-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4832_00_male-pointing-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4832_00_male-pointing-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20068,
+      "slug": "male-pointing-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4833",
+      "presetNumber": 4833,
+      "label": "Holding chin hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and thinking, holding his chin with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4833_holding-chin-hand-reference.pma",
+      "localScenePath": "scenes/4833_holding-chin-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4833_00_holding-chin-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4833_00_holding-chin-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4833_00_holding-chin-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20034,
+      "slug": "holding-chin-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4834",
+      "presetNumber": 4834,
+      "label": "Thumbs up hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and showing thumbs up, male thumbs up reference pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4834_thumbs-up-hand-reference.pma",
+      "localScenePath": "scenes/4834_thumbs-up-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4834_00_thumbs-up-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4834_00_thumbs-up-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4834_00_thumbs-up-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20022,
+      "slug": "thumbs-up-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4835",
+      "presetNumber": 4835,
+      "label": "Male resting hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair, resting his hands, palm down on the armchair",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4835_male-resting-hand-reference.pma",
+      "localScenePath": "scenes/4835_male-resting-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4835_00_male-resting-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4835_00_male-resting-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4835_00_male-resting-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20579,
+      "slug": "male-resting-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4836",
+      "presetNumber": 4836,
+      "label": "Reaching forward hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and reaching forward for a glass, palm open reaching pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4836_reaching-forward-hand-reference.pma",
+      "localScenePath": "scenes/4836_reaching-forward-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4836_00_reaching-forward-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4836_00_reaching-forward-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4836_00_reaching-forward-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        75,
+        78
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 21081,
+      "slug": "reaching-forward-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4837",
+      "presetNumber": 4837,
+      "label": "Male praying hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair and praying, male praying hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4837_male-praying-hand-reference.pma",
+      "localScenePath": "scenes/4837_male-praying-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4837_00_male-praying-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4837_00_male-praying-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4837_00_male-praying-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20701,
+      "slug": "male-praying-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4838",
+      "presetNumber": 4838,
+      "label": "Stretching hands reference",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are standing next to each other and stretching their fingers, hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4838_stretching-hands-reference.pma",
+      "localScenePath": "scenes/4838_stretching-hands-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4838_00_stretching-hands-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4838_00_stretching-hands-reference.png",
+          "localThumbnailPath": "thumbnails/4838_00_stretching-hands-reference.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4838_01_stretching-hands-reference.png",
+          "localThumbnailPath": "thumbnails/4838_01_stretching-hands-reference.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 39567,
+      "slug": "stretching-hands-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4839",
+      "presetNumber": 4839,
+      "label": "Male holding hip hand reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding his hip with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4839_male-holding-hip-hand-reference.pma",
+      "localScenePath": "scenes/4839_male-holding-hip-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4839_00_male-holding-hip-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4839_00_male-holding-hip-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4839_00_male-holding-hip-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20075,
+      "slug": "male-holding-hip-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4840",
+      "presetNumber": 4840,
+      "label": "Female elegant hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting elegantly at the table, holding her hands, waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4840_female-elegant-hand-reference.pma",
+      "localScenePath": "scenes/4840_female-elegant-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4840_00_female-elegant-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4840_00_female-elegant-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4840_00_female-elegant-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 21157,
+      "slug": "female-elegant-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4841",
+      "presetNumber": 4841,
+      "label": "Delicate open palm reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her palms are open, she is looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4841_delicate-open-palm-reference.pma",
+      "localScenePath": "scenes/4841_delicate-open-palm-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4841_00_delicate-open-palm-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4841_00_delicate-open-palm-reference.png",
+          "localThumbnailPath": "thumbnails/4841_00_delicate-open-palm-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20210,
+      "slug": "delicate-open-palm-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4842",
+      "presetNumber": 4842,
+      "label": "Pointing upward hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and pointing up with her right hand, holding her hip with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4842_pointing-upward-hand-reference.pma",
+      "localScenePath": "scenes/4842_pointing-upward-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4842_00_pointing-upward-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4842_00_pointing-upward-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4842_00_pointing-upward-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20103,
+      "slug": "pointing-upward-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4843",
+      "presetNumber": 4843,
+      "label": "Crossed fingers hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her index and middle fingers are interlaced",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4843_crossed-fingers-hand-reference.pma",
+      "localScenePath": "scenes/4843_crossed-fingers-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4843_00_crossed-fingers-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4843_00_crossed-fingers-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4843_00_crossed-fingers-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20189,
+      "slug": "crossed-fingers-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4844",
+      "presetNumber": 4844,
+      "label": "Graceful reach hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and gracefully reaching out for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4844_graceful-reach-hand-reference.pma",
+      "localScenePath": "scenes/4844_graceful-reach-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4844_00_graceful-reach-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4844_00_graceful-reach-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4844_00_graceful-reach-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20170,
+      "slug": "graceful-reach-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4845",
+      "presetNumber": 4845,
+      "label": "Touching face hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing cute and touching her face gently",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4845_touching-face-hand-reference.pma",
+      "localScenePath": "scenes/4845_touching-face-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4845_00_touching-face-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4845_00_touching-face-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4845_00_touching-face-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20215,
+      "slug": "touching-face-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4846",
+      "presetNumber": 4846,
+      "label": "Female praying hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and praying, female hand reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4846_female-praying-hand-reference.pma",
+      "localScenePath": "scenes/4846_female-praying-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4846_00_female-praying-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4846_00_female-praying-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4846_00_female-praying-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20334,
+      "slug": "female-praying-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4847",
+      "presetNumber": 4847,
+      "label": "Delicate pinch hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is gently picking up something small from the table, pinching it with two fingers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4847_delicate-pinch-hand-reference.pma",
+      "localScenePath": "scenes/4847_delicate-pinch-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4847_00_delicate-pinch-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4847_00_delicate-pinch-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4847_00_delicate-pinch-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20724,
+      "slug": "delicate-pinch-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4848",
+      "presetNumber": 4848,
+      "label": "Stop gesture hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and showing with her hands \"stop\"",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4848_stop-gesture-hand-reference.pma",
+      "localScenePath": "scenes/4848_stop-gesture-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4848_00_stop-gesture-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4848_00_stop-gesture-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4848_00_stop-gesture-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20211,
+      "slug": "stop-gesture-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1138 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 24,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-1692",
+      "presetNumber": 1692,
+      "label": "Holding trident landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing on the ground, holding a trident in his right hand, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1692_holding-trident-landing-pose.pma",
+      "localScenePath": "scenes/1692_holding-trident-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1692_00_holding-trident-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1692_00_holding-trident-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1692_00_holding-trident-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        112
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "demon",
+        "pose"
+      ],
+      "bytes": 24211,
+      "slug": "holding-trident-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1696",
+      "presetNumber": 1696,
+      "label": "Demon aiming trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is about to attack with his trident, holding it with both hands and aiming downwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1696_demon-aiming-trident-pose.pma",
+      "localScenePath": "scenes/1696_demon-aiming-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1696_00_demon-aiming-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1696_00_demon-aiming-trident-pose.png",
+          "localThumbnailPath": "thumbnails/1696_00_demon-aiming-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        112
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "demon",
+        "pose"
+      ],
+      "bytes": 24662,
+      "slug": "demon-aiming-trident-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1699",
+      "presetNumber": 1699,
+      "label": "Dynamic demon attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is jumping high to attack, holding his trident with both hands above his head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1699_dynamic-demon-attack-pose.pma",
+      "localScenePath": "scenes/1699_dynamic-demon-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1699_00_dynamic-demon-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1699_00_dynamic-demon-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1699_00_dynamic-demon-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        112
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "demon",
+        "pose"
+      ],
+      "bytes": 24669,
+      "slug": "dynamic-demon-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1700",
+      "presetNumber": 1700,
+      "label": "Wizard standing spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male wizard is standing, holding a staff in his left hand and casting a spell with his right hand, spell casting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1700_wizard-standing-spell-casting-pose.pma",
+      "localScenePath": "scenes/1700_wizard-standing-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1700_00_wizard-standing-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1700_00_wizard-standing-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1700_00_wizard-standing-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        115,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24696,
+      "slug": "wizard-standing-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1701",
+      "presetNumber": 1701,
+      "label": "Holding book spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male in wizard hat is holding a book in his left hand and casting a spell",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1701_holding-book-spell-casting-pose.pma",
+      "localScenePath": "scenes/1701_holding-book-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1701_00_holding-book-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1701_00_holding-book-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1701_00_holding-book-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24734,
+      "slug": "holding-book-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1702",
+      "presetNumber": 1702,
+      "label": "Dynamic spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male in wizard hat is holding a staff in his right hand and casting a spell with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1702_dynamic-spell-casting-pose.pma",
+      "localScenePath": "scenes/1702_dynamic-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1702_00_dynamic-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1702_00_dynamic-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1702_00_dynamic-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24742,
+      "slug": "dynamic-spell-casting-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1706",
+      "presetNumber": 1706,
+      "label": "Demon spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is standing, holding a trident in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1706_demon-spell-casting-pose.pma",
+      "localScenePath": "scenes/1706_demon-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1706_00_demon-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1706_00_demon-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1706_00_demon-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        112
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24704,
+      "slug": "demon-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1708",
+      "presetNumber": 1708,
+      "label": "Wizard spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male wizard is standing, holding a staff in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1708_wizard-spell-casting-pose.pma",
+      "localScenePath": "scenes/1708_wizard-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1708_00_wizard-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1708_00_wizard-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1708_00_wizard-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        113,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 25227,
+      "slug": "wizard-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1710",
+      "presetNumber": 1710,
+      "label": "Chibi standing holding hip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his left hand on his hip and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1710_chibi-standing-holding-hip-pose.pma",
+      "localScenePath": "scenes/1710_chibi-standing-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1710_00_chibi-standing-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1710_00_chibi-standing-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/1710_00_chibi-standing-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23841,
+      "slug": "chibi-standing-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1711",
+      "presetNumber": 1711,
+      "label": "Chibi crossed arms standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with crossed arms and looking forward, chibi standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1711_chibi-crossed-arms-standing-pose.pma",
+      "localScenePath": "scenes/1711_chibi-crossed-arms-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1711_00_chibi-crossed-arms-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1711_00_chibi-crossed-arms-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1711_00_chibi-crossed-arms-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23779,
+      "slug": "chibi-crossed-arms-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1712",
+      "presetNumber": 1712,
+      "label": "Chibi crossed legs standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his legs crossed and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1712_chibi-crossed-legs-standing-pose.pma",
+      "localScenePath": "scenes/1712_chibi-crossed-legs-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1712_00_chibi-crossed-legs-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1712_00_chibi-crossed-legs-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1712_00_chibi-crossed-legs-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23760,
+      "slug": "chibi-crossed-legs-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1713",
+      "presetNumber": 1713,
+      "label": "Chibi hands hips standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his hands on his hips, chibi standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1713_chibi-hands-hips-standing-pose.pma",
+      "localScenePath": "scenes/1713_chibi-hands-hips-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1713_00_chibi-hands-hips-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1713_00_chibi-hands-hips-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1713_00_chibi-hands-hips-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23866,
+      "slug": "chibi-hands-hips-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1714",
+      "presetNumber": 1714,
+      "label": "Chibi standing waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing, looking to the right and waving with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1714_chibi-standing-waving-pose.pma",
+      "localScenePath": "scenes/1714_chibi-standing-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1714_00_chibi-standing-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1714_00_chibi-standing-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1714_00_chibi-standing-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23805,
+      "slug": "chibi-standing-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1715",
+      "presetNumber": 1715,
+      "label": "Cute chibi standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing, looking to the left and showing peace sign with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1715_cute-chibi-standing-pose.pma",
+      "localScenePath": "scenes/1715_cute-chibi-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1715_00_cute-chibi-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1715_00_cute-chibi-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1715_00_cute-chibi-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23735,
+      "slug": "cute-chibi-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1716",
+      "presetNumber": 1716,
+      "label": "Angry chibi standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry chibi male is standing with his hands clenched into fists and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1716_angry-chibi-standing-pose.pma",
+      "localScenePath": "scenes/1716_angry-chibi-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1716_00_angry-chibi-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1716_00_angry-chibi-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1716_00_angry-chibi-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23688,
+      "slug": "angry-chibi-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1717",
+      "presetNumber": 1717,
+      "label": "Happy chibi standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy chibi male is standing, looking up and raising his hands high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1717_happy-chibi-standing-pose.pma",
+      "localScenePath": "scenes/1717_happy-chibi-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1717_00_happy-chibi-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1717_00_happy-chibi-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1717_00_happy-chibi-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23757,
+      "slug": "happy-chibi-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1719",
+      "presetNumber": 1719,
+      "label": "Chibi standing looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his right hand on his hip and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1719_chibi-standing-looking-left-pose.pma",
+      "localScenePath": "scenes/1719_chibi-standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1719_00_chibi-standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1719_00_chibi-standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/1719_00_chibi-standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23836,
+      "slug": "chibi-standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1737",
+      "presetNumber": 1737,
+      "label": "Male standing stirring pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a pan in his left hand and a wooden spoon in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1737_male-standing-stirring-pose.pma",
+      "localScenePath": "scenes/1737_male-standing-stirring-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1737_00_male-standing-stirring-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1737_00_male-standing-stirring-pose.png",
+          "localThumbnailPath": "thumbnails/1737_00_male-standing-stirring-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        122,
+        123
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 24671,
+      "slug": "male-standing-stirring-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1739",
+      "presetNumber": 1739,
+      "label": "Male cooking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, cooking something in a cooking pot and stirring it with a wooden spoon",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1739_male-cooking-pose.pma",
+      "localScenePath": "scenes/1739_male-cooking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1739_00_male-cooking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1739_00_male-cooking-pose.png",
+          "localThumbnailPath": "thumbnails/1739_00_male-cooking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        119,
+        120,
+        121,
+        123
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 25691,
+      "slug": "male-cooking-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1755",
+      "presetNumber": 1755,
+      "label": "Anime devil flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male with devil wings is flying, looking upwards and raising his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1755_anime-devil-flying-pose.pma",
+      "localScenePath": "scenes/1755_anime-devil-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1755_00_anime-devil-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1755_00_anime-devil-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1755_00_anime-devil-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        86
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "flying",
+        "pose"
+      ],
+      "bytes": 24520,
+      "slug": "anime-devil-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1756",
+      "presetNumber": 1756,
+      "label": "Anime superman flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is flying, his hands are clenched into fists, he is raising his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1756_anime-superman-flying-pose.pma",
+      "localScenePath": "scenes/1756_anime-superman-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1756_00_anime-superman-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1756_00_anime-superman-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1756_00_anime-superman-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "flying",
+        "pose"
+      ],
+      "bytes": 23757,
+      "slug": "anime-superman-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1763",
+      "presetNumber": 1763,
+      "label": "Male eating birthday cake pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and eating a slice of birthday cake, birthday drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1763_male-eating-birthday-cake-pose.pma",
+      "localScenePath": "scenes/1763_male-eating-birthday-cake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1763_00_male-eating-birthday-cake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1763_00_male-eating-birthday-cake-pose.png",
+          "localThumbnailPath": "thumbnails/1763_00_male-eating-birthday-cake-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "birthday",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 356755,
+      "slug": "male-eating-birthday-cake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1770",
+      "presetNumber": 1770,
+      "label": "Standing eating pizza pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and eating a slice of pizza, holding a glass in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1770_standing-eating-pizza-pose.pma",
+      "localScenePath": "scenes/1770_standing-eating-pizza-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1770_00_standing-eating-pizza-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1770_00_standing-eating-pizza-pose.png",
+          "localThumbnailPath": "thumbnails/1770_00_standing-eating-pizza-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        75
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "eating",
+        "reference"
+      ],
+      "bytes": 169355,
+      "slug": "standing-eating-pizza-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1775",
+      "presetNumber": 1775,
+      "label": "Male sitting eating pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting at the table and eating from a bowl, holding the spoon in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1775_male-sitting-eating-pose.pma",
+      "localScenePath": "scenes/1775_male-sitting-eating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1775_00_male-sitting-eating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1775_00_male-sitting-eating-pose.png",
+          "localThumbnailPath": "thumbnails/1775_00_male-sitting-eating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        126,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "eating",
+        "reference"
+      ],
+      "bytes": 159819,
+      "slug": "male-sitting-eating-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

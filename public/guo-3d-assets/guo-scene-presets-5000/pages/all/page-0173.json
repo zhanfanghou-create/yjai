@@ -1,0 +1,1125 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 172,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4129",
+      "presetNumber": 4129,
+      "label": "Friends talking pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female and male friends are sitting on the couch and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4129_friends-talking-pose.pma",
+      "localScenePath": "scenes/4129_friends-talking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4129_00_friends-talking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4129_00_friends-talking-pose.png",
+          "localThumbnailPath": "thumbnails/4129_00_friends-talking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4129_01_friends-talking-pose.png",
+          "localThumbnailPath": "thumbnails/4129_01_friends-talking-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4129_02_friends-talking-pose.png",
+          "localThumbnailPath": "thumbnails/4129_02_friends-talking-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        170,
+        185
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "friendship",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 69999,
+      "slug": "friends-talking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4130",
+      "presetNumber": 4130,
+      "label": "Female standing curious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, curious about something, holding her chin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4130_female-standing-curious-pose.pma",
+      "localScenePath": "scenes/4130_female-standing-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4130_00_female-standing-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4130_00_female-standing-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4130_00_female-standing-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23536,
+      "slug": "female-standing-curious-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4131",
+      "presetNumber": 4131,
+      "label": "Male standing curious pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, curious about something, holding his chin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4131_male-standing-curious-pose.pma",
+      "localScenePath": "scenes/4131_male-standing-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4131_00_male-standing-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4131_00_male-standing-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4131_00_male-standing-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23755,
+      "slug": "male-standing-curious-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4132",
+      "presetNumber": 4132,
+      "label": "Female sitting curious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair, her legs are crossed, she is curious about something, holding her chin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4132_female-sitting-curious-pose.pma",
+      "localScenePath": "scenes/4132_female-sitting-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4132_00_female-sitting-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4132_00_female-sitting-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4132_00_female-sitting-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 24009,
+      "slug": "female-sitting-curious-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4133",
+      "presetNumber": 4133,
+      "label": "Male sitting curious pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bench, his legs are crossed, he is curious about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4133_male-sitting-curious-pose.pma",
+      "localScenePath": "scenes/4133_male-sitting-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4133_00_male-sitting-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4133_00_male-sitting-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4133_00_male-sitting-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 24259,
+      "slug": "male-sitting-curious-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4134",
+      "presetNumber": 4134,
+      "label": "Holding head curious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her head, wondering, curious about something, looking up and holding her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4134_holding-head-curious-pose.pma",
+      "localScenePath": "scenes/4134_holding-head-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4134_00_holding-head-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4134_00_holding-head-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4134_00_holding-head-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23527,
+      "slug": "holding-head-curious-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4135",
+      "presetNumber": 4135,
+      "label": "Confused curious male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confused, curious about something, spreading his arms, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4135_confused-curious-male-pose.pma",
+      "localScenePath": "scenes/4135_confused-curious-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4135_00_confused-curious-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4135_00_confused-curious-male-pose.png",
+          "localThumbnailPath": "thumbnails/4135_00_confused-curious-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23733,
+      "slug": "confused-curious-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4136",
+      "presetNumber": 4136,
+      "label": "Curious females pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing next to each other, thinking, curious about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4136_curious-females-pose.pma",
+      "localScenePath": "scenes/4136_curious-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4136_00_curious-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4136_00_curious-females-pose.png",
+          "localThumbnailPath": "thumbnails/4136_00_curious-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4136_01_curious-females-pose.png",
+          "localThumbnailPath": "thumbnails/4136_01_curious-females-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 46230,
+      "slug": "curious-females-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4137",
+      "presetNumber": 4137,
+      "label": "Female kneeling curious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, holding her head, curious about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4137_female-kneeling-curious-pose.pma",
+      "localScenePath": "scenes/4137_female-kneeling-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4137_00_female-kneeling-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4137_00_female-kneeling-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4137_00_female-kneeling-curious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 23534,
+      "slug": "female-kneeling-curious-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4138",
+      "presetNumber": 4138,
+      "label": "Males curious pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are crouching, thinking about something, male curious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4138_males-curious-pose.pma",
+      "localScenePath": "scenes/4138_males-curious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4138_00_males-curious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4138_00_males-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4138_00_males-curious-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4138_01_males-curious-pose.png",
+          "localThumbnailPath": "thumbnails/4138_01_males-curious-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 46667,
+      "slug": "males-curious-pose"
+    },
+    {
+      "id": "guo-scene-4139",
+      "presetNumber": 4139,
+      "label": "Curious female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair at the table, curious about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4139_curious-female-sitting-pose.pma",
+      "localScenePath": "scenes/4139_curious-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4139_00_curious-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4139_00_curious-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4139_00_curious-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "curious",
+        "pose"
+      ],
+      "bytes": 24413,
+      "slug": "curious-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4140",
+      "presetNumber": 4140,
+      "label": "Female standing praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, folding her hands, praying and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4140_female-standing-praying-pose.pma",
+      "localScenePath": "scenes/4140_female-standing-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4140_00_female-standing-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4140_00_female-standing-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4140_00_female-standing-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23628,
+      "slug": "female-standing-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4141",
+      "presetNumber": 4141,
+      "label": "Female bed praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling by the bed and praying, female praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4141_female-bed-praying-pose.pma",
+      "localScenePath": "scenes/4141_female-bed-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4141_00_female-bed-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4141_00_female-bed-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4141_00_female-bed-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        155
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24184,
+      "slug": "female-bed-praying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4142",
+      "presetNumber": 4142,
+      "label": "Praying looking down pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, bending down and praying, female praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4142_praying-looking-down-pose.pma",
+      "localScenePath": "scenes/4142_praying-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4142_00_praying-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4142_00_praying-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/4142_00_praying-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23737,
+      "slug": "praying-looking-down-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4143",
+      "presetNumber": 4143,
+      "label": "Male praying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his hands folded at his forehead and praying, male praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4143_male-praying-pose.pma",
+      "localScenePath": "scenes/4143_male-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4143_00_male-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4143_00_male-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4143_00_male-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23958,
+      "slug": "male-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4144",
+      "presetNumber": 4144,
+      "label": "Female sitting praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair and praying, female praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4144_female-sitting-praying-pose.pma",
+      "localScenePath": "scenes/4144_female-sitting-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4144_00_female-sitting-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4144_00_female-sitting-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4144_00_female-sitting-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24119,
+      "slug": "female-sitting-praying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4145",
+      "presetNumber": 4145,
+      "label": "Male kneeling praying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling, praying and looking up, male praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4145_male-kneeling-praying-pose.pma",
+      "localScenePath": "scenes/4145_male-kneeling-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4145_00_male-kneeling-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4145_00_male-kneeling-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4145_00_male-kneeling-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23965,
+      "slug": "male-kneeling-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4146",
+      "presetNumber": 4146,
+      "label": "Female praying hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair and praying, female praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4146_female-praying-hands-pose.pma",
+      "localScenePath": "scenes/4146_female-praying-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4146_00_female-praying-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4146_00_female-praying-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4146_00_female-praying-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24080,
+      "slug": "female-praying-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4147",
+      "presetNumber": 4147,
+      "label": "Female kneeling praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling and praying, female praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4147_female-kneeling-praying-pose.pma",
+      "localScenePath": "scenes/4147_female-kneeling-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4147_00_female-kneeling-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4147_00_female-kneeling-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4147_00_female-kneeling-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23588,
+      "slug": "female-kneeling-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4148",
+      "presetNumber": 4148,
+      "label": "Table praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting at the table and praying, female praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4148_table-praying-pose.pma",
+      "localScenePath": "scenes/4148_table-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4148_00_table-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4148_00_table-praying-pose.png",
+          "localThumbnailPath": "thumbnails/4148_00_table-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24661,
+      "slug": "table-praying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4149",
+      "presetNumber": 4149,
+      "label": "Male praying hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair and praying, male praying hands drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4149_male-praying-hands-pose.pma",
+      "localScenePath": "scenes/4149_male-praying-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4149_00_male-praying-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4149_00_male-praying-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4149_00_male-praying-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "praying",
+        "hands",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24809,
+      "slug": "male-praying-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4150",
+      "presetNumber": 4150,
+      "label": "Female standing looking back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Surprised female is standing and looking back over her right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4150_female-standing-looking-back-pose.pma",
+      "localScenePath": "scenes/4150_female-standing-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4150_00_female-standing-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4150_00_female-standing-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/4150_00_female-standing-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23508,
+      "slug": "female-standing-looking-back-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4151",
+      "presetNumber": 4151,
+      "label": "Holding hips looking back drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, her hands are on her hips, looking back over her right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4151_holding-hips-looking-back-drawing-pose.pma",
+      "localScenePath": "scenes/4151_holding-hips-looking-back-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4151_00_holding-hips-looking-back-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4151_00_holding-hips-looking-back-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/4151_00_holding-hips-looking-back-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23956,
+      "slug": "holding-hips-looking-back-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4152",
+      "presetNumber": 4152,
+      "label": "Crossed arms looking back drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his his arms crossed and looking back over his right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4152_crossed-arms-looking-back-drawing-pose.pma",
+      "localScenePath": "scenes/4152_crossed-arms-looking-back-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4152_00_crossed-arms-looking-back-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4152_00_crossed-arms-looking-back-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/4152_00_crossed-arms-looking-back-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "back",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23763,
+      "slug": "crossed-arms-looking-back-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

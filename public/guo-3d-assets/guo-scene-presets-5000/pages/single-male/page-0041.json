@@ -1,0 +1,1108 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 40,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-2910",
+      "presetNumber": 2910,
+      "label": "Male sorcerer standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sorcerer is standing, holding a magic staff in his right hand and looking ahead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2910_male-sorcerer-standing-pose.pma",
+      "localScenePath": "scenes/2910_male-sorcerer-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2910_00_male-sorcerer-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2910_00_male-sorcerer-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2910_00_male-sorcerer-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sorcerer",
+        "pose"
+      ],
+      "bytes": 24338,
+      "slug": "male-sorcerer-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2912",
+      "presetNumber": 2912,
+      "label": "Male sorcerer hovering pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sorcerer is hovering in the air, holding a magic staff in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2912_male-sorcerer-hovering-pose.pma",
+      "localScenePath": "scenes/2912_male-sorcerer-hovering-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2912_00_male-sorcerer-hovering-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2912_00_male-sorcerer-hovering-pose.png",
+          "localThumbnailPath": "thumbnails/2912_00_male-sorcerer-hovering-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sorcerer",
+        "pose"
+      ],
+      "bytes": 24318,
+      "slug": "male-sorcerer-hovering-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2914",
+      "presetNumber": 2914,
+      "label": "Sorcerer spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sorcerer is hovering in the air, holding a magic staff in his right hand and casting a spell with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2914_sorcerer-spell-casting-pose.pma",
+      "localScenePath": "scenes/2914_sorcerer-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2914_00_sorcerer-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2914_00_sorcerer-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/2914_00_sorcerer-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sorcerer",
+        "pose"
+      ],
+      "bytes": 24814,
+      "slug": "sorcerer-spell-casting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2916",
+      "presetNumber": 2916,
+      "label": "Sorcerer landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sorcerer is landing, holding a wizard staff in his right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2916_sorcerer-landing-pose.pma",
+      "localScenePath": "scenes/2916_sorcerer-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2916_00_sorcerer-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2916_00_sorcerer-landing-pose.png",
+          "localThumbnailPath": "thumbnails/2916_00_sorcerer-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sorcerer",
+        "pose"
+      ],
+      "bytes": 24274,
+      "slug": "sorcerer-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2919",
+      "presetNumber": 2919,
+      "label": "Male sorcerer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sorcerer is jumping, floating in the air, holding a magic staff and casting a spell",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2919_male-sorcerer-pose.pma",
+      "localScenePath": "scenes/2919_male-sorcerer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2919_00_male-sorcerer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2919_00_male-sorcerer-pose.png",
+          "localThumbnailPath": "thumbnails/2919_00_male-sorcerer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sorcerer",
+        "pose"
+      ],
+      "bytes": 24311,
+      "slug": "male-sorcerer-pose"
+    },
+    {
+      "id": "guo-scene-2922",
+      "presetNumber": 2922,
+      "label": "Male hips standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with both hands on his hips, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2922_male-hips-standing-pose.pma",
+      "localScenePath": "scenes/2922_male-hips-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2922_00_male-hips-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2922_00_male-hips-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2922_00_male-hips-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hips",
+        "pose"
+      ],
+      "bytes": 23720,
+      "slug": "male-hips-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2924",
+      "presetNumber": 2924,
+      "label": "Male hips pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his legs crossed and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2924_male-hips-pose.pma",
+      "localScenePath": "scenes/2924_male-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2924_00_male-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2924_00_male-hips-pose.png",
+          "localThumbnailPath": "thumbnails/2924_00_male-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hips",
+        "pose"
+      ],
+      "bytes": 23741,
+      "slug": "male-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2925",
+      "presetNumber": 2925,
+      "label": "Male hand hip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his left hand on his hip and pointing with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2925_male-hand-hip-pose.pma",
+      "localScenePath": "scenes/2925_male-hand-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2925_00_male-hand-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2925_00_male-hand-hip-pose.png",
+          "localThumbnailPath": "thumbnails/2925_00_male-hand-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hips",
+        "pose"
+      ],
+      "bytes": 23742,
+      "slug": "male-hand-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2929",
+      "presetNumber": 2929,
+      "label": "Male hands hips pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Confident male is standing with his hands on his hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2929_male-hands-hips-pose.pma",
+      "localScenePath": "scenes/2929_male-hands-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2929_00_male-hands-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2929_00_male-hands-hips-pose.png",
+          "localThumbnailPath": "thumbnails/2929_00_male-hands-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hips",
+        "pose"
+      ],
+      "bytes": 23824,
+      "slug": "male-hands-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2931",
+      "presetNumber": 2931,
+      "label": "Male standing holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding his head with both hands, holding head pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2931_male-standing-holding-head-pose.pma",
+      "localScenePath": "scenes/2931_male-standing-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2931_00_male-standing-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2931_00_male-standing-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/2931_00_male-standing-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "head",
+        "pose"
+      ],
+      "bytes": 23861,
+      "slug": "male-standing-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2933",
+      "presetNumber": 2933,
+      "label": "Male crouching holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and holding his head with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2933_male-crouching-holding-head-pose.pma",
+      "localScenePath": "scenes/2933_male-crouching-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2933_00_male-crouching-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2933_00_male-crouching-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/2933_00_male-crouching-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "head",
+        "pose"
+      ],
+      "bytes": 23767,
+      "slug": "male-crouching-holding-head-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2936",
+      "presetNumber": 2936,
+      "label": "Male sitting holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair, looking down and holding his head with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2936_male-sitting-holding-head-pose.pma",
+      "localScenePath": "scenes/2936_male-sitting-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2936_00_male-sitting-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2936_00_male-sitting-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/2936_00_male-sitting-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "head",
+        "pose"
+      ],
+      "bytes": 24330,
+      "slug": "male-sitting-holding-head-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2938",
+      "presetNumber": 2938,
+      "label": "Confused holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is confused, standing and holding his head with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2938_confused-holding-head-pose.pma",
+      "localScenePath": "scenes/2938_confused-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2938_00_confused-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2938_00_confused-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/2938_00_confused-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "head",
+        "pose"
+      ],
+      "bytes": 23855,
+      "slug": "confused-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2951",
+      "presetNumber": 2951,
+      "label": "Manga running jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running and jumping far, dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2951_manga-running-jumping-pose.pma",
+      "localScenePath": "scenes/2951_manga-running-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2951_00_manga-running-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2951_00_manga-running-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2951_00_manga-running-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23872,
+      "slug": "manga-running-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2953",
+      "presetNumber": 2953,
+      "label": "Manga aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running and jumping, holding a gun in his right hand and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2953_manga-aiming-pose.pma",
+      "localScenePath": "scenes/2953_manga-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2953_00_manga-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2953_00_manga-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2953_00_manga-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24764,
+      "slug": "manga-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2954",
+      "presetNumber": 2954,
+      "label": "Manga katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping, holding his katana with both hands and is about to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2954_manga-katana-pose.pma",
+      "localScenePath": "scenes/2954_manga-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2954_00_manga-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2954_00_manga-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2954_00_manga-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24353,
+      "slug": "manga-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2956",
+      "presetNumber": 2956,
+      "label": "Manga landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is landing, balancing with his hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2956_manga-landing-pose.pma",
+      "localScenePath": "scenes/2956_manga-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2956_00_manga-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2956_00_manga-landing-pose.png",
+          "localThumbnailPath": "thumbnails/2956_00_manga-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23884,
+      "slug": "manga-landing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2959",
+      "presetNumber": 2959,
+      "label": "Manga side kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing and side kicking with his right leg, dynamic kicking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2959_manga-side-kicking-pose.pma",
+      "localScenePath": "scenes/2959_manga-side-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2959_00_manga-side-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2959_00_manga-side-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/2959_00_manga-side-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23844,
+      "slug": "manga-side-kicking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2991",
+      "presetNumber": 2991,
+      "label": "Walking holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking, holding a sword with both hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2991_walking-holding-sword-pose.pma",
+      "localScenePath": "scenes/2991_walking-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2991_00_walking-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2991_00_walking-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2991_00_walking-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24338,
+      "slug": "walking-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2994",
+      "presetNumber": 2994,
+      "label": "Jumping sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping, holding a sword with both hands and swinging it backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2994_jumping-sword-pose.pma",
+      "localScenePath": "scenes/2994_jumping-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2994_00_jumping-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2994_00_jumping-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2994_00_jumping-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24253,
+      "slug": "jumping-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2997",
+      "presetNumber": 2997,
+      "label": "Male drawing sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is drawing his sword from its sheath, anime male holding sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2997_male-drawing-sword-pose.pma",
+      "localScenePath": "scenes/2997_male-drawing-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2997_00_male-drawing-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2997_00_male-drawing-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2997_00_male-drawing-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        146,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24881,
+      "slug": "male-drawing-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2998",
+      "presetNumber": 2998,
+      "label": "Anime running sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running, holding a shield in his left hand and a sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2998_anime-running-sword-pose.pma",
+      "localScenePath": "scenes/2998_anime-running-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2998_00_anime-running-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2998_00_anime-running-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2998_00_anime-running-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24783,
+      "slug": "anime-running-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3001",
+      "presetNumber": 3001,
+      "label": "Male running away pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, looking ahead and running away from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3001_male-running-away-pose.pma",
+      "localScenePath": "scenes/3001_male-running-away-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3001_00_male-running-away-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3001_00_male-running-away-pose.png",
+          "localThumbnailPath": "thumbnails/3001_00_male-running-away-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "away",
+        "pose"
+      ],
+      "bytes": 23711,
+      "slug": "male-running-away-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3003",
+      "presetNumber": 3003,
+      "label": "Running looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, looking to the left, running away from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3003_running-looking-left-pose.pma",
+      "localScenePath": "scenes/3003_running-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3003_00_running-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3003_00_running-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3003_00_running-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "away",
+        "pose"
+      ],
+      "bytes": 23841,
+      "slug": "running-looking-left-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

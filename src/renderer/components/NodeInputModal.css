@@ -1,0 +1,612 @@
+﻿/* ========================================
+   节点配置弹窗 - 磨砂玻璃风格
+   ======================================== */
+
+/* ========== 遮罩层 ========== */
+.node-input-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn var(--transition-fast) ease-out;
+}
+
+/* ========== 弹窗主体 ========== */
+.node-input-modal {
+  width: 90%;
+  max-width: 600px;
+  max-height: 85vh;
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--glass-shadow-strong);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: slideInUp var(--transition-normal) ease-out;
+  position: relative;
+}
+
+.node-input-modal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent);
+  pointer-events: none;
+}
+
+/* ========== 弹窗头部 ========== */
+.node-input-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+
+.node-input-modal-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 12px var(--glow-color);
+  flex-shrink: 0;
+}
+
+.node-input-modal-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.node-input-modal-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.node-input-modal-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.node-input-modal-title p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.node-input-modal-close {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--glass-bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.node-input-modal-close:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+  transform: scale(1.05);
+}
+
+.node-input-modal-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ========== 弹窗内容区 ========== */
+.node-input-modal-body {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ========== 输入文本框 ========== */
+.node-input-textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+}
+
+.node-input-textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--glow-color);
+}
+
+.node-input-textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* ========== 选项区域 ========== */
+.node-input-options {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+
+/* 复选框样式 */
+.option-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  padding: 8px 0;
+}
+
+.option-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: var(--glass-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.option-checkbox input[type="checkbox"]:checked + .checkbox-custom {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  box-shadow: 0 2px 8px var(--glow-color);
+}
+
+.option-checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: '';
+  width: 12px;
+  height: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  margin-top: -2px;
+}
+
+.option-label {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+/* ========== 提示信息 ========== */
+.node-input-tips {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tip-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.tip-icon {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ========== 弹窗底部 ========== */
+.node-input-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+/* ========== 文件附件 ========== */
+.node-input-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.node-input-file-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  font-size: 12px;
+  color: var(--text-primary);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.node-input-file-tag:hover {
+  background: var(--hover-bg);
+}
+
+.file-remove {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all var(--transition-fast);
+  margin-left: 2px;
+  font-size: 14px;
+}
+
+.file-remove:hover {
+  opacity: 1;
+  color: var(--danger-color);
+}
+
+/* ========== 操作按钮行 ========== */
+.node-input-action-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.node-input-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.node-input-action-btn:hover {
+  background: var(--hover-bg);
+  color: var(--text-primary);
+  border-color: var(--border-light);
+}
+
+.node-input-action-btn svg {
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.node-input-action-btn:hover svg {
+  opacity: 1;
+}
+
+/* ========== API配置 / 模型选择 ========== */
+.node-input-api-section {
+  margin-top: 16px;
+}
+
+.node-input-api-row {
+  display: flex;
+  gap: 12px;
+}
+
+.node-input-api-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.node-input-api-field label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.node-input-select {
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.node-input-select:hover {
+  border-color: var(--border-light);
+}
+
+.node-input-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--glow-color);
+}
+
+.node-input-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 10px;
+}
+
+/* ========== 按钮样式 ========== */
+.glass-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-primary);
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.1), 
+    transparent);
+  transition: left 0.5s ease;
+}
+
+.glass-btn:hover::before {
+  left: 100%;
+}
+
+.glass-btn:hover {
+  transform: translateY(-1px);
+}
+
+.glass-btn:active {
+  transform: translateY(0);
+}
+
+.glass-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* 主按钮 */
+.glass-btn-primary {
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 12px var(--glow-color);
+}
+
+.glass-btn-primary:hover {
+  box-shadow: 0 6px 20px var(--glow-color);
+}
+
+/* 次按钮 */
+.glass-btn-secondary {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+}
+
+.glass-btn-secondary:hover {
+  background: var(--hover-bg);
+  border-color: var(--border-light);
+}
+
+/* ========== 动画定义 ========== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ========== 滚动条样式 ========== */
+.node-input-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.node-input-modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.node-input-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.node-input-modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== 响应式调整 ========== */
+@media (max-width: 600px) {
+  .node-input-modal {
+    width: 95%;
+    max-height: 90vh;
+    border-radius: var(--radius-lg);
+  }
+
+  .node-input-modal-header {
+    padding: 16px 20px;
+  }
+
+  .node-input-modal-body {
+    padding: 20px;
+  }
+
+  .node-input-modal-footer {
+    padding: 12px 20px;
+  }
+
+  .node-input-api-row {
+    flex-direction: column;
+  }
+}
+
+/* ========== 批量生成区域 ========== */
+.node-input-batch-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 10px 20px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.node-input-batch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.node-input-batch-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+}
+
+.node-input-batch-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.batch-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.batch-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.batch-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.batch-num {
+  min-width: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.batch-hint {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-left: 2px;
+}
+
+.node-input-model-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  line-height: 1.4;
+}
+
+.node-input-model-hint svg {
+  margin-top: 1px;
+  color: rgba(251, 191, 36, 0.7);
+  flex-shrink: 0;
+}
+
+.node-input-model-hint strong {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+}
+
+.model-cap-hint {
+  color: rgba(255, 255, 255, 0.4);
+}

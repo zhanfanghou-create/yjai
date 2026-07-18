@@ -1,0 +1,205 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "sitting-furniture",
+    "label": "坐卧/家具",
+    "count": 4
+  },
+  "pageIndex": 0,
+  "pageSize": 24,
+  "totalPages": 1,
+  "items": [
+    {
+      "id": "guo-scene-4642",
+      "presetNumber": 4642,
+      "label": "Musician room reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Musician's room, equipped with musical instruments, guitars and microphones",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4642_musician-room-reference.pma",
+      "localScenePath": "scenes/4642_musician-room-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 16,
+      "modelNumbers": [],
+      "propNumbers": [
+        77,
+        81,
+        82,
+        84,
+        85,
+        90,
+        171,
+        185,
+        290,
+        294,
+        297,
+        299,
+        311,
+        312,
+        346
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8922,
+      "slug": "musician-room-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4643",
+      "presetNumber": 4643,
+      "label": "Bedroom reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Bedroom, equipped with bed and furnitures, wardrobes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4643_bedroom-reference.pma",
+      "localScenePath": "scenes/4643_bedroom-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 11,
+      "modelNumbers": [],
+      "propNumbers": [
+        75,
+        155,
+        172,
+        295,
+        296,
+        298,
+        312,
+        348
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 6355,
+      "slug": "bedroom-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4645",
+      "presetNumber": 4645,
+      "label": "Teenager room reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Teenager's room furnished with bed, desk and closet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4645_teenager-room-reference.pma",
+      "localScenePath": "scenes/4645_teenager-room-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 23,
+      "modelNumbers": [],
+      "propNumbers": [
+        74,
+        75,
+        79,
+        83,
+        84,
+        85,
+        90,
+        97,
+        102,
+        103,
+        136,
+        139,
+        155,
+        172,
+        298,
+        312,
+        346
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 12494,
+      "slug": "teenager-room-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4646",
+      "presetNumber": 4646,
+      "label": "Double room reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Double room, furnished with two beds and wardrobes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4646_double-room-reference.pma",
+      "localScenePath": "scenes/4646_double-room-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 8,
+      "modelNumbers": [],
+      "propNumbers": [
+        155,
+        297,
+        298,
+        312,
+        347
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 4921,
+      "slug": "double-room-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

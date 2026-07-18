@@ -1,0 +1,1140 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 44,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-3222",
+      "presetNumber": 3222,
+      "label": "Male knife attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and swinging a knife with his right hand, attacking with knife pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3222_male-knife-attack-pose.pma",
+      "localScenePath": "scenes/3222_male-knife-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3222_00_male-knife-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3222_00_male-knife-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3222_00_male-knife-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24329,
+      "slug": "male-knife-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3225",
+      "presetNumber": 3225,
+      "label": "Standing holding knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, looking to the left, holding knives in both hands, male holding knife pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3225_standing-holding-knife-pose.pma",
+      "localScenePath": "scenes/3225_standing-holding-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3225_00_standing-holding-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3225_00_standing-holding-knife-pose.png",
+          "localThumbnailPath": "thumbnails/3225_00_standing-holding-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24700,
+      "slug": "standing-holding-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3228",
+      "presetNumber": 3228,
+      "label": "Male jumping knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a knife in his right hand, knife attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3228_male-jumping-knife-pose.pma",
+      "localScenePath": "scenes/3228_male-jumping-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3228_00_male-jumping-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3228_00_male-jumping-knife-pose.png",
+          "localThumbnailPath": "thumbnails/3228_00_male-jumping-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "knife",
+        "pose"
+      ],
+      "bytes": 24311,
+      "slug": "male-jumping-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3231",
+      "presetNumber": 3231,
+      "label": "Confident male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently with his arms crossed, holding his right arm",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3231_confident-male-standing-pose.pma",
+      "localScenePath": "scenes/3231_confident-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3231_00_confident-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3231_00_confident-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3231_00_confident-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "arm",
+        "pose"
+      ],
+      "bytes": 23773,
+      "slug": "confident-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3233",
+      "presetNumber": 3233,
+      "label": "Male thinking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and holding his right arm, thinking about something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3233_male-thinking-pose.pma",
+      "localScenePath": "scenes/3233_male-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3233_00_male-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3233_00_male-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/3233_00_male-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "arm",
+        "pose"
+      ],
+      "bytes": 23754,
+      "slug": "male-thinking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3241",
+      "presetNumber": 3241,
+      "label": "Male mermaid sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is sitting on a rock, leaning on his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3241_male-mermaid-sitting-pose.pma",
+      "localScenePath": "scenes/3241_male-mermaid-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3241_00_male-mermaid-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3241_00_male-mermaid-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3241_00_male-mermaid-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 37185,
+      "slug": "male-mermaid-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3243",
+      "presetNumber": 3243,
+      "label": "Male mermaid anatomy pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating, his arms are crossed and he is looking forward confidently",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3243_male-mermaid-anatomy-pose.pma",
+      "localScenePath": "scenes/3243_male-mermaid-anatomy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3243_00_male-mermaid-anatomy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3243_00_male-mermaid-anatomy-pose.png",
+          "localThumbnailPath": "thumbnails/3243_00_male-mermaid-anatomy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 16351,
+      "slug": "male-mermaid-anatomy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3246",
+      "presetNumber": 3246,
+      "label": "Male mermaid trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and holding a trident in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3246_male-mermaid-trident-pose.pma",
+      "localScenePath": "scenes/3246_male-mermaid-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3246_00_male-mermaid-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3246_00_male-mermaid-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3246_00_male-mermaid-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 2062067,
+      "slug": "male-mermaid-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3249",
+      "presetNumber": 3249,
+      "label": "Male mermaid attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding a trident with both hands and ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3249_male-mermaid-attack-pose.pma",
+      "localScenePath": "scenes/3249_male-mermaid-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3249_00_male-mermaid-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3249_00_male-mermaid-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3249_00_male-mermaid-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy"
+      ],
+      "bytes": 2062043,
+      "slug": "male-mermaid-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3255",
+      "presetNumber": 3255,
+      "label": "Male head drawing reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, posing and looking forward, head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3255_male-head-drawing-reference.pma",
+      "localScenePath": "scenes/3255_male-head-drawing-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3255_00_male-head-drawing-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3255_00_male-head-drawing-reference.png",
+          "localThumbnailPath": "thumbnails/3255_00_male-head-drawing-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23717,
+      "slug": "male-head-drawing-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3256",
+      "presetNumber": 3256,
+      "label": "Male looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually and looking to the left, turning his head, male head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3256_male-looking-left-pose.pma",
+      "localScenePath": "scenes/3256_male-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3256_00_male-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3256_00_male-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3256_00_male-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23745,
+      "slug": "male-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3257",
+      "presetNumber": 3257,
+      "label": "Male standing  thinking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his chin and thinking, male head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3257_male-standing-thinking-pose.pma",
+      "localScenePath": "scenes/3257_male-standing-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3257_00_male-standing-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3257_00_male-standing-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/3257_00_male-standing-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23742,
+      "slug": "male-standing-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3258",
+      "presetNumber": 3258,
+      "label": "Male looking up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his hands on his hips and looking up, head drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3258_male-looking-up-pose.pma",
+      "localScenePath": "scenes/3258_male-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3258_00_male-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3258_00_male-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3258_00_male-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23805,
+      "slug": "male-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3259",
+      "presetNumber": 3259,
+      "label": "Male right hand holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding the back of his head with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3259_male-right-hand-holding-head-pose.pma",
+      "localScenePath": "scenes/3259_male-right-hand-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3259_00_male-right-hand-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3259_00_male-right-hand-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/3259_00_male-right-hand-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "head",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23786,
+      "slug": "male-right-hand-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3265",
+      "presetNumber": 3265,
+      "label": "Brute male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing, his hands are on his hips, body types drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3265_brute-male-standing-pose.pma",
+      "localScenePath": "scenes/3265_brute-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3265_00_brute-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3265_00_brute-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3265_00_brute-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23583,
+      "slug": "brute-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3266",
+      "presetNumber": 3266,
+      "label": "Skinny male standing casually pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Skinny male is standing, his right hand is in his pocket, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3266_skinny-male-standing-casually-pose.pma",
+      "localScenePath": "scenes/3266_skinny-male-standing-casually-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3266_00_skinny-male-standing-casually-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3266_00_skinny-male-standing-casually-pose.png",
+          "localThumbnailPath": "thumbnails/3266_00_skinny-male-standing-casually-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23911,
+      "slug": "skinny-male-standing-casually-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3267",
+      "presetNumber": 3267,
+      "label": "Muscular male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing, showing his muscles, his left hand is on his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3267_muscular-male-standing-pose.pma",
+      "localScenePath": "scenes/3267_muscular-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3267_00_muscular-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3267_00_muscular-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3267_00_muscular-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23933,
+      "slug": "muscular-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3268",
+      "presetNumber": 3268,
+      "label": "Stocky male standing casually pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Stocky male is standing, holding his right arm, body types drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3268_stocky-male-standing-casually-pose.pma",
+      "localScenePath": "scenes/3268_stocky-male-standing-casually-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3268_00_stocky-male-standing-casually-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3268_00_stocky-male-standing-casually-pose.png",
+          "localThumbnailPath": "thumbnails/3268_00_stocky-male-standing-casually-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23965,
+      "slug": "stocky-male-standing-casually-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3269",
+      "presetNumber": 3269,
+      "label": "Teen fit male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Teen fit male is standing, his arms and legs are crossed, body types drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3269_teen-fit-male-pose.pma",
+      "localScenePath": "scenes/3269_teen-fit-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3269_00_teen-fit-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3269_00_teen-fit-male-pose.png",
+          "localThumbnailPath": "thumbnails/3269_00_teen-fit-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        42
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        42
+      ],
+      "sourceTags": [
+        "body",
+        "types",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23787,
+      "slug": "teen-fit-male-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3281",
+      "presetNumber": 3281,
+      "label": "Male running looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running and looking slightly to the left, his hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3281_male-running-looking-left-pose.pma",
+      "localScenePath": "scenes/3281_male-running-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3281_00_male-running-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3281_00_male-running-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3281_00_male-running-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "running",
+        "pose"
+      ],
+      "bytes": 23756,
+      "slug": "male-running-looking-left-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3285",
+      "presetNumber": 3285,
+      "label": "Male holding pistol running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a pistol in his right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3285_male-holding-pistol-running-pose.pma",
+      "localScenePath": "scenes/3285_male-holding-pistol-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3285_00_male-holding-pistol-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3285_00_male-holding-pistol-running-pose.png",
+          "localThumbnailPath": "thumbnails/3285_00_male-holding-pistol-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "running",
+        "pose"
+      ],
+      "bytes": 24295,
+      "slug": "male-holding-pistol-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3286",
+      "presetNumber": 3286,
+      "label": "Male holding gun running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a galil with both hands and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3286_male-holding-gun-running-pose.pma",
+      "localScenePath": "scenes/3286_male-holding-gun-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3286_00_male-holding-gun-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3286_00_male-holding-gun-running-pose.png",
+          "localThumbnailPath": "thumbnails/3286_00_male-holding-gun-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        169
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "running",
+        "pose"
+      ],
+      "bytes": 24301,
+      "slug": "male-holding-gun-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3289",
+      "presetNumber": 3289,
+      "label": "Holding sword male running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a shield in his left hand and a sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3289_holding-sword-male-running-pose.pma",
+      "localScenePath": "scenes/3289_holding-sword-male-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3289_00_holding-sword-male-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3289_00_holding-sword-male-running-pose.png",
+          "localThumbnailPath": "thumbnails/3289_00_holding-sword-male-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "running",
+        "pose"
+      ],
+      "bytes": 24802,
+      "slug": "holding-sword-male-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3297",
+      "presetNumber": 3297,
+      "label": "Shy male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Shy male is standing, holding his hands behind his back and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3297_shy-male-standing-pose.pma",
+      "localScenePath": "scenes/3297_shy-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3297_00_shy-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3297_00_shy-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3297_00_shy-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23728,
+      "slug": "shy-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

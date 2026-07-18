@@ -1,0 +1,1062 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 16,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-1008",
+      "presetNumber": 1008,
+      "label": "Confident female aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female is standing with her left hand on hip and aiming a gun with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1008_confident-female-aiming-pose.pma",
+      "localScenePath": "scenes/1008_confident-female-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1008_00_confident-female-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1008_00_confident-female-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1008_00_confident-female-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24037,
+      "slug": "confident-female-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1009",
+      "presetNumber": 1009,
+      "label": "Kneeling aiming female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling on the ground and aiming a gun with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1009_kneeling-aiming-female-pose.pma",
+      "localScenePath": "scenes/1009_kneeling-aiming-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1009_00_kneeling-aiming-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1009_00_kneeling-aiming-female-pose.png",
+          "localThumbnailPath": "thumbnails/1009_00_kneeling-aiming-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24493,
+      "slug": "kneeling-aiming-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1011",
+      "presetNumber": 1011,
+      "label": "Female squatting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is squatting, resting his hands on his knees and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1011_female-squatting-pose.pma",
+      "localScenePath": "scenes/1011_female-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1011_00_female-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1011_00_female-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/1011_00_female-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23424,
+      "slug": "female-squatting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1013",
+      "presetNumber": 1013,
+      "label": "Prayer squat yoga pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is doing yoga, doing a prayer squat yoga pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1013_prayer-squat-yoga-pose.pma",
+      "localScenePath": "scenes/1013_prayer-squat-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1013_00_prayer-squat-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1013_00_prayer-squat-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/1013_00_prayer-squat-yoga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23622,
+      "slug": "prayer-squat-yoga-pose"
+    },
+    {
+      "id": "guo-scene-1014",
+      "presetNumber": 1014,
+      "label": "Half squat yoga pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is doing yoga, doing a half squat yoga pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1014_half-squat-yoga-pose.pma",
+      "localScenePath": "scenes/1014_half-squat-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1014_00_half-squat-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1014_00_half-squat-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/1014_00_half-squat-yoga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23634,
+      "slug": "half-squat-yoga-pose"
+    },
+    {
+      "id": "guo-scene-1016",
+      "presetNumber": 1016,
+      "label": "Female pretty squatting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pretty squatting pose, squatting with closed legs and relaxed hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1016_female-pretty-squatting-pose.pma",
+      "localScenePath": "scenes/1016_female-pretty-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1016_00_female-pretty-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1016_00_female-pretty-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/1016_00_female-pretty-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23429,
+      "slug": "female-pretty-squatting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1020",
+      "presetNumber": 1020,
+      "label": "Female front split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is doing a front split, looking forward, relaxing her hand on her knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1020_female-front-split-pose.pma",
+      "localScenePath": "scenes/1020_female-front-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1020_00_female-front-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1020_00_female-front-split-pose.png",
+          "localThumbnailPath": "thumbnails/1020_00_female-front-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23618,
+      "slug": "female-front-split-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1021",
+      "presetNumber": 1021,
+      "label": "Female side split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is doing a side split, looking to the right and turns her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1021_female-side-split-pose.pma",
+      "localScenePath": "scenes/1021_female-side-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1021_00_female-side-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1021_00_female-side-split-pose.png",
+          "localThumbnailPath": "thumbnails/1021_00_female-side-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23479,
+      "slug": "female-side-split-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1024",
+      "presetNumber": 1024,
+      "label": "Handstanding front split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is handstanding and doing a front split in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1024_handstanding-front-split-pose.pma",
+      "localScenePath": "scenes/1024_handstanding-front-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1024_00_handstanding-front-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1024_00_handstanding-front-split-pose.png",
+          "localThumbnailPath": "thumbnails/1024_00_handstanding-front-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23702,
+      "slug": "handstanding-front-split-pose"
+    },
+    {
+      "id": "guo-scene-1025",
+      "presetNumber": 1025,
+      "label": "Side split standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is doing a side split while standing, her left hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1025_side-split-standing-pose.pma",
+      "localScenePath": "scenes/1025_side-split-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1025_00_side-split-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1025_00_side-split-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1025_00_side-split-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23531,
+      "slug": "side-split-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1026",
+      "presetNumber": 1026,
+      "label": "Side split jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing, jumping high while doing a side split in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1026_side-split-jumping-pose.pma",
+      "localScenePath": "scenes/1026_side-split-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1026_00_side-split-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1026_00_side-split-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1026_00_side-split-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23524,
+      "slug": "side-split-jumping-pose"
+    },
+    {
+      "id": "guo-scene-1029",
+      "presetNumber": 1029,
+      "label": "Elbow standing split",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is elbow standing and doing a front split in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1029_elbow-standing-split.pma",
+      "localScenePath": "scenes/1029_elbow-standing-split.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1029_00_elbow-standing-split.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1029_00_elbow-standing-split.png",
+          "localThumbnailPath": "thumbnails/1029_00_elbow-standing-split.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23699,
+      "slug": "elbow-standing-split",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1032",
+      "presetNumber": 1032,
+      "label": "Female running gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running with a gun in her right hand, looking ahead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1032_female-running-gun-pose.pma",
+      "localScenePath": "scenes/1032_female-running-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1032_00_female-running-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1032_00_female-running-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1032_00_female-running-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 23926,
+      "slug": "female-running-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1035",
+      "presetNumber": 1035,
+      "label": "Fast running aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running fast with a gun in her right hand, running and aiming the gun",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1035_fast-running-aiming-pose.pma",
+      "localScenePath": "scenes/1035_fast-running-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1035_00_fast-running-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1035_00_fast-running-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1035_00_fast-running-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 23920,
+      "slug": "fast-running-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1036",
+      "presetNumber": 1036,
+      "label": "Running two guns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, holding and aiming two guns in two directions",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1036_running-two-guns-pose.pma",
+      "localScenePath": "scenes/1036_running-two-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1036_00_running-two-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1036_00_running-two-guns-pose.png",
+          "localThumbnailPath": "thumbnails/1036_00_running-two-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24391,
+      "slug": "running-two-guns-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1039",
+      "presetNumber": 1039,
+      "label": "Female running shooting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female in helmet is running fast with an ak47, holding it with two hands and shooting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1039_female-running-shooting-pose.pma",
+      "localScenePath": "scenes/1039_female-running-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1039_00_female-running-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1039_00_female-running-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/1039_00_female-running-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        199,
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24427,
+      "slug": "female-running-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1040",
+      "presetNumber": 1040,
+      "label": "Confident female smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female is standing with her legs crossed and smoking, holding cigarette in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1040_confident-female-smoking-pose.pma",
+      "localScenePath": "scenes/1040_confident-female-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1040_00_confident-female-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1040_00_confident-female-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1040_00_confident-female-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 23979,
+      "slug": "confident-female-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1042",
+      "presetNumber": 1042,
+      "label": "Hand hip smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her right hand on her hip and smoking cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1042_hand-hip-smoking-pose.pma",
+      "localScenePath": "scenes/1042_hand-hip-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1042_00_hand-hip-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1042_00_hand-hip-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1042_00_hand-hip-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24173,
+      "slug": "hand-hip-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1043",
+      "presetNumber": 1043,
+      "label": "Female sitting smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair and smoking cigarette, holding it in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1043_female-sitting-smoking-pose.pma",
+      "localScenePath": "scenes/1043_female-sitting-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1043_00_female-sitting-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1043_00_female-sitting-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1043_00_female-sitting-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24417,
+      "slug": "female-sitting-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1060",
+      "presetNumber": 1060,
+      "label": "Leaning against wall pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and leaning against the wall, keeping her arms crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1060_leaning-against-wall-pose.pma",
+      "localScenePath": "scenes/1060_leaning-against-wall-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1060_00_leaning-against-wall-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1060_00_leaning-against-wall-pose.png",
+          "localThumbnailPath": "thumbnails/1060_00_leaning-against-wall-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24116,
+      "slug": "leaning-against-wall-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1061",
+      "presetNumber": 1061,
+      "label": "Female bar counter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and leaning on the bar counter, her legs are crossed, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1061_female-bar-counter-pose.pma",
+      "localScenePath": "scenes/1061_female-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1061_00_female-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1061_00_female-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1061_00_female-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24034,
+      "slug": "female-bar-counter-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1063",
+      "presetNumber": 1063,
+      "label": "Female leaning looking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning against the wall with her legs crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1063_female-leaning-looking-pose.pma",
+      "localScenePath": "scenes/1063_female-leaning-looking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1063_00_female-leaning-looking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1063_00_female-leaning-looking-pose.png",
+          "localThumbnailPath": "thumbnails/1063_00_female-leaning-looking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 23984,
+      "slug": "female-leaning-looking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1064",
+      "presetNumber": 1064,
+      "label": "Female leaning leg pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning against the wall with her back and left leg and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1064_female-leaning-leg-pose.pma",
+      "localScenePath": "scenes/1064_female-leaning-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1064_00_female-leaning-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1064_00_female-leaning-leg-pose.png",
+          "localThumbnailPath": "thumbnails/1064_00_female-leaning-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "female-leaning-leg-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1065",
+      "presetNumber": 1065,
+      "label": "Female leaning table pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is leaning on the table and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1065_female-leaning-table-pose.pma",
+      "localScenePath": "scenes/1065_female-leaning-table-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1065_00_female-leaning-table-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1065_00_female-leaning-table-pose.png",
+          "localThumbnailPath": "thumbnails/1065_00_female-leaning-table-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "female-leaning-table-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

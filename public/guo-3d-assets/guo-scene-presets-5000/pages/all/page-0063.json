@@ -1,0 +1,1144 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 62,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1489",
+      "presetNumber": 1489,
+      "label": "Female reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the couch and reading, holding the book with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1489_female-reading-pose.pma",
+      "localScenePath": "scenes/1489_female-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1489_00_female-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1489_00_female-reading-pose.png",
+          "localThumbnailPath": "thumbnails/1489_00_female-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        79,
+        80,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "reading",
+        "reference"
+      ],
+      "bytes": 26881,
+      "slug": "female-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1490",
+      "presetNumber": 1490,
+      "label": "Female standing singing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and singing, holding the microphone high in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1490_female-standing-singing-pose.pma",
+      "localScenePath": "scenes/1490_female-standing-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1490_00_female-standing-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1490_00_female-standing-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1490_00_female-standing-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        81
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 23986,
+      "slug": "female-standing-singing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1491",
+      "presetNumber": 1491,
+      "label": "Male standing singing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and singing, holding the microphone in his right hand, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1491_male-standing-singing-pose.pma",
+      "localScenePath": "scenes/1491_male-standing-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1491_00_male-standing-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1491_00_male-standing-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1491_00_male-standing-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        81
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 24198,
+      "slug": "male-standing-singing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1492",
+      "presetNumber": 1492,
+      "label": "Female kneeling singing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling and singing, holding the microphone with her right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1492_female-kneeling-singing-pose.pma",
+      "localScenePath": "scenes/1492_female-kneeling-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1492_00_female-kneeling-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1492_00_female-kneeling-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1492_00_female-kneeling-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        81
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 23961,
+      "slug": "female-kneeling-singing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1493",
+      "presetNumber": 1493,
+      "label": "Tilting stand singing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is singing, holding the vintage microphone stand with his right hand and tilting it to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1493_tilting-stand-singing-pose.pma",
+      "localScenePath": "scenes/1493_tilting-stand-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1493_00_tilting-stand-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1493_00_tilting-stand-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1493_00_tilting-stand-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        82
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 24184,
+      "slug": "tilting-stand-singing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1494",
+      "presetNumber": 1494,
+      "label": "Female singing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and singing, holding the vintage microphone stand with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1494_female-singing-pose.pma",
+      "localScenePath": "scenes/1494_female-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1494_00_female-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1494_00_female-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1494_00_female-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        82
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 24029,
+      "slug": "female-singing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1495",
+      "presetNumber": 1495,
+      "label": "Romantic duet singing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are singing a romantic duet and holding hands, singing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1495_romantic-duet-singing-pose.pma",
+      "localScenePath": "scenes/1495_romantic-duet-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1495_00_romantic-duet-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1495_00_romantic-duet-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1495_00_romantic-duet-singing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1495_01_romantic-duet-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1495_01_romantic-duet-singing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        81
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 46913,
+      "slug": "romantic-duet-singing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1496",
+      "presetNumber": 1496,
+      "label": "Female male singing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing in front of each other and singing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1496_female-male-singing-pose.pma",
+      "localScenePath": "scenes/1496_female-male-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1496_00_female-male-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1496_00_female-male-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1496_00_female-male-singing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1496_01_female-male-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1496_01_female-male-singing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        81
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 47433,
+      "slug": "female-male-singing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1497",
+      "presetNumber": 1497,
+      "label": "Female sitting singing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a bar stool and singing, holding the microphone in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1497_female-sitting-singing-pose.pma",
+      "localScenePath": "scenes/1497_female-sitting-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1497_00_female-sitting-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1497_00_female-sitting-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1497_00_female-sitting-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77,
+        81
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 24503,
+      "slug": "female-sitting-singing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1498",
+      "presetNumber": 1498,
+      "label": "Rock star singing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping like a rock star and holding the microphone stand in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1498_rock-star-singing-pose.pma",
+      "localScenePath": "scenes/1498_rock-star-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1498_00_rock-star-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1498_00_rock-star-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1498_00_rock-star-singing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        82
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 24276,
+      "slug": "rock-star-singing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1499",
+      "presetNumber": 1499,
+      "label": "Females dancing singing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are dancing and singing, dynamic singing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1499_females-dancing-singing-pose.pma",
+      "localScenePath": "scenes/1499_females-dancing-singing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1499_00_females-dancing-singing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1499_00_females-dancing-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1499_00_females-dancing-singing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1499_01_females-dancing-singing-pose.png",
+          "localThumbnailPath": "thumbnails/1499_01_females-dancing-singing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        81,
+        82
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "singing",
+        "pose"
+      ],
+      "bytes": 47233,
+      "slug": "females-dancing-singing-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1500",
+      "presetNumber": 1500,
+      "label": "Skateboard railing sliding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sliding on a railing with his skateboard, balancing with his hands, skateboard drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1500_skateboard-railing-sliding-pose.pma",
+      "localScenePath": "scenes/1500_skateboard-railing-sliding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1500_00_skateboard-railing-sliding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1500_00_skateboard-railing-sliding-pose.png",
+          "localThumbnailPath": "thumbnails/1500_00_skateboard-railing-sliding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24775,
+      "slug": "skateboard-railing-sliding-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1501",
+      "presetNumber": 1501,
+      "label": "Right foot pushing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is skateboarding, his left foot is forward and pushing with right foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1501_right-foot-pushing-pose.pma",
+      "localScenePath": "scenes/1501_right-foot-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1501_00_right-foot-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1501_00_right-foot-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1501_00_right-foot-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24182,
+      "slug": "right-foot-pushing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1502",
+      "presetNumber": 1502,
+      "label": "Crouching skateboard pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is skateboarding, he is rolling on the skateboard while crouching",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1502_crouching-skateboard-pose.pma",
+      "localScenePath": "scenes/1502_crouching-skateboard-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1502_00_crouching-skateboard-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1502_00_crouching-skateboard-pose.png",
+          "localThumbnailPath": "thumbnails/1502_00_crouching-skateboard-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24313,
+      "slug": "crouching-skateboard-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1503",
+      "presetNumber": 1503,
+      "label": "Skateboard kickflip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is skateboarding, doing a kickflip in the air, skateboard drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1503_skateboard-kickflip-pose.pma",
+      "localScenePath": "scenes/1503_skateboard-kickflip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1503_00_skateboard-kickflip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1503_00_skateboard-kickflip-pose.png",
+          "localThumbnailPath": "thumbnails/1503_00_skateboard-kickflip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24308,
+      "slug": "skateboard-kickflip-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1504",
+      "presetNumber": 1504,
+      "label": "Male skateboard standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his right foot is on the edge of the skateboard, looking to the right, standing and posing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1504_male-skateboard-standing-pose.pma",
+      "localScenePath": "scenes/1504_male-skateboard-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1504_00_male-skateboard-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1504_00_male-skateboard-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1504_00_male-skateboard-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24264,
+      "slug": "male-skateboard-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1505",
+      "presetNumber": 1505,
+      "label": "Skateboard jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is skateboarding, jumping high and holding the skateboard with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1505_skateboard-jumping-pose.pma",
+      "localScenePath": "scenes/1505_skateboard-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1505_00_skateboard-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1505_00_skateboard-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1505_00_skateboard-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24279,
+      "slug": "skateboard-jumping-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1506",
+      "presetNumber": 1506,
+      "label": "Holding skateboard pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding the skateboard with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1506_holding-skateboard-pose.pma",
+      "localScenePath": "scenes/1506_holding-skateboard-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1506_00_holding-skateboard-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1506_00_holding-skateboard-pose.png",
+          "localThumbnailPath": "thumbnails/1506_00_holding-skateboard-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24281,
+      "slug": "holding-skateboard-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1507",
+      "presetNumber": 1507,
+      "label": "Skateboard raising leg pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is skateboarding, jumping high, holding the skateboard with his left hand and raising his left leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1507_skateboard-raising-leg-pose.pma",
+      "localScenePath": "scenes/1507_skateboard-raising-leg-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1507_00_skateboard-raising-leg-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1507_00_skateboard-raising-leg-pose.png",
+          "localThumbnailPath": "thumbnails/1507_00_skateboard-raising-leg-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24450,
+      "slug": "skateboard-raising-leg-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1508",
+      "presetNumber": 1508,
+      "label": "Female skateboard standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her arms crossed, her right foot is on the edge of the skateboard",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1508_female-skateboard-standing-pose.pma",
+      "localScenePath": "scenes/1508_female-skateboard-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1508_00_female-skateboard-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1508_00_female-skateboard-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1508_00_female-skateboard-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24045,
+      "slug": "female-skateboard-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1509",
+      "presetNumber": 1509,
+      "label": "Female skateboarding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing on the skateboard, her left foot is forward and right foot in the rear",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1509_female-skateboarding-pose.pma",
+      "localScenePath": "scenes/1509_female-skateboarding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1509_00_female-skateboarding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1509_00_female-skateboarding-pose.png",
+          "localThumbnailPath": "thumbnails/1509_00_female-skateboarding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        83
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "skateboard",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23967,
+      "slug": "female-skateboarding-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1510",
+      "presetNumber": 1510,
+      "label": "Female listening music pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and listening to music, holding headphones with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1510_female-listening-music-pose.pma",
+      "localScenePath": "scenes/1510_female-listening-music-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1510_00_female-listening-music-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1510_00_female-listening-music-pose.png",
+          "localThumbnailPath": "thumbnails/1510_00_female-listening-music-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        84
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "headphones",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24070,
+      "slug": "female-listening-music-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1511",
+      "presetNumber": 1511,
+      "label": "Male listening music pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and listening to music, holding headphones with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1511_male-listening-music-pose.pma",
+      "localScenePath": "scenes/1511_male-listening-music-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1511_00_male-listening-music-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1511_00_male-listening-music-pose.png",
+          "localThumbnailPath": "thumbnails/1511_00_male-listening-music-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        84
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "headphones",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24315,
+      "slug": "male-listening-music-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1512",
+      "presetNumber": 1512,
+      "label": "Male lying headphones pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying comfortably on the couch and listening to music on headphones",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1512_male-lying-headphones-pose.pma",
+      "localScenePath": "scenes/1512_male-lying-headphones-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1512_00_male-lying-headphones-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1512_00_male-lying-headphones-pose.png",
+          "localThumbnailPath": "thumbnails/1512_00_male-lying-headphones-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        84,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "headphones",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 25690,
+      "slug": "male-lying-headphones-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

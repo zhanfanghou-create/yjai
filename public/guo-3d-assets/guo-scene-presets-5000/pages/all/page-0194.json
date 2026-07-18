@@ -1,0 +1,1204 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 193,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4633",
+      "presetNumber": 4633,
+      "label": "Smoking smug pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing smugly, holding a lighter, smoking a cigarette, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4633_smoking-smug-pose.pma",
+      "localScenePath": "scenes/4633_smoking-smug-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4633_00_smoking-smug-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4633_00_smoking-smug-pose.png",
+          "localThumbnailPath": "thumbnails/4633_00_smoking-smug-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        241,
+        243
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 21058,
+      "slug": "smoking-smug-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4634",
+      "presetNumber": 4634,
+      "label": "Male smug sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a bar stool, holding his hip with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4634_male-smug-sitting-pose.pma",
+      "localScenePath": "scenes/4634_male-smug-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4634_00_male-smug-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4634_00_male-smug-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4634_00_male-smug-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        263
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20503,
+      "slug": "male-smug-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4635",
+      "presetNumber": 4635,
+      "label": "Smug sitting drinking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting in armchairs and drinking wine",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4635_smug-sitting-drinking-pose.pma",
+      "localScenePath": "scenes/4635_smug-sitting-drinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4635_00_smug-sitting-drinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4635_00_smug-sitting-drinking-pose.png",
+          "localThumbnailPath": "thumbnails/4635_00_smug-sitting-drinking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4635_01_smug-sitting-drinking-pose.png",
+          "localThumbnailPath": "thumbnails/4635_01_smug-sitting-drinking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        76,
+        107,
+        249
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 41942,
+      "slug": "smug-sitting-drinking-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4636",
+      "presetNumber": 4636,
+      "label": "Smug couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing smugly, their arms are crossed, female and male smug pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4636_smug-couple-pose.pma",
+      "localScenePath": "scenes/4636_smug-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4636_00_smug-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4636_00_smug-couple-pose.png",
+          "localThumbnailPath": "thumbnails/4636_00_smug-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4636_01_smug-couple-pose.png",
+          "localThumbnailPath": "thumbnails/4636_01_smug-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 39389,
+      "slug": "smug-couple-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4637",
+      "presetNumber": 4637,
+      "label": "Female smug standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing smugly, sweeping her right shoulder, holding her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4637_female-smug-standing-pose.pma",
+      "localScenePath": "scenes/4637_female-smug-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4637_00_female-smug-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4637_00_female-smug-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4637_00_female-smug-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20098,
+      "slug": "female-smug-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4638",
+      "presetNumber": 4638,
+      "label": "Smug hand kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing smugly, extending her hand for a hand kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4638_smug-hand-kiss-pose.pma",
+      "localScenePath": "scenes/4638_smug-hand-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4638_00_smug-hand-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4638_00_smug-hand-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/4638_00_smug-hand-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20182,
+      "slug": "smug-hand-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4639",
+      "presetNumber": 4639,
+      "label": "Smug female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing smugly, her legs are crossed, she is pointing at herself and holding her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4639_smug-female-pose.pma",
+      "localScenePath": "scenes/4639_smug-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4639_00_smug-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4639_00_smug-female-pose.png",
+          "localThumbnailPath": "thumbnails/4639_00_smug-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20086,
+      "slug": "smug-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4640",
+      "presetNumber": 4640,
+      "label": "Room reading reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in the room and reading a book",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4640_room-reading-reference.pma",
+      "localScenePath": "scenes/4640_room-reading-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4640_00_room-reading-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4640_00_room-reading-reference.png",
+          "localThumbnailPath": "thumbnails/4640_00_room-reading-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 20,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        172,
+        185,
+        248,
+        294,
+        296,
+        299,
+        311,
+        347
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 31442,
+      "slug": "room-reading-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4641",
+      "presetNumber": 4641,
+      "label": "Room fireplace reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in an armchair in the room and looking at the fireplace",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4641_room-fireplace-reference.pma",
+      "localScenePath": "scenes/4641_room-fireplace-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4641_00_room-fireplace-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4641_00_room-fireplace-reference.png",
+          "localThumbnailPath": "thumbnails/4641_00_room-fireplace-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 15,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        79,
+        98,
+        101,
+        107,
+        171,
+        172,
+        290,
+        298,
+        312,
+        332,
+        343
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27480,
+      "slug": "room-fireplace-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4642",
+      "presetNumber": 4642,
+      "label": "Musician room reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Musician's room, equipped with musical instruments, guitars and microphones",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4642_musician-room-reference.pma",
+      "localScenePath": "scenes/4642_musician-room-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 16,
+      "modelNumbers": [],
+      "propNumbers": [
+        77,
+        81,
+        82,
+        84,
+        85,
+        90,
+        171,
+        185,
+        290,
+        294,
+        297,
+        299,
+        311,
+        312,
+        346
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8922,
+      "slug": "musician-room-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4643",
+      "presetNumber": 4643,
+      "label": "Bedroom reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Bedroom, equipped with bed and furnitures, wardrobes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4643_bedroom-reference.pma",
+      "localScenePath": "scenes/4643_bedroom-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 11,
+      "modelNumbers": [],
+      "propNumbers": [
+        75,
+        155,
+        172,
+        295,
+        296,
+        298,
+        312,
+        348
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 6355,
+      "slug": "bedroom-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4644",
+      "presetNumber": 4644,
+      "label": "Tv room reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on the couch in the room and watching tv",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4644_tv-room-reference.pma",
+      "localScenePath": "scenes/4644_tv-room-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4644_00_tv-room-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4644_00_tv-room-reference.png",
+          "localThumbnailPath": "thumbnails/4644_00_tv-room-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 15,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        140,
+        170,
+        171,
+        172,
+        186,
+        247,
+        249,
+        298,
+        299,
+        347
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1039675,
+      "slug": "tv-room-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4645",
+      "presetNumber": 4645,
+      "label": "Teenager room reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Teenager's room furnished with bed, desk and closet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4645_teenager-room-reference.pma",
+      "localScenePath": "scenes/4645_teenager-room-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 23,
+      "modelNumbers": [],
+      "propNumbers": [
+        74,
+        75,
+        79,
+        83,
+        84,
+        85,
+        90,
+        97,
+        102,
+        103,
+        136,
+        139,
+        155,
+        172,
+        298,
+        312,
+        346
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 12494,
+      "slug": "teenager-room-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4646",
+      "presetNumber": 4646,
+      "label": "Double room reference",
+      "categoryId": "sitting-furniture",
+      "categoryLabel": "坐卧/家具",
+      "categoryIds": [
+        "sitting-furniture"
+      ],
+      "description": "Double room, furnished with two beds and wardrobes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4646_double-room-reference.pma",
+      "localScenePath": "scenes/4646_double-room-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 8,
+      "modelNumbers": [],
+      "propNumbers": [
+        155,
+        297,
+        298,
+        312,
+        347
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 4921,
+      "slug": "double-room-reference",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4647",
+      "presetNumber": 4647,
+      "label": "Room sitting drinking wine pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch in the room, drinking wine and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4647_room-sitting-drinking-wine-pose.pma",
+      "localScenePath": "scenes/4647_room-sitting-drinking-wine-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4647_00_room-sitting-drinking-wine-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4647_00_room-sitting-drinking-wine-pose.png",
+          "localThumbnailPath": "thumbnails/4647_00_room-sitting-drinking-wine-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4647_01_room-sitting-drinking-wine-pose.png",
+          "localThumbnailPath": "thumbnails/4647_01_room-sitting-drinking-wine-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 10,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        76,
+        170,
+        185,
+        248,
+        294,
+        297,
+        311,
+        312,
+        346
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 44216,
+      "slug": "room-sitting-drinking-wine-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4648",
+      "presetNumber": 4648,
+      "label": "Room sitting talking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are sitting on the couch in the room and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4648_room-sitting-talking-pose.pma",
+      "localScenePath": "scenes/4648_room-sitting-talking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4648_00_room-sitting-talking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4648_00_room-sitting-talking-pose.png",
+          "localThumbnailPath": "thumbnails/4648_00_room-sitting-talking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4648_01_room-sitting-talking-pose.png",
+          "localThumbnailPath": "thumbnails/4648_01_room-sitting-talking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        135,
+        185,
+        248,
+        298,
+        299,
+        312,
+        346
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 43410,
+      "slug": "room-sitting-talking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4649",
+      "presetNumber": 4649,
+      "label": "Room sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair in the room, room drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4649_room-sitting-pose.pma",
+      "localScenePath": "scenes/4649_room-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4649_00_room-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4649_00_room-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4649_00_room-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 15,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        75,
+        102,
+        107,
+        170,
+        171,
+        172,
+        185,
+        298,
+        312,
+        331,
+        347
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 28001,
+      "slug": "room-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4650",
+      "presetNumber": 4650,
+      "label": "Walking carrying female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is walking and carrying female on his shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4650_walking-carrying-female-pose.pma",
+      "localScenePath": "scenes/4650_walking-carrying-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4650_00_walking-carrying-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4650_00_walking-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4650_00_walking-carrying-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4650_01_walking-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4650_01_walking-carrying-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 39432,
+      "slug": "walking-carrying-female-pose"
+    },
+    {
+      "id": "guo-scene-4651",
+      "presetNumber": 4651,
+      "label": "Kissing carrying female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is carrying female, who is hugging and kissing him, romantic carrying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4651_kissing-carrying-female-pose.pma",
+      "localScenePath": "scenes/4651_kissing-carrying-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4651_00_kissing-carrying-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4651_00_kissing-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4651_00_kissing-carrying-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4651_01_kissing-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4651_01_kissing-carrying-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 39443,
+      "slug": "kissing-carrying-female-pose"
+    },
+    {
+      "id": "guo-scene-4652",
+      "presetNumber": 4652,
+      "label": "Male carrying scared male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is scared of something and jumps into the arms of the other male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4652_male-carrying-scared-male-pose.pma",
+      "localScenePath": "scenes/4652_male-carrying-scared-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4652_00_male-carrying-scared-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4652_00_male-carrying-scared-male-pose.png",
+          "localThumbnailPath": "thumbnails/4652_00_male-carrying-scared-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4652_01_male-carrying-scared-male-pose.png",
+          "localThumbnailPath": "thumbnails/4652_01_male-carrying-scared-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 39200,
+      "slug": "male-carrying-scared-male-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4653",
+      "presetNumber": 4653,
+      "label": "Male female carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and carrying female in his arms, looking at each other, romantic couple pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4653_male-female-carrying-pose.pma",
+      "localScenePath": "scenes/4653_male-female-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4653_00_male-female-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4653_00_male-female-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4653_00_male-female-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4653_01_male-female-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4653_01_male-female-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 39180,
+      "slug": "male-female-carrying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4654",
+      "presetNumber": 4654,
+      "label": "Males carrying female pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Two males are standing and carrying a female, males carrying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4654_males-carrying-female-pose.pma",
+      "localScenePath": "scenes/4654_males-carrying-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4654_00_males-carrying-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4654_00_males-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4654_00_males-carrying-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4654_01_males-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4654_01_males-carrying-female-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4654_02_males-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4654_02_males-carrying-female-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 58388,
+      "slug": "males-carrying-female-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4655",
+      "presetNumber": 4655,
+      "label": "Female carrying female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is standing and carrying another female, female carrying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4655_female-carrying-female-pose.pma",
+      "localScenePath": "scenes/4655_female-carrying-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4655_00_female-carrying-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4655_00_female-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4655_00_female-carrying-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4655_01_female-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4655_01_female-carrying-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 39151,
+      "slug": "female-carrying-female-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4656",
+      "presetNumber": 4656,
+      "label": "Males carrying male pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Two males are standing and carrying a male who is posing, funny carrying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4656_males-carrying-male-pose.pma",
+      "localScenePath": "scenes/4656_males-carrying-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4656_00_males-carrying-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4656_00_males-carrying-male-pose.png",
+          "localThumbnailPath": "thumbnails/4656_00_males-carrying-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4656_01_males-carrying-male-pose.png",
+          "localThumbnailPath": "thumbnails/4656_01_males-carrying-male-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4656_02_males-carrying-male-pose.png",
+          "localThumbnailPath": "thumbnails/4656_02_males-carrying-male-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "carrying",
+        "pose"
+      ],
+      "bytes": 58378,
+      "slug": "males-carrying-male-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    }
+  ]
+}

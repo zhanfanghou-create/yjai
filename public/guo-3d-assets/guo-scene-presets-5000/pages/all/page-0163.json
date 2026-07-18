@@ -1,0 +1,1054 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 162,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3889",
+      "presetNumber": 3889,
+      "label": "Couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is walking, holding each other's hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3889_couple-walking-pose.pma",
+      "localScenePath": "scenes/3889_couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3889_00_couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3889_00_couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3889_00_couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3889_01_couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3889_01_couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        47,
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        47,
+        49
+      ],
+      "sourceTags": [
+        "daily",
+        "sketch",
+        "reference"
+      ],
+      "bytes": 50630,
+      "slug": "couple-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3890",
+      "presetNumber": 3890,
+      "label": "Female athlete pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Athletic female is running, female athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3890_female-athlete-pose.pma",
+      "localScenePath": "scenes/3890_female-athlete-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3890_00_female-athlete-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3890_00_female-athlete-pose.png",
+          "localThumbnailPath": "thumbnails/3890_00_female-athlete-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23680,
+      "slug": "female-athlete-pose"
+    },
+    {
+      "id": "guo-scene-3891",
+      "presetNumber": 3891,
+      "label": "Male athlete pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is running, male athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3891_male-athlete-pose.pma",
+      "localScenePath": "scenes/3891_male-athlete-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3891_00_male-athlete-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3891_00_male-athlete-pose.png",
+          "localThumbnailPath": "thumbnails/3891_00_male-athlete-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23854,
+      "slug": "male-athlete-pose"
+    },
+    {
+      "id": "guo-scene-3892",
+      "presetNumber": 3892,
+      "label": "Athletic female yoga pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Athletic female is stretching, doing yoga, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3892_athletic-female-yoga-pose.pma",
+      "localScenePath": "scenes/3892_athletic-female-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3892_00_athletic-female-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3892_00_athletic-female-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/3892_00_athletic-female-yoga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23720,
+      "slug": "athletic-female-yoga-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3893",
+      "presetNumber": 3893,
+      "label": "Athletic male yoga pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is stretching, doing yoga, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3893_athletic-male-yoga-pose.pma",
+      "localScenePath": "scenes/3893_athletic-male-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3893_00_athletic-male-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3893_00_athletic-male-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/3893_00_athletic-male-yoga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23801,
+      "slug": "athletic-male-yoga-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3894",
+      "presetNumber": 3894,
+      "label": "Athletic female handstand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Athletic female is doing handstand, acrobatic female athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3894_athletic-female-handstand-pose.pma",
+      "localScenePath": "scenes/3894_athletic-female-handstand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3894_00_athletic-female-handstand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3894_00_athletic-female-handstand-pose.png",
+          "localThumbnailPath": "thumbnails/3894_00_athletic-female-handstand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23766,
+      "slug": "athletic-female-handstand-pose"
+    },
+    {
+      "id": "guo-scene-3895",
+      "presetNumber": 3895,
+      "label": "Athletic male handstand pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is doing handstand with straight legs, male athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3895_athletic-male-handstand-pose.pma",
+      "localScenePath": "scenes/3895_athletic-male-handstand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3895_00_athletic-male-handstand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3895_00_athletic-male-handstand-pose.png",
+          "localThumbnailPath": "thumbnails/3895_00_athletic-male-handstand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 24001,
+      "slug": "athletic-male-handstand-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3896",
+      "presetNumber": 3896,
+      "label": "Athletic female stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Athletic female is standing and stretching her legs, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3896_athletic-female-stretching-pose.pma",
+      "localScenePath": "scenes/3896_athletic-female-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3896_00_athletic-female-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3896_00_athletic-female-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/3896_00_athletic-female-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23520,
+      "slug": "athletic-female-stretching-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3897",
+      "presetNumber": 3897,
+      "label": "Athletic male stretching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is standing and stretching, male athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3897_athletic-male-stretching-pose.pma",
+      "localScenePath": "scenes/3897_athletic-male-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3897_00_athletic-male-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3897_00_athletic-male-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/3897_00_athletic-male-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23845,
+      "slug": "athletic-male-stretching-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3898",
+      "presetNumber": 3898,
+      "label": "Athletic basketball player pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Athletic female basketball player is standing, holding a ball in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3898_athletic-basketball-player-pose.pma",
+      "localScenePath": "scenes/3898_athletic-basketball-player-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3898_00_athletic-basketball-player-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3898_00_athletic-basketball-player-pose.png",
+          "localThumbnailPath": "thumbnails/3898_00_athletic-basketball-player-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23984,
+      "slug": "athletic-basketball-player-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3899",
+      "presetNumber": 3899,
+      "label": "Athletic handball player pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male handball player is running, holding a ball in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3899_athletic-handball-player-pose.pma",
+      "localScenePath": "scenes/3899_athletic-handball-player-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3899_00_athletic-handball-player-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3899_00_athletic-handball-player-pose.png",
+          "localThumbnailPath": "thumbnails/3899_00_athletic-handball-player-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 24286,
+      "slug": "athletic-handball-player-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3900",
+      "presetNumber": 3900,
+      "label": "Female standing low angle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her arms crossed, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3900_female-standing-low-angle-pose.pma",
+      "localScenePath": "scenes/3900_female-standing-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3900_00_female-standing-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3900_00_female-standing-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3900_00_female-standing-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23466,
+      "slug": "female-standing-low-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3901",
+      "presetNumber": 3901,
+      "label": "Female crouching low angle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3901_female-crouching-low-angle-pose.pma",
+      "localScenePath": "scenes/3901_female-crouching-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3901_00_female-crouching-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3901_00_female-crouching-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3901_00_female-crouching-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23486,
+      "slug": "female-crouching-low-angle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3902",
+      "presetNumber": 3902,
+      "label": "Female landing low angle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, balancing with her hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3902_female-landing-low-angle-pose.pma",
+      "localScenePath": "scenes/3902_female-landing-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3902_00_female-landing-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3902_00_female-landing-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3902_00_female-landing-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23556,
+      "slug": "female-landing-low-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3903",
+      "presetNumber": 3903,
+      "label": "Female walking low angle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3903_female-walking-low-angle-pose.pma",
+      "localScenePath": "scenes/3903_female-walking-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3903_00_female-walking-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3903_00_female-walking-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3903_00_female-walking-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23571,
+      "slug": "female-walking-low-angle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3904",
+      "presetNumber": 3904,
+      "label": "Female running low angle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running fast, looking sligthly to the left, female dynamic running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3904_female-running-low-angle-pose.pma",
+      "localScenePath": "scenes/3904_female-running-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3904_00_female-running-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3904_00_female-running-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3904_00_female-running-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23572,
+      "slug": "female-running-low-angle-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3905",
+      "presetNumber": 3905,
+      "label": "Male standing low angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his legs are crossed, his right hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3905_male-standing-low-angle-pose.pma",
+      "localScenePath": "scenes/3905_male-standing-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3905_00_male-standing-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3905_00_male-standing-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3905_00_male-standing-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23810,
+      "slug": "male-standing-low-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3906",
+      "presetNumber": 3906,
+      "label": "Male crouching low angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding his chin with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3906_male-crouching-low-angle-pose.pma",
+      "localScenePath": "scenes/3906_male-crouching-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3906_00_male-crouching-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3906_00_male-crouching-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3906_00_male-crouching-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23746,
+      "slug": "male-crouching-low-angle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3907",
+      "presetNumber": 3907,
+      "label": "Male running low angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running fast, looking slightly to the left, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3907_male-running-low-angle-pose.pma",
+      "localScenePath": "scenes/3907_male-running-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3907_00_male-running-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3907_00_male-running-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3907_00_male-running-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23822,
+      "slug": "male-running-low-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3908",
+      "presetNumber": 3908,
+      "label": "Male holding spear pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a spear in his right hand, pointing down with it, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3908_male-holding-spear-pose.pma",
+      "localScenePath": "scenes/3908_male-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3908_00_male-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3908_00_male-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3908_00_male-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24252,
+      "slug": "male-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3909",
+      "presetNumber": 3909,
+      "label": "Male bodybuilder pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder pose, male is standing, showing his muscles and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3909_male-bodybuilder-pose.pma",
+      "localScenePath": "scenes/3909_male-bodybuilder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3909_00_male-bodybuilder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3909_00_male-bodybuilder-pose.png",
+          "localThumbnailPath": "thumbnails/3909_00_male-bodybuilder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23826,
+      "slug": "male-bodybuilder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3910",
+      "presetNumber": 3910,
+      "label": "Female looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking up, her hands are on her hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3910_female-looking-up-pose.pma",
+      "localScenePath": "scenes/3910_female-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3910_00_female-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3910_00_female-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3910_00_female-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23370,
+      "slug": "female-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3911",
+      "presetNumber": 3911,
+      "label": "Male standing high angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his right hand is on his hip, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3911_male-standing-high-angle-pose.pma",
+      "localScenePath": "scenes/3911_male-standing-high-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3911_00_male-standing-high-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3911_00_male-standing-high-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3911_00_male-standing-high-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23793,
+      "slug": "male-standing-high-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3912",
+      "presetNumber": 3912,
+      "label": "Female crossed arms high angle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her arms and legs are crossed, female standing high angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3912_female-crossed-arms-high-angle-pose.pma",
+      "localScenePath": "scenes/3912_female-crossed-arms-high-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3912_00_female-crossed-arms-high-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3912_00_female-crossed-arms-high-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3912_00_female-crossed-arms-high-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23460,
+      "slug": "female-crossed-arms-high-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

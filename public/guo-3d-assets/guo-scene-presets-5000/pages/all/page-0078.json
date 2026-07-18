@@ -1,0 +1,1229 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 77,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1849",
+      "presetNumber": 1849,
+      "label": "Anime falling punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is falling unconsciously in the air from a punch, his head bent back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1849_anime-falling-punch-pose.pma",
+      "localScenePath": "scenes/1849_anime-falling-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1849_00_anime-falling-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1849_00_anime-falling-punch-pose.png",
+          "localThumbnailPath": "thumbnails/1849_00_anime-falling-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "falling",
+        "pose"
+      ],
+      "bytes": 23777,
+      "slug": "anime-falling-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1850",
+      "presetNumber": 1850,
+      "label": "Anime female ninja pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is holding the katana with both hands, looking to the left, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1850_anime-female-ninja-pose.pma",
+      "localScenePath": "scenes/1850_anime-female-ninja-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1850_00_anime-female-ninja-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1850_00_anime-female-ninja-pose.png",
+          "localThumbnailPath": "thumbnails/1850_00_anime-female-ninja-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 24028,
+      "slug": "anime-female-ninja-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1851",
+      "presetNumber": 1851,
+      "label": "Anime female drawing katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and drawing her katana from its sheath, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1851_anime-female-drawing-katana-pose.pma",
+      "localScenePath": "scenes/1851_anime-female-drawing-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1851_00_anime-female-drawing-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1851_00_anime-female-drawing-katana-pose.png",
+          "localThumbnailPath": "thumbnails/1851_00_anime-female-drawing-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 25062,
+      "slug": "anime-female-drawing-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1852",
+      "presetNumber": 1852,
+      "label": "Anime ninja fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are fighting with katanas, anime ninja fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1852_anime-ninja-fight-pose.pma",
+      "localScenePath": "scenes/1852_anime-ninja-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1852_00_anime-ninja-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1852_00_anime-ninja-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1852_00_anime-ninja-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1852_01_anime-ninja-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1852_01_anime-ninja-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 47779,
+      "slug": "anime-ninja-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1853",
+      "presetNumber": 1853,
+      "label": "Anime female holding katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and holding a katana in her left hand and looking left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1853_anime-female-holding-katana-pose.pma",
+      "localScenePath": "scenes/1853_anime-female-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1853_00_anime-female-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1853_00_anime-female-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/1853_00_anime-female-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 24144,
+      "slug": "anime-female-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1854",
+      "presetNumber": 1854,
+      "label": "Anime male ninja pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is holding katanas in both hands, looking to the left and ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1854_anime-male-ninja-pose.pma",
+      "localScenePath": "scenes/1854_anime-male-ninja-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1854_00_anime-male-ninja-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1854_00_anime-male-ninja-pose.png",
+          "localThumbnailPath": "thumbnails/1854_00_anime-male-ninja-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 24762,
+      "slug": "anime-male-ninja-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1855",
+      "presetNumber": 1855,
+      "label": "Anime male holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is squatting, holding a katana in his left hand, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1855_anime-male-holding-katana-pose.pma",
+      "localScenePath": "scenes/1855_anime-male-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1855_00_anime-male-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1855_00_anime-male-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/1855_00_anime-male-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 24387,
+      "slug": "anime-male-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1856",
+      "presetNumber": 1856,
+      "label": "Anime ninja fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are fighting, one of them is doing a side kick, anime ninja fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1856_anime-ninja-fighting-pose.pma",
+      "localScenePath": "scenes/1856_anime-ninja-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1856_00_anime-ninja-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1856_00_anime-ninja-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1856_00_anime-ninja-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1856_01_anime-ninja-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1856_01_anime-ninja-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 46883,
+      "slug": "anime-ninja-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1857",
+      "presetNumber": 1857,
+      "label": "Anime ninja landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is landing on the ground, holding katanas in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1857_anime-ninja-landing-pose.pma",
+      "localScenePath": "scenes/1857_anime-ninja-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1857_00_anime-ninja-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1857_00_anime-ninja-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1857_00_anime-ninja-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 24822,
+      "slug": "anime-ninja-landing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1858",
+      "presetNumber": 1858,
+      "label": "Anime female holding sai pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is holding sais in both hands and looking forward, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1858_anime-female-holding-sai-pose.pma",
+      "localScenePath": "scenes/1858_anime-female-holding-sai-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1858_00_anime-female-holding-sai-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1858_00_anime-female-holding-sai-pose.png",
+          "localThumbnailPath": "thumbnails/1858_00_anime-female-holding-sai-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        211
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 24571,
+      "slug": "anime-female-holding-sai-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1859",
+      "presetNumber": 1859,
+      "label": "Anime before fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are prepearing to fight, holding katanas and a sai, anime ninja fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1859_anime-before-fight-pose.pma",
+      "localScenePath": "scenes/1859_anime-before-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1859_00_anime-before-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1859_00_anime-before-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1859_00_anime-before-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1859_01_anime-before-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1859_01_anime-before-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        211,
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "ninja",
+        "pose"
+      ],
+      "bytes": 48001,
+      "slug": "anime-before-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1860",
+      "presetNumber": 1860,
+      "label": "Anime females katana fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting with katanas, one of them is jumping up high to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1860_anime-females-katana-fighting-pose.pma",
+      "localScenePath": "scenes/1860_anime-females-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1860_00_anime-females-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1860_00_anime-females-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1860_00_anime-females-katana-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1860_01_anime-females-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1860_01_anime-females-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 47536,
+      "slug": "anime-females-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1861",
+      "presetNumber": 1861,
+      "label": "Anime females fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting, one of them is holding a dagger, the other is doing a side kick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1861_anime-females-fighting-pose.pma",
+      "localScenePath": "scenes/1861_anime-females-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1861_00_anime-females-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1861_00_anime-females-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1861_00_anime-females-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1861_01_anime-females-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1861_01_anime-females-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 47620,
+      "slug": "anime-females-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1862",
+      "presetNumber": 1862,
+      "label": "Anime sword fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting with big swords, one of them is blocking a strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1862_anime-sword-fighting-pose.pma",
+      "localScenePath": "scenes/1862_anime-sword-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1862_00_anime-sword-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1862_00_anime-sword-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1862_00_anime-sword-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1862_01_anime-sword-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1862_01_anime-sword-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 47660,
+      "slug": "anime-sword-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1863",
+      "presetNumber": 1863,
+      "label": "Anime box fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime males are fighting, they are in a boxing stance and are about to punch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1863_anime-box-fighting-pose.pma",
+      "localScenePath": "scenes/1863_anime-box-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1863_00_anime-box-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1863_00_anime-box-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1863_00_anime-box-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1863_01_anime-box-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1863_01_anime-box-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 46383,
+      "slug": "anime-box-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1864",
+      "presetNumber": 1864,
+      "label": "Anime gun fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting, one of them is holding a gun, the other is about to kick her leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1864_anime-gun-fighting-pose.pma",
+      "localScenePath": "scenes/1864_anime-gun-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1864_00_anime-gun-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1864_00_anime-gun-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1864_00_anime-gun-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1864_01_anime-gun-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1864_01_anime-gun-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        53,
+        56
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 47300,
+      "slug": "anime-gun-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1865",
+      "presetNumber": 1865,
+      "label": "Anime male knock out pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime males are fighting, one of them gets hit and falls backwards, knocked out",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1865_anime-male-knock-out-pose.pma",
+      "localScenePath": "scenes/1865_anime-male-knock-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1865_00_anime-male-knock-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1865_00_anime-male-knock-out-pose.png",
+          "localThumbnailPath": "thumbnails/1865_00_anime-male-knock-out-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1865_01_anime-male-knock-out-pose.png",
+          "localThumbnailPath": "thumbnails/1865_01_anime-male-knock-out-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 46692,
+      "slug": "anime-male-knock-out-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1866",
+      "presetNumber": 1866,
+      "label": "Anime male fighting kicking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime males are fighting, on of them jumps high to do a side kick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1866_anime-male-fighting-kicking-pose.pma",
+      "localScenePath": "scenes/1866_anime-male-fighting-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1866_00_anime-male-fighting-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1866_00_anime-male-fighting-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1866_00_anime-male-fighting-kicking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1866_01_anime-male-fighting-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1866_01_anime-male-fighting-kicking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 46718,
+      "slug": "anime-male-fighting-kicking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1867",
+      "presetNumber": 1867,
+      "label": "Anime female kicking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime females are fighting, one of them jumps up and kicks the other female in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1867_anime-female-kicking-pose.pma",
+      "localScenePath": "scenes/1867_anime-female-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1867_00_anime-female-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1867_00_anime-female-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1867_00_anime-female-kicking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1867_01_anime-female-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1867_01_anime-female-kicking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 46764,
+      "slug": "anime-female-kicking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1868",
+      "presetNumber": 1868,
+      "label": "Anime zombie fighting pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Two anime females are fighting with a zombie, they are holding sais, the zombie is doing a side kick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1868_anime-zombie-fighting-pose.pma",
+      "localScenePath": "scenes/1868_anime-zombie-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1868_00_anime-zombie-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1868_00_anime-zombie-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1868_00_anime-zombie-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1868_01_anime-zombie-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1868_01_anime-zombie-fighting-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1868_02_anime-zombie-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1868_02_anime-zombie-fighting-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 3,
+      "modelNumbers": [
+        55,
+        62
+      ],
+      "propNumbers": [
+        211
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 71138,
+      "slug": "anime-zombie-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1869",
+      "presetNumber": 1869,
+      "label": "Anime fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are fighting, one punches the other in the stomach, the other kicks him in the head with knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1869_anime-fighting-pose.pma",
+      "localScenePath": "scenes/1869_anime-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1869_00_anime-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1869_00_anime-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1869_00_anime-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1869_01_anime-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/1869_01_anime-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "fight",
+        "pose"
+      ],
+      "bytes": 46725,
+      "slug": "anime-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1870",
+      "presetNumber": 1870,
+      "label": "Anime female aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing confidently, holding a gun in her right hand and aiming it to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1870_anime-female-aiming-pose.pma",
+      "localScenePath": "scenes/1870_anime-female-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1870_00_anime-female-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1870_00_anime-female-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1870_00_anime-female-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24529,
+      "slug": "anime-female-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1871",
+      "presetNumber": 1871,
+      "label": "Anime female standing holding gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing confidently, her left hand is on her hip and holding a gun in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1871_anime-female-standing-holding-gun-pose.pma",
+      "localScenePath": "scenes/1871_anime-female-standing-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1871_00_anime-female-standing-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1871_00_anime-female-standing-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1871_00_anime-female-standing-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24069,
+      "slug": "anime-female-standing-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1872",
+      "presetNumber": 1872,
+      "label": "Anime male kneeling aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is kneeling, holding an ak74u in both hands and aiming with it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1872_anime-male-kneeling-aiming-pose.pma",
+      "localScenePath": "scenes/1872_anime-male-kneeling-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1872_00_anime-male-kneeling-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1872_00_anime-male-kneeling-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1872_00_anime-male-kneeling-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        188
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24209,
+      "slug": "anime-male-kneeling-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

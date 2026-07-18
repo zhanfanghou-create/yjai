@@ -1,0 +1,1101 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 123,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2953",
+      "presetNumber": 2953,
+      "label": "Manga aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running and jumping, holding a gun in his right hand and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2953_manga-aiming-pose.pma",
+      "localScenePath": "scenes/2953_manga-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2953_00_manga-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2953_00_manga-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2953_00_manga-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24764,
+      "slug": "manga-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2954",
+      "presetNumber": 2954,
+      "label": "Manga katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping, holding his katana with both hands and is about to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2954_manga-katana-pose.pma",
+      "localScenePath": "scenes/2954_manga-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2954_00_manga-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2954_00_manga-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2954_00_manga-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 24353,
+      "slug": "manga-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2955",
+      "presetNumber": 2955,
+      "label": "Manga jumping kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping, side kicking in the air with her left leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2955_manga-jumping-kicking-pose.pma",
+      "localScenePath": "scenes/2955_manga-jumping-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2955_00_manga-jumping-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2955_00_manga-jumping-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/2955_00_manga-jumping-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23932,
+      "slug": "manga-jumping-kicking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2956",
+      "presetNumber": 2956,
+      "label": "Manga landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is landing, balancing with his hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2956_manga-landing-pose.pma",
+      "localScenePath": "scenes/2956_manga-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2956_00_manga-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2956_00_manga-landing-pose.png",
+          "localThumbnailPath": "thumbnails/2956_00_manga-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23884,
+      "slug": "manga-landing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2957",
+      "presetNumber": 2957,
+      "label": "Manga punching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is boxing, punching with her left hand, female manga dynamic pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2957_manga-punching-pose.pma",
+      "localScenePath": "scenes/2957_manga-punching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2957_00_manga-punching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2957_00_manga-punching-pose.png",
+          "localThumbnailPath": "thumbnails/2957_00_manga-punching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23670,
+      "slug": "manga-punching-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2958",
+      "presetNumber": 2958,
+      "label": "Manga hovering pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is hovering in the air and looking to the left, manga female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2958_manga-hovering-pose.pma",
+      "localScenePath": "scenes/2958_manga-hovering-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2958_00_manga-hovering-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2958_00_manga-hovering-pose.png",
+          "localThumbnailPath": "thumbnails/2958_00_manga-hovering-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23954,
+      "slug": "manga-hovering-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2959",
+      "presetNumber": 2959,
+      "label": "Manga side kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing and side kicking with his right leg, dynamic kicking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2959_manga-side-kicking-pose.pma",
+      "localScenePath": "scenes/2959_manga-side-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2959_00_manga-side-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2959_00_manga-side-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/2959_00_manga-side-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "dynamic",
+        "pose"
+      ],
+      "bytes": 23844,
+      "slug": "manga-side-kicking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2960",
+      "presetNumber": 2960,
+      "label": "Horse elegant standing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is standing elegantly and looking forward, bending its left knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2960_horse-elegant-standing-pose.pma",
+      "localScenePath": "scenes/2960_horse-elegant-standing-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8187,
+      "slug": "horse-elegant-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2961",
+      "presetNumber": 2961,
+      "label": "Hind legs standing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is standing on its hind legs and looking forward, horse drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2961_hind-legs-standing-pose.pma",
+      "localScenePath": "scenes/2961_hind-legs-standing-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8189,
+      "slug": "hind-legs-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2962",
+      "presetNumber": 2962,
+      "label": "Horse galloping looking left pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is galloping, looking slightly to the left, horse drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2962_horse-galloping-looking-left-pose.pma",
+      "localScenePath": "scenes/2962_horse-galloping-looking-left-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8060,
+      "slug": "horse-galloping-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2963",
+      "presetNumber": 2963,
+      "label": "Horse galloping pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is galloping, looking forward, horse drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2963_horse-galloping-pose.pma",
+      "localScenePath": "scenes/2963_horse-galloping-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8175,
+      "slug": "horse-galloping-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2964",
+      "presetNumber": 2964,
+      "label": "Horse standing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is standing elegantly and slightly looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2964_horse-standing-pose.pma",
+      "localScenePath": "scenes/2964_horse-standing-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8175,
+      "slug": "horse-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2965",
+      "presetNumber": 2965,
+      "label": "Horse lying pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is lying down and looking slightly to the left, horse drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2965_horse-lying-pose.pma",
+      "localScenePath": "scenes/2965_horse-lying-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8552,
+      "slug": "horse-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2966",
+      "presetNumber": 2966,
+      "label": "Horse jumping pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is jumping high, looking forward, horse jumping drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2966_horse-jumping-pose.pma",
+      "localScenePath": "scenes/2966_horse-jumping-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8167,
+      "slug": "horse-jumping-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2967",
+      "presetNumber": 2967,
+      "label": "Horse walking pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is walking slowly and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2967_horse-walking-pose.pma",
+      "localScenePath": "scenes/2967_horse-walking-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8189,
+      "slug": "horse-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2968",
+      "presetNumber": 2968,
+      "label": "Horse trotting pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is trotting slowly, horse trotting drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2968_horse-trotting-pose.pma",
+      "localScenePath": "scenes/2968_horse-trotting-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 8156,
+      "slug": "horse-trotting-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2969",
+      "presetNumber": 2969,
+      "label": "Horse embracing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two horses are hugging each other, horses embracing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2969_horse-embracing-pose.pma",
+      "localScenePath": "scenes/2969_horse-embracing-pose.pma",
+      "thumbnails": [],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 15462,
+      "slug": "horse-embracing-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2970",
+      "presetNumber": 2970,
+      "label": "Female horse rider pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Horse is standing, female rider is sitting and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2970_female-horse-rider-pose.pma",
+      "localScenePath": "scenes/2970_female-horse-rider-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2970_00_female-horse-rider-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2970_00_female-horse-rider-pose.png",
+          "localThumbnailPath": "thumbnails/2970_00_female-horse-rider-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 30832,
+      "slug": "female-horse-rider-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "动物/异形",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2971",
+      "presetNumber": 2971,
+      "label": "Female rider galloping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Horse is galloping slowly, female rider is sitting and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2971_female-rider-galloping-pose.pma",
+      "localScenePath": "scenes/2971_female-rider-galloping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2971_00_female-rider-galloping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2971_00_female-rider-galloping-pose.png",
+          "localThumbnailPath": "thumbnails/2971_00_female-rider-galloping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 30798,
+      "slug": "female-rider-galloping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "动物/异形",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2972",
+      "presetNumber": 2972,
+      "label": "Horse rider galloping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Horse is galloping fast, female rider is sitting and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2972_horse-rider-galloping-pose.pma",
+      "localScenePath": "scenes/2972_horse-rider-galloping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2972_00_horse-rider-galloping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2972_00_horse-rider-galloping-pose.png",
+          "localThumbnailPath": "thumbnails/2972_00_horse-rider-galloping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 30795,
+      "slug": "horse-rider-galloping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "动物/异形",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2973",
+      "presetNumber": 2973,
+      "label": "Male rider jumping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male rider is jumping high with his horse, horse jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2973_male-rider-jumping-pose.pma",
+      "localScenePath": "scenes/2973_male-rider-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2973_00_male-rider-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2973_00_male-rider-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2973_00_male-rider-jumping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 31201,
+      "slug": "male-rider-jumping-pose",
+      "tagIds": [
+        "animal-creature"
+      ],
+      "tags": [
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2974",
+      "presetNumber": 2974,
+      "label": "Female rider standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female rider is standing next to the horse, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2974_female-rider-standing-pose.pma",
+      "localScenePath": "scenes/2974_female-rider-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2974_00_female-rider-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2974_00_female-rider-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2974_00_female-rider-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 30843,
+      "slug": "female-rider-standing-pose",
+      "tagIds": [
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "动物/异形",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2975",
+      "presetNumber": 2975,
+      "label": "Horse hind legs pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female rider is sitting on the horse, the horse is standing on its two hind legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2975_horse-hind-legs-pose.pma",
+      "localScenePath": "scenes/2975_horse-hind-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2975_00_horse-hind-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2975_00_horse-hind-legs-pose.png",
+          "localThumbnailPath": "thumbnails/2975_00_horse-hind-legs-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 30827,
+      "slug": "horse-hind-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "动物/异形",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2976",
+      "presetNumber": 2976,
+      "label": "Female rider jumping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female rider is jumping with the horse and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2976_female-rider-jumping-pose.pma",
+      "localScenePath": "scenes/2976_female-rider-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2976_00_female-rider-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2976_00_female-rider-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2976_00_female-rider-jumping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 30814,
+      "slug": "female-rider-jumping-pose",
+      "tagIds": [
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "动物/异形",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

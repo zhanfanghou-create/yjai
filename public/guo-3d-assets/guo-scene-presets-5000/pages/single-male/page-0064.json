@@ -1,0 +1,1159 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 63,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4579",
+      "presetNumber": 4579,
+      "label": "Old man holding back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Old man is holding his sore back while leaning on a walking stick",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4579_old-man-holding-back-pose.pma",
+      "localScenePath": "scenes/4579_old-man-holding-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4579_00_old-man-holding-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4579_00_old-man-holding-back-pose.png",
+          "localThumbnailPath": "thumbnails/4579_00_old-man-holding-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 68966,
+      "slug": "old-man-holding-back-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4580",
+      "presetNumber": 4580,
+      "label": "Knight jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is jumping, holding a shield and sword, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4580_knight-jumping-pose.pma",
+      "localScenePath": "scenes/4580_knight-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4580_00_knight-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4580_00_knight-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/4580_00_knight-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250584,
+      "slug": "knight-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4581",
+      "presetNumber": 4581,
+      "label": "Knight standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is standing, holding a shield and a sword, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4581_knight-standing-pose.pma",
+      "localScenePath": "scenes/4581_knight-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4581_00_knight-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4581_00_knight-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4581_00_knight-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250584,
+      "slug": "knight-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4584",
+      "presetNumber": 4584,
+      "label": "Knight landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is landing, holding a shield and sword, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4584_knight-landing-pose.pma",
+      "localScenePath": "scenes/4584_knight-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4584_00_knight-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4584_00_knight-landing-pose.png",
+          "localThumbnailPath": "thumbnails/4584_00_knight-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250667,
+      "slug": "knight-landing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4586",
+      "presetNumber": 4586,
+      "label": "Knight holding swords pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is standing and holding swords, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4586_knight-holding-swords-pose.pma",
+      "localScenePath": "scenes/4586_knight-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4586_00_knight-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4586_00_knight-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4586_00_knight-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250650,
+      "slug": "knight-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4587",
+      "presetNumber": 4587,
+      "label": "Knight attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is jumping to attack, holding a sword and a shield, wearing helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4587_knight-attack-pose.pma",
+      "localScenePath": "scenes/4587_knight-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4587_00_knight-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4587_00_knight-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4587_00_knight-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250644,
+      "slug": "knight-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4589",
+      "presetNumber": 4589,
+      "label": "Knight sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is standing confidently, leaning on his great sword, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4589_knight-sword-pose.pma",
+      "localScenePath": "scenes/4589_knight-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4589_00_knight-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4589_00_knight-sword-pose.png",
+          "localThumbnailPath": "thumbnails/4589_00_knight-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250094,
+      "slug": "knight-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4601",
+      "presetNumber": 4601,
+      "label": "Playing guitar illustration pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground and playing guitar, male playing guitar illustration reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4601_playing-guitar-illustration-pose.pma",
+      "localScenePath": "scenes/4601_playing-guitar-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4601_00_playing-guitar-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4601_00_playing-guitar-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4601_00_playing-guitar-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        85,
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23890,
+      "slug": "playing-guitar-illustration-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4604",
+      "presetNumber": 4604,
+      "label": "Devil illustration pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is standing, holding katana in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4604_devil-illustration-pose.pma",
+      "localScenePath": "scenes/4604_devil-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4604_00_devil-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4604_00_devil-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4604_00_devil-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        158
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 24416,
+      "slug": "devil-illustration-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4609",
+      "presetNumber": 4609,
+      "label": "Sitting male illustration pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground casually, looking slightly down, male illustration reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4609_sitting-male-illustration-pose.pma",
+      "localScenePath": "scenes/4609_sitting-male-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4609_00_sitting-male-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4609_00_sitting-male-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4609_00_sitting-male-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23038,
+      "slug": "sitting-male-illustration-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4615",
+      "presetNumber": 4615,
+      "label": "Anime crouching reference pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is crouching, looking slightly to the right, anime male drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4615_anime-crouching-reference-pose.pma",
+      "localScenePath": "scenes/4615_anime-crouching-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4615_00_anime-crouching-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4615_00_anime-crouching-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4615_00_anime-crouching-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20279,
+      "slug": "anime-crouching-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4616",
+      "presetNumber": 4616,
+      "label": "Anime walking reference pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, looking to the right, anime male drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4616_anime-walking-reference-pose.pma",
+      "localScenePath": "scenes/4616_anime-walking-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4616_00_anime-walking-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4616_00_anime-walking-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4616_00_anime-walking-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20282,
+      "slug": "anime-walking-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4618",
+      "presetNumber": 4618,
+      "label": "Anime male fighter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male fighter is jumping, holding katana in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4618_anime-male-fighter-pose.pma",
+      "localScenePath": "scenes/4618_anime-male-fighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4618_00_anime-male-fighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4618_00_anime-male-fighter-pose.png",
+          "localThumbnailPath": "thumbnails/4618_00_anime-male-fighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21258,
+      "slug": "anime-male-fighter-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4624",
+      "presetNumber": 4624,
+      "label": "Male throwing bottle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is standing and throwing a bottle with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4624_male-throwing-bottle-pose.pma",
+      "localScenePath": "scenes/4624_male-throwing-bottle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4624_00_male-throwing-bottle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4624_00_male-throwing-bottle-pose.png",
+          "localThumbnailPath": "thumbnails/4624_00_male-throwing-bottle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        292
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20539,
+      "slug": "male-throwing-bottle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4625",
+      "presetNumber": 4625,
+      "label": "Male throwing ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping and throwing a ball with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4625_male-throwing-ball-pose.pma",
+      "localScenePath": "scenes/4625_male-throwing-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4625_00_male-throwing-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4625_00_male-throwing-ball-pose.png",
+          "localThumbnailPath": "thumbnails/4625_00_male-throwing-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20524,
+      "slug": "male-throwing-ball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4626",
+      "presetNumber": 4626,
+      "label": "Male throwing spear pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on a rock and throwing a spear with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4626_male-throwing-spear-pose.pma",
+      "localScenePath": "scenes/4626_male-throwing-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4626_00_male-throwing-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4626_00_male-throwing-spear-pose.png",
+          "localThumbnailPath": "thumbnails/4626_00_male-throwing-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174,
+        369
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21072,
+      "slug": "male-throwing-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4627",
+      "presetNumber": 4627,
+      "label": "Throwing frisbee pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and throwing a frisbee with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4627_throwing-frisbee-pose.pma",
+      "localScenePath": "scenes/4627_throwing-frisbee-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4627_00_throwing-frisbee-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4627_00_throwing-frisbee-pose.png",
+          "localThumbnailPath": "thumbnails/4627_00_throwing-frisbee-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20518,
+      "slug": "throwing-frisbee-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4629",
+      "presetNumber": 4629,
+      "label": "Throwing anvil pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is standing and throwing an anvil, male throwing pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4629_throwing-anvil-pose.pma",
+      "localScenePath": "scenes/4629_throwing-anvil-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4629_00_throwing-anvil-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4629_00_throwing-anvil-pose.png",
+          "localThumbnailPath": "thumbnails/4629_00_throwing-anvil-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        352
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20623,
+      "slug": "throwing-anvil-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4630",
+      "presetNumber": 4630,
+      "label": "Treasure chest smug pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing smugly, his right foot is on a treasure chest, his arms are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4630_treasure-chest-smug-pose.pma",
+      "localScenePath": "scenes/4630_treasure-chest-smug-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4630_00_treasure-chest-smug-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4630_00_treasure-chest-smug-pose.png",
+          "localThumbnailPath": "thumbnails/4630_00_treasure-chest-smug-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        98,
+        182
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 21047,
+      "slug": "treasure-chest-smug-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4631",
+      "presetNumber": 4631,
+      "label": "Sword smug pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing smugly, leaning on a great sword, looking to the left, holding his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4631_sword-smug-pose.pma",
+      "localScenePath": "scenes/4631_sword-smug-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4631_00_sword-smug-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4631_00_sword-smug-pose.png",
+          "localThumbnailPath": "thumbnails/4631_00_sword-smug-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20564,
+      "slug": "sword-smug-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4632",
+      "presetNumber": 4632,
+      "label": "Male smug standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on a rock and pointing his thumbs at himself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4632_male-smug-standing-pose.pma",
+      "localScenePath": "scenes/4632_male-smug-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4632_00_male-smug-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4632_00_male-smug-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4632_00_male-smug-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        369
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20492,
+      "slug": "male-smug-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4633",
+      "presetNumber": 4633,
+      "label": "Smoking smug pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing smugly, holding a lighter, smoking a cigarette, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4633_smoking-smug-pose.pma",
+      "localScenePath": "scenes/4633_smoking-smug-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4633_00_smoking-smug-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4633_00_smoking-smug-pose.png",
+          "localThumbnailPath": "thumbnails/4633_00_smoking-smug-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        241,
+        243
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 21058,
+      "slug": "smoking-smug-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4634",
+      "presetNumber": 4634,
+      "label": "Male smug sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a bar stool, holding his hip with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4634_male-smug-sitting-pose.pma",
+      "localScenePath": "scenes/4634_male-smug-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4634_00_male-smug-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4634_00_male-smug-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4634_00_male-smug-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        263
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20503,
+      "slug": "male-smug-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4641",
+      "presetNumber": 4641,
+      "label": "Room fireplace reference",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in an armchair in the room and looking at the fireplace",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4641_room-fireplace-reference.pma",
+      "localScenePath": "scenes/4641_room-fireplace-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4641_00_room-fireplace-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4641_00_room-fireplace-reference.png",
+          "localThumbnailPath": "thumbnails/4641_00_room-fireplace-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 15,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        79,
+        98,
+        101,
+        107,
+        171,
+        172,
+        290,
+        298,
+        312,
+        332,
+        343
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27480,
+      "slug": "room-fireplace-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

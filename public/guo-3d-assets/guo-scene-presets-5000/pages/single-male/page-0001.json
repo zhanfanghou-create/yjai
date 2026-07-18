@@ -1,0 +1,1051 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 0,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-0007",
+      "presetNumber": 7,
+      "label": "Man sitting on chair",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sittimg sad on chair",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0007_man-sitting-on-chair.pma",
+      "localScenePath": "scenes/0007_man-sitting-on-chair.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0007_00_man-sitting-on-chair.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0007_00_man-sitting-on-chair.png",
+          "localThumbnailPath": "thumbnails/0007_00_man-sitting-on-chair.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Sit",
+        "Sad"
+      ],
+      "bytes": 15133,
+      "slug": "man-sitting-on-chair",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0012",
+      "presetNumber": 12,
+      "label": "Man sit on bed",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male sitting sad on bed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0012_man-sit-on-bed.pma",
+      "localScenePath": "scenes/0012_man-sit-on-bed.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0012_00_man-sit-on-bed.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0012_00_man-sit-on-bed.png",
+          "localThumbnailPath": "thumbnails/0012_00_man-sit-on-bed.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "Sit",
+        "Sad"
+      ],
+      "bytes": 15728,
+      "slug": "man-sit-on-bed",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0032",
+      "presetNumber": 32,
+      "label": "Superhero man flying ",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man flying ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0032_superhero-man-flying.pma",
+      "localScenePath": "scenes/0032_superhero-man-flying.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0032_00_superhero-man-flying.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0032_00_superhero-man-flying.png",
+          "localThumbnailPath": "thumbnails/0032_00_superhero-man-flying.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "superhero"
+      ],
+      "bytes": 22962,
+      "slug": "superhero-man-flying",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0033",
+      "presetNumber": 33,
+      "label": "Superhero man running",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": " man running",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0033_superhero-man-running.pma",
+      "localScenePath": "scenes/0033_superhero-man-running.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0033_00_superhero-man-running.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0033_00_superhero-man-running.png",
+          "localThumbnailPath": "thumbnails/0033_00_superhero-man-running.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "superhero"
+      ],
+      "bytes": 22870,
+      "slug": "superhero-man-running",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0037",
+      "presetNumber": 37,
+      "label": "Superhero man flexing",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man flexing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0037_superhero-man-flexing.pma",
+      "localScenePath": "scenes/0037_superhero-man-flexing.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0037_00_superhero-man-flexing.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0037_00_superhero-man-flexing.png",
+          "localThumbnailPath": "thumbnails/0037_00_superhero-man-flexing.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "superhero"
+      ],
+      "bytes": 22665,
+      "slug": "superhero-man-flexing",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0038",
+      "presetNumber": 38,
+      "label": "Brute superhero crouching",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute man crouching",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0038_brute-superhero-crouching.pma",
+      "localScenePath": "scenes/0038_brute-superhero-crouching.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0038_00_brute-superhero-crouching.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0038_00_brute-superhero-crouching.png",
+          "localThumbnailPath": "thumbnails/0038_00_brute-superhero-crouching.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "Pose",
+        "superhero"
+      ],
+      "bytes": 14506,
+      "slug": "brute-superhero-crouching",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0043",
+      "presetNumber": 43,
+      "label": "Man sitting and leaning",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on the floor and leaning aginst a cube",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0043_man-sitting-and-leaning.pma",
+      "localScenePath": "scenes/0043_man-sitting-and-leaning.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0043_00_man-sitting-and-leaning.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0043_00_man-sitting-and-leaning.png",
+          "localThumbnailPath": "thumbnails/0043_00_man-sitting-and-leaning.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 23529,
+      "slug": "man-sitting-and-leaning",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0044",
+      "presetNumber": 44,
+      "label": "Man sitting on a barrel ",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on a barrel forearms on knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0044_man-sitting-on-a-barrel.pma",
+      "localScenePath": "scenes/0044_man-sitting-on-a-barrel.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0044_00_man-sitting-on-a-barrel.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0044_00_man-sitting-on-a-barrel.png",
+          "localThumbnailPath": "thumbnails/0044_00_man-sitting-on-a-barrel.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        160
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 23077,
+      "slug": "man-sitting-on-a-barrel",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0045",
+      "presetNumber": 45,
+      "label": "Man sitting on chair backwards",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on chair backwards, hands on the back of the chair",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0045_man-sitting-on-chair-backwards.pma",
+      "localScenePath": "scenes/0045_man-sitting-on-chair-backwards.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0045_00_man-sitting-on-chair-backwards.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0045_00_man-sitting-on-chair-backwards.png",
+          "localThumbnailPath": "thumbnails/0045_00_man-sitting-on-chair-backwards.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 23133,
+      "slug": "man-sitting-on-chair-backwards",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0046",
+      "presetNumber": 46,
+      "label": "Man sitting on chair turning back",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on  chair turning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0046_man-sitting-on-chair-turning-back.pma",
+      "localScenePath": "scenes/0046_man-sitting-on-chair-turning-back.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0046_00_man-sitting-on-chair-turning-back.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0046_00_man-sitting-on-chair-turning-back.png",
+          "localThumbnailPath": "thumbnails/0046_00_man-sitting-on-chair-turning-back.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 23358,
+      "slug": "man-sitting-on-chair-turning-back",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0047",
+      "presetNumber": 47,
+      "label": "Man sitting on chair hands on knees",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on chair hands on knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0047_man-sitting-on-chair-hands-on-knees.pma",
+      "localScenePath": "scenes/0047_man-sitting-on-chair-hands-on-knees.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0047_00_man-sitting-on-chair-hands-on-knees.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0047_00_man-sitting-on-chair-hands-on-knees.png",
+          "localThumbnailPath": "thumbnails/0047_00_man-sitting-on-chair-hands-on-knees.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 23472,
+      "slug": "man-sitting-on-chair-hands-on-knees",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0048",
+      "presetNumber": 48,
+      "label": "Man sitting on the floor leg bend",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on the floor leg bend",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0048_man-sitting-on-the-floor-leg-bend.pma",
+      "localScenePath": "scenes/0048_man-sitting-on-the-floor-leg-bend.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0048_00_man-sitting-on-the-floor-leg-bend.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0048_00_man-sitting-on-the-floor-leg-bend.png",
+          "localThumbnailPath": "thumbnails/0048_00_man-sitting-on-the-floor-leg-bend.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 22622,
+      "slug": "man-sitting-on-the-floor-leg-bend",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0051",
+      "presetNumber": 51,
+      "label": "Man sitting, knees bent to chest",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Man sitting on floor knees bent to chest",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0051_man-sitting-knees-bent-to-chest.pma",
+      "localScenePath": "scenes/0051_man-sitting-knees-bent-to-chest.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0051_00_man-sitting-knees-bent-to-chest.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0051_00_man-sitting-knees-bent-to-chest.png",
+          "localThumbnailPath": "thumbnails/0051_00_man-sitting-knees-bent-to-chest.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sitting"
+      ],
+      "bytes": 22772,
+      "slug": "man-sitting-knees-bent-to-chest",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0072",
+      "presetNumber": 72,
+      "label": "Jumping around an obstacle",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "A realistic model jumping around an obstacle",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0072_jumping-around-an-obstacle.pma",
+      "localScenePath": "scenes/0072_jumping-around-an-obstacle.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0072_00_jumping-around-an-obstacle.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0072_00_jumping-around-an-obstacle.png",
+          "localThumbnailPath": "thumbnails/0072_00_jumping-around-an-obstacle.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 15097,
+      "slug": "jumping-around-an-obstacle",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0073",
+      "presetNumber": 73,
+      "label": "Jumping from high",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "A bot model jumping from high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0073_jumping-from-high.pma",
+      "localScenePath": "scenes/0073_jumping-from-high.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0073_00_jumping-from-high.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0073_00_jumping-from-high.png",
+          "localThumbnailPath": "thumbnails/0073_00_jumping-from-high.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 23065,
+      "slug": "jumping-from-high",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0078",
+      "presetNumber": 78,
+      "label": "Throwing straight ",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "A realistic man model throwing straight an imagined ball \\ magic",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0078_throwing-straight.pma",
+      "localScenePath": "scenes/0078_throwing-straight.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0078_00_throwing-straight.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0078_00_throwing-straight.png",
+          "localThumbnailPath": "thumbnails/0078_00_throwing-straight.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dynamic"
+      ],
+      "bytes": 14676,
+      "slug": "throwing-straight",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0086",
+      "presetNumber": 86,
+      "label": "Male dance pose legs crossed",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose with legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0086_male-dance-pose-legs-crossed.pma",
+      "localScenePath": "scenes/0086_male-dance-pose-legs-crossed.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0086_00_male-dance-pose-legs-crossed.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0086_00_male-dance-pose-legs-crossed.png",
+          "localThumbnailPath": "thumbnails/0086_00_male-dance-pose-legs-crossed.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12824,
+      "slug": "male-dance-pose-legs-crossed",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0087",
+      "presetNumber": 87,
+      "label": "Male dance pose leaning left",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose with legs spread and leaning left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0087_male-dance-pose-leaning-left.pma",
+      "localScenePath": "scenes/0087_male-dance-pose-leaning-left.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0087_00_male-dance-pose-leaning-left.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0087_00_male-dance-pose-leaning-left.png",
+          "localThumbnailPath": "thumbnails/0087_00_male-dance-pose-leaning-left.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12840,
+      "slug": "male-dance-pose-leaning-left",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0088",
+      "presetNumber": 88,
+      "label": "Male dance pose leaning right",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose with legs spread and leaning right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0088_male-dance-pose-leaning-right.pma",
+      "localScenePath": "scenes/0088_male-dance-pose-leaning-right.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0088_00_male-dance-pose-leaning-right.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0088_00_male-dance-pose-leaning-right.png",
+          "localThumbnailPath": "thumbnails/0088_00_male-dance-pose-leaning-right.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12796,
+      "slug": "male-dance-pose-leaning-right",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0089",
+      "presetNumber": 89,
+      "label": "Male dance pose arms extended backwards",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male dance pose standing on right foor with arms extended backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0089_male-dance-pose-arms-extended-backwards.pma",
+      "localScenePath": "scenes/0089_male-dance-pose-arms-extended-backwards.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0089_00_male-dance-pose-arms-extended-backwards.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0089_00_male-dance-pose-arms-extended-backwards.png",
+          "localThumbnailPath": "thumbnails/0089_00_male-dance-pose-arms-extended-backwards.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "dance"
+      ],
+      "bytes": 12802,
+      "slug": "male-dance-pose-arms-extended-backwards",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0107",
+      "presetNumber": 107,
+      "label": "Sword and shield pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male crouching while defending with a shield and holding a sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0107_sword-and-shield-pose.pma",
+      "localScenePath": "scenes/0107_sword-and-shield-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0107_00_sword-and-shield-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0107_00_sword-and-shield-pose.png",
+          "localThumbnailPath": "thumbnails/0107_00_sword-and-shield-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword"
+      ],
+      "bytes": 13675,
+      "slug": "sword-and-shield-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0108",
+      "presetNumber": 108,
+      "label": "Running sword and shield pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male running with sword and shield pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0108_running-sword-and-shield-pose.pma",
+      "localScenePath": "scenes/0108_running-sword-and-shield-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0108_00_running-sword-and-shield-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0108_00_running-sword-and-shield-pose.png",
+          "localThumbnailPath": "thumbnails/0108_00_running-sword-and-shield-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword"
+      ],
+      "bytes": 13700,
+      "slug": "running-sword-and-shield-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0109",
+      "presetNumber": 109,
+      "label": "Sword slash downwards pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male slashing downwards with his sword while holding a shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0109_sword-slash-downwards-pose.pma",
+      "localScenePath": "scenes/0109_sword-slash-downwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0109_00_sword-slash-downwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0109_00_sword-slash-downwards-pose.png",
+          "localThumbnailPath": "thumbnails/0109_00_sword-slash-downwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword"
+      ],
+      "bytes": 13688,
+      "slug": "sword-slash-downwards-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0120",
+      "presetNumber": 120,
+      "label": "Chibi punching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi punching with left hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0120_chibi-punching-pose.pma",
+      "localScenePath": "scenes/0120_chibi-punching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0120_00_chibi-punching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0120_00_chibi-punching-pose.png",
+          "localThumbnailPath": "thumbnails/0120_00_chibi-punching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "chibi"
+      ],
+      "bytes": 23386,
+      "slug": "chibi-punching-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

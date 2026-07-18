@@ -1,0 +1,1179 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 88,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4599",
+      "presetNumber": 4599,
+      "label": "Anime maid holding desserts pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is jumping, wearing a maid apron, holding desserts ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4599_anime-maid-holding-desserts-pose.pma",
+      "localScenePath": "scenes/4599_anime-maid-holding-desserts-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4599_00_anime-maid-holding-desserts-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4599_00_anime-maid-holding-desserts-pose.png",
+          "localThumbnailPath": "thumbnails/4599_00_anime-maid-holding-desserts-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        3,
+        108,
+        127,
+        135
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 281325,
+      "slug": "anime-maid-holding-desserts-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4603",
+      "presetNumber": 4603,
+      "label": "Fairy illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is floating, holding a fairy wand in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4603_fairy-illustration-pose.pma",
+      "localScenePath": "scenes/4603_fairy-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4603_00_fairy-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4603_00_fairy-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4603_00_fairy-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87,
+        89
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 24041,
+      "slug": "fairy-illustration-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4605",
+      "presetNumber": 4605,
+      "label": "Electric guitar illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing, jumping, playing electric guitar, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4605_electric-guitar-illustration-pose.pma",
+      "localScenePath": "scenes/4605_electric-guitar-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4605_00_electric-guitar-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4605_00_electric-guitar-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4605_00_electric-guitar-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        90
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23555,
+      "slug": "electric-guitar-illustration-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4607",
+      "presetNumber": 4607,
+      "label": "Mermaid illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock, holding a trident in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4607_mermaid-illustration-pose.pma",
+      "localScenePath": "scenes/4607_mermaid-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4607_00_mermaid-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4607_00_mermaid-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4607_00_mermaid-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [
+        179,
+        180
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 17375,
+      "slug": "mermaid-illustration-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4608",
+      "presetNumber": 4608,
+      "label": "Attack illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking, jumping and swinging her sword, female fighter illustration pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4608_attack-illustration-pose.pma",
+      "localScenePath": "scenes/4608_attack-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4608_00_attack-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4608_00_attack-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4608_00_attack-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23523,
+      "slug": "attack-illustration-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4610",
+      "presetNumber": 4610,
+      "label": "Anime holding book pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy anime female is standing and holding, hugging a book, cute anime drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4610_anime-holding-book-pose.pma",
+      "localScenePath": "scenes/4610_anime-holding-book-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4610_00_anime-holding-book-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4610_00_anime-holding-book-pose.png",
+          "localThumbnailPath": "thumbnails/4610_00_anime-holding-book-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        172
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20653,
+      "slug": "anime-holding-book-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4611",
+      "presetNumber": 4611,
+      "label": "Anime wings pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female with angel wings, floating and looking up, anime drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4611_anime-wings-pose.pma",
+      "localScenePath": "scenes/4611_anime-wings-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4611_00_anime-wings-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4611_00_anime-wings-pose.png",
+          "localThumbnailPath": "thumbnails/4611_00_anime-wings-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        91
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20786,
+      "slug": "anime-wings-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4613",
+      "presetNumber": 4613,
+      "label": "Cute anime reference pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute and happy anime female is jumping, cute anime drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4613_cute-anime-reference-pose.pma",
+      "localScenePath": "scenes/4613_cute-anime-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4613_00_cute-anime-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4613_00_cute-anime-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4613_00_cute-anime-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20160,
+      "slug": "cute-anime-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4614",
+      "presetNumber": 4614,
+      "label": "Anime sitting reference pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting in the armchair, looking slightly to the left, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4614_anime-sitting-reference-pose.pma",
+      "localScenePath": "scenes/4614_anime-sitting-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4614_00_anime-sitting-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4614_00_anime-sitting-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4614_00_anime-sitting-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20717,
+      "slug": "anime-sitting-reference-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4617",
+      "presetNumber": 4617,
+      "label": "Anime maid reference pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is standing, wearing maid apron and heart shaped glasses, holding an ice cream",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4617_anime-maid-reference-pose.pma",
+      "localScenePath": "scenes/4617_anime-maid-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4617_00_anime-maid-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4617_00_anime-maid-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4617_00_anime-maid-reference-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        99,
+        135
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 279841,
+      "slug": "anime-maid-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4619",
+      "presetNumber": 4619,
+      "label": "Female anime fighter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female fighter is crouching, holding a sword and a shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4619_female-anime-fighter-pose.pma",
+      "localScenePath": "scenes/4619_female-anime-fighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4619_00_female-anime-fighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4619_00_female-anime-fighter-pose.png",
+          "localThumbnailPath": "thumbnails/4619_00_female-anime-fighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21297,
+      "slug": "female-anime-fighter-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4620",
+      "presetNumber": 4620,
+      "label": "Female throwing baseball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is throwing a baseball with her right hand, throwing ball pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4620_female-throwing-baseball-pose.pma",
+      "localScenePath": "scenes/4620_female-throwing-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4620_00_female-throwing-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4620_00_female-throwing-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/4620_00_female-throwing-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20576,
+      "slug": "female-throwing-baseball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4621",
+      "presetNumber": 4621,
+      "label": "Throwing spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and throwing a spear with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4621_throwing-spear-pose.pma",
+      "localScenePath": "scenes/4621_throwing-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4621_00_throwing-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4621_00_throwing-spear-pose.png",
+          "localThumbnailPath": "thumbnails/4621_00_throwing-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20763,
+      "slug": "throwing-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4622",
+      "presetNumber": 4622,
+      "label": "Female throwing rock pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and throwing a rock, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4622_female-throwing-rock-pose.pma",
+      "localScenePath": "scenes/4622_female-throwing-rock-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4622_00_female-throwing-rock-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4622_00_female-throwing-rock-pose.png",
+          "localThumbnailPath": "thumbnails/4622_00_female-throwing-rock-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        361
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20678,
+      "slug": "female-throwing-rock-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4623",
+      "presetNumber": 4623,
+      "label": "Female jumping throwing ball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and throwing a ball with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4623_female-jumping-throwing-ball-pose.pma",
+      "localScenePath": "scenes/4623_female-jumping-throwing-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4623_00_female-jumping-throwing-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4623_00_female-jumping-throwing-ball-pose.png",
+          "localThumbnailPath": "thumbnails/4623_00_female-jumping-throwing-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20686,
+      "slug": "female-jumping-throwing-ball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4628",
+      "presetNumber": 4628,
+      "label": "Throwing pebble pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bridge and throwing a pebble into the river",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4628_throwing-pebble-pose.pma",
+      "localScenePath": "scenes/4628_throwing-pebble-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4628_00_throwing-pebble-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4628_00_throwing-pebble-pose.png",
+          "localThumbnailPath": "thumbnails/4628_00_throwing-pebble-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        313,
+        363
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21543,
+      "slug": "throwing-pebble-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4637",
+      "presetNumber": 4637,
+      "label": "Female smug standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing smugly, sweeping her right shoulder, holding her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4637_female-smug-standing-pose.pma",
+      "localScenePath": "scenes/4637_female-smug-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4637_00_female-smug-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4637_00_female-smug-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4637_00_female-smug-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20098,
+      "slug": "female-smug-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4638",
+      "presetNumber": 4638,
+      "label": "Smug hand kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing smugly, extending her hand for a hand kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4638_smug-hand-kiss-pose.pma",
+      "localScenePath": "scenes/4638_smug-hand-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4638_00_smug-hand-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4638_00_smug-hand-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/4638_00_smug-hand-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20182,
+      "slug": "smug-hand-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4639",
+      "presetNumber": 4639,
+      "label": "Smug female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing smugly, her legs are crossed, she is pointing at herself and holding her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4639_smug-female-pose.pma",
+      "localScenePath": "scenes/4639_smug-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4639_00_smug-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4639_00_smug-female-pose.png",
+          "localThumbnailPath": "thumbnails/4639_00_smug-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "pose"
+      ],
+      "bytes": 20086,
+      "slug": "smug-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4640",
+      "presetNumber": 4640,
+      "label": "Room reading reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in the room and reading a book",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4640_room-reading-reference.pma",
+      "localScenePath": "scenes/4640_room-reading-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4640_00_room-reading-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4640_00_room-reading-reference.png",
+          "localThumbnailPath": "thumbnails/4640_00_room-reading-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 20,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        172,
+        185,
+        248,
+        294,
+        296,
+        299,
+        311,
+        347
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 31442,
+      "slug": "room-reading-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4644",
+      "presetNumber": 4644,
+      "label": "Tv room reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on the couch in the room and watching tv",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4644_tv-room-reference.pma",
+      "localScenePath": "scenes/4644_tv-room-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4644_00_tv-room-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4644_00_tv-room-reference.png",
+          "localThumbnailPath": "thumbnails/4644_00_tv-room-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 15,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        140,
+        170,
+        171,
+        172,
+        186,
+        247,
+        249,
+        298,
+        299,
+        347
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "room",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1039675,
+      "slug": "tv-room-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4660",
+      "presetNumber": 4660,
+      "label": "Phone holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on her stomach, holding a phone and a pencil, writing something on a paper",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4660_phone-holding-pose.pma",
+      "localScenePath": "scenes/4660_phone-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4660_00_phone-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4660_00_phone-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4660_00_phone-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        102,
+        239,
+        240
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 21676,
+      "slug": "phone-holding-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4661",
+      "presetNumber": 4661,
+      "label": "Wine glass holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair at the table and holding a wine glass in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4661_wine-glass-holding-pose.pma",
+      "localScenePath": "scenes/4661_wine-glass-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4661_00_wine-glass-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4661_00_wine-glass-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4661_00_wine-glass-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76,
+        139,
+        249
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 21495,
+      "slug": "wine-glass-holding-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4664",
+      "presetNumber": 4664,
+      "label": "Book holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a book with both hands and reading",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4664_book-holding-pose.pma",
+      "localScenePath": "scenes/4664_book-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4664_00_book-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4664_00_book-holding-pose.png",
+          "localThumbnailPath": "thumbnails/4664_00_book-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "something",
+        "reference"
+      ],
+      "bytes": 20695,
+      "slug": "book-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

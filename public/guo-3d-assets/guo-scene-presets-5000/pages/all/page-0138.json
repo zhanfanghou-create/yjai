@@ -1,0 +1,1088 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 137,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3289",
+      "presetNumber": 3289,
+      "label": "Holding sword male running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a shield in his left hand and a sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3289_holding-sword-male-running-pose.pma",
+      "localScenePath": "scenes/3289_holding-sword-male-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3289_00_holding-sword-male-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3289_00_holding-sword-male-running-pose.png",
+          "localThumbnailPath": "thumbnails/3289_00_holding-sword-male-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "running",
+        "pose"
+      ],
+      "bytes": 24802,
+      "slug": "holding-sword-male-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3290",
+      "presetNumber": 3290,
+      "label": "Crossed arms shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing with her arms crossed and looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3290_crossed-arms-shy-pose.pma",
+      "localScenePath": "scenes/3290_crossed-arms-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3290_00_crossed-arms-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3290_00_crossed-arms-shy-pose.png",
+          "localThumbnailPath": "thumbnails/3290_00_crossed-arms-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23477,
+      "slug": "crossed-arms-shy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3291",
+      "presetNumber": 3291,
+      "label": "Holding arm shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing, holding her left arm and looking to the right, shy standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3291_holding-arm-shy-pose.pma",
+      "localScenePath": "scenes/3291_holding-arm-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3291_00_holding-arm-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3291_00_holding-arm-shy-pose.png",
+          "localThumbnailPath": "thumbnails/3291_00_holding-arm-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23513,
+      "slug": "holding-arm-shy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3292",
+      "presetNumber": 3292,
+      "label": "Holding hands shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing, holding her hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3292_holding-hands-shy-pose.pma",
+      "localScenePath": "scenes/3292_holding-hands-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3292_00_holding-hands-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3292_00_holding-hands-shy-pose.png",
+          "localThumbnailPath": "thumbnails/3292_00_holding-hands-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23524,
+      "slug": "holding-hands-shy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3293",
+      "presetNumber": 3293,
+      "label": "Looking down shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing and holding her hands behind her back, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3293_looking-down-shy-pose.pma",
+      "localScenePath": "scenes/3293_looking-down-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3293_00_looking-down-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3293_00_looking-down-shy-pose.png",
+          "localThumbnailPath": "thumbnails/3293_00_looking-down-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23474,
+      "slug": "looking-down-shy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3294",
+      "presetNumber": 3294,
+      "label": "Shy female hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing, holding a book with both hands and hiding",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3294_shy-female-hiding-pose.pma",
+      "localScenePath": "scenes/3294_shy-female-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3294_00_shy-female-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3294_00_shy-female-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/3294_00_shy-female-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        172
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23995,
+      "slug": "shy-female-hiding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3295",
+      "presetNumber": 3295,
+      "label": "Shy female standing crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing with her legs crossed, holding her hands behind her back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3295_shy-female-standing-crossed-legs-pose.pma",
+      "localScenePath": "scenes/3295_shy-female-standing-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3295_00_shy-female-standing-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3295_00_shy-female-standing-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/3295_00_shy-female-standing-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23460,
+      "slug": "shy-female-standing-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3296",
+      "presetNumber": 3296,
+      "label": "Shy females standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two shy females are standing and looking at each other, shy standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3296_shy-females-standing-pose.pma",
+      "localScenePath": "scenes/3296_shy-females-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3296_00_shy-females-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3296_00_shy-females-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3296_00_shy-females-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3296_01_shy-females-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3296_01_shy-females-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46198,
+      "slug": "shy-females-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3297",
+      "presetNumber": 3297,
+      "label": "Shy male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Shy male is standing, holding his hands behind his back and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3297_shy-male-standing-pose.pma",
+      "localScenePath": "scenes/3297_shy-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3297_00_shy-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3297_00_shy-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3297_00_shy-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23728,
+      "slug": "shy-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3298",
+      "presetNumber": 3298,
+      "label": "Shy male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Shy male is standing with his arms crossed, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3298_shy-male-pose.pma",
+      "localScenePath": "scenes/3298_shy-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3298_00_shy-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3298_00_shy-male-pose.png",
+          "localThumbnailPath": "thumbnails/3298_00_shy-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23743,
+      "slug": "shy-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3299",
+      "presetNumber": 3299,
+      "label": "Shy female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other, male is reaching out to the shy female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3299_shy-female-pose.pma",
+      "localScenePath": "scenes/3299_shy-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3299_00_shy-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3299_00_shy-female-pose.png",
+          "localThumbnailPath": "thumbnails/3299_00_shy-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3299_01_shy-female-pose.png",
+          "localThumbnailPath": "thumbnails/3299_01_shy-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "shy",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46431,
+      "slug": "shy-female-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3300",
+      "presetNumber": 3300,
+      "label": "Confident female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hips with both hands, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3300_confident-female-standing-pose.pma",
+      "localScenePath": "scenes/3300_confident-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3300_00_confident-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3300_00_confident-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3300_00_confident-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23830,
+      "slug": "confident-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3301",
+      "presetNumber": 3301,
+      "label": "Standing looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hip with her right hand, crossing her legs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3301_standing-looking-left-pose.pma",
+      "localScenePath": "scenes/3301_standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3301_00_standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3301_00_standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3301_00_standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23465,
+      "slug": "standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3302",
+      "presetNumber": 3302,
+      "label": "Female holding hips crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, holding her hips with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3302_female-holding-hips-crossed-legs-pose.pma",
+      "localScenePath": "scenes/3302_female-holding-hips-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3302_00_female-holding-hips-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3302_00_female-holding-hips-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/3302_00_female-holding-hips-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23474,
+      "slug": "female-holding-hips-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3303",
+      "presetNumber": 3303,
+      "label": "Female holding hip pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hip with her right hand, looking at her nails",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3303_female-holding-hip-pose.pma",
+      "localScenePath": "scenes/3303_female-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3303_00_female-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3303_00_female-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/3303_00_female-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23470,
+      "slug": "female-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3304",
+      "presetNumber": 3304,
+      "label": "Holding hips walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking, holding her hips with both hands, holding hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3304_holding-hips-walking-pose.pma",
+      "localScenePath": "scenes/3304_holding-hips-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3304_00_holding-hips-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3304_00_holding-hips-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3304_00_holding-hips-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23459,
+      "slug": "holding-hips-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3305",
+      "presetNumber": 3305,
+      "label": "Male holding hips pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently, holding his hips with both hands, holding hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3305_male-holding-hips-pose.pma",
+      "localScenePath": "scenes/3305_male-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3305_00_male-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3305_00_male-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/3305_00_male-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23805,
+      "slug": "male-holding-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3306",
+      "presetNumber": 3306,
+      "label": "Standing holding hip male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his legs crossed, holding his hip with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3306_standing-holding-hip-male-pose.pma",
+      "localScenePath": "scenes/3306_standing-holding-hip-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3306_00_standing-holding-hip-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3306_00_standing-holding-hip-male-pose.png",
+          "localThumbnailPath": "thumbnails/3306_00_standing-holding-hip-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23761,
+      "slug": "standing-holding-hip-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3307",
+      "presetNumber": 3307,
+      "label": "Sitting holding hip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bar stool, holding his hip with his right hand, holding hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3307_sitting-holding-hip-pose.pma",
+      "localScenePath": "scenes/3307_sitting-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3307_00_sitting-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3307_00_sitting-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/3307_00_sitting-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 24179,
+      "slug": "sitting-holding-hip-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3308",
+      "presetNumber": 3308,
+      "label": "Male holding hip casual pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, holding his hip with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3308_male-holding-hip-casual-pose.pma",
+      "localScenePath": "scenes/3308_male-holding-hip-casual-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3308_00_male-holding-hip-casual-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3308_00_male-holding-hip-casual-pose.png",
+          "localThumbnailPath": "thumbnails/3308_00_male-holding-hip-casual-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23793,
+      "slug": "male-holding-hip-casual-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3309",
+      "presetNumber": 3309,
+      "label": "Standing looking down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his hips and looking down, male holding hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3309_standing-looking-down-pose.pma",
+      "localScenePath": "scenes/3309_standing-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3309_00_standing-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3309_00_standing-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3309_00_standing-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hips",
+        "pose"
+      ],
+      "bytes": 23807,
+      "slug": "standing-looking-down-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3310",
+      "presetNumber": 3310,
+      "label": "Feminine sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees, leaning on her left hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3310_feminine-sitting-pose.pma",
+      "localScenePath": "scenes/3310_feminine-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3310_00_feminine-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3310_00_feminine-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3310_00_feminine-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knee",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23458,
+      "slug": "feminine-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3311",
+      "presetNumber": 3311,
+      "label": "Knee sitting female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees and looking forward, female knee sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3311_knee-sitting-female-pose.pma",
+      "localScenePath": "scenes/3311_knee-sitting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3311_00_knee-sitting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3311_00_knee-sitting-female-pose.png",
+          "localThumbnailPath": "thumbnails/3311_00_knee-sitting-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knee",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23469,
+      "slug": "knee-sitting-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3312",
+      "presetNumber": 3312,
+      "label": "Confident knee sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees, holding her hip with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3312_confident-knee-sitting-pose.pma",
+      "localScenePath": "scenes/3312_confident-knee-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3312_00_confident-knee-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3312_00_confident-knee-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3312_00_confident-knee-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knee",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 23466,
+      "slug": "confident-knee-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

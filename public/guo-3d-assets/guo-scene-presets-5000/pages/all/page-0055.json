@@ -1,0 +1,1121 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 54,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1297",
+      "presetNumber": 1297,
+      "label": "Male walking waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking casually, looking to the right and waving with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1297_male-walking-waving-pose.pma",
+      "localScenePath": "scenes/1297_male-walking-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1297_00_male-walking-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1297_00_male-walking-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1297_00_male-walking-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waving",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "male-walking-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1298",
+      "presetNumber": 1298,
+      "label": "Male sitting waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting, looking to the left and waving high with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1298_male-sitting-waving-pose.pma",
+      "localScenePath": "scenes/1298_male-sitting-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1298_00_male-sitting-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1298_00_male-sitting-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1298_00_male-sitting-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waving",
+        "pose"
+      ],
+      "bytes": 24136,
+      "slug": "male-sitting-waving-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1299",
+      "presetNumber": 1299,
+      "label": "Female male waving pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and waving to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1299_female-male-waving-pose.pma",
+      "localScenePath": "scenes/1299_female-male-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1299_00_female-male-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1299_00_female-male-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1299_00_female-male-waving-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1299_01_female-male-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1299_01_female-male-waving-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waving",
+        "pose"
+      ],
+      "bytes": 46567,
+      "slug": "female-male-waving-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1300",
+      "presetNumber": 1300,
+      "label": "Happiness peace jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy anime female is jumping and showing peace sign with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1300_happiness-peace-jumping-pose.pma",
+      "localScenePath": "scenes/1300_happiness-peace-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1300_00_happiness-peace-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1300_00_happiness-peace-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1300_00_happiness-peace-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23735,
+      "slug": "happiness-peace-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1301",
+      "presetNumber": 1301,
+      "label": "Raising feet jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping and raising her feet and hands high, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1301_raising-feet-jumping-pose.pma",
+      "localScenePath": "scenes/1301_raising-feet-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1301_00_raising-feet-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1301_00_raising-feet-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1301_00_raising-feet-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23718,
+      "slug": "raising-feet-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1302",
+      "presetNumber": 1302,
+      "label": "Anime posing jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping high and posing in the air, looking forward and raising her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1302_anime-posing-jumping-pose.pma",
+      "localScenePath": "scenes/1302_anime-posing-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1302_00_anime-posing-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1302_00_anime-posing-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1302_00_anime-posing-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23694,
+      "slug": "anime-posing-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1303",
+      "presetNumber": 1303,
+      "label": "Anime victory jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is celebrating, jumping and raising up her fisted left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1303_anime-victory-jumping-pose.pma",
+      "localScenePath": "scenes/1303_anime-victory-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1303_00_anime-victory-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1303_00_anime-victory-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1303_00_anime-victory-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23687,
+      "slug": "anime-victory-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1304",
+      "presetNumber": 1304,
+      "label": "Anime acrobatic jump pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is performing an acrobatic jump, raising her feet and hands and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1304_anime-acrobatic-jump-pose.pma",
+      "localScenePath": "scenes/1304_anime-acrobatic-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1304_00_anime-acrobatic-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1304_00_anime-acrobatic-jump-pose.png",
+          "localThumbnailPath": "thumbnails/1304_00_anime-acrobatic-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23901,
+      "slug": "anime-acrobatic-jump-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1305",
+      "presetNumber": 1305,
+      "label": "Anime jumping kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping high from running and kicking in the air with left foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1305_anime-jumping-kicking-pose.pma",
+      "localScenePath": "scenes/1305_anime-jumping-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1305_00_anime-jumping-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1305_00_anime-jumping-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/1305_00_anime-jumping-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23737,
+      "slug": "anime-jumping-kicking-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1306",
+      "presetNumber": 1306,
+      "label": "Anime reaching jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping high to reach something, raising his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1306_anime-reaching-jumping-pose.pma",
+      "localScenePath": "scenes/1306_anime-reaching-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1306_00_anime-reaching-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1306_00_anime-reaching-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1306_00_anime-reaching-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23854,
+      "slug": "anime-reaching-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1307",
+      "presetNumber": 1307,
+      "label": "Anime punch jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping to punch, swinging his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1307_anime-punch-jumping-pose.pma",
+      "localScenePath": "scenes/1307_anime-punch-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1307_00_anime-punch-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1307_00_anime-punch-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1307_00_anime-punch-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23834,
+      "slug": "anime-punch-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1308",
+      "presetNumber": 1308,
+      "label": "Male jumping high pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping high from running, his hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1308_male-jumping-high-pose.pma",
+      "localScenePath": "scenes/1308_male-jumping-high-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1308_00_male-jumping-high-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1308_00_male-jumping-high-pose.png",
+          "localThumbnailPath": "thumbnails/1308_00_male-jumping-high-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23733,
+      "slug": "male-jumping-high-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1309",
+      "presetNumber": 1309,
+      "label": "Jumping over obstacle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping from running, jumping over an obstacle",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1309_jumping-over-obstacle-pose.pma",
+      "localScenePath": "scenes/1309_jumping-over-obstacle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1309_00_jumping-over-obstacle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1309_00_jumping-over-obstacle-pose.png",
+          "localThumbnailPath": "thumbnails/1309_00_jumping-over-obstacle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "jumping",
+        "pose"
+      ],
+      "bytes": 23757,
+      "slug": "jumping-over-obstacle-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1310",
+      "presetNumber": 1310,
+      "label": "Male holding basketball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a basketball and searching where to pass it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1310_male-holding-basketball-pose.pma",
+      "localScenePath": "scenes/1310_male-holding-basketball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1310_00_male-holding-basketball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1310_00_male-holding-basketball-pose.png",
+          "localThumbnailPath": "thumbnails/1310_00_male-holding-basketball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24244,
+      "slug": "male-holding-basketball-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1311",
+      "presetNumber": 1311,
+      "label": "Standing holding ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently with left hand on hip and holding a ball in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1311_standing-holding-ball-pose.pma",
+      "localScenePath": "scenes/1311_standing-holding-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1311_00_standing-holding-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1311_00_standing-holding-ball-pose.png",
+          "localThumbnailPath": "thumbnails/1311_00_standing-holding-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24181,
+      "slug": "standing-holding-ball-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1312",
+      "presetNumber": 1312,
+      "label": "Left hand holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a ball in her left hand and looking at it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1312_left-hand-holding-pose.pma",
+      "localScenePath": "scenes/1312_left-hand-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1312_00_left-hand-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1312_00_left-hand-holding-pose.png",
+          "localThumbnailPath": "thumbnails/1312_00_left-hand-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24025,
+      "slug": "left-hand-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1313",
+      "presetNumber": 1313,
+      "label": "Right hand holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a ball in her right hand and looking at it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1313_right-hand-holding-pose.pma",
+      "localScenePath": "scenes/1313_right-hand-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1313_00_right-hand-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1313_00_right-hand-holding-pose.png",
+          "localThumbnailPath": "thumbnails/1313_00_right-hand-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24186,
+      "slug": "right-hand-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1314",
+      "presetNumber": 1314,
+      "label": "Two hands holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking forward and holding a ball with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1314_two-hands-holding-pose.pma",
+      "localScenePath": "scenes/1314_two-hands-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1314_00_two-hands-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1314_00_two-hands-holding-pose.png",
+          "localThumbnailPath": "thumbnails/1314_00_two-hands-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 23995,
+      "slug": "two-hands-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1315",
+      "presetNumber": 1315,
+      "label": "Holding ball up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking forward and holding a ball high in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1315_holding-ball-up-pose.pma",
+      "localScenePath": "scenes/1315_holding-ball-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1315_00_holding-ball-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1315_00_holding-ball-up-pose.png",
+          "localThumbnailPath": "thumbnails/1315_00_holding-ball-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24192,
+      "slug": "holding-ball-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1316",
+      "presetNumber": 1316,
+      "label": "Holding ball down pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking forward and holding a ball down in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1316_holding-ball-down-pose.pma",
+      "localScenePath": "scenes/1316_holding-ball-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1316_00_holding-ball-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1316_00_holding-ball-down-pose.png",
+          "localThumbnailPath": "thumbnails/1316_00_holding-ball-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24004,
+      "slug": "holding-ball-down-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1317",
+      "presetNumber": 1317,
+      "label": "One finger holding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding and spinning a ball with one finger",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1317_one-finger-holding-pose.pma",
+      "localScenePath": "scenes/1317_one-finger-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1317_00_one-finger-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1317_00_one-finger-holding-pose.png",
+          "localThumbnailPath": "thumbnails/1317_00_one-finger-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24235,
+      "slug": "one-finger-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1318",
+      "presetNumber": 1318,
+      "label": "Female posing holding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a ball with two hands and posing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1318_female-posing-holding-pose.pma",
+      "localScenePath": "scenes/1318_female-posing-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1318_00_female-posing-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1318_00_female-posing-holding-pose.png",
+          "localThumbnailPath": "thumbnails/1318_00_female-posing-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24111,
+      "slug": "female-posing-holding-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1319",
+      "presetNumber": 1319,
+      "label": "Straight holding ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a ball wiht his left hand straight in front of him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1319_straight-holding-ball-pose.pma",
+      "localScenePath": "scenes/1319_straight-holding-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1319_00_straight-holding-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1319_00_straight-holding-ball-pose.png",
+          "localThumbnailPath": "thumbnails/1319_00_straight-holding-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24271,
+      "slug": "straight-holding-ball-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1320",
+      "presetNumber": 1320,
+      "label": "Male holding hip standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his right hand on hip and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1320_male-holding-hip-standing-pose.pma",
+      "localScenePath": "scenes/1320_male-holding-hip-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1320_00_male-holding-hip-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1320_00_male-holding-hip-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1320_00_male-holding-hip-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "male",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23785,
+      "slug": "male-holding-hip-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

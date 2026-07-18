@@ -1,0 +1,1062 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 7,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-0458",
+      "presetNumber": 458,
+      "label": "Female hero attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female hero is ready to attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0458_female-hero-attack-pose.pma",
+      "localScenePath": "scenes/0458_female-hero-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0458_00_female-hero-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0458_00_female-hero-attack-pose.png",
+          "localThumbnailPath": "thumbnails/0458_00_female-hero-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "hero"
+      ],
+      "bytes": 23422,
+      "slug": "female-hero-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0459",
+      "presetNumber": 459,
+      "label": "Female hero jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female hero jumping from high pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0459_female-hero-jumping-pose.pma",
+      "localScenePath": "scenes/0459_female-hero-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0459_00_female-hero-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0459_00_female-hero-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0459_00_female-hero-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "hero"
+      ],
+      "bytes": 23414,
+      "slug": "female-hero-jumping-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0460",
+      "presetNumber": 460,
+      "label": "Confident standing female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female standing with one hand on her hip and looking forward pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0460_confident-standing-female-pose.pma",
+      "localScenePath": "scenes/0460_confident-standing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0460_00_confident-standing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0460_00_confident-standing-female-pose.png",
+          "localThumbnailPath": "thumbnails/0460_00_confident-standing-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23690,
+      "slug": "confident-standing-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0461",
+      "presetNumber": 461,
+      "label": "Shy female holding hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female standing, holding her left hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0461_shy-female-holding-hand-pose.pma",
+      "localScenePath": "scenes/0461_shy-female-holding-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0461_00_shy-female-holding-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0461_00_shy-female-holding-hand-pose.png",
+          "localThumbnailPath": "thumbnails/0461_00_shy-female-holding-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23624,
+      "slug": "shy-female-holding-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0462",
+      "presetNumber": 462,
+      "label": "Female standing crossed arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female standing with crossed arms and looking forward pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0462_female-standing-crossed-arms-pose.pma",
+      "localScenePath": "scenes/0462_female-standing-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0462_00_female-standing-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0462_00_female-standing-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/0462_00_female-standing-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23558,
+      "slug": "female-standing-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0463",
+      "presetNumber": 463,
+      "label": "Left hand holding hip pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female standing, her left hand is on her hip pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0463_left-hand-holding-hip-pose.pma",
+      "localScenePath": "scenes/0463_left-hand-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0463_00_left-hand-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0463_00_left-hand-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/0463_00_left-hand-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23772,
+      "slug": "left-hand-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0464",
+      "presetNumber": 464,
+      "label": "Female looking back standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female standing and looking back pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0464_female-looking-back-standing-pose.pma",
+      "localScenePath": "scenes/0464_female-looking-back-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0464_00_female-looking-back-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0464_00_female-looking-back-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0464_00_female-looking-back-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23732,
+      "slug": "female-looking-back-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0465",
+      "presetNumber": 465,
+      "label": "Right hand shoulder pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female standing and placing her right hand on her shoulder pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0465_right-hand-shoulder-pose.pma",
+      "localScenePath": "scenes/0465_right-hand-shoulder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0465_00_right-hand-shoulder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0465_00_right-hand-shoulder-pose.png",
+          "localThumbnailPath": "thumbnails/0465_00_right-hand-shoulder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23625,
+      "slug": "right-hand-shoulder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0466",
+      "presetNumber": 466,
+      "label": "Cheerful waving standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and waving, saying \"hi\" pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0466_cheerful-waving-standing-pose.pma",
+      "localScenePath": "scenes/0466_cheerful-waving-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0466_00_cheerful-waving-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0466_00_cheerful-waving-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0466_00_cheerful-waving-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23613,
+      "slug": "cheerful-waving-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0467",
+      "presetNumber": 467,
+      "label": "Female standing hands hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her hands on her hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0467_female-standing-hands-hips-pose.pma",
+      "localScenePath": "scenes/0467_female-standing-hands-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0467_00_female-standing-hands-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0467_00_female-standing-hands-hips-pose.png",
+          "localThumbnailPath": "thumbnails/0467_00_female-standing-hands-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23677,
+      "slug": "female-standing-hands-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0468",
+      "presetNumber": 468,
+      "label": "Excited female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Excited female standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0468_excited-female-standing-pose.pma",
+      "localScenePath": "scenes/0468_excited-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0468_00_excited-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0468_00_excited-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0468_00_excited-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23475,
+      "slug": "excited-female-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0469",
+      "presetNumber": 469,
+      "label": "Shy standing female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing and holding her hands behind her back pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0469_shy-standing-female-pose.pma",
+      "localScenePath": "scenes/0469_shy-standing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0469_00_shy-standing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0469_00_shy-standing-female-pose.png",
+          "localThumbnailPath": "thumbnails/0469_00_shy-standing-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "female",
+        "standing"
+      ],
+      "bytes": 23464,
+      "slug": "shy-standing-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0470",
+      "presetNumber": 470,
+      "label": "Anime standing cute waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is waving, says \"hi\" pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0470_anime-standing-cute-waving-pose.pma",
+      "localScenePath": "scenes/0470_anime-standing-cute-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0470_00_anime-standing-cute-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0470_00_anime-standing-cute-waving-pose.png",
+          "localThumbnailPath": "thumbnails/0470_00_anime-standing-cute-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 24110,
+      "slug": "anime-standing-cute-waving-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0471",
+      "presetNumber": 471,
+      "label": "Excited anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Excited cute anime female standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0471_excited-anime-female-pose.pma",
+      "localScenePath": "scenes/0471_excited-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0471_00_excited-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0471_00_excited-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/0471_00_excited-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 24057,
+      "slug": "excited-anime-female-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0472",
+      "presetNumber": 472,
+      "label": "Happy jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cheerful anime happy jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0472_happy-jumping-pose.pma",
+      "localScenePath": "scenes/0472_happy-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0472_00_happy-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0472_00_happy-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0472_00_happy-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 23837,
+      "slug": "happy-jumping-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0473",
+      "presetNumber": 473,
+      "label": "Shy flirting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy anime female flirting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0473_shy-flirting-pose.pma",
+      "localScenePath": "scenes/0473_shy-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0473_00_shy-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0473_00_shy-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/0473_00_shy-flirting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 24045,
+      "slug": "shy-flirting-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0474",
+      "presetNumber": 474,
+      "label": "Anime casual standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female standing with her left hand on her hip pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0474_anime-casual-standing-pose.pma",
+      "localScenePath": "scenes/0474_anime-casual-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0474_00_anime-casual-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0474_00_anime-casual-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0474_00_anime-casual-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 23900,
+      "slug": "anime-casual-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0475",
+      "presetNumber": 475,
+      "label": "Anime happy dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female cheerful happy dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0475_anime-happy-dancing-pose.pma",
+      "localScenePath": "scenes/0475_anime-happy-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0475_00_anime-happy-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0475_00_anime-happy-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/0475_00_anime-happy-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 23730,
+      "slug": "anime-happy-dancing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0477",
+      "presetNumber": 477,
+      "label": "Anime sitting chair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident anime female sitting on a chair pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0477_anime-sitting-chair-pose.pma",
+      "localScenePath": "scenes/0477_anime-sitting-chair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0477_00_anime-sitting-chair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0477_00_anime-sitting-chair-pose.png",
+          "localThumbnailPath": "thumbnails/0477_00_anime-sitting-chair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base"
+      ],
+      "bytes": 24385,
+      "slug": "anime-sitting-chair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0484",
+      "presetNumber": 484,
+      "label": "Flying female bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is flying and shooting an arrow with her bow pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0484_flying-female-bow-pose.pma",
+      "localScenePath": "scenes/0484_flying-female-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0484_00_flying-female-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0484_00_flying-female-bow-pose.png",
+          "localThumbnailPath": "thumbnails/0484_00_flying-female-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        2,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "comic"
+      ],
+      "bytes": 26350,
+      "slug": "flying-female-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0485",
+      "presetNumber": 485,
+      "label": "Standing female bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a bow pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0485_standing-female-bow-pose.pma",
+      "localScenePath": "scenes/0485_standing-female-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0485_00_standing-female-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0485_00_standing-female-bow-pose.png",
+          "localThumbnailPath": "thumbnails/0485_00_standing-female-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "comic"
+      ],
+      "bytes": 23889,
+      "slug": "standing-female-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0487",
+      "presetNumber": 487,
+      "label": "Catwoman claws jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Catwoman jumps and lets out her claws pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0487_catwoman-claws-jumping-pose.pma",
+      "localScenePath": "scenes/0487_catwoman-claws-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0487_00_catwoman-claws-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0487_00_catwoman-claws-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0487_00_catwoman-claws-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "comic"
+      ],
+      "bytes": 23437,
+      "slug": "catwoman-claws-jumping-pose"
+    },
+    {
+      "id": "guo-scene-0489",
+      "presetNumber": 489,
+      "label": "Female magic playing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female playing with magic in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0489_female-magic-playing-pose.pma",
+      "localScenePath": "scenes/0489_female-magic-playing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0489_00_female-magic-playing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0489_00_female-magic-playing-pose.png",
+          "localThumbnailPath": "thumbnails/0489_00_female-magic-playing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "comic"
+      ],
+      "bytes": 26751,
+      "slug": "female-magic-playing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0494",
+      "presetNumber": 494,
+      "label": "Female wizard spell pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female wizard reads a spell and casts a spell with her right hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0494_female-wizard-spell-pose.pma",
+      "localScenePath": "scenes/0494_female-wizard-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0494_00_female-wizard-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0494_00_female-wizard-spell-pose.png",
+          "localThumbnailPath": "thumbnails/0494_00_female-wizard-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        4
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "wizard"
+      ],
+      "bytes": 27070,
+      "slug": "female-wizard-spell-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

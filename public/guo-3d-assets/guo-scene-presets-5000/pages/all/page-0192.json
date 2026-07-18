@@ -1,0 +1,1197 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 191,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4585",
+      "presetNumber": 4585,
+      "label": "Knights horseback fighting pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Knights are fighting on horseback, wearing helmets, holding swords and shields",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4585_knights-horseback-fighting-pose.pma",
+      "localScenePath": "scenes/4585_knights-horseback-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4585_00_knights-horseback-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4585_00_knights-horseback-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4585_00_knights-horseback-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4585_01_knights-horseback-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4585_01_knights-horseback-fighting-pose.png"
+        }
+      ],
+      "modelCount": 4,
+      "propCount": 4,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 515930,
+      "slug": "knights-horseback-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4586",
+      "presetNumber": 4586,
+      "label": "Knight holding swords pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is standing and holding swords, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4586_knight-holding-swords-pose.pma",
+      "localScenePath": "scenes/4586_knight-holding-swords-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4586_00_knight-holding-swords-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4586_00_knight-holding-swords-pose.png",
+          "localThumbnailPath": "thumbnails/4586_00_knight-holding-swords-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250650,
+      "slug": "knight-holding-swords-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4587",
+      "presetNumber": 4587,
+      "label": "Knight attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is jumping to attack, holding a sword and a shield, wearing helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4587_knight-attack-pose.pma",
+      "localScenePath": "scenes/4587_knight-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4587_00_knight-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4587_00_knight-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4587_00_knight-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250644,
+      "slug": "knight-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4588",
+      "presetNumber": 4588,
+      "label": "Knight fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Knights are fighting, holding swords and shields, wearing helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4588_knight-fighting-pose.pma",
+      "localScenePath": "scenes/4588_knight-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4588_00_knight-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4588_00_knight-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4588_00_knight-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4588_01_knight-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4588_01_knight-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 501198,
+      "slug": "knight-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4589",
+      "presetNumber": 4589,
+      "label": "Knight sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Knight is standing confidently, leaning on his great sword, wearing a helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4589_knight-sword-pose.pma",
+      "localScenePath": "scenes/4589_knight-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4589_00_knight-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4589_00_knight-sword-pose.png",
+          "localThumbnailPath": "thumbnails/4589_00_knight-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 250094,
+      "slug": "knight-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4590",
+      "presetNumber": 4590,
+      "label": "Anime maid pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing with her hand on her hip and serving drinks",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4590_anime-maid-pose.pma",
+      "localScenePath": "scenes/4590_anime-maid-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4590_00_anime-maid-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4590_00_anime-maid-pose.png",
+          "localThumbnailPath": "thumbnails/4590_00_anime-maid-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        3,
+        76
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 280726,
+      "slug": "anime-maid-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4591",
+      "presetNumber": 4591,
+      "label": "Cute anime maid pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is standing, wearing heart shaped glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4591_cute-anime-maid-pose.pma",
+      "localScenePath": "scenes/4591_cute-anime-maid-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4591_00_cute-anime-maid-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4591_00_cute-anime-maid-pose.png",
+          "localThumbnailPath": "thumbnails/4591_00_cute-anime-maid-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 279324,
+      "slug": "cute-anime-maid-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4592",
+      "presetNumber": 4592,
+      "label": "Anime maid walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is walking, wearing maid apron, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4592_anime-maid-walking-pose.pma",
+      "localScenePath": "scenes/4592_anime-maid-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4592_00_anime-maid-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4592_00_anime-maid-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4592_00_anime-maid-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 278835,
+      "slug": "anime-maid-walking-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4593",
+      "presetNumber": 4593,
+      "label": "Anime maid eating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, wearing a maid apron and eating ice cream",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4593_anime-maid-eating-pose.pma",
+      "localScenePath": "scenes/4593_anime-maid-eating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4593_00_anime-maid-eating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4593_00_anime-maid-eating-pose.png",
+          "localThumbnailPath": "thumbnails/4593_00_anime-maid-eating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        130,
+        135
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 279870,
+      "slug": "anime-maid-eating-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4594",
+      "presetNumber": 4594,
+      "label": "Anime maid thinking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, wearing a maid apron and thinking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4594_anime-maid-thinking-pose.pma",
+      "localScenePath": "scenes/4594_anime-maid-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4594_00_anime-maid-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4594_00_anime-maid-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/4594_00_anime-maid-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 278828,
+      "slug": "anime-maid-thinking-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4595",
+      "presetNumber": 4595,
+      "label": "Anime maid crossed arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, wearing a maid apron, her arms are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4595_anime-maid-crossed-arms-pose.pma",
+      "localScenePath": "scenes/4595_anime-maid-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4595_00_anime-maid-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4595_00_anime-maid-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/4595_00_anime-maid-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 278844,
+      "slug": "anime-maid-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4596",
+      "presetNumber": 4596,
+      "label": "Anime maid holding hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, wearing a maid apron, holding her hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4596_anime-maid-holding-hips-pose.pma",
+      "localScenePath": "scenes/4596_anime-maid-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4596_00_anime-maid-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4596_00_anime-maid-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/4596_00_anime-maid-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 278849,
+      "slug": "anime-maid-holding-hips-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4597",
+      "presetNumber": 4597,
+      "label": "Anime maid serving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is wearing a maid apron, serving drinks at the table",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4597_anime-maid-serving-pose.pma",
+      "localScenePath": "scenes/4597_anime-maid-serving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4597_00_anime-maid-serving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4597_00_anime-maid-serving-pose.png",
+          "localThumbnailPath": "thumbnails/4597_00_anime-maid-serving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        3,
+        76,
+        136
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 281721,
+      "slug": "anime-maid-serving-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4598",
+      "presetNumber": 4598,
+      "label": "Anime maid jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is wearing a maid apron, holding cakes and jumping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4598_anime-maid-jumping-pose.pma",
+      "localScenePath": "scenes/4598_anime-maid-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4598_00_anime-maid-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4598_00_anime-maid-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/4598_00_anime-maid-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        3,
+        128,
+        129
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 282630,
+      "slug": "anime-maid-jumping-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4599",
+      "presetNumber": 4599,
+      "label": "Anime maid holding desserts pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is jumping, wearing a maid apron, holding desserts ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4599_anime-maid-holding-desserts-pose.pma",
+      "localScenePath": "scenes/4599_anime-maid-holding-desserts-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4599_00_anime-maid-holding-desserts-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4599_00_anime-maid-holding-desserts-pose.png",
+          "localThumbnailPath": "thumbnails/4599_00_anime-maid-holding-desserts-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        3,
+        108,
+        127,
+        135
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "maid",
+        "pose"
+      ],
+      "bytes": 281325,
+      "slug": "anime-maid-holding-desserts-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4600",
+      "presetNumber": 4600,
+      "label": "Holding books illustration pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, holding books, female is reading a book",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4600_holding-books-illustration-pose.pma",
+      "localScenePath": "scenes/4600_holding-books-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4600_00_holding-books-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4600_00_holding-books-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4600_00_holding-books-illustration-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4600_01_holding-books-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4600_01_holding-books-illustration-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        80,
+        172
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 47243,
+      "slug": "holding-books-illustration-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4601",
+      "presetNumber": 4601,
+      "label": "Playing guitar illustration pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground and playing guitar, male playing guitar illustration reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4601_playing-guitar-illustration-pose.pma",
+      "localScenePath": "scenes/4601_playing-guitar-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4601_00_playing-guitar-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4601_00_playing-guitar-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4601_00_playing-guitar-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        85,
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23890,
+      "slug": "playing-guitar-illustration-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4602",
+      "presetNumber": 4602,
+      "label": "Couple illustration pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Romantic female and male couple is standing, hugging each other and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4602_couple-illustration-pose.pma",
+      "localScenePath": "scenes/4602_couple-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4602_00_couple-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4602_00_couple-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4602_00_couple-illustration-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4602_01_couple-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4602_01_couple-illustration-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 45309,
+      "slug": "couple-illustration-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4603",
+      "presetNumber": 4603,
+      "label": "Fairy illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is floating, holding a fairy wand in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4603_fairy-illustration-pose.pma",
+      "localScenePath": "scenes/4603_fairy-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4603_00_fairy-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4603_00_fairy-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4603_00_fairy-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87,
+        89
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 24041,
+      "slug": "fairy-illustration-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4604",
+      "presetNumber": 4604,
+      "label": "Devil illustration pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is standing, holding katana in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4604_devil-illustration-pose.pma",
+      "localScenePath": "scenes/4604_devil-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4604_00_devil-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4604_00_devil-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4604_00_devil-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        158
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 24416,
+      "slug": "devil-illustration-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4605",
+      "presetNumber": 4605,
+      "label": "Electric guitar illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing, jumping, playing electric guitar, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4605_electric-guitar-illustration-pose.pma",
+      "localScenePath": "scenes/4605_electric-guitar-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4605_00_electric-guitar-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4605_00_electric-guitar-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4605_00_electric-guitar-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        90
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23555,
+      "slug": "electric-guitar-illustration-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4606",
+      "presetNumber": 4606,
+      "label": "Romantic illustration pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Romantic female and male couple is sitting at the table, holding wine glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4606_romantic-illustration-pose.pma",
+      "localScenePath": "scenes/4606_romantic-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4606_00_romantic-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4606_00_romantic-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4606_00_romantic-illustration-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4606_01_romantic-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4606_01_romantic-illustration-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 6,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        76,
+        139
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 48131,
+      "slug": "romantic-illustration-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4607",
+      "presetNumber": 4607,
+      "label": "Mermaid illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting on a rock, holding a trident in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4607_mermaid-illustration-pose.pma",
+      "localScenePath": "scenes/4607_mermaid-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4607_00_mermaid-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4607_00_mermaid-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4607_00_mermaid-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [
+        179,
+        180
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 17375,
+      "slug": "mermaid-illustration-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4608",
+      "presetNumber": 4608,
+      "label": "Attack illustration pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking, jumping and swinging her sword, female fighter illustration pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4608_attack-illustration-pose.pma",
+      "localScenePath": "scenes/4608_attack-illustration-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4608_00_attack-illustration-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4608_00_attack-illustration-pose.png",
+          "localThumbnailPath": "thumbnails/4608_00_attack-illustration-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "illustration",
+        "reference"
+      ],
+      "bytes": 23523,
+      "slug": "attack-illustration-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

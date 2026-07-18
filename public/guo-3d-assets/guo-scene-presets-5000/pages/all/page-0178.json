@@ -1,0 +1,1118 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 177,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4249",
+      "presetNumber": 4249,
+      "label": "Depressed holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Depressed male is sitting on the bench and holding his head with both hands, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4249_depressed-holding-head-pose.pma",
+      "localScenePath": "scenes/4249_depressed-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4249_00_depressed-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4249_00_depressed-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/4249_00_depressed-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24157,
+      "slug": "depressed-holding-head-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4250",
+      "presetNumber": 4250,
+      "label": "Brute male raging pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry brute male is raging, clenching his fists and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4250_brute-male-raging-pose.pma",
+      "localScenePath": "scenes/4250_brute-male-raging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4250_00_brute-male-raging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4250_00_brute-male-raging-pose.png",
+          "localThumbnailPath": "thumbnails/4250_00_brute-male-raging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23637,
+      "slug": "brute-male-raging-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4251",
+      "presetNumber": 4251,
+      "label": "Anime female raging pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Angry anime female is standing and raging, raising her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4251_anime-female-raging-pose.pma",
+      "localScenePath": "scenes/4251_anime-female-raging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4251_00_anime-female-raging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4251_00_anime-female-raging-pose.png",
+          "localThumbnailPath": "thumbnails/4251_00_anime-female-raging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23713,
+      "slug": "anime-female-raging-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4252",
+      "presetNumber": 4252,
+      "label": "Angry walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry brute male is walking, clenching his fists, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4252_angry-walking-pose.pma",
+      "localScenePath": "scenes/4252_angry-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4252_00_angry-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4252_00_angry-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4252_00_angry-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23685,
+      "slug": "angry-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4253",
+      "presetNumber": 4253,
+      "label": "Angry female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Angry female is standing, raging, clenching her fists and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4253_angry-female-standing-pose.pma",
+      "localScenePath": "scenes/4253_angry-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4253_00_angry-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4253_00_angry-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4253_00_angry-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23479,
+      "slug": "angry-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4254",
+      "presetNumber": 4254,
+      "label": "Angry running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry brute male is raging, running, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4254_angry-running-pose.pma",
+      "localScenePath": "scenes/4254_angry-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4254_00_angry-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4254_00_angry-running-pose.png",
+          "localThumbnailPath": "thumbnails/4254_00_angry-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23713,
+      "slug": "angry-running-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4255",
+      "presetNumber": 4255,
+      "label": "Raging holding rock pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is raging, lifting a rock above his head, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4255_raging-holding-rock-pose.pma",
+      "localScenePath": "scenes/4255_raging-holding-rock-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4255_00_raging-holding-rock-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4255_00_raging-holding-rock-pose.png",
+          "localThumbnailPath": "thumbnails/4255_00_raging-holding-rock-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        179
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24447,
+      "slug": "raging-holding-rock-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4256",
+      "presetNumber": 4256,
+      "label": "Angry male threatening pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is raging, threatening with his fist, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4256_angry-male-threatening-pose.pma",
+      "localScenePath": "scenes/4256_angry-male-threatening-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4256_00_angry-male-threatening-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4256_00_angry-male-threatening-pose.png",
+          "localThumbnailPath": "thumbnails/4256_00_angry-male-threatening-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23747,
+      "slug": "angry-male-threatening-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4257",
+      "presetNumber": 4257,
+      "label": "Couple raging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Angry couple is raging, female and male are fighting, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4257_couple-raging-pose.pma",
+      "localScenePath": "scenes/4257_couple-raging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4257_00_couple-raging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4257_00_couple-raging-pose.png",
+          "localThumbnailPath": "thumbnails/4257_00_couple-raging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4257_01_couple-raging-pose.png",
+          "localThumbnailPath": "thumbnails/4257_01_couple-raging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46704,
+      "slug": "couple-raging-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4258",
+      "presetNumber": 4258,
+      "label": "Anime couple raging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Angry anime couple is raging, female and male are fighting, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4258_anime-couple-raging-pose.pma",
+      "localScenePath": "scenes/4258_anime-couple-raging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4258_00_anime-couple-raging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4258_00_anime-couple-raging-pose.png",
+          "localThumbnailPath": "thumbnails/4258_00_anime-couple-raging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4258_01_anime-couple-raging-pose.png",
+          "localThumbnailPath": "thumbnails/4258_01_anime-couple-raging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46790,
+      "slug": "anime-couple-raging-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4259",
+      "presetNumber": 4259,
+      "label": "Brute male rage pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry brute male is raging, jumping and attacking, rage pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4259_brute-male-rage-pose.pma",
+      "localScenePath": "scenes/4259_brute-male-rage-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4259_00_brute-male-rage-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4259_00_brute-male-rage-pose.png",
+          "localThumbnailPath": "thumbnails/4259_00_brute-male-rage-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "rage",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23599,
+      "slug": "brute-male-rage-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4260",
+      "presetNumber": 4260,
+      "label": "Female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hip with her left hand, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4260_female-standing-pose.pma",
+      "localScenePath": "scenes/4260_female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4260_00_female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4260_00_female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4260_00_female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 27241,
+      "slug": "female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4261",
+      "presetNumber": 4261,
+      "label": "Female elegant sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting elegantly in the armchair, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4261_female-elegant-sitting-pose.pma",
+      "localScenePath": "scenes/4261_female-elegant-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4261_00_female-elegant-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4261_00_female-elegant-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4261_00_female-elegant-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 27753,
+      "slug": "female-elegant-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4262",
+      "presetNumber": 4262,
+      "label": "Female crouching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, kneeling, her right hand is on her knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4262_female-crouching-pose.pma",
+      "localScenePath": "scenes/4262_female-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4262_00_female-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4262_00_female-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4262_00_female-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 27259,
+      "slug": "female-crouching-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4263",
+      "presetNumber": 4263,
+      "label": "Female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, looking to the right, female anatomy art reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4263_female-kneeling-pose.pma",
+      "localScenePath": "scenes/4263_female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4263_00_female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4263_00_female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4263_00_female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 27315,
+      "slug": "female-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4264",
+      "presetNumber": 4264,
+      "label": "Female art pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, dancing with her hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4264_female-art-pose.pma",
+      "localScenePath": "scenes/4264_female-art-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4264_00_female-art-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4264_00_female-art-pose.png",
+          "localThumbnailPath": "thumbnails/4264_00_female-art-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 27274,
+      "slug": "female-art-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4265",
+      "presetNumber": 4265,
+      "label": "Male arm muscle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, showing his arm muscles, his left hand is on his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4265_male-arm-muscle-pose.pma",
+      "localScenePath": "scenes/4265_male-arm-muscle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4265_00_male-arm-muscle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4265_00_male-arm-muscle-pose.png",
+          "localThumbnailPath": "thumbnails/4265_00_male-arm-muscle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 23956,
+      "slug": "male-arm-muscle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4266",
+      "presetNumber": 4266,
+      "label": "Male cowboy hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a cowboy hat, adjusting it with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4266_male-cowboy-hat-pose.pma",
+      "localScenePath": "scenes/4266_male-cowboy-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4266_00_male-cowboy-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4266_00_male-cowboy-hat-pose.png",
+          "localThumbnailPath": "thumbnails/4266_00_male-cowboy-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [
+        186
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 24555,
+      "slug": "male-cowboy-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4267",
+      "presetNumber": 4267,
+      "label": "Male standing thinking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and thinking, holding his chin with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4267_male-standing-thinking-pose.pma",
+      "localScenePath": "scenes/4267_male-standing-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4267_00_male-standing-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4267_00_male-standing-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/4267_00_male-standing-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 23987,
+      "slug": "male-standing-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4268",
+      "presetNumber": 4268,
+      "label": "Male crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding his chin with his left hand, male anatomy art reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4268_male-crouching-pose.pma",
+      "localScenePath": "scenes/4268_male-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4268_00_male-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4268_00_male-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4268_00_male-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 23938,
+      "slug": "male-crouching-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4269",
+      "presetNumber": 4269,
+      "label": "Male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair with his legs crossed, holding his ankle, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4269_male-sitting-pose.pma",
+      "localScenePath": "scenes/4269_male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4269_00_male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4269_00_male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4269_00_male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "anatomy",
+        "art",
+        "reference"
+      ],
+      "bytes": 24377,
+      "slug": "male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4270",
+      "presetNumber": 4270,
+      "label": "Cute anime standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is standing with her legs crossed, anime drawing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4270_cute-anime-standing-pose.pma",
+      "localScenePath": "scenes/4270_cute-anime-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4270_00_cute-anime-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4270_00_cute-anime-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4270_00_cute-anime-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "drawing",
+        "poses",
+        "anime"
+      ],
+      "bytes": 24081,
+      "slug": "cute-anime-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4271",
+      "presetNumber": 4271,
+      "label": "Cute anime kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is kneeling and waving with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4271_cute-anime-kneeling-pose.pma",
+      "localScenePath": "scenes/4271_cute-anime-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4271_00_cute-anime-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4271_00_cute-anime-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4271_00_cute-anime-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "drawing",
+        "poses",
+        "anime"
+      ],
+      "bytes": 23914,
+      "slug": "cute-anime-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4272",
+      "presetNumber": 4272,
+      "label": "Anime male walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, wearing a baseball cap, anime male drawing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4272_anime-male-walking-pose.pma",
+      "localScenePath": "scenes/4272_anime-male-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4272_00_anime-male-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4272_00_anime-male-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4272_00_anime-male-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "poses",
+        "anime"
+      ],
+      "bytes": 24406,
+      "slug": "anime-male-walking-pose",
+      "tagIds": [
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "场景/室内",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1143 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 26,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-1879",
+      "presetNumber": 1879,
+      "label": "Anime lying aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying down, concentrating, holding the gun with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1879_anime-lying-aiming-pose.pma",
+      "localScenePath": "scenes/1879_anime-lying-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1879_00_anime-lying-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1879_00_anime-lying-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1879_00_anime-lying-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24669,
+      "slug": "anime-lying-aiming-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1881",
+      "presetNumber": 1881,
+      "label": "Anime male crouching katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is half crouching and pulling his katana out of its sheath with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1881_anime-male-crouching-katana-pose.pma",
+      "localScenePath": "scenes/1881_anime-male-crouching-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1881_00_anime-male-crouching-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1881_00_anime-male-crouching-katana-pose.png",
+          "localThumbnailPath": "thumbnails/1881_00_anime-male-crouching-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "samurai",
+        "pose"
+      ],
+      "bytes": 25122,
+      "slug": "anime-male-crouching-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1884",
+      "presetNumber": 1884,
+      "label": "Anime samurai strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is holding his katana with both hands and strikes with full force",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1884_anime-samurai-strike-pose.pma",
+      "localScenePath": "scenes/1884_anime-samurai-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1884_00_anime-samurai-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1884_00_anime-samurai-strike-pose.png",
+          "localThumbnailPath": "thumbnails/1884_00_anime-samurai-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "samurai",
+        "pose"
+      ],
+      "bytes": 24286,
+      "slug": "anime-samurai-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1885",
+      "presetNumber": 1885,
+      "label": "Anime samurai jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping high and looking to the left, holding katana in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1885_anime-samurai-jumping-pose.pma",
+      "localScenePath": "scenes/1885_anime-samurai-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1885_00_anime-samurai-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1885_00_anime-samurai-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1885_00_anime-samurai-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "samurai",
+        "pose"
+      ],
+      "bytes": 24787,
+      "slug": "anime-samurai-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1886",
+      "presetNumber": 1886,
+      "label": "Samurai standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing calmly, making a sign with his palms, carrying two katanas on his back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1886_samurai-standing-pose.pma",
+      "localScenePath": "scenes/1886_samurai-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1886_00_samurai-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1886_00_samurai-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1886_00_samurai-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "samurai",
+        "pose"
+      ],
+      "bytes": 24922,
+      "slug": "samurai-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1887",
+      "presetNumber": 1887,
+      "label": "Samurai kneeling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is kneeling, wearing a jingasa, his katana is in front of him and he is looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1887_samurai-kneeling-pose.pma",
+      "localScenePath": "scenes/1887_samurai-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1887_00_samurai-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1887_00_samurai-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/1887_00_samurai-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        2,
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "samurai",
+        "pose"
+      ],
+      "bytes": 24858,
+      "slug": "samurai-kneeling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1888",
+      "presetNumber": 1888,
+      "label": "Samurai running strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running and he is about to strike with his katana, holding it with both hands above his head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1888_samurai-running-strike-pose.pma",
+      "localScenePath": "scenes/1888_samurai-running-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1888_00_samurai-running-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1888_00_samurai-running-strike-pose.png",
+          "localThumbnailPath": "thumbnails/1888_00_samurai-running-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "samurai",
+        "pose"
+      ],
+      "bytes": 24270,
+      "slug": "samurai-running-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1900",
+      "presetNumber": 1900,
+      "label": "Anime male high jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping high, balancing with his hands and looking left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1900_anime-male-high-jumping-pose.pma",
+      "localScenePath": "scenes/1900_anime-male-high-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1900_00_anime-male-high-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1900_00_anime-male-high-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/1900_00_anime-male-high-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23787,
+      "slug": "anime-male-high-jumping-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1901",
+      "presetNumber": 1901,
+      "label": "Anime male casual crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is crouching and looking forward, anime casual crouching pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1901_anime-male-casual-crouching-pose.pma",
+      "localScenePath": "scenes/1901_anime-male-casual-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1901_00_anime-male-casual-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1901_00_anime-male-casual-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/1901_00_anime-male-casual-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23821,
+      "slug": "anime-male-casual-crouching-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1902",
+      "presetNumber": 1902,
+      "label": "Anime male crossed legs standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing with his legs crossed, his right hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1902_anime-male-crossed-legs-standing-pose.pma",
+      "localScenePath": "scenes/1902_anime-male-crossed-legs-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1902_00_anime-male-crossed-legs-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1902_00_anime-male-crossed-legs-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1902_00_anime-male-crossed-legs-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23750,
+      "slug": "anime-male-crossed-legs-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1903",
+      "presetNumber": 1903,
+      "label": "Anime male casual sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is sitting casually in an armchair with his legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1903_anime-male-casual-sitting-pose.pma",
+      "localScenePath": "scenes/1903_anime-male-casual-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1903_00_anime-male-casual-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1903_00_anime-male-casual-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1903_00_anime-male-casual-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 24193,
+      "slug": "anime-male-casual-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1904",
+      "presetNumber": 1904,
+      "label": "Anime male lying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying comfortably on the couch with his legs crossed and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1904_anime-male-lying-pose.pma",
+      "localScenePath": "scenes/1904_anime-male-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1904_00_anime-male-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1904_00_anime-male-lying-pose.png",
+          "localThumbnailPath": "thumbnails/1904_00_anime-male-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 24773,
+      "slug": "anime-male-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1905",
+      "presetNumber": 1905,
+      "label": "Anime male boxing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is in boxing stance, his hands are clenched into fists and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1905_anime-male-boxing-pose.pma",
+      "localScenePath": "scenes/1905_anime-male-boxing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1905_00_anime-male-boxing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1905_00_anime-male-boxing-pose.png",
+          "localThumbnailPath": "thumbnails/1905_00_anime-male-boxing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23800,
+      "slug": "anime-male-boxing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1906",
+      "presetNumber": 1906,
+      "label": "Anime male hands hips pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing with his hands on his hips, his hands are clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1906_anime-male-hands-hips-pose.pma",
+      "localScenePath": "scenes/1906_anime-male-hands-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1906_00_anime-male-hands-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1906_00_anime-male-hands-hips-pose.png",
+          "localThumbnailPath": "thumbnails/1906_00_anime-male-hands-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23717,
+      "slug": "anime-male-hands-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1907",
+      "presetNumber": 1907,
+      "label": "Anime male casual walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually and looking forward, anime walking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1907_anime-male-casual-walking-pose.pma",
+      "localScenePath": "scenes/1907_anime-male-casual-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1907_00_anime-male-casual-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1907_00_anime-male-casual-walking-pose.png",
+          "localThumbnailPath": "thumbnails/1907_00_anime-male-casual-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23842,
+      "slug": "anime-male-casual-walking-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1908",
+      "presetNumber": 1908,
+      "label": "Anime male dancing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is breakdancing, standing on his right hand, anime dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1908_anime-male-dancing-pose.pma",
+      "localScenePath": "scenes/1908_anime-male-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1908_00_anime-male-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1908_00_anime-male-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1908_00_anime-male-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23879,
+      "slug": "anime-male-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1909",
+      "presetNumber": 1909,
+      "label": "Anime male crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing confidently with his arms and legs crossed and looking right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1909_anime-male-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1909_anime-male-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1909_00_anime-male-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1909_00_anime-male-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1909_00_anime-male-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "male",
+        "pose"
+      ],
+      "bytes": 23794,
+      "slug": "anime-male-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1910",
+      "presetNumber": 1910,
+      "label": "Anime hero flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male hero is flying upwards, holding his right fist up, looking upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1910_anime-hero-flying-pose.pma",
+      "localScenePath": "scenes/1910_anime-hero-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1910_00_anime-hero-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1910_00_anime-hero-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1910_00_anime-hero-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hero",
+        "pose"
+      ],
+      "bytes": 23816,
+      "slug": "anime-hero-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1911",
+      "presetNumber": 1911,
+      "label": "Anime male flying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male hero is flying upwards, clenches his hands into fists, looking up, bends his left leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1911_anime-male-flying-pose.pma",
+      "localScenePath": "scenes/1911_anime-male-flying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1911_00_anime-male-flying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1911_00_anime-male-flying-pose.png",
+          "localThumbnailPath": "thumbnails/1911_00_anime-male-flying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hero",
+        "pose"
+      ],
+      "bytes": 23771,
+      "slug": "anime-male-flying-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1912",
+      "presetNumber": 1912,
+      "label": "Anime hero landing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male hero is landing, touching the ground with his left hand and balancing with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1912_anime-hero-landing-pose.pma",
+      "localScenePath": "scenes/1912_anime-hero-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1912_00_anime-hero-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1912_00_anime-hero-landing-pose.png",
+          "localThumbnailPath": "thumbnails/1912_00_anime-hero-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hero",
+        "pose"
+      ],
+      "bytes": 23848,
+      "slug": "anime-hero-landing-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1913",
+      "presetNumber": 1913,
+      "label": "Anime hero attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male hero is about to attack, clenching his fists and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1913_anime-hero-attack-pose.pma",
+      "localScenePath": "scenes/1913_anime-hero-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1913_00_anime-hero-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1913_00_anime-hero-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1913_00_anime-hero-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hero",
+        "pose"
+      ],
+      "bytes": 23744,
+      "slug": "anime-hero-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1926",
+      "presetNumber": 1926,
+      "label": "Kneeling looking rigth pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is kneeling, leaning on his right knee, his left hand is on his left knee and he is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1926_kneeling-looking-rigth-pose.pma",
+      "localScenePath": "scenes/1926_kneeling-looking-rigth-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1926_00_kneeling-looking-rigth-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1926_00_kneeling-looking-rigth-pose.png",
+          "localThumbnailPath": "thumbnails/1926_00_kneeling-looking-rigth-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kneeling",
+        "pose"
+      ],
+      "bytes": 23832,
+      "slug": "kneeling-looking-rigth-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1927",
+      "presetNumber": 1927,
+      "label": "Anime kneeling resting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is kneeling, leaning on his right knee, his left leg is extended, and he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1927_anime-kneeling-resting-pose.pma",
+      "localScenePath": "scenes/1927_anime-kneeling-resting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1927_00_anime-kneeling-resting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1927_00_anime-kneeling-resting-pose.png",
+          "localThumbnailPath": "thumbnails/1927_00_anime-kneeling-resting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kneeling",
+        "pose"
+      ],
+      "bytes": 23814,
+      "slug": "anime-kneeling-resting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1928",
+      "presetNumber": 1928,
+      "label": "Anime landing kneeling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is landing, leaning on his left knee and balancing with his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1928_anime-landing-kneeling-pose.pma",
+      "localScenePath": "scenes/1928_anime-landing-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1928_00_anime-landing-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1928_00_anime-landing-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/1928_00_anime-landing-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kneeling",
+        "pose"
+      ],
+      "bytes": 23824,
+      "slug": "anime-landing-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1127 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 57,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1369",
+      "presetNumber": 1369,
+      "label": "Two males sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are sitting comfortably on the couch and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1369_two-males-sitting-pose.pma",
+      "localScenePath": "scenes/1369_two-males-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1369_00_two-males-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1369_00_two-males-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1369_00_two-males-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1369_01_two-males-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1369_01_two-males-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 49033,
+      "slug": "two-males-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-1370",
+      "presetNumber": 1370,
+      "label": "Couple holding hands walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are walking and holding each other's hands, holding hands pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1370_couple-holding-hands-walking-pose.pma",
+      "localScenePath": "scenes/1370_couple-holding-hands-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1370_00_couple-holding-hands-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1370_00_couple-holding-hands-walking-pose.png",
+          "localThumbnailPath": "thumbnails/1370_00_couple-holding-hands-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1370_01_couple-holding-hands-walking-pose.png",
+          "localThumbnailPath": "thumbnails/1370_01_couple-holding-hands-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46362,
+      "slug": "couple-holding-hands-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1371",
+      "presetNumber": 1371,
+      "label": "Holding kissing hand pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing in front of each other, holding hands, the male is about to kiss the female's hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1371_holding-kissing-hand-pose.pma",
+      "localScenePath": "scenes/1371_holding-kissing-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1371_00_holding-kissing-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1371_00_holding-kissing-hand-pose.png",
+          "localThumbnailPath": "thumbnails/1371_00_holding-kissing-hand-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1371_01_holding-kissing-hand-pose.png",
+          "localThumbnailPath": "thumbnails/1371_01_holding-kissing-hand-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46429,
+      "slug": "holding-kissing-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1372",
+      "presetNumber": 1372,
+      "label": "Two females celebrating pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two happy females are celebrating, standing in front os each other and holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1372_two-females-celebrating-pose.pma",
+      "localScenePath": "scenes/1372_two-females-celebrating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1372_00_two-females-celebrating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1372_00_two-females-celebrating-pose.png",
+          "localThumbnailPath": "thumbnails/1372_00_two-females-celebrating-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1372_01_two-females-celebrating-pose.png",
+          "localThumbnailPath": "thumbnails/1372_01_two-females-celebrating-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46272,
+      "slug": "two-females-celebrating-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1373",
+      "presetNumber": 1373,
+      "label": "Two females walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are walking hand in hand, one holding the other's hand and leading the way",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1373_two-females-walking-pose.pma",
+      "localScenePath": "scenes/1373_two-females-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1373_00_two-females-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1373_00_two-females-walking-pose.png",
+          "localThumbnailPath": "thumbnails/1373_00_two-females-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1373_01_two-females-walking-pose.png",
+          "localThumbnailPath": "thumbnails/1373_01_two-females-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46155,
+      "slug": "two-females-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1374",
+      "presetNumber": 1374,
+      "label": "Standing holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and holding each other's hands and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1374_standing-holding-hands-pose.pma",
+      "localScenePath": "scenes/1374_standing-holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1374_00_standing-holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1374_00_standing-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1374_00_standing-holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1374_01_standing-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1374_01_standing-holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46458,
+      "slug": "standing-holding-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1375",
+      "presetNumber": 1375,
+      "label": "Romantic sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting at a table in front of each other and holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1375_romantic-sitting-pose.pma",
+      "localScenePath": "scenes/1375_romantic-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1375_00_romantic-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1375_00_romantic-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1375_00_romantic-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1375_01_romantic-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1375_01_romantic-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        139
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 48540,
+      "slug": "romantic-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1376",
+      "presetNumber": 1376,
+      "label": "Sittinh holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch and holding hands, couple holding hands pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1376_sittinh-holding-hands-pose.pma",
+      "localScenePath": "scenes/1376_sittinh-holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1376_00_sittinh-holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1376_00_sittinh-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1376_00_sittinh-holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1376_01_sittinh-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1376_01_sittinh-holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 47824,
+      "slug": "sittinh-holding-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1377",
+      "presetNumber": 1377,
+      "label": "Dancing holding hand pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing, holding hands, looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1377_dancing-holding-hand-pose.pma",
+      "localScenePath": "scenes/1377_dancing-holding-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1377_00_dancing-holding-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1377_00_dancing-holding-hand-pose.png",
+          "localThumbnailPath": "thumbnails/1377_00_dancing-holding-hand-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1377_01_dancing-holding-hand-pose.png",
+          "localThumbnailPath": "thumbnails/1377_01_dancing-holding-hand-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46683,
+      "slug": "dancing-holding-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1378",
+      "presetNumber": 1378,
+      "label": "Females holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing in front of each other and holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1378_females-holding-hands-pose.pma",
+      "localScenePath": "scenes/1378_females-holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1378_00_females-holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1378_00_females-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1378_00_females-holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1378_01_females-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1378_01_females-holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46210,
+      "slug": "females-holding-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1379",
+      "presetNumber": 1379,
+      "label": "Romantic holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing in front of each other, holding hands and they are about to kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1379_romantic-holding-hands-pose.pma",
+      "localScenePath": "scenes/1379_romantic-holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1379_00_romantic-holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1379_00_romantic-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1379_00_romantic-holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1379_01_romantic-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1379_01_romantic-holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hands",
+        "pose"
+      ],
+      "bytes": 46604,
+      "slug": "romantic-holding-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1380",
+      "presetNumber": 1380,
+      "label": "Boxing stance male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male right handed basic boxing stance,  left hand and left foot forward, fists are close to the face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1380_boxing-stance-male-pose.pma",
+      "localScenePath": "scenes/1380_boxing-stance-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1380_00_boxing-stance-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1380_00_boxing-stance-male-pose.png",
+          "localThumbnailPath": "thumbnails/1380_00_boxing-stance-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23842,
+      "slug": "boxing-stance-male-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1381",
+      "presetNumber": 1381,
+      "label": "Cross power punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male cross power punch with right hand, right handed boxing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1381_cross-power-punch-pose.pma",
+      "localScenePath": "scenes/1381_cross-power-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1381_00_cross-power-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1381_00_cross-power-punch-pose.png",
+          "localThumbnailPath": "thumbnails/1381_00_cross-power-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23669,
+      "slug": "cross-power-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1382",
+      "presetNumber": 1382,
+      "label": "Left uppercut pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is throwing a left uppercut, box punching with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1382_left-uppercut-pose.pma",
+      "localScenePath": "scenes/1382_left-uppercut-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1382_00_left-uppercut-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1382_00_left-uppercut-pose.png",
+          "localThumbnailPath": "thumbnails/1382_00_left-uppercut-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23657,
+      "slug": "left-uppercut-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1383",
+      "presetNumber": 1383,
+      "label": "Right uppercut pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is throwing a right uppercut, box punching with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1383_right-uppercut-pose.pma",
+      "localScenePath": "scenes/1383_right-uppercut-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1383_00_right-uppercut-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1383_00_right-uppercut-pose.png",
+          "localThumbnailPath": "thumbnails/1383_00_right-uppercut-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23692,
+      "slug": "right-uppercut-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1384",
+      "presetNumber": 1384,
+      "label": "Right hook pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male right hook boxing pose, right elbow and left hand up, turning right heel",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1384_right-hook-pose.pma",
+      "localScenePath": "scenes/1384_right-hook-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1384_00_right-hook-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1384_00_right-hook-pose.png",
+          "localThumbnailPath": "thumbnails/1384_00_right-hook-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23693,
+      "slug": "right-hook-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1385",
+      "presetNumber": 1385,
+      "label": "Boxing stance female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female right handed basic boxing stance,  left hand and left foot forward, fists are close to the face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1385_boxing-stance-female-pose.pma",
+      "localScenePath": "scenes/1385_boxing-stance-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1385_00_boxing-stance-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1385_00_boxing-stance-female-pose.png",
+          "localThumbnailPath": "thumbnails/1385_00_boxing-stance-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23413,
+      "slug": "boxing-stance-female-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1386",
+      "presetNumber": 1386,
+      "label": "Female left hook pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female left hook boxing pose, left elbow and right hand up, turning right heel",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1386_female-left-hook-pose.pma",
+      "localScenePath": "scenes/1386_female-left-hook-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1386_00_female-left-hook-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1386_00_female-left-hook-pose.png",
+          "localThumbnailPath": "thumbnails/1386_00_female-left-hook-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23460,
+      "slug": "female-left-hook-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1387",
+      "presetNumber": 1387,
+      "label": "Box knocking out pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are boxing, one of them knocks out his opponent with a right hook",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1387_box-knocking-out-pose.pma",
+      "localScenePath": "scenes/1387_box-knocking-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1387_00_box-knocking-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1387_00_box-knocking-out-pose.png",
+          "localThumbnailPath": "thumbnails/1387_00_box-knocking-out-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1387_01_box-knocking-out-pose.png",
+          "localThumbnailPath": "thumbnails/1387_01_box-knocking-out-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 46571,
+      "slug": "box-knocking-out-pose"
+    },
+    {
+      "id": "guo-scene-1388",
+      "presetNumber": 1388,
+      "label": "Announcing winner pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "The referee announces the winner of the boxing match and raises his hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1388_announcing-winner-pose.pma",
+      "localScenePath": "scenes/1388_announcing-winner-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1388_00_announcing-winner-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1388_00_announcing-winner-pose.png",
+          "localThumbnailPath": "thumbnails/1388_00_announcing-winner-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1388_01_announcing-winner-pose.png",
+          "localThumbnailPath": "thumbnails/1388_01_announcing-winner-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1388_02_announcing-winner-pose.png",
+          "localThumbnailPath": "thumbnails/1388_02_announcing-winner-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 69526,
+      "slug": "announcing-winner-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1389",
+      "presetNumber": 1389,
+      "label": "Dodging left hook pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are boxing, one of them throwing a left hook, the other dodges the punch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1389_dodging-left-hook-pose.pma",
+      "localScenePath": "scenes/1389_dodging-left-hook-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1389_00_dodging-left-hook-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1389_00_dodging-left-hook-pose.png",
+          "localThumbnailPath": "thumbnails/1389_00_dodging-left-hook-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1389_01_dodging-left-hook-pose.png",
+          "localThumbnailPath": "thumbnails/1389_01_dodging-left-hook-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 46711,
+      "slug": "dodging-left-hook-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1390",
+      "presetNumber": 1390,
+      "label": "Female standing casually pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually, holding her hands and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1390_female-standing-casually-pose.pma",
+      "localScenePath": "scenes/1390_female-standing-casually-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1390_00_female-standing-casually-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1390_00_female-standing-casually-pose.png",
+          "localThumbnailPath": "thumbnails/1390_00_female-standing-casually-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27355,
+      "slug": "female-standing-casually-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1391",
+      "presetNumber": 1391,
+      "label": "Hands hips standing female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her hands on hips and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1391_hands-hips-standing-female-pose.pma",
+      "localScenePath": "scenes/1391_hands-hips-standing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1391_00_hands-hips-standing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1391_00_hands-hips-standing-female-pose.png",
+          "localThumbnailPath": "thumbnails/1391_00_hands-hips-standing-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27374,
+      "slug": "hands-hips-standing-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1392",
+      "presetNumber": 1392,
+      "label": "Casual walking female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, looking forward and walking straight, casual walking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1392_casual-walking-female-pose.pma",
+      "localScenePath": "scenes/1392_casual-walking-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1392_00_casual-walking-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1392_00_casual-walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/1392_00_casual-walking-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27311,
+      "slug": "casual-walking-female-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1085 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 91,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2185",
+      "presetNumber": 2185,
+      "label": "Female holding crossbow aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding the crossbow with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2185_female-holding-crossbow-aiming-pose.pma",
+      "localScenePath": "scenes/2185_female-holding-crossbow-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2185_00_female-holding-crossbow-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2185_00_female-holding-crossbow-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2185_00_female-holding-crossbow-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23973,
+      "slug": "female-holding-crossbow-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2186",
+      "presetNumber": 2186,
+      "label": "Crossbow lying aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying down, holding the crossbow with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2186_crossbow-lying-aiming-pose.pma",
+      "localScenePath": "scenes/2186_crossbow-lying-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2186_00_crossbow-lying-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2186_00_crossbow-lying-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2186_00_crossbow-lying-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24234,
+      "slug": "crossbow-lying-aiming-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2187",
+      "presetNumber": 2187,
+      "label": "Crossbow kneeling aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, holding the crossbow with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2187_crossbow-kneeling-aiming-pose.pma",
+      "localScenePath": "scenes/2187_crossbow-kneeling-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2187_00_crossbow-kneeling-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2187_00_crossbow-kneeling-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2187_00_crossbow-kneeling-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23972,
+      "slug": "crossbow-kneeling-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2188",
+      "presetNumber": 2188,
+      "label": "Crossbow barrel aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling and aiming his crossbow while leaning on a barrel",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2188_crossbow-barrel-aiming-pose.pma",
+      "localScenePath": "scenes/2188_crossbow-barrel-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2188_00_crossbow-barrel-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2188_00_crossbow-barrel-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2188_00_crossbow-barrel-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        160,
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24708,
+      "slug": "crossbow-barrel-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2189",
+      "presetNumber": 2189,
+      "label": "Crossbow squatting aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting, holding the crossbow with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2189_crossbow-squatting-aiming-pose.pma",
+      "localScenePath": "scenes/2189_crossbow-squatting-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2189_00_crossbow-squatting-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2189_00_crossbow-squatting-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2189_00_crossbow-squatting-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossbow",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24239,
+      "slug": "crossbow-squatting-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2190",
+      "presetNumber": 2190,
+      "label": "Head kick attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is attacking the other male, kicking him in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2190_head-kick-attack-pose.pma",
+      "localScenePath": "scenes/2190_head-kick-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2190_00_head-kick-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2190_00_head-kick-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2190_00_head-kick-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2190_01_head-kick-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2190_01_head-kick-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 46599,
+      "slug": "head-kick-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2191",
+      "presetNumber": 2191,
+      "label": "Head punch attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is attacking the other female, hitting her in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2191_head-punch-attack-pose.pma",
+      "localScenePath": "scenes/2191_head-punch-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2191_00_head-punch-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2191_00_head-punch-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2191_00_head-punch-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2191_01_head-punch-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2191_01_head-punch-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 46441,
+      "slug": "head-punch-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2192",
+      "presetNumber": 2192,
+      "label": "Anime female attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is attacking from behind, jumping up to strike with her katana",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2192_anime-female-attack-pose.pma",
+      "localScenePath": "scenes/2192_anime-female-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2192_00_anime-female-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2192_00_anime-female-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2192_00_anime-female-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2192_01_anime-female-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2192_01_anime-female-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 47207,
+      "slug": "anime-female-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2193",
+      "presetNumber": 2193,
+      "label": "Anime katana attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping high, she is about to attack, holding a katana with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2193_anime-katana-attack-pose.pma",
+      "localScenePath": "scenes/2193_anime-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2193_00_anime-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2193_00_anime-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2193_00_anime-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24349,
+      "slug": "anime-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2194",
+      "presetNumber": 2194,
+      "label": "Side kick attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping and doing a side kick in the air, anime attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2194_side-kick-attack-pose.pma",
+      "localScenePath": "scenes/2194_side-kick-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2194_00_side-kick-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2194_00_side-kick-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2194_00_side-kick-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 23910,
+      "slug": "side-kick-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2195",
+      "presetNumber": 2195,
+      "label": "Kunai attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing and he is about to attack with a kunai",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2195_kunai-attack-pose.pma",
+      "localScenePath": "scenes/2195_kunai-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2195_00_kunai-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2195_00_kunai-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2195_00_kunai-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24068,
+      "slug": "kunai-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2196",
+      "presetNumber": 2196,
+      "label": "Katana attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is attacking, jumping high to stab with his katana in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2196_katana-attack-pose.pma",
+      "localScenePath": "scenes/2196_katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2196_00_katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2196_00_katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2196_00_katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24250,
+      "slug": "katana-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2197",
+      "presetNumber": 2197,
+      "label": "Anime male axe attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is attacking, jumping high to strike with an axe, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2197_anime-male-axe-attack-pose.pma",
+      "localScenePath": "scenes/2197_anime-male-axe-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2197_00_anime-male-axe-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2197_00_anime-male-axe-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2197_00_anime-male-axe-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24312,
+      "slug": "anime-male-axe-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2198",
+      "presetNumber": 2198,
+      "label": "Anime ninja attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping, holding katanas in both hands and he is about to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2198_anime-ninja-attack-pose.pma",
+      "localScenePath": "scenes/2198_anime-ninja-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2198_00_anime-ninja-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2198_00_anime-ninja-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2198_00_anime-ninja-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24835,
+      "slug": "anime-ninja-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2199",
+      "presetNumber": 2199,
+      "label": "Anime kama attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is about to attack with two kamas, jumping high and raising her hands to stab",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2199_anime-kama-attack-pose.pma",
+      "localScenePath": "scenes/2199_anime-kama-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2199_00_anime-kama-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2199_00_anime-kama-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2199_00_anime-kama-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        56
+      ],
+      "propNumbers": [
+        142
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24658,
+      "slug": "anime-kama-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2200",
+      "presetNumber": 2200,
+      "label": "Female crawling belly pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crawling on her belly, close to the ground crawling pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2200_female-crawling-belly-pose.pma",
+      "localScenePath": "scenes/2200_female-crawling-belly-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2200_00_female-crawling-belly-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2200_00_female-crawling-belly-pose.png",
+          "localThumbnailPath": "thumbnails/2200_00_female-crawling-belly-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23634,
+      "slug": "female-crawling-belly-pose"
+    },
+    {
+      "id": "guo-scene-2201",
+      "presetNumber": 2201,
+      "label": "Male crawling belly pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crawling on his belly, close to the ground crawling pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2201_male-crawling-belly-pose.pma",
+      "localScenePath": "scenes/2201_male-crawling-belly-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2201_00_male-crawling-belly-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2201_00_male-crawling-belly-pose.png",
+          "localThumbnailPath": "thumbnails/2201_00_male-crawling-belly-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23869,
+      "slug": "male-crawling-belly-pose"
+    },
+    {
+      "id": "guo-scene-2202",
+      "presetNumber": 2202,
+      "label": "Female crawling knees pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crawling on her knees, using her palms and knees to crawl",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2202_female-crawling-knees-pose.pma",
+      "localScenePath": "scenes/2202_female-crawling-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2202_00_female-crawling-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2202_00_female-crawling-knees-pose.png",
+          "localThumbnailPath": "thumbnails/2202_00_female-crawling-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23563,
+      "slug": "female-crawling-knees-pose"
+    },
+    {
+      "id": "guo-scene-2203",
+      "presetNumber": 2203,
+      "label": "Male crawling knees pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crawling on his knees, using his palms and knees to crawl",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2203_male-crawling-knees-pose.pma",
+      "localScenePath": "scenes/2203_male-crawling-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2203_00_male-crawling-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2203_00_male-crawling-knees-pose.png",
+          "localThumbnailPath": "thumbnails/2203_00_male-crawling-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23842,
+      "slug": "male-crawling-knees-pose"
+    },
+    {
+      "id": "guo-scene-2204",
+      "presetNumber": 2204,
+      "label": "Crawling looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crawling on her knees and palms and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2204_crawling-looking-left-pose.pma",
+      "localScenePath": "scenes/2204_crawling-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2204_00_crawling-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2204_00_crawling-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/2204_00_crawling-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23564,
+      "slug": "crawling-looking-left-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2205",
+      "presetNumber": 2205,
+      "label": "Crawling looking right pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crawling on his knees and palms and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2205_crawling-looking-right-pose.pma",
+      "localScenePath": "scenes/2205_crawling-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2205_00_crawling-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2205_00_crawling-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/2205_00_crawling-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23846,
+      "slug": "crawling-looking-right-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2206",
+      "presetNumber": 2206,
+      "label": "Crawling holding knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crawling and holding a knife in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2206_crawling-holding-knife-pose.pma",
+      "localScenePath": "scenes/2206_crawling-holding-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2206_00_crawling-holding-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2206_00_crawling-holding-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2206_00_crawling-holding-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 24207,
+      "slug": "crawling-holding-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2207",
+      "presetNumber": 2207,
+      "label": "Crawling asking help pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crawling and asking for help, reaching out her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2207_crawling-asking-help-pose.pma",
+      "localScenePath": "scenes/2207_crawling-asking-help-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2207_00_crawling-asking-help-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2207_00_crawling-asking-help-pose.png",
+          "localThumbnailPath": "thumbnails/2207_00_crawling-asking-help-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23608,
+      "slug": "crawling-asking-help-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2208",
+      "presetNumber": 2208,
+      "label": "Crawling clenched fists pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crawling with his hands clenched into fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2208_crawling-clenched-fists-pose.pma",
+      "localScenePath": "scenes/2208_crawling-clenched-fists-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2208_00_crawling-clenched-fists-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2208_00_crawling-clenched-fists-pose.png",
+          "localThumbnailPath": "thumbnails/2208_00_crawling-clenched-fists-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crawling",
+        "pose"
+      ],
+      "bytes": 23675,
+      "slug": "crawling-clenched-fists-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

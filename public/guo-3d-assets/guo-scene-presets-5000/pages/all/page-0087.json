@@ -1,0 +1,1192 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 86,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2065",
+      "presetNumber": 2065,
+      "label": "Zombie transforming pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Zombie is transforming, his body and head are bent back and he is hobbling with his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2065_zombie-transforming-pose.pma",
+      "localScenePath": "scenes/2065_zombie-transforming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2065_00_zombie-transforming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2065_00_zombie-transforming-pose.png",
+          "localThumbnailPath": "thumbnails/2065_00_zombie-transforming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 23941,
+      "slug": "zombie-transforming-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2066",
+      "presetNumber": 2066,
+      "label": "Zombie looking back pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Zombie is walking and looking back, slowly turning backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2066_zombie-looking-back-pose.pma",
+      "localScenePath": "scenes/2066_zombie-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2066_00_zombie-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2066_00_zombie-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/2066_00_zombie-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 23915,
+      "slug": "zombie-looking-back-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2067",
+      "presetNumber": 2067,
+      "label": "Zombie chasing female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Zombie is chasing a female who is trying to run away from him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2067_zombie-chasing-female-pose.pma",
+      "localScenePath": "scenes/2067_zombie-chasing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2067_00_zombie-chasing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2067_00_zombie-chasing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2067_00_zombie-chasing-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2067_01_zombie-chasing-female-pose.png",
+          "localThumbnailPath": "thumbnails/2067_01_zombie-chasing-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 50403,
+      "slug": "zombie-chasing-female-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2068",
+      "presetNumber": 2068,
+      "label": "Zombie catching female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Zombie is catching the leg of the female, who is trying to break free",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2068_zombie-catching-female-pose.pma",
+      "localScenePath": "scenes/2068_zombie-catching-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2068_00_zombie-catching-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2068_00_zombie-catching-female-pose.png",
+          "localThumbnailPath": "thumbnails/2068_00_zombie-catching-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2068_01_zombie-catching-female-pose.png",
+          "localThumbnailPath": "thumbnails/2068_01_zombie-catching-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48,
+        62
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 50576,
+      "slug": "zombie-catching-female-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2069",
+      "presetNumber": 2069,
+      "label": "Zombie headshot pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female shoots the zombie in the head with a pistol, who falls backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2069_zombie-headshot-pose.pma",
+      "localScenePath": "scenes/2069_zombie-headshot-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2069_00_zombie-headshot-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2069_00_zombie-headshot-pose.png",
+          "localThumbnailPath": "thumbnails/2069_00_zombie-headshot-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2069_01_zombie-headshot-pose.png",
+          "localThumbnailPath": "thumbnails/2069_01_zombie-headshot-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        48,
+        62
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        62
+      ],
+      "sourceTags": [
+        "zombie",
+        "pose"
+      ],
+      "bytes": 50868,
+      "slug": "zombie-headshot-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2070",
+      "presetNumber": 2070,
+      "label": "Anime sad standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad anime female is standing looking down, sad anime standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2070_anime-sad-standing-pose.pma",
+      "localScenePath": "scenes/2070_anime-sad-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2070_00_anime-sad-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2070_00_anime-sad-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2070_00_anime-sad-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23878,
+      "slug": "anime-sad-standing-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2071",
+      "presetNumber": 2071,
+      "label": "Anime sad walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad anime female is walking, looking down, sad anime walking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2071_anime-sad-walking-pose.pma",
+      "localScenePath": "scenes/2071_anime-sad-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2071_00_anime-sad-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2071_00_anime-sad-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2071_00_anime-sad-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23867,
+      "slug": "anime-sad-walking-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2072",
+      "presetNumber": 2072,
+      "label": "Anime sad sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Sad anime female is sitting, another female is sitting next to her and puts her hand on her shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2072_anime-sad-sitting-pose.pma",
+      "localScenePath": "scenes/2072_anime-sad-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2072_00_anime-sad-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2072_00_anime-sad-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2072_00_anime-sad-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2072_01_anime-sad-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2072_01_anime-sad-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 46680,
+      "slug": "anime-sad-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2073",
+      "presetNumber": 2073,
+      "label": "Sad anime male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad anime male is standing, holding his head with his left hand and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2073_sad-anime-male-pose.pma",
+      "localScenePath": "scenes/2073_sad-anime-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2073_00_sad-anime-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2073_00_sad-anime-male-pose.png",
+          "localThumbnailPath": "thumbnails/2073_00_sad-anime-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23807,
+      "slug": "sad-anime-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2074",
+      "presetNumber": 2074,
+      "label": "Anime crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad anime female is standing and crying, covering her face with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2074_anime-crying-pose.pma",
+      "localScenePath": "scenes/2074_anime-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2074_00_anime-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2074_00_anime-crying-pose.png",
+          "localThumbnailPath": "thumbnails/2074_00_anime-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23939,
+      "slug": "anime-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2075",
+      "presetNumber": 2075,
+      "label": "Anime sad squatting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad anime male is squatting, looking down, sad anime male pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2075_anime-sad-squatting-pose.pma",
+      "localScenePath": "scenes/2075_anime-sad-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2075_00_anime-sad-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2075_00_anime-sad-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2075_00_anime-sad-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23737,
+      "slug": "anime-sad-squatting-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2076",
+      "presetNumber": 2076,
+      "label": "Sad anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad anime female is sitting on a bar stool, leaning on the bar table, holding her head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2076_sad-anime-female-pose.pma",
+      "localScenePath": "scenes/2076_sad-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2076_00_sad-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2076_00_sad-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/2076_00_sad-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        77,
+        78
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 24865,
+      "slug": "sad-anime-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2077",
+      "presetNumber": 2077,
+      "label": "Sad male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad anime male is sitting alone on a bench and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2077_sad-male-sitting-pose.pma",
+      "localScenePath": "scenes/2077_sad-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2077_00_sad-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2077_00_sad-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2077_00_sad-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 24273,
+      "slug": "sad-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2078",
+      "presetNumber": 2078,
+      "label": "Sad couple sitting looking down pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Sad anime female and male are sitting on a bench and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2078_sad-couple-sitting-looking-down-pose.pma",
+      "localScenePath": "scenes/2078_sad-couple-sitting-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2078_00_sad-couple-sitting-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2078_00_sad-couple-sitting-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/2078_00_sad-couple-sitting-looking-down-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2078_01_sad-couple-sitting-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/2078_01_sad-couple-sitting-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 47377,
+      "slug": "sad-couple-sitting-looking-down-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2079",
+      "presetNumber": 2079,
+      "label": "Females sad walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two sad anime females are walking, holding each other's hands and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2079_females-sad-walking-pose.pma",
+      "localScenePath": "scenes/2079_females-sad-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2079_00_females-sad-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2079_00_females-sad-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2079_00_females-sad-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2079_01_females-sad-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2079_01_females-sad-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 46856,
+      "slug": "females-sad-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2080",
+      "presetNumber": 2080,
+      "label": "Female right hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is extending her right hand for a handshake and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2080_female-right-hand-pose.pma",
+      "localScenePath": "scenes/2080_female-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2080_00_female-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2080_00_female-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2080_00_female-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23579,
+      "slug": "female-right-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2081",
+      "presetNumber": 2081,
+      "label": "Male right hand pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is extending his right hand for a handshake and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2081_male-right-hand-pose.pma",
+      "localScenePath": "scenes/2081_male-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2081_00_male-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2081_00_male-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2081_00_male-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23827,
+      "slug": "male-right-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2082",
+      "presetNumber": 2082,
+      "label": "Female handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are shaking hands, looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2082_female-handshake-pose.pma",
+      "localScenePath": "scenes/2082_female-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2082_00_female-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2082_00_female-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2082_00_female-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2082_01_female-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2082_01_female-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46208,
+      "slug": "female-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2083",
+      "presetNumber": 2083,
+      "label": "Male handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are shaking hands, looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2083_male-handshake-pose.pma",
+      "localScenePath": "scenes/2083_male-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2083_00_male-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2083_00_male-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2083_00_male-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2083_01_male-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2083_01_male-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46681,
+      "slug": "male-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2084",
+      "presetNumber": 2084,
+      "label": "Female kind handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are shaking hands, one is holding the other's hand with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2084_female-kind-handshake-pose.pma",
+      "localScenePath": "scenes/2084_female-kind-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2084_00_female-kind-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2084_00_female-kind-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2084_00_female-kind-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2084_01_female-kind-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2084_01_female-kind-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46183,
+      "slug": "female-kind-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2085",
+      "presetNumber": 2085,
+      "label": "Male friendly handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are shaking hands and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2085_male-friendly-handshake-pose.pma",
+      "localScenePath": "scenes/2085_male-friendly-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2085_00_male-friendly-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2085_00_male-friendly-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2085_00_male-friendly-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2085_01_male-friendly-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2085_01_male-friendly-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46903,
+      "slug": "male-friendly-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2086",
+      "presetNumber": 2086,
+      "label": "Male sitting handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are sitting at a table in front of each other and shaking hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2086_male-sitting-handshake-pose.pma",
+      "localScenePath": "scenes/2086_male-sitting-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2086_00_male-sitting-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2086_00_male-sitting-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2086_00_male-sitting-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2086_01_male-sitting-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2086_01_male-sitting-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 66373,
+      "slug": "male-sitting-handshake-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2087",
+      "presetNumber": 2087,
+      "label": "Introducing handshake pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female is introducing the female and male to each other, who are shaking hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2087_introducing-handshake-pose.pma",
+      "localScenePath": "scenes/2087_introducing-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2087_00_introducing-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2087_00_introducing-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2087_00_introducing-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2087_01_introducing-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2087_01_introducing-handshake-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2087_02_introducing-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2087_02_introducing-handshake-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 69234,
+      "slug": "introducing-handshake-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2088",
+      "presetNumber": 2088,
+      "label": "Female sitting handshake pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are shaking hands, the female is sitting on a barstool",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2088_female-sitting-handshake-pose.pma",
+      "localScenePath": "scenes/2088_female-sitting-handshake-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2088_00_female-sitting-handshake-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2088_00_female-sitting-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2088_00_female-sitting-handshake-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2088_01_female-sitting-handshake-pose.png",
+          "localThumbnailPath": "thumbnails/2088_01_female-sitting-handshake-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46938,
+      "slug": "female-sitting-handshake-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1060 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 16,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-1146",
+      "presetNumber": 1146,
+      "label": "Parkour landing ground pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping from high, preparing for landing on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1146_parkour-landing-ground-pose.pma",
+      "localScenePath": "scenes/1146_parkour-landing-ground-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1146_00_parkour-landing-ground-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1146_00_parkour-landing-ground-pose.png",
+          "localThumbnailPath": "thumbnails/1146_00_parkour-landing-ground-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "parkour",
+        "pose"
+      ],
+      "bytes": 23818,
+      "slug": "parkour-landing-ground-pose"
+    },
+    {
+      "id": "guo-scene-1147",
+      "presetNumber": 1147,
+      "label": "Parkour landing wall pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping from high, preparing for landing on a wall, spreads his arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1147_parkour-landing-wall-pose.pma",
+      "localScenePath": "scenes/1147_parkour-landing-wall-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1147_00_parkour-landing-wall-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1147_00_parkour-landing-wall-pose.png",
+          "localThumbnailPath": "thumbnails/1147_00_parkour-landing-wall-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "parkour",
+        "pose"
+      ],
+      "bytes": 24273,
+      "slug": "parkour-landing-wall-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1175",
+      "presetNumber": 1175,
+      "label": "Confident male crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Confident male is standing with his legs crossed and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1175_confident-male-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1175_confident-male-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1175_00_confident-male-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1175_00_confident-male-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1175_00_confident-male-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23823,
+      "slug": "confident-male-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1176",
+      "presetNumber": 1176,
+      "label": "Offended standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Offended male is standing with his legs and arms crossed and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1176_offended-standing-pose.pma",
+      "localScenePath": "scenes/1176_offended-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1176_00_offended-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1176_00_offended-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1176_00_offended-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23686,
+      "slug": "offended-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1177",
+      "presetNumber": 1177,
+      "label": "Male standing waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his legs crossed, looking to the right and waving, saying \"hi\"",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1177_male-standing-waving-pose.pma",
+      "localScenePath": "scenes/1177_male-standing-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1177_00_male-standing-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1177_00_male-standing-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1177_00_male-standing-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23789,
+      "slug": "male-standing-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1178",
+      "presetNumber": 1178,
+      "label": "Proud male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Proud male is standing with his legs crossed, his hands are on hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1178_proud-male-standing-pose.pma",
+      "localScenePath": "scenes/1178_proud-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1178_00_proud-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1178_00_proud-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1178_00_proud-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23552,
+      "slug": "proud-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1179",
+      "presetNumber": 1179,
+      "label": "Male standing casually pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually with his legs crossed, his right hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1179_male-standing-casually-pose.pma",
+      "localScenePath": "scenes/1179_male-standing-casually-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1179_00_male-standing-casually-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1179_00_male-standing-casually-pose.png",
+          "localThumbnailPath": "thumbnails/1179_00_male-standing-casually-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crossed",
+        "legs",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23730,
+      "slug": "male-standing-casually-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1181",
+      "presetNumber": 1181,
+      "label": "Male standing pulling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and pulling the chain with two hands, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1181_male-standing-pulling-pose.pma",
+      "localScenePath": "scenes/1181_male-standing-pulling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1181_00_male-standing-pulling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1181_00_male-standing-pulling-pose.png",
+          "localThumbnailPath": "thumbnails/1181_00_male-standing-pulling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 8,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        200
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 27912,
+      "slug": "male-standing-pulling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1182",
+      "presetNumber": 1182,
+      "label": "Male squatting pulling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting and pulling the chain with two hands, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1182_male-squatting-pulling-pose.pma",
+      "localScenePath": "scenes/1182_male-squatting-pulling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1182_00_male-squatting-pulling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1182_00_male-squatting-pulling-pose.png",
+          "localThumbnailPath": "thumbnails/1182_00_male-squatting-pulling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        200
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pulling",
+        "pose"
+      ],
+      "bytes": 27249,
+      "slug": "male-squatting-pulling-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1190",
+      "presetNumber": 1190,
+      "label": "Athletic male jogging pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is warming up, jogging in place",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1190_athletic-male-jogging-pose.pma",
+      "localScenePath": "scenes/1190_athletic-male-jogging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1190_00_athletic-male-jogging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1190_00_athletic-male-jogging-pose.png",
+          "localThumbnailPath": "thumbnails/1190_00_athletic-male-jogging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 24130,
+      "slug": "athletic-male-jogging-pose"
+    },
+    {
+      "id": "guo-scene-1192",
+      "presetNumber": 1192,
+      "label": "High jumping pole pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is practicing high jumping, jumping over the pole",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1192_high-jumping-pole-pose.pma",
+      "localScenePath": "scenes/1192_high-jumping-pole-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1192_00_high-jumping-pole-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1192_00_high-jumping-pole-pose.png",
+          "localThumbnailPath": "thumbnails/1192_00_high-jumping-pole-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 25538,
+      "slug": "high-jumping-pole-pose"
+    },
+    {
+      "id": "guo-scene-1194",
+      "presetNumber": 1194,
+      "label": "Athletic male sprinter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Professional male sprinter pose, athletic male fast running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1194_athletic-male-sprinter-pose.pma",
+      "localScenePath": "scenes/1194_athletic-male-sprinter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1194_00_athletic-male-sprinter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1194_00_athletic-male-sprinter-pose.png",
+          "localThumbnailPath": "thumbnails/1194_00_athletic-male-sprinter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 25997,
+      "slug": "athletic-male-sprinter-pose"
+    },
+    {
+      "id": "guo-scene-1195",
+      "presetNumber": 1195,
+      "label": "Male discus throwing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is practicing discus throwing, dynamic throwing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1195_male-discus-throwing-pose.pma",
+      "localScenePath": "scenes/1195_male-discus-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1195_00_male-discus-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1195_00_male-discus-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1195_00_male-discus-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 24715,
+      "slug": "male-discus-throwing-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1197",
+      "presetNumber": 1197,
+      "label": "Male shot put pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is exercising shot put, throwing a heavy weight far",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1197_male-shot-put-pose.pma",
+      "localScenePath": "scenes/1197_male-shot-put-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1197_00_male-shot-put-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1197_00_male-shot-put-pose.png",
+          "localThumbnailPath": "thumbnails/1197_00_male-shot-put-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 24658,
+      "slug": "male-shot-put-pose"
+    },
+    {
+      "id": "guo-scene-1198",
+      "presetNumber": 1198,
+      "label": "Male powerlifting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is exercising powerlifting, professional heavy weight lifting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1198_male-powerlifting-pose.pma",
+      "localScenePath": "scenes/1198_male-powerlifting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1198_00_male-powerlifting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1198_00_male-powerlifting-pose.png",
+          "localThumbnailPath": "thumbnails/1198_00_male-powerlifting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athletic",
+        "pose"
+      ],
+      "bytes": 25072,
+      "slug": "male-powerlifting-pose"
+    },
+    {
+      "id": "guo-scene-1211",
+      "presetNumber": 1211,
+      "label": "Male scythe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and holding a scythe in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1211_male-scythe-pose.pma",
+      "localScenePath": "scenes/1211_male-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1211_00_male-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1211_00_male-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/1211_00_male-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24177,
+      "slug": "male-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1217",
+      "presetNumber": 1217,
+      "label": "Male fighter scythe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting and holding a scythe in his right hand, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1217_male-fighter-scythe-pose.pma",
+      "localScenePath": "scenes/1217_male-fighter-scythe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1217_00_male-fighter-scythe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1217_00_male-fighter-scythe-pose.png",
+          "localThumbnailPath": "thumbnails/1217_00_male-fighter-scythe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24250,
+      "slug": "male-fighter-scythe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1218",
+      "presetNumber": 1218,
+      "label": "Male scythe sharpening pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and sharpening the blade of the scythe",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1218_male-scythe-sharpening-pose.pma",
+      "localScenePath": "scenes/1218_male-scythe-sharpening-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1218_00_male-scythe-sharpening-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1218_00_male-scythe-sharpening-pose.png",
+          "localThumbnailPath": "thumbnails/1218_00_male-scythe-sharpening-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24907,
+      "slug": "male-scythe-sharpening-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1219",
+      "presetNumber": 1219,
+      "label": "Male scythe mowing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is mowing, holding the scythe with two hands and cutting the grass",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1219_male-scythe-mowing-pose.pma",
+      "localScenePath": "scenes/1219_male-scythe-mowing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1219_00_male-scythe-mowing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1219_00_male-scythe-mowing-pose.png",
+          "localThumbnailPath": "thumbnails/1219_00_male-scythe-mowing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        154
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "scythe",
+        "pose"
+      ],
+      "bytes": 24366,
+      "slug": "male-scythe-mowing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1221",
+      "presetNumber": 1221,
+      "label": "Male shooting arrow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and shooting an arrow with his bow in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1221_male-shooting-arrow-pose.pma",
+      "localScenePath": "scenes/1221_male-shooting-arrow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1221_00_male-shooting-arrow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1221_00_male-shooting-arrow-pose.png",
+          "localThumbnailPath": "thumbnails/1221_00_male-shooting-arrow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        2,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26642,
+      "slug": "male-shooting-arrow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1222",
+      "presetNumber": 1222,
+      "label": "Male shooting down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching on something and shooting downwards with his bow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1222_male-shooting-down-pose.pma",
+      "localScenePath": "scenes/1222_male-shooting-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1222_00_male-shooting-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1222_00_male-shooting-down-pose.png",
+          "localThumbnailPath": "thumbnails/1222_00_male-shooting-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        2,
+        3,
+        5,
+        159
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 26770,
+      "slug": "male-shooting-down-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1226",
+      "presetNumber": 1226,
+      "label": "Crossbow aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and aiming with the crossbow, holding it with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1226_crossbow-aiming-pose.pma",
+      "localScenePath": "scenes/1226_crossbow-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1226_00_crossbow-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1226_00_crossbow-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1226_00_crossbow-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 24172,
+      "slug": "crossbow-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1228",
+      "presetNumber": 1228,
+      "label": "Male crossbow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with a crossbow, holding it with two hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1228_male-crossbow-pose.pma",
+      "localScenePath": "scenes/1228_male-crossbow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1228_00_male-crossbow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1228_00_male-crossbow-pose.png",
+          "localThumbnailPath": "thumbnails/1228_00_male-crossbow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        178
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "pose"
+      ],
+      "bytes": 24177,
+      "slug": "male-crossbow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1230",
+      "presetNumber": 1230,
+      "label": "Boxing stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is standing in boxing position, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1230_boxing-stance-pose.pma",
+      "localScenePath": "scenes/1230_boxing-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1230_00_boxing-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1230_00_boxing-stance-pose.png",
+          "localThumbnailPath": "thumbnails/1230_00_boxing-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "brute",
+        "male",
+        "pose"
+      ],
+      "bytes": 23549,
+      "slug": "boxing-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

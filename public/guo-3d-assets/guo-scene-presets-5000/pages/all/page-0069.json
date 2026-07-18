@@ -1,0 +1,1189 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 68,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1633",
+      "presetNumber": 1633,
+      "label": "Holding closed umbrella pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a closed umbrella in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1633_holding-closed-umbrella-pose.pma",
+      "localScenePath": "scenes/1633_holding-closed-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1633_00_holding-closed-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1633_00_holding-closed-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1633_00_holding-closed-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        101
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23993,
+      "slug": "holding-closed-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1634",
+      "presetNumber": 1634,
+      "label": "Holding umbrella pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding an umbrella with both hands and posing, raising her leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1634_holding-umbrella-pose.pma",
+      "localScenePath": "scenes/1634_holding-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1634_00_holding-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1634_00_holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1634_00_holding-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24039,
+      "slug": "holding-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1635",
+      "presetNumber": 1635,
+      "label": "Female without umbrella pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding an umbrella and looking at the female who is angry",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1635_female-without-umbrella-pose.pma",
+      "localScenePath": "scenes/1635_female-without-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1635_00_female-without-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1635_00_female-without-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1635_00_female-without-umbrella-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1635_01_female-without-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1635_01_female-without-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46867,
+      "slug": "female-without-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1636",
+      "presetNumber": 1636,
+      "label": "Couple holding umbrella pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are holding an umbrella together and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1636_couple-holding-umbrella-pose.pma",
+      "localScenePath": "scenes/1636_couple-holding-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1636_00_couple-holding-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1636_00_couple-holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1636_00_couple-holding-umbrella-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1636_01_couple-holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1636_01_couple-holding-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46876,
+      "slug": "couple-holding-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1637",
+      "presetNumber": 1637,
+      "label": "Jumping puddle pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding an umbrella and running, jumping into a puddle",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1637_jumping-puddle-pose.pma",
+      "localScenePath": "scenes/1637_jumping-puddle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1637_00_jumping-puddle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1637_00_jumping-puddle-pose.png",
+          "localThumbnailPath": "thumbnails/1637_00_jumping-puddle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24022,
+      "slug": "jumping-puddle-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1638",
+      "presetNumber": 1638,
+      "label": "Male holding umbrella pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding an umbrella in his right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1638_male-holding-umbrella-pose.pma",
+      "localScenePath": "scenes/1638_male-holding-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1638_00_male-holding-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1638_00_male-holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1638_00_male-holding-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24289,
+      "slug": "male-holding-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1639",
+      "presetNumber": 1639,
+      "label": "Umbrella looking back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding an umbrella in her right hand and looking back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1639_umbrella-looking-back-pose.pma",
+      "localScenePath": "scenes/1639_umbrella-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1639_00_umbrella-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1639_00_umbrella-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/1639_00_umbrella-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24039,
+      "slug": "umbrella-looking-back-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1640",
+      "presetNumber": 1640,
+      "label": "Male glasses pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his hands on hips, wearing glasses and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1640_male-glasses-pose.pma",
+      "localScenePath": "scenes/1640_male-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1640_00_male-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1640_00_male-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1640_00_male-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        97
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24418,
+      "slug": "male-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1641",
+      "presetNumber": 1641,
+      "label": "Female heart shaped glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking forward, wearing heart shaped glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1641_female-heart-shaped-glasses-pose.pma",
+      "localScenePath": "scenes/1641_female-heart-shaped-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1641_00_female-heart-shaped-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1641_00_female-heart-shaped-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1641_00_female-heart-shaped-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 28101,
+      "slug": "female-heart-shaped-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1642",
+      "presetNumber": 1642,
+      "label": "Female standing holding glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking forward, wearing heart shaped glasses and holding it with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1642_female-standing-holding-glasses-pose.pma",
+      "localScenePath": "scenes/1642_female-standing-holding-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1642_00_female-standing-holding-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1642_00_female-standing-holding-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1642_00_female-standing-holding-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27877,
+      "slug": "female-standing-holding-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1643",
+      "presetNumber": 1643,
+      "label": "Female round glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, wearing glasses, pushing her glasses back with her index finger",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1643_female-round-glasses-pose.pma",
+      "localScenePath": "scenes/1643_female-round-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1643_00_female-round-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1643_00_female-round-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1643_00_female-round-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        98
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27829,
+      "slug": "female-round-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1644",
+      "presetNumber": 1644,
+      "label": "Female taking off glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and taking off her glasses with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1644_female-taking-off-glasses-pose.pma",
+      "localScenePath": "scenes/1644_female-taking-off-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1644_00_female-taking-off-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1644_00_female-taking-off-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1644_00_female-taking-off-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        98
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27859,
+      "slug": "female-taking-off-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1645",
+      "presetNumber": 1645,
+      "label": "Adjusting glasses pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and adjusting his glasses with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1645_adjusting-glasses-pose.pma",
+      "localScenePath": "scenes/1645_adjusting-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1645_00_adjusting-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1645_00_adjusting-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1645_00_adjusting-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        97
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24479,
+      "slug": "adjusting-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1646",
+      "presetNumber": 1646,
+      "label": "Male holding glasses pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Stocky male is standing with his right hand on his hip and holding his glasses in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1646_male-holding-glasses-pose.pma",
+      "localScenePath": "scenes/1646_male-holding-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1646_00_male-holding-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1646_00_male-holding-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1646_00_male-holding-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [
+        98
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24452,
+      "slug": "male-holding-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1647",
+      "presetNumber": 1647,
+      "label": "Female putting on glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and putting on her glasses to see something better",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1647_female-putting-on-glasses-pose.pma",
+      "localScenePath": "scenes/1647_female-putting-on-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1647_00_female-putting-on-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1647_00_female-putting-on-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1647_00_female-putting-on-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        97
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27830,
+      "slug": "female-putting-on-glasses-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1648",
+      "presetNumber": 1648,
+      "label": "Reading glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and reading a book, wearing glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1648_reading-glasses-pose.pma",
+      "localScenePath": "scenes/1648_reading-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1648_00_reading-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1648_00_reading-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1648_00_reading-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        80,
+        98,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 28792,
+      "slug": "reading-glasses-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1649",
+      "presetNumber": 1649,
+      "label": "Taking off glasses pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting, holding a book and taking off her glasses while reading",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1649_taking-off-glasses-pose.pma",
+      "localScenePath": "scenes/1649_taking-off-glasses-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1649_00_taking-off-glasses-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1649_00_taking-off-glasses-pose.png",
+          "localThumbnailPath": "thumbnails/1649_00_taking-off-glasses-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        80,
+        98,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "glasses",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 28750,
+      "slug": "taking-off-glasses-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1650",
+      "presetNumber": 1650,
+      "label": "Holding baseball cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his right hand on hip and adjusting his baseball cap with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1650_holding-baseball-cap-pose.pma",
+      "localScenePath": "scenes/1650_holding-baseball-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1650_00_holding-baseball-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1650_00_holding-baseball-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1650_00_holding-baseball-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24198,
+      "slug": "holding-baseball-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1651",
+      "presetNumber": 1651,
+      "label": "Adjusting baseball cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and adjusting his baseball cap with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1651_adjusting-baseball-cap-pose.pma",
+      "localScenePath": "scenes/1651_adjusting-baseball-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1651_00_adjusting-baseball-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1651_00_adjusting-baseball-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1651_00_adjusting-baseball-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24265,
+      "slug": "adjusting-baseball-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1652",
+      "presetNumber": 1652,
+      "label": "Squatting baseball cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting, wearing a baseball cap and holding it with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1652_squatting-baseball-cap-pose.pma",
+      "localScenePath": "scenes/1652_squatting-baseball-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1652_00_squatting-baseball-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1652_00_squatting-baseball-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1652_00_squatting-baseball-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24229,
+      "slug": "squatting-baseball-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1653",
+      "presetNumber": 1653,
+      "label": "Male standing cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with crossed arms and legs and wearing a baseball cap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1653_male-standing-cap-pose.pma",
+      "localScenePath": "scenes/1653_male-standing-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1653_00_male-standing-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1653_00_male-standing-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1653_00_male-standing-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24241,
+      "slug": "male-standing-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1654",
+      "presetNumber": 1654,
+      "label": "Female standing cap pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, her left hand is on her hip and wearing a baseball cap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1654_female-standing-cap-pose.pma",
+      "localScenePath": "scenes/1654_female-standing-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1654_00_female-standing-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1654_00_female-standing-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1654_00_female-standing-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24069,
+      "slug": "female-standing-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1655",
+      "presetNumber": 1655,
+      "label": "Female holding cap pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her left hand on her hip and holding a baseball cap in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1655_female-holding-cap-pose.pma",
+      "localScenePath": "scenes/1655_female-holding-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1655_00_female-holding-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1655_00_female-holding-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1655_00_female-holding-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24017,
+      "slug": "female-holding-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1656",
+      "presetNumber": 1656,
+      "label": "Taking off cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually and taking off his baseball cap with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1656_taking-off-cap-pose.pma",
+      "localScenePath": "scenes/1656_taking-off-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1656_00_taking-off-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1656_00_taking-off-cap-pose.png",
+          "localThumbnailPath": "thumbnails/1656_00_taking-off-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "cap",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24259,
+      "slug": "taking-off-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

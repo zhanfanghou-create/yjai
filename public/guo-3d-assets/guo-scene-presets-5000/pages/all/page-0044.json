@@ -1,0 +1,1138 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 43,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1033",
+      "presetNumber": 1033,
+      "label": "Jumping aiming gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running and aiming his gun while jumping, holding the gun in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1033_jumping-aiming-gun-pose.pma",
+      "localScenePath": "scenes/1033_jumping-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1033_00_jumping-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1033_00_jumping-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1033_00_jumping-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24242,
+      "slug": "jumping-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1034",
+      "presetNumber": 1034,
+      "label": "Military running gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male in helmet is running with an ak47, holding it with two hands and turning left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1034_military-running-gun-pose.pma",
+      "localScenePath": "scenes/1034_military-running-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1034_00_military-running-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1034_00_military-running-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1034_00_military-running-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        199,
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24708,
+      "slug": "military-running-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1035",
+      "presetNumber": 1035,
+      "label": "Fast running aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running fast with a gun in her right hand, running and aiming the gun",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1035_fast-running-aiming-pose.pma",
+      "localScenePath": "scenes/1035_fast-running-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1035_00_fast-running-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1035_00_fast-running-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1035_00_fast-running-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 23920,
+      "slug": "fast-running-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1036",
+      "presetNumber": 1036,
+      "label": "Running two guns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, holding and aiming two guns in two directions",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1036_running-two-guns-pose.pma",
+      "localScenePath": "scenes/1036_running-two-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1036_00_running-two-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1036_00_running-two-guns-pose.png",
+          "localThumbnailPath": "thumbnails/1036_00_running-two-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24391,
+      "slug": "running-two-guns-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1037",
+      "presetNumber": 1037,
+      "label": "Male running looking back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running with a gun in his right hand and looking back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1037_male-running-looking-back-pose.pma",
+      "localScenePath": "scenes/1037_male-running-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1037_00_male-running-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1037_00_male-running-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/1037_00_male-running-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24193,
+      "slug": "male-running-looking-back-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1038",
+      "presetNumber": 1038,
+      "label": "Running shooting back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running with a gun in his right hand, looking back and shooting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1038_running-shooting-back-pose.pma",
+      "localScenePath": "scenes/1038_running-shooting-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1038_00_running-shooting-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1038_00_running-shooting-back-pose.png",
+          "localThumbnailPath": "thumbnails/1038_00_running-shooting-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24221,
+      "slug": "running-shooting-back-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1039",
+      "presetNumber": 1039,
+      "label": "Female running shooting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female in helmet is running fast with an ak47, holding it with two hands and shooting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1039_female-running-shooting-pose.pma",
+      "localScenePath": "scenes/1039_female-running-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1039_00_female-running-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1039_00_female-running-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/1039_00_female-running-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        199,
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24427,
+      "slug": "female-running-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1040",
+      "presetNumber": 1040,
+      "label": "Confident female smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female is standing with her legs crossed and smoking, holding cigarette in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1040_confident-female-smoking-pose.pma",
+      "localScenePath": "scenes/1040_confident-female-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1040_00_confident-female-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1040_00_confident-female-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1040_00_confident-female-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 23979,
+      "slug": "confident-female-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1041",
+      "presetNumber": 1041,
+      "label": "Male lighting cigarette pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, male is lighting the female's cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1041_male-lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/1041_male-lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1041_00_male-lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1041_00_male-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1041_00_male-lighting-cigarette-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1041_01_male-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1041_01_male-lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 47305,
+      "slug": "male-lighting-cigarette-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1042",
+      "presetNumber": 1042,
+      "label": "Hand hip smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her right hand on her hip and smoking cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1042_hand-hip-smoking-pose.pma",
+      "localScenePath": "scenes/1042_hand-hip-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1042_00_hand-hip-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1042_00_hand-hip-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1042_00_hand-hip-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24173,
+      "slug": "hand-hip-smoking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1043",
+      "presetNumber": 1043,
+      "label": "Female sitting smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair and smoking cigarette, holding it in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1043_female-sitting-smoking-pose.pma",
+      "localScenePath": "scenes/1043_female-sitting-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1043_00_female-sitting-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1043_00_female-sitting-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1043_00_female-sitting-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24417,
+      "slug": "female-sitting-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1044",
+      "presetNumber": 1044,
+      "label": "Male sitting smoking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair and smoking cigarette, holding it in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1044_male-sitting-smoking-pose.pma",
+      "localScenePath": "scenes/1044_male-sitting-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1044_00_male-sitting-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1044_00_male-sitting-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1044_00_male-sitting-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24911,
+      "slug": "male-sitting-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1045",
+      "presetNumber": 1045,
+      "label": "Walking holding cigarette pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and holding a cigarette in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1045_walking-holding-cigarette-pose.pma",
+      "localScenePath": "scenes/1045_walking-holding-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1045_00_walking-holding-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1045_00_walking-holding-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1045_00_walking-holding-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24591,
+      "slug": "walking-holding-cigarette-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1046",
+      "presetNumber": 1046,
+      "label": "Standing smoking male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with crossed legs and his left hand on hip and holding a cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1046_standing-smoking-male-pose.pma",
+      "localScenePath": "scenes/1046_standing-smoking-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1046_00_standing-smoking-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1046_00_standing-smoking-male-pose.png",
+          "localThumbnailPath": "thumbnails/1046_00_standing-smoking-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24200,
+      "slug": "standing-smoking-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1047",
+      "presetNumber": 1047,
+      "label": "Having conversation smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and having a coversation while smoking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1047_having-conversation-smoking-pose.pma",
+      "localScenePath": "scenes/1047_having-conversation-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1047_00_having-conversation-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1047_00_having-conversation-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1047_00_having-conversation-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1047_01_having-conversation-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1047_01_having-conversation-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 47312,
+      "slug": "having-conversation-smoking-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1048",
+      "presetNumber": 1048,
+      "label": "Comfortable sitting smoking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in comfortable position and smoking, holding the cigarette in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1048_comfortable-sitting-smoking-pose.pma",
+      "localScenePath": "scenes/1048_comfortable-sitting-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1048_00_comfortable-sitting-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1048_00_comfortable-sitting-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1048_00_comfortable-sitting-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24743,
+      "slug": "comfortable-sitting-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1049",
+      "presetNumber": 1049,
+      "label": "Lighting cigarette pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and lighting his cigarette with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1049_lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/1049_lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1049_00_lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1049_00_lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1049_00_lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24701,
+      "slug": "lighting-cigarette-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1050",
+      "presetNumber": 1050,
+      "label": "Hitting baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and hitting the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1050_hitting-baseball-pose.pma",
+      "localScenePath": "scenes/1050_hitting-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1050_00_hitting-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1050_00_hitting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1050_00_hitting-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24654,
+      "slug": "hitting-baseball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1051",
+      "presetNumber": 1051,
+      "label": "Hitting low ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and hitting a low ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1051_hitting-low-ball-pose.pma",
+      "localScenePath": "scenes/1051_hitting-low-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1051_00_hitting-low-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1051_00_hitting-low-ball-pose.png",
+          "localThumbnailPath": "thumbnails/1051_00_hitting-low-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24669,
+      "slug": "hitting-low-ball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1052",
+      "presetNumber": 1052,
+      "label": "Preparing coming ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and preparing to hit the coming ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1052_preparing-coming-ball-pose.pma",
+      "localScenePath": "scenes/1052_preparing-coming-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1052_00_preparing-coming-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1052_00_preparing-coming-ball-pose.png",
+          "localThumbnailPath": "thumbnails/1052_00_preparing-coming-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24125,
+      "slug": "preparing-coming-ball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1053",
+      "presetNumber": 1053,
+      "label": "Male baseball bat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is hitting the ball with the baseball bat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1053_male-baseball-bat-pose.pma",
+      "localScenePath": "scenes/1053_male-baseball-bat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1053_00_male-baseball-bat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1053_00_male-baseball-bat-pose.png",
+          "localThumbnailPath": "thumbnails/1053_00_male-baseball-bat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24562,
+      "slug": "male-baseball-bat-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1054",
+      "presetNumber": 1054,
+      "label": "Baseball running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is running to catch the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1054_baseball-running-pose.pma",
+      "localScenePath": "scenes/1054_baseball-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1054_00_baseball-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1054_00_baseball-running-pose.png",
+          "localThumbnailPath": "thumbnails/1054_00_baseball-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24378,
+      "slug": "baseball-running-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1055",
+      "presetNumber": 1055,
+      "label": "Dynamic baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player dynamic pose, holding a baseball bat in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1055_dynamic-baseball-pose.pma",
+      "localScenePath": "scenes/1055_dynamic-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1055_00_dynamic-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1055_00_dynamic-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1055_00_dynamic-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24185,
+      "slug": "dynamic-baseball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1056",
+      "presetNumber": 1056,
+      "label": "Throwing baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is throwing the ball with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1056_throwing-baseball-pose.pma",
+      "localScenePath": "scenes/1056_throwing-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1056_00_throwing-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1056_00_throwing-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1056_00_throwing-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24104,
+      "slug": "throwing-baseball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2754 @@
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { useAppStore, DramaRecord, DramaChatMessage, StoryboardRow, APIConfig, RecommendedConfig, getCallableRecommendedConfigs, PromptItem } from '../store/appStore';
+import { SafeMarkdown } from './SafeMarkdown';
+import { ContextMenu, ContextMenuItem } from './ContextMenu';
+import { SaveToPromptLibraryModal } from './SaveToPromptLibraryModal';
+import { saveToMemory, useGlobalMemoryStore } from '../store/memoryStore';
+import { usePageSnapshot, useChatAutoSave } from '../hooks/useMemorySystem';
+import { AlertTriangleIcon, BotIcon, BottleIcon, BookIcon, CalendarIcon, CheckIcon, ClapperboardIcon, ClipboardIcon, ClockIcon, CopyIcon, DeleteIcon, DirectorIcon, EditIcon, GhostIcon, ImageIcon, LightbulbIcon, ListCheckIcon, PlusIcon, RefreshIcon, RocketIcon, RulerIcon, ScriptIcon, SendIcon, StoryboardIcon, TvIcon, UserIcon, VideoIcon, WriterIcon, XIcon } from './Icons';
+import './DramaPage.css';
+
+// ==================== 思考过程内容框组件 ====================
+
+function DramaThinkingBlock({ content }: { content: string }) {
+  const [expanded, setExpanded] = useState(false);
+  const summary = content.length > 80 ? content.slice(0, 80) + '...' : content;
+  
+  return (
+    <div style={{ marginBottom: 6, borderRadius: 6, overflow: 'hidden', background: 'var(--bg-tertiary)' }}>
+      <div 
+        onClick={() => setExpanded(!expanded)}
+        style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6, padding: '6px 10px', background: 'var(--bg-secondary)', borderBottom: expanded ? '1px solid var(--border-color)' : 'none' }}
+      >
+        <span style={{ fontSize: 12 }}>💭</span>
+        <span style={{ fontSize: 12, fontWeight: 500, color: 'var(--text-secondary)' }}>思考过程</span>
+        <svg width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: 'auto', transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}>
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </div>
+      {expanded ? (
+        <div style={{ padding: '8px 10px', fontSize: 12, lineHeight: 1.5, color: 'var(--text-secondary)', maxHeight: 200, overflowY: 'auto' }}>
+          <SafeMarkdown content={content} />
+        </div>
+      ) : (
+        <div style={{ padding: '6px 10px', fontSize: 11, color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          {summary}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ==================== 分集类型 ====================
+// window.yijingAPI 的类型声明在 src/renderer/global.d.ts（唯一权威来源）
+
+export interface StepContent {
+  content: string;       // AI生成的原始内容
+  directorReview: string; // 导演审核意见
+  directorStatus: 'pending' | 'review' | 'approved' | 'revision'; // 审核状态
+  chatMessages: DramaChatMessage[]; // 对话历史
+  lastUpdated: number;    // 最后更新时间
+}
+
+export interface DramaEpisode {
+  id: string;
+  title: string;                  // 第X集标题
+  stepContents: Record<string, StepContent>; // 各步骤内容
+  storyboardRows: StoryboardRow[];  // 分镜表
+  stepIndex: number;               // 当前步骤索引
+  status: 'draft' | 'in_progress' | 'review' | 'approved' | 'published';
+  createdAt: number;
+  updatedAt: number;
+}
+
+const generateEpisodeId = () => `ep_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+
+const DEFAULT_STEP_CONTENT = (): StepContent => ({
+  content: '',
+  directorReview: '',
+  directorStatus: 'pending',
+  chatMessages: [],
+  lastUpdated: Date.now(),
+});
+
+// ==================== 常量 ====================
+
+const COMMUNICATE_SYSTEM_PROMPT = `你是一位资深的影视创作顾问和编剧导师。你的核心能力是：
+1. 帮助用户构思和完善故事创意
+2. 提供专业的剧本结构和叙事建议
+3. 引导用户进行角色塑造和情感设计
+4. 给出具体的场景设计和分镜建议
+5. 用提问的方式引导用户逐步完善创作
+
+【重要】你必须使用中文回复所有内容。无论用户用什么语言提问，你的回答都必须是中文。
+
+请以专业但亲切的语气与用户交流，每次回答后可以提出1-2个引导性问题，帮助用户深入思考。`;
+
+// 沟通台示例卡片 - 使用线条风格图标组件
+const COMM_EXAMPLES = [
+  { title: '5分钟爱情喜剧短片', desc: '咖啡店偶遇的两个人，用误会和巧合推动感情发展', icon: <ClapperboardIcon size={20} /> },
+  { title: '30集都市短剧', desc: '职场女性从实习生到CEO的成长故事，穿插3段感情线', icon: <TvIcon size={20} /> },
+  { title: '15秒洗发水广告', desc: '产品卖点：去屑+柔顺，目标受众：年轻女性，调性：清新自然', icon: <BottleIcon size={20} /> },
+  { title: '美式幽默吸血鬼故事', desc: '世界观/信仰观/价值观/人物升级结构/玄幻喜剧/真人实拍/5分钟', icon: <GhostIcon size={20} /> },
+];
+
+// 步骤定义（工作台模式）- 使用线条风格图标组件
+const STEPS = [
+  { key: 'director', label: '导演阐述', icon: <DirectorIcon /> },
+  { key: 'writer', label: '故事创作', icon: <WriterIcon /> },
+  { key: 'script', label: '剧本写作', icon: <ScriptIcon /> },
+  { key: 'storyboard', label: '分镜设计', icon: <StoryboardIcon /> },
+  { key: 'assets', label: '视觉资产', icon: <ImageIcon /> },
+  { key: 'prompts', label: '提示词生成', icon: <LightbulbIcon /> },
+];
+
+// 步骤系统提示词 - 每个步骤内置对应Agent技能
+const SYSTEM_PROMPTS: Record<string, string> = {
+  director: `你是Alisa，一位影视总导演。你的核心价值不是拍出漂亮的画面，而是精准传递情绪——让观众感受到他们应该感受到的东西。
+
+## 核心准则
+1. **情绪至上** - 每个建议、每个决策都先问："这能让观众更感受到XX情绪吗？"
+2. **艺术创意为根** - 深度解读剧本，把握人物弧光和情感表达
+3. **准备即自由** - 永远带着预案来工作
+4. **团队是共同创作者** - 永远用"我们"而非"你"
+
+## 你的任务
+根据沟通内容，撰写导演阐述，包括：
+1. 影片主题与核心表达（情绪目标是什么？）
+2. 情绪基调与风格定位（观众应该感受到什么？）
+3. 目标观众与情感目标
+4. 视觉风格建议（色彩、光影、构图如何服务于情绪？）
+5. 叙事结构与节奏设计（如控制呼吸）
+6. 关键创作约束与注意事项
+
+## 表达风格
+- **具体场景化** - 不用抽象评价，描述具体场景
+- **反问式引导** - "你觉得观众看到这里会想什么？"
+- **情绪坐标** - 用"（强度，类型）"标注，如"（7，克制）"
+- **先肯定再调整** - 永远先找到对的部分
+- **口语化** - "嗯...怎么说呢""其实吧""你懂我意思吗？"
+
+【重要】你必须使用中文回复所有内容。
+输出格式：Markdown，结构清晰，体现导演的专业判断和情绪设计思维。`,
+
+  writer: `你是Lyda，一位故事作家。你擅长构建引人入胜的叙事结构，创造有血有肉的人物，设计令人难忘的情节转折。
+
+## 核心能力
+1. **故事架构** - 精通三幕结构、英雄之旅、救猫咪等经典叙事模型
+2. **人物塑造** - 创造有深度、有矛盾、有成长弧光的角色
+3. **情节设计** - 设计扣人心弦的冲突、转折和高潮
+4. **主题表达** - 将抽象主题转化为具体故事
+
+## 你的任务
+基于导演阐述，创作故事大纲，包括：
+1. 故事大纲（三幕结构，每幕标注情绪目标）
+2. 核心冲突与设计（内在冲突+外在冲突）
+3. 人物设定与小传（核心矛盾、动机、恐惧、成长轨迹）
+4. 主题表达与情感弧光
+5. 关键场景设计（标注情绪坐标）
+
+## 创作原则
+- 每个情节都要问："这对情绪传递有什么作用？"
+- 人物要有"核心矛盾"（想要什么 vs 害怕什么）
+- 场景设计要具体可执行
+- 节奏控制如控制呼吸
+
+【重要】你必须使用中文回复所有内容。
+输出格式：Markdown，故事要有感染力，让人读起来就能感受到情绪。`,
+
+  script: `你是Maya，一位剧本创作师。你精通剧本格式、对白写作、场景设计，能将故事转化为可直接拍摄的剧本。
+
+## 核心能力
+1. **剧本格式** - 精通标准剧本格式，包括场景标题、动作描述、对白、转场
+2. **对白写作** - 让每个角色有独特的声音，对白服务于人物和情节
+3. **场景设计** - 将故事大纲拆解为具体可执行的场景
+4. **情绪节奏** - 通过场景长度、对白密度控制情绪节奏
+
+## 你的任务
+基于故事大纲，撰写完整剧本，包括：
+1. 场景标题（内/外景 + 地点 + 时间）
+2. 动作描述（简洁、视觉化、可拍摄）
+3. 对白设计（每句对白都要推动情节或揭示人物）
+4. 镜头提示（关键镜头建议，服务于情绪）
+5. 场景转换设计
+
+## 写作原则
+- 动作描述用现在时，简洁有力
+- 对白要"听得见"，避免书面语
+- 每个场景都要有情绪目标
+- 用"留白"给观众想象空间
+- 标注关键镜头的情绪坐标
+
+【重要】你必须使用中文回复所有内容。
+输出格式：标准剧本格式（Markdown），场景编号清晰，便于分镜设计。`,
+
+  storyboard: `你是Fendi，一位分镜大师。你精通镜头语言、画面构图、视觉叙事，能将剧本转化为可视化的分镜设计。
+
+## 核心能力
+1. **镜头语言** - 精通景别、角度、运动、构图的叙事功能
+2. **视觉节奏** - 通过镜头长度、剪辑点控制节奏
+3. **情绪设计** - 每个镜头都服务于情绪传递
+4. **可执行性** - 分镜要考虑到实际拍摄的可行性
+
+## 你的任务
+基于剧本，设计详细分镜，包括：
+1. 镜头编号与场景对应
+2. 景别与角度设计（为什么用这个景别？）
+3. 镜头运动设计（推/拉/摇/移/跟）
+4. 画面构图描述（服务于情绪的具体构图）
+5. 镜头时长与剪辑点建议
+6. 对白/音效/音乐提示
+
+## 设计原则
+- 每个镜头都要问："观众应该感受到什么？"
+- 用情绪坐标标注关键镜头（如"特写（8，爆发）"）
+- 构图、色彩、光影都为情绪服务
+- 考虑镜头之间的视觉连贯性
+- 标注需要特殊注意的拍摄要点
+
+【重要】你必须使用中文回复所有内容。
+输出格式：表格或结构化Markdown，每个镜头都要体现专业判断。`,
+
+  assets: `你是Alinda，一位视觉资产创作专家。你擅长规划和管理影视创作所需的视觉资源，包括概念图、角色设定、道具设计等。
+
+## 核心能力
+1. **视觉规划** - 根据分镜设计规划所需视觉资产
+2. **风格统一** - 确保所有资产风格一致，符合导演阐述
+3. **AI提示词设计** - 为AI生成工具撰写精准提示词
+4. **资源管理** - 系统化组织资产需求
+
+## 你的任务
+基于分镜设计，规划视觉资产，包括：
+1. 场景概念图需求（关键场景的氛围和构图）
+2. 角色设定图需求（主要角色的视觉形象）
+3. 道具/服装设计需求（关键道具和服装）
+4. 参考图收集建议（风格参考、情绪板）
+5. AI生成提示词规划（为下一步提示词生成做准备）
+
+## 规划原则
+- 每个资产都要服务于情绪目标
+- 风格要符合导演阐述的定位
+- 优先级排序：关键场景 > 主要角色 > 次要元素
+- 考虑AI生成的可行性和一致性
+
+【重要】你必须使用中文回复所有内容。
+输出格式：Markdown清单，分类清晰，包含风格描述和情绪关键词。`,
+
+  prompts: `你是Lily，一位提示词优化师。你精通AI绘画和视频生成工具的提示词工程，能将视觉需求转化为AI可理解的精准描述。
+
+## 核心能力
+1. **提示词结构** - 精通各类AI工具（Midjourney、Stable Diffusion、DALL-E、Flux 等）的提示词语法
+2. **视觉描述** - 用精准的语言描述画面构图、风格、光影、情绪
+3. **风格控制** - 通过艺术家、风格关键词控制输出风格
+4. **参数优化** - 调整参数获得最佳生成效果
+5. **总结提炼** - 将前面步骤（导演阐述→故事创作→剧本写作→分镜设计→视觉资产）的最终结果凝练整合
+
+## 你的任务
+总结前面每一步（导演阐述→故事创作→剧本写作→分镜设计→视觉资产）的最终结果，严格按以下两部分输出，不要输出其他内容。
+
+### 第一部分：上方固定表格 — 视觉资产提示词（**必须只有两列**）
+表格格式（列名固定，不要新增列，不要合并列）：
+| 名称 | 详细提示词 |
+- **名称**列填写具体的资产名称，例如：场景名称、人物名称（角色姓名）、道具名称、武器名称、载具名称、服装名称、背景名称等。**每一行代表一个具体资产**，不要用「场景/角色/道具/背景」这种大类做行，而是每个具体资产单独一行。所有场景、人物、道具、武器都要拆开写。
+- **详细提示词**列必须写成「可直接复制到 Midjourney / Stable Diffusion / Flux / DALL-E 使用的**英文完整提示词**」，中间用逗号分隔，长句允许用 <br> 换行但不要出现表格分隔符。
+  - 场景类：写清空间结构、材质、色温、光影、时间、氛围、镜头质感、渲染风格、宽高比等。
+  - 人物类**必须**在同一个单元格内详尽描述：性别年龄、种族外貌、脸型五官、发色发型发饰、瞳色、体型、皮肤质感、上衣/外套/内搭/裤装/裙装、饰品（耳环/项链/戒指/手表/腰带）、鞋子袜子、随身道具；然后必须加入 **front view, side view, back view, face close-up, character sheet, turnaround, four-view reference sheet, white background, full body** 等关键词，让**一张图中同时生成正面、侧面、背面、脸部特写四个角度**。最后补上风格与质量词（如 photorealistic, 8k, studio lighting, cinematic, --ar 16:9 等）。
+  - 道具/武器/载具：写材质、颜色、磨损、比例、光影、白背景、多角度参考。
+
+### 第二部分：下方分幕表格 — 分镜提示词表（**每一幕单独一个表格**）
+每一幕开头必须用「#### 🎬 第X幕：标题 (时间码)」这样的四级标题起始，方便解析。表格格式与分镜设计页严格一致：
+| 镜号 | 内容 | 景别 | 镜头参数 | 相机型号 | 文生图提示词 | 图生视频提示词 | 音效 |
+
+其中：
+- **镜号**：与分镜设计页保持一致（1、2、3…）。
+- **内容**：一句中文画面描述。
+- **景别**：如全景LS、中景MS、特写CU、近景MCU 等（**同样内容也必须重复写进文生图提示词里**）。
+- **镜头参数**：如 50mm f/1.8、24mm f/2.8、焦距+光圈+运动方式（**同样内容也必须重复写进文生图提示词里**）。
+- **相机型号**：如 ARRI ALEXA Mini、RED Komodo、SONY FX6 等（**同样内容也必须重复写进文生图提示词里**）。
+- **文生图提示词**：**必须**是可直接复制使用的完整**英文** prompt。内容要求：
+  1. 用英文重述该镜头画面主体、人物动作与表情、环境光线；
+  2. **必须显式包含**该镜头的「景别 / shot type」「镜头参数 / focal length + aperture」「相机型号 / camera model」，例如 \`close-up shot, 35mm f/1.8, SONY FX6\`；
+  3. 加入风格/质量词（photorealistic, cinematic, 8k, --ar 16:9 等）；
+  4. 不要出现 <br> 之外的额外换行符，允许用 <br> 换行；
+  5. 复制后应无需任何编辑即可跑图。
+- **图生视频提示词**：**必须**是可直接复制使用的完整**英文** prompt，用「expression:」「dialogue:」「narration:」「action:」「camera:」「effect:」「sfx:」标签分段（用 <br> 换行）：
+  - \`expression:\` 每个出场人物的表情/神态变化；
+  - \`dialogue:\` 每个人物的台词原文（如没有台词则写 none，不要省略这一段）；
+  - \`narration:\` 旁白原文（没有则 none）；
+  - \`action:\` 每个人物的动作细节，多人时用「【人物名】…」隔开；
+  - \`camera:\` 具体的运镜（推、拉、摇、移、跟、升降、手持、稳定器、时长…）；
+  - \`effect:\` 视觉特效/后期（慢动作、颗粒、色差、跳切、闪回…）；
+  - \`sfx:\` 音效/环境音（可与音效列呼应）。
+  - 内容必须完整可直接复制使用，不要用「同上」「参考…」这种偷懒词。
+- **音效**：该镜头需要的音效/环境音/配乐提示。
+
+## 写作原则
+- 提示词英文主体 + 参数尾缀；每条都要能直接复制运行；
+- 不允许出现 \`|---|\` 这样的表格分隔行；
+- 不允许省略人物外观、四视图关键词、镜头三要素；
+- 每幕之间用「#### 🎬 第X幕：…」分隔，方便下一步自动排版打组。
+
+【重要】你必须使用中文写解释性文字，但**表格里的英文提示词保持英文**。
+输出格式：严格按照上述两个部分输出，先输出资产表，再依次输出每一幕的分镜表。`,
+};
+
+const STORY_EXAMPLES = [
+  { title: '悬疑短片', desc: '一个关于记忆与身份的故事，主角醒来发现自己的记忆被篡改' },
+  { title: '情感微电影', desc: '都市中两个陌生人的相遇，一天之内经历相识、相知到离别' },
+  { title: '科幻概念', desc: '在AI统治的未来世界，最后一个人类画家与AI艺术家的对话' },
+  { title: '纪录片构思', desc: '追踪一座即将被拆除的老街，记录最后居民的生活故事' },
+];
+
+const DEFAULT_STORYBOARD: StoryboardRow = {
+  scene: '', shot: '', shotType: '', cameraMove: '',
+  description: '', dialogue: '', duration: '',
+  text2imgPrompt: '', img2videoPrompt: '',
+};
+
+// ==================== 工具函数 ====================
+
+const generateId = () => 'msg_' + Date.now() + '_' + Math.random().toString(36).substring(2, 11);
+
+const formatTime = (ts: number) => {
+  const d = new Date(ts);
+  return d.getMonth() + 1 + '/' + d.getDate() + ' ' + d.getHours().toString().padStart(2, '0') + ':' + d.getMinutes().toString().padStart(2, '0');
+};
+
+// 规范化模型列表：合并 models 数组和 defaultModel，去重
+const normalizeSavedModels = (models?: string[], defaultModel?: string) => {
+  const modelSet = new Set<string>();
+  [...(models || []), defaultModel].forEach(model => {
+    const value = String(model || '').trim();
+    if (value) modelSet.add(value);
+  });
+  return Array.from(modelSet);
+};
+
+// 检查配置是否完整可调用（name、baseUrl、apiKey 都不能为空，且至少有一个模型）
+const hasSavedCallableApiConfig = (config: {
+  name?: string;
+  baseUrl?: string;
+  apiKey?: string;
+  models?: string[];
+  defaultModel?: string;
+  enabled?: boolean;
+}) => (
+  config.enabled !== false &&
+  Boolean(String(config.name || '').trim()) &&
+  Boolean(String(config.baseUrl || '').trim()) &&
+  Boolean(String(config.apiKey || '').trim()) &&
+  (normalizeSavedModels(config.models, config.defaultModel).length > 0 || Boolean(String(config.defaultModel || '').trim()))
+);
+
+// ==================== DramaPage 组件 ====================
+
+const DramaPage: React.FC = () => {
+  const {
+    dramaRecords,
+    currentDramaRecordId,
+    dramaApiConfigId,
+    dramaModel,
+    saveDramaRecord,
+    loadDramaRecord,
+    deleteDramaRecord,
+    renameDramaRecord,
+    copyDramaRecord,
+    apiConfigs,
+    chatAPIConfigs,
+    recommendedConfigs,
+    showToast,
+    addAsset,
+    addPromptItem,
+    sendDramaToCanvas,
+    submitDramaToCanvas,
+  } = useAppStore();
+
+  // ---------- 本地状态 ----------
+  const [pageState, setPageState] = useState<number>(0); // 0:history 1:communicate 2:work
+  const [stepIndex, setStepIndex] = useState<number>(0);
+  const [ideaMessages, setIdeaMessages] = useState<DramaChatMessage[]>([]);
+  const [communicationSummary, setCommunicationSummary] = useState<string>('');
+  const [isGeneratingSummary, setIsGeneratingSummary] = useState<boolean>(false);
+
+  // 接口选择（必须在 allAvailableConfigs 和 selectedConfig 之前声明）
+  const [selectedConfigId, setSelectedConfigId] = useState<string>(dramaApiConfigId || '');
+  const [selectedModel, setSelectedModel] = useState<string>(dramaModel || '');
+
+  // 获取所有可用的配置（类似 HomePage 的实现）- 使用 id 作为唯一标识，避免重复
+  const allAvailableConfigs = useMemo(() => {
+    const seenIds = new Set<string>();
+    const result: any[] = [];
+    
+    // 优先添加推荐配置
+    for (const config of getCallableRecommendedConfigs(recommendedConfigs).filter(hasSavedCallableApiConfig)) {
+      const id = config.id;
+      if (!seenIds.has(id)) {
+        seenIds.add(id);
+        result.push({ 
+          ...config, 
+          models: normalizeSavedModels(config.models, config.defaultModel), 
+          _source: 'recommended' as const 
+        });
+      }
+    }
+    
+    // 再添加聊天接口配置（只添加不在推荐配置中的）
+    for (const config of chatAPIConfigs.filter(hasSavedCallableApiConfig)) {
+      const id = config.id;
+      if (!seenIds.has(id)) {
+        seenIds.add(id);
+        result.push({ 
+          ...config, 
+          apiType: 'openai-chat' as const, 
+          models: normalizeSavedModels(config.models, config.defaultModel), 
+          _source: 'chat' as const 
+        });
+      }
+    }
+    
+    return result;
+  }, [recommendedConfigs, chatAPIConfigs]);
+
+
+  // 当前选中的配置
+  const selectedConfig = allAvailableConfigs.find(c => c.id === selectedConfigId);
+
+  // 获取当前配置的模型列表
+  const currentModelOptions = useMemo(() => {
+    if (!selectedConfig) return [];
+    return selectedConfig.models || [];
+  }, [selectedConfig]);
+
+  // 页面级自动快照（DramaPage 状态变化时会触发）
+  const currentRecord = dramaRecords.find(r => r.id === currentDramaRecordId);
+  usePageSnapshot(
+    'drama',
+    `剧创: ${currentRecord?.name || '未命名'}` as any,
+    { name: currentRecord?.name, stepIndex, pageState },
+    { enabled: !!currentRecord, tags: ['drama', 'auto-snapshot'], summary: `${currentRecord?.name} - 步骤${stepIndex}` }
+  );
+
+  // 沟通台消息自动存档
+  useChatAutoSave(
+    'drama',
+    ideaMessages,
+    { titlePrefix: '沟通台', enabled: pageState === 1 }
+  );
+  // 当配置列表变化时，自动选择第一个可用配置
+  useEffect(() => {
+    if (allAvailableConfigs.length === 0) {
+      if (selectedConfigId || selectedModel) {
+        setSelectedConfigId('');
+        setSelectedModel('');
+      }
+      return;
+    }
+
+    if (!selectedConfigId || !allAvailableConfigs.some(config => config.id === selectedConfigId)) {
+      const nextConfigId = allAvailableConfigs[0].id;
+      setSelectedConfigId(nextConfigId);
+    }
+  }, [allAvailableConfigs, selectedConfigId]);
+
+  // 当选择配置改变时，默认选中该配置的第一个模型
+  useEffect(() => {
+    if (!selectedConfig) return;
+
+    const nextModel = selectedConfig.models[0] || '';
+    if (nextModel !== selectedModel) {
+      setSelectedModel(nextModel);
+    }
+  }, [selectedConfigId]);
+
+  // 全局记忆系统已集成到 App.tsx，这里无需额外初始化
+  // 记忆保存使用 saveToMemory 函数自动进行
+
+  // 过滤掉未完整保存的配置（name、baseUrl、apiKey 都不能为空）
+  const hasSavedApiConfig = (config: { name?: string; baseUrl?: string; apiKey?: string }) => (
+    Boolean(config.name?.trim()) && Boolean(config.baseUrl?.trim()) && Boolean(config.apiKey?.trim())
+  );
+
+  // 当前选中的模型（用于发送消息时）
+  const activeDramaModel = useMemo(() => {
+    return selectedModel && currentModelOptions.includes(selectedModel) ? selectedModel : '';
+  }, [currentModelOptions, selectedModel]);
+
+  // 工作台步骤数据（每个步骤独立保存）
+  const [stepResults, setStepResults] = useState<Record<string, string>>({}); // AI生成结果（Markdown）
+  const [stepChatMessages, setStepChatMessages] = useState<Record<string, DramaChatMessage[]>>({}); // 右侧对话历史
+  const [stepIsGenerating, setStepIsGenerating] = useState<Record<string, boolean>>({}); // 生成状态
+  const [currentStepInput, setCurrentStepInput] = useState<string>(''); // 右侧对话输入框
+  
+  const [storyboardRows, setStoryboardRows] = useState<StoryboardRow[]>([{ ...DEFAULT_STORYBOARD }]);
+
+  const [inputText, setInputText] = useState<string>('');
+  const [isSending, setIsSending] = useState<boolean>(false);
+  const [commInputText, setCommInputText] = useState<string>('');
+  const [renamingId, setRenamingId] = useState<string | null>(null);
+  const [renameText, setRenameText] = useState<string>('');
+  const [showNewInput, setShowNewInput] = useState<boolean>(false);
+  const [newDramaName, setNewDramaName] = useState<string>('');
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editName, setEditName] = useState<string>('');
+  const [searchTerm, setSearchTerm] = useState<string>('');
+
+  // ====== 分集管理状态 ======
+  const [episodes, setEpisodes] = useState<DramaEpisode[]>([]);
+  const [currentEpisodeIndex, setCurrentEpisodeIndex] = useState<number>(0);
+  const [isDirectorReviewMode, setIsDirectorReviewMode] = useState<boolean>(false); // 是否处于导演审核模式
+  const [directorChatInput, setDirectorChatInput] = useState<string>('');
+  const [directorReviewInput, setDirectorReviewInput] = useState<string>(''); // 导演审核意见输入框
+  const [isDirectorGenerating, setIsDirectorGenerating] = useState<boolean>(false);
+  const [isRevising, setIsRevising] = useState<boolean>(false); // 导演修改中状态
+  // 集数输入弹窗
+  const [showEpisodeModal, setShowEpisodeModal] = useState<boolean>(false);
+  const [episodeCountInput, setEpisodeCountInput] = useState<number>(1);
+
+  // 获取当前集
+  const currentEpisode = episodes[currentEpisodeIndex];
+  // 获取当前集在当前步骤的内容
+  const currentStepContent = currentEpisode?.stepContents?.[STEPS[stepIndex]?.key];
+  // 获取当前步骤的对话历史（来自 currentEpisode）
+  const currentStepChat = currentStepContent?.chatMessages || [];
+
+  // ====== 分集管理函数 ======
+  const addEpisode = useCallback((title?: string) => {
+    const newEp: DramaEpisode = {
+      id: generateEpisodeId(),
+      title: title || `第${episodes.length + 1}集`,
+      stepContents: Object.fromEntries(STEPS.map(s => [s.key, DEFAULT_STEP_CONTENT()])),
+      storyboardRows: [{ ...DEFAULT_STORYBOARD }],
+      stepIndex: 0,
+      status: 'draft',
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+    };
+    setEpisodes(prev => [...prev, newEp]);
+    setCurrentEpisodeIndex(episodes.length);
+    return newEp.id;
+  }, [episodes.length]);
+
+  const updateEpisode = useCallback((index: number, updates: Partial<DramaEpisode>) => {
+    setEpisodes(prev => prev.map((ep, i) => i === index ? { ...ep, ...updates, updatedAt: Date.now() } : ep));
+  }, []);
+
+  const updateCurrentEpisodeStep = useCallback((stepKey: string, updates: Partial<StepContent>) => {
+    if (!currentEpisode) return;
+    setEpisodes(prev => prev.map((ep, i) => {
+      if (i !== currentEpisodeIndex) return ep;
+      const prevStep = ep.stepContents[stepKey] || DEFAULT_STEP_CONTENT();
+      return {
+        ...ep,
+        stepContents: { ...ep.stepContents, [stepKey]: { ...prevStep, ...updates, lastUpdated: Date.now() } },
+        updatedAt: Date.now(),
+      };
+    }));
+  }, [currentEpisode, currentEpisodeIndex]);
+
+  const submitToDirector = useCallback(async () => {
+    if (!currentStepContent?.content) {
+      showToast('请先生成内容后再提交审核', 'info');
+      return;
+    }
+    // 更新状态为待审核
+    updateCurrentEpisodeStep(STEPS[stepIndex].key, { directorStatus: 'revision' });
+    showToast('已提交审核，导演正在审阅...', 'info');
+  }, [currentStepContent, stepIndex, updateCurrentEpisodeStep, showToast]);
+
+  const approveStep = useCallback(() => {
+    updateCurrentEpisodeStep(STEPS[stepIndex].key, { directorStatus: 'approved', directorReview: '审核通过' });
+    showToast('审核通过！', 'success');
+  }, [stepIndex, updateCurrentEpisodeStep, showToast]);
+
+  const requestRevision = useCallback(async () => {
+    const text = directorChatInput.trim();
+    if (!text) return;
+    if (!selectedConfig || !activeDramaModel) {
+      showToast('请先选择接口和模型', 'error');
+      return;
+    }
+
+    setIsDirectorGenerating(true);
+    const step = STEPS[stepIndex];
+    const currentContent = currentStepContent?.content || '';
+    const reviewHistory = currentStepChat;
+
+    try {
+      const win = window as any;
+      const messages = [
+        { role: 'system', content: `你是一位资深影视导演，正在对【${step?.label}】内容进行审核和修改指导。\n\n当前内容：\n${currentContent}` },
+        ...reviewHistory.map((m: DramaChatMessage) => ({ role: m.role, content: m.content })),
+        { role: 'user', content: text },
+      ];
+
+      if (win?.yijingAPI?.grsai?.chat) {
+        const result = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages,
+        });
+        if (result.ok) {
+          const reply = result.data?.choices?.[0]?.message?.content || result.data?.content || '';
+          const userMsg: DramaChatMessage = { id: generateId(), role: 'user', content: text, timestamp: Date.now() };
+          const assistantMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: reply, timestamp: Date.now() };
+          updateCurrentEpisodeStep(STEPS[stepIndex].key, {
+            chatMessages: [...(currentStepChat), userMsg, assistantMsg],
+            directorReview: reply,
+            directorStatus: 'revision',
+          });
+          setDirectorChatInput('');
+        }
+      }
+    } catch (e: any) {
+      showToast(`审核出错：${e.message}`, 'error');
+    }
+    setIsDirectorGenerating(false);
+  }, [directorChatInput, selectedConfig, activeDramaModel, stepIndex, currentStepContent, currentStepChat, updateCurrentEpisodeStep, showToast]);
+
+  // 从剧创记录加载分集
+  const loadEpisodesFromRecord = useCallback((record: DramaRecord) => {
+    if (record.episodes && Array.isArray(record.episodes) && record.episodes.length > 0) {
+      setEpisodes(record.episodes);
+      setCurrentEpisodeIndex(Math.min(record.currentEpisodeIndex || 0, record.episodes.length - 1));
+    } else if (record.stepContents && Object.keys(record.stepContents).length > 0) {
+      // 兼容旧格式：把 stepContents 转成 episodes[0]
+      const legacyEp: DramaEpisode = {
+        id: generateEpisodeId(),
+        title: '第1集',
+        stepContents: Object.fromEntries(
+          STEPS.map(s => [s.key, {
+            content: record.stepContents?.[s.key] || '',
+            directorReview: '',
+            directorStatus: record.stepContents?.[s.key] ? 'pending' as const : 'pending' as const,
+            chatMessages: (record.stepChats?.[s.key]) || [],
+            lastUpdated: Date.now(),
+          }])
+        ),
+        storyboardRows: record.storyboardRows?.length ? record.storyboardRows : [{ ...DEFAULT_STORYBOARD }],
+        stepIndex: record.stepIndex || 0,
+        status: 'in_progress',
+        createdAt: record.createdAt || Date.now(),
+        updatedAt: Date.now(),
+      };
+      setEpisodes([legacyEp]);
+      setCurrentEpisodeIndex(0);
+      setStepIndex(record.stepIndex || 0);
+      setStoryboardRows(record.storyboardRows?.length ? record.storyboardRows : [{ ...DEFAULT_STORYBOARD }]);
+    } else {
+      // 没有旧数据，创建第1集
+      const newEp: DramaEpisode = {
+        id: generateEpisodeId(),
+        title: '第1集',
+        stepContents: Object.fromEntries(STEPS.map(s => [s.key, DEFAULT_STEP_CONTENT()])),
+        storyboardRows: [{ ...DEFAULT_STORYBOARD }],
+        stepIndex: 0,
+        status: 'draft',
+        createdAt: Date.now(),
+        updatedAt: Date.now(),
+      };
+      setEpisodes([newEp]);
+      setCurrentEpisodeIndex(0);
+    }
+  }, []);
+
+  const dramaPageRecommendedConfigs = useMemo(
+    () => getCallableRecommendedConfigs(recommendedConfigs),
+    [recommendedConfigs]
+  );
+
+  // 图片/视频接口配置
+  const [imgConfigId, setImgConfigId] = useState<string>('');
+  const [imgModel, setImgModel] = useState<string>('');
+  const [imgRatio, setImgRatio] = useState<string>('1:1');
+  const [videoConfigId, setVideoConfigId] = useState<string>('');
+  const [videoModel, setVideoModel] = useState<string>('');
+  const [videoRatio, setVideoRatio] = useState<string>('16:9');
+  const [videoPixel, setVideoPixel] = useState<string>('720p');
+
+  // 展开状态
+  const [expandedStep, setExpandedStep] = useState<string | null>(null);
+
+  // 右键菜单状态
+  const [contextMenu, setContextMenu] = useState<{
+    x: number;
+    y: number;
+    items: ContextMenuItem[];
+    onClose: () => void;
+  } | null>(null);
+  const [copyToast, setCopyToast] = useState<string | null>(null);
+
+  // 提示词库弹窗状态
+  const [saveToPromptModal, setSaveToPromptModal] = useState<{
+    isOpen: boolean;
+    prompt: string;
+    name: string;
+    thumbnail?: string;
+    sourceType: 'text' | 'image' | 'video';
+  }>({
+    isOpen: false,
+    prompt: '',
+    name: '',
+    sourceType: 'text',
+  });
+
+  const chatEndRef = useRef<HTMLDivElement>(null);
+  const stepChatEndRef = useRef<HTMLDivElement>(null);
+  // 记录已加载的剧创记录 id，避免因 dramaRecords 引用变化（每次自动保存都会生成新数组）导致的加载死循环
+  const loadedRecordIdRef = useRef<string | null>(null);
+
+  // ---------- 从 store 加载 ----------
+  // 【关键修复：打开剧创页卡死】
+  // 此 effect 绝不能依赖 dramaRecords —— saveDramaRecord 每次都会生成新的 dramaRecords 数组引用。
+  // 若加载 effect 依赖它，就会与下方「自动保存 effect」形成无限循环：
+  //   加载 → loadEpisodesFromRecord 生成新 episodes → 自动保存 → 新 dramaRecords → 再次加载 …
+  // 因此只依赖 currentDramaRecordId，并用 ref 保证同一条记录只加载一次。
+  useEffect(() => {
+    if (!currentDramaRecordId) {
+      loadedRecordIdRef.current = null;
+      return;
+    }
+    // 同一条记录只加载一次，防止后续自动保存触发的重渲染再次覆盖本地编辑状态
+    if (loadedRecordIdRef.current === currentDramaRecordId) return;
+
+    // 读取 store 中最新的记录快照（而非闭包捕获的旧值）
+    const record = useAppStore.getState().dramaRecords.find(r => r.id === currentDramaRecordId);
+    if (!record) return;
+
+    loadedRecordIdRef.current = currentDramaRecordId;
+    setPageState(record.pageState);
+    setIdeaMessages(record.ideaMessages || []);
+    setImgConfigId(record.imgApiConfigId || '');
+    setImgModel(record.imgModel || '');
+    setImgRatio(record.imgRatio || '1:1');
+    setVideoConfigId(record.videoApiConfigId || '');
+    setVideoModel(record.videoModel || '');
+    setVideoRatio(record.videoRatio || '16:9');
+    setVideoPixel(record.videoPixel || '720p');
+    setSelectedConfigId(record.dramaApiConfigId || '');
+    setSelectedModel(record.dramaModel || '');
+    // 加载分集数据（包含旧字段兼容）
+    loadEpisodesFromRecord(record);
+    // 恢复步骤内容和对话历史（关键修复！）
+    if (record.stepContents) {
+      setStepResults(record.stepContents);
+    }
+    if (record.stepChats) {
+      setStepChatMessages(record.stepChats);
+    }
+    if (record.storyboardRows?.length) {
+      setStoryboardRows(record.storyboardRows);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentDramaRecordId]);
+
+  // 自动滚动到底部
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [ideaMessages]);
+
+  useEffect(() => {
+    stepChatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [stepChatMessages]);
+
+  // ---------- 持久化 ----------
+  // 注意：currentEpisode 不能作为依赖项（每次渲染都是新引用，会导致 useEffect 死循环 React #185）
+  // 改用 episodes + currentEpisodeIndex 间接访问
+  const persistRecord = useCallback(() => {
+    if (!currentDramaRecordId) return;
+    // 直接从 episodes + currentEpisodeIndex 推导当前集，避免依赖 currentEpisode
+    const ep = episodes[currentEpisodeIndex];
+    saveDramaRecord({
+      pageState,
+      stepIndex,
+      ideaMessages,
+      stepInput: currentStepInput,
+      imgApiConfigId: imgConfigId,
+      imgModel,
+      imgRatio,
+      videoApiConfigId: videoConfigId,
+      videoModel,
+      videoRatio,
+      videoPixel,
+      dramaApiConfigId: selectedConfigId,
+      dramaModel: selectedModel,
+      // 新分集格式（主数据源）
+      episodes,
+      currentEpisodeIndex,
+      // 兼容旧字段（从当前集提取）
+      stepContents: Object.fromEntries(
+        STEPS.map(s => [s.key, ep?.stepContents?.[s.key]?.content || ''])
+      ),
+      stepChats: Object.fromEntries(
+        STEPS.map(s => [s.key, ep?.stepContents?.[s.key]?.chatMessages || []])
+      ),
+      storyboardRows: ep?.storyboardRows || [],
+    });
+  }, [
+    pageState, stepIndex, ideaMessages, currentStepInput,
+    imgConfigId, imgModel, imgRatio,
+    videoConfigId, videoModel, videoRatio, videoPixel,
+    selectedConfigId, selectedModel, currentDramaRecordId, saveDramaRecord,
+    episodes, currentEpisodeIndex,
+  ]);
+
+  // 每次关键状态变更自动保存
+  // 注意：persistRecord 不能作为依赖项（其内部会调用 saveDramaRecord 触发 store 更新，导致死循环）
+  useEffect(() => {
+    persistRecord();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    pageState, stepIndex, ideaMessages, storyboardRows,
+    imgConfigId, videoConfigId, selectedConfigId, selectedModel,
+    episodes, currentEpisodeIndex, stepChatMessages, stepResults,
+  ]);
+
+  // ---------- 沟通台：发送消息 ----------
+  const handleSendMessage = useCallback(async () => {
+    const text = inputText.trim();
+    if (!text || isSending) return;
+    if (!selectedConfig) {
+      showToast('请先选择已保存的剧创接口', 'error');
+      return;
+    }
+    if (!activeDramaModel) {
+      showToast('请先从已保存接口中选择模型', 'error');
+      return;
+    }
+
+    const userMsg: DramaChatMessage = { id: generateId(), role: 'user', content: text, timestamp: Date.now() };
+    const updatedMessages = [...ideaMessages, userMsg];
+    setIdeaMessages(updatedMessages);
+    setInputText('');
+    setIsSending(true);
+
+    try {
+      const win = window as any;
+      if (win?.yijingAPI?.grsai?.chat) {
+        // 自动续传：循环获取完整回复
+        let allContent = '';
+        let allThinking = '';
+        let continueFetching = true;
+        let maxRetries = 5; // 最多续传5次，防止无限循环
+        let currentMessages = [
+          { role: 'system', content: COMMUNICATE_SYSTEM_PROMPT },
+          ...updatedMessages.map(m => ({ role: m.role, content: m.content })),
+        ];
+
+        while (continueFetching && maxRetries > 0) {
+          const result = await win.yijingAPI.grsai.chat({
+            baseUrl: selectedConfig.baseUrl || '',
+            apiKey: selectedConfig.apiKey || '',
+            model: activeDramaModel,
+            messages: currentMessages,
+          });
+
+          if (!result.ok) {
+            const errorMsg: DramaChatMessage = {
+              id: generateId(),
+              role: 'assistant',
+              content: `[错误] 调用失败：${result.error || '未知错误'}`,
+              timestamp: Date.now(),
+            };
+            setIdeaMessages(prev => [...prev, errorMsg]);
+            break;
+          }
+
+          const msg = result.data?.choices?.[0]?.message;
+          const finishReason = result.data?.choices?.[0]?.finish_reason;
+          const reasoningContent = msg?.reasoning_content
+            || result.data?.choices?.[0]?.reasoning_content
+            || result.data?.reasoning_content
+            || result.data?.thinking
+            || '';
+          // 内容优先从 content 取，如果为空则用 reasoning_content（某些模型把回答放在这里）
+          const content = msg?.content || result.data?.choices?.[0]?.content || result.data?.content || result.data?.response || reasoningContent || '';
+          const thinking = reasoningContent;
+
+          allContent += content;
+          if (thinking) allThinking += (allThinking ? '\n' : '') + thinking;
+
+          // 如果 finish_reason 是 length，继续获取剩余内容
+          if (finishReason === 'length') {
+            maxRetries--;
+            if (content) {
+              // 添加已获取的内容作为 assistant 回复，然后让 AI 继续
+              currentMessages = [
+                ...currentMessages,
+                { role: 'assistant', content },
+                { role: 'user', content: '请继续完成上面的回答，不要重复已说过的内容。' },
+              ];
+            }
+            // 如果 maxRetries 耗尽，强制退出
+            if (maxRetries <= 0) {
+              continueFetching = false;
+            }
+          } else {
+            continueFetching = false;
+          }
+        }
+
+        const assistantMsg: DramaChatMessage = {
+          id: generateId(),
+          role: 'assistant',
+          content: allContent || '(AI 未返回内容)',
+          timestamp: Date.now(),
+          thinking: allThinking || undefined,
+        };
+        setIdeaMessages(prev => [...prev, assistantMsg]);
+      } else {
+        // fallback 模拟回复
+        const assistantMsg: DramaChatMessage = {
+          id: generateId(),
+          role: 'assistant',
+          content: `收到您的想法：「${text}」\n\n这是一个很好的起点！让我帮您梳理一下：\n\n1. **核心主题**：这个想法围绕……\n2. **情感目标**：观众应该感受到……\n3. **建议方向**：您可以考虑从……切入\n\n您觉得这个方向怎么样？或者您有其他想法想深入探讨？`,
+          timestamp: Date.now(),
+        };
+        setIdeaMessages(prev => [...prev, assistantMsg]);
+      }
+    } catch (e: any) {
+      const errorMsg: DramaChatMessage = {
+        id: generateId(),
+        role: 'assistant',
+        content: `[错误] 发生错误：${e.message || e}`,
+        timestamp: Date.now(),
+      };
+      setIdeaMessages(prev => [...prev, errorMsg]);
+    }
+    setIsSending(false);
+  }, [inputText, isSending, selectedConfig, activeDramaModel, ideaMessages, showToast]);
+
+  // 支持沟通台输入框与示例卡片调用的发送函数（使用 commInputText）
+  const handleCommSend = useCallback(async (textArg?: string) => {
+    const text = (typeof textArg === 'string' ? textArg : commInputText).trim();
+    if (!text || isSending) return;
+    if (!selectedConfig) {
+      showToast('请先选择已保存的剧创接口', 'error');
+      return;
+    }
+    if (!activeDramaModel) {
+      showToast('请先从已保存接口中选择模型', 'error');
+      return;
+    }
+
+    const userMsg: DramaChatMessage = { id: generateId(), role: 'user', content: text, timestamp: Date.now() };
+    const updatedMessages = [...ideaMessages, userMsg];
+    setIdeaMessages(updatedMessages);
+    setCommInputText('');
+    setIsSending(true);
+
+    try {
+      const win = window as any;
+      if (win?.yijingAPI?.grsai?.chat) {
+        // 自动续传：循环获取完整回复
+        let allContent = '';
+        let allThinking = '';
+        let continueFetching = true;
+        let maxRetries = 5; // 最多续传5次，防止无限循环
+        let currentMessages = [
+          { role: 'system', content: COMMUNICATE_SYSTEM_PROMPT },
+          ...updatedMessages.map(m => ({ role: m.role, content: m.content })),
+        ];
+
+        while (continueFetching && maxRetries > 0) {
+          const result = await win.yijingAPI.grsai.chat({
+            baseUrl: (selectedConfig as any).baseUrl || '',
+            apiKey: (selectedConfig as any).apiKey || '',
+            model: activeDramaModel,
+            messages: currentMessages,
+          });
+
+          if (!result.ok) {
+            const errorMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: `[错误] 调用失败：${result.error || '未知错误'}`, timestamp: Date.now() };
+            setIdeaMessages([...updatedMessages, errorMsg]);
+            break;
+          }
+
+          const msg = result.data?.choices?.[0]?.message;
+          const finishReason = result.data?.choices?.[0]?.finish_reason;
+          const reasoningContent = msg?.reasoning_content
+            || result.data?.choices?.[0]?.reasoning_content
+            || result.data?.reasoning_content
+            || result.data?.thinking
+            || '';
+          // 内容优先从 content 取，如果为空则用 reasoning_content（某些模型把回答放在这里）
+          const content = msg?.content || result.data?.choices?.[0]?.content || result.data?.content || result.data?.response || reasoningContent || '';
+          const thinking = reasoningContent;
+
+          allContent += content;
+          if (thinking) allThinking += (allThinking ? '\n' : '') + thinking;
+
+          // 如果 finish_reason 是 length，继续获取剩余内容
+          if (finishReason === 'length') {
+            maxRetries--;
+            if (content) {
+              // 添加已获取的内容作为 assistant 回复，然后让 AI 继续
+              currentMessages = [
+                ...currentMessages,
+                { role: 'assistant', content },
+                { role: 'user', content: '请继续完成上面的回答，不要重复已说过的内容。' },
+              ];
+            }
+            // 如果 maxRetries 耗尽，强制退出
+            if (maxRetries <= 0) {
+              continueFetching = false;
+            }
+          } else {
+            continueFetching = false;
+          }
+        }
+
+        const assistantMsg: DramaChatMessage = {
+          id: generateId(), role: 'assistant', content: allContent || '(AI 未返回内容)', timestamp: Date.now(), thinking: allThinking || undefined,
+        };
+        setIdeaMessages([...updatedMessages, assistantMsg]);
+      } else {
+        const assistantMsg: DramaChatMessage = {
+          id: generateId(), role: 'assistant', content: `收到您的想法：「${text}」\n\n这是一个很好的起点！让我帮您梳理一下：\n\n1. **核心主题**：这个想法围绕……\n2. **情感目标**：观众应该感受到……\n3. **建议方向**：您可以考虑从……切入\n\n您觉得这个方向怎么样？或者您有其他想法想深入探讨？`, timestamp: Date.now(),
+        };
+        setIdeaMessages([...updatedMessages, assistantMsg]);
+      }
+    } catch (e: any) {
+      const errorMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: `[错误] 发生错误：${e.message || e}`, timestamp: Date.now() };
+      setIdeaMessages([...updatedMessages, errorMsg]);
+    }
+
+    setIsSending(false);
+  }, [commInputText, isSending, selectedConfig, activeDramaModel, ideaMessages, showToast]);
+
+  // ---------- 工作台：提交导演审核 ----------
+  const handleDirectorReview = useCallback(async () => {
+    const step = STEPS[stepIndex];
+    if (!step) return;
+    if (!selectedConfig) {
+      showToast('请先选择已保存的剧创接口', 'error');
+      return;
+    }
+    if (!activeDramaModel) {
+      showToast('请先从已保存接口中选择模型', 'error');
+      return;
+    }
+
+    // 设置审核状态为 review
+    const currentStepKey = STEPS[stepIndex].key;
+    const currentContent = episodes[currentEpisodeIndex]?.stepContents?.[currentStepKey] || DEFAULT_STEP_CONTENT();
+    updateEpisode(currentEpisodeIndex, {
+      stepContents: {
+        ...episodes[currentEpisodeIndex].stepContents,
+        [currentStepKey]: {
+          ...currentContent,
+          directorStatus: 'review',
+          lastUpdated: Date.now(),
+        },
+      },
+    });
+
+    // 设置生成状态
+    setStepIsGenerating(prev => ({ ...prev, [step.key]: true }));
+
+    try {
+      const win = window as any;
+
+      // 获取当前步骤的内容
+      const currentStepContent = currentEpisode?.stepContents?.[step.key]?.content || '';
+      
+      // 获取前面所有步骤的内容作为上下文
+      const getStepContent = (s: { key: string; label: string }) => {
+        const content = currentEpisode?.stepContents?.[s.key]?.content || '';
+        return content ? `## ${s.label}\n${content}` : '';
+      };
+      
+      const previousSteps = STEPS.slice(0, stepIndex + 1)
+        .map(getStepContent)
+        .filter(Boolean)
+        .join('\n\n');
+
+      // 获取所有前置步骤的内容用于对比审核
+      const getPreviousStepsContent = () => {
+        const contents: string[] = [];
+        for (let i = 0; i < stepIndex; i++) {
+          const s = STEPS[i];
+          const content = currentEpisode?.stepContents?.[s.key]?.content || '';
+          if (content) {
+            contents.push(`=== ${s.label} ===\n${content}`);
+          }
+        }
+        return contents.join('\n\n');
+      };
+
+      const previousStepsContent = getPreviousStepsContent();
+
+      const messages = [
+        {
+          role: 'system',
+          content: `你是Alisa，一位影视总导演。你的核心价值是精准传递情绪——让观众感受到他们应该感受到的东西。
+
+## 审核原则
+1. **情绪一致性** - 当前步骤的情绪设计是否与导演阐述一致？
+2. **逻辑连贯性** - 故事发展是否前后呼应？人物行为是否符合设定？
+3. **专业标准** - 是否符合该步骤的专业要求（故事结构/剧本格式/分镜规范等）
+4. **可执行性** - 内容是否具体可执行？还是过于抽象？
+
+## 审核方法
+- 对比前置步骤：将当前内容与导演阐述、故事大纲等进行对比
+- 标注情绪坐标：用"（强度，类型）"评估情绪传递是否到位
+- 具体场景化：不说"不够好"，而是指出"哪里不够好，怎么改"
+- 先肯定再调整：先找到对的部分，再提修改建议
+
+## 输出格式
+1. **一致性检查** - 与前置步骤的对比分析
+2. **总体评价** - 优点 + 需要改进的地方
+3. **具体修改建议** - 逐条列出，包含"问题+修改方案"
+4. **情绪审核** - 情绪坐标标注和评估
+5. **审核结论** - 【通过】或【需修改】+ 理由
+
+【重要】你必须使用中文回复。语气专业但亲切，像导演跟团队沟通一样。`,
+        },
+        {
+          role: 'user',
+          content: previousStepsContent 
+            ? `=== 前置创作内容 ===\n\n${previousStepsContent}\n\n=== 待审核：${step.label} ===\n\n${currentStepContent}\n\n请作为总导演Alisa，对比前置内容进行审核。检查情绪一致性、逻辑连贯性和专业标准，给出具体修改建议。`
+            : `=== 待审核：${step.label} ===\n\n${currentStepContent}\n\n请作为总导演Alisa进行审核。这是第一个步骤，请重点评估其情绪目标是否清晰、风格定位是否明确、是否具有可执行性。`,
+        },
+      ];
+
+      if (win?.yijingAPI?.grsai?.chat) {
+        const result = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages,
+        });
+
+        if (result.ok) {
+          // 提取内容
+          let content = '';
+          const msg = result.data?.choices?.[0]?.message;
+          
+          if (msg?.content && msg.content.trim()) {
+            content = msg.content;
+          } else if (msg?.reasoning_content && msg.reasoning_content.trim()) {
+            content = msg.reasoning_content;
+          } else if (result.data?.choices?.[0]?.content) {
+            content = result.data.choices[0].content;
+          } else if (result.data?.content) {
+            content = result.data.content;
+          } else if (result.data?.response) {
+            content = result.data.response;
+          } else if (result.data?.message?.content) {
+            content = result.data.message.content;
+          } else if (typeof result.data === 'string') {
+            content = result.data;
+          } else {
+            content = JSON.stringify(result.data, null, 2);
+          }
+          
+          if (!content || content.trim() === '') {
+            content = '审核完成，但未返回具体内容。';
+          }
+
+          // 自动判断是否通过审核（简单关键词匹配）
+          const isApproved = content.includes('通过') || content.includes('认可') || content.includes('可以') || content.includes('达标') || content.includes('通过审核');
+          const newStatus = isApproved ? 'approved' : 'review';
+
+          // 将审核意见添加到右侧对话栏
+          const reviewMsg: DramaChatMessage = {
+            id: `director_review_${Date.now()}`,
+            role: 'assistant',
+            content: `【导演审核意见】${isApproved ? ' ✅ 通过' : ' ⚠️ 需修改'}\n\n${content}`,
+            timestamp: Date.now(),
+          };
+          
+          const updatedChatMessages = [...(currentContent.chatMessages || []), reviewMsg];
+          updateEpisode(currentEpisodeIndex, {
+            stepContents: {
+              ...episodes[currentEpisodeIndex].stepContents,
+              [currentStepKey]: {
+                ...currentContent,
+                directorStatus: newStatus,
+                chatMessages: updatedChatMessages,
+                lastUpdated: Date.now(),
+              },
+            },
+          });
+          
+          showToast(isApproved ? '导演审核已通过' : '导演提出了修改意见', isApproved ? 'success' : 'warning');
+        } else {
+          // 恢复状态
+          updateEpisode(currentEpisodeIndex, {
+            stepContents: {
+              ...episodes[currentEpisodeIndex].stepContents,
+              [currentStepKey]: {
+                ...currentContent,
+                directorStatus: 'pending',
+                lastUpdated: Date.now(),
+              },
+            },
+          });
+          showToast(`审核失败：${result.error || '未知错误'}`, 'error');
+        }
+      } else {
+        // fallback 模拟
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        const mockReview = `【导演审核意见】
+
+**总体评价：**
+整体构思不错，故事有潜力。但在人物动机和情节转折上还有提升空间。
+
+**具体修改建议：**
+1. 主角的行为动机需要更加明确，建议增加内心独白的描写
+2. 第二幕的转折点略显突兀，建议铺垫更多细节
+3. 结尾的情感高潮可以更加克制，用"留白"的方式更有力量
+
+**审核结论：**
+建议修改后再次提交审核。`;
+
+        const reviewMsg: DramaChatMessage = {
+          id: `director_review_${Date.now()}`,
+          role: 'assistant',
+          content: mockReview,
+          timestamp: Date.now(),
+        };
+        
+        const updatedChatMessages = [...(currentContent.chatMessages || []), reviewMsg];
+        updateEpisode(currentEpisodeIndex, {
+          stepContents: {
+            ...episodes[currentEpisodeIndex].stepContents,
+            [currentStepKey]: {
+              ...currentContent,
+              directorStatus: 'review',
+              chatMessages: updatedChatMessages,
+              lastUpdated: Date.now(),
+            },
+          },
+        });
+        
+        showToast('导演审核意见已生成（模拟）', 'success');
+      }
+    } catch (e: any) {
+      // 恢复状态
+      updateEpisode(currentEpisodeIndex, {
+        stepContents: {
+          ...episodes[currentEpisodeIndex].stepContents,
+          [currentStepKey]: {
+            ...currentContent,
+            directorStatus: 'pending',
+            lastUpdated: Date.now(),
+          },
+        },
+      });
+      showToast(`审核出错：${e.message || e}`, 'error');
+    }
+
+    setStepIsGenerating(prev => ({ ...prev, [step.key]: false }));
+  }, [stepIndex, selectedConfig, activeDramaModel, currentEpisode, currentEpisodeIndex, episodes, updateEpisode, showToast]);
+
+  // ---------- 导演修改：发送修改意见并更新左侧内容 ----------
+  const handleDirectorRevision = useCallback(async () => {
+    const text = directorReviewInput.trim();
+    if (!text) return;
+    if (!selectedConfig) {
+      showToast('请先选择已保存的剧创接口', 'error');
+      return;
+    }
+    if (!activeDramaModel) {
+      showToast('请先从已保存接口中选择模型', 'error');
+      return;
+    }
+
+    const currentStepKey = STEPS[stepIndex].key;
+    const currentContent = episodes[currentEpisodeIndex]?.stepContents?.[currentStepKey] || DEFAULT_STEP_CONTENT();
+    const currentLeftContent = currentContent.content || '';
+
+    // 添加用户消息到沟通记录
+    const userMsg: DramaChatMessage = { id: generateId(), role: 'user', content: text, timestamp: Date.now() };
+    const updatedChatMessages = [...(currentContent.chatMessages || []), userMsg];
+    updateEpisode(currentEpisodeIndex, {
+      stepContents: {
+        ...episodes[currentEpisodeIndex].stepContents,
+        [currentStepKey]: {
+          ...currentContent,
+          chatMessages: updatedChatMessages,
+          lastUpdated: Date.now(),
+        },
+      },
+    });
+    setDirectorReviewInput('');
+    setIsSending(true);
+    setIsRevising(true);
+
+    try {
+      const win = window as any;
+      if (win?.yijingAPI?.grsai?.chat) {
+        // 构建包含左侧内容的上下文
+        const stepTitle = STEPS[stepIndex]?.label || '';
+        let contextPrompt = '';
+        if (currentLeftContent) {
+          contextPrompt = `【当前 ${stepTitle} 内容】\n${currentLeftContent}\n\n【导演修改要求】\n${text}\n\n请根据导演的要求修改上面的内容，直接输出修改后的完整内容，不需要解释。`;
+        } else {
+          contextPrompt = `【导演要求】\n${text}\n\n请直接输出符合要求的 ${stepTitle} 内容，不需要解释。`;
+        }
+
+        // 自动续传：循环获取完整回复
+        let allContent = '';
+        let continueFetching = true;
+        let maxRetries = 5;
+        let currentMessages = [
+          { role: 'system', content: COMMUNICATE_SYSTEM_PROMPT },
+          { role: 'user', content: contextPrompt },
+        ];
+
+        while (continueFetching && maxRetries > 0) {
+          const result = await win.yijingAPI.grsai.chat({
+            baseUrl: (selectedConfig as any).baseUrl || '',
+            apiKey: (selectedConfig as any).apiKey || '',
+            model: activeDramaModel,
+            messages: currentMessages,
+          });
+
+          if (!result.ok) {
+            showToast(`AI 调用失败：${result.error || '未知错误'}`, 'error');
+            break;
+          }
+
+          const msg = result.data?.choices?.[0]?.message;
+          const finishReason = result.data?.choices?.[0]?.finish_reason;
+          const reasoningContent = msg?.reasoning_content
+            || result.data?.choices?.[0]?.reasoning_content
+            || result.data?.reasoning_content
+            || result.data?.thinking
+            || '';
+          const content = msg?.content || result.data?.choices?.[0]?.content || result.data?.content || result.data?.response || reasoningContent || '';
+
+          allContent += content;
+
+          // 如果 finish_reason 是 length，继续获取剩余内容
+          if (finishReason === 'length') {
+            maxRetries--;
+            if (content) {
+              currentMessages = [
+                ...currentMessages,
+                { role: 'assistant', content },
+                { role: 'user', content: '请继续完成上面的回答，不要重复已说过的内容。' },
+              ];
+            }
+            if (maxRetries <= 0) {
+              continueFetching = false;
+            }
+          } else {
+            continueFetching = false;
+          }
+        }
+
+        // 将 AI 回复添加到沟通记录并更新左侧内容
+        if (allContent) {
+          const assistantMsg: DramaChatMessage = {
+            id: generateId(),
+            role: 'assistant',
+            content: allContent,
+            timestamp: Date.now(),
+          };
+          const finalChatMessages = [...updatedChatMessages, assistantMsg];
+          updateEpisode(currentEpisodeIndex, {
+            stepContents: {
+              ...episodes[currentEpisodeIndex].stepContents,
+              [currentStepKey]: {
+                ...currentContent,
+                content: allContent, // 更新左侧内容
+                chatMessages: finalChatMessages,
+                lastUpdated: Date.now(),
+              },
+            },
+          });
+          // 自动保存到全局记忆系统
+          saveToMemory(
+            'drama',
+            'drama',
+            `${currentEpisode?.title || '剧创'} - ${currentStepKey}`,
+            allContent,
+            {
+              tags: ['剧创', currentStepKey as string, '导演修改'],
+              metadata: { episodeIndex: currentEpisodeIndex, episodeTitle: episodes[currentEpisodeIndex]?.title, type: 'revision' },
+            }
+          );
+        }
+      } else {
+        showToast('AI 接口不可用', 'error');
+      }
+    } catch (e: any) {
+      showToast(`发生错误：${e.message || e}`, 'error');
+    }
+
+    setIsSending(false);
+    setIsRevising(false);
+  }, [directorReviewInput, stepIndex, selectedConfig, activeDramaModel, currentEpisodeIndex, episodes, updateEpisode, showToast]);
+
+  // ---------- 工作台：生成步骤内容 ----------
+  const handleStepGenerate = useCallback(async (targetStepIndex?: number) => {
+    const idx = targetStepIndex ?? stepIndex;
+    const step = STEPS[idx];
+    if (!step) return;
+    if (!selectedConfig) {
+      showToast('请先选择已保存的剧创接口', 'error');
+      return;
+    }
+    if (!activeDramaModel) {
+      showToast('请先从已保存接口中选择模型', 'error');
+      return;
+    }
+
+    // 设置生成状态
+    setStepIsGenerating(prev => ({ ...prev, [step.key]: true }));
+    // 更新分集状态为进行中
+    updateEpisode(currentEpisodeIndex, { status: 'in_progress' });
+
+    try {
+      const win = window as any;
+      let messages: { role: string; content: string }[] = [];
+
+      // 获取当前集的各步骤内容
+      const getStepContent = (s: { key: string }) => currentEpisode?.stepContents?.[s.key]?.content || '';
+
+      if (idx === 0) {
+        // 第一步：使用沟通历史作为上下文
+        const communicateContext = ideaMessages.map(m =>
+          `${m.role === 'user' ? '用户' : 'AI'}：${m.content}`
+        ).join('\n\n');
+
+        messages = [
+          { role: 'system', content: SYSTEM_PROMPTS[step.key] },
+          { role: 'user', content: `以下是与用户的沟通记录，请根据这些内容生成${step.label}：\n\n${communicateContext}` },
+        ];
+      } else {
+        // 后续步骤：使用前面所有步骤的结果作为上下文（从当前集获取）
+        const previousResults = STEPS.slice(0, idx).map(s =>
+          `## ${s.label}\n${getStepContent(s) || '（未生成）'}`
+        ).join('\n\n');
+
+        messages = [
+          { role: 'system', content: SYSTEM_PROMPTS[step.key] },
+          { role: 'user', content: `以下是前面步骤的创作结果：\n\n${previousResults}\n\n请根据这些内容，生成【${step.label}】的内容。` },
+        ];
+      }
+
+      if (win?.yijingAPI?.grsai?.chat) {
+        const result = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages,
+        });
+
+        if (result.ok) {
+          // 尝试多种可能的数据结构提取内容
+          let content = '';
+          const msg = result.data?.choices?.[0]?.message;
+          
+          // 优先使用 content，如果为空则使用 reasoning_content
+          if (msg?.content && msg.content.trim()) {
+            content = msg.content;
+          } else if (msg?.reasoning_content && msg.reasoning_content.trim()) {
+            content = msg.reasoning_content;
+          } else if (result.data?.choices?.[0]?.content) {
+            content = result.data.choices[0].content;
+          } else if (result.data?.content) {
+            content = result.data.content;
+          } else if (result.data?.response) {
+            content = result.data.response;
+          } else if (result.data?.message?.content) {
+            content = result.data.message.content;
+          } else if (typeof result.data === 'string') {
+            content = result.data;
+          } else {
+            content = JSON.stringify(result.data, null, 2);
+          }
+          
+          if (!content || content.trim() === '') {
+            content = '生成完成，但未返回内容。';
+          }
+
+          // 更新分集步骤内容
+          updateCurrentEpisodeStep(step.key, { content, directorStatus: 'pending', lastUpdated: Date.now() });
+          // 同步更新旧字段（兼容）
+          setStepResults(prev => ({ ...prev, [step.key]: content }));
+          // 自动保存到全局记忆系统
+          saveToMemory(
+            'drama',
+            'drama',
+            `${currentEpisode?.title || '剧创'} - ${step.label}`,
+            content,
+            {
+              tags: ['剧创', step.label, '自动保存'],
+              metadata: { episodeIndex: currentEpisodeIndex, episodeTitle: currentEpisode?.title },
+            }
+          );
+          showToast(`${step.label}生成完成`, 'success');
+        } else {
+          showToast(`生成失败：${result.error || '未知错误'}`, 'error');
+        }
+      } else {
+        // fallback 模拟
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        const mockContent = `# ${step.label}\n\n## 自动生成的内容\n\n这是基于沟通记录自动生成的${step.label}内容框架...`;
+        updateCurrentEpisodeStep(step.key, { content: mockContent, directorStatus: 'pending', lastUpdated: Date.now() });
+        setStepResults(prev => ({ ...prev, [step.key]: mockContent }));
+        showToast(`${step.label}生成完成（模拟）`, 'info');
+      }
+    } catch (e: any) {
+      showToast(`生成错误：${e.message || e}`, 'error');
+    }
+
+    setStepIsGenerating(prev => ({ ...prev, [step.key]: false }));
+  }, [stepIndex, selectedConfig, activeDramaModel, ideaMessages, stepResults]);
+
+  // 添加分集后自动触发第一步创作
+  const handleAddEpisode = useCallback((title?: string) => {
+    addEpisode(title);
+    setTimeout(() => {
+      handleStepGenerate(0);
+    }, 200);
+  }, [addEpisode, handleStepGenerate]);
+
+  // ---------- 工作台：右侧对话发送 ----------
+  const handleStepChatSend = useCallback(async () => {
+    const text = currentStepInput.trim();
+    if (!text || !selectedConfig || !activeDramaModel) return;
+
+    const step = STEPS[stepIndex];
+    if (!step) return;
+
+    const userMsg: DramaChatMessage = { id: generateId(), role: 'user', content: text, timestamp: Date.now() };
+
+    // 更新分集对话
+    updateCurrentEpisodeStep(step.key, {
+      chatMessages: [...(currentStepChat), userMsg],
+    });
+    // 同步旧字段
+    setStepChatMessages(prev => ({ ...prev, [step.key]: [...(prev[step.key] || []), userMsg] }));
+    setCurrentStepInput('');
+    setStepIsGenerating(prev => ({ ...prev, [step.key]: true }));
+
+    try {
+      const win = window as any;
+      const currentContent = currentEpisode?.stepContents?.[step.key]?.content || '';
+      const chatHistory = currentStepChat;
+
+      const messages = [
+        { role: 'system', content: `你是${step.label}步骤的修改助手。当前内容：\n\n${currentContent}` },
+        ...chatHistory.map(m => ({ role: m.role, content: m.content })),
+        { role: 'user', content: `请根据以下修改意见，更新${step.label}的内容：${text}` },
+      ];
+
+      if (win?.yijingAPI?.grsai?.chat) {
+        const result = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages,
+        });
+
+        if (result.ok) {
+          // 尝试多种可能的数据结构提取内容
+          let replyContent = '';
+          const msg = result.data?.choices?.[0]?.message;
+          
+          // 优先使用 content，如果为空则使用 reasoning_content
+          if (msg?.content && msg.content.trim()) {
+            replyContent = msg.content;
+          } else if (msg?.reasoning_content && msg.reasoning_content.trim()) {
+            replyContent = msg.reasoning_content;
+          } else if (result.data?.choices?.[0]?.content) {
+            replyContent = result.data.choices[0].content;
+          } else if (result.data?.content) {
+            replyContent = result.data.content;
+          } else if (result.data?.response) {
+            replyContent = result.data.response;
+          } else if (result.data?.message?.content) {
+            replyContent = result.data.message.content;
+          } else if (typeof result.data === 'string') {
+            replyContent = result.data;
+          } else {
+            replyContent = JSON.stringify(result.data, null, 2);
+          }
+          
+          if (!replyContent || replyContent.trim() === '') {
+            replyContent = '已收到修改意见';
+          }
+          
+          const thinkingContent = result.data?.choices?.[0]?.message?.reasoning_content
+            || result.data?.choices?.[0]?.reasoning_content
+            || result.data?.reasoning_content
+            || result.data?.thinking
+            || undefined;
+
+          const assistantMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: replyContent, timestamp: Date.now(), thinking: thinkingContent };
+          // 更新分集
+          updateCurrentEpisodeStep(step.key, {
+            chatMessages: [...(currentStepChat), userMsg, assistantMsg],
+            directorReview: replyContent,
+          });
+          // 同步旧字段
+          setStepChatMessages(prev => ({ ...prev, [step.key]: [...(prev[step.key] || []), assistantMsg] }));
+          setStepResults(prev => ({ ...prev, [step.key]: replyContent }));
+        } else {
+          const errorMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: `[错误] 调用失败：${result.error || '未知错误'}`, timestamp: Date.now() };
+          updateCurrentEpisodeStep(step.key, { chatMessages: [...(currentStepChat), userMsg, errorMsg] });
+          setStepChatMessages(prev => ({ ...prev, [step.key]: [...(prev[step.key] || []), errorMsg] }));
+        }
+      } else {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        const assistantMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: `已收到修改意见：「${text}」\n\n正在根据您的意见更新内容...`, timestamp: Date.now() };
+        updateCurrentEpisodeStep(step.key, { chatMessages: [...(currentStepChat), userMsg, assistantMsg] });
+        setStepChatMessages(prev => ({ ...prev, [step.key]: [...(prev[step.key] || []), assistantMsg] }));
+      }
+    } catch (e: any) {
+      const errorMsg: DramaChatMessage = { id: generateId(), role: 'assistant', content: `[错误] 发生错误：${e.message || e}`, timestamp: Date.now() };
+      updateCurrentEpisodeStep(step.key, { chatMessages: [...(currentStepChat), userMsg, errorMsg] });
+      setStepChatMessages(prev => ({ ...prev, [step.key]: [...(prev[step.key] || []), errorMsg] }));
+    }
+
+    setStepIsGenerating(prev => ({ ...prev, [step.key]: false }));
+  }, [currentStepInput, stepIndex, selectedConfig, activeDramaModel, currentEpisode, currentStepChat, updateCurrentEpisodeStep]);
+
+  // ---------- 开始新创作 ----------
+  const handleNewCreation = useCallback(() => {
+    const id = saveDramaRecord({
+      pageState: 1,
+      stepIndex: 0,
+      ideaMessages: [],
+      stepContents: {},
+      stepChats: {},
+      stepInput: '',
+      storyboardRows: [{ ...DEFAULT_STORYBOARD }],
+      imgApiConfigId: '',
+      imgModel: '',
+      imgRatio: '1:1',
+      videoApiConfigId: '',
+      videoModel: '',
+      videoRatio: '16:9',
+      videoPixel: '720p',
+      dramaApiConfigId: selectedConfigId,
+      dramaModel: selectedModel,
+    });
+    loadDramaRecord(id);
+    setPageState(1);
+    setIdeaMessages([]);
+    setStepResults({});
+    setStepChatMessages({});
+    setStepIndex(0);
+    setStoryboardRows([{ ...DEFAULT_STORYBOARD }]);
+  }, [saveDramaRecord, loadDramaRecord, selectedConfigId, selectedModel]);
+
+  // ---------- 加载记录 ----------
+  const handleLoadRecord = useCallback((id: string) => {
+    loadDramaRecord(id);
+    const record = dramaRecords.find(r => r.id === id);
+    if (record) {
+      setPageState(record.pageState || 1);
+      setStepIndex(record.stepIndex || 0);
+      setIdeaMessages(record.ideaMessages || []);
+      if (record.stepContents) {
+        setStepResults(record.stepContents);
+      }
+      if (record.stepChats) {
+        setStepChatMessages(record.stepChats);
+      }
+      setStoryboardRows(record.storyboardRows?.length ? record.storyboardRows : [{ ...DEFAULT_STORYBOARD }]);
+      setImgConfigId(record.imgApiConfigId || '');
+      setImgModel(record.imgModel || '');
+      setImgRatio(record.imgRatio || '1:1');
+      setVideoConfigId(record.videoApiConfigId || '');
+      setVideoModel(record.videoModel || '');
+      setVideoRatio(record.videoRatio || '16:9');
+      setVideoPixel(record.videoPixel || '720p');
+      setSelectedConfigId(record.dramaApiConfigId || '');
+      setSelectedModel(record.dramaModel || '');
+    }
+  }, [loadDramaRecord, dramaRecords]);
+
+  // ---------- 沟通完成，生成总结 ----------
+  const handleFinishCommunication = useCallback(async () => {
+    if (ideaMessages.length === 0) return;
+    if (!selectedConfig || !activeDramaModel) {
+      showToast('请先选择接口和模型', 'error');
+      return;
+    }
+
+    setIsGeneratingSummary(true);
+    try {
+      const win = window as any;
+      const conversationText = ideaMessages.map(m =>
+        `${m.role === 'user' ? '用户' : 'AI'}：${m.content}`
+      ).join('\n\n');
+
+      const summaryPrompt = `基于以下沟通记录，生成一个简洁的创作框架总结：
+
+${conversationText}
+
+请按以下格式输出：
+
+## 创作框架总结
+
+### 1. 核心主题
+（一句话描述故事核心）
+
+### 2. 类型与风格
+（影片类型、情绪基调、视觉风格）
+
+### 3. 目标观众
+（目标人群、情感目标）
+
+### 4. 主要人物
+（主角设定、核心矛盾）
+
+### 5. 关键场景
+（2-3个关键场景概要）
+
+### 6. 创作建议
+（给导演的创作建议）`;
+
+      if (win?.yijingAPI?.grsai?.chat) {
+        const result = await win.yijingAPI.grsai.chat({
+          baseUrl: selectedConfig.baseUrl || '',
+          apiKey: selectedConfig.apiKey || '',
+          model: activeDramaModel,
+          messages: [{ role: 'user', content: summaryPrompt }],
+        });
+
+        if (result.ok) {
+          const summary = result.data?.choices?.[0]?.message?.content
+            || result.data?.content
+            || result.data?.response
+            || '总结生成失败，请手动总结沟通内容';
+          setCommunicationSummary(summary);
+        } else {
+          showToast(`总结生成失败：${result.error || '未知错误'}`, 'error');
+        }
+      } else {
+        // fallback 模拟总结
+        setCommunicationSummary(`## 创作框架总结
+
+### 1. 核心主题
+基于沟通记录的主题
+
+### 2. 类型与风格
+根据用户需求确定
+
+### 3. 目标观众
+根据沟通内容确定
+
+### 4. 主要人物
+待进一步设定
+
+### 5. 关键场景
+待进一步设计
+
+### 6. 创作建议
+进入创作工作台开始详细创作`);
+      }
+    } catch (e: any) {
+      showToast(`生成总结出错：${e.message || e}`, 'error');
+    }
+    setIsGeneratingSummary(false);
+  }, [ideaMessages, selectedConfig, activeDramaModel, showToast]);
+
+  // ---------- 示例点击 ----------
+  const handleExampleClick = useCallback(async (title: string, desc: string) => {
+    if (!selectedConfig) {
+      showToast('请先选择已保存的剧创接口', 'error');
+      return;
+    }
+    if (!activeDramaModel) {
+      showToast('请先从已保存接口中选择模型', 'error');
+      return;
+    }
+
+    const userMsg: DramaChatMessage = {
+      id: generateId(), role: 'user', content: `我想创作一个${title}：${desc}`, timestamp: Date.now(),
+    };
+    setIdeaMessages(prev => [...prev, userMsg]);
+    setIsSending(true);
+
+    try {
+      const win = window as any;
+      if (win?.yijingAPI?.grsai?.chat) {
+        const messages = [
+          { role: 'system', content: COMMUNICATE_SYSTEM_PROMPT },
+          { role: 'user', content: `我想创作一个${title}：${desc}` },
+        ];
+        const result = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages,
+        });
+        if (result.ok) {
+          const replyContent = result.data?.choices?.[0]?.message?.content
+            || result.data?.content
+            || result.data?.response
+            || '很好的主题！';
+          const assistantMsg: DramaChatMessage = {
+            id: generateId(), role: 'assistant', content: replyContent, timestamp: Date.now(),
+          };
+          setIdeaMessages(prev => [...prev, assistantMsg]);
+        }
+      }
+    } catch (e) { /* ignore */ }
+    setIsSending(false);
+  }, [selectedConfig, activeDramaModel, showToast]);
+
+  // ---------- 重命名 ----------
+  const handleRename = useCallback((id: string, name: string) => {
+    saveDramaRecord({
+      pageState, stepIndex, ideaMessages, stepContents: stepResults, stepChats: stepChatMessages, stepInput: currentStepInput,
+      storyboardRows, imgApiConfigId: imgConfigId, imgModel, imgRatio,
+      videoApiConfigId: videoConfigId, videoModel, videoRatio, videoPixel,
+      dramaApiConfigId: selectedConfigId, dramaModel: selectedModel,
+    }, name);
+    setEditingId(null);
+  }, [pageState, stepIndex, ideaMessages, stepResults, stepChatMessages, currentStepInput,
+    storyboardRows, imgConfigId, imgModel, imgRatio,
+    videoConfigId, videoModel, videoRatio, videoPixel,
+    selectedConfigId, selectedModel, saveDramaRecord]);
+
+  // ---------- 删除记录 ----------
+  const handleDelete = useCallback((id: string) => {
+    if (confirm('确定删除这条创作记录吗？')) {
+      deleteDramaRecord(id);
+      if (currentDramaRecordId === id) {
+        setPageState(0);
+        setIdeaMessages([]);
+        setStepResults({});
+        setStepChatMessages({});
+        setStoryboardRows([{ ...DEFAULT_STORYBOARD }]);
+      }
+    }
+  }, [deleteDramaRecord, currentDramaRecordId]);
+
+  // ---------- 历史记录操作 ----------
+  const handleResumeWork = useCallback((rec: DramaRecord) => {
+    loadDramaRecord(rec.id);
+    setPageState(rec.pageState || 1);
+    setIdeaMessages(rec.commMessages || rec.ideaMessages || []);
+    if (rec.stepsData) {
+      setStepResults(rec.stepsData);
+    }
+    setStepIndex(rec.currentStepIndex || 0);
+  }, [loadDramaRecord]);
+
+  const handleStartRename = useCallback((rec: DramaRecord) => {
+    setRenamingId(rec.id);
+    setRenameText(rec.name || '未命名创作');
+  }, []);
+
+  const handleConfirmRename = useCallback((id: string) => {
+    if (!renameText.trim()) { setRenamingId(null); return; }
+    renameDramaRecord(id, renameText.trim());
+    setRenamingId(null);
+    setRenameText('');
+  }, [renameText, renameDramaRecord]);
+
+  const handleCancelRename = useCallback(() => {
+    setRenamingId(null);
+    setRenameText('');
+  }, []);
+
+  // ---------- 保存并关闭 ----------
+  const handleSaveAndClose = useCallback(() => {
+    persistRecord();
+    setPageState(0);
+  }, [persistRecord]);
+
+  // ---------- 去创作：检测集数 → 弹窗确认 ----------
+  const handleGoToWorkClick = useCallback(() => {
+    // 从对话消息中检测是否提到了具体集数
+    const allText = ideaMessages.map(m => m.content).join(' ');
+    const match = allText.match(/(\d+)\s*[集部话]/);
+    const detected = match ? parseInt(match[1], 10) : 1;
+    setEpisodeCountInput(Math.max(1, detected));
+    setShowEpisodeModal(true);
+  }, [ideaMessages]);
+
+  const handleConfirmGoToWork = useCallback(() => {
+    const count = Math.max(1, episodeCountInput);
+    // 创建指定数量的分集
+    const newEpisodes: DramaEpisode[] = Array.from({ length: count }, (_, i) => ({
+      id: generateEpisodeId(),
+      title: count === 1 ? '正片' : `第${i + 1}集`,
+      stepContents: Object.fromEntries(STEPS.map(s => [s.key, DEFAULT_STEP_CONTENT()])),
+      storyboardRows: [{ ...DEFAULT_STORYBOARD }],
+      stepIndex: 0,
+      status: 'draft' as const,
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+    }));
+    setEpisodes(newEpisodes);
+    setCurrentEpisodeIndex(0);
+    setStepIndex(0);
+    setPageState(2);
+    setShowEpisodeModal(false);
+    // 触发导演阐述步骤自动生成
+    setTimeout(() => { handleStepGenerate(0); }, 100);
+  }, [episodeCountInput, handleStepGenerate]);
+
+  // ---------- 故事板操作 ----------
+  const addStoryboardRow = useCallback(() => {
+    setStoryboardRows(prev => [...prev, { ...DEFAULT_STORYBOARD }]);
+  }, []);
+
+  const updateStoryboardRow = useCallback((index: number, field: keyof StoryboardRow, value: string) => {
+    setStoryboardRows(prev => {
+      const updated = [...prev];
+      updated[index] = { ...updated[index], [field]: value };
+      return updated;
+    });
+  }, []);
+
+  const removeStoryboardRow = useCallback((index: number) => {
+    setStoryboardRows(prev => {
+      if (prev.length <= 1) return prev;
+      return prev.filter((_, i) => i !== index);
+    });
+  }, []);
+
+  const generateStoryboardPrompts = useCallback(async (rowIndex: number) => {
+    const row = storyboardRows[rowIndex];
+    if (!row) return;
+
+    const sceneInfo = `场景：${row.scene || '未指定'}\n镜头：${row.shot || '未指定'}\n描述：${row.description || '未指定'}`;
+
+    try {
+      const win = window as any;
+      if (win?.yijingAPI?.grsai?.chat && selectedConfig && activeDramaModel) {
+        // 生成 text2img 提示词
+        const imgResult = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages: [
+            { role: 'system', content: '你是一个专业的AI绘画提示词工程师。根据分镜描述，生成高质量的英文提示词，用于文生图模型。只返回提示词本身。' },
+            { role: 'user', content: sceneInfo },
+          ],
+        });
+        if (imgResult.ok) {
+          const imgPrompt = imgResult.data?.choices?.[0]?.message?.content || imgResult.data?.content || '';
+          updateStoryboardRow(rowIndex, 'text2imgPrompt', imgPrompt);
+        }
+
+        // 生成 img2video 提示词
+        const vidResult = await win.yijingAPI.grsai.chat({
+          baseUrl: (selectedConfig as any).baseUrl || '',
+          apiKey: (selectedConfig as any).apiKey || '',
+          model: activeDramaModel,
+          messages: [
+            { role: 'system', content: '你是一个专业的AI视频提示词工程师。根据分镜描述，生成高质量的英文提示词，用于图生视频模型。包含镜头运动。只返回提示词本身。' },
+            { role: 'user', content: sceneInfo + `\n镜头运动：${row.cameraMove || '固定镜头'}` },
+          ],
+        });
+        if (vidResult.ok) {
+          const vidPrompt = vidResult.data?.choices?.[0]?.message?.content || vidResult.data?.content || '';
+          updateStoryboardRow(rowIndex, 'img2videoPrompt', vidPrompt);
+        }
+
+        showToast('提示词生成完成！', 'success');
+      } else {
+        // fallback
+        updateStoryboardRow(rowIndex, 'text2imgPrompt', `cinematic shot, ${row.scene || 'scene'}, ${row.description || 'atmosphere'}, photorealistic, 8k, detailed --ar 16:9`);
+        updateStoryboardRow(rowIndex, 'img2videoPrompt', `cinematic video, ${row.scene || 'scene'}, ${row.cameraMove || 'slow pan'}, ${row.description || 'atmospheric'}, smooth motion, 24fps`);
+        showToast('已生成默认提示词', 'info');
+      }
+    } catch (e) {
+      showToast('提示词生成失败', 'error');
+    }
+  }, [storyboardRows, selectedConfig, activeDramaModel, updateStoryboardRow, showToast]);
+
+  // ---------- 搜索过滤 ----------
+  const filteredRecords = useMemo(() => {
+    if (!searchTerm.trim()) return dramaRecords;
+    const term = searchTerm.toLowerCase();
+    return dramaRecords.filter(r => r.name.toLowerCase().includes(term));
+  }, [dramaRecords, searchTerm]);
+
+  // ---------- 右键菜单处理 ----------
+  const handleContextMenu = useCallback((e: React.MouseEvent, type: 'message' | 'content' | 'scene', data: any) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const items: ContextMenuItem[] = [];
+
+    // 复制功能
+    items.push({
+      label: '复制',
+      icon: '📋',
+      onClick: async () => {
+        try {
+          let textToCopy = '';
+          if (type === 'message' && data.content) {
+            textToCopy = data.content;
+          } else if (type === 'content' && data) {
+            textToCopy = typeof data === 'string' ? data : (data.content || data.text || '');
+          } else if (type === 'scene' && data) {
+            textToCopy = JSON.stringify(data, null, 2);
+          }
+          if (textToCopy) {
+            await navigator.clipboard.writeText(textToCopy);
+            setCopyToast('已复制到剪贴板');
+            setTimeout(() => setCopyToast(null), 1500);
+          }
+        } catch (err) {
+          console.error('复制失败', err);
+        }
+      }
+    });
+
+    // 存入提示词库功能
+    if (type === 'message' || type === 'content' || type === 'scene') {
+      items.push({ label: '---' });
+      items.push({
+        label: '存入提示词库',
+        icon: '📚',
+        onClick: () => {
+          let promptText = '';
+          if (type === 'message') {
+            promptText = data.content || '';
+          } else if (type === 'scene') {
+            promptText = typeof data === 'string' ? data : (data.description || data.name || JSON.stringify(data, null, 2));
+          } else {
+            promptText = typeof data === 'string' ? data : (data.content || data.text || '');
+          }
+          setSaveToPromptModal({
+            isOpen: true,
+            prompt: promptText,
+            name: promptText.slice(0, 20) + (promptText.length > 20 ? '...' : ''),
+            sourceType: 'text',
+          });
+        }
+      });
+    }
+
+    setContextMenu({
+      x: e.clientX,
+      y: e.clientY,
+      items,
+      onClose: () => setContextMenu(null)
+    });
+  }, []);
+
+  // ---------- 发送到画布 ----------
+  const handleSendToCanvas = useCallback((stepKey: string, content: string, stepLabel: string) => {
+    if (!content) {
+      showToast('没有可发送的内容', 'error');
+      return;
+    }
+    if (!sendDramaToCanvas) {
+      showToast('画布功能未就绪', 'error');
+      return;
+    }
+    sendDramaToCanvas(stepKey, content, stepLabel);
+  }, [sendDramaToCanvas, showToast]);
+
+  // ---------- 提交全部到画布 ----------
+  const handleSubmitToCanvas = useCallback(() => {
+    if (!submitDramaToCanvas) {
+      showToast('画布功能未就绪', 'error');
+      return;
+    }
+    if (!episodes.length || !currentEpisode) {
+      showToast('没有可提交的内容', 'error');
+      return;
+    }
+    submitDramaToCanvas({
+      episodes,
+      currentEpisodeIndex,
+      storyboardRows,
+    });
+    showToast('已提交到画布创作', 'success');
+  }, [submitDramaToCanvas, episodes, currentEpisode, currentEpisodeIndex, storyboardRows, showToast]);
+
+  // ==================== 渲染 ====================
+
+  // ---- 历史记录页 ----
+  if (pageState === 0) {
+    const records = dramaRecords || [];
+    return (
+      <div className="drama-page" style={{ padding: 0, height: '100%', display: 'flex', flexDirection: 'column', background: 'var(--bg-primary)' }}>
+        {/* 顶栏 */}
+        <div style={{ padding: '20px 28px', borderBottom: '1px solid var(--border-color)', background: 'var(--bg-secondary)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <h2 style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>  剧创工坊</h2>
+            <button onClick={handleNewCreation} style={{ padding: '9px 22px', background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))', color: '#fff', border: 'none', borderRadius: 10, fontSize: 14, fontWeight: 600, cursor: 'pointer', boxShadow: '0 4px 12px rgba(106, 106, 106, 0.3)', display: 'flex', alignItems: 'center', gap: '6px' }}><PlusIcon size={16} /> 开始新创作</button>
+          </div>
+        </div>
+
+        {/* 内容区 */}
+        <div style={{ flex: 1, overflowY: 'auto', padding: '24px 28px' }}>
+          {records.length === 0 ? (
+            /* 空状态 */
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: 16 }}>
+              <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ClapperboardIcon size={40} /></div>
+              <p style={{ fontSize: 16, color: 'var(--text-secondary)', margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}><CalendarIcon size={16} /> 还没有创作记录</p>
+              <p style={{ fontSize: 13, color: 'var(--text-muted)', margin: 0 }}>点击右上角“开始新创作”，和AI创作顾问聊天梳理想法，再进入工作台生成剧本</p>
+              <button onClick={handleNewCreation} style={{ marginTop: 12, padding: '12px 32px', background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))', color: '#fff', border: 'none', borderRadius: 14, fontSize: 16, fontWeight: 600, cursor: 'pointer', boxShadow: '0 6px 20px rgba(106, 106, 106, 0.35)', display: 'flex', alignItems: 'center', gap: '6px' }}><RocketIcon size={18} /> 去沟通台</button>
+            </div>
+          ) : (
+            /* 记录列表 */
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16 }}>
+              {records.map(rec => (
+                <div key={rec.id} onClick={() => handleResumeWork(rec)}
+                  style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border-light)', borderRadius: 12, padding: 18, cursor: 'pointer', transition: 'transform 0.15s, box-shadow 0.15s' }}
+                  onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 18px rgba(0,0,0,0.25)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none'; }}>
+                  {/* 卡片头部 */}
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: 10 }}>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      {renamingId === rec.id ? (
+                        <input value={renameText} onChange={e => setRenameText(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') handleConfirmRename(rec.id); if (e.key === 'Escape') handleCancelRename(); }} onBlur={() => handleConfirmRename(rec.id)} autoFocus
+                          style={{ width: '100%', padding: '4px 8px', background: 'var(--bg-primary)', color: 'var(--text-primary)', border: '1px solid var(--accent-color)', borderRadius: 6, fontSize: 14, outline: 'none' }} />
+                      ) : (
+                        <h3 style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)', margin: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{rec.name}</h3>
+                      )}
+                    </div>
+                    {renamingId !== rec.id && (
+                      <div style={{ display: 'flex', gap: 4, marginLeft: 8, flexShrink: 0 }}>
+<button onClick={(e) => { e.stopPropagation(); handleStartRename(rec); }} style={{ padding: '2px 6px', background: 'transparent', color: 'var(--text-muted)', border: 'none', borderRadius: 4, fontSize: 12, cursor: 'pointer', display: 'flex', alignItems: 'center' }}><EditIcon size={14} /></button>
+<button onClick={(e) => { e.stopPropagation(); handleDelete(rec.id); }} style={{ padding: '2px 6px', background: 'transparent', color: '#ef4444', border: 'none', borderRadius: 4, fontSize: 13, cursor: 'pointer', display: 'flex', alignItems: 'center' }}><DeleteIcon size={14} /></button>
+                      </div>
+                    )}
+                  </div>
+                  {/* 卡片信息 */}
+                  <div style={{ display: 'flex', gap: 12, fontSize: 12, color: 'var(--text-muted)' }}>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><ListCheckIcon size={12} /> {(rec.commMessages?.length || 0) + Object.keys(rec.stepsData || {}).filter(k => (rec.stepsData || {})[k]).length} 步</span>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><CalendarIcon size={12} /> {new Date(rec.updatedAt || rec.createdAt).toLocaleDateString('zh-CN')}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ---- 沟通台页 ----
+  if (pageState === 1) {
+    return (
+      <div className="drama-page" style={{ padding: 0, height: '100%', display: 'flex', flexDirection: 'column', background: 'var(--bg-primary)' }}>
+        {/* 顶栏 */}
+        <div style={{ padding: '12px 24px', borderBottom: '1px solid var(--border-color)', background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <button onClick={() => { setPageState(0); setIdeaMessages([]); }} style={{ padding: '6px 16px', background: 'transparent', color: 'var(--text-secondary)', border: '1px solid var(--border-light)', borderRadius: 8, fontSize: 13, cursor: 'pointer' }}>← 返回历史</button>
+          <h2 style={{ fontSize: 18, fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>创作沟通台</h2>
+          <div style={{ width: 90 }} />
+        </div>
+
+        {/* 对话消息区 */}
+        <div style={{ flex: 1, overflowY: 'auto', padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {ideaMessages.length === 0 ? (
+            <>
+              {/* 示例卡片 */}
+              <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 12, display: 'flex', alignItems: 'center', gap: '6px' }}><LightbulbIcon size={16} /> 选择一个示例开始，或直接输入你的创作想法：</p>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                {[
+                  { title: '5分钟爱情喜剧短片', desc: '咖啡店偶遇的两个人，用误会和巧合推动感情发展' },
+                  { title: '30集都市短剧', desc: '职场女性从实习生到CEO的成长故事，穿插3段感情线' },
+                  { title: '15秒洗发水广告', desc: '产品卖点：去屑+柔顺，目标受众：年轻女性，调性：清新自然' },
+                  { title: '美式幽默吸血鬼故事', desc: '世界观/信仰观/价值观/人物升级结构/玄幻喜剧/真人实拍/5分钟' },
+                ].map((ex, i) => (
+                  <div key={i} onClick={() => { setCommInputText(ex.title + '\uff1a' + ex.desc); setTimeout(() => handleCommSend(ex.title + '\uff1a' + ex.desc), 100); }}
+                    style={{ padding: '14px 16px', background: 'var(--bg-secondary)', border: '1px solid var(--border-light)', borderRadius: 10, cursor: 'pointer', fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5, transition: 'border-color 0.2s' }}
+                    onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--accent-color)')}
+                    onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border-light)')}>
+                    <div style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: 4 }}>{ex.title}</div>
+                    <div>{ex.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            ideaMessages.map((msg, idx) => (
+              <div key={idx} style={{ display: 'flex', gap: 10, maxWidth: '85%', alignSelf: msg.role === 'user' ? 'flex-end' : 'flex-start' }}>
+                {msg.role === 'assistant' && (
+                  <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: '#fff' }}><BotIcon size={14} /></div>
+                )}
+                <div
+                  onContextMenu={(e) => handleContextMenu(e, 'message', msg)}
+                  style={{ padding: '10px 14px', borderRadius: msg.role === 'user' ? '14px 14px 4px 14px' : '4px 14px 14px 14px', background: msg.role === 'user' ? 'var(--accent-color)' : 'var(--bg-secondary)', color: msg.role === 'user' ? '#fff' : 'var(--text-primary)', fontSize: 14, lineHeight: 1.6, whiteSpace: 'pre-wrap', wordBreak: 'break-word', cursor: 'context-menu' }}
+                >
+                  {msg.content}
+                </div>
+                {msg.role === 'user' && (
+                  <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><UserIcon size={14} /></div>
+                )}
+              </div>
+            ))
+          )}
+          {/* AI 正在输入指示器 */}
+          {isSending && (
+              <div style={{ display: 'flex', gap: 10, alignSelf: 'flex-start' }}>
+                <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, color: '#fff' }}><BotIcon size={14} /></div>
+              <div style={{ padding: '10px 14px', borderRadius: '4px 14px 14px 14px', background: 'var(--bg-secondary)', color: 'var(--text-muted)' }}>正在思考...</div>
+            </div>
+          )}
+
+        </div>
+
+        {/* 底部输入区 */}
+        <div className="chat-input-area">
+          <div className="input-wrapper" style={{ width: '100%', maxWidth: 'none', margin: 0, boxSizing: 'border-box' }}>
+            <textarea
+              value={commInputText}
+              onChange={e => setCommInputText(e.target.value)}
+              onKeyDown={e => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  handleCommSend(commInputText);
+                }
+              }}
+              placeholder="输入消息，Shift+Enter 换行..."
+              className="chat-textarea"
+              rows={3}
+              onInput={e => {
+                const target = e.target as HTMLTextAreaElement;
+                target.style.height = 'auto';
+                target.style.height = Math.min(target.scrollHeight, 300) + 'px';
+              }}
+            />
+
+            <div className="input-actions">
+              <div className="left-controls">
+                <select
+                  value={selectedConfigId || ''}
+                  onChange={e => setSelectedConfigId(e.target.value)}
+                  className="control-select"
+                >
+                  <option value="">选择接口</option>
+                  {allAvailableConfigs.map(c => (
+                    <option key={c.id} value={c.id}>{c.name}</option>
+                  ))}
+                </select>
+                <select
+                  value={selectedModel || ''}
+                  onChange={e => setSelectedModel(e.target.value)}
+                  className="control-select"
+                >
+                  <option value="">选择模型</option>
+                  {(currentModelOptions || []).map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+              </div>
+              <button
+                className="send-button"
+                onClick={() => handleCommSend(commInputText)}
+                disabled={isSending || !commInputText.trim()}
+              >
+                {isSending ? '发送中...' : '发送 ▶'}
+              </button>
+
+              <button
+                onClick={handleGoToWorkClick}
+                disabled={!ideaMessages.some(m => m.role === 'assistant')}
+                style={{ padding: '12px 24px', background: ideaMessages.some(m => m.role === 'assistant') ? 'var(--accent-color)' : 'var(--border-light)', color: ideaMessages.some(m => m.role === 'assistant') ? '#fff' : 'var(--text-muted)', border: 'none', borderRadius: 12, fontSize: 14, fontWeight: 600, cursor: ideaMessages.some(m => m.role === 'assistant') ? 'pointer' : 'not-allowed', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '6px' }}
+              >
+                <RocketIcon size={16} /> 去创作
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* 集数输入弹窗 */}
+        {showEpisodeModal && (
+          <div style={{
+            position: 'fixed', inset: 0, zIndex: 9999,
+            background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}>
+            <div style={{
+              background: 'var(--bg-primary)', borderRadius: 16, padding: '28px 32px',
+              minWidth: 320, boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
+              border: '1px solid var(--border-color)',
+            }}>
+              <div style={{ fontSize: 18, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 20, textAlign: 'center' }}>
+                <ClapperboardIcon size={18} /> 设定集数
+              </div>
+              <div style={{ marginBottom: 20 }}>
+                <label style={{ display: 'block', fontSize: 13, color: 'var(--text-secondary)', marginBottom: 8 }}>
+                  请问要创作几集？
+                </label>
+                <input
+                  type="number"
+                  min={1}
+                  max={999}
+                  value={episodeCountInput}
+                  onChange={e => setEpisodeCountInput(Math.max(1, parseInt(e.target.value, 10) || 1))}
+                  onKeyDown={e => e.key === 'Enter' && handleConfirmGoToWork()}
+                  autoFocus
+                  style={{
+                    width: '100%', padding: '10px 14px', fontSize: 16,
+                    background: 'var(--bg-secondary)', border: '1px solid var(--border-color)',
+                    borderRadius: 10, color: 'var(--text-primary)', outline: 'none', textAlign: 'center',
+                  }}
+                  onFocus={e => { e.currentTarget.style.borderColor = 'var(--accent-color)'; }}
+                  onBlur={e => { e.currentTarget.style.borderColor = 'var(--border-color)'; }}
+                />
+                <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 6 }}>
+                  {episodeCountInput === 1 ? '单集创作，无需分集' : `将创建 ${episodeCountInput} 个分集`}
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: 10 }}>
+                <button
+                  onClick={() => setShowEpisodeModal(false)}
+                  style={{ flex: 1, padding: '9px 0', background: 'var(--bg-secondary)', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', borderRadius: 10, fontSize: 13, cursor: 'pointer' }}
+                >取消</button>
+                <button
+                  onClick={handleConfirmGoToWork}
+                  style={{ flex: 1, padding: '9px 0', background: 'var(--accent-color)', color: '#fff', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer' }}
+                >确定，开始创作</button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // ---- 工作台页 ----
+  if (pageState === 2) {
+    const currentStep = STEPS[stepIndex];
+    const isCurrentStepGenerating = stepIsGenerating[currentStep?.key];
+    const episodeStepContent = currentEpisode?.stepContents?.[currentStep?.key];
+    const currentStepContent = episodeStepContent?.content || '';
+    const directorStatus = episodeStepContent?.directorStatus || 'pending';
+    const directorReview = episodeStepContent?.directorReview || '';
+    const reviewChats = currentStepChat;
+
+    // 审核状态颜色
+    const statusColors: Record<string, { bg: string; text: string; label: string }> = {
+      pending: { bg: 'var(--text-muted)', text: '#fff', label: '未提交' },
+      review: { bg: 'var(--warning-color)', text: '#fff', label: '审核中' },
+      revision: { bg: 'var(--warning-color)', text: '#fff', label: '审核中' },
+      approved: { bg: 'var(--accent-color)', text: '#fff', label: '已通过' },
+    };
+    const statusColor = statusColors[directorStatus] || statusColors.pending;
+
+    return (
+      <div className="drama-page" style={{ padding: 0, height: '100%', display: 'flex', flexDirection: 'column', background: 'var(--bg-primary)' }}>
+
+        {/* 顶部栏：分集标签 + 步骤标签 + 保存关闭 */}
+        <div style={{ padding: '12px 24px', borderBottom: '1px solid var(--border-color)', background: 'var(--bg-secondary)', flexShrink: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {/* 分集标签行 */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6, overflow: 'auto', maxWidth: '70%' }}>
+              <span style={{ fontSize: 13, color: 'var(--text-muted)', fontWeight: 500, flexShrink: 0, display: 'flex', alignItems: 'center', gap: 4 }}><TvIcon size={14} /> 分集:</span>
+              {episodes.map((ep, i) => {
+                const epStatus = ep.status;
+                const epStatusColor = { draft: 'var(--text-muted)', in_progress: 'var(--accent-color)', review: 'var(--warning-color)', approved: 'var(--accent-color)', published: 'var(--accent-color)' }[epStatus] || 'var(--text-muted)';
+                return (
+                  <button
+                    key={ep.id}
+                    onClick={() => { setCurrentEpisodeIndex(i); setStepIndex(ep.stepIndex || 0); }}
+                    style={{
+                      padding: '4px 12px', borderRadius: 12, fontSize: 12,
+                      background: currentEpisodeIndex === i ? epStatusColor : 'transparent',
+                      color: currentEpisodeIndex === i ? '#fff' : 'var(--text-secondary)',
+                      border: `1px solid ${currentEpisodeIndex === i ? epStatusColor : 'var(--border-color)'}`,
+                      cursor: 'pointer', fontWeight: currentEpisodeIndex === i ? 600 : 400,
+                      transition: 'all 0.2s', whiteSpace: 'nowrap', flexShrink: 0,
+                    }}
+                  >
+                    {ep.title}
+                  </button>
+                );
+              })}
+              <button
+                onClick={() => handleAddEpisode()}
+                title="新增分集"
+                style={{ padding: '4px 10px', borderRadius: 12, fontSize: 12, background: 'transparent', color: 'var(--text-muted)', border: '1px dashed var(--border-color)', cursor: 'pointer', transition: 'all 0.2s', whiteSpace: 'nowrap', flexShrink: 0 }}
+              >
+                ＋ 新增分集
+              </button>
+            </div>
+            <button onClick={handleSaveAndClose} style={{ padding: '5px 14px', background: 'transparent', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', borderRadius: 8, cursor: 'pointer', fontSize: 12, transition: 'all 0.2s', flexShrink: 0 }}>
+              ← 保存并关闭
+            </button>
+          </div>
+
+          {/* 步骤标签行 */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, overflow: 'auto' }}>
+            {STEPS.map((step, idx) => {
+              const epStep = currentEpisode?.stepContents?.[step.key];
+              const hasContent = Boolean(epStep?.content);
+              const isCurrent = stepIndex === idx;
+              const stepStatusColor = { pending: 'var(--border-color)', approved: 'var(--accent-color)', revision: 'var(--warning-color)' }[epStep?.directorStatus] || 'var(--border-color)';
+              return (
+                <button
+                  key={step.key}
+                  onClick={() => { 
+                    setStepIndex(idx); 
+                    updateEpisode(currentEpisodeIndex, { stepIndex: idx }); 
+                    // 如果该步骤没有内容且不在生成中，则自动触发创作
+                    if (!hasContent) {
+                      setTimeout(() => {
+                        handleStepGenerate(idx);
+                      }, 100);
+                    }
+                  }}
+                  style={{
+                    padding: '6px 16px', borderRadius: 16, fontSize: 12,
+                    background: isCurrent ? 'var(--accent-color)' : 'transparent',
+                    color: isCurrent ? '#fff' : 'var(--text-secondary)',
+                    border: isCurrent ? 'none' : `1px solid ${stepStatusColor}`,
+                    cursor: 'pointer', transition: 'all 0.2s', whiteSpace: 'nowrap', flexShrink: 0,
+                    fontWeight: isCurrent ? 600 : 400,
+                  }}
+                >
+                  {step.icon} {step.label}
+                  {hasContent && <span style={{ marginLeft: 4, fontSize: 10 }}>✓</span>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* 主体：左内容区 + 右导演审核区 */}
+        <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+
+          {/* 左栏：创作内容区 */}
+          <div style={{ flex: 1, overflow: 'auto', padding: '24px 32px', display: 'flex', flexDirection: 'column' }}>
+            {/* 步骤说明 */}
+            {currentStep && (
+              <div style={{ marginBottom: 20, flexShrink: 0 }}>
+                <div style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>
+                  {currentStep.icon} {currentStep.label}
+                  <span style={{ marginLeft: 10, fontSize: 12, padding: '2px 10px', borderRadius: 10, background: statusColor.bg, color: statusColor.text, fontWeight: 500 }}>
+                    {statusColor.label}
+                  </span>
+                </div>
+                <div style={{ fontSize: 14, color: 'var(--text-muted)', lineHeight: 1.5 }}>
+                  {stepIndex === 0 && '确定影片主题、风格、情绪基调'}
+                  {stepIndex === 1 && '完善故事大纲、人物设定与叙事结构'}
+                  {stepIndex === 2 && '撰写或完善剧本，输出标准剧本格式'}
+                  {stepIndex === 3 && '设计分镜，包括镜头编号、景别、构图描述'}
+                  {stepIndex === 4 && '生成视觉资产描述与AI绘图提示词'}
+                  {stepIndex === 5 && '生成文生图/图生视频提示词'}
+                </div>
+              </div>
+            )}
+
+            {/* 创作内容区 */}
+            <div style={{ flex: 1, overflow: 'auto', background: 'var(--bg-secondary)', borderRadius: 12, padding: 24, position: 'relative' }}>
+              {/* 无内容且不在生成中 - 显示等待 */}
+              {!currentStepContent && !isCurrentStepGenerating ? (
+                <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--text-muted)' }}>
+                  <div style={{ fontSize: 48, marginBottom: 12, opacity: 0.2 }}>{currentStep?.icon || <ClapperboardIcon size={48} />}</div>
+                  <div style={{ fontSize: 16, fontWeight: 600, marginBottom: 6 }}>等待生成 {currentStep?.label}</div>
+                  <div style={{ fontSize: 13, marginTop: 8 }}>点击下方「创作」按钮开始，或点击「提交审核」</div>
+                </div>
+              ) : /* 无内容但在生成中 - 显示创作中 */ (!currentStepContent && isCurrentStepGenerating) ? (
+                <div style={{ textAlign: 'center', padding: '60px 20px' }}>
+                  <div style={{ fontSize: 16, color: 'var(--text-secondary)' }}>
+                    <span className="loading-dots"><ClapperboardIcon size={14} /> AI正在创作中...</span>
+                  </div>
+                </div>
+              ) : /* 有内容 - 始终显示内容（审核状态在右侧显示） */ (
+                <>
+                  <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 10, display: 'flex', gap: 8 }}>
+                    <button
+                      onClick={() => handleSendToCanvas(currentStep.key, currentStepContent, currentStep.label)}
+                      title="发送到画布"
+                      style={{ padding: '6px 12px', background: 'var(--accent-color)', color: '#fff', border: 'none', borderRadius: 6, cursor: 'pointer', fontSize: 12, fontWeight: 500, display: 'flex', alignItems: 'center', gap: 4 }}
+                    >
+                      <RulerIcon size={14} /> 发送到画布
+                    </button>
+                    <button
+                      onClick={() => {
+                        const name = prompt('保存到提示词库:', `${currentEpisode?.title || ''}_${currentStep?.label}`);
+                        if (name) {
+                          try {
+                            addPromptItem({ name, prompt: currentStepContent, tags: [currentStep?.label || ''], type: 'text' });
+                            showToast('已保存到提示词库', 'success');
+                          } catch (e) { showToast('保存失败', 'error'); }
+                        }
+                      }}
+                      title="保存到提示词库"
+                      style={{ padding: '6px 12px', background: 'var(--bg-tertiary)', color: 'var(--text-secondary)', border: '1px solid var(--border-color)', borderRadius: 6, cursor: 'pointer', fontSize: 12, display: 'flex', alignItems: 'center', gap: 4 }}
+                    >
+                      <LightbulbIcon size={14} /> 保存提示词
+                    </button>
+                  </div>
+                  <SafeMarkdown content={currentStepContent} />
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* 右栏：导演审核区 ~340px */}
+          <div style={{ width: 340, borderLeft: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', overflow: 'hidden', flexShrink: 0 }}>
+            {/* 标题 + 审核状态 */}
+            <div style={{ padding: '12px 16px', borderBottom: '1px solid var(--border-color)', background: 'var(--bg-secondary)', flexShrink: 0 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <DirectorIcon size={16} /> 导演审核
+                </div>
+                <span style={{ padding: '2px 10px', borderRadius: 10, background: statusColor.bg, color: statusColor.text, fontSize: 11, fontWeight: 600 }}>
+                  {statusColor.label}
+                </span>
+              </div>
+              {/* 审核意见摘要 */}
+              {directorReview && directorStatus !== 'pending' && (
+                <div style={{ marginTop: 8, fontSize: 12, color: 'var(--text-secondary)', background: 'var(--bg-tertiary)', padding: '8px 10px', borderRadius: 8, maxHeight: 80, overflow: 'auto', lineHeight: 1.5 }}>
+                  {directorReview.slice(0, 200)}{directorReview.length > 200 ? '...' : ''}
+                </div>
+              )}
+            </div>
+
+            {/* 对话消息区 */}
+            <div style={{ flex: 1, overflow: 'auto', padding: '12px 14px' }}>
+              {reviewChats.length === 0 ? (
+                <div style={{ textAlign: 'center', padding: '40px 10px', color: 'var(--text-muted)', fontSize: 13 }}>
+                  点击下方「提交审核」<br />开始导演审核流程
+                </div>
+              ) : (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  {(() => {
+                    const seen = new Set<string>();
+                    return reviewChats.filter(msg => { if (seen.has(msg.id)) return false; seen.add(msg.id); return true; });
+                  })().map(msg => (
+                    <div key={msg.id} style={{ display: 'flex', flexDirection: msg.role === 'user' ? 'row-reverse' : 'row', gap: 8, alignItems: 'flex-start' }}>
+                      <div style={{ width: 24, height: 24, borderRadius: '50%', flexShrink: 0, background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: '#fff' }}>
+                        {msg.role === 'user' ? <UserIcon size={12} /> : <ClapperboardIcon size={12} />}
+                      </div>
+                      <div style={{ maxWidth: '80%', padding: '8px 12px', borderRadius: msg.role === 'user' ? '12px 12px 4px 12px' : '12px 12px 12px 4px', background: msg.role === 'user' ? 'var(--accent-color)' : 'var(--bg-tertiary)', color: msg.role === 'user' ? '#fff' : 'var(--text-primary)', fontSize: 12, lineHeight: 1.5, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+                        {msg.content}
+                      </div>
+                    </div>
+                  ))}
+                  {/* 导演审核中提示 - 在审核状态且正在生成时显示 */}
+                  {(isDirectorGenerating || (directorStatus === 'review' && isCurrentStepGenerating)) && (
+                    <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                      <div style={{ width: 24, height: 24, borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: '#fff' }}><ClapperboardIcon size={12} /></div>
+                      <div style={{ padding: '8px 14px', borderRadius: 12, background: 'var(--bg-tertiary)', color: 'var(--text-muted)', fontSize: 12 }}>导演审核中...</div>
+                    </div>
+                  )}
+                  <div ref={stepChatEndRef} />
+                </div>
+              )}
+            </div>
+
+            {/* 接口选择（精简版） */}
+            <div style={{ padding: '8px 14px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-secondary)', flexShrink: 0, display: 'flex', gap: 6 }}>
+              <select value={selectedConfigId} onChange={e => setSelectedConfigId(e.target.value)} style={{ flex: 1, padding: '4px 8px', background: 'var(--bg-primary)', color: 'var(--text-primary)', border: '1px solid var(--border-color)', borderRadius: 6, fontSize: 12, cursor: 'pointer', outline: 'none' }}>
+                <option value="">接口▼</option>
+                {allAvailableConfigs.map(c => (<option key={c.id} value={c.id}>{c.name}</option>))}
+              </select>
+              <select value={selectedModel} onChange={e => setSelectedModel(e.target.value)} style={{ flex: 1, padding: '4px 8px', background: 'var(--bg-primary)', color: 'var(--text-primary)', border: '1px solid var(--border-color)', borderRadius: 6, fontSize: 12, cursor: 'pointer', outline: 'none' }}>
+                <option value="">{selectedConfig ? '模型▼' : '请选接口'}</option>
+                {currentModelOptions.map(m => (<option key={m} value={m}>{m}</option>))}
+              </select>
+            </div>
+
+{/* 审核操作区 */}
+<div style={{ padding: '10px 14px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-secondary)', flexShrink: 0 }}>
+{/* 修改意见输入框 - 所有步骤都显示 */}
+<div style={{ marginBottom: 10 }}>
+<textarea
+value={directorReviewInput}
+onChange={e => setDirectorReviewInput(e.target.value)}
+onKeyDown={e => {
+if (e.key === 'Enter' && !e.shiftKey) {
+e.preventDefault();
+handleDirectorRevision();
+}
+}}
+placeholder="输入修改意见，按 Enter 发送，Shift+Enter 换行..."
+style={{
+width: '100%',
+minHeight: 60,
+padding: '8px 10px',
+background: 'var(--bg-primary)',
+color: 'var(--text-primary)',
+border: '1px solid var(--border-color)',
+borderRadius: 8,
+fontSize: 12,
+resize: 'vertical',
+outline: 'none',
+}}
+/>
+</div>
+
+{/* 发送修改意见按钮 */}
+<div style={{ marginBottom: 10 }}>
+<button
+onClick={() => handleDirectorRevision()}
+disabled={!directorReviewInput.trim() || isSending}
+style={{
+width: '100%',
+padding: '8px 0',
+background: directorReviewInput.trim() && !isSending ? 'var(--accent-color)' : 'var(--bg-tertiary)',
+color: directorReviewInput.trim() && !isSending ? '#fff' : 'var(--text-muted)',
+border: 'none',
+borderRadius: 8,
+fontSize: 13,
+fontWeight: 500,
+cursor: directorReviewInput.trim() ? 'pointer' : 'not-allowed',
+display: 'flex',
+alignItems: 'center',
+justifyContent: 'center',
+gap: 4,
+}}
+>
+{isRevising ? '正在修改...' : <><SendIcon size={14} /> 发送修改意见</>}
+</button>
+</div>
+
+{/* 审核操作按钮 */}
+<div style={{ display: 'flex', gap: 6 }}>
+{/* 未生成内容时：生成内容 */}
+{directorStatus === 'pending' && !currentStepContent && (
+<button
+onClick={() => handleStepGenerate()}
+disabled={isCurrentStepGenerating}
+style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(--bg-tertiary)' : 'var(--accent-color)', color: isCurrentStepGenerating ? 'var(--text-muted)' : '#fff', border: 'none', borderRadius: 8, fontSize: 13, fontWeight: 500, cursor: isCurrentStepGenerating ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}
+>
+{isCurrentStepGenerating ? '创作中...' : <><ClapperboardIcon size={12} /> 开始创作</>}
+</button>
+)}
+{/* 有内容但未审核：提交导演审核 */}
+{directorStatus === 'pending' && currentStepContent && (
+<button
+onClick={() => handleDirectorReview()}
+disabled={isCurrentStepGenerating}
+style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(--bg-tertiary)' : 'var(--accent-color)', color: isCurrentStepGenerating ? 'var(--text-muted)' : '#fff', border: 'none', borderRadius: 8, fontSize: 13, fontWeight: 500, cursor: isCurrentStepGenerating ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}
+>
+{isCurrentStepGenerating ? '审核中...' : <><CheckIcon size={12} /> 提交导演审核</>}
+</button>
+)}
+{/* 审核中状态：显示通过审核按钮 */}
+{directorStatus === 'review' && (
+<button
+onClick={() => {
+const currentStepKey = STEPS[stepIndex].key;
+const currentContent = episodes[currentEpisodeIndex]?.stepContents?.[currentStepKey] || DEFAULT_STEP_CONTENT();
+updateEpisode(currentEpisodeIndex, {
+stepContents: {
+...episodes[currentEpisodeIndex].stepContents,
+[currentStepKey]: {
+...currentContent,
+directorStatus: 'approved',
+lastUpdated: Date.now(),
+},
+},
+});
+showToast('审核已通过，可以进入下一步', 'success');
+}}
+style={{ flex: 1, padding: '7px 0', background: 'var(--accent-color)', color: '#fff', border: 'none', borderRadius: 8, fontSize: 13, fontWeight: 500, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}
+>
+<><CheckIcon size={12} /> 通过审核</>
+</button>
+)}
+{/* 已通过状态：重新生成 */}
+{directorStatus === 'approved' && (
+<button
+onClick={() => handleStepGenerate()}
+disabled={isCurrentStepGenerating}
+style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(--bg-tertiary)' : 'var(--accent-color)', color: isCurrentStepGenerating ? 'var(--text-muted)' : '#fff', border: 'none', borderRadius: 8, fontSize: 13, fontWeight: 500, cursor: isCurrentStepGenerating ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}
+>
+{isCurrentStepGenerating ? '创作中...' : <><RefreshIcon size={12} /> 重新生成</>}
+</button>
+)}
+</div>
+
+</div>
+</div>
+</div>
+        {/* 底部导航 */}
+        <div style={{ padding: '10px 24px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-secondary)', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <button
+            onClick={() => { setStepIndex(Math.max(0, stepIndex - 1)); updateEpisode(currentEpisodeIndex, { stepIndex: Math.max(0, stepIndex - 1) }); }}
+            disabled={stepIndex === 0}
+            style={{ padding: '7px 20px', background: stepIndex === 0 ? 'var(--bg-tertiary)' : 'transparent', color: stepIndex === 0 ? 'var(--text-muted)' : 'var(--text-secondary)', border: '1px solid var(--border-color)', borderRadius: 10, fontSize: 13, cursor: stepIndex === 0 ? 'default' : 'pointer', transition: 'all 0.2s' }}
+          >
+            ← 上一步
+          </button>
+          <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
+            正片 · {currentStep?.label} · {currentEpisode?.title}
+          </div>
+          <button
+            onClick={async () => {
+              if (stepIndex === STEPS.length - 1) {
+                // 最后一步 -> 提交到画布创作
+                handleSubmitToCanvas();
+              } else {
+                // 其他步骤 -> 下一步
+                if (directorStatus !== 'approved') {
+                  showToast('请先通过导演审核后再进入下一步', 'warning');
+                  return;
+                }
+                const nextIdx = stepIndex + 1;
+                setStepIndex(nextIdx);
+                updateEpisode(currentEpisodeIndex, { stepIndex: nextIdx });
+                setTimeout(async () => {
+                  await handleStepGenerate(nextIdx);
+                }, 200);
+              }
+            }}
+            disabled={false}
+            style={{ padding: '7px 20px', background: stepIndex === STEPS.length - 1 ? 'var(--accent-color)' : directorStatus === 'approved' ? 'var(--accent-color)' : 'var(--bg-tertiary)', color: stepIndex === STEPS.length - 1 ? '#fff' : directorStatus === 'approved' ? '#fff' : 'var(--text-muted)', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s', boxShadow: stepIndex === STEPS.length - 1 ? '0 4px 12px rgba(59,130,246,0.3)' : directorStatus === 'approved' ? '0 4px 12px rgba(59,130,246,0.3)' : 'none' }}
+          >
+            {stepIndex === STEPS.length - 1 ? '提交到画布创作 🎬' : directorStatus === 'approved' ? '下一步 →' : '需审核通过'}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // 右键菜单
+  const contextMenuElement = contextMenu ? (
+    <ContextMenu
+      x={contextMenu.x}
+      y={contextMenu.y}
+      items={contextMenu.items}
+      onClose={contextMenu.onClose}
+    />
+  ) : null;
+
+  // 复制成功提示
+  const copyToastElement = copyToast ? (
+    <div style={{
+      position: 'fixed',
+      top: '20px',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      padding: '10px 20px',
+      background: 'var(--accent-color)',
+      color: '#fff',
+      borderRadius: '8px',
+      fontSize: '14px',
+      zIndex: 10000,
+      boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+    }}>
+      {copyToast}
+    </div>
+  ) : null;
+
+  // 存入提示词库弹窗
+  const saveModalElement = (
+    <SaveToPromptLibraryModal
+      isOpen={saveToPromptModal.isOpen}
+      defaultPrompt={saveToPromptModal.prompt}
+      defaultName={saveToPromptModal.name}
+      thumbnail={saveToPromptModal.thumbnail}
+      sourceType={saveToPromptModal.sourceType}
+      onClose={() => setSaveToPromptModal(prev => ({ ...prev, isOpen: false }))}
+    />
+  );
+
+  return (
+    <>
+      {contextMenuElement}
+      {copyToastElement}
+      {saveModalElement}
+    </>
+  );
+};
+
+export default DramaPage;
+
+

@@ -1,0 +1,1154 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 37,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0889",
+      "presetNumber": 889,
+      "label": "Females happy jumping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are celebrating, happily jumping and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0889_females-happy-jumping-pose.pma",
+      "localScenePath": "scenes/0889_females-happy-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0889_00_females-happy-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0889_00_females-happy-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0889_00_females-happy-jumping-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0889_01_females-happy-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0889_01_females-happy-jumping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "happy",
+        "pose"
+      ],
+      "bytes": 46219,
+      "slug": "females-happy-jumping-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0890",
+      "presetNumber": 890,
+      "label": "Male running gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running with a gun, holding it with two hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0890_male-running-gun-pose.pma",
+      "localScenePath": "scenes/0890_male-running-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0890_00_male-running-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0890_00_male-running-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0890_00_male-running-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 24181,
+      "slug": "male-running-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0891",
+      "presetNumber": 891,
+      "label": "Female fast running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running fast with clenched fists, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0891_female-fast-running-pose.pma",
+      "localScenePath": "scenes/0891_female-fast-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0891_00_female-fast-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0891_00_female-fast-running-pose.png",
+          "localThumbnailPath": "thumbnails/0891_00_female-fast-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 23429,
+      "slug": "female-fast-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0892",
+      "presetNumber": 892,
+      "label": "Male fast running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running fast with clenched fists, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0892_male-fast-running-pose.pma",
+      "localScenePath": "scenes/0892_male-fast-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0892_00_male-fast-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0892_00_male-fast-running-pose.png",
+          "localThumbnailPath": "thumbnails/0892_00_male-fast-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 23681,
+      "slug": "male-fast-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0893",
+      "presetNumber": 893,
+      "label": "Females jogging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are jogging together and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0893_females-jogging-pose.pma",
+      "localScenePath": "scenes/0893_females-jogging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0893_00_females-jogging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0893_00_females-jogging-pose.png",
+          "localThumbnailPath": "thumbnails/0893_00_females-jogging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0893_01_females-jogging-pose.png",
+          "localThumbnailPath": "thumbnails/0893_01_females-jogging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 46043,
+      "slug": "females-jogging-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0894",
+      "presetNumber": 894,
+      "label": "Males jogging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are jogging next to each other and looking looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0894_males-jogging-pose.pma",
+      "localScenePath": "scenes/0894_males-jogging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0894_00_males-jogging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0894_00_males-jogging-pose.png",
+          "localThumbnailPath": "thumbnails/0894_00_males-jogging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0894_01_males-jogging-pose.png",
+          "localThumbnailPath": "thumbnails/0894_01_males-jogging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 46726,
+      "slug": "males-jogging-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0895",
+      "presetNumber": 895,
+      "label": "Couple running together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is running together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0895_couple-running-together-pose.pma",
+      "localScenePath": "scenes/0895_couple-running-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0895_00_couple-running-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0895_00_couple-running-together-pose.png",
+          "localThumbnailPath": "thumbnails/0895_00_couple-running-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0895_01_couple-running-together-pose.png",
+          "localThumbnailPath": "thumbnails/0895_01_couple-running-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 46448,
+      "slug": "couple-running-together-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0896",
+      "presetNumber": 896,
+      "label": "Male running thumbs up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, looking to the right and showing thumbs up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0896_male-running-thumbs-up-pose.pma",
+      "localScenePath": "scenes/0896_male-running-thumbs-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0896_00_male-running-thumbs-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0896_00_male-running-thumbs-up-pose.png",
+          "localThumbnailPath": "thumbnails/0896_00_male-running-thumbs-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 23683,
+      "slug": "male-running-thumbs-up-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0897",
+      "presetNumber": 897,
+      "label": "Female running looking back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running straight and suddenly looking back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0897_female-running-looking-back-pose.pma",
+      "localScenePath": "scenes/0897_female-running-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0897_00_female-running-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0897_00_female-running-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/0897_00_female-running-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 23440,
+      "slug": "female-running-looking-back-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0898",
+      "presetNumber": 898,
+      "label": "High heels running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running funny in high heels, funny running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0898_high-heels-running-pose.pma",
+      "localScenePath": "scenes/0898_high-heels-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0898_00_high-heels-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0898_00_high-heels-running-pose.png",
+          "localThumbnailPath": "thumbnails/0898_00_high-heels-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 23599,
+      "slug": "high-heels-running-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0899",
+      "presetNumber": 899,
+      "label": "Female scared running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running fast, scared and running away from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0899_female-scared-running-pose.pma",
+      "localScenePath": "scenes/0899_female-scared-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0899_00_female-scared-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0899_00_female-scared-running-pose.png",
+          "localThumbnailPath": "thumbnails/0899_00_female-scared-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "pose"
+      ],
+      "bytes": 23539,
+      "slug": "female-scared-running-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0900",
+      "presetNumber": 900,
+      "label": "Skeleton flirting dancing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is performing a flirting dance, her right hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0900_skeleton-flirting-dancing-pose.pma",
+      "localScenePath": "scenes/0900_skeleton-flirting-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0900_00_skeleton-flirting-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0900_00_skeleton-flirting-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/0900_00_skeleton-flirting-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23493,
+      "slug": "skeleton-flirting-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0901",
+      "presetNumber": 901,
+      "label": "Skeleton belly dancing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is enjoying belly dancing and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0901_skeleton-belly-dancing-pose.pma",
+      "localScenePath": "scenes/0901_skeleton-belly-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0901_00_skeleton-belly-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0901_00_skeleton-belly-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/0901_00_skeleton-belly-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23643,
+      "slug": "skeleton-belly-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0902",
+      "presetNumber": 902,
+      "label": "Skeleton handstand spin pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is breakdancing, performing a single handstand spin",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0902_skeleton-handstand-spin-pose.pma",
+      "localScenePath": "scenes/0902_skeleton-handstand-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0902_00_skeleton-handstand-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0902_00_skeleton-handstand-spin-pose.png",
+          "localThumbnailPath": "thumbnails/0902_00_skeleton-handstand-spin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23449,
+      "slug": "skeleton-handstand-spin-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0903",
+      "presetNumber": 903,
+      "label": "Skeleton breakdance pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is breakdancing on the ground and posing with crossed legs in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0903_skeleton-breakdance-pose.pma",
+      "localScenePath": "scenes/0903_skeleton-breakdance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0903_00_skeleton-breakdance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0903_00_skeleton-breakdance-pose.png",
+          "localThumbnailPath": "thumbnails/0903_00_skeleton-breakdance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23466,
+      "slug": "skeleton-breakdance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0904",
+      "presetNumber": 904,
+      "label": "Skeleton romantic dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two skeletons are romantic dancing together and posing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0904_skeleton-romantic-dance-pose.pma",
+      "localScenePath": "scenes/0904_skeleton-romantic-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0904_00_skeleton-romantic-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0904_00_skeleton-romantic-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0904_00_skeleton-romantic-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0904_01_skeleton-romantic-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0904_01_skeleton-romantic-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 46264,
+      "slug": "skeleton-romantic-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0905",
+      "presetNumber": 905,
+      "label": "Skeleton ballet dancing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is ballet dancing and posing while standing on right foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0905_skeleton-ballet-dancing-pose.pma",
+      "localScenePath": "scenes/0905_skeleton-ballet-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0905_00_skeleton-ballet-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0905_00_skeleton-ballet-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/0905_00_skeleton-ballet-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23398,
+      "slug": "skeleton-ballet-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0906",
+      "presetNumber": 906,
+      "label": "Acrobatic ballet jump pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is performing an acrobatic ballet jump with a front split",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0906_acrobatic-ballet-jump-pose.pma",
+      "localScenePath": "scenes/0906_acrobatic-ballet-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0906_00_acrobatic-ballet-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0906_00_acrobatic-ballet-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0906_00_acrobatic-ballet-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23655,
+      "slug": "acrobatic-ballet-jump-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0907",
+      "presetNumber": 907,
+      "label": "Skeletons chicken dance pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three skeletons are dancing the chicken dance",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0907_skeletons-chicken-dance-pose.pma",
+      "localScenePath": "scenes/0907_skeletons-chicken-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0907_00_skeletons-chicken-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0907_00_skeletons-chicken-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0907_00_skeletons-chicken-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0907_01_skeletons-chicken-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0907_01_skeletons-chicken-dance-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0907_02_skeletons-chicken-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0907_02_skeletons-chicken-dance-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 68530,
+      "slug": "skeletons-chicken-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0908",
+      "presetNumber": 908,
+      "label": "Skeleton macarena pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three skeletons are dancing the macarena",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0908_skeleton-macarena-pose.pma",
+      "localScenePath": "scenes/0908_skeleton-macarena-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0908_00_skeleton-macarena-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0908_00_skeleton-macarena-pose.png",
+          "localThumbnailPath": "thumbnails/0908_00_skeleton-macarena-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0908_01_skeleton-macarena-pose.png",
+          "localThumbnailPath": "thumbnails/0908_01_skeleton-macarena-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0908_02_skeleton-macarena-pose.png",
+          "localThumbnailPath": "thumbnails/0908_02_skeleton-macarena-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 68603,
+      "slug": "skeleton-macarena-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0909",
+      "presetNumber": 909,
+      "label": "Skeleton acrobatic jump pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is performing an acrobatic dance jump in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0909_skeleton-acrobatic-jump-pose.pma",
+      "localScenePath": "scenes/0909_skeleton-acrobatic-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0909_00_skeleton-acrobatic-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0909_00_skeleton-acrobatic-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0909_00_skeleton-acrobatic-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 23597,
+      "slug": "skeleton-acrobatic-jump-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0910",
+      "presetNumber": 910,
+      "label": "Great sword sheath pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is pulling his great sword out of its sheath and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0910_great-sword-sheath-pose.pma",
+      "localScenePath": "scenes/0910_great-sword-sheath-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0910_00_great-sword-sheath-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0910_00_great-sword-sheath-pose.png",
+          "localThumbnailPath": "thumbnails/0910_00_great-sword-sheath-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        221,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "sword",
+        "pose"
+      ],
+      "bytes": 25098,
+      "slug": "great-sword-sheath-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0911",
+      "presetNumber": 911,
+      "label": "Holding greek sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is standing and holding his greek sword with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0911_holding-greek-sword-pose.pma",
+      "localScenePath": "scenes/0911_holding-greek-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0911_00_holding-greek-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0911_00_holding-greek-sword-pose.png",
+          "localThumbnailPath": "thumbnails/0911_00_holding-greek-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        233
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24131,
+      "slug": "holding-greek-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0912",
+      "presetNumber": 912,
+      "label": "Chibi sword jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is jumping while holding a greek sword with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0912_chibi-sword-jumping-pose.pma",
+      "localScenePath": "scenes/0912_chibi-sword-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0912_00_chibi-sword-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0912_00_chibi-sword-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0912_00_chibi-sword-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        233
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24136,
+      "slug": "chibi-sword-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1116 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 91,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-4769",
+      "presetNumber": 4769,
+      "label": "Woman crouching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and looking up, crouching woman pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4769_woman-crouching-pose.pma",
+      "localScenePath": "scenes/4769_woman-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4769_00_woman-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4769_00_woman-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4769_00_woman-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drawing",
+        "woman",
+        "pose"
+      ],
+      "bytes": 20249,
+      "slug": "woman-crouching-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4782",
+      "presetNumber": 4782,
+      "label": "Drunk female dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Drunk female is dancing, holding a wine glass in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4782_drunk-female-dancing-pose.pma",
+      "localScenePath": "scenes/4782_drunk-female-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4782_00_drunk-female-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4782_00_drunk-female-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/4782_00_drunk-female-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drunk",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20606,
+      "slug": "drunk-female-dancing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4785",
+      "presetNumber": 4785,
+      "label": "Drunk female lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Drunk female is lying on the couch, there are wine bottles around her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4785_drunk-female-lying-pose.pma",
+      "localScenePath": "scenes/4785_drunk-female-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4785_00_drunk-female-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4785_00_drunk-female-lying-pose.png",
+          "localThumbnailPath": "thumbnails/4785_00_drunk-female-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76,
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drunk",
+        "pose",
+        "reference"
+      ],
+      "bytes": 773951,
+      "slug": "drunk-female-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4788",
+      "presetNumber": 4788,
+      "label": "Happy drunk female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy and drunk female is standing and raising a wine bottle and a wine glass",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4788_happy-drunk-female-pose.pma",
+      "localScenePath": "scenes/4788_happy-drunk-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4788_00_happy-drunk-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4788_00_happy-drunk-female-pose.png",
+          "localThumbnailPath": "thumbnails/4788_00_happy-drunk-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "drunk",
+        "pose",
+        "reference"
+      ],
+      "bytes": 397106,
+      "slug": "happy-drunk-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4799",
+      "presetNumber": 4799,
+      "label": "Tree hugging pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and hugging a tree, female hugging tree reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4799_tree-hugging-pose.pma",
+      "localScenePath": "scenes/4799_tree-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4799_00_tree-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4799_00_tree-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/4799_00_tree-hugging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        409,
+        414,
+        415
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21597,
+      "slug": "tree-hugging-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4803",
+      "presetNumber": 4803,
+      "label": "Balanced combat stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is in stable fighting stance, holding sword in her right hand, female balanced sword combat reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4803_balanced-combat-stance-pose.pma",
+      "localScenePath": "scenes/4803_balanced-combat-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4803_00_balanced-combat-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4803_00_balanced-combat-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4803_00_balanced-combat-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        197
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fighting",
+        "pose"
+      ],
+      "bytes": 20637,
+      "slug": "balanced-combat-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4811",
+      "presetNumber": 4811,
+      "label": "Classic archer pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is pulling back bowstring, classic archery stance reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4811_classic-archer-pose.pma",
+      "localScenePath": "scenes/4811_classic-archer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4811_00_classic-archer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4811_00_classic-archer-pose.png",
+          "localThumbnailPath": "thumbnails/4811_00_classic-archer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20416,
+      "slug": "classic-archer-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4812",
+      "presetNumber": 4812,
+      "label": "Female side bicep pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female flexing side bicep, female side arm muscle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4812_female-side-bicep-pose.pma",
+      "localScenePath": "scenes/4812_female-side-bicep-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4812_00_female-side-bicep-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4812_00_female-side-bicep-pose.png",
+          "localThumbnailPath": "thumbnails/4812_00_female-side-bicep-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20381,
+      "slug": "female-side-bicep-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4815",
+      "presetNumber": 4815,
+      "label": "Backward glance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is looking back over her shoulder, backward glance reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4815_backward-glance-pose.pma",
+      "localScenePath": "scenes/4815_backward-glance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4815_00_backward-glance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4815_00_backward-glance-pose.png",
+          "localThumbnailPath": "thumbnails/4815_00_backward-glance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20297,
+      "slug": "backward-glance-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4818",
+      "presetNumber": 4818,
+      "label": "Overhead rock lift pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Muscular female is lifting a large rock above her head, overhead rock lift reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4818_overhead-rock-lift-pose.pma",
+      "localScenePath": "scenes/4818_overhead-rock-lift-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4818_00_overhead-rock-lift-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4818_00_overhead-rock-lift-pose.png",
+          "localThumbnailPath": "thumbnails/4818_00_overhead-rock-lift-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        44
+      ],
+      "propNumbers": [
+        363
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        44
+      ],
+      "sourceTags": [
+        "muscular",
+        "body",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20955,
+      "slug": "overhead-rock-lift-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4821",
+      "presetNumber": 4821,
+      "label": "Crouch ambush bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching behind cover, bow aimed through a narrow gap",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4821_crouch-ambush-bow-pose.pma",
+      "localScenePath": "scenes/4821_crouch-ambush-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4821_00_crouch-ambush-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4821_00_crouch-ambush-bow-pose.png",
+          "localThumbnailPath": "thumbnails/4821_00_crouch-ambush-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        176,
+        179,
+        369,
+        414,
+        415
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 23077,
+      "slug": "crouch-ambush-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4822",
+      "presetNumber": 4822,
+      "label": "Bow prone sniper shot pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying flat, bow aimed low to the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4822_bow-prone-sniper-shot-pose.pma",
+      "localScenePath": "scenes/4822_bow-prone-sniper-shot-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4822_00_bow-prone-sniper-shot-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4822_00_bow-prone-sniper-shot-pose.png",
+          "localThumbnailPath": "thumbnails/4822_00_bow-prone-sniper-shot-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        176,
+        369
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21616,
+      "slug": "bow-prone-sniper-shot-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4825",
+      "presetNumber": 4825,
+      "label": "Crouched hunter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female crouched low, bow ready, scanning surroundings, female bow reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4825_crouched-hunter-pose.pma",
+      "localScenePath": "scenes/4825_crouched-hunter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4825_00_crouched-hunter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4825_00_crouched-hunter-pose.png",
+          "localThumbnailPath": "thumbnails/4825_00_crouched-hunter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        159,
+        177
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bow",
+        "reference"
+      ],
+      "bytes": 21133,
+      "slug": "crouched-hunter-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4840",
+      "presetNumber": 4840,
+      "label": "Female elegant hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting elegantly at the table, holding her hands, waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4840_female-elegant-hand-reference.pma",
+      "localScenePath": "scenes/4840_female-elegant-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4840_00_female-elegant-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4840_00_female-elegant-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4840_00_female-elegant-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 21157,
+      "slug": "female-elegant-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4841",
+      "presetNumber": 4841,
+      "label": "Delicate open palm reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her palms are open, she is looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4841_delicate-open-palm-reference.pma",
+      "localScenePath": "scenes/4841_delicate-open-palm-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4841_00_delicate-open-palm-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4841_00_delicate-open-palm-reference.png",
+          "localThumbnailPath": "thumbnails/4841_00_delicate-open-palm-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20210,
+      "slug": "delicate-open-palm-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4842",
+      "presetNumber": 4842,
+      "label": "Pointing upward hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and pointing up with her right hand, holding her hip with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4842_pointing-upward-hand-reference.pma",
+      "localScenePath": "scenes/4842_pointing-upward-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4842_00_pointing-upward-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4842_00_pointing-upward-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4842_00_pointing-upward-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20103,
+      "slug": "pointing-upward-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4843",
+      "presetNumber": 4843,
+      "label": "Crossed fingers hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her index and middle fingers are interlaced",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4843_crossed-fingers-hand-reference.pma",
+      "localScenePath": "scenes/4843_crossed-fingers-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4843_00_crossed-fingers-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4843_00_crossed-fingers-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4843_00_crossed-fingers-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20189,
+      "slug": "crossed-fingers-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4844",
+      "presetNumber": 4844,
+      "label": "Graceful reach hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and gracefully reaching out for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4844_graceful-reach-hand-reference.pma",
+      "localScenePath": "scenes/4844_graceful-reach-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4844_00_graceful-reach-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4844_00_graceful-reach-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4844_00_graceful-reach-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20170,
+      "slug": "graceful-reach-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4845",
+      "presetNumber": 4845,
+      "label": "Touching face hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing cute and touching her face gently",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4845_touching-face-hand-reference.pma",
+      "localScenePath": "scenes/4845_touching-face-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4845_00_touching-face-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4845_00_touching-face-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4845_00_touching-face-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20215,
+      "slug": "touching-face-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4846",
+      "presetNumber": 4846,
+      "label": "Female praying hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and praying, female hand reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4846_female-praying-hand-reference.pma",
+      "localScenePath": "scenes/4846_female-praying-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4846_00_female-praying-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4846_00_female-praying-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4846_00_female-praying-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20334,
+      "slug": "female-praying-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4847",
+      "presetNumber": 4847,
+      "label": "Delicate pinch hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is gently picking up something small from the table, pinching it with two fingers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4847_delicate-pinch-hand-reference.pma",
+      "localScenePath": "scenes/4847_delicate-pinch-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4847_00_delicate-pinch-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4847_00_delicate-pinch-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4847_00_delicate-pinch-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20724,
+      "slug": "delicate-pinch-hand-reference",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4848",
+      "presetNumber": 4848,
+      "label": "Stop gesture hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and showing with her hands \"stop\"",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4848_stop-gesture-hand-reference.pma",
+      "localScenePath": "scenes/4848_stop-gesture-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4848_00_stop-gesture-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4848_00_stop-gesture-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4848_00_stop-gesture-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20211,
+      "slug": "stop-gesture-hand-reference",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4849",
+      "presetNumber": 4849,
+      "label": "Dancing hand reference",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing ballet, elegantly reaching with her right hand with open palm",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4849_dancing-hand-reference.pma",
+      "localScenePath": "scenes/4849_dancing-hand-reference.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4849_00_dancing-hand-reference.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4849_00_dancing-hand-reference.png",
+          "localThumbnailPath": "thumbnails/4849_00_dancing-hand-reference.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "female",
+        "hand",
+        "reference"
+      ],
+      "bytes": 20315,
+      "slug": "dancing-hand-reference",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4852",
+      "presetNumber": 4852,
+      "label": "Female overhead strike pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and slashing from above with her sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4852_female-overhead-strike-pose.pma",
+      "localScenePath": "scenes/4852_female-overhead-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4852_00_female-overhead-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4852_00_female-overhead-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4852_00_female-overhead-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blade",
+        "pose"
+      ],
+      "bytes": 20634,
+      "slug": "female-overhead-strike-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    }
+  ]
+}

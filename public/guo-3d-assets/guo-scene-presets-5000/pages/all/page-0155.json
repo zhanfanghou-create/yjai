@@ -1,0 +1,1209 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 154,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3697",
+      "presetNumber": 3697,
+      "label": "Horse riding pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is riding a horse, male equestrian sport pose, male sports pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3697_horse-riding-pose.pma",
+      "localScenePath": "scenes/3697_horse-riding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3697_00_horse-riding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3697_00_horse-riding-pose.png",
+          "localThumbnailPath": "thumbnails/3697_00_horse-riding-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "sports",
+        "pose"
+      ],
+      "bytes": 31203,
+      "slug": "horse-riding-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-3698",
+      "presetNumber": 3698,
+      "label": "Male weightlifter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lifting heavy weight with both hands and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3698_male-weightlifter-pose.pma",
+      "localScenePath": "scenes/3698_male-weightlifter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3698_00_male-weightlifter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3698_00_male-weightlifter-pose.png",
+          "localThumbnailPath": "thumbnails/3698_00_male-weightlifter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sports",
+        "pose"
+      ],
+      "bytes": 25514,
+      "slug": "male-weightlifter-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3699",
+      "presetNumber": 3699,
+      "label": "Female runner pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female runner is about to start sprinting, female running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3699_female-runner-pose.pma",
+      "localScenePath": "scenes/3699_female-runner-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3699_00_female-runner-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3699_00_female-runner-pose.png",
+          "localThumbnailPath": "thumbnails/3699_00_female-runner-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sports",
+        "pose"
+      ],
+      "bytes": 25477,
+      "slug": "female-runner-pose"
+    },
+    {
+      "id": "guo-scene-3700",
+      "presetNumber": 3700,
+      "label": "Female standing body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hips, crossing her legs and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3700_female-standing-body-pose.pma",
+      "localScenePath": "scenes/3700_female-standing-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3700_00_female-standing-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3700_00_female-standing-body-pose.png",
+          "localThumbnailPath": "thumbnails/3700_00_female-standing-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23460,
+      "slug": "female-standing-body-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3701",
+      "presetNumber": 3701,
+      "label": "Male standing body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his arms and legs are crossed, male body proportions drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3701_male-standing-body-pose.pma",
+      "localScenePath": "scenes/3701_male-standing-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3701_00_male-standing-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3701_00_male-standing-body-pose.png",
+          "localThumbnailPath": "thumbnails/3701_00_male-standing-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23803,
+      "slug": "male-standing-body-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3702",
+      "presetNumber": 3702,
+      "label": "Female stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and stretching her arms, female body proportions drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3702_female-stretching-pose.pma",
+      "localScenePath": "scenes/3702_female-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3702_00_female-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3702_00_female-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/3702_00_female-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23532,
+      "slug": "female-stretching-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3703",
+      "presetNumber": 3703,
+      "label": "Male waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his hip with his right hand and waving with his other hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3703_male-waving-pose.pma",
+      "localScenePath": "scenes/3703_male-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3703_00_male-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3703_00_male-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3703_00_male-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23824,
+      "slug": "male-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3704",
+      "presetNumber": 3704,
+      "label": "Male bar stool pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bar stool, holding his hip with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3704_male-bar-stool-pose.pma",
+      "localScenePath": "scenes/3704_male-bar-stool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3704_00_male-bar-stool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3704_00_male-bar-stool-pose.png",
+          "localThumbnailPath": "thumbnails/3704_00_male-bar-stool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24182,
+      "slug": "male-bar-stool-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3705",
+      "presetNumber": 3705,
+      "label": "Female bar stool pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bar stool, her legs are crossed and she is looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3705_female-bar-stool-pose.pma",
+      "localScenePath": "scenes/3705_female-bar-stool-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3705_00_female-bar-stool-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3705_00_female-bar-stool-pose.png",
+          "localThumbnailPath": "thumbnails/3705_00_female-bar-stool-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24078,
+      "slug": "female-bar-stool-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3706",
+      "presetNumber": 3706,
+      "label": "Male sitting body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the chair, his legs are crossed and he is holding his right knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3706_male-sitting-body-pose.pma",
+      "localScenePath": "scenes/3706_male-sitting-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3706_00_male-sitting-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3706_00_male-sitting-body-pose.png",
+          "localThumbnailPath": "thumbnails/3706_00_male-sitting-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24187,
+      "slug": "male-sitting-body-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3707",
+      "presetNumber": 3707,
+      "label": "Female sitting body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair, her legs are crossed, resting her hands on her knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3707_female-sitting-body-pose.pma",
+      "localScenePath": "scenes/3707_female-sitting-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3707_00_female-sitting-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3707_00_female-sitting-body-pose.png",
+          "localThumbnailPath": "thumbnails/3707_00_female-sitting-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24112,
+      "slug": "female-sitting-body-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3708",
+      "presetNumber": 3708,
+      "label": "Male crouching body pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, looking slightly to the right, male body proportions drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3708_male-crouching-body-pose.pma",
+      "localScenePath": "scenes/3708_male-crouching-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3708_00_male-crouching-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3708_00_male-crouching-body-pose.png",
+          "localThumbnailPath": "thumbnails/3708_00_male-crouching-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23759,
+      "slug": "male-crouching-body-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3709",
+      "presetNumber": 3709,
+      "label": "Female lying body pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying down, leaning on her left elbow, female lying drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3709_female-lying-body-pose.pma",
+      "localScenePath": "scenes/3709_female-lying-body-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3709_00_female-lying-body-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3709_00_female-lying-body-pose.png",
+          "localThumbnailPath": "thumbnails/3709_00_female-lying-body-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "body",
+        "proportions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23547,
+      "slug": "female-lying-body-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3710",
+      "presetNumber": 3710,
+      "label": "Christmas tree decorating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is decorating a christmas tree, adjusting an ornament",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3710_christmas-tree-decorating-pose.pma",
+      "localScenePath": "scenes/3710_christmas-tree-decorating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3710_00_christmas-tree-decorating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3710_00_christmas-tree-decorating-pose.png",
+          "localThumbnailPath": "thumbnails/3710_00_christmas-tree-decorating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2500071,
+      "slug": "christmas-tree-decorating-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3711",
+      "presetNumber": 3711,
+      "label": "Happy friends christmas pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female friends are standing next to the christmas tree and giving gifts",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3711_happy-friends-christmas-pose.pma",
+      "localScenePath": "scenes/3711_happy-friends-christmas-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3711_00_happy-friends-christmas-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3711_00_happy-friends-christmas-pose.png",
+          "localThumbnailPath": "thumbnails/3711_00_happy-friends-christmas-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3711_01_happy-friends-christmas-pose.png",
+          "localThumbnailPath": "thumbnails/3711_01_happy-friends-christmas-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        131
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2525235,
+      "slug": "happy-friends-christmas-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3712",
+      "presetNumber": 3712,
+      "label": "Christmas couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is giving a christmas gift to the female, couple christmas drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3712_christmas-couple-pose.pma",
+      "localScenePath": "scenes/3712_christmas-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3712_00_christmas-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3712_00_christmas-couple-pose.png",
+          "localThumbnailPath": "thumbnails/3712_00_christmas-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3712_01_christmas-couple-pose.png",
+          "localThumbnailPath": "thumbnails/3712_01_christmas-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        131
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47202,
+      "slug": "christmas-couple-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3713",
+      "presetNumber": 3713,
+      "label": "Adjusting christmas tree pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing on a chair and adjusting the star on the christmas tree",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3713_adjusting-christmas-tree-pose.pma",
+      "localScenePath": "scenes/3713_adjusting-christmas-tree-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3713_00_adjusting-christmas-tree-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3713_00_adjusting-christmas-tree-pose.png",
+          "localThumbnailPath": "thumbnails/3713_00_adjusting-christmas-tree-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2500579,
+      "slug": "adjusting-christmas-tree-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3714",
+      "presetNumber": 3714,
+      "label": "Christmas family pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Family is sitting around the christmas tree, talking and opening presents",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3714_christmas-family-pose.pma",
+      "localScenePath": "scenes/3714_christmas-family-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3714_00_christmas-family-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3714_00_christmas-family-pose.png",
+          "localThumbnailPath": "thumbnails/3714_00_christmas-family-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3714_01_christmas-family-pose.png",
+          "localThumbnailPath": "thumbnails/3714_01_christmas-family-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3714_02_christmas-family-pose.png",
+          "localThumbnailPath": "thumbnails/3714_02_christmas-family-pose.png"
+        },
+        {
+          "index": 3,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3714_03_christmas-family-pose.png",
+          "localThumbnailPath": "thumbnails/3714_03_christmas-family-pose.png"
+        }
+      ],
+      "modelCount": 4,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        131,
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2570062,
+      "slug": "christmas-family-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3715",
+      "presetNumber": 3715,
+      "label": "Building snowman pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is building a snowman, female christmas drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3715_building-snowman-pose.pma",
+      "localScenePath": "scenes/3715_building-snowman-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3715_00_building-snowman-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3715_00_building-snowman-pose.png",
+          "localThumbnailPath": "thumbnails/3715_00_building-snowman-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 10,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        2,
+        3,
+        5,
+        95,
+        108,
+        161
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 28531,
+      "slug": "building-snowman-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3716",
+      "presetNumber": 3716,
+      "label": "Opening christmas present pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting next to the christmas tree and unwrapping a present",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3716_opening-christmas-present-pose.pma",
+      "localScenePath": "scenes/3716_opening-christmas-present-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3716_00_opening-christmas-present-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3716_00_opening-christmas-present-pose.png",
+          "localThumbnailPath": "thumbnails/3716_00_opening-christmas-present-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 10,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        108,
+        122,
+        131,
+        172
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2505137,
+      "slug": "opening-christmas-present-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3717",
+      "presetNumber": 3717,
+      "label": "Romantic couple christmas pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are hugging each other in front of the christmas tree",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3717_romantic-couple-christmas-pose.pma",
+      "localScenePath": "scenes/3717_romantic-couple-christmas-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3717_00_romantic-couple-christmas-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3717_00_romantic-couple-christmas-pose.png",
+          "localThumbnailPath": "thumbnails/3717_00_romantic-couple-christmas-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3717_01_romantic-couple-christmas-pose.png",
+          "localThumbnailPath": "thumbnails/3717_01_romantic-couple-christmas-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2522738,
+      "slug": "romantic-couple-christmas-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3718",
+      "presetNumber": 3718,
+      "label": "Christmas couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting next to each other on a bench, christmas drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3718_christmas-couple-sitting-pose.pma",
+      "localScenePath": "scenes/3718_christmas-couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3718_00_christmas-couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3718_00_christmas-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3718_00_christmas-couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3718_01_christmas-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3718_01_christmas-couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 5000211,
+      "slug": "christmas-couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3719",
+      "presetNumber": 3719,
+      "label": "Christmas tree sitting drawing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting next to the christmas tree and reading a book",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3719_christmas-tree-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3719_christmas-tree-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3719_00_christmas-tree-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3719_00_christmas-tree-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3719_00_christmas-tree-sitting-drawing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3719_01_christmas-tree-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3719_01_christmas-tree-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 7,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        80,
+        131,
+        170
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "christmas",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2526424,
+      "slug": "christmas-tree-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3720",
+      "presetNumber": 3720,
+      "label": "Birthday females sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are sitting at the table, celebrating a birthday with a birthday cake",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3720_birthday-females-sitting-pose.pma",
+      "localScenePath": "scenes/3720_birthday-females-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3720_00_birthday-females-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3720_00_birthday-females-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3720_00_birthday-females-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3720_01_birthday-females-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3720_01_birthday-females-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 8,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        127,
+        129,
+        132,
+        134,
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "birthday",
+        "drawing",
+        "base"
+      ],
+      "bytes": 50015,
+      "slug": "birthday-females-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "场景/室内"
+      ]
+    }
+  ]
+}

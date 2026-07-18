@@ -1,0 +1,1106 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 157,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3769",
+      "presetNumber": 3769,
+      "label": "Cowboy running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cowboy is running, holding a revolver in his right hand, wearing a cowboy hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3769_cowboy-running-pose.pma",
+      "localScenePath": "scenes/3769_cowboy-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3769_00_cowboy-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3769_00_cowboy-running-pose.png",
+          "localThumbnailPath": "thumbnails/3769_00_cowboy-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        150
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cowboy",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2281913,
+      "slug": "cowboy-running-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3770",
+      "presetNumber": 3770,
+      "label": "Female elegant lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying elegantly on the couch, couch drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3770_female-elegant-lying-pose.pma",
+      "localScenePath": "scenes/3770_female-elegant-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3770_00_female-elegant-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3770_00_female-elegant-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3770_00_female-elegant-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035032,
+      "slug": "female-elegant-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3771",
+      "presetNumber": 3771,
+      "label": "Female couch sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the couch, her legs are crossed, female sitting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3771_female-couch-sitting-pose.pma",
+      "localScenePath": "scenes/3771_female-couch-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3771_00_female-couch-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3771_00_female-couch-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3771_00_female-couch-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035106,
+      "slug": "female-couch-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3772",
+      "presetNumber": 3772,
+      "label": "Female male sitting talking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting next to each other on the couch and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3772_female-male-sitting-talking-pose.pma",
+      "localScenePath": "scenes/3772_female-male-sitting-talking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3772_00_female-male-sitting-talking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3772_00_female-male-sitting-talking-pose.png",
+          "localThumbnailPath": "thumbnails/3772_00_female-male-sitting-talking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3772_01_female-male-sitting-talking-pose.png",
+          "localThumbnailPath": "thumbnails/3772_01_female-male-sitting-talking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1058052,
+      "slug": "female-male-sitting-talking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3773",
+      "presetNumber": 3773,
+      "label": "Male couch sitting drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch, his legs are crossed, couch drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3773_male-couch-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3773_male-couch-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3773_00_male-couch-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3773_00_male-couch-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3773_00_male-couch-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035356,
+      "slug": "male-couch-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3774",
+      "presetNumber": 3774,
+      "label": "Female looking back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the couch elegantly with crossed legs and looking backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3774_female-looking-back-pose.pma",
+      "localScenePath": "scenes/3774_female-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3774_00_female-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3774_00_female-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/3774_00_female-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035135,
+      "slug": "female-looking-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3775",
+      "presetNumber": 3775,
+      "label": "Female stomach lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on her stomach on the couch, couch drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3775_female-stomach-lying-pose.pma",
+      "localScenePath": "scenes/3775_female-stomach-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3775_00_female-stomach-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3775_00_female-stomach-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3775_00_female-stomach-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1034962,
+      "slug": "female-stomach-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3776",
+      "presetNumber": 3776,
+      "label": "Male lying reading pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on the couch on his back, his legs are crossed and he is reading a book",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3776_male-lying-reading-pose.pma",
+      "localScenePath": "scenes/3776_male-lying-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3776_00_male-lying-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3776_00_male-lying-reading-pose.png",
+          "localThumbnailPath": "thumbnails/3776_00_male-lying-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        80,
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1036401,
+      "slug": "male-lying-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3777",
+      "presetNumber": 3777,
+      "label": "Tired male lying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Tired male is lying on his stomach on the couch and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3777_tired-male-lying-pose.pma",
+      "localScenePath": "scenes/3777_tired-male-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3777_00_tired-male-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3777_00_tired-male-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3777_00_tired-male-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035922,
+      "slug": "tired-male-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3778",
+      "presetNumber": 3778,
+      "label": "Couple sitting holding hands pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch and holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3778_couple-sitting-holding-hands-pose.pma",
+      "localScenePath": "scenes/3778_couple-sitting-holding-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3778_00_couple-sitting-holding-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3778_00_couple-sitting-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/3778_00_couple-sitting-holding-hands-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3778_01_couple-sitting-holding-hands-pose.png",
+          "localThumbnailPath": "thumbnails/3778_01_couple-sitting-holding-hands-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1058056,
+      "slug": "couple-sitting-holding-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3779",
+      "presetNumber": 3779,
+      "label": "Female sitting book reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the couch and reading a book, couch drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3779_female-sitting-book-reading-pose.pma",
+      "localScenePath": "scenes/3779_female-sitting-book-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3779_00_female-sitting-book-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3779_00_female-sitting-book-reading-pose.png",
+          "localThumbnailPath": "thumbnails/3779_00_female-sitting-book-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1035539,
+      "slug": "female-sitting-book-reading-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3780",
+      "presetNumber": 3780,
+      "label": "Female playful jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping playfully, looking to the left, female playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3780_female-playful-jumping-pose.pma",
+      "localScenePath": "scenes/3780_female-playful-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3780_00_female-playful-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3780_00_female-playful-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3780_00_female-playful-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23519,
+      "slug": "female-playful-jumping-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3781",
+      "presetNumber": 3781,
+      "label": "Female peace sign pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and making peace sign with both hands, female playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3781_female-peace-sign-pose.pma",
+      "localScenePath": "scenes/3781_female-peace-sign-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3781_00_female-peace-sign-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3781_00_female-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/3781_00_female-peace-sign-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23511,
+      "slug": "female-peace-sign-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3782",
+      "presetNumber": 3782,
+      "label": "Female dancing jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is dancing and jumping playfully, looking up, female playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3782_female-dancing-jumping-pose.pma",
+      "localScenePath": "scenes/3782_female-dancing-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3782_00_female-dancing-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3782_00_female-dancing-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3782_00_female-dancing-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23518,
+      "slug": "female-dancing-jumping-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3783",
+      "presetNumber": 3783,
+      "label": "Male playful jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is jumping playfully, clenching his fists, male playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3783_male-playful-jumping-pose.pma",
+      "localScenePath": "scenes/3783_male-playful-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3783_00_male-playful-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3783_00_male-playful-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3783_00_male-playful-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23740,
+      "slug": "male-playful-jumping-pose"
+    },
+    {
+      "id": "guo-scene-3784",
+      "presetNumber": 3784,
+      "label": "Happy male waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is standing and waving with his right hand, male playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3784_happy-male-waving-pose.pma",
+      "localScenePath": "scenes/3784_happy-male-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3784_00_happy-male-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3784_00_happy-male-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3784_00_happy-male-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23825,
+      "slug": "happy-male-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3785",
+      "presetNumber": 3785,
+      "label": "Playful dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is dancing playfully, female playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3785_playful-dancing-pose.pma",
+      "localScenePath": "scenes/3785_playful-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3785_00_playful-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3785_00_playful-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3785_00_playful-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23548,
+      "slug": "playful-dancing-pose"
+    },
+    {
+      "id": "guo-scene-3786",
+      "presetNumber": 3786,
+      "label": "Sitting waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bar stool and waving with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3786_sitting-waving-pose.pma",
+      "localScenePath": "scenes/3786_sitting-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3786_00_sitting-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3786_00_sitting-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3786_00_sitting-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 24103,
+      "slug": "sitting-waving-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3787",
+      "presetNumber": 3787,
+      "label": "Happy female blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is standing and playfully blowing a kiss with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3787_happy-female-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3787_happy-female-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3787_00_happy-female-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3787_00_happy-female-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3787_00_happy-female-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23597,
+      "slug": "happy-female-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3788",
+      "presetNumber": 3788,
+      "label": "Cute female heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute female is standing and making a heart with her hands, playful pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3788_cute-female-heart-pose.pma",
+      "localScenePath": "scenes/3788_cute-female-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3788_00_cute-female-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3788_00_cute-female-heart-pose.png",
+          "localThumbnailPath": "thumbnails/3788_00_cute-female-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 23542,
+      "slug": "cute-female-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3789",
+      "presetNumber": 3789,
+      "label": "Cute female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, making peace sign with her left hand, wearing heart shaped glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3789_cute-female-standing-pose.pma",
+      "localScenePath": "scenes/3789_cute-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3789_00_cute-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3789_00_cute-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3789_00_cute-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "playful",
+        "pose"
+      ],
+      "bytes": 24123,
+      "slug": "cute-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3790",
+      "presetNumber": 3790,
+      "label": "Wearing pirate hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his hip, wearing a pirate hat and adjusting it with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3790_wearing-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3790_wearing-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3790_00_wearing-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3790_00_wearing-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3790_00_wearing-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748221,
+      "slug": "wearing-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3791",
+      "presetNumber": 3791,
+      "label": "Pirate victory standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on top of a rock, wearing a pirate hat, holding his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3791_pirate-victory-standing-pose.pma",
+      "localScenePath": "scenes/3791_pirate-victory-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3791_00_pirate-victory-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3791_00_pirate-victory-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3791_00_pirate-victory-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 768729,
+      "slug": "pirate-victory-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3792",
+      "presetNumber": 3792,
+      "label": "Pirate standing looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, wearing a pirate hat, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3792_pirate-standing-looking-left-pose.pma",
+      "localScenePath": "scenes/3792_pirate-standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3792_00_pirate-standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3792_00_pirate-standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3792_00_pirate-standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748224,
+      "slug": "pirate-standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

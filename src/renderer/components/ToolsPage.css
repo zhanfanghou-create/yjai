@@ -1,0 +1,740 @@
+/* ==================== 工具箱页面 - 磨砂玻璃风格 ==================== */
+.tools-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+/* 头部 - 磨砂玻璃 */
+.tools-header {
+  padding: 20px 24px;
+  border-bottom: 2px solid var(--glass-border);
+  background: var(--glass-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tools-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tools-header p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* 分类容器 */
+.tools-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.tool-category {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--glass-border);
+  box-shadow: 0 1px 0 var(--border-color);
+}
+
+/* 工具网格 */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* 工具卡片 - 磨砂玻璃 */
+.tool-card {
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--glass-shadow), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.tool-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(79, 195, 247, 0.2);
+}
+
+.tool-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
+
+.tool-icon {
+  width: 100%;
+  height: 100%;
+  stroke: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover .tool-icon {
+  stroke: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.tool-card h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tool-card p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.tool-card-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.tool-tag {
+  padding: 5px 12px;
+  background: var(--glass-bg-light);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* 工具详情页面 */
+.tool-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 工具详情 - 磨砂玻璃 */
+.tool-detail-header {
+  padding: 20px 24px;
+  border-bottom: 2px solid var(--glass-border);
+  background: var(--glass-bg);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+  padding: 10px 18px;
+  background: var(--glass-bg-light);
+  border: 2px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 195, 247, 0.2);
+}
+
+.tool-detail-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tool-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.tool-detail-icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--accent-color);
+}
+
+/* 工具内容区域 */
+.tool-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 左侧控制面板 - 磨砂玻璃 */
+.tool-panel {
+  width: 360px;
+  padding: 24px;
+  border-right: 2px solid var(--glass-border);
+  background: var(--glass-bg);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.panel-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.panel-section h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* 选择器样式 */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-wrapper select:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.15);
+}
+
+.select-wrapper select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.15);
+}
+
+/* 输入框样式 */
+.input-wrapper textarea,
+.input-wrapper input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper textarea:hover,
+.input-wrapper input[type="text"]:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.15);
+}
+
+.input-wrapper textarea:focus,
+.input-wrapper input[type="text"]:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(79, 195, 247, 0.15);
+}
+
+.input-wrapper textarea {
+  min-height: 120px;
+}
+
+/* 色彩选择器 */
+.color-picker-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.color-picker-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.color-picker-item label {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.color-picker-input {
+  width: 60px;
+  height: 40px;
+  padding: 2px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+}
+
+.color-picker-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-picker-input::-webkit-color-swatch {
+  border-radius: 6px;
+  border: none;
+}
+
+.color-presets {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.color-preset {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-preset:hover {
+  transform: scale(1.1);
+  border-color: var(--accent-color);
+}
+
+/* 文件上传 */
+/* 文件上传 - 磨砂玻璃 */
+.file-upload-area {
+  border: 2px dashed var(--glass-border);
+  border-radius: 16px;
+  padding: 32px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: var(--glass-bg);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload-area:hover {
+  border-color: var(--accent-color);
+  background: rgba(79, 195, 247, 0.1);
+  box-shadow: 0 4px 16px rgba(79, 195, 247, 0.15), inset 0 2px 4px rgba(79, 195, 247, 0.05);
+}
+
+.file-upload-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+}
+
+.upload-icon {
+  width: 100%;
+  height: 100%;
+  stroke: var(--accent-color);
+  opacity: 0.8;
+}
+
+.file-upload-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.file-preview {
+  margin-top: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.file-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 生成按钮 */
+/* 生成按钮 - 磨砂玻璃风格 */
+.generate-btn {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  border: none;
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(79, 195, 247, 0.3);
+}
+
+.generate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 195, 247, 0.4);
+}
+
+.generate-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.generate-btn.loading {
+  pointer-events: none;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 右侧预览区域 */
+.tool-preview {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background: var(--bg-primary);
+  border-left: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.preview-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+  color: var(--text-secondary);
+  gap: 16px;
+}
+
+.preview-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+}
+
+.preview-icon-svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--text-secondary);
+}
+
+.preview-empty-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 结果网格 */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* 结果项目 - 磨砂玻璃 */
+.result-item {
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: var(--glass-shadow), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.result-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(79, 195, 247, 0.2);
+}
+
+.result-media {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--bg-tertiary);
+}
+
+.result-info {
+  padding: 12px;
+}
+
+.result-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.result-action-btn {
+  flex: 1;
+  padding: 8px 14px;
+  background: var(--glass-bg-light);
+  border: 2px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.action-icon {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+}
+
+.result-action-btn:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* 滑块样式 */
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slider-wrapper label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-wrapper input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.slider-wrapper input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.slider-wrapper input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* 批量上传 */
+.batch-files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.batch-file-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.batch-file-item img {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.batch-file-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.batch-file-remove {
+  padding: 4px 8px;
+  background: rgba(239, 68, 68, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: var(--danger-color);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/* 切换选项 */
+.toggle-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toggle-option {
+  padding: 10px 18px;
+  background: var(--glass-bg-light);
+  border: 2px solid var(--glass-border);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-option:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.15);
+}
+
+.toggle-option.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(79, 195, 247, 0.25);
+}
+
+/* 复选框选项 */
+.checkbox-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.checkbox-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-color);
+}
+
+/* 响应式 */
+@media (max-width: 900px) {
+  .tool-content {
+    flex-direction: column;
+  }
+  
+  .tool-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    max-height: 50%;
+  }
+  
+  .tool-preview {
+    max-height: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  
+  .tool-card {
+    padding: 16px;
+  }
+}
+
+/* API配置警告 */
+.config-warning {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--warning-color, #f59e0b) 12%, transparent);
+  color: var(--warning-color, #f59e0b);
+  font-size: 13px;
+  line-height: 1.5;
+}

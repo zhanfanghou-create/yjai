@@ -1,0 +1,1046 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 24,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0577",
+      "presetNumber": 577,
+      "label": "Female male conversation pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are having a casual conversation",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0577_female-male-conversation-pose.pma",
+      "localScenePath": "scenes/0577_female-male-conversation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0577_00_female-male-conversation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0577_00_female-male-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/0577_00_female-male-conversation-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0577_01_female-male-conversation-pose.png",
+          "localThumbnailPath": "thumbnails/0577_01_female-male-conversation-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "casual"
+      ],
+      "bytes": 46455,
+      "slug": "female-male-conversation-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0578",
+      "presetNumber": 578,
+      "label": "Female male standing watching pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other, watching something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0578_female-male-standing-watching-pose.pma",
+      "localScenePath": "scenes/0578_female-male-standing-watching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0578_00_female-male-standing-watching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0578_00_female-male-standing-watching-pose.png",
+          "localThumbnailPath": "thumbnails/0578_00_female-male-standing-watching-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0578_01_female-male-standing-watching-pose.png",
+          "localThumbnailPath": "thumbnails/0578_01_female-male-standing-watching-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "casual"
+      ],
+      "bytes": 46581,
+      "slug": "female-male-standing-watching-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0579",
+      "presetNumber": 579,
+      "label": "Female male waiting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other, waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0579_female-male-waiting-pose.pma",
+      "localScenePath": "scenes/0579_female-male-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0579_00_female-male-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0579_00_female-male-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/0579_00_female-male-waiting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0579_01_female-male-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/0579_01_female-male-waiting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "casual"
+      ],
+      "bytes": 46490,
+      "slug": "female-male-waiting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0580",
+      "presetNumber": 580,
+      "label": "Female aiming gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and aiming the gun forward pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0580_female-aiming-gun-pose.pma",
+      "localScenePath": "scenes/0580_female-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0580_00_female-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0580_00_female-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0580_00_female-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        201
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 24506,
+      "slug": "female-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0581",
+      "presetNumber": 581,
+      "label": "Male standing aiming gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and aiming the gun forward pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0581_male-standing-aiming-gun-pose.pma",
+      "localScenePath": "scenes/0581_male-standing-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0581_00_male-standing-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0581_00_male-standing-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0581_00_male-standing-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 24153,
+      "slug": "male-standing-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0582",
+      "presetNumber": 582,
+      "label": "Female holding katana attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a katana, inviting to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0582_female-holding-katana-attack-pose.pma",
+      "localScenePath": "scenes/0582_female-holding-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0582_00_female-holding-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0582_00_female-holding-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/0582_00_female-holding-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 24279,
+      "slug": "female-holding-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0583",
+      "presetNumber": 583,
+      "label": "Male jumping punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps up high to punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0583_male-jumping-punch-pose.pma",
+      "localScenePath": "scenes/0583_male-jumping-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0583_00_male-jumping-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0583_00_male-jumping-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0583_00_male-jumping-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23691,
+      "slug": "male-jumping-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0584",
+      "presetNumber": 584,
+      "label": "Female kick air pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female powerful kick in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0584_female-kick-air-pose.pma",
+      "localScenePath": "scenes/0584_female-kick-air-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0584_00_female-kick-air-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0584_00_female-kick-air-pose.png",
+          "localThumbnailPath": "thumbnails/0584_00_female-kick-air-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23671,
+      "slug": "female-kick-air-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0585",
+      "presetNumber": 585,
+      "label": "Male kick air pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male powerful kick in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0585_male-kick-air-pose.pma",
+      "localScenePath": "scenes/0585_male-kick-air-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0585_00_male-kick-air-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0585_00_male-kick-air-pose.png",
+          "localThumbnailPath": "thumbnails/0585_00_male-kick-air-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23881,
+      "slug": "male-kick-air-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0586",
+      "presetNumber": 586,
+      "label": "Running male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, foreshortened pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0586_running-male-pose.pma",
+      "localScenePath": "scenes/0586_running-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0586_00_running-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0586_00_running-male-pose.png",
+          "localThumbnailPath": "thumbnails/0586_00_running-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23941,
+      "slug": "running-male-pose"
+    },
+    {
+      "id": "guo-scene-0587",
+      "presetNumber": 587,
+      "label": "Running female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, foreshortened pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0587_running-female-pose.pma",
+      "localScenePath": "scenes/0587_running-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0587_00_running-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0587_00_running-female-pose.png",
+          "localThumbnailPath": "thumbnails/0587_00_running-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23500,
+      "slug": "running-female-pose"
+    },
+    {
+      "id": "guo-scene-0588",
+      "presetNumber": 588,
+      "label": "Male landing height pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male landing on the ground from a height pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0588_male-landing-height-pose.pma",
+      "localScenePath": "scenes/0588_male-landing-height-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0588_00_male-landing-height-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0588_00_male-landing-height-pose.png",
+          "localThumbnailPath": "thumbnails/0588_00_male-landing-height-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23685,
+      "slug": "male-landing-height-pose"
+    },
+    {
+      "id": "guo-scene-0589",
+      "presetNumber": 589,
+      "label": "Female landing height pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female landing on the ground from a height pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0589_female-landing-height-pose.pma",
+      "localScenePath": "scenes/0589_female-landing-height-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0589_00_female-landing-height-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0589_00_female-landing-height-pose.png",
+          "localThumbnailPath": "thumbnails/0589_00_female-landing-height-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "foreshortened"
+      ],
+      "bytes": 23432,
+      "slug": "female-landing-height-pose"
+    },
+    {
+      "id": "guo-scene-0590",
+      "presetNumber": 590,
+      "label": "Anime happy jumping cute pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female cute happy jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0590_anime-happy-jumping-cute-pose.pma",
+      "localScenePath": "scenes/0590_anime-happy-jumping-cute-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0590_00_anime-happy-jumping-cute-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0590_00_anime-happy-jumping-cute-pose.png",
+          "localThumbnailPath": "thumbnails/0590_00_anime-happy-jumping-cute-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23667,
+      "slug": "anime-happy-jumping-cute-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0591",
+      "presetNumber": 591,
+      "label": "Anime female cute shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is holding her hands, cute and shy anime base pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0591_anime-female-cute-shy-pose.pma",
+      "localScenePath": "scenes/0591_anime-female-cute-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0591_00_anime-female-cute-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0591_00_anime-female-cute-shy-pose.png",
+          "localThumbnailPath": "thumbnails/0591_00_anime-female-cute-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23821,
+      "slug": "anime-female-cute-shy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0592",
+      "presetNumber": 592,
+      "label": "Confident anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident anime female with her hands on her hips pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0592_confident-anime-female-pose.pma",
+      "localScenePath": "scenes/0592_confident-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0592_00_confident-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0592_00_confident-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/0592_00_confident-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23834,
+      "slug": "confident-anime-female-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0593",
+      "presetNumber": 593,
+      "label": "Confident anime female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident anime female is standing with her right hand on her hip pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0593_confident-anime-female-standing-pose.pma",
+      "localScenePath": "scenes/0593_confident-anime-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0593_00_confident-anime-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0593_00_confident-anime-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0593_00_confident-anime-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23848,
+      "slug": "confident-anime-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0594",
+      "presetNumber": 594,
+      "label": "Anime female looking back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident anime female is jumping and looking back over her shoulder pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0594_anime-female-looking-back-pose.pma",
+      "localScenePath": "scenes/0594_anime-female-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0594_00_anime-female-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0594_00_anime-female-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/0594_00_anime-female-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23852,
+      "slug": "anime-female-looking-back-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0595",
+      "presetNumber": 595,
+      "label": "Cute anime female jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female cute jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0595_cute-anime-female-jumping-pose.pma",
+      "localScenePath": "scenes/0595_cute-anime-female-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0595_00_cute-anime-female-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0595_00_cute-anime-female-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0595_00_cute-anime-female-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23673,
+      "slug": "cute-anime-female-jumping-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0596",
+      "presetNumber": 596,
+      "label": "Anime female laughing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping and laughing, covering her mouth with her hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0596_anime-female-laughing-pose.pma",
+      "localScenePath": "scenes/0596_anime-female-laughing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0596_00_anime-female-laughing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0596_00_anime-female-laughing-pose.png",
+          "localThumbnailPath": "thumbnails/0596_00_anime-female-laughing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23844,
+      "slug": "anime-female-laughing-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0597",
+      "presetNumber": 597,
+      "label": "Anime female flirting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident anime female flirting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0597_anime-female-flirting-pose.pma",
+      "localScenePath": "scenes/0597_anime-female-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0597_00_anime-female-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0597_00_anime-female-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/0597_00_anime-female-flirting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 23829,
+      "slug": "anime-female-flirting-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0598",
+      "presetNumber": 598,
+      "label": "Anime basic standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female basic standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0598_anime-basic-standing-pose.pma",
+      "localScenePath": "scenes/0598_anime-basic-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0598_00_anime-basic-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0598_00_anime-basic-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0598_00_anime-basic-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 24081,
+      "slug": "anime-basic-standing-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0599",
+      "presetNumber": 599,
+      "label": "Cute standing anime female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female leans forward and covers the sun to see better, cute anime pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0599_cute-standing-anime-female-pose.pma",
+      "localScenePath": "scenes/0599_cute-standing-anime-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0599_00_cute-standing-anime-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0599_00_cute-standing-anime-female-pose.png",
+          "localThumbnailPath": "thumbnails/0599_00_cute-standing-anime-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "anime",
+        "base",
+        "female"
+      ],
+      "bytes": 24040,
+      "slug": "cute-standing-anime-female-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0600",
+      "presetNumber": 600,
+      "label": "Female releve ballet pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female releve ballet pose with her hands above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0600_female-releve-ballet-pose.pma",
+      "localScenePath": "scenes/0600_female-releve-ballet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0600_00_female-releve-ballet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0600_00_female-releve-ballet-pose.png",
+          "localThumbnailPath": "thumbnails/0600_00_female-releve-ballet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "ballet"
+      ],
+      "bytes": 23653,
+      "slug": "female-releve-ballet-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

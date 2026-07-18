@@ -1,0 +1,1259 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 32,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-4465",
+      "presetNumber": 4465,
+      "label": "Couple emotions pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Romantic female and male are standing and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4465_couple-emotions-pose.pma",
+      "localScenePath": "scenes/4465_couple-emotions-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4465_00_couple-emotions-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4465_00_couple-emotions-pose.png",
+          "localThumbnailPath": "thumbnails/4465_00_couple-emotions-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4465_01_couple-emotions-pose.png",
+          "localThumbnailPath": "thumbnails/4465_01_couple-emotions-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 45237,
+      "slug": "couple-emotions-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4490",
+      "presetNumber": 4490,
+      "label": "Thief threatening pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Thief is threatening the scared female with a dagger, male thief pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4490_thief-threatening-pose.pma",
+      "localScenePath": "scenes/4490_thief-threatening-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4490_00_thief-threatening-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4490_00_thief-threatening-pose.png",
+          "localThumbnailPath": "thumbnails/4490_00_thief-threatening-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4490_01_thief-threatening-pose.png",
+          "localThumbnailPath": "thumbnails/4490_01_thief-threatening-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        105,
+        143
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "thief",
+        "pose"
+      ],
+      "bytes": 46131,
+      "slug": "thief-threatening-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4492",
+      "presetNumber": 4492,
+      "label": "Thief stealing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Thief is standing behind the female and is about to take something out of her bag",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4492_thief-stealing-pose.pma",
+      "localScenePath": "scenes/4492_thief-stealing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4492_00_thief-stealing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4492_00_thief-stealing-pose.png",
+          "localThumbnailPath": "thumbnails/4492_00_thief-stealing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4492_01_thief-stealing-pose.png",
+          "localThumbnailPath": "thumbnails/4492_01_thief-stealing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "thief",
+        "pose"
+      ],
+      "bytes": 45678,
+      "slug": "thief-stealing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4493",
+      "presetNumber": 4493,
+      "label": "Thief holding dagger pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Thief is standing behind the male, holding a dagger, is about to steal the male's phone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4493_thief-holding-dagger-pose.pma",
+      "localScenePath": "scenes/4493_thief-holding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4493_00_thief-holding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4493_00_thief-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/4493_00_thief-holding-dagger-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4493_01_thief-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/4493_01_thief-holding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        102,
+        105,
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "thief",
+        "pose"
+      ],
+      "bytes": 47129,
+      "slug": "thief-holding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4495",
+      "presetNumber": 4495,
+      "label": "Female arrasting thief pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is arresting a thief, holding a gun and handcuffs, male thief pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4495_female-arrasting-thief-pose.pma",
+      "localScenePath": "scenes/4495_female-arrasting-thief-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4495_00_female-arrasting-thief-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4495_00_female-arrasting-thief-pose.png",
+          "localThumbnailPath": "thumbnails/4495_00_female-arrasting-thief-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4495_01_female-arrasting-thief-pose.png",
+          "localThumbnailPath": "thumbnails/4495_01_female-arrasting-thief-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        105,
+        220
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "thief",
+        "pose"
+      ],
+      "bytes": 371312,
+      "slug": "female-arrasting-thief-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4523",
+      "presetNumber": 4523,
+      "label": "Riding beginners reference pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is riding a horse, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4523_riding-beginners-reference-pose.pma",
+      "localScenePath": "scenes/4523_riding-beginners-reference-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4523_00_riding-beginners-reference-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4523_00_riding-beginners-reference-pose.png",
+          "localThumbnailPath": "thumbnails/4523_00_riding-beginners-reference-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "drawing",
+        "reference",
+        "for",
+        "beginners"
+      ],
+      "bytes": 30440,
+      "slug": "riding-beginners-reference-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4535",
+      "presetNumber": 4535,
+      "label": "Dress dancing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing, female is holding her dress with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4535_dress-dancing-pose.pma",
+      "localScenePath": "scenes/4535_dress-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4535_00_dress-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4535_00_dress-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/4535_00_dress-dancing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4535_01_dress-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/4535_01_dress-dancing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dress",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45450,
+      "slug": "dress-dancing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4550",
+      "presetNumber": 4550,
+      "label": "Couple carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and holding the female in his arms, romantic couple pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4550_couple-carrying-pose.pma",
+      "localScenePath": "scenes/4550_couple-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4550_00_couple-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4550_00_couple-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4550_00_couple-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4550_01_couple-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4550_01_couple-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45055,
+      "slug": "couple-carrying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4551",
+      "presetNumber": 4551,
+      "label": "Male carrying female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and carrying the female on his shoulder, funny couple carrying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4551_male-carrying-female-pose.pma",
+      "localScenePath": "scenes/4551_male-carrying-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4551_00_male-carrying-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4551_00_male-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4551_00_male-carrying-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4551_01_male-carrying-female-pose.png",
+          "localThumbnailPath": "thumbnails/4551_01_male-carrying-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45220,
+      "slug": "male-carrying-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4552",
+      "presetNumber": 4552,
+      "label": "Shoulders carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is walking and carrying the female on his shoulders, couple carrying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4552_shoulders-carrying-pose.pma",
+      "localScenePath": "scenes/4552_shoulders-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4552_00_shoulders-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4552_00_shoulders-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4552_00_shoulders-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4552_01_shoulders-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4552_01_shoulders-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45330,
+      "slug": "shoulders-carrying-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4553",
+      "presetNumber": 4553,
+      "label": "Sitting hugging carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is sitting on the couch and carrying the female, romantic couple pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4553_sitting-hugging-carrying-pose.pma",
+      "localScenePath": "scenes/4553_sitting-hugging-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4553_00_sitting-hugging-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4553_00_sitting-hugging-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4553_00_sitting-hugging-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4553_01_sitting-hugging-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4553_01_sitting-hugging-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        170,
+        185
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46160,
+      "slug": "sitting-hugging-carrying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4554",
+      "presetNumber": 4554,
+      "label": "Jumping hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and holding the female while hugging and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4554_jumping-hugging-pose.pma",
+      "localScenePath": "scenes/4554_jumping-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4554_00_jumping-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4554_00_jumping-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/4554_00_jumping-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4554_01_jumping-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/4554_01_jumping-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45279,
+      "slug": "jumping-hugging-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4555",
+      "presetNumber": 4555,
+      "label": "Sitting carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is sitting in the armchair and carrying the female, looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4555_sitting-carrying-pose.pma",
+      "localScenePath": "scenes/4555_sitting-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4555_00_sitting-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4555_00_sitting-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4555_00_sitting-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4555_01_sitting-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4555_01_sitting-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45645,
+      "slug": "sitting-carrying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4556",
+      "presetNumber": 4556,
+      "label": "Carrying kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing, carrying the female and kissing, cute couple carrying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4556_carrying-kissing-pose.pma",
+      "localScenePath": "scenes/4556_carrying-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4556_00_carrying-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4556_00_carrying-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/4556_00_carrying-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4556_01_carrying-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/4556_01_carrying-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45027,
+      "slug": "carrying-kissing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4557",
+      "presetNumber": 4557,
+      "label": "Cute romantic carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is carrying the female, holding her with both hands while kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4557_cute-romantic-carrying-pose.pma",
+      "localScenePath": "scenes/4557_cute-romantic-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4557_00_cute-romantic-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4557_00_cute-romantic-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4557_00_cute-romantic-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4557_01_cute-romantic-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4557_01_cute-romantic-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45244,
+      "slug": "cute-romantic-carrying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4558",
+      "presetNumber": 4558,
+      "label": "Male carrying injured female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is kneeling and carrying injured female, holding her with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4558_male-carrying-injured-female-pose.pma",
+      "localScenePath": "scenes/4558_male-carrying-injured-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4558_00_male-carrying-injured-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4558_00_male-carrying-injured-female-pose.png",
+          "localThumbnailPath": "thumbnails/4558_00_male-carrying-injured-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4558_01_male-carrying-injured-female-pose.png",
+          "localThumbnailPath": "thumbnails/4558_01_male-carrying-injured-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 45048,
+      "slug": "male-carrying-injured-female-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4559",
+      "presetNumber": 4559,
+      "label": "Couple dancing carrying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing, male is carrying the female, couple carrying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4559_couple-dancing-carrying-pose.pma",
+      "localScenePath": "scenes/4559_couple-dancing-carrying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4559_00_couple-dancing-carrying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4559_00_couple-dancing-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4559_00_couple-dancing-carrying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4559_01_couple-dancing-carrying-pose.png",
+          "localThumbnailPath": "thumbnails/4559_01_couple-dancing-carrying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couple",
+        "carrying",
+        "pose",
+        "reference"
+      ],
+      "bytes": 44898,
+      "slug": "couple-dancing-carrying-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4567",
+      "presetNumber": 4567,
+      "label": "Couple huddled sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Sad female is sitting huddled on the couch and the male is trying to comfort her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4567_couple-huddled-sitting-pose.pma",
+      "localScenePath": "scenes/4567_couple-huddled-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4567_00_couple-huddled-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4567_00_couple-huddled-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4567_00_couple-huddled-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4567_01_couple-huddled-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4567_01_couple-huddled-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "huddled",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 45688,
+      "slug": "couple-huddled-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4573",
+      "presetNumber": 4573,
+      "label": "Old couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Old man and woman are walking, holding each other's hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4573_old-couple-walking-pose.pma",
+      "localScenePath": "scenes/4573_old-couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4573_00_old-couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4573_00_old-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4573_00_old-couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4573_01_old-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4573_01_old-couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        98
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 91605,
+      "slug": "old-couple-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4576",
+      "presetNumber": 4576,
+      "label": "Old men sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two old men are sitting on a bench next to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4576_old-men-sitting-pose.pma",
+      "localScenePath": "scenes/4576_old-men-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4576_00_old-men-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4576_00_old-men-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4576_00_old-men-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4576_01_old-men-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4576_01_old-men-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        98,
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 91946,
+      "slug": "old-men-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4578",
+      "presetNumber": 4578,
+      "label": "Old couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Old man and woman are sitting on the bench next to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4578_old-couple-sitting-pose.pma",
+      "localScenePath": "scenes/4578_old-couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4578_00_old-couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4578_00_old-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4578_00_old-couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4578_01_old-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4578_01_old-couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        98,
+        106
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "old",
+        "man",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 138345,
+      "slug": "old-couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4582",
+      "presetNumber": 4582,
+      "label": "Knight horse riding pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Knight is riding a horse, wearing a helmet, holding a sword and a shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4582_knight-horse-riding-pose.pma",
+      "localScenePath": "scenes/4582_knight-horse-riding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4582_00_knight-horse-riding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4582_00_knight-horse-riding-pose.png",
+          "localThumbnailPath": "thumbnails/4582_00_knight-horse-riding-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 258030,
+      "slug": "knight-horse-riding-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4583",
+      "presetNumber": 4583,
+      "label": "Knight horse standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Knight is standing next to the horse, wearing a helmet, holding a sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4583_knight-horse-standing-pose.pma",
+      "localScenePath": "scenes/4583_knight-horse-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4583_00_knight-horse-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4583_00_knight-horse-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4583_00_knight-horse-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 257445,
+      "slug": "knight-horse-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "animal-creature",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "动物/异形",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4588",
+      "presetNumber": 4588,
+      "label": "Knight fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Knights are fighting, holding swords and shields, wearing helmet",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4588_knight-fighting-pose.pma",
+      "localScenePath": "scenes/4588_knight-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4588_00_knight-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4588_00_knight-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4588_00_knight-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4588_01_knight-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/4588_01_knight-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knight",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 501198,
+      "slug": "knight-fighting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

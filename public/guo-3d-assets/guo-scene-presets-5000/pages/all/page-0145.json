@@ -1,0 +1,1162 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 144,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3457",
+      "presetNumber": 3457,
+      "label": "Couple forehead kiss pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, the male is giving a forehead kiss to the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3457_couple-forehead-kiss-pose.pma",
+      "localScenePath": "scenes/3457_couple-forehead-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3457_00_couple-forehead-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3457_00_couple-forehead-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3457_00_couple-forehead-kiss-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3457_01_couple-forehead-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3457_01_couple-forehead-kiss-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couples",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46483,
+      "slug": "couple-forehead-kiss-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3458",
+      "presetNumber": 3458,
+      "label": "Couple hugging sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on the couch, hugging each other and holding hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3458_couple-hugging-sitting-pose.pma",
+      "localScenePath": "scenes/3458_couple-hugging-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3458_00_couple-hugging-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3458_00_couple-hugging-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3458_00_couple-hugging-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3458_01_couple-hugging-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3458_01_couple-hugging-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couples",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 47001,
+      "slug": "couple-hugging-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3459",
+      "presetNumber": 3459,
+      "label": "Couple lying pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is sitting on the couch, female is lying on his lap, couple lying on the couch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3459_couple-lying-pose.pma",
+      "localScenePath": "scenes/3459_couple-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3459_00_couple-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3459_00_couple-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3459_00_couple-lying-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3459_01_couple-lying-pose.png",
+          "localThumbnailPath": "thumbnails/3459_01_couple-lying-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couples",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46980,
+      "slug": "couple-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3460",
+      "presetNumber": 3460,
+      "label": "Male standing holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a sword with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3460_male-standing-holding-sword-pose.pma",
+      "localScenePath": "scenes/3460_male-standing-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3460_00_male-standing-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3460_00_male-standing-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3460_00_male-standing-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24269,
+      "slug": "male-standing-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3461",
+      "presetNumber": 3461,
+      "label": "Female standing holding sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a sword with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3461_female-standing-holding-sword-pose.pma",
+      "localScenePath": "scenes/3461_female-standing-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3461_00_female-standing-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3461_00_female-standing-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3461_00_female-standing-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 23998,
+      "slug": "female-standing-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3462",
+      "presetNumber": 3462,
+      "label": "Holding sword swinging pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a sword in his right hand and swinging it, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3462_holding-sword-swinging-pose.pma",
+      "localScenePath": "scenes/3462_holding-sword-swinging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3462_00_holding-sword-swinging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3462_00_holding-sword-swinging-pose.png",
+          "localThumbnailPath": "thumbnails/3462_00_holding-sword-swinging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24301,
+      "slug": "holding-sword-swinging-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3463",
+      "presetNumber": 3463,
+      "label": "Female holding sword right hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and holding a sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3463_female-holding-sword-right-hand-pose.pma",
+      "localScenePath": "scenes/3463_female-holding-sword-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3463_00_female-holding-sword-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3463_00_female-holding-sword-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/3463_00_female-holding-sword-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24020,
+      "slug": "female-holding-sword-right-hand-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3464",
+      "presetNumber": 3464,
+      "label": "Male holding swords attacking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding swords in both hands, ready to attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3464_male-holding-swords-attacking-pose.pma",
+      "localScenePath": "scenes/3464_male-holding-swords-attacking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3464_00_male-holding-swords-attacking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3464_00_male-holding-swords-attacking-pose.png",
+          "localThumbnailPath": "thumbnails/3464_00_male-holding-swords-attacking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24721,
+      "slug": "male-holding-swords-attacking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3465",
+      "presetNumber": 3465,
+      "label": "Jumping sword attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, holding a sword with both hands, swinging it backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3465_jumping-sword-attack-pose.pma",
+      "localScenePath": "scenes/3465_jumping-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3465_00_jumping-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3465_00_jumping-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3465_00_jumping-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24017,
+      "slug": "jumping-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3466",
+      "presetNumber": 3466,
+      "label": "Female jumping sword swinging pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and swinging her sword, holding the sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3466_female-jumping-sword-swinging-pose.pma",
+      "localScenePath": "scenes/3466_female-jumping-sword-swinging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3466_00_female-jumping-sword-swinging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3466_00_female-jumping-sword-swinging-pose.png",
+          "localThumbnailPath": "thumbnails/3466_00_female-jumping-sword-swinging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24034,
+      "slug": "female-jumping-sword-swinging-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3467",
+      "presetNumber": 3467,
+      "label": "Holding leaning sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently, holding his sword with both hands, leaning on it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3467_holding-leaning-sword-pose.pma",
+      "localScenePath": "scenes/3467_holding-leaning-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3467_00_holding-leaning-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3467_00_holding-leaning-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3467_00_holding-leaning-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24253,
+      "slug": "holding-leaning-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3468",
+      "presetNumber": 3468,
+      "label": "Crouching holding sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, looking to the left, holding a sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3468_crouching-holding-sword-pose.pma",
+      "localScenePath": "scenes/3468_crouching-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3468_00_crouching-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3468_00_crouching-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3468_00_crouching-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24040,
+      "slug": "crouching-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3469",
+      "presetNumber": 3469,
+      "label": "Male holding katana standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his katana with his right hand, and it's sheath with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3469_male-holding-katana-standing-pose.pma",
+      "localScenePath": "scenes/3469_male-holding-katana-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3469_00_male-holding-katana-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3469_00_male-holding-katana-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3469_00_male-holding-katana-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        146,
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24718,
+      "slug": "male-holding-katana-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3470",
+      "presetNumber": 3470,
+      "label": "Dynamic running shooting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is wearing a helmet, running, holding a gun with both hands and shooting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3470_dynamic-running-shooting-pose.pma",
+      "localScenePath": "scenes/3470_dynamic-running-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3470_00_dynamic-running-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3470_00_dynamic-running-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/3470_00_dynamic-running-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        199,
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 24793,
+      "slug": "dynamic-running-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3471",
+      "presetNumber": 3471,
+      "label": "Male dynamic attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a knife in his right hand and is about to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3471_male-dynamic-attack-pose.pma",
+      "localScenePath": "scenes/3471_male-dynamic-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3471_00_male-dynamic-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3471_00_male-dynamic-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3471_00_male-dynamic-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 24213,
+      "slug": "male-dynamic-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3472",
+      "presetNumber": 3472,
+      "label": "Male dynamic running looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, looking to the left, male dynamic running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3472_male-dynamic-running-looking-left-pose.pma",
+      "localScenePath": "scenes/3472_male-dynamic-running-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3472_00_male-dynamic-running-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3472_00_male-dynamic-running-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3472_00_male-dynamic-running-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23803,
+      "slug": "male-dynamic-running-looking-left-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3473",
+      "presetNumber": 3473,
+      "label": "Dynamic jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, balancing with his hands, looking down, male dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3473_dynamic-jumping-pose.pma",
+      "localScenePath": "scenes/3473_dynamic-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3473_00_dynamic-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3473_00_dynamic-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3473_00_dynamic-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23851,
+      "slug": "dynamic-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3474",
+      "presetNumber": 3474,
+      "label": "Dynamic side kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping and sidekicking with his left foot, male dynamic kicking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3474_dynamic-side-kicking-pose.pma",
+      "localScenePath": "scenes/3474_dynamic-side-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3474_00_dynamic-side-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3474_00_dynamic-side-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3474_00_dynamic-side-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23808,
+      "slug": "dynamic-side-kicking-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3475",
+      "presetNumber": 3475,
+      "label": "Male jumping shooting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, jumping and shooting, holding the gun in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3475_male-jumping-shooting-pose.pma",
+      "localScenePath": "scenes/3475_male-jumping-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3475_00_male-jumping-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3475_00_male-jumping-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/3475_00_male-jumping-shooting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 24325,
+      "slug": "male-jumping-shooting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3476",
+      "presetNumber": 3476,
+      "label": "Male fighter running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a medieval shield and a great sword, running and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3476_male-fighter-running-pose.pma",
+      "localScenePath": "scenes/3476_male-fighter-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3476_00_male-fighter-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3476_00_male-fighter-running-pose.png",
+          "localThumbnailPath": "thumbnails/3476_00_male-fighter-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 24792,
+      "slug": "male-fighter-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3477",
+      "presetNumber": 3477,
+      "label": "Male dynamic horse riding pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is riding a horse and jumping over something, dynamic horse riding pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3477_male-dynamic-horse-riding-pose.pma",
+      "localScenePath": "scenes/3477_male-dynamic-horse-riding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3477_00_male-dynamic-horse-riding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3477_00_male-dynamic-horse-riding-pose.png",
+          "localThumbnailPath": "thumbnails/3477_00_male-dynamic-horse-riding-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 31181,
+      "slug": "male-dynamic-horse-riding-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-3478",
+      "presetNumber": 3478,
+      "label": "Male dynamic boxing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is boxing, punching with his right hand, male dynamic punching pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3478_male-dynamic-boxing-pose.pma",
+      "localScenePath": "scenes/3478_male-dynamic-boxing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3478_00_male-dynamic-boxing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3478_00_male-dynamic-boxing-pose.png",
+          "localThumbnailPath": "thumbnails/3478_00_male-dynamic-boxing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23726,
+      "slug": "male-dynamic-boxing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3479",
+      "presetNumber": 3479,
+      "label": "Dynamic landing male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, balancing with his hands, looking to the left, dynamic landing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3479_dynamic-landing-male-pose.pma",
+      "localScenePath": "scenes/3479_dynamic-landing-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3479_00_dynamic-landing-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3479_00_dynamic-landing-male-pose.png",
+          "localThumbnailPath": "thumbnails/3479_00_dynamic-landing-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23788,
+      "slug": "dynamic-landing-male-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3480",
+      "presetNumber": 3480,
+      "label": "Skeleton chasing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is walking slowly, reaching forward with his hands, skeleton haunting hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3480_skeleton-chasing-pose.pma",
+      "localScenePath": "scenes/3480_skeleton-chasing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3480_00_skeleton-chasing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3480_00_skeleton-chasing-pose.png",
+          "localThumbnailPath": "thumbnails/3480_00_skeleton-chasing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "skeleton",
+        "hand",
+        "reference"
+      ],
+      "bytes": 23492,
+      "slug": "skeleton-chasing-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    }
+  ]
+}

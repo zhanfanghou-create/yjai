@@ -1,0 +1,1106 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 179,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4297",
+      "presetNumber": 4297,
+      "label": "Witch walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is walking, holding a broom and a wand, wearing glasses and witch hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4297_witch-walking-pose.pma",
+      "localScenePath": "scenes/4297_witch-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4297_00_witch-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4297_00_witch-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4297_00_witch-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94,
+        95,
+        96,
+        98
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 25599,
+      "slug": "witch-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4298",
+      "presetNumber": 4298,
+      "label": "Witch standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is standing, her legs are crossed, holding a staff, wearing a witch hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4298_witch-standing-pose.pma",
+      "localScenePath": "scenes/4298_witch-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4298_00_witch-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4298_00_witch-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4298_00_witch-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        94,
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24586,
+      "slug": "witch-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4299",
+      "presetNumber": 4299,
+      "label": "Witch casting spells pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Witch is crouching and casting spells with her hands, witch pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4299_witch-casting-spells-pose.pma",
+      "localScenePath": "scenes/4299_witch-casting-spells-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4299_00_witch-casting-spells-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4299_00_witch-casting-spells-pose.png",
+          "localThumbnailPath": "thumbnails/4299_00_witch-casting-spells-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5,
+        94
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "witch",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24503,
+      "slug": "witch-casting-spells-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4300",
+      "presetNumber": 4300,
+      "label": "Bored female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is sitting on the floor, resting her head on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4300_bored-female-sitting-pose.pma",
+      "localScenePath": "scenes/4300_bored-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4300_00_bored-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4300_00_bored-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4300_00_bored-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23567,
+      "slug": "bored-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4301",
+      "presetNumber": 4301,
+      "label": "Bored female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is standing, her arms are crossed, she is looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4301_bored-female-standing-pose.pma",
+      "localScenePath": "scenes/4301_bored-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4301_00_bored-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4301_00_bored-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4301_00_bored-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23588,
+      "slug": "bored-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4302",
+      "presetNumber": 4302,
+      "label": "Bored sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is sitting on the chair at the table, resting her head on her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4302_bored-sitting-pose.pma",
+      "localScenePath": "scenes/4302_bored-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4302_00_bored-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4302_00_bored-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4302_00_bored-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24457,
+      "slug": "bored-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4303",
+      "presetNumber": 4303,
+      "label": "Bored couple sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Bored female and male are sitting on the bench, female is checking the time on her watch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4303_bored-couple-sitting-pose.pma",
+      "localScenePath": "scenes/4303_bored-couple-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4303_00_bored-couple-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4303_00_bored-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4303_00_bored-couple-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4303_01_bored-couple-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4303_01_bored-couple-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46949,
+      "slug": "bored-couple-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4304",
+      "presetNumber": 4304,
+      "label": "Bored female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Bored female is sitting on the chair, looking to the left, bored pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4304_bored-female-pose.pma",
+      "localScenePath": "scenes/4304_bored-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4304_00_bored-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4304_00_bored-female-pose.png",
+          "localThumbnailPath": "thumbnails/4304_00_bored-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23782,
+      "slug": "bored-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4305",
+      "presetNumber": 4305,
+      "label": "Bored male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Bored male is sitting on a cushion, checking the time on his watch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4305_bored-male-sitting-pose.pma",
+      "localScenePath": "scenes/4305_bored-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4305_00_bored-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4305_00_bored-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4305_00_bored-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24285,
+      "slug": "bored-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4306",
+      "presetNumber": 4306,
+      "label": "Bored male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Bored male is standing, holding his hips and looking down, bored pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4306_bored-male-standing-pose.pma",
+      "localScenePath": "scenes/4306_bored-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4306_00_bored-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4306_00_bored-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4306_00_bored-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23813,
+      "slug": "bored-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4307",
+      "presetNumber": 4307,
+      "label": "Bored male crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Bored male is crouching, looking down, waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4307_bored-male-crouching-pose.pma",
+      "localScenePath": "scenes/4307_bored-male-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4307_00_bored-male-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4307_00_bored-male-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4307_00_bored-male-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23744,
+      "slug": "bored-male-crouching-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4308",
+      "presetNumber": 4308,
+      "label": "Male comfortable sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Bored male is sitting in the armchair comfortably and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4308_male-comfortable-sitting-pose.pma",
+      "localScenePath": "scenes/4308_male-comfortable-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4308_00_male-comfortable-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4308_00_male-comfortable-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4308_00_male-comfortable-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24258,
+      "slug": "male-comfortable-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4309",
+      "presetNumber": 4309,
+      "label": "Bored couple standing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Bored female and male are standing next to each other, bored pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4309_bored-couple-standing-pose.pma",
+      "localScenePath": "scenes/4309_bored-couple-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4309_00_bored-couple-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4309_00_bored-couple-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4309_00_bored-couple-standing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4309_01_bored-couple-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4309_01_bored-couple-standing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bored",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46488,
+      "slug": "bored-couple-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4310",
+      "presetNumber": 4310,
+      "label": "Male kneeling despair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Desperate male is kneeling, raising his hands and looking up, male despair pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4310_male-kneeling-despair-pose.pma",
+      "localScenePath": "scenes/4310_male-kneeling-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4310_00_male-kneeling-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4310_00_male-kneeling-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4310_00_male-kneeling-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23769,
+      "slug": "male-kneeling-despair-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4311",
+      "presetNumber": 4311,
+      "label": "Male crouching despair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Desperate, sad male is crouching, kneeling and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4311_male-crouching-despair-pose.pma",
+      "localScenePath": "scenes/4311_male-crouching-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4311_00_male-crouching-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4311_00_male-crouching-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4311_00_male-crouching-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23769,
+      "slug": "male-crouching-despair-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4312",
+      "presetNumber": 4312,
+      "label": "Female standing despair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate female is standing and holding her head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4312_female-standing-despair-pose.pma",
+      "localScenePath": "scenes/4312_female-standing-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4312_00_female-standing-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4312_00_female-standing-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4312_00_female-standing-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23598,
+      "slug": "female-standing-despair-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4313",
+      "presetNumber": 4313,
+      "label": "Female sitting despair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate female is sitting on the ground and holding her head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4313_female-sitting-despair-pose.pma",
+      "localScenePath": "scenes/4313_female-sitting-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4313_00_female-sitting-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4313_00_female-sitting-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4313_00_female-sitting-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23579,
+      "slug": "female-sitting-despair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4314",
+      "presetNumber": 4314,
+      "label": "Male standing despair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Desperate male is standing and holding his head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4314_male-standing-despair-pose.pma",
+      "localScenePath": "scenes/4314_male-standing-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4314_00_male-standing-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4314_00_male-standing-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4314_00_male-standing-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23853,
+      "slug": "male-standing-despair-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4315",
+      "presetNumber": 4315,
+      "label": "Desperate female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate, sad female is sitting on the bench, looking down, holding her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4315_desperate-female-sitting-pose.pma",
+      "localScenePath": "scenes/4315_desperate-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4315_00_desperate-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4315_00_desperate-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4315_00_desperate-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 24071,
+      "slug": "desperate-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4316",
+      "presetNumber": 4316,
+      "label": "Desperate couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Desperate female and male are crouching, holding their head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4316_desperate-couple-pose.pma",
+      "localScenePath": "scenes/4316_desperate-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4316_00_desperate-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4316_00_desperate-couple-pose.png",
+          "localThumbnailPath": "thumbnails/4316_00_desperate-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4316_01_desperate-couple-pose.png",
+          "localThumbnailPath": "thumbnails/4316_01_desperate-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 46530,
+      "slug": "desperate-couple-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4317",
+      "presetNumber": 4317,
+      "label": "Female kneeling despair pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate, shocked female is kneeling, female despair pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4317_female-kneeling-despair-pose.pma",
+      "localScenePath": "scenes/4317_female-kneeling-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4317_00_female-kneeling-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4317_00_female-kneeling-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4317_00_female-kneeling-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23515,
+      "slug": "female-kneeling-despair-pose"
+    },
+    {
+      "id": "guo-scene-4318",
+      "presetNumber": 4318,
+      "label": "Male sitting despair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Desperate male is sitting on the chair, looking down, holding his head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4318_male-sitting-despair-pose.pma",
+      "localScenePath": "scenes/4318_male-sitting-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4318_00_male-sitting-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4318_00_male-sitting-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4318_00_male-sitting-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 24283,
+      "slug": "male-sitting-despair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4319",
+      "presetNumber": 4319,
+      "label": "Desperate female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Desperate female is kneeling, looking down, leaning on the ground with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4319_desperate-female-kneeling-pose.pma",
+      "localScenePath": "scenes/4319_desperate-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4319_00_desperate-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4319_00_desperate-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4319_00_desperate-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23536,
+      "slug": "desperate-female-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4320",
+      "presetNumber": 4320,
+      "label": "Desperate crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the ground and crying desperately, crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4320_desperate-crying-pose.pma",
+      "localScenePath": "scenes/4320_desperate-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4320_00_desperate-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4320_00_desperate-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4320_00_desperate-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23666,
+      "slug": "desperate-crying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1165 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 149,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3577",
+      "presetNumber": 3577,
+      "label": "Couple dancing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are dancing, couple romantic dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3577_couple-dancing-pose.pma",
+      "localScenePath": "scenes/3577_couple-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3577_00_couple-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3577_00_couple-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3577_00_couple-dancing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3577_01_couple-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3577_01_couple-dancing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46638,
+      "slug": "couple-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3578",
+      "presetNumber": 3578,
+      "label": "Male holding cap pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually and holding his baseball cap with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3578_male-holding-cap-pose.pma",
+      "localScenePath": "scenes/3578_male-holding-cap-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3578_00_male-holding-cap-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3578_00_male-holding-cap-pose.png",
+          "localThumbnailPath": "thumbnails/3578_00_male-holding-cap-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        103
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24323,
+      "slug": "male-holding-cap-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3579",
+      "presetNumber": 3579,
+      "label": "Female sitting looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting, leaning on her left hand, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3579_female-sitting-looking-right-pose.pma",
+      "localScenePath": "scenes/3579_female-sitting-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3579_00_female-sitting-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3579_00_female-sitting-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/3579_00_female-sitting-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "beginner",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23471,
+      "slug": "female-sitting-looking-right-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3580",
+      "presetNumber": 3580,
+      "label": "Anime female standing character pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing, holding her hip with her left hand, female anime character pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3580_anime-female-standing-character-pose.pma",
+      "localScenePath": "scenes/3580_anime-female-standing-character-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3580_00_anime-female-standing-character-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3580_00_anime-female-standing-character-pose.png",
+          "localThumbnailPath": "thumbnails/3580_00_anime-female-standing-character-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23905,
+      "slug": "anime-female-standing-character-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3581",
+      "presetNumber": 3581,
+      "label": "Anime male standing character pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing, crossing his legs, his right hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3581_anime-male-standing-character-pose.pma",
+      "localScenePath": "scenes/3581_anime-male-standing-character-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3581_00_anime-male-standing-character-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3581_00_anime-male-standing-character-pose.png",
+          "localThumbnailPath": "thumbnails/3581_00_anime-male-standing-character-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23853,
+      "slug": "anime-male-standing-character-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3582",
+      "presetNumber": 3582,
+      "label": "Anime female jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping happily, raising her left leg, anime character pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3582_anime-female-jumping-pose.pma",
+      "localScenePath": "scenes/3582_anime-female-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3582_00_anime-female-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3582_00_anime-female-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3582_00_anime-female-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23896,
+      "slug": "anime-female-jumping-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3583",
+      "presetNumber": 3583,
+      "label": "Anime male walking character pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3583_anime-male-walking-character-pose.pma",
+      "localScenePath": "scenes/3583_anime-male-walking-character-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3583_00_anime-male-walking-character-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3583_00_anime-male-walking-character-pose.png",
+          "localThumbnailPath": "thumbnails/3583_00_anime-male-walking-character-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23853,
+      "slug": "anime-male-walking-character-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3584",
+      "presetNumber": 3584,
+      "label": "Cute anime character pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is sitting on her knees, looking to the left, cute anime character pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3584_cute-anime-character-pose.pma",
+      "localScenePath": "scenes/3584_cute-anime-character-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3584_00_cute-anime-character-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3584_00_cute-anime-character-pose.png",
+          "localThumbnailPath": "thumbnails/3584_00_cute-anime-character-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23898,
+      "slug": "cute-anime-character-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3585",
+      "presetNumber": 3585,
+      "label": "Anime male crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is crouching, casual anime male pose, male anime character pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3585_anime-male-crouching-pose.pma",
+      "localScenePath": "scenes/3585_anime-male-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3585_00_anime-male-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3585_00_anime-male-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/3585_00_anime-male-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 23912,
+      "slug": "anime-male-crouching-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3586",
+      "presetNumber": 3586,
+      "label": "Anime female action pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping, holding a katana and ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3586_anime-female-action-pose.pma",
+      "localScenePath": "scenes/3586_anime-female-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3586_00_anime-female-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3586_00_anime-female-action-pose.png",
+          "localThumbnailPath": "thumbnails/3586_00_anime-female-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 24389,
+      "slug": "anime-female-action-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3587",
+      "presetNumber": 3587,
+      "label": "Anime male action pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running, looking to the left, holding two katanas",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3587_anime-male-action-pose.pma",
+      "localScenePath": "scenes/3587_anime-male-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3587_00_anime-male-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3587_00_anime-male-action-pose.png",
+          "localThumbnailPath": "thumbnails/3587_00_anime-male-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 24818,
+      "slug": "anime-male-action-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3588",
+      "presetNumber": 3588,
+      "label": "Anime female spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is floating in the air, holding two double-sided spear",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3588_anime-female-spear-pose.pma",
+      "localScenePath": "scenes/3588_anime-female-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3588_00_anime-female-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3588_00_anime-female-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3588_00_anime-female-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 24946,
+      "slug": "anime-female-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3589",
+      "presetNumber": 3589,
+      "label": "Anime male spear pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is holding a double-sided spear, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3589_anime-male-spear-pose.pma",
+      "localScenePath": "scenes/3589_anime-male-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3589_00_anime-male-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3589_00_anime-male-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3589_00_anime-male-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "character. pose"
+      ],
+      "bytes": 24308,
+      "slug": "anime-male-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3590",
+      "presetNumber": 3590,
+      "label": "Funny sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is sitting on the chair, the other female is standing and leaning on her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3590_funny-sitting-pose.pma",
+      "localScenePath": "scenes/3590_funny-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3590_00_funny-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3590_00_funny-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3590_00_funny-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3590_01_funny-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3590_01_funny-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 46772,
+      "slug": "funny-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3591",
+      "presetNumber": 3591,
+      "label": "Funny zombie pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is imitating a zombie, while the other female is holding her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3591_funny-zombie-pose.pma",
+      "localScenePath": "scenes/3591_funny-zombie-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3591_00_funny-zombie-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3591_00_funny-zombie-pose.png",
+          "localThumbnailPath": "thumbnails/3591_00_funny-zombie-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3591_01_funny-zombie-pose.png",
+          "localThumbnailPath": "thumbnails/3591_01_funny-zombie-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 46222,
+      "slug": "funny-zombie-pose",
+      "tagIds": [
+        "hands-body",
+        "animal-creature",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "动物/异形",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3592",
+      "presetNumber": 3592,
+      "label": "Funny dramatic female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is dramatically holding her head and placing her other hand on the other female's forehead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3592_funny-dramatic-female-pose.pma",
+      "localScenePath": "scenes/3592_funny-dramatic-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3592_00_funny-dramatic-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3592_00_funny-dramatic-female-pose.png",
+          "localThumbnailPath": "thumbnails/3592_00_funny-dramatic-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3592_01_funny-dramatic-female-pose.png",
+          "localThumbnailPath": "thumbnails/3592_01_funny-dramatic-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 46342,
+      "slug": "funny-dramatic-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3593",
+      "presetNumber": 3593,
+      "label": "Funny happy female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is jumping happily and spreading her arms, accidentally hitting the other female in the head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3593_funny-happy-female-pose.pma",
+      "localScenePath": "scenes/3593_funny-happy-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3593_00_funny-happy-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3593_00_funny-happy-female-pose.png",
+          "localThumbnailPath": "thumbnails/3593_00_funny-happy-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3593_01_funny-happy-female-pose.png",
+          "localThumbnailPath": "thumbnails/3593_01_funny-happy-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 46374,
+      "slug": "funny-happy-female-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3594",
+      "presetNumber": 3594,
+      "label": "Funny couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding the female with one hand, holding glasses in the other hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3594_funny-couple-pose.pma",
+      "localScenePath": "scenes/3594_funny-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3594_00_funny-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3594_00_funny-couple-pose.png",
+          "localThumbnailPath": "thumbnails/3594_00_funny-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3594_01_funny-couple-pose.png",
+          "localThumbnailPath": "thumbnails/3594_01_funny-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        97
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 47060,
+      "slug": "funny-couple-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3595",
+      "presetNumber": 3595,
+      "label": "Female funny dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are dancing funny and looking at each other, funny drawing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3595_female-funny-dance-pose.pma",
+      "localScenePath": "scenes/3595_female-funny-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3595_00_female-funny-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3595_00_female-funny-dance-pose.png",
+          "localThumbnailPath": "thumbnails/3595_00_female-funny-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3595_01_female-funny-dance-pose.png",
+          "localThumbnailPath": "thumbnails/3595_01_female-funny-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        108
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 47140,
+      "slug": "female-funny-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3596",
+      "presetNumber": 3596,
+      "label": "Male funny dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are dancing funny and wearing heart-shaped glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3596_male-funny-dance-pose.pma",
+      "localScenePath": "scenes/3596_male-funny-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3596_00_male-funny-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3596_00_male-funny-dance-pose.png",
+          "localThumbnailPath": "thumbnails/3596_00_male-funny-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3596_01_male-funny-dance-pose.png",
+          "localThumbnailPath": "thumbnails/3596_01_male-funny-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        99
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 47824,
+      "slug": "male-funny-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "scene-interior"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3597",
+      "presetNumber": 3597,
+      "label": "Funny witch pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a broom between her legs and pointing forward, holding a book in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3597_funny-witch-pose.pma",
+      "localScenePath": "scenes/3597_funny-witch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3597_00_funny-witch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3597_00_funny-witch-pose.png",
+          "localThumbnailPath": "thumbnails/3597_00_funny-witch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        94,
+        95
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 25133,
+      "slug": "funny-witch-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3598",
+      "presetNumber": 3598,
+      "label": "Bunny ears pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing next to each other, female is making bunny ears to the male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3598_bunny-ears-pose.pma",
+      "localScenePath": "scenes/3598_bunny-ears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3598_00_bunny-ears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3598_00_bunny-ears-pose.png",
+          "localThumbnailPath": "thumbnails/3598_00_bunny-ears-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3598_01_bunny-ears-pose.png",
+          "localThumbnailPath": "thumbnails/3598_01_bunny-ears-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 46356,
+      "slug": "bunny-ears-pose",
+      "tagIds": [
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3599",
+      "presetNumber": 3599,
+      "label": "Funny running away pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is blowing a kiss to the male who is running away",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3599_funny-running-away-pose.pma",
+      "localScenePath": "scenes/3599_funny-running-away-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3599_00_funny-running-away-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3599_00_funny-running-away-pose.png",
+          "localThumbnailPath": "thumbnails/3599_00_funny-running-away-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3599_01_funny-running-away-pose.png",
+          "localThumbnailPath": "thumbnails/3599_01_funny-running-away-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "funny",
+        "drawing",
+        "pose"
+      ],
+      "bytes": 46451,
+      "slug": "funny-running-away-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3600",
+      "presetNumber": 3600,
+      "label": "Female bashful walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking bashfully, holding her hands, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3600_female-bashful-walking-pose.pma",
+      "localScenePath": "scenes/3600_female-bashful-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3600_00_female-bashful-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3600_00_female-bashful-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3600_00_female-bashful-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bashful",
+        "pose"
+      ],
+      "bytes": 23515,
+      "slug": "female-bashful-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

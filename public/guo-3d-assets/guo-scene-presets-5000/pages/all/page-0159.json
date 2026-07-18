@@ -1,0 +1,1125 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 158,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3793",
+      "presetNumber": 3793,
+      "label": "Female pirate hat pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, holding her hips, wearing a pirate hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3793_female-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3793_female-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3793_00_female-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3793_00_female-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3793_00_female-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748009,
+      "slug": "female-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3794",
+      "presetNumber": 3794,
+      "label": "Pirate hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a pirate hat and holding a pirate sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3794_pirate-hat-pose.pma",
+      "localScenePath": "scenes/3794_pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3794_00_pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3794_00_pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3794_00_pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1138456,
+      "slug": "pirate-hat-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3795",
+      "presetNumber": 3795,
+      "label": "Male pirate hat pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is putting the pirate hat on the other male's head, pirate hat drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3795_male-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3795_male-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3795_00_male-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3795_00_male-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3795_00_male-pirate-hat-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3795_01_male-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3795_01_male-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 771189,
+      "slug": "male-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3796",
+      "presetNumber": 3796,
+      "label": "Skeleton pirate hat pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing confidently, holding his hips, wearing a pirate hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3796_skeleton-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3796_skeleton-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3796_00_skeleton-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3796_00_skeleton-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3796_00_skeleton-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 747991,
+      "slug": "skeleton-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3797",
+      "presetNumber": 3797,
+      "label": "Holding pirate hat pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing, holding a pirate hat in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3797_holding-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3797_holding-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3797_00_holding-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3797_00_holding-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3797_00_holding-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748017,
+      "slug": "holding-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3798",
+      "presetNumber": 3798,
+      "label": "Pirate skeleton walking pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is walking casually, wearing a pirate hat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3798_pirate-skeleton-walking-pose.pma",
+      "localScenePath": "scenes/3798_pirate-skeleton-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3798_00_pirate-skeleton-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3798_00_pirate-skeleton-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3798_00_pirate-skeleton-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748019,
+      "slug": "pirate-skeleton-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3799",
+      "presetNumber": 3799,
+      "label": "Adjusting pirate hat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a pirate hat, adjusting it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3799_adjusting-pirate-hat-pose.pma",
+      "localScenePath": "scenes/3799_adjusting-pirate-hat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3799_00_adjusting-pirate-hat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3799_00_adjusting-pirate-hat-pose.png",
+          "localThumbnailPath": "thumbnails/3799_00_adjusting-pirate-hat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "hat",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748262,
+      "slug": "adjusting-pirate-hat-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3800",
+      "presetNumber": 3800,
+      "label": "Female jumping victory pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping victoriously, clenching her hands into fists and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3800_female-jumping-victory-pose.pma",
+      "localScenePath": "scenes/3800_female-jumping-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3800_00_female-jumping-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3800_00_female-jumping-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3800_00_female-jumping-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23464,
+      "slug": "female-jumping-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3801",
+      "presetNumber": 3801,
+      "label": "Male happy victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, clenching his fists and looking up, male victory pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3801_male-happy-victory-pose.pma",
+      "localScenePath": "scenes/3801_male-happy-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3801_00_male-happy-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3801_00_male-happy-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3801_00_male-happy-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23740,
+      "slug": "male-happy-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3802",
+      "presetNumber": 3802,
+      "label": "Female standing victory pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing victoriously and raising her fist, female victory pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3802_female-standing-victory-pose.pma",
+      "localScenePath": "scenes/3802_female-standing-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3802_00_female-standing-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3802_00_female-standing-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3802_00_female-standing-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23441,
+      "slug": "female-standing-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3803",
+      "presetNumber": 3803,
+      "label": "Male showing muscles pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing victoriously, showing his muscles and holding his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3803_male-showing-muscles-pose.pma",
+      "localScenePath": "scenes/3803_male-showing-muscles-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3803_00_male-showing-muscles-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3803_00_male-showing-muscles-pose.png",
+          "localThumbnailPath": "thumbnails/3803_00_male-showing-muscles-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23732,
+      "slug": "male-showing-muscles-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3804",
+      "presetNumber": 3804,
+      "label": "Female winner pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is raising the other female's hand, female victory pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3804_female-winner-pose.pma",
+      "localScenePath": "scenes/3804_female-winner-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3804_00_female-winner-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3804_00_female-winner-pose.png",
+          "localThumbnailPath": "thumbnails/3804_00_female-winner-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3804_01_female-winner-pose.png",
+          "localThumbnailPath": "thumbnails/3804_01_female-winner-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46078,
+      "slug": "female-winner-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3805",
+      "presetNumber": 3805,
+      "label": "Kneeling victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling victoriously, clenching his fists and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3805_kneeling-victory-pose.pma",
+      "localScenePath": "scenes/3805_kneeling-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3805_00_kneeling-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3805_00_kneeling-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3805_00_kneeling-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23742,
+      "slug": "kneeling-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3806",
+      "presetNumber": 3806,
+      "label": "Raising spear victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on top of the rock and raising his spear victoriously",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3806_raising-spear-victory-pose.pma",
+      "localScenePath": "scenes/3806_raising-spear-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3806_00_raising-spear-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3806_00_raising-spear-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3806_00_raising-spear-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 44745,
+      "slug": "raising-spear-victory-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3807",
+      "presetNumber": 3807,
+      "label": "Folded arms victory pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently on top of the rock, her arms are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3807_folded-arms-victory-pose.pma",
+      "localScenePath": "scenes/3807_folded-arms-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3807_00_folded-arms-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3807_00_folded-arms-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3807_00_folded-arms-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 44061,
+      "slug": "folded-arms-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3808",
+      "presetNumber": 3808,
+      "label": "Male victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and posing victoriously, male victory pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3808_male-victory-pose.pma",
+      "localScenePath": "scenes/3808_male-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3808_00_male-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3808_00_male-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3808_00_male-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23772,
+      "slug": "male-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3809",
+      "presetNumber": 3809,
+      "label": "Wizard victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing victoriously and raising his wizard staff, male victory pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3809_wizard-victory-pose.pma",
+      "localScenePath": "scenes/3809_wizard-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3809_00_wizard-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3809_00_wizard-victory-pose.png",
+          "localThumbnailPath": "thumbnails/3809_00_wizard-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "victory",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24337,
+      "slug": "wizard-victory-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3810",
+      "presetNumber": 3810,
+      "label": "Standing holding hips pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, holding her hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3810_standing-holding-hips-pose.pma",
+      "localScenePath": "scenes/3810_standing-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3810_00_standing-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3810_00_standing-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/3810_00_standing-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23521,
+      "slug": "standing-holding-hips-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3811",
+      "presetNumber": 3811,
+      "label": "Standing shy pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy female is standing, holding her left arm and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3811_standing-shy-pose.pma",
+      "localScenePath": "scenes/3811_standing-shy-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3811_00_standing-shy-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3811_00_standing-shy-pose.png",
+          "localThumbnailPath": "thumbnails/3811_00_standing-shy-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23630,
+      "slug": "standing-shy-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3812",
+      "presetNumber": 3812,
+      "label": "Standing waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and waving with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3812_standing-waving-pose.pma",
+      "localScenePath": "scenes/3812_standing-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3812_00_standing-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3812_00_standing-waving-pose.png",
+          "localThumbnailPath": "thumbnails/3812_00_standing-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23561,
+      "slug": "standing-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3813",
+      "presetNumber": 3813,
+      "label": "Standing crossed arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, her arms are crossed, looking slightly to the left, standing female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3813_standing-crossed-arms-pose.pma",
+      "localScenePath": "scenes/3813_standing-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3813_00_standing-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3813_00_standing-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/3813_00_standing-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23555,
+      "slug": "standing-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3814",
+      "presetNumber": 3814,
+      "label": "Standing holding hip pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding her hip with her right hand, looking to the elft",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3814_standing-holding-hip-pose.pma",
+      "localScenePath": "scenes/3814_standing-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3814_00_standing-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3814_00_standing-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/3814_00_standing-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23696,
+      "slug": "standing-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3815",
+      "presetNumber": 3815,
+      "label": "Standing sad pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is standing, her arms are crossed, she is looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3815_standing-sad-pose.pma",
+      "localScenePath": "scenes/3815_standing-sad-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3815_00_standing-sad-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3815_00_standing-sad-pose.png",
+          "localThumbnailPath": "thumbnails/3815_00_standing-sad-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23603,
+      "slug": "standing-sad-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3816",
+      "presetNumber": 3816,
+      "label": "Standing crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confidently, holding her hips, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3816_standing-crossed-legs-pose.pma",
+      "localScenePath": "scenes/3816_standing-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3816_00_standing-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3816_00_standing-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/3816_00_standing-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "standing",
+        "female",
+        "pose"
+      ],
+      "bytes": 23469,
+      "slug": "standing-crossed-legs-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

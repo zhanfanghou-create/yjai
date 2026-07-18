@@ -1,0 +1,1184 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 146,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3505",
+      "presetNumber": 3505,
+      "label": "Holding katana action pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding katanas, ready to fight, male dynamic action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3505_holding-katana-action-pose.pma",
+      "localScenePath": "scenes/3505_holding-katana-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3505_00_holding-katana-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3505_00_holding-katana-action-pose.png",
+          "localThumbnailPath": "thumbnails/3505_00_holding-katana-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "action",
+        "pose"
+      ],
+      "bytes": 24519,
+      "slug": "holding-katana-action-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3506",
+      "presetNumber": 3506,
+      "label": "Running holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a sword in his right hand, is about to stab it into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3506_running-holding-sword-pose.pma",
+      "localScenePath": "scenes/3506_running-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3506_00_running-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3506_00_running-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3506_00_running-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "action",
+        "pose"
+      ],
+      "bytes": 24375,
+      "slug": "running-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3507",
+      "presetNumber": 3507,
+      "label": "Fighting dynamic action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, one of them is attacking with a dagger, the other one is kicking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3507_fighting-dynamic-action-pose.pma",
+      "localScenePath": "scenes/3507_fighting-dynamic-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3507_00_fighting-dynamic-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3507_00_fighting-dynamic-action-pose.png",
+          "localThumbnailPath": "thumbnails/3507_00_fighting-dynamic-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3507_01_fighting-dynamic-action-pose.png",
+          "localThumbnailPath": "thumbnails/3507_01_fighting-dynamic-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "action",
+        "pose"
+      ],
+      "bytes": 47145,
+      "slug": "fighting-dynamic-action-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3508",
+      "presetNumber": 3508,
+      "label": "Female fighting throwing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is lifting her opponent with both hands and is about to throw her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3508_female-fighting-throwing-pose.pma",
+      "localScenePath": "scenes/3508_female-fighting-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3508_00_female-fighting-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3508_00_female-fighting-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/3508_00_female-fighting-throwing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3508_01_female-fighting-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/3508_01_female-fighting-throwing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "action",
+        "pose"
+      ],
+      "bytes": 46232,
+      "slug": "female-fighting-throwing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3509",
+      "presetNumber": 3509,
+      "label": "Dynamic action kicking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, female is kicking the male in the head, dynamic action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3509_dynamic-action-kicking-pose.pma",
+      "localScenePath": "scenes/3509_dynamic-action-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3509_00_dynamic-action-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3509_00_dynamic-action-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3509_00_dynamic-action-kicking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3509_01_dynamic-action-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3509_01_dynamic-action-kicking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "action",
+        "pose"
+      ],
+      "bytes": 46288,
+      "slug": "dynamic-action-kicking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3510",
+      "presetNumber": 3510,
+      "label": "Skeleton standing pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton casual standing pose, human skull drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3510_skeleton-standing-pose.pma",
+      "localScenePath": "scenes/3510_skeleton-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3510_00_skeleton-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3510_00_skeleton-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3510_00_skeleton-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23560,
+      "slug": "skeleton-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3511",
+      "presetNumber": 3511,
+      "label": "Skeleton walking pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton casual walking pose, human skull drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3511_skeleton-walking-pose.pma",
+      "localScenePath": "scenes/3511_skeleton-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3511_00_skeleton-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3511_00_skeleton-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3511_00_skeleton-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23466,
+      "slug": "skeleton-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3512",
+      "presetNumber": 3512,
+      "label": "Skeleton looking up pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing and praying, looking upwards, human skull reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3512_skeleton-looking-up-pose.pma",
+      "localScenePath": "scenes/3512_skeleton-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3512_00_skeleton-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3512_00_skeleton-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3512_00_skeleton-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23581,
+      "slug": "skeleton-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3513",
+      "presetNumber": 3513,
+      "label": "Skeleton holding chin pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing and holding his chin with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3513_skeleton-holding-chin-pose.pma",
+      "localScenePath": "scenes/3513_skeleton-holding-chin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3513_00_skeleton-holding-chin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3513_00_skeleton-holding-chin-pose.png",
+          "localThumbnailPath": "thumbnails/3513_00_skeleton-holding-chin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23444,
+      "slug": "skeleton-holding-chin-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3514",
+      "presetNumber": 3514,
+      "label": "Skeleton holding hips pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing, looking to the left, holding his hips",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3514_skeleton-holding-hips-pose.pma",
+      "localScenePath": "scenes/3514_skeleton-holding-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3514_00_skeleton-holding-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3514_00_skeleton-holding-hips-pose.png",
+          "localThumbnailPath": "thumbnails/3514_00_skeleton-holding-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23471,
+      "slug": "skeleton-holding-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3515",
+      "presetNumber": 3515,
+      "label": "Skeleton headphones pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is walking, looking to the right, wearing headphones",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3515_skeleton-headphones-pose.pma",
+      "localScenePath": "scenes/3515_skeleton-headphones-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3515_00_skeleton-headphones-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3515_00_skeleton-headphones-pose.png",
+          "localThumbnailPath": "thumbnails/3515_00_skeleton-headphones-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        84
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23997,
+      "slug": "skeleton-headphones-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3516",
+      "presetNumber": 3516,
+      "label": "Skeleton sombrero pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing, wearing a sombrero, holding it with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3516_skeleton-sombrero-pose.pma",
+      "localScenePath": "scenes/3516_skeleton-sombrero-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3516_00_skeleton-sombrero-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3516_00_skeleton-sombrero-pose.png",
+          "localThumbnailPath": "thumbnails/3516_00_skeleton-sombrero-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [
+        213
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 24011,
+      "slug": "skeleton-sombrero-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3517",
+      "presetNumber": 3517,
+      "label": "Skeleton looking right pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing with his legs crossed, looking to the right, holding his hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3517_skeleton-looking-right-pose.pma",
+      "localScenePath": "scenes/3517_skeleton-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3517_00_skeleton-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3517_00_skeleton-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/3517_00_skeleton-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23500,
+      "slug": "skeleton-looking-right-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3518",
+      "presetNumber": 3518,
+      "label": "Skeleton holding head pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing, holding his hip with his left hand and holding his head with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3518_skeleton-holding-head-pose.pma",
+      "localScenePath": "scenes/3518_skeleton-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3518_00_skeleton-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3518_00_skeleton-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/3518_00_skeleton-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23521,
+      "slug": "skeleton-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3519",
+      "presetNumber": 3519,
+      "label": "Skeleton looking down pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Skeleton is standing, his arms are crossed and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3519_skeleton-looking-down-pose.pma",
+      "localScenePath": "scenes/3519_skeleton-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3519_00_skeleton-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3519_00_skeleton-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3519_00_skeleton-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        58
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        58
+      ],
+      "sourceTags": [
+        "human",
+        "skull",
+        "reference"
+      ],
+      "bytes": 23500,
+      "slug": "skeleton-looking-down-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3520",
+      "presetNumber": 3520,
+      "label": "Female elegant standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing elegantly and holding her hands, female simple drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3520_female-elegant-standing-pose.pma",
+      "localScenePath": "scenes/3520_female-elegant-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3520_00_female-elegant-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3520_00_female-elegant-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3520_00_female-elegant-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 27307,
+      "slug": "female-elegant-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3521",
+      "presetNumber": 3521,
+      "label": "Female mermaid drawing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid pose, mermaid simple drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3521_female-mermaid-drawing-pose.pma",
+      "localScenePath": "scenes/3521_female-mermaid-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3521_00_female-mermaid-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3521_00_female-mermaid-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3521_00_female-mermaid-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16329,
+      "slug": "female-mermaid-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3522",
+      "presetNumber": 3522,
+      "label": "Mermaid sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is sitting, leaning on her right hand, mermaid simple drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3522_mermaid-sitting-pose.pma",
+      "localScenePath": "scenes/3522_mermaid-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3522_00_mermaid-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3522_00_mermaid-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3522_00_mermaid-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 16463,
+      "slug": "mermaid-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3523",
+      "presetNumber": 3523,
+      "label": "Female aiming bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and aiming with her bow, female bow aiming pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3523_female-aiming-bow-pose.pma",
+      "localScenePath": "scenes/3523_female-aiming-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3523_00_female-aiming-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3523_00_female-aiming-bow-pose.png",
+          "localThumbnailPath": "thumbnails/3523_00_female-aiming-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1120864,
+      "slug": "female-aiming-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3524",
+      "presetNumber": 3524,
+      "label": "Standing holding guns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and holding guns in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3524_standing-holding-guns-pose.pma",
+      "localScenePath": "scenes/3524_standing-holding-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3524_00_standing-holding-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3524_00_standing-holding-guns-pose.png",
+          "localThumbnailPath": "thumbnails/3524_00_standing-holding-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24013,
+      "slug": "standing-holding-guns-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3525",
+      "presetNumber": 3525,
+      "label": "Female sitting elegantly pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the chair elegantly, her legs are crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3525_female-sitting-elegantly-pose.pma",
+      "localScenePath": "scenes/3525_female-sitting-elegantly-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3525_00_female-sitting-elegantly-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3525_00_female-sitting-elegantly-pose.png",
+          "localThumbnailPath": "thumbnails/3525_00_female-sitting-elegantly-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23942,
+      "slug": "female-sitting-elegantly-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3526",
+      "presetNumber": 3526,
+      "label": "Male casual standing drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, holding his hip with his left hand, crossing his legs, simple drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3526_male-casual-standing-drawing-pose.pma",
+      "localScenePath": "scenes/3526_male-casual-standing-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3526_00_male-casual-standing-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3526_00_male-casual-standing-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3526_00_male-casual-standing-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23746,
+      "slug": "male-casual-standing-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3527",
+      "presetNumber": 3527,
+      "label": "Male sitting drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bar stool, holding his hip with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3527_male-sitting-drawing-pose.pma",
+      "localScenePath": "scenes/3527_male-sitting-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3527_00_male-sitting-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3527_00_male-sitting-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3527_00_male-sitting-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24208,
+      "slug": "male-sitting-drawing-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3528",
+      "presetNumber": 3528,
+      "label": "Anime male walking drawing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking casually, looking to the left, anime simple drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3528_anime-male-walking-drawing-pose.pma",
+      "localScenePath": "scenes/3528_anime-male-walking-drawing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3528_00_anime-male-walking-drawing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3528_00_anime-male-walking-drawing-pose.png",
+          "localThumbnailPath": "thumbnails/3528_00_anime-male-walking-drawing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "simple",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23867,
+      "slug": "anime-male-walking-drawing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+.drama-workshop-page {
+  height: 100%;
+  padding: 22px;
+  color: var(--text-primary, #f8fafc);
+  background:
+    radial-gradient(circle at 8% 0%, color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 20%, transparent), transparent 30%),
+    radial-gradient(circle at 92% 4%, color-mix(in srgb, var(--success-color, var(--success-color)) 14%, transparent), transparent 28%),
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-primary, #222222) 92%, #111827), var(--bg-primary, #222222));
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.drama-workshop-page *,
+.drama-workshop-page *::before,
+.drama-workshop-page *::after {
+  box-sizing: border-box;
+}
+
+.drama-workshop-header {
+  margin-bottom: 20px;
+}
+
+.drama-workshop-header h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: var(--text-primary, #ffffff);
+}
+
+.drama-workshop-header p {
+  margin: 0;
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 14px;
+}
+
+.drama-workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.drama-workshop-card {
+  padding: 22px;
+  border: 1px solid var(--border-color, #3a3a3a);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--bg-secondary, #2a2a2a) 88%, transparent);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.drama-workshop-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color, var(--accent-secondary));
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.24);
+}
+
+.drama-workshop-card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  color: var(--accent-color, var(--accent-secondary));
+  background: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, var(--bg-tertiary, #333333));
+}
+
+.drama-workshop-card h4 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: var(--text-primary, #ffffff);
+}
+
+.drama-workshop-card p {
+  margin: 0;
+  color: var(--text-secondary, #a0a0a0);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.drama-workshop-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.drama-workshop-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color, #3a3a3a);
+  border-radius: 12px;
+  color: var(--text-secondary, #a0a0a0);
+  background: color-mix(in srgb, var(--bg-secondary, #2a2a2a) 78%, transparent);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.drama-workshop-back-btn:hover {
+  color: var(--text-primary, #ffffff);
+  border-color: var(--accent-color, var(--accent-secondary));
+  background: var(--hover-bg, #2d2d2d);
+}
+
+.drama-workshop-detail-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--accent-color, var(--accent-secondary));
+  background: color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 12%, var(--bg-tertiary, #333333));
+}
+
+.drama-workshop-detail-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-primary, #ffffff);
+}
+
+.drama-workshop-content {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.85fr) minmax(360px, 1.15fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.drama-workshop-panel,
+.drama-workshop-result {
+  border: 1px solid var(--border-color, #3a3a3a);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--bg-secondary, #2a2a2a) 88%, transparent);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+  padding: 20px;
+  min-height: 420px;
+}
+
+.drama-workshop-section {
+  margin-bottom: 18px;
+}
+
+.drama-workshop-section h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--text-secondary, #a0a0a0);
+}
+
+.drama-workshop-section select,
+.drama-workshop-section textarea {
+  width: 100%;
+  border: 1px solid var(--border-color, #3a3a3a);
+  border-radius: 14px;
+  padding: 12px;
+  color: var(--text-primary, #ffffff);
+  background: var(--bg-primary, #222222);
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.drama-workshop-section select:focus,
+.drama-workshop-section textarea:focus {
+  border-color: var(--accent-color, var(--accent-secondary));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 18%, transparent);
+}
+
+.drama-workshop-section textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.drama-workshop-warning {
+  padding: 12px;
+  border: 1px dashed var(--border-color, #3a3a3a);
+  border-radius: 12px;
+  color: var(--warning-color, #f59e0b);
+  font-size: 13px;
+}
+
+.drama-workshop-generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--accent-color, var(--accent-secondary));
+  border-radius: 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent-color, var(--accent-secondary)), color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 74%, var(--success-color, var(--success-color))));
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.drama-workshop-generate-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--accent-color, var(--accent-secondary)) 28%, transparent);
+}
+
+.drama-workshop-generate-btn:disabled,
+.drama-workshop-generate-btn.loading {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.drama-workshop-generate-btn .spinner-svg {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.drama-workshop-empty {
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--text-secondary, #a0a0a0);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.drama-workshop-result-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+}
+
+.drama-workshop-result-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.drama-workshop-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color, #3a3a3a);
+  border-radius: 10px;
+  color: var(--text-secondary, #a0a0a0);
+  background: var(--bg-tertiary, #333333);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-size: 13px;
+}
+
+.drama-workshop-action-btn:hover {
+  color: var(--text-primary, #ffffff);
+  border-color: var(--accent-color, var(--accent-secondary));
+  background: var(--hover-bg, #2d2d2d);
+}
+
+.drama-workshop-result-box pre {
+  flex: 1;
+  min-height: 260px;
+  max-height: 560px;
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid var(--border-color, #3a3a3a);
+  border-radius: 14px;
+  white-space: pre-wrap;
+  color: var(--text-primary, #ffffff);
+  background: var(--bg-primary, #222222);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .drama-workshop-content {
+    grid-template-columns: 1fr;
+  }
+
+  .drama-workshop-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,1100 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 10,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-1041",
+      "presetNumber": 1041,
+      "label": "Male lighting cigarette pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, male is lighting the female's cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1041_male-lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/1041_male-lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1041_00_male-lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1041_00_male-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1041_00_male-lighting-cigarette-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1041_01_male-lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1041_01_male-lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 47305,
+      "slug": "male-lighting-cigarette-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1047",
+      "presetNumber": 1047,
+      "label": "Having conversation smoking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and having a coversation while smoking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1047_having-conversation-smoking-pose.pma",
+      "localScenePath": "scenes/1047_having-conversation-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1047_00_having-conversation-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1047_00_having-conversation-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1047_00_having-conversation-smoking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1047_01_having-conversation-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1047_01_having-conversation-smoking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 47312,
+      "slug": "having-conversation-smoking-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1058",
+      "presetNumber": 1058,
+      "label": "Males waiting baseball pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male players are playing baseball, waiting for the coming ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1058_males-waiting-baseball-pose.pma",
+      "localScenePath": "scenes/1058_males-waiting-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1058_00_males-waiting-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1058_00_males-waiting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1058_00_males-waiting-baseball-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1058_01_males-waiting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1058_01_males-waiting-baseball-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 47557,
+      "slug": "males-waiting-baseball-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1059",
+      "presetNumber": 1059,
+      "label": "Baseball exercise pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male baseball players are exercising to throw and hit the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1059_baseball-exercise-pose.pma",
+      "localScenePath": "scenes/1059_baseball-exercise-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1059_00_baseball-exercise-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1059_00_baseball-exercise-pose.png",
+          "localThumbnailPath": "thumbnails/1059_00_baseball-exercise-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1059_01_baseball-exercise-pose.png",
+          "localThumbnailPath": "thumbnails/1059_01_baseball-exercise-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 47506,
+      "slug": "baseball-exercise-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1068",
+      "presetNumber": 1068,
+      "label": "Female male leaning pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning on the barrier and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1068_female-male-leaning-pose.pma",
+      "localScenePath": "scenes/1068_female-male-leaning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1068_00_female-male-leaning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1068_00_female-male-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/1068_00_female-male-leaning-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1068_01_female-male-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/1068_01_female-male-leaning-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 47652,
+      "slug": "female-male-leaning-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1069",
+      "presetNumber": 1069,
+      "label": "Males bar counter pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are standing, leaning against the bar counter and talking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1069_males-bar-counter-pose.pma",
+      "localScenePath": "scenes/1069_males-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1069_00_males-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1069_00_males-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1069_00_males-bar-counter-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1069_01_males-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1069_01_males-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 46985,
+      "slug": "males-bar-counter-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1072",
+      "presetNumber": 1072,
+      "label": "Two males pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are pushing a huge and heavy object together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1072_two-males-pushing-pose.pma",
+      "localScenePath": "scenes/1072_two-males-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1072_00_two-males-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1072_00_two-males-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1072_00_two-males-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1072_01_two-males-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1072_01_two-males-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 47210,
+      "slug": "two-males-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1074",
+      "presetNumber": 1074,
+      "label": "Two females pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are pushing a huge and heavy object together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1074_two-females-pushing-pose.pma",
+      "localScenePath": "scenes/1074_two-females-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1074_00_two-females-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1074_00_two-females-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1074_00_two-females-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1074_01_two-females-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1074_01_two-females-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 46974,
+      "slug": "two-females-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1076",
+      "presetNumber": 1076,
+      "label": "Female kindly pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is kindly pushing forward the other female who is standing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1076_female-kindly-pushing-pose.pma",
+      "localScenePath": "scenes/1076_female-kindly-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1076_00_female-kindly-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1076_00_female-kindly-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1076_00_female-kindly-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1076_01_female-kindly-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1076_01_female-kindly-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 46091,
+      "slug": "female-kindly-pushing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1078",
+      "presetNumber": 1078,
+      "label": "Female pushing male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is trying to push the male away, who is standing still",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1078_female-pushing-male-pose.pma",
+      "localScenePath": "scenes/1078_female-pushing-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1078_00_female-pushing-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1078_00_female-pushing-male-pose.png",
+          "localThumbnailPath": "thumbnails/1078_00_female-pushing-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1078_01_female-pushing-male-pose.png",
+          "localThumbnailPath": "thumbnails/1078_01_female-pushing-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 46286,
+      "slug": "female-pushing-male-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1103",
+      "presetNumber": 1103,
+      "label": "Sumo wrestling attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male sumo wrestlers are wrestling, one successfully attacks the other wrestler",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1103_sumo-wrestling-attack-pose.pma",
+      "localScenePath": "scenes/1103_sumo-wrestling-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1103_00_sumo-wrestling-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1103_00_sumo-wrestling-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1103_00_sumo-wrestling-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1103_01_sumo-wrestling-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1103_01_sumo-wrestling-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "sumo",
+        "pose"
+      ],
+      "bytes": 47332,
+      "slug": "sumo-wrestling-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1104",
+      "presetNumber": 1104,
+      "label": "Sumo wrestling pushing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male sumo wrestlers are fighting, they are pushing away each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1104_sumo-wrestling-pushing-pose.pma",
+      "localScenePath": "scenes/1104_sumo-wrestling-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1104_00_sumo-wrestling-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1104_00_sumo-wrestling-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1104_00_sumo-wrestling-pushing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1104_01_sumo-wrestling-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1104_01_sumo-wrestling-pushing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "sumo",
+        "pose"
+      ],
+      "bytes": 47280,
+      "slug": "sumo-wrestling-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1105",
+      "presetNumber": 1105,
+      "label": "Sumo wrestling discard pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male sumo wrestlers, one of them successfully discards the other while wrestling",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1105_sumo-wrestling-discard-pose.pma",
+      "localScenePath": "scenes/1105_sumo-wrestling-discard-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1105_00_sumo-wrestling-discard-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1105_00_sumo-wrestling-discard-pose.png",
+          "localThumbnailPath": "thumbnails/1105_00_sumo-wrestling-discard-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1105_01_sumo-wrestling-discard-pose.png",
+          "localThumbnailPath": "thumbnails/1105_01_sumo-wrestling-discard-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "sumo",
+        "pose"
+      ],
+      "bytes": 47291,
+      "slug": "sumo-wrestling-discard-pose"
+    },
+    {
+      "id": "guo-scene-1107",
+      "presetNumber": 1107,
+      "label": "Sumo crouching pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male sumo wrestlers are crouching to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1107_sumo-crouching-pose.pma",
+      "localScenePath": "scenes/1107_sumo-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1107_00_sumo-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1107_00_sumo-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/1107_00_sumo-crouching-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1107_01_sumo-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/1107_01_sumo-crouching-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        46
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        46
+      ],
+      "sourceTags": [
+        "sumo",
+        "pose"
+      ],
+      "bytes": 47178,
+      "slug": "sumo-crouching-pose"
+    },
+    {
+      "id": "guo-scene-1114",
+      "presetNumber": 1114,
+      "label": "Female players dribbling pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are playing handball, one of them is dribbling, the other one is trying to catch the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1114_female-players-dribbling-pose.pma",
+      "localScenePath": "scenes/1114_female-players-dribbling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1114_00_female-players-dribbling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1114_00_female-players-dribbling-pose.png",
+          "localThumbnailPath": "thumbnails/1114_00_female-players-dribbling-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1114_01_female-players-dribbling-pose.png",
+          "localThumbnailPath": "thumbnails/1114_01_female-players-dribbling-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 46521,
+      "slug": "female-players-dribbling-pose"
+    },
+    {
+      "id": "guo-scene-1115",
+      "presetNumber": 1115,
+      "label": "Female players passing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are playing handball, one of them is jumping and passing the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1115_female-players-passing-pose.pma",
+      "localScenePath": "scenes/1115_female-players-passing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1115_00_female-players-passing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1115_00_female-players-passing-pose.png",
+          "localThumbnailPath": "thumbnails/1115_00_female-players-passing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1115_01_female-players-passing-pose.png",
+          "localThumbnailPath": "thumbnails/1115_01_female-players-passing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 46585,
+      "slug": "female-players-passing-pose"
+    },
+    {
+      "id": "guo-scene-1118",
+      "presetNumber": 1118,
+      "label": "Male players passing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are playing handball, one of them is jumping and passing the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1118_male-players-passing-pose.pma",
+      "localScenePath": "scenes/1118_male-players-passing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1118_00_male-players-passing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1118_00_male-players-passing-pose.png",
+          "localThumbnailPath": "thumbnails/1118_00_male-players-passing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1118_01_male-players-passing-pose.png",
+          "localThumbnailPath": "thumbnails/1118_01_male-players-passing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 47052,
+      "slug": "male-players-passing-pose"
+    },
+    {
+      "id": "guo-scene-1148",
+      "presetNumber": 1148,
+      "label": "Jumping over barrier pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are jumping over a barrier, parkour jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1148_jumping-over-barrier-pose.pma",
+      "localScenePath": "scenes/1148_jumping-over-barrier-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1148_00_jumping-over-barrier-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1148_00_jumping-over-barrier-pose.png",
+          "localThumbnailPath": "thumbnails/1148_00_jumping-over-barrier-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1148_01_jumping-over-barrier-pose.png",
+          "localThumbnailPath": "thumbnails/1148_01_jumping-over-barrier-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "parkour",
+        "pose"
+      ],
+      "bytes": 48300,
+      "slug": "jumping-over-barrier-pose"
+    },
+    {
+      "id": "guo-scene-1149",
+      "presetNumber": 1149,
+      "label": "Parkour exercising pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are exercising, one of them is handstanding on a barrier, the other one is doing a front flip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1149_parkour-exercising-pose.pma",
+      "localScenePath": "scenes/1149_parkour-exercising-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1149_00_parkour-exercising-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1149_00_parkour-exercising-pose.png",
+          "localThumbnailPath": "thumbnails/1149_00_parkour-exercising-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1149_01_parkour-exercising-pose.png",
+          "localThumbnailPath": "thumbnails/1149_01_parkour-exercising-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "parkour",
+        "pose"
+      ],
+      "bytes": 48028,
+      "slug": "parkour-exercising-pose"
+    },
+    {
+      "id": "guo-scene-1150",
+      "presetNumber": 1150,
+      "label": "Female volleyball players pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female volleyball players are posing confidently, holding volleyballs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1150_female-volleyball-players-pose.pma",
+      "localScenePath": "scenes/1150_female-volleyball-players-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1150_00_female-volleyball-players-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1150_00_female-volleyball-players-pose.png",
+          "localThumbnailPath": "thumbnails/1150_00_female-volleyball-players-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1150_01_female-volleyball-players-pose.png",
+          "localThumbnailPath": "thumbnails/1150_01_female-volleyball-players-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "volleyball",
+        "pose"
+      ],
+      "bytes": 47026,
+      "slug": "female-volleyball-players-pose"
+    },
+    {
+      "id": "guo-scene-1160",
+      "presetNumber": 1160,
+      "label": "Sitting talking flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are sitting on chairs and talking, flirting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1160_sitting-talking-flirting-pose.pma",
+      "localScenePath": "scenes/1160_sitting-talking-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1160_00_sitting-talking-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1160_00_sitting-talking-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1160_00_sitting-talking-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1160_01_sitting-talking-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1160_01_sitting-talking-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 47216,
+      "slug": "sitting-talking-flirting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-1161",
+      "presetNumber": 1161,
+      "label": "Flirting bar counter pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning on the bar counter and flirting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1161_flirting-bar-counter-pose.pma",
+      "localScenePath": "scenes/1161_flirting-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1161_00_flirting-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1161_00_flirting-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1161_00_flirting-bar-counter-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1161_01_flirting-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1161_01_flirting-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46920,
+      "slug": "flirting-bar-counter-pose"
+    },
+    {
+      "id": "guo-scene-1162",
+      "presetNumber": 1162,
+      "label": "Female flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing, female is flirting with the male, carressing his face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1162_female-flirting-pose.pma",
+      "localScenePath": "scenes/1162_female-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1162_00_female-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1162_00_female-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1162_00_female-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1162_01_female-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1162_01_female-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 46590,
+      "slug": "female-flirting-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1163",
+      "presetNumber": 1163,
+      "label": "Leaning wall flirting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are leaning against the wall, male is flirting with the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1163_leaning-wall-flirting-pose.pma",
+      "localScenePath": "scenes/1163_leaning-wall-flirting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1163_00_leaning-wall-flirting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1163_00_leaning-wall-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1163_00_leaning-wall-flirting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1163_01_leaning-wall-flirting-pose.png",
+          "localThumbnailPath": "thumbnails/1163_01_leaning-wall-flirting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "flirting",
+        "pose"
+      ],
+      "bytes": 47065,
+      "slug": "leaning-wall-flirting-pose"
+    }
+  ]
+}

@@ -1,0 +1,1101 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 50,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-2712",
+      "presetNumber": 2712,
+      "label": "Floating looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is floating in the air and looking up, female looking up pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2712_floating-looking-up-pose.pma",
+      "localScenePath": "scenes/2712_floating-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2712_00_floating-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2712_00_floating-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/2712_00_floating-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "up",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23448,
+      "slug": "floating-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2715",
+      "presetNumber": 2715,
+      "label": "Crouching looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, balancing with her hands and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2715_crouching-looking-up-pose.pma",
+      "localScenePath": "scenes/2715_crouching-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2715_00_crouching-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2715_00_crouching-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/2715_00_crouching-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "up",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23381,
+      "slug": "crouching-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2716",
+      "presetNumber": 2716,
+      "label": "Female sitting looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bench with her legs crossed and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2716_female-sitting-looking-up-pose.pma",
+      "localScenePath": "scenes/2716_female-sitting-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2716_00_female-sitting-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2716_00_female-sitting-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/2716_00_female-sitting-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "up",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23848,
+      "slug": "female-sitting-looking-up-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2717",
+      "presetNumber": 2717,
+      "label": "Lying looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on the ground with her legs crossed and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2717_lying-looking-up-pose.pma",
+      "localScenePath": "scenes/2717_lying-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2717_00_lying-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2717_00_lying-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/2717_00_lying-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "up",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23503,
+      "slug": "lying-looking-up-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2720",
+      "presetNumber": 2720,
+      "label": "Anxious standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding her arm, looking to the left, anxious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2720_anxious-standing-pose.pma",
+      "localScenePath": "scenes/2720_anxious-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2720_00_anxious-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2720_00_anxious-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2720_00_anxious-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anxious",
+        "pose"
+      ],
+      "bytes": 23528,
+      "slug": "anxious-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2721",
+      "presetNumber": 2721,
+      "label": "Holding head anxious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding her head with her right hand, anxious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2721_holding-head-anxious-pose.pma",
+      "localScenePath": "scenes/2721_holding-head-anxious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2721_00_holding-head-anxious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2721_00_holding-head-anxious-pose.png",
+          "localThumbnailPath": "thumbnails/2721_00_holding-head-anxious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anxious",
+        "pose"
+      ],
+      "bytes": 23513,
+      "slug": "holding-head-anxious-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2722",
+      "presetNumber": 2722,
+      "label": "Covering face anxious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and covering her face with both hands, anxious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2722_covering-face-anxious-pose.pma",
+      "localScenePath": "scenes/2722_covering-face-anxious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2722_00_covering-face-anxious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2722_00_covering-face-anxious-pose.png",
+          "localThumbnailPath": "thumbnails/2722_00_covering-face-anxious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anxious",
+        "pose"
+      ],
+      "bytes": 23495,
+      "slug": "covering-face-anxious-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2723",
+      "presetNumber": 2723,
+      "label": "Anxious walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking slowly, looking down and holding her arm, anxious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2723_anxious-walking-pose.pma",
+      "localScenePath": "scenes/2723_anxious-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2723_00_anxious-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2723_00_anxious-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2723_00_anxious-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anxious",
+        "pose"
+      ],
+      "bytes": 23469,
+      "slug": "anxious-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2724",
+      "presetNumber": 2724,
+      "label": "Female anxious sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the ground anxiously, looking down and hugging her knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2724_female-anxious-sitting-pose.pma",
+      "localScenePath": "scenes/2724_female-anxious-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2724_00_female-anxious-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2724_00_female-anxious-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2724_00_female-anxious-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anxious",
+        "pose"
+      ],
+      "bytes": 23451,
+      "slug": "female-anxious-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2729",
+      "presetNumber": 2729,
+      "label": "Looking back anxious pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is turning and looking back anxiously while walking, anxious pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2729_looking-back-anxious-pose.pma",
+      "localScenePath": "scenes/2729_looking-back-anxious-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2729_00_looking-back-anxious-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2729_00_looking-back-anxious-pose.png",
+          "localThumbnailPath": "thumbnails/2729_00_looking-back-anxious-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anxious",
+        "pose"
+      ],
+      "bytes": 23476,
+      "slug": "looking-back-anxious-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2730",
+      "presetNumber": 2730,
+      "label": "Anime female praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling, looking up and praying, anime praying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2730_anime-female-praying-pose.pma",
+      "localScenePath": "scenes/2730_anime-female-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2730_00_anime-female-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2730_00_anime-female-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2730_00_anime-female-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24060,
+      "slug": "anime-female-praying-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2732",
+      "presetNumber": 2732,
+      "label": "Anime praying bed pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling, leaning on the bed and praying, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2732_anime-praying-bed-pose.pma",
+      "localScenePath": "scenes/2732_anime-praying-bed-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2732_00_anime-praying-bed-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2732_00_anime-praying-bed-pose.png",
+          "localThumbnailPath": "thumbnails/2732_00_anime-praying-bed-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        155
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24403,
+      "slug": "anime-praying-bed-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2733",
+      "presetNumber": 2733,
+      "label": "Anime sitting praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is sitting on the chair and praying, folding her hands and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2733_anime-sitting-praying-pose.pma",
+      "localScenePath": "scenes/2733_anime-sitting-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2733_00_anime-sitting-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2733_00_anime-sitting-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2733_00_anime-sitting-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24431,
+      "slug": "anime-sitting-praying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2735",
+      "presetNumber": 2735,
+      "label": "Anime standing praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and folding her hands, praying, anime female praying pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2735_anime-standing-praying-pose.pma",
+      "localScenePath": "scenes/2735_anime-standing-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2735_00_anime-standing-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2735_00_anime-standing-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2735_00_anime-standing-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24031,
+      "slug": "anime-standing-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2736",
+      "presetNumber": 2736,
+      "label": "Anime kneeling praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling and praying, folding her hands and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2736_anime-kneeling-praying-pose.pma",
+      "localScenePath": "scenes/2736_anime-kneeling-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2736_00_anime-kneeling-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2736_00_anime-kneeling-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2736_00_anime-kneeling-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24035,
+      "slug": "anime-kneeling-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2737",
+      "presetNumber": 2737,
+      "label": "Anime floating praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is floating in the air, looking up and folding her hands, praying",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2737_anime-floating-praying-pose.pma",
+      "localScenePath": "scenes/2737_anime-floating-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2737_00_anime-floating-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2737_00_anime-floating-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2737_00_anime-floating-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24021,
+      "slug": "anime-floating-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2738",
+      "presetNumber": 2738,
+      "label": "Looking up praying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling, folding her hands, praying and looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2738_looking-up-praying-pose.pma",
+      "localScenePath": "scenes/2738_looking-up-praying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2738_00_looking-up-praying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2738_00_looking-up-praying-pose.png",
+          "localThumbnailPath": "thumbnails/2738_00_looking-up-praying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "praying",
+        "pose"
+      ],
+      "bytes": 24034,
+      "slug": "looking-up-praying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2740",
+      "presetNumber": 2740,
+      "label": "Confused female spreading arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confused, spreading her arms, doesn't understand something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2740_confused-female-spreading-arms-pose.pma",
+      "localScenePath": "scenes/2740_confused-female-spreading-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2740_00_confused-female-spreading-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2740_00_confused-female-spreading-arms-pose.png",
+          "localThumbnailPath": "thumbnails/2740_00_confused-female-spreading-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "confused",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23456,
+      "slug": "confused-female-spreading-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2743",
+      "presetNumber": 2743,
+      "label": "Confused pointing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confused, pointing at herself, doesn't understand something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2743_confused-pointing-pose.pma",
+      "localScenePath": "scenes/2743_confused-pointing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2743_00_confused-pointing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2743_00_confused-pointing-pose.png",
+          "localThumbnailPath": "thumbnails/2743_00_confused-pointing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "confused",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23490,
+      "slug": "confused-pointing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2744",
+      "presetNumber": 2744,
+      "label": "Confused female holding head pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing confused, holding her head with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2744_confused-female-holding-head-pose.pma",
+      "localScenePath": "scenes/2744_confused-female-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2744_00_confused-female-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2744_00_confused-female-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/2744_00_confused-female-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "confused",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23521,
+      "slug": "confused-female-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2745",
+      "presetNumber": 2745,
+      "label": "Confused thinking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confused female is standing and thinking, confused female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2745_confused-thinking-pose.pma",
+      "localScenePath": "scenes/2745_confused-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2745_00_confused-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2745_00_confused-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/2745_00_confused-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "confused",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23521,
+      "slug": "confused-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2746",
+      "presetNumber": 2746,
+      "label": "Confused female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confused female is standing, looking down and holding her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2746_confused-female-pose.pma",
+      "localScenePath": "scenes/2746_confused-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2746_00_confused-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2746_00_confused-female-pose.png",
+          "localThumbnailPath": "thumbnails/2746_00_confused-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "confused",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23563,
+      "slug": "confused-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2749",
+      "presetNumber": 2749,
+      "label": "Confused female crouching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confused female is crouching, holding her head and thinking",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2749_confused-female-crouching-pose.pma",
+      "localScenePath": "scenes/2749_confused-female-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2749_00_confused-female-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2749_00_confused-female-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/2749_00_confused-female-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "confused",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23360,
+      "slug": "confused-female-crouching-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2750",
+      "presetNumber": 2750,
+      "label": "Walking looking down pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is walking slowly and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2750_walking-looking-down-pose.pma",
+      "localScenePath": "scenes/2750_walking-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2750_00_walking-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2750_00_walking-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/2750_00_walking-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "looking",
+        "down",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23456,
+      "slug": "walking-looking-down-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

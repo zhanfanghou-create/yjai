@@ -1,0 +1,1169 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 141,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3385",
+      "presetNumber": 3385,
+      "label": "Females fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are running towards each other and jumping to collide, female fighting action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3385_females-fighting-pose.pma",
+      "localScenePath": "scenes/3385_females-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3385_00_females-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3385_00_females-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3385_00_females-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3385_01_females-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3385_01_females-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46053,
+      "slug": "females-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3386",
+      "presetNumber": 3386,
+      "label": "Sword fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting with swords, holding medieval shield, fightin action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3386_sword-fighting-action-pose.pma",
+      "localScenePath": "scenes/3386_sword-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3386_00_sword-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3386_00_sword-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3386_00_sword-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3386_01_sword-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3386_01_sword-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 48388,
+      "slug": "sword-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3387",
+      "presetNumber": 3387,
+      "label": "Katana fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, holding katana jumping action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3387_katana-fighting-action-pose.pma",
+      "localScenePath": "scenes/3387_katana-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3387_00_katana-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3387_00_katana-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3387_00_katana-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3387_01_katana-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3387_01_katana-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        144,
+        146,
+        158
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 47885,
+      "slug": "katana-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3388",
+      "presetNumber": 3388,
+      "label": "Karate fighting action pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting karate, male karate fighting action pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3388_karate-fighting-action-pose.pma",
+      "localScenePath": "scenes/3388_karate-fighting-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3388_00_karate-fighting-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3388_00_karate-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3388_00_karate-fighting-action-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3388_01_karate-fighting-action-pose.png",
+          "localThumbnailPath": "thumbnails/3388_01_karate-fighting-action-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 46961,
+      "slug": "karate-fighting-action-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3389",
+      "presetNumber": 3389,
+      "label": "Werewolf knocking out pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is jumping up, punching and knocking the werewolf out",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3389_werewolf-knocking-out-pose.pma",
+      "localScenePath": "scenes/3389_werewolf-knocking-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3389_00_werewolf-knocking-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3389_00_werewolf-knocking-out-pose.png",
+          "localThumbnailPath": "thumbnails/3389_00_werewolf-knocking-out-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3389_01_werewolf-knocking-out-pose.png",
+          "localThumbnailPath": "thumbnails/3389_01_werewolf-knocking-out-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        36,
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        36
+      ],
+      "sourceTags": [
+        "fighting",
+        "action",
+        "pose"
+      ],
+      "bytes": 40445,
+      "slug": "werewolf-knocking-out-pose",
+      "tagIds": [
+        "fight-weapon",
+        "animal-creature"
+      ],
+      "tags": [
+        "打斗/武器",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-3390",
+      "presetNumber": 3390,
+      "label": "Male holding sword attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands and is about to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3390_male-holding-sword-attack-pose.pma",
+      "localScenePath": "scenes/3390_male-holding-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3390_00_male-holding-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3390_00_male-holding-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3390_00_male-holding-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24604,
+      "slug": "male-holding-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3391",
+      "presetNumber": 3391,
+      "label": "Male running sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a sword in his right hand and is about to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3391_male-running-sword-pose.pma",
+      "localScenePath": "scenes/3391_male-running-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3391_00_male-running-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3391_00_male-running-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3391_00_male-running-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24348,
+      "slug": "male-running-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3392",
+      "presetNumber": 3392,
+      "label": "Male jumping sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a sword with both hands and swinging it backwards, sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3392_male-jumping-sword-pose.pma",
+      "localScenePath": "scenes/3392_male-jumping-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3392_00_male-jumping-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3392_00_male-jumping-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3392_00_male-jumping-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24242,
+      "slug": "male-jumping-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3393",
+      "presetNumber": 3393,
+      "label": "Female swinging sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a sword with both hands and swinging it backwards to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3393_female-swinging-sword-pose.pma",
+      "localScenePath": "scenes/3393_female-swinging-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3393_00_female-swinging-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3393_00_female-swinging-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3393_00_female-swinging-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "female-swinging-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3394",
+      "presetNumber": 3394,
+      "label": "Male running attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a sword and a shield, male sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3394_male-running-attack-pose.pma",
+      "localScenePath": "scenes/3394_male-running-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3394_00_male-running-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3394_00_male-running-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3394_00_male-running-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 24811,
+      "slug": "male-running-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3395",
+      "presetNumber": 3395,
+      "label": "Female running attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running and swinging her sword to attack, female sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3395_female-running-attack-pose.pma",
+      "localScenePath": "scenes/3395_female-running-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3395_00_female-running-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3395_00_female-running-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3395_00_female-running-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 22300,
+      "slug": "female-running-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3396",
+      "presetNumber": 3396,
+      "label": "Female holding sword attacking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a sword in her right hand and attacking, female sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3396_female-holding-sword-attacking-pose.pma",
+      "localScenePath": "scenes/3396_female-holding-sword-attacking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3396_00_female-holding-sword-attacking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3396_00_female-holding-sword-attacking-pose.png",
+          "localThumbnailPath": "thumbnails/3396_00_female-holding-sword-attacking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 23936,
+      "slug": "female-holding-sword-attacking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3397",
+      "presetNumber": 3397,
+      "label": "Female katana fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are fighting with katanas, one attacks the other, katana sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3397_female-katana-fighting-pose.pma",
+      "localScenePath": "scenes/3397_female-katana-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3397_00_female-katana-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3397_00_female-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3397_00_female-katana-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3397_01_female-katana-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3397_01_female-katana-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 46857,
+      "slug": "female-katana-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3398",
+      "presetNumber": 3398,
+      "label": "Male katana attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, one of them attacks the other with a katana",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3398_male-katana-attack-pose.pma",
+      "localScenePath": "scenes/3398_male-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3398_00_male-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3398_00_male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3398_00_male-katana-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3398_01_male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3398_01_male-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 47060,
+      "slug": "male-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3399",
+      "presetNumber": 3399,
+      "label": "Female male katana attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting, attacking with katanas, katana sword attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3399_female-male-katana-attack-pose.pma",
+      "localScenePath": "scenes/3399_female-male-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3399_00_female-male-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3399_00_female-male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3399_00_female-male-katana-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3399_01_female-male-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3399_01_female-male-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "attack",
+        "pose"
+      ],
+      "bytes": 47358,
+      "slug": "female-male-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3400",
+      "presetNumber": 3400,
+      "label": "Sword behind attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are fighting with swords, female is attacking male from behind",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3400_sword-behind-attack-pose.pma",
+      "localScenePath": "scenes/3400_sword-behind-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3400_00_sword-behind-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3400_00_sword-behind-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3400_00_sword-behind-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3400_01_sword-behind-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3400_01_sword-behind-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 47204,
+      "slug": "sword-behind-attack-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3401",
+      "presetNumber": 3401,
+      "label": "Males sword fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting with swords, male sword fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3401_males-sword-fight-pose.pma",
+      "localScenePath": "scenes/3401_males-sword-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3401_00_males-sword-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3401_00_males-sword-fight-pose.png",
+          "localThumbnailPath": "thumbnails/3401_00_males-sword-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3401_01_males-sword-fight-pose.png",
+          "localThumbnailPath": "thumbnails/3401_01_males-sword-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162,
+        233
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 48667,
+      "slug": "males-sword-fight-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3402",
+      "presetNumber": 3402,
+      "label": "Medieval sword fight pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Two males are fighting on horses with swords, holding swords and medieval shields",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3402_medieval-sword-fight-pose.pma",
+      "localScenePath": "scenes/3402_medieval-sword-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3402_00_medieval-sword-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3402_00_medieval-sword-fight-pose.png",
+          "localThumbnailPath": "thumbnails/3402_00_medieval-sword-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3402_01_medieval-sword-fight-pose.png",
+          "localThumbnailPath": "thumbnails/3402_01_medieval-sword-fight-pose.png"
+        }
+      ],
+      "modelCount": 4,
+      "propCount": 4,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 64194,
+      "slug": "medieval-sword-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "animal-creature"
+      ],
+      "tags": [
+        "打斗/武器",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-3403",
+      "presetNumber": 3403,
+      "label": "Male standing holding sword fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a sword with both hands, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3403_male-standing-holding-sword-fight-pose.pma",
+      "localScenePath": "scenes/3403_male-standing-holding-sword-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3403_00_male-standing-holding-sword-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3403_00_male-standing-holding-sword-fight-pose.png",
+          "localThumbnailPath": "thumbnails/3403_00_male-standing-holding-sword-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 24263,
+      "slug": "male-standing-holding-sword-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3404",
+      "presetNumber": 3404,
+      "label": "Male swinging sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a sword in his right hand and swinging it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3404_male-swinging-sword-pose.pma",
+      "localScenePath": "scenes/3404_male-swinging-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3404_00_male-swinging-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3404_00_male-swinging-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3404_00_male-swinging-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 24170,
+      "slug": "male-swinging-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3405",
+      "presetNumber": 3405,
+      "label": "Female running sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, holding a sword in both hands and swinging it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3405_female-running-sword-pose.pma",
+      "localScenePath": "scenes/3405_female-running-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3405_00_female-running-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3405_00_female-running-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3405_00_female-running-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 22269,
+      "slug": "female-running-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3406",
+      "presetNumber": 3406,
+      "label": "Female jumping sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, jumping, holding a sword in both hands and swinging it backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3406_female-jumping-sword-pose.pma",
+      "localScenePath": "scenes/3406_female-jumping-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3406_00_female-jumping-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3406_00_female-jumping-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3406_00_female-jumping-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 23939,
+      "slug": "female-jumping-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3407",
+      "presetNumber": 3407,
+      "label": "Male medieval fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding a medieval shield and swinging his sword backwards to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3407_male-medieval-fight-pose.pma",
+      "localScenePath": "scenes/3407_male-medieval-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3407_00_male-medieval-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3407_00_male-medieval-fight-pose.png",
+          "localThumbnailPath": "thumbnails/3407_00_male-medieval-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 24826,
+      "slug": "male-medieval-fight-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-3408",
+      "presetNumber": 3408,
+      "label": "Sword fighting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are fighting, holding medieval shields and swords, one is kicking the other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3408_sword-fighting-pose.pma",
+      "localScenePath": "scenes/3408_sword-fighting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3408_00_sword-fighting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3408_00_sword-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3408_00_sword-fighting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3408_01_sword-fighting-pose.png",
+          "localThumbnailPath": "thumbnails/3408_01_sword-fighting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 48621,
+      "slug": "sword-fighting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    }
+  ]
+}

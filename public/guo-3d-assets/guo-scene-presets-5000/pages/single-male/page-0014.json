@@ -1,0 +1,1125 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 13,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-1000",
+      "presetNumber": 1000,
+      "label": "Male confident aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and aiming a gun with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1000_male-confident-aiming-pose.pma",
+      "localScenePath": "scenes/1000_male-confident-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1000_00_male-confident-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1000_00_male-confident-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1000_00_male-confident-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24647,
+      "slug": "male-confident-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1001",
+      "presetNumber": 1001,
+      "label": "Male aiming two guns pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and aiming two guns in two directions and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1001_male-aiming-two-guns-pose.pma",
+      "localScenePath": "scenes/1001_male-aiming-two-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1001_00_male-aiming-two-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1001_00_male-aiming-two-guns-pose.png",
+          "localThumbnailPath": "thumbnails/1001_00_male-aiming-two-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24553,
+      "slug": "male-aiming-two-guns-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1002",
+      "presetNumber": 1002,
+      "label": "Male aiming gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and aiming his gun with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1002_male-aiming-gun-pose.pma",
+      "localScenePath": "scenes/1002_male-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1002_00_male-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1002_00_male-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1002_00_male-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24207,
+      "slug": "male-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1004",
+      "presetNumber": 1004,
+      "label": "Kneeling aiming male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling on the ground and aiming a gun with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1004_kneeling-aiming-male-pose.pma",
+      "localScenePath": "scenes/1004_kneeling-aiming-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1004_00_kneeling-aiming-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1004_00_kneeling-aiming-male-pose.png",
+          "localThumbnailPath": "thumbnails/1004_00_kneeling-aiming-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24572,
+      "slug": "kneeling-aiming-male-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1005",
+      "presetNumber": 1005,
+      "label": "Robber aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male robber is aiming the gun with right hand and asking the money with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1005_robber-aiming-pose.pma",
+      "localScenePath": "scenes/1005_robber-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1005_00_robber-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1005_00_robber-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1005_00_robber-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24646,
+      "slug": "robber-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1007",
+      "presetNumber": 1007,
+      "label": "Falling aiming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is aiming the gun with two hands while falling ",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1007_falling-aiming-pose.pma",
+      "localScenePath": "scenes/1007_falling-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1007_00_falling-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1007_00_falling-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/1007_00_falling-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gun",
+        "aiming",
+        "pose"
+      ],
+      "bytes": 24654,
+      "slug": "falling-aiming-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1010",
+      "presetNumber": 1010,
+      "label": "Male squatting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is squatting, resting his hands on his knees and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1010_male-squatting-pose.pma",
+      "localScenePath": "scenes/1010_male-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1010_00_male-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1010_00_male-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/1010_00_male-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23693,
+      "slug": "male-squatting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1012",
+      "presetNumber": 1012,
+      "label": "Male yoga deep squat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is doing yoga, doing a deep squat, arms outstretched, palms facing up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1012_male-yoga-deep-squat-pose.pma",
+      "localScenePath": "scenes/1012_male-yoga-deep-squat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1012_00_male-yoga-deep-squat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1012_00_male-yoga-deep-squat-pose.png",
+          "localThumbnailPath": "thumbnails/1012_00_male-yoga-deep-squat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23735,
+      "slug": "male-yoga-deep-squat-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1015",
+      "presetNumber": 1015,
+      "label": "Male posing squatting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is posing, squatting, resting his left hand on his knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1015_male-posing-squatting-pose.pma",
+      "localScenePath": "scenes/1015_male-posing-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1015_00_male-posing-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1015_00_male-posing-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/1015_00_male-posing-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23686,
+      "slug": "male-posing-squatting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1022",
+      "presetNumber": 1022,
+      "label": "Male front split pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is doing a front split, resting his hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1022_male-front-split-pose.pma",
+      "localScenePath": "scenes/1022_male-front-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1022_00_male-front-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1022_00_male-front-split-pose.png",
+          "localThumbnailPath": "thumbnails/1022_00_male-front-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23866,
+      "slug": "male-front-split-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1023",
+      "presetNumber": 1023,
+      "label": "Male side split pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is doing a side split, leaning on his hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1023_male-side-split-pose.pma",
+      "localScenePath": "scenes/1023_male-side-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1023_00_male-side-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1023_00_male-side-split-pose.png",
+          "localThumbnailPath": "thumbnails/1023_00_male-side-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23716,
+      "slug": "male-side-split-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1027",
+      "presetNumber": 1027,
+      "label": "One handstanding split pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on his left hand and doing a side split in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1027_one-handstanding-split-pose.pma",
+      "localScenePath": "scenes/1027_one-handstanding-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1027_00_one-handstanding-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1027_00_one-handstanding-split-pose.png",
+          "localThumbnailPath": "thumbnails/1027_00_one-handstanding-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "split",
+        "pose"
+      ],
+      "bytes": 23807,
+      "slug": "one-handstanding-split-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1030",
+      "presetNumber": 1030,
+      "label": "Male running holding gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running with a gun, holding it down with two hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1030_male-running-holding-gun-pose.pma",
+      "localScenePath": "scenes/1030_male-running-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1030_00_male-running-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1030_00_male-running-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1030_00_male-running-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24243,
+      "slug": "male-running-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1031",
+      "presetNumber": 1031,
+      "label": "Running with ak47 pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding an ak47 with two hands, running and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1031_running-with-ak47-pose.pma",
+      "localScenePath": "scenes/1031_running-with-ak47-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1031_00_running-with-ak47-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1031_00_running-with-ak47-pose.png",
+          "localThumbnailPath": "thumbnails/1031_00_running-with-ak47-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24220,
+      "slug": "running-with-ak47-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1033",
+      "presetNumber": 1033,
+      "label": "Jumping aiming gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running and aiming his gun while jumping, holding the gun in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1033_jumping-aiming-gun-pose.pma",
+      "localScenePath": "scenes/1033_jumping-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1033_00_jumping-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1033_00_jumping-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1033_00_jumping-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24242,
+      "slug": "jumping-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1034",
+      "presetNumber": 1034,
+      "label": "Military running gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male in helmet is running with an ak47, holding it with two hands and turning left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1034_military-running-gun-pose.pma",
+      "localScenePath": "scenes/1034_military-running-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1034_00_military-running-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1034_00_military-running-gun-pose.png",
+          "localThumbnailPath": "thumbnails/1034_00_military-running-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        199,
+        216
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24708,
+      "slug": "military-running-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1037",
+      "presetNumber": 1037,
+      "label": "Male running looking back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running with a gun in his right hand and looking back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1037_male-running-looking-back-pose.pma",
+      "localScenePath": "scenes/1037_male-running-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1037_00_male-running-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1037_00_male-running-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/1037_00_male-running-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24193,
+      "slug": "male-running-looking-back-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1038",
+      "presetNumber": 1038,
+      "label": "Running shooting back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running with a gun in his right hand, looking back and shooting",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1038_running-shooting-back-pose.pma",
+      "localScenePath": "scenes/1038_running-shooting-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1038_00_running-shooting-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1038_00_running-shooting-back-pose.png",
+          "localThumbnailPath": "thumbnails/1038_00_running-shooting-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "with",
+        "gun",
+        "pose"
+      ],
+      "bytes": 24221,
+      "slug": "running-shooting-back-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1044",
+      "presetNumber": 1044,
+      "label": "Male sitting smoking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair and smoking cigarette, holding it in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1044_male-sitting-smoking-pose.pma",
+      "localScenePath": "scenes/1044_male-sitting-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1044_00_male-sitting-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1044_00_male-sitting-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1044_00_male-sitting-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24911,
+      "slug": "male-sitting-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1045",
+      "presetNumber": 1045,
+      "label": "Walking holding cigarette pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking and holding a cigarette in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1045_walking-holding-cigarette-pose.pma",
+      "localScenePath": "scenes/1045_walking-holding-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1045_00_walking-holding-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1045_00_walking-holding-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1045_00_walking-holding-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24591,
+      "slug": "walking-holding-cigarette-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1046",
+      "presetNumber": 1046,
+      "label": "Standing smoking male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with crossed legs and his left hand on hip and holding a cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1046_standing-smoking-male-pose.pma",
+      "localScenePath": "scenes/1046_standing-smoking-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1046_00_standing-smoking-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1046_00_standing-smoking-male-pose.png",
+          "localThumbnailPath": "thumbnails/1046_00_standing-smoking-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24200,
+      "slug": "standing-smoking-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1048",
+      "presetNumber": 1048,
+      "label": "Comfortable sitting smoking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in comfortable position and smoking, holding the cigarette in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1048_comfortable-sitting-smoking-pose.pma",
+      "localScenePath": "scenes/1048_comfortable-sitting-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1048_00_comfortable-sitting-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1048_00_comfortable-sitting-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/1048_00_comfortable-sitting-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24743,
+      "slug": "comfortable-sitting-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1049",
+      "presetNumber": 1049,
+      "label": "Lighting cigarette pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and lighting his cigarette with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1049_lighting-cigarette-pose.pma",
+      "localScenePath": "scenes/1049_lighting-cigarette-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1049_00_lighting-cigarette-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1049_00_lighting-cigarette-pose.png",
+          "localThumbnailPath": "thumbnails/1049_00_lighting-cigarette-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smoking",
+        "pose"
+      ],
+      "bytes": 24701,
+      "slug": "lighting-cigarette-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1050",
+      "presetNumber": 1050,
+      "label": "Hitting baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and hitting the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1050_hitting-baseball-pose.pma",
+      "localScenePath": "scenes/1050_hitting-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1050_00_hitting-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1050_00_hitting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1050_00_hitting-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24654,
+      "slug": "hitting-baseball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

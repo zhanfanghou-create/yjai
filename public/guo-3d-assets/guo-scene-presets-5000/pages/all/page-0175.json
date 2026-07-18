@@ -1,0 +1,1122 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 174,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4177",
+      "presetNumber": 4177,
+      "label": "Male standing clasped hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his hands are clapsed, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4177_male-standing-clasped-hands-pose.pma",
+      "localScenePath": "scenes/4177_male-standing-clasped-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4177_00_male-standing-clasped-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4177_00_male-standing-clasped-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4177_00_male-standing-clasped-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "clasped",
+        "hands",
+        "reference"
+      ],
+      "bytes": 23846,
+      "slug": "male-standing-clasped-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4178",
+      "presetNumber": 4178,
+      "label": "Female stretching clasped hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and stretching with her hands clasped, female clasped hands reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4178_female-stretching-clasped-hands-pose.pma",
+      "localScenePath": "scenes/4178_female-stretching-clasped-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4178_00_female-stretching-clasped-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4178_00_female-stretching-clasped-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4178_00_female-stretching-clasped-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "clasped",
+        "hands",
+        "reference"
+      ],
+      "bytes": 23709,
+      "slug": "female-stretching-clasped-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4179",
+      "presetNumber": 4179,
+      "label": "Female sitting clasped hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting elegantly with her legs crossed and her hands clasped",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4179_female-sitting-clasped-hands-pose.pma",
+      "localScenePath": "scenes/4179_female-sitting-clasped-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4179_00_female-sitting-clasped-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4179_00_female-sitting-clasped-hands-pose.png",
+          "localThumbnailPath": "thumbnails/4179_00_female-sitting-clasped-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "clasped",
+        "hands",
+        "reference"
+      ],
+      "bytes": 24115,
+      "slug": "female-sitting-clasped-hands-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4180",
+      "presetNumber": 4180,
+      "label": "Arms up dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed, posing, dancing with her arms up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4180_arms-up-dancing-pose.pma",
+      "localScenePath": "scenes/4180_arms-up-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4180_00_arms-up-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4180_00_arms-up-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/4180_00_arms-up-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23531,
+      "slug": "arms-up-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4181",
+      "presetNumber": 4181,
+      "label": "Happy jumping arms up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is jumping with her arms up, arms up pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4181_happy-jumping-arms-up-pose.pma",
+      "localScenePath": "scenes/4181_happy-jumping-arms-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4181_00_happy-jumping-arms-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4181_00_happy-jumping-arms-up-pose.png",
+          "localThumbnailPath": "thumbnails/4181_00_happy-jumping-arms-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23500,
+      "slug": "happy-jumping-arms-up-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4182",
+      "presetNumber": 4182,
+      "label": "Female holding head pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her arms up, holding her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4182_female-holding-head-pose.pma",
+      "localScenePath": "scenes/4182_female-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4182_00_female-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4182_00_female-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/4182_00_female-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23599,
+      "slug": "female-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4183",
+      "presetNumber": 4183,
+      "label": "Females waving pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Females are standing next to each other with their arms up, waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4183_females-waving-pose.pma",
+      "localScenePath": "scenes/4183_females-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4183_00_females-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4183_00_females-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4183_00_females-waving-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4183_01_females-waving-pose.png",
+          "localThumbnailPath": "thumbnails/4183_01_females-waving-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46350,
+      "slug": "females-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4184",
+      "presetNumber": 4184,
+      "label": "Arms up celebrating pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her arms up, clenching her hands into fists, looking up, celebrating something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4184_arms-up-celebrating-pose.pma",
+      "localScenePath": "scenes/4184_arms-up-celebrating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4184_00_arms-up-celebrating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4184_00_arms-up-celebrating-pose.png",
+          "localThumbnailPath": "thumbnails/4184_00_arms-up-celebrating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23469,
+      "slug": "arms-up-celebrating-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4185",
+      "presetNumber": 4185,
+      "label": "Female spreading arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and spreading her arms, looking up, arms up pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4185_female-spreading-arms-pose.pma",
+      "localScenePath": "scenes/4185_female-spreading-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4185_00_female-spreading-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4185_00_female-spreading-arms-pose.png",
+          "localThumbnailPath": "thumbnails/4185_00_female-spreading-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23620,
+      "slug": "female-spreading-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4186",
+      "presetNumber": 4186,
+      "label": "Male spreading arms pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and spreading his arms, looking up, arms up pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4186_male-spreading-arms-pose.pma",
+      "localScenePath": "scenes/4186_male-spreading-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4186_00_male-spreading-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4186_00_male-spreading-arms-pose.png",
+          "localThumbnailPath": "thumbnails/4186_00_male-spreading-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23796,
+      "slug": "male-spreading-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4187",
+      "presetNumber": 4187,
+      "label": "Male holding rock pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding a rock above his head, male arms up pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4187_male-holding-rock-pose.pma",
+      "localScenePath": "scenes/4187_male-holding-rock-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4187_00_male-holding-rock-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4187_00_male-holding-rock-pose.png",
+          "localThumbnailPath": "thumbnails/4187_00_male-holding-rock-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        179
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24273,
+      "slug": "male-holding-rock-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4188",
+      "presetNumber": 4188,
+      "label": "Male arms up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and showing his arm muscles, male arms up pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4188_male-arms-up-pose.pma",
+      "localScenePath": "scenes/4188_male-arms-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4188_00_male-arms-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4188_00_male-arms-up-pose.png",
+          "localThumbnailPath": "thumbnails/4188_00_male-arms-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23763,
+      "slug": "male-arms-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4189",
+      "presetNumber": 4189,
+      "label": "Male holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding his head and waving, male arms up pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4189_male-holding-head-pose.pma",
+      "localScenePath": "scenes/4189_male-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4189_00_male-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4189_00_male-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/4189_00_male-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "arms",
+        "up",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23847,
+      "slug": "male-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4190",
+      "presetNumber": 4190,
+      "label": "Fighter holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male fighter is standing and holding an axe with both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4190_fighter-holding-axe-pose.pma",
+      "localScenePath": "scenes/4190_fighter-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4190_00_fighter-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4190_00_fighter-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/4190_00_fighter-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24254,
+      "slug": "fighter-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4191",
+      "presetNumber": 4191,
+      "label": "Fighter holding dagger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male fighter is standing and holding a dagger in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4191_fighter-holding-dagger-pose.pma",
+      "localScenePath": "scenes/4191_fighter-holding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4191_00_fighter-holding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4191_00_fighter-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/4191_00_fighter-holding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24275,
+      "slug": "fighter-holding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4192",
+      "presetNumber": 4192,
+      "label": "Fighter swinging sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male fighter is running and swinging his pirate sword, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4192_fighter-swinging-sword-pose.pma",
+      "localScenePath": "scenes/4192_fighter-swinging-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4192_00_fighter-swinging-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4192_00_fighter-swinging-sword-pose.png",
+          "localThumbnailPath": "thumbnails/4192_00_fighter-swinging-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        184
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24251,
+      "slug": "fighter-swinging-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4193",
+      "presetNumber": 4193,
+      "label": "Female fighter jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is jumping, attacking, holding a hammer and a shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4193_female-fighter-jumping-pose.pma",
+      "localScenePath": "scenes/4193_female-fighter-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4193_00_female-fighter-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4193_00_female-fighter-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/4193_00_female-fighter-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156,
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24515,
+      "slug": "female-fighter-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4194",
+      "presetNumber": 4194,
+      "label": "Fighter holding spears pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is holding two double-sided spears, female fighter pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4194_fighter-holding-spears-pose.pma",
+      "localScenePath": "scenes/4194_fighter-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4194_00_fighter-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4194_00_fighter-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/4194_00_fighter-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24519,
+      "slug": "fighter-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4195",
+      "presetNumber": 4195,
+      "label": "Male holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male fighter is jumping, attacking, holding katanas in both hands, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4195_male-holding-katana-pose.pma",
+      "localScenePath": "scenes/4195_male-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4195_00_male-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4195_00_male-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/4195_00_male-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24569,
+      "slug": "male-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4196",
+      "presetNumber": 4196,
+      "label": "Female fighter attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is jumping, attacking, holding a katana with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4196_female-fighter-attack-pose.pma",
+      "localScenePath": "scenes/4196_female-fighter-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4196_00_female-fighter-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4196_00_female-fighter-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4196_00_female-fighter-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        158
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23584,
+      "slug": "female-fighter-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4197",
+      "presetNumber": 4197,
+      "label": "Fighter holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male fighter is jumping, holding a sword and a medieval shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4197_fighter-holding-sword-pose.pma",
+      "localScenePath": "scenes/4197_fighter-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4197_00_fighter-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4197_00_fighter-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/4197_00_fighter-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24738,
+      "slug": "fighter-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4198",
+      "presetNumber": 4198,
+      "label": "Fighter sai attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male fighter is attacking, holding sai in both hands, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4198_fighter-sai-attack-pose.pma",
+      "localScenePath": "scenes/4198_fighter-sai-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4198_00_fighter-sai-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4198_00_fighter-sai-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4198_00_fighter-sai-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        153
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24753,
+      "slug": "fighter-sai-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4199",
+      "presetNumber": 4199,
+      "label": "Fighter kunai attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fighter is jumping, attacking, holding kunai in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4199_fighter-kunai-attack-pose.pma",
+      "localScenePath": "scenes/4199_fighter-kunai-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4199_00_fighter-kunai-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4199_00_fighter-kunai-attack-pose.png",
+          "localThumbnailPath": "thumbnails/4199_00_fighter-kunai-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "fighter",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24466,
+      "slug": "fighter-kunai-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4200",
+      "presetNumber": 4200,
+      "label": "Embarrassed female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Embarrassed female is standing and covering her face with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4200_embarrassed-female-pose.pma",
+      "localScenePath": "scenes/4200_embarrassed-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4200_00_embarrassed-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4200_00_embarrassed-female-pose.png",
+          "localThumbnailPath": "thumbnails/4200_00_embarrassed-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "embarrassed",
+        "pose reference"
+      ],
+      "bytes": 23485,
+      "slug": "embarrassed-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

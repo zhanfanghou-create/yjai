@@ -1,0 +1,344 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "hands-body",
+    "label": "手部/身体参考",
+    "count": 9
+  },
+  "pageIndex": 0,
+  "pageSize": 24,
+  "totalPages": 1,
+  "items": [
+    {
+      "id": "guo-scene-3601",
+      "presetNumber": 3601,
+      "label": "Female bashful standing pose",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "Male is standing bashfully, crossing his arms and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3601_female-bashful-standing-pose.pma",
+      "localScenePath": "scenes/3601_female-bashful-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3601_00_female-bashful-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3601_00_female-bashful-standing-pose.png",
+          "localThumbnailPath": "thumbnails/3601_00_female-bashful-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bashful",
+        "pose"
+      ],
+      "bytes": 23781,
+      "slug": "female-bashful-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4790",
+      "presetNumber": 4790,
+      "label": "Tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "3d tree drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4790_tree-reference.pma",
+      "localScenePath": "scenes/4790_tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 1,
+      "modelNumbers": [],
+      "propNumbers": [
+        409
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1315,
+      "slug": "tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4791",
+      "presetNumber": 4791,
+      "label": "Pine tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "3d pine tree drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4791_pine-tree-reference.pma",
+      "localScenePath": "scenes/4791_pine-tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 1,
+      "modelNumbers": [],
+      "propNumbers": [
+        410
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1292,
+      "slug": "pine-tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4792",
+      "presetNumber": 4792,
+      "label": "Tall tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "3d tall tree drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4792_tall-tree-reference.pma",
+      "localScenePath": "scenes/4792_tall-tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 1,
+      "modelNumbers": [],
+      "propNumbers": [
+        412
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1300,
+      "slug": "tall-tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4793",
+      "presetNumber": 4793,
+      "label": "Barren tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "3d barren tree drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4793_barren-tree-reference.pma",
+      "localScenePath": "scenes/4793_barren-tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 1,
+      "modelNumbers": [],
+      "propNumbers": [
+        413
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1279,
+      "slug": "barren-tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4794",
+      "presetNumber": 4794,
+      "label": "Palm tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "3d palm tree drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4794_palm-tree-reference.pma",
+      "localScenePath": "scenes/4794_palm-tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 1,
+      "modelNumbers": [],
+      "propNumbers": [
+        411
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1317,
+      "slug": "palm-tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4795",
+      "presetNumber": 4795,
+      "label": "Trees mushrooms reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "Trees and mushrooms, forest scene reference, trees drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4795_trees-mushrooms-reference.pma",
+      "localScenePath": "scenes/4795_trees-mushrooms-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 13,
+      "modelNumbers": [],
+      "propNumbers": [
+        409,
+        414,
+        415,
+        417,
+        418,
+        419
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 7256,
+      "slug": "trees-mushrooms-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4797",
+      "presetNumber": 4797,
+      "label": "Rock tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "Tree on top of the rock, tree drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4797_rock-tree-reference.pma",
+      "localScenePath": "scenes/4797_rock-tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 6,
+      "modelNumbers": [],
+      "propNumbers": [
+        369,
+        409,
+        414
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 3789,
+      "slug": "rock-tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4798",
+      "presetNumber": 4798,
+      "label": "Christmas tree reference",
+      "categoryId": "hands-body",
+      "categoryLabel": "手部/身体参考",
+      "categoryIds": [
+        "hands-body"
+      ],
+      "description": "Christmas tree with decorations, ornaments and a star on top",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4798_christmas-tree-reference.pma",
+      "localScenePath": "scenes/4798_christmas-tree-reference.pma",
+      "thumbnails": [],
+      "modelCount": 0,
+      "propCount": 1,
+      "modelNumbers": [],
+      "propNumbers": [
+        181
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "tree",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1269,
+      "slug": "christmas-tree-reference",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    }
+  ]
+}

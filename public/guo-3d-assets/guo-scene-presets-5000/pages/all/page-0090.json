@@ -1,0 +1,1136 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 89,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2137",
+      "presetNumber": 2137,
+      "label": "Female kneeling pistol aiming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, holding a pistol with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2137_female-kneeling-pistol-aiming-pose.pma",
+      "localScenePath": "scenes/2137_female-kneeling-pistol-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2137_00_female-kneeling-pistol-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2137_00_female-kneeling-pistol-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2137_00_female-kneeling-pistol-aiming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23927,
+      "slug": "female-kneeling-pistol-aiming-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2138",
+      "presetNumber": 2138,
+      "label": "Female standing holding pistols pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding pistols in both hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2138_female-standing-holding-pistols-pose.pma",
+      "localScenePath": "scenes/2138_female-standing-holding-pistols-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2138_00_female-standing-holding-pistols-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2138_00_female-standing-holding-pistols-pose.png",
+          "localThumbnailPath": "thumbnails/2138_00_female-standing-holding-pistols-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24047,
+      "slug": "female-standing-holding-pistols-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2139",
+      "presetNumber": 2139,
+      "label": "Pistol aiming pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and aiming their pistols at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2139_pistol-aiming-pose.pma",
+      "localScenePath": "scenes/2139_pistol-aiming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2139_00_pistol-aiming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2139_00_pistol-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2139_00_pistol-aiming-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2139_01_pistol-aiming-pose.png",
+          "localThumbnailPath": "thumbnails/2139_01_pistol-aiming-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47370,
+      "slug": "pistol-aiming-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2140",
+      "presetNumber": 2140,
+      "label": "Female kneeling heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is kneeling, sitting on her knees and making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2140_female-kneeling-heart-pose.pma",
+      "localScenePath": "scenes/2140_female-kneeling-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2140_00_female-kneeling-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2140_00_female-kneeling-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2140_00_female-kneeling-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27246,
+      "slug": "female-kneeling-heart-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2141",
+      "presetNumber": 2141,
+      "label": "Female standing heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2141_female-standing-heart-pose.pma",
+      "localScenePath": "scenes/2141_female-standing-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2141_00_female-standing-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2141_00_female-standing-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2141_00_female-standing-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27311,
+      "slug": "female-standing-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2142",
+      "presetNumber": 2142,
+      "label": "Females standing making heart pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and making a heart with their hands, heart hand reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2142_females-standing-making-heart-pose.pma",
+      "localScenePath": "scenes/2142_females-standing-making-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2142_00_females-standing-making-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2142_00_females-standing-making-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2142_00_females-standing-making-heart-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2142_01_females-standing-making-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2142_01_females-standing-making-heart-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 53855,
+      "slug": "females-standing-making-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2143",
+      "presetNumber": 2143,
+      "label": "Female finger heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting in the armchair and making a heart with her fingers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2143_female-finger-heart-pose.pma",
+      "localScenePath": "scenes/2143_female-finger-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2143_00_female-finger-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2143_00_female-finger-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2143_00_female-finger-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27755,
+      "slug": "female-finger-heart-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2144",
+      "presetNumber": 2144,
+      "label": "Happy jumping heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Happy female is jumping and making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2144_happy-jumping-heart-pose.pma",
+      "localScenePath": "scenes/2144_happy-jumping-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2144_00_happy-jumping-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2144_00_happy-jumping-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2144_00_happy-jumping-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27297,
+      "slug": "happy-jumping-heart-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2145",
+      "presetNumber": 2145,
+      "label": "Cute lying heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying on her stomach and making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2145_cute-lying-heart-pose.pma",
+      "localScenePath": "scenes/2145_cute-lying-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2145_00_cute-lying-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2145_00_cute-lying-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2145_00_cute-lying-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27285,
+      "slug": "cute-lying-heart-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2146",
+      "presetNumber": 2146,
+      "label": "Females heart pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two females are standing and making a heart with their arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2146_females-heart-pose.pma",
+      "localScenePath": "scenes/2146_females-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2146_00_females-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2146_00_females-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2146_00_females-heart-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2146_01_females-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2146_01_females-heart-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 53751,
+      "slug": "females-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2147",
+      "presetNumber": 2147,
+      "label": "Making finger heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her legs crossed and making a heart with her fingers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2147_making-finger-heart-pose.pma",
+      "localScenePath": "scenes/2147_making-finger-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2147_00_making-finger-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2147_00_making-finger-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2147_00_making-finger-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27331,
+      "slug": "making-finger-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2148",
+      "presetNumber": 2148,
+      "label": "Korean finger hearts pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and making korean finger hearts with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2148_korean-finger-hearts-pose.pma",
+      "localScenePath": "scenes/2148_korean-finger-hearts-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2148_00_korean-finger-hearts-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2148_00_korean-finger-hearts-pose.png",
+          "localThumbnailPath": "thumbnails/2148_00_korean-finger-hearts-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27377,
+      "slug": "korean-finger-hearts-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2149",
+      "presetNumber": 2149,
+      "label": "Female sitting heart pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on her knees and making a heart with her hands, heart hand reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2149_female-sitting-heart-pose.pma",
+      "localScenePath": "scenes/2149_female-sitting-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2149_00_female-sitting-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2149_00_female-sitting-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2149_00_female-sitting-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "heart",
+        "hand",
+        "reference"
+      ],
+      "bytes": 27729,
+      "slug": "female-sitting-heart-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2150",
+      "presetNumber": 2150,
+      "label": "Side kick jumping attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is attacking, jumping high and side kicking, holding a dagger",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2150_side-kick-jumping-attack-pose.pma",
+      "localScenePath": "scenes/2150_side-kick-jumping-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2150_00_side-kick-jumping-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2150_00_side-kick-jumping-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2150_00_side-kick-jumping-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24345,
+      "slug": "side-kick-jumping-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2151",
+      "presetNumber": 2151,
+      "label": "Katana attack female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking with her katana, holding it with her right hand and is about to stab something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2151_katana-attack-female-pose.pma",
+      "localScenePath": "scenes/2151_katana-attack-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2151_00_katana-attack-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2151_00_katana-attack-female-pose.png",
+          "localThumbnailPath": "thumbnails/2151_00_katana-attack-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23946,
+      "slug": "katana-attack-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2152",
+      "presetNumber": 2152,
+      "label": "Dagger attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking, jumping high and holding dagger in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2152_dagger-attack-pose.pma",
+      "localScenePath": "scenes/2152_dagger-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2152_00_dagger-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2152_00_dagger-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2152_00_dagger-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24456,
+      "slug": "dagger-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2153",
+      "presetNumber": 2153,
+      "label": "Ninja attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is about to attack, holding a katana and jumping high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2153_ninja-attack-pose.pma",
+      "localScenePath": "scenes/2153_ninja-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2153_00_ninja-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2153_00_ninja-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2153_00_ninja-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24341,
+      "slug": "ninja-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2154",
+      "presetNumber": 2154,
+      "label": "Male attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male attacks the other male with a side kick, who falls backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2154_male-attack-pose.pma",
+      "localScenePath": "scenes/2154_male-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2154_00_male-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2154_00_male-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2154_00_male-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2154_01_male-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2154_01_male-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46597,
+      "slug": "male-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2155",
+      "presetNumber": 2155,
+      "label": "Stabbing attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to attack, holding a dagger in her right hand and jumping high to stab it into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2155_stabbing-attack-pose.pma",
+      "localScenePath": "scenes/2155_stabbing-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2155_00_stabbing-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2155_00_stabbing-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2155_00_stabbing-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24402,
+      "slug": "stabbing-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2156",
+      "presetNumber": 2156,
+      "label": "Female katana attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to attack, jumping high and raising the katana with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2156_female-katana-attack-pose.pma",
+      "localScenePath": "scenes/2156_female-katana-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2156_00_female-katana-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2156_00_female-katana-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2156_00_female-katana-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23543,
+      "slug": "female-katana-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2157",
+      "presetNumber": 2157,
+      "label": "Female attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female attacks the other female with an elbow strike, female attack pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2157_female-attack-pose.pma",
+      "localScenePath": "scenes/2157_female-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2157_00_female-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2157_00_female-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2157_00_female-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2157_01_female-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2157_01_female-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46054,
+      "slug": "female-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2158",
+      "presetNumber": 2158,
+      "label": "Male kicking attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male attacks the other male, kicking his right leg, male attack pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2158_male-kicking-attack-pose.pma",
+      "localScenePath": "scenes/2158_male-kicking-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2158_00_male-kicking-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2158_00_male-kicking-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2158_00_male-kicking-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2158_01_male-kicking-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2158_01_male-kicking-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46593,
+      "slug": "male-kicking-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2159",
+      "presetNumber": 2159,
+      "label": "Sword attack pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male attacks the other male from behind, jumps up to strike with his sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2159_sword-attack-pose.pma",
+      "localScenePath": "scenes/2159_sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2159_00_sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2159_00_sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2159_00_sword-attack-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2159_01_sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2159_01_sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        236
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47089,
+      "slug": "sword-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2160",
+      "presetNumber": 2160,
+      "label": "Anime squatting kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is squatting, half kneeling and looking forward, her hands are on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2160_anime-squatting-kneeling-pose.pma",
+      "localScenePath": "scenes/2160_anime-squatting-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2160_00_anime-squatting-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2160_00_anime-squatting-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2160_00_anime-squatting-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "squatting",
+        "pose"
+      ],
+      "bytes": 23871,
+      "slug": "anime-squatting-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1110 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 176,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4225",
+      "presetNumber": 4225,
+      "label": "Manga female fighter pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Manga female is running, holding daggers, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4225_manga-female-fighter-pose.pma",
+      "localScenePath": "scenes/4225_manga-female-fighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4225_00_manga-female-fighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4225_00_manga-female-fighter-pose.png",
+          "localThumbnailPath": "thumbnails/4225_00_manga-female-fighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24890,
+      "slug": "manga-female-fighter-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4226",
+      "presetNumber": 4226,
+      "label": "Fantasy manga pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Manga female is floating, holding spears and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4226_fantasy-manga-pose.pma",
+      "localScenePath": "scenes/4226_fantasy-manga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4226_00_fantasy-manga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4226_00_fantasy-manga-pose.png",
+          "localThumbnailPath": "thumbnails/4226_00_fantasy-manga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "manga",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24944,
+      "slug": "fantasy-manga-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4227",
+      "presetNumber": 4227,
+      "label": "Manga crouching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Manga male is crouching, looking to the left, manga pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4227_manga-crouching-pose.pma",
+      "localScenePath": "scenes/4227_manga-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4227_00_manga-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4227_00_manga-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4227_00_manga-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23889,
+      "slug": "manga-crouching-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4228",
+      "presetNumber": 4228,
+      "label": "Manga kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Manga female is kneeling, looking to the right, female manga pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4228_manga-kneeling-pose.pma",
+      "localScenePath": "scenes/4228_manga-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4228_00_manga-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4228_00_manga-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4228_00_manga-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24050,
+      "slug": "manga-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4229",
+      "presetNumber": 4229,
+      "label": "Manga fighter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Manga male is about to attack, holding a katana with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4229_manga-fighter-pose.pma",
+      "localScenePath": "scenes/4229_manga-fighter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4229_00_manga-fighter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4229_00_manga-fighter-pose.png",
+          "localThumbnailPath": "thumbnails/4229_00_manga-fighter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        158
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "manga",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24271,
+      "slug": "manga-fighter-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4230",
+      "presetNumber": 4230,
+      "label": "Male basic standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, male human anatomy reference for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4230_male-basic-standing-pose.pma",
+      "localScenePath": "scenes/4230_male-basic-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4230_00_male-basic-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4230_00_male-basic-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4230_00_male-basic-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 24165,
+      "slug": "male-basic-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4231",
+      "presetNumber": 4231,
+      "label": "Female basic standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, female human anatomy reference for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4231_female-basic-standing-pose.pma",
+      "localScenePath": "scenes/4231_female-basic-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4231_00_female-basic-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4231_00_female-basic-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4231_00_female-basic-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 27454,
+      "slug": "female-basic-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4232",
+      "presetNumber": 4232,
+      "label": "Male casual standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his left hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4232_male-casual-standing-pose.pma",
+      "localScenePath": "scenes/4232_male-casual-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4232_00_male-casual-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4232_00_male-casual-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4232_00_male-casual-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 23985,
+      "slug": "male-casual-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4233",
+      "presetNumber": 4233,
+      "label": "Female casual standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually, her left hand is on her hip",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4233_female-casual-standing-pose.pma",
+      "localScenePath": "scenes/4233_female-casual-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4233_00_female-casual-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4233_00_female-casual-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4233_00_female-casual-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 27334,
+      "slug": "female-casual-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4234",
+      "presetNumber": 4234,
+      "label": "Male walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking casually, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4234_male-walking-pose.pma",
+      "localScenePath": "scenes/4234_male-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4234_00_male-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4234_00_male-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4234_00_male-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 23981,
+      "slug": "male-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4235",
+      "presetNumber": 4235,
+      "label": "Female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, female human anatomy reference for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4235_female-walking-pose.pma",
+      "localScenePath": "scenes/4235_female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4235_00_female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4235_00_female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4235_00_female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 27309,
+      "slug": "female-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4236",
+      "presetNumber": 4236,
+      "label": "Male crouching holding chin pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding his chin with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4236_male-crouching-holding-chin-pose.pma",
+      "localScenePath": "scenes/4236_male-crouching-holding-chin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4236_00_male-crouching-holding-chin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4236_00_male-crouching-holding-chin-pose.png",
+          "localThumbnailPath": "thumbnails/4236_00_male-crouching-holding-chin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 23946,
+      "slug": "male-crouching-holding-chin-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4237",
+      "presetNumber": 4237,
+      "label": "Female crouching looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, looking to the left, human anatomy reference for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4237_female-crouching-looking-left-pose.pma",
+      "localScenePath": "scenes/4237_female-crouching-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4237_00_female-crouching-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4237_00_female-crouching-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/4237_00_female-crouching-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 27259,
+      "slug": "female-crouching-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4238",
+      "presetNumber": 4238,
+      "label": "Male running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, looking to the right, human anatomy reference for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4238_male-running-pose.pma",
+      "localScenePath": "scenes/4238_male-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4238_00_male-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4238_00_male-running-pose.png",
+          "localThumbnailPath": "thumbnails/4238_00_male-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 24002,
+      "slug": "male-running-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4239",
+      "presetNumber": 4239,
+      "label": "Female running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, looking to the right, human anatomy reference for artists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4239_female-running-pose.pma",
+      "localScenePath": "scenes/4239_female-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4239_00_female-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4239_00_female-running-pose.png",
+          "localThumbnailPath": "thumbnails/4239_00_female-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "human",
+        "anatomy",
+        "reference",
+        "for",
+        "artists"
+      ],
+      "bytes": 27379,
+      "slug": "female-running-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4240",
+      "presetNumber": 4240,
+      "label": "Depressed male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Depressed male is crouching, kneeling, looking down and holding his head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4240_depressed-male-pose.pma",
+      "localScenePath": "scenes/4240_depressed-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4240_00_depressed-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4240_00_depressed-male-pose.png",
+          "localThumbnailPath": "thumbnails/4240_00_depressed-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23747,
+      "slug": "depressed-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4241",
+      "presetNumber": 4241,
+      "label": "Depressed female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Depressed female is sitting on the floor and holding her head, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4241_depressed-female-pose.pma",
+      "localScenePath": "scenes/4241_depressed-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4241_00_depressed-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4241_00_depressed-female-pose.png",
+          "localThumbnailPath": "thumbnails/4241_00_depressed-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23500,
+      "slug": "depressed-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4242",
+      "presetNumber": 4242,
+      "label": "Depressed female crying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Depressed female is standing and crying, female depressed pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4242_depressed-female-crying-pose.pma",
+      "localScenePath": "scenes/4242_depressed-female-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4242_00_depressed-female-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4242_00_depressed-female-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4242_00_depressed-female-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23468,
+      "slug": "depressed-female-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4243",
+      "presetNumber": 4243,
+      "label": "Depressed female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Depressed, sad female is kneeling and looking down, female depressed pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4243_depressed-female-kneeling-pose.pma",
+      "localScenePath": "scenes/4243_depressed-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4243_00_depressed-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4243_00_depressed-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4243_00_depressed-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23606,
+      "slug": "depressed-female-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4244",
+      "presetNumber": 4244,
+      "label": "Depressed female walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Depressed, sad female is walking, her arms are crossed and she is looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4244_depressed-female-walking-pose.pma",
+      "localScenePath": "scenes/4244_depressed-female-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4244_00_depressed-female-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4244_00_depressed-female-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4244_00_depressed-female-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23519,
+      "slug": "depressed-female-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4245",
+      "presetNumber": 4245,
+      "label": "Depressed female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Depressed female is sitting alone on the bench, holding her head and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4245_depressed-female-sitting-pose.pma",
+      "localScenePath": "scenes/4245_depressed-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4245_00_depressed-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4245_00_depressed-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4245_00_depressed-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23918,
+      "slug": "depressed-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4246",
+      "presetNumber": 4246,
+      "label": "Depressed male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Depressed male is sitting and holding his head with his right hand, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4246_depressed-male-sitting-pose.pma",
+      "localScenePath": "scenes/4246_depressed-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4246_00_depressed-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4246_00_depressed-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4246_00_depressed-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24329,
+      "slug": "depressed-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4247",
+      "presetNumber": 4247,
+      "label": "Depressed male kneeling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Depressed male is kneeling, looking down, holding his head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4247_depressed-male-kneeling-pose.pma",
+      "localScenePath": "scenes/4247_depressed-male-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4247_00_depressed-male-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4247_00_depressed-male-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/4247_00_depressed-male-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23733,
+      "slug": "depressed-male-kneeling-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4248",
+      "presetNumber": 4248,
+      "label": "Depressed male crying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Depressed male is standing and crying, holding his head, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4248_depressed-male-crying-pose.pma",
+      "localScenePath": "scenes/4248_depressed-male-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4248_00_depressed-male-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4248_00_depressed-male-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4248_00_depressed-male-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "depressed",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23745,
+      "slug": "depressed-male-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1090 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 42,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-2342",
+      "presetNumber": 2342,
+      "label": "Female boxing hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing in boxing stance and hitting with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2342_female-boxing-hitting-pose.pma",
+      "localScenePath": "scenes/2342_female-boxing-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2342_00_female-boxing-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2342_00_female-boxing-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2342_00_female-boxing-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23465,
+      "slug": "female-boxing-hitting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2346",
+      "presetNumber": 2346,
+      "label": "Female pan hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to hit someone with a frying pan, female hitting with pan pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2346_female-pan-hitting-pose.pma",
+      "localScenePath": "scenes/2346_female-pan-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2346_00_female-pan-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2346_00_female-pan-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2346_00_female-pan-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        122
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 23969,
+      "slug": "female-pan-hitting-pose"
+    },
+    {
+      "id": "guo-scene-2348",
+      "presetNumber": 2348,
+      "label": "Volleyball hitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is about to hit a volleyball with her right hand while jumping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2348_volleyball-hitting-pose.pma",
+      "localScenePath": "scenes/2348_volleyball-hitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2348_00_volleyball-hitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2348_00_volleyball-hitting-pose.png",
+          "localThumbnailPath": "thumbnails/2348_00_volleyball-hitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hitting",
+        "pose"
+      ],
+      "bytes": 24069,
+      "slug": "volleyball-hitting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2351",
+      "presetNumber": 2351,
+      "label": "Female meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female traditional meditation pose, sitting with the knees on the ground and the feet tucked in close to the body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2351_female-meditation-pose.pma",
+      "localScenePath": "scenes/2351_female-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2351_00_female-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2351_00_female-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2351_00_female-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23933,
+      "slug": "female-meditation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2352",
+      "presetNumber": 2352,
+      "label": "Female kneeling meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is meditating, kneeling and resting her hands on her thighs",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2352_female-kneeling-meditation-pose.pma",
+      "localScenePath": "scenes/2352_female-kneeling-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2352_00_female-kneeling-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2352_00_female-kneeling-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2352_00_female-kneeling-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23489,
+      "slug": "female-kneeling-meditation-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2356",
+      "presetNumber": 2356,
+      "label": "Folding hands meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is meditating, sitting with her knees on the ground and folding her hands above her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2356_folding-hands-meditation-pose.pma",
+      "localScenePath": "scenes/2356_folding-hands-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2356_00_folding-hands-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2356_00_folding-hands-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2356_00_folding-hands-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24003,
+      "slug": "folding-hands-meditation-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2357",
+      "presetNumber": 2357,
+      "label": "One leg meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is meditating, standing on one leg and folding her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2357_one-leg-meditation-pose.pma",
+      "localScenePath": "scenes/2357_one-leg-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2357_00_one-leg-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2357_00_one-leg-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2357_00_one-leg-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23636,
+      "slug": "one-leg-meditation-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2358",
+      "presetNumber": 2358,
+      "label": "Female standing meditation pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is meditating, standing with bent knees and outstretched hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2358_female-standing-meditation-pose.pma",
+      "localScenePath": "scenes/2358_female-standing-meditation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2358_00_female-standing-meditation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2358_00_female-standing-meditation-pose.png",
+          "localThumbnailPath": "thumbnails/2358_00_female-standing-meditation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "meditation",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23579,
+      "slug": "female-standing-meditation-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2362",
+      "presetNumber": 2362,
+      "label": "Female standing spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a spear in her right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2362_female-standing-spear-pose.pma",
+      "localScenePath": "scenes/2362_female-standing-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2362_00_female-standing-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2362_00_female-standing-spear-pose.png",
+          "localThumbnailPath": "thumbnails/2362_00_female-standing-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spear",
+        "pose"
+      ],
+      "bytes": 408850,
+      "slug": "female-standing-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2363",
+      "presetNumber": 2363,
+      "label": "Landing holding spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, holding a spear in her right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2363_landing-holding-spear-pose.pma",
+      "localScenePath": "scenes/2363_landing-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2363_00_landing-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2363_00_landing-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/2363_00_landing-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spear",
+        "pose"
+      ],
+      "bytes": 408695,
+      "slug": "landing-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2364",
+      "presetNumber": 2364,
+      "label": "Female crouching holding spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching, holding a spear in her left hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2364_female-crouching-holding-spear-pose.pma",
+      "localScenePath": "scenes/2364_female-crouching-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2364_00_female-crouching-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2364_00_female-crouching-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/2364_00_female-crouching-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spear",
+        "pose"
+      ],
+      "bytes": 1056556,
+      "slug": "female-crouching-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2366",
+      "presetNumber": 2366,
+      "label": "Female standing holding spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a spear with both hands, ready to attack",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2366_female-standing-holding-spear-pose.pma",
+      "localScenePath": "scenes/2366_female-standing-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2366_00_female-standing-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2366_00_female-standing-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/2366_00_female-standing-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spear",
+        "pose"
+      ],
+      "bytes": 1056537,
+      "slug": "female-standing-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2368",
+      "presetNumber": 2368,
+      "label": "Floating holding spears pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is floating in the air and holding spears in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2368_floating-holding-spears-pose.pma",
+      "localScenePath": "scenes/2368_floating-holding-spears-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2368_00_floating-holding-spears-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2368_00_floating-holding-spears-pose.png",
+          "localThumbnailPath": "thumbnails/2368_00_floating-holding-spears-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spear",
+        "pose"
+      ],
+      "bytes": 794118,
+      "slug": "floating-holding-spears-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2369",
+      "presetNumber": 2369,
+      "label": "Female holding spear attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and is about to throw her spear, holding a shield in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2369_female-holding-spear-attack-pose.pma",
+      "localScenePath": "scenes/2369_female-holding-spear-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2369_00_female-holding-spear-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2369_00_female-holding-spear-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2369_00_female-holding-spear-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spear",
+        "pose"
+      ],
+      "bytes": 1057001,
+      "slug": "female-holding-spear-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2370",
+      "presetNumber": 2370,
+      "label": "Holding books reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding books in her hands, reading the book in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2370_holding-books-reading-pose.pma",
+      "localScenePath": "scenes/2370_holding-books-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2370_00_holding-books-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2370_00_holding-books-reading-pose.png",
+          "localThumbnailPath": "thumbnails/2370_00_holding-books-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 117535,
+      "slug": "holding-books-reading-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2371",
+      "presetNumber": 2371,
+      "label": "Holding books walking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding books in her hands and walking slowly",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2371_holding-books-walking-pose.pma",
+      "localScenePath": "scenes/2371_holding-books-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2371_00_holding-books-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2371_00_holding-books-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2371_00_holding-books-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 179104,
+      "slug": "holding-books-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2372",
+      "presetNumber": 2372,
+      "label": "Holding hugging books pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding, hugging her books with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2372_holding-hugging-books-pose.pma",
+      "localScenePath": "scenes/2372_holding-hugging-books-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2372_00_holding-hugging-books-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2372_00_holding-hugging-books-pose.png",
+          "localThumbnailPath": "thumbnails/2372_00_holding-hugging-books-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 85739,
+      "slug": "holding-hugging-books-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2373",
+      "presetNumber": 2373,
+      "label": "Female standing reading pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding a book with both hands, reading",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2373_female-standing-reading-pose.pma",
+      "localScenePath": "scenes/2373_female-standing-reading-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2373_00_female-standing-reading-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2373_00_female-standing-reading-pose.png",
+          "localThumbnailPath": "thumbnails/2373_00_female-standing-reading-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24017,
+      "slug": "female-standing-reading-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2375",
+      "presetNumber": 2375,
+      "label": "Female sitting reading book pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting and holding a book with both hands, holding book drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2375_female-sitting-reading-book-pose.pma",
+      "localScenePath": "scenes/2375_female-sitting-reading-book-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2375_00_female-sitting-reading-book-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2375_00_female-sitting-reading-book-pose.png",
+          "localThumbnailPath": "thumbnails/2375_00_female-sitting-reading-book-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24556,
+      "slug": "female-sitting-reading-book-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2378",
+      "presetNumber": 2378,
+      "label": "Female holding books pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding books in her left hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2378_female-holding-books-pose.pma",
+      "localScenePath": "scenes/2378_female-holding-books-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2378_00_female-holding-books-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2378_00_female-holding-books-pose.png",
+          "localThumbnailPath": "thumbnails/2378_00_female-holding-books-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "book",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 85823,
+      "slug": "female-holding-books-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2380",
+      "presetNumber": 2380,
+      "label": "Female hammer standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her left hand on her hip and holding a hammer in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2380_female-hammer-standing-pose.pma",
+      "localScenePath": "scenes/2380_female-hammer-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2380_00_female-hammer-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2380_00_female-hammer-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2380_00_female-hammer-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 208966,
+      "slug": "female-hammer-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2386",
+      "presetNumber": 2386,
+      "label": "Female hammer strike pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding the hammer with both hands, jumps up and swings it backwards to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2386_female-hammer-strike-pose.pma",
+      "localScenePath": "scenes/2386_female-hammer-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2386_00_female-hammer-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2386_00_female-hammer-strike-pose.png",
+          "localThumbnailPath": "thumbnails/2386_00_female-hammer-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hammer",
+        "pose"
+      ],
+      "bytes": 208893,
+      "slug": "female-hammer-strike-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2391",
+      "presetNumber": 2391,
+      "label": "Wizard female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Wizard female is holding a staff in her right hand and casting a spell with it",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2391_wizard-female-pose.pma",
+      "localScenePath": "scenes/2391_wizard-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2391_00_wizard-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2391_00_wizard-female-pose.png",
+          "localThumbnailPath": "thumbnails/2391_00_wizard-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        113
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 23957,
+      "slug": "wizard-female-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2392",
+      "presetNumber": 2392,
+      "label": "Fairy magic pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female with fairy wings is flying, floating in the air, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2392_fairy-magic-pose.pma",
+      "localScenePath": "scenes/2392_fairy-magic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2392_00_fairy-magic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2392_00_fairy-magic-pose.png",
+          "localThumbnailPath": "thumbnails/2392_00_fairy-magic-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        87
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "magic",
+        "pose"
+      ],
+      "bytes": 23963,
+      "slug": "fairy-magic-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1064 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 14,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-1051",
+      "presetNumber": 1051,
+      "label": "Hitting low ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and hitting a low ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1051_hitting-low-ball-pose.pma",
+      "localScenePath": "scenes/1051_hitting-low-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1051_00_hitting-low-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1051_00_hitting-low-ball-pose.png",
+          "localThumbnailPath": "thumbnails/1051_00_hitting-low-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24669,
+      "slug": "hitting-low-ball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1052",
+      "presetNumber": 1052,
+      "label": "Preparing coming ball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and preparing to hit the coming ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1052_preparing-coming-ball-pose.pma",
+      "localScenePath": "scenes/1052_preparing-coming-ball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1052_00_preparing-coming-ball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1052_00_preparing-coming-ball-pose.png",
+          "localThumbnailPath": "thumbnails/1052_00_preparing-coming-ball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24125,
+      "slug": "preparing-coming-ball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1053",
+      "presetNumber": 1053,
+      "label": "Male baseball bat pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is hitting the ball with the baseball bat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1053_male-baseball-bat-pose.pma",
+      "localScenePath": "scenes/1053_male-baseball-bat-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1053_00_male-baseball-bat-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1053_00_male-baseball-bat-pose.png",
+          "localThumbnailPath": "thumbnails/1053_00_male-baseball-bat-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24562,
+      "slug": "male-baseball-bat-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1054",
+      "presetNumber": 1054,
+      "label": "Baseball running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is running to catch the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1054_baseball-running-pose.pma",
+      "localScenePath": "scenes/1054_baseball-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1054_00_baseball-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1054_00_baseball-running-pose.png",
+          "localThumbnailPath": "thumbnails/1054_00_baseball-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24378,
+      "slug": "baseball-running-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1055",
+      "presetNumber": 1055,
+      "label": "Dynamic baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player dynamic pose, holding a baseball bat in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1055_dynamic-baseball-pose.pma",
+      "localScenePath": "scenes/1055_dynamic-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1055_00_dynamic-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1055_00_dynamic-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1055_00_dynamic-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24185,
+      "slug": "dynamic-baseball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1056",
+      "presetNumber": 1056,
+      "label": "Throwing baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is throwing the ball with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1056_throwing-baseball-pose.pma",
+      "localScenePath": "scenes/1056_throwing-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1056_00_throwing-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1056_00_throwing-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1056_00_throwing-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24104,
+      "slug": "throwing-baseball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1057",
+      "presetNumber": 1057,
+      "label": "Waiting baseball pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male baseball player is standing and waiting for the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1057_waiting-baseball-pose.pma",
+      "localScenePath": "scenes/1057_waiting-baseball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1057_00_waiting-baseball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1057_00_waiting-baseball-pose.png",
+          "localThumbnailPath": "thumbnails/1057_00_waiting-baseball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        210
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "baseball",
+        "pose"
+      ],
+      "bytes": 24138,
+      "slug": "waiting-baseball-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1062",
+      "presetNumber": 1062,
+      "label": "Male bar counter pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and leaning on the bar counter, his legs are crossed, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1062_male-bar-counter-pose.pma",
+      "localScenePath": "scenes/1062_male-bar-counter-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1062_00_male-bar-counter-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1062_00_male-bar-counter-pose.png",
+          "localThumbnailPath": "thumbnails/1062_00_male-bar-counter-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24100,
+      "slug": "male-bar-counter-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1066",
+      "presetNumber": 1066,
+      "label": "Male leaning wall pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is leaning against the wall, his right hand is in his pocket, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1066_male-leaning-wall-pose.pma",
+      "localScenePath": "scenes/1066_male-leaning-wall-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1066_00_male-leaning-wall-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1066_00_male-leaning-wall-pose.png",
+          "localThumbnailPath": "thumbnails/1066_00_male-leaning-wall-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24171,
+      "slug": "male-leaning-wall-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1067",
+      "presetNumber": 1067,
+      "label": "Male leaning table pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is leaning on the table, his arms are crossed and he is looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1067_male-leaning-table-pose.pma",
+      "localScenePath": "scenes/1067_male-leaning-table-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1067_00_male-leaning-table-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1067_00_male-leaning-table-pose.png",
+          "localThumbnailPath": "thumbnails/1067_00_male-leaning-table-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        215
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "pose"
+      ],
+      "bytes": 24156,
+      "slug": "male-leaning-table-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1070",
+      "presetNumber": 1070,
+      "label": "Pushing heavy object pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and strongly pushing away a heavy object",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1070_pushing-heavy-object-pose.pma",
+      "localScenePath": "scenes/1070_pushing-heavy-object-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1070_00_pushing-heavy-object-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1070_00_pushing-heavy-object-pose.png",
+          "localThumbnailPath": "thumbnails/1070_00_pushing-heavy-object-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24349,
+      "slug": "pushing-heavy-object-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1071",
+      "presetNumber": 1071,
+      "label": "Whole body pushing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and pushing a heavy object with his whole body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1071_whole-body-pushing-pose.pma",
+      "localScenePath": "scenes/1071_whole-body-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1071_00_whole-body-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1071_00_whole-body-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1071_00_whole-body-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24380,
+      "slug": "whole-body-pushing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1075",
+      "presetNumber": 1075,
+      "label": "Pushing upwards pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is kneeling and pushing a heavy object upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1075_pushing-upwards-pose.pma",
+      "localScenePath": "scenes/1075_pushing-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1075_00_pushing-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1075_00_pushing-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/1075_00_pushing-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24198,
+      "slug": "pushing-upwards-pose"
+    },
+    {
+      "id": "guo-scene-1077",
+      "presetNumber": 1077,
+      "label": "Male push up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is doing push ups on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1077_male-push-up-pose.pma",
+      "localScenePath": "scenes/1077_male-push-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1077_00_male-push-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1077_00_male-push-up-pose.png",
+          "localThumbnailPath": "thumbnails/1077_00_male-push-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 23760,
+      "slug": "male-push-up-pose"
+    },
+    {
+      "id": "guo-scene-1081",
+      "presetNumber": 1081,
+      "label": "Holding axe male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding an axe with two hands and looking forward confidently",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1081_holding-axe-male-pose.pma",
+      "localScenePath": "scenes/1081_holding-axe-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1081_00_holding-axe-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1081_00_holding-axe-male-pose.png",
+          "localThumbnailPath": "thumbnails/1081_00_holding-axe-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 24230,
+      "slug": "holding-axe-male-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1083",
+      "presetNumber": 1083,
+      "label": "Confident male axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and holding an axe in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1083_confident-male-axe-pose.pma",
+      "localScenePath": "scenes/1083_confident-male-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1083_00_confident-male-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1083_00_confident-male-axe-pose.png",
+          "localThumbnailPath": "thumbnails/1083_00_confident-male-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 24181,
+      "slug": "confident-male-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1084",
+      "presetNumber": 1084,
+      "label": "Preparing cutting wood pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is about to hit the wood with an axe in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1084_preparing-cutting-wood-pose.pma",
+      "localScenePath": "scenes/1084_preparing-cutting-wood-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1084_00_preparing-cutting-wood-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1084_00_preparing-cutting-wood-pose.png",
+          "localThumbnailPath": "thumbnails/1084_00_preparing-cutting-wood-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 6,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 26563,
+      "slug": "preparing-cutting-wood-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1085",
+      "presetNumber": 1085,
+      "label": "Succesfully cutting wood pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male cut the wood with an axe in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1085_succesfully-cutting-wood-pose.pma",
+      "localScenePath": "scenes/1085_succesfully-cutting-wood-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1085_00_succesfully-cutting-wood-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1085_00_succesfully-cutting-wood-pose.png",
+          "localThumbnailPath": "thumbnails/1085_00_succesfully-cutting-wood-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        3,
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 27067,
+      "slug": "succesfully-cutting-wood-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1086",
+      "presetNumber": 1086,
+      "label": "Downward axe attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is attacking downward with an axe in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1086_downward-axe-attack-pose.pma",
+      "localScenePath": "scenes/1086_downward-axe-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1086_00_downward-axe-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1086_00_downward-axe-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1086_00_downward-axe-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 24178,
+      "slug": "downward-axe-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1087",
+      "presetNumber": 1087,
+      "label": "Axe spin attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is attacking with a left to right spin attack with an axe in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1087_axe-spin-attack-pose.pma",
+      "localScenePath": "scenes/1087_axe-spin-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1087_00_axe-spin-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1087_00_axe-spin-attack-pose.png",
+          "localThumbnailPath": "thumbnails/1087_00_axe-spin-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 24392,
+      "slug": "axe-spin-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1088",
+      "presetNumber": 1088,
+      "label": "Jumping strike axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping high to strike with momentum with the axe in his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1088_jumping-strike-axe-pose.pma",
+      "localScenePath": "scenes/1088_jumping-strike-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1088_00_jumping-strike-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1088_00_jumping-strike-axe-pose.png",
+          "localThumbnailPath": "thumbnails/1088_00_jumping-strike-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 24183,
+      "slug": "jumping-strike-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1089",
+      "presetNumber": 1089,
+      "label": "Walking holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking with an axe in his right hand and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1089_walking-holding-axe-pose.pma",
+      "localScenePath": "scenes/1089_walking-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1089_00_walking-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1089_00_walking-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/1089_00_walking-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 24169,
+      "slug": "walking-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1090",
+      "presetNumber": 1090,
+      "label": "Male swimming downwards pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is swimming downwards under the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1090_male-swimming-downwards-pose.pma",
+      "localScenePath": "scenes/1090_male-swimming-downwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1090_00_male-swimming-downwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1090_00_male-swimming-downwards-pose.png",
+          "localThumbnailPath": "thumbnails/1090_00_male-swimming-downwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "swimming",
+        "pose"
+      ],
+      "bytes": 23755,
+      "slug": "male-swimming-downwards-pose"
+    },
+    {
+      "id": "guo-scene-1091",
+      "presetNumber": 1091,
+      "label": "Male swimming upwards pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is swimming upwards under the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1091_male-swimming-upwards-pose.pma",
+      "localScenePath": "scenes/1091_male-swimming-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1091_00_male-swimming-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1091_00_male-swimming-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/1091_00_male-swimming-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "swimming",
+        "pose"
+      ],
+      "bytes": 23762,
+      "slug": "male-swimming-upwards-pose"
+    }
+  ]
+}

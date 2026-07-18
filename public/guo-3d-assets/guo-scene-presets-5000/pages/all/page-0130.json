@@ -1,0 +1,1153 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 129,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-3097",
+      "presetNumber": 3097,
+      "label": "Siren looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Siren is floating in the water, looking up and raising her hands, casting a spell",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3097_siren-looking-up-pose.pma",
+      "localScenePath": "scenes/3097_siren-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3097_00_siren-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3097_00_siren-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3097_00_siren-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "siren",
+        "pose"
+      ],
+      "bytes": 16358,
+      "slug": "siren-looking-up-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3098",
+      "presetNumber": 3098,
+      "label": "Sirens sitting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two sirens are sitting on the rocks, siren sitting pose drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3098_sirens-sitting-pose.pma",
+      "localScenePath": "scenes/3098_sirens-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3098_00_sirens-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3098_00_sirens-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3098_00_sirens-sitting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3098_01_sirens-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/3098_01_sirens-sitting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "siren",
+        "pose"
+      ],
+      "bytes": 52615,
+      "slug": "sirens-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3099",
+      "presetNumber": 3099,
+      "label": "Siren blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Siren is blowing a kiss with her right hand, siren drawing reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3099_siren-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3099_siren-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3099_00_siren-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3099_00_siren-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3099_00_siren-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "siren",
+        "pose"
+      ],
+      "bytes": 16375,
+      "slug": "siren-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-3100",
+      "presetNumber": 3100,
+      "label": "Mermaid spell casting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is holding a trident in her right hand and casting a spell with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3100_mermaid-spell-casting-pose.pma",
+      "localScenePath": "scenes/3100_mermaid-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3100_00_mermaid-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3100_00_mermaid-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/3100_00_mermaid-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062078,
+      "slug": "mermaid-spell-casting-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3101",
+      "presetNumber": 3101,
+      "label": "Mermaid dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is dancing, raising her left hand and looking upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3101_mermaid-dancing-pose.pma",
+      "localScenePath": "scenes/3101_mermaid-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3101_00_mermaid-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3101_00_mermaid-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3101_00_mermaid-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 16386,
+      "slug": "mermaid-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3102",
+      "presetNumber": 3102,
+      "label": "Mermaid floating looking up pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water, looking upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3102_mermaid-floating-looking-up-pose.pma",
+      "localScenePath": "scenes/3102_mermaid-floating-looking-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3102_00_mermaid-floating-looking-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3102_00_mermaid-floating-looking-up-pose.png",
+          "localThumbnailPath": "thumbnails/3102_00_mermaid-floating-looking-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 16387,
+      "slug": "mermaid-floating-looking-up-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3103",
+      "presetNumber": 3103,
+      "label": "Mermaid turning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and turning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3103_mermaid-turning-back-pose.pma",
+      "localScenePath": "scenes/3103_mermaid-turning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3103_00_mermaid-turning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3103_00_mermaid-turning-back-pose.png",
+          "localThumbnailPath": "thumbnails/3103_00_mermaid-turning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 16303,
+      "slug": "mermaid-turning-back-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3104",
+      "presetNumber": 3104,
+      "label": "Mermaid back swimming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is swimming on her back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3104_mermaid-back-swimming-pose.pma",
+      "localScenePath": "scenes/3104_mermaid-back-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3104_00_mermaid-back-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3104_00_mermaid-back-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/3104_00_mermaid-back-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 16504,
+      "slug": "mermaid-back-swimming-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3105",
+      "presetNumber": 3105,
+      "label": "Mermaid looking down pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mermaid is floating in the water and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3105_mermaid-looking-down-pose.pma",
+      "localScenePath": "scenes/3105_mermaid-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3105_00_mermaid-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3105_00_mermaid-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3105_00_mermaid-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 16374,
+      "slug": "mermaid-looking-down-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3106",
+      "presetNumber": 3106,
+      "label": "Dancing mermaids pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two female mermaids are holding hands, swimming and dancing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3106_dancing-mermaids-pose.pma",
+      "localScenePath": "scenes/3106_dancing-mermaids-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3106_00_dancing-mermaids-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3106_00_dancing-mermaids-pose.png",
+          "localThumbnailPath": "thumbnails/3106_00_dancing-mermaids-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3106_01_dancing-mermaids-pose.png",
+          "localThumbnailPath": "thumbnails/3106_01_dancing-mermaids-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 31880,
+      "slug": "dancing-mermaids-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3107",
+      "presetNumber": 3107,
+      "label": "Male mermaid trident holding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and pointing with his trident",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3107_male-mermaid-trident-holding-pose.pma",
+      "localScenePath": "scenes/3107_male-mermaid-trident-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3107_00_male-mermaid-trident-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3107_00_male-mermaid-trident-holding-pose.png",
+          "localThumbnailPath": "thumbnails/3107_00_male-mermaid-trident-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062079,
+      "slug": "male-mermaid-trident-holding-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3108",
+      "presetNumber": 3108,
+      "label": "Mermaid aiming trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding the trident with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3108_mermaid-aiming-trident-pose.pma",
+      "localScenePath": "scenes/3108_mermaid-aiming-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3108_00_mermaid-aiming-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3108_00_mermaid-aiming-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3108_00_mermaid-aiming-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062042,
+      "slug": "mermaid-aiming-trident-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3109",
+      "presetNumber": 3109,
+      "label": "Male mermaid raising trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding the trident in his right hand and raising it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3109_male-mermaid-raising-trident-pose.pma",
+      "localScenePath": "scenes/3109_male-mermaid-raising-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3109_00_male-mermaid-raising-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3109_00_male-mermaid-raising-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3109_00_male-mermaid-raising-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062065,
+      "slug": "male-mermaid-raising-trident-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3110",
+      "presetNumber": 3110,
+      "label": "Standing blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and blowing a kiss with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3110_standing-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3110_standing-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3110_00_standing-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3110_00_standing-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3110_00_standing-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23557,
+      "slug": "standing-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3111",
+      "presetNumber": 3111,
+      "label": "Sitting blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the bench and blowing a kiss with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3111_sitting-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3111_sitting-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3111_00_sitting-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3111_00_sitting-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3111_00_sitting-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 24049,
+      "slug": "sitting-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "双人/情侣",
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3112",
+      "presetNumber": 3112,
+      "label": "Female standing blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her left hand is on her hip, blowing a kiss with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3112_female-standing-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3112_female-standing-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3112_00_female-standing-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3112_00_female-standing-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3112_00_female-standing-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23552,
+      "slug": "female-standing-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3113",
+      "presetNumber": 3113,
+      "label": "Both hands blowing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and blowing a kiss with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3113_both-hands-blowing-pose.pma",
+      "localScenePath": "scenes/3113_both-hands-blowing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3113_00_both-hands-blowing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3113_00_both-hands-blowing-pose.png",
+          "localThumbnailPath": "thumbnails/3113_00_both-hands-blowing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23529,
+      "slug": "both-hands-blowing-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3114",
+      "presetNumber": 3114,
+      "label": "Jumping blowing kiss pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and blowing a kiss with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3114_jumping-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3114_jumping-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3114_00_jumping-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3114_00_jumping-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3114_00_jumping-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23591,
+      "slug": "jumping-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3115",
+      "presetNumber": 3115,
+      "label": "Cute turning back pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking, turning back and blowing a kiss, female blowing kiss pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3115_cute-turning-back-pose.pma",
+      "localScenePath": "scenes/3115_cute-turning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3115_00_cute-turning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3115_00_cute-turning-back-pose.png",
+          "localThumbnailPath": "thumbnails/3115_00_cute-turning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23497,
+      "slug": "cute-turning-back-pose",
+      "tagIds": [
+        "couple",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3116",
+      "presetNumber": 3116,
+      "label": "Male blowing kiss pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and blowing a kiss with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3116_male-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3116_male-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3116_00_male-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3116_00_male-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3116_00_male-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23818,
+      "slug": "male-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3117",
+      "presetNumber": 3117,
+      "label": "Cute male pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and blowing a kiss to the female, who is standing with crossed arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3117_cute-male-pose.pma",
+      "localScenePath": "scenes/3117_cute-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3117_00_cute-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3117_00_cute-male-pose.png",
+          "localThumbnailPath": "thumbnails/3117_00_cute-male-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3117_01_cute-male-pose.png",
+          "localThumbnailPath": "thumbnails/3117_01_cute-male-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 46410,
+      "slug": "cute-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3118",
+      "presetNumber": 3118,
+      "label": "Females cute pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is standing and blowing a kiss to the other female, who is making a heart with her hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3118_females-cute-pose.pma",
+      "localScenePath": "scenes/3118_females-cute-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3118_00_females-cute-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3118_00_females-cute-pose.png",
+          "localThumbnailPath": "thumbnails/3118_00_females-cute-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3118_01_females-cute-pose.png",
+          "localThumbnailPath": "thumbnails/3118_01_females-cute-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 46257,
+      "slug": "females-cute-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3119",
+      "presetNumber": 3119,
+      "label": "Couple blowing kiss pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are standing and blowing kisses, cute couple pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3119_couple-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3119_couple-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3119_00_couple-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3119_00_couple-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3119_00_couple-blowing-kiss-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3119_01_couple-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3119_01_couple-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 46778,
+      "slug": "couple-blowing-kiss-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3120",
+      "presetNumber": 3120,
+      "label": "Siren dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Siren is dancing, raising her hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3120_siren-dancing-pose.pma",
+      "localScenePath": "scenes/3120_siren-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3120_00_siren-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3120_00_siren-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3120_00_siren-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        34
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        34
+      ],
+      "sourceTags": [
+        "siren",
+        "anatomy"
+      ],
+      "bytes": 16384,
+      "slug": "siren-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

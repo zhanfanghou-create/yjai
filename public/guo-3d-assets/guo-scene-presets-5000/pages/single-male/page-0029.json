@@ -1,0 +1,1128 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 28,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-2015",
+      "presetNumber": 2015,
+      "label": "Male peace sign pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair with his legs crossed and showing peace sign with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2015_male-peace-sign-pose.pma",
+      "localScenePath": "scenes/2015_male-peace-sign-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2015_00_male-peace-sign-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2015_00_male-peace-sign-pose.png",
+          "localThumbnailPath": "thumbnails/2015_00_male-peace-sign-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "peace",
+        "sign",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24225,
+      "slug": "male-peace-sign-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2044",
+      "presetNumber": 2044,
+      "label": "Male waving greeting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is greeting someone, waving with his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2044_male-waving-greeting-pose.pma",
+      "localScenePath": "scenes/2044_male-waving-greeting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2044_00_male-waving-greeting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2044_00_male-waving-greeting-pose.png",
+          "localThumbnailPath": "thumbnails/2044_00_male-waving-greeting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "greeting",
+        "pose"
+      ],
+      "bytes": 23858,
+      "slug": "male-waving-greeting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2053",
+      "presetNumber": 2053,
+      "label": "Male standing heart pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing and making a heart with his hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2053_male-standing-heart-pose.pma",
+      "localScenePath": "scenes/2053_male-standing-heart-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2053_00_male-standing-heart-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2053_00_male-standing-heart-pose.png",
+          "localThumbnailPath": "thumbnails/2053_00_male-standing-heart-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "heart",
+        "pose"
+      ],
+      "bytes": 23840,
+      "slug": "male-standing-heart-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2073",
+      "presetNumber": 2073,
+      "label": "Sad anime male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad anime male is standing, holding his head with his left hand and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2073_sad-anime-male-pose.pma",
+      "localScenePath": "scenes/2073_sad-anime-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2073_00_sad-anime-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2073_00_sad-anime-male-pose.png",
+          "localThumbnailPath": "thumbnails/2073_00_sad-anime-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23807,
+      "slug": "sad-anime-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2075",
+      "presetNumber": 2075,
+      "label": "Anime sad squatting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad anime male is squatting, looking down, sad anime male pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2075_anime-sad-squatting-pose.pma",
+      "localScenePath": "scenes/2075_anime-sad-squatting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2075_00_anime-sad-squatting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2075_00_anime-sad-squatting-pose.png",
+          "localThumbnailPath": "thumbnails/2075_00_anime-sad-squatting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 23737,
+      "slug": "anime-sad-squatting-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2077",
+      "presetNumber": 2077,
+      "label": "Sad male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sad anime male is sitting alone on a bench and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2077_sad-male-sitting-pose.pma",
+      "localScenePath": "scenes/2077_sad-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2077_00_sad-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2077_00_sad-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2077_00_sad-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sad",
+        "pose"
+      ],
+      "bytes": 24273,
+      "slug": "sad-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2081",
+      "presetNumber": 2081,
+      "label": "Male right hand pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is extending his right hand for a handshake and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2081_male-right-hand-pose.pma",
+      "localScenePath": "scenes/2081_male-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2081_00_male-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2081_00_male-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/2081_00_male-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handshake",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23827,
+      "slug": "male-right-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2094",
+      "presetNumber": 2094,
+      "label": "Male gun knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and aiming his gun, holding a knife in his left hand and gun in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2094_male-gun-knife-pose.pma",
+      "localScenePath": "scenes/2094_male-gun-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2094_00_male-gun-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2094_00_male-gun-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2094_00_male-gun-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143,
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24651,
+      "slug": "male-gun-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2096",
+      "presetNumber": 2096,
+      "label": "Male knife jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a knife in his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2096_male-knife-jumping-pose.pma",
+      "localScenePath": "scenes/2096_male-knife-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2096_00_male-knife-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2096_00_male-knife-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2096_00_male-knife-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24186,
+      "slug": "male-knife-jumping-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2097",
+      "presetNumber": 2097,
+      "label": "Male knife stabbing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a knife in his right hand and stabbing it into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2097_male-knife-stabbing-pose.pma",
+      "localScenePath": "scenes/2097_male-knife-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2097_00_male-knife-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2097_00_male-knife-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/2097_00_male-knife-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24186,
+      "slug": "male-knife-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2098",
+      "presetNumber": 2098,
+      "label": "Male knife standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a knife in his right hand and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2098_male-knife-standing-pose.pma",
+      "localScenePath": "scenes/2098_male-knife-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2098_00_male-knife-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2098_00_male-knife-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2098_00_male-knife-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24394,
+      "slug": "male-knife-standing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2099",
+      "presetNumber": 2099,
+      "label": "Male dual knife pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding knives in both hands and is about to stab them into something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2099_male-dual-knife-pose.pma",
+      "localScenePath": "scenes/2099_male-dual-knife-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2099_00_male-dual-knife-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2099_00_male-dual-knife-pose.png",
+          "localThumbnailPath": "thumbnails/2099_00_male-dual-knife-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "knife",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24731,
+      "slug": "male-dual-knife-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2108",
+      "presetNumber": 2108,
+      "label": "Male cute sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair with his legs crossed and showing a peace sign",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2108_male-cute-sitting-pose.pma",
+      "localScenePath": "scenes/2108_male-cute-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2108_00_male-cute-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2108_00_male-cute-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2108_00_male-cute-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 24129,
+      "slug": "male-cute-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2110",
+      "presetNumber": 2110,
+      "label": "Anime male sleeping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his right side in bed and sleeping, anime sleeping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2110_anime-male-sleeping-pose.pma",
+      "localScenePath": "scenes/2110_anime-male-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2110_00_anime-male-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2110_00_anime-male-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2110_00_anime-male-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 492406,
+      "slug": "anime-male-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2113",
+      "presetNumber": 2113,
+      "label": "Anime couch sleeping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his right side on the couch with pillows and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2113_anime-couch-sleeping-pose.pma",
+      "localScenePath": "scenes/2113_anime-couch-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2113_00_anime-couch-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2113_00_anime-couch-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2113_00_anime-couch-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 25295,
+      "slug": "anime-couch-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2114",
+      "presetNumber": 2114,
+      "label": "Anime male lying back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his back on the couch and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2114_anime-male-lying-back-pose.pma",
+      "localScenePath": "scenes/2114_anime-male-lying-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2114_00_anime-male-lying-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2114_00_anime-male-lying-back-pose.png",
+          "localThumbnailPath": "thumbnails/2114_00_anime-male-lying-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 24724,
+      "slug": "anime-male-lying-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2118",
+      "presetNumber": 2118,
+      "label": "Anime sleeping bed pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is lying on his back on the bed and sleeping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2118_anime-sleeping-bed-pose.pma",
+      "localScenePath": "scenes/2118_anime-sleeping-bed-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2118_00_anime-sleeping-bed-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2118_00_anime-sleeping-bed-pose.png",
+          "localThumbnailPath": "thumbnails/2118_00_anime-sleeping-bed-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 492784,
+      "slug": "anime-sleeping-bed-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2129",
+      "presetNumber": 2129,
+      "label": "Anime male feet pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is sitting on the couch and resting his legs, anime male feet pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2129_anime-male-feet-pose.pma",
+      "localScenePath": "scenes/2129_anime-male-feet-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2129_00_anime-male-feet-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2129_00_anime-male-feet-pose.png",
+          "localThumbnailPath": "thumbnails/2129_00_anime-male-feet-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        3,
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "feet",
+        "pose"
+      ],
+      "bytes": 24752,
+      "slug": "anime-male-feet-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2130",
+      "presetNumber": 2130,
+      "label": "Male aiming pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a pistol in his right hand and aiming to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2130_male-aiming-pistol-pose.pma",
+      "localScenePath": "scenes/2130_male-aiming-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2130_00_male-aiming-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2130_00_male-aiming-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/2130_00_male-aiming-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24198,
+      "slug": "male-aiming-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2131",
+      "presetNumber": 2131,
+      "label": "Male walking pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking, holding a pistol in his left hand, holding pistol pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2131_male-walking-pistol-pose.pma",
+      "localScenePath": "scenes/2131_male-walking-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2131_00_male-walking-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2131_00_male-walking-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/2131_00_male-walking-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24197,
+      "slug": "male-walking-pistol-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2132",
+      "presetNumber": 2132,
+      "label": "Male landing pistol pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing from a height, holding a pistol in his right hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2132_male-landing-pistol-pose.pma",
+      "localScenePath": "scenes/2132_male-landing-pistol-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2132_00_male-landing-pistol-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2132_00_male-landing-pistol-pose.png",
+          "localThumbnailPath": "thumbnails/2132_00_male-landing-pistol-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24228,
+      "slug": "male-landing-pistol-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2133",
+      "presetNumber": 2133,
+      "label": "Male pistol action pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is falling backwards while aiming the pistol, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2133_male-pistol-action-pose.pma",
+      "localScenePath": "scenes/2133_male-pistol-action-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2133_00_male-pistol-action-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2133_00_male-pistol-action-pose.png",
+          "localThumbnailPath": "thumbnails/2133_00_male-pistol-action-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24252,
+      "slug": "male-pistol-action-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2134",
+      "presetNumber": 2134,
+      "label": "Male pistol running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a pistol in his right hand and running, action pistol pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2134_male-pistol-running-pose.pma",
+      "localScenePath": "scenes/2134_male-pistol-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2134_00_male-pistol-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2134_00_male-pistol-running-pose.png",
+          "localThumbnailPath": "thumbnails/2134_00_male-pistol-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pistol",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24210,
+      "slug": "male-pistol-running-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2150",
+      "presetNumber": 2150,
+      "label": "Side kick jumping attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is attacking, jumping high and side kicking, holding a dagger",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2150_side-kick-jumping-attack-pose.pma",
+      "localScenePath": "scenes/2150_side-kick-jumping-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2150_00_side-kick-jumping-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2150_00_side-kick-jumping-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2150_00_side-kick-jumping-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "attack",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24345,
+      "slug": "side-kick-jumping-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

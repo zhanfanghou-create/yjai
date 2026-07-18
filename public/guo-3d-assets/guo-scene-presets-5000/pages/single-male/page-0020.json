@@ -1,0 +1,1110 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 19,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-1345",
+      "presetNumber": 1345,
+      "label": "One arm handstanding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is one arm handstanding on the parallel bars, holding the bar with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1345_one-arm-handstanding-pose.pma",
+      "localScenePath": "scenes/1345_one-arm-handstanding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1345_00_one-arm-handstanding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1345_00_one-arm-handstanding-pose.png",
+          "localThumbnailPath": "thumbnails/1345_00_one-arm-handstanding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 7,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gymnastic",
+        "pose"
+      ],
+      "bytes": 26862,
+      "slug": "one-arm-handstanding-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1358",
+      "presetNumber": 1358,
+      "label": "Male bending down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is bending down and leaning on his knees, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1358_male-bending-down-pose.pma",
+      "localScenePath": "scenes/1358_male-bending-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1358_00_male-bending-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1358_00_male-bending-down-pose.png",
+          "localThumbnailPath": "thumbnails/1358_00_male-bending-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bending",
+        "pose"
+      ],
+      "bytes": 23763,
+      "slug": "male-bending-down-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1359",
+      "presetNumber": 1359,
+      "label": "Male bending looking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is bending down, holding his hands behind his back and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1359_male-bending-looking-pose.pma",
+      "localScenePath": "scenes/1359_male-bending-looking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1359_00_male-bending-looking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1359_00_male-bending-looking-pose.png",
+          "localThumbnailPath": "thumbnails/1359_00_male-bending-looking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bending",
+        "pose"
+      ],
+      "bytes": 23692,
+      "slug": "male-bending-looking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1363",
+      "presetNumber": 1363,
+      "label": "Male sitting looking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting comfortably on the couch and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1363_male-sitting-looking-pose.pma",
+      "localScenePath": "scenes/1363_male-sitting-looking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1363_00_male-sitting-looking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1363_00_male-sitting-looking-pose.png",
+          "localThumbnailPath": "thumbnails/1363_00_male-sitting-looking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 24238,
+      "slug": "male-sitting-looking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1364",
+      "presetNumber": 1364,
+      "label": "Crossed legs male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the couch with his legs crossed, holding his leg with left hand and resting his right hand on top of the sofa",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1364_crossed-legs-male-sitting-pose.pma",
+      "localScenePath": "scenes/1364_crossed-legs-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1364_00_crossed-legs-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1364_00_crossed-legs-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1364_00_crossed-legs-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 24435,
+      "slug": "crossed-legs-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1365",
+      "presetNumber": 1365,
+      "label": "Male lying crossed legs pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on the couch with his legs crossed, resting his hands on his chest and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1365_male-lying-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1365_male-lying-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1365_00_male-lying-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1365_00_male-lying-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1365_00_male-lying-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 24751,
+      "slug": "male-lying-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1380",
+      "presetNumber": 1380,
+      "label": "Boxing stance male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male right handed basic boxing stance,  left hand and left foot forward, fists are close to the face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1380_boxing-stance-male-pose.pma",
+      "localScenePath": "scenes/1380_boxing-stance-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1380_00_boxing-stance-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1380_00_boxing-stance-male-pose.png",
+          "localThumbnailPath": "thumbnails/1380_00_boxing-stance-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23842,
+      "slug": "boxing-stance-male-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1381",
+      "presetNumber": 1381,
+      "label": "Cross power punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male cross power punch with right hand, right handed boxing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1381_cross-power-punch-pose.pma",
+      "localScenePath": "scenes/1381_cross-power-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1381_00_cross-power-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1381_00_cross-power-punch-pose.png",
+          "localThumbnailPath": "thumbnails/1381_00_cross-power-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23669,
+      "slug": "cross-power-punch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1382",
+      "presetNumber": 1382,
+      "label": "Left uppercut pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is throwing a left uppercut, box punching with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1382_left-uppercut-pose.pma",
+      "localScenePath": "scenes/1382_left-uppercut-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1382_00_left-uppercut-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1382_00_left-uppercut-pose.png",
+          "localThumbnailPath": "thumbnails/1382_00_left-uppercut-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23657,
+      "slug": "left-uppercut-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1383",
+      "presetNumber": 1383,
+      "label": "Right uppercut pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is throwing a right uppercut, box punching with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1383_right-uppercut-pose.pma",
+      "localScenePath": "scenes/1383_right-uppercut-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1383_00_right-uppercut-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1383_00_right-uppercut-pose.png",
+          "localThumbnailPath": "thumbnails/1383_00_right-uppercut-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23692,
+      "slug": "right-uppercut-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1384",
+      "presetNumber": 1384,
+      "label": "Right hook pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male right hook boxing pose, right elbow and left hand up, turning right heel",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1384_right-hook-pose.pma",
+      "localScenePath": "scenes/1384_right-hook-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1384_00_right-hook-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1384_00_right-hook-pose.png",
+          "localThumbnailPath": "thumbnails/1384_00_right-hook-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23693,
+      "slug": "right-hook-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1400",
+      "presetNumber": 1400,
+      "label": "Male casually standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his right hand is in his pocket, his legs are crossed and he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1400_male-casually-standing-pose.pma",
+      "localScenePath": "scenes/1400_male-casually-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1400_00_male-casually-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1400_00_male-casually-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1400_00_male-casually-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23874,
+      "slug": "male-casually-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1401",
+      "presetNumber": 1401,
+      "label": "Male confident standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently, his legs and arms are crossed and he is looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1401_male-confident-standing-pose.pma",
+      "localScenePath": "scenes/1401_male-confident-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1401_00_male-confident-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1401_00_male-confident-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1401_00_male-confident-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23874,
+      "slug": "male-confident-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1402",
+      "presetNumber": 1402,
+      "label": "Holding hips male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his hands are on his hips and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1402_holding-hips-male-standing-pose.pma",
+      "localScenePath": "scenes/1402_holding-hips-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1402_00_holding-hips-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1402_00_holding-hips-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1402_00_holding-hips-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23794,
+      "slug": "holding-hips-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1403",
+      "presetNumber": 1403,
+      "label": "Male running straight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, looking forward and running straight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1403_male-running-straight-pose.pma",
+      "localScenePath": "scenes/1403_male-running-straight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1403_00_male-running-straight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1403_00_male-running-straight-pose.png",
+          "localThumbnailPath": "thumbnails/1403_00_male-running-straight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23981,
+      "slug": "male-running-straight-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1404",
+      "presetNumber": 1404,
+      "label": "Standing deep thinking male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and thinking, looking forward and touching his face with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1404_standing-deep-thinking-male-pose.pma",
+      "localScenePath": "scenes/1404_standing-deep-thinking-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1404_00_standing-deep-thinking-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1404_00_standing-deep-thinking-male-pose.png",
+          "localThumbnailPath": "thumbnails/1404_00_standing-deep-thinking-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23831,
+      "slug": "standing-deep-thinking-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1405",
+      "presetNumber": 1405,
+      "label": "Male casual sitting chair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is casually sitting on a chair, his legs are crossed and he is resting his hands on his right leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1405_male-casual-sitting-chair-pose.pma",
+      "localScenePath": "scenes/1405_male-casual-sitting-chair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1405_00_male-casual-sitting-chair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1405_00_male-casual-sitting-chair-pose.png",
+          "localThumbnailPath": "thumbnails/1405_00_male-casual-sitting-chair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 24396,
+      "slug": "male-casual-sitting-chair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1406",
+      "presetNumber": 1406,
+      "label": "Male lying resting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is lying on the couch and resting, his legs are crossed and he is looking upwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1406_male-lying-resting-pose.pma",
+      "localScenePath": "scenes/1406_male-lying-resting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1406_00_male-lying-resting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1406_00_male-lying-resting-pose.png",
+          "localThumbnailPath": "thumbnails/1406_00_male-lying-resting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 24828,
+      "slug": "male-lying-resting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1407",
+      "presetNumber": 1407,
+      "label": "Standing waving male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, looking to the right and waving with his right hand, saying \"hi\"",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1407_standing-waving-male-pose.pma",
+      "localScenePath": "scenes/1407_standing-waving-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1407_00_standing-waving-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1407_00_standing-waving-male-pose.png",
+          "localThumbnailPath": "thumbnails/1407_00_standing-waving-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23991,
+      "slug": "standing-waving-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1409",
+      "presetNumber": 1409,
+      "label": "Confident male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing confidently and showing his right arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1409_confident-male-pose.pma",
+      "localScenePath": "scenes/1409_confident-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1409_00_confident-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1409_00_confident-male-pose.png",
+          "localThumbnailPath": "thumbnails/1409_00_confident-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "realistic",
+        "male",
+        "pose"
+      ],
+      "bytes": 23820,
+      "slug": "confident-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1411",
+      "presetNumber": 1411,
+      "label": "Baseball prepare throwing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Baseball player is standing and preparing to throw the ball with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1411_baseball-prepare-throwing-pose.pma",
+      "localScenePath": "scenes/1411_baseball-prepare-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1411_00_baseball-prepare-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1411_00_baseball-prepare-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1411_00_baseball-prepare-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24124,
+      "slug": "baseball-prepare-throwing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1412",
+      "presetNumber": 1412,
+      "label": "Baseball throwing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Baseball player is standing and throwing the ball with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1412_baseball-throwing-pose.pma",
+      "localScenePath": "scenes/1412_baseball-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1412_00_baseball-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1412_00_baseball-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1412_00_baseball-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24185,
+      "slug": "baseball-throwing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1414",
+      "presetNumber": 1414,
+      "label": "Basketball throwing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding the basketball with both hands and is about to throw it into the basket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1414_basketball-throwing-pose.pma",
+      "localScenePath": "scenes/1414_basketball-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1414_00_basketball-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1414_00_basketball-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1414_00_basketball-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24251,
+      "slug": "basketball-throwing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1417",
+      "presetNumber": 1417,
+      "label": "Bowling ball throwing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is rolling a bowling ball, bends down and throwing it with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1417_bowling-ball-throwing-pose.pma",
+      "localScenePath": "scenes/1417_bowling-ball-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1417_00_bowling-ball-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1417_00_bowling-ball-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1417_00_bowling-ball-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24217,
+      "slug": "bowling-ball-throwing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

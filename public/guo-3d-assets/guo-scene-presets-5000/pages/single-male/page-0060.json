@@ -1,0 +1,1100 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 59,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4314",
+      "presetNumber": 4314,
+      "label": "Male standing despair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Desperate male is standing and holding his head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4314_male-standing-despair-pose.pma",
+      "localScenePath": "scenes/4314_male-standing-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4314_00_male-standing-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4314_00_male-standing-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4314_00_male-standing-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 23853,
+      "slug": "male-standing-despair-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4318",
+      "presetNumber": 4318,
+      "label": "Male sitting despair pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Desperate male is sitting on the chair, looking down, holding his head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4318_male-sitting-despair-pose.pma",
+      "localScenePath": "scenes/4318_male-sitting-despair-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4318_00_male-sitting-despair-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4318_00_male-sitting-despair-pose.png",
+          "localThumbnailPath": "thumbnails/4318_00_male-sitting-despair-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "despair",
+        "pose"
+      ],
+      "bytes": 24283,
+      "slug": "male-sitting-despair-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4322",
+      "presetNumber": 4322,
+      "label": "Male crouching crying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, kneeling, looking down and crying, male crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4322_male-crouching-crying-pose.pma",
+      "localScenePath": "scenes/4322_male-crouching-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4322_00_male-crouching-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4322_00_male-crouching-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4322_00_male-crouching-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23714,
+      "slug": "male-crouching-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4327",
+      "presetNumber": 4327,
+      "label": "Male sitting crying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair, looking down, holding his head and crying",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4327_male-sitting-crying-pose.pma",
+      "localScenePath": "scenes/4327_male-sitting-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4327_00_male-sitting-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4327_00_male-sitting-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4327_00_male-sitting-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 24240,
+      "slug": "male-sitting-crying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4328",
+      "presetNumber": 4328,
+      "label": "Male standing crying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and crying, male crying pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4328_male-standing-crying-pose.pma",
+      "localScenePath": "scenes/4328_male-standing-crying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4328_00_male-standing-crying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4328_00_male-standing-crying-pose.png",
+          "localThumbnailPath": "thumbnails/4328_00_male-standing-crying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crying",
+        "pose",
+        "references.pma"
+      ],
+      "bytes": 23711,
+      "slug": "male-standing-crying-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4335",
+      "presetNumber": 4335,
+      "label": "Holding chin hand pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing casually, thinking, holding his chin with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4335_holding-chin-hand-pose.pma",
+      "localScenePath": "scenes/4335_holding-chin-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4335_00_holding-chin-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4335_00_holding-chin-hand-pose.png",
+          "localThumbnailPath": "thumbnails/4335_00_holding-chin-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        24
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        24
+      ],
+      "sourceTags": [
+        "hand",
+        "reference",
+        "anime"
+      ],
+      "bytes": 23851,
+      "slug": "holding-chin-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4341",
+      "presetNumber": 4341,
+      "label": "Male crazy standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Crazy upset male is standing and looking up, male crazy pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4341_male-crazy-standing-pose.pma",
+      "localScenePath": "scenes/4341_male-crazy-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4341_00_male-crazy-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4341_00_male-crazy-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4341_00_male-crazy-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        29
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        29
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23808,
+      "slug": "male-crazy-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4343",
+      "presetNumber": 4343,
+      "label": "Crazy holding head pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Crazy upset male is standing, holding his head and looking up, going crazy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4343_crazy-holding-head-pose.pma",
+      "localScenePath": "scenes/4343_crazy-holding-head-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4343_00_crazy-holding-head-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4343_00_crazy-holding-head-pose.png",
+          "localThumbnailPath": "thumbnails/4343_00_crazy-holding-head-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        29
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        29
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23803,
+      "slug": "crazy-holding-head-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4345",
+      "presetNumber": 4345,
+      "label": "Crazy walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking like he is crazy, male crazy pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4345_crazy-walking-pose.pma",
+      "localScenePath": "scenes/4345_crazy-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4345_00_crazy-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4345_00_crazy-walking-pose.png",
+          "localThumbnailPath": "thumbnails/4345_00_crazy-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        29
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        29
+      ],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23883,
+      "slug": "crazy-walking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4347",
+      "presetNumber": 4347,
+      "label": "Male crazy jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is jumping high, stretching his arms and legs like a crazy",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4347_male-crazy-jumping-pose.pma",
+      "localScenePath": "scenes/4347_male-crazy-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4347_00_male-crazy-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4347_00_male-crazy-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/4347_00_male-crazy-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "crazy",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23170,
+      "slug": "male-crazy-jumping-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4350",
+      "presetNumber": 4350,
+      "label": "Male armchair leaning back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting in the armchair with his legs crossed and leaning back, looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4350_male-armchair-leaning-back-pose.pma",
+      "localScenePath": "scenes/4350_male-armchair-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4350_00_male-armchair-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4350_00_male-armchair-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4350_00_male-armchair-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23504,
+      "slug": "male-armchair-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4351",
+      "presetNumber": 4351,
+      "label": "Male chair leaning back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Tired male is sitting on the chair comfortably and leaning back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4351_male-chair-leaning-back-pose.pma",
+      "localScenePath": "scenes/4351_male-chair-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4351_00_male-chair-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4351_00_male-chair-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4351_00_male-chair-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23514,
+      "slug": "male-chair-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4357",
+      "presetNumber": 4357,
+      "label": "Male sitting leaning back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the ground and leaning back, male leaning back pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4357_male-sitting-leaning-back-pose.pma",
+      "localScenePath": "scenes/4357_male-sitting-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4357_00_male-sitting-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4357_00_male-sitting-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4357_00_male-sitting-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23179,
+      "slug": "male-sitting-leaning-back-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4358",
+      "presetNumber": 4358,
+      "label": "Male stretching leaning back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, stretching his arms and leaning back, looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4358_male-stretching-leaning-back-pose.pma",
+      "localScenePath": "scenes/4358_male-stretching-leaning-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4358_00_male-stretching-leaning-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4358_00_male-stretching-leaning-back-pose.png",
+          "localThumbnailPath": "thumbnails/4358_00_male-stretching-leaning-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "leaning",
+        "back",
+        "pose"
+      ],
+      "bytes": 23056,
+      "slug": "male-stretching-leaning-back-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4361",
+      "presetNumber": 4361,
+      "label": "Male victory power pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on a rock and showing his arm muscles, celebrating victory, male power pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4361_male-victory-power-pose.pma",
+      "localScenePath": "scenes/4361_male-victory-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4361_00_male-victory-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4361_00_male-victory-power-pose.png",
+          "localThumbnailPath": "thumbnails/4361_00_male-victory-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        179
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23478,
+      "slug": "male-victory-power-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4364",
+      "presetNumber": 4364,
+      "label": "Male muscle power pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular male is standing, holding his hip and showing his arm muscles",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4364_male-muscle-power-pose.pma",
+      "localScenePath": "scenes/4364_male-muscle-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4364_00_male-muscle-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4364_00_male-muscle-power-pose.png",
+          "localThumbnailPath": "thumbnails/4364_00_male-muscle-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        40
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20193,
+      "slug": "male-muscle-power-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4365",
+      "presetNumber": 4365,
+      "label": "Brute male power pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Brute male is clenching his fists and running, brute male power pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4365_brute-male-power-pose.pma",
+      "localScenePath": "scenes/4365_brute-male-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4365_00_brute-male-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4365_00_brute-male-power-pose.png",
+          "localThumbnailPath": "thumbnails/4365_00_brute-male-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 20225,
+      "slug": "brute-male-power-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4366",
+      "presetNumber": 4366,
+      "label": "Holding hammers power pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Muscular brute male is standing and holding big fantasy hammers",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4366_holding-hammers-power-pose.pma",
+      "localScenePath": "scenes/4366_holding-hammers-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4366_00_holding-hammers-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4366_00_holding-hammers-power-pose.png",
+          "localThumbnailPath": "thumbnails/4366_00_holding-hammers-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        43
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 21244,
+      "slug": "holding-hammers-power-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4368",
+      "presetNumber": 4368,
+      "label": "Male landing power pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing on his fist, male power pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4368_male-landing-power-pose.pma",
+      "localScenePath": "scenes/4368_male-landing-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4368_00_male-landing-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4368_00_male-landing-power-pose.png",
+          "localThumbnailPath": "thumbnails/4368_00_male-landing-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22994,
+      "slug": "male-landing-power-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4369",
+      "presetNumber": 4369,
+      "label": "Devil male power pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is standing and casting a spell, looking up, fantasy male power pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4369_devil-male-power-pose.pma",
+      "localScenePath": "scenes/4369_devil-male-power-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4369_00_devil-male-power-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4369_00_devil-male-power-pose.png",
+          "localThumbnailPath": "thumbnails/4369_00_devil-male-power-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "power",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23606,
+      "slug": "devil-male-power-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4381",
+      "presetNumber": 4381,
+      "label": "Dead soldier pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Dead male soldier is lying on the ground leaning against a barrel, his gun dropped from his hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4381_dead-soldier-pose.pma",
+      "localScenePath": "scenes/4381_dead-soldier-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4381_00_dead-soldier-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4381_00_dead-soldier-pose.png",
+          "localThumbnailPath": "thumbnails/4381_00_dead-soldier-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        160,
+        199,
+        206
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24902,
+      "slug": "dead-soldier-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4383",
+      "presetNumber": 4383,
+      "label": "Couch dead lying pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured, dead male is lying on the couch, male dead pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4383_couch-dead-lying-pose.pma",
+      "localScenePath": "scenes/4383_couch-dead-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4383_00_couch-dead-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4383_00_couch-dead-lying-pose.png",
+          "localThumbnailPath": "thumbnails/4383_00_couch-dead-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        185
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23418,
+      "slug": "couch-dead-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4386",
+      "presetNumber": 4386,
+      "label": "Dead male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Dead male is sitting on the chair with unconscious body, male dead pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4386_dead-male-sitting-pose.pma",
+      "localScenePath": "scenes/4386_dead-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4386_00_dead-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4386_00_dead-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4386_00_dead-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23382,
+      "slug": "dead-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4388",
+      "presetNumber": 4388,
+      "label": "Dead male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Dead male is lying on the ground, male unconscious body pose, male dead pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4388_dead-male-pose.pma",
+      "localScenePath": "scenes/4388_dead-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4388_00_dead-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4388_00_dead-male-pose.png",
+          "localThumbnailPath": "thumbnails/4388_00_dead-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dead",
+        "pose",
+        "reference"
+      ],
+      "bytes": 22978,
+      "slug": "dead-male-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    }
+  ]
+}

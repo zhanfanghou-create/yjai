@@ -1,0 +1,990 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 3,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-0283",
+      "presetNumber": 283,
+      "label": "Male standing holding staff pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male holding a staff in her left hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0283_male-standing-holding-staff-pose.pma",
+      "localScenePath": "scenes/0283_male-standing-holding-staff-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0283_00_male-standing-holding-staff-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0283_00_male-standing-holding-staff-pose.png",
+          "localThumbnailPath": "thumbnails/0283_00_male-standing-holding-staff-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "staff"
+      ],
+      "bytes": 24333,
+      "slug": "male-standing-holding-staff-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0284",
+      "presetNumber": 284,
+      "label": "Holding staff male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male holding a staff in her right hand pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0284_holding-staff-male-pose.pma",
+      "localScenePath": "scenes/0284_holding-staff-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0284_00_holding-staff-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0284_00_holding-staff-male-pose.png",
+          "localThumbnailPath": "thumbnails/0284_00_holding-staff-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "staff"
+      ],
+      "bytes": 24225,
+      "slug": "holding-staff-male-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0285",
+      "presetNumber": 285,
+      "label": "Male inviting fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male holding a staff and inviting to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0285_male-inviting-fight-pose.pma",
+      "localScenePath": "scenes/0285_male-inviting-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0285_00_male-inviting-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0285_00_male-inviting-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0285_00_male-inviting-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "staff"
+      ],
+      "bytes": 24351,
+      "slug": "male-inviting-fight-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0288",
+      "presetNumber": 288,
+      "label": "Male jumps pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps high and kicks while leaning on the staff pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0288_male-jumps-pose.pma",
+      "localScenePath": "scenes/0288_male-jumps-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0288_00_male-jumps-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0288_00_male-jumps-pose.png",
+          "localThumbnailPath": "thumbnails/0288_00_male-jumps-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "staff"
+      ],
+      "bytes": 23964,
+      "slug": "male-jumps-pose"
+    },
+    {
+      "id": "guo-scene-0300",
+      "presetNumber": 300,
+      "label": "Angry male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male with clenched fists pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0300_angry-male-pose.pma",
+      "localScenePath": "scenes/0300_angry-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0300_00_angry-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0300_00_angry-male-pose.png",
+          "localThumbnailPath": "thumbnails/0300_00_angry-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "angry"
+      ],
+      "bytes": 23692,
+      "slug": "angry-male-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0308",
+      "presetNumber": 308,
+      "label": "Angry \"get out\" pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male shows the way with his finger \"get out!\" pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0308_angry-get-out-pose.pma",
+      "localScenePath": "scenes/0308_angry-get-out-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0308_00_angry-get-out-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0308_00_angry-get-out-pose.png",
+          "localThumbnailPath": "thumbnails/0308_00_angry-get-out-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "angry"
+      ],
+      "bytes": 23526,
+      "slug": "angry-get-out-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0309",
+      "presetNumber": 309,
+      "label": "Angry looking sky pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is looking at the sky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0309_angry-looking-sky-pose.pma",
+      "localScenePath": "scenes/0309_angry-looking-sky-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0309_00_angry-looking-sky-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0309_00_angry-looking-sky-pose.png",
+          "localThumbnailPath": "thumbnails/0309_00_angry-looking-sky-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "angry"
+      ],
+      "bytes": 23578,
+      "slug": "angry-looking-sky-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0310",
+      "presetNumber": 310,
+      "label": "Superman flying sky pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Superman flying into the sky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0310_superman-flying-sky-pose.pma",
+      "localScenePath": "scenes/0310_superman-flying-sky-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0310_00_superman-flying-sky-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0310_00_superman-flying-sky-pose.png",
+          "localThumbnailPath": "thumbnails/0310_00_superman-flying-sky-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23689,
+      "slug": "superman-flying-sky-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0311",
+      "presetNumber": 311,
+      "label": "Heroic proud pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Heroic male stands proud while floating in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0311_heroic-proud-pose.pma",
+      "localScenePath": "scenes/0311_heroic-proud-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0311_00_heroic-proud-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0311_00_heroic-proud-pose.png",
+          "localThumbnailPath": "thumbnails/0311_00_heroic-proud-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23666,
+      "slug": "heroic-proud-pose"
+    },
+    {
+      "id": "guo-scene-0312",
+      "presetNumber": 312,
+      "label": "Heroic victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Heroic male celebrates a victory pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0312_heroic-victory-pose.pma",
+      "localScenePath": "scenes/0312_heroic-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0312_00_heroic-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0312_00_heroic-victory-pose.png",
+          "localThumbnailPath": "thumbnails/0312_00_heroic-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23509,
+      "slug": "heroic-victory-pose"
+    },
+    {
+      "id": "guo-scene-0313",
+      "presetNumber": 313,
+      "label": "Heroic standing invincible pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Heroic male standing invincible pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0313_heroic-standing-invincible-pose.pma",
+      "localScenePath": "scenes/0313_heroic-standing-invincible-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0313_00_heroic-standing-invincible-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0313_00_heroic-standing-invincible-pose.png",
+          "localThumbnailPath": "thumbnails/0313_00_heroic-standing-invincible-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23560,
+      "slug": "heroic-standing-invincible-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0314",
+      "presetNumber": 314,
+      "label": "Celebrating victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Heroic male standing and celebrating a victory pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0314_celebrating-victory-pose.pma",
+      "localScenePath": "scenes/0314_celebrating-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0314_00_celebrating-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0314_00_celebrating-victory-pose.png",
+          "localThumbnailPath": "thumbnails/0314_00_celebrating-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "heroic"
+      ],
+      "bytes": 23531,
+      "slug": "celebrating-victory-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0325",
+      "presetNumber": 325,
+      "label": "Male action jump pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male action jump in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0325_male-action-jump-pose.pma",
+      "localScenePath": "scenes/0325_male-action-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0325_00_male-action-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0325_00_male-action-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0325_00_male-action-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23678,
+      "slug": "male-action-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0326",
+      "presetNumber": 326,
+      "label": "Male parkour jump pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping far, parkour jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0326_male-parkour-jump-pose.pma",
+      "localScenePath": "scenes/0326_male-parkour-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0326_00_male-parkour-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0326_00_male-parkour-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0326_00_male-parkour-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23721,
+      "slug": "male-parkour-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0327",
+      "presetNumber": 327,
+      "label": "Basketball jumping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male basketball player is jumping high pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0327_basketball-jumping-pose.pma",
+      "localScenePath": "scenes/0327_basketball-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0327_00_basketball-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0327_00_basketball-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/0327_00_basketball-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 24241,
+      "slug": "basketball-jumping-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0328",
+      "presetNumber": 328,
+      "label": "Jumping down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps down from somewhere pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0328_jumping-down-pose.pma",
+      "localScenePath": "scenes/0328_jumping-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0328_00_jumping-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0328_00_jumping-down-pose.png",
+          "localThumbnailPath": "thumbnails/0328_00_jumping-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23727,
+      "slug": "jumping-down-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0329",
+      "presetNumber": 329,
+      "label": "High jump pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male jumps up high with clenched fists pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0329_high-jump-pose.pma",
+      "localScenePath": "scenes/0329_high-jump-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0329_00_high-jump-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0329_00_high-jump-pose.png",
+          "localThumbnailPath": "thumbnails/0329_00_high-jump-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "jumping"
+      ],
+      "bytes": 23684,
+      "slug": "high-jump-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0330",
+      "presetNumber": 330,
+      "label": "Left hand karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with left hand raised karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0330_left-hand-karate-pose.pma",
+      "localScenePath": "scenes/0330_left-hand-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0330_00_left-hand-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0330_00_left-hand-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0330_00_left-hand-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23533,
+      "slug": "left-hand-karate-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0331",
+      "presetNumber": 331,
+      "label": "Left foot kicking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male kicks with left foot karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0331_left-foot-kicking-pose.pma",
+      "localScenePath": "scenes/0331_left-foot-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0331_00_left-foot-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0331_00_left-foot-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/0331_00_left-foot-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23494,
+      "slug": "left-foot-kicking-pose"
+    },
+    {
+      "id": "guo-scene-0332",
+      "presetNumber": 332,
+      "label": "Karate standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Karate male standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0332_karate-standing-pose.pma",
+      "localScenePath": "scenes/0332_karate-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0332_00_karate-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0332_00_karate-standing-pose.png",
+          "localThumbnailPath": "thumbnails/0332_00_karate-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23890,
+      "slug": "karate-standing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0333",
+      "presetNumber": 333,
+      "label": "Ready fight karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is ready to fight karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0333_ready-fight-karate-pose.pma",
+      "localScenePath": "scenes/0333_ready-fight-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0333_00_ready-fight-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0333_00_ready-fight-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0333_00_ready-fight-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23889,
+      "slug": "ready-fight-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0334",
+      "presetNumber": 334,
+      "label": "Inviting fight karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is inviting to fight karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0334_inviting-fight-karate-pose.pma",
+      "localScenePath": "scenes/0334_inviting-fight-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0334_00_inviting-fight-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0334_00_inviting-fight-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0334_00_inviting-fight-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23812,
+      "slug": "inviting-fight-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0335",
+      "presetNumber": 335,
+      "label": "Air kick karate pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male kicks in the air with right foot karate pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0335_air-kick-karate-pose.pma",
+      "localScenePath": "scenes/0335_air-kick-karate-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0335_00_air-kick-karate-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0335_00_air-kick-karate-pose.png",
+          "localThumbnailPath": "thumbnails/0335_00_air-kick-karate-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "karate"
+      ],
+      "bytes": 23747,
+      "slug": "air-kick-karate-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0340",
+      "presetNumber": 340,
+      "label": "Preparing punch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is preparing for a punch pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0340_preparing-punch-pose.pma",
+      "localScenePath": "scenes/0340_preparing-punch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0340_00_preparing-punch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0340_00_preparing-punch-pose.png",
+          "localThumbnailPath": "thumbnails/0340_00_preparing-punch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "punching"
+      ],
+      "bytes": 23637,
+      "slug": "preparing-punch-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1125 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 124,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2977",
+      "presetNumber": 2977,
+      "label": "Male rider walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male rider is sitting on the horse and looking to the right, the horse is walking slowly",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2977_male-rider-walking-pose.pma",
+      "localScenePath": "scenes/2977_male-rider-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2977_00_male-rider-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2977_00_male-rider-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2977_00_male-rider-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 31066,
+      "slug": "male-rider-walking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "animal-creature",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "动物/异形",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2978",
+      "presetNumber": 2978,
+      "label": "Male riding jumping obstacle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male rider is jumping over an obstacle with his horse, male horse rider pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2978_male-riding-jumping-obstacle-pose.pma",
+      "localScenePath": "scenes/2978_male-riding-jumping-obstacle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2978_00_male-riding-jumping-obstacle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2978_00_male-riding-jumping-obstacle-pose.png",
+          "localThumbnailPath": "thumbnails/2978_00_male-riding-jumping-obstacle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        33,
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 33310,
+      "slug": "male-riding-jumping-obstacle-pose",
+      "tagIds": [
+        "animal-creature"
+      ],
+      "tags": [
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2979",
+      "presetNumber": 2979,
+      "label": "Female riding jumping obstacle pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female rider is jumping over an obstacle with her horse, female horse rider pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2979_female-riding-jumping-obstacle-pose.pma",
+      "localScenePath": "scenes/2979_female-riding-jumping-obstacle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2979_00_female-riding-jumping-obstacle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2979_00_female-riding-jumping-obstacle-pose.png",
+          "localThumbnailPath": "thumbnails/2979_00_female-riding-jumping-obstacle-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        33,
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "horse",
+        "rider",
+        "pose"
+      ],
+      "bytes": 33074,
+      "slug": "female-riding-jumping-obstacle-pose",
+      "tagIds": [
+        "animal-creature"
+      ],
+      "tags": [
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2980",
+      "presetNumber": 2980,
+      "label": "Standing hind legs pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is standing on his two hind legs, raising his front legs, dynamic horse pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2980_standing-hind-legs-pose.pma",
+      "localScenePath": "scenes/2980_standing-hind-legs-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8165,
+      "slug": "standing-hind-legs-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2981",
+      "presetNumber": 2981,
+      "label": "Anime horse jumping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female rider is jumping with her horse and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2981_anime-horse-jumping-pose.pma",
+      "localScenePath": "scenes/2981_anime-horse-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2981_00_anime-horse-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2981_00_anime-horse-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/2981_00_anime-horse-jumping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        53
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33,
+        53
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 31343,
+      "slug": "anime-horse-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2982",
+      "presetNumber": 2982,
+      "label": "Anime horse galloping pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male rider is galloping and looking to the left, dynamic horse pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2982_anime-horse-galloping-pose.pma",
+      "localScenePath": "scenes/2982_anime-horse-galloping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2982_00_anime-horse-galloping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2982_00_anime-horse-galloping-pose.png",
+          "localThumbnailPath": "thumbnails/2982_00_anime-horse-galloping-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33,
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 30946,
+      "slug": "anime-horse-galloping-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2983",
+      "presetNumber": 2983,
+      "label": "Horse raising leg pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is standing elegantly, raising its left front leg and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2983_horse-raising-leg-pose.pma",
+      "localScenePath": "scenes/2983_horse-raising-leg-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8204,
+      "slug": "horse-raising-leg-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2984",
+      "presetNumber": 2984,
+      "label": "Dynamic horse trotting pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is trotting, looking slightly to the right, dynamic trotting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2984_dynamic-horse-trotting-pose.pma",
+      "localScenePath": "scenes/2984_dynamic-horse-trotting-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8059,
+      "slug": "dynamic-horse-trotting-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2985",
+      "presetNumber": 2985,
+      "label": "Dynamic horse galloping pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is galloping, looking slightly to the left, dynamic galloping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2985_dynamic-horse-galloping-pose.pma",
+      "localScenePath": "scenes/2985_dynamic-horse-galloping-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8052,
+      "slug": "dynamic-horse-galloping-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2986",
+      "presetNumber": 2986,
+      "label": "Horse raising legs pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is standing on his two hind legs, raising his front legs and turning to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2986_horse-raising-legs-pose.pma",
+      "localScenePath": "scenes/2986_horse-raising-legs-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8126,
+      "slug": "horse-raising-legs-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2987",
+      "presetNumber": 2987,
+      "label": "Horse sliding stop pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse sliding stop pose, dynamic horse pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2987_horse-sliding-stop-pose.pma",
+      "localScenePath": "scenes/2987_horse-sliding-stop-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8129,
+      "slug": "horse-sliding-stop-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-2988",
+      "presetNumber": 2988,
+      "label": "Horse slowly walking pose",
+      "categoryId": "animal-creature",
+      "categoryLabel": "动物/异形",
+      "categoryIds": [
+        "animal-creature"
+      ],
+      "description": "Horse is walking slowly and looking forward, horse walking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2988_horse-slowly-walking-pose.pma",
+      "localScenePath": "scenes/2988_horse-slowly-walking-pose.pma",
+      "thumbnails": [],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 8181,
+      "slug": "horse-slowly-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2989",
+      "presetNumber": 2989,
+      "label": "Horses trotting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two horses are trotting next to each other, dynamic trotting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2989_horses-trotting-pose.pma",
+      "localScenePath": "scenes/2989_horses-trotting-pose.pma",
+      "thumbnails": [],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        33
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        33
+      ],
+      "sourceTags": [
+        "dynamic",
+        "horse",
+        "pose"
+      ],
+      "bytes": 15456,
+      "slug": "horses-trotting-pose",
+      "tagIds": [
+        "movement-dance",
+        "animal-creature"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "动物/异形"
+      ]
+    },
+    {
+      "id": "guo-scene-2990",
+      "presetNumber": 2990,
+      "label": "Anime holding sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and holding a sword in her right hand, anime holding sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2990_anime-holding-sword-pose.pma",
+      "localScenePath": "scenes/2990_anime-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2990_00_anime-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2990_00_anime-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2990_00_anime-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24208,
+      "slug": "anime-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2991",
+      "presetNumber": 2991,
+      "label": "Walking holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is walking, holding a sword with both hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2991_walking-holding-sword-pose.pma",
+      "localScenePath": "scenes/2991_walking-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2991_00_walking-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2991_00_walking-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2991_00_walking-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24338,
+      "slug": "walking-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2992",
+      "presetNumber": 2992,
+      "label": "Female holding sword attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is crouching and holding a sword with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2992_female-holding-sword-attack-pose.pma",
+      "localScenePath": "scenes/2992_female-holding-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2992_00_female-holding-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2992_00_female-holding-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/2992_00_female-holding-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24338,
+      "slug": "female-holding-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2993",
+      "presetNumber": 2993,
+      "label": "Kneeling holding sword anime pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling, looking to the left, holding a sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2993_kneeling-holding-sword-anime-pose.pma",
+      "localScenePath": "scenes/2993_kneeling-holding-sword-anime-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2993_00_kneeling-holding-sword-anime-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2993_00_kneeling-holding-sword-anime-pose.png",
+          "localThumbnailPath": "thumbnails/2993_00_kneeling-holding-sword-anime-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24484,
+      "slug": "kneeling-holding-sword-anime-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2994",
+      "presetNumber": 2994,
+      "label": "Jumping sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is jumping, holding a sword with both hands and swinging it backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2994_jumping-sword-pose.pma",
+      "localScenePath": "scenes/2994_jumping-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2994_00_jumping-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2994_00_jumping-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2994_00_jumping-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24253,
+      "slug": "jumping-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2995",
+      "presetNumber": 2995,
+      "label": "Female standing sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing and holding a sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2995_female-standing-sword-pose.pma",
+      "localScenePath": "scenes/2995_female-standing-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2995_00_female-standing-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2995_00_female-standing-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2995_00_female-standing-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24386,
+      "slug": "female-standing-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2996",
+      "presetNumber": 2996,
+      "label": "Anime female jumping sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is jumping, holding a sword in her right hand and swinging it backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2996_anime-female-jumping-sword-pose.pma",
+      "localScenePath": "scenes/2996_anime-female-jumping-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2996_00_anime-female-jumping-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2996_00_anime-female-jumping-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2996_00_anime-female-jumping-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24471,
+      "slug": "anime-female-jumping-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2997",
+      "presetNumber": 2997,
+      "label": "Male drawing sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is drawing his sword from its sheath, anime male holding sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2997_male-drawing-sword-pose.pma",
+      "localScenePath": "scenes/2997_male-drawing-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2997_00_male-drawing-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2997_00_male-drawing-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2997_00_male-drawing-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        146,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24881,
+      "slug": "male-drawing-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2998",
+      "presetNumber": 2998,
+      "label": "Anime running sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is running, holding a shield in his left hand and a sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2998_anime-running-sword-pose.pma",
+      "localScenePath": "scenes/2998_anime-running-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2998_00_anime-running-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2998_00_anime-running-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2998_00_anime-running-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24783,
+      "slug": "anime-running-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2999",
+      "presetNumber": 2999,
+      "label": "Anime kneeling sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is kneeling, holding a shield in her left hand and a sword in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2999_anime-kneeling-sword-pose.pma",
+      "localScenePath": "scenes/2999_anime-kneeling-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2999_00_anime-kneeling-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2999_00_anime-kneeling-sword-pose.png",
+          "localThumbnailPath": "thumbnails/2999_00_anime-kneeling-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        53
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        53
+      ],
+      "sourceTags": [
+        "anime",
+        "holding",
+        "sword",
+        "pose"
+      ],
+      "bytes": 24952,
+      "slug": "anime-kneeling-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3000",
+      "presetNumber": 3000,
+      "label": "Female running away pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, looking ahead and running away from something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3000_female-running-away-pose.pma",
+      "localScenePath": "scenes/3000_female-running-away-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3000_00_female-running-away-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3000_00_female-running-away-pose.png",
+          "localThumbnailPath": "thumbnails/3000_00_female-running-away-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "running",
+        "away",
+        "pose"
+      ],
+      "bytes": 23591,
+      "slug": "female-running-away-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

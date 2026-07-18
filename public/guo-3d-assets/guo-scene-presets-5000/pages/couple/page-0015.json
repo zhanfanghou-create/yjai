@@ -1,0 +1,1214 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 14,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-1608",
+      "presetNumber": 1608,
+      "label": "Anime robot dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are robot dancing, anime robot dance pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1608_anime-robot-dance-pose.pma",
+      "localScenePath": "scenes/1608_anime-robot-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1608_00_anime-robot-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1608_00_anime-robot-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1608_00_anime-robot-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1608_01_anime-robot-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1608_01_anime-robot-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "dancing",
+        "pose"
+      ],
+      "bytes": 46937,
+      "slug": "anime-robot-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1635",
+      "presetNumber": 1635,
+      "label": "Female without umbrella pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding an umbrella and looking at the female who is angry",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1635_female-without-umbrella-pose.pma",
+      "localScenePath": "scenes/1635_female-without-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1635_00_female-without-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1635_00_female-without-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1635_00_female-without-umbrella-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1635_01_female-without-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1635_01_female-without-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46867,
+      "slug": "female-without-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1636",
+      "presetNumber": 1636,
+      "label": "Couple holding umbrella pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are holding an umbrella together and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1636_couple-holding-umbrella-pose.pma",
+      "localScenePath": "scenes/1636_couple-holding-umbrella-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1636_00_couple-holding-umbrella-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1636_00_couple-holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1636_00_couple-holding-umbrella-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1636_01_couple-holding-umbrella-pose.png",
+          "localThumbnailPath": "thumbnails/1636_01_couple-holding-umbrella-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        100
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "umbrella",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 46876,
+      "slug": "couple-holding-umbrella-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1676",
+      "presetNumber": 1676,
+      "label": "Anime sitting talking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are sitting on the couch and talking, looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1676_anime-sitting-talking-pose.pma",
+      "localScenePath": "scenes/1676_anime-sitting-talking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1676_00_anime-sitting-talking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1676_00_anime-sitting-talking-pose.png",
+          "localThumbnailPath": "thumbnails/1676_00_anime-sitting-talking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1676_01_anime-sitting-talking-pose.png",
+          "localThumbnailPath": "thumbnails/1676_01_anime-sitting-talking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "sitting",
+        "pose"
+      ],
+      "bytes": 47220,
+      "slug": "anime-sitting-talking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1695",
+      "presetNumber": 1695,
+      "label": "Angel and demon pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female angel and male demon are floating in the air and looking at each other, the angel is looking down on him, the male is clenching his fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1695_angel-and-demon-pose.pma",
+      "localScenePath": "scenes/1695_angel-and-demon-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1695_00_angel-and-demon-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1695_00_angel-and-demon-pose.png",
+          "localThumbnailPath": "thumbnails/1695_00_angel-and-demon-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1695_01_angel-and-demon-pose.png",
+          "localThumbnailPath": "thumbnails/1695_01_angel-and-demon-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        86,
+        91,
+        92
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "demon",
+        "pose"
+      ],
+      "bytes": 47910,
+      "slug": "angel-and-demon-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1697",
+      "presetNumber": 1697,
+      "label": "Demon victim pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male with devil wings is aiming his trident at his victim, who is crawling backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1697_demon-victim-pose.pma",
+      "localScenePath": "scenes/1697_demon-victim-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1697_00_demon-victim-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1697_00_demon-victim-pose.png",
+          "localThumbnailPath": "thumbnails/1697_00_demon-victim-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1697_01_demon-victim-pose.png",
+          "localThumbnailPath": "thumbnails/1697_01_demon-victim-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        86,
+        112
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "demon",
+        "pose"
+      ],
+      "bytes": 47564,
+      "slug": "demon-victim-pose"
+    },
+    {
+      "id": "guo-scene-1709",
+      "presetNumber": 1709,
+      "label": "Wizard witch fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Wizard and witch are fighting, the wizard is casting a spell on the witch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1709_wizard-witch-fight-pose.pma",
+      "localScenePath": "scenes/1709_wizard-witch-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1709_00_wizard-witch-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1709_00_wizard-witch-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1709_00_wizard-witch-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1709_01_wizard-witch-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1709_01_wizard-witch-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        94,
+        95,
+        96,
+        114,
+        116
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 48981,
+      "slug": "wizard-witch-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1718",
+      "presetNumber": 1718,
+      "label": "Chibi standing talking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibi males are standing and talking to each other, chibi standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1718_chibi-standing-talking-pose.pma",
+      "localScenePath": "scenes/1718_chibi-standing-talking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1718_00_chibi-standing-talking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1718_00_chibi-standing-talking-pose.png",
+          "localThumbnailPath": "thumbnails/1718_00_chibi-standing-talking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1718_01_chibi-standing-talking-pose.png",
+          "localThumbnailPath": "thumbnails/1718_01_chibi-standing-talking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46739,
+      "slug": "chibi-standing-talking-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1720",
+      "presetNumber": 1720,
+      "label": "Forehead kiss hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging each other, the male is giving a forehead kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1720_forehead-kiss-hugging-pose.pma",
+      "localScenePath": "scenes/1720_forehead-kiss-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1720_00_forehead-kiss-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1720_00_forehead-kiss-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1720_00_forehead-kiss-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1720_01_forehead-kiss-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1720_01_forehead-kiss-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46975,
+      "slug": "forehead-kiss-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1721",
+      "presetNumber": 1721,
+      "label": "Anime females hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are hugging each other and posing, anime hugging pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1721_anime-females-hugging-pose.pma",
+      "localScenePath": "scenes/1721_anime-females-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1721_00_anime-females-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1721_00_anime-females-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1721_00_anime-females-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1721_01_anime-females-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1721_01_anime-females-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 47117,
+      "slug": "anime-females-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1722",
+      "presetNumber": 1722,
+      "label": "Anime couple hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is hugging the female from behind and they are looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1722_anime-couple-hugging-pose.pma",
+      "localScenePath": "scenes/1722_anime-couple-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1722_00_anime-couple-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1722_00_anime-couple-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1722_00_anime-couple-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1722_01_anime-couple-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1722_01_anime-couple-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        56,
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46825,
+      "slug": "anime-couple-hugging-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1723",
+      "presetNumber": 1723,
+      "label": "Anime tight hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are hugging each other, anime hugging pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1723_anime-tight-hugging-pose.pma",
+      "localScenePath": "scenes/1723_anime-tight-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1723_00_anime-tight-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1723_00_anime-tight-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1723_00_anime-tight-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1723_01_anime-tight-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1723_01_anime-tight-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46735,
+      "slug": "anime-tight-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1724",
+      "presetNumber": 1724,
+      "label": "Anime romantic hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging each other and dancing, romantic hugging pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1724_anime-romantic-hugging-pose.pma",
+      "localScenePath": "scenes/1724_anime-romantic-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1724_00_anime-romantic-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1724_00_anime-romantic-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1724_00_anime-romantic-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1724_01_anime-romantic-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1724_01_anime-romantic-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46974,
+      "slug": "anime-romantic-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1725",
+      "presetNumber": 1725,
+      "label": "Anime sitting hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are sitting on the couch and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1725_anime-sitting-hugging-pose.pma",
+      "localScenePath": "scenes/1725_anime-sitting-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1725_00_anime-sitting-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1725_00_anime-sitting-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1725_00_anime-sitting-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1725_01_anime-sitting-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1725_01_anime-sitting-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 47417,
+      "slug": "anime-sitting-hugging-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1726",
+      "presetNumber": 1726,
+      "label": "Anime surprise hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is jumping and hugging the male, anime surprise hug pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1726_anime-surprise-hugging-pose.pma",
+      "localScenePath": "scenes/1726_anime-surprise-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1726_00_anime-surprise-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1726_00_anime-surprise-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1726_00_anime-surprise-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1726_01_anime-surprise-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1726_01_anime-surprise-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46754,
+      "slug": "anime-surprise-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1727",
+      "presetNumber": 1727,
+      "label": "Anime friends hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are hugging each other, they are looking forward, one of them is waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1727_anime-friends-hugging-pose.pma",
+      "localScenePath": "scenes/1727_anime-friends-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1727_00_anime-friends-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1727_00_anime-friends-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1727_00_anime-friends-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1727_01_anime-friends-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1727_01_anime-friends-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46619,
+      "slug": "anime-friends-hugging-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1728",
+      "presetNumber": 1728,
+      "label": "Anime kissing hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male couple is hugging each other and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1728_anime-kissing-hugging-pose.pma",
+      "localScenePath": "scenes/1728_anime-kissing-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1728_00_anime-kissing-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1728_00_anime-kissing-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1728_00_anime-kissing-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1728_01_anime-kissing-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1728_01_anime-kissing-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 47036,
+      "slug": "anime-kissing-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1729",
+      "presetNumber": 1729,
+      "label": "Anime males hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime males are hugging each other, holding each other's shoulders and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1729_anime-males-hugging-pose.pma",
+      "localScenePath": "scenes/1729_anime-males-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1729_00_anime-males-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1729_00_anime-males-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1729_00_anime-males-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1729_01_anime-males-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1729_01_anime-males-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46895,
+      "slug": "anime-males-hugging-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1736",
+      "presetNumber": 1736,
+      "label": "Cooking couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are cooking together, the male is chopping, the female is stirring",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1736_cooking-couple-pose.pma",
+      "localScenePath": "scenes/1736_cooking-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1736_00_cooking-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1736_00_cooking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/1736_00_cooking-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1736_01_cooking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/1736_01_cooking-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 8,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 50170,
+      "slug": "cooking-couple-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1738",
+      "presetNumber": 1738,
+      "label": "Couple cooking salting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male are cooking together, the male is holding the pan and the female is adding a pinch of salt",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1738_couple-cooking-salting-pose.pma",
+      "localScenePath": "scenes/1738_couple-cooking-salting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1738_00_couple-cooking-salting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1738_00_couple-cooking-salting-pose.png",
+          "localThumbnailPath": "thumbnails/1738_00_couple-cooking-salting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1738_01_couple-cooking-salting-pose.png",
+          "localThumbnailPath": "thumbnails/1738_01_couple-cooking-salting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        118,
+        119,
+        121,
+        122
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cooking",
+        "pose"
+      ],
+      "bytes": 48310,
+      "slug": "couple-cooking-salting-pose",
+      "tagIds": [
+        "scene-interior"
+      ],
+      "tags": [
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-1740",
+      "presetNumber": 1740,
+      "label": "Anime hugging kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging and kissing, anime kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1740_anime-hugging-kissing-pose.pma",
+      "localScenePath": "scenes/1740_anime-hugging-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1740_00_anime-hugging-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1740_00_anime-hugging-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1740_00_anime-hugging-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1740_01_anime-hugging-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1740_01_anime-hugging-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46655,
+      "slug": "anime-hugging-kissing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1741",
+      "presetNumber": 1741,
+      "label": "Anime surprise kiss pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is jumping and giving a surprise hug and kiss to the male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1741_anime-surprise-kiss-pose.pma",
+      "localScenePath": "scenes/1741_anime-surprise-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1741_00_anime-surprise-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1741_00_anime-surprise-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/1741_00_anime-surprise-kiss-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1741_01_anime-surprise-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/1741_01_anime-surprise-kiss-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46662,
+      "slug": "anime-surprise-kiss-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1742",
+      "presetNumber": 1742,
+      "label": "Anime dancing kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are dancing, hugging and kissing, romantic kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1742_anime-dancing-kissing-pose.pma",
+      "localScenePath": "scenes/1742_anime-dancing-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1742_00_anime-dancing-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1742_00_anime-dancing-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1742_00_anime-dancing-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1742_01_anime-dancing-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1742_01_anime-dancing-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46731,
+      "slug": "anime-dancing-kissing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1743",
+      "presetNumber": 1743,
+      "label": "Anime romantic kissing pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is hugging the female from behind and they are kissing, romantic kissing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1743_anime-romantic-kissing-pose.pma",
+      "localScenePath": "scenes/1743_anime-romantic-kissing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1743_00_anime-romantic-kissing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1743_00_anime-romantic-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1743_00_anime-romantic-kissing-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1743_01_anime-romantic-kissing-pose.png",
+          "localThumbnailPath": "thumbnails/1743_01_anime-romantic-kissing-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55,
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "kissing",
+        "pose"
+      ],
+      "bytes": 46781,
+      "slug": "anime-romantic-kissing-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    }
+  ]
+}

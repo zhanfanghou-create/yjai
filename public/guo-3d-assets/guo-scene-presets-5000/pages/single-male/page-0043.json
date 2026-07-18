@@ -1,0 +1,1152 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 42,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-3107",
+      "presetNumber": 3107,
+      "label": "Male mermaid trident holding pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and pointing with his trident",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3107_male-mermaid-trident-holding-pose.pma",
+      "localScenePath": "scenes/3107_male-mermaid-trident-holding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3107_00_male-mermaid-trident-holding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3107_00_male-mermaid-trident-holding-pose.png",
+          "localThumbnailPath": "thumbnails/3107_00_male-mermaid-trident-holding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062079,
+      "slug": "male-mermaid-trident-holding-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3108",
+      "presetNumber": 3108,
+      "label": "Mermaid aiming trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding the trident with both hands and aiming",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3108_mermaid-aiming-trident-pose.pma",
+      "localScenePath": "scenes/3108_mermaid-aiming-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3108_00_mermaid-aiming-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3108_00_mermaid-aiming-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3108_00_mermaid-aiming-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062042,
+      "slug": "mermaid-aiming-trident-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3109",
+      "presetNumber": 3109,
+      "label": "Male mermaid raising trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding the trident in his right hand and raising it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3109_male-mermaid-raising-trident-pose.pma",
+      "localScenePath": "scenes/3109_male-mermaid-raising-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3109_00_male-mermaid-raising-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3109_00_male-mermaid-raising-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3109_00_male-mermaid-raising-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "dynamic",
+        "mermaid",
+        "pose"
+      ],
+      "bytes": 2062065,
+      "slug": "male-mermaid-raising-trident-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3116",
+      "presetNumber": 3116,
+      "label": "Male blowing kiss pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and blowing a kiss with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3116_male-blowing-kiss-pose.pma",
+      "localScenePath": "scenes/3116_male-blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3116_00_male-blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3116_00_male-blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/3116_00_male-blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blowing",
+        "kiss",
+        "pose"
+      ],
+      "bytes": 23818,
+      "slug": "male-blowing-kiss-pose",
+      "tagIds": [
+        "couple",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "双人/情侣",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3130",
+      "presetNumber": 3130,
+      "label": "Male mermaid floating pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3130_male-mermaid-floating-pose.pma",
+      "localScenePath": "scenes/3130_male-mermaid-floating-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3130_00_male-mermaid-floating-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3130_00_male-mermaid-floating-pose.png",
+          "localThumbnailPath": "thumbnails/3130_00_male-mermaid-floating-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 16288,
+      "slug": "male-mermaid-floating-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3131",
+      "presetNumber": 3131,
+      "label": "Male mermaid floating holding trident pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and holding a trident in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3131_male-mermaid-floating-holding-trident-pose.pma",
+      "localScenePath": "scenes/3131_male-mermaid-floating-holding-trident-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3131_00_male-mermaid-floating-holding-trident-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3131_00_male-mermaid-floating-holding-trident-pose.png",
+          "localThumbnailPath": "thumbnails/3131_00_male-mermaid-floating-holding-trident-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 2062073,
+      "slug": "male-mermaid-floating-holding-trident-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3132",
+      "presetNumber": 3132,
+      "label": "Male mermaid sitting rock pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is sitting on a rock, holding a trident in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3132_male-mermaid-sitting-rock-pose.pma",
+      "localScenePath": "scenes/3132_male-mermaid-sitting-rock-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3132_00_male-mermaid-sitting-rock-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3132_00_male-mermaid-sitting-rock-pose.png",
+          "localThumbnailPath": "thumbnails/3132_00_male-mermaid-sitting-rock-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 2082924,
+      "slug": "male-mermaid-sitting-rock-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3133",
+      "presetNumber": 3133,
+      "label": "Male mermaid trident attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding a trident with both hands and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3133_male-mermaid-trident-attack-pose.pma",
+      "localScenePath": "scenes/3133_male-mermaid-trident-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3133_00_male-mermaid-trident-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3133_00_male-mermaid-trident-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3133_00_male-mermaid-trident-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 2062014,
+      "slug": "male-mermaid-trident-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3134",
+      "presetNumber": 3134,
+      "label": "Male mermaid casting spell pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding a trident in his right hand and casting a spell",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3134_male-mermaid-casting-spell-pose.pma",
+      "localScenePath": "scenes/3134_male-mermaid-casting-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3134_00_male-mermaid-casting-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3134_00_male-mermaid-casting-spell-pose.png",
+          "localThumbnailPath": "thumbnails/3134_00_male-mermaid-casting-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 2062071,
+      "slug": "male-mermaid-casting-spell-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3135",
+      "presetNumber": 3135,
+      "label": "Male mermaid swimming pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is swimming down in the water, mermaid anatomy male",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3135_male-mermaid-swimming-pose.pma",
+      "localScenePath": "scenes/3135_male-mermaid-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3135_00_male-mermaid-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3135_00_male-mermaid-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/3135_00_male-mermaid-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 16414,
+      "slug": "male-mermaid-swimming-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3136",
+      "presetNumber": 3136,
+      "label": "Male mermaid raising hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water and raising his hands, looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3136_male-mermaid-raising-hands-pose.pma",
+      "localScenePath": "scenes/3136_male-mermaid-raising-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3136_00_male-mermaid-raising-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3136_00_male-mermaid-raising-hands-pose.png",
+          "localThumbnailPath": "thumbnails/3136_00_male-mermaid-raising-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 16376,
+      "slug": "male-mermaid-raising-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3137",
+      "presetNumber": 3137,
+      "label": "Male mermaid muscle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Mermaid male is floating in the water, showing his muscles, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3137_male-mermaid-muscle-pose.pma",
+      "localScenePath": "scenes/3137_male-mermaid-muscle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3137_00_male-mermaid-muscle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3137_00_male-mermaid-muscle-pose.png",
+          "localThumbnailPath": "thumbnails/3137_00_male-mermaid-muscle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 16256,
+      "slug": "male-mermaid-muscle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3138",
+      "presetNumber": 3138,
+      "label": "Mermaid crossed arms pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Mermaid male is floating in the water, crossing his arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3138_mermaid-crossed-arms-pose.pma",
+      "localScenePath": "scenes/3138_mermaid-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3138_00_mermaid-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3138_00_mermaid-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/3138_00_mermaid-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 16322,
+      "slug": "mermaid-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3139",
+      "presetNumber": 3139,
+      "label": "Mermaid hands hips pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is floating in the water with his hands on his hips, clenching his fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3139_mermaid-hands-hips-pose.pma",
+      "localScenePath": "scenes/3139_mermaid-hands-hips-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3139_00_mermaid-hands-hips-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3139_00_mermaid-hands-hips-pose.png",
+          "localThumbnailPath": "thumbnails/3139_00_mermaid-hands-hips-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "mermaid",
+        "anatomy",
+        "male"
+      ],
+      "bytes": 16279,
+      "slug": "mermaid-hands-hips-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3140",
+      "presetNumber": 3140,
+      "label": "Male holding hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a hammer in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3140_male-holding-hammer-pose.pma",
+      "localScenePath": "scenes/3140_male-holding-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3140_00_male-holding-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3140_00_male-holding-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/3140_00_male-holding-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24272,
+      "slug": "male-holding-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3141",
+      "presetNumber": 3141,
+      "label": "Both hands holding hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a hammer with both hands, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3141_both-hands-holding-hammer-pose.pma",
+      "localScenePath": "scenes/3141_both-hands-holding-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3141_00_both-hands-holding-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3141_00_both-hands-holding-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/3141_00_both-hands-holding-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24243,
+      "slug": "both-hands-holding-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3146",
+      "presetNumber": 3146,
+      "label": "Holding hammer walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a hammer in his right hand and walking, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3146_holding-hammer-walking-pose.pma",
+      "localScenePath": "scenes/3146_holding-hammer-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3146_00_holding-hammer-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3146_00_holding-hammer-walking-pose.png",
+          "localThumbnailPath": "thumbnails/3146_00_holding-hammer-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24223,
+      "slug": "holding-hammer-walking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3147",
+      "presetNumber": 3147,
+      "label": "Holding two hammers pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding two hammers, male holding hammer pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3147_holding-two-hammers-pose.pma",
+      "localScenePath": "scenes/3147_holding-two-hammers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3147_00_holding-two-hammers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3147_00_holding-two-hammers-pose.png",
+          "localThumbnailPath": "thumbnails/3147_00_holding-two-hammers-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24750,
+      "slug": "holding-two-hammers-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3148",
+      "presetNumber": 3148,
+      "label": "Male swinging hammer pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and swinging a hammer in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3148_male-swinging-hammer-pose.pma",
+      "localScenePath": "scenes/3148_male-swinging-hammer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3148_00_male-swinging-hammer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3148_00_male-swinging-hammer-pose.png",
+          "localThumbnailPath": "thumbnails/3148_00_male-swinging-hammer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        173
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "hammer",
+        "pose"
+      ],
+      "bytes": 24248,
+      "slug": "male-swinging-hammer-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3150",
+      "presetNumber": 3150,
+      "label": "Male holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding an axe with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3150_male-holding-axe-pose.pma",
+      "localScenePath": "scenes/3150_male-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3150_00_male-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3150_00_male-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3150_00_male-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24227,
+      "slug": "male-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3151",
+      "presetNumber": 3151,
+      "label": "Standing holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding an axe in his right hand, resting it on his shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3151_standing-holding-axe-pose.pma",
+      "localScenePath": "scenes/3151_standing-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3151_00_standing-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3151_00_standing-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3151_00_standing-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24318,
+      "slug": "standing-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3152",
+      "presetNumber": 3152,
+      "label": "Holding axe looking down pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding an axe in his left hand and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3152_holding-axe-looking-down-pose.pma",
+      "localScenePath": "scenes/3152_holding-axe-looking-down-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3152_00_holding-axe-looking-down-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3152_00_holding-axe-looking-down-pose.png",
+          "localThumbnailPath": "thumbnails/3152_00_holding-axe-looking-down-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24219,
+      "slug": "holding-axe-looking-down-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3157",
+      "presetNumber": 3157,
+      "label": "Holding axe running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding an axe in his right hand, male holding axe pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3157_holding-axe-running-pose.pma",
+      "localScenePath": "scenes/3157_holding-axe-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3157_00_holding-axe-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3157_00_holding-axe-running-pose.png",
+          "localThumbnailPath": "thumbnails/3157_00_holding-axe-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24288,
+      "slug": "holding-axe-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3158",
+      "presetNumber": 3158,
+      "label": "Swinging axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and swinging the axe, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3158_swinging-axe-pose.pma",
+      "localScenePath": "scenes/3158_swinging-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3158_00_swinging-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3158_00_swinging-axe-pose.png",
+          "localThumbnailPath": "thumbnails/3158_00_swinging-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "axe",
+        "pose"
+      ],
+      "bytes": 24266,
+      "slug": "swinging-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1090 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 186,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-4465",
+      "presetNumber": 4465,
+      "label": "Couple emotions pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Romantic female and male are standing and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4465_couple-emotions-pose.pma",
+      "localScenePath": "scenes/4465_couple-emotions-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4465_00_couple-emotions-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4465_00_couple-emotions-pose.png",
+          "localThumbnailPath": "thumbnails/4465_00_couple-emotions-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4465_01_couple-emotions-pose.png",
+          "localThumbnailPath": "thumbnails/4465_01_couple-emotions-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 45237,
+      "slug": "couple-emotions-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4466",
+      "presetNumber": 4466,
+      "label": "Female fear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is in fear, kneeling, raising her hands to protect herself, she is afraid of something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4466_female-fear-pose.pma",
+      "localScenePath": "scenes/4466_female-fear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4466_00_female-fear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4466_00_female-fear-pose.png",
+          "localThumbnailPath": "thumbnails/4466_00_female-fear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 22728,
+      "slug": "female-fear-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4467",
+      "presetNumber": 4467,
+      "label": "Happy male thumbs up pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy male is standing and showing thumbs up with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4467_happy-male-thumbs-up-pose.pma",
+      "localScenePath": "scenes/4467_happy-male-thumbs-up-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4467_00_happy-male-thumbs-up-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4467_00_happy-male-thumbs-up-pose.png",
+          "localThumbnailPath": "thumbnails/4467_00_happy-male-thumbs-up-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 22978,
+      "slug": "happy-male-thumbs-up-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4468",
+      "presetNumber": 4468,
+      "label": "Female sad pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sad female is standing, holding her arm and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4468_female-sad-pose.pma",
+      "localScenePath": "scenes/4468_female-sad-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4468_00_female-sad-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4468_00_female-sad-pose.png",
+          "localThumbnailPath": "thumbnails/4468_00_female-sad-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23011,
+      "slug": "female-sad-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4469",
+      "presetNumber": 4469,
+      "label": "Shocked male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Shocked male is standing, looking up and holding his head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4469_shocked-male-pose.pma",
+      "localScenePath": "scenes/4469_shocked-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4469_00_shocked-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4469_00_shocked-male-pose.png",
+          "localThumbnailPath": "thumbnails/4469_00_shocked-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "emotions",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23021,
+      "slug": "shocked-male-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4470",
+      "presetNumber": 4470,
+      "label": "Smug male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Smug male is sitting comfortably in the armchair and holding his glasses",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4470_smug-male-sitting-pose.pma",
+      "localScenePath": "scenes/4470_smug-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4470_00_smug-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4470_00_smug-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4470_00_smug-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        98,
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 24050,
+      "slug": "smug-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4471",
+      "presetNumber": 4471,
+      "label": "Smug crossed arms pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Smug female is standing confidently with her arms crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4471_smug-crossed-arms-pose.pma",
+      "localScenePath": "scenes/4471_smug-crossed-arms-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4471_00_smug-crossed-arms-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4471_00_smug-crossed-arms-pose.png",
+          "localThumbnailPath": "thumbnails/4471_00_smug-crossed-arms-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 23069,
+      "slug": "smug-crossed-arms-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4472",
+      "presetNumber": 4472,
+      "label": "Smug male smoking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Smug male is sitting on the bench with his legs crossed and smoking a cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4472_smug-male-smoking-pose.pma",
+      "localScenePath": "scenes/4472_smug-male-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4472_00_smug-male-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4472_00_smug-male-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4472_00_smug-male-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 136690,
+      "slug": "smug-male-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4473",
+      "presetNumber": 4473,
+      "label": "Smug female holding glass pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Smug female is sitting on the chair with her legs crossed and holding a wine glass in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4473_smug-female-holding-glass-pose.pma",
+      "localScenePath": "scenes/4473_smug-female-holding-glass-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4473_00_smug-female-holding-glass-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4473_00_smug-female-holding-glass-pose.png",
+          "localThumbnailPath": "thumbnails/4473_00_smug-female-holding-glass-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        76,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 23841,
+      "slug": "smug-female-holding-glass-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4474",
+      "presetNumber": 4474,
+      "label": "Smug holding hip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Smug male is standing confidently and holding his hip with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4474_smug-holding-hip-pose.pma",
+      "localScenePath": "scenes/4474_smug-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4474_00_smug-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4474_00_smug-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/4474_00_smug-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 22988,
+      "slug": "smug-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4475",
+      "presetNumber": 4475,
+      "label": "Smug female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Smug female is sitting on the bar stool, her arms are crossed, she is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4475_smug-female-sitting-pose.pma",
+      "localScenePath": "scenes/4475_smug-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4475_00_smug-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4475_00_smug-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/4475_00_smug-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        77
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 23189,
+      "slug": "smug-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4476",
+      "presetNumber": 4476,
+      "label": "Smug microphone dropping pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Smug male is standing confidently and dropping the microphone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4476_smug-microphone-dropping-pose.pma",
+      "localScenePath": "scenes/4476_smug-microphone-dropping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4476_00_smug-microphone-dropping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4476_00_smug-microphone-dropping-pose.png",
+          "localThumbnailPath": "thumbnails/4476_00_smug-microphone-dropping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        81
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 23510,
+      "slug": "smug-microphone-dropping-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4477",
+      "presetNumber": 4477,
+      "label": "Smug female smoking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Smug female is sitting comfortably in the armchair and smoking a cigarette",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4477_smug-female-smoking-pose.pma",
+      "localScenePath": "scenes/4477_smug-female-smoking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4477_00_smug-female-smoking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4477_00_smug-female-smoking-pose.png",
+          "localThumbnailPath": "thumbnails/4477_00_smug-female-smoking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3,
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 137140,
+      "slug": "smug-female-smoking-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4478",
+      "presetNumber": 4478,
+      "label": "Smug male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Smug male is standing, holding his hip and pointing his thumb at himself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4478_smug-male-standing-pose.pma",
+      "localScenePath": "scenes/4478_smug-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4478_00_smug-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4478_00_smug-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4478_00_smug-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 22953,
+      "slug": "smug-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4479",
+      "presetNumber": 4479,
+      "label": "Smug female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Smug female is standing, holding her hip and fanning herself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4479_smug-female-standing-pose.pma",
+      "localScenePath": "scenes/4479_smug-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4479_00_smug-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4479_00_smug-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4479_00_smug-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "smug",
+        "expression",
+        "reference"
+      ],
+      "bytes": 22992,
+      "slug": "smug-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4480",
+      "presetNumber": 4480,
+      "label": "Sneaking male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sneaking, walking slowly and watching something, male sneaky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4480_sneaking-male-pose.pma",
+      "localScenePath": "scenes/4480_sneaking-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4480_00_sneaking-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4480_00_sneaking-male-pose.png",
+          "localThumbnailPath": "thumbnails/4480_00_sneaking-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 22966,
+      "slug": "sneaking-male-pose"
+    },
+    {
+      "id": "guo-scene-4481",
+      "presetNumber": 4481,
+      "label": "Sneaking female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sneaking, walking slowly and looking back over her right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4481_sneaking-female-pose.pma",
+      "localScenePath": "scenes/4481_sneaking-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4481_00_sneaking-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4481_00_sneaking-female-pose.png",
+          "localThumbnailPath": "thumbnails/4481_00_sneaking-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23010,
+      "slug": "sneaking-female-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4482",
+      "presetNumber": 4482,
+      "label": "Three skeaky males pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Three males are sneaking on tiptoe, one of them is looking back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4482_three-skeaky-males-pose.pma",
+      "localScenePath": "scenes/4482_three-skeaky-males-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4482_00_three-skeaky-males-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4482_00_three-skeaky-males-pose.png",
+          "localThumbnailPath": "thumbnails/4482_00_three-skeaky-males-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4482_01_three-skeaky-males-pose.png",
+          "localThumbnailPath": "thumbnails/4482_01_three-skeaky-males-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4482_02_three-skeaky-males-pose.png",
+          "localThumbnailPath": "thumbnails/4482_02_three-skeaky-males-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 67163,
+      "slug": "three-skeaky-males-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4483",
+      "presetNumber": 4483,
+      "label": "Sneaky male holding dagger pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sneaky male is standing, holding a dagger in his left hand, looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4483_sneaky-male-holding-dagger-pose.pma",
+      "localScenePath": "scenes/4483_sneaky-male-holding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4483_00_sneaky-male-holding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4483_00_sneaky-male-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/4483_00_sneaky-male-holding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23442,
+      "slug": "sneaky-male-holding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4484",
+      "presetNumber": 4484,
+      "label": "Sneaky female crouching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sneaky female is crouching, looking to the right, female sneaky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4484_sneaky-female-crouching-pose.pma",
+      "localScenePath": "scenes/4484_sneaky-female-crouching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4484_00_sneaky-female-crouching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4484_00_sneaky-female-crouching-pose.png",
+          "localThumbnailPath": "thumbnails/4484_00_sneaky-female-crouching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23052,
+      "slug": "sneaky-female-crouching-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4485",
+      "presetNumber": 4485,
+      "label": "Sneaky male clinging pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sneaky male is hanging on the wall, watching something, male sneaky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4485_sneaky-male-clinging-pose.pma",
+      "localScenePath": "scenes/4485_sneaky-male-clinging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4485_00_sneaky-male-clinging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4485_00_sneaky-male-clinging-pose.png",
+          "localThumbnailPath": "thumbnails/4485_00_sneaky-male-clinging-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23477,
+      "slug": "sneaky-male-clinging-pose"
+    },
+    {
+      "id": "guo-scene-4486",
+      "presetNumber": 4486,
+      "label": "Sneaky female sai pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sneaky female is crouching and holding a sai in her right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4486_sneaky-female-sai-pose.pma",
+      "localScenePath": "scenes/4486_sneaky-female-sai-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4486_00_sneaky-female-sai-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4486_00_sneaky-female-sai-pose.png",
+          "localThumbnailPath": "thumbnails/4486_00_sneaky-female-sai-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        153
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23538,
+      "slug": "sneaky-female-sai-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4487",
+      "presetNumber": 4487,
+      "label": "Female sneaking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sneaking, walking slowly and putting her index finger to her mouth",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4487_female-sneaking-pose.pma",
+      "localScenePath": "scenes/4487_female-sneaking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4487_00_female-sneaking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4487_00_female-sneaking-pose.png",
+          "localThumbnailPath": "thumbnails/4487_00_female-sneaking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23025,
+      "slug": "female-sneaking-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4488",
+      "presetNumber": 4488,
+      "label": "Sneaky female hiding pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sneaky female is standing and hiding behind a wall, female sneaky pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4488_sneaky-female-hiding-pose.pma",
+      "localScenePath": "scenes/4488_sneaky-female-hiding-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4488_00_sneaky-female-hiding-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4488_00_sneaky-female-hiding-pose.png",
+          "localThumbnailPath": "thumbnails/4488_00_sneaky-female-hiding-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sneaky",
+        "pose"
+      ],
+      "bytes": 23654,
+      "slug": "sneaky-female-hiding-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    }
+  ]
+}

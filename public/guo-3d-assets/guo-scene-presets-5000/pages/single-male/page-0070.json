@@ -1,0 +1,374 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 69,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4986",
+      "presetNumber": 4986,
+      "label": "Anime male figure sketch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male is standing in attacking position, holding a katana in his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4996_anime-male-figure-sketch-pose.pma",
+      "localScenePath": "scenes/4996_anime-male-figure-sketch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4996_00_anime-male-figure-sketch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4996_00_anime-male-figure-sketch-pose.png",
+          "localThumbnailPath": "thumbnails/4996_00_anime-male-figure-sketch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        57
+      ],
+      "propNumbers": [
+        158
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "figure",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 20923,
+      "slug": "anime-male-figure-sketch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4988",
+      "presetNumber": 4988,
+      "label": "Chibi figure sketch pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Cute chibi male is standing, holding a baloon in his right hand, wearing a small bow",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4998_chibi-figure-sketch-pose.pma",
+      "localScenePath": "scenes/4998_chibi-figure-sketch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4998_00_chibi-figure-sketch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4998_00_chibi-figure-sketch-pose.png",
+          "localThumbnailPath": "thumbnails/4998_00_chibi-figure-sketch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        108,
+        390
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "figure",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 21557,
+      "slug": "chibi-figure-sketch-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4989",
+      "presetNumber": 4989,
+      "label": "Male holding chin thinking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, holding his chin with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4999_male-holding-chin-thinking-pose.pma",
+      "localScenePath": "scenes/4999_male-holding-chin-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4999_00_male-holding-chin-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4999_00_male-holding-chin-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/4999_00_male-holding-chin-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        68
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        68
+      ],
+      "sourceTags": [
+        "figure",
+        "sketch",
+        "pose"
+      ],
+      "bytes": 20230,
+      "slug": "male-holding-chin-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4991",
+      "presetNumber": 4991,
+      "label": "Male crouching waiting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and waiting, bored male waiting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5001_male-crouching-waiting-pose.pma",
+      "localScenePath": "scenes/5001_male-crouching-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5001_00_male-crouching-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5001_00_male-crouching-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5001_00_male-crouching-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 19998,
+      "slug": "male-crouching-waiting-pose"
+    },
+    {
+      "id": "guo-scene-4994",
+      "presetNumber": 4994,
+      "label": "Bench sitting waiting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the bench, waiting for something, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5004_bench-sitting-waiting-pose.pma",
+      "localScenePath": "scenes/5004_bench-sitting-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5004_00_bench-sitting-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5004_00_bench-sitting-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5004_00_bench-sitting-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        106
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 20608,
+      "slug": "bench-sitting-waiting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4995",
+      "presetNumber": 4995,
+      "label": "Angry male waiting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry male is standing, looking at the time on his watch, raising his other hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5005_angry-male-waiting-pose.pma",
+      "localScenePath": "scenes/5005_angry-male-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5005_00_angry-male-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5005_00_angry-male-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5005_00_angry-male-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 20102,
+      "slug": "angry-male-waiting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4996",
+      "presetNumber": 4996,
+      "label": "Comfortable sitting waiting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting comfortably in the armchair and waiting for something",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5006_comfortable-sitting-waiting-pose.pma",
+      "localScenePath": "scenes/5006_comfortable-sitting-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5006_00_comfortable-sitting-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5006_00_comfortable-sitting-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5006_00_comfortable-sitting-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 20549,
+      "slug": "comfortable-sitting-waiting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4998",
+      "presetNumber": 4998,
+      "label": "Male sitting waiting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on the floor on a cushion and waiting for something, looking at the time on his watch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/5008_male-sitting-waiting-pose.pma",
+      "localScenePath": "scenes/5008_male-sitting-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5008_00_male-sitting-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/5008_00_male-sitting-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/5008_00_male-sitting-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "waiting",
+        "pose"
+      ],
+      "bytes": 20593,
+      "slug": "male-sitting-waiting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

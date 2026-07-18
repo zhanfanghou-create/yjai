@@ -1,0 +1,1166 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 71,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-1705",
+      "presetNumber": 1705,
+      "label": "Crystal ball spell pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female in witch hat is standing and casting a spell with the crystal ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1705_crystal-ball-spell-pose.pma",
+      "localScenePath": "scenes/1705_crystal-ball-spell-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1705_00_crystal-ball-spell-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1705_00_crystal-ball-spell-pose.png",
+          "localThumbnailPath": "thumbnails/1705_00_crystal-ball-spell-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        93,
+        94
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24863,
+      "slug": "crystal-ball-spell-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1706",
+      "presetNumber": 1706,
+      "label": "Demon spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male with devil wings is standing, holding a trident in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1706_demon-spell-casting-pose.pma",
+      "localScenePath": "scenes/1706_demon-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1706_00_demon-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1706_00_demon-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1706_00_demon-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        112
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24704,
+      "slug": "demon-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1707",
+      "presetNumber": 1707,
+      "label": "Fairy spell casting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female fairy is flying and casting a spell with her fairy wand in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1707_fairy-spell-casting-pose.pma",
+      "localScenePath": "scenes/1707_fairy-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1707_00_fairy-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1707_00_fairy-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1707_00_fairy-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        88,
+        89
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 24503,
+      "slug": "fairy-spell-casting-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1708",
+      "presetNumber": 1708,
+      "label": "Wizard spell casting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male wizard is standing, holding a staff in his left hand and casting a spell with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1708_wizard-spell-casting-pose.pma",
+      "localScenePath": "scenes/1708_wizard-spell-casting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1708_00_wizard-spell-casting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1708_00_wizard-spell-casting-pose.png",
+          "localThumbnailPath": "thumbnails/1708_00_wizard-spell-casting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5,
+        113,
+        116
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 25227,
+      "slug": "wizard-spell-casting-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1709",
+      "presetNumber": 1709,
+      "label": "Wizard witch fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Wizard and witch are fighting, the wizard is casting a spell on the witch",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1709_wizard-witch-fight-pose.pma",
+      "localScenePath": "scenes/1709_wizard-witch-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1709_00_wizard-witch-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1709_00_wizard-witch-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1709_00_wizard-witch-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1709_01_wizard-witch-fight-pose.png",
+          "localThumbnailPath": "thumbnails/1709_01_wizard-witch-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 5,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        94,
+        95,
+        96,
+        114,
+        116
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "spell",
+        "casting",
+        "pose"
+      ],
+      "bytes": 48981,
+      "slug": "wizard-witch-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1710",
+      "presetNumber": 1710,
+      "label": "Chibi standing holding hip pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his left hand on his hip and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1710_chibi-standing-holding-hip-pose.pma",
+      "localScenePath": "scenes/1710_chibi-standing-holding-hip-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1710_00_chibi-standing-holding-hip-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1710_00_chibi-standing-holding-hip-pose.png",
+          "localThumbnailPath": "thumbnails/1710_00_chibi-standing-holding-hip-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23841,
+      "slug": "chibi-standing-holding-hip-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1711",
+      "presetNumber": 1711,
+      "label": "Chibi crossed arms standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with crossed arms and looking forward, chibi standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1711_chibi-crossed-arms-standing-pose.pma",
+      "localScenePath": "scenes/1711_chibi-crossed-arms-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1711_00_chibi-crossed-arms-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1711_00_chibi-crossed-arms-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1711_00_chibi-crossed-arms-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23779,
+      "slug": "chibi-crossed-arms-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1712",
+      "presetNumber": 1712,
+      "label": "Chibi crossed legs standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his legs crossed and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1712_chibi-crossed-legs-standing-pose.pma",
+      "localScenePath": "scenes/1712_chibi-crossed-legs-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1712_00_chibi-crossed-legs-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1712_00_chibi-crossed-legs-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1712_00_chibi-crossed-legs-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23760,
+      "slug": "chibi-crossed-legs-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1713",
+      "presetNumber": 1713,
+      "label": "Chibi hands hips standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his hands on his hips, chibi standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1713_chibi-hands-hips-standing-pose.pma",
+      "localScenePath": "scenes/1713_chibi-hands-hips-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1713_00_chibi-hands-hips-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1713_00_chibi-hands-hips-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1713_00_chibi-hands-hips-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23866,
+      "slug": "chibi-hands-hips-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1714",
+      "presetNumber": 1714,
+      "label": "Chibi standing waving pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing, looking to the right and waving with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1714_chibi-standing-waving-pose.pma",
+      "localScenePath": "scenes/1714_chibi-standing-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1714_00_chibi-standing-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1714_00_chibi-standing-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1714_00_chibi-standing-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23805,
+      "slug": "chibi-standing-waving-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1715",
+      "presetNumber": 1715,
+      "label": "Cute chibi standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing, looking to the left and showing peace sign with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1715_cute-chibi-standing-pose.pma",
+      "localScenePath": "scenes/1715_cute-chibi-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1715_00_cute-chibi-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1715_00_cute-chibi-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1715_00_cute-chibi-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23735,
+      "slug": "cute-chibi-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1716",
+      "presetNumber": 1716,
+      "label": "Angry chibi standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Angry chibi male is standing with his hands clenched into fists and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1716_angry-chibi-standing-pose.pma",
+      "localScenePath": "scenes/1716_angry-chibi-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1716_00_angry-chibi-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1716_00_angry-chibi-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1716_00_angry-chibi-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23688,
+      "slug": "angry-chibi-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1717",
+      "presetNumber": 1717,
+      "label": "Happy chibi standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy chibi male is standing, looking up and raising his hands high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1717_happy-chibi-standing-pose.pma",
+      "localScenePath": "scenes/1717_happy-chibi-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1717_00_happy-chibi-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1717_00_happy-chibi-standing-pose.png",
+          "localThumbnailPath": "thumbnails/1717_00_happy-chibi-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23757,
+      "slug": "happy-chibi-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1718",
+      "presetNumber": 1718,
+      "label": "Chibi standing talking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibi males are standing and talking to each other, chibi standing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1718_chibi-standing-talking-pose.pma",
+      "localScenePath": "scenes/1718_chibi-standing-talking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1718_00_chibi-standing-talking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1718_00_chibi-standing-talking-pose.png",
+          "localThumbnailPath": "thumbnails/1718_00_chibi-standing-talking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1718_01_chibi-standing-talking-pose.png",
+          "localThumbnailPath": "thumbnails/1718_01_chibi-standing-talking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 46739,
+      "slug": "chibi-standing-talking-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1719",
+      "presetNumber": 1719,
+      "label": "Chibi standing looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi male is standing with his right hand on his hip and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1719_chibi-standing-looking-left-pose.pma",
+      "localScenePath": "scenes/1719_chibi-standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1719_00_chibi-standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1719_00_chibi-standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/1719_00_chibi-standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "standing",
+        "pose"
+      ],
+      "bytes": 23836,
+      "slug": "chibi-standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1720",
+      "presetNumber": 1720,
+      "label": "Forehead kiss hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging each other, the male is giving a forehead kiss",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1720_forehead-kiss-hugging-pose.pma",
+      "localScenePath": "scenes/1720_forehead-kiss-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1720_00_forehead-kiss-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1720_00_forehead-kiss-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1720_00_forehead-kiss-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1720_01_forehead-kiss-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1720_01_forehead-kiss-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46975,
+      "slug": "forehead-kiss-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1721",
+      "presetNumber": 1721,
+      "label": "Anime females hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are hugging each other and posing, anime hugging pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1721_anime-females-hugging-pose.pma",
+      "localScenePath": "scenes/1721_anime-females-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1721_00_anime-females-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1721_00_anime-females-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1721_00_anime-females-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1721_01_anime-females-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1721_01_anime-females-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 47117,
+      "slug": "anime-females-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1722",
+      "presetNumber": 1722,
+      "label": "Anime couple hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime male is hugging the female from behind and they are looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1722_anime-couple-hugging-pose.pma",
+      "localScenePath": "scenes/1722_anime-couple-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1722_00_anime-couple-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1722_00_anime-couple-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1722_00_anime-couple-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1722_01_anime-couple-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1722_01_anime-couple-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        56,
+        57
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46825,
+      "slug": "anime-couple-hugging-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1723",
+      "presetNumber": 1723,
+      "label": "Anime tight hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are hugging each other, anime hugging pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1723_anime-tight-hugging-pose.pma",
+      "localScenePath": "scenes/1723_anime-tight-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1723_00_anime-tight-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1723_00_anime-tight-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1723_00_anime-tight-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1723_01_anime-tight-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1723_01_anime-tight-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46735,
+      "slug": "anime-tight-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1724",
+      "presetNumber": 1724,
+      "label": "Anime romantic hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are hugging each other and dancing, romantic hugging pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1724_anime-romantic-hugging-pose.pma",
+      "localScenePath": "scenes/1724_anime-romantic-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1724_00_anime-romantic-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1724_00_anime-romantic-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1724_00_anime-romantic-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1724_01_anime-romantic-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1724_01_anime-romantic-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46974,
+      "slug": "anime-romantic-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1725",
+      "presetNumber": 1725,
+      "label": "Anime sitting hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male are sitting on the couch and hugging each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1725_anime-sitting-hugging-pose.pma",
+      "localScenePath": "scenes/1725_anime-sitting-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1725_00_anime-sitting-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1725_00_anime-sitting-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1725_00_anime-sitting-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1725_01_anime-sitting-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1725_01_anime-sitting-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 47417,
+      "slug": "anime-sitting-hugging-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1726",
+      "presetNumber": 1726,
+      "label": "Anime surprise hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female is jumping and hugging the male, anime surprise hug pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1726_anime-surprise-hugging-pose.pma",
+      "localScenePath": "scenes/1726_anime-surprise-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1726_00_anime-surprise-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1726_00_anime-surprise-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1726_00_anime-surprise-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1726_01_anime-surprise-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1726_01_anime-surprise-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46754,
+      "slug": "anime-surprise-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1727",
+      "presetNumber": 1727,
+      "label": "Anime friends hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two anime females are hugging each other, they are looking forward, one of them is waving",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1727_anime-friends-hugging-pose.pma",
+      "localScenePath": "scenes/1727_anime-friends-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1727_00_anime-friends-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1727_00_anime-friends-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1727_00_anime-friends-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1727_01_anime-friends-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1727_01_anime-friends-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 46619,
+      "slug": "anime-friends-hugging-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1728",
+      "presetNumber": 1728,
+      "label": "Anime kissing hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Anime female and male couple is hugging each other and kissing",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1728_anime-kissing-hugging-pose.pma",
+      "localScenePath": "scenes/1728_anime-kissing-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1728_00_anime-kissing-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1728_00_anime-kissing-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1728_00_anime-kissing-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1728_01_anime-kissing-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/1728_01_anime-kissing-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        54,
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "hugging",
+        "pose"
+      ],
+      "bytes": 47036,
+      "slug": "anime-kissing-hugging-pose",
+      "tagIds": [
+        "style-character"
+      ],
+      "tags": [
+        "风格/角色"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1134 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 7,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-0169",
+      "presetNumber": 169,
+      "label": "Sad news pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is telling sad news to female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0169_sad-news-pose.pma",
+      "localScenePath": "scenes/0169_sad-news-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0169_00_sad-news-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0169_00_sad-news-pose.png",
+          "localThumbnailPath": "thumbnails/0169_00_sad-news-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0169_01_sad-news-pose.png",
+          "localThumbnailPath": "thumbnails/0169_01_sad-news-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sad"
+      ],
+      "bytes": 45890,
+      "slug": "sad-news-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0170",
+      "presetNumber": 170,
+      "label": "Female male guns pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male back to back with guns pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0170_female-male-guns-pose.pma",
+      "localScenePath": "scenes/0170_female-male-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0170_00_female-male-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0170_00_female-male-guns-pose.png",
+          "localThumbnailPath": "thumbnails/0170_00_female-male-guns-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0170_01_female-male-guns-pose.png",
+          "localThumbnailPath": "thumbnails/0170_01_female-male-guns-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 47962,
+      "slug": "female-male-guns-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0171",
+      "presetNumber": 171,
+      "label": "Two males shooting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are shooting from the cover of a car",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0171_two-males-shooting-pose.pma",
+      "localScenePath": "scenes/0171_two-males-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0171_00_two-males-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0171_00_two-males-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/0171_00_two-males-shooting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0171_01_two-males-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/0171_01_two-males-shooting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        191,
+        207,
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 48693,
+      "slug": "two-males-shooting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0172",
+      "presetNumber": 172,
+      "label": "Confident holding gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female with a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0172_confident-holding-gun-pose.pma",
+      "localScenePath": "scenes/0172_confident-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0172_00_confident-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0172_00_confident-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0172_00_confident-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        201
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23744,
+      "slug": "confident-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0173",
+      "presetNumber": 173,
+      "label": "Male gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0173_male-gun-pose.pma",
+      "localScenePath": "scenes/0173_male-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0173_00_male-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0173_00_male-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0173_00_male-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        188
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23925,
+      "slug": "male-gun-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0174",
+      "presetNumber": 174,
+      "label": "Male standing holding gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Confident male with a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0174_male-standing-holding-gun-pose.pma",
+      "localScenePath": "scenes/0174_male-standing-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0174_00_male-standing-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0174_00_male-standing-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0174_00_male-standing-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        206
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23940,
+      "slug": "male-standing-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0175",
+      "presetNumber": 175,
+      "label": "Female male shooting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is shooting and male becomes scared",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0175_female-male-shooting-pose.pma",
+      "localScenePath": "scenes/0175_female-male-shooting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0175_00_female-male-shooting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0175_00_female-male-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/0175_00_female-male-shooting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0175_01_female-male-shooting-pose.png",
+          "localThumbnailPath": "thumbnails/0175_01_female-male-shooting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        187
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 46955,
+      "slug": "female-male-shooting-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0176",
+      "presetNumber": 176,
+      "label": "Male aiming target pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is aiming his gun at the target pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0176_male-aiming-target-pose.pma",
+      "localScenePath": "scenes/0176_male-aiming-target-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0176_00_male-aiming-target-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0176_00_male-aiming-target-pose.png",
+          "localThumbnailPath": "thumbnails/0176_00_male-aiming-target-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        201
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23966,
+      "slug": "male-aiming-target-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0177",
+      "presetNumber": 177,
+      "label": "Males aiming guns pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male is aiming their guns at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0177_males-aiming-guns-pose.pma",
+      "localScenePath": "scenes/0177_males-aiming-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0177_00_males-aiming-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0177_00_males-aiming-guns-pose.png",
+          "localThumbnailPath": "thumbnails/0177_00_males-aiming-guns-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0177_01_males-aiming-guns-pose.png",
+          "localThumbnailPath": "thumbnails/0177_01_males-aiming-guns-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        204,
+        205
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 47740,
+      "slug": "males-aiming-guns-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0178",
+      "presetNumber": 178,
+      "label": "Female holding hip gun pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her hand on hip and holding a gun pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0178_female-holding-hip-gun-pose.pma",
+      "localScenePath": "scenes/0178_female-holding-hip-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0178_00_female-holding-hip-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0178_00_female-holding-hip-gun-pose.png",
+          "localThumbnailPath": "thumbnails/0178_00_female-holding-hip-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 23268,
+      "slug": "female-holding-hip-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0179",
+      "presetNumber": 179,
+      "label": "Female holding two guns pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female walking with two guns pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0179_female-holding-two-guns-pose.pma",
+      "localScenePath": "scenes/0179_female-holding-two-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0179_00_female-holding-two-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0179_00_female-holding-two-guns-pose.png",
+          "localThumbnailPath": "thumbnails/0179_00_female-holding-two-guns-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        190,
+        204
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "gun"
+      ],
+      "bytes": 24157,
+      "slug": "female-holding-two-guns-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-0180",
+      "presetNumber": 180,
+      "label": "Samurai holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai is holding a katana with two hands pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0180_samurai-holding-katana-pose.pma",
+      "localScenePath": "scenes/0180_samurai-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0180_00_samurai-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0180_00_samurai-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/0180_00_samurai-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 23948,
+      "slug": "samurai-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0181",
+      "presetNumber": 181,
+      "label": "Samurai two katanas pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai with two katanas pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0181_samurai-two-katanas-pose.pma",
+      "localScenePath": "scenes/0181_samurai-two-katanas-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0181_00_samurai-two-katanas-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0181_00_samurai-two-katanas-pose.png",
+          "localThumbnailPath": "thumbnails/0181_00_samurai-two-katanas-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24425,
+      "slug": "samurai-two-katanas-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0182",
+      "presetNumber": 182,
+      "label": "Samurai katana sheath pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai is pulling his sword out of its sheath pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0182_samurai-katana-sheath-pose.pma",
+      "localScenePath": "scenes/0182_samurai-katana-sheath-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0182_00_samurai-katana-sheath-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0182_00_samurai-katana-sheath-pose.png",
+          "localThumbnailPath": "thumbnails/0182_00_samurai-katana-sheath-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24891,
+      "slug": "samurai-katana-sheath-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0183",
+      "presetNumber": 183,
+      "label": "Samurai ready fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai is ready to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0183_samurai-ready-fight-pose.pma",
+      "localScenePath": "scenes/0183_samurai-ready-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0183_00_samurai-ready-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0183_00_samurai-ready-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0183_00_samurai-ready-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24445,
+      "slug": "samurai-ready-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0184",
+      "presetNumber": 184,
+      "label": "Samurai male fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two male samurai is fighting pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0184_samurai-male-fight-pose.pma",
+      "localScenePath": "scenes/0184_samurai-male-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0184_00_samurai-male-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0184_00_samurai-male-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0184_00_samurai-male-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0184_01_samurai-male-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0184_01_samurai-male-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234,
+        235
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 48179,
+      "slug": "samurai-male-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0185",
+      "presetNumber": 185,
+      "label": "Samurai katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male samurai with a katana pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0185_samurai-katana-pose.pma",
+      "localScenePath": "scenes/0185_samurai-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0185_00_samurai-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0185_00_samurai-katana-pose.png",
+          "localThumbnailPath": "thumbnails/0185_00_samurai-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 24039,
+      "slug": "samurai-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0186",
+      "presetNumber": 186,
+      "label": "Samurai air fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two samurai is fighting with katanas in the air pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0186_samurai-air-fight-pose.pma",
+      "localScenePath": "scenes/0186_samurai-air-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0186_00_samurai-air-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0186_00_samurai-air-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0186_00_samurai-air-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0186_01_samurai-air-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0186_01_samurai-air-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 47373,
+      "slug": "samurai-air-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0187",
+      "presetNumber": 187,
+      "label": "Standing samurai pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Samurai is standing with a big sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0187_standing-samurai-pose.pma",
+      "localScenePath": "scenes/0187_standing-samurai-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0187_00_standing-samurai-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0187_00_standing-samurai-pose.png",
+          "localThumbnailPath": "thumbnails/0187_00_standing-samurai-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 23961,
+      "slug": "standing-samurai-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0188",
+      "presetNumber": 188,
+      "label": "Samurai fight pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two samurai is fighting with katanas pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0188_samurai-fight-pose.pma",
+      "localScenePath": "scenes/0188_samurai-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0188_00_samurai-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0188_00_samurai-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0188_00_samurai-fight-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0188_01_samurai-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0188_01_samurai-fight-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 47269,
+      "slug": "samurai-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0189",
+      "presetNumber": 189,
+      "label": "Samurai inviting fight pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Samurai is inviting to fight pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0189_samurai-inviting-fight-pose.pma",
+      "localScenePath": "scenes/0189_samurai-inviting-fight-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0189_00_samurai-inviting-fight-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0189_00_samurai-inviting-fight-pose.png",
+          "localThumbnailPath": "thumbnails/0189_00_samurai-inviting-fight-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "samurai"
+      ],
+      "bytes": 23947,
+      "slug": "samurai-inviting-fight-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0190",
+      "presetNumber": 190,
+      "label": "Anime male sword stabbing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Anime male stabs a sword into the ground pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0190_anime-male-sword-stabbing-pose.pma",
+      "localScenePath": "scenes/0190_anime-male-sword-stabbing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0190_00_anime-male-sword-stabbing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0190_00_anime-male-sword-stabbing-pose.png",
+          "localThumbnailPath": "thumbnails/0190_00_anime-male-sword-stabbing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [
+        195
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword",
+        "anime"
+      ],
+      "bytes": 24027,
+      "slug": "anime-male-sword-stabbing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0191",
+      "presetNumber": 191,
+      "label": "Anime female fantasy sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female with a big fantasy sword pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0191_anime-female-fantasy-sword-pose.pma",
+      "localScenePath": "scenes/0191_anime-female-fantasy-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0191_00_anime-female-fantasy-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0191_00_anime-female-fantasy-sword-pose.png",
+          "localThumbnailPath": "thumbnails/0191_00_anime-female-fantasy-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        197
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword",
+        "anime"
+      ],
+      "bytes": 24269,
+      "slug": "anime-female-fantasy-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0192",
+      "presetNumber": 192,
+      "label": "Anime drawing sword sheath pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is drawing her sword from its sheath pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0192_anime-drawing-sword-sheath-pose.pma",
+      "localScenePath": "scenes/0192_anime-drawing-sword-sheath-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0192_00_anime-drawing-sword-sheath-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0192_00_anime-drawing-sword-sheath-pose.png",
+          "localThumbnailPath": "thumbnails/0192_00_anime-drawing-sword-sheath-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [
+        196,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pose",
+        "sword",
+        "anime"
+      ],
+      "bytes": 24890,
+      "slug": "anime-drawing-sword-sheath-pose",
+      "tagIds": [
+        "fight-weapon",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "风格/角色"
+      ]
+    }
+  ]
+}

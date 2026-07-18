@@ -1,0 +1,1111 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 53,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-3885",
+      "presetNumber": 3885,
+      "label": "Male mermaid pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male mermaid is holding a trident in his right hand, daily sketch reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3885_male-mermaid-pose.pma",
+      "localScenePath": "scenes/3885_male-mermaid-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3885_00_male-mermaid-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3885_00_male-mermaid-pose.png",
+          "localThumbnailPath": "thumbnails/3885_00_male-mermaid-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        35
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        35
+      ],
+      "sourceTags": [
+        "daily",
+        "sketch",
+        "reference"
+      ],
+      "bytes": 2062071,
+      "slug": "male-mermaid-pose",
+      "tagIds": [
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3886",
+      "presetNumber": 3886,
+      "label": "Holding gun running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a gun with both hands, running and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3886_holding-gun-running-pose.pma",
+      "localScenePath": "scenes/3886_holding-gun-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3886_00_holding-gun-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3886_00_holding-gun-running-pose.png",
+          "localThumbnailPath": "thumbnails/3886_00_holding-gun-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        169
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "daily",
+        "sketch",
+        "reference"
+      ],
+      "bytes": 24428,
+      "slug": "holding-gun-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3887",
+      "presetNumber": 3887,
+      "label": "Male aiming bow pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a bow and aiming, daily sketch reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3887_male-aiming-bow-pose.pma",
+      "localScenePath": "scenes/3887_male-aiming-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3887_00_male-aiming-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3887_00_male-aiming-bow-pose.png",
+          "localThumbnailPath": "thumbnails/3887_00_male-aiming-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        176
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "daily",
+        "sketch",
+        "reference"
+      ],
+      "bytes": 24458,
+      "slug": "male-aiming-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3888",
+      "presetNumber": 3888,
+      "label": "Male holding sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a sword in his right hand, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3888_male-holding-sword-pose.pma",
+      "localScenePath": "scenes/3888_male-holding-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3888_00_male-holding-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3888_00_male-holding-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3888_00_male-holding-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        49
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 0,
+      "unsupportedModelNumbers": [
+        49
+      ],
+      "sourceTags": [
+        "daily",
+        "sketch",
+        "reference"
+      ],
+      "bytes": 24401,
+      "slug": "male-holding-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3891",
+      "presetNumber": 3891,
+      "label": "Male athlete pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is running, male athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3891_male-athlete-pose.pma",
+      "localScenePath": "scenes/3891_male-athlete-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3891_00_male-athlete-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3891_00_male-athlete-pose.png",
+          "localThumbnailPath": "thumbnails/3891_00_male-athlete-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23854,
+      "slug": "male-athlete-pose"
+    },
+    {
+      "id": "guo-scene-3893",
+      "presetNumber": 3893,
+      "label": "Athletic male yoga pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is stretching, doing yoga, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3893_athletic-male-yoga-pose.pma",
+      "localScenePath": "scenes/3893_athletic-male-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3893_00_athletic-male-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3893_00_athletic-male-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/3893_00_athletic-male-yoga-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23801,
+      "slug": "athletic-male-yoga-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3895",
+      "presetNumber": 3895,
+      "label": "Athletic male handstand pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is doing handstand with straight legs, male athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3895_athletic-male-handstand-pose.pma",
+      "localScenePath": "scenes/3895_athletic-male-handstand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3895_00_athletic-male-handstand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3895_00_athletic-male-handstand-pose.png",
+          "localThumbnailPath": "thumbnails/3895_00_athletic-male-handstand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 24001,
+      "slug": "athletic-male-handstand-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3897",
+      "presetNumber": 3897,
+      "label": "Athletic male stretching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male is standing and stretching, male athlete pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3897_athletic-male-stretching-pose.pma",
+      "localScenePath": "scenes/3897_athletic-male-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3897_00_athletic-male-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3897_00_athletic-male-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/3897_00_athletic-male-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 23845,
+      "slug": "athletic-male-stretching-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3899",
+      "presetNumber": 3899,
+      "label": "Athletic handball player pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Athletic male handball player is running, holding a ball in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3899_athletic-handball-player-pose.pma",
+      "localScenePath": "scenes/3899_athletic-handball-player-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3899_00_athletic-handball-player-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3899_00_athletic-handball-player-pose.png",
+          "localThumbnailPath": "thumbnails/3899_00_athletic-handball-player-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "athlete",
+        "pose"
+      ],
+      "bytes": 24286,
+      "slug": "athletic-handball-player-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3905",
+      "presetNumber": 3905,
+      "label": "Male standing low angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his legs are crossed, his right hand is in his pocket",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3905_male-standing-low-angle-pose.pma",
+      "localScenePath": "scenes/3905_male-standing-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3905_00_male-standing-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3905_00_male-standing-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3905_00_male-standing-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23810,
+      "slug": "male-standing-low-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3906",
+      "presetNumber": 3906,
+      "label": "Male crouching low angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding his chin with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3906_male-crouching-low-angle-pose.pma",
+      "localScenePath": "scenes/3906_male-crouching-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3906_00_male-crouching-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3906_00_male-crouching-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3906_00_male-crouching-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23746,
+      "slug": "male-crouching-low-angle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3907",
+      "presetNumber": 3907,
+      "label": "Male running low angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running fast, looking slightly to the left, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3907_male-running-low-angle-pose.pma",
+      "localScenePath": "scenes/3907_male-running-low-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3907_00_male-running-low-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3907_00_male-running-low-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3907_00_male-running-low-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23822,
+      "slug": "male-running-low-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3908",
+      "presetNumber": 3908,
+      "label": "Male holding spear pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a spear in his right hand, pointing down with it, low angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3908_male-holding-spear-pose.pma",
+      "localScenePath": "scenes/3908_male-holding-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3908_00_male-holding-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3908_00_male-holding-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3908_00_male-holding-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        174
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24252,
+      "slug": "male-holding-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3909",
+      "presetNumber": 3909,
+      "label": "Male bodybuilder pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male bodybuilder pose, male is standing, showing his muscles and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3909_male-bodybuilder-pose.pma",
+      "localScenePath": "scenes/3909_male-bodybuilder-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3909_00_male-bodybuilder-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3909_00_male-bodybuilder-pose.png",
+          "localThumbnailPath": "thumbnails/3909_00_male-bodybuilder-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "low",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23826,
+      "slug": "male-bodybuilder-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3911",
+      "presetNumber": 3911,
+      "label": "Male standing high angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing casually, his right hand is on his hip, looking slightly to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3911_male-standing-high-angle-pose.pma",
+      "localScenePath": "scenes/3911_male-standing-high-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3911_00_male-standing-high-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3911_00_male-standing-high-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3911_00_male-standing-high-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23793,
+      "slug": "male-standing-high-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3913",
+      "presetNumber": 3913,
+      "label": "Male deep thinking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, his hands are on his hips, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3913_male-deep-thinking-pose.pma",
+      "localScenePath": "scenes/3913_male-deep-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3913_00_male-deep-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3913_00_male-deep-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/3913_00_male-deep-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23811,
+      "slug": "male-deep-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3915",
+      "presetNumber": 3915,
+      "label": "Male walking high angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is walking casually, male high angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3915_male-walking-high-angle-pose.pma",
+      "localScenePath": "scenes/3915_male-walking-high-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3915_00_male-walking-high-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3915_00_male-walking-high-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3915_00_male-walking-high-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 23833,
+      "slug": "male-walking-high-angle-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3917",
+      "presetNumber": 3917,
+      "label": "Male holding head high angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding his head with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3917_male-holding-head-high-angle-pose.pma",
+      "localScenePath": "scenes/3917_male-holding-head-high-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3917_00_male-holding-head-high-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3917_00_male-holding-head-high-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3917_00_male-holding-head-high-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24230,
+      "slug": "male-holding-head-high-angle-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3919",
+      "presetNumber": 3919,
+      "label": "Male sitting high angle pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting on a chair, his legs are crossed, sitting male high angle pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3919_male-sitting-high-angle-pose.pma",
+      "localScenePath": "scenes/3919_male-sitting-high-angle-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3919_00_male-sitting-high-angle-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3919_00_male-sitting-high-angle-pose.png",
+          "localThumbnailPath": "thumbnails/3919_00_male-sitting-high-angle-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "high",
+        "angle",
+        "pose",
+        "reference"
+      ],
+      "bytes": 24551,
+      "slug": "male-sitting-high-angle-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3920",
+      "presetNumber": 3920,
+      "label": "Holding pirate sword pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male pirate is standing, holding a treasure chest in his left hand, raising his sword with his other hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3920_holding-pirate-sword-pose.pma",
+      "localScenePath": "scenes/3920_holding-pirate-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3920_00_holding-pirate-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3920_00_holding-pirate-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3920_00_holding-pirate-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2796523,
+      "slug": "holding-pirate-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3921",
+      "presetNumber": 3921,
+      "label": "Pirate sword attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male pirate is about to attack, holding a pirate sword in his right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3921_pirate-sword-attack-pose.pma",
+      "localScenePath": "scenes/3921_pirate-sword-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3921_00_pirate-sword-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3921_00_pirate-sword-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3921_00_pirate-sword-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1138442,
+      "slug": "pirate-sword-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3922",
+      "presetNumber": 3922,
+      "label": "Pirate treasure chest pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male pirate is standing, holding a pirate sword in his right hand, his left foot is on the treasure chest",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3922_pirate-treasure-chest-pose.pma",
+      "localScenePath": "scenes/3922_pirate-treasure-chest-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3922_00_pirate-treasure-chest-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3922_00_pirate-treasure-chest-pose.png",
+          "localThumbnailPath": "thumbnails/3922_00_pirate-treasure-chest-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 2796467,
+      "slug": "pirate-treasure-chest-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3923",
+      "presetNumber": 3923,
+      "label": "Pirate attack pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male pirate is jumping, attacking, wearing a pirate hat, swinging his pirate sword",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3923_pirate-attack-pose.pma",
+      "localScenePath": "scenes/3923_pirate-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3923_00_pirate-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3923_00_pirate-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3923_00_pirate-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 1138354,
+      "slug": "pirate-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3924",
+      "presetNumber": 3924,
+      "label": "Pirate looking left pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male pirate is standing casually, wearing a pirate hat, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3924_pirate-looking-left-pose.pma",
+      "localScenePath": "scenes/3924_pirate-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3924_00_pirate-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3924_00_pirate-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/3924_00_pirate-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pirate",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 748282,
+      "slug": "pirate-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

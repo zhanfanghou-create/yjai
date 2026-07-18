@@ -1,0 +1,1150 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-male",
+    "label": "单人物男性",
+    "count": 1664
+  },
+  "pageIndex": 67,
+  "pageSize": 24,
+  "totalPages": 70,
+  "items": [
+    {
+      "id": "guo-scene-4857",
+      "presetNumber": 4857,
+      "label": "Crouching blade pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding a sword in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4857_crouching-blade-pose.pma",
+      "localScenePath": "scenes/4857_crouching-blade-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4857_00_crouching-blade-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4857_00_crouching-blade-pose.png",
+          "localThumbnailPath": "thumbnails/4857_00_crouching-blade-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blade",
+        "pose"
+      ],
+      "bytes": 20564,
+      "slug": "crouching-blade-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4858",
+      "presetNumber": 4858,
+      "label": "Pirate blade pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Pirate is holding a sword in his right hand, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4858_pirate-blade-pose.pma",
+      "localScenePath": "scenes/4858_pirate-blade-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4858_00_pirate-blade-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4858_00_pirate-blade-pose.png",
+          "localThumbnailPath": "thumbnails/4858_00_pirate-blade-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        183,
+        184
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blade",
+        "pose"
+      ],
+      "bytes": 21020,
+      "slug": "pirate-blade-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-4862",
+      "presetNumber": 4862,
+      "label": "Relaxed sitting hugging knees pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is sitting relaxed on the ground, holding his knees",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4862_relaxed-sitting-hugging-knees-pose.pma",
+      "localScenePath": "scenes/4862_relaxed-sitting-hugging-knees-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4862_00_relaxed-sitting-hugging-knees-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4862_00_relaxed-sitting-hugging-knees-pose.png",
+          "localThumbnailPath": "thumbnails/4862_00_relaxed-sitting-hugging-knees-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        170
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hugging",
+        "knees",
+        "pose"
+      ],
+      "bytes": 20530,
+      "slug": "relaxed-sitting-hugging-knees-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-4871",
+      "presetNumber": 4871,
+      "label": "Shield blocking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding a shield and a sword, blocking an attack with the shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4871_shield-blocking-pose.pma",
+      "localScenePath": "scenes/4871_shield-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4871_00_shield-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4871_00_shield-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4871_00_shield-blocking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 21088,
+      "slug": "shield-blocking-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-4872",
+      "presetNumber": 4872,
+      "label": "Arm blocking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, blocking an attack with his arm",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4872_arm-blocking-pose.pma",
+      "localScenePath": "scenes/4872_arm-blocking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4872_00_arm-blocking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4872_00_arm-blocking-pose.png",
+          "localThumbnailPath": "thumbnails/4872_00_arm-blocking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "blocking",
+        "pose"
+      ],
+      "bytes": 20073,
+      "slug": "arm-blocking-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4880",
+      "presetNumber": 4880,
+      "label": "Overhead strike pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is raising the sword high with both hands, ready to swing down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4880_overhead-strike-pose.pma",
+      "localScenePath": "scenes/4880_overhead-strike-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4880_00_overhead-strike-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4880_00_overhead-strike-pose.png",
+          "localThumbnailPath": "thumbnails/4880_00_overhead-strike-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20544,
+      "slug": "overhead-strike-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4881",
+      "presetNumber": 4881,
+      "label": "Sword guarded stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands diagonally across his body",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4881_sword-guarded-stance-pose.pma",
+      "localScenePath": "scenes/4881_sword-guarded-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4881_00_sword-guarded-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4881_00_sword-guarded-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4881_00_sword-guarded-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20564,
+      "slug": "sword-guarded-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4882",
+      "presetNumber": 4882,
+      "label": "Sword thrust forward pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands and pushing forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4882_sword-thrust-forward-pose.pma",
+      "localScenePath": "scenes/4882_sword-thrust-forward-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4882_00_sword-thrust-forward-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4882_00_sword-thrust-forward-pose.png",
+          "localThumbnailPath": "thumbnails/4882_00_sword-thrust-forward-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20530,
+      "slug": "sword-thrust-forward-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4883",
+      "presetNumber": 4883,
+      "label": "Mid-swing slash pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands, swinging it diagonally",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4883_mid-swing-slash-pose.pma",
+      "localScenePath": "scenes/4883_mid-swing-slash-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4883_00_mid-swing-slash-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4883_00_mid-swing-slash-pose.png",
+          "localThumbnailPath": "thumbnails/4883_00_mid-swing-slash-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20547,
+      "slug": "mid-swing-slash-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4884",
+      "presetNumber": 4884,
+      "label": "Sword heroic raise pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding the sword with both hands and lifting it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4884_sword-heroic-raise-pose.pma",
+      "localScenePath": "scenes/4884_sword-heroic-raise-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4884_00_sword-heroic-raise-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4884_00_sword-heroic-raise-pose.png",
+          "localThumbnailPath": "thumbnails/4884_00_sword-heroic-raise-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20546,
+      "slug": "sword-heroic-raise-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4885",
+      "presetNumber": 4885,
+      "label": "Sword victory pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding the sword which is planted tip-down into the ground, he is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4885_sword-victory-pose.pma",
+      "localScenePath": "scenes/4885_sword-victory-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4885_00_sword-victory-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4885_00_sword-victory-pose.png",
+          "localThumbnailPath": "thumbnails/4885_00_sword-victory-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "two",
+        "handed",
+        "sword",
+        "pose"
+      ],
+      "bytes": 20501,
+      "slug": "sword-victory-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4891",
+      "presetNumber": 4891,
+      "label": "Male fighter defensive pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing on the rocks, defending himself with his shield",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4891_male-fighter-defensive-pose.pma",
+      "localScenePath": "scenes/4891_male-fighter-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4891_00_male-fighter-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4891_00_male-fighter-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4891_00_male-fighter-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 4,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        162,
+        363,
+        364
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 21955,
+      "slug": "male-fighter-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4893",
+      "presetNumber": 4893,
+      "label": "Shield defensive pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is holding a sword and a shield, standing in defensive stance",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4893_shield-defensive-pose.pma",
+      "localScenePath": "scenes/4893_shield-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4893_00_shield-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4893_00_shield-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4893_00_shield-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        156,
+        221
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 21088,
+      "slug": "shield-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4894",
+      "presetNumber": 4894,
+      "label": "Sword defensive pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding a sword with both hands, defending himself",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4894_sword-defensive-pose.pma",
+      "localScenePath": "scenes/4894_sword-defensive-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4894_00_sword-defensive-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4894_00_sword-defensive-pose.png",
+          "localThumbnailPath": "thumbnails/4894_00_sword-defensive-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        192
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20621,
+      "slug": "sword-defensive-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-4899",
+      "presetNumber": 4899,
+      "label": "Boxing defensive stance pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and protecting his head with his fists",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4899_boxing-defensive-stance-pose.pma",
+      "localScenePath": "scenes/4899_boxing-defensive-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4899_00_boxing-defensive-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4899_00_boxing-defensive-stance-pose.png",
+          "localThumbnailPath": "thumbnails/4899_00_boxing-defensive-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "defensive",
+        "pose"
+      ],
+      "bytes": 20017,
+      "slug": "boxing-defensive-stance-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4900",
+      "presetNumber": 4900,
+      "label": "Adjusting gas mask pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing a gas mask, adjusting the straps of the mask",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4900_adjusting-gas-mask-pose.pma",
+      "localScenePath": "scenes/4900_adjusting-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4900_00_adjusting-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4900_00_adjusting-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4900_00_adjusting-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        460
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20496,
+      "slug": "adjusting-gas-mask-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4901",
+      "presetNumber": 4901,
+      "label": "Holding gas mask running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is running, holding the gas mask to his face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4901_holding-gas-mask-running-pose.pma",
+      "localScenePath": "scenes/4901_holding-gas-mask-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4901_00_holding-gas-mask-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4901_00_holding-gas-mask-running-pose.png",
+          "localThumbnailPath": "thumbnails/4901_00_holding-gas-mask-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        460
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20507,
+      "slug": "holding-gas-mask-running-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4902",
+      "presetNumber": 4902,
+      "label": "Holding gun gas mask pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, holding a gun, wearing a gas mask",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4902_holding-gun-gas-mask-pose.pma",
+      "localScenePath": "scenes/4902_holding-gun-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4902_00_holding-gun-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4902_00_holding-gun-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4902_00_holding-gun-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        151,
+        577
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21071,
+      "slug": "holding-gun-gas-mask-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4903",
+      "presetNumber": 4903,
+      "label": "Crouching holding gas mask pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching, holding a gas mask in his right hand, looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4903_crouching-holding-gas-mask-pose.pma",
+      "localScenePath": "scenes/4903_crouching-holding-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4903_00_crouching-holding-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4903_00_crouching-holding-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4903_00_crouching-holding-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        577
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20600,
+      "slug": "crouching-holding-gas-mask-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4907",
+      "presetNumber": 4907,
+      "label": "Male holding gas mask pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, looking to the left, holding a gas mask to his face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4907_male-holding-gas-mask-pose.pma",
+      "localScenePath": "scenes/4907_male-holding-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4907_00_male-holding-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4907_00_male-holding-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4907_00_male-holding-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        460
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20505,
+      "slug": "male-holding-gas-mask-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4909",
+      "presetNumber": 4909,
+      "label": "Crossed arms gas mask pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing with his arms crossed, wearing a gas mask",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4909_crossed-arms-gas-mask-pose.pma",
+      "localScenePath": "scenes/4909_crossed-arms-gas-mask-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4909_00_crossed-arms-gas-mask-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4909_00_crossed-arms-gas-mask-pose.png",
+          "localThumbnailPath": "thumbnails/4909_00_crossed-arms-gas-mask-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        577
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "gas",
+        "mask",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20570,
+      "slug": "crossed-arms-gas-mask-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4910",
+      "presetNumber": 4910,
+      "label": "Devil standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male devil is standing, holding a demon trident in his right hand, wearing horns and devil wings",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4910_devil-standing-pose.pma",
+      "localScenePath": "scenes/4910_devil-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4910_00_devil-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4910_00_devil-standing-pose.png",
+          "localThumbnailPath": "thumbnails/4910_00_devil-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 3,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        86,
+        112,
+        462
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "horns",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21547,
+      "slug": "devil-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-4914",
+      "presetNumber": 4914,
+      "label": "Horns transformation pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is floating, rising, his muscles are tensing, breakthrough transformation pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4914_horns-transformation-pose.pma",
+      "localScenePath": "scenes/4914_horns-transformation-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4914_00_horns-transformation-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4914_00_horns-transformation-pose.png",
+          "localThumbnailPath": "thumbnails/4914_00_horns-transformation-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        462
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "horns",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 20513,
+      "slug": "horns-transformation-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-4915",
+      "presetNumber": 4915,
+      "label": "Male wearing horns holding axe pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing, wearing horns, holding an axe with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/4915_male-wearing-horns-holding-axe-pose.pma",
+      "localScenePath": "scenes/4915_male-wearing-horns-holding-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4915_00_male-wearing-horns-holding-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/4915_00_male-wearing-horns-holding-axe-pose.png",
+          "localThumbnailPath": "thumbnails/4915_00_male-wearing-horns-holding-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        168,
+        462
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "horns",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 21050,
+      "slug": "male-wearing-horns-holding-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

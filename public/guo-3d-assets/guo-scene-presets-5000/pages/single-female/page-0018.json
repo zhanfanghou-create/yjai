@@ -1,0 +1,1055 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 17,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-1073",
+      "presetNumber": 1073,
+      "label": "Female pushing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and pushing a heavy object",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1073_female-pushing-pose.pma",
+      "localScenePath": "scenes/1073_female-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1073_00_female-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1073_00_female-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1073_00_female-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 24066,
+      "slug": "female-pushing-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1079",
+      "presetNumber": 1079,
+      "label": "Squatting pushing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is squatting and trying to push forward some objects",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1079_squatting-pushing-pose.pma",
+      "localScenePath": "scenes/1079_squatting-pushing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1079_00_squatting-pushing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1079_00_squatting-pushing-pose.png",
+          "localThumbnailPath": "thumbnails/1079_00_squatting-pushing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 5,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1,
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pushing",
+        "pose"
+      ],
+      "bytes": 25970,
+      "slug": "squatting-pushing-pose"
+    },
+    {
+      "id": "guo-scene-1080",
+      "presetNumber": 1080,
+      "label": "Confident female axe pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Confident female is standing with her right hand on hip and holding an axe in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1080_confident-female-axe-pose.pma",
+      "localScenePath": "scenes/1080_confident-female-axe-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1080_00_confident-female-axe-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1080_00_confident-female-axe-pose.png",
+          "localThumbnailPath": "thumbnails/1080_00_confident-female-axe-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 23906,
+      "slug": "confident-female-axe-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1082",
+      "presetNumber": 1082,
+      "label": "Holding axe female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding an axe behind her back with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1082_holding-axe-female-pose.pma",
+      "localScenePath": "scenes/1082_holding-axe-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1082_00_holding-axe-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1082_00_holding-axe-female-pose.png",
+          "localThumbnailPath": "thumbnails/1082_00_holding-axe-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        209
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "axe",
+        "pose"
+      ],
+      "bytes": 23920,
+      "slug": "holding-axe-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1097",
+      "presetNumber": 1097,
+      "label": "Female swimming upwards pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is swimming upwards under the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1097_female-swimming-upwards-pose.pma",
+      "localScenePath": "scenes/1097_female-swimming-upwards-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1097_00_female-swimming-upwards-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1097_00_female-swimming-upwards-pose.png",
+          "localThumbnailPath": "thumbnails/1097_00_female-swimming-upwards-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "swimming",
+        "pose"
+      ],
+      "bytes": 23538,
+      "slug": "female-swimming-upwards-pose"
+    },
+    {
+      "id": "guo-scene-1098",
+      "presetNumber": 1098,
+      "label": "Female backstroke swimming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is backstroke swimming in the water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1098_female-backstroke-swimming-pose.pma",
+      "localScenePath": "scenes/1098_female-backstroke-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1098_00_female-backstroke-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1098_00_female-backstroke-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/1098_00_female-backstroke-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "swimming",
+        "pose"
+      ],
+      "bytes": 23696,
+      "slug": "female-backstroke-swimming-pose"
+    },
+    {
+      "id": "guo-scene-1099",
+      "presetNumber": 1099,
+      "label": "Female underwater swimming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is breaststroke swimming under water",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1099_female-underwater-swimming-pose.pma",
+      "localScenePath": "scenes/1099_female-underwater-swimming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1099_00_female-underwater-swimming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1099_00_female-underwater-swimming-pose.png",
+          "localThumbnailPath": "thumbnails/1099_00_female-underwater-swimming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "swimming",
+        "pose"
+      ],
+      "bytes": 23579,
+      "slug": "female-underwater-swimming-pose"
+    },
+    {
+      "id": "guo-scene-1110",
+      "presetNumber": 1110,
+      "label": "Jumping throwing handball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female handball player is jumping and throwing the handball with left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1110_jumping-throwing-handball-pose.pma",
+      "localScenePath": "scenes/1110_jumping-throwing-handball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1110_00_jumping-throwing-handball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1110_00_jumping-throwing-handball-pose.png",
+          "localThumbnailPath": "thumbnails/1110_00_jumping-throwing-handball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 23899,
+      "slug": "jumping-throwing-handball-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1111",
+      "presetNumber": 1111,
+      "label": "Female dribbling handball pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female handball player is dribbling, running with the handball and looking ahead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1111_female-dribbling-handball-pose.pma",
+      "localScenePath": "scenes/1111_female-dribbling-handball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1111_00_female-dribbling-handball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1111_00_female-dribbling-handball-pose.png",
+          "localThumbnailPath": "thumbnails/1111_00_female-dribbling-handball-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 24121,
+      "slug": "female-dribbling-handball-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1112",
+      "presetNumber": 1112,
+      "label": "Throwing handball right hand pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and throwing the handball with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1112_throwing-handball-right-hand-pose.pma",
+      "localScenePath": "scenes/1112_throwing-handball-right-hand-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1112_00_throwing-handball-right-hand-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1112_00_throwing-handball-right-hand-pose.png",
+          "localThumbnailPath": "thumbnails/1112_00_throwing-handball-right-hand-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 23898,
+      "slug": "throwing-handball-right-hand-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1113",
+      "presetNumber": 1113,
+      "label": "Female handball player pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female handball player is standing with right hand on her hip and posing with a handball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1113_female-handball-player-pose.pma",
+      "localScenePath": "scenes/1113_female-handball-player-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1113_00_female-handball-player-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1113_00_female-handball-player-pose.png",
+          "localThumbnailPath": "thumbnails/1113_00_female-handball-player-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "handball",
+        "pose"
+      ],
+      "bytes": 23911,
+      "slug": "female-handball-player-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1120",
+      "presetNumber": 1120,
+      "label": "Dancer holding pole pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dancer is holding the pole with right hand and right leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1120_dancer-holding-pole-pose.pma",
+      "localScenePath": "scenes/1120_dancer-holding-pole-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1120_00_dancer-holding-pole-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1120_00_dancer-holding-pole-pose.png",
+          "localThumbnailPath": "thumbnails/1120_00_dancer-holding-pole-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23883,
+      "slug": "dancer-holding-pole-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1121",
+      "presetNumber": 1121,
+      "label": "Pole dance split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dancer is holding the pole with two hands and performing a split in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1121_pole-dance-split-pose.pma",
+      "localScenePath": "scenes/1121_pole-dance-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1121_00_pole-dance-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1121_00_pole-dance-split-pose.png",
+          "localThumbnailPath": "thumbnails/1121_00_pole-dance-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 24007,
+      "slug": "pole-dance-split-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1122",
+      "presetNumber": 1122,
+      "label": "Upside down split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pole dancer is performing a split upside down on the pole",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1122_upside-down-split-pose.pma",
+      "localScenePath": "scenes/1122_upside-down-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1122_00_upside-down-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1122_00_upside-down-split-pose.png",
+          "localThumbnailPath": "thumbnails/1122_00_upside-down-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 24044,
+      "slug": "upside-down-split-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1123",
+      "presetNumber": 1123,
+      "label": "Crossed legs dance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing on the pole, holding the pole with her left hand and posing with her legs crossed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1123_crossed-legs-dance-pose.pma",
+      "localScenePath": "scenes/1123_crossed-legs-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1123_00_crossed-legs-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1123_00_crossed-legs-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1123_00_crossed-legs-dance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23879,
+      "slug": "crossed-legs-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1124",
+      "presetNumber": 1124,
+      "label": "Pole dancer pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pole dancer is standing and posing, holding the pole with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1124_pole-dancer-pose.pma",
+      "localScenePath": "scenes/1124_pole-dancer-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1124_00_pole-dancer-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1124_00_pole-dancer-pose.png",
+          "localThumbnailPath": "thumbnails/1124_00_pole-dancer-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23867,
+      "slug": "pole-dancer-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1125",
+      "presetNumber": 1125,
+      "label": "Female pole dance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pole dancer is holding the pole with her right hand and right leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1125_female-pole-dance-pose.pma",
+      "localScenePath": "scenes/1125_female-pole-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1125_00_female-pole-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1125_00_female-pole-dance-pose.png",
+          "localThumbnailPath": "thumbnails/1125_00_female-pole-dance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23893,
+      "slug": "female-pole-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1126",
+      "presetNumber": 1126,
+      "label": "Dancing split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pole dancer is dancing on the pole, doing a split in the air upside down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1126_dancing-split-pose.pma",
+      "localScenePath": "scenes/1126_dancing-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1126_00_dancing-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1126_00_dancing-split-pose.png",
+          "localThumbnailPath": "thumbnails/1126_00_dancing-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23865,
+      "slug": "dancing-split-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1127",
+      "presetNumber": 1127,
+      "label": "Pole dance spin pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pole dancer is holding the pole with her right hand and spinning around",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1127_pole-dance-spin-pose.pma",
+      "localScenePath": "scenes/1127_pole-dance-spin-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1127_00_pole-dance-spin-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1127_00_pole-dance-spin-pose.png",
+          "localThumbnailPath": "thumbnails/1127_00_pole-dance-spin-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23875,
+      "slug": "pole-dance-spin-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1128",
+      "presetNumber": 1128,
+      "label": "Dancing spinning split pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dancer is spinning around on the pole, while doing a split",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1128_dancing-spinning-split-pose.pma",
+      "localScenePath": "scenes/1128_dancing-spinning-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1128_00_dancing-spinning-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1128_00_dancing-spinning-split-pose.png",
+          "localThumbnailPath": "thumbnails/1128_00_dancing-spinning-split-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23869,
+      "slug": "dancing-spinning-split-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1129",
+      "presetNumber": 1129,
+      "label": "Pole dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female pole dancer is dancing on the pole, holding it with her left hand and right leg",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1129_pole-dancing-pose.pma",
+      "localScenePath": "scenes/1129_pole-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1129_00_pole-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1129_00_pole-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1129_00_pole-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        3
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "pole",
+        "dance",
+        "pose"
+      ],
+      "bytes": 23881,
+      "slug": "pole-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1135",
+      "presetNumber": 1135,
+      "label": "Female capoeira kick pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female dynamic capoeira spinning high kick with right foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1135_female-capoeira-kick-pose.pma",
+      "localScenePath": "scenes/1135_female-capoeira-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1135_00_female-capoeira-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1135_00_female-capoeira-kick-pose.png",
+          "localThumbnailPath": "thumbnails/1135_00_female-capoeira-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "kicking",
+        "pose"
+      ],
+      "bytes": 23525,
+      "slug": "female-capoeira-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-1136",
+      "presetNumber": 1136,
+      "label": "Female small kick pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female small kick pose, lightly kicking a small object on the ground",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1136_female-small-kick-pose.pma",
+      "localScenePath": "scenes/1136_female-small-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1136_00_female-small-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1136_00_female-small-kick-pose.png",
+          "localThumbnailPath": "thumbnails/1136_00_female-small-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "kicking",
+        "pose"
+      ],
+      "bytes": 23477,
+      "slug": "female-small-kick-pose",
+      "tagIds": [
+        "fight-weapon"
+      ],
+      "tags": [
+        "打斗/武器"
+      ]
+    },
+    {
+      "id": "guo-scene-1137",
+      "presetNumber": 1137,
+      "label": "Mma low kick pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female mma low kick pose, dynamic kicking with right foot",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1137_mma-low-kick-pose.pma",
+      "localScenePath": "scenes/1137_mma-low-kick-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1137_00_mma-low-kick-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1137_00_mma-low-kick-pose.png",
+          "localThumbnailPath": "thumbnails/1137_00_mma-low-kick-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "kicking",
+        "pose"
+      ],
+      "bytes": 23470,
+      "slug": "mma-low-kick-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    }
+  ]
+}

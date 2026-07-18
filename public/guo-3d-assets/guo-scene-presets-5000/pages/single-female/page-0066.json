@@ -1,0 +1,1130 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 65,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-3406",
+      "presetNumber": 3406,
+      "label": "Female jumping sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, jumping, holding a sword in both hands and swinging it backwards",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3406_female-jumping-sword-pose.pma",
+      "localScenePath": "scenes/3406_female-jumping-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3406_00_female-jumping-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3406_00_female-jumping-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3406_00_female-jumping-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sword",
+        "fight",
+        "pose"
+      ],
+      "bytes": 23939,
+      "slug": "female-jumping-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3410",
+      "presetNumber": 3410,
+      "label": "Dynamic female running pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running and looking slightly to the left, dynamic female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3410_dynamic-female-running-pose.pma",
+      "localScenePath": "scenes/3410_dynamic-female-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3410_00_dynamic-female-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3410_00_dynamic-female-running-pose.png",
+          "localThumbnailPath": "thumbnails/3410_00_dynamic-female-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 23519,
+      "slug": "dynamic-female-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3411",
+      "presetNumber": 3411,
+      "label": "Female side kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and side kicking in the air, dynamic female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3411_female-side-kicking-pose.pma",
+      "localScenePath": "scenes/3411_female-side-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3411_00_female-side-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3411_00_female-side-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3411_00_female-side-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 23553,
+      "slug": "female-side-kicking-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3412",
+      "presetNumber": 3412,
+      "label": "Dynamic female dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is dancing, raising her hands, female dynamic dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3412_dynamic-female-dancing-pose.pma",
+      "localScenePath": "scenes/3412_dynamic-female-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3412_00_dynamic-female-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3412_00_dynamic-female-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3412_00_dynamic-female-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 23529,
+      "slug": "dynamic-female-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3413",
+      "presetNumber": 3413,
+      "label": "Dynamic female jumping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute female is jumping, looking slightly to the left, female dynamic jumping pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3413_dynamic-female-jumping-pose.pma",
+      "localScenePath": "scenes/3413_dynamic-female-jumping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3413_00_dynamic-female-jumping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3413_00_dynamic-female-jumping-pose.png",
+          "localThumbnailPath": "thumbnails/3413_00_dynamic-female-jumping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 23494,
+      "slug": "dynamic-female-jumping-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3414",
+      "presetNumber": 3414,
+      "label": "Female katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is pulling her katana out of its sheath with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3414_female-katana-pose.pma",
+      "localScenePath": "scenes/3414_female-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3414_00_female-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3414_00_female-katana-pose.png",
+          "localThumbnailPath": "thumbnails/3414_00_female-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144,
+        146
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 24537,
+      "slug": "female-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3415",
+      "presetNumber": 3415,
+      "label": "Female bow pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and aiming with a bow, female jumping pose, dynamic female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3415_female-bow-pose.pma",
+      "localScenePath": "scenes/3415_female-bow-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3415_00_female-bow-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3415_00_female-bow-pose.png",
+          "localThumbnailPath": "thumbnails/3415_00_female-bow-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        176
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 24065,
+      "slug": "female-bow-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3416",
+      "presetNumber": 3416,
+      "label": "Female wizard staff pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking with a wizard staff, holding it with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3416_female-wizard-staff-pose.pma",
+      "localScenePath": "scenes/3416_female-wizard-staff-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3416_00_female-wizard-staff-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3416_00_female-wizard-staff-pose.png",
+          "localThumbnailPath": "thumbnails/3416_00_female-wizard-staff-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 24075,
+      "slug": "female-wizard-staff-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3417",
+      "presetNumber": 3417,
+      "label": "Female spear pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is attacking with a double-sided spear, dynamic female attacking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3417_female-spear-pose.pma",
+      "localScenePath": "scenes/3417_female-spear-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3417_00_female-spear-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3417_00_female-spear-pose.png",
+          "localThumbnailPath": "thumbnails/3417_00_female-spear-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        175
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 23950,
+      "slug": "female-spear-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3418",
+      "presetNumber": 3418,
+      "label": "Female sword pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, swinging her sword backwards to attack, dynamic female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3418_female-sword-pose.pma",
+      "localScenePath": "scenes/3418_female-sword-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3418_00_female-sword-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3418_00_female-sword-pose.png",
+          "localThumbnailPath": "thumbnails/3418_00_female-sword-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        162
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 24075,
+      "slug": "female-sword-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-3419",
+      "presetNumber": 3419,
+      "label": "Female sai pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is running, holding two sai in her hands and attacking, dynamic female attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3419_female-sai-pose.pma",
+      "localScenePath": "scenes/3419_female-sai-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3419_00_female-sai-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3419_00_female-sai-pose.png",
+          "localThumbnailPath": "thumbnails/3419_00_female-sai-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        153
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "female",
+        "pose"
+      ],
+      "bytes": 24442,
+      "slug": "female-sai-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3420",
+      "presetNumber": 3420,
+      "label": "Anime female juming pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Cute anime female is jumping and waving with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3420_anime-female-juming-pose.pma",
+      "localScenePath": "scenes/3420_anime-female-juming-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3420_00_anime-female-juming-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3420_00_anime-female-juming-pose.png",
+          "localThumbnailPath": "thumbnails/3420_00_anime-female-juming-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        39
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "anime",
+        "pose"
+      ],
+      "bytes": 23735,
+      "slug": "anime-female-juming-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3421",
+      "presetNumber": 3421,
+      "label": "Anime fighting stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female in fighting stance holding kunai in her hands, ready to attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3421_anime-fighting-stance-pose.pma",
+      "localScenePath": "scenes/3421_anime-fighting-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3421_00_anime-fighting-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3421_00_anime-fighting-stance-pose.png",
+          "localThumbnailPath": "thumbnails/3421_00_anime-fighting-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "anime",
+        "pose"
+      ],
+      "bytes": 24895,
+      "slug": "anime-fighting-stance-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3422",
+      "presetNumber": 3422,
+      "label": "Female boxing stance pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is standing in boxing stance, clenching her fists, anime female boxing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3422_female-boxing-stance-pose.pma",
+      "localScenePath": "scenes/3422_female-boxing-stance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3422_00_female-boxing-stance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3422_00_female-boxing-stance-pose.png",
+          "localThumbnailPath": "thumbnails/3422_00_female-boxing-stance-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "anime",
+        "pose"
+      ],
+      "bytes": 23684,
+      "slug": "female-boxing-stance-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3423",
+      "presetNumber": 3423,
+      "label": "Female dynamic kicking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is side kicking in the air, anime female dynamic kicking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3423_female-dynamic-kicking-pose.pma",
+      "localScenePath": "scenes/3423_female-dynamic-kicking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3423_00_female-dynamic-kicking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3423_00_female-dynamic-kicking-pose.png",
+          "localThumbnailPath": "thumbnails/3423_00_female-dynamic-kicking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "anime",
+        "pose"
+      ],
+      "bytes": 23891,
+      "slug": "female-dynamic-kicking-pose",
+      "tagIds": [
+        "movement-dance",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3424",
+      "presetNumber": 3424,
+      "label": "Anime dynamic dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is ballet dancing, raising her left hand, anime female dancing pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3424_anime-dynamic-dancing-pose.pma",
+      "localScenePath": "scenes/3424_anime-dynamic-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3424_00_anime-dynamic-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3424_00_anime-dynamic-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/3424_00_anime-dynamic-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "anime",
+        "pose"
+      ],
+      "bytes": 23996,
+      "slug": "anime-dynamic-dancing-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3425",
+      "presetNumber": 3425,
+      "label": "Anime wizard staff pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Anime female is crouching, holding a wizard staff, looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3425_anime-wizard-staff-pose.pma",
+      "localScenePath": "scenes/3425_anime-wizard-staff-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3425_00_anime-wizard-staff-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3425_00_anime-wizard-staff-pose.png",
+          "localThumbnailPath": "thumbnails/3425_00_anime-wizard-staff-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [
+        114
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dynamic",
+        "anime",
+        "pose"
+      ],
+      "bytes": 24491,
+      "slug": "anime-wizard-staff-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-3430",
+      "presetNumber": 3430,
+      "label": "Female hiding dagger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a dagger in her left hand behind her back, female holding dagger pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3430_female-hiding-dagger-pose.pma",
+      "localScenePath": "scenes/3430_female-hiding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3430_00_female-hiding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3430_00_female-hiding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/3430_00_female-hiding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24417,
+      "slug": "female-hiding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3431",
+      "presetNumber": 3431,
+      "label": "Female holding dagger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a dagger in her right hand, looking slightly to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3431_female-holding-dagger-pose.pma",
+      "localScenePath": "scenes/3431_female-holding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3431_00_female-holding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3431_00_female-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/3431_00_female-holding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "dagger",
+        "pose"
+      ],
+      "bytes": 23989,
+      "slug": "female-holding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3433",
+      "presetNumber": 3433,
+      "label": "Female dagger attack pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding a dagger in her right hand and stabbing, dagger attack pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3433_female-dagger-attack-pose.pma",
+      "localScenePath": "scenes/3433_female-dagger-attack-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3433_00_female-dagger-attack-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3433_00_female-dagger-attack-pose.png",
+          "localThumbnailPath": "thumbnails/3433_00_female-dagger-attack-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "dagger",
+        "pose"
+      ],
+      "bytes": 23983,
+      "slug": "female-dagger-attack-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-3434",
+      "presetNumber": 3434,
+      "label": "Confident holding dagger pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, holding a dagger in her right hand, thouching it with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3434_confident-holding-dagger-pose.pma",
+      "localScenePath": "scenes/3434_confident-holding-dagger-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3434_00_confident-holding-dagger-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3434_00_confident-holding-dagger-pose.png",
+          "localThumbnailPath": "thumbnails/3434_00_confident-holding-dagger-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "dagger",
+        "pose"
+      ],
+      "bytes": 23969,
+      "slug": "confident-holding-dagger-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3436",
+      "presetNumber": 3436,
+      "label": "Female holding daggers pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and holding daggers in both hands, female holding dagger pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3436_female-holding-daggers-pose.pma",
+      "localScenePath": "scenes/3436_female-holding-daggers-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3436_00_female-holding-daggers-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3436_00_female-holding-daggers-pose.png",
+          "localThumbnailPath": "thumbnails/3436_00_female-holding-daggers-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24451,
+      "slug": "female-holding-daggers-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3439",
+      "presetNumber": 3439,
+      "label": "Holding dagger landing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is landing, holding a dagger in her left hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3439_holding-dagger-landing-pose.pma",
+      "localScenePath": "scenes/3439_holding-dagger-landing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3439_00_holding-dagger-landing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3439_00_holding-dagger-landing-pose.png",
+          "localThumbnailPath": "thumbnails/3439_00_holding-dagger-landing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "dagger",
+        "pose"
+      ],
+      "bytes": 24061,
+      "slug": "holding-dagger-landing-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-3440",
+      "presetNumber": 3440,
+      "label": "Female holding book pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and holding a book in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/3440_female-holding-book-pose.pma",
+      "localScenePath": "scenes/3440_female-holding-book-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3440_00_female-holding-book-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/3440_00_female-holding-book-pose.png",
+          "localThumbnailPath": "thumbnails/3440_00_female-holding-book-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        80
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "pose"
+      ],
+      "bytes": 24123,
+      "slug": "female-holding-book-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1163 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 117,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2809",
+      "presetNumber": 2809,
+      "label": "Timid male pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Timid male is standing, holding his arm and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2809_timid-male-pose.pma",
+      "localScenePath": "scenes/2809_timid-male-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2809_00_timid-male-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2809_00_timid-male-pose.png",
+          "localThumbnailPath": "thumbnails/2809_00_timid-male-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "timid",
+        "pose"
+      ],
+      "bytes": 23758,
+      "slug": "timid-male-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2810",
+      "presetNumber": 2810,
+      "label": "Male protecting females pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Male is standing and protecting the two females behind him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2810_male-protecting-females-pose.pma",
+      "localScenePath": "scenes/2810_male-protecting-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2810_00_male-protecting-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2810_00_male-protecting-females-pose.png",
+          "localThumbnailPath": "thumbnails/2810_00_male-protecting-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2810_01_male-protecting-females-pose.png",
+          "localThumbnailPath": "thumbnails/2810_01_male-protecting-females-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2810_02_male-protecting-females-pose.png",
+          "localThumbnailPath": "thumbnails/2810_02_male-protecting-females-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 69051,
+      "slug": "male-protecting-females-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2811",
+      "presetNumber": 2811,
+      "label": "Protecting hugging pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and hugging the female, protecting her with his arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2811_protecting-hugging-pose.pma",
+      "localScenePath": "scenes/2811_protecting-hugging-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2811_00_protecting-hugging-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2811_00_protecting-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/2811_00_protecting-hugging-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2811_01_protecting-hugging-pose.png",
+          "localThumbnailPath": "thumbnails/2811_01_protecting-hugging-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46595,
+      "slug": "protecting-hugging-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2812",
+      "presetNumber": 2812,
+      "label": "Protecting aiming guns pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and aiming with two guns, protecting the female who is crouching and covering her head",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2812_protecting-aiming-guns-pose.pma",
+      "localScenePath": "scenes/2812_protecting-aiming-guns-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2812_00_protecting-aiming-guns-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2812_00_protecting-aiming-guns-pose.png",
+          "localThumbnailPath": "thumbnails/2812_00_protecting-aiming-guns-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2812_01_protecting-aiming-guns-pose.png",
+          "localThumbnailPath": "thumbnails/2812_01_protecting-aiming-guns-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47246,
+      "slug": "protecting-aiming-guns-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2813",
+      "presetNumber": 2813,
+      "label": "Protecting aiming gun pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and aiming his gun to protect the female behind him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2813_protecting-aiming-gun-pose.pma",
+      "localScenePath": "scenes/2813_protecting-aiming-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2813_00_protecting-aiming-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2813_00_protecting-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2813_00_protecting-aiming-gun-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2813_01_protecting-aiming-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2813_01_protecting-aiming-gun-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        152
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46922,
+      "slug": "protecting-aiming-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2814",
+      "presetNumber": 2814,
+      "label": "Female protecting female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is in fighting stance, holding a katana, protecting the other female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2814_female-protecting-female-pose.pma",
+      "localScenePath": "scenes/2814_female-protecting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2814_00_female-protecting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2814_00_female-protecting-female-pose.png",
+          "localThumbnailPath": "thumbnails/2814_00_female-protecting-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2814_01_female-protecting-female-pose.png",
+          "localThumbnailPath": "thumbnails/2814_01_female-protecting-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        157
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46683,
+      "slug": "female-protecting-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2815",
+      "presetNumber": 2815,
+      "label": "Knife protecting female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing and holding a knife, ready to fight to protect the female behind him",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2815_knife-protecting-female-pose.pma",
+      "localScenePath": "scenes/2815_knife-protecting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2815_00_knife-protecting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2815_00_knife-protecting-female-pose.png",
+          "localThumbnailPath": "thumbnails/2815_00_knife-protecting-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2815_01_knife-protecting-female-pose.png",
+          "localThumbnailPath": "thumbnails/2815_01_knife-protecting-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        143
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46912,
+      "slug": "knife-protecting-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2816",
+      "presetNumber": 2816,
+      "label": "Angel wings protecting pose",
+      "categoryId": "group",
+      "categoryLabel": "多人/群体",
+      "categoryIds": [
+        "group"
+      ],
+      "description": "Female is spreading her angel wings and clenching her fists, ready to protect the females behind her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2816_angel-wings-protecting-pose.pma",
+      "localScenePath": "scenes/2816_angel-wings-protecting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2816_00_angel-wings-protecting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2816_00_angel-wings-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2816_00_angel-wings-protecting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2816_01_angel-wings-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2816_01_angel-wings-protecting-pose.png"
+        },
+        {
+          "index": 2,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2816_02_angel-wings-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2816_02_angel-wings-protecting-pose.png"
+        }
+      ],
+      "modelCount": 3,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        91
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 69217,
+      "slug": "angel-wings-protecting-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2817",
+      "presetNumber": 2817,
+      "label": "Male shield protecting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is crouching and protecting the female with his shield, protecting pose reference",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2817_male-shield-protecting-pose.pma",
+      "localScenePath": "scenes/2817_male-shield-protecting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2817_00_male-shield-protecting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2817_00_male-shield-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2817_00_male-shield-protecting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2817_01_male-shield-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2817_01_male-shield-protecting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46960,
+      "slug": "male-shield-protecting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2818",
+      "presetNumber": 2818,
+      "label": "Sword shield protecting pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is standing, holding sword and shield and ready to fight to protect the female",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2818_sword-shield-protecting-pose.pma",
+      "localScenePath": "scenes/2818_sword-shield-protecting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2818_00_sword-shield-protecting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2818_00_sword-shield-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2818_00_sword-shield-protecting-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2818_01_sword-shield-protecting-pose.png",
+          "localThumbnailPath": "thumbnails/2818_01_sword-shield-protecting-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 2,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        156,
+        162
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 47386,
+      "slug": "sword-shield-protecting-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2819",
+      "presetNumber": 2819,
+      "label": "Protecting injured female pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is jumping with her shield, protecting the injured female behind her",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2819_protecting-injured-female-pose.pma",
+      "localScenePath": "scenes/2819_protecting-injured-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2819_00_protecting-injured-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2819_00_protecting-injured-female-pose.png",
+          "localThumbnailPath": "thumbnails/2819_00_protecting-injured-female-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2819_01_protecting-injured-female-pose.png",
+          "localThumbnailPath": "thumbnails/2819_01_protecting-injured-female-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        156
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "protecting",
+        "pose",
+        "reference"
+      ],
+      "bytes": 46681,
+      "slug": "protecting-injured-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2820",
+      "presetNumber": 2820,
+      "label": "Sleepy female lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is lying on her stomach and holding her head with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2820_sleepy-female-lying-pose.pma",
+      "localScenePath": "scenes/2820_sleepy-female-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2820_00_sleepy-female-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2820_00_sleepy-female-lying-pose.png",
+          "localThumbnailPath": "thumbnails/2820_00_sleepy-female-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 23652,
+      "slug": "sleepy-female-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2821",
+      "presetNumber": 2821,
+      "label": "Sleepy lying couch pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is lying on her stomach on the couch and is half asleep",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2821_sleepy-lying-couch-pose.pma",
+      "localScenePath": "scenes/2821_sleepy-lying-couch-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2821_00_sleepy-lying-couch-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2821_00_sleepy-lying-couch-pose.png",
+          "localThumbnailPath": "thumbnails/2821_00_sleepy-lying-couch-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        170,
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 24532,
+      "slug": "sleepy-lying-couch-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2822",
+      "presetNumber": 2822,
+      "label": "Sitting half asleep pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is sitting on the chair and holding her head, is half asleep",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2822_sitting-half-asleep-pose.pma",
+      "localScenePath": "scenes/2822_sitting-half-asleep-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2822_00_sitting-half-asleep-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2822_00_sitting-half-asleep-pose.png",
+          "localThumbnailPath": "thumbnails/2822_00_sitting-half-asleep-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 23868,
+      "slug": "sitting-half-asleep-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2823",
+      "presetNumber": 2823,
+      "label": "Tired sleepy sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Tired, sleepy male is sitting in the armchair, is half asleep, male sleepy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2823_tired-sleepy-sitting-pose.pma",
+      "localScenePath": "scenes/2823_tired-sleepy-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2823_00_tired-sleepy-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2823_00_tired-sleepy-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2823_00_tired-sleepy-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 24207,
+      "slug": "tired-sleepy-sitting-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2824",
+      "presetNumber": 2824,
+      "label": "Table sleeping pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is sitting and falling asleep on the table, female sleepy pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2824_table-sleeping-pose.pma",
+      "localScenePath": "scenes/2824_table-sleeping-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2824_00_table-sleeping-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2824_00_table-sleeping-pose.png",
+          "localThumbnailPath": "thumbnails/2824_00_table-sleeping-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        136,
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 24451,
+      "slug": "table-sleeping-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2825",
+      "presetNumber": 2825,
+      "label": "Yawning stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is standing, yawning and stretching, sleepy female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2825_yawning-stretching-pose.pma",
+      "localScenePath": "scenes/2825_yawning-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2825_00_yawning-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2825_00_yawning-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/2825_00_yawning-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 23514,
+      "slug": "yawning-stretching-pose",
+      "tagIds": [
+        "daily-emotion"
+      ],
+      "tags": [
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2826",
+      "presetNumber": 2826,
+      "label": "Sleepy female sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is sitting in the armchair and looking down, is half asleep",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2826_sleepy-female-sitting-pose.pma",
+      "localScenePath": "scenes/2826_sleepy-female-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2826_00_sleepy-female-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2826_00_sleepy-female-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2826_00_sleepy-female-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        107
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 23925,
+      "slug": "sleepy-female-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2827",
+      "presetNumber": 2827,
+      "label": "Sleepy male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sleepy male is sitting at the table, tired, looking down and is half asleep",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2827_sleepy-male-sitting-pose.pma",
+      "localScenePath": "scenes/2827_sleepy-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2827_00_sleepy-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2827_00_sleepy-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2827_00_sleepy-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 42799,
+      "slug": "sleepy-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2828",
+      "presetNumber": 2828,
+      "label": "Male yawning stretching pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Sleepy male is sitting at the table and yawning, stretching, sleepy male pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2828_male-yawning-stretching-pose.pma",
+      "localScenePath": "scenes/2828_male-yawning-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2828_00_male-yawning-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2828_00_male-yawning-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/2828_00_male-yawning-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 42799,
+      "slug": "male-yawning-stretching-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-2829",
+      "presetNumber": 2829,
+      "label": "Sleepy sitting stretching pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Sleepy female is sitting on the table and is stretching, looking up",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2829_sleepy-sitting-stretching-pose.pma",
+      "localScenePath": "scenes/2829_sleepy-sitting-stretching-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2829_00_sleepy-sitting-stretching-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2829_00_sleepy-sitting-stretching-pose.png",
+          "localThumbnailPath": "thumbnails/2829_00_sleepy-sitting-stretching-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        155
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleepy",
+        "pose"
+      ],
+      "bytes": 24036,
+      "slug": "sleepy-sitting-stretching-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2830",
+      "presetNumber": 2830,
+      "label": "Shy cute standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy anime female is standing, holding her hands behind her back and looking down",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2830_shy-cute-standing-pose.pma",
+      "localScenePath": "scenes/2830_shy-cute-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2830_00_shy-cute-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2830_00_shy-cute-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2830_00_shy-cute-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "shy",
+        "pose"
+      ],
+      "bytes": 23838,
+      "slug": "shy-cute-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2831",
+      "presetNumber": 2831,
+      "label": "Shy anime male standing pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Shy anime male is standing, holding his head with his left hand and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2831_shy-anime-male-standing-pose.pma",
+      "localScenePath": "scenes/2831_shy-anime-male-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2831_00_shy-anime-male-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2831_00_shy-anime-male-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2831_00_shy-anime-male-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        54
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "shy",
+        "pose"
+      ],
+      "bytes": 23824,
+      "slug": "shy-anime-male-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2832",
+      "presetNumber": 2832,
+      "label": "Shy anime female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Shy anime female is standing, holding her right arm and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2832_shy-anime-female-standing-pose.pma",
+      "localScenePath": "scenes/2832_shy-anime-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2832_00_shy-anime-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2832_00_shy-anime-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2832_00_shy-anime-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        55
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "anime",
+        "shy",
+        "pose"
+      ],
+      "bytes": 23836,
+      "slug": "shy-anime-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    }
+  ]
+}

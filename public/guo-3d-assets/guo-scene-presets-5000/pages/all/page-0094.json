@@ -1,0 +1,1152 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "all",
+    "label": "全部",
+    "count": 5000
+  },
+  "pageIndex": 93,
+  "pageSize": 24,
+  "totalPages": 209,
+  "items": [
+    {
+      "id": "guo-scene-2233",
+      "presetNumber": 2233,
+      "label": "Happy running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Happy chibi is running, jumping, raising his hands, chibi cheerful running pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2233_happy-running-pose.pma",
+      "localScenePath": "scenes/2233_happy-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2233_00_happy-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2233_00_happy-running-pose.png",
+          "localThumbnailPath": "thumbnails/2233_00_happy-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23695,
+      "slug": "happy-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2234",
+      "presetNumber": 2234,
+      "label": "Holding kunai running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, looking forward, holding kunais in both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2234_holding-kunai-running-pose.pma",
+      "localScenePath": "scenes/2234_holding-kunai-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2234_00_holding-kunai-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2234_00_holding-kunai-running-pose.png",
+          "localThumbnailPath": "thumbnails/2234_00_holding-kunai-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        149
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 24642,
+      "slug": "holding-kunai-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2235",
+      "presetNumber": 2235,
+      "label": "Holding katana running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, looking forward, holding a katana in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2235_holding-katana-running-pose.pma",
+      "localScenePath": "scenes/2235_holding-katana-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2235_00_holding-katana-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2235_00_holding-katana-running-pose.png",
+          "localThumbnailPath": "thumbnails/2235_00_holding-katana-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 24149,
+      "slug": "holding-katana-running-pose",
+      "tagIds": [
+        "fight-weapon",
+        "movement-dance",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "打斗/武器",
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2236",
+      "presetNumber": 2236,
+      "label": "Chibis running together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibis are running together and looking at each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2236_chibis-running-together-pose.pma",
+      "localScenePath": "scenes/2236_chibis-running-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2236_00_chibis-running-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2236_00_chibis-running-together-pose.png",
+          "localThumbnailPath": "thumbnails/2236_00_chibis-running-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2236_01_chibis-running-together-pose.png",
+          "localThumbnailPath": "thumbnails/2236_01_chibis-running-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 46563,
+      "slug": "chibis-running-together-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2237",
+      "presetNumber": 2237,
+      "label": "Chibi chasing running pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running, reaching out both hands, chasing someone",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2237_chibi-chasing-running-pose.pma",
+      "localScenePath": "scenes/2237_chibi-chasing-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2237_00_chibi-chasing-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2237_00_chibi-chasing-running-pose.png",
+          "localThumbnailPath": "thumbnails/2237_00_chibi-chasing-running-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23678,
+      "slug": "chibi-chasing-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2238",
+      "presetNumber": 2238,
+      "label": "Chibi running looking back pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Chibi is running and looking backwards over his right shoulder",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2238_chibi-running-looking-back-pose.pma",
+      "localScenePath": "scenes/2238_chibi-running-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2238_00_chibi-running-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2238_00_chibi-running-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/2238_00_chibi-running-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 23757,
+      "slug": "chibi-running-looking-back-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2239",
+      "presetNumber": 2239,
+      "label": "Cute running pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two cheerful chibis are running, one is chasing the other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2239_cute-running-pose.pma",
+      "localScenePath": "scenes/2239_cute-running-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2239_00_cute-running-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2239_00_cute-running-pose.png",
+          "localThumbnailPath": "thumbnails/2239_00_cute-running-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2239_01_cute-running-pose.png",
+          "localThumbnailPath": "thumbnails/2239_01_cute-running-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "chibi",
+        "running",
+        "pose"
+      ],
+      "bytes": 46561,
+      "slug": "cute-running-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-2240",
+      "presetNumber": 2240,
+      "label": "Standing holding katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing calmly and holding a katana in her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2240_standing-holding-katana-pose.pma",
+      "localScenePath": "scenes/2240_standing-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2240_00_standing-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2240_00_standing-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2240_00_standing-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 23935,
+      "slug": "standing-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2241",
+      "presetNumber": 2241,
+      "label": "Male drawing katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and drawing his katana from its sheath",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2241_male-drawing-katana-pose.pma",
+      "localScenePath": "scenes/2241_male-drawing-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2241_00_male-drawing-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2241_00_male-drawing-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2241_00_male-drawing-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 25088,
+      "slug": "male-drawing-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2242",
+      "presetNumber": 2242,
+      "label": "Holding both hands pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is standing and holding the katana with both hands, ready to fight",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2242_holding-both-hands-pose.pma",
+      "localScenePath": "scenes/2242_holding-both-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2242_00_holding-both-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2242_00_holding-both-hands-pose.png",
+          "localThumbnailPath": "thumbnails/2242_00_holding-both-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24204,
+      "slug": "holding-both-hands-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2243",
+      "presetNumber": 2243,
+      "label": "Crouching holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is crouching and holding a katana in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2243_crouching-holding-katana-pose.pma",
+      "localScenePath": "scenes/2243_crouching-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2243_00_crouching-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2243_00_crouching-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2243_00_crouching-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24267,
+      "slug": "crouching-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2244",
+      "presetNumber": 2244,
+      "label": "Male landing holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is landing, holding a katana in his right hand and balancing with his left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2244_male-landing-holding-katana-pose.pma",
+      "localScenePath": "scenes/2244_male-landing-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2244_00_male-landing-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2244_00_male-landing-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2244_00_male-landing-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        144
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24208,
+      "slug": "male-landing-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2245",
+      "presetNumber": 2245,
+      "label": "Jumping holding katana pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Male is jumping, holding a katana with both hands, jumping high to strike",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2245_jumping-holding-katana-pose.pma",
+      "localScenePath": "scenes/2245_jumping-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2245_00_jumping-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2245_00_jumping-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2245_00_jumping-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24198,
+      "slug": "jumping-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2246",
+      "presetNumber": 2246,
+      "label": "Female calm standing holding katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing calmly and holding a katana in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2246_female-calm-standing-holding-katana-pose.pma",
+      "localScenePath": "scenes/2246_female-calm-standing-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2246_00_female-calm-standing-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2246_00_female-calm-standing-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2246_00_female-calm-standing-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 23985,
+      "slug": "female-calm-standing-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2247",
+      "presetNumber": 2247,
+      "label": "Female crouching holding katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is crouching and holding a katana in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2247_female-crouching-holding-katana-pose.pma",
+      "localScenePath": "scenes/2247_female-crouching-holding-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2247_00_female-crouching-holding-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2247_00_female-crouching-holding-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2247_00_female-crouching-holding-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24038,
+      "slug": "female-crouching-holding-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2248",
+      "presetNumber": 2248,
+      "label": "Female drawing katana pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing and drawing her katana from its sheath",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2248_female-drawing-katana-pose.pma",
+      "localScenePath": "scenes/2248_female-drawing-katana-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2248_00_female-drawing-katana-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2248_00_female-drawing-katana-pose.png",
+          "localThumbnailPath": "thumbnails/2248_00_female-drawing-katana-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        144,
+        222
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 24893,
+      "slug": "female-drawing-katana-pose",
+      "tagIds": [
+        "fight-weapon",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2249",
+      "presetNumber": 2249,
+      "label": "Jumping holding katana female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping, holding a katana in her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2249_jumping-holding-katana-female-pose.pma",
+      "localScenePath": "scenes/2249_jumping-holding-katana-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2249_00_jumping-holding-katana-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2249_00_jumping-holding-katana-female-pose.png",
+          "localThumbnailPath": "thumbnails/2249_00_jumping-holding-katana-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        234
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "holding",
+        "katana",
+        "pose"
+      ],
+      "bytes": 23981,
+      "slug": "jumping-holding-katana-female-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-2250",
+      "presetNumber": 2250,
+      "label": "Injured male walking pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is walking, holding his stomach with his right hand and limping",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2250_injured-male-walking-pose.pma",
+      "localScenePath": "scenes/2250_injured-male-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2250_00_injured-male-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2250_00_injured-male-walking-pose.png",
+          "localThumbnailPath": "thumbnails/2250_00_injured-male-walking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23773,
+      "slug": "injured-male-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2251",
+      "presetNumber": 2251,
+      "label": "Injured male sitting pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is sitting on a chair, holding his stomach with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2251_injured-male-sitting-pose.pma",
+      "localScenePath": "scenes/2251_injured-male-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2251_00_injured-male-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2251_00_injured-male-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/2251_00_injured-male-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24130,
+      "slug": "injured-male-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2252",
+      "presetNumber": 2252,
+      "label": "Injured male crawling pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is crawling, holding his stomach with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2252_injured-male-crawling-pose.pma",
+      "localScenePath": "scenes/2252_injured-male-crawling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2252_00_injured-male-crawling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2252_00_injured-male-crawling-pose.png",
+          "localThumbnailPath": "thumbnails/2252_00_injured-male-crawling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23901,
+      "slug": "injured-male-crawling-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2253",
+      "presetNumber": 2253,
+      "label": "Injured male leaning pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is leaning against the wall with his left hand and holding his stomach with his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2253_injured-male-leaning-pose.pma",
+      "localScenePath": "scenes/2253_injured-male-leaning-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2253_00_injured-male-leaning-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2253_00_injured-male-leaning-pose.png",
+          "localThumbnailPath": "thumbnails/2253_00_injured-male-leaning-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24199,
+      "slug": "injured-male-leaning-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    },
+    {
+      "id": "guo-scene-2254",
+      "presetNumber": 2254,
+      "label": "Injured male holding gun pose",
+      "categoryId": "single-male",
+      "categoryLabel": "单人物男性",
+      "categoryIds": [
+        "single-male"
+      ],
+      "description": "Injured male is standing, holding his stomach with his left hand and holding a gun in his right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2254_injured-male-holding-gun-pose.pma",
+      "localScenePath": "scenes/2254_injured-male-holding-gun-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2254_00_injured-male-holding-gun-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2254_00_injured-male-holding-gun-pose.png",
+          "localThumbnailPath": "thumbnails/2254_00_injured-male-holding-gun-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        220
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 24181,
+      "slug": "injured-male-holding-gun-pose",
+      "tagIds": [
+        "fight-weapon",
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "打斗/武器",
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2255",
+      "presetNumber": 2255,
+      "label": "Injured female standing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Injured female is standing, holding her stomach and leaning on her knee",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2255_injured-female-standing-pose.pma",
+      "localScenePath": "scenes/2255_injured-female-standing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2255_00_injured-female-standing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2255_00_injured-female-standing-pose.png",
+          "localThumbnailPath": "thumbnails/2255_00_injured-female-standing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23543,
+      "slug": "injured-female-standing-pose",
+      "tagIds": [
+        "hands-body",
+        "scene-interior",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "场景/室内",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-2256",
+      "presetNumber": 2256,
+      "label": "Injured female kneeling pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Injured female is sitting on her knees and holding her stomach with her right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/2256_injured-female-kneeling-pose.pma",
+      "localScenePath": "scenes/2256_injured-female-kneeling-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2256_00_injured-female-kneeling-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/2256_00_injured-female-kneeling-pose.png",
+          "localThumbnailPath": "thumbnails/2256_00_injured-female-kneeling-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "injured",
+        "drawing",
+        "reference"
+      ],
+      "bytes": 23527,
+      "slug": "injured-female-kneeling-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "scene-interior"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "场景/室内"
+      ]
+    }
+  ]
+}

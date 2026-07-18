@@ -1,0 +1,1163 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "couple",
+    "label": "双人/情侣",
+    "count": 856
+  },
+  "pageIndex": 7,
+  "pageSize": 24,
+  "totalPages": 36,
+  "items": [
+    {
+      "id": "guo-scene-0802",
+      "presetNumber": 802,
+      "label": "Romantic chibi dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibis are romantic dancing together, holding each other hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0802_romantic-chibi-dance-pose.pma",
+      "localScenePath": "scenes/0802_romantic-chibi-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0802_00_romantic-chibi-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0802_00_romantic-chibi-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0802_00_romantic-chibi-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0802_01_romantic-chibi-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0802_01_romantic-chibi-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dancing",
+        "chibi",
+        "pose"
+      ],
+      "bytes": 46793,
+      "slug": "romantic-chibi-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0809",
+      "presetNumber": 809,
+      "label": "Twist dance chibi pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibis are twist dancing together, cute dancing chibi pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0809_twist-dance-chibi-pose.pma",
+      "localScenePath": "scenes/0809_twist-dance-chibi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0809_00_twist-dance-chibi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0809_00_twist-dance-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/0809_00_twist-dance-chibi-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0809_01_twist-dance-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/0809_01_twist-dance-chibi-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "dancing",
+        "chibi",
+        "pose"
+      ],
+      "bytes": 46543,
+      "slug": "twist-dance-chibi-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0826",
+      "presetNumber": 826,
+      "label": "Two males basketball pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two males are playing basketball, one of them is dribbling the ball",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0826_two-males-basketball-pose.pma",
+      "localScenePath": "scenes/0826_two-males-basketball-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0826_00_two-males-basketball-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0826_00_two-males-basketball-pose.png",
+          "localThumbnailPath": "thumbnails/0826_00_two-males-basketball-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0826_01_two-males-basketball-pose.png",
+          "localThumbnailPath": "thumbnails/0826_01_two-males-basketball-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 1,
+      "modelNumbers": [
+        59
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "basketball",
+        "pose"
+      ],
+      "bytes": 47108,
+      "slug": "two-males-basketball-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0833",
+      "presetNumber": 833,
+      "label": "Happy hug chibi pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two cute chibis are holding, hugging each other happily",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0833_happy-hug-chibi-pose.pma",
+      "localScenePath": "scenes/0833_happy-hug-chibi-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0833_00_happy-hug-chibi-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0833_00_happy-hug-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/0833_00_happy-hug-chibi-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0833_01_happy-hug-chibi-pose.png",
+          "localThumbnailPath": "thumbnails/0833_01_happy-hug-chibi-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "chibi",
+        "pose"
+      ],
+      "bytes": 46856,
+      "slug": "happy-hug-chibi-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0835",
+      "presetNumber": 835,
+      "label": "Happy chibis walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibi is walking together happily and holding each others hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0835_happy-chibis-walking-pose.pma",
+      "localScenePath": "scenes/0835_happy-chibis-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0835_00_happy-chibis-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0835_00_happy-chibis-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0835_00_happy-chibis-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0835_01_happy-chibis-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0835_01_happy-chibis-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "chibi",
+        "pose"
+      ],
+      "bytes": 46554,
+      "slug": "happy-chibis-walking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0836",
+      "presetNumber": 836,
+      "label": "Blowing kiss pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Cute chibi is blowing a kiss to another chibi, who becomes shy",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0836_blowing-kiss-pose.pma",
+      "localScenePath": "scenes/0836_blowing-kiss-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0836_00_blowing-kiss-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0836_00_blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/0836_00_blowing-kiss-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0836_01_blowing-kiss-pose.png",
+          "localThumbnailPath": "thumbnails/0836_01_blowing-kiss-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "chibi",
+        "pose"
+      ],
+      "bytes": 46635,
+      "slug": "blowing-kiss-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0837",
+      "presetNumber": 837,
+      "label": "Cute chibi dance pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two chibis are dancing a cute choreography",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0837_cute-chibi-dance-pose.pma",
+      "localScenePath": "scenes/0837_cute-chibi-dance-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0837_00_cute-chibi-dance-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0837_00_cute-chibi-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0837_00_cute-chibi-dance-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0837_01_cute-chibi-dance-pose.png",
+          "localThumbnailPath": "thumbnails/0837_01_cute-chibi-dance-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        61
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "cute",
+        "chibi",
+        "pose"
+      ],
+      "bytes": 46845,
+      "slug": "cute-chibi-dance-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-0840",
+      "presetNumber": 840,
+      "label": "Lovely walk together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Loving couple is walking and talking, kissing while holding each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0840_lovely-walk-together-pose.pma",
+      "localScenePath": "scenes/0840_lovely-walk-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0840_00_lovely-walk-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0840_00_lovely-walk-together-pose.png",
+          "localThumbnailPath": "thumbnails/0840_00_lovely-walk-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0840_01_lovely-walk-together-pose.png",
+          "localThumbnailPath": "thumbnails/0840_01_lovely-walk-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46369,
+      "slug": "lovely-walk-together-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0841",
+      "presetNumber": 841,
+      "label": "Stressed couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Angry couple is walking together, holding each others hands, walking in a hurry",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0841_stressed-couple-walking-pose.pma",
+      "localScenePath": "scenes/0841_stressed-couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0841_00_stressed-couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0841_00_stressed-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0841_00_stressed-couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0841_01_stressed-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0841_01_stressed-couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46386,
+      "slug": "stressed-couple-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0842",
+      "presetNumber": 842,
+      "label": "Cute couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Cute couple is walking together, hugging and looking each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0842_cute-couple-walking-pose.pma",
+      "localScenePath": "scenes/0842_cute-couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0842_00_cute-couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0842_00_cute-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0842_00_cute-couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0842_01_cute-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0842_01_cute-couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46436,
+      "slug": "cute-couple-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0843",
+      "presetNumber": 843,
+      "label": "Couple walking looking back pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is walking together, the female leads the male and looks back",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0843_couple-walking-looking-back-pose.pma",
+      "localScenePath": "scenes/0843_couple-walking-looking-back-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0843_00_couple-walking-looking-back-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0843_00_couple-walking-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/0843_00_couple-walking-looking-back-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0843_01_couple-walking-looking-back-pose.png",
+          "localThumbnailPath": "thumbnails/0843_01_couple-walking-looking-back-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46362,
+      "slug": "couple-walking-looking-back-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0844",
+      "presetNumber": 844,
+      "label": "Forehead kiss walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is hugging and walking together, the male kisses the female on the forehead",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0844_forehead-kiss-walking-pose.pma",
+      "localScenePath": "scenes/0844_forehead-kiss-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0844_00_forehead-kiss-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0844_00_forehead-kiss-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0844_00_forehead-kiss-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0844_01_forehead-kiss-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0844_01_forehead-kiss-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46358,
+      "slug": "forehead-kiss-walking-pose",
+      "tagIds": [
+        "movement-dance"
+      ],
+      "tags": [
+        "运动/舞蹈"
+      ]
+    },
+    {
+      "id": "guo-scene-0845",
+      "presetNumber": 845,
+      "label": "Arm holding walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is walking together, the female is holding the male's arm",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0845_arm-holding-walking-pose.pma",
+      "localScenePath": "scenes/0845_arm-holding-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0845_00_arm-holding-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0845_00_arm-holding-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0845_00_arm-holding-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0845_01_arm-holding-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0845_01_arm-holding-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46352,
+      "slug": "arm-holding-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0846",
+      "presetNumber": 846,
+      "label": "Confident couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is walking together confidently and holdinh each others hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0846_confident-couple-walking-pose.pma",
+      "localScenePath": "scenes/0846_confident-couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0846_00_confident-couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0846_00_confident-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0846_00_confident-couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0846_01_confident-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0846_01_confident-couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46383,
+      "slug": "confident-couple-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-0847",
+      "presetNumber": 847,
+      "label": "Romantic couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is having a romantic walk together, holding hands and looking into each other's eyes",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0847_romantic-couple-walking-pose.pma",
+      "localScenePath": "scenes/0847_romantic-couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0847_00_romantic-couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0847_00_romantic-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0847_00_romantic-couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0847_01_romantic-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0847_01_romantic-couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46446,
+      "slug": "romantic-couple-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0848",
+      "presetNumber": 848,
+      "label": "Casual couple walking pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Couple is walking casually, female and male next to each other",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0848_casual-couple-walking-pose.pma",
+      "localScenePath": "scenes/0848_casual-couple-walking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0848_00_casual-couple-walking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0848_00_casual-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0848_00_casual-couple-walking-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0848_01_casual-couple-walking-pose.png",
+          "localThumbnailPath": "thumbnails/0848_01_casual-couple-walking-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46493,
+      "slug": "casual-couple-walking-pose",
+      "tagIds": [
+        "movement-dance",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0849",
+      "presetNumber": 849,
+      "label": "Sad walking couple pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Sad walking couple, the male is holding the shoulder of the female who is walking with crossed arms",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0849_sad-walking-couple-pose.pma",
+      "localScenePath": "scenes/0849_sad-walking-couple-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0849_00_sad-walking-couple-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0849_00_sad-walking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/0849_00_sad-walking-couple-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0849_01_sad-walking-couple-pose.png",
+          "localThumbnailPath": "thumbnails/0849_01_sad-walking-couple-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "walking",
+        "couple",
+        "pose"
+      ],
+      "bytes": 46362,
+      "slug": "sad-walking-couple-pose",
+      "tagIds": [
+        "movement-dance",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "运动/舞蹈",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-0859",
+      "presetNumber": 859,
+      "label": "Male female yoga pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male and female are doing yoga together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0859_male-female-yoga-pose.pma",
+      "localScenePath": "scenes/0859_male-female-yoga-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0859_00_male-female-yoga-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0859_00_male-female-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/0859_00_male-female-yoga-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0859_01_male-female-yoga-pose.png",
+          "localThumbnailPath": "thumbnails/0859_01_male-female-yoga-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "yoga",
+        "pose"
+      ],
+      "bytes": 46788,
+      "slug": "male-female-yoga-pose"
+    },
+    {
+      "id": "guo-scene-0869",
+      "presetNumber": 869,
+      "label": "Couple sleeping together pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female and male couple is sleeping together in the bed",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0869_couple-sleeping-together-pose.pma",
+      "localScenePath": "scenes/0869_couple-sleeping-together-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0869_00_couple-sleeping-together-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0869_00_couple-sleeping-together-pose.png",
+          "localThumbnailPath": "thumbnails/0869_00_couple-sleeping-together-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0869_01_couple-sleeping-together-pose.png",
+          "localThumbnailPath": "thumbnails/0869_01_couple-sleeping-together-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 4,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [
+        1,
+        232
+      ],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "sleeping",
+        "pose"
+      ],
+      "bytes": 48747,
+      "slug": "couple-sleeping-together-pose",
+      "tagIds": [
+        "sitting-furniture"
+      ],
+      "tags": [
+        "坐卧/家具"
+      ]
+    },
+    {
+      "id": "guo-scene-0872",
+      "presetNumber": 872,
+      "label": "Two acrobatic females pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Two acrobtic females are performing an acrobatic pose together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0872_two-acrobatic-females-pose.pma",
+      "localScenePath": "scenes/0872_two-acrobatic-females-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0872_00_two-acrobatic-females-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0872_00_two-acrobatic-females-pose.png",
+          "localThumbnailPath": "thumbnails/0872_00_two-acrobatic-females-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0872_01_two-acrobatic-females-pose.png",
+          "localThumbnailPath": "thumbnails/0872_01_two-acrobatic-females-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "acrobatic",
+        "pose"
+      ],
+      "bytes": 46364,
+      "slug": "two-acrobatic-females-pose"
+    },
+    {
+      "id": "guo-scene-0873",
+      "presetNumber": 873,
+      "label": "Female male acrobats pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding the female in the air, performing an acrobatic pose together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0873_female-male-acrobats-pose.pma",
+      "localScenePath": "scenes/0873_female-male-acrobats-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0873_00_female-male-acrobats-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0873_00_female-male-acrobats-pose.png",
+          "localThumbnailPath": "thumbnails/0873_00_female-male-acrobats-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0873_01_female-male-acrobats-pose.png",
+          "localThumbnailPath": "thumbnails/0873_01_female-male-acrobats-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "acrobatic",
+        "pose"
+      ],
+      "bytes": 46720,
+      "slug": "female-male-acrobats-pose"
+    },
+    {
+      "id": "guo-scene-0874",
+      "presetNumber": 874,
+      "label": "Air front split pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female is doing a front split and male is holding her in the air",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0874_air-front-split-pose.pma",
+      "localScenePath": "scenes/0874_air-front-split-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0874_00_air-front-split-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0874_00_air-front-split-pose.png",
+          "localThumbnailPath": "thumbnails/0874_00_air-front-split-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0874_01_air-front-split-pose.png",
+          "localThumbnailPath": "thumbnails/0874_01_air-front-split-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "acrobatic",
+        "pose"
+      ],
+      "bytes": 46682,
+      "slug": "air-front-split-pose"
+    },
+    {
+      "id": "guo-scene-0875",
+      "presetNumber": 875,
+      "label": "Female male acrobatic pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Female an male are performing an acrobatic pose together",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0875_female-male-acrobatic-pose.pma",
+      "localScenePath": "scenes/0875_female-male-acrobatic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0875_00_female-male-acrobatic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0875_00_female-male-acrobatic-pose.png",
+          "localThumbnailPath": "thumbnails/0875_00_female-male-acrobatic-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0875_01_female-male-acrobatic-pose.png",
+          "localThumbnailPath": "thumbnails/0875_01_female-male-acrobatic-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "acrobatic",
+        "pose"
+      ],
+      "bytes": 46765,
+      "slug": "female-male-acrobatic-pose"
+    },
+    {
+      "id": "guo-scene-0876",
+      "presetNumber": 876,
+      "label": "Upside down acrobatic pose",
+      "categoryId": "couple",
+      "categoryLabel": "双人/情侣",
+      "categoryIds": [
+        "couple"
+      ],
+      "description": "Male is holding the female upside down in the air, acrobatic pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/0876_upside-down-acrobatic-pose.pma",
+      "localScenePath": "scenes/0876_upside-down-acrobatic-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0876_00_upside-down-acrobatic-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0876_00_upside-down-acrobatic-pose.png",
+          "localThumbnailPath": "thumbnails/0876_00_upside-down-acrobatic-pose.png"
+        },
+        {
+          "index": 1,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/0876_01_upside-down-acrobatic-pose.png",
+          "localThumbnailPath": "thumbnails/0876_01_upside-down-acrobatic-pose.png"
+        }
+      ],
+      "modelCount": 2,
+      "propCount": 0,
+      "modelNumbers": [
+        59,
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 2,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "acrobatic",
+        "pose"
+      ],
+      "bytes": 46681,
+      "slug": "upside-down-acrobatic-pose"
+    }
+  ]
+}

@@ -1,0 +1,1091 @@
+{
+  "schema": "guo.threeDirector.scenePresetPage",
+  "version": 1,
+  "packageId": "guo-scene-presets-5000",
+  "generatedAt": "2026-06-09T18:16:13.283Z",
+  "category": {
+    "id": "single-female",
+    "label": "单人物女性",
+    "count": 2267
+  },
+  "pageIndex": 22,
+  "pageSize": 24,
+  "totalPages": 95,
+  "items": [
+    {
+      "id": "guo-scene-1357",
+      "presetNumber": 1357,
+      "label": "Pick up something pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is bending down to pick something up from the ground with her left hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1357_pick-up-something-pose.pma",
+      "localScenePath": "scenes/1357_pick-up-something-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1357_00_pick-up-something-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1357_00_pick-up-something-pose.png",
+          "localThumbnailPath": "thumbnails/1357_00_pick-up-something-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "bending",
+        "pose"
+      ],
+      "bytes": 23578,
+      "slug": "pick-up-something-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1360",
+      "presetNumber": 1360,
+      "label": "Female inviting sitting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the couch with her legs crossed and inviting to take a seat",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1360_female-inviting-sitting-pose.pma",
+      "localScenePath": "scenes/1360_female-inviting-sitting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1360_00_female-inviting-sitting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1360_00_female-inviting-sitting-pose.png",
+          "localThumbnailPath": "thumbnails/1360_00_female-inviting-sitting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 24030,
+      "slug": "female-inviting-sitting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1361",
+      "presetNumber": 1361,
+      "label": "Female sitting waiting pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on the couch with her legs crossed, waiting for something, looking at her nails",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1361_female-sitting-waiting-pose.pma",
+      "localScenePath": "scenes/1361_female-sitting-waiting-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1361_00_female-sitting-waiting-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1361_00_female-sitting-waiting-pose.png",
+          "localThumbnailPath": "thumbnails/1361_00_female-sitting-waiting-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 23925,
+      "slug": "female-sitting-waiting-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1362",
+      "presetNumber": 1362,
+      "label": "Female comfortable lying pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is lying comfortably on the couch and looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1362_female-comfortable-lying-pose.pma",
+      "localScenePath": "scenes/1362_female-comfortable-lying-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1362_00_female-comfortable-lying-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1362_00_female-comfortable-lying-pose.png",
+          "localThumbnailPath": "thumbnails/1362_00_female-comfortable-lying-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 2,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        231,
+        232
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "couch",
+        "pose"
+      ],
+      "bytes": 24448,
+      "slug": "female-comfortable-lying-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1385",
+      "presetNumber": 1385,
+      "label": "Boxing stance female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female right handed basic boxing stance,  left hand and left foot forward, fists are close to the face",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1385_boxing-stance-female-pose.pma",
+      "localScenePath": "scenes/1385_boxing-stance-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1385_00_boxing-stance-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1385_00_boxing-stance-female-pose.png",
+          "localThumbnailPath": "thumbnails/1385_00_boxing-stance-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23413,
+      "slug": "boxing-stance-female-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1386",
+      "presetNumber": 1386,
+      "label": "Female left hook pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female left hook boxing pose, left elbow and right hand up, turning right heel",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1386_female-left-hook-pose.pma",
+      "localScenePath": "scenes/1386_female-left-hook-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1386_00_female-left-hook-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1386_00_female-left-hook-pose.png",
+          "localThumbnailPath": "thumbnails/1386_00_female-left-hook-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "boxing",
+        "pose"
+      ],
+      "bytes": 23460,
+      "slug": "female-left-hook-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1390",
+      "presetNumber": 1390,
+      "label": "Female standing casually pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually, holding her hands and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1390_female-standing-casually-pose.pma",
+      "localScenePath": "scenes/1390_female-standing-casually-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1390_00_female-standing-casually-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1390_00_female-standing-casually-pose.png",
+          "localThumbnailPath": "thumbnails/1390_00_female-standing-casually-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27355,
+      "slug": "female-standing-casually-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1391",
+      "presetNumber": 1391,
+      "label": "Hands hips standing female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her hands on hips and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1391_hands-hips-standing-female-pose.pma",
+      "localScenePath": "scenes/1391_hands-hips-standing-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1391_00_hands-hips-standing-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1391_00_hands-hips-standing-female-pose.png",
+          "localThumbnailPath": "thumbnails/1391_00_hands-hips-standing-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27374,
+      "slug": "hands-hips-standing-female-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1392",
+      "presetNumber": 1392,
+      "label": "Casual walking female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking casually, looking forward and walking straight, casual walking pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1392_casual-walking-female-pose.pma",
+      "localScenePath": "scenes/1392_casual-walking-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1392_00_casual-walking-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1392_00_casual-walking-female-pose.png",
+          "localThumbnailPath": "thumbnails/1392_00_casual-walking-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27311,
+      "slug": "casual-walking-female-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1393",
+      "presetNumber": 1393,
+      "label": "Female standing dancing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, dancing and raising her hands, looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1393_female-standing-dancing-pose.pma",
+      "localScenePath": "scenes/1393_female-standing-dancing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1393_00_female-standing-dancing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1393_00_female-standing-dancing-pose.png",
+          "localThumbnailPath": "thumbnails/1393_00_female-standing-dancing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27632,
+      "slug": "female-standing-dancing-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1394",
+      "presetNumber": 1394,
+      "label": "Standing female waving pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing casually and waving, saying \"hi\", looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1394_standing-female-waving-pose.pma",
+      "localScenePath": "scenes/1394_standing-female-waving-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1394_00_standing-female-waving-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1394_00_standing-female-waving-pose.png",
+          "localThumbnailPath": "thumbnails/1394_00_standing-female-waving-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27369,
+      "slug": "standing-female-waving-pose",
+      "tagIds": [
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1395",
+      "presetNumber": 1395,
+      "label": "Casual sitting crossed legs pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting on a chair with her legs crossed and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1395_casual-sitting-crossed-legs-pose.pma",
+      "localScenePath": "scenes/1395_casual-sitting-crossed-legs-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1395_00_casual-sitting-crossed-legs-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1395_00_casual-sitting-crossed-legs-pose.png",
+          "localThumbnailPath": "thumbnails/1395_00_casual-sitting-crossed-legs-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [
+        139
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27822,
+      "slug": "casual-sitting-crossed-legs-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1396",
+      "presetNumber": 1396,
+      "label": "Female dancing hands pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, dancing with her hands and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1396_female-dancing-hands-pose.pma",
+      "localScenePath": "scenes/1396_female-dancing-hands-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1396_00_female-dancing-hands-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1396_00_female-dancing-hands-pose.png",
+          "localThumbnailPath": "thumbnails/1396_00_female-dancing-hands-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27515,
+      "slug": "female-dancing-hands-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1398",
+      "presetNumber": 1398,
+      "label": "Female deep thinking pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, looking forward and thinking, touching her face with her left hand, realistic female pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1398_female-deep-thinking-pose.pma",
+      "localScenePath": "scenes/1398_female-deep-thinking-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1398_00_female-deep-thinking-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1398_00_female-deep-thinking-pose.png",
+          "localThumbnailPath": "thumbnails/1398_00_female-deep-thinking-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27274,
+      "slug": "female-deep-thinking-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1399",
+      "presetNumber": 1399,
+      "label": "Female standing looking left pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing, her left hand is in her pocket, her legs are crossed and she is looking to the left",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1399_female-standing-looking-left-pose.pma",
+      "localScenePath": "scenes/1399_female-standing-looking-left-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1399_00_female-standing-looking-left-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1399_00_female-standing-looking-left-pose.png",
+          "localThumbnailPath": "thumbnails/1399_00_female-standing-looking-left-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        48
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "realistic",
+        "female",
+        "pose"
+      ],
+      "bytes": 27421,
+      "slug": "female-standing-looking-left-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion",
+        "style-character"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪",
+        "风格/角色"
+      ]
+    },
+    {
+      "id": "guo-scene-1410",
+      "presetNumber": 1410,
+      "label": "Female volleyball throwing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is jumping and throwing the volleyball upwards with two hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1410_female-volleyball-throwing-pose.pma",
+      "localScenePath": "scenes/1410_female-volleyball-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1410_00_female-volleyball-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1410_00_female-volleyball-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1410_00_female-volleyball-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24184,
+      "slug": "female-volleyball-throwing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1413",
+      "presetNumber": 1413,
+      "label": "Medicine ball throwing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is holding the medicine ball at chest height with two hands and is about to throw it high",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1413_medicine-ball-throwing-pose.pma",
+      "localScenePath": "scenes/1413_medicine-ball-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1413_00_medicine-ball-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1413_00_medicine-ball-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1413_00_medicine-ball-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 23925,
+      "slug": "medicine-ball-throwing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1415",
+      "presetNumber": 1415,
+      "label": "Handball throwing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is throwing a handball with right hand",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1415_handball-throwing-pose.pma",
+      "localScenePath": "scenes/1415_handball-throwing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1415_00_handball-throwing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1415_00_handball-throwing-pose.png",
+          "localThumbnailPath": "thumbnails/1415_00_handball-throwing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 23923,
+      "slug": "handball-throwing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1419",
+      "presetNumber": 1419,
+      "label": "Volleyball passing pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is passing the volleyball, throwing it low with both hands",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1419_volleyball-passing-pose.pma",
+      "localScenePath": "scenes/1419_volleyball-passing-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1419_00_volleyball-passing-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1419_00_volleyball-passing-pose.png",
+          "localThumbnailPath": "thumbnails/1419_00_volleyball-passing-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        5
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "throwing",
+        "ball",
+        "pose"
+      ],
+      "bytes": 24055,
+      "slug": "volleyball-passing-pose",
+      "tagIds": [
+        "hands-body"
+      ],
+      "tags": [
+        "手部/身体参考"
+      ]
+    },
+    {
+      "id": "guo-scene-1425",
+      "presetNumber": 1425,
+      "label": "Comfortable sitting female pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is sitting comfortably, her left hand is in her pocket and she is looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1425_comfortable-sitting-female-pose.pma",
+      "localScenePath": "scenes/1425_comfortable-sitting-female-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1425_00_comfortable-sitting-female-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1425_00_comfortable-sitting-female-pose.png",
+          "localThumbnailPath": "thumbnails/1425_00_comfortable-sitting-female-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 1,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [
+        1
+      ],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "pocket",
+        "pose"
+      ],
+      "bytes": 23902,
+      "slug": "comfortable-sitting-female-pose",
+      "tagIds": [
+        "sitting-furniture",
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "坐卧/家具",
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1426",
+      "presetNumber": 1426,
+      "label": "Female right hand pocket pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her right hand in her pocket and waving to somebody",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1426_female-right-hand-pocket-pose.pma",
+      "localScenePath": "scenes/1426_female-right-hand-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1426_00_female-right-hand-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1426_00_female-right-hand-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/1426_00_female-right-hand-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "pocket",
+        "pose"
+      ],
+      "bytes": 23527,
+      "slug": "female-right-hand-pocket-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1427",
+      "presetNumber": 1427,
+      "label": "Female left hand pocket pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with crossed legs and her left hand in her pocket and looking forward",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1427_female-left-hand-pocket-pose.pma",
+      "localScenePath": "scenes/1427_female-left-hand-pocket-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1427_00_female-left-hand-pocket-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1427_00_female-left-hand-pocket-pose.png",
+          "localThumbnailPath": "thumbnails/1427_00_female-left-hand-pocket-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "pocket",
+        "pose"
+      ],
+      "bytes": 23448,
+      "slug": "female-left-hand-pocket-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1428",
+      "presetNumber": 1428,
+      "label": "Both hands pockets pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is standing with her both hands in her pockets, looking ahead, hand in pocket pose",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1428_both-hands-pockets-pose.pma",
+      "localScenePath": "scenes/1428_both-hands-pockets-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1428_00_both-hands-pockets-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1428_00_both-hands-pockets-pose.png",
+          "localThumbnailPath": "thumbnails/1428_00_both-hands-pockets-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "pocket",
+        "pose"
+      ],
+      "bytes": 23434,
+      "slug": "both-hands-pockets-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    },
+    {
+      "id": "guo-scene-1429",
+      "presetNumber": 1429,
+      "label": "Female walking looking right pose",
+      "categoryId": "single-female",
+      "categoryLabel": "单人物女性",
+      "categoryIds": [
+        "single-female"
+      ],
+      "description": "Female is walking with her both hands in her pockets and looking to the right",
+      "sceneUrl": "/guo-3d-assets/guo-scene-presets-5000/scenes/1429_female-walking-looking-right-pose.pma",
+      "localScenePath": "scenes/1429_female-walking-looking-right-pose.pma",
+      "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1429_00_female-walking-looking-right-pose.png",
+      "thumbnails": [
+        {
+          "index": 0,
+          "thumbnailUrl": "/guo-3d-assets/guo-scene-presets-5000/thumbnails/1429_00_female-walking-looking-right-pose.png",
+          "localThumbnailPath": "thumbnails/1429_00_female-walking-looking-right-pose.png"
+        }
+      ],
+      "modelCount": 1,
+      "propCount": 0,
+      "modelNumbers": [
+        60
+      ],
+      "propNumbers": [],
+      "supportedModelCount": 1,
+      "unsupportedModelNumbers": [],
+      "sourceTags": [
+        "hand",
+        "pocket",
+        "pose"
+      ],
+      "bytes": 23507,
+      "slug": "female-walking-looking-right-pose",
+      "tagIds": [
+        "hands-body",
+        "daily-emotion"
+      ],
+      "tags": [
+        "手部/身体参考",
+        "日常/情绪"
+      ]
+    }
+  ]
+}
