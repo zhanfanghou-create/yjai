@@ -519,6 +519,19 @@ ipcMain.handle('system:openPath', async (_event, p: string) => {
   }
 });
 
+// IPC: 用系统默认浏览器打开外部网址（配置页“申请 API”等链接），避免在应用内窗口打开
+ipcMain.handle('system:openExternal', async (_event, url: string) => {
+  try {
+    if (!url || typeof url !== 'string') throw new Error('url required');
+    // 仅允许 http/https，避免打开本地文件或危险协议
+    if (!/^https?:\/\//i.test(url)) throw new Error('only http(s) urls are allowed');
+    await shell.openExternal(url);
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
+});
+
 // IPC: FFmpeg detection / guided installation for local video compose
 ipcMain.handle('ffmpeg:check', async () => {
   return checkFfmpegInstalled();

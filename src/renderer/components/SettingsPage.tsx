@@ -2,6 +2,14 @@
 import { EDGE_TTS_MODELS, useAppStore, StockMediaProvider } from '../store/appStore';
 import './SettingsPage.css';
 
+// 用系统默认浏览器打开外部网址（申请 API 等链接），避免在应用内窗口打开；无 IPC 时回退到 window.open
+const openExternalUrl = (url: string) => {
+  if (!url) return;
+  const api = (window as any)?.yijingAPI?.system?.openExternal;
+  if (typeof api === 'function') { void api(url); return; }
+  window.open(url, '_blank', 'noopener,noreferrer');
+};
+
 // ─────────────────────────────────────────────
 //  SVG Icon 组件
 // ─────────────────────────────────────────────
@@ -668,7 +676,14 @@ export const SettingsPage: React.FC = () => {
             { name: 'ModelScope', url: 'https://modelscope.cn', desc: '通义千问 / Wan2.1 视频' },
             { name: '硅基流动', url: 'https://siliconflow.cn', desc: '低价 OpenAI 兼容 API' },
           ].map(item => (
-            <a key={item.name} className="sp-help-link" href={item.url} target="_blank" rel="noopener noreferrer">
+            <a
+              key={item.name}
+              className="sp-help-link"
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => { e.preventDefault(); openExternalUrl(item.url); }}
+            >
               <span className="sp-help-name">{item.name}</span>
               <span className="sp-help-desc">{item.desc}</span>
               <span className="sp-help-arrow">→</span>
