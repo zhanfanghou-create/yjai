@@ -798,7 +798,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       });
       actGroupsList = order.map(a => ({ actName: a, rows: grouped[a] }));
     }
-    // ========== 3) 每一幕：一行 4 个节点（文生图 → 图片结果 → 图生视频 → 视频结果），每镜一行 ==========
+    // ========== 3) 每一幕：每镜一行，文生图 → 图生视频 直连（生成结果直接显示在各自节点上） ==========
     actGroupsList.forEach((actGroup, actIdx) => {
       const actName = (actGroup.actName || `第${actIdx + 1}幕`).replace(/\s+/g, ' ').trim();
       const actGroupId = `group-drama-act-${Date.now()}-${actIdx}`;
@@ -808,9 +808,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
         const shotNum = ((row.shot || `${shotIndex + 1}`).toString().trim()) || `${shotIndex + 1}`;
 
         const t2iX = startX;
-        const imgX = startX + (nodeWidth + gapX);
-        const i2vX = startX + (nodeWidth + gapX) * 2;
-        const vidX = startX + (nodeWidth + gapX) * 3;
+        const i2vX = startX + (nodeWidth + gapX);
 
         // 文生图
         const t2iNodeId = get().addNode({
@@ -838,21 +836,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
         });
         actNodeIds.push(t2iNodeId);
 
-        // 图片结果
-        const imgResultNodeId = get().addNode({
-          type: 'result',
-          provider: 'openai',
-          x: imgX,
-          y: currentY,
-          width: nodeWidth,
-          height: nodeHeight,
-          status: 'idle',
-          prompt: '',
-          options: { displayName: `${actName}-镜${shotNum}-图片`, resultType: 'image', groupId: actGroupId },
-        });
-        actNodeIds.push(imgResultNodeId);
-
-        // 图生视频
+        // 图生视频（生成的视频直接显示在本节点上，无需额外结果节点）
         const img2videoNodeId = get().addNode({
           type: 'image-to-video',
           provider: 'openai',
@@ -871,24 +855,8 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
         });
         actNodeIds.push(img2videoNodeId);
 
-        // 视频结果
-        const videoResultNodeId = get().addNode({
-          type: 'result',
-          provider: 'openai',
-          x: vidX,
-          y: currentY,
-          width: nodeWidth,
-          height: nodeHeight,
-          status: 'idle',
-          prompt: '',
-          options: { displayName: `${actName}-镜${shotNum}-视频`, resultType: 'video', groupId: actGroupId },
-        });
-        actNodeIds.push(videoResultNodeId);
-
-        // 连线
-        makeEdge(t2iNodeId, imgResultNodeId);
-        makeEdge(imgResultNodeId, img2videoNodeId);
-        makeEdge(img2videoNodeId, videoResultNodeId);
+        // 连线：文生图 → 图生视频（文生图产出的图片自动作为图生视频参考图）
+        makeEdge(t2iNodeId, img2videoNodeId);
 
         currentY += nodeHeight + gapY;
       });
