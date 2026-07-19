@@ -74,7 +74,6 @@ const SvgIcon = ({ name, size = 18 }: { name: CanvasIconName; size?: number }) =
 
 // 将输入文本中的 @参考图名 高亮：只有匹配到「已知参考图名称」才加背景色，
 // 参考图名称后面用户输入的文字会自动分隔开，不再有背景色。
-const MENTION_MAX_LEN = 14;
 const renderMentionSegments = (text: string, knownNames: string[] = []): React.ReactNode[] => {
   const nodes: React.ReactNode[] = [];
   let key = 0;
@@ -96,9 +95,9 @@ const renderMentionSegments = (text: string, knownNames: string[] = []): React.R
       }
       if (matchedName) {
         flushBuffer();
-        const shortName = matchedName.length > MENTION_MAX_LEN ? `${matchedName.slice(0, MENTION_MAX_LEN)}…` : matchedName;
+        // 高亮层文本必须与 textarea 内容逐字一致，否则光标位置与可见文字会错位；因此不截断名称
         nodes.push(
-          <span key={`m${key++}`} className="mention-chip" title={matchedName}>@{shortName}</span>
+          <span key={`m${key++}`} className="mention-chip" title={matchedName}>@{matchedName}</span>
         );
         i += matchedName.length + 1;
         continue;
@@ -4274,7 +4273,8 @@ function CanvasInner(_props: CanvasProps = {}) {
       width: overrides.width || 280,
       height: overrides.height || 220,
       status: overrides.status || 'idle',
-      prompt: overrides.prompt ?? (sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt ?? '')),
+      // 文本/上游提示词不再直接写进输入框，只在生成提交时经 upstreamPrompt 起作用；仅当显式指定 overrides.prompt 时才回填输入框
+      prompt: overrides.prompt ?? '',
       thumbnail: overrides.thumbnail,
       // 透传 result / meta，确保导演台导出的视频、截图能像上传节点一样直接展示媒体
       ...(overrides.result ? { result: overrides.result } : {}),
@@ -4286,7 +4286,7 @@ function CanvasInner(_props: CanvasProps = {}) {
       options: {
         displayName: createNodeDisplayName(targetType, state.nodes),
         generationType: targetType,
-        upstreamPrompt: sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || ''),
+        upstreamPrompt: (sourceNode.result?.url || sourceNode.thumbnail) && sourceNode.result?.type !== 'text' ? undefined : (sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || '')),
         upstreamNodeIds: [sourceId],
         ...overrides.options,
       },
@@ -4591,6 +4591,8 @@ function CanvasInner(_props: CanvasProps = {}) {
     const sourceResultUrl = sourceNode.result?.url || sourceNode.thumbnail || '';
     const sourceResultType = sourceNode.result?.type || 'image';
     const sourceIsImage = sourceResultType === 'image' && sourceHasResult;
+    // 源节点若已生成媒体结果（图片/视频/音频），连线只作为参考图/参考素材传递，不再把上游提示词自动灌入下游节点
+    const sourceProducedMedia = sourceHasResult && (sourceResultType === 'image' || sourceResultType === 'video' || sourceResultType === 'audio');
     const targetIsPanorama = targetNode.options?.panoramaType === '720' || targetNode.options?.outputType === 'panorama';
     const sourceIsPanorama = sourceNode.options?.panoramaType === '720' || sourceNode.options?.outputType === 'panorama';
     const targetIsDirectorStage = targetNode.type === 'director-stage';
@@ -4651,16 +4653,14 @@ function CanvasInner(_props: CanvasProps = {}) {
       }
     }
 
-    if (sourceText) {
+    if (sourceText && !sourceProducedMedia) {
       newOptions.upstreamPrompt = composePromptParts(targetNode.options?.upstreamPrompt, sourceText);
     }
 
     const updatePayload: Parameters<ReturnType<typeof useAppStore['getState']>['updateNode']>[1] = {
       options: newOptions,
     };
-    if (sourceText) {
-      updatePayload.prompt = composePromptParts(targetNode.prompt, sourceText);
-    }
+    // 上游文本仅经 upstreamPrompt 在生成提交时生效，不再写入下游节点的可见输入框
 
     // 全景图节点：连接图片后直接生成 720° 全景预览（无需输入框）
     if (targetIsPanorama && sourceIsImage) {
@@ -4812,8 +4812,8 @@ function CanvasInner(_props: CanvasProps = {}) {
         if (edge.source !== detail.nodeId || !edge.target || !detail.prompt?.trim()) return;
         const targetNode = state.nodes[edge.target];
         if (!targetNode) return;
+        // 上游文本节点实时编辑时，只更新下游的 upstreamPrompt（提交时生效），不覆盖下游可见输入框
         state.updateNode(edge.target, {
-          prompt: composePromptParts(targetNode.prompt, detail.prompt),
           options: {
             ...targetNode.options,
             upstreamPrompt: composePromptParts(targetNode.options?.upstreamPrompt, detail.prompt),

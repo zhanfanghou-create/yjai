@@ -89,7 +89,26 @@ const sanitizeText = (s: string | undefined, fallback = '新对话') => {
   if (/\?{2,}|锘�/.test(s)) return fallback;
   return s;
 };
-const composePrompt = (...parts: Array<string | undefined>) => parts.map(part => (part || '').trim()).filter(Boolean).join('\n\n');
+const composePrompt = (...parts: Array<string | undefined>) => { const seen = new Set<string>(); return parts.map(part => (part || '').trim()).filter(part => { if (!part || seen.has(part)) return false; seen.add(part); return true; }).join('\n\n'); };
+
+// 根据正向提示词自动推理画风，并生成与画风一致的负向提示词，避免生成结果风格漂移。
+// 仅在用户未显式填写负向提示词时启用；不修改用户正向提示词内容，只补足缺省的负向约束。
+const inferComfyNegativePrompt = (prompt: string, kind: 'image' | 'video' | 'audio'): string => {
+  const text = String(prompt || '').toLowerCase();
+  const has = (...keys: string[]) => keys.some(k => text.includes(k.toLowerCase()));
+  const base = ['lowres', 'low quality', 'worst quality', 'blurry', 'jpeg artifacts', 'watermark', 'signature', 'text', 'logo', 'deformed', 'bad anatomy', 'extra limbs', 'missing fingers', 'extra fingers', 'fused fingers', 'mutated hands', 'disfigured', 'cropped', 'out of frame', 'duplicate'];
+  const isAnime = has('anime', 'cartoon', '二次元', '动漫', '卡通', 'cel shading', 'manga', 'chibi');
+  const isPhoto = has('photorealistic', 'photo', 'realistic', 'photograph', '写实', '真实', 'raw photo', 'cinematic', 'dslr', '8k', '4k', 'hyperrealistic');
+  const isPainting = has('oil painting', 'watercolor', 'ink', '水墨', '油画', '水彩', 'sketch', '素描', 'illustration', 'concept art');
+  const is3d = has('3d', 'render', 'octane', 'blender', 'unreal', 'c4d', 'cgi', '三维');
+  if (isPhoto && !isAnime) base.push('cartoon', 'anime', 'illustration', 'painting', '3d render', 'cgi', 'plastic skin', 'over-saturated');
+  if (isAnime && !isPhoto) base.push('photorealistic', 'realistic photo', '3d', 'extra digits', 'ugly');
+  if (isPainting) base.push('photorealistic', 'over-sharpened', 'harsh lighting');
+  if (is3d) base.push('flat', 'low-poly artifacts', 'noise');
+  if (kind === 'video') base.push('flickering', 'temporal artifacts', 'jitter', 'frame jumps', 'ghosting', 'morphing', 'warping');
+  return Array.from(new Set(base)).join(', ');
+};
+
 const extractUrl = (d: any) => d?.url || d?.filePaths?.[0] || d?.urls?.[0] || d?.metadata?.url || d?.data?.metadata?.url || d?.data?.[0]?.url || d?.images?.[0]?.url || d?.results?.[0]?.url || d?.results?.[0]?.videos?.[0]?.url || d?.results?.[0]?.image_url || d?.output?.[0] || d?.files?.[0] || d?.video_url || d?.output?.url || d?.video?.url || d?.data?.video_url || d?.data?.[0]?.video_url || '';
 const resultType = (url: string, fallback: 'image' | 'video' | 'audio' | 'text' = 'image') => /\.(mp4|webm|mov|ogg)$/i.test(url) ? 'video' : /\.(mp3|wav|m4a|aac|flac)$/i.test(url) ? 'audio' : fallback;
 const modeOf = (n: AINode) => String(n.options?.generationType || n.type);
@@ -178,10 +197,11 @@ interface AppState {
 const testConfig = async (c?: APIConfig) => { if (!c?.baseUrl) return false; try { const win = window as any; if (win?.yijingAPI?.grsai?.refreshModels) return !!(await win.yijingAPI.grsai.refreshModels({ baseUrl: c.baseUrl, apiKey: c.apiKey, apiType: 'openai-chat' }))?.ok; const r = await fetch(`${normalizeApiBase(c.baseUrl)}/models`, { headers: c.apiKey ? { Authorization: `Bearer ${c.apiKey}` } : {} }); return r.ok; } catch { return false; } };
 
 const directImageCapability = (n: AINode, prompt: string) => {
-  const featureText = `${n.options?.mediaFeature || ''} ${n.options?.sourceFeature || ''} ${n.options?.workflowProject || ''} ${n.options?.apiCapability || ''} ${prompt} ${JSON.stringify(n.options || {})}`.toLowerCase();
+  const featureText = `${n.options?.mediaFeature || ''} ${n.options?.sourceFeature || ''} ${n.options?.workflowProject || ''} ${n.options?.apiCapability || ''} ${n.options?.panoramaFeature || ''} ${prompt}`.toLowerCase();
   const has = (...keys: string[]) => keys.some(key => featureText.includes(key.toLowerCase()));
-  if (n.options?.panoramaType === '720' || has('720', 'panorama')) return { githubProject: 'PanFusion / SD-T2I-360PanoImage', apiCapability: 'image-to-720-panorama', outputType: 'panorama', aspectRatio: '2:1', imageRatio: '2:1', resolution: n.options?.resolution || '2K', size: n.options?.size || '2048x1024', projectPromptHint: 'PanFusion or SD-T2I-360PanoImage style: create a seamless 720 degree equirectangular panorama from the reference image, 2:1, no black border.' };
-  if (has('multi-angle', 'multiview', 'multi-view', 'zero123', 'wonder3d', 'view')) return { githubProject: 'Wonder3D / Zero123', apiCapability: 'image-to-multiview', outputType: 'multi-view-image', projectPromptHint: 'Wonder3D or Zero123 style: generate the requested camera angle or multi-view sheet from the reference image while preserving identity and style.' };
+  const explicitPanorama = n.options?.panoramaType === '720' || n.options?.outputType === 'panorama' || n.options?.apiCapability === 'image-to-720-panorama';
+  if (explicitPanorama || has('全景', 'panorama', 'equirectangular')) return { githubProject: 'PanFusion / SD-T2I-360PanoImage', apiCapability: 'image-to-720-panorama', outputType: 'panorama', aspectRatio: '2:1', imageRatio: '2:1', resolution: n.options?.resolution || '2K', size: n.options?.size || '2048x1024', projectPromptHint: 'PanFusion or SD-T2I-360PanoImage style: create a seamless 720 degree equirectangular panorama from the reference image, 2:1, no black border.' };
+  if (has('multi-angle', 'multiview', 'multi-view', 'zero123', 'wonder3d')) return { githubProject: 'Wonder3D / Zero123', apiCapability: 'image-to-multiview', outputType: 'multi-view-image', projectPromptHint: 'Wonder3D or Zero123 style: generate the requested camera angle or multi-view sheet from the reference image while preserving identity and style.' };
   if (has('lighting', 'relight', 'ic-light')) return { githubProject: 'IC-Light / DPR', apiCapability: 'free-angle-relighting', outputType: 'relit-image', projectPromptHint: 'IC-Light style: preserve subject and composition, only modify lighting direction, intensity, color and rim light.' };
   if (has('upscale', 'super-resolution', 'realesrgan', 'swinir') || modeOf(n) === 'image-upscale') return { githubProject: 'Real-ESRGAN / SwinIR', apiCapability: 'image-super-resolution', outputType: 'upscaled-image', resolution: n.options?.resolution || n.options?.imageClarity || '4K', projectPromptHint: 'Real-ESRGAN or SwinIR style: improve clarity, details and sharpness while preserving content.' };
   if (has('outpaint')) return { githubProject: 'Stable Diffusion Outpainting / LaMa', apiCapability: 'image-outpainting', outputType: 'outpainted-image', projectPromptHint: 'Outpainting style: extend the image beyond original borders while preserving perspective, lighting and style.' };
@@ -192,7 +212,7 @@ const directImageCapability = (n: AINode, prompt: string) => {
 };
 
 const callApi = async (c: APIConfig, n: AINode) => {
-  const mode = modeOf(n), apiBase = redirectAgnesHost(normalizeApiBase(c.baseUrl)), model = n.model || n.options?.model || c.defaultModel, prompt = n.prompt || '', win = window as any;
+  const mode = modeOf(n), apiBase = redirectAgnesHost(normalizeApiBase(c.baseUrl)), model = n.model || n.options?.model || c.defaultModel, prompt = composePrompt(n.options?.upstreamPrompt, n.prompt) || '', win = window as any;
   const imageRefs = Array.isArray(n.options?.referenceImages) ? n.options.referenceImages.map((item: any) => item?.url).filter(Boolean) : [];
   const sourceImage = n.options?.sourceImage || imageRefs[0];
   const isPanorama720 = n.options?.panoramaType === '720' || n.options?.mediaFeature === '720度全景图' || /720度?全景|720 panorama/i.test(prompt);
@@ -343,7 +363,7 @@ const callComfy = async (c: ComfyUIConfig, n: AINode) => {
       sampler: _gp.sampler ?? _optsIn.sampler,
       scheduler: _gp.scheduler ?? _optsIn.scheduler,
       denoise: (_gp.denoise ?? _optsIn.denoise) !== undefined ? Number(_gp.denoise ?? _optsIn.denoise) : undefined,
-      negativePrompt: _optsIn.negativePrompt || _optsIn.negative_prompt || _gp.negativePrompt || '',
+      negativePrompt: _optsIn.negativePrompt || _optsIn.negative_prompt || _gp.negativePrompt || inferComfyNegativePrompt(composePrompt(n.options?.upstreamPrompt, n.prompt), kind),
       referenceCount: Array.isArray(_optsIn.referenceImages) ? _optsIn.referenceImages.length : 0,
       hasSourceImage: !!_optsIn.sourceImage,
       generateAudio: _vc.generateAudio !== undefined ? !!_vc.generateAudio : (_optsIn.generateAudio !== undefined ? !!_optsIn.generateAudio : undefined),
@@ -408,11 +428,12 @@ const callComfy = async (c: ComfyUIConfig, n: AINode) => {
   // 组合最终提交给 ComfyUI 的提示词：主提示词 + 运镜提示词（如有）
   const vcCam = n.options?.videoConfig?.cameraMovement || (n.options?.cameraMovementId ? { prompt: n.options?.cameraMovementPrompt } : null);
   const cameraPromptText = (vcCam && (vcCam as any).prompt) ? String((vcCam as any).prompt) : (n.options?.cameraMovementPrompt || '');
-  const finalPrompt = [n.prompt || '', cameraPromptText].filter(x => x && String(x).trim()).join(', ').trim();
+  const finalPrompt = [n.options?.upstreamPrompt || '', n.prompt || '', cameraPromptText].filter(x => x && String(x).trim()).join(', ').trim();
   // 主进程 comfyui:generate IPC 期望的字段名为 workflowJson。
   // 明确把 isVideo/kind 传给主进程，便于按视频还是图片注入 width/height/frame_count/batch_size 等参数。
   const injectHint = { isVideo: kind === 'video', isAudio: kind === 'audio', kind };
-  const payload: any = { serverUrl, workflowJson: workflow, prompt: finalPrompt, options: { ...(n.options || {}), __injectHint: injectHint }, model: n.model, params: { components: mergedComponents }, referenceMedia };
+  const autoNegativePrompt = n.options?.negativePrompt || n.options?.negative_prompt || n.options?.generationParams?.negativePrompt || inferComfyNegativePrompt(finalPrompt, kind);
+  const payload: any = { serverUrl, workflowJson: workflow, prompt: finalPrompt, options: { ...(n.options || {}), negativePrompt: autoNegativePrompt, __injectHint: injectHint }, model: n.model, params: { components: mergedComponents }, referenceMedia };
   // 期望结果类型：与上方 kind 判定保持一致（含视频节点即使 generationType 是「reference」等别名的场景）
   const expectedType: 'image' | 'video' | 'audio' = kind;
   if (win?.yijingAPI?.comfyui?.generate) {
@@ -681,7 +702,10 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
     }
     // 第一个表格视为资产表
     const assetItems: Array<{ name: string; prompt: string }> = [];
-    if (allTableBlocks.length > 0) {
+    // 判断首个表格是否其实是分镜表（模型漏写资产表时会发生），避免把第一幕镜头误当资产、导致丢镜。
+    const firstBlock = allTableBlocks[0];
+    const firstIsShotTable = !!firstBlock && (/镜号|文生图|图生视频|景别/.test(firstBlock.headers.join('|')) || firstBlock.headers.length >= 5);
+    if (allTableBlocks.length > 0 && !firstIsShotTable) {
       const first = allTableBlocks[0];
       const isTwoCol = first.headers.length === 2;
       if (isTwoCol) {
@@ -738,7 +762,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
     }
     // ========== 2) 从 markdown 解析分幕分镜表 ==========
     const actTables: Array<{ actName: string; rows: any[] }> = [];
-    if (allTableBlocks.length > 1) {
+    if (allTableBlocks.length > 1 || firstIsShotTable) {
       const actTitleRegex = /^####[^\n]*第[^\n]*幕[^\n]*/gm;
       const actTitles: Array<{ title: string; index: number }> = [];
       let mm: RegExpExecArray | null;
@@ -750,26 +774,41 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
         let ci = 0;
         for (let li = 0; li < mdLines.length; li++) { linePos.push(ci); ci += (mdLines[li]?.length || 0) + 1; }
       }
-      for (let ti = 1; ti < allTableBlocks.length; ti++) {
+      for (let ti = firstIsShotTable ? 0 : 1; ti < allTableBlocks.length; ti++) {
         const tb = allTableBlocks[ti];
         const headStr = tb.headers.join('|');
-        if (!/镜号|文生图/.test(headStr)) continue;
+        // 分镜表识别放宽：命中任一分镜关键字或列数≥5（分镜表 8 列），即视为分镜表，
+        // 避免大模型微调表头（如「文生图提示词(prompt)」）时整幕镜头被丢弃。
+        const looksLikeShotTable = /镜号|文生图|图生视频|景别|镜头|内容/.test(headStr) || tb.headers.length >= 5;
+        if (!looksLikeShotTable) continue;
         const tblPos = linePos[tb.startLine] || 0;
         const owner = actTitles.slice().reverse().find(at => at.index < tblPos);
         const cnNums = ['一','二','三','四','五','六','七','八','九','十'];
         const actName = owner ? owner.title.replace(/[🎬📽️]/g, '').trim() : `第${cnNums[actTables.length] || (actTables.length+1)}幕`;
-        const parsedRows = tb.rows.map(cells => {
-          const map: Record<string, string> = {};
-          tb.headers.forEach((h, hi) => { map[h] = (cells[hi] || '').trim(); });
+        // 表头模糊匹配 + 固定列序兜底：先按关键字找列，找不到再用列序，保证任何一列提示词都不丢。
+        const findCol = (...keys: string[]) => tb.headers.findIndex(h => keys.some(k => (h || '').includes(k)));
+        const colShot = findCol('镜号', '镜头号', '序号');
+        const colDesc = findCol('内容', '画面', '描述');
+        const colShotType = findCol('景别');
+        const colCamParams = findCol('镜头参数', '参数', '焦距');
+        const colCamModel = findCol('相机', '机型', '型号');
+        const colT2I = findCol('文生图', '图片提示');
+        const colI2V = findCol('图生视频', '视频提示', '动态');
+        const colSfx = findCol('音效', '声音', '配乐');
+        const parsedRows = tb.rows.map((cells, rowIdx) => {
+          const at = (idx: number, fallbackIdx: number) => {
+            const useIdx = idx >= 0 ? idx : fallbackIdx;
+            return useIdx >= 0 ? (cells[useIdx] || '').trim() : '';
+          };
           return {
-            shot: map['镜号'] || '',
-            description: map['内容'] || '',
-            shotType: map['景别'] || '',
-            cameraParams: map['镜头参数'] || '',
-            cameraModel: map['相机型号'] || '',
-            text2imgPrompt: map['文生图提示词'] || '',
-            img2videoPrompt: map['图生视频提示词'] || '',
-            sfx: map['音效'] || '',
+            shot: at(colShot, 0) || `${rowIdx + 1}`,
+            description: at(colDesc, 1),
+            shotType: at(colShotType, 2),
+            cameraParams: at(colCamParams, 3),
+            cameraModel: at(colCamModel, 4),
+            text2imgPrompt: at(colT2I, 5),
+            img2videoPrompt: at(colI2V, 6),
+            sfx: at(colSfx, 7),
           };
         });
         actTables.push({ actName, rows: parsedRows });
@@ -778,7 +817,9 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
 
     // 回退：如果 markdown 没解析出分幕，则用分镜设计页 storyboardRows
     let actGroupsList: Array<{ actName: string; rows: any[] }> = actTables;
-    if (actGroupsList.length === 0) {
+    // 分幕存在但没有解析到任何镜头时，同样回退到分镜设计页数据，避免丢镜。
+    const totalParsedShots = actGroupsList.reduce((sum, a) => sum + (a.rows?.length || 0), 0);
+    if (actGroupsList.length === 0 || totalParsedShots === 0) {
       const rows = storyboardRows || episode.storyboardRows || [];
       const cnNums2 = ['一','二','三','四','五','六','七','八','九','十'];
       const extractAct = (scene: string, fallbackIdx: number): string => {

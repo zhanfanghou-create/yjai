@@ -252,7 +252,7 @@ const SYSTEM_PROMPTS: Record<string, string> = {
 - **名称**列填写具体的资产名称，例如：场景名称、人物名称（角色姓名）、道具名称、武器名称、载具名称、服装名称、背景名称等。**每一行代表一个具体资产**，不要用「场景/角色/道具/背景」这种大类做行，而是每个具体资产单独一行。所有场景、人物、道具、武器都要拆开写。
 - **详细提示词**列必须写成「可直接复制到 Midjourney / Stable Diffusion / Flux / DALL-E 使用的**英文完整提示词**」，中间用逗号分隔，长句允许用 <br> 换行但不要出现表格分隔符。
   - 场景类：写清空间结构、材质、色温、光影、时间、氛围、镜头质感、渲染风格、宽高比等。
-  - 人物类**必须**在同一个单元格内详尽描述：性别年龄、种族外貌、脸型五官、发色发型发饰、瞳色、体型、皮肤质感、上衣/外套/内搭/裤装/裙装、饰品（耳环/项链/戒指/手表/腰带）、鞋子袜子、随身道具；然后必须加入 **front view, side view, back view, face close-up, character sheet, turnaround, four-view reference sheet, white background, full body** 等关键词，让**一张图中同时生成正面、侧面、背面、脸部特写四个角度**。最后补上风格与质量词（如 photorealistic, 8k, studio lighting, cinematic, --ar 16:9 等）。
+  - 人物类**必须**在同一个单元格内详尽描述：性别年龄、种族外貌、脸型五官、发色发型发饰、瞳色、体型、皮肤质感、上衣/外套/内搭/裤装/裙装、饰品（耳环/项链/戒指/手表/腰带）、鞋子袜子、随身道具；然后**只加入这四个视角关键词**：**front view, side view, back view, face close-up**，再加上 **white background**（白底），让**一张图中同时生成正面、侧面、背面、脸部特写四个角度**；**不要**写 turnaround、character sheet、four-view reference sheet、full body 等其它视角或多视图关键词。最后补上风格与质量词（如 photorealistic, 8k, studio lighting, cinematic, --ar 16:9 等）。
   - 道具/武器/载具：写材质、颜色、磨损、比例、光影、白背景、多角度参考。
 
 ### 第二部分：下方分幕表格 — 分镜提示词表（**每一幕单独一个表格**）
@@ -285,7 +285,7 @@ const SYSTEM_PROMPTS: Record<string, string> = {
 ## 写作原则
 - 提示词英文主体 + 参数尾缀；每条都要能直接复制运行；
 - 不允许出现 \`|---|\` 这样的表格分隔行；
-- 不允许省略人物外观、四视图关键词、镜头三要素；
+- 不允许省略人物外观、四个视角关键词（front view / side view / back view / face close-up）、镜头三要素；
 - 每幕之间用「#### 🎬 第X幕：…」分隔，方便下一步自动排版打组。
 
 【重要】你必须使用中文写解释性文字，但**表格里的英文提示词保持英文**。

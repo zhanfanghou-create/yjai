@@ -9197,15 +9197,29 @@ body .lib-node {
   color: rgba(255, 255, 255, 0.25);
 }
 
+/* 透明输入层被选中时保持文字透明，避免与高亮层叠加导致“选中文字变大变粗” */
+.mention-textarea-input::selection {
+  color: transparent;
+  background: rgba(99, 102, 241, 0.35);
+}
+.mention-textarea-input::-moz-selection {
+  color: transparent;
+  background: rgba(99, 102, 241, 0.35);
+}
+
 /* 被 @ 的文件名：缩短 + 背景色区分正常文字 */
+/* 高亮层的 @提及片段：只能改颜色/背景，绝不能改变字符宽度或换行，否则与 textarea 光标错位 */
 .mention-chip {
   display: inline;
-  padding: 1px 6px;
   border-radius: 4px;
   background: rgba(99, 102, 241, 0.22);
   color: #a5b4fc;
-  font-weight: 500;
-  white-space: nowrap;
+  font-weight: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  white-space: inherit;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .mention-dropdown {
