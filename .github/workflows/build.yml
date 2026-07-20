@@ -22,7 +22,7 @@ jobs:
           node-version: "20"
           cache: "npm"
       - name: Install deps
-        run: npm ci --no-audit --no-fund
+        run: npm ci --no-audit --no-fund --registry=https://registry.npmmirror.com
         shell: bash
       - name: Force clean tsc incremental cache
         run: rm -rf dist tsconfig.main.tsbuildinfo tsconfig.renderer.tsbuildinfo
