@@ -533,6 +533,41 @@ ipcMain.handle('system:openExternal', async (_event, url: string) => {
 });
 
 // IPC: FFmpeg detection / guided installation for local video compose
+// IPC: 自动更新：从 GitHub Releases 下载最新安装包到临时目录，返回本地路径供用户点击安装
+ipcMain.handle('system:downloadUpdate', async (_event) => {
+  try {
+    const r = await fetch('https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest');
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const d = await r.json();
+    const assets = Array.isArray(d.assets) ? d.assets : [];
+    const isWin = process.platform === 'win32';
+    const isArm = process.arch === 'arm64';
+    const pattern = isWin ? /-windows-x64\.exe$/i : (isArm ? /-arm64\.dmg$/i : /-x64\.dmg$/i);
+    const asset = assets.find((a: any) => pattern.test(a.name || ''));
+    if (!asset) throw new Error('未找到对应平台安装包');
+    const downloadUrl = asset.browser_download_url || asset.url;
+    if (!downloadUrl) throw new Error('下载地址为空');
+    const tmpDir = path.join(app.getPath('temp'), 'yijing-update');
+    fs.mkdirSync(tmpDir, { recursive: true });
+    const savePath = path.join(tmpDir, asset.name);
+    if (fs.existsSync(savePath)) fs.unlinkSync(savePath);
+    const resp = await fetch(downloadUrl);
+    if (!resp.ok) throw new Error(`下载 HTTP ${resp.status}`);
+    const reader = resp.body!.getReader();
+    const chunks: Uint8Array[] = [];
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+    }
+    const buffer = Buffer.concat(chunks);
+    fs.writeFileSync(savePath, buffer);
+    return { ok: true, path: savePath, fileName: asset.name, size: buffer.length };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
+});
+
 ipcMain.handle('ffmpeg:check', async () => {
   return checkFfmpegInstalled();
 });

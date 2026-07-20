@@ -62,7 +62,9 @@ contextBridge.exposeInMainWorld('yijingAPI', {
   system: {
     platform: process.platform,
     versions: process.versions,
+    version: process.env.npm_package_version,
     openPath: (p: string) => ipcRenderer.invoke('system:openPath', p),
+    downloadUpdate: () => ipcRenderer.invoke('system:downloadUpdate'),
     // 用系统默认浏览器打开外部网址（配置页“申请 API”等链接）
     openExternal: (url: string) => ipcRenderer.invoke('system:openExternal', url),
     // 读取本地文件并以 Data URL 返回（支持 file:/// 路径和绝对 Windows 路径）

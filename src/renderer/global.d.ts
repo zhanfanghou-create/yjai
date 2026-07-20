@@ -55,6 +55,8 @@ declare global {
         platform: string;
         versions: Record<string, string | undefined>;
         openPath: (p: string) => Promise<any>;
+        version?: string;
+        downloadUpdate?: () => Promise<any>;
         openExternal?: (url: string) => Promise<any>;
         readFileAsDataUrl: (p: string) => Promise<any>;
         saveFileFromData: (opts: { dataUrl: string; suggestedName?: string }) => Promise<any>;
