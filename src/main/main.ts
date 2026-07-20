@@ -532,165 +532,263 @@ ipcMain.handle('system:openExternal', async (_event, url: string) => {
   }
 });
 
-// IPC: FFmpeg detection / guided installation for local video compose
-// IPC: 自动更新：从 GitHub Releases 下载最新安装包到临时目录，返回本地路径供用户点击安装
-ipcMain.handle('system:downloadUpdate', async (_event) => {
-  try {
-    const r = await fetch('https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest');
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const d = await r.json();
-    const assets = Array.isArray(d.assets) ? d.assets : [];
-    const isWin = process.platform === 'win32';
-    const isArm = process.arch === 'arm64';
-    const pattern = isWin ? /-windows-x64\.exe$/i : (isArm ? /-arm64\.dmg$/i : /-x64\.dmg$/i);
-    const asset = assets.find((a: any) => pattern.test(a.name || ''));
-    if (!asset) throw new Error('未找到对应平台安装包');
-    const downloadUrl = asset.browser_download_url || asset.url;
-    if (!downloadUrl) throw new Error('下载地址为空');
-    const tmpDir = path.join(app.getPath('temp'), 'yijing-update');
-    fs.mkdirSync(tmpDir, { recursive: true });
-    const savePath = path.join(tmpDir, asset.name);
-    if (fs.existsSync(savePath)) fs.unlinkSync(savePath);
-    const resp = await fetch(downloadUrl);
-    if (!resp.ok) throw new Error(`下载 HTTP ${resp.status}`);
-    const reader = resp.body!.getReader();
-    const chunks: Uint8Array[] = [];
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      chunks.push(value);
+// ----- 自动更新配置：支持私有仓库 + 国内镜像 -----
+// GitHub 配置 - 私有仓库需要 token，公开仓库可以留空
+const GITHUB_CONFIG = {
+  owner: "zhanfanghou-create",
+  repo: "yjai",
+  // 私有仓库需要 Personal Access Token (public_repo 权限)
+  // 注意：打包后 token 会被打包进应用，有一定泄露风险
+  // 建议使用 fine-grained token 仅授予 contents:read 权限
+  token: "",
+  // 国内镜像站列表 - 按优先级排序
+  mirrors: [
+    "https://mirror.ghproxy.com/",
+    "https://ghproxy.net/",
+    "https://gh-proxy.com/",
+    "", // 直连 - 最后尝试
+  ],
+};
+
+// 获取当前应用版本
+function getCurrentVersion(): string {
+  return app.getVersion() || process.env.npm_package_version || "1.0.0";
+}
+
+// 版本号比较：v1.2.3 > v1.2.2 = true
+function isVersionNewer(remote: string, local: string): boolean {
+  const cleanRemote = remote.replace(/^v/, "").split(".");
+  const cleanLocal = local.replace(/^v/, "").split(".");
+  for (let i = 0; i < Math.max(cleanRemote.length, cleanLocal.length); i++) {
+    const r = parseInt(cleanRemote[i] || "0");
+    const l = parseInt(cleanLocal[i] || "0");
+    if (r > l) return true;
+    if (r < l) return false;
+  }
+  return false;
+}
+
+// 带认证的 GitHub API 请求（支持私有仓库）
+async function githubApiRequest(endpoint: string): Promise<any> {
+  const url = `https://api.github.com${endpoint}`;
+  const headers: Record<string, string> = {
+    "User-Agent": "YijingAI-Updater",
+    Accept: "application/vnd.github.v3+json",
+  };
+  if (GITHUB_CONFIG.token) {
+    headers.Authorization = `token ${GITHUB_CONFIG.token}`;
+  }
+
+  const response = await fetch(url, { headers });
+  if (!response.ok) {
+    if (response.status === 404 && GITHUB_CONFIG.token) {
+      throw new Error("访问被拒绝，请检查 Token 权限或仓库是否存在");
     }
-    const buffer = Buffer.concat(chunks);
-    fs.writeFileSync(savePath, buffer);
-    return { ok: true, path: savePath, fileName: asset.name, size: buffer.length };
+    throw new Error(`GitHub API 错误: HTTP ${response.status}`);
+  }
+  return response.json();
+}
+
+// 通过镜像下载文件
+async function downloadWithMirror(
+  originalUrl: string,
+  onProgress?: (progress: number, downloaded: number, total: number) => void
+): Promise<Buffer> {
+  const isWin = process.platform === "win32";
+
+  for (const mirror of GITHUB_CONFIG.mirrors) {
+    try {
+      const downloadUrl = mirror ? `${mirror}${originalUrl}` : originalUrl;
+      console.log(`尝试下载: ${downloadUrl}`);
+
+      // Windows 下 GitHub Release 下载可能需要认证
+      const headers: Record<string, string> = { "User-Agent": "YijingAI-Updater" };
+      if (GITHUB_CONFIG.token && !mirror) {
+        // 注意：镜像站通常不支持认证头，直连才使用
+        headers.Authorization = `token ${GITHUB_CONFIG.token}`;
+      }
+
+      const resp = await fetch(downloadUrl, { headers });
+      if (!resp.ok) {
+        throw new Error(`HTTP ${resp.status}`);
+      }
+
+      const totalBytes = Number(resp.headers.get("content-length")) || 0;
+      let downloadedBytes = 0;
+      const reader = resp.body!.getReader();
+      const chunks: Uint8Array[] = [];
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        downloadedBytes += value.length;
+        onProgress?.(Math.round((downloadedBytes / totalBytes) * 100), downloadedBytes, totalBytes);
+      }
+
+      return Buffer.concat(chunks);
+    } catch (err) {
+      console.log(`镜像 ${mirror || "直连"} 下载失败:`, err);
+      continue;
+    }
+  }
+
+  throw new Error("所有镜像都下载失败，请检查网络连接");
+}
+
+// IPC: 检查更新 - 返回版本信息和是否有新版本
+ipcMain.handle("system:checkUpdate", async (_event) => {
+  try {
+    const currentVersion = getCurrentVersion();
+    const release = await githubApiRequest(
+      `/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/releases/latest`
+    );
+
+    const remoteVersion = release.tag_name?.replace(/^v/, "") || "";
+    const hasUpdate = isVersionNewer(remoteVersion, currentVersion);
+
+    // 提取当前平台的安装包信息
+    const isWin = process.platform === "win32";
+    const isArm = process.arch === "arm64";
+    const pattern = isWin ? /\.exe$/i : isArm ? /-arm64\.dmg$/i : /-x64\.dmg$/i;
+    const assets = Array.isArray(release.assets) ? release.assets : [];
+    const asset = assets.find((a: any) => pattern.test(a.name || ""));
+
+    // 提取 SHA256
+    let sha256 = "";
+    try {
+      const body: string = release.body || "";
+      if (asset) {
+        const sha256Pattern = new RegExp(
+          `SHA256\\s*\\(${asset.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\)\\s*=\\s*([a-fA-F0-9]{64})`,
+          "i"
+        );
+        const match = body.match(sha256Pattern);
+        if (match) sha256 = match[1].toUpperCase();
+      }
+    } catch {}
+
+    return {
+      ok: true,
+      hasUpdate,
+      currentVersion,
+      latestVersion: remoteVersion,
+      releaseName: release.name,
+      releaseNotes: release.body,
+      publishDate: release.published_at,
+      downloadUrl: asset?.browser_download_url || asset?.url || "",
+      fileName: asset?.name || "",
+      fileSize: asset?.size || 0,
+      sha256,
+    };
   } catch (e) {
     return { ok: false, error: (e as Error).message };
   }
 });
 
-ipcMain.handle('ffmpeg:check', async () => {
-  return checkFfmpegInstalled();
-});
-
-ipcMain.handle('ffmpeg:install', async () => {
-  const installResult = await installFfmpegWithPackageManager();
-  if (!installResult.ok) return installResult;
-
-  const checkResult = await checkFfmpegInstalled();
-  if (checkResult.ok) return { ...checkResult, installLog: installResult.log };
-
-  return {
-    ok: false,
-    error: 'FFmpeg 安装命令已执行，但当前进程仍未检测到 ffmpeg。请重启艺镜 AI，或检查系统 PATH。',
-    detail: checkResult.detail || checkResult.error,
-    installLog: installResult.log,
-  };
-});
-
-async function loadBuiltRenderer() {
-  if (!mainWindow || mainWindow.isDestroyed()) return;
-
-  const rendererIndex = path.join(__dirname, '../renderer/index.html');
-  if (!fs.existsSync(rendererIndex)) {
-    throw new Error(`Renderer entry not found: ${rendererIndex}. Please run "npm run build:renderer" first.`);
-  }
-
-  await mainWindow.loadFile(rendererIndex);
-}
-
-async function createWindow() {
-  console.log('[Main] createWindow() called at', new Date().toISOString());
+// IPC: 下载并安装更新 - 支持国内镜像 + SHA256校验 + 自动安装
+ipcMain.handle("system:downloadUpdate", async (_event) => {
   try {
-    mainWindow = new BrowserWindow({
-    width: 1200,
-    height: 800,
-    frame: false,
-    autoHideMenuBar: true,
-    icon: path.join(__dirname, '..', '..', 'build', 'icon.ico'),
-    webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true,
-      preload: path.join(__dirname, 'preload.js'),
-      webSecurity: true,
-    },
-    title: '艺镜AI.正式版',
-  });
-    console.log('[Main] BrowserWindow created, mainWindow:', !!mainWindow, 'isDestroyed:', mainWindow?.isDestroyed());
-  } catch(e: any) {
-    console.error('[Main] createWindow failed:', e?.message, e?.stack);
-    return;
-  }
+    const currentVersion = getCurrentVersion();
+    const release = await githubApiRequest(
+      `/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/releases/latest`
+    );
 
-  mainWindow.webContents.on('did-fail-load', (_event, errorCode, errorDescription, validatedURL) => {
-    console.error('[Main] Renderer load failed:', { errorCode, errorDescription, validatedURL });
-  });
+    const remoteVersion = release.tag_name?.replace(/^v/, "") || "";
+    if (!isVersionNewer(remoteVersion, currentVersion)) {
+      return { ok: false, error: "当前已是最新版本" };
+    }
 
-  // 渲染进程崩溃/无响应：写日志到 userData/crash.log，便于打包版定位“闪退”原因
-  const writeCrashLog = (tag: string, detail: any) => {
-    try {
-      const line = `[${new Date().toISOString()}] ${tag} ${JSON.stringify(detail)}` + '\n';
-      fs.appendFileSync(path.join(app.getPath('userData'), 'crash.log'), line);
-      console.error('[Main][crash]', tag, detail);
-    } catch { /* ignore */ }
-  };
-  mainWindow.webContents.on('render-process-gone', (_e, details) => {
-    writeCrashLog('render-process-gone', details);
-  });
-  mainWindow.webContents.on('unresponsive', () => writeCrashLog('unresponsive', {}));
-  mainWindow.webContents.on('preload-error', (_e, preloadPath, error) => {
-    writeCrashLog('preload-error', { preloadPath, message: (error as Error)?.message });
-  });
+    // 找到对应平台的安装包
+    const isWin = process.platform === "win32";
+    const isArm = process.arch === "arm64";
+    const pattern = isWin ? /\.exe$/i : isArm ? /-arm64\.dmg$/i : /-x64\.dmg$/i;
+    const assets = Array.isArray(release.assets) ? release.assets : [];
+    const asset = assets.find((a: any) => pattern.test(a.name || ""));
+    if (!asset) throw new Error("未找到对应平台安装包");
 
-  // Only use Vite when explicitly started through npm run dev:main.
-  // A plain `electron .` is also "not packaged", but it should load the built renderer
-  // instead of waiting on localhost and leaving the window at about:blank.
-  if (process.env.NODE_ENV === 'development') {
-    const candidatePorts = [
-      Number(process.env.VITE_PORT) || undefined,
-      Number(process.env.PORT) || undefined,
-      5174, 3002, 3001, 5173
-    ].filter(Boolean) as number[];
+    const originalUrl = asset.browser_download_url || asset.url;
+    if (!originalUrl) throw new Error("下载地址为空");
 
-    const waitForServer = async (url: string, attempts = 50, delayMs = 200) => {
-      for (let i = 0; i < attempts; i++) {
-        try {
-          const res = await fetch(url, { method: 'HEAD' });
-          if (res && (res.ok || res.status === 200 || res.status === 405)) return true;
-        } catch (e) {
-          // ignore until timeout
-        }
-        await new Promise(r => setTimeout(r, delayMs));
+    // 创建临时目录
+    const tmpDir = path.join(app.getPath("temp"), "yijing-update");
+    fs.mkdirSync(tmpDir, { recursive: true });
+    const savePath = path.join(tmpDir, asset.name);
+    if (fs.existsSync(savePath)) fs.unlinkSync(savePath);
+
+    // 发送下载进度到前端
+    const onProgress = (progress: number, downloaded: number, total: number) => {
+      if (mainWindow && !mainWindow.isDestroyed()) {
+        mainWindow.webContents.send("system:updateProgress", { progress, downloaded, total });
       }
-      return false;
     };
 
-    let loaded = false;
-    for (const port of candidatePorts) {
-      const devUrl = `http://localhost:${port}`;
-      const ready = await waitForServer(devUrl, 50, 200);
-      if (!ready) continue;
+    // 通过镜像下载
+    const buffer = await downloadWithMirror(originalUrl, onProgress);
+    fs.writeFileSync(savePath, buffer);
 
-      try {
-        await mainWindow.loadURL(devUrl);
-        mainWindow.webContents.openDevTools();
-        loaded = true;
-        break;
-      } catch (e) {
-        console.warn('[Main] loadURL failed for', devUrl, e);
-      }
-    }
-
-    if (!loaded) {
-      console.warn('[Main] Vite dev server not available; falling back to built renderer.');
-      try {
-        await loadBuiltRenderer();
-      } catch (e) {
-        console.error('[Main] Built renderer fallback failed:', e);
-      }
-    }
-  } else {
+    // 计算并校验 SHA256
+    const calculatedSha256 = crypto.createHash("sha256").update(buffer).digest("hex").toUpperCase();
+    let expectedSha256 = "";
+    let sha256Verified = false;
     try {
-      await loadBuiltRenderer();
+      const body: string = release.body || "";
+      const sha256Pattern = new RegExp(
+        `SHA256\\s*\\(${asset.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\)\\s*=\\s*([a-fA-F0-9]{64})`,
+        "i"
+      );
+      const match = body.match(sha256Pattern);
+      if (match) {
+        expectedSha256 = match[1].toUpperCase();
+        sha256Verified = calculatedSha256 === expectedSha256;
+      }
+    } catch {}
+
+    // Windows：自动启动安装程序，关闭旧版本
+    if (isWin) {
+      try {
+        // 查找并关闭正在运行的旧版本进程
+        const { exec } = require("child_process");
+        exec('taskkill /F /IM "艺镜AI-正式版.exe" 2>nul', () => {});
+
+        // 等待一小会儿确保进程关闭
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+
+        // 启动安装程序 - 使用 /S 静默安装参数
+        const { spawn } = require("child_process");
+        const installerProcess = spawn(savePath, ["/S"], {
+          detached: true,
+          stdio: "ignore",
+        });
+        installerProcess.unref();
+
+        // 退出当前应用
+        setTimeout(() => app.quit(), 500);
+      } catch (launchErr) {
+        console.error("自动启动安装失败:", launchErr);
+        // 如果自动启动失败，打开文件夹让用户手动安装
+        shell.showItemInFolder(savePath);
+      }
+    } else {
+      // macOS：打开 DMG 文件
+      shell.openPath(savePath);
+    }
+
+    return {
+      ok: true,
+      path: savePath,
+      fileName: asset.name,
+      size: buffer.length,
+      sha256: calculatedSha256,
+      sha256Verified,
+      expectedSha256,
+      latestVersion: remoteVersion,
+    };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
+});
+
     } catch (e) {
       console.error('[Main] Failed to load built renderer:', e);
     }

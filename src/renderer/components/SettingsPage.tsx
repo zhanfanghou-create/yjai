@@ -348,11 +348,139 @@ export const SettingsPage: React.FC = () => {
   const s = useAppStore();
 
   const upd = (fn: any) => (id: string, u: any) => fn(id, u);
+  const addConfig = (addFn: any, defaults: any) => () => addFn(defaults);
   const del = (fn: any) => (id: string) => { if (confirm('确定删除此配置？')) fn(id); };
 
   const addConfig = (addFn: any, defaults: any) => () => addFn(defaults);
 
-  const apiDefaults = {
+  // ========== 自动更新：版本显示 + 检查更新 + 一键下载安装 ==========
+  // 支持私有仓库 + 国内镜像加速
+  const [appVersion, setAppVersion] = useState<string>('1.1.8');
+  const [latestVersion, setLatestVersion] = useState<string>('');
+  const [releaseName, setReleaseName] = useState<string>('');
+  const [releaseNotes, setReleaseNotes] = useState<string>('');
+  const [checkingUpdate, setCheckingUpdate] = useState(false);
+  const [updateAvailable, setUpdateAvailable] = useState(false);
+  const [downloadingUpdate, setDownloadingUpdate] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
+  const [downloadedBytes, setDownloadedBytes] = useState(0);
+  const [totalBytes, setTotalBytes] = useState(0);
+  const [downloadedPath, setDownloadedPath] = useState<string>('');
+  const [updateError, setUpdateError] = useState<string>('');
+
+  const checkUpdate = async () => {
+    setCheckingUpdate(true);
+    setUpdateAvailable(false);
+    setUpdateError('');
+    try {
+      const api = (window as any)?.yijingAPI?.system?.checkUpdate;
+      if (typeof api !== 'function') {
+        // 回退到前端直接检查（公开仓库）
+        const apiUrls = [
+          'https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+          'https://mirror.ghproxy.com/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+        ];
+        for (const apiUrl of apiUrls) {
+          try {
+            const ctrl = new AbortController();
+            const t = setTimeout(() => ctrl.abort(), 8000);
+            const r = await fetch(apiUrl, { signal: ctrl.signal });
+            clearTimeout(t);
+            if (!r.ok) continue;
+            const d = await r.json();
+            const tag = (d.tag_name || '').replace(/^v/, '').trim();
+            const cur = appVersion.replace(/^v/, '').trim();
+            setLatestVersion(tag);
+            setReleaseName(d.name || '');
+            setReleaseNotes(d.body || '');
+            if (tag && cur && tag !== cur && tag.localeCompare(cur, undefined, { numeric: true, sensitivity: 'base' }) > 0) {
+              setUpdateAvailable(true);
+            }
+            break;
+          } catch { continue; }
+        }
+        return;
+      }
+
+      // 使用后端 API（支持私有仓库 + 国内镜像）
+      const result = await api();
+      if (result?.ok) {
+        setLatestVersion(result.latestVersion || '');
+        setReleaseName(result.releaseName || '');
+        setReleaseNotes(result.releaseNotes || '');
+        setUpdateAvailable(result.hasUpdate || false);
+      } else {
+        setUpdateError(result?.error || '检查更新失败');
+      }
+    } catch (e: any) {
+      setUpdateError(e?.message || '检查更新失败');
+    } finally {
+      setCheckingUpdate(false);
+    }
+  };
+
+  const startDownload = async () => {
+    const api = (window as any)?.yijingAPI?.system?.downloadUpdate;
+    const onProgress = (window as any)?.yijingAPI?.system?.onUpdateProgress;
+    
+    if (typeof api !== 'function') {
+      window.open('https://mirror.ghproxy.com/https://github.com/zhanfanghou-create/yjai/releases/latest', '_blank');
+      return;
+    }
+
+    setDownloadingUpdate(true);
+    setDownloadProgress(0);
+    setDownloadedBytes(0);
+    setTotalBytes(0);
+    setUpdateError('');
+
+    // 监听下载进度
+    let cleanupProgress: (() => void) | null = null;
+    if (typeof onProgress === 'function') {
+      cleanupProgress = onProgress((data: { progress: number; downloaded: number; total: number }) => {
+        setDownloadProgress(data.progress);
+        setDownloadedBytes(data.downloaded);
+        setTotalBytes(data.total);
+      });
+    }
+
+    try {
+      const r = await api();
+      if (r?.ok && r?.path) {
+        setDownloadedPath(r.path);
+        // 下载成功后会自动启动安装程序
+      } else {
+        setUpdateError(r?.error || '下载失败');
+      }
+    } catch (e: any) {
+      setUpdateError(e?.message || '下载失败');
+    } finally {
+      setDownloadingUpdate(false);
+      if (cleanupProgress) cleanupProgress();
+    }
+  };
+
+  const installNow = () => {
+    const api = (window as any)?.yijingAPI?.system?.openPath;
+    if (downloadedPath && typeof api === 'function') void api(downloadedPath);
+  };
+
+  // 格式化文件大小
+  const formatBytes = (bytes: number) => {
+    if (bytes === 0) return '0 B';
+    const k = 1024;
+    const sizes = ['B', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+  };
+
+  useEffect(() => {
+    const v = (window as any)?.yijingAPI?.system?.version;
+    if (typeof v === 'string' && v.trim()) setAppVersion(v.trim());
+    // 进入设置页面时自动检查更新
+    void checkUpdate();
+  }, []);
+
     provider: 'openai', baseUrl: 'https://api.example.com/v1',
     apiKey: '', defaultModel: '', models: [], enabled: true, connected: false,
   };
@@ -664,6 +792,45 @@ export const SettingsPage: React.FC = () => {
         )}
       </Section>
 
+{/* 版本/更新检查 */}
+      <div className="sp-help">
+        <div className="sp-help-title">关于 · 版本</div>
+        <div style={{ padding: '12px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)' }}>当前版本: v{appVersion}</div>
+          <button
+            className="sp-btn-ghost"
+            style={{ height: 28, fontSize: 12, padding: '0 16px' }}
+            onClick={checkUpdate}
+            disabled={checkingUpdate || downloadingUpdate}
+          >
+            {checkingUpdate ? '检查中…' : updateAvailable ? `发现新版本 v${latestVersion}` : '已是最新'}
+          </button>
+        </div>
+        {downloadingUpdate && (
+          <div style={{ padding: '0 16px 12px' }}>
+            <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginBottom: 6 }}>
+              正在下载更新: {downloadProgress}%
+            </div>
+            <div style={{ width: '100%', height: 4, background: 'rgba(255,255,255,0.08)', borderRadius: 2 }}>
+              <div style={{ width: Math.max(2, downloadProgress) + '%', height: 4, background: '#8b5cf6', borderRadius: 2, transition: 'width 0.2s' }} />
+            </div>
+          </div>
+        )}
+        {downloadedPath && !downloadingUpdate && (
+          <div style={{ padding: '0 16px 12px' }}>
+            <button className="sp-btn-primary" style={{ width: '100%', height: 34, fontSize: 13 }} onClick={installNow}>
+              下载完成 → 立即安装
+            </button>
+          </div>
+        )}
+        {!downloadingUpdate && !downloadedPath && updateAvailable && (
+          <div style={{ padding: '0 16px 12px' }}>
+            <button className="sp-btn-primary" style={{ width: '100%', height: 34, fontSize: 13 }} onClick={startDownload}>
+              下载 v{latestVersion} 安装包
+            </button>
+          </div>
+        )}
+      </div>
       {/* API 申请攻略 */}
       <div className="sp-help">
         <div className="sp-help-title">API 申请攻略</div>

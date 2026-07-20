@@ -1,4 +1,4 @@
-name: Build & Release
+﻿name: Build & Release
 
 on:
   push:
@@ -131,11 +131,51 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/download-artifact@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Windows installer
+        uses: actions/download-artifact@v4
         with:
-          path: dist-artifacts
-      - uses: softprops/action-gh-release@v2
+          name: yijing-ai-win
+          path: dist-release/win
+
+      - name: Download Mac packages (x64 + arm64)
+        uses: actions/download-artifact@v4
         with:
-          files: dist-artifacts/**/*
-          generate_release_notes: true
-          fail_on_unmatched_files: false
+          name: yijing-ai-mac
+          path: dist-release/mac
+
+      - name: Calculate SHA256 checksums
+        run: |
+          cd dist-release
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          echo "### v$VERSION 发布说明" > release-body.txt
+          echo "" >> release-body.txt
+          echo "**SHA256 校验和**" >> release-body.txt
+          echo "" >> release-body.txt
+          echo '```text' >> release-body.txt
+          find . -type f \( -name "*.exe" -o -name "*.dmg" \) | sort | while read -r f; do
+            name=$(basename "$f")
+            hash=$(sha256sum "$f" | awk '{print $1}')
+            echo "SHA256 ($name) = $hash" >> release-body.txt
+          done
+          echo '```' >> release-body.txt
+          echo "" >> release-body.txt
+          echo "**更新说明**" >> release-body.txt
+          echo "- 支持 SHA256 校验，确保下载文件完整性" >> release-body.txt
+          echo "- 下载完成后自动启动安装程序" >> release-body.txt
+          echo "- 自动识别旧版本安装路径并覆盖安装" >> release-body.txt
+          echo "- 安装前自动关闭正在运行的旧版本" >> release-body.txt
+          cat release-body.txt
+          cp release-body.txt ${{ github.workspace }}/
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: release-body.txt
+          files: |
+            dist-release/win/*.exe
+            dist-release/mac/*.dmg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

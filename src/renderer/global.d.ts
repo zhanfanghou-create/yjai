@@ -1,4 +1,4 @@
-// 全局类型定义
+﻿// 全局类型定义
 // 为 window.yijingAPI 添加类型声明（唯一权威来源）
 
 export {};
@@ -55,13 +55,39 @@ declare global {
         platform: string;
         versions: Record<string, string | undefined>;
         openPath: (p: string) => Promise<any>;
-        version?: string;
-        downloadUpdate?: () => Promise<any>;
+        version: string;
+        // 自动更新相关类型
+        checkUpdate: () => Promise<{
+          ok: boolean;
+          error?: string;
+          hasUpdate?: boolean;
+          currentVersion?: string;
+          latestVersion?: string;
+          releaseName?: string;
+          releaseNotes?: string;
+          publishDate?: string;
+          downloadUrl?: string;
+          fileName?: string;
+          fileSize?: number;
+          sha256?: string;
+        }>;
+        downloadUpdate: () => Promise<{
+          ok: boolean;
+          error?: string;
+          path?: string;
+          fileName?: string;
+          size?: number;
+          sha256?: string;
+          sha256Verified?: boolean;
+          expectedSha256?: string;
+          latestVersion?: string;
+        }>;
+        onUpdateProgress: (cb: (data: { progress: number; downloaded: number; total: number }) => void) => () => void;
         openExternal?: (url: string) => Promise<any>;
         readFileAsDataUrl: (p: string) => Promise<any>;
         saveFileFromData: (opts: { dataUrl: string; suggestedName?: string }) => Promise<any>;
-      downloadToAssets?: (opts: { url?: string; suggestedExt?: string; prefix?: string }) => Promise<any>;
-      reportRendererError?: (info: any) => Promise<any>;
+        downloadToAssets?: (opts: { url?: string; suggestedExt?: string; prefix?: string }) => Promise<any>;
+        reportRendererError?: (info: any) => Promise<any>;
       };
       thirdParty?: {
         request: (opts: any) => Promise<any>;
