@@ -1,7 +1,7 @@
 {
   "name": "yijing-ai",
   "version": "1.1.9",
-  "description": "艺镜AI - 无限画布AI创作工具（重写版�?,
+  "description": "Yijing AI - Infinite Canvas AI Creation Tool",
   "main": "dist/main/main.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:renderer\" \"npm run dev:main\"",
@@ -61,7 +61,7 @@
   },
   "build": {
     "appId": "com.yijing.ai",
-    "productName": "艺镜AI-正式�?,
+    "productName": "艺镜AI-正式版",
     "asar": true,
     "directories": {
       "output": "release"
@@ -125,11 +125,11 @@
       "displayLanguageSelector": false,
       "runAfterFinish": true,
       "menuCategory": "艺镜AI",
-      "artifactName": "艺镜AI-正式�?${version}.${ext}",
+      "artifactName": "艺镜AI-正式版-${version}.${ext}",
       "include": "build/installer.nsh"
     },
     "dmg": {
-      "artifactName": "艺镜AI-正式�?${version}-${arch}.${ext}"
+      "artifactName": "艺镜AI-正式版-${version}-${arch}.${ext}"
     }
   }
 }
