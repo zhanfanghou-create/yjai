@@ -12,8 +12,8 @@ jobs:
     env:
       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
-      ELECTRON_CUSTOM_DIR: "{{ version }}",
-      ELECTRON_CUSTOM_BUILD: "",
+      ELECTRON_CUSTOM_DIR: "{{ version }}"
+      ELECTRON_CUSTOM_BUILD: ""
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
@@ -66,8 +66,8 @@ jobs:
     env:
       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
-      ELECTRON_CUSTOM_DIR: "{{ version }}",
-      ELECTRON_CUSTOM_BUILD: "",
+      ELECTRON_CUSTOM_DIR: "{{ version }}"
+      ELECTRON_CUSTOM_BUILD: ""
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
