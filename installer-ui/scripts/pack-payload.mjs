@@ -1,8 +1,7 @@
-#!/usr/bin/env node
-// 打包主程序为 payload/app.7z, 并把独立的 7zr.exe 放进 payload/bin/7za.exe。
-// 使用方式:
-//   node scripts/pack-payload.mjs                 // 使用默认路径 (../release/win-unpacked)
-//   node scripts/pack-payload.mjs <source-dir>    // 显式指定 win-unpacked 目录
+﻿#!/usr/bin/env node
+// 鎵撳寘涓荤▼搴忎负 payload/app.7z, 骞舵妸鐙珛鐨?7zr.exe 鏀捐繘 payload/bin/7za.exe銆?// 浣跨敤鏂瑰紡:
+//   node scripts/pack-payload.mjs                 // 浣跨敤榛樿璺緞 (../release/win-unpacked)
+//   node scripts/pack-payload.mjs <source-dir>    // 鏄惧紡鎸囧畾 win-unpacked 鐩綍
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -49,14 +48,31 @@ async function ensure7z() {
   if (!fs.existsSync(runtimeDest)) {
     if (isWin) {
       // 7zr.exe 是官方发布的独立单文件版本，不依赖 7z.dll，可作为运行时解压器
-      console.log("downloading 7zr.exe ...");
-      await download("https://www.7-zip.org/a/7zr.exe", runtimeDest);
+      // 使用多个镜像源，防止下载失败
+      const downloadMirrors = [
+        "https://github.com/develar/7zip-bin/raw/master/win/x64/7za.exe",
+        "https://cdn.jsdelivr.net/npm/7zip-bin@5.1.1/win/x64/7za.exe",
+        "https://www.7-zip.org/a/7zr.exe",
+      ];
+      let lastError = null;
+      for (const mirror of downloadMirrors) {
+        console.log(`downloading 7za.exe from ${mirror} ...`);
+        try {
+          await download(mirror, runtimeDest);
+          lastError = null;
+          break;
+        } catch (e) {
+          lastError = e;
+          console.log(`failed: ${e.message}`);
+        }
+      }
+      if (lastError) throw lastError;
     } else {
-      // mac/linux 依赖系统的 p7zip
+      // mac/linux 渚濊禆绯荤粺鐨?p7zip
       const which = spawnSync("which", ["7zz"], { encoding: "utf8" });
       const p = (which.stdout || "").trim().split(/\r?\n/)[0];
       if (!p || !fs.existsSync(p)) {
-        throw new Error("mac/linux 请先安装 p7zip: brew install p7zip");
+        throw new Error("mac/linux 璇峰厛瀹夎 p7zip: brew install p7zip");
       }
       fs.copyFileSync(p, runtimeDest);
       fs.chmodSync(runtimeDest, 0o755);
@@ -68,15 +84,15 @@ async function ensure7z() {
 
 const sz = await ensure7z();
 
-// 用刚保存的 runtime 7z 直接压缩 (7zr.exe 支持 a/x/l 等常用命令)
+// 鐢ㄥ垰淇濆瓨鐨?runtime 7z 鐩存帴鍘嬬缉 (7zr.exe 鏀寔 a/x/l 绛夊父鐢ㄥ懡浠?
 const archive = path.join(payloadDir, "app.7z");
 try { fs.rmSync(archive, { force: true }); } catch {}
 console.log(`compress ${source} -> ${archive}`);
 const args = ["a", "-t7z", "-mx=5", "-ms=on", archive, path.join(source, "*")];
 const r = spawnSync(sz, args, { stdio: "inherit" });
 if (r.status !== 0) {
-  console.error("7z 打包失败");
+  console.error("7z 鎵撳寘澶辫触");
   process.exit(r.status || 1);
 }
 const size = fs.statSync(archive).size;
-console.log(`payload 打包完成: ${(size / 1024 / 1024).toFixed(1)} MB`);
+console.log(`payload 鎵撳寘瀹屾垚: ${(size / 1024 / 1024).toFixed(1)} MB`);

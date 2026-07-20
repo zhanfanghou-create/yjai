@@ -12,6 +12,8 @@ jobs:
     env:
       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+      ELECTRON_CUSTOM_DIR: "{{ version }}",
+      ELECTRON_CUSTOM_BUILD: "",
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
@@ -64,6 +66,8 @@ jobs:
     env:
       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+      ELECTRON_CUSTOM_DIR: "{{ version }}",
+      ELECTRON_CUSTOM_BUILD: "",
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
@@ -74,7 +78,7 @@ jobs:
 
       # ---- Main App (unpacked) ----
       - name: Install main app deps
-        run: npm ci --no-audit --no-fund
+        run: npm ci --no-audit --no-fund --registry=https://registry.npmmirror.com
         shell: bash
       - name: Force clean tsc incremental cache
         run: rm -rf dist tsconfig.main.tsbuildinfo tsconfig.renderer.tsbuildinfo
@@ -89,6 +93,8 @@ jobs:
           WIN_CSC_LINK: ""
           WIN_CSC_KEY_PASSWORD: ""
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
+          # 注入 GitHub Token 到应用中用于私有仓库更新（不硬编码）
+          GITHUB_UPDATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
           npm run pack:win
@@ -98,7 +104,7 @@ jobs:
       # ---- Installer UI (custom graphical portable installer) ----
       - name: Install installer-ui deps
         working-directory: installer-ui
-        run: npm install --no-audit --no-fund
+        run: npm install --no-audit --no-fund --registry=https://registry.npmmirror.com
         shell: bash
       - name: Pack main app into installer payload (app.7z + 7za)
         working-directory: installer-ui
