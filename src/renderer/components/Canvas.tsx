@@ -1,4 +1,4 @@
-﻿import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import './AssetPicker.css';
 import './CanvasSidebar.css';
@@ -30,7 +30,7 @@ import { CAMERA_MOVEMENTS, VIDEO_RATIO_OPTIONS, VIDEO_CLARITY_OPTIONS } from '..
 import { CameraMovementGallery } from './CameraMovementGallery';
 import './VideoParamBar.css';
 
-// ==================== 鑺傜偣妯℃澘锛圠iblibTV 椋庢牸锛?====================
+// ==================== 节点模板（LiblibTV 风格） ====================
 
 type CanvasIconName = 'text' | 'image' | 'video' | 'cut' | 'stage' | 'audio' | 'script' | 'box' | 'upload' | 'history' | 'star' | 'swap' | 'mic' | 'file' | 'close' | 'play' | 'save' | 'grid' | 'spark' | 'copy' | 'trash' | 'chevron-left' | 'chevron-right' | 'loading' | 'canvas' | 'pin' | 'pen' | 'rect' | 'type' | 'undo' | 'redo' | 'cursor' | 'panorama';
 
@@ -72,10 +72,12 @@ const SvgIcon = ({ name, size = 18 }: { name: CanvasIconName; size?: number }) =
   </svg>
 );
 
-// 灏嗚緭鍏ユ枃鏈腑鐨?@鍙傝€冨浘鍚?楂樹寒锛氬彧鏈夊尮閰嶅埌銆屽凡鐭ュ弬鑰冨浘鍚嶇О銆嶆墠鍔犺儗鏅壊锛?// 鍙傝€冨浘鍚嶇О鍚庨潰鐢ㄦ埛杈撳叆鐨勬枃瀛椾細鑷姩鍒嗛殧寮€锛屼笉鍐嶆湁鑳屾櫙鑹层€?const renderMentionSegments = (text: string, knownNames: string[] = []): React.ReactNode[] => {
+// 将输入文本中的 @参考图名 高亮：只有匹配到「已知参考图名称」才加背景色，
+// 参考图名称后面用户输入的文字会自动分隔开，不再有背景色。
+const renderMentionSegments = (text: string, knownNames: string[] = []): React.ReactNode[] => {
   const nodes: React.ReactNode[] = [];
   let key = 0;
-  // 浠呴珮浜凡鐭ュ弬鑰冨浘鍚嶇О锛氭寜闀垮害闄嶅簭鍖归厤锛岄伩鍏嶇煭鍚嶆姠鍗犻暱鍚嶅墠缂€
+  // 仅高亮已知参考图名称：按长度降序匹配，避免短名抢占长名前缀
   const sortedNames = [...knownNames].filter(Boolean).sort((a, b) => b.length - a.length);
   let i = 0;
   let buffer = '';
@@ -93,7 +95,7 @@ const SvgIcon = ({ name, size = 18 }: { name: CanvasIconName; size?: number }) =
       }
       if (matchedName) {
         flushBuffer();
-        // 楂樹寒灞傛枃鏈繀椤讳笌 textarea 鍐呭閫愬瓧涓€鑷达紝鍚﹀垯鍏夋爣浣嶇疆涓庡彲瑙佹枃瀛椾細閿欎綅锛涘洜姝や笉鎴柇鍚嶇О
+        // 高亮层文本必须与 textarea 内容逐字一致，否则光标位置与可见文字会错位；因此不截断名称
         nodes.push(
           <span key={`m${key++}`} className="mention-chip" title={matchedName}>@{matchedName}</span>
         );
@@ -105,11 +107,12 @@ const SvgIcon = ({ name, size = 18 }: { name: CanvasIconName; size?: number }) =
     i += 1;
   }
   flushBuffer();
-  // 鏈熬杩藉姞鎹㈣鍗犱綅锛屼繚璇?backdrop 楂樺害涓?textarea 涓€鑷?  nodes.push(<span key="tail">{'\u200b'}</span>);
+  // 末尾追加换行占位，保证 backdrop 高度与 textarea 一致
+  nodes.push(<span key="tail">{'\u200b'}</span>);
   return nodes;
 };
 
-// 甯?@鎻愬強楂樹寒鐨勬枃鏈緭鍏ワ細閫忔槑鏂囨湰 textarea + 鑳屽悗 backdrop 娓叉煋楂樹寒
+// 带 @提及高亮的文本输入：透明文本 textarea + 背后 backdrop 渲染高亮
 const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
   value: string;
   onChange: (value: string) => void;
@@ -156,7 +159,7 @@ const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
   );
 });
 
-// 3D 瀵兼紨鍙伴粯璁ゅ満鏅缉鐣ュ浘锛氶€忚缃戞牸鍦伴潰 + 浜虹墿 + 鎽勫奖鏈猴紝鐢诲竷涓婁竴鐪煎彲杈ㄨ瘑
+// 3D 导演台默认场景缩略图：透视网格地面 + 人物 + 摄影机，画布上一眼可辨识
 const DirectorScenePreview = () => (
   <svg className="lib-node-scene-svg" viewBox="0 0 280 176" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs>
@@ -198,7 +201,7 @@ const DirectorScenePreview = () => (
   </svg>
 );
 
-// 鍏ㄦ櫙鍥鹃粯璁ゅ満鏅缉鐣ュ浘锛?20掳 鐞冮潰缁忕含缃戞牸 + 涓績鐑偣
+// 全景图默认场景缩略图：720° 球面经纬网格 + 中心热点
 const PanoramaScenePreview = () => (
   <svg className="lib-node-scene-svg" viewBox="0 0 280 176" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs>
@@ -234,7 +237,7 @@ const iconForType = (type?: string): CanvasIconName => {
   return 'box';
 };
 
-// 浠庤棰戝湴鍧€鎻愬彇绗竴甯т綔涓虹缉鐣ュ浘锛堢敤浜庡弬鑰冨浘缂╃暐鍥炬樉绀猴紝閬垮厤璇诲彇涓嶅埌缂╃暐鍥撅級
+// 从视频地址提取第一帧作为缩略图（用于参考图缩略图显示，避免读取不到缩略图）
 const captureVideoFirstFrame = (videoUrl: string): Promise<string> => {
   return new Promise((resolve, reject) => {
     try {
@@ -265,12 +268,13 @@ const captureVideoFirstFrame = (videoUrl: string): Promise<string> => {
         }
       };
       video.onloadeddata = () => {
-        // 璺冲埌棣栧抚绋嶅悗浣嶇疆锛岀‘淇濇湁鐢婚潰
+        // 跳到首帧稍后位置，确保有画面
         try { video.currentTime = Math.min(0.1, (video.duration || 1) / 2); } catch { drawFrame(); }
       };
       video.onseeked = drawFrame;
       video.onerror = () => { cleanup(); reject(new Error('video load error')); };
-      // 鍏滃簳锛氳秴鏃跺悗鐩存帴灏濊瘯缁樺埗褰撳墠甯?      window.setTimeout(() => { if (video.readyState >= 2) drawFrame(); }, 2500);
+      // 兜底：超时后直接尝试绘制当前帧
+      window.setTimeout(() => { if (video.readyState >= 2) drawFrame(); }, 2500);
     } catch (err) {
       reject(err);
     }
@@ -290,46 +294,46 @@ const composePromptParts = (...parts: Array<string | undefined>) => {
 };
 
 const NODE_TEMPLATES: { type: AINodeType | 'upload' | 'history-select' | 'panorama'; label: string; icon: CanvasIconName; color: string; desc: string }[] = [
-  { type: 'story-script',    label: '鏂囨湰',       icon: 'text', color: '#e0e0e0', desc: '鍓ф湰銆佸箍鍛婅瘝銆佸搧鐗屾枃妗? },
-  { type: 'text-to-image',   label: '鍥剧墖',       icon: 'image', color: '#00D4FF', desc: '娴锋姤銆佸垎闀溿€佽鑹茶璁? },
-  { type: 'text-to-video',   label: '瑙嗛',       icon: 'video', color: '#8b5cf6', desc: '鍒涙剰骞垮憡銆佸姩鐢汇€佺數褰? },
-  { type: 'director-stage',  label: '3D瀵兼紨鍙?,     icon: 'stage', color: '#10b981', desc: '鎼缓3D鍦烘櫙锛屾埅鍥句綔涓烘瀯鍥惧弬鑰? },
-  { type: 'panorama',        label: '鍏ㄦ櫙鍥?,       icon: 'panorama', color: '#f59e0b', desc: '鐢熸垚720掳鍏ㄦ櫙鍦烘櫙锛岀偣鍑昏繘鍏ュ叏鏅极娓? },
-  { type: 'audio2video',     label: '闊抽',       icon: 'audio', color: '#ec4899', desc: '闊虫晥銆侀厤闊炽€侀煶涔? },
+  { type: 'story-script',    label: '文本',       icon: 'text', color: '#e0e0e0', desc: '剧本、广告词、品牌文案' },
+  { type: 'text-to-image',   label: '图片',       icon: 'image', color: '#00D4FF', desc: '海报、分镜、角色设计' },
+  { type: 'text-to-video',   label: '视频',       icon: 'video', color: '#8b5cf6', desc: '创意广告、动画、电影' },
+  { type: 'director-stage',  label: '3D导演台',     icon: 'stage', color: '#10b981', desc: '搭建3D场景，截图作为构图参考' },
+  { type: 'panorama',        label: '全景图',       icon: 'panorama', color: '#f59e0b', desc: '生成720°全景场景，点击进入全景漫游' },
+  { type: 'audio2video',     label: '音频',       icon: 'audio', color: '#ec4899', desc: '音效、配音、音乐' },
 ];
 
-// 鑺傜偣鍒嗙被
+// 节点分类
 const NODE_BASE_NAMES: Partial<Record<AINodeType, string>> = {
-  'story-script': '鏂囨湰鑺傜偣',
-  'story-script-adv': '鑴氭湰鑺傜偣',
-  'text-to-image': '鍥剧墖鑺傜偣',
-  'image-to-image': '鍥剧墖鑺傜偣',
-  'image-upscale': '鍥剧墖鏀惧ぇ鑺傜偣',
-  'text-to-video': '瑙嗛鑺傜偣',
-  'image-to-video': '鍥剧敓瑙嗛鑺傜偣',
-  'img2video': '鍥剧敓瑙嗛鑺傜偣',
-  'frame-to-video': '鍥剧敓瑙嗛鑺傜偣',
-  'video-composite': '瑙嗛鍚堟垚鑺傜偣',
-  'video-extend': '瑙嗛寤堕暱鑺傜偣',
-  'video-remix': '瑙嗛閲嶇粯鑺傜偣',
-  'video-super-resolution': '瑙嗛瓒呭垎鑺傜偣',
-  'video-to-music': '瑙嗛閰嶄箰鑺傜偣',
-  'video-interpolate': '瑙嗛鎻掑抚鑺傜偣',
-  'video-realtime': '瀹炴椂瑙嗛鑺傜偣',
-  'audio2video': '闊抽鑺傜偣',
-  'tts': '璇煶鑺傜偣',
-  'audio-to-text': '杞啓鑺傜偣',
-  'lip-sync': '瀵瑰彛鍨嬭妭鐐?,
-  'live-portrait': '鑲栧儚鍔ㄦ晥鑺傜偣',
-  'subtitle': '瀛楀箷鑺傜偣',
-  'director-stage': '瀵兼紨鍙拌妭鐐?,
-  'material-lib': '绱犳潗鑺傜偣',
-  'result': '缁撴灉鑺傜偣',
+  'story-script': '文本节点',
+  'story-script-adv': '脚本节点',
+  'text-to-image': '图片节点',
+  'image-to-image': '图片节点',
+  'image-upscale': '图片放大节点',
+  'text-to-video': '视频节点',
+  'image-to-video': '图生视频节点',
+  'img2video': '图生视频节点',
+  'frame-to-video': '图生视频节点',
+  'video-composite': '视频合成节点',
+  'video-extend': '视频延长节点',
+  'video-remix': '视频重绘节点',
+  'video-super-resolution': '视频超分节点',
+  'video-to-music': '视频配乐节点',
+  'video-interpolate': '视频插帧节点',
+  'video-realtime': '实时视频节点',
+  'audio2video': '音频节点',
+  'tts': '语音节点',
+  'audio-to-text': '转写节点',
+  'lip-sync': '对口型节点',
+  'live-portrait': '肖像动效节点',
+  'subtitle': '字幕节点',
+  'director-stage': '导演台节点',
+  'material-lib': '素材节点',
+  'result': '结果节点',
 };
 
 const getNodeBaseName = (type?: AINodeType) => {
-  if (!type) return '鑺傜偣';
-  return NODE_BASE_NAMES[type] || `${NODE_TEMPLATES.find(t => t.type === type)?.label || '鑺傜偣'}鑺傜偣`;
+  if (!type) return '节点';
+  return NODE_BASE_NAMES[type] || `${NODE_TEMPLATES.find(t => t.type === type)?.label || '节点'}节点`;
 };
 
 const getNodeDisplayName = (node?: AINode) => {
@@ -382,35 +386,35 @@ const VIDEO_INPUT_NODE_TYPES: AINodeType[] = [
 const IMAGE_INPUT_NODE_TYPES: AINodeType[] = ['text-to-image', 'image-to-image', 'image-upscale'];
 
 const VIDEO_INPUT_FEATURES: { id: string; label: string; icon: CanvasIconName; placeholder: string }[] = [
-  { id: 'text-to-video', label: '鏂囩敓瑙嗛', icon: 'video', placeholder: '鏍规嵁鏂囧瓧鎻忚堪鐢熸垚瑙嗛銆? },
-  { id: 'reference', label: '鍏ㄨ兘鍙傝€?, icon: 'spark', placeholder: '濉啓鍙傝€冭姹傘€侀鏍笺€侀暅澶存垨绾︽潫銆? },
-  { id: 'image-to-video', label: '鍥剧敓瑙嗛', icon: 'image', placeholder: '涓婁紶鎴栭€夋嫨鍙傝€冨浘锛岀敓鎴愯棰戙€? },
-  { id: 'first-frame', label: '棣栧熬甯?, icon: 'cut', placeholder: '鎻忚堪棣栧抚銆佸熬甯у拰杩囨浮鏁堟灉銆? },
-  { id: 'image-reference', label: '鍥剧墖鍙傝€?, icon: 'image', placeholder: '娣诲姞鍥剧墖鍙傝€冭鏄庛€? },
-  { id: 'marker', label: '鏍囪', icon: 'grid', placeholder: '鏍囪闇€瑕佸己璋冩垨閬垮厤鐨勫唴瀹广€? },
-  { id: 'reference-extra', label: '鍙傝€?, icon: 'cursor', placeholder: '鐐瑰嚮鐢诲竷鍥剧墖鑺傜偣閫夋嫨鍙傝€冨浘銆? },
-  { id: 'asset', label: '璧勪骇', icon: 'box', placeholder: '浠庤祫浜у簱閫夋嫨鍙傝€冨浘銆? },
+  { id: 'text-to-video', label: '文生视频', icon: 'video', placeholder: '根据文字描述生成视频。' },
+  { id: 'reference', label: '全能参考', icon: 'spark', placeholder: '填写参考要求、风格、镜头或约束。' },
+  { id: 'image-to-video', label: '图生视频', icon: 'image', placeholder: '上传或选择参考图，生成视频。' },
+  { id: 'first-frame', label: '首尾帧', icon: 'cut', placeholder: '描述首帧、尾帧和过渡效果。' },
+  { id: 'image-reference', label: '图片参考', icon: 'image', placeholder: '添加图片参考说明。' },
+  { id: 'marker', label: '标记', icon: 'grid', placeholder: '标记需要强调或避免的内容。' },
+  { id: 'reference-extra', label: '参考', icon: 'cursor', placeholder: '点击画布图片节点选择参考图。' },
+  { id: 'asset', label: '资产', icon: 'box', placeholder: '从资产库选择参考图。' },
 ];
 
 const IMAGE_INPUT_FEATURES: { id: string; label: string; icon: CanvasIconName; placeholder: string }[] = [
-  { id: 'text-to-image', label: '鏂囩敓鍥?, icon: 'image', placeholder: '杈撳叆鏂囧瓧鐢熸垚鍥剧墖锛屾垨涓婁紶鍥剧墖鍚庣紪杈戙€? },
-  { id: 'image-upscale', label: '鍥剧墖楂樻竻', icon: 'spark', placeholder: '鎻忚堪鍥剧墖楂樻竻銆佹斁澶с€佺粏鑺傚寮鸿姹傘€? },
-  { id: 'marker', label: '鏍囪', icon: 'grid', placeholder: '鍦ㄥ弬鑰冨浘涓婃爣鏁板瓧锛屼篃鍙互鐢昏繍闀滅嚎銆? },
-  { id: 'reference-extra', label: '鍙傝€?, icon: 'cursor', placeholder: '鐐瑰嚮鐢诲竷鍥剧墖鑺傜偣閫夋嫨鍙傝€冨浘銆? },
-  { id: 'upload', label: '涓婁紶鍙傝€冨浘', icon: 'upload', placeholder: '涓婁紶鍙傝€冨浘銆? },
-  { id: 'asset', label: '璧勪骇', icon: 'box', placeholder: '浠庤祫浜у簱閫夋嫨鍙傝€冨浘銆? },
+  { id: 'text-to-image', label: '文生图', icon: 'image', placeholder: '输入文字生成图片，或上传图片后编辑。' },
+  { id: 'image-upscale', label: '图片高清', icon: 'spark', placeholder: '描述图片高清、放大、细节增强要求。' },
+  { id: 'marker', label: '标记', icon: 'grid', placeholder: '在参考图上标数字，也可以画运镜线。' },
+  { id: 'reference-extra', label: '参考', icon: 'cursor', placeholder: '点击画布图片节点选择参考图。' },
+  { id: 'upload', label: '上传参考图', icon: 'upload', placeholder: '上传参考图。' },
+  { id: 'asset', label: '资产', icon: 'box', placeholder: '从资产库选择参考图。' },
 ];
 
 const IMAGE_QUALITY_OPTIONS = [
-  { id: 'low', label: '浣庣敾璐? },
-  { id: 'standard', label: '鏍囧噯鐢昏川' },
-  { id: 'high', label: '楂樼敾璐? },
+  { id: 'low', label: '低画质' },
+  { id: 'standard', label: '标准画质' },
+  { id: 'high', label: '高画质' },
 ];
 
 const IMAGE_CLARITY_OPTIONS = ['1K', '2K', '4K'];
 
 const IMAGE_RATIO_OPTIONS = [
-  { id: 'auto', label: '鑷€傚簲', wide: false },
+  { id: 'auto', label: '自适应', wide: false },
   { id: '1:1', label: '1:1', wide: false },
   { id: '1:2', label: '1:2', wide: false },
   { id: '2:1', label: '2:1', wide: true },
@@ -427,28 +431,28 @@ const IMAGE_RATIO_OPTIONS = [
 ];
 
 const IMAGE_MEDIA_TOOL_FEATURES = [
-  { id: 'reference', label: '鍏ㄦ櫙', icon: 'spark' as CanvasIconName, prompt: '浠ュ綋鍓嶅浘鐗囦负鍏ㄦ櫙鍙傝€冿紝淇濇寔鐢婚潰涓讳綋鍜屾暣浣撴瀯鍥俱€?, badge: 'NEW' },
-  { id: 'multi-angle', label: '澶氳搴?, icon: 'swap' as CanvasIconName, prompt: '浠ュ綋鍓嶅浘鐗囦负涓讳綋锛岀敓鎴愬涓笉鍚岃瑙掑拰闀滃ご瑙掑害銆? },
-  { id: 'lighting', label: '鎵撳厜', icon: 'star' as CanvasIconName, prompt: '浠ュ綋鍓嶅浘鐗囦负鍩虹锛屼紭鍖栧厜褰便€佹墦鍏夊眰娆″拰姘涘洿銆? },
-  { id: 'nine-grid', label: '涔濆鏍?, icon: 'grid' as CanvasIconName, prompt: '浠ュ綋鍓嶅浘鐗囦负鍩虹锛岀敓鎴愪節瀹牸鏋勫浘鎴栦節瀹牸鍒嗛暅銆? },
-  { id: 'upscale', label: '楂樻竻', icon: 'spark' as CanvasIconName, prompt: '浠ュ綋鍓嶅浘鐗囦负鍩虹锛屾彁鍗囨竻鏅板害銆佺粏鑺傚拰鐢昏川銆? },
-  { id: 'split', label: '瀹牸鍒囧垎', icon: 'cut' as CanvasIconName, prompt: '灏嗗綋鍓嶅浘鐗囨寜瀹牸鍒囧垎锛屼繚鎸佹瘡鏍煎唴瀹瑰畬鏁村彲鐢ㄣ€? },
+  { id: 'reference', label: '全景', icon: 'spark' as CanvasIconName, prompt: '以当前图片为全景参考，保持画面主体和整体构图。', badge: 'NEW' },
+  { id: 'multi-angle', label: '多角度', icon: 'swap' as CanvasIconName, prompt: '以当前图片为主体，生成多个不同视角和镜头角度。' },
+  { id: 'lighting', label: '打光', icon: 'star' as CanvasIconName, prompt: '以当前图片为基础，优化光影、打光层次和氛围。' },
+  { id: 'nine-grid', label: '九宫格', icon: 'grid' as CanvasIconName, prompt: '以当前图片为基础，生成九宫格构图或九宫格分镜。' },
+  { id: 'upscale', label: '高清', icon: 'spark' as CanvasIconName, prompt: '以当前图片为基础，提升清晰度、细节和画质。' },
+  { id: 'split', label: '宫格切分', icon: 'cut' as CanvasIconName, prompt: '将当前图片按宫格切分，保持每格内容完整可用。' },
 ] as const;
 
 const TOOLBAR_SPLIT_OPTIONS = [
-  { id: '2x2', label: '4瀹牸 (2脳2)', grid: 4 },
-  { id: '3x3', label: '9瀹牸 (3脳3)', grid: 9 },
-  { id: '4x4', label: '16瀹牸 (4脳4)', grid: 16 },
-  { id: '5x5', label: '25瀹牸 (5脳5)', grid: 25 },
+  { id: '2x2', label: '4宫格 (2×2)', grid: 4 },
+  { id: '3x3', label: '9宫格 (3×3)', grid: 9 },
+  { id: '4x4', label: '16宫格 (4×4)', grid: 16 },
+  { id: '5x5', label: '25宫格 (5×5)', grid: 25 },
 ] as const;
 
 const HD_FEATURES = [
-  { id: 'upscale', label: '楂樻竻', icon: 'spark' as CanvasIconName, generationType: 'image-upscale', prompt: '浠ュ綋鍓嶅浘鐗囦负鍩虹杩涜楂樻竻澧炲己锛屾彁鍗囨竻鏅板害銆佺粏鑺傘€侀攼搴﹀拰鏁翠綋鐢昏川锛屼繚鎸佸師鍥惧唴瀹逛笉鍙樸€? },
-  { id: 'outpaint', label: '鎵╁浘', icon: 'canvas' as CanvasIconName, generationType: 'image-to-image', prompt: '浠ュ綋鍓嶅浘鐗囦负涓績杩涜鎵╁浘锛岃ˉ榻愮敾闈㈠寤跺唴瀹癸紝淇濇寔鏋勫浘銆佸厜褰便€侀鏍煎拰涓讳綋涓€鑷淬€? },
-  { id: 'redraw', label: '閲嶇粯', icon: 'swap' as CanvasIconName, generationType: 'image-to-image', prompt: '浠ュ綋鍓嶅浘鐗囦负鍙傝€冭繘琛屽眬閮ㄦ垨鏁翠綋閲嶇粯锛屼紭鍖栫憰鐤靛拰缁嗚妭锛屼繚鎸佷富浣撹韩浠姐€佸竷灞€鍜岄鏍间竴鑷淬€? },
-  { id: 'erase', label: '鎿﹂櫎', icon: 'close' as CanvasIconName, generationType: 'image-to-image', prompt: '浠ュ綋鍓嶅浘鐗囦负鍙傝€冩墽琛屾摝闄や慨澶嶏紝绉婚櫎鎸囧畾鐟曠柕鎴栦笉闇€瑕佺殑鍏冪礌锛屽苟鑷劧琛ュ叏鑳屾櫙銆? },
-  { id: 'cutout', label: '鎶犲浘', icon: 'cut' as CanvasIconName, generationType: 'image-to-image', prompt: '璇嗗埆褰撳墠鍥剧墖涓讳綋骞惰繘琛岀簿缁嗘姞鍥撅紝淇濈暀涓讳綋瀹屾暣杈圭紭锛岃緭鍑哄彲鐢ㄤ簬鍚庣画鍚堟垚鐨勫共鍑€缁撴灉銆? },
-  { id: 'crop', label: '瑁佸壀', icon: 'box' as CanvasIconName, generationType: 'image-to-image', prompt: '鏍规嵁褰撳墠鍥剧墖杩涜鏅鸿兘瑁佸壀锛屼繚鐣欎富浣撳拰鍏抽敭鏋勫浘锛岃緭鍑烘洿鍚堥€傜殑鐢婚潰鑼冨洿銆? },
+  { id: 'upscale', label: '高清', icon: 'spark' as CanvasIconName, generationType: 'image-upscale', prompt: '以当前图片为基础进行高清增强，提升清晰度、细节、锐度和整体画质，保持原图内容不变。' },
+  { id: 'outpaint', label: '扩图', icon: 'canvas' as CanvasIconName, generationType: 'image-to-image', prompt: '以当前图片为中心进行扩图，补齐画面外延内容，保持构图、光影、风格和主体一致。' },
+  { id: 'redraw', label: '重绘', icon: 'swap' as CanvasIconName, generationType: 'image-to-image', prompt: '以当前图片为参考进行局部或整体重绘，优化瑕疵和细节，保持主体身份、布局和风格一致。' },
+  { id: 'erase', label: '擦除', icon: 'close' as CanvasIconName, generationType: 'image-to-image', prompt: '以当前图片为参考执行擦除修复，移除指定瑕疵或不需要的元素，并自然补全背景。' },
+  { id: 'cutout', label: '抠图', icon: 'cut' as CanvasIconName, generationType: 'image-to-image', prompt: '识别当前图片主体并进行精细抠图，保留主体完整边缘，输出可用于后续合成的干净结果。' },
+  { id: 'crop', label: '裁剪', icon: 'box' as CanvasIconName, generationType: 'image-to-image', prompt: '根据当前图片进行智能裁剪，保留主体和关键构图，输出更合适的画面范围。' },
 ] as const;
 
 type PanoramaFeatureItem = {
@@ -462,58 +466,58 @@ type PanoramaFeatureItem = {
 };
 
 const PANORAMA_FEATURE_COLUMNS: Array<{ id: PanoramaFeatureItem['column']; title: string }> = [
-  { id: 'storyboard', title: '鍒嗛暅鍙欎簨' },
-  { id: 'style', title: '璐ㄦ劅璋冭妭' },
-  { id: 'setting', title: '璁惧畾鍥? },
+  { id: 'storyboard', title: '分镜叙事' },
+  { id: 'style', title: '质感调节' },
+  { id: 'setting', title: '设定图' },
 ];
 
 const PANORAMA_FEATURES: PanoramaFeatureItem[] = [
-  { id: 'speed-storyboard', column: 'storyboard', label: '璋冨害鏁呬簨鏉?, icon: 'stage', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚璋冨害鏁呬簨鏉匡紝淇濇寔鍦烘櫙绌洪棿鍏崇郴鍜岄暅澶村姩绾裤€? },
-  { id: 'storyboard', column: 'storyboard', label: '鏁呬簨鏉?, icon: 'stage', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚鏁呬簨鏉垮垎闀滐紝琛ラ綈闀滃ご璇存槑銆佹瀯鍥惧拰杞満銆? },
-  { id: 'continuity-25', column: 'storyboard', label: '25瀹牸杩炶疮鍒嗛暅', icon: 'grid', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚25瀹牸杩炶疮鍒嗛暅锛屼繚鎸佽鑹层€佸満鏅拰鍔ㄤ綔杩炵画銆? },
-  { id: 'drama-quad', column: 'storyboard', label: '鍓ф儏鎺ㄦ紨鍥涘鏍?, icon: 'grid', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚鍥涘鏍煎墽鎯呮帹婕旓紝灞曠ず鍓嶅悗鎯呰妭鍙樺寲銆? },
-  { id: 'after-3s', column: 'storyboard', label: '鐢婚潰鎺ㄦ紨 - 3绉掑悗', icon: 'history', prompt: '鍩轰簬鍙傝€冨浘鎺ㄦ紨3绉掑悗鐨勭敾闈㈢姸鎬侊紝淇濇寔閫昏緫杩炵画銆? },
-  { id: 'before-5s', column: 'storyboard', label: '鐢婚潰鎺ㄦ紨 - 5绉掑墠', icon: 'history', prompt: '鍩轰簬鍙傝€冨浘鍙嶆帹5绉掑墠鐨勭敾闈㈢姸鎬侊紝淇濇寔鍙欎簨鍚堢悊銆? },
-  { id: 'cinematic-light', column: 'style', label: '鐢靛奖绾у厜褰辨牎姝?, icon: 'spark', prompt: '瀵瑰弬鑰冨浘杩涜鐢靛奖绾у厜褰辨牎姝ｏ紝澧炲己灞傛銆佹皼鍥村拰璐ㄦ劅銆? },
-  { id: 'panorama-720', column: 'style', label: '720鍏ㄦ櫙', desc: '鐢熸垚鍏ㄦ櫙鍦烘櫙鍥?, icon: 'spark', prompt: '720掳鍏ㄦ櫙鍥撅細璇蜂互鍙傝€冨浘涓哄満鏅富浣擄紝鐢熸垚鍙敤浜庡叏鏅瑙堢殑 equirectangular panoramic image锛屽乏鍙宠竟缂樻棤缂濊鎺ワ紝2:1 妯悜姣斾緥锛屾棤榛戣竟銆?, generationType: 'image-to-image' },
-  { id: 'multi-camera-grid', column: 'style', label: '澶氭満浣嶄節瀹牸', icon: 'grid', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚澶氭満浣嶄節瀹牸锛屽睍绀轰笉鍚岄暅澶磋窛绂汇€佽搴﹀拰鏋勫浘銆? },
-  { id: 'character-face-3view', column: 'setting', label: '瑙掕壊鑴搁儴涓夎鍥?, icon: 'swap', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚瑙掕壊鑴搁儴涓夎鍥撅紝淇濇寔浜斿畼鍜岄鏍间竴鑷淬€? },
-  { id: 'character-setting', column: 'setting', label: '瑙掕壊璁惧畾鍥?, icon: 'mic', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚瑙掕壊璁惧畾鍥撅紝鍖呭惈姝ｉ潰銆佷晶闈㈠拰鍏抽敭鐗瑰緛璇存槑銆? },
-  { id: 'character-3view', column: 'setting', label: '瑙掕壊涓夎鍥?, icon: 'box', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚瑙掕壊涓夎鍥撅紝淇濇寔鏈嶈銆佹瘮渚嬪拰閫犲瀷涓€鑷淬€? },
-  { id: 'scene-setting', column: 'setting', label: '鍦烘櫙璁惧畾鍥?, icon: 'stage', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚鍦烘櫙璁惧畾鍥撅紝琛ラ綈绌洪棿缁撴瀯銆佹潗璐ㄥ拰鍏夌収璇存槑銆? },
-  { id: 'product-setting', column: 'setting', label: '浜у搧璁惧畾鍥?, icon: 'box', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚浜у搧璁惧畾鍥撅紝灞曠ず缁撴瀯銆佹潗璐ㄥ拰鍏抽敭鍗栫偣銆? },
+  { id: 'speed-storyboard', column: 'storyboard', label: '调度故事板', icon: 'stage', prompt: '基于参考图生成调度故事板，保持场景空间关系和镜头动线。' },
+  { id: 'storyboard', column: 'storyboard', label: '故事板', icon: 'stage', prompt: '基于参考图生成故事板分镜，补齐镜头说明、构图和转场。' },
+  { id: 'continuity-25', column: 'storyboard', label: '25宫格连贯分镜', icon: 'grid', prompt: '基于参考图生成25宫格连贯分镜，保持角色、场景和动作连续。' },
+  { id: 'drama-quad', column: 'storyboard', label: '剧情推演四宫格', icon: 'grid', prompt: '基于参考图生成四宫格剧情推演，展示前后情节变化。' },
+  { id: 'after-3s', column: 'storyboard', label: '画面推演 - 3秒后', icon: 'history', prompt: '基于参考图推演3秒后的画面状态，保持逻辑连续。' },
+  { id: 'before-5s', column: 'storyboard', label: '画面推演 - 5秒前', icon: 'history', prompt: '基于参考图反推5秒前的画面状态，保持叙事合理。' },
+  { id: 'cinematic-light', column: 'style', label: '电影级光影校正', icon: 'spark', prompt: '对参考图进行电影级光影校正，增强层次、氛围和质感。' },
+  { id: 'panorama-720', column: 'style', label: '720全景', desc: '生成全景场景图', icon: 'spark', prompt: '720°全景图：请以参考图为场景主体，生成可用于全景预览的 equirectangular panoramic image，左右边缘无缝衔接，2:1 横向比例，无黑边。', generationType: 'image-to-image' },
+  { id: 'multi-camera-grid', column: 'style', label: '多机位九宫格', icon: 'grid', prompt: '基于参考图生成多机位九宫格，展示不同镜头距离、角度和构图。' },
+  { id: 'character-face-3view', column: 'setting', label: '角色脸部三视图', icon: 'swap', prompt: '基于参考图生成角色脸部三视图，保持五官和风格一致。' },
+  { id: 'character-setting', column: 'setting', label: '角色设定图', icon: 'mic', prompt: '基于参考图生成角色设定图，包含正面、侧面和关键特征说明。' },
+  { id: 'character-3view', column: 'setting', label: '角色三视图', icon: 'box', prompt: '基于参考图生成角色三视图，保持服装、比例和造型一致。' },
+  { id: 'scene-setting', column: 'setting', label: '场景设定图', icon: 'stage', prompt: '基于参考图生成场景设定图，补齐空间结构、材质和光照说明。' },
+  { id: 'product-setting', column: 'setting', label: '产品设定图', icon: 'box', prompt: '基于参考图生成产品设定图，展示结构、材质和关键卖点。' },
 ];
 
 const MULTI_ANGLE_FEATURES = [
-  { id: 'front', label: '姝ｉ潰瑙嗚', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚涓讳綋姝ｉ潰瑙嗚锛屼繚鎸佽韩浠姐€侀鏍煎拰鏉愯川涓€鑷淬€? },
-  { id: 'side', label: '渚ч潰瑙嗚', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚涓讳綋渚ч潰瑙嗚锛屼繚鎸佹瘮渚嬪拰鍏抽敭鐗瑰緛涓€鑷淬€? },
-  { id: 'back', label: '鑳岄潰瑙嗚', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚涓讳綋鑳岄潰瑙嗚锛岃ˉ榻愬悎鐞嗚儗闈㈢粏鑺傘€? },
-  { id: 'top', label: '淇瑙嗚', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚淇瑙嗚锛屼繚鎸佺┖闂村叧绯诲拰涓讳綋浣嶇疆鍚堢悊銆? },
-  { id: 'low', label: '浣庢満浣嶈瑙?, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚浣庢満浣嶈瑙掞紝澧炲己閫忚鍜岀敾闈㈠紶鍔涖€? },
-  { id: 'nine-grid', label: '澶氳搴︿節瀹牸', prompt: '鍩轰簬鍙傝€冨浘鐢熸垚涔濆鏍煎瑙掑害瑙嗗浘锛屽寘鍚闈€佷晶闈€佽儗闈€佷刊瑙嗐€佷綆鏈轰綅绛夎瑙掋€? },
+  { id: 'front', label: '正面视角', prompt: '基于参考图生成主体正面视角，保持身份、风格和材质一致。' },
+  { id: 'side', label: '侧面视角', prompt: '基于参考图生成主体侧面视角，保持比例和关键特征一致。' },
+  { id: 'back', label: '背面视角', prompt: '基于参考图生成主体背面视角，补齐合理背面细节。' },
+  { id: 'top', label: '俯视视角', prompt: '基于参考图生成俯视视角，保持空间关系和主体位置合理。' },
+  { id: 'low', label: '低机位视角', prompt: '基于参考图生成低机位视角，增强透视和画面张力。' },
+  { id: 'nine-grid', label: '多角度九宫格', prompt: '基于参考图生成九宫格多角度视图，包含正面、侧面、背面、俯视、低机位等视角。' },
 ];
 
 const GRID_FEATURES = [
-  { id: 'multi-camera-grid', label: '澶氭満浣嶄節瀹牸', icon: 'grid' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚澶氭満浣嶄節瀹牸锛屽睍绀鸿繙鏅€佷腑鏅€佽繎鏅€佷刊瑙嗐€佷话瑙嗐€佷晶闈㈢瓑澶氱鏈轰綅銆? },
-  { id: 'drama-quad', label: '鍓ф儏鎺ㄦ紨鍥涘鏍?, icon: 'grid' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚鍓ф儏鎺ㄦ紨鍥涘鏍硷紝灞曠ず浜嬩欢鍙戠敓鍓嶃€佸彂鐢熶腑銆佸彉鍖栧悗鍜岀粨鏋滅敾闈€? },
-  { id: 'character-face-3view', label: '瑙掕壊鑴搁儴涓夎鍥?, icon: 'swap' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚瑙掕壊鑴搁儴涓夎鍥撅紝鍖呭惈姝ｉ潰銆佷晶闈€佸崐渚ч潰锛屼繚鎸佷簲瀹樹竴鑷淬€? },
-  { id: 'character-setting', label: '瑙掕壊璁惧畾鍥?, icon: 'mic' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚瑙掕壊璁惧畾鍥撅紝鍖呭惈閫犲瀷銆佹湇瑁呫€佸叧閿壒寰佸拰椋庢牸璇存槑銆? },
-  { id: 'scene-setting', label: '鍦烘櫙璁惧畾鍥?, icon: 'stage' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚鍦烘櫙璁惧畾鍥撅紝琛ラ綈绌洪棿缁撴瀯銆佹潗璐ㄣ€佸厜鐓у拰鍏抽敭鐗╀欢銆? },
-  { id: 'product-setting', label: '浜у搧璁惧畾鍥?, icon: 'box' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚浜у搧璁惧畾鍥撅紝灞曠ず姝ｄ晶鑳岀粨鏋勩€佹潗璐ㄧ粏鑺傚拰鍗栫偣銆? },
-  { id: 'continuity-25', label: '25瀹牸杩炶疮鍒嗛暅', icon: 'grid' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚25瀹牸杩炶疮鍒嗛暅锛屼繚鎸佽鑹层€佸姩浣溿€佸満鏅拰鏃堕棿绾胯繛缁€? },
-  { id: 'cinematic-light', label: '鐢靛奖绾у厜褰辨牎姝?, icon: 'spark' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘杩涜鐢靛奖绾у厜褰辨牎姝ｏ紝澧炲己灞傛銆佹皼鍥淬€佷綋绉厜鍜岃川鎰熴€? },
-  { id: 'character-3view', label: '瑙掕壊涓夎鍥?, icon: 'box' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鐢熸垚瑙掕壊涓夎鍥撅紝鍖呭惈姝ｉ潰銆佷晶闈€佽儗闈紝淇濇寔姣斾緥鍜屾湇瑁呬竴鑷淬€? },
-  { id: 'after-3s', label: '鐢婚潰鎺ㄦ紨 - 3绉掑悗', icon: 'history' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鎺ㄦ紨3绉掑悗鐨勭敾闈紝淇濇寔闀滃ご杩愬姩鍜屾晠浜嬮€昏緫杩炵画銆? },
-  { id: 'before-5s', label: '鐢婚潰鎺ㄦ紨 - 5绉掑墠', icon: 'history' as CanvasIconName, prompt: '鍩轰簬鍙傝€冨浘鍙嶆帹5绉掑墠鐨勭敾闈紝淇濇寔瑙掕壊浣嶇疆鍜屽満鏅€昏緫鍚堢悊銆? },
+  { id: 'multi-camera-grid', label: '多机位九宫格', icon: 'grid' as CanvasIconName, prompt: '基于参考图生成多机位九宫格，展示远景、中景、近景、俯视、仰视、侧面等多种机位。' },
+  { id: 'drama-quad', label: '剧情推演四宫格', icon: 'grid' as CanvasIconName, prompt: '基于参考图生成剧情推演四宫格，展示事件发生前、发生中、变化后和结果画面。' },
+  { id: 'character-face-3view', label: '角色脸部三视图', icon: 'swap' as CanvasIconName, prompt: '基于参考图生成角色脸部三视图，包含正面、侧面、半侧面，保持五官一致。' },
+  { id: 'character-setting', label: '角色设定图', icon: 'mic' as CanvasIconName, prompt: '基于参考图生成角色设定图，包含造型、服装、关键特征和风格说明。' },
+  { id: 'scene-setting', label: '场景设定图', icon: 'stage' as CanvasIconName, prompt: '基于参考图生成场景设定图，补齐空间结构、材质、光照和关键物件。' },
+  { id: 'product-setting', label: '产品设定图', icon: 'box' as CanvasIconName, prompt: '基于参考图生成产品设定图，展示正侧背结构、材质细节和卖点。' },
+  { id: 'continuity-25', label: '25宫格连贯分镜', icon: 'grid' as CanvasIconName, prompt: '基于参考图生成25宫格连贯分镜，保持角色、动作、场景和时间线连续。' },
+  { id: 'cinematic-light', label: '电影级光影校正', icon: 'spark' as CanvasIconName, prompt: '基于参考图进行电影级光影校正，增强层次、氛围、体积光和质感。' },
+  { id: 'character-3view', label: '角色三视图', icon: 'box' as CanvasIconName, prompt: '基于参考图生成角色三视图，包含正面、侧面、背面，保持比例和服装一致。' },
+  { id: 'after-3s', label: '画面推演 - 3秒后', icon: 'history' as CanvasIconName, prompt: '基于参考图推演3秒后的画面，保持镜头运动和故事逻辑连续。' },
+  { id: 'before-5s', label: '画面推演 - 5秒前', icon: 'history' as CanvasIconName, prompt: '基于参考图反推5秒前的画面，保持角色位置和场景逻辑合理。' },
 ];
 
 const LIGHT_DIRECTIONS = [
-  { id: 'left', label: '宸︿晶' },
-  { id: 'top', label: '椤堕儴' },
-  { id: 'right', label: '鍙充晶' },
-  { id: 'front', label: '鍓嶆柟' },
-  { id: 'bottom', label: '搴曢儴' },
-  { id: 'back', label: '鍚庢柟' },
+  { id: 'left', label: '左侧' },
+  { id: 'top', label: '顶部' },
+  { id: 'right', label: '右侧' },
+  { id: 'front', label: '前方' },
+  { id: 'bottom', label: '底部' },
+  { id: 'back', label: '后方' },
 ] as const;
 
 type LightingSettings = {
@@ -546,20 +550,20 @@ function LightingFeaturePanel({ initial, onApply, onClose }: { initial?: Partial
     document.addEventListener('pointerdown', close);
     return () => document.removeEventListener('pointerdown', close);
   }, [onClose]);
-  const directionLabel = LIGHT_DIRECTIONS.find(item => item.id === direction)?.label || '姝ｉ潰';
+  const directionLabel = LIGHT_DIRECTIONS.find(item => item.id === direction)?.label || '正面';
   const settings: LightingSettings = { view, global, smart, brightness, color, direction, rim };
 
   return (
     <div ref={panelRef} className="lighting-panel nodrag nowheel" onPointerDown={(event) => event.stopPropagation()} onClick={(event) => event.stopPropagation()}>
       <div className="lighting-panel-head">
-        <strong>鎵撳厜鏁堟灉</strong>
+        <strong>打光效果</strong>
         <button onClick={onClose}><SvgIcon name="close" size={14} /></button>
       </div>
       <div className="lighting-panel-body">
         <div className="lighting-preview-card" data-view={view} data-direction={direction} data-global={global} data-smart={smart} data-rim={rim}>
           <div className="lighting-view-tabs">
-            <button className={view === 'perspective' ? 'active' : ''} onClick={() => setView('perspective')}>閫忚</button>
-            <button className={view === 'front' ? 'active' : ''} onClick={() => setView('front')}>姝ｉ潰</button>
+            <button className={view === 'perspective' ? 'active' : ''} onClick={() => setView('perspective')}>透视</button>
+            <button className={view === 'front' ? 'active' : ''} onClick={() => setView('front')}>正面</button>
           </div>
           <div className="lighting-orbit" style={{ '--lighting-color': color, '--lighting-strength': `${Math.max(20, brightness)}%` } as React.CSSProperties}>
             <div className="lighting-sphere" />
@@ -568,26 +572,26 @@ function LightingFeaturePanel({ initial, onApply, onClose }: { initial?: Partial
             <div className={`lighting-source-dot ${direction}`} />
             <div className="lighting-subject" />
           </div>
-          <div className="lighting-preview-meta"><span>{view === 'perspective' ? '閫忚棰勮' : '姝ｉ潰棰勮'}</span><em>{directionLabel} ? {brightness}%</em></div>
+          <div className="lighting-preview-meta"><span>{view === 'perspective' ? '透视预览' : '正面预览'}</span><em>{directionLabel} ? {brightness}%</em></div>
         </div>
         <div className="lighting-controls">
           <div className="lighting-toggle-row">
-            <label className="lighting-toggle-card"><span>鍏ㄥ眬</span><label className="lighting-switch"><input type="checkbox" checked={global} onChange={(event) => setGlobal(event.target.checked)} /><i /></label></label>
-            <label className="lighting-toggle-card"><span>鏅鸿兘妯″紡</span><label className="lighting-switch"><input type="checkbox" checked={smart} onChange={(event) => setSmart(event.target.checked)} /><i /></label></label>
+            <label className="lighting-toggle-card"><span>全局</span><label className="lighting-switch"><input type="checkbox" checked={global} onChange={(event) => setGlobal(event.target.checked)} /><i /></label></label>
+            <label className="lighting-toggle-card"><span>智能模式</span><label className="lighting-switch"><input type="checkbox" checked={smart} onChange={(event) => setSmart(event.target.checked)} /><i /></label></label>
           </div>
-          <label className="lighting-row"><span>浜害</span><input type="range" min="0" max="100" value={brightness} onChange={(event) => setBrightness(Number(event.target.value))} /><em>{brightness}%</em></label>
-          <label className="lighting-row"><span>棰滆壊</span><input className="lighting-color" type="color" value={color} onChange={(event) => setColor(event.target.value)} /><em>{color.toUpperCase()}</em></label>
-          <div className="lighting-label">涓诲厜婧?/div>
+          <label className="lighting-row"><span>亮度</span><input type="range" min="0" max="100" value={brightness} onChange={(event) => setBrightness(Number(event.target.value))} /><em>{brightness}%</em></label>
+          <label className="lighting-row"><span>颜色</span><input className="lighting-color" type="color" value={color} onChange={(event) => setColor(event.target.value)} /><em>{color.toUpperCase()}</em></label>
+          <div className="lighting-label">主光源</div>
           <div className="lighting-direction-grid">
             {LIGHT_DIRECTIONS.map(item => <button key={item.id} className={direction === item.id ? 'active' : ''} onClick={() => setDirection(item.id)}>{item.label}</button>)}
           </div>
-          <label className="lighting-toggle-card full"><span>杞粨鍏?/span><label className="lighting-switch"><input type="checkbox" checked={rim} onChange={(event) => setRim(event.target.checked)} /><i /></label></label>
-          <div className="lighting-summary">褰撳墠浣跨敤{global ? '鍏ㄥ眬' : '灞€閮?}{smart ? '鏅鸿兘' : '鎵嬪姩'}鎵撳厜锛屼富鍏夋簮鏉ヨ嚜{directionLabel}锛屼寒搴︿负{brightness}%銆?/div>
+          <label className="lighting-toggle-card full"><span>轮廓光</span><label className="lighting-switch"><input type="checkbox" checked={rim} onChange={(event) => setRim(event.target.checked)} /><i /></label></label>
+          <div className="lighting-summary">当前使用{global ? '全局' : '局部'}{smart ? '智能' : '手动'}打光，主光源来自{directionLabel}，亮度为{brightness}%。</div>
         </div>
       </div>
       <div className="lighting-panel-foot">
-        <button className="lighting-reset" onClick={() => { setView('perspective'); setGlobal(true); setSmart(false); setBrightness(50); setColor('#ffffff'); setDirection('front'); setRim(false); }}>閲嶇疆鍙傛暟</button>
-        <button className="lighting-apply" onClick={() => onApply(settings)}><SvgIcon name="play" size={14} />搴旂敤鎵撳厜</button>
+        <button className="lighting-reset" onClick={() => { setView('perspective'); setGlobal(true); setSmart(false); setBrightness(50); setColor('#ffffff'); setDirection('front'); setRim(false); }}>重置参数</button>
+        <button className="lighting-apply" onClick={() => onApply(settings)}><SvgIcon name="play" size={14} />应用打光</button>
       </div>
     </div>
   );
@@ -608,7 +612,7 @@ function MultiAngleFeaturePanel({ onSelect, onClose }: { onSelect: (feature: typ
 
   return (
     <div ref={panelRef} className="multi-angle-panel nodrag nowheel" onPointerDown={(event) => event.stopPropagation()} onClick={(event) => event.stopPropagation()}>
-      <div className="multi-angle-panel-title">澶氳搴︾敓鎴?/div>
+      <div className="multi-angle-panel-title">多角度生成</div>
       <div className="multi-angle-panel-grid">
         {MULTI_ANGLE_FEATURES.map(feature => (
           <button key={feature.id} onClick={() => onSelect(feature)} title={feature.prompt}>
@@ -846,20 +850,20 @@ function NodeMarkerEditor({ imageUrl, initialColor = '#ff2b2b', onClose, onSave 
     <div className="node-marker-editor-modal" onPointerDown={(event) => { if (event.target === event.currentTarget) onClose(); }}>
       <div className="node-marker-editor-shell nodrag nowheel" onPointerDown={(event) => event.stopPropagation()}>
         <div className="node-marker-editor-toolbar">
-          <button className="node-marker-editor-back" onClick={onClose}><SvgIcon name="chevron-left" size={15} /><strong>鏍囨敞</strong></button>
+          <button className="node-marker-editor-back" onClick={onClose}><SvgIcon name="chevron-left" size={15} /><strong>标注</strong></button>
           <span className="node-marker-editor-divider" />
-          <button className={tool === 'pin' ? 'active' : ''} title="鏁板瓧鏍囪" onClick={() => setTool('pin')}><SvgIcon name="pin" size={17} /></button>
-          <button className={tool === 'pen' ? 'active' : ''} title="鑷敱缁樼敾" onClick={() => setTool('pen')}><SvgIcon name="pen" size={17} /></button>
-          <button className={tool === 'rect' ? 'active' : ''} title="妗嗛€? onClick={() => setTool('rect')}><SvgIcon name="rect" size={17} /></button>
-          <button className={tool === 'text' ? 'active' : ''} title="鏂囧瓧" onClick={() => setTool('text')}><SvgIcon name="type" size={17} /></button>
+          <button className={tool === 'pin' ? 'active' : ''} title="数字标记" onClick={() => setTool('pin')}><SvgIcon name="pin" size={17} /></button>
+          <button className={tool === 'pen' ? 'active' : ''} title="自由绘画" onClick={() => setTool('pen')}><SvgIcon name="pen" size={17} /></button>
+          <button className={tool === 'rect' ? 'active' : ''} title="框选" onClick={() => setTool('rect')}><SvgIcon name="rect" size={17} /></button>
+          <button className={tool === 'text' ? 'active' : ''} title="文字" onClick={() => setTool('text')}><SvgIcon name="type" size={17} /></button>
           <span className="node-marker-editor-divider" />
-          <label className="node-marker-color" title="棰滆壊"><input type="color" value={color} onChange={(event) => setColor(event.target.value)} /><i style={{ background: color }} /></label>
-          <label className="node-marker-size" title="绗旇Е绮楃粏"><SvgIcon name="pen" size={15} /><input type="range" min="1" max="18" value={brushSize} onChange={(event) => setBrushSize(Number(event.target.value))} /></label>
+          <label className="node-marker-color" title="颜色"><input type="color" value={color} onChange={(event) => setColor(event.target.value)} /><i style={{ background: color }} /></label>
+          <label className="node-marker-size" title="笔触粗细"><SvgIcon name="pen" size={15} /><input type="range" min="1" max="18" value={brushSize} onChange={(event) => setBrushSize(Number(event.target.value))} /></label>
           <span className="node-marker-editor-divider" />
-          <button title="鎾ら攢" disabled={historyIndex <= 0} onClick={() => restoreHistory(historyIndex - 1)}><SvgIcon name="undo" size={16} /></button>
-          <button title="閲嶅仛" disabled={historyIndex >= history.length - 1} onClick={() => restoreHistory(historyIndex + 1)}><SvgIcon name="redo" size={16} /></button>
-          <button title="娓呯┖" onClick={clearMarks}><SvgIcon name="trash" size={16} /></button>
-          <button className="node-marker-save" onClick={save}>淇濆瓨</button>
+          <button title="撤销" disabled={historyIndex <= 0} onClick={() => restoreHistory(historyIndex - 1)}><SvgIcon name="undo" size={16} /></button>
+          <button title="重做" disabled={historyIndex >= history.length - 1} onClick={() => restoreHistory(historyIndex + 1)}><SvgIcon name="redo" size={16} /></button>
+          <button title="清空" onClick={clearMarks}><SvgIcon name="trash" size={16} /></button>
+          <button className="node-marker-save" onClick={save}>保存</button>
         </div>
         <div className="node-marker-editor-board">
           <canvas ref={imageCanvasRef} className="node-marker-base-canvas" />
@@ -936,13 +940,13 @@ function SplitFeaturePanel({ onSelect, onCustom, onClose }: { onSelect: (option:
   return (
     <div ref={panelRef} className="split-feature-panel nodrag nowheel" onPointerDown={(event) => event.stopPropagation()} onClick={(event) => event.stopPropagation()}>
       {TOOLBAR_SPLIT_OPTIONS.map(option => (
-        <button key={option.id} onClick={() => onSelect(option)} title={`灏嗗浘鐗囧垏鍒嗕负${option.label}`}>
+        <button key={option.id} onClick={() => onSelect(option)} title={`将图片切分为${option.label}`}>
           <span>{option.label}</span>
         </button>
       ))}
       <div className="split-feature-separator" />
-      <button className="split-feature-custom" onClick={onCustom} title="鑷畾涔夊鏍煎垏鍒?>
-        <span>鑷畾涔?/span>
+      <button className="split-feature-custom" onClick={onCustom} title="自定义宫格切分">
+        <span>自定义</span>
         <SvgIcon name="chevron-right" size={14} />
       </button>
     </div>
@@ -1054,7 +1058,7 @@ function ImageMediaToolbar({
       {openMenu === 'split' && feature.id === 'split' && (
         <SplitFeaturePanel
           onSelect={(option) => { setSplit(option.id); onSplitFeature(option); setOpenMenu(null); }}
-          onCustom={() => { const custom = window.prompt('璇疯緭鍏ュ鏍煎垏鍒嗘暟閲忥紝渚嬪 6x6'); if (custom) { setSplit(custom); onSplitFeature({ id: custom, label: `鑷畾涔?${custom}`, custom: true }); } setOpenMenu(null); }}
+          onCustom={() => { const custom = window.prompt('请输入宫格切分数量，例如 6x6'); if (custom) { setSplit(custom); onSplitFeature({ id: custom, label: `自定义 ${custom}`, custom: true }); } setOpenMenu(null); }}
           onClose={() => setOpenMenu(null)}
         />
       )}
@@ -1076,27 +1080,29 @@ function ImageMediaToolbar({
         {IMAGE_MEDIA_TOOL_FEATURES.map(button)}
       </div>
       <div className="lib-image-toolbar-actions">
-        <button title="閲嶆柊鐢熸垚锛堟墦寮€杈撳叆妗嗕慨鏀瑰悗鍐嶆鎻愪氦锛? onClick={onEditInputs}><SvgIcon name="canvas" size={15} /></button>
-        <button title="鏍囨敞 / 杩愰暅绾? onClick={onMark}><SvgIcon name="pin" size={15} /></button>
-        <button title="浣滀负鍙傝€? onClick={() => onApply('reference-extra')}><SvgIcon name="upload" size={15} /></button>
-        <button title="涓嬭浇" onClick={onDownload}><SvgIcon name="save" size={15} /></button>
-        <button title="鍏ㄥ睆鏌ョ湅" onClick={onFullscreen}><SvgIcon name="chevron-right" size={15} /></button>
+        <button title="重新生成（打开输入框修改后再次提交）" onClick={onEditInputs}><SvgIcon name="canvas" size={15} /></button>
+        <button title="标注 / 运镜线" onClick={onMark}><SvgIcon name="pin" size={15} /></button>
+        <button title="作为参考" onClick={() => onApply('reference-extra')}><SvgIcon name="upload" size={15} /></button>
+        <button title="下载" onClick={onDownload}><SvgIcon name="save" size={15} /></button>
+        <button title="全屏查看" onClick={onFullscreen}><SvgIcon name="chevron-right" size={15} /></button>
       </div>
     </div>
   );
 }
 
-// ==================== 鑺傜偣杈撳叆寮圭獥锛堢嫭绔嬪璇濇锛岃窡闅忚妭鐐癸級 ====================
+// ==================== 节点输入弹窗（独立对话框，跟随节点） ====================
 function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageNode, forceOmniReference, incomingImageCount = 0 }: { node: AINode; onClose: () => void; onSend: (prompt: string, files?: File[], params?: any) => void; anchorRect?: DOMRect | null; hasIncomingImageNode?: boolean; forceOmniReference?: boolean; incomingImageCount?: number }) {
   const [prompt, setPrompt] = useState(node.prompt || '');
   const isImageInputNode = IMAGE_INPUT_NODE_TYPES.includes(node.type);
-  // 鍥剧墖绫昏妭鐐癸紙鍚節瀹牸/鍥涘鏍肩瓑 image-to-image銆乮mage-upscale锛夎櫧鐒朵篃鍦?VIDEO_INPUT_NODE_TYPES 涓紝
-  // 浣嗗畠浠殑杈撳嚭鏄浘鐗囷紝涓嶅簲鍑虹幇瑙嗛瑙勬牸鍙傛暟锛屽洜姝ゆ帓闄ゆ帀鍥剧墖杈撳叆鑺傜偣銆?  const isVideoInputNode = VIDEO_INPUT_NODE_TYPES.includes(node.type) && !isImageInputNode;
+  // 图片类节点（含九宫格/四宫格等 image-to-image、image-upscale）虽然也在 VIDEO_INPUT_NODE_TYPES 中，
+  // 但它们的输出是图片，不应出现视频规格参数，因此排除掉图片输入节点。
+  const isVideoInputNode = VIDEO_INPUT_NODE_TYPES.includes(node.type) && !isImageInputNode;
   const isMediaInputNode = isVideoInputNode || isImageInputNode;
-  const isPanorama720Input = isImageInputNode && (node.options?.panoramaType === '720' || node.options?.mediaFeature === '720掳鍏ㄦ櫙鍥?);
+  const isPanorama720Input = isImageInputNode && (node.options?.panoramaType === '720' || node.options?.mediaFeature === '720°全景图');
   const mediaFeatures = isImageInputNode ? IMAGE_INPUT_FEATURES : VIDEO_INPUT_FEATURES;
   const defaultFeature = isImageInputNode ? 'text-to-image' : 'text-to-video';
-  // 鍓嶉潰杩炵嚎瑙嗛涓鸿妭鐐规垨澶氭牸寮忕粍鍚堜綔涓哄弬鑰冩椂锛岃嚜鍔ㄥ己鍒跺彧鑳介€夋嫨鈥滃叏鑳藉弬鑰冣€濓紝鍏跺畠閫夐」鍙樼伆涓嶅彲閫?  const [activeFeature, setActiveFeature] = useState<string>(forceOmniReference ? 'reference' : (node.options?.generationType || (isMediaInputNode ? defaultFeature : '')));
+  // 前面连线视频为节点或多格式组合作为参考时，自动强制只能选择“全能参考”，其它选项变灰不可选
+  const [activeFeature, setActiveFeature] = useState<string>(forceOmniReference ? 'reference' : (node.options?.generationType || (isMediaInputNode ? defaultFeature : '')));
   const [inputRows, setInputRows] = useState<Array<{ id: string; feature: string; text: string }>>(() => {
     const rows = node.options?.inputRows;
     if (Array.isArray(rows) && rows.length > 0) return rows;
@@ -1105,7 +1111,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       : [];
   });
 
-  // 寮哄埗鍏ㄨ兘鍙傝€冿細杩涘叆寮圭獥锛堟垨涓婃父杩炵嚎鍙樺寲锛夋椂鑷姩鍒囨崲鍒?reference锛堝叏鑳藉弬鑰冿級
+  // 强制全能参考：进入弹窗（或上游连线变化）时自动切换到 reference（全能参考）
   useEffect(() => {
     if (forceOmniReference && activeFeature !== 'reference') {
       setActiveFeature('reference');
@@ -1117,11 +1123,14 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [forceOmniReference]);
 
-  // 瑙嗛鑺傜偣锛氫笂娓歌繛绾胯妭鐐归噷鏈夊浘鐗囨椂锛岃嚜鍔ㄥ垏鎹㈠埌銆屽浘鐢熻棰戙€嶏紱鏈変袱寮犲浘鐗囨椂鑷姩鍒囨崲鍒般€岄灏惧抚銆嶃€?  // 鍏ㄨ兘鍙傝€冪殑寮哄埗鏉′欢锛堣棰?澶氭牸寮忥級浼樺厛绾ф洿楂橈紝姝ゅ浠呭湪闈炲己鍒跺叏鑳藉弬鑰冩椂鐢熸晥銆?  useEffect(() => {
-    // 鍙緷鎹笂娓搞€屽浘鐗囥€嶆暟閲忚嚜鍔ㄥ垏鎹細鏈夊浘鈫掑浘鐢熻棰戯紝涓ゅ紶鍥锯啋棣栧熬甯?    if (!isVideoInputNode || forceOmniReference || incomingImageCount < 1) return;
+  // 视频节点：上游连线节点里有图片时，自动切换到「图生视频」；有两张图片时自动切换到「首尾帧」。
+  // 全能参考的强制条件（视频/多格式）优先级更高，此处仅在非强制全能参考时生效。
+  useEffect(() => {
+    // 只依据上游「图片」数量自动切换：有图→图生视频，两张图→首尾帧
+    if (!isVideoInputNode || forceOmniReference || incomingImageCount < 1) return;
     const nextFeature = incomingImageCount >= 2 ? 'first-frame' : 'image-to-video';
     if (activeFeature === nextFeature) return;
-    // 浠呭湪鍩虹瑙嗛鍔熻兘涔嬮棿鑷姩鍒囨崲锛堟枃鐢熻棰?鍥剧敓瑙嗛/棣栧熬甯э級锛屼笉瑕嗙洊鐢ㄦ埛宸查€夌殑楂樼骇鍔熻兘
+    // 仅在基础视频功能之间自动切换（文生视频/图生视频/首尾帧），不覆盖用户已选的高级功能
     const switchable = ['text-to-video', 'image-to-video', 'first-frame'];
     if (!switchable.includes(activeFeature)) return;
     setActiveFeature(nextFeature);
@@ -1135,19 +1144,20 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
   const [referenceImages, setReferenceImages] = useState<Array<{ id: string; name: string; url: string; file?: File; kind?: 'image' | 'video' | 'audio'; thumbnail?: string }>>(() => {
     const storedReferences = node.options?.referenceImages;
     if (!Array.isArray(storedReferences)) return [];
-    // 褰掍竴鍖?kind锛氬吋瀹逛粎鏈?type 瀛楁鐨勬棫鏁版嵁锛岀‘淇濊棰戝弬鑰冭蛋 video 鍒嗘敮鏄剧ず棣栧抚缂╃暐鍥?    return storedReferences.map((ref: any) => {
+    // 归一化 kind：兼容仅有 type 字段的旧数据，确保视频参考走 video 分支显示首帧缩略图
+    return storedReferences.map((ref: any) => {
       const kind = ref.kind || (ref.type === 'video' ? 'video' : ref.type === 'audio' ? 'audio' : 'image');
       return { ...ref, kind };
     });
   });
   const [markerMode, setMarkerMode] = useState(false);
-  // 瑙嗛鍙傝€冭嫢缂哄皯缂╃暐鍥撅紙渚嬪杩炵嚎鍚庢湭鍙婃椂鎶藉抚锛夛紝寮圭獥鎵撳紑鏃惰ˉ鎶介甯т綔涓虹缉鐣ュ浘
+  // 视频参考若缺少缩略图（例如连线后未及时抽帧），弹窗打开时补抽首帧作为缩略图
   useEffect(() => {
     referenceImages.forEach(ref => {
       if (ref.kind === 'video' && !ref.thumbnail && ref.url) {
         captureVideoFirstFrame(ref.url)
           .then(thumb => setReferenceImages(list => list.map(item => item.id === ref.id ? { ...item, thumbnail: thumb } : item)))
-          .catch(() => { /* 鎶藉彇澶辫触淇濈暀 video 鍏滃簳 */ });
+          .catch(() => { /* 抽取失败保留 video 兜底 */ });
       }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -1163,7 +1173,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
   const [imageRatio, setImageRatio] = useState(node.options?.imageRatio || (isPanorama720Input ? '2:1' : 'auto'));
   const [markers, setMarkers] = useState<Array<{ id: number; x: number; y: number }>>(() => Array.isArray(node.options?.markers) ? node.options.markers : []);
   const [motionLines, setMotionLines] = useState<Array<{ from: { x: number; y: number }; to: { x: number; y: number } }>>(() => Array.isArray(node.options?.motionLines) ? node.options.motionLines : []);
-  // ===== 瑙嗛鍙傛暟鐘舵€?=====
+  // ===== 视频参数状态 =====
   const [videoRatio, setVideoRatio] = useState(node.options?.videoRatio || 'auto');
   const [videoClarity, setVideoClarity] = useState(node.options?.videoClarity || '720P');
   const [videoDuration, setVideoDuration] = useState(node.options?.videoDuration || 5);
@@ -1189,7 +1199,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
         const isAudio = file.type.startsWith('audio/');
 
         if (isImage) {
-          // 鍥剧墖锛氭坊鍔犱负鍙傝€冨浘 + 淇濆瓨鍒拌祫浜у簱
+          // 图片：添加为参考图 + 保存到资产库
           const reader = new FileReader();
           reader.onload = () => {
             const dataUrl = String(reader.result || '');
@@ -1198,14 +1208,16 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
           };
           reader.readAsDataURL(file);
         } else if (isVideo) {
-          // 瑙嗛锛氫繚瀛樺埌璧勪骇搴?          const reader = new FileReader();
+          // 视频：保存到资产库
+          const reader = new FileReader();
           reader.onload = () => {
             const dataUrl = String(reader.result || '');
             autoSaveMediaToAssets({ name: file.name, type: 'video', path: dataUrl, size: file.size, sourceType: 'canvas', sourceId: node.id });
           };
           reader.readAsDataURL(file);
         } else if (isAudio) {
-          // 闊抽锛氫繚瀛樺埌璧勪骇搴?          const reader = new FileReader();
+          // 音频：保存到资产库
+          const reader = new FileReader();
           reader.onload = () => {
             const dataUrl = String(reader.result || '');
             autoSaveMediaToAssets({ name: file.name, type: 'audio', path: dataUrl, size: file.size, sourceType: 'canvas', sourceId: node.id });
@@ -1220,7 +1232,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     setAttachedFiles(prev => prev.filter((_, i) => i !== idx));
   };
 
-  // 鍙傝€冨浘鍔犲叆杈撳叆妗嗘椂鑷姩 @鏂囦欢鍚嶏紙鑻ュ皻鏈彁鍙婏級
+  // 参考图加入输入框时自动 @文件名（若尚未提及）
   function appendReferenceMention(name: string) {
     if (!name) return;
     setInputRows(prev => {
@@ -1238,17 +1250,19 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       if (prev.some(item => item.url === url)) return prev;
       added = true;
       const refId = `ref-${Date.now()}-${prev.length}`;
-      // 瑙嗛鍙傝€冿細鍏堝姞鍏ュ垪琛紙缂╃暐鍥炬殏绌猴級锛岄殢鍚庡紓姝ユ姄鍙栭甯т綔涓虹缉鐣ュ浘锛岄伩鍏嶈鍙栦笉鍒扮缉鐣ュ浘
+      // 视频参考：先加入列表（缩略图暂空），随后异步抓取首帧作为缩略图，避免读取不到缩略图
       if (kind === 'video') {
         captureVideoFirstFrame(url)
           .then(thumb => {
             setReferenceImages(list => list.map(item => item.id === refId ? { ...item, thumbnail: thumb } : item));
           })
-          .catch(() => { /* 鎶撳彇澶辫触鏃朵繚鐣欒棰戞湰韬紝img 鏍囩鍏滃簳鏄剧ず */ });
+          .catch(() => { /* 抓取失败时保留视频本身，img 标签兜底显示 */ });
       }
       return [...prev, { id: refId, name, url, file, kind, thumbnail: kind === 'image' ? url : undefined }];
     });
-    // 娉ㄦ剰锛氫笉鍐嶈嚜鍔ㄥ悜杈撳叆妗嗘彃鍏?@鏂囦欢鍚嶃€?    // 鍙傝€冨浘鍚嶅瓧浠呭湪鐢ㄦ埛涓诲姩鐐瑰嚮鍙傝€冨浘缂╃暐鍥撅紝鎴栧湪杈撳叆妗嗘墜鍔ㄨ緭鍏?@ 鏃舵墠鍔犲叆銆?    void added;
+    // 注意：不再自动向输入框插入 @文件名。
+    // 参考图名字仅在用户主动点击参考图缩略图，或在输入框手动输入 @ 时才加入。
+    void added;
   }
 
   function removeReferenceImage(imageId: string) {
@@ -1271,7 +1285,9 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       const detail = (event as CustomEvent<{ targetNodeId?: string; sourceNodeId?: string; name?: string; url?: string; kind?: 'image' | 'video' | 'audio' }>).detail;
       if (!detail?.url || detail.targetNodeId !== node.id) return;
       const refName = detail.name || detail.sourceNodeId || 'reference';
-      // 浠呮妸鍥剧墖鍔犲叆鍙傝€冨垪琛紝涓嶈嚜鍔ㄥ悜杈撳叆妗嗘彃鍏?@鏂囦欢鍚嶃€?      // 鐢ㄦ埛闇€瑕佸紩鐢ㄦ椂鍐嶇偣鍑诲弬鑰冨浘缂╃暐鍥撅紝鎴栧湪杈撳叆妗嗚緭鍏?@銆?      addReferenceImage(refName, detail.url, undefined, detail.kind || 'image');
+      // 仅把图片加入参考列表，不自动向输入框插入 @文件名。
+      // 用户需要引用时再点击参考图缩略图，或在输入框输入 @。
+      addReferenceImage(refName, detail.url, undefined, detail.kind || 'image');
     };
     window.addEventListener('canvas:reference-picked', handler);
     return () => window.removeEventListener('canvas:reference-picked', handler);
@@ -1298,18 +1314,19 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
   };
 
   const handleSend = () => {
-    // 鏋勫缓鍩虹鎻愮ず璇?    let finalPrompt = isMediaInputNode
+    // 构建基础提示词
+    let finalPrompt = isMediaInputNode
       ? composePromptParts(...inputRows.map(row => {
           const feature = mediaFeatures.find(item => item.id === row.feature);
-          return row.text.trim() ? `${feature?.label || '杈撳叆'}锛?{row.text.trim()}` : undefined;
-        }), referenceImages.length > 0 ? `鍙傝€冨浘锛?{referenceImages.map(img => `@${img.name}`).join(' ')}` : undefined, markers.length > 0 ? `鏍囪鐐癸細${markers.map(point => `${point.id}(${Math.round(point.x)}%,${Math.round(point.y)}%)`).join('锛?)}` : undefined, motionLines.length > 0 ? `杩愰暅绾匡細${motionLines.length} 鏉 : undefined)
+          return row.text.trim() ? `${feature?.label || '输入'}：${row.text.trim()}` : undefined;
+        }), referenceImages.length > 0 ? `参考图：${referenceImages.map(img => `@${img.name}`).join(' ')}` : undefined, markers.length > 0 ? `标记点：${markers.map(point => `${point.id}(${Math.round(point.x)}%,${Math.round(point.y)}%)`).join('；')}` : undefined, motionLines.length > 0 ? `运镜线：${motionLines.length} 条` : undefined)
       : prompt;
 
-    // 瑙嗛鑺傜偣锛氳嚜鍔ㄨ拷鍔犺繍闀滄彁绀鸿瘝
+    // 视频节点：自动追加运镜提示词
     if (isVideoInputNode && selectedCameraMovement) {
       finalPrompt = finalPrompt.trim()
-        ? `${finalPrompt}\n\n銆愯繍闀滆姹傘€?{selectedCameraMovement.promptZh}`
-        : `銆愯繍闀滆姹傘€?{selectedCameraMovement.promptZh}`;
+        ? `${finalPrompt}\n\n【运镜要求】${selectedCameraMovement.promptZh}`
+        : `【运镜要求】${selectedCameraMovement.promptZh}`;
     }
 
     if (!finalPrompt.trim() && attachedFiles.length === 0) return;
@@ -1328,7 +1345,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
           imageQuality,
           imageClarity,
           imageRatio,
-          // 瑙嗛鍙傛暟
+          // 视频参数
           videoRatio,
           videoClarity,
           videoDuration,
@@ -1343,7 +1360,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       });
     }
 
-    // 鏋勫缓鎻愪氦鍙傛暟锛堝寘鍚墍鏈夎棰戝弬鏁帮級
+    // 构建提交参数（包含所有视频参数）
     const submitParams: any = {};
     if (isVideoInputNode) {
       submitParams.videoConfig = {
@@ -1449,7 +1466,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     setInputRows(prev => prev.length <= 1 ? prev : prev.filter(row => row.id !== rowId));
   };
 
-  // 妯″瀷閫夋嫨鍣?- 鏍规嵁鑺傜偣绫诲瀷閫夋嫨瀵瑰簲鐨?API 閰嶇疆
+  // 模型选择器 - 根据节点类型选择对应的 API 配置
   const allAPIConfigs = useAppStore(state => state.apiConfigs || []);
   const imageAPIConfigs = useAppStore(state => state.imageAPIConfigs || []);
   const videoAPIConfigs = useAppStore(state => state.videoAPIConfigs || []);
@@ -1460,7 +1477,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
   const recommendedConfigs = useAppStore(state => state.recommendedConfigs || []);
   const chatAPIConfigs = useAppStore(state => state.chatAPIConfigs || []);
 
-  // 宸ュ叿鍑芥暟锛氳鑼冨寲妯″瀷鍒楄〃
+  // 工具函数：规范化模型列表
   const normalizeSavedModels = (models?: string[], defaultModel?: string) => {
     const modelSet = new Set<string>();
     [...(models || []), defaultModel].forEach(model => {
@@ -1470,7 +1487,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     return Array.from(modelSet);
   };
 
-  // 宸ュ叿鍑芥暟锛氭鏌ラ厤缃槸鍚﹀畬鏁村彲璋冪敤
+  // 工具函数：检查配置是否完整可调用
   const hasSavedCallableApiConfig = (config: {
     name?: string;
     baseUrl?: string;
@@ -1486,7 +1503,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     (normalizeSavedModels(config.models, config.defaultModel).length > 0 || Boolean(String(config.defaultModel || '').trim()))
   );
 
-  // 鑾峰彇鎵€鏈夊彲鐢ㄧ殑閰嶇疆锛堢被浼?DramaPage 鐨勫疄鐜帮級
+  // 获取所有可用的配置（类似 DramaPage 的实现）
   const allAvailableConfigs = useMemo(() => [
     ...getCallableRecommendedConfigs(recommendedConfigs)
       .filter(config => hasSavedCallableApiConfig(config))
@@ -1513,7 +1530,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       })),
   ], [recommendedConfigs, allAPIConfigs, chatAPIConfigs]);
 
-  // 鏍规嵁鑺傜偣绫诲瀷閫夋嫨瀵瑰簲鐨?API 閰嶇疆
+  // 根据节点类型选择对应的 API 配置
   const comfyModelsFor = (c: any) => {
     const b = String(c.serverUrl || '').trim().replace(/\/+$/, '');
     const cached = (comfyWorkflowCache || [])
@@ -1522,29 +1539,34 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       .map((w: any) => w.name);
     const files = (c.workflowFiles && c.workflowFiles.length) ? c.workflowFiles.map((w: any) => w.name || w) : [];
     const merged = Array.from(new Set([...cached, ...files]));
-    return merged.length ? ['鑷姩鎼缓', ...merged] : ['鑷姩鎼缓'];
+    return merged.length ? ['自动搭建', ...merged] : ['自动搭建'];
   };
   const apiConfigs = (() => {
     let configs: any[] = [];
-    // 鍥剧墖绫昏妭鐐?    if (['text-to-image', 'image-to-image', 'image-upscale', 'image-blend', 'character-view'].includes(node.type)) {
+    // 图片类节点
+    if (['text-to-image', 'image-to-image', 'image-upscale', 'image-blend', 'character-view'].includes(node.type)) {
       configs = [
         ...imageAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
-        // ComfyUI 涔熷彲浠ョ敤浜庡浘鐗囩敓鎴?        ...comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: ms[0], _source: 'comfyui' as const }); }),
+        // ComfyUI 也可以用于图片生成
+        ...comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: ms[0], _source: 'comfyui' as const }); }),
       ];
     }
-    // 瑙嗛绫昏妭鐐?    else if (['text-to-video', 'video-composite', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'lip-sync', 'video-super-resolution', 'live-portrait', 'video-to-music', 'video-interpolate', 'video-realtime'].includes(node.type)) {
+    // 视频类节点
+    else if (['text-to-video', 'video-composite', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'lip-sync', 'video-super-resolution', 'live-portrait', 'video-to-music', 'video-interpolate', 'video-realtime'].includes(node.type)) {
       configs = [
         ...videoAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
-        // ComfyUI 涔熷彲浠ョ敤浜庤棰戠敓鎴?        ...comfyuiConfigs.map(c => ({ ...c, name: c.name || 'ComfyUI', models: (c.workflowFiles && c.workflowFiles.length ? c.workflowFiles.map((w: any) => w.name || w) : [c.name || 'ComfyUI 宸ヤ綔娴?]), defaultModel: (c.workflowFiles?.[0]?.name) || c.name || 'ComfyUI 宸ヤ綔娴?, _source: 'comfyui' as const })),
+        // ComfyUI 也可以用于视频生成
+        ...comfyuiConfigs.map(c => ({ ...c, name: c.name || 'ComfyUI', models: (c.workflowFiles && c.workflowFiles.length ? c.workflowFiles.map((w: any) => w.name || w) : [c.name || 'ComfyUI 工作流']), defaultModel: (c.workflowFiles?.[0]?.name) || c.name || 'ComfyUI 工作流', _source: 'comfyui' as const })),
       ];
     }
-    // 璇煶绫昏妭鐐?    else if (['tts', 'audio2video', 'audio-to-text'].includes(node.type)) {
+    // 语音类节点
+    else if (['tts', 'audio2video', 'audio-to-text'].includes(node.type)) {
       configs = [
         ...voiceAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
         ...getCallableRecommendedConfigs(recommendedConfigs)
@@ -1552,7 +1574,8 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
       ];
     }
-    // 闊充箰绫昏妭鐐?    else if (['video-to-music'].includes(node.type)) {
+    // 音乐类节点
+    else if (['video-to-music'].includes(node.type)) {
       configs = [
         ...musicAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
         ...getCallableRecommendedConfigs(recommendedConfigs)
@@ -1560,14 +1583,15 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
       ];
     }
-    // ComfyUI 鑺傜偣
+    // ComfyUI 节点
     else if (node.type === 'comfyui') {
       configs = comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: ms[0], _source: 'comfyui' as const }); });
     }
-    // 榛樿杩斿洖鎵€鏈夊彲鐢ㄩ厤缃?    else {
+    // 默认返回所有可用配置
+    else {
       configs = allAvailableConfigs;
     }
-    // 鍘婚噸锛氭牴鎹?id 鍘婚噸锛屼繚鐣欑涓€涓嚭鐜扮殑閰嶇疆
+    // 去重：根据 id 去重，保留第一个出现的配置
     const seen = new Set<string>();
     return configs.filter(cfg => {
       if (seen.has(cfg.id)) return false;
@@ -1582,7 +1606,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
 
   React.useEffect(() => {
     if (apiConfigs.length > 0 && !selectedConfig) {
-      // 浼樺厛鍥炴樉鑺傜偣宸蹭繚瀛樼殑鎺ュ彛/妯″瀷锛堜緥濡傚凡閫夋嫨鐨?ComfyUI 宸ヤ綔娴侊級
+      // 优先回显节点已保存的接口/模型（例如已选择的 ComfyUI 工作流）
       const savedCfg = node.configId ? apiConfigs.find((c: any) => c.id === node.configId) : undefined;
       const defaultCfg = savedCfg || apiConfigs.find((c: any) => c.isDefault) || apiConfigs[0];
       setSelectedConfig(defaultCfg.id || '');
@@ -1591,7 +1615,8 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     }
   }, [apiConfigs]);
 
-  // 鑷畾涔変笅鎷夛細鑱氱劍涓庣偣鍑诲閮ㄥ叧闂?  const modelDropdownRef = React.useRef<HTMLDivElement>(null);
+  // 自定义下拉：聚焦与点击外部关闭
+  const modelDropdownRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     if (!modelDropdownOpen) return;
     const close = (e: MouseEvent) => {
@@ -1608,23 +1633,28 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
   const currentConfig = apiConfigs.find(c => c.id === selectedConfig);
   const modelList = currentConfig?.models || (currentConfig as any)?.workflowFiles || [];
 
-  // 寮圭獥浣跨敤 fixed 瀹氫綅骞跺熀浜?anchorRect锛堝睆骞曞潗鏍囷級璁＄畻浣嶇疆锛?  // 涓嶄緷璧栫敾甯冪缉鏀惧€硷紝鍥犳绉婚櫎浜嗘鍓?100ms 杞鐨?canvasZoom 閫昏緫锛堟寔缁Е鍙戦噸娓叉煋锛岃妭鐐瑰鏃舵槑鏄惧崱椤匡級銆?  const canvasRoot = typeof document === 'undefined' ? null : document.querySelector('.llib-full-canvas') as HTMLElement | null;
+  // 弹窗使用 fixed 定位并基于 anchorRect（屏幕坐标）计算位置，
+  // 不依赖画布缩放值，因此移除了此前 100ms 轮询的 canvasZoom 逻辑（持续触发重渲染，节点多时明显卡顿）。
+  const canvasRoot = typeof document === 'undefined' ? null : document.querySelector('.llib-full-canvas') as HTMLElement | null;
   const canvasRect = canvasRoot?.getBoundingClientRect() ?? null;
   const viewportWidth = canvasRect?.width ?? (typeof window === 'undefined' ? 1280 : window.innerWidth);
   
-  // 寮圭獥浣嶇疆鍩轰簬 anchorRect锛堣妭鐐?DOM 浣嶇疆锛夛紝浣跨敤 fixed 瀹氫綅閬垮厤琚埗鍏冪礌鍙樻崲褰卞搷
+  // 弹窗位置基于 anchorRect（节点 DOM 位置），使用 fixed 定位避免被父元素变换影响
   const anchorCenterX = anchorRect ? anchorRect.left + anchorRect.width / 2 : 0;
   const anchorBottom = anchorRect ? anchorRect.bottom : 0;
   const maxPopoverWidth = Math.min(640, viewportWidth - 24);
-  // 寮圭獥瀹藉害锛氳窡闅忚妭鐐瑰搴﹀悓姣斾緥锛堣妭鐐圭敾甯冨潗鏍?* 缂╂斁 = 灞忓箷瀹藉害锛?  // 浣跨敤鑺傜偣瀹為檯鐨勫睆骞曞搴︿綔涓烘渶灏忓弬鑰冿紝鏈€澶т笉瓒呰繃 640px
+  // 弹窗宽度：跟随节点宽度同比例（节点画布坐标 * 缩放 = 屏幕宽度）
+  // 使用节点实际的屏幕宽度作为最小参考，最大不超过 640px
   const nodeScreenWidth = anchorRect?.width ?? 360;
   const popoverWidth = Math.max(Math.min(maxPopoverWidth, 640), Math.min(nodeScreenWidth * 1.4, maxPopoverWidth));
   
-  // 浣跨敤 fixed 瀹氫綅锛屽熀浜庡睆骞曞潗鏍?  const popoverLeft = anchorRect ? anchorCenterX - popoverWidth / 2 : 0;
+  // 使用 fixed 定位，基于屏幕坐标
+  const popoverLeft = anchorRect ? anchorCenterX - popoverWidth / 2 : 0;
   const popoverTop = anchorRect ? anchorBottom + 8 : 0;
   const portalTarget = canvasRoot || document.body;
 
-  // 寮圭獥鏍峰紡锛氫娇鐢?fixed 瀹氫綅锛屼笉鍙楃敾甯冪缉鏀惧奖鍝?  const portalStyle: React.CSSProperties = {
+  // 弹窗样式：使用 fixed 定位，不受画布缩放影响
+  const portalStyle: React.CSSProperties = {
     position: 'fixed',
     left: popoverLeft,
     top: popoverTop,
@@ -1651,14 +1681,15 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       onClick={(e) => e.stopPropagation()}
     >
       <div className="popover-header">
-        <span className="popover-title">{NODE_TEMPLATES.find(t => t.type === node.type)?.label || '鑺傜偣'} - 杈撳叆</span>
+        <span className="popover-title">{NODE_TEMPLATES.find(t => t.type === node.type)?.label || '节点'} - 输入</span>
         {isMediaInputNode && (
           <div className="popover-video-tabs popover-video-tabs-header">
             {mediaFeatures.slice(0, isImageInputNode ? 2 : 5).map(feature => {
               const isTextToImage = feature.id === 'text-to-image';
               const isTextToVideo = feature.id === 'text-to-video';
               const hasReference = referenceImages.length > 0;
-              // 寮哄埗鍏ㄨ兘鍙傝€冿細闄も€滃叏鑳藉弬鑰?reference)鈥濆锛屽叾浠栭€夐」鍏ㄩ儴鍙樼伆涓嶅彲閫?              const disabledByForce = forceOmniReference && feature.id !== 'reference';
+              // 强制全能参考：除“全能参考(reference)”外，其他选项全部变灰不可选
+              const disabledByForce = forceOmniReference && feature.id !== 'reference';
               const shouldDisable = disabledByForce || ((isTextToImage || isTextToVideo) && (hasIncomingImageNode || hasReference));
               return (
                 <button
@@ -1666,7 +1697,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                   className={`popover-video-tab ${activeFeature === feature.id ? 'active' : ''} ${shouldDisable ? 'disabled' : ''}`}
                   onClick={() => !shouldDisable && switchVideoFeature(feature.id)}
                   disabled={shouldDisable}
-                  title={disabledByForce ? '宸叉娴嬪埌瑙嗛鎴栧绉嶆牸寮忚緭鍏ワ紝浠呭彲浣跨敤鍏ㄨ兘鍙傝€? : (shouldDisable ? '宸叉娴嬪埌鍥剧墖杈撳叆锛岃浣跨敤鍥剧墖鐩稿叧鍔熻兘' : '')}
+                  title={disabledByForce ? '已检测到视频或多种格式输入，仅可使用全能参考' : (shouldDisable ? '已检测到图片输入，请使用图片相关功能' : '')}
                 >
                   {feature.label}
                 </button>
@@ -1682,28 +1713,28 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
             <div className="popover-video-tools">
               {isImageInputNode ? (
                 <>
-                  <button className={`popover-video-tool square ${activeFeature === 'marker' ? 'active' : ''}`} onClick={() => applyMediaFeature('marker')} title="鏍囨敞"><SvgIcon name="grid" size={13} /><span>鏍囨敞</span></button>
-                  <button className={`popover-video-tool square ${activeFeature === 'reference-extra' ? 'active' : ''}`} onClick={() => applyMediaFeature('reference-extra')} title="鐐瑰嚮鐢诲竷鍥剧墖鑺傜偣閫夋嫨鍙傝€冨浘"><SvgIcon name="cursor" size={13} /><span>鍙傝€?/span></button>
-                  <button className={`popover-video-tool square ${activeFeature === 'upload' ? 'active' : ''}`} onClick={() => fileInputRef.current?.click()} title="涓婁紶鍙傝€冨浘"><SvgIcon name="upload" size={13} /><span>鍙傝€冨浘</span></button>
-                  <button className={`popover-video-tool square ${activeFeature === 'asset' ? 'active' : ''}`} onClick={() => applyMediaFeature('asset')} title="浠庤祫浜у簱閫夋嫨"><SvgIcon name="box" size={13} /><span>璧勪骇</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'marker' ? 'active' : ''}`} onClick={() => applyMediaFeature('marker')} title="标注"><SvgIcon name="grid" size={13} /><span>标注</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'reference-extra' ? 'active' : ''}`} onClick={() => applyMediaFeature('reference-extra')} title="点击画布图片节点选择参考图"><SvgIcon name="cursor" size={13} /><span>参考</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'upload' ? 'active' : ''}`} onClick={() => fileInputRef.current?.click()} title="上传参考图"><SvgIcon name="upload" size={13} /><span>参考图</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'asset' ? 'active' : ''}`} onClick={() => applyMediaFeature('asset')} title="从资产库选择"><SvgIcon name="box" size={13} /><span>资产</span></button>
                 </>
               ) : (
                 <>
-                  <button className={`popover-video-tool square ${activeFeature === 'marker' ? 'active' : ''}`} onClick={() => applyMediaFeature('marker')} title="鏍囨敞"><SvgIcon name="grid" size={13} /><span>鏍囨敞</span></button>
-                  <button className={`popover-video-tool square ${activeFeature === 'reference-extra' ? 'active' : ''}`} onClick={() => applyMediaFeature('reference-extra')} title="鐐瑰嚮鐢诲竷鍥剧墖鑺傜偣閫夋嫨鍙傝€冨浘"><SvgIcon name="cursor" size={13} /><span>鍙傝€?/span></button>
-                  <button className={`popover-video-tool square ${activeFeature === 'upload' ? 'active' : ''}`} onClick={() => fileInputRef.current?.click()} title="涓婁紶鍙傝€冨浘"><SvgIcon name="upload" size={13} /><span>鍙傝€冨浘</span></button>
-                  <button className={`popover-video-tool square ${activeFeature === 'asset' ? 'active' : ''}`} onClick={() => applyMediaFeature('asset')} title="浠庤祫浜у簱閫夋嫨"><SvgIcon name="box" size={13} /><span>璧勪骇</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'marker' ? 'active' : ''}`} onClick={() => applyMediaFeature('marker')} title="标注"><SvgIcon name="grid" size={13} /><span>标注</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'reference-extra' ? 'active' : ''}`} onClick={() => applyMediaFeature('reference-extra')} title="点击画布图片节点选择参考图"><SvgIcon name="cursor" size={13} /><span>参考</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'upload' ? 'active' : ''}`} onClick={() => fileInputRef.current?.click()} title="上传参考图"><SvgIcon name="upload" size={13} /><span>参考图</span></button>
+                  <button className={`popover-video-tool square ${activeFeature === 'asset' ? 'active' : ''}`} onClick={() => applyMediaFeature('asset')} title="从资产库选择"><SvgIcon name="box" size={13} /><span>资产</span></button>
                 </>
               )}
             </div>
             {referenceImages.length > 0 && (
               <div className="popover-reference-strip">
-                <span className="popover-reference-label">鍙傝€?/span>
+                <span className="popover-reference-label">参考</span>
                 {referenceImages.map(image => (
                   <button key={image.id} className={`popover-reference-thumb ${image.kind === 'video' ? 'is-video' : ''}`} title={`@${image.name}`} onClick={() => setInputRows(prev => (prev.length === 0 ? [{ id: `row-${Date.now()}`, feature: activeFeature || defaultFeature, text: `@${image.name} ` }] : prev).map((row, index) => index === 0 ? { ...row, text: row.text.includes(`@${image.name}`) ? row.text : `${row.text}${row.text ? ' ' : ''}@${image.name} ` } : row))}>
                     {image.kind === 'video' ? (
                       image.thumbnail
-                        // 瑙嗛鍙傝€冿細浣跨敤鎶撳彇鍒扮殑绗竴甯х缉鐣ュ浘鏄剧ず锛涚缉鐣ュ浘鏈氨缁椂鐢?video 鏍囩鍏滃簳灞曠ず棣栧抚锛岄伩鍏嶈鍙栦笉鍒扮缉鐣ュ浘
+                        // 视频参考：使用抓取到的第一帧缩略图显示；缩略图未就绪时用 video 标签兜底展示首帧，避免读取不到缩略图
                         ? <img src={image.thumbnail} alt={image.name} />
                         : <video src={image.url} muted playsInline preload="metadata" />
                     ) : (
@@ -1712,7 +1743,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                     {image.kind === 'video' && <span className="popover-reference-video-badge"><SvgIcon name="video" size={10} /></span>}
                     <span
                       className="popover-reference-remove"
-                      title="鍒犻櫎鍙傝€?
+                      title="删除参考"
                       onClick={(event) => { event.preventDefault(); event.stopPropagation(); removeReferenceImage(image.id); }}
                     >
                       <SvgIcon name="close" size={10} />
@@ -1754,7 +1785,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
             value={prompt}
             onChange={(value) => setPrompt(value)}
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
-            placeholder="杈撳叆鎻愮ず璇?.."
+            placeholder="输入提示词..."
             rows={3}
           />
         )}
@@ -1772,22 +1803,22 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
           <div className="popover-left-actions">
             <input ref={fileInputRef} type="file" multiple accept="image/*,video/*,audio/*" onChange={handleFileUpload} style={{ display: 'none' }} id={`pop-file-${node.id}`} />
             {!isPanorama720Input && (
-              <label htmlFor={`pop-file-${node.id}`} className="popover-action-btn" title="涓婁紶闄勪欢"><SvgIcon name="upload" size={14} /></label>
+              <label htmlFor={`pop-file-${node.id}`} className="popover-action-btn" title="上传附件"><SvgIcon name="upload" size={14} /></label>
             )}
-            {/* 鑷畾涔変富棰樹笅鎷夛紙閬垮厤 Windows 鍘熺敓 select 閲囦环浣庤壊锛?*/}
+            {/* 自定义主题下拉（避免 Windows 原生 select 采价低色） */}
             <div ref={modelDropdownRef} className={`popover-model-dropdown nodrag nowheel ${modelDropdownOpen ? 'open' : ''}`} onPointerDown={stopInputDrag} onMouseDown={stopInputDrag}>
               <button
                 type="button"
                 className="popover-model-dropdown-trigger"
                 onClick={(e) => { e.stopPropagation(); setModelDropdownOpen(open => !open); }}
-                title="閫夋嫨 API 涓庢ā鍨?
+                title="选择 API 与模型"
               >
-                <span className="popover-model-dropdown-label">{selectedModel || (apiConfigs.find(c => c.id === selectedConfig)?.name) || '閫夋嫨鎺ュ彛'}</span>
+                <span className="popover-model-dropdown-label">{selectedModel || (apiConfigs.find(c => c.id === selectedConfig)?.name) || '选择接口'}</span>
                 <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="popover-model-dropdown-arrow"><path d="M6 9l6 6 6-6" /></svg>
               </button>
               {modelDropdownOpen && (
                 <div className="popover-model-dropdown-menu" onClick={(e) => e.stopPropagation()}>
-                  {apiConfigs.length === 0 && <div className="popover-model-dropdown-empty">鏆傛湭閰嶇疆 API</div>}
+                  {apiConfigs.length === 0 && <div className="popover-model-dropdown-empty">暂未配置 API</div>}
                   {apiConfigs.map(cfg => (
                     <div key={cfg.id} className="popover-model-dropdown-group">
                       <div className="popover-model-dropdown-group-label">{cfg.name || cfg.provider}</div>
@@ -1803,12 +1834,14 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                               setSelectedConfig(cfg.id);
                               setSelectedModel(m);
                               setModelDropdownOpen(false);
-                              // 鎶婃墍閫夋帴鍙?妯″瀷鎻愪氦鍒拌妭鐐癸紝纭繚 executeNode 璺敱鍒版纭殑 provider锛堝惈 ComfyUI锛?                              const isComfy = (cfg as any)._source === 'comfyui' || comfyuiConfigs.some(cc => cc.id === cfg.id);
-                              // ComfyUI锛氭妸鎵€閫夆€滃伐浣滄祦鍚嶁€濇槧灏勫埌缂撳瓨 id锛涢€夆€滆嚜鍔ㄦ惌寤衡€濆垯娓呯┖浠ョ幇鎼?                              let nextOptions = node.options || {};
+                              // 把所选接口/模型提交到节点，确保 executeNode 路由到正确的 provider（含 ComfyUI）
+                              const isComfy = (cfg as any)._source === 'comfyui' || comfyuiConfigs.some(cc => cc.id === cfg.id);
+                              // ComfyUI：把所选“工作流名”映射到缓存 id；选“自动搭建”则清空以现搭
+                              let nextOptions = node.options || {};
                               if (isComfy) {
                                 const b = String((cfg as any).serverUrl || '').trim().replace(/\/+$/, '');
-                                const hit = m === '鑷姩鎼缓' ? undefined : (comfyWorkflowCache || []).find((w: any) => w.name === m && w.feature === node.type && (!b || w.serverUrl === b));
-                                nextOptions = { ...nextOptions, workflowCacheId: hit ? hit.id : undefined, workflowName: m === '鑷姩鎼缓' ? undefined : m };
+                                const hit = m === '自动搭建' ? undefined : (comfyWorkflowCache || []).find((w: any) => w.name === m && w.feature === node.type && (!b || w.serverUrl === b));
+                                nextOptions = { ...nextOptions, workflowCacheId: hit ? hit.id : undefined, workflowName: m === '自动搭建' ? undefined : m };
                               }
                               useAppStore.getState().updateNode(node.id, {
                                 provider: (isComfy ? 'comfyui' : ((cfg as any).provider || 'openai')) as any,
@@ -1818,7 +1851,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                               });
                             }}
                           >
-                            {isActive && <span className="popover-model-dropdown-check">鉁?/span>}
+                            {isActive && <span className="popover-model-dropdown-check">✓</span>}
                             <span>{m}</span>
                           </button>
                         );
@@ -1830,15 +1863,15 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
             </div>
             {isVideoInputNode && !isPanorama720Input && (
               <div className="image-param-wrap">
-                <button className="image-param-trigger" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => { event.stopPropagation(); setVideoParamOpen(open => !open); }} title="瑙嗛鐢熸垚鍙傛暟">
+                <button className="image-param-trigger" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => { event.stopPropagation(); setVideoParamOpen(open => !open); }} title="视频生成参数">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="9" cy="9" r="2" /><line x1="3" y1="17" x2="8.59" y2="11.41" /><line x1="9" y1="9" x2="21" y2="21" /></svg>
-                  <span>{videoRatio === 'auto' ? 'Auto' : videoRatio} 路 {videoClarity} 路 {videoDuration}s</span>
+                  <span>{videoRatio === 'auto' ? 'Auto' : videoRatio} · {videoClarity} · {videoDuration}s</span>
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
                 </button>
                 {videoParamOpen && (
                   <div className="image-param-panel video-param-panel" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => event.stopPropagation()}>
                     <div className="image-param-section">
-                      <div className="image-param-title">姣斾緥</div>
+                      <div className="image-param-title">比例</div>
                       <div className="image-param-segment">
                         {VIDEO_RATIO_OPTIONS.map(option => (
                           <button key={option.id} className={videoRatio === option.id ? 'active' : ''} onClick={() => setVideoRatio(option.id)}>{option.label}</button>
@@ -1846,7 +1879,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                       </div>
                     </div>
                     <div className="image-param-section">
-                      <div className="image-param-title">娓呮櫚搴?/div>
+                      <div className="image-param-title">清晰度</div>
                       <div className="image-param-segment">
                         {VIDEO_CLARITY_OPTIONS.map(option => (
                           <button key={option} className={videoClarity === option ? 'active' : ''} onClick={() => setVideoClarity(option)}>{option}</button>
@@ -1854,7 +1887,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                       </div>
                     </div>
                     <div className="image-param-section">
-                      <div className="image-param-title">鏃堕暱 <span style={{color: 'var(--primary-color, #7dd3fc)'}}>{videoDuration}s</span></div>
+                      <div className="image-param-title">时长 <span style={{color: 'var(--primary-color, #7dd3fc)'}}>{videoDuration}s</span></div>
                       <div className="video-param-duration-row">
                         <input
                           type="range"
@@ -1874,11 +1907,11 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                       </div>
                     </div>
                     <div className="image-param-section">
-                      <div className="image-param-title">闊抽</div>
+                      <div className="image-param-title">音频</div>
                       <div className="image-param-segment">
                         <button className={`video-audio-btn ${generateAudio ? 'active' : ''}`} onClick={() => setGenerateAudio(!generateAudio)}>
                           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 14h4l5 5V5L8 10H4z" /><path d="M17 9a4 4 0 010 6" /></svg>
-                          <span>{generateAudio ? '宸插紑鍚? : '宸插叧闂?}</span>
+                          <span>{generateAudio ? '已开启' : '已关闭'}</span>
                         </button>
                       </div>
                     </div>
@@ -1887,26 +1920,26 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
               </div>
             )}
             {isVideoInputNode && !isPanorama720Input && (
-              <button className="popover-action-btn camera-btn" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={() => setShowCameraGallery(true)} title="閫夋嫨杩愰暅">
+              <button className="popover-action-btn camera-btn" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={() => setShowCameraGallery(true)} title="选择运镜">
                 <svg className="camera-btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
                   <circle cx="12" cy="13" r="4" />
                 </svg>
-                <span className="camera-btn-text">杩愰暅</span>
+                <span className="camera-btn-text">运镜</span>
                 {selectedCameraId && <span className="camera-badge">{selectedCameraMovement?.name}</span>}
               </button>
             )}
             {isImageInputNode && !isPanorama720Input && (
               <div className="image-param-wrap">
-                <button className="image-param-trigger" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => { event.stopPropagation(); setImageParamOpen(open => !open); }} title="鐢昏川 / 娓呮櫚搴?/ 姣斾緥">
+                <button className="image-param-trigger" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => { event.stopPropagation(); setImageParamOpen(open => !open); }} title="画质 / 清晰度 / 比例">
                   <SvgIcon name="image" size={13} />
-                  <span>{IMAGE_RATIO_OPTIONS.find(item => item.id === imageRatio)?.label || '鑷€傚簲'} 路 {IMAGE_QUALITY_OPTIONS.find(item => item.id === imageQuality)?.label || '鏍囧噯鐢昏川'} 路 {imageClarity}</span>
+                  <span>{IMAGE_RATIO_OPTIONS.find(item => item.id === imageRatio)?.label || '自适应'} · {IMAGE_QUALITY_OPTIONS.find(item => item.id === imageQuality)?.label || '标准画质'} · {imageClarity}</span>
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
                 </button>
                 {imageParamOpen && (
                   <div className={`image-param-panel ${isPanorama720Input ? 'panorama-param-panel' : ''}`} onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => event.stopPropagation()}>
                     <div className="image-param-section">
-                      <div className="image-param-title">鐢昏川</div>
+                      <div className="image-param-title">画质</div>
                       <div className={`image-param-segment ${isPanorama720Input ? 'single' : ''}`}>
                         {(isPanorama720Input ? IMAGE_QUALITY_OPTIONS.filter(option => option.id === 'standard') : IMAGE_QUALITY_OPTIONS).map(option => (
                           <button key={option.id} className={imageQuality === option.id ? 'active' : ''} onClick={() => changeImageQuality(option.id)}>{option.label}</button>
@@ -1914,7 +1947,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                       </div>
                     </div>
                     <div className="image-param-section">
-                      <div className="image-param-title">娓呮櫚搴?/div>
+                      <div className="image-param-title">清晰度</div>
                       <div className="image-param-segment">
                         {IMAGE_CLARITY_OPTIONS.map(option => (
                           <button key={option} className={imageClarity === option ? 'active' : ''} onClick={() => changeImageClarity(option)}>{option}</button>
@@ -1922,7 +1955,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                       </div>
                     </div>
                     <div className="image-param-section">
-                      <div className="image-param-title">姣斾緥</div>
+                      <div className="image-param-title">比例</div>
                       <div className={`image-ratio-grid ${isPanorama720Input ? 'single' : ''}`}>
                         {(isPanorama720Input ? IMAGE_RATIO_OPTIONS.filter(option => option.id === '2:1') : IMAGE_RATIO_OPTIONS).map(option => (
                           <button key={option.id} className={imageRatio === option.id ? 'active' : ''} onClick={() => changeImageRatio(option.id)}>
@@ -1938,7 +1971,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
             )}
             {isPanorama720Input && (
               <div className="panorama-feature-wrap">
-                <button className="panorama-feature-trigger" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => { event.stopPropagation(); setFeaturePanelOpen(open => !open); }} title="閫夋嫨鐢熸垚绫诲瀷">
+                <button className="panorama-feature-trigger" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(event) => { event.stopPropagation(); setFeaturePanelOpen(open => !open); }} title="选择生成类型">
                   <SvgIcon name={selectedPanoramaFeature.icon} size={13} />
                   <span>{selectedPanoramaFeature.label}</span>
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
@@ -1966,15 +1999,15 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
               </div>
             )}
             {!isPanorama720Input && (
-              <button className="popover-action-btn popover-prompt-library-btn" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(e) => { e.stopPropagation(); setShowPromptLibraryPicker(v => !v); }} title="鎻愮ず璇嶅簱">
+              <button className="popover-action-btn popover-prompt-library-btn" onPointerDown={stopInputDrag} onMouseDown={stopInputDrag} onClick={(e) => { e.stopPropagation(); setShowPromptLibraryPicker(v => !v); }} title="提示词库">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" /><line x1="10" y1="9" x2="16" y2="9" /><line x1="10" y1="13" x2="16" y2="13" /><line x1="10" y1="17" x2="14" y2="17" /></svg>
-                <span>鎻愮ず璇嶅簱</span>
+                <span>提示词库</span>
               </button>
             )}
           {showPromptLibraryPicker && (
             <div className="popover-prompt-library-picker" onClick={(e) => e.stopPropagation()} onPointerDown={stopInputDrag} onMouseDown={stopInputDrag}>
               {promptLibrary.length === 0 ? (
-                <div className="popover-prompt-library-empty">鎻愮ず璇嶅簱涓虹┖</div>
+                <div className="popover-prompt-library-empty">提示词库为空</div>
               ) : (
                 promptLibrary.map(item => (
                   <button
@@ -1992,7 +2025,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                     title={item.prompt}
                   >
                     <span className="popover-prompt-library-item-name">{item.name}</span>
-                    <span className={`popover-prompt-library-item-type type-${item.type}`}>{item.type === 'image' ? '鍥? : item.type === 'video' ? '瑙嗛' : '鏂?}</span>
+                    <span className={`popover-prompt-library-item-type type-${item.type}`}>{item.type === 'image' ? '图' : item.type === 'video' ? '视频' : '文'}</span>
                   </button>
                 ))
               )}
@@ -2000,16 +2033,16 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
           )}
           </div>
           <button className="popover-send-btn" onClick={handleSend} disabled={!(isMediaInputNode ? inputRows.some(row => row.text.trim()) : prompt.trim()) && attachedFiles.length === 0}>
-            <SvgIcon name="play" size={14} /> 鎵ц
+            <SvgIcon name="play" size={14} /> 执行
           </button>
         </div>
       </div>
       {assetPickerOpen && (
         <div className="popover-asset-picker" onClick={() => setAssetPickerOpen(false)}>
           <div className="popover-asset-panel" onClick={(event) => event.stopPropagation()}>
-            <div className="popover-asset-title">閫夋嫨鍙傝€冨浘</div>
+            <div className="popover-asset-title">选择参考图</div>
             <div className="popover-asset-grid">
-              {imageAssets.length === 0 ? <div className="popover-asset-empty">璧勪骇搴撴殏鏃犲浘鐗?/div> : imageAssets.map((asset: any) => (
+              {imageAssets.length === 0 ? <div className="popover-asset-empty">资产库暂无图片</div> : imageAssets.map((asset: any) => (
                 <button key={asset.id} className="popover-asset-item" onClick={() => { addReferenceImage(asset.name, asset.thumbnail || normalizeFileSrc(asset.path)); setAssetPickerOpen(false); }}>
                   <img src={asset.thumbnail || normalizeFileSrc(asset.path)} alt={asset.name} />
                   <span>{asset.name}</span>
@@ -2047,7 +2080,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     portalTarget
   );
 }
-// ==================== 鑺傜偣鍐呭祵瀵硅瘽妗?====================
+// ==================== 节点内嵌对话框 ====================
 
 function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: string, files?: File[]) => void }) {
   const [prompt, setPrompt] = useState(node.prompt || '');
@@ -2063,7 +2096,8 @@ function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: strin
     if (e.target.files) {
       const files = Array.from(e.target.files!);
       setAttachedFiles(prev => [...prev, ...files]);
-      // 鑷姩淇濆瓨鍒拌祫浜у簱锛堝浘鐗?瑙嗛/闊抽锛?      files.forEach(file => {
+      // 自动保存到资产库（图片/视频/音频）
+      files.forEach(file => {
         const isImage = file.type.startsWith('image/');
         const isVideo = file.type.startsWith('video/');
         const isAudio = file.type.startsWith('audio/');
@@ -2091,7 +2125,7 @@ function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: strin
     setPrompt('');
     setAttachedFiles([]);
     setTimeout(() => {
-      setHistory(prev => [...prev, { role: 'ai', text: '鐢熸垚瀹屾垚锛岀粨鏋滃凡鏄剧ず鍦ㄨ妭鐐逛腑銆? }]);
+      setHistory(prev => [...prev, { role: 'ai', text: '生成完成，结果已显示在节点中。' }]);
       setIsGenerating(false);
     }, 1500);
   };
@@ -2100,12 +2134,12 @@ function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: strin
     <div className="node-chat-dialog">
       <div className="node-chat-history">
         {history.length === 0 && (
-          <div className="node-chat-placeholder">杈撳叆鎻愮ず璇嶆垨涓婁紶鏂囦欢寮€濮?/div>
+          <div className="node-chat-placeholder">输入提示词或上传文件开始</div>
         )}
         {history.map((h, i) => (
           <div key={i} className={`node-chat-msg ${h.role === 'user' ? 'user' : 'ai'}`}>
             {h.role === 'user' && h.files && h.files.length > 0 && (
-              <div className="node-msg-files">{h.files.map(f => `闄勪欢 ${f}`).join(' ')}</div>
+              <div className="node-msg-files">{h.files.map(f => `附件 ${f}`).join(' ')}</div>
             )}
             <span className="node-msg-text">{h.text}</span>
           </div>
@@ -2117,7 +2151,7 @@ function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: strin
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
-          placeholder="杈撳叆娑堟伅锛孲hift+Enter 鎹㈣..."
+          placeholder="输入消息，Shift+Enter 换行..."
           rows={1}
           className="node-textarea"
         />
@@ -2142,8 +2176,8 @@ function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: strin
               style={{ display: 'none' }}
               id={`node-file-${node.id}`}
             />
-            <label htmlFor={`node-file-${node.id}`} className="node-upload-btn" title="涓婁紶鏂囦欢"><SvgIcon name="upload" size={15} /></label>
-            <button className="node-asset-btn" title="浠庤祫浜у簱閫夋嫨"><SvgIcon name="box" size={15} /></button>
+            <label htmlFor={`node-file-${node.id}`} className="node-upload-btn" title="上传文件"><SvgIcon name="upload" size={15} /></label>
+            <button className="node-asset-btn" title="从资产库选择"><SvgIcon name="box" size={15} /></button>
           </div>
           <button
             className="node-send-btn"
@@ -2158,38 +2192,38 @@ function NodeChatDialog({ node, onSend }: { node: AINode; onSend: (prompt: strin
   );
 }
 
-// ==================== 鑷畾涔夎妭鐐?====================
+// ==================== 自定义节点 ====================
 
-// 瀛愬姛鑳藉畾涔夛細姣忕鑺傜偣绫诲瀷瀵瑰簲鐨勫瓙鍔熻兘鍒楄〃
+// 子功能定义：每种节点类型对应的子功能列表
 const NODE_SUB_FUNCTIONS: Record<string, { id: string; label: string; icon: CanvasIconName }[]> = {
   'story-script': [
-    { id: 'custom-text', label: '鑷繁缂栧啓鍐呭', icon: 'text' },
-    { id: 'text-to-video', label: '鏂囩敓瑙嗛', icon: 'video' },
-    { id: 'image-prompt', label: '鍥剧墖鍙嶆帹鎻愮ず璇?, icon: 'image' },
-    { id: 'text-to-music', label: '鏂囧瓧鐢熼煶涔?, icon: 'audio' },
+    { id: 'custom-text', label: '自己编写内容', icon: 'text' },
+    { id: 'text-to-video', label: '文生视频', icon: 'video' },
+    { id: 'image-prompt', label: '图片反推提示词', icon: 'image' },
+    { id: 'text-to-music', label: '文字生音乐', icon: 'audio' },
   ],
   'text-to-image': [
-    { id: 'text-to-image', label: '鏂囩敓鍥?, icon: 'image' },
-    { id: 'image-upscale', label: '鍥剧墖楂樻竻', icon: 'spark' },
+    { id: 'text-to-image', label: '文生图', icon: 'image' },
+    { id: 'image-upscale', label: '图片高清', icon: 'spark' },
   ],
   'text-to-video': [
-    { id: 'first-last-frame-video', label: '棣栧熬甯х敓鎴愯棰?, icon: 'box' },
-    { id: 'first-frame-video', label: '棣栧抚鐢熸垚瑙嗛', icon: 'spark' },
+    { id: 'first-last-frame-video', label: '首尾帧生成视频', icon: 'box' },
+    { id: 'first-frame-video', label: '首帧生成视频', icon: 'spark' },
   ],
   'video-composite': [
-    { id: 'video-composite', label: '瑙嗛鍚堟垚', icon: 'cut' },
-    { id: 'subtitle', label: '瀛楀箷鐢熸垚', icon: 'text' },
+    { id: 'video-composite', label: '视频合成', icon: 'cut' },
+    { id: 'subtitle', label: '字幕生成', icon: 'text' },
   ],
   'director-stage': [
-    { id: 'director-stage', label: '3D鍦烘櫙', icon: 'stage' },
+    { id: 'director-stage', label: '3D场景', icon: 'stage' },
   ],
   'audio2video': [
-    { id: 'audio2video', label: '闊抽椹卞姩', icon: 'audio' },
-    { id: 'tts', label: '璇煶鍚堟垚', icon: 'mic' },
+    { id: 'audio2video', label: '音频驱动', icon: 'audio' },
+    { id: 'tts', label: '语音合成', icon: 'mic' },
   ],
   'story-script-adv': [
-    { id: 'script-gen', label: '鑴氭湰鐢熸垚', icon: 'script' },
-    { id: 'storyboard', label: '鏁呬簨鏉?, icon: 'image' },
+    { id: 'script-gen', label: '脚本生成', icon: 'script' },
+    { id: 'storyboard', label: '故事板', icon: 'image' },
   ],
 };
 
@@ -2214,17 +2248,17 @@ function WorkflowNode({ id, data, selected }: any) {
   const template = NODE_TEMPLATES.find(t => t.type === node?.type);
   const color = template?.color || '#00D4FF';
   const isDirectorStageNode = node?.type === 'director-stage';
-  // 鍏ㄦ櫙鍥捐妭鐐圭敤鐨勬槸 text-to-image 绫诲瀷锛屾ā鏉垮浘鏍囦細瑙ｆ瀽鎴?image锛岃繖閲屾敼鐢ㄦ洿璐村垏鐨?panorama 鍥炬爣
+  // 全景图节点用的是 text-to-image 类型，模板图标会解析成 image，这里改用更贴切的 panorama 图标
   const isPanoramaKind = node?.options?.outputType === 'panorama' || node?.options?.panoramaType === '720';
   const nodeIcon: CanvasIconName = isPanoramaKind ? 'panorama' : (template?.icon || 'canvas');
   const [showMenu, setShowMenu] = useState(false);
   const [inlineMode, setInlineMode] = useState(false);
-  // 鏂囨湰鑺傜偣鍜岃嚜瀹氫箟鏂囨湰鑺傜偣鍦?inlineMode 缂栬緫鏃堕殣钘忓脊绐楄緭鍏ユ
+  // 文本节点和自定义文本节点在 inlineMode 编辑时隐藏弹窗输入框
   const isTextNodeType = TEXT_NODE_TYPES.includes(node?.type);
   const isCustomTextNode = node?.options?.isInlineText || node?.options?.generationType === 'custom-text';
-  // 鍏ㄦ櫙鍥捐妭鐐癸細涓嶉渶瑕佽緭鍏ユ/瀛愬姛鑳斤紝鐩存帴杩炴帴鍥剧墖鑷姩鐢熸垚涓夌淮鍏ㄦ櫙棰勮
+  // 全景图节点：不需要输入框/子功能，直接连接图片自动生成三维全景预览
   const isPanoramaNode = node?.options?.outputType === 'panorama' || node?.options?.panoramaType === '720';
-  // 鏂囨湰鑺傜偣锛氬崟鍑绘樉绀哄脊绐楋紝鍙屽嚮杩涘叆 inlineMode 鍚庨殣钘忓脊绐楋紱鍏ㄦ櫙鍥捐妭鐐逛笉鏄剧ず杈撳叆寮圭獥
+  // 文本节点：单击显示弹窗，双击进入 inlineMode 后隐藏弹窗；全景图节点不显示输入弹窗
   const showInputPopover = activeInputNodeId === node.id && !isPanoramaNode && !(inlineMode && (isTextNodeType || isCustomTextNode));
   const nodeVisuallySelected = !!selected || showInputPopover;
   const [inlineText, setInlineText] = useState(
@@ -2273,19 +2307,23 @@ function WorkflowNode({ id, data, selected }: any) {
       ? Math.max(96, Math.round(280 / previewAspectRatio))
       : undefined;
 
-  // 褰撳墠鑺傜偣绫诲瀷鐨勫瓙鍔熻兘鍒楄〃锛堝叏鏅浘鑺傜偣涓嶉渶瑕佷换浣曞瓙鍔熻兘锛?  const subFunctions = isPanoramaNode ? [] : (NODE_SUB_FUNCTIONS[node?.type] || []);
+  // 当前节点类型的子功能列表（全景图节点不需要任何子功能）
+  const subFunctions = isPanoramaNode ? [] : (NODE_SUB_FUNCTIONS[node?.type] || []);
 
-  // 鏂板缓鑺傜偣鏃惰嚜鍔ㄥ脊鍑鸿緭鍏ユ
+  // 新建节点时自动弹出输入框
   React.useEffect(() => {
     if (node?.options?._autoOpen) {
       setActiveInputNodeId?.(node.id);
-      // 娓呴櫎鏍囪锛岄伩鍏嶆瘡娆℃覆鏌撻兘鎵撳紑
+      // 清除标记，避免每次渲染都打开
       updateNode(node.id, { options: { ...node.options, _autoOpen: undefined } });
     }
   }, [node?.id]);
 
   const handleChatSend = useCallback((prompt: string, files?: File[], generationType?: string, videoConfig?: any) => {
-    // 璇诲彇 store 涓渶鏂扮殑鑺傜偣閫夐」锛歂odeInputPopover.handleSend 宸叉妸杈撳叆妗嗕笅鏂圭殑鎵€鏈夊弬鏁?    //锛堝浘鐗囨瘮渚?鐢昏川/娓呮櫚搴︺€佽棰戞瘮渚?娓呮櫚搴?鏃堕暱/闊抽/杩愰暅绛夛級鍐欏叆 store銆?    // 鑻ヨ繖閲岀敤闂寘閲岀殑鏃?node.options 灞曞紑锛屼細鎶婂垰淇濆瓨鐨勫弬鏁拌鐩栨帀锛屽鑷村弬鏁板鐢熸垚缁撴灉涓嶇敓鏁堛€?    const latestNode = useAppStore.getState().nodes[node.id];
+    // 读取 store 中最新的节点选项：NodeInputPopover.handleSend 已把输入框下方的所有参数
+    //（图片比例/画质/清晰度、视频比例/清晰度/时长/音频/运镜等）写入 store。
+    // 若这里用闭包里的旧 node.options 展开，会把刚保存的参数覆盖掉，导致参数对生成结果不生效。
+    const latestNode = useAppStore.getState().nodes[node.id];
     const updatedOptions: any = { ...(latestNode?.options || node.options) };
     if (generationType) {
       updatedOptions.generationType = generationType;
@@ -2298,7 +2336,7 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [node.id]);
 
   const saveInlineText = useCallback((value: string) => {
-    // 鍐呰仈缂栬緫瑕嗙洊浜?AI 缁撴灉鈥斺€旀竻鐞?node.result 浠ュ厤鏄剧ず鏃?AI 杩斿洖
+    // 内联编辑覆盖了 AI 结果——清理 node.result 以免显示旧 AI 返回
     updateNode(node.id, {
       prompt: value,
       result: undefined,
@@ -2310,7 +2348,7 @@ function WorkflowNode({ id, data, selected }: any) {
     }));
   }, [node.id, node.options]);
 
-  // 瑙ｆ瀽 3D 瀵兼紨鍙拌妭鐐圭殑涓婃父鍙傝€冨獟浣擄紙鍥剧墖/瑙嗛锛夛紝鐢ㄤ綔瑙嗗彛鍙傝€冨簳鍥句笌榛樿褰曞埗鏃堕暱
+  // 解析 3D 导演台节点的上游参考媒体（图片/视频），用作视口参考底图与默认录制时长
   const resolveDirectorReferenceMedia = useCallback(() => {
     const state = useAppStore.getState();
     const upstreamIds: string[] = [
@@ -2325,7 +2363,8 @@ function WorkflowNode({ id, data, selected }: any) {
       seen.add(upstreamId);
       const source = state.nodes[upstreamId];
       if (!source) continue;
-      // 鏀堕泦涓婃父鏂囨湰浣滀负棰勬紨鎻愮ず璇嶏紙鍓ф湰/鎻忚堪鑺傜偣锛?      if (source.result?.type === 'text' && source.result.text) refText = refText || source.result.text;
+      // 收集上游文本作为预演提示词（剧本/描述节点）
+      if (source.result?.type === 'text' && source.result.text) refText = refText || source.result.text;
       else if (source.prompt && (source.options?.isInlineText || source.type === 'story-script' || source.type === 'story-script-adv')) refText = refText || source.prompt;
       if (source.result?.type === 'video' && source.result.url) { picked = { url: source.result.url, kind: 'video' }; continue; }
       if (source.result?.type === 'image' && source.result.url) { picked = picked || { url: source.result.url, kind: 'image' }; continue; }
@@ -2336,7 +2375,8 @@ function WorkflowNode({ id, data, selected }: any) {
     if (!picked && !text) { setDirectorReferenceMedia(null); return; }
     if (picked && picked.kind === 'video') {
       const url = picked.url;
-      // 绔嬪嵆鍏堣缃紙鏃犳椂闀匡級锛岃鍙栧厓鏁版嵁鍚庡啀琛ラ粯璁ゅ綍鍒舵椂闀?      setDirectorReferenceMedia({ url, kind: 'video', text });
+      // 立即先设置（无时长），读取元数据后再补默认录制时长
+      setDirectorReferenceMedia({ url, kind: 'video', text });
       const videoEl = document.createElement('video');
       videoEl.preload = 'metadata';
       videoEl.muted = true;
@@ -2355,7 +2395,7 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [data.incomingImageNodeIds, node.options?.upstreamNodeIds, node.prompt]);
 
   const handleSubFunctionClick = useCallback((subId: string) => {
-    // 3D 瀵兼紨鍙拌妭鐐癸細鐐瑰嚮瀛愬姛鑳芥寜閽洿鎺ユ墦寮€ 3D 鍦烘櫙鎼缓寮圭獥
+    // 3D 导演台节点：点击子功能按钮直接打开 3D 场景搭建弹窗
     if (node.type === 'director-stage') {
       resolveDirectorReferenceMedia();
       setDirectorStageOpen(true);
@@ -2372,44 +2412,47 @@ function WorkflowNode({ id, data, selected }: any) {
       setActiveInputNodeId?.(node.id);
       return;
     }
-    // 鎵€鏈夊瓙鍔熻兘鐐瑰嚮鍚庨兘杞负 inline 鏂囨湰鏍峰紡
+    // 所有子功能点击后都转为 inline 文本样式
     updateNode(node.id, { options: { ...node.options, generationType: subId, isInlineText: true } });
 
-    // 鏂囩敓瑙嗛锛氳嚜鍔ㄨ繛鎺ヨ棰戣妭鐐?    if (subId === 'text-to-video') {
+    // 文生视频：自动连接视频节点
+    if (subId === 'text-to-video') {
       setActiveInputNodeId?.(null);
       setInlineText(node.prompt || '');
-      // 鑷姩杩炴帴涓€涓棰戣妭鐐?      createLinkedNode?.(node.id, 'text-to-video');
+      // 自动连接一个视频节点
+      createLinkedNode?.(node.id, 'text-to-video');
       return;
     }
 
-    // 鏂囧瓧鐢熼煶涔愶細鑷姩杩炴帴闊抽鑺傜偣锛堜互褰撳墠鏂囨湰浣滀负闊充箰鐢熸垚鎻愮ず璇嶏級
+    // 文字生音乐：自动连接音频节点（以当前文本作为音乐生成提示词）
     if (subId === 'text-to-music') {
       setActiveInputNodeId?.(null);
       setInlineText(node.prompt || '');
       createLinkedNode?.(node.id, 'audio2video', {
-        options: { displayName: '闊充箰鑺傜偣', generationType: 'text-to-music' },
+        options: { displayName: '音乐节点', generationType: 'text-to-music' },
       });
       return;
     }
 
-    // 鏂囩敓鍥撅細鑷姩杩炴帴鍥剧墖鑺傜偣锛堜互褰撳墠鏂囨湰浣滀负鍥剧墖鐢熸垚鎻愮ず璇嶏級
+    // 文生图：自动连接图片节点（以当前文本作为图片生成提示词）
     if (subId === 'text-to-image') {
       setActiveInputNodeId?.(null);
       setInlineText(node.prompt || '');
       const targetId = createLinkedNode?.(node.id, 'text-to-image', {
-        options: { displayName: '鍥剧墖鑺傜偣', generationType: 'text-to-image', autoOpenInput: true },
+        options: { displayName: '图片节点', generationType: 'text-to-image', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 鍥剧墖楂樻竻锛氳嚜鍔ㄨ繛鎺ュ浘鐗囬珮娓呰妭鐐?    if (subId === 'image-upscale') {
+    // 图片高清：自动连接图片高清节点
+    if (subId === 'image-upscale') {
       setActiveInputNodeId?.(null);
       const targetId = createLinkedNode?.(node.id, 'image-upscale', {
         options: {
-          displayName: '鍥剧墖楂樻竻',
+          displayName: '图片高清',
           generationType: 'image-upscale',
-          mediaFeature: '鍥剧墖楂樻竻',
+          mediaFeature: '图片高清',
           sourceFeature: 'upscale',
           imageClarity: node.options?.imageClarity || '4K',
           autoOpenInput: true,
@@ -2419,84 +2462,91 @@ function WorkflowNode({ id, data, selected }: any) {
       return;
     }
 
-    // 瑙嗛鍚堟垚锛氳嚜鍔ㄨ繛鎺ヨ棰戝悎鎴愯妭鐐?    if (subId === 'video-composite') {
+    // 视频合成：自动连接视频合成节点
+    if (subId === 'video-composite') {
       setActiveInputNodeId?.(null);
       const targetId = createLinkedNode?.(node.id, 'video-composite', {
-        options: { displayName: '瑙嗛鍚堟垚', generationType: 'video-composite', autoOpenInput: true },
+        options: { displayName: '视频合成', generationType: 'video-composite', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 瀛楀箷鐢熸垚锛氳嚜鍔ㄨ繛鎺ュ瓧骞曡妭鐐?    if (subId === 'subtitle') {
+    // 字幕生成：自动连接字幕节点
+    if (subId === 'subtitle') {
       setActiveInputNodeId?.(null);
       const targetId = createLinkedNode?.(node.id, 'subtitle', {
-        options: { displayName: '瀛楀箷鐢熸垚', generationType: 'subtitle', autoOpenInput: true },
+        options: { displayName: '字幕生成', generationType: 'subtitle', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 闊抽椹卞姩锛氳嚜鍔ㄨ繛鎺ラ煶棰戦┍鍔ㄨ妭鐐?    if (subId === 'audio2video') {
+    // 音频驱动：自动连接音频驱动节点
+    if (subId === 'audio2video') {
       setActiveInputNodeId?.(null);
       const targetId = createLinkedNode?.(node.id, 'audio2video', {
-        options: { displayName: '闊抽椹卞姩', generationType: 'audio2video', autoOpenInput: true },
+        options: { displayName: '音频驱动', generationType: 'audio2video', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 璇煶鍚堟垚锛氳嚜鍔ㄨ繛鎺?TTS 鑺傜偣锛堜互褰撳墠鏂囨湰浣滀负閰嶉煶鏂囨锛?    if (subId === 'tts') {
+    // 语音合成：自动连接 TTS 节点（以当前文本作为配音文案）
+    if (subId === 'tts') {
       setActiveInputNodeId?.(null);
       setInlineText(node.prompt || '');
       const targetId = createLinkedNode?.(node.id, 'tts', {
-        options: { displayName: '璇煶鍚堟垚', generationType: 'tts', autoOpenInput: true },
+        options: { displayName: '语音合成', generationType: 'tts', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 鑴氭湰鐢熸垚锛氳嚜鍔ㄨ繛鎺ヨ剼鏈妭鐐?    if (subId === 'script-gen') {
+    // 脚本生成：自动连接脚本节点
+    if (subId === 'script-gen') {
       setActiveInputNodeId?.(null);
       setInlineText(node.prompt || '');
       const targetId = createLinkedNode?.(node.id, 'story-script-adv', {
-        options: { displayName: '鑴氭湰鐢熸垚', generationType: 'script-gen', autoOpenInput: true },
+        options: { displayName: '脚本生成', generationType: 'script-gen', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 鏁呬簨鏉匡細鑷姩杩炴帴鍥剧墖鑺傜偣鐢熸垚鍒嗛暅
+    // 故事板：自动连接图片节点生成分镜
     if (subId === 'storyboard') {
       setActiveInputNodeId?.(null);
       setInlineText(node.prompt || '');
       const targetId = createLinkedNode?.(node.id, 'text-to-image', {
-        options: { displayName: '鏁呬簨鏉?, generationType: 'storyboard', mediaFeature: '鏁呬簨鏉?, autoOpenInput: true },
+        options: { displayName: '故事板', generationType: 'storyboard', mediaFeature: '故事板', autoOpenInput: true },
       });
       if (targetId) setActiveInputNodeId?.(targetId);
       return;
     }
 
-    // 鍥剧墖鍙嶆帹鎻愮ず璇嶏細鍒涘缓涓婁紶鍥剧墖鑺傜偣鍦ㄥ墠闈紝骞跺€掓帹鎻愮ず璇?    if (subId === 'image-prompt') {
-      // 鍏堝垱寤轰笂浼犲浘鐗囪妭鐐瑰湪鏂囨湰鑺傜偣鍓嶉潰
+    // 图片反推提示词：创建上传图片节点在前面，并倒推提示词
+    if (subId === 'image-prompt') {
+      // 先创建上传图片节点在文本节点前面
       const uploadNodeId = createLinkedNode?.(node.id, 'upload-image' as AINodeType, {
-        x: node.x - 410, // 鏀惧湪褰撳墠鑺傜偣宸︿晶
+        x: node.x - 410, // 放在当前节点左侧
         y: node.y,
         options: {
-          displayName: '涓婁紶鍥剧墖',
+          displayName: '上传图片',
           generationType: 'upload-image',
           onImageUpload: (imageUrl: string) => {
-            // 鍥剧墖涓婁紶鍚庯紝璋冪敤鍙嶆帹 API 灏嗘彁绀鸿瘝鍐欏叆褰撳墠鏂囨湰鑺傜偣
+            // 图片上传后，调用反推 API 将提示词写入当前文本节点
             updateNode(node.id, {
-              prompt: `鏍规嵁鍥剧墖鍙嶆帹鐨勬彁绀鸿瘝锛?{imageUrl}`,
-              result: { url: imageUrl, type: 'text', text: `鏍规嵁鍥剧墖鍙嶆帹鐨勬彁绀鸿瘝锛?{imageUrl}` },
+              prompt: `根据图片反推的提示词：${imageUrl}`,
+              result: { url: imageUrl, type: 'text', text: `根据图片反推的提示词：${imageUrl}` },
             });
           },
         },
       });
-      // 杩炴帴涓婁紶鍥剧墖鑺傜偣鍒板綋鍓嶆枃鏈妭鐐癸紙闇€瑕佸弽鍚戣繛鎺ワ級
+      // 连接上传图片节点到当前文本节点（需要反向连接）
       if (uploadNodeId) {
-        // 閫氳繃 canvas:add-edge 浜嬩欢鍒涘缓浠庝笂浼犺妭鐐瑰埌褰撳墠鑺傜偣鐨勮繛鎺?        window.dispatchEvent(new CustomEvent('canvas:add-edge', {
+        // 通过 canvas:add-edge 事件创建从上传节点到当前节点的连接
+        window.dispatchEvent(new CustomEvent('canvas:add-edge', {
           detail: { source: uploadNodeId, target: node.id },
         }));
       }
@@ -2513,16 +2563,18 @@ function WorkflowNode({ id, data, selected }: any) {
     setActiveInputNodeId?.(node.id);
   }, [createLinkedNode, node.id, node.options, node.prompt, node.type, setActiveInputNodeId, updateNode]);
 
-  // 鐐瑰嚮鍗＄墖闈炲瓙鍔熻兘鍖哄煙锛屽脊鍑鸿緭鍏ユ
+  // 点击卡片非子功能区域，弹出输入框
   const handleCardBodyClick = useCallback(() => {
-    // 鎵€鏈夋枃鏈妭鐐癸紙鍖呮嫭 API 杩斿洖鐨勫拰鑷畾涔夌紪鍐欑殑锛夐兘杩涘叆 inlineMode 缂栬緫
+    // 所有文本节点（包括 API 返回的和自定义编写的）都进入 inlineMode 编辑
     if (isTextNode || node.options?.isInlineText || node.options?.generationType === 'custom-text') {
-      // 浼樺厛浣跨敤 AI 杩斿洖鐨勭粨鏋滀綔涓虹紪杈戝垵濮嬪€硷紙濡傛灉娌℃湁缁撴灉鍐嶇敤 prompt锛?      const initialText = node.result?.type === 'text' && node.result.text?.trim()
+      // 优先使用 AI 返回的结果作为编辑初始值（如果没有结果再用 prompt）
+      const initialText = node.result?.type === 'text' && node.result.text?.trim()
         ? node.result.text
         : (node.prompt || '');
       setInlineText(initialText);
       setInlineMode(true);
-      // 鍏抽棴寮圭獥锛堝鏋滄墦寮€锛?      setActiveInputNodeId?.(null);
+      // 关闭弹窗（如果打开）
+      setActiveInputNodeId?.(null);
       return;
     }
     setActiveInputNodeId?.(node.id);
@@ -2539,7 +2591,7 @@ function WorkflowNode({ id, data, selected }: any) {
     const target = e.target as HTMLElement;
     if (target.closest('.lib-subfunc-btn, .lib-node-close, .lib-handle, .lib-node-name-editor, textarea, input, select, button')) return;
 
-    // 3D 瀵兼紨鍙拌妭鐐癸細鐐瑰嚮鎵撳紑 3D 鍦烘櫙鎼缓寮圭獥
+    // 3D 导演台节点：点击打开 3D 场景搭建弹窗
     if (node.type === 'director-stage') {
       e.preventDefault();
       e.stopPropagation();
@@ -2549,9 +2601,9 @@ function WorkflowNode({ id, data, selected }: any) {
       return;
     }
 
-    // 鏂囨湰鑺傜偣鍗曞嚮鏄剧ず寮圭獥杈撳叆妗嗭紝鍙屽嚮鎵嶈繘鍏?inlineMode 缂栬緫
+    // 文本节点单击显示弹窗输入框，双击才进入 inlineMode 编辑
     if (isTextNode || node.options?.isInlineText || node.options?.generationType === 'custom-text') {
-      // 鍗曞嚮鏄剧ず寮圭獥
+      // 单击显示弹窗
       setActiveInputNodeId?.(node.id);
       return;
     }
@@ -2563,7 +2615,8 @@ function WorkflowNode({ id, data, selected }: any) {
       if (displayMedia?.url) onPickReferenceNode?.(node.id);
       return;
     }
-    // 鍏ㄦ櫙鍥捐妭鐐癸細鐐瑰嚮缁撴灉鍥剧墖鎵撳紑 720掳 鍏ㄦ櫙鏌ョ湅鍣?    const isPanoramaResult = hasImageMedia && (node.options?.outputType === 'panorama' || node.options?.panoramaType === '720');
+    // 全景图节点：点击结果图片打开 720° 全景查看器
+    const isPanoramaResult = hasImageMedia && (node.options?.outputType === 'panorama' || node.options?.panoramaType === '720');
     if (isPanoramaResult && target.closest('.lib-node-connected-media, .lib-node-result, img')) {
       e.preventDefault();
       e.stopPropagation();
@@ -2599,14 +2652,14 @@ function WorkflowNode({ id, data, selected }: any) {
 
   const promptLibrarySourceType = node.result?.type === 'video' ? 'video' : node.result?.type === 'image' ? 'image' : 'text';
   const promptLibraryPrompt = node.prompt || node.options?.prompt || node.result?.text || '';
-  const promptLibraryTags = [template?.label || getNodeBaseName(node.type), node.result?.type === 'image' ? '鍥剧墖' : node.result?.type === 'video' ? '瑙嗛' : '鏂囨湰'].filter(Boolean);
+  const promptLibraryTags = [template?.label || getNodeBaseName(node.type), node.result?.type === 'image' ? '图片' : node.result?.type === 'video' ? '视频' : '文本'].filter(Boolean);
   const applyImageMediaTool = useCallback((featureId: string, option?: string) => {
     if (!displayMedia?.url) return;
     const feature = IMAGE_MEDIA_TOOL_FEATURES.find(item => item.id === featureId);
     if (featureId === 'reference' || featureId === 'reference-extra') {
       const prompt = featureId === 'reference'
-        ? '鍩轰簬褰撳墠鍙傝€冨浘鐢熸垚鏃犵紳720掳鍏ㄦ櫙鍥撅紝淇濇寔涓讳綋銆佸満鏅韩浠藉拰鏁翠綋鏋勫浘锛屽乏鍙冲欢灞曡嚜鐒讹紝杈撳嚭2:1姣斾緥锛屼笉瑕侀粦杈癸紝涓嶈鍒囦富浣撱€?
-        : '灏嗗綋鍓嶅浘鐗囦綔涓哄弬鑰冨浘鍔犲叆杈撳叆妗嗭紝鐢ㄤ簬鍚庣画鍥剧墖鐢熸垚銆?;
+        ? '基于当前参考图生成无缝720°全景图，保持主体、场景身份和整体构图，左右延展自然，输出2:1比例，不要黑边，不裁切主体。'
+        : '将当前图片作为参考图加入输入框，用于后续图片生成。';
       const targetId = createLinkedNode?.(node.id, 'image-to-image', {
         width: 280,
         height: 220,
@@ -2615,9 +2668,9 @@ function WorkflowNode({ id, data, selected }: any) {
         thumbnail: undefined,
         result: undefined,
         options: {
-          displayName: featureId === 'reference' ? '720掳鍏ㄦ櫙鍥? : '鍥剧墖鍙傝€?,
+          displayName: featureId === 'reference' ? '720°全景图' : '图片参考',
           generationType: 'image-to-image',
-          mediaFeature: featureId === 'reference' ? '720掳鍏ㄦ櫙鍥? : '鍥剧墖鍙傝€?,
+          mediaFeature: featureId === 'reference' ? '720°全景图' : '图片参考',
           sourceFeature: featureId === 'reference' ? 'panorama720' : 'reference-extra',
           sourceImage: displayMedia.url,
           referenceImages: [{ id: `ref-tool-${Date.now()}-${node.id}`, name: getNodeDisplayName(node), url: displayMedia.url }],
@@ -2646,18 +2699,18 @@ function WorkflowNode({ id, data, selected }: any) {
       return;
     }
 
-    const optionLabel = option ? `锛?{option}锛塦 : '';
-    const promptText = feature?.prompt || '浠ュ綋鍓嶅浘鐗囦负鍩虹缁х画鐢熸垚銆?;
+    const optionLabel = option ? `（${option}）` : '';
+    const promptText = feature?.prompt || '以当前图片为基础继续生成。';
     const targetType = featureId === 'upscale' ? 'image-upscale' : 'image-to-image';
     const targetId = createLinkedNode?.(node.id, targetType, {
       width: 280,
       height: 220,
       status: 'idle',
-      prompt: `${feature?.label || '鍥剧墖澶勭悊'}${optionLabel}锛?{promptText}`,
+      prompt: `${feature?.label || '图片处理'}${optionLabel}：${promptText}`,
       thumbnail: undefined,
       result: undefined,
       options: {
-        displayName: feature?.label || '鍥剧墖澶勭悊',
+        displayName: feature?.label || '图片处理',
         generationType: targetType,
         mediaFeature: feature?.label || featureId,
         sourceFeature: featureId,
@@ -2687,7 +2740,7 @@ function WorkflowNode({ id, data, selected }: any) {
 
   const saveNodeMarkedImage = useCallback((markedUrl: string) => {
     if (!displayMedia?.url) return;
-    const markedName = `鏍囨敞-${getNodeDisplayName(node)}`;
+    const markedName = `标注-${getNodeDisplayName(node)}`;
     autoSaveMediaToAssets({ name: markedName, type: 'image', path: markedUrl, sourceType: 'canvas', sourceId: node.id });
     updateNode(node.id, {
       result: node.result?.type === 'image' ? { ...node.result, url: markedUrl } : node.result,
@@ -2736,7 +2789,7 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [createLinkedNode, displayMedia?.url, node, setActiveInputNodeId]);
 
   const createMultiAngleGeneration = useCallback((feature: typeof MULTI_ANGLE_FEATURES[number]) => {
-    const prompt = `澶氳搴︾敓鎴愶細${feature.label}銆?{feature.prompt}`;
+    const prompt = `多角度生成：${feature.label}。${feature.prompt}`;
     createImageToolNode(feature.label, prompt, {
       sourceFeature: 'multi-angle',
       apiCapability: 'image-to-multiview',
@@ -2749,10 +2802,10 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [createImageToolNode]);
 
   const applyLightingGeneration = useCallback((settings: LightingSettings) => {
-    const directionLabel = LIGHT_DIRECTIONS.find(item => item.id === settings.direction)?.label || '姝ｉ潰';
-    const viewLabel = settings.view === 'perspective' ? '閫忚' : '姝ｉ潰';
-    const prompt = `鑷敱瑙掑害鎵撳厜锛氫娇鐢?{viewLabel}瑙嗚锛屼富鍏夋簮鏉ヨ嚜${directionLabel}锛屼寒搴?{settings.brightness}%锛屽厜鑹?{settings.color}銆備繚鎸佷富浣撶粨鏋勩€佹瀯鍥惧拰鍘熷浘椋庢牸涓€鑷达紝鍙皟鏁村厜鐓ф晥鏋溿€俙;
-    createImageToolNode('鑷敱鎵撳厜', prompt, {
+    const directionLabel = LIGHT_DIRECTIONS.find(item => item.id === settings.direction)?.label || '正面';
+    const viewLabel = settings.view === 'perspective' ? '透视' : '正面';
+    const prompt = `自由角度打光：使用${viewLabel}视角，主光源来自${directionLabel}，亮度${settings.brightness}%，光色${settings.color}。保持主体结构、构图和原图风格一致，只调整光照效果。`;
+    createImageToolNode('自由打光', prompt, {
       sourceFeature: 'lighting',
       lightingSettings: settings,
       apiCapability: 'free-angle-relighting',
@@ -2763,7 +2816,7 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [createImageToolNode]);
 
   const createHdFeatureGeneration = useCallback((feature: typeof HD_FEATURES[number]) => {
-    const prompt = `${feature.label}锛?{feature.prompt}`;
+    const prompt = `${feature.label}：${feature.prompt}`;
     createImageToolNode(feature.label, prompt, {
       sourceFeature: feature.id,
       imageQuality: feature.id === 'upscale' ? 'hd' : node.options?.imageQuality || 'standard',
@@ -2777,10 +2830,10 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [createImageToolNode, node.options?.imageClarity, node.options?.imageQuality, node.options?.imageRatio]);
 
   const createSplitFeatureGeneration = useCallback((option: typeof TOOLBAR_SPLIT_OPTIONS[number] | { id: string; label: string; grid?: number; custom?: boolean }) => {
-    const prompt = `瀹牸鍒囧垎锛氬皢褰撳墠鍥剧墖鍒囧垎涓?{option.label}锛屾瘡涓鏍间繚鎸佺敾闈㈠唴瀹瑰畬鏁淬€佽竟缂樻竻鏅帮紝閫傚悎浣滀负鐙珛绱犳潗浣跨敤銆俙;
+    const prompt = `宫格切分：将当前图片切分为${option.label}，每个宫格保持画面内容完整、边缘清晰，适合作为独立素材使用。`;
     createImageToolNode(option.label, prompt, {
       sourceFeature: 'split',
-      mediaFeature: '瀹牸鍒囧垎',
+      mediaFeature: '宫格切分',
       imageRatio: 'auto',
       gridSplit: option.id,
       gridCount: option.grid,
@@ -2792,7 +2845,7 @@ function WorkflowNode({ id, data, selected }: any) {
   }, [createImageToolNode]);
 
   const createGridFeatureGeneration = useCallback((feature: typeof GRID_FEATURES[number]) => {
-    const prompt = `${feature.label}锛?{feature.prompt}`;
+    const prompt = `${feature.label}：${feature.prompt}`;
     createImageToolNode(feature.label, prompt, {
       sourceFeature: feature.id,
       imageRatio: feature.id.includes('25') || feature.id.includes('grid') || feature.id.includes('quad') ? '1:1' : node.options?.imageRatio || 'auto',
@@ -2815,7 +2868,7 @@ function WorkflowNode({ id, data, selected }: any) {
     let lastHeight = NaN;
     const updateAnchor = () => {
       const rect = nodeRef.current?.getBoundingClientRect() ?? null;
-      // 浠呭湪浣嶇疆/灏哄鐪熸鍙樺寲鏃舵墠 setState锛岄伩鍏嶆瘡甯ф棤璋撻噸娓叉煋瀵艰嚧鑺傜偣澶氭椂鍗￠】
+      // 仅在位置/尺寸真正变化时才 setState，避免每帧无谓重渲染导致节点多时卡顿
       if (rect) {
         if (rect.left !== lastLeft || rect.top !== lastTop || rect.width !== lastWidth || rect.height !== lastHeight) {
           lastLeft = rect.left; lastTop = rect.top; lastWidth = rect.width; lastHeight = rect.height;
@@ -2878,7 +2931,7 @@ function WorkflowNode({ id, data, selected }: any) {
           ) : (
             <span
               className="lib-node-label"
-              title="鍙屽嚮閲嶅懡鍚?
+              title="双击重命名"
               onClick={(e) => e.stopPropagation()}
               onDoubleClick={(e) => { e.stopPropagation(); setDraftName(getNodeDisplayName(node)); setRenaming(true); }}
             >
@@ -2889,16 +2942,16 @@ function WorkflowNode({ id, data, selected }: any) {
         <button className="lib-node-close" onClick={(e) => { e.stopPropagation(); (deleteCanvasNode || deleteNode)(node.id); }}><SvgIcon name="close" size={14} /></button>
       </div>
 
-      {/* 瀛愬姛鑳芥寜閽喛顢?*/}
+      {/* 子功能按钮 */}
       {isDirectorStageNode && !displayMedia ? (
         <div className="lib-node-scene-preview director" aria-hidden="true">
           <DirectorScenePreview />
-          <span className="lib-node-scene-tag"><SvgIcon name="stage" size={12} /> 3D 瀵兼紨鍙?/span>
+          <span className="lib-node-scene-tag"><SvgIcon name="stage" size={12} /> 3D 导演台</span>
         </div>
       ) : isPanoramaNode && !displayMedia ? (
         <div className="lib-node-scene-preview panorama" aria-hidden="true">
           <PanoramaScenePreview />
-          <span className="lib-node-scene-tag"><SvgIcon name="panorama" size={12} /> 720掳 鍏ㄦ櫙</span>
+          <span className="lib-node-scene-tag"><SvgIcon name="panorama" size={12} /> 720° 全景</span>
         </div>
       ) : (
         <div className="lib-node-center-icon" aria-hidden="true">
@@ -2908,7 +2961,7 @@ function WorkflowNode({ id, data, selected }: any) {
 
       {hasTextContent && !inlineMode && !isInlineTextNode && (
         <div className="lib-node-connected-text" title={textSummary || ''}>
-          {textSummary.trim() || '鏂囨湰鍐呭'}
+          {textSummary.trim() || '文本内容'}
         </div>
       )}
 
@@ -2921,7 +2974,7 @@ function WorkflowNode({ id, data, selected }: any) {
             {displayMedia.type === 'image' ? (
               <img
                 src={normalizeFileSrc(displayMedia.url)}
-                alt="鐢熸垚缁撴灉"
+                alt="生成结果"
                 data-media-url={displayMedia.url}
                 data-media-type="image"
                 data-prompt={node.prompt || node.options?.prompt || ''}
@@ -2987,14 +3040,14 @@ function WorkflowNode({ id, data, selected }: any) {
             onMouseDown={(e) => e.stopPropagation()}
             onChange={(e) => { setInlineText(e.target.value); saveInlineText(e.target.value); }}
             onBlur={() => { saveInlineText(inlineText); setInlineMode(false); }}
-            placeholder="杈撳叆鍐呭..."
+            placeholder="输入内容..."
             autoFocus
           />
         </div>
       ) : subFunctions.length > 0 && !node.result?.text && !node.prompt?.trim() ? (
-        // 鏈夊瓙鍔熻兘涓旀病鏈夊唴瀹规椂锛屾樉绀哄瓙鍔熻兘鍒楄〃
+        // 有子功能且没有内容时，显示子功能列表
         <div className="lib-node-subfuncs">
-          <div className="lib-node-subfuncs-title">灏濊瘯锛?/div>
+          <div className="lib-node-subfuncs-title">尝试：</div>
           {subFunctions.map((sf) => (
             <button key={sf.id} className="lib-subfunc-btn" onClick={() => handleSubFunctionClick(sf.id)} title={sf.label}>
               <SvgIcon name={sf.icon} size={12} />
@@ -3003,10 +3056,10 @@ function WorkflowNode({ id, data, selected }: any) {
           ))}
         </div>
       ) : isInlineTextNode || isTextNode ? (
-        <div className="lib-node-inline-preview" onDoubleClick={handleCardBodyClick} title="鍙屽嚮淇敼鍐呭">
+        <div className="lib-node-inline-preview" onDoubleClick={handleCardBodyClick} title="双击修改内容">
           {node.status === 'loading' ? (
             <div className="lib-node-empty-writing">
-              <div className="lib-node-empty-title">AI 姝ｅ湪鐢熸垚涓€?/div>
+              <div className="lib-node-empty-title">AI 正在生成中…</div>
               <div className="lib-node-empty-icon"><SvgIcon name={template?.icon || 'text'} size={46} /></div>
             </div>
           ) : node.result?.type === 'text' && node.result.text?.trim() ? (
@@ -3015,7 +3068,7 @@ function WorkflowNode({ id, data, selected }: any) {
             <div className="lib-node-inline-text">{node.prompt}</div>
           ) : (
             <div className="lib-node-empty-writing">
-              <div className="lib-node-empty-title">璇风紪鍐欏唴瀹癸紝寮€濮嬩綘鐨勫垱浣溿€?/div>
+              <div className="lib-node-empty-title">请编写内容，开始你的创作。</div>
               <div className="lib-node-empty-icon"><SvgIcon name={template?.icon || 'text'} size={46} /></div>
             </div>
           )}
@@ -3027,9 +3080,9 @@ function WorkflowNode({ id, data, selected }: any) {
         position={Position.Left}
         className={`lib-handle lib-handle-in ${isInputConnected ? 'side-connected' : 'side-open'}`}
         data-side-connected={isInputConnected}
-        data-symbol={isInputConnected ? '鈭? : '+'}
+        data-symbol={isInputConnected ? '−' : '+'}
         onClick={isInputConnected ? handleDisconnect('input') : undefined}
-        title={isInputConnected ? '鏂紑杩炴帴' : '杩炴帴鑺傜偣'}
+        title={isInputConnected ? '断开连接' : '连接节点'}
       />
 
       {(node?.status === 'success' && node.result) || node?.status === 'error' ? (
@@ -3037,19 +3090,19 @@ function WorkflowNode({ id, data, selected }: any) {
           {node?.status === 'success' && node.result && (
             <div className="lib-node-result">
               {node.result.type === 'image'
-                ? <img src={normalizeFileSrc(node.result.url)} alt="鐢熸垚缁撴灉" data-media-url={node.result.url} data-media-type="image" data-prompt={node.prompt || node.options?.prompt || ''} data-name={getNodeDisplayName(node)} data-source-id={node.id} data-source-type="canvas" />
+                ? <img src={normalizeFileSrc(node.result.url)} alt="生成结果" data-media-url={node.result.url} data-media-type="image" data-prompt={node.prompt || node.options?.prompt || ''} data-name={getNodeDisplayName(node)} data-source-id={node.id} data-source-type="canvas" />
                 : node.result.type === 'audio'
                   ? <div className="lib-node-audio-player"><SvgIcon name="audio" size={26} /><audio src={normalizeFileSrc(node.result.url)} controls data-media-url={node.result.url} data-media-type="audio" data-prompt={node.prompt || node.options?.prompt || ''} data-name={getNodeDisplayName(node)} data-source-id={node.id} data-source-type="canvas" onClick={(event) => event.stopPropagation()} /></div>
                   : <video src={normalizeFileSrc(node.result.url)} controls data-media-url={node.result.url} data-media-type="video" data-prompt={node.prompt || node.options?.prompt || ''} data-name={getNodeDisplayName(node)} data-source-id={node.id} data-source-type="canvas" />}
-              {/* 缁撴灉鑺傜偣涓婄殑銆岄噸鏂扮敓鎴愩€嶅皬鎸夐挳锛氭棤璁哄浘鐗?瑙嗛/闊抽锛岄兘鍙啀娆℃墦寮€杈撳叆妗嗐€佹敼鍙傛暟鍚庡啀娆℃彁浜?*/}
+              {/* 结果节点上的「重新生成」小按钮：无论图片/视频/音频，都可再次打开输入框、改参数后再次提交 */}
               <button
                 type="button"
                 className="lib-node-regen-btn"
-                title="鎵撳紑杈撳叆妗嗕慨鏀瑰悗閲嶆柊鐢熸垚"
+                title="打开输入框修改后重新生成"
                 onClick={(event) => { event.stopPropagation(); setImageToolbarOpen(false); setActiveInputNodeId?.(node.id); }}
               >
                 <SvgIcon name="canvas" size={13} />
-                <span>閲嶆柊鐢熸垚</span>
+                <span>重新生成</span>
               </button>
             </div>
           )}
@@ -3061,12 +3114,12 @@ function WorkflowNode({ id, data, selected }: any) {
         position={Position.Right}
         className={`lib-handle lib-handle-out ${isOutputConnected ? 'side-connected' : 'side-open'}`}
         data-side-connected={isOutputConnected}
-        data-symbol={isOutputConnected ? '鈭? : '+'}
+        data-symbol={isOutputConnected ? '−' : '+'}
         onClick={isOutputConnected ? handleDisconnect('output') : undefined}
-        title={isOutputConnected ? '鏂紑杩炴帴' : '杩炴帴鑺傜偣'}
+        title={isOutputConnected ? '断开连接' : '连接节点'}
       />
 
-      {/* 杈撳叆寮圭獥 */}
+      {/* 输入弹窗 */}
       {showInputPopover && (
         <NodeInputPopover
           node={node}
@@ -3082,10 +3135,10 @@ function WorkflowNode({ id, data, selected }: any) {
       {showMenu && (
         <>
           <div className="lib-node-context-menu" onClick={(e) => e.stopPropagation()}>
-            <button title="瀛樺叆鎻愮ず璇嶅簱" aria-label="瀛樺叆鎻愮ず璇嶅簱" onClick={() => { setSavePromptOpen(true); setShowMenu(false); }}><SvgIcon name="save" size={15} /></button>
-            <button title="澶嶅埗鑺傜偣" aria-label="澶嶅埗鑺傜偣" onClick={() => { navigator.clipboard.writeText(JSON.stringify(node)); setShowMenu(false); }}><SvgIcon name="copy" size={15} /></button>
-            <button title="鍒犻櫎鑺傜偣" aria-label="鍒犻櫎鑺傜偣" onClick={() => { (deleteCanvasNode || deleteNode)(node.id); setShowMenu(false); }}><SvgIcon name="trash" size={15} /></button>
-            <button title="鍏抽棴" aria-label="鍏抽棴" onClick={() => setShowMenu(false)}><SvgIcon name="close" size={15} /></button>
+            <button title="存入提示词库" aria-label="存入提示词库" onClick={() => { setSavePromptOpen(true); setShowMenu(false); }}><SvgIcon name="save" size={15} /></button>
+            <button title="复制节点" aria-label="复制节点" onClick={() => { navigator.clipboard.writeText(JSON.stringify(node)); setShowMenu(false); }}><SvgIcon name="copy" size={15} /></button>
+            <button title="删除节点" aria-label="删除节点" onClick={() => { (deleteCanvasNode || deleteNode)(node.id); setShowMenu(false); }}><SvgIcon name="trash" size={15} /></button>
+            <button title="关闭" aria-label="关闭" onClick={() => setShowMenu(false)}><SvgIcon name="close" size={15} /></button>
           </div>
           <div className="lib-node-menu-backdrop" onPointerDown={() => setShowMenu(false)} onContextMenu={(event) => { event.preventDefault(); setShowMenu(false); }} />
         </>
@@ -3114,16 +3167,16 @@ function WorkflowNode({ id, data, selected }: any) {
           onSave={saveNodeMarkedImage}
         />
       )}
-      {/* AI 鐢熸垚涓細瑕嗙洊寮忚繘搴﹂伄缃?+ 杩涘害鏉?*/}
+      {/* AI 生成中：覆盖式进度遮罩 + 进度条 */}
       {(node.status === 'loading' || node.status === 'processing') && (
         <div className="lib-node-progress-overlay" data-status={node.status}>
           <div className="lib-node-progress-text">
-            {node.status === 'loading' ? '鍑嗗鐢熸垚鈥? : 'AI 鐢熸垚涓€?}
+            {node.status === 'loading' ? '准备生成…' : 'AI 生成中…'}
           </div>
           <div className="lib-node-progress-track">
             <div className="lib-node-progress-bar" />
           </div>
-          <div className="lib-node-progress-sub">璇风◢鍊?/div>
+          <div className="lib-node-progress-sub">请稍候</div>
         </div>
       )}
       {savePromptOpen && createPortal(
@@ -3131,7 +3184,7 @@ function WorkflowNode({ id, data, selected }: any) {
           isOpen={savePromptOpen}
           onClose={() => setSavePromptOpen(false)}
           defaultPrompt={promptLibraryPrompt}
-          defaultName={`${getNodeDisplayName(node)} 鎻愮ず璇峘}
+          defaultName={`${getNodeDisplayName(node)} 提示词`}
           thumbnail={node.result?.type === 'image' ? node.result.url : node.thumbnail}
           sourceType={promptLibrarySourceType}
           filePath={node.result?.url}
@@ -3146,7 +3199,7 @@ function WorkflowNode({ id, data, selected }: any) {
           panoramaUrl={node.options?.panoramaSceneUrl || null}
           referenceMedia={directorReferenceMedia}
           onDefaultThumbnail={(dataUrl) => {
-            // 3D 瀵兼紨鍙拌妭鐐归粯璁や互瀵兼紨鍙板唴榛樿鏋勫浘涓虹缉鐣ュ浘锛岀敾甯冧笂涓€鐪煎彲鍒嗚鲸
+            // 3D 导演台节点默认以导演台内默认构图为缩略图，画布上一眼可分辨
             updateNode?.(node.id, { thumbnail: dataUrl });
           }}
           onOutputView={(dataUrl, meta) => {
@@ -3154,15 +3207,15 @@ function WorkflowNode({ id, data, selected }: any) {
               width: 280,
               height: 220,
               status: 'idle',
-              prompt: '鍩轰簬瀵兼紨鍙?3D 鏋勫浘鍙傝€冪敓鎴愮敾闈紝淇濇寔鎽勫奖鏈鸿瑙掋€佷富浣撲綅缃拰绌洪棿鍏崇郴銆?,
+              prompt: '基于导演台 3D 构图参考生成画面，保持摄影机视角、主体位置和空间关系。',
               options: {
-                displayName: '鏋勫浘鍙傝€?,
+                displayName: '构图参考',
                 generationType: 'image-to-image',
-                mediaFeature: '鏋勫浘鍙傝€?,
+                mediaFeature: '构图参考',
                 sourceFeature: 'director-stage',
                 sourceImage: dataUrl,
-                referenceImages: [{ id: `ref-stage-${Date.now()}`, name: '瀵兼紨鍙版瀯鍥?, url: dataUrl }],
-                inputRows: [{ id: `row-stage-${Date.now()}`, feature: 'image-to-image', text: '@瀵兼紨鍙版瀯鍥?鍩轰簬 3D 鏋勫浘鍙傝€冪敓鎴愮敾闈€? }],
+                referenceImages: [{ id: `ref-stage-${Date.now()}`, name: '导演台构图', url: dataUrl }],
+                inputRows: [{ id: `row-stage-${Date.now()}`, feature: 'image-to-image', text: '@导演台构图 基于 3D 构图参考生成画面。' }],
                 previewAspectRatio: meta.height ? meta.width / meta.height : undefined,
                 autoOpenInput: true,
               },
@@ -3181,23 +3234,24 @@ function WorkflowNode({ id, data, selected }: any) {
               const aspect = view.height ? view.width / view.height : 16 / 9;
               const nodeWidth = 280;
               const nodeHeight = Math.round(nodeWidth / aspect) + 40;
-              // 姣忓彴鎽勫奖鏈哄鍑虹殑鐢婚潰閮芥槸鐙珛鑺傜偣锛岀旱鍚戞帓鍒楅伩鍏嶉噸鍙?              const targetId = createLinkedNode?.(node.id, 'text-to-image', {
+              // 每台摄影机导出的画面都是独立节点，纵向排列避免重叠
+              const targetId = createLinkedNode?.(node.id, 'text-to-image', {
                 x: baseX,
                 y: baseY + index * (nodeHeight + gap),
                 width: nodeWidth,
                 height: nodeHeight,
-                // 瀵煎嚭鏈轰綅鎴浘鐩存帴鏄剧ず鍦ㄧ敾甯冭妭鐐逛笂锛堜笌涓婁紶鑺傜偣涓€鑷达級
+                // 导出机位截图直接显示在画布节点上（与上传节点一致）
                 status: 'success',
-                prompt: view.name || `鎽勫奖鏈?{index + 1}`,
+                prompt: view.name || `摄影机${index + 1}`,
                 thumbnail: view.dataUrl,
                 result: { url: view.dataUrl, type: 'image' },
                 options: {
-                  displayName: view.name || `鎽勫奖鏈?{index + 1}`,
+                  displayName: view.name || `摄影机${index + 1}`,
                   generationType: 'image-to-image',
-                  mediaFeature: '鏋勫浘鍙傝€?,
+                  mediaFeature: '构图参考',
                   sourceFeature: 'director-stage',
                   sourceImage: view.dataUrl,
-                  referenceImages: [{ id: `ref-stage-${baseStamp}-${index}`, name: view.name || '瀵兼紨鍙版瀯鍥?, url: view.dataUrl }],
+                  referenceImages: [{ id: `ref-stage-${baseStamp}-${index}`, name: view.name || '导演台构图', url: view.dataUrl }],
                   previewAspectRatio: aspect,
                 },
               });
@@ -3216,11 +3270,11 @@ function WorkflowNode({ id, data, selected }: any) {
               width: nodeWidth,
               height: nodeHeight,
               status: 'success',
-              prompt: '鍩轰簬瀵兼紨鍙板姩鐢婚瑙堢殑鍙傝€冭棰戯紝淇濇寔闀滃ご杩愬姩銆佷富浣撹繍鍔ㄨ建杩瑰拰绌洪棿鍏崇郴銆?,
+              prompt: '基于导演台动画预览的参考视频，保持镜头运动、主体运动轨迹和空间关系。',
               thumbnail: undefined,
               result: { url: video.dataUrl, type: 'video' },
               options: {
-                displayName: '鍔ㄧ敾棰勮鍙傝€?,
+                displayName: '动画预览参考',
                 generationType: 'image-to-video',
                 sourceFeature: 'director-stage-video',
                 previewAspectRatio: aspect,
@@ -3242,11 +3296,11 @@ function WorkflowNode({ id, data, selected }: any) {
               width: 280,
               height: 220,
               status: 'success',
-              prompt: '鍏ㄦ櫙瑙嗗浘鎴彇',
+              prompt: '全景视图截取',
               thumbnail: dataUrl,
               result: { url: dataUrl, type: 'image' },
               options: {
-                displayName: '鍏ㄦ櫙瑙嗗浘',
+                displayName: '全景视图',
                 generationType: 'image-to-image',
                 sourceFeature: 'panorama-view',
                 sourceImage: dataUrl,
@@ -3263,7 +3317,7 @@ function WorkflowNode({ id, data, selected }: any) {
   );
 }
 
-// 娴呮瘮杈冧袱涓瓧绗︿覆鏁扮粍鏄惁鐩哥瓑锛堢敤浜?incomingImageNodeIds 绛夋瘡娆″悓姝ラ兘鏂板缓鐨勬暟缁勶級
+// 浅比较两个字符串数组是否相等（用于 incomingImageNodeIds 等每次同步都新建的数组）
 function shallowArrayEqual(a?: string[], b?: string[]): boolean {
   if (a === b) return true;
   if (!a || !b) return (a?.length || 0) === (b?.length || 0);
@@ -3274,23 +3328,27 @@ function shallowArrayEqual(a?: string[], b?: string[]): boolean {
   return true;
 }
 
-// 鑷畾涔夋瘮杈冨嚱鏁帮細syncFlowNodes 姣忔閮戒細閲嶅缓鎵€鏈夎妭鐐圭殑 data 瀵硅薄锛?// 榛樿娴呮瘮杈冧細瀵艰嚧鎵€鏈夎妭鐐瑰湪浠绘剰涓€涓妭鐐瑰彉鍖?閫変腑鏃跺叏閮ㄩ噸娓叉煋锛岃妭鐐瑰鏃朵弗閲嶅崱椤裤€?// 杩欓噷鍙湪鐪熸褰卞搷璇ヨ妭鐐规覆鏌撶殑瀛楁鍙樺寲鏃舵墠閲嶆覆鏌撱€?function areWorkflowNodePropsEqual(prev: any, next: any): boolean {
+// 自定义比较函数：syncFlowNodes 每次都会重建所有节点的 data 对象，
+// 默认浅比较会导致所有节点在任意一个节点变化/选中时全部重渲染，节点多时严重卡顿。
+// 这里只在真正影响该节点渲染的字段变化时才重渲染。
+function areWorkflowNodePropsEqual(prev: any, next: any): boolean {
   if (prev.id !== next.id) return false;
   if (prev.selected !== next.selected) return false;
   if (prev.dragging !== next.dragging) return false;
   const a = prev.data || {};
   const b = next.data || {};
   if (a === b) return true;
-  // 鑺傜偣鏁版嵁寮曠敤锛坰tore 瀵规湭鍙樻洿鑺傜偣淇濇寔鍚屼竴寮曠敤锛?  if (a.node !== b.node) return false;
+  // 节点数据引用（store 对未变更节点保持同一引用）
+  if (a.node !== b.node) return false;
   if (a.isInputConnected !== b.isInputConnected) return false;
   if (a.isOutputConnected !== b.isOutputConnected) return false;
-  // activeInputNodeId 鏄叏灞€鍊硷紝浣嗗彧鏈夌瓑浜?鏇剧瓑浜庢湰鑺傜偣 id 鏃舵墠褰卞搷娓叉煋
+  // activeInputNodeId 是全局值，但只有等于/曾等于本节点 id 时才影响渲染
   const prevActive = a.activeInputNodeId === prev.id;
   const nextActive = b.activeInputNodeId === next.id;
   if (prevActive !== nextActive) return false;
   if (a.referencePickActive !== b.referencePickActive) return false;
   if (a.referencePicked !== b.referencePicked) return false;
-  // 鍏变韩鍥炶皟锛堝潎涓?useCallback 绋冲畾寮曠敤锛屽彉鍖栨椂闇€瑕佹洿鏂帮級
+  // 共享回调（均为 useCallback 稳定引用，变化时需要更新）
   if (a.setActiveInputNodeId !== b.setActiveInputNodeId) return false;
   if (a.disconnectNode !== b.disconnectNode) return false;
   if (a.createLinkedNode !== b.createLinkedNode) return false;
@@ -3310,12 +3368,13 @@ function storeNodesToFlowNodes(nodes: Record<string, AINode>, edges: FlowEdge[] 
   if (!nodes) return [];
   const inputConnected = new Set(edges.map(edge => edge.target).filter(Boolean) as string[]);
   const outputConnected = new Set(edges.map(edge => edge.source).filter(Boolean) as string[]);
-  // 鏋勫缓姣忎釜鑺傜偣鐨勮緭鍏ユ簮鑺傜偣鏄犲皠
+  // 构建每个节点的输入源节点映射
   const incomingImageNodes: Record<string, string[]> = {};
-  // 璁板綍姣忎釜鑺傜偣涓婃父杩炵嚎涓€屽浘鐗囥€嶆潵婧愮殑鏁伴噺锛堢敤浜庤棰戣妭鐐癸細1 寮犫啋鍥剧敓瑙嗛锛? 寮犫啋棣栧熬甯э級
+  // 记录每个节点上游连线中「图片」来源的数量（用于视频节点：1 张→图生视频，2 张→首尾帧）
   const incomingImageCounts: Record<string, number> = {};
-  // 璁板綍姣忎釜鑺傜偣涓婃父杩炵嚎鑺傜偣鐨勫獟浣撶被鍨嬶紙image/video/audio锛夛紝
-  // 鐢ㄤ簬鍒ゆ柇鈥滃墠闈㈣繛绾胯棰戜负鑺傜偣鈥濇垨鈥滃鏍煎紡缁勫悎浣滀负鍙傝€冣€濇椂寮哄埗鍙兘浣跨敤鍏ㄨ兘鍙傝€?  const incomingMediaKinds: Record<string, string[]> = {};
+  // 记录每个节点上游连线节点的媒体类型（image/video/audio），
+  // 用于判断“前面连线视频为节点”或“多格式组合作为参考”时强制只能使用全能参考
+  const incomingMediaKinds: Record<string, string[]> = {};
   const imageNodeTypes = ['text-to-image', 'image-to-image', 'image-upscale', 'image-blend', 'character-view'];
   const videoNodeTypes = ['text-to-video', 'image-to-video', 'img2video', 'frame-to-video', 'video-composite', 'video-extend', 'video-remix', 'video-super-resolution', 'video-interpolate', 'video-realtime', 'live-portrait'];
   const audioNodeTypes = ['audio2video', 'tts', 'video-to-music'];
@@ -3332,11 +3391,12 @@ function storeNodesToFlowNodes(nodes: Record<string, AINode>, edges: FlowEdge[] 
         if (!incomingImageNodes[edge.target]) incomingImageNodes[edge.target] = [];
         incomingImageNodes[edge.target].push(edge.source);
       }
-      // 缁熻涓婃父杩炵嚎涓€屽浘鐗囥€嶆潵婧愭暟閲忥紙鍥剧墖鑺傜偣 / 鍥剧墖缁撴灉 / 鍙傝€冨浘 / 缂╃暐鍥撅紝涓旈潪瑙嗛/闊抽锛?      const isPureImageSource = (isImageNode || hasImageResult || hasReferenceImage || hasThumbnail) && !hasVideoResult && !hasAudioResult;
+      // 统计上游连线中「图片」来源数量（图片节点 / 图片结果 / 参考图 / 缩略图，且非视频/音频）
+      const isPureImageSource = (isImageNode || hasImageResult || hasReferenceImage || hasThumbnail) && !hasVideoResult && !hasAudioResult;
       if (isPureImageSource) {
         incomingImageCounts[edge.target] = (incomingImageCounts[edge.target] || 0) + 1;
       }
-      // 鍒ゅ畾涓婃父鑺傜偣濯掍綋绫诲瀷锛堣棰戜紭鍏堬紝鍏舵闊抽锛屽叾娆″浘鐗囷級
+      // 判定上游节点媒体类型（视频优先，其次音频，其次图片）
       let mediaKind = '';
       if (hasVideoResult || videoNodeTypes.includes(sourceNode.type)) mediaKind = 'video';
       else if (hasAudioResult || audioNodeTypes.includes(sourceNode.type)) mediaKind = 'audio';
@@ -3349,8 +3409,9 @@ function storeNodesToFlowNodes(nodes: Record<string, AINode>, edges: FlowEdge[] 
   });
   return Object.values(nodes).map((n) => {
     const incomingKinds = incomingMediaKinds[n.id] || [];
-    // 寮哄埗鍏ㄨ兘鍙傝€冪殑鏉′欢锛?    // 1. 涓婃父杩炵嚎涓寘鍚棰戣妭鐐癸紙鍓嶉潰杩炵嚎瑙嗛涓鸿妭鐐癸級
-    // 2. 涓婃父杩炵嚎涓哄绉嶅獟浣撴牸寮忕粍鍚堬紙瑙嗛/鍥剧墖/闊抽娣峰悎锛屽鏍煎紡缁勫悎浣滀负鍙傝€冿級
+    // 强制全能参考的条件：
+    // 1. 上游连线中包含视频节点（前面连线视频为节点）
+    // 2. 上游连线为多种媒体格式组合（视频/图片/音频混合，多格式组合作为参考）
     const forceOmniReference = incomingKinds.includes('video') || incomingKinds.length > 1;
     const connected = inputConnected.has(n.id) || outputConnected.has(n.id);
     const hasMediaContent = !!n.result?.url || !!n.thumbnail;
@@ -3379,7 +3440,7 @@ function storeNodesToFlowNodes(nodes: Record<string, AINode>, edges: FlowEdge[] 
   });
 }
 
-// ==================== 宸ュ叿鏍忓瓙鑿滃崟缁勪欢 ====================
+// ==================== 工具栏子菜单组件 ====================
 
 interface MenuItem {
   id: string;
@@ -3518,7 +3579,7 @@ function ToolbarSubMenu({
   );
 }
 
-// ==================== 璧勪骇閫夋嫨闈㈡澘锛堝脊绐楀紡锛屽甫鍥剧墖/瑙嗛/闊抽鍒嗙被 tab锛?====================
+// ==================== 资产选择面板（弹窗式，带图片/视频/音频分类 tab） ====================
 
 interface AssetPickerPanelProps {
   open: boolean;
@@ -3527,22 +3588,24 @@ interface AssetPickerPanelProps {
 }
 
 const ASSET_TABS = [
-  { id: 'all', label: '鍏ㄩ儴', icon: 'box' },
-    { id: 'image', label: '鍥剧墖', icon: 'image', desc: '娴锋姤銆佸垎闀溿€佽鑹茶璁? },
-    { id: 'video', label: '瑙嗛', icon: 'video', desc: '鍒涙剰骞垮憡銆佸姩鐢汇€佺數褰? },
-    { id: 'audio', label: '闊抽', icon: 'audio', desc: '闊虫晥銆侀厤闊炽€侀煶涔? },
+  { id: 'all', label: '全部', icon: 'box' },
+    { id: 'image', label: '图片', icon: 'image', desc: '海报、分镜、角色设计' },
+    { id: 'video', label: '视频', icon: 'video', desc: '创意广告、动画、电影' },
+    { id: 'audio', label: '音频', icon: 'audio', desc: '音效、配音、音乐' },
 ] as const;
 type AssetTabId = typeof ASSET_TABS[number]['id'];
 
 const AssetPickerPanel: React.FC<AssetPickerPanelProps> = ({ open, onClose, onSelectAsset }) => {
-  // 鎬ц兘浼樺寲锛氫粎璁㈤槄 assets 鍒囩墖锛岄伩鍏嶉潰鏉垮父椹绘寕杞藉鑷寸殑鏁翠粨璁㈤槄
+  // 性能优化：仅订阅 assets 切片，避免面板常驻挂载导致的整仓订阅
   const assets = useAppStore(state => state.assets);
   const [search, setSearch] = useState('');
   const [activeTab, setActiveTab] = useState<AssetTabId>('all');
 
-  // 鍙彇鏂囦欢璧勪骇锛屼笉鏄剧ず鏂囦欢澶?  const allFileAssets = useMemo(() => Object.values(assets).filter(a => !String(a.type).startsWith('__folder') && String(a.type) !== 'folder'), [assets]);
+  // 只取文件资产，不显示文件夹
+  const allFileAssets = useMemo(() => Object.values(assets).filter(a => !String(a.type).startsWith('__folder') && String(a.type) !== 'folder'), [assets]);
 
-  // 鎸?tab 鍜屾悳绱㈠唴瀹硅繃婊?  const filteredItems = useMemo(() => {
+  // 按 tab 和搜索内容过滤
+  const filteredItems = useMemo(() => {
     let items = allFileAssets;
     if (activeTab !== 'all') {
       items = items.filter(a => a.type === activeTab);
@@ -3560,11 +3623,11 @@ const AssetPickerPanel: React.FC<AssetPickerPanelProps> = ({ open, onClose, onSe
     <div className="asset-picker-overlay" onClick={onClose}>
       <div className="asset-picker-panel" onClick={e => e.stopPropagation()}>
         <div className="asset-picker-header">
-          <span className="asset-picker-title">璧勪骇搴?/span>
+          <span className="asset-picker-title">资产库</span>
           <button className="asset-picker-close" onClick={onClose}><SvgIcon name="close" size={16} /></button>
         </div>
 
-        {/* 鍒嗙被 tab + 鎼滅储妗嗗悓涓€琛?*/}
+        {/* 分类 tab + 搜索框同一行 */}
         <div className="asset-picker-toolbar">
           <div className="asset-picker-tabs">
             {ASSET_TABS.map(tab => (
@@ -3581,7 +3644,7 @@ const AssetPickerPanel: React.FC<AssetPickerPanelProps> = ({ open, onClose, onSe
           <div className="asset-picker-search">
             <input
               type="text"
-              placeholder="鎼滅储璧勪骇..."
+              placeholder="搜索资产..."
               value={search}
               onChange={e => setSearch(e.target.value)}
             />
@@ -3590,7 +3653,7 @@ const AssetPickerPanel: React.FC<AssetPickerPanelProps> = ({ open, onClose, onSe
 
         <div className="asset-picker-grid">
           {filteredItems.length === 0 && (
-            <div className="asset-picker-empty">鏆傛棤璧勪骇</div>
+            <div className="asset-picker-empty">暂无资产</div>
           )}
           {filteredItems.map(a => {
             const thumb = a.thumbnail || (a.type === 'image' ? normalizeFileSrc(a.path) : undefined);
@@ -3618,7 +3681,7 @@ const AssetPickerPanel: React.FC<AssetPickerPanelProps> = ({ open, onClose, onSe
   );
 };
 
-// ==================== 娣诲姞鑺傜偣闈㈡澘 ====================
+// ==================== 添加节点面板 ====================
 
 function AddNodePanel({ open, onClose, onSelect, position }: { open: boolean; onClose: () => void; onSelect: (type: AINodeType | 'upload' | 'panorama') => void; position?: { x: number; y: number } | null }) {
   const panelRef = React.useRef<HTMLDivElement>(null);
@@ -3653,7 +3716,7 @@ function AddNodePanel({ open, onClose, onSelect, position }: { open: boolean; on
   return (
     <div className="add-node-overlay" onClick={onClose}>
       <div ref={panelRef} className="add-node-panel" style={finalStyle} onClick={e => e.stopPropagation()}>
-        <div className="add-node-panel-title">娣诲姞鑺傜偣</div>
+        <div className="add-node-panel-title">添加节点</div>
         <div className="add-node-list">
           {NODE_TEMPLATES.map(t => (
             <button key={t.type} className="add-node-item" onClick={() => onSelect(t.type as AINodeType | 'panorama')}>
@@ -3665,13 +3728,13 @@ function AddNodePanel({ open, onClose, onSelect, position }: { open: boolean; on
             </button>
           ))}
         </div>
-        <div className="add-node-section-title">娣诲姞璧勬簮</div>
+        <div className="add-node-section-title">添加资源</div>
         <div className="add-node-list add-node-resource-list">
           <button className="add-node-item" onClick={() => onSelect('upload')}>
             <span className="add-node-item-icon"><SvgIcon name="upload" size={20} /></span>
             <div className="add-node-item-info">
-              <span className="add-node-item-label">涓婁紶</span>
-              <span className="add-node-item-desc">鍙笂浼犲浘鐗囥€佽棰戙€侀煶棰戞枃浠?/span>
+              <span className="add-node-item-label">上传</span>
+              <span className="add-node-item-desc">可上传图片、视频、音频文件</span>
             </div>
           </button>
         </div>
@@ -3680,28 +3743,29 @@ function AddNodePanel({ open, onClose, onSelect, position }: { open: boolean; on
   );
 }
 
-// ==================== 鍏抽棴纭寮圭獥 ====================
+// ==================== 关闭确认弹窗 ====================
 
 function CloseConfirmDialog({ open, onCancel, onConfirm }: { open: boolean; onCancel: () => void; onConfirm: () => void }) {
   if (!open) return null;
   return (
     <div className="close-confirm-overlay" onClick={onCancel}>
       <div className="close-confirm-dialog" onClick={e => e.stopPropagation()}>
-        <div className="close-confirm-title">纭鍏抽棴鐢诲竷锛?/div>
-        <div className="close-confirm-desc">鏈繚瀛樼殑鏇存敼灏嗕細涓㈠け锛屽缓璁厛淇濆瓨銆?/div>
+        <div className="close-confirm-title">确认关闭画布？</div>
+        <div className="close-confirm-desc">未保存的更改将会丢失，建议先保存。</div>
         <div className="close-confirm-actions">
-          <button className="close-confirm-btn close-confirm-cancel" onClick={onCancel}>鍙栨秷</button>
-          <button className="close-confirm-btn close-confirm-ok" onClick={onConfirm}>纭鍏抽棴</button>
+          <button className="close-confirm-btn close-confirm-cancel" onClick={onCancel}>取消</button>
+          <button className="close-confirm-btn close-confirm-ok" onClick={onConfirm}>确认关闭</button>
         </div>
       </div>
     </div>
   );
 }
 
-// ==================== 鍙充笂瑙掓搷浣滄爮 ====================
+// ==================== 右上角操作栏 ====================
 
 function CanvasTopBar() {
-  // 鎬ц兘浼樺寲锛氫粎璁㈤槄鎵€闇€鍒囩墖锛岄伩鍏嶉《鏍忓湪浠绘剰鐘舵€佸彉鍖栨椂閲嶆覆鏌?  const setActiveCanvas = useAppStore(state => state.setActiveCanvas);
+  // 性能优化：仅订阅所需切片，避免顶栏在任意状态变化时重渲染
+  const setActiveCanvas = useAppStore(state => state.setActiveCanvas);
   const activeCanvasId = useAppStore(state => state.activeCanvasId);
   const canvasHistory = useAppStore(state => state.canvasHistory);
   const canvas = canvasHistory.find(c => c.id === activeCanvasId);
@@ -3709,7 +3773,7 @@ function CanvasTopBar() {
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState('');
   const [showToast, setShowToast] = useState(false);
-  const [toastMsg, setToastMsg] = useState('淇濆瓨鎴愬姛');
+  const [toastMsg, setToastMsg] = useState('保存成功');
   const importInputRef = useRef<HTMLInputElement>(null);
 
   const flashToast = useCallback((msg: string) => {
@@ -3723,7 +3787,7 @@ function CanvasTopBar() {
     const state = useAppStore.getState();
     const current = state.canvasHistory.find((c: any) => c.id === activeCanvasId);
     state.updateCanvasData(activeCanvasId, { nodes: state.nodes, edges: current?.data?.edges || [], canvasGridVisible: state.canvasGridVisible }, getCanvasFirstImageThumbnail(state.nodes));
-    flashToast('淇濆瓨鎴愬姛');
+    flashToast('保存成功');
   }, [activeCanvasId, flashToast]);
 
   const handleExport = useCallback(() => {
@@ -3733,7 +3797,7 @@ function CanvasTopBar() {
       type: 'yijing-canvas',
       version: 1,
       exportedAt: Date.now(),
-      name: current?.name || canvas?.name || '鏈懡鍚嶇敾甯?,
+      name: current?.name || canvas?.name || '未命名画布',
       nodes: state.nodes,
       edges: current?.data?.edges || [],
       canvasGridVisible: state.canvasGridVisible,
@@ -3748,7 +3812,7 @@ function CanvasTopBar() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    flashToast('瀵煎嚭鎴愬姛');
+    flashToast('导出成功');
   }, [activeCanvasId, canvas?.name, flashToast]);
 
   const handleImportClick = useCallback(() => {
@@ -3765,11 +3829,11 @@ function CanvasTopBar() {
         const importedNodes = parsed?.nodes;
         const importedEdges = Array.isArray(parsed?.edges) ? parsed.edges : [];
         if (!importedNodes || typeof importedNodes !== 'object') {
-          flashToast('鏂囦欢鏍煎紡閿欒');
+          flashToast('文件格式错误');
           return;
         }
         const state = useAppStore.getState();
-        const importName = `${parsed?.name || '瀵煎叆鐢诲竷'} (瀵煎叆)`;
+        const importName = `${parsed?.name || '导入画布'} (导入)`;
         const newCanvasId = state.saveCanvas(importName, {
           nodes: importedNodes,
           edges: importedEdges,
@@ -3777,9 +3841,9 @@ function CanvasTopBar() {
         }, getCanvasFirstImageThumbnail(importedNodes));
         state.setActiveCanvas(newCanvasId);
         state.loadCanvas(newCanvasId);
-        flashToast('瀵煎叆鎴愬姛');
+        flashToast('导入成功');
       } catch (err) {
-        flashToast('瀵煎叆澶辫触');
+        flashToast('导入失败');
       }
     };
     reader.readAsText(file);
@@ -3793,7 +3857,7 @@ function CanvasTopBar() {
 
   const startRename = useCallback((e?: React.MouseEvent) => {
     e?.stopPropagation();
-    setEditName(canvas?.name || '鏈懡鍚嶇敾甯?);
+    setEditName(canvas?.name || '未命名画布');
     setEditing(true);
   }, [canvas?.name]);
 
@@ -3819,14 +3883,14 @@ function CanvasTopBar() {
             autoFocus
           />
         ) : (
-          <span className="canvas-top-title" onClick={startRename} title="鐐瑰嚮閲嶅懡鍚?><SvgIcon name="canvas" size={15} /> {canvas?.name || '鏈懡鍚嶇敾甯?}</span>
+          <span className="canvas-top-title" onClick={startRename} title="点击重命名"><SvgIcon name="canvas" size={15} /> {canvas?.name || '未命名画布'}</span>
         )}
         <div className="canvas-top-actions">
           <input ref={importInputRef} type="file" accept="application/json,.json" onChange={handleImportFile} style={{ display: 'none' }} />
-          <button className="canvas-top-btn export-btn" onClick={handleExport} title="瀵煎嚭鐢诲竷锛堝惈鑺傜偣涓庢彁绀鸿瘝锛?><SvgIcon name="save" size={14} /> 瀵煎嚭</button>
-          <button className="canvas-top-btn import-btn" onClick={handleImportClick} title="瀵煎叆鐢诲竷"><SvgIcon name="upload" size={14} /> 瀵煎叆</button>
-          <button className="canvas-top-btn save-btn" onClick={handleSave} title="淇濆瓨鐢诲竷"><SvgIcon name="save" size={14} /> 淇濆瓨</button>
-          <button className="canvas-top-btn close-btn" onClick={() => setShowCloseConfirm(true)} title="鍏抽棴鐢诲竷"><SvgIcon name="close" size={14} /> 鍏抽棴</button>
+          <button className="canvas-top-btn export-btn" onClick={handleExport} title="导出画布（含节点与提示词）"><SvgIcon name="save" size={14} /> 导出</button>
+          <button className="canvas-top-btn import-btn" onClick={handleImportClick} title="导入画布"><SvgIcon name="upload" size={14} /> 导入</button>
+          <button className="canvas-top-btn save-btn" onClick={handleSave} title="保存画布"><SvgIcon name="save" size={14} /> 保存</button>
+          <button className="canvas-top-btn close-btn" onClick={() => setShowCloseConfirm(true)} title="关闭画布"><SvgIcon name="close" size={14} /> 关闭</button>
         </div>
       </div>
       {showToast && (
@@ -3837,7 +3901,7 @@ function CanvasTopBar() {
   );
 }
 
-// ==================== 搴曢儴鎮诞宸ュ叿鏍?====================
+// ==================== 底部悬浮工具栏 ====================
 
 function ZoomControls({ canvasGridVisible, onToggleGrid }: { canvasGridVisible?: boolean; onToggleGrid?: () => void }) {
   const { getViewport, setViewport, fitView } = useReactFlow();
@@ -3886,27 +3950,27 @@ function ZoomControls({ canvasGridVisible, onToggleGrid }: { canvasGridVisible?:
 
   return (
     <div className="zoom-controls" ref={menuRef}>
-      <span className="zoom-label" onClick={() => setShowMenu(!showMenu)} title="鐐瑰嚮閫夋嫨缂╂斁姣斾緥">{zoom}%</span>
+      <span className="zoom-label" onClick={() => setShowMenu(!showMenu)} title="点击选择缩放比例">{zoom}%</span>
       {showMenu && (
         <div className="zoom-dropdown">
-          <div className="zoom-dropdown-item" onClick={() => handleSetZoom(50)}>缂╂斁鑷?50%</div>
-          <div className={`zoom-dropdown-item ${zoom === 100 ? 'active' : ''}`} onClick={() => handleSetZoom(100)}>缂╂斁鑷?100%</div>
-          <div className={`zoom-dropdown-item ${zoom === 125 ? 'active' : ''}`} onClick={() => handleSetZoom(125)}>缂╂斁鑷?125%</div>
-          <div className={`zoom-dropdown-item ${zoom === 200 ? 'active' : ''}`} onClick={() => handleSetZoom(200)}>缂╂斁鑷?200%</div>
-          <div className={`zoom-dropdown-item ${zoom === 800 ? 'active' : ''}`} onClick={() => handleSetZoom(800)}>缂╂斁鑷?800%</div>
+          <div className="zoom-dropdown-item" onClick={() => handleSetZoom(50)}>缩放至 50%</div>
+          <div className={`zoom-dropdown-item ${zoom === 100 ? 'active' : ''}`} onClick={() => handleSetZoom(100)}>缩放至 100%</div>
+          <div className={`zoom-dropdown-item ${zoom === 125 ? 'active' : ''}`} onClick={() => handleSetZoom(125)}>缩放至 125%</div>
+          <div className={`zoom-dropdown-item ${zoom === 200 ? 'active' : ''}`} onClick={() => handleSetZoom(200)}>缩放至 200%</div>
+          <div className={`zoom-dropdown-item ${zoom === 800 ? 'active' : ''}`} onClick={() => handleSetZoom(800)}>缩放至 800%</div>
           <div className="zoom-divider" />
-          <div className="zoom-dropdown-item" onClick={handleZoomIn}>鏀惧ぇ</div>
-          <div className="zoom-dropdown-item" onClick={handleZoomOut}>缂╁皬</div>
-          <div className="zoom-dropdown-item" onClick={handleFitView}>閫傚簲灞忓箷</div>
+          <div className="zoom-dropdown-item" onClick={handleZoomIn}>放大</div>
+          <div className="zoom-dropdown-item" onClick={handleZoomOut}>缩小</div>
+          <div className="zoom-dropdown-item" onClick={handleFitView}>适应屏幕</div>
         </div>
       )}
-      <button onClick={handleZoomIn} title="鏀惧ぇ">+</button>
-      <button onClick={handleZoomOut} title="缂╁皬">鈭?/button>
-      <button onClick={handleFitView} title="閫傚簲灞忓箷">猡?/button>
+      <button onClick={handleZoomIn} title="放大">+</button>
+      <button onClick={handleZoomOut} title="缩小">−</button>
+      <button onClick={handleFitView} title="适应屏幕">⤢</button>
       <button
         className={canvasGridVisible ? 'active' : ''}
         onClick={onToggleGrid}
-        title="缃戞牸鍒囨崲"
+        title="网格切换"
       >
         <SvgIcon name="grid" size={15} />
       </button>
@@ -3914,22 +3978,22 @@ function ZoomControls({ canvasGridVisible, onToggleGrid }: { canvasGridVisible?:
   );
 }
 
-// ==================== 搴曢儴宸ュ叿鏍忥紙FloatingToolbar锛?====================
+// ==================== 底部工具栏（FloatingToolbar） ====================
 
 const TOOLBAR_MENUS: Record<string, MenuItem[]> = {
   'add-node': [
-    { id: 'text', label: '鏂囨湰', icon: 'text', desc: '鍓ф湰銆佸箍鍛婅瘝銆佸搧鐗屾枃妗? },
-    { id: 'image', label: '鍥剧墖', icon: 'image', desc: '娴锋姤銆佸垎闀溿€佽鑹茶璁? },
-    { id: 'video', label: '瑙嗛', icon: 'video', desc: '鍒涙剰骞垮憡銆佸姩鐢汇€佺數褰? },
-    { id: 'panorama', label: '鍏ㄦ櫙鍥?, icon: 'panorama', desc: '鐢熸垚720掳鍏ㄦ櫙鍦烘櫙锛岀偣鍑昏繘鍏ュ叏鏅极娓? },
-    { id: 'director-stage', label: '3D瀵兼紨鍙?, icon: 'stage', desc: '3D鍦烘櫙鎼缓銆侀暅澶磋皟搴︿笌杩愰暅' },
-    { id: 'audio', label: '闊抽', icon: 'audio', desc: '闊虫晥銆侀厤闊炽€侀煶涔? },
+    { id: 'text', label: '文本', icon: 'text', desc: '剧本、广告词、品牌文案' },
+    { id: 'image', label: '图片', icon: 'image', desc: '海报、分镜、角色设计' },
+    { id: 'video', label: '视频', icon: 'video', desc: '创意广告、动画、电影' },
+    { id: 'panorama', label: '全景图', icon: 'panorama', desc: '生成720°全景场景，点击进入全景漫游' },
+    { id: 'director-stage', label: '3D导演台', icon: 'stage', desc: '3D场景搭建、镜头调度与运镜' },
+    { id: 'audio', label: '音频', icon: 'audio', desc: '音效、配音、音乐' },
     { id: 'divider', label: '', desc: '' },
-    { id: 'upload', label: '涓婁紶', icon: 'upload', desc: '涓婁紶鍥剧墖銆佽棰戙€侀煶棰戞枃浠? }
+    { id: 'upload', label: '上传', icon: 'upload', desc: '上传图片、视频、音频文件' }
   ],
   'history': [
-    { id: 'history-recent', label: '鏈€杩戜娇鐢?, icon: 'history', desc: '鏈€杩戠敓鎴愮殑鑺傜偣' },
-    { id: 'history-favorite', label: '鏀惰棌', icon: 'star', desc: '鏀惰棌鐨勮妭鐐规ā鏉? }
+    { id: 'history-recent', label: '最近使用', icon: 'history', desc: '最近生成的节点' },
+    { id: 'history-favorite', label: '收藏', icon: 'star', desc: '收藏的节点模板' }
   ]
 };
 
@@ -3977,24 +4041,24 @@ function FloatingToolbar({
           onClick={() => handleButtonClick('add-node')}
         >
           <span className="float-tool-icon"><SvgIcon name="spark" size={16} /></span>
-          <span>娣诲姞鑺傜偣</span>
+          <span>添加节点</span>
         </button>
         <button
           className="float-tool-btn"
           onClick={onOpenAssetPicker}
-          title="璧勪骇"
+          title="资产"
         >
           <span className="float-tool-icon"><SvgIcon name="box" size={16} /></span>
-          <span>璧勪骇</span>
+          <span>资产</span>
         </button>
         <button
           ref={buttonRefs['history']}
           className={`float-tool-btn ${activeMenu === 'history' ? 'active' : ''}`}
           onClick={() => handleButtonClick('history')}
-          title="鍘嗗彶璁板綍"
+          title="历史记录"
         >
           <span className="float-tool-icon"><SvgIcon name="history" size={16} /></span>
-          <span>鍘嗗彶璁板綍</span>
+          <span>历史记录</span>
         </button>
       </div>
       {activeMenu && TOOLBAR_MENUS[activeMenu] && (
@@ -4010,12 +4074,12 @@ function FloatingToolbar({
   );
 }
 
-// ==================== 涓荤粍浠?====================
+// ==================== 主组件 ====================
 
 type CanvasProps = { canvasId?: string; onBack?: () => void };
 
 function CanvasInner(_props: CanvasProps = {}) {
-  // 鎬ц兘浼樺寲锛氫粎璁㈤槄 nodes 鍒囩墖锛宎ctions 涓虹ǔ瀹氬紩鐢紝閬垮厤鏁翠粨璁㈤槄瀵艰嚧鐨勫叏閲忛噸娓叉煋
+  // 性能优化：仅订阅 nodes 切片，actions 为稳定引用，避免整仓订阅导致的全量重渲染
   const storeNodes = useAppStore(state => state.nodes);
   const addNode = useAppStore(state => state.addNode);
   const setCanvasGridVisible = useAppStore(state => state.setCanvasGridVisible);
@@ -4049,7 +4113,7 @@ function CanvasInner(_props: CanvasProps = {}) {
 
   const canvasGridVisible = useAppStore(state => state.canvasGridVisible);
 
-  // 鏄惁瀛樺湪澶氶€夛紙浠呭湪澶氶€夋椂闇€瑕佽窡闅忚鍙ｆ洿鏂版壒閲忛€夋锛岄伩鍏嶆瘡甯у钩绉婚兘瑙﹀彂閲嶆覆鏌擄級
+  // 是否存在多选（仅在多选时需要跟随视口更新批量选框，避免每帧平移都触发重渲染）
   const hasMultiSelectionRef = useRef(false);
   const hasGroupsRef = useRef(false);
   const viewportRafRef = useRef<number>(0);
@@ -4117,7 +4181,8 @@ function CanvasInner(_props: CanvasProps = {}) {
 
   const getNodeReferenceMedia = useCallback((sourceNode?: AINode): { url: string; kind: 'image' | 'video' | 'audio' } => {
     if (!sourceNode) return { url: '', kind: 'image' };
-    // 瑙嗛缁撴灉锛氫紭鍏堜娇鐢ㄨ棰戝湴鍧€锛岀缉鐣ュ浘浜ょ敱鍓嶇浠庤棰戦甯х敓鎴?    if (sourceNode.result?.type === 'video' && sourceNode.result.url) {
+    // 视频结果：优先使用视频地址，缩略图交由前端从视频首帧生成
+    if (sourceNode.result?.type === 'video' && sourceNode.result.url) {
       return { url: sourceNode.result.url, kind: 'video' };
     }
     if (sourceNode.result?.type === 'audio' && sourceNode.result.url) {
@@ -4148,7 +4213,7 @@ function CanvasInner(_props: CanvasProps = {}) {
     if (!activeCanvasId) {
       if (Object.keys(storeNodes || {}).length === 0 && edges.length === 0) return;
       const state = useAppStore.getState();
-      const cid = state.saveCanvas('鑷姩淇濆瓨鐢诲竷', {
+      const cid = state.saveCanvas('自动保存画布', {
         nodes: state.nodes,
         edges,
         canvasGridVisible: state.canvasGridVisible,
@@ -4208,9 +4273,11 @@ function CanvasInner(_props: CanvasProps = {}) {
       width: overrides.width || 280,
       height: overrides.height || 220,
       status: overrides.status || 'idle',
-      // 鏂囨湰/涓婃父鎻愮ず璇嶄笉鍐嶇洿鎺ュ啓杩涜緭鍏ユ锛屽彧鍦ㄧ敓鎴愭彁浜ゆ椂缁?upstreamPrompt 璧蜂綔鐢紱浠呭綋鏄惧紡鎸囧畾 overrides.prompt 鏃舵墠鍥炲～杈撳叆妗?      prompt: overrides.prompt ?? '',
+      // 文本/上游提示词不再直接写进输入框，只在生成提交时经 upstreamPrompt 起作用；仅当显式指定 overrides.prompt 时才回填输入框
+      prompt: overrides.prompt ?? '',
       thumbnail: overrides.thumbnail,
-      // 閫忎紶 result / meta锛岀‘淇濆婕斿彴瀵煎嚭鐨勮棰戙€佹埅鍥捐兘鍍忎笂浼犺妭鐐逛竴鏍风洿鎺ュ睍绀哄獟浣?      ...(overrides.result ? { result: overrides.result } : {}),
+      // 透传 result / meta，确保导演台导出的视频、截图能像上传节点一样直接展示媒体
+      ...(overrides.result ? { result: overrides.result } : {}),
       ...(overrides.meta ? { meta: overrides.meta } : {}),
       aspectRatio: overrides.aspectRatio,
       resolution: overrides.resolution,
@@ -4270,7 +4337,7 @@ function CanvasInner(_props: CanvasProps = {}) {
             && prevData.onPickReferenceNode === pickReferenceNode
             && prevData.setMediaPreview === setMediaPreview;
           if (samePosition && sameSize && sameNode && sameConnection && sameIncoming && sameActive && sameReference && sameCallbacks) {
-            // 璇ヨ妭鐐规棤浠讳綍鍙樺寲锛屽鐢ㄦ棫瀵硅薄寮曠敤锛堜繚鐣?selected / measured 绛?React Flow 鍐呴儴鐘舵€侊級
+            // 该节点无任何变化，复用旧对象引用（保留 selected / measured 等 React Flow 内部状态）
             return prev;
           }
           changed = true;
@@ -4312,7 +4379,8 @@ function CanvasInner(_props: CanvasProps = {}) {
           },
         };
       });
-      // 瀹屽叏娌℃湁鍙樺寲鏃惰繑鍥炴棫鏁扮粍寮曠敤锛岄伩鍏嶈Е鍙?React Flow 鐨勯噸鏂版覆鏌?      return changed ? next : current;
+      // 完全没有变化时返回旧数组引用，避免触发 React Flow 的重新渲染
+      return changed ? next : current;
     });
   }, [edges, activeInputNodeId, setNodes, disconnectNode, createLinkedNode, deleteCanvasNode, pickReferenceNode, referencePickTargetNodeId, referencePickedNodeIds, setMediaPreview]);
 
@@ -4338,7 +4406,7 @@ function CanvasInner(_props: CanvasProps = {}) {
     return { left: left - 3, top: top - 3, width: right - left + 6, height: bottom - top + 6, ids: selectedNodes.map(node => node.id) };
   }, [nodes, viewportTick]);
 
-  // 璁＄畻姣忎釜缁勭殑灞忓箷杈圭晫锛堢敤浜庢覆鏌撳渾瑙掔伆鑹茬粍閫夋锛夛紝璺熼殢瑙嗗彛绉诲姩鏇存柊
+  // 计算每个组的屏幕边界（用于渲染圆角灰色组选框），跟随视口移动更新
   const groupBoundsList = useMemo(() => {
     if (nodeGroups.length === 0) return [] as Array<{ id: string; label: string; left: number; top: number; width: number; height: number; nodeIds: string[] }>;
     const canvasRect = document.querySelector('.llib-canvas-area')?.getBoundingClientRect();
@@ -4357,15 +4425,15 @@ function CanvasInner(_props: CanvasProps = {}) {
     }).filter(Boolean) as Array<{ id: string; label: string; left: number; top: number; width: number; height: number; nodeIds: string[] }>;
   }, [nodeGroups, nodes, viewportTick]);
 
-  // 灏嗛€変腑鑺傜偣鎵撶粍锛欰lt+G
+  // 将选中节点打组：Alt+G
   const groupSelectedNodes = useCallback(() => {
     const selectedIds = nodes.filter(node => node.selected).map(node => node.id);
     if (selectedIds.length < 2) return;
     const state = useAppStore.getState();
     const groupId = `group-${Date.now()}`;
     const groupIndex = nodeGroups.length + 1;
-    const label = `缁勫悎${groupIndex}`;
-    // 缁勫悎鍐呰妭鐐规爣璁颁负鍙傝€冨唴瀹癸紙鍙傝€冨浘/鍙傝€冭棰?鍙傝€冮煶棰?鎻愮ず璇嶏級锛屼緵涓嬩釜鑺傜偣寮曠敤
+    const label = `组合${groupIndex}`;
+    // 组合内节点标记为参考内容（参考图/参考视频/参考音频/提示词），供下个节点引用
     selectedIds.forEach(id => {
       const node = state.nodes[id];
       if (!node) return;
@@ -4380,7 +4448,7 @@ function CanvasInner(_props: CanvasProps = {}) {
     setNodeGroups(prev => [...prev, { id: groupId, nodeIds: selectedIds, label }]);
   }, [nodes, nodeGroups]);
 
-  // 鏀堕泦鏌愪釜缁勫唴鎵€鏈夎妭鐐圭殑鍙傝€冨唴瀹癸紙鍥剧墖/瑙嗛/闊抽/鎻愮ず璇嶏級
+  // 收集某个组内所有节点的参考内容（图片/视频/音频/提示词）
   const collectGroupReferences = useCallback((nodeIds: string[]) => {
     const state = useAppStore.getState();
     const referenceImages: Array<{ id: string; name: string; url: string; type?: string; nodeId?: string }> = [];
@@ -4406,7 +4474,8 @@ function CanvasInner(_props: CanvasProps = {}) {
     if (!flowPosition && !selectedBounds) return;
     const targetX = flowPosition?.x ?? (side === 'right' ? selectedBounds!.left + selectedBounds!.width + 140 : Math.max(20, selectedBounds!.left - 300));
     const targetY = flowPosition?.y ?? (selectedBounds!.top + selectedBounds!.height / 2 - 110);
-    // 鏀堕泦鎵€鏈夋潵婧愯妭鐐圭殑鍙傝€冨唴瀹癸紙鍙傝€冨浘/鍙傝€冭棰?鍙傝€冮煶棰?鎻愮ず璇嶏級锛屼綔涓轰笅涓妭鐐圭殑鐢熸垚鍙傝€?    const { referenceImages, prompt: referencePrompt } = collectGroupReferences(sourceIds);
+    // 收集所有来源节点的参考内容（参考图/参考视频/参考音频/提示词），作为下个节点的生成参考
+    const { referenceImages, prompt: referencePrompt } = collectGroupReferences(sourceIds);
     const newId = addNode({
       type: targetType,
       provider: 'openai',
@@ -4508,8 +4577,9 @@ function CanvasInner(_props: CanvasProps = {}) {
     const targetNode = state.nodes[targetId];
     if (!sourceNode || !targetNode) return;
 
-    // 1. 鏂囨湰鍐呭浼犻€掞細鎶婃簮鑺傜偣鐨勭粨鏋滄枃鏈?prompt 鎷兼帴鍒扮洰鏍囪妭鐐?    // 鍚屾椂鎶婃簮鑺傜偣鑷韩鐨勪笂娓告彁绀鸿瘝锛坲pstreamPrompt锛変竴骞跺悜涓嬩紶閫掞紝瀹炵幇璺ㄨ妭鐐圭殑閾惧紡寮曠敤
-    // 渚嬪锛氭枃鏈妭鐐?鈫?鍥剧墖鑺傜偣 鈫?瑙嗛鑺傜偣锛岃棰戣妭鐐逛篃鑳借幏寰楁渶鍒濇枃鏈妭鐐圭殑鍐呭
+    // 1. 文本内容传递：把源节点的结果文本/prompt 拼接到目标节点
+    // 同时把源节点自身的上游提示词（upstreamPrompt）一并向下传递，实现跨节点的链式引用
+    // 例如：文本节点 → 图片节点 → 视频节点，视频节点也能获得最初文本节点的内容
     const sourceOwnText = sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || '');
     const sourceUpstreamText = typeof sourceNode.options?.upstreamPrompt === 'string' ? sourceNode.options.upstreamPrompt.trim() : '';
     const sourceText = composePromptParts(sourceUpstreamText || undefined, sourceOwnText || undefined);
@@ -4521,19 +4591,19 @@ function CanvasInner(_props: CanvasProps = {}) {
     const sourceResultUrl = sourceNode.result?.url || sourceNode.thumbnail || '';
     const sourceResultType = sourceNode.result?.type || 'image';
     const sourceIsImage = sourceResultType === 'image' && sourceHasResult;
-    // 婧愯妭鐐硅嫢宸茬敓鎴愬獟浣撶粨鏋滐紙鍥剧墖/瑙嗛/闊抽锛夛紝杩炵嚎鍙綔涓哄弬鑰冨浘/鍙傝€冪礌鏉愪紶閫掞紝涓嶅啀鎶婁笂娓告彁绀鸿瘝鑷姩鐏屽叆涓嬫父鑺傜偣
+    // 源节点若已生成媒体结果（图片/视频/音频），连线只作为参考图/参考素材传递，不再把上游提示词自动灌入下游节点
     const sourceProducedMedia = sourceHasResult && (sourceResultType === 'image' || sourceResultType === 'video' || sourceResultType === 'audio');
     const targetIsPanorama = targetNode.options?.panoramaType === '720' || targetNode.options?.outputType === 'panorama';
     const sourceIsPanorama = sourceNode.options?.panoramaType === '720' || sourceNode.options?.outputType === 'panorama';
     const targetIsDirectorStage = targetNode.type === 'director-stage';
 
-    // 鏋勫缓 update 鐨?options 閮ㄥ垎
+    // 构建 update 的 options 部分
     const newOptions: Record<string, any> = {
       ...targetNode.options,
       upstreamNodeIds: Array.from(new Set([...(targetNode.options?.upstreamNodeIds || []), sourceId])),
     };
 
-    // 鍏ㄦ櫙鍥捐妭鐐癸細鐩存帴杩炴帴鍥剧墖鍚庤嚜鍔ㄤ互璇ュ浘鐗囦负婧愮敓鎴?720掳 鍏ㄦ櫙棰勮
+    // 全景图节点：直接连接图片后自动以该图片为源生成 720° 全景预览
     if (targetIsPanorama && sourceIsImage) {
       newOptions.sourceImage = sourceResultUrl;
       newOptions.panoramaType = '720';
@@ -4545,17 +4615,17 @@ function CanvasInner(_props: CanvasProps = {}) {
       newOptions.apiCapability = 'image-to-720-panorama';
     }
 
-    // 3D 瀵兼紨鍙帮細杩炴帴鍏ㄦ櫙鍥炬椂锛岄粯璁や互鍏ㄦ櫙鍥句綔涓哄婕斿彴榛樿鍦烘櫙
+    // 3D 导演台：连接全景图时，默认以全景图作为导演台默认场景
     if (targetIsDirectorStage && sourceIsPanorama && sourceIsImage) {
       newOptions.defaultSceneType = 'panorama';
       newOptions.panoramaSceneUrl = sourceResultUrl;
       newOptions.panoramaSceneNodeId = sourceId;
     }
 
-    // 2. 鏅鸿兘鍙傝€冨浘浼犻€掞細鍥剧墖鑺傜偣 鈫?瑙嗛鑺傜偣锛岃嚜鍔ㄨ缃甯у弬鑰冨浘
+    // 2. 智能参考图传递：图片节点 → 视频节点，自动设置首帧参考图
     if (sourceHasResult && (isVideoTarget || isImageRefTarget)) {
       const existingRefs = Array.isArray(targetNode.options?.referenceImages) ? targetNode.options.referenceImages : [];
-      // 閬垮厤閲嶅娣诲姞鍚屼竴涓簮
+      // 避免重复添加同一个源
       if (!existingRefs.some((r: any) => r.nodeId === sourceId)) {
         const refKind: 'image' | 'video' | 'audio' = sourceResultType === 'video' ? 'video' : sourceResultType === 'audio' ? 'audio' : 'image';
         const newRefId = `ref-${sourceId}-${Date.now()}`;
@@ -4563,7 +4633,7 @@ function CanvasInner(_props: CanvasProps = {}) {
           ...existingRefs,
           { id: newRefId, name: sourceNode.options?.displayName || sourceGenType, url: sourceResultUrl, type: sourceResultType, kind: refKind, thumbnail: refKind === 'image' ? sourceResultUrl : undefined, nodeId: sourceId },
         ];
-        // 瑙嗛鍙傝€冿細寮傛鎶藉彇棣栧抚浣滀负缂╃暐鍥撅紝鍥炲啓鍒扮洰鏍囪妭鐐圭殑 referenceImages
+        // 视频参考：异步抽取首帧作为缩略图，回写到目标节点的 referenceImages
         if (refKind === 'video' && sourceResultUrl) {
           captureVideoFirstFrame(sourceResultUrl)
             .then(thumb => {
@@ -4578,7 +4648,7 @@ function CanvasInner(_props: CanvasProps = {}) {
                 },
               });
             })
-            .catch(() => { /* 鎶藉彇澶辫触鏃朵繚鐣欒棰戞湰韬紝video 鏍囩鍏滃簳鏄剧ず */ });
+            .catch(() => { /* 抽取失败时保留视频本身，video 标签兜底显示 */ });
         }
       }
     }
@@ -4590,11 +4660,12 @@ function CanvasInner(_props: CanvasProps = {}) {
     const updatePayload: Parameters<ReturnType<typeof useAppStore['getState']>['updateNode']>[1] = {
       options: newOptions,
     };
-    // 涓婃父鏂囨湰浠呯粡 upstreamPrompt 鍦ㄧ敓鎴愭彁浜ゆ椂鐢熸晥锛屼笉鍐嶅啓鍏ヤ笅娓歌妭鐐圭殑鍙杈撳叆妗?
-    // 鍏ㄦ櫙鍥捐妭鐐癸細杩炴帴鍥剧墖鍚庣洿鎺ョ敓鎴?720掳 鍏ㄦ櫙棰勮锛堟棤闇€杈撳叆妗嗭級
+    // 上游文本仅经 upstreamPrompt 在生成提交时生效，不再写入下游节点的可见输入框
+
+    // 全景图节点：连接图片后直接生成 720° 全景预览（无需输入框）
     if (targetIsPanorama && sourceIsImage) {
       updatePayload.status = 'loading';
-      updatePayload.prompt = '720掳鍏ㄦ櫙鍥撅細浠ヨ繛鎺ョ殑鍥剧墖涓哄満鏅富浣擄紝鐢熸垚鍙敤浜庡叏鏅瑙堢殑 equirectangular 鍏ㄦ櫙鍥撅紝宸﹀彸杈圭紭鏃犵紳琛旀帴锛?:1 妯悜姣斾緥锛屾棤榛戣竟銆?;
+      updatePayload.prompt = '720°全景图：以连接的图片为场景主体，生成可用于全景预览的 equirectangular 全景图，左右边缘无缝衔接，2:1 横向比例，无黑边。';
       state.updateNode(targetId, updatePayload);
       try { state.executeNode(targetId); } catch {}
       return;
@@ -4603,7 +4674,7 @@ function CanvasInner(_props: CanvasProps = {}) {
     state.updateNode(targetId, updatePayload);
   }, [setEdges, syncFlowNodes]);
 
-  // 鍔╂墜锛堢尗澶撮拱锛夐€氳繃浜嬩欢璇锋眰杩炴帴涓や釜鑺傜偣锛屽鐢?handleConnect 鐨勫弬鑰冨浘/鏂囨湰浼犻€掗€昏緫
+  // 助手（猫头鹰）通过事件请求连接两个节点，复用 handleConnect 的参考图/文本传递逻辑
   useEffect(() => {
     const handler = (event: Event) => {
       const detail = (event as CustomEvent<{ source?: string; target?: string }>).detail;
@@ -4616,7 +4687,9 @@ function CanvasInner(_props: CanvasProps = {}) {
     return () => window.removeEventListener('canvas:assistant-connect', handler);
   }, [handleConnect]);
 
-  // 杩炵嚎鍦ㄥ厛銆佷笂娓稿悗鐢熸垚鐨勫満鏅細褰撲笂娓歌妭鐐逛骇鍑虹粨鏋滃悗锛岃嚜鍔ㄦ妸鍏剁粨鏋滀綔涓轰笅娓歌妭鐐圭殑鍙傝€冨浘/婧愬浘琛ヨ繘鍘汇€?  // handleConnect 鍙湪鈥滆繛绾挎椂涓婃父宸叉湁缁撴灉鈥濇墠娉ㄥ叆鍙傝€冨浘锛涙澶勭敤鍝嶅簲寮忓壇浣滅敤鍏滃簳鍚庣敓鎴愮殑鎯呭喌銆?  useEffect(() => {
+  // 连线在先、上游后生成的场景：当上游节点产出结果后，自动把其结果作为下游节点的参考图/源图补进去。
+  // handleConnect 只在“连线时上游已有结果”才注入参考图；此处用响应式副作用兜底后生成的情况。
+  useEffect(() => {
     if (!edges.length) return;
     const state = useAppStore.getState();
     const videoTargets = ['text-to-video', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'live-portrait', 'video-super-resolution', 'video-interpolate'];
@@ -4632,13 +4705,14 @@ function CanvasInner(_props: CanvasProps = {}) {
       const sourceGenType = String(sourceNode.options?.generationType || sourceNode.type || '');
       const targetGenType = String(targetNode.options?.generationType || targetNode.type || '');
       const targetIsPanorama = targetNode.options?.panoramaType === '720' || targetNode.options?.outputType === 'panorama';
-      // 鍏ㄦ櫙鍥捐妭鐐规棤杈撳叆妗嗭紝鍙兘闈犺繛绾胯嚜鍔ㄧ敓鎴愶紱鑻ヨ繛绾垮湪鍏堛€佷笂娓稿悗鍑哄浘锛岃繖閲屽厹搴曡Е鍙戠敓鎴愩€?      if (targetIsPanorama && sourceType === 'image') {
+      // 全景图节点无输入框，只能靠连线自动生成；若连线在先、上游后出图，这里兜底触发生成。
+      if (targetIsPanorama && sourceType === 'image') {
         const panoAlready = targetNode.options?.sourceImage === sourceUrl && (targetNode.status === 'loading' || targetNode.status === 'processing' || !!targetNode.result?.url);
         if (panoAlready) return;
         if (targetNode.result?.url || targetNode.status === 'loading' || targetNode.status === 'processing') return;
         state.updateNode(edge.target as string, {
           status: 'loading',
-          prompt: '720掳鍏ㄦ櫙鍥撅細浠ヨ繛鎺ョ殑鍥剧墖涓哄満鏅富浣擄紝鐢熸垚鍙敤浜庡叏鏅瑙堢殑 equirectangular 鍏ㄦ櫙鍥撅紝宸﹀彸杈圭紭鏃犵紳琛旀帴锛?:1 妯悜姣斾緥锛屾棤榛戣竟銆?,
+          prompt: '720°全景图：以连接的图片为场景主体，生成可用于全景预览的 equirectangular 全景图，左右边缘无缝衔接，2:1 横向比例，无黑边。',
           options: {
             ...targetNode.options,
             sourceImage: sourceUrl,
@@ -4672,7 +4746,7 @@ function CanvasInner(_props: CanvasProps = {}) {
           upstreamNodeIds: Array.from(new Set([...(targetNode.options?.upstreamNodeIds || []), edge.source])),
         },
       });
-      // 瑙嗛鍙傝€冿細寮傛鎶藉彇棣栧抚浣滀负缂╃暐鍥撅紝鍥炲啓鍒扮洰鏍囪妭鐐圭殑 referenceImages
+      // 视频参考：异步抽取首帧作为缩略图，回写到目标节点的 referenceImages
       if (autoRefKind === 'video' && sourceUrl) {
         captureVideoFirstFrame(sourceUrl)
           .then(thumb => {
@@ -4687,7 +4761,7 @@ function CanvasInner(_props: CanvasProps = {}) {
               },
             });
           })
-          .catch(() => { /* 鎶藉彇澶辫触鏃朵繚鐣欒棰戞湰韬紝video 鏍囩鍏滃簳鏄剧ず */ });
+          .catch(() => { /* 抽取失败时保留视频本身，video 标签兜底显示 */ });
       }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -4738,7 +4812,7 @@ function CanvasInner(_props: CanvasProps = {}) {
         if (edge.source !== detail.nodeId || !edge.target || !detail.prompt?.trim()) return;
         const targetNode = state.nodes[edge.target];
         if (!targetNode) return;
-        // 涓婃父鏂囨湰鑺傜偣瀹炴椂缂栬緫鏃讹紝鍙洿鏂颁笅娓哥殑 upstreamPrompt锛堟彁浜ゆ椂鐢熸晥锛夛紝涓嶈鐩栦笅娓稿彲瑙佽緭鍏ユ
+        // 上游文本节点实时编辑时，只更新下游的 upstreamPrompt（提交时生效），不覆盖下游可见输入框
         state.updateNode(edge.target, {
           options: {
             ...targetNode.options,
@@ -4812,7 +4886,7 @@ function CanvasInner(_props: CanvasProps = {}) {
 
   const isEmpty = !storeNodes || Object.keys(storeNodes).length === 0;
 
-  // 璧勪骇閫夋嫨鍥炶皟锛氬湪鐢诲竷涓績鍒涘缓瀵瑰簲绫诲瀷鑺傜偣
+  // 资产选择回调：在画布中心创建对应类型节点
   const handleAssetSelect = useCallback((asset: { id: string; name: string; type: string; path: string; thumbnail?: string }) => {
     setShowAssetPicker(false);
     const bounds = document.querySelector('.llib-canvas-area')?.getBoundingClientRect();
@@ -4824,7 +4898,7 @@ function CanvasInner(_props: CanvasProps = {}) {
       'audio': 'audio2video',
     };
     const nodeType = nodeTypeMap[asset.type] || 'text-to-image';
-    // 浣跨敤璧勪骇璺緞浣滀负鍒濆缁撴灉锛岃妭鐐圭洿鎺ユ樉绀鸿璧勪骇
+    // 使用资产路径作为初始结果，节点直接显示该资产
     const dataUrl = asset.path.startsWith('http') ? asset.path : normalizeFileSrc(asset.path);
     addNode({
       type: nodeType,
@@ -4838,17 +4912,19 @@ function CanvasInner(_props: CanvasProps = {}) {
     });
   }, [addNode]);
 
-  // 閫夋嫨鑺傜偣绫诲瀷澶勭悊锛堝畾涔夊湪handleMenuSelect涔嬪墠閬垮厤TDZ锛?  const handleSelectNodeType = useCallback((type: AINodeType | 'upload' | 'panorama') => {
+  // 选择节点类型处理（定义在handleMenuSelect之前避免TDZ）
+  const handleSelectNodeType = useCallback((type: AINodeType | 'upload' | 'panorama') => {
     const pendingBatch = addPanelState.batchSourceIds?.length ? {
       sourceIds: addPanelState.batchSourceIds,
       flowPosition: addPanelState.flowPosition,
     } : null;
     setAddPanelState({ open: false, position: null, attached: false });
-    // 鍏ㄦ櫙鍥捐妭鐐癸細鍒涘缓閰嶇疆涓?720掳 鍏ㄦ櫙鐨勫浘鐗囪妭鐐?    if (type === 'panorama') {
+    // 全景图节点：创建配置为 720° 全景的图片节点
+    if (type === 'panorama') {
       const panoramaOptions = {
-        displayName: createNodeDisplayName('text-to-image', useAppStore.getState().nodes).replace('鍥剧墖鑺傜偣', '鍏ㄦ櫙鍥捐妭鐐?),
+        displayName: createNodeDisplayName('text-to-image', useAppStore.getState().nodes).replace('图片节点', '全景图节点'),
         generationType: 'image-to-image',
-        mediaFeature: '720掳鍏ㄦ櫙鍥?,
+        mediaFeature: '720°全景图',
         panoramaFeature: 'panorama-720',
         panoramaType: '720',
         outputType: 'panorama',
@@ -4858,7 +4934,7 @@ function CanvasInner(_props: CanvasProps = {}) {
         imageClarity: '2K',
         apiCapability: 'image-to-720-panorama',
         workflowProject: 'image-to-720-panorama',
-        // 鍏ㄦ櫙鍥捐妭鐐规棤闇€杈撳叆妗?瀛愬姛鑳斤紝鐩存帴杩炴帴鍥剧墖鍗冲彲鑷姩鐢熸垚涓夌淮鍏ㄦ櫙棰勮
+        // 全景图节点无需输入框/子功能，直接连接图片即可自动生成三维全景预览
         _autoOpen: false,
       };
       if (pendingBatch) {
@@ -4932,7 +5008,7 @@ function CanvasInner(_props: CanvasProps = {}) {
     setViewport100();
   }, [addNode, addPanelState.batchSourceIds, addPanelState.flowPosition, createBatchLinkedNode, setViewport100]);
 
-  // 下拉菜单选择节点类型（保证和双击面板行为完全一致）
+  // 下拉菜单选择节点类型（定义在handleSelectNodeType之后，避免TDZ）
   const handleMenuSelect = useCallback((itemId: string) => {
     const typeMap: Record<string, AINodeType | 'upload' | 'panorama'> = {
       'text': 'story-script',
@@ -4943,98 +5019,11 @@ function CanvasInner(_props: CanvasProps = {}) {
       'audio': 'audio2video',
       'upload': 'upload'
     };
-    const nodeType = typeMap[itemId];
-    if (!nodeType) return;
+    const nodeType = typeMap[itemId] || itemId as AINodeType;
+    handleSelectNodeType(nodeType as AINodeType | 'upload' | 'panorama');
+  }, [handleSelectNodeType]);
 
-    // 全景图节点：特殊处理
-    if (nodeType === 'panorama') {
-      const panoramaOptions = {
-        displayName: createNodeDisplayName('text-to-image', useAppStore.getState().nodes).replace('图片节点', '全景图节点'),
-        generationType: 'image-to-image',
-        mediaFeature: '720°全景图',
-        panoramaFeature: 'panorama-720',
-        panoramaType: '720',
-        outputType: 'panorama',
-        imageRatio: '2:1',
-        aspectRatio: '2:1',
-        imageQuality: 'standard',
-        imageClarity: '2K',
-        apiCapability: 'image-to-720-panorama',
-        workflowProject: 'image-to-720-panorama',
-        _autoOpen: false,
-      };
-      const b = document.querySelector('.llib-canvas-area')?.getBoundingClientRect();
-      const pos = { x: (b?.width || 800) / 2, y: (b?.height || 600) / 2 };
-      addNode({
-        type: 'text-to-image',
-        provider: 'openai',
-        x: pos.x - 140,
-        y: pos.y - 80,
-        width: 280,
-        height: 220,
-        status: 'idle',
-        prompt: '',
-        aspectRatio: '2:1',
-        options: panoramaOptions,
-      });
-      setViewport100();
-      return;
-    }
-
-    // 上传节点：特殊处理
-    if (nodeType === 'upload') {
-      const input = document.createElement('input');
-      input.type = 'file';
-      input.accept = 'image/*,video/*,audio/*';
-      input.onchange = (e) => {
-        const file = (e.target as HTMLInputElement).files?.[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = () => {
-          const dataUrl = reader.result as string;
-          const bounds = document.querySelector('.llib-canvas-area')?.getBoundingClientRect();
-          const x = (bounds?.width || 800) / 2 - 140;
-          const y = (bounds?.height || 600) / 2 - 80;
-          const isImage = file.type.startsWith('image/');
-          const isVideo = file.type.startsWith('video/');
-          const mediaType = isImage ? 'image' : isVideo ? 'video' : 'audio';
-          const actualType = isImage ? 'text-to-image' : isVideo ? 'text-to-video' : 'audio2video';
-          addNode({
-            type: actualType,
-            provider: 'openai',
-            x, y,
-            width: 280,
-            height: 220,
-            status: 'success',
-            prompt: file.name,
-            options: { displayName: createNodeDisplayName(actualType, useAppStore.getState().nodes) },
-            result: { url: dataUrl, type: mediaType },
-          });
-        };
-        reader.readAsDataURL(file);
-      };
-      input.click();
-      return;
-    }
-
-    // 普通节点类型
-    const b = document.querySelector('.llib-canvas-area')?.getBoundingClientRect();
-    const pos = { x: (b?.width || 800) / 2, y: (b?.height || 600) / 2 };
-    addNode({
-      type: nodeType as AINodeType,
-      provider: 'openai',
-      x: pos.x - 140,
-      y: pos.y - 80,
-      width: 280,
-      height: 220,
-      status: 'idle',
-      prompt: '',
-      options: { _autoOpen: true, displayName: createNodeDisplayName(nodeType as AINodeType, useAppStore.getState().nodes) },
-    });
-    setViewport100();
-  }, [addNode, setViewport100]);
-
-  // ==================== 閿洏蹇嵎閿?====================
+  // ==================== 键盘快捷键 ====================
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       const tag = (event.target as HTMLElement)?.tagName;
@@ -5136,7 +5125,8 @@ function CanvasInner(_props: CanvasProps = {}) {
     return () => window.removeEventListener('keydown', handler);
   }, [nodes, edges, setEdges, setNodes, persistCanvasSnapshot]);
 
-  // Alt+G锛氬皢閫変腑鐨勫涓妭鐐规墦缁?  useEffect(() => {
+  // Alt+G：将选中的多个节点打组
+  useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
@@ -5149,7 +5139,8 @@ function CanvasInner(_props: CanvasProps = {}) {
     return () => window.removeEventListener('keydown', handler);
   }, [groupSelectedNodes]);
 
-  // 瑙ｆ暎鏌愪釜缁?  const ungroupNodes = useCallback((groupId: string) => {
+  // 解散某个组
+  const ungroupNodes = useCallback((groupId: string) => {
     const state = useAppStore.getState();
     const group = nodeGroups.find(item => item.id === groupId);
     if (group) {
@@ -5174,9 +5165,9 @@ function CanvasInner(_props: CanvasProps = {}) {
         {referencePickTargetNodeId && (
           <div className="canvas-reference-pick-bar">
             <button type="button" onClick={() => { setReferencePickTargetNodeId(null); setReferencePickedNodeIds([]); }}>
-              <SvgIcon name="chevron-left" size={15} /> 杩斿洖
+              <SvgIcon name="chevron-left" size={15} /> 返回
             </button>
-            <span>鐐瑰嚮鐢诲竷宸叉湁鍥剧墖浣滀负鍙傝€冿紝鍙閫?/span>
+            <span>点击画布已有图片作为参考，可多选</span>
           </div>
         )}
         <div style={{ position: 'relative', zIndex: referencePickTargetNodeId ? 3 : 1, width: '100%', height: '100%' }}>
@@ -5216,7 +5207,7 @@ function CanvasInner(_props: CanvasProps = {}) {
         {isEmpty && (
           <div className="llib-empty-hint">
             <span className="llib-empty-hint-icon"><SvgIcon name="spark" size={26} /></span>
-            <span>鍙屽嚮鐢诲竷鍒涘缓鑺傜偣</span>
+            <span>双击画布创建节点</span>
           </div>
         )}
       </div>
@@ -5237,18 +5228,18 @@ function CanvasInner(_props: CanvasProps = {}) {
         >
           <div className="canvas-node-group-header">
             <span className="canvas-node-group-title">{group.label}</span>
-            <span className="canvas-node-group-count">{group.nodeIds.length} 涓弬鑰?/span>
+            <span className="canvas-node-group-count">{group.nodeIds.length} 个参考</span>
             <div className="canvas-node-group-actions">
               <button
                 className="canvas-node-group-btn"
-                title="浠ョ粍鍚堝唴瀹逛綔涓哄弬鑰冪敓鎴愪笅涓€涓妭鐐?
+                title="以组合内容作为参考生成下一个节点"
                 onMouseDown={(event) => { event.preventDefault(); event.stopPropagation(); createBatchLinkedNode(group.nodeIds, 'text-to-image'); }}
               >
                 <SvgIcon name="spark" size={13} />
               </button>
               <button
                 className="canvas-node-group-btn"
-                title="瑙ｆ暎缁勫悎"
+                title="解散组合"
                 onMouseDown={(event) => { event.preventDefault(); event.stopPropagation(); ungroupNodes(group.id); }}
               >
                 <SvgIcon name="close" size={13} />
@@ -5262,8 +5253,8 @@ function CanvasInner(_props: CanvasProps = {}) {
           className="canvas-batch-selection"
           style={{ left: selectedBounds.left, top: selectedBounds.top, width: selectedBounds.width, height: selectedBounds.height }}
         >
-          <button className="canvas-batch-plus left" onMouseDown={(event) => openBatchAddPanel(event, 'left')} title="鎷栨嫿鍒扮┖鐧藉娣诲姞骞舵壒閲忚繛绾? />
-          <button className="canvas-batch-plus right" onMouseDown={(event) => openBatchAddPanel(event, 'right')} title="鎷栨嫿鍒扮┖鐧藉娣诲姞骞舵壒閲忚繛绾? />
+          <button className="canvas-batch-plus left" onMouseDown={(event) => openBatchAddPanel(event, 'left')} title="拖拽到空白处添加并批量连线" />
+          <button className="canvas-batch-plus right" onMouseDown={(event) => openBatchAddPanel(event, 'right')} title="拖拽到空白处添加并批量连线" />
         </div>
       )}
       <AddNodePanel open={addPanelState.open} onClose={() => setAddPanelState({ open: false, position: null })} onSelect={handleSelectNodeType} position={addPanelState.position} />
@@ -5298,7 +5289,7 @@ function CanvasInner(_props: CanvasProps = {}) {
   );
 }
 
-// ==================== 鍙充晶鍙姌鍙犱晶杈规爮 ====================
+// ==================== 右侧可折叠侧边栏 ====================
 
 function CanvasSidebar({
   collapsed,
@@ -5317,25 +5308,27 @@ function CanvasSidebar({
   onNodeClick: (nodeId: string) => void;
   onAssetSelect: (asset: { id: string; name: string; type: string; path: string }) => void;
 }) {
-  // 鎬ц兘浼樺寲锛氫粎璁㈤槄鎵€闇€鍒囩墖锛岄伩鍏嶆暣浠撹闃呭鑷翠晶杈规爮鍦ㄤ换鎰忕姸鎬佸彉鍖栨椂閲嶆覆鏌?  const canvasHistory = useAppStore(state => state.canvasHistory);
+  // 性能优化：仅订阅所需切片，避免整仓订阅导致侧边栏在任意状态变化时重渲染
+  const canvasHistory = useAppStore(state => state.canvasHistory);
   const activeCanvasId = useAppStore(state => state.activeCanvasId);
   const updateCanvasName = useAppStore(state => state.updateCanvasName);
   const [editingName, setEditingName] = useState(false);
   const [nameValue, setNameValue] = useState('');
 
   const currentCanvas = canvasHistory.find((c: any) => c.id === activeCanvasId);
-  const canvasName = currentCanvas?.name || '鏈懡鍚嶇敾甯?;
+  const canvasName = currentCanvas?.name || '未命名画布';
 
-  // 璧勪骇鍒楄〃锛氬彧鏄剧ず褰撳墠鐢诲竷鑺傜偣鐢熸垚鐨勮祫浜?  const assetList = useMemo(() => {
+  // 资产列表：只显示当前画布节点生成的资产
+  const assetList = useMemo(() => {
     const canvasAssets: any[] = [];
     nodes.forEach((node) => {
       const n = (node.data as any)?.node as AINode | undefined;
       if (!n) return;
-      // 浠庤妭鐐圭殑 result/thumbnail 鎻愬彇璧勪骇
+      // 从节点的 result/thumbnail 提取资产
       if (n.result?.url) {
         canvasAssets.push({
           id: n.id + '-result',
-          name: n.prompt?.slice(0, 30) || n.type || '鐢熸垚缁撴灉',
+          name: n.prompt?.slice(0, 30) || n.type || '生成结果',
           type: n.result?.type || 'image',
           path: n.result.url,
           thumbnail: n.thumbnail || n.result.url,
@@ -5354,20 +5347,20 @@ function CanvasSidebar({
 
   return (
     <>
-      {/* 鍒囨崲鎸夐挳锛氱嫭绔嬩簬渚ц竟鏍忓鍣紝濮嬬粓鍙 */}
-      <button className={`sidebar-toggle ${collapsed ? 'collapsed' : ''}`} onClick={onToggle} title={collapsed ? '灞曞紑渚ц竟鏍? : '鏀惰捣渚ц竟鏍?}>
+      {/* 切换按钮：独立于侧边栏容器，始终可见 */}
+      <button className={`sidebar-toggle ${collapsed ? 'collapsed' : ''}`} onClick={onToggle} title={collapsed ? '展开侧边栏' : '收起侧边栏'}>
         {collapsed ? (
           <span className="toggle-arrow"><SvgIcon name="chevron-left" size={16} /></span>
         ) : (
           <span className="toggle-arrow"><SvgIcon name="chevron-right" size={16} /></span>
         )}
       </button>
-      {/* 渚ц竟鏍忛潰鏉?*/}
+      {/* 侧边栏面板 */}
       <div className={`canvas-sidebar ${collapsed ? 'collapsed' : ''}`}>
 
-      {/* 鐢诲竷鍚嶇О */}
+      {/* 画布名称 */}
       <div className="sidebar-header">
-        <img src={logoBase64} alt="鑹洪暅AI" className="sidebar-logo" />
+        <img src={logoBase64} alt="艺镜AI" className="sidebar-logo" />
         {editingName ? (
           <input
             className="sidebar-canvas-name"
@@ -5381,22 +5374,22 @@ function CanvasSidebar({
           <span
             className="sidebar-canvas-name"
             onClick={() => { setNameValue(canvasName); setEditingName(true); }}
-            title="鐐瑰嚮閲嶅懡鍚?
+            title="点击重命名"
           >{canvasName}</span>
         )}
       </div>
 
-      {/* Tab 鍒囨崲锛氳妭鐐?/ 璧勪骇 */}
+      {/* Tab 切换：节点 / 资产 */}
       <div className="sidebar-tabs">
-        <button className={`sidebar-tab ${activeTab === 'nodes' ? 'active' : ''}`} onClick={() => onTabChange('nodes')}>鑺傜偣</button>
-        <button className={`sidebar-tab ${activeTab === 'assets' ? 'active' : ''}`} onClick={() => onTabChange('assets')}>璧勪骇</button>
+        <button className={`sidebar-tab ${activeTab === 'nodes' ? 'active' : ''}`} onClick={() => onTabChange('nodes')}>节点</button>
+        <button className={`sidebar-tab ${activeTab === 'assets' ? 'active' : ''}`} onClick={() => onTabChange('assets')}>资产</button>
       </div>
 
-      {/* 閸愬懎顔愰崠?*/}
+      {/* 鍐呭鍖?*/}
       <div className="sidebar-body">
         {activeTab === 'nodes' && (
           nodes.length === 0 ? (
-            <div className="sidebar-empty">褰撳墠鐢诲竷娌℃湁鍐呭</div>
+            <div className="sidebar-empty">当前画布没有内容</div>
           ) : (
             nodes.map(node => {
               const sourceNode = (node.data as any)?.node as AINode | undefined;
@@ -5408,7 +5401,7 @@ function CanvasSidebar({
                   <div className="node-list-info">
                     <div className="node-list-name">{getNodeDisplayName(sourceNode)}</div>
                   </div>
-                  <button className="node-list-locate" onClick={(event) => { event.stopPropagation(); onNodeClick(node.id); }} title="瀹氫綅鍒拌妭鐐?>
+                  <button className="node-list-locate" onClick={(event) => { event.stopPropagation(); onNodeClick(node.id); }} title="定位到节点">
                     <SvgIcon name="chevron-right" size={14} />
                   </button>
                 </div>
@@ -5419,7 +5412,7 @@ function CanvasSidebar({
 
         {activeTab === 'assets' && (
           assetList.length === 0 ? (
-            <div className="sidebar-empty">褰撳墠娌℃湁璧勪骇</div>
+            <div className="sidebar-empty">当前没有资产</div>
           ) : (
             <div className="asset-grid">
               {assetList.map((asset: any) => (
@@ -5439,10 +5432,10 @@ function CanvasSidebar({
         )}
       </div>
 
-      {/* 搴曢儴缁熻 */}
+      {/* 底部统计 */}
       <div className="sidebar-footer">
         <span>{canvasName}</span>
-        <span>鍏?{activeTab === 'nodes' ? nodes.length : assetList.length} {activeTab === 'nodes' ? '鑺傜偣' : '椤?}</span>
+        <span>共 {activeTab === 'nodes' ? nodes.length : assetList.length} {activeTab === 'nodes' ? '节点' : '项'}</span>
       </div>
     </div>
     </>
