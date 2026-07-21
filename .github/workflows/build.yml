@@ -1,4 +1,4 @@
-ï»¿name: Build & Release
+name: Build & Release
 
 on:
   push:
@@ -93,10 +93,11 @@ jobs:
           WIN_CSC_LINK: ""
           WIN_CSC_KEY_PASSWORD: ""
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
-          # æ³¨å…¥ GitHub Token åˆ°åº”ç”¨ä¸­ç”¨äºŽç§æœ‰ä»“åº“æ›´æ–°ï¼ˆä¸ç¡¬ç¼–ç ï¼‰
+          # ×¢Èë GitHub Token µ½Ó¦ÓÃÖÐÓÃÓÚË½ÓÐ²Ö¿â¸üÐÂ£¨²»Ó²±àÂë£©
           GITHUB_UPDATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
+          export CSC_IDENTITY_AUTO_DISCOVERY=false
           npm run pack:win
           ls -la release/win-unpacked || true
         shell: bash
@@ -156,9 +157,9 @@ jobs:
         run: |
           cd dist-release
           VERSION="${GITHUB_REF#refs/tags/v}"
-          echo "### v$VERSION å‘å¸ƒè¯´æ˜Ž" > release-body.txt
+          echo "### v$VERSION ·¢²¼ËµÃ÷" > release-body.txt
           echo "" >> release-body.txt
-          echo "**SHA256 æ ¡éªŒå’Œ**" >> release-body.txt
+          echo "**SHA256 Ð£ÑéºÍ**" >> release-body.txt
           echo "" >> release-body.txt
           echo '```text' >> release-body.txt
           find . -type f \( -name "*.exe" -o -name "*.dmg" \) | sort | while read -r f; do
@@ -168,11 +169,11 @@ jobs:
           done
           echo '```' >> release-body.txt
           echo "" >> release-body.txt
-          echo "**æ›´æ–°è¯´æ˜Ž**" >> release-body.txt
-          echo "- æ”¯æŒ SHA256 æ ¡éªŒï¼Œç¡®ä¿ä¸‹è½½æ–‡ä»¶å®Œæ•´æ€§" >> release-body.txt
-          echo "- ä¸‹è½½å®ŒæˆåŽè‡ªåŠ¨å¯åŠ¨å®‰è£…ç¨‹åº" >> release-body.txt
-          echo "- è‡ªåŠ¨è¯†åˆ«æ—§ç‰ˆæœ¬å®‰è£…è·¯å¾„å¹¶è¦†ç›–å®‰è£…" >> release-body.txt
-          echo "- å®‰è£…å‰è‡ªåŠ¨å…³é—­æ­£åœ¨è¿è¡Œçš„æ—§ç‰ˆæœ¬" >> release-body.txt
+          echo "**¸üÐÂËµÃ÷**" >> release-body.txt
+          echo "- Ö§³Ö SHA256 Ð£Ñé£¬È·±£ÏÂÔØÎÄ¼þÍêÕûÐÔ" >> release-body.txt
+          echo "- ÏÂÔØÍê³Éºó×Ô¶¯Æô¶¯°²×°³ÌÐò" >> release-body.txt
+          echo "- ×Ô¶¯Ê¶±ð¾É°æ±¾°²×°Â·¾¶²¢¸²¸Ç°²×°" >> release-body.txt
+          echo "- °²×°Ç°×Ô¶¯¹Ø±ÕÕýÔÚÔËÐÐµÄ¾É°æ±¾" >> release-body.txt
           cat release-body.txt
           cp release-body.txt ${{ github.workspace }}/
 
