@@ -1,4 +1,4 @@
-name: Build & Release
+﻿name: Build & Release
 
 on:
   push:
@@ -10,11 +10,7 @@ jobs:
   build-mac:
     runs-on: macos-latest
     env:
-#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # 镜像URL模板有问题，使用官方源
-#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # 镜像URL模板有问题，使用官方源
-#       ELECTRON_CUSTOM_DIR: "{{ version }}" # 镜像URL模板有问题，使用官方源
-#       ELECTRON_CUSTOM_BUILD: "" # 镜像URL模板有问题，使用官方源
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_DIR: "{{ version }}" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_BUILD: "" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -64,11 +60,7 @@ jobs:
   build-win:
     runs-on: windows-latest
     env:
-#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # 镜像URL模板有问题，使用官方源
-#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # 镜像URL模板有问题，使用官方源
-#       ELECTRON_CUSTOM_DIR: "{{ version }}" # 镜像URL模板有问题，使用官方源
-#       ELECTRON_CUSTOM_BUILD: "" # 镜像URL模板有问题，使用官方源
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_DIR: "{{ version }}" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_BUILD: "" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -93,8 +85,7 @@ jobs:
           WIN_CSC_LINK: ""
           WIN_CSC_KEY_PASSWORD: ""
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
-          # ע�� GitHub Token ��Ӧ��������˽�вֿ���£���Ӳ���룩
-          GITHUB_UPDATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Inject GitHub token for private repo updates
         run: |
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
           export CSC_IDENTITY_AUTO_DISCOVERY=false
@@ -157,9 +148,9 @@ jobs:
         run: |
           cd dist-release
           VERSION="${GITHUB_REF#refs/tags/v}"
-          echo "### v$VERSION ����˵��" > release-body.txt
+          echo "### v$VERSION Release Notes" > release-body.txt
           echo "" >> release-body.txt
-          echo "**SHA256 У���**" >> release-body.txt
+          echo "**SHA256 Checksums**" >> release-body.txt
           echo "" >> release-body.txt
           echo '```text' >> release-body.txt
           find . -type f \( -name "*.exe" -o -name "*.dmg" \) | sort | while read -r f; do
@@ -169,11 +160,11 @@ jobs:
           done
           echo '```' >> release-body.txt
           echo "" >> release-body.txt
-          echo "**����˵��**" >> release-body.txt
-          echo "- ֧�� SHA256 У�飬ȷ�������ļ�������" >> release-body.txt
-          echo "- ������ɺ��Զ�������װ����" >> release-body.txt
-          echo "- �Զ�ʶ��ɰ汾��װ·�������ǰ�װ" >> release-body.txt
-          echo "- ��װǰ�Զ��ر��������еľɰ汾" >> release-body.txt
+          echo "**Release Highlights**" >> release-body.txt
+          echo "- SHA256 checksum verification for file integrity" >> release-body.txt
+          echo "- Auto-launch installer after download completes" >> release-body.txt
+          echo "- Smart detection of previous installation paths" >> release-body.txt
+          echo "- Auto-close running instances before installation" >> release-body.txt
           cat release-body.txt
           cp release-body.txt ${{ github.workspace }}/
 
