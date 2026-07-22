@@ -10,10 +10,10 @@ jobs:
   build-mac:
     runs-on: macos-latest
     env:
-      ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
-      ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
-      ELECTRON_CUSTOM_DIR: "{{ version }}"
-      ELECTRON_CUSTOM_BUILD: ""
+#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
+#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
+#       ELECTRON_CUSTOM_DIR: "{{ version }}" # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
+#       ELECTRON_CUSTOM_BUILD: "" # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
@@ -64,10 +64,10 @@ jobs:
   build-win:
     runs-on: windows-latest
     env:
-      ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
-      ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
-      ELECTRON_CUSTOM_DIR: "{{ version }}"
-      ELECTRON_CUSTOM_BUILD: ""
+#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
+#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
+#       ELECTRON_CUSTOM_DIR: "{{ version }}" # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
+#       ELECTRON_CUSTOM_BUILD: "" # é•œåƒURLæ¨¡æ¿æœ‰é—®é¢˜ï¼Œä½¿ç”¨å®˜æ–¹æº
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
@@ -93,7 +93,7 @@ jobs:
           WIN_CSC_LINK: ""
           WIN_CSC_KEY_PASSWORD: ""
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
-          # ×¢Èë GitHub Token µ½Ó¦ÓÃÖÐÓÃÓÚË½ÓÐ²Ö¿â¸üÐÂ£¨²»Ó²±àÂë£©
+          # ×¢ï¿½ï¿½ GitHub Token ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½Ð²Ö¿ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ë£©
           GITHUB_UPDATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
@@ -157,9 +157,9 @@ jobs:
         run: |
           cd dist-release
           VERSION="${GITHUB_REF#refs/tags/v}"
-          echo "### v$VERSION ·¢²¼ËµÃ÷" > release-body.txt
+          echo "### v$VERSION ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½" > release-body.txt
           echo "" >> release-body.txt
-          echo "**SHA256 Ð£ÑéºÍ**" >> release-body.txt
+          echo "**SHA256 Ð£ï¿½ï¿½ï¿½**" >> release-body.txt
           echo "" >> release-body.txt
           echo '```text' >> release-body.txt
           find . -type f \( -name "*.exe" -o -name "*.dmg" \) | sort | while read -r f; do
@@ -169,11 +169,11 @@ jobs:
           done
           echo '```' >> release-body.txt
           echo "" >> release-body.txt
-          echo "**¸üÐÂËµÃ÷**" >> release-body.txt
-          echo "- Ö§³Ö SHA256 Ð£Ñé£¬È·±£ÏÂÔØÎÄ¼þÍêÕûÐÔ" >> release-body.txt
-          echo "- ÏÂÔØÍê³Éºó×Ô¶¯Æô¶¯°²×°³ÌÐò" >> release-body.txt
-          echo "- ×Ô¶¯Ê¶±ð¾É°æ±¾°²×°Â·¾¶²¢¸²¸Ç°²×°" >> release-body.txt
-          echo "- °²×°Ç°×Ô¶¯¹Ø±ÕÕýÔÚÔËÐÐµÄ¾É°æ±¾" >> release-body.txt
+          echo "**ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½**" >> release-body.txt
+          echo "- Ö§ï¿½ï¿½ SHA256 Ð£ï¿½é£¬È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" >> release-body.txt
+          echo "- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éºï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½" >> release-body.txt
+          echo "- ï¿½Ô¶ï¿½Ê¶ï¿½ï¿½É°æ±¾ï¿½ï¿½×°Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½×°" >> release-body.txt
+          echo "- ï¿½ï¿½×°Ç°ï¿½Ô¶ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¾É°æ±¾" >> release-body.txt
           cat release-body.txt
           cp release-body.txt ${{ github.workspace }}/
 
