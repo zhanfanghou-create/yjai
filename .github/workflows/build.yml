@@ -34,7 +34,8 @@ jobs:
           APPLE_APP_SPECIFIC_PASSWORD_SECRET: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
           APPLE_TEAM_ID_SECRET: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-          set -e
+
+          set +e
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
           unset APPLE_ID APPLE_APP_SPECIFIC_PASSWORD APPLE_TEAM_ID || true
           if [ -n "$CSC_LINK_SECRET" ]; then
@@ -46,7 +47,50 @@ jobs:
           else
             export CSC_IDENTITY_AUTO_DISCOVERY=false
           fi
-          npm run dist:mac
+          
+          # 修复 macOS hdiutil Resource busy 问题
+          echo "🔧 禁用 Spotlight 索引..."
+          sudo mdutil -a -i off 2>/dev/null || true
+          
+          echo "🔧 杀死可能占用磁盘镜像的进程..."
+          killall -9 Finder 2>/dev/null || true
+          killall -9 DiskImages2 2>/dev/null || true
+          killall -9 diskimagesiod 2>/dev/null || true
+          
+          # 增加系统延迟
+          sleep 3
+          
+          # 尝试构建，失败时重试最多 3 次
+          MAX_RETRIES=3
+          RETRY_DELAY=10
+          
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo ""
+            echo "========================================"
+            echo "📦 尝试第 $i / $MAX_RETRIES 次 macOS DMG 构建..."
+            echo "========================================"
+            echo ""
+            npm run dist:mac
+            EXIT_CODE=$?
+            
+            if [ $EXIT_CODE -eq 0 ]; then
+              echo ""
+              echo "✅ macOS DMG 构建成功！"
+              sleep 5
+              exit 0
+            fi
+            
+            if [ $i -lt $MAX_RETRIES ]; then
+              echo ""
+              echo "⚠️  第 $i 次构建失败 (退出码: $EXIT_CODE)，$RETRY_DELAY 秒后重试..."
+              hdiutil info | grep /dev/disk | grep -E ".dmg|Electron" | awk '{print $1}' | xargs -I {} hdiutil detach -force {} 2>/dev/null || true
+              sleep $RETRY_DELAY
+            else
+              echo ""
+              echo "❌ $MAX_RETRIES 次尝试均失败，退出"
+              exit $EXIT_CODE
+            fi
+          done
         shell: bash
       - uses: actions/upload-artifact@v4
         with:
