@@ -1,4 +1,4 @@
-﻿name: Build & Release
+name: Build & Release
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
   build-mac:
     runs-on: macos-latest
     env:
-#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_DIR: "{{ version }}" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_BUILD: "" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -34,7 +34,6 @@ jobs:
           APPLE_APP_SPECIFIC_PASSWORD_SECRET: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
           APPLE_TEAM_ID_SECRET: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-
           set +e
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
           unset APPLE_ID APPLE_APP_SPECIFIC_PASSWORD APPLE_TEAM_ID || true
@@ -48,7 +47,6 @@ jobs:
             export CSC_IDENTITY_AUTO_DISCOVERY=false
           fi
           
-          # 修复 macOS hdiutil Resource busy 问题
           echo "🔧 禁用 Spotlight 索引..."
           sudo mdutil -a -i off 2>/dev/null || true
           
@@ -57,10 +55,8 @@ jobs:
           killall -9 DiskImages2 2>/dev/null || true
           killall -9 diskimagesiod 2>/dev/null || true
           
-          # 增加系统延迟
           sleep 3
           
-          # 尝试构建，失败时重试最多 3 次
           MAX_RETRIES=3
           RETRY_DELAY=10
           
@@ -83,7 +79,6 @@ jobs:
             if [ $i -lt $MAX_RETRIES ]; then
               echo ""
               echo "⚠️  第 $i 次构建失败 (退出码: $EXIT_CODE)，$RETRY_DELAY 秒后重试..."
-              # 清理失败时跳过
               sleep $RETRY_DELAY
             else
               echo ""
@@ -104,7 +99,7 @@ jobs:
   build-win:
     runs-on: windows-latest
     env:
-#       ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/ # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_DIR: "{{ version }}" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?#       ELECTRON_CUSTOM_BUILD: "" # 闀滃儚URL妯℃澘鏈夐棶棰橈紝浣跨敤瀹樻柟婧?      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -112,7 +107,6 @@ jobs:
           node-version: "20"
           cache: "npm"
 
-      # ---- Main App (unpacked) ----
       - name: Install main app deps
         run: npm ci --no-audit --no-fund --registry=https://registry.npmmirror.com
         shell: bash
@@ -129,7 +123,6 @@ jobs:
           WIN_CSC_LINK: ""
           WIN_CSC_KEY_PASSWORD: ""
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
-          # Inject GitHub token for private repo updates
         run: |
           unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
           export CSC_IDENTITY_AUTO_DISCOVERY=false
@@ -137,12 +130,11 @@ jobs:
           ls -la release/win-unpacked || true
         shell: bash
 
-      # ---- Installer UI (custom graphical portable installer) ----
       - name: Install installer-ui deps
         working-directory: installer-ui
         run: npm install --no-audit --no-fund --registry=https://registry.npmmirror.com
         shell: bash
-      - name: Pack main app into installer payload (app.7z + 7za)
+      - name: Pack main app into installer payload
         working-directory: installer-ui
         run: node scripts/pack-payload.mjs "$GITHUB_WORKSPACE/release/win-unpacked"
         shell: bash
@@ -182,7 +174,7 @@ jobs:
           name: yijing-ai-win
           path: dist-release/win
 
-      - name: Download Mac packages (x64 + arm64)
+      - name: Download Mac packages
         uses: actions/download-artifact@v4
         with:
           name: yijing-ai-mac
@@ -205,17 +197,15 @@ jobs:
           echo '```' >> release-body.txt
           echo "" >> release-body.txt
           echo "**Release Highlights**" >> release-body.txt
-          echo "- SHA256 checksum verification for file integrity" >> release-body.txt
-          echo "- Auto-launch installer after download completes" >> release-body.txt
-          echo "- Smart detection of previous installation paths" >> release-body.txt
-          echo "- Auto-close running instances before installation" >> release-body.txt
+          echo "- Custom installer UI with modern design" >> release-body.txt
+          echo "- Auto-launch after installation" >> release-body.txt
+          echo "- Smart previous version detection" >> release-body.txt
           cat release-body.txt
-          cp release-body.txt ${{ github.workspace }}/
 
       - name: Publish Release
         uses: softprops/action-gh-release@v2
         with:
-          body_path: release-body.txt
+          body_path: dist-release/release-body.txt
           files: |
             dist-release/win/*.exe
             dist-release/mac/*.dmg
