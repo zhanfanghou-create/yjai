@@ -83,7 +83,7 @@ jobs:
             if [ $i -lt $MAX_RETRIES ]; then
               echo ""
               echo "⚠️  第 $i 次构建失败 (退出码: $EXIT_CODE)，$RETRY_DELAY 秒后重试..."
-              hdiutil info | grep /dev/disk | grep -E ".dmg|Electron" | awk '{print $1}' | xargs -I {} hdiutil detach -force {} 2>/dev/null || true
+              # 清理失败时跳过
               sleep $RETRY_DELAY
             else
               echo ""
