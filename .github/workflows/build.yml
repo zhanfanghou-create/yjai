@@ -47,10 +47,10 @@ jobs:
             export CSC_IDENTITY_AUTO_DISCOVERY=false
           fi
           
-          echo "馃敡 绂佺敤 Spotlight 绱㈠紩..."
+          echo "🔧 禁用 Spotlight 索引..."
           sudo mdutil -a -i off 2>/dev/null || true
           
-          echo "馃敡 鏉€姝诲彲鑳藉崰鐢ㄧ鐩橀暅鍍忕殑杩涚▼..."
+          echo "🔧 杀死可能占用磁盘镜像的进程..."
           killall -9 Finder 2>/dev/null || true
           killall -9 DiskImages2 2>/dev/null || true
           killall -9 diskimagesiod 2>/dev/null || true
@@ -63,7 +63,7 @@ jobs:
           for i in $(seq 1 $MAX_RETRIES); do
             echo ""
             echo "========================================"
-            echo "馃摝 灏濊瘯绗?$i / $MAX_RETRIES 娆?macOS DMG 鏋勫缓..."
+            echo "📦 尝试第 $i / $MAX_RETRIES 次 macOS DMG 构建..."
             echo "========================================"
             echo ""
             npm run dist:mac
@@ -71,27 +71,35 @@ jobs:
             
             if [ $EXIT_CODE -eq 0 ]; then
               echo ""
-              echo "鉁?macOS DMG 鏋勫缓鎴愬姛锛?
+              echo "✅ macOS DMG 构建成功！"
               sleep 5
               exit 0
             fi
             
             if [ $i -lt $MAX_RETRIES ]; then
               echo ""
-              echo "鈿狅笍  绗?$i 娆℃瀯寤哄け璐?(閫€鍑虹爜: $EXIT_CODE)锛?RETRY_DELAY 绉掑悗閲嶈瘯..."
+              echo "⚠️  第 $i 次构建失败 (退出码: $EXIT_CODE)，$RETRY_DELAY 秒后重试..."
               sleep $RETRY_DELAY
             else
               echo ""
-              echo "鉂?$MAX_RETRIES 娆″皾璇曞潎澶辫触锛岄€€鍑?
+              echo "❌ $MAX_RETRIES 次尝试均失败，退出"
               exit $EXIT_CODE
             fi
           done
+        shell: bash
+      - name: 🔍 Debug - 列出 macOS 生成文件
+        run: |
+          echo "=== release 目录 ==="
+          ls -la release/ || true
+          echo ""
+          echo "=== release 目录下所有 dmg ==="
+          find release -name "*.dmg" -type f || true
         shell: bash
       - uses: actions/upload-artifact@v4
         with:
           name: yijing-ai-mac
           path: |
-            release/*.dmg
+            release/**/*.dmg
             release/*.dmg.blockmap
             release/latest-mac.yml
           if-no-files-found: warn
@@ -151,16 +159,25 @@ jobs:
           npm run dist:win
           ls -la dist-installer || true
         shell: bash
+      - name: 🔍 Debug - 列出 Windows 生成文件
+        run: |
+          echo "=== installer-ui/dist-installer 目录 ==="
+          ls -la installer-ui/dist-installer/ || true
+          echo ""
+          echo "=== 所有 exe 文件 ==="
+          find installer-ui/dist-installer -name "*.exe" -type f || true
+        shell: bash
       - uses: actions/upload-artifact@v4
         with:
           name: yijing-ai-win
           path: |
+            installer-ui/dist-installer/**/*.exe
             installer-ui/dist-installer/*.exe
           if-no-files-found: error
 
   release:
     needs: [build-mac, build-win]
-    # 允许手动触发和 tag 触发 # if: startsWith(github.ref, 'refs/tags/')
+    # if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -180,35 +197,43 @@ jobs:
           name: yijing-ai-mac
           path: dist-release/mac
 
+      - name: 🔍 Debug - 列出下载的发布文件
+        run: |
+          echo "=== 发布文件目录结构 ==="
+          find dist-release -type f
+        shell: bash
+
       - name: Calculate SHA256 checksums
         run: |
           cd dist-release
-          VERSION="${GITHUB_REF#refs/tags/v}"
+          VERSION="1.1.9"
           echo "### v$VERSION Release Notes" > release-body.txt
           echo "" >> release-body.txt
           echo "**SHA256 Checksums**" >> release-body.txt
           echo "" >> release-body.txt
-          echo '```text' >> release-body.txt
+          echo '\`\`\`text' >> release-body.txt
           find . -type f \( -name "*.exe" -o -name "*.dmg" \) | sort | while read -r f; do
             name=$(basename "$f")
             hash=$(sha256sum "$f" | awk '{print $1}')
             echo "SHA256 ($name) = $hash" >> release-body.txt
           done
-          echo '```' >> release-body.txt
+          echo '\`\`\`' >> release-body.txt
           echo "" >> release-body.txt
           echo "**Release Highlights**" >> release-body.txt
-          echo "- Custom installer UI with modern design" >> release-body.txt
-          echo "- Auto-launch after installation" >> release-body.txt
-          echo "- Smart previous version detection" >> release-body.txt
+          echo "- ✅ Windows 自定义安装界面" >> release-body.txt
+          echo "- ✅ macOS DMG 安装包" >> release-body.txt
+          echo "- ✅ 智能重试机制确保打包成功" >> release-body.txt
           cat release-body.txt
+          cp release-body.txt ${{ github.workspace }}/
 
       - name: Publish Release
         uses: softprops/action-gh-release@v2
         with:
-          body_path: dist-release/release-body.txt
+          tag_name: v1.1.9
+          name: v1.1.9
+          body_path: release-body.txt
           files: |
-            dist-release/win/*.exe
-            dist-release/mac/*.dmg
+            dist-release/**/*.exe
+            dist-release/**/*.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
