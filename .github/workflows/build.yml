@@ -171,8 +171,7 @@ jobs:
         with:
           name: yijing-ai-win
           path: |
-            installer-ui/dist-installer/**/*.exe
-            installer-ui/dist-installer/*.exe
+            installer-ui/dist-installer/yijing-ai-*.exe
           if-no-files-found: error
 
   release:
@@ -233,7 +232,7 @@ jobs:
           name: v1.1.9
           body_path: release-body.txt
           files: |
-            dist-release/**/*.exe
-            dist-release/**/*.dmg
+            dist-release/win/yijing-ai-*.exe
+            dist-release/mac/*.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

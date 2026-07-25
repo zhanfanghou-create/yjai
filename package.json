@@ -129,7 +129,7 @@
       "include": "build/installer.nsh"
     },
     "dmg": {
-      "artifactName": "艺镜AI-正式版-${version}-${arch}.${ext}"
+      "artifactName": "yijing-ai-${version}-mac-${arch}.${ext}"
     }
   }
 }
