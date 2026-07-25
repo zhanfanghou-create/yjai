@@ -1,9 +1,9 @@
-﻿{
+{
   "name": "yijing-ai-installer",
-  "productName": "鑹洪暅AI-姝ｅ紡鐗?,
+  "productName": "艺镜AI-正式版",
   "private": true,
   "version": "1.1.9",
-  "description": "鑹洪暅AI-姝ｅ紡鐗?鍥惧舰瀹夎寮曞鍣?,
+  "description": "艺镜AI-正式版 图形安装引导器",
   "main": "dist-electron/main.js",
   "scripts": {
     "dev:renderer": "vite",
@@ -36,4 +36,3 @@
     "vite": "^5.3.4"
   }
 }
-
