@@ -29,7 +29,6 @@ jobs:
             artifact_glob: installer-ui/dist-installer/*-arm64.dmg
     runs-on: ${{ matrix.os }}
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ELECTRON_BUILDER_DOWNLOAD_MAX_ATTEMPTS: '8'
       ELECTRON_BUILDER_DOWNLOAD_RETRY_DELAY: '5000'
       ELECTRON_BUILDER_DOWNLOADER_PARTS: '1'
@@ -56,7 +55,7 @@ jobs:
         if: matrix.platform == 'win'
         shell: bash
         run: |
-          unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
+          unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
           npx electron-builder --dir --win --x64 --publish never
 
       - name: Build unpacked macOS payload
@@ -98,7 +97,7 @@ jobs:
         working-directory: installer-ui
         shell: bash
         run: |
-          unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
+          unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
           npm run build
           for attempt in 1 2 3; do
             if [ "${{ matrix.platform }}" = "win" ]; then
