@@ -34,6 +34,7 @@ portable:
   artifactName: YijingAI-Installer-Windows-x64.${ext}
 mac:
   category: public.app-category.graphics-design
+  identity: null
   target:
     - target: dmg
       arch:

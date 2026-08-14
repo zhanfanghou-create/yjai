@@ -100,11 +100,15 @@ jobs:
         run: |
           unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
           npm run build
-          if [ "${{ matrix.platform }}" = "win" ]; then
-            npx electron-builder --win --x64 -c electron-builder.yml --publish never
-          else
-            npx electron-builder --mac --${{ matrix.arch }} -c electron-builder.yml --publish never
-          fi
+          for attempt in 1 2 3; do
+            if [ "${{ matrix.platform }}" = "win" ]; then
+              npx electron-builder --win --x64 -c electron-builder.yml --publish never && break
+            else
+              npx electron-builder --mac --${{ matrix.arch }} -c electron-builder.yml --publish never && break
+            fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 15
+          done
 
       - name: Publish custom installer to GitHub Release
         uses: softprops/action-gh-release@v2
