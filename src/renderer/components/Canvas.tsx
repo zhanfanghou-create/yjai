@@ -2687,7 +2687,7 @@ function WorkflowNode({ id, data, selected }: any) {
           githubProject: featureId === 'reference' ? 'PanFusion / SD-T2I-360PanoImage' : undefined,
           workflowProject: featureId === 'reference' ? 'image-to-720-panorama' : 'image-reference',
           autoOpenInput: true,
-          upstreamPrompt: node.result?.type === 'text' && node.result.text?.trim() ? node.result.text : (node.prompt || ''),
+          upstreamPrompt: undefined,
           upstreamNodeIds: [node.id],
         },
         aspectRatio: featureId === 'reference' ? '2:1' : undefined,
@@ -2721,7 +2721,7 @@ function WorkflowNode({ id, data, selected }: any) {
         gridSplit: featureId === 'split' ? option || node.options?.gridSplit || '3x3' : node.options?.gridSplit,
         imageRatio: featureId === 'split' ? 'auto' : node.options?.imageRatio || 'auto',
         autoOpenInput: true,
-        upstreamPrompt: node.result?.type === 'text' && node.result.text?.trim() ? node.result.text : (node.prompt || ''),
+        upstreamPrompt: undefined,
         upstreamNodeIds: [node.id],
       },
     });
@@ -2779,7 +2779,7 @@ function WorkflowNode({ id, data, selected }: any) {
         imageClarity: node.options?.imageClarity || '2K',
         imageRatio: node.options?.imageRatio || 'auto',
         autoOpenInput: true,
-        upstreamPrompt: node.result?.type === 'text' && node.result.text?.trim() ? node.result.text : (node.prompt || ''),
+        upstreamPrompt: undefined,
         upstreamNodeIds: [node.id],
         ...options,
       },
@@ -4286,7 +4286,9 @@ function CanvasInner(_props: CanvasProps = {}) {
       options: {
         displayName: createNodeDisplayName(targetType, state.nodes),
         generationType: targetType,
-        upstreamPrompt: (sourceNode.result?.url || sourceNode.thumbnail) && sourceNode.result?.type !== 'text' ? undefined : (sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || '')),
+        upstreamPrompt: TEXT_NODE_TYPES.includes(sourceNode.type)
+          ? (sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || ''))
+          : undefined,
         upstreamNodeIds: [sourceId],
         ...overrides.options,
       },
@@ -4577,12 +4579,15 @@ function CanvasInner(_props: CanvasProps = {}) {
     const targetNode = state.nodes[targetId];
     if (!sourceNode || !targetNode) return;
 
-    // 1. 文本内容传递：把源节点的结果文本/prompt 拼接到目标节点
-    // 同时把源节点自身的上游提示词（upstreamPrompt）一并向下传递，实现跨节点的链式引用
-    // 例如：文本节点 → 图片节点 → 视频节点，视频节点也能获得最初文本节点的内容
-    const sourceOwnText = sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || '');
-    const sourceUpstreamText = typeof sourceNode.options?.upstreamPrompt === 'string' ? sourceNode.options.upstreamPrompt.trim() : '';
-    const sourceText = composePromptParts(sourceUpstreamText || undefined, sourceOwnText || undefined);
+    // 只有文本节点可以把内容传给下游；图片、视频、音频等节点只传递其结果素材。
+    const sourceIsTextNode = TEXT_NODE_TYPES.includes(sourceNode.type);
+    const sourceOwnText = sourceIsTextNode
+      ? (sourceNode.result?.type === 'text' && sourceNode.result.text?.trim() ? sourceNode.result.text : (sourceNode.prompt || ''))
+      : '';
+    const sourceUpstreamText = sourceIsTextNode && typeof sourceNode.options?.upstreamPrompt === 'string'
+      ? sourceNode.options.upstreamPrompt.trim()
+      : '';
+    const sourceText = sourceIsTextNode ? composePromptParts(sourceUpstreamText || undefined, sourceOwnText || undefined) : '';
     const targetGenType = String(targetNode.options?.generationType || targetNode.type || '');
     const sourceGenType = String(sourceNode.options?.generationType || sourceNode.type || '');
     const isVideoTarget = ['text-to-video', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'live-portrait', 'video-super-resolution', 'video-interpolate'].includes(targetGenType);
@@ -4653,7 +4658,7 @@ function CanvasInner(_props: CanvasProps = {}) {
       }
     }
 
-    if (sourceText && !sourceProducedMedia) {
+    if (sourceIsTextNode && sourceText) {
       newOptions.upstreamPrompt = composePromptParts(targetNode.options?.upstreamPrompt, sourceText);
     }
 
@@ -4810,8 +4815,9 @@ function CanvasInner(_props: CanvasProps = {}) {
       const state = useAppStore.getState();
       edges.forEach(edge => {
         if (edge.source !== detail.nodeId || !edge.target || !detail.prompt?.trim()) return;
+        const sourceNode = state.nodes[detail.nodeId];
         const targetNode = state.nodes[edge.target];
-        if (!targetNode) return;
+        if (!sourceNode || !targetNode || !TEXT_NODE_TYPES.includes(sourceNode.type)) return;
         // 上游文本节点实时编辑时，只更新下游的 upstreamPrompt（提交时生效），不覆盖下游可见输入框
         state.updateNode(edge.target, {
           options: {

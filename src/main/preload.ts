@@ -65,7 +65,8 @@ contextBridge.exposeInMainWorld('yijingAPI', {
     version: process.env.npm_package_version,
     openPath: (p: string) => ipcRenderer.invoke('system:openPath', p),
     checkUpdate: () => ipcRenderer.invoke('system:checkUpdate'),
-        downloadUpdate: () => ipcRenderer.invoke('system:downloadUpdate'),
+    downloadUpdate: () => ipcRenderer.invoke('system:downloadUpdate'),
+    installUpdate: (installerPath: string) => ipcRenderer.invoke('system:installUpdate', installerPath),
     onUpdateProgress: (cb: (data: any) => void) => {
       const handler = (_ev: any, data: any) => cb(data);
       ipcRenderer.on('system:updateProgress', handler);

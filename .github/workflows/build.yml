@@ -1,238 +1,136 @@
-name: Build & Release
+name: Build Custom Installer Release
 
 on:
   push:
     tags:
-      - "v*.*.*"
+      - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  build-mac:
-    runs-on: macos-latest
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: win
+            arch: x64
+            artifact_glob: installer-ui/dist-installer/*.exe
+          - os: macos-14
+            platform: mac
+            arch: x64
+            artifact_glob: installer-ui/dist-installer/*-x64.dmg
+          - os: macos-14
+            platform: mac
+            arch: arm64
+            artifact_glob: installer-ui/dist-installer/*-arm64.dmg
+    runs-on: ${{ matrix.os }}
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ELECTRON_BUILDER_DOWNLOAD_MAX_ATTEMPTS: '8'
+      ELECTRON_BUILDER_DOWNLOAD_RETRY_DELAY: '5000'
+      ELECTRON_BUILDER_DOWNLOADER_PARTS: '1'
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
-      - name: Install deps
-        run: npm ci --no-audit --no-fund --registry=https://registry.npmmirror.com
+          node-version: '22'
+          cache: npm
+
+      - name: Install main application dependencies
         shell: bash
-      - name: Force clean tsc incremental cache
-        run: rm -rf dist tsconfig.main.tsbuildinfo tsconfig.renderer.tsbuildinfo
+        run: npm ci --no-audit --no-fund
+
+      - name: Build main application
         shell: bash
-      - name: Build renderer + main
-        run: npm run build
-        shell: bash
-      - name: Package (mac DMG)
-        env:
-          CSC_LINK_SECRET: ${{ secrets.CSC_LINK }}
-          CSC_KEY_PASSWORD_SECRET: ${{ secrets.CSC_KEY_PASSWORD }}
-          APPLE_ID_SECRET: ${{ secrets.APPLE_ID }}
-          APPLE_APP_SPECIFIC_PASSWORD_SECRET: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
-          APPLE_TEAM_ID_SECRET: ${{ secrets.APPLE_TEAM_ID }}
         run: |
-          set +e
-          unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
-          unset APPLE_ID APPLE_APP_SPECIFIC_PASSWORD APPLE_TEAM_ID || true
-          if [ -n "$CSC_LINK_SECRET" ]; then
-            export CSC_LINK="$CSC_LINK_SECRET"
-            export CSC_KEY_PASSWORD="$CSC_KEY_PASSWORD_SECRET"
-            [ -n "$APPLE_ID_SECRET" ] && export APPLE_ID="$APPLE_ID_SECRET"
-            [ -n "$APPLE_APP_SPECIFIC_PASSWORD_SECRET" ] && export APPLE_APP_SPECIFIC_PASSWORD="$APPLE_APP_SPECIFIC_PASSWORD_SECRET"
-            [ -n "$APPLE_TEAM_ID_SECRET" ] && export APPLE_TEAM_ID="$APPLE_TEAM_ID_SECRET"
+          npm run build:renderer
+          npx tsc -p tsconfig.main.json
+
+      - name: Build unpacked Windows payload
+        if: matrix.platform == 'win'
+        shell: bash
+        run: |
+          unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
+          npx electron-builder --dir --win --x64 --publish never
+
+      - name: Build unpacked macOS payload
+        if: matrix.platform == 'mac'
+        shell: bash
+        run: |
+          unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
+          npx electron-builder --dir --mac --${{ matrix.arch }} --publish never
+
+      - name: Install installer dependencies
+        working-directory: installer-ui
+        shell: bash
+        run: npm ci --no-audit --no-fund
+
+      - name: Install macOS payload tool
+        if: matrix.platform == 'mac'
+        shell: bash
+        run: brew install p7zip || true
+
+      - name: Pack installer payload
+        working-directory: installer-ui
+        shell: bash
+        run: |
+          if [ "${{ matrix.platform }}" = "win" ]; then
+            node scripts/pack-payload.mjs ../release/win-unpacked
+          elif [ "${{ matrix.arch }}" = "x64" ]; then
+            app_path=$(find ../release/mac -maxdepth 1 -type d -name '*.app' | head -n 1)
+            test -n "$app_path"
+            node scripts/pack-payload.mjs "$app_path"
           else
-            export CSC_IDENTITY_AUTO_DISCOVERY=false
+            app_path=$(find ../release/mac-arm64 -maxdepth 1 -type d -name '*.app' | head -n 1)
+            test -n "$app_path"
+            node scripts/pack-payload.mjs "$app_path"
           fi
-          
-          echo "🔧 禁用 Spotlight 索引..."
-          sudo mdutil -a -i off 2>/dev/null || true
-          
-          echo "🔧 杀死可能占用磁盘镜像的进程..."
-          killall -9 Finder 2>/dev/null || true
-          killall -9 DiskImages2 2>/dev/null || true
-          killall -9 diskimagesiod 2>/dev/null || true
-          
-          sleep 3
-          
-          MAX_RETRIES=3
-          RETRY_DELAY=10
-          
-          for i in $(seq 1 $MAX_RETRIES); do
-            echo ""
-            echo "========================================"
-            echo "📦 尝试第 $i / $MAX_RETRIES 次 macOS DMG 构建..."
-            echo "========================================"
-            echo ""
-            npm run dist:mac
-            EXIT_CODE=$?
-            
-            if [ $EXIT_CODE -eq 0 ]; then
-              echo ""
-              echo "✅ macOS DMG 构建成功！"
-              sleep 5
-              exit 0
-            fi
-            
-            if [ $i -lt $MAX_RETRIES ]; then
-              echo ""
-              echo "⚠️  第 $i 次构建失败 (退出码: $EXIT_CODE)，$RETRY_DELAY 秒后重试..."
-              sleep $RETRY_DELAY
-            else
-              echo ""
-              echo "❌ $MAX_RETRIES 次尝试均失败，退出"
-              exit $EXIT_CODE
-            fi
+
+      - name: Build custom installer
+        working-directory: installer-ui
+        shell: bash
+        run: |
+          unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
+          if [ "${{ matrix.platform }}" = "win" ]; then
+            npx electron-builder --win --x64 -c electron-builder.yml --publish never
+          else
+            npx electron-builder --mac --${{ matrix.arch }} -c electron-builder.yml --publish never
+          fi
+
+      - name: Publish custom installer to GitHub Release
+        shell: bash
+        run: |
+          shopt -s nullglob
+          tag="${GITHUB_REF##*/}"
+          if [ "$tag" = "$GITHUB_REF" ]; then tag="v$(node -p \"require('./package.json').version\")"; fi
+          files=(${{ matrix.artifact_glob }})
+          test "${#files[@]}" -gt 0
+          gh release view "$tag" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$tag" -R "$GITHUB_REPOSITORY" -t "$tag" -n "艺镜 AI 自定义安装器"
+          for file in "${files[@]}"; do
+            gh release delete-asset "$tag" "$(basename "$file")" -R "$GITHUB_REPOSITORY" -y >/dev/null 2>&1 || true
           done
-        shell: bash
-      - name: 🔍 Debug - 列出 macOS 生成文件
-        run: |
-          echo "=== release 目录 ==="
-          ls -la release/ || true
-          echo ""
-          echo "=== release 目录下所有 dmg ==="
-          find release -name "*.dmg" -type f || true
-        shell: bash
-      - uses: actions/upload-artifact@v4
-        with:
-          name: yijing-ai-mac
-          path: |
-            release/**/*.dmg
-            release/*.dmg.blockmap
-            release/latest-mac.yml
-          if-no-files-found: warn
+          gh release upload "$tag" "${files[@]}" -R "$GITHUB_REPOSITORY" --clobber
 
-  build-win:
-    runs-on: windows-latest
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "npm"
-
-      - name: Install main app deps
-        run: npm ci --no-audit --no-fund --registry=https://registry.npmmirror.com
-        shell: bash
-      - name: Force clean tsc incremental cache
-        run: rm -rf dist tsconfig.main.tsbuildinfo tsconfig.renderer.tsbuildinfo
-        shell: bash
-      - name: Build renderer + main
-        run: npm run build
-        shell: bash
-      - name: Package main app to release/win-unpacked
-        env:
-          CSC_LINK: ""
-          CSC_KEY_PASSWORD: ""
-          WIN_CSC_LINK: ""
-          WIN_CSC_KEY_PASSWORD: ""
-          CSC_IDENTITY_AUTO_DISCOVERY: "false"
-        run: |
-          unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
-          export CSC_IDENTITY_AUTO_DISCOVERY=false
-          npm run pack:win
-          ls -la release/win-unpacked || true
-        shell: bash
-
-      - name: Install installer-ui deps
-        working-directory: installer-ui
-        run: npm install --no-audit --no-fund --registry=https://registry.npmmirror.com
-        shell: bash
-      - name: Pack main app into installer payload
-        working-directory: installer-ui
-        run: node scripts/pack-payload.mjs "$GITHUB_WORKSPACE/release/win-unpacked"
-        shell: bash
-      - name: Build installer-ui portable exe
-        working-directory: installer-ui
-        env:
-          CSC_LINK: ""
-          CSC_KEY_PASSWORD: ""
-          WIN_CSC_LINK: ""
-          WIN_CSC_KEY_PASSWORD: ""
-          CSC_IDENTITY_AUTO_DISCOVERY: "false"
-        run: |
-          unset CSC_LINK CSC_KEY_PASSWORD WIN_CSC_LINK WIN_CSC_KEY_PASSWORD || true
-          npm run dist:win
-          ls -la dist-installer || true
-        shell: bash
-      - name: 🔍 Debug - 列出 Windows 生成文件
-        run: |
-          echo "=== installer-ui/dist-installer 目录 ==="
-          ls -la installer-ui/dist-installer/ || true
-          echo ""
-          echo "=== 所有 exe 文件 ==="
-          find installer-ui/dist-installer -name "*.exe" -type f || true
-        shell: bash
-      - uses: actions/upload-artifact@v4
-        with:
-          name: yijing-ai-win
-          path: |
-            installer-ui/dist-installer/yijing-ai-*.exe
-          if-no-files-found: error
-
-  release:
-    needs: [build-mac, build-win]
-    # if: startsWith(github.ref, 'refs/tags/')
+  cleanup-release:
+    needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download Windows installer
-        uses: actions/download-artifact@v4
-        with:
-          name: yijing-ai-win
-          path: dist-release/win
-
-      - name: Download Mac packages
-        uses: actions/download-artifact@v4
-        with:
-          name: yijing-ai-mac
-          path: dist-release/mac
-
-      - name: 🔍 Debug - 列出下载的发布文件
-        run: |
-          echo "=== 发布文件目录结构 ==="
-          find dist-release -type f
-        shell: bash
-
-      - name: Calculate SHA256 checksums
-        run: |
-          cd dist-release
-          VERSION="1.1.9"
-          echo "### v$VERSION Release Notes" > release-body.txt
-          echo "" >> release-body.txt
-          echo "**SHA256 Checksums**" >> release-body.txt
-          echo "" >> release-body.txt
-          echo '\`\`\`text' >> release-body.txt
-          find . -type f \( -name "*.exe" -o -name "*.dmg" \) | sort | while read -r f; do
-            name=$(basename "$f")
-            hash=$(sha256sum "$f" | awk '{print $1}')
-            echo "SHA256 ($name) = $hash" >> release-body.txt
-          done
-          echo '\`\`\`' >> release-body.txt
-          echo "" >> release-body.txt
-          echo "**Release Highlights**" >> release-body.txt
-          echo "- ✅ Windows 自定义安装界面" >> release-body.txt
-          echo "- ✅ macOS DMG 安装包" >> release-body.txt
-          echo "- ✅ 智能重试机制确保打包成功" >> release-body.txt
-          cat release-body.txt
-          cp release-body.txt ${{ github.workspace }}/
-
-      - name: Publish Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v1.1.9
-          name: v1.1.9
-          body_path: release-body.txt
-          files: |
-            dist-release/win/yijing-ai-*.exe
-            dist-release/mac/*.dmg
+      - name: Remove obsolete release assets
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          tag="${GITHUB_REF##*/}"
+          if [ "$tag" = "$GITHUB_REF" ]; then tag="v1.1.9"; fi
+          gh release view "$tag" -R "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | while read -r name; do
+            case "$name" in
+              YijingAI-Installer-Windows-x64.exe|YijingAI-Installer-macOS-x64.dmg|YijingAI-Installer-macOS-arm64.dmg) ;;
+              *) gh release delete-asset "$tag" "$name" -R "$GITHUB_REPOSITORY" -y ;;
+            esac
+          done

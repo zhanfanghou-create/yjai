@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { EDGE_TTS_MODELS, useAppStore, StockMediaProvider } from '../store/appStore';
 import './SettingsPage.css';
 
-// ÓÃÏµÍ³Ä¬ÈÏä¯ÀÀÆ÷´ò¿ªÍâ²¿ÍøÖ·£¨ÉêÇë API µÈÁ´½Ó£©£¬±ÜÃâÔÚÓ¦ÓÃÄÚ´°¿Ú´ò¿ª£»ÎŞ IPC Ê±»ØÍËµ½ window.open
+// ç”¨ç³»ç»Ÿé»˜è®¤æµè§ˆå™¨æ‰“å¼€å¤–éƒ¨ç½‘å€ï¼ˆç”³è¯· API ç­‰é“¾æ¥ï¼‰ï¼Œé¿å…åœ¨åº”ç”¨å†…çª—å£æ‰“å¼€ï¼›æ—  IPC æ—¶å›é€€åˆ° window.open
 const openExternalUrl = (url: string) => {
   if (!url) return;
   const api = (window as any)?.yijingAPI?.system?.openExternal;
@@ -10,9 +10,9 @@ const openExternalUrl = (url: string) => {
   window.open(url, '_blank', 'noopener,noreferrer');
 };
 
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
-//  SVG Icon ×é¼ş
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+//  SVG Icon ç»„ä»¶
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const Icon = ({ type = 'box', size = 18, className = '' }: {
   type?: 'box' | 'chat' | 'image' | 'video' | 'voice' | 'cpu' | 'file' | 'close' | 'plus' | 'upload' | 'check' | 'x';
   size?: number;
@@ -35,9 +35,9 @@ const Icon = ({ type = 'box', size = 18, className = '' }: {
   </svg>
 );
 
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
-//  Section °ü×°×é¼ş
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+//  Section åŒ…è£…ç»„ä»¶
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const Section = ({ title, sub, icon, onAdd, addLabel, children }: any) => (
   <section className="sp-sec">
     <div className="sp-sec-head">
@@ -57,48 +57,48 @@ const Section = ({ title, sub, icon, onAdd, addLabel, children }: any) => (
   </section>
 );
 
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
-//  ¿ìËÙÅäÖÃÔ¤Éè ¡ª Ò»¼üÌîÈëÖ÷Á÷ AI ·şÎñ
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+//  å¿«é€Ÿé…ç½®é¢„è®¾ â€” ä¸€é”®å¡«å…¥ä¸»æµ AI æœåŠ¡
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const QUICK_PRESETS: Array<{
   label: string; desc: string; icon: string; color: string;
   section: 'image' | 'video' | 'chat';
   baseUrl: string; defaultModel: string; helpUrl?: string; helpLabel?: string;
 }> = [
   {
-    label: '»ğÉ½·½ÖÛ', desc: 'doubao-vision / Seedance ÊÓÆµÉú³É',
-    icon: '¡ô', color: '#ff6b35',
+    label: 'ç«å±±æ–¹èˆŸ', desc: 'doubao-vision / Seedance è§†é¢‘ç”Ÿæˆ',
+    icon: 'â—†', color: '#ff6b35',
     section: 'video',
     baseUrl: 'https://ark.cn-beijing.volces.com/api/v3', defaultModel: 'doubao-vision',
-    helpUrl: 'https://www.volcengine.com/product/ark', helpLabel: 'ÉêÇë API Key',
+    helpUrl: 'https://www.volcengine.com/product/ark', helpLabel: 'ç”³è¯· API Key',
   },
   {
-    label: 'agnes AI', desc: '2K/4K Í¼Ïñ + ÊÓÆµÉú³É',
-    icon: '¡ó', color: '#a78bfa',
+    label: 'agnes AI', desc: '2K/4K å›¾åƒ + è§†é¢‘ç”Ÿæˆ',
+    icon: 'â—‡', color: '#a78bfa',
     section: 'image',
     baseUrl: 'https://api.agnes-ai.com/v1', defaultModel: 'agnes-pro',
-    helpUrl: 'https://agnes-ai.com/docs', helpLabel: 'ÉêÇë agnes Key',
+    helpUrl: 'https://agnes-ai.com/docs', helpLabel: 'ç”³è¯· agnes Key',
   },
   {
-    label: 'SiliconFlow', desc: '¶àÄ£ĞÍ¾ÛºÏÆ½Ì¨',
-    icon: '¡ğ', color: '#38bdf8',
+    label: 'SiliconFlow', desc: 'å¤šæ¨¡å‹èšåˆå¹³å°',
+    icon: 'â—‹', color: '#38bdf8',
     section: 'image',
     baseUrl: 'https://api.siliconflow.cn/v1', defaultModel: 'Qwen/Qwen2.5-7B-Instruct',
-    helpUrl: 'https://www.siliconflow.cn', helpLabel: 'ÉêÇë SiliconFlow',
+    helpUrl: 'https://www.siliconflow.cn', helpLabel: 'ç”³è¯· SiliconFlow',
   },
   {
-    label: 'ÖÇÆ× GLM', desc: 'GLM-4 Í¼Ïñ / ¶Ô»°Ä£ĞÍ',
-    icon: '¡ñ', color: '#34d399',
+    label: 'æ™ºè°± GLM', desc: 'GLM-4 å›¾åƒ / å¯¹è¯æ¨¡å‹',
+    icon: 'â—', color: '#34d399',
     section: 'chat',
     baseUrl: 'https://open.bigmodel.cn/api/paas/v4', defaultModel: 'glm-4',
-    helpUrl: 'https://open.bigmodel.cn', helpLabel: 'ÉêÇëÖÇÆ× Key',
+    helpUrl: 'https://open.bigmodel.cn', helpLabel: 'ç”³è¯·æ™ºè°± Key',
   },
   {
-    label: 'ModelScope', desc: 'Í¨ÒåÇ§ÎÊ / Wan2.1 ÊÓÆµ',
-    icon: '¡ø', color: '#fb923c',
+    label: 'ModelScope', desc: 'é€šä¹‰åƒé—® / Wan2.1 è§†é¢‘',
+    icon: 'â–²', color: '#fb923c',
     section: 'video',
     baseUrl: 'https://api.modelscope.cn/v1', defaultModel: 'Qwen/Qwen2.5-7B-Instruct',
-    helpUrl: 'https://modelscope.cn', helpLabel: 'ÉêÇë ModelScope',
+    helpUrl: 'https://modelscope.cn', helpLabel: 'ç”³è¯· ModelScope',
   },
 ];
 
@@ -110,15 +110,15 @@ const QuickSetupSection: React.FC<{ s: any }> = ({ s }) => {
     });
     setAdded(prev => [...prev, id]);
     setTimeout(() => setAdded(prev => prev.filter(x => x !== id)), 2000);
-    // Ìø×ªµ½¶ÔÓ¦ section
+    // è·³è½¬åˆ°å¯¹åº” section
     document.querySelector(`[data-section="${preset.section}-api"]`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
     <div className="sp-quick">
       <div className="sp-quick-head">
-        <span className="sp-quick-title">¿ìËÙÅäÖÃ</span>
-        <span className="sp-quick-sub">µã»÷Ò»¼üÌí¼Ó£¬ÎŞĞèÊÖ¶¯ÌîĞ´µØÖ·</span>
+        <span className="sp-quick-title">å¿«é€Ÿé…ç½®</span>
+        <span className="sp-quick-sub">ç‚¹å‡»ä¸€é”®æ·»åŠ ï¼Œæ— éœ€æ‰‹åŠ¨å¡«å†™åœ°å€</span>
       </div>
       <div className="sp-quick-grid">
         {QUICK_PRESETS.map(preset => {
@@ -130,7 +130,7 @@ const QuickSetupSection: React.FC<{ s: any }> = ({ s }) => {
               style={{ '--preset-color': preset.color } as any}
               onClick={() => !isAdded && handleAddPreset(preset)}
               disabled={isAdded}
-              title={preset.helpUrl ? `${preset.helpLabel} ¡ú ${preset.helpUrl}` : preset.desc}
+              title={preset.helpUrl ? `${preset.helpLabel} â†’ ${preset.helpUrl}` : preset.desc}
             >
               <span className="sp-preset-icon">{preset.icon}</span>
               <span className="sp-preset-label">{preset.label}</span>
@@ -144,17 +144,17 @@ const QuickSetupSection: React.FC<{ s: any }> = ({ s }) => {
   );
 };
 
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
-//  Plus Í¼±ê£¨ĞÂÔö½ø Section icon ÁĞ±í£©
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+//  Plus å›¾æ ‡ï¼ˆæ–°å¢è¿› Section icon åˆ—è¡¨ï¼‰
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PlusIcon = ({ size = 14 }: { size?: number }) => (
   <Icon type="box" size={size} />
 );
 
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
-//  ConfigCard ¡ª ±ê×¼ API ÅäÖÃ¿¨Æ¬£¨²İ¸åÄ£Ê½£©
-//  ËùÓĞ±à¼­¶¼ÔÚ±¾µØ ref£¬±£´æÊ±²ÅÂä store
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+//  ConfigCard â€” æ ‡å‡† API é…ç½®å¡ç‰‡ï¼ˆè‰ç¨¿æ¨¡å¼ï¼‰
+//  æ‰€æœ‰ç¼–è¾‘éƒ½åœ¨æœ¬åœ° refï¼Œä¿å­˜æ—¶æ‰è½ store
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface ConfigCardProps {
   config: any;
   onUpdate: (id: string, u: any) => void;
@@ -164,7 +164,7 @@ interface ConfigCardProps {
 }
 
 export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defaultName }: ConfigCardProps) => {
-  // ©¤©¤ ²İ¸åÖµ£¨ref ´æÔ­Ê¼Öµ£¬state Çı¶¯ UI£©©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+  // â”€â”€ è‰ç¨¿å€¼ï¼ˆref å­˜åŸå§‹å€¼ï¼Œstate é©±åŠ¨ UIï¼‰â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const draftRef = useRef({ name: config.name, baseUrl: config.baseUrl, apiKey: config.apiKey, defaultModel: config.defaultModel });
 
   const [draft, setDraft] = useState({
@@ -178,7 +178,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
   const [testResult, setTestResult] = useState<'idle' | 'ok' | 'err'>('idle');
   const [saving,   setSaving]   = useState(false);
 
-  // ©¤©¤ config ´ÓÍâ²¿±ä»¯Ê±£¨save ºó / ¼ÓÔØÊ±£©Í¬²½µ½²İ¸å ©¤©¤
+  // â”€â”€ config ä»å¤–éƒ¨å˜åŒ–æ—¶ï¼ˆsave å / åŠ è½½æ—¶ï¼‰åŒæ­¥åˆ°è‰ç¨¿ â”€â”€
   useEffect(() => {
     draftRef.current = {
       name:        config.name,
@@ -193,20 +193,20 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
       defaultModel:config.defaultModel,
     });
     setTestResult('idle');
-  }, [config.id]); // ½öÔÚ id ±ä»¯Ê±ÖØÖÃ£¨ĞÂÔöÅäÖÃ×ß´ËÂ·¾¶£©
+  }, [config.id]); // ä»…åœ¨ id å˜åŒ–æ—¶é‡ç½®ï¼ˆæ–°å¢é…ç½®èµ°æ­¤è·¯å¾„ï¼‰
 
-  // ©¤©¤ ÊÇ·ñÓë store ÖĞÔ­Ê¼ÖµÓĞ²îÒì ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+  // â”€â”€ æ˜¯å¦ä¸ store ä¸­åŸå§‹å€¼æœ‰å·®å¼‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const isDirty = draft.name !== draftRef.current.name
     || draft.baseUrl !== draftRef.current.baseUrl
     || draft.apiKey !== draftRef.current.apiKey
     || draft.defaultModel !== draftRef.current.defaultModel;
 
-  // ©¤©¤ ×Ö¶Î¸üĞÂ£¨Ö»¸üĞÂ±¾µØ state£©©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+  // â”€â”€ å­—æ®µæ›´æ–°ï¼ˆåªæ›´æ–°æœ¬åœ° stateï¼‰â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const set = (key: keyof typeof draft, value: string) => {
     setDraft(prev => ({ ...prev, [key]: value }));
   };
 
-  // ©¤©¤ ±£´æ£º²İ¸å ¡ú store ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+  // â”€â”€ ä¿å­˜ï¼šè‰ç¨¿ â†’ store â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const handleSave = () => {
     const models = config.models || [];
     const dm = draft.defaultModel.trim();
@@ -217,19 +217,19 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
     setTimeout(() => setSaving(false), 600);
   };
 
-  // ©¤©¤ È¡Ïû£º²İ¸å ¡ú »ØÍËµ½ store Ô­Ê¼Öµ ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+  // â”€â”€ å–æ¶ˆï¼šè‰ç¨¿ â†’ å›é€€åˆ° store åŸå§‹å€¼ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const handleCancel = () => {
     const original = draftRef.current;
     setDraft({ name: original.name, baseUrl: original.baseUrl, apiKey: original.apiKey, defaultModel: original.defaultModel });
     setTestResult('idle');
   };
 
-  // ©¤©¤ ²âÊÔ£ºÁÙÊ±Ó¦ÓÃ²İ¸å£¬²âÍê»Ö¸´ ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+  // â”€â”€ æµ‹è¯•ï¼šä¸´æ—¶åº”ç”¨è‰ç¨¿ï¼Œæµ‹å®Œæ¢å¤ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const handleTest = async () => {
     const models = config.models || [];
     const dm = draft.defaultModel.trim();
     if (dm && !models.includes(dm)) models.push(dm);
-    // ÁÙÊ±Ğ´Èë store ÒÔ±ã testAPIConnection ¶Áµ½×îĞÂÖµ
+    // ä¸´æ—¶å†™å…¥ store ä»¥ä¾¿ testAPIConnection è¯»åˆ°æœ€æ–°å€¼
     onUpdate(config.id, { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm, models });
     setTesting(true);
     setTestResult('idle');
@@ -242,7 +242,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
     } finally {
       setTesting(false);
       if (testResult === 'ok' || ok) {
-        // ²âÊÔÍ¨¹ı ¡ú Í¬²½²İ¸åµ½ store ×´Ì¬£¨ÊµÏÖ¡¸²âÊÔ³É¹¦¼´±£´æ¡¹£©
+        // æµ‹è¯•é€šè¿‡ â†’ åŒæ­¥è‰ç¨¿åˆ° store çŠ¶æ€ï¼ˆå®ç°ã€Œæµ‹è¯•æˆåŠŸå³ä¿å­˜ã€ï¼‰
         const savedDraft = { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm };
         draftRef.current = savedDraft;
         setDraft(savedDraft);
@@ -256,7 +256,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
 
   return (
     <div className={`sp-card${isDirty ? ' sp-dirty' : ''}`}>
-      {/* ±êÌâĞĞ */}
+      {/* æ ‡é¢˜è¡Œ */}
       <div className="sp-card-head">
         <input
           className="sp-title-inp"
@@ -264,14 +264,14 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
           onChange={e => set('name', e.target.value)}
           placeholder={defaultName}
         />
-        <button className="sp-icon-btn sp-del" onClick={() => onDelete(config.id)} title="É¾³ı´ËÅäÖÃ">
+        <button className="sp-icon-btn sp-del" onClick={() => onDelete(config.id)} title="åˆ é™¤æ­¤é…ç½®">
           <Icon type="close" size={14} />
         </button>
       </div>
 
-      {/* API µØÖ· */}
+      {/* API åœ°å€ */}
       <div className="sp-f">
-        <label className="sp-lb">API µØÖ·</label>
+        <label className="sp-lb">API åœ°å€</label>
         <input
           className="sp-inp"
           type="text"
@@ -290,31 +290,31 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
           type="password"
           value={draft.apiKey}
           onChange={e => set('apiKey', e.target.value)}
-          placeholder="sk-¡­"
+          placeholder="sk-â€¦"
           autoComplete="off"
         />
       </div>
 
-      {/* Ä¬ÈÏÄ£ĞÍ */}
+      {/* é»˜è®¤æ¨¡å‹ */}
       <div className="sp-f">
-        <label className="sp-lb">Ä¬ÈÏÄ£ĞÍ</label>
+        <label className="sp-lb">é»˜è®¤æ¨¡å‹</label>
         <input
           className="sp-inp"
           type="text"
           value={draft.defaultModel}
           onChange={e => set('defaultModel', e.target.value)}
-          placeholder="ÊÖ¶¯ÊäÈëÄ£ĞÍÃû³Æ"
+          placeholder="æ‰‹åŠ¨è¾“å…¥æ¨¡å‹åç§°"
         />
       </div>
 
-      {/* °´Å¥ĞĞ */}
+      {/* æŒ‰é’®è¡Œ */}
       <div className="sp-actions">
         <button
           className={`sp-btn sp-test${testResult === 'ok' || saving ? ' sp-test-ok' : testResult === 'err' ? ' sp-test-err' : ''}`}
           onClick={handleTest}
           disabled={testing}
         >
-          {testing ? '²âÊÔÖĞ¡­' : saving ? 'ÒÑ±£´æ' : testResult === 'ok' ? 'Á¬½Ó³É¹¦' : testResult === 'err' ? 'Á¬½ÓÊ§°Ü' : '²âÊÔÁ¬½Ó'}
+          {testing ? 'æµ‹è¯•ä¸­â€¦' : saving ? 'å·²ä¿å­˜' : testResult === 'ok' ? 'è¿æ¥æˆåŠŸ' : testResult === 'err' ? 'è¿æ¥å¤±è´¥' : 'æµ‹è¯•è¿æ¥'}
         </button>
 
         {isDirty && (
@@ -322,7 +322,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
             className="sp-btn sp-cancel"
             onClick={handleCancel}
           >
-            È¡Ïû
+            å–æ¶ˆ
           </button>
         )}
 
@@ -331,26 +331,26 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
           onClick={handleSave}
           disabled={!isDirty}
         >
-          {saving ? 'ÒÑ±£´æ ?' : '±£´æÅäÖÃ'}
+          {saving ? 'å·²ä¿å­˜' : 'ä¿å­˜é…ç½®'}
         </button>
       </div>
     </div>
   );
 });
 
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
-//  Ö÷Ò³Ãæ
-// ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+//  ä¸»é¡µé¢
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export const SettingsPage: React.FC = () => {
   const s = useAppStore();
 
   const upd = (fn: any) => (id: string, u: any) => fn(id, u);
   const addConfig = (addFn: any, defaults: any) => () => addFn(defaults);
-  const del = (fn: any) => (id: string) => { if (confirm('È·¶¨É¾³ı´ËÅäÖÃ£¿')) fn(id); };
+  const del = (fn: any) => (id: string) => { if (confirm('ç¡®å®šåˆ é™¤æ­¤é…ç½®ï¼Ÿ')) fn(id); };
 
 
-  // ========== ×Ô¶¯¸üĞÂ£º°æ±¾ÏÔÊ¾ + ¼ì²é¸üĞÂ + Ò»¼üÏÂÔØ°²×° ==========
-  // Ö§³ÖË½ÓĞ²Ö¿â + ¹úÄÚ¾µÏñ¼ÓËÙ
+  // ========== è‡ªåŠ¨æ›´æ–°ï¼šç‰ˆæœ¬æ˜¾ç¤º + æ£€æŸ¥æ›´æ–° + ä¸€é”®ä¸‹è½½å®‰è£… ==========
+  // æ”¯æŒç§æœ‰ä»“åº“ + å›½å†…é•œåƒåŠ é€Ÿ
   const [appVersion, setAppVersion] = useState<string>('1.1.8');
   const [latestVersion, setLatestVersion] = useState<string>('');
   const [releaseName, setReleaseName] = useState<string>('');
@@ -371,7 +371,7 @@ export const SettingsPage: React.FC = () => {
     try {
       const api = (window as any)?.yijingAPI?.system?.checkUpdate;
       if (typeof api !== 'function') {
-        // »ØÍËµ½Ç°¶ËÖ±½Ó¼ì²é£¨¹«¿ª²Ö¿â£©
+        // å›é€€åˆ°å‰ç«¯ç›´æ¥æ£€æŸ¥ï¼ˆå…¬å¼€ä»“åº“ï¼‰
         const apiUrls = [
           'https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
           'https://mirror.ghproxy.com/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
@@ -398,7 +398,7 @@ export const SettingsPage: React.FC = () => {
         return;
       }
 
-      // Ê¹ÓÃºó¶Ë API£¨Ö§³ÖË½ÓĞ²Ö¿â + ¹úÄÚ¾µÏñ£©
+      // ä½¿ç”¨åç«¯ APIï¼ˆæ”¯æŒç§æœ‰ä»“åº“ + å›½å†…é•œåƒï¼‰
       const result = await api();
       if (result?.ok) {
         setLatestVersion(result.latestVersion || '');
@@ -406,10 +406,10 @@ export const SettingsPage: React.FC = () => {
         setReleaseNotes(result.releaseNotes || '');
         setUpdateAvailable(result.hasUpdate || false);
       } else {
-        setUpdateError(result?.error || '¼ì²é¸üĞÂÊ§°Ü');
+        setUpdateError(result?.error || 'æ£€æŸ¥æ›´æ–°å¤±è´¥');
       }
     } catch (e: any) {
-      setUpdateError(e?.message || '¼ì²é¸üĞÂÊ§°Ü');
+      setUpdateError(e?.message || 'æ£€æŸ¥æ›´æ–°å¤±è´¥');
     } finally {
       setCheckingUpdate(false);
     }
@@ -418,7 +418,7 @@ export const SettingsPage: React.FC = () => {
   const startDownload = async () => {
     const api = (window as any)?.yijingAPI?.system?.downloadUpdate;
     const onProgress = (window as any)?.yijingAPI?.system?.onUpdateProgress;
-    
+
     if (typeof api !== 'function') {
       window.open('https://mirror.ghproxy.com/https://github.com/zhanfanghou-create/yjai/releases/latest', '_blank');
       return;
@@ -430,7 +430,7 @@ export const SettingsPage: React.FC = () => {
     setTotalBytes(0);
     setUpdateError('');
 
-    // ¼àÌıÏÂÔØ½ø¶È
+    // ç›‘å¬ä¸‹è½½è¿›åº¦
     let cleanupProgress: (() => void) | null = null;
     if (typeof onProgress === 'function') {
       cleanupProgress = onProgress((data: { progress: number; downloaded: number; total: number }) => {
@@ -444,12 +444,12 @@ export const SettingsPage: React.FC = () => {
       const r = await api();
       if (r?.ok && r?.path) {
         setDownloadedPath(r.path);
-        // ÏÂÔØ³É¹¦ºó»á×Ô¶¯Æô¶¯°²×°³ÌĞò
+        // ä¸‹è½½æˆåŠŸåä¼šè‡ªåŠ¨å¯åŠ¨å®‰è£…ç¨‹åº
       } else {
-        setUpdateError(r?.error || 'ÏÂÔØÊ§°Ü');
+        setUpdateError(r?.error || 'ä¸‹è½½å¤±è´¥');
       }
     } catch (e: any) {
-      setUpdateError(e?.message || 'ÏÂÔØÊ§°Ü');
+      setUpdateError(e?.message || 'ä¸‹è½½å¤±è´¥');
     } finally {
       setDownloadingUpdate(false);
       if (cleanupProgress) cleanupProgress();
@@ -457,11 +457,11 @@ export const SettingsPage: React.FC = () => {
   };
 
   const installNow = () => {
-    const api = (window as any)?.yijingAPI?.system?.openPath;
+    const api = (window as any)?.yijingAPI?.system?.installUpdate;
     if (downloadedPath && typeof api === 'function') void api(downloadedPath);
   };
 
-  // ¸ñÊ½»¯ÎÄ¼ş´óĞ¡
+  // æ ¼å¼åŒ–æ–‡ä»¶å¤§å°
   const formatBytes = (bytes: number) => {
     if (bytes === 0) return '0 B';
     const k = 1024;
@@ -473,7 +473,7 @@ export const SettingsPage: React.FC = () => {
   useEffect(() => {
     const v = (window as any)?.yijingAPI?.system?.version;
     if (typeof v === 'string' && v.trim()) setAppVersion(v.trim());
-    // ½øÈëÉèÖÃÒ³ÃæÊ±×Ô¶¯¼ì²é¸üĞÂ
+    // è¿›å…¥è®¾ç½®é¡µé¢æ—¶è‡ªåŠ¨æ£€æŸ¥æ›´æ–°
     void checkUpdate();
   }, []);
 
@@ -485,21 +485,21 @@ export const SettingsPage: React.FC = () => {
   return (
     <div className="sp-page">
       <header>
-        <h1 className="sp-title">ÉèÖÃ</h1>
-        <p className="sp-subtitle">Íâ²¿ API Ä£ĞÍ¾ùÊÖ¶¯ÊäÈë£»Edge TTS ÎªÄÚÖÃ±¾µØÅäÒô¡£</p>
+        <h1 className="sp-title">è®¾ç½®</h1>
+        <p className="sp-subtitle">å¤–éƒ¨ API æ¨¡å‹å‡æ‰‹åŠ¨è¾“å…¥ï¼›Edge TTS ä¸ºå†…ç½®æœ¬åœ°é…éŸ³ã€‚</p>
       </header>
 
-      {/* ¿ìËÙÅäÖÃÔ¤Éè */}
+      {/* å¿«é€Ÿé…ç½®é¢„è®¾ */}
       <QuickSetupSection s={s} />
 
-      {/* Edge TTS ¡ª Ö»¶Á */}
-      <Section title="Edge TTS ±¾µØÅäÒô" sub="Èí¼ş¼¯³ÉµÄ±¾µØÓïÒô·şÎñ£¬ÅäÖÃ¹Ì¶¨ÇÒ²»¿É±à¼­" icon={<Icon type="voice" />}>
+      {/* Edge TTS â€” åªè¯» */}
+      <Section title="Edge TTS æœ¬åœ°é…éŸ³" sub="è½¯ä»¶é›†æˆçš„æœ¬åœ°è¯­éŸ³æœåŠ¡ï¼Œé…ç½®å›ºå®šä¸”ä¸å¯ç¼–è¾‘" icon={<Icon type="voice" />}>
         <div className="sp-card sp-readonly">
           <div className="sp-card-head">
-            <input className="sp-title-inp" value="Edge TTS ±¾µØÅäÒô" readOnly />
+            <input className="sp-title-inp" value="Edge TTS æœ¬åœ°é…éŸ³" readOnly />
           </div>
           <div className="sp-f">
-            <label className="sp-lb">½Ó¿Ú</label>
+            <label className="sp-lb">æ¥å£</label>
             <input className="sp-inp" value="edge-tts://local" readOnly />
           </div>
           <div className="sp-models">
@@ -508,12 +508,12 @@ export const SettingsPage: React.FC = () => {
         </div>
       </Section>
 
-      {/* ¶Ô»° API */}
+      {/* å¯¹è¯ API */}
       <Section
-        title="¶Ô»° API ½Ó¿Ú" sub="Ö§³Ö OpenAI ¼æÈİ¸ñÊ½"
+        title="å¯¹è¯ API æ¥å£" sub="æ”¯æŒ OpenAI å…¼å®¹æ ¼å¼"
         icon={<Icon type="chat" />}
-        onAdd={addConfig(s.addAPIConfig, { ...apiDefaults, name: '¶Ô»° API' })}
-        addLabel="Ìí¼Ó API ÅäÖÃ"
+        onAdd={addConfig(s.addAPIConfig, { ...apiDefaults, name: 'å¯¹è¯ API' })}
+        addLabel="æ·»åŠ  API é…ç½®"
       >
         {s.apiConfigs.map(c => (
           <ConfigCard
@@ -522,17 +522,17 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateAPIConfig)}
             onDelete={del(s.deleteAPIConfig)}
             onTest={s.testAPIConnection}
-            defaultName="¶Ô»° API"
+            defaultName="å¯¹è¯ API"
           />
         ))}
       </Section>
 
-      {/* Í¼Æ¬ API */}
+      {/* å›¾ç‰‡ API */}
       <Section
-        title="Í¼Æ¬ API ½Ó¿Ú" sub="Í¼Æ¬Éú³É½Ó¿Ú"
+        title="å›¾ç‰‡ API æ¥å£" sub="å›¾ç‰‡ç”Ÿæˆæ¥å£"
         icon={<Icon type="image" />}
-        onAdd={addConfig(s.addImageAPIConfig, { ...apiDefaults, name: 'Í¼Æ¬ API' })}
-        addLabel="Ìí¼ÓÍ¼Æ¬ API ÅäÖÃ"
+        onAdd={addConfig(s.addImageAPIConfig, { ...apiDefaults, name: 'å›¾ç‰‡ API' })}
+        addLabel="æ·»åŠ å›¾ç‰‡ API é…ç½®"
       >
         {s.imageAPIConfigs.map(c => (
           <ConfigCard
@@ -541,17 +541,17 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateImageAPIConfig)}
             onDelete={del(s.deleteImageAPIConfig)}
             onTest={s.testImageAPIConnection}
-            defaultName="Í¼Æ¬ API"
+            defaultName="å›¾ç‰‡ API"
           />
         ))}
       </Section>
 
-      {/* ÊÓÆµ API */}
+      {/* è§†é¢‘ API */}
       <Section
-        title="ÊÓÆµ API ½Ó¿Ú" sub="ÊÓÆµÉú³É½Ó¿Ú"
+        title="è§†é¢‘ API æ¥å£" sub="è§†é¢‘ç”Ÿæˆæ¥å£"
         icon={<Icon type="video" />}
-        onAdd={addConfig(s.addVideoAPIConfig, { ...apiDefaults, name: 'ÊÓÆµ API' })}
-        addLabel="Ìí¼ÓÊÓÆµ API ÅäÖÃ"
+        onAdd={addConfig(s.addVideoAPIConfig, { ...apiDefaults, name: 'è§†é¢‘ API' })}
+        addLabel="æ·»åŠ è§†é¢‘ API é…ç½®"
       >
         {s.videoAPIConfigs.map(c => (
           <ConfigCard
@@ -560,17 +560,17 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateVideoAPIConfig)}
             onDelete={del(s.deleteVideoAPIConfig)}
             onTest={s.testVideoAPIConnection}
-            defaultName="ÊÓÆµ API"
+            defaultName="è§†é¢‘ API"
           />
         ))}
       </Section>
 
-      {/* ÓïÒô API */}
+      {/* è¯­éŸ³ API */}
       <Section
-        title="ÓïÒô API ½Ó¿Ú" sub="µÚÈı·½ÓïÒôÉú³É½Ó¿Ú"
+        title="è¯­éŸ³ API æ¥å£" sub="ç¬¬ä¸‰æ–¹è¯­éŸ³ç”Ÿæˆæ¥å£"
         icon={<Icon type="voice" />}
-        onAdd={addConfig(s.addVoiceAPIConfig, { ...apiDefaults, name: 'ÓïÒô API' })}
-        addLabel="Ìí¼ÓÓïÒô API ÅäÖÃ"
+        onAdd={addConfig(s.addVoiceAPIConfig, { ...apiDefaults, name: 'è¯­éŸ³ API' })}
+        addLabel="æ·»åŠ è¯­éŸ³ API é…ç½®"
       >
         {s.voiceAPIConfigs.map(c => (
           <ConfigCard
@@ -579,17 +579,17 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateVoiceAPIConfig)}
             onDelete={del(s.deleteVoiceAPIConfig)}
             onTest={s.testVoiceAPIConnection}
-            defaultName="ÓïÒô API"
+            defaultName="è¯­éŸ³ API"
           />
         ))}
       </Section>
 
-      {/* ÒôÀÖ API */}
+      {/* éŸ³ä¹ API */}
       <Section
-        title="ÒôÀÖ API ½Ó¿Ú" sub="ÒôÀÖÉú³É½Ó¿Ú"
+        title="éŸ³ä¹ API æ¥å£" sub="éŸ³ä¹ç”Ÿæˆæ¥å£"
         icon={<Icon type="voice" />}
-        onAdd={addConfig(s.addMusicAPIConfig, { ...apiDefaults, name: 'ÒôÀÖ API' })}
-        addLabel="Ìí¼ÓÒôÀÖ API ÅäÖÃ"
+        onAdd={addConfig(s.addMusicAPIConfig, { ...apiDefaults, name: 'éŸ³ä¹ API' })}
+        addLabel="æ·»åŠ éŸ³ä¹ API é…ç½®"
       >
         {s.musicAPIConfigs.map(c => (
           <ConfigCard
@@ -598,32 +598,32 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateMusicAPIConfig)}
             onDelete={del(s.deleteMusicAPIConfig)}
             onTest={s.testMusicAPIConnection}
-            defaultName="ÒôÀÖ API"
+            defaultName="éŸ³ä¹ API"
           />
         ))}
       </Section>
 
-      {/* ¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T
-          ·Ö¾µÔ¤Éè¹ÜÀí£¨Phase 4£©
-      ¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+          åˆ†é•œé¢„è®¾ç®¡ç†ï¼ˆPhase 4ï¼‰
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <Section
-        title="·Ö¾µÔ¤Éè¹ÜÀí" sub="±£´æ/¹ÜÀí·Ö¾µ½Å±¾Ä£°å£¬Ö§³Öµ¼Èëµ¼³ö JSON£¬¿ÉÖ±½ÓÓ¦ÓÃµ½»­²¼Éú³É½Úµã"
+        title="åˆ†é•œé¢„è®¾ç®¡ç†" sub="ä¿å­˜/ç®¡ç†åˆ†é•œè„šæœ¬æ¨¡æ¿ï¼Œæ”¯æŒå¯¼å…¥å¯¼å‡º JSONï¼Œå¯ç›´æ¥åº”ç”¨åˆ°ç”»å¸ƒç”ŸæˆèŠ‚ç‚¹"
         icon={<Icon type="video" />}
         onAdd={() => {
-          const name = prompt('Ô¤ÉèÃû³Æ£¿£¨Èç£º¹ã¸æ¶ÌÆ¬/¼ÍÂ¼Æ¬¿ª³¡£©');
+          const name = prompt('é¢„è®¾åç§°ï¼Ÿï¼ˆå¦‚ï¼šå¹¿å‘ŠçŸ­ç‰‡/çºªå½•ç‰‡å¼€åœºï¼‰');
           if (!name?.trim()) return;
           s.addStoryboardPreset({
             name: name.trim(),
             description: '',
             steps: [
-              { scene: '01', shot: '01', shotType: 'È«¾°', cameraMove: '¹Ì¶¨', description: '', dialogue: '', duration: '5s', text2imgPrompt: '', img2videoPrompt: '' },
+              { scene: '01', shot: '01', shotType: 'å…¨æ™¯', cameraMove: 'å›ºå®š', description: '', dialogue: '', duration: '5s', text2imgPrompt: '', img2videoPrompt: '' },
             ],
           });
         }}
-        addLabel="ĞÂ½¨Ô¤Éè"
+        addLabel="æ–°å»ºé¢„è®¾"
       >
         {(!s.storyboardPresets || s.storyboardPresets.length === 0) ? (
-          <div className="settings-empty">ÔİÎŞ·Ö¾µÔ¤Éè£¬µã»÷ÓÒÉÏ½Ç¡¸ĞÂ½¨Ô¤Éè¡¹´´½¨Ò»¸ö£¬·½±ãÅúÁ¿µ¼Èëµ½»­²¼¡£</div>
+          <div className="settings-empty">æš‚æ— åˆ†é•œé¢„è®¾ï¼Œç‚¹å‡»å³ä¸Šè§’ã€Œæ–°å»ºé¢„è®¾ã€åˆ›å»ºä¸€ä¸ªï¼Œæ–¹ä¾¿æ‰¹é‡å¯¼å…¥åˆ°ç”»å¸ƒã€‚</div>
         ) : (
           <div className="sp-preset-list">
             {s.storyboardPresets.map(preset => {
@@ -644,49 +644,49 @@ export const SettingsPage: React.FC = () => {
                       {editingName ? (
                         <div className="sp-preset-name-edit">
                           <input className="sp-inp" value={draftName} onChange={e => setDraftName(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleSaveName()} autoFocus />
-                          <input className="sp-inp" value={draftDesc} onChange={e => setDraftDesc(e.target.value)} placeholder="ÃèÊö£¨¿ÉÑ¡£©" style={{ flex: 1 }} />
-                          <button className="sp-icon-btn sp-save" onClick={handleSaveName} title="±£´æ"><Icon type="check" size={12} /></button>
+                          <input className="sp-inp" value={draftDesc} onChange={e => setDraftDesc(e.target.value)} placeholder="æè¿°ï¼ˆå¯é€‰ï¼‰" style={{ flex: 1 }} />
+                          <button className="sp-icon-btn sp-save" onClick={handleSaveName} title="ä¿å­˜"><Icon type="check" size={12} /></button>
                         </div>
                       ) : (
                         <div className="sp-preset-meta" onClick={() => setExpanded(!expanded)}>
                           <span className="sp-preset-name">{preset.name}</span>
                           {preset.description && <span className="sp-preset-desc">{preset.description}</span>}
-                          <span className="sp-preset-count">{preset.steps.length} ¾µÍ·</span>
+                          <span className="sp-preset-count">{preset.steps.length} é•œå¤´</span>
                         </div>
                       )}
                     </div>
                     <div className="sp-preset-actions">
-                      <button className="sp-icon-btn" onClick={() => { setExpanded(!expanded); setEditingName(false); }} title={expanded ? 'ÊÕÆğ' : 'Õ¹¿ª/±à¼­'}>
+                      <button className="sp-icon-btn" onClick={() => { setExpanded(!expanded); setEditingName(false); }} title={expanded ? 'æ”¶èµ·' : 'å±•å¼€/ç¼–è¾‘'}>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ transform: expanded ? 'rotate(180deg)' : '', transition: 'transform 0.2s' }}>
                           <polyline points="6 9 12 15 18 9" /></svg>
                       </button>
-                      <button className="sp-icon-btn" onClick={() => { setEditingName(true); setDraftName(preset.name); setDraftDesc(preset.description); }} title="ÖØÃüÃû">
+                      <button className="sp-icon-btn" onClick={() => { setEditingName(true); setDraftName(preset.name); setDraftDesc(preset.description); }} title="é‡å‘½å">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
                       </button>
                       <button className="sp-icon-btn" onClick={() => {
                         const json = s.exportStoryboardPreset(preset.id);
                         const blob = new Blob([json], { type: 'application/json' });
                         const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `${preset.name}.json`; a.click();
-                      }} title="µ¼³ö JSON">
+                      }} title="å¯¼å‡º JSON">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                       </button>
-                      <button className="sp-icon-btn sp-del" onClick={() => { if (confirm(`È·¶¨É¾³ıÔ¤Éè¡¸${preset.name}¡¹£¿`)) s.deleteStoryboardPreset(preset.id); }} title="É¾³ı">
+                      <button className="sp-icon-btn sp-del" onClick={() => { if (confirm(`ç¡®å®šåˆ é™¤é¢„è®¾ã€Œ${preset.name}ã€ï¼Ÿ`)) s.deleteStoryboardPreset(preset.id); }} title="åˆ é™¤">
                         <Icon type="close" size={12} />
                       </button>
                     </div>
                   </div>
 
-                  {/* Õ¹¿ª£º¾µÍ·ÁĞ±í */}
+                  {/* å±•å¼€ï¼šé•œå¤´åˆ—è¡¨ */}
                   {expanded && (
                     <div className="sp-preset-steps">
                       <div className="sp-preset-steps-toolbar">
                         <button className="sp-btn sp-add-step-btn"
                           onClick={() => s.updateStoryboardPreset(preset.id, {
-                            steps: [...preset.steps, { scene: String(preset.steps.length + 1).padStart(2, '0'), shot: '01', shotType: 'ÖĞ¾°', cameraMove: '¹Ì¶¨', description: '', dialogue: '', duration: '5s', text2imgPrompt: '', img2videoPrompt: '' }]
+                            steps: [...preset.steps, { scene: String(preset.steps.length + 1).padStart(2, '0'), shot: '01', shotType: 'ä¸­æ™¯', cameraMove: 'å›ºå®š', description: '', dialogue: '', duration: '5s', text2imgPrompt: '', img2videoPrompt: '' }]
                           })}
-                        >+ Ìí¼Ó¾µÍ·</button>
+                        >+ æ·»åŠ é•œå¤´</button>
                         <label className="sp-import-btn">
-                          µ¼Èë JSON
+                          å¯¼å…¥ JSON
                           <input type="file" accept=".json" style={{ display: 'none' }}
                             onChange={e => {
                               const file = e.target.files?.[0];
@@ -694,7 +694,7 @@ export const SettingsPage: React.FC = () => {
                               const reader = new FileReader();
                               reader.onload = ev => {
                                 const result = s.importStoryboardPreset(ev.target?.result as string);
-                                if (!result.ok) alert('µ¼ÈëÊ§°Ü£º' + result.error);
+                                if (!result.ok) alert('å¯¼å…¥å¤±è´¥ï¼š' + result.error);
                               };
                               reader.readAsText(file);
                               e.target.value = '';
@@ -705,7 +705,7 @@ export const SettingsPage: React.FC = () => {
                       <table className="sp-steps-table">
                         <thead>
                           <tr>
-                            <th>³¡</th><th>¾µ</th><th>ÀàĞÍ</th><th>ÔË¾µ</th><th>»­ÃæÃèÊö</th><th>¶Ô°×</th><th>Ê±³¤</th><th>Í¼ÉúÍ¼ÌáÊ¾´Ê</th><th>²Ù×÷</th>
+                            <th>åœº</th><th>é•œ</th><th>ç±»å‹</th><th>è¿é•œ</th><th>ç”»é¢æè¿°</th><th>å¯¹ç™½</th><th>æ—¶é•¿</th><th>å›¾ç”Ÿå›¾æç¤ºè¯</th><th>æ“ä½œ</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -715,20 +715,20 @@ export const SettingsPage: React.FC = () => {
                               <td><input className="sp-step-inp" value={step.shot} onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], shot: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }} /></td>
                               <td>
                                 <select className="sp-step-inp sp-step-sel" value={step.shotType} onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], shotType: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }}>
-                                  {['Ô¶¾°','È«¾°','ÖĞ¾°','½ü¾°','ÌØĞ´','Ë«ÈËÖĞ¾°','Ë«ÈËÌØĞ´','¿Õ¾µ','º½ÅÄ',' POV'].map(t => <option key={t} value={t}>{t}</option>)}
+                                  {['è¿œæ™¯','å…¨æ™¯','ä¸­æ™¯','è¿‘æ™¯','ç‰¹å†™','åŒäººä¸­æ™¯','åŒäººç‰¹å†™','ç©ºé•œ','èˆªæ‹',' POV'].map(t => <option key={t} value={t}>{t}</option>)}
                                 </select>
                               </td>
                               <td>
                                 <select className="sp-step-inp sp-step-sel" value={step.cameraMove} onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], cameraMove: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }}>
-                                  {['¹Ì¶¨','ÍÆ','À­','Ò¡','ÒÆ','¸ú','Éı½µ','»·ÈÆ','º½ÅÄ','ÊÖ³Ö','POV'].map(m => <option key={m} value={m}>{m}</option>)}
+                                  {['å›ºå®š','æ¨','æ‹‰','æ‘‡','ç§»','è·Ÿ','å‡é™','ç¯ç»•','èˆªæ‹','æ‰‹æŒ','POV'].map(m => <option key={m} value={m}>{m}</option>)}
                                 </select>
                               </td>
                               <td><textarea className="sp-step-inp sp-step-textarea" value={step.description} rows={2} onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], description: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }} /></td>
                               <td><textarea className="sp-step-inp sp-step-textarea" value={step.dialogue} rows={2} onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], dialogue: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }} /></td>
                               <td><input className="sp-step-inp" value={step.duration} onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], duration: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }} /></td>
-                              <td><textarea className="sp-step-inp sp-step-textarea" value={step.text2imgPrompt} rows={2} placeholder="ÓÃÓÚÎÄÉúÍ¼½Úµã¡­" onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], text2imgPrompt: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }} /></td>
+                              <td><textarea className="sp-step-inp sp-step-textarea" value={step.text2imgPrompt} rows={2} placeholder="ç”¨äºæ–‡ç”Ÿå›¾èŠ‚ç‚¹â€¦" onChange={e => { const s2 = [...preset.steps]; s2[idx] = { ...s2[idx], text2imgPrompt: e.target.value }; s.updateStoryboardPreset(preset.id, { steps: s2 }); }} /></td>
                               <td>
-                                <button className="sp-icon-btn sp-del" onClick={() => { const s2 = preset.steps.filter((_: any, i: number) => i !== idx); s.updateStoryboardPreset(preset.id, { steps: s2 }); }} title="É¾³ı´Ë¾µÍ·">
+                                <button className="sp-icon-btn sp-del" onClick={() => { const s2 = preset.steps.filter((_: any, i: number) => i !== idx); s.updateStoryboardPreset(preset.id, { steps: s2 }); }} title="åˆ é™¤æ­¤é•œå¤´">
                                   <Icon type="close" size={11} />
                                 </button>
                               </td>
@@ -745,68 +745,68 @@ export const SettingsPage: React.FC = () => {
         )}
       </Section>
 
-      {/* ËØ²ÄÔ´ÅäÖÃ£¨Pexels / Pixabay / ±¾µØÎÄ¼ş¼Ğ£© */}
+      {/* ç´ ææºé…ç½®ï¼ˆPexels / Pixabay / æœ¬åœ°æ–‡ä»¶å¤¹ï¼‰ */}
       <Section
-        title="ËØ²ÄÔ´ÅäÖÃ"
-        sub="ÅäÖÃ Pexels¡¢Pixabay API Key »ò±¾µØËØ²ÄÎÄ¼ş¼ĞÂ·¾¶£¬ÓÃÓÚ¶ÌÊÓÆµÉú²úµÄÊÓÆµËØ²ÄÀ´Ô´"
+        title="ç´ ææºé…ç½®"
+        sub="é…ç½® Pexelsã€Pixabay API Key æˆ–æœ¬åœ°ç´ ææ–‡ä»¶å¤¹è·¯å¾„ï¼Œç”¨äºçŸ­è§†é¢‘ç”Ÿäº§çš„è§†é¢‘ç´ ææ¥æº"
         icon={<Icon type="video" />}
         onAdd={() => {
-          const name = prompt('ËØ²ÄÔ´Ãû³Æ£¨Èç£ºPexels ÕËºÅ£©');
+          const name = prompt('ç´ ææºåç§°ï¼ˆå¦‚ï¼šPexels è´¦å·ï¼‰');
           if (!name) return;
-          const provider = prompt('ÀàĞÍ£ºpexels / pixabay / local', 'pexels') as StockMediaProvider;
+          const provider = prompt('ç±»å‹ï¼špexels / pixabay / local', 'pexels') as StockMediaProvider;
           if (!provider) return;
-          const apiKey = provider !== 'local' ? prompt(`${provider === 'pexels' ? 'Pexels' : 'Pixabay'} API Key£¿`) || '' : '';
-          const folderPath = provider === 'local' ? prompt('±¾µØÎÄ¼ş¼ĞÂ·¾¶£¿') || '' : '';
+          const apiKey = provider !== 'local' ? prompt(`${provider === 'pexels' ? 'Pexels' : 'Pixabay'} API Keyï¼Ÿ`) || '' : '';
+          const folderPath = provider === 'local' ? prompt('æœ¬åœ°æ–‡ä»¶å¤¹è·¯å¾„ï¼Ÿ') || '' : '';
           s.addStockMediaSource({ name, provider, apiKey, folderPath, enabled: true });
         }}
-        addLabel="Ìí¼ÓËØ²ÄÔ´"
+        addLabel="æ·»åŠ ç´ ææº"
       >
         {s.stockMediaSources.map(src => (
           <div key={src.id} className="settings-config-card">
             <div className="settings-config-card-top">
               <div>
                 <h3>{src.name}</h3>
-                <p>ÀàĞÍ: {src.provider} {!src.enabled && '£¨ÒÑ½ûÓÃ£©'}</p>
+                <p>ç±»å‹: {src.provider} {!src.enabled && 'ï¼ˆå·²ç¦ç”¨ï¼‰'}</p>
                 {src.provider === 'local' ? (
-                  <small>±¾µØÂ·¾¶: {src.folderPath || 'Î´ÉèÖÃ'}</small>
+                  <small>æœ¬åœ°è·¯å¾„: {src.folderPath || 'æœªè®¾ç½®'}</small>
                 ) : (
-                  <small>API Key: {src.apiKey ? '********' + src.apiKey.slice(-4) : 'Î´ÉèÖÃ'}</small>
+                  <small>API Key: {src.apiKey ? '********' + src.apiKey.slice(-4) : 'æœªè®¾ç½®'}</small>
                 )}
               </div>
               <div className="settings-config-card-actions">
                 <button className="settings-secondary-btn" onClick={() => {
-                  const newKey = src.provider !== 'local' ? prompt('ĞÂµÄ API Key£¿', src.apiKey) || src.apiKey : src.apiKey;
-                  const newPath = src.provider === 'local' ? prompt('ĞÂµÄÎÄ¼ş¼ĞÂ·¾¶£¿', src.folderPath) || src.folderPath : src.folderPath;
+                  const newKey = src.provider !== 'local' ? prompt('æ–°çš„ API Keyï¼Ÿ', src.apiKey) || src.apiKey : src.apiKey;
+                  const newPath = src.provider === 'local' ? prompt('æ–°çš„æ–‡ä»¶å¤¹è·¯å¾„ï¼Ÿ', src.folderPath) || src.folderPath : src.folderPath;
                   s.updateStockMediaSource(src.id, { apiKey: newKey, folderPath: newPath });
-                }}>±à¼­</button>
-                <button className="settings-danger-btn" onClick={() => { if (confirm('È·¶¨É¾³ı´ËËØ²ÄÔ´£¿')) s.deleteStockMediaSource(src.id); }}>É¾³ı</button>
+                }}>ç¼–è¾‘</button>
+                <button className="settings-danger-btn" onClick={() => { if (confirm('ç¡®å®šåˆ é™¤æ­¤ç´ ææºï¼Ÿ')) s.deleteStockMediaSource(src.id); }}>åˆ é™¤</button>
               </div>
             </div>
           </div>
         ))}
         {!s.stockMediaSources.length && (
-          <div className="settings-empty">ÔİÎŞËØ²ÄÔ´ÅäÖÃ£¬µã»÷"Ìí¼ÓËØ²ÄÔ´"ÅäÖÃ Pexels / Pixabay API Key »ò±¾µØÎÄ¼ş¼Ğ¡£</div>
+          <div className="settings-empty">æš‚æ— ç´ ææºé…ç½®ï¼Œç‚¹å‡»"æ·»åŠ ç´ ææº"é…ç½® Pexels / Pixabay API Key æˆ–æœ¬åœ°æ–‡ä»¶å¤¹ã€‚</div>
         )}
       </Section>
 
-{/* °æ±¾/¸üĞÂ¼ì²é */}
+{/* ç‰ˆæœ¬/æ›´æ–°æ£€æŸ¥ */}
       <div className="sp-help">
-        <div className="sp-help-title">¹ØÓÚ ¡¤ °æ±¾</div>
+        <div className="sp-help-title">å…³äº Â· ç‰ˆæœ¬</div>
         <div style={{ padding: '12px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)' }}>µ±Ç°°æ±¾: v{appVersion}</div>
+          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)' }}>å½“å‰ç‰ˆæœ¬: v{appVersion}</div>
           <button
             className="sp-btn-ghost"
             style={{ height: 28, fontSize: 12, padding: '0 16px' }}
             onClick={checkUpdate}
             disabled={checkingUpdate || downloadingUpdate}
           >
-            {checkingUpdate ? '¼ì²éÖĞ¡­' : updateAvailable ? `·¢ÏÖĞÂ°æ±¾ v${latestVersion}` : 'ÒÑÊÇ×îĞÂ'}
+            {checkingUpdate ? 'æ£€æŸ¥ä¸­â€¦' : updateAvailable ? `å‘ç°æ–°ç‰ˆæœ¬ v${latestVersion}` : 'å·²æ˜¯æœ€æ–°'}
           </button>
         </div>
         {downloadingUpdate && (
           <div style={{ padding: '0 16px 12px' }}>
             <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.5)', marginBottom: 6 }}>
-              ÕıÔÚÏÂÔØ¸üĞÂ: {downloadProgress}%
+              æ­£åœ¨ä¸‹è½½æ›´æ–°: {downloadProgress}%
             </div>
             <div style={{ width: '100%', height: 4, background: 'rgba(255,255,255,0.08)', borderRadius: 2 }}>
               <div style={{ width: Math.max(2, downloadProgress) + '%', height: 4, background: '#8b5cf6', borderRadius: 2, transition: 'width 0.2s' }} />
@@ -816,29 +816,29 @@ export const SettingsPage: React.FC = () => {
         {downloadedPath && !downloadingUpdate && (
           <div style={{ padding: '0 16px 12px' }}>
             <button className="sp-btn-primary" style={{ width: '100%', height: 34, fontSize: 13 }} onClick={installNow}>
-              ÏÂÔØÍê³É ¡ú Á¢¼´°²×°
+              ä¸‹è½½å®Œæˆ â†’ ç«‹å³å®‰è£…
             </button>
           </div>
         )}
         {!downloadingUpdate && !downloadedPath && updateAvailable && (
           <div style={{ padding: '0 16px 12px' }}>
             <button className="sp-btn-primary" style={{ width: '100%', height: 34, fontSize: 13 }} onClick={startDownload}>
-              ÏÂÔØ v{latestVersion} °²×°°ü
+              ä¸‹è½½ v{latestVersion} å®‰è£…åŒ…
             </button>
           </div>
         )}
       </div>
-      {/* API ÉêÇë¹¥ÂÔ */}
+      {/* API ç”³è¯·æ”»ç•¥ */}
       <div className="sp-help">
-        <div className="sp-help-title">API ÉêÇë¹¥ÂÔ</div>
+        <div className="sp-help-title">API ç”³è¯·æ”»ç•¥</div>
         <div className="sp-help-grid">
           {[
-            { name: '»ğÉ½·½ÖÛ Ark', url: 'https://www.volcengine.com/product/ark', desc: 'doubao / Seedance ÊÓÆµ' },
-            { name: 'agnes AI', url: 'https://agnes-ai.com', desc: '2K/4K Í¼Ïñ/ÊÓÆµÉú³É' },
-            { name: 'SiliconFlow', url: 'https://www.siliconflow.cn', desc: '¶àÄ£ĞÍ¾ÛºÏÆ½Ì¨' },
-            { name: 'ÖÇÆ× GLM', url: 'https://open.bigmodel.cn', desc: 'GLM-4 ¶Ô»°/Í¼ÏñÄ£ĞÍ' },
-            { name: 'ModelScope', url: 'https://modelscope.cn', desc: 'Í¨ÒåÇ§ÎÊ / Wan2.1 ÊÓÆµ' },
-            { name: '¹è»ùÁ÷¶¯', url: 'https://siliconflow.cn', desc: 'µÍ¼Û OpenAI ¼æÈİ API' },
+            { name: 'ç«å±±æ–¹èˆŸ Ark', url: 'https://www.volcengine.com/product/ark', desc: 'doubao / Seedance è§†é¢‘' },
+            { name: 'agnes AI', url: 'https://agnes-ai.com', desc: '2K/4K å›¾åƒ/è§†é¢‘ç”Ÿæˆ' },
+            { name: 'SiliconFlow', url: 'https://www.siliconflow.cn', desc: 'å¤šæ¨¡å‹èšåˆå¹³å°' },
+            { name: 'æ™ºè°± GLM', url: 'https://open.bigmodel.cn', desc: 'GLM-4 å¯¹è¯/å›¾åƒæ¨¡å‹' },
+            { name: 'ModelScope', url: 'https://modelscope.cn', desc: 'é€šä¹‰åƒé—® / Wan2.1 è§†é¢‘' },
+            { name: 'ç¡…åŸºæµåŠ¨', url: 'https://siliconflow.cn', desc: 'ä½ä»· OpenAI å…¼å®¹ API' },
           ].map(item => (
             <a
               key={item.name}
@@ -850,7 +850,7 @@ export const SettingsPage: React.FC = () => {
             >
               <span className="sp-help-name">{item.name}</span>
               <span className="sp-help-desc">{item.desc}</span>
-              <span className="sp-help-arrow">¡ú</span>
+              <span className="sp-help-arrow">â†’</span>
             </a>
           ))}
         </div>

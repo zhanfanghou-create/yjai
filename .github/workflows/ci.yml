@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

@@ -533,38 +533,150 @@ ipcMain.handle('system:openExternal', async (_event, url: string) => {
 });
 
 // IPC: FFmpeg detection / guided installation for local video compose
-// IPC: 自动更新：从 GitHub Releases 下载最新安装包到临时目录，返回本地路径供用户点击安装
-ipcMain.handle('system:downloadUpdate', async (_event) => {
+const RELEASE_API_URLS = [
+  'https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+  'https://mirror.ghproxy.com/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+  'https://ghfast.top/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+];
+
+function compareVersions(left: string, right: string): number {
+  const leftParts = left.replace(/^v/, '').split('.').map(part => Number.parseInt(part, 10) || 0);
+  const rightParts = right.replace(/^v/, '').split('.').map(part => Number.parseInt(part, 10) || 0);
+  const length = Math.max(leftParts.length, rightParts.length);
+  for (let index = 0; index < length; index += 1) {
+    if ((leftParts[index] || 0) !== (rightParts[index] || 0)) return (leftParts[index] || 0) - (rightParts[index] || 0);
+  }
+  return 0;
+}
+
+async function fetchLatestRelease(): Promise<any> {
+  let lastError: unknown;
+  for (const url of RELEASE_API_URLS) {
+    try {
+      const response = await fetch(url, {
+        headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'YijingAI-Updater' },
+        signal: AbortSignal.timeout(10000),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError instanceof Error ? lastError : new Error('无法连接更新服务器');
+}
+
+function selectInstallerAsset(release: any): any {
+  const assets = Array.isArray(release?.assets) ? release.assets : [];
+  const isWindows = process.platform === 'win32';
+  const isArm64 = process.arch === 'arm64';
+  const pattern = isWindows
+    ? /(?:Installer-)?Windows-x64\.exe$/i
+    : (isArm64 ? /(?:Installer-)?macOS-arm64\.dmg$/i : /(?:Installer-)?macOS-x64\.dmg$/i);
+  return assets.find((asset: any) => pattern.test(String(asset?.name || '')));
+}
+
+async function writeUpdateFile(response: Response, savePath: string): Promise<number> {
+  if (!response.body) throw new Error('下载响应为空');
+  const total = Number(response.headers.get('content-length') || 0);
+  const writer = fs.createWriteStream(savePath);
+  const reader = response.body.getReader();
+  let downloaded = 0;
   try {
-    const r = await fetch('https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest');
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const d = await r.json();
-    const assets = Array.isArray(d.assets) ? d.assets : [];
-    const isWin = process.platform === 'win32';
-    const isArm = process.arch === 'arm64';
-    const pattern = isWin ? /-windows-x64\.exe$/i : (isArm ? /-arm64\.dmg$/i : /-x64\.dmg$/i);
-    const asset = assets.find((a: any) => pattern.test(a.name || ''));
-    if (!asset) throw new Error('未找到对应平台安装包');
-    const downloadUrl = asset.browser_download_url || asset.url;
-    if (!downloadUrl) throw new Error('下载地址为空');
-    const tmpDir = path.join(app.getPath('temp'), 'yijing-update');
-    fs.mkdirSync(tmpDir, { recursive: true });
-    const savePath = path.join(tmpDir, asset.name);
-    if (fs.existsSync(savePath)) fs.unlinkSync(savePath);
-    const resp = await fetch(downloadUrl);
-    if (!resp.ok) throw new Error(`下载 HTTP ${resp.status}`);
-    const reader = resp.body!.getReader();
-    const chunks: Uint8Array[] = [];
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
-      chunks.push(value);
+      const chunk = Buffer.from(value);
+      downloaded += chunk.length;
+      if (!writer.write(chunk)) await new Promise<void>((resolve, reject) => {
+        writer.once('drain', resolve);
+        writer.once('error', reject);
+      });
+      safeSend('system:updateProgress', {
+        progress: total > 0 ? Math.min(100, Math.round(downloaded * 100 / total)) : 0,
+        downloaded,
+        total,
+      });
     }
-    const buffer = Buffer.concat(chunks);
-    fs.writeFileSync(savePath, buffer);
-    return { ok: true, path: savePath, fileName: asset.name, size: buffer.length };
-  } catch (e) {
-    return { ok: false, error: (e as Error).message };
+    await new Promise<void>((resolve, reject) => {
+      writer.once('error', reject);
+      writer.end(resolve);
+    });
+    return downloaded;
+  } catch (error) {
+    writer.destroy();
+    throw error;
+  }
+}
+
+ipcMain.handle('system:checkUpdate', async () => {
+  try {
+    const release = await fetchLatestRelease();
+    const latestVersion = String(release?.tag_name || '').replace(/^v/, '');
+    const currentVersion = app.getVersion();
+    const asset = selectInstallerAsset(release);
+    return {
+      ok: true,
+      hasUpdate: Boolean(latestVersion && compareVersions(latestVersion, currentVersion) > 0 && asset),
+      currentVersion,
+      latestVersion,
+      releaseName: release?.name || '',
+      releaseNotes: release?.body || '',
+      publishDate: release?.published_at || '',
+      downloadUrl: asset?.browser_download_url || '',
+      fileName: asset?.name || '',
+      fileSize: asset?.size || 0,
+    };
+  } catch (error) {
+    return { ok: false, error: (error as Error).message };
+  }
+});
+
+// 下载自定义安装器。按国内镜像、GitHub 直链的顺序重试，避免单一线路失败。
+ipcMain.handle('system:downloadUpdate', async (_event) => {
+  try {
+    const release = await fetchLatestRelease();
+    const asset = selectInstallerAsset(release);
+    if (!asset?.browser_download_url || !asset?.name) throw new Error('未找到对应平台的自定义安装包');
+    const sourceUrl = String(asset.browser_download_url);
+    const downloadUrls = [
+      `https://ghfast.top/${sourceUrl}`,
+      `https://mirror.ghproxy.com/${sourceUrl}`,
+      sourceUrl,
+    ];
+    const tmpDir = path.join(app.getPath('temp'), 'yijing-update');
+    fs.mkdirSync(tmpDir, { recursive: true });
+    const savePath = path.join(tmpDir, asset.name);
+    let lastError: unknown;
+    for (const url of downloadUrls) {
+      try {
+        if (fs.existsSync(savePath)) fs.unlinkSync(savePath);
+        const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const size = await writeUpdateFile(response, savePath);
+        if (size <= 0) throw new Error('下载文件为空');
+        safeSend('system:updateProgress', { progress: 100, downloaded: size, total: size });
+        return { ok: true, path: savePath, fileName: asset.name, size, latestVersion: String(release?.tag_name || '').replace(/^v/, '') };
+      } catch (error) {
+        lastError = error;
+        try { if (fs.existsSync(savePath)) fs.unlinkSync(savePath); } catch { /* ignore */ }
+      }
+    }
+    throw lastError instanceof Error ? lastError : new Error('所有下载线路均不可用');
+  } catch (error) {
+    return { ok: false, error: (error as Error).message };
+  }
+});
+
+ipcMain.handle('system:installUpdate', async (_event, installerPath: string) => {
+  try {
+    if (!installerPath || !fs.existsSync(installerPath)) throw new Error('更新安装包不存在');
+    const result = await shell.openPath(installerPath);
+    if (result) throw new Error(result);
+    setTimeout(() => app.quit(), 800);
+    return { ok: true };
+  } catch (error) {
+    return { ok: false, error: (error as Error).message };
   }
 });
 
@@ -2224,6 +2336,40 @@ ipcMain.handle('license:validate', async (_event, activationCode: string, machin
       existingData = JSON.parse(fs.readFileSync(licenseFile, 'utf-8'));
     }
   } catch { /* ignore */ }
+
+  // 后台是激活时长的唯一来源。普通码也优先在线校验，确保续期后的真实到期日
+  // 能立即同步到客户端，而不是仍按默认 15 天显示。
+  try {
+    const serverUrl = (existingData.serverUrl || LICENSE_SERVER_URL).replace(/\/$/, '');
+    const response = await fetch(`${serverUrl}/api/license/verify`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ activationCode, machineCode }),
+      signal: AbortSignal.timeout(5000),
+    });
+    if (response.ok) {
+      const data = await response.json();
+      if (data.valid && data.expiresAt) {
+        existingData.activated = true;
+        existingData.activationCode = activationCode;
+        existingData.activatedAt = data.activatedAt || existingData.activatedAt || new Date().toISOString();
+        existingData.expiresAt = data.expiresAt;
+        existingData.durationDays = data.durationDays;
+        existingData.machineCode = machineCode;
+        fs.writeFileSync(licenseFile, JSON.stringify(existingData, null, 2));
+        return {
+          valid: true,
+          expiresAt: data.expiresAt,
+          daysLeft: Math.max(0, Number(data.daysLeft) || 0),
+          durationDays: data.durationDays,
+        };
+      }
+      // 联网且后台明确拒绝时，不再回退到本地算法绕过禁用或延期状态。
+      if (data && data.valid === false) return { valid: false, error: data.error || '激活码无效或已过期' };
+    }
+  } catch {
+    // 离线时继续使用下方本地签名校验，保证已发出的普通码仍可离线激活。
+  }
   
   // === 特殊激活码（不绑定机器码） ===
   if (activationCode.startsWith('SP-') || activationCode.startsWith('sp-')) {

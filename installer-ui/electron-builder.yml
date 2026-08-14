@@ -29,9 +29,9 @@ win:
       arch:
         - x64
   icon: build/icon.ico
-  artifactName: yijing-ai-${version}-windows-x64.${ext}
+  artifactName: YijingAI-Installer-Windows-x64.${ext}
 portable:
-  artifactName: yijing-ai-${version}-windows-x64.${ext}
+  artifactName: YijingAI-Installer-Windows-x64.${ext}
 mac:
   category: public.app-category.graphics-design
   target:
@@ -44,6 +44,6 @@ mac:
   gatekeeperAssess: false
   entitlements: build/entitlements.mac.plist
   entitlementsInherit: build/entitlements.mac.plist
-  artifactName: yijing-ai-${version}-macos-${arch}.${ext}
+  artifactName: YijingAI-Installer-macOS-${arch}.${ext}
 dmg:
-  artifactName: yijing-ai-${version}-macos-${arch}.${ext}
+  artifactName: YijingAI-Installer-macOS-${arch}.${ext}

@@ -82,6 +82,7 @@ declare global {
           expectedSha256?: string;
           latestVersion?: string;
         }>;
+        installUpdate: (installerPath: string) => Promise<{ ok: boolean; error?: string }>;
         onUpdateProgress: (cb: (data: { progress: number; downloaded: number; total: number }) => void) => () => void;
         openExternal?: (url: string) => Promise<any>;
         readFileAsDataUrl: (p: string) => Promise<any>;
