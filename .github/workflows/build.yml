@@ -107,18 +107,14 @@ jobs:
           fi
 
       - name: Publish custom installer to GitHub Release
-        shell: bash
-        run: |
-          shopt -s nullglob
-          tag="${GITHUB_REF##*/}"
-          if [ "$tag" = "$GITHUB_REF" ]; then tag="v$(node -p \"require('./package.json').version\")"; fi
-          files=(${{ matrix.artifact_glob }})
-          test "${#files[@]}" -gt 0
-          gh release view "$tag" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$tag" -R "$GITHUB_REPOSITORY" -t "$tag" -n "艺镜 AI 自定义安装器"
-          for file in "${files[@]}"; do
-            gh release delete-asset "$tag" "$(basename "$file")" -R "$GITHUB_REPOSITORY" -y >/dev/null 2>&1 || true
-          done
-          gh release upload "$tag" "${files[@]}" -R "$GITHUB_REPOSITORY" --clobber
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body: 艺镜 AI 自定义安装器
+          files: ${{ matrix.artifact_glob }}
+          fail_on_unmatched_files: true
+          overwrite_files: true
 
   cleanup-release:
     needs: build
