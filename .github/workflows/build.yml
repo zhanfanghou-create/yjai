@@ -74,7 +74,9 @@ jobs:
       - name: Install macOS payload tool
         if: matrix.platform == 'mac'
         shell: bash
-        run: brew install p7zip || true
+        run: |
+          brew install sevenzip || brew install p7zip
+          command -v 7zz || command -v 7z
 
       - name: Pack installer payload
         working-directory: installer-ui
