@@ -99,6 +99,7 @@ jobs:
         shell: bash
         run: |
           unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
+          npm run build
           if [ "${{ matrix.platform }}" = "win" ]; then
             npx electron-builder --win --x64 -c electron-builder.yml --publish never
           else
