@@ -1,16 +1,45 @@
-name: Build Custom Installer Release
+name: Build and publish Yijing AI installers
 
 on:
+  workflow_dispatch:
   push:
     tags:
-      - 'v*'
-  workflow_dispatch:
+      - 'v*-stable'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.value }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Read release version
+        id: version
+        run: node -e "console.log('value=' + require('./package.json').version)" >> "$GITHUB_OUTPUT"
+      - name: Verify matching installer version
+        run: node -e "const app=require('./package.json').version; const installer=require('./installer-ui/package.json').version; if(app!==installer) process.exit(1)"
+      - name: Create public draft release
+        env:
+          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
+          VERSION: ${{ steps.version.outputs.value }}
+          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
+        run: |
+          test -n "$GH_TOKEN"
+          TAG="v${VERSION}"
+          if gh release view "$TAG" --repo "$PUBLIC_REPO" >/dev/null 2>&1; then
+            gh release edit "$TAG" --draft --repo "$PUBLIC_REPO"
+          else
+            gh release create "$TAG" --repo "$PUBLIC_REPO" --target main --title "艺镜 AI v${VERSION}" --notes "艺镜 AI 无限画布 v${VERSION} 正式版。包含 Windows 与两种 macOS 芯片安装包。" --draft
+          fi
+
   build:
+    needs: prepare
     strategy:
       fail-fast: false
       matrix:
@@ -18,15 +47,15 @@ jobs:
           - os: windows-latest
             platform: win
             arch: x64
-            artifact_glob: installer-ui/dist-installer/*.exe
+            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-Windows-x64.exe
           - os: macos-14
             platform: mac
             arch: x64
-            artifact_glob: installer-ui/dist-installer/*-x64.dmg
+            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-macOS-x64.dmg
           - os: macos-14
             platform: mac
             arch: arm64
-            artifact_glob: installer-ui/dist-installer/*-arm64.dmg
+            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-macOS-arm64.dmg
     runs-on: ${{ matrix.os }}
     env:
       ELECTRON_BUILDER_DOWNLOAD_MAX_ATTEMPTS: '8'
@@ -35,48 +64,43 @@ jobs:
       CSC_IDENTITY_AUTO_DISCOVERY: 'false'
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
-
+          cache-dependency-path: |
+            package-lock.json
+            installer-ui/package-lock.json
       - name: Install main application dependencies
         shell: bash
         run: npm ci --no-audit --no-fund
-
       - name: Build main application
         shell: bash
         run: |
           npm run build:renderer
           npx tsc -p tsconfig.main.json
-
       - name: Build unpacked Windows payload
         if: matrix.platform == 'win'
         shell: bash
         run: |
           unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
           npx electron-builder --dir --win --x64 --publish never
-
       - name: Build unpacked macOS payload
         if: matrix.platform == 'mac'
         shell: bash
         run: |
           unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
           npx electron-builder --dir --mac --${{ matrix.arch }} --publish never
-
       - name: Install installer dependencies
         working-directory: installer-ui
         shell: bash
         run: npm ci --no-audit --no-fund
-
       - name: Install macOS payload tool
         if: matrix.platform == 'mac'
         shell: bash
         run: |
           brew install sevenzip || brew install p7zip
           command -v 7zz || command -v 7z
-
       - name: Pack installer payload
         working-directory: installer-ui
         shell: bash
@@ -92,7 +116,6 @@ jobs:
             test -n "$app_path"
             node scripts/pack-payload.mjs "$app_path"
           fi
-
       - name: Build custom installer
         working-directory: installer-ui
         shell: bash
@@ -108,31 +131,81 @@ jobs:
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep 15
           done
+      - name: Upload installer to public draft release
+        env:
+          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
+          ASSET: ${{ matrix.artifact_glob }}
+        shell: bash
+        run: gh release upload "v${VERSION}" "$ASSET" --clobber --repo "$PUBLIC_REPO"
 
-      - name: Publish custom installer to GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ github.ref_name }}
-          name: ${{ github.ref_name }}
-          body: 艺镜 AI 自定义安装器
-          files: ${{ matrix.artifact_glob }}
-          fail_on_unmatched_files: true
-          overwrite_files: true
-
-  cleanup-release:
-    needs: build
+  publish:
+    needs: [prepare, build]
     runs-on: ubuntu-latest
     steps:
-      - name: Remove obsolete release assets
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download installers from public draft release
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: bash
+          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
         run: |
-          tag="${GITHUB_REF##*/}"
-          if [ "$tag" = "$GITHUB_REF" ]; then tag="v1.1.9"; fi
-          gh release view "$tag" -R "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | while read -r name; do
-            case "$name" in
-              YijingAI-Installer-Windows-x64.exe|YijingAI-Installer-macOS-x64.dmg|YijingAI-Installer-macOS-arm64.dmg) ;;
-              *) gh release delete-asset "$tag" "$name" -R "$GITHUB_REPOSITORY" -y ;;
-            esac
-          done
+          mkdir -p dist
+          gh release download "v${VERSION}" --repo "$PUBLIC_REPO" --dir dist --pattern "YijingAI-Installer-Windows-x64.exe" --pattern "YijingAI-Installer-macOS-x64.dmg" --pattern "YijingAI-Installer-macOS-arm64.dmg"
+      - name: Generate public update manifest
+        env:
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: node scripts/create-release-manifest.mjs "$VERSION" "zhanfanghou-create/yijing-ai-downloads" "yijingshijue-2026/yijing-ai-downloads" dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
+          VERSION: ${{ needs.prepare.outputs.version }}
+          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
+        run: |
+          gh release upload "v${VERSION}" dist/latest.json --clobber --repo "$PUBLIC_REPO"
+          gh release edit "v${VERSION}" --draft=false --latest --repo "$PUBLIC_REPO"
+      - name: Publish installers to CNB domestic release
+        env:
+          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
+          CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
+          CNB_RELEASE_TAG: v${{ needs.prepare.outputs.version }}
+          CNB_RELEASE_TITLE: 艺镜 AI v${{ needs.prepare.outputs.version }}
+          CNB_RELEASE_NOTES: 艺镜 AI 无限画布正式版，包含 Windows 与 Intel/Apple Silicon macOS 安装包。
+        run: node scripts/publish-cnb-release.mjs dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
+      - name: Publish installers to Alibaba Cloud OSS
+        env:
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_REGION: cn-hangzhou
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          test -n "$OSS_ACCESS_KEY_ID"
+          test -n "$OSS_ACCESS_KEY_SECRET"
+          curl -fsSL https://gosspublic.alicdn.com/ossutil/v2/2.3.0/ossutil-2.3.0-linux-amd64.zip -o ossutil.zip
+          echo "3ae4d9fc85a7a6e9f5654d1599766f1a3a42a3692870887b5ae9338d582ef65a  ossutil.zip" | sha256sum -c -
+          unzip -q ossutil.zip -d ossutil-bin
+          OSSUTIL=$(find ossutil-bin -type f -name ossutil -print -quit)
+          chmod +x "$OSSUTIL"
+          "$OSSUTIL" cp dist/YijingAI-Installer-Windows-x64.exe "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-Windows-x64.exe" -f
+          "$OSSUTIL" cp dist/YijingAI-Installer-macOS-x64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-x64.dmg" -f
+          "$OSSUTIL" cp dist/YijingAI-Installer-macOS-arm64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-arm64.dmg" -f
+          "$OSSUTIL" cp dist/latest.json oss://yjai-releases-cn-20260818/yijing/latest.json -f
+      - name: Update CNB latest manifest branch
+        env:
+          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
+          CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
+          VERSION: ${{ needs.prepare.outputs.version }}
+        run: |
+          BASIC=$(printf 'cnb:%s' "$CNB_TOKEN" | base64 -w0)
+          git clone --depth 1 -c http.extraHeader="AUTHORIZATION: basic $BASIC" "https://cnb.cool/${CNB_REPOSITORY}.git" cnb-release-repo
+          cp dist/latest.json cnb-release-repo/latest.json
+          cd cnb-release-repo
+          git config user.name "YJAI Release Bot"
+          git config user.email "release@yjai.top"
+          git add latest.json
+          git diff --cached --quiet || git commit -m "Update release manifest v${VERSION}"
+          git -c http.extraHeader="AUTHORIZATION: basic $BASIC" push origin main

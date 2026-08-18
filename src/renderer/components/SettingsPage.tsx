@@ -350,8 +350,8 @@ export const SettingsPage: React.FC = () => {
 
 
   // ========== 自动更新：版本显示 + 检查更新 + 一键下载安装 ==========
-  // 支持私有仓库 + 国内镜像加速
-  const [appVersion, setAppVersion] = useState<string>('1.1.8');
+  // CNB 国内节点优先，GitHub 公开下载仓库兜底
+  const [appVersion, setAppVersion] = useState<string>('1.2.0');
   const [latestVersion, setLatestVersion] = useState<string>('');
   const [releaseName, setReleaseName] = useState<string>('');
   const [releaseNotes, setReleaseNotes] = useState<string>('');
@@ -372,23 +372,24 @@ export const SettingsPage: React.FC = () => {
       const api = (window as any)?.yijingAPI?.system?.checkUpdate;
       if (typeof api !== 'function') {
         // 回退到前端直接检查（公开仓库）
-        const apiUrls = [
-          'https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
-          'https://mirror.ghproxy.com/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+        const manifestUrls = [
+          'https://cnb.cool/yijingshijue-2026/yijing-ai-downloads/-/git/raw/main/latest.json',
+          'https://yjai-releases-cn-20260818.oss-cn-hangzhou.aliyuncs.com/yijing/latest.json',
+          'https://github.com/zhanfanghou-create/yijing-ai-downloads/releases/latest/download/latest.json',
         ];
-        for (const apiUrl of apiUrls) {
+        for (const manifestUrl of manifestUrls) {
           try {
             const ctrl = new AbortController();
             const t = setTimeout(() => ctrl.abort(), 8000);
-            const r = await fetch(apiUrl, { signal: ctrl.signal });
+            const r = await fetch(manifestUrl, { signal: ctrl.signal });
             clearTimeout(t);
             if (!r.ok) continue;
             const d = await r.json();
-            const tag = (d.tag_name || '').replace(/^v/, '').trim();
+            const tag = (d.version || '').replace(/^v/, '').trim();
             const cur = appVersion.replace(/^v/, '').trim();
             setLatestVersion(tag);
-            setReleaseName(d.name || '');
-            setReleaseNotes(d.body || '');
+            setReleaseName('艺镜 AI 无限画布');
+            setReleaseNotes(d.notes || '');
             if (tag && cur && tag !== cur && tag.localeCompare(cur, undefined, { numeric: true, sensitivity: 'base' }) > 0) {
               setUpdateAvailable(true);
             }
@@ -420,7 +421,7 @@ export const SettingsPage: React.FC = () => {
     const onProgress = (window as any)?.yijingAPI?.system?.onUpdateProgress;
 
     if (typeof api !== 'function') {
-      window.open('https://mirror.ghproxy.com/https://github.com/zhanfanghou-create/yjai/releases/latest', '_blank');
+      window.open('https://github.com/zhanfanghou-create/yijing-ai-downloads/releases/latest', '_blank');
       return;
     }
 

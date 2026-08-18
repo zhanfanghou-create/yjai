@@ -533,11 +533,17 @@ ipcMain.handle('system:openExternal', async (_event, url: string) => {
 });
 
 // IPC: FFmpeg detection / guided installation for local video compose
-const RELEASE_API_URLS = [
-  'https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
-  'https://mirror.ghproxy.com/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
-  'https://ghfast.top/https://api.github.com/repos/zhanfanghou-create/yjai/releases/latest',
+const GITHUB_RELEASE_REPOSITORY = 'zhanfanghou-create/yijing-ai-downloads';
+const CNB_RELEASE_REPOSITORY = 'yijingshijue-2026/yijing-ai-downloads';
+const OSS_RELEASE_PREFIX = 'https://yjai-releases-cn-20260818.oss-cn-hangzhou.aliyuncs.com/yijing/';
+const RELEASE_MANIFEST_URLS = [
+  `https://cnb.cool/${CNB_RELEASE_REPOSITORY}/-/git/raw/main/latest.json`,
+  `${OSS_RELEASE_PREFIX}latest.json`,
+  `https://github.com/${GITHUB_RELEASE_REPOSITORY}/releases/latest/download/latest.json`,
 ];
+const GITHUB_RELEASE_PREFIX = `https://github.com/${GITHUB_RELEASE_REPOSITORY}/releases/download/`;
+const CNB_RELEASE_PREFIX = `https://cnb.cool/${CNB_RELEASE_REPOSITORY}/-/releases/download/`;
+const ALLOWED_RELEASE_PREFIXES = [CNB_RELEASE_PREFIX, OSS_RELEASE_PREFIX, GITHUB_RELEASE_PREFIX];
 
 function compareVersions(left: string, right: string): number {
   const leftParts = left.replace(/^v/, '').split('.').map(part => Number.parseInt(part, 10) || 0);
@@ -549,12 +555,12 @@ function compareVersions(left: string, right: string): number {
   return 0;
 }
 
-async function fetchLatestRelease(): Promise<any> {
+async function fetchLatestManifest(): Promise<any> {
   let lastError: unknown;
-  for (const url of RELEASE_API_URLS) {
+  for (const url of RELEASE_MANIFEST_URLS) {
     try {
       const response = await fetch(url, {
-        headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'YijingAI-Updater' },
+        headers: { Accept: 'application/json', 'User-Agent': 'YijingAI-Updater' },
         signal: AbortSignal.timeout(10000),
       });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -566,14 +572,30 @@ async function fetchLatestRelease(): Promise<any> {
   throw lastError instanceof Error ? lastError : new Error('无法连接更新服务器');
 }
 
-function selectInstallerAsset(release: any): any {
-  const assets = Array.isArray(release?.assets) ? release.assets : [];
-  const isWindows = process.platform === 'win32';
-  const isArm64 = process.arch === 'arm64';
-  const pattern = isWindows
-    ? /(?:Installer-)?Windows-x64\.exe$/i
-    : (isArm64 ? /(?:Installer-)?macOS-arm64\.dmg$/i : /(?:Installer-)?macOS-x64\.dmg$/i);
-  return assets.find((asset: any) => pattern.test(String(asset?.name || '')));
+function isAllowedReleaseUrl(value: unknown): boolean {
+  return ALLOWED_RELEASE_PREFIXES.some(prefix => String(value || '').startsWith(prefix));
+}
+
+function selectInstallerAsset(manifest: any): any {
+  if (process.platform === 'win32') return manifest?.assets?.windows;
+  return process.arch === 'arm64' ? manifest?.assets?.macosArm64 : manifest?.assets?.macosX64;
+}
+
+function releaseCandidates(asset: any): Array<{ name: string; url: string }> {
+  const mirrors = Array.isArray(asset?.mirrors) ? asset.mirrors : [];
+  const candidates: Array<{ name: string; url: string }> = mirrors
+    .filter((mirror: any) => mirror?.url && isAllowedReleaseUrl(mirror.url))
+    .map((mirror: any) => ({ name: String(mirror.name || '下载节点'), url: String(mirror.url) }));
+  if (asset?.url && isAllowedReleaseUrl(asset.url) && !candidates.some(candidate => candidate.url === asset.url)) {
+    candidates.unshift({ name: '主下载节点', url: String(asset.url) });
+  }
+  return candidates;
+}
+
+async function sha256File(filePath: string): Promise<string> {
+  const hash = crypto.createHash('sha256');
+  for await (const chunk of fs.createReadStream(filePath)) hash.update(chunk);
+  return hash.digest('hex');
 }
 
 async function writeUpdateFile(response: Response, savePath: string): Promise<number> {
@@ -611,20 +633,21 @@ async function writeUpdateFile(response: Response, savePath: string): Promise<nu
 
 ipcMain.handle('system:checkUpdate', async () => {
   try {
-    const release = await fetchLatestRelease();
-    const latestVersion = String(release?.tag_name || '').replace(/^v/, '');
+    const manifest = await fetchLatestManifest();
+    const latestVersion = String(manifest?.version || '').replace(/^v/, '');
     const currentVersion = app.getVersion();
-    const asset = selectInstallerAsset(release);
+    const asset = selectInstallerAsset(manifest);
+    if (!/^\d+\.\d+\.\d+$/.test(latestVersion) || !asset?.fileName || !asset?.sha256 || !isAllowedReleaseUrl(asset.url)) throw new Error('更新清单不完整');
     return {
       ok: true,
       hasUpdate: Boolean(latestVersion && compareVersions(latestVersion, currentVersion) > 0 && asset),
       currentVersion,
       latestVersion,
-      releaseName: release?.name || '',
-      releaseNotes: release?.body || '',
-      publishDate: release?.published_at || '',
-      downloadUrl: asset?.browser_download_url || '',
-      fileName: asset?.name || '',
+      releaseName: '艺镜 AI 无限画布',
+      releaseNotes: manifest?.notes || '',
+      publishDate: manifest?.publishedAt || '',
+      downloadUrl: asset?.url || '',
+      fileName: asset?.fileName || '',
       fileSize: asset?.size || 0,
     };
   } catch (error) {
@@ -635,28 +658,23 @@ ipcMain.handle('system:checkUpdate', async () => {
 // 下载自定义安装器。按国内镜像、GitHub 直链的顺序重试，避免单一线路失败。
 ipcMain.handle('system:downloadUpdate', async (_event) => {
   try {
-    const release = await fetchLatestRelease();
-    const asset = selectInstallerAsset(release);
-    if (!asset?.browser_download_url || !asset?.name) throw new Error('未找到对应平台的自定义安装包');
-    const sourceUrl = String(asset.browser_download_url);
-    const downloadUrls = [
-      `https://ghfast.top/${sourceUrl}`,
-      `https://mirror.ghproxy.com/${sourceUrl}`,
-      sourceUrl,
-    ];
+    const manifest = await fetchLatestManifest();
+    const asset = selectInstallerAsset(manifest);
+    if (!asset?.url || !asset?.fileName || !asset?.sha256 || !isAllowedReleaseUrl(asset.url)) throw new Error('未找到对应平台的自定义安装包');
     const tmpDir = path.join(app.getPath('temp'), 'yijing-update');
     fs.mkdirSync(tmpDir, { recursive: true });
-    const savePath = path.join(tmpDir, asset.name);
+    const savePath = path.join(tmpDir, path.basename(asset.fileName));
     let lastError: unknown;
-    for (const url of downloadUrls) {
+    for (const candidate of releaseCandidates(asset)) {
       try {
         if (fs.existsSync(savePath)) fs.unlinkSync(savePath);
-        const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
+        const response = await fetch(candidate.url, { signal: AbortSignal.timeout(30 * 60 * 1000), redirect: 'follow' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const size = await writeUpdateFile(response, savePath);
         if (size <= 0) throw new Error('下载文件为空');
+        if ((await sha256File(savePath)).toLowerCase() !== String(asset.sha256).toLowerCase()) throw new Error('下载文件校验失败');
         safeSend('system:updateProgress', { progress: 100, downloaded: size, total: size });
-        return { ok: true, path: savePath, fileName: asset.name, size, latestVersion: String(release?.tag_name || '').replace(/^v/, '') };
+        return { ok: true, path: savePath, fileName: asset.fileName, size, latestVersion: String(manifest?.version || '').replace(/^v/, '') };
       } catch (error) {
         lastError = error;
         try { if (fs.existsSync(savePath)) fs.unlinkSync(savePath); } catch { /* ignore */ }
