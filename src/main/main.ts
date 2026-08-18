@@ -537,7 +537,7 @@ const GITHUB_RELEASE_REPOSITORY = 'zhanfanghou-create/yijing-ai-downloads';
 const CNB_RELEASE_REPOSITORY = 'yijingshijue-2026/yijing-ai-downloads';
 const OSS_RELEASE_PREFIX = 'https://yjai-releases-cn-20260818.oss-cn-hangzhou.aliyuncs.com/yijing/';
 const RELEASE_MANIFEST_URLS = [
-  `https://cnb.cool/${CNB_RELEASE_REPOSITORY}/-/git/raw/main/latest.json`,
+  `https://cnb.cool/${CNB_RELEASE_REPOSITORY}/-/releases/latest/download/latest.json`,
   `${OSS_RELEASE_PREFIX}latest.json`,
   `https://github.com/${GITHUB_RELEASE_REPOSITORY}/releases/latest/download/latest.json`,
 ];
