@@ -4465,7 +4465,11 @@ function CanvasInner(_props: CanvasProps = {}) {
       if (url) {
         referenceImages.push({ id: `group-ref-${id}-${Date.now()}`, name: getNodeDisplayName(node), url, type: mediaType, nodeId: id });
       }
-      const text = node.result?.type === 'text' && node.result.text?.trim() ? node.result.text : (node.prompt || '');
+      const text = TEXT_NODE_TYPES.includes(node.type)
+        ? node.result?.type === 'text' && node.result.text?.trim()
+          ? node.result.text
+          : (node.prompt || '')
+        : '';
       if (text.trim()) promptParts.push(text.trim());
     });
     return { referenceImages, prompt: composePromptParts(...promptParts), upstreamNodeIds };
@@ -4486,7 +4490,7 @@ function CanvasInner(_props: CanvasProps = {}) {
       width: 280,
       height: 220,
       status: 'idle',
-      prompt: referencePrompt || '',
+      prompt: '',
       options: {
         displayName: createNodeDisplayName(targetType, useAppStore.getState().nodes),
         generationType: targetType,
@@ -5453,7 +5457,5 @@ export const Canvas: React.FC<CanvasProps> = props => (
     <CanvasInner {...props} />
   </ReactFlowProvider>
 );
-
-
 
 
