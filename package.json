@@ -14,7 +14,8 @@
     "pack": "electron-builder --dir",
     "dist:win": "electron-builder --win --x64 --publish never",
     "dist:mac": "electron-builder --mac --publish never",
-    "pack:win": "electron-builder --win --x64 --dir --publish never"
+    "pack:win": "electron-builder --win --x64 --dir --publish never",
+    "release:publish": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/publish-release.ps1"
   },
   "keywords": [
     "ai",
