@@ -212,3 +212,17 @@ jobs:
           git add latest.json
           git diff --cached --quiet || git commit -m "Update release manifest v${VERSION}"
           git -c http.extraHeader="AUTHORIZATION: basic $BASIC" push origin main
+
+  restore-source-privacy:
+    if: always()
+    needs: [prepare, build, publish]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Restore source repository privacy
+        env:
+          GH_TOKEN: ${{ secrets.SOURCE_REPOSITORY_ADMIN_TOKEN || secrets.PUBLIC_RELEASE_REPO_TOKEN }}
+          SOURCE_REPOSITORY: ${{ github.repository }}
+        run: |
+          test -n "$GH_TOKEN"
+          gh api --method PATCH "repos/${SOURCE_REPOSITORY}" -F private=true >/dev/null
+          test "$(gh api "repos/${SOURCE_REPOSITORY}" --jq .private)" = "true"

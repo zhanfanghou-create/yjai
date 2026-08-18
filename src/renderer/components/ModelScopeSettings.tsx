@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useAppStore } from '../../store/appStore';
-import { MODELSCOPE_CATEGORIES } from '../../services/modelScopeService';
+import { useAppStore } from '../store/appStore';
+import { MODELSCOPE_CATEGORIES } from '../services/modelScopeService';
 
 export const ModelScopeSettings: React.FC = () => {
   const s = useAppStore();

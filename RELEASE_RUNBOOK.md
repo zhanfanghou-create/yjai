@@ -11,10 +11,10 @@
 
 ## 更新与发布顺序
 
-客户端更新清单由 `scripts/create-release-manifest.mjs` 生成，客户端固定按以下顺序下载并校验 SHA-256：
+客户端更新清单由 `scripts/create-release-manifest.mjs` 生成，客户端按当前国内线路实测结果使用以下顺序下载并校验 SHA-256：
 
-1. CNB 国内节点
-2. 阿里云 OSS
+1. 阿里云 OSS
+2. CNB 国内节点
 3. GitHub Release
 
 每个稳定版本包含 Windows x64、macOS Intel x64、macOS Apple Silicon arm64 三个安装包。只有公开下载仓库出现新版本时客户端才提示更新。
@@ -31,6 +31,8 @@
 | 阿里云 OSS `yjai-releases-cn-20260818` | 国内对象存储下载线路 | Actions Secrets `OSS_ACCESS_KEY_ID`、`OSS_ACCESS_KEY_SECRET`；区域 `cn-hangzhou` |
 
 当前工作流文件：`.github/workflows/build.yml`。本地 `gh auth status` 未作为发布凭据来源；Actions 发布不依赖本机保存明文登录数据。
+
+若打包前需要临时公开源码仓库，Actions 的 `restore-source-privacy` 任务会在成功、失败或取消后的可执行收尾阶段恢复私密。优先配置具有 `zhanfanghou-create/yjai` Administration 写权限的 `SOURCE_REPOSITORY_ADMIN_TOKEN`；未配置时会尝试复用 `PUBLIC_RELEASE_REPO_TOKEN`，该 Token 同样必须拥有源码仓库管理权限。
 
 ## 本地提交并触发发布
 

@@ -350,7 +350,7 @@ export const SettingsPage: React.FC = () => {
 
 
   // ========== 自动更新：版本显示 + 检查更新 + 一键下载安装 ==========
-  // CNB 国内节点优先，GitHub 公开下载仓库兜底
+  // 阿里云 OSS 优先，CNB 与 GitHub 公开下载仓库兜底
   const [appVersion, setAppVersion] = useState<string>('1.2.0');
   const [latestVersion, setLatestVersion] = useState<string>('');
   const [releaseName, setReleaseName] = useState<string>('');
@@ -373,8 +373,8 @@ export const SettingsPage: React.FC = () => {
       if (typeof api !== 'function') {
         // 回退到前端直接检查（公开仓库）
         const manifestUrls = [
-          'https://cnb.cool/yijingshijue-2026/yijing-ai-downloads/-/git/raw/main/latest.json',
           'https://yjai-releases-cn-20260818.oss-cn-hangzhou.aliyuncs.com/yijing/latest.json',
+          'https://cnb.cool/yijingshijue-2026/yijing-ai-downloads/-/releases/latest/download/latest.json',
           'https://github.com/zhanfanghou-create/yijing-ai-downloads/releases/latest/download/latest.json',
         ];
         for (const manifestUrl of manifestUrls) {
