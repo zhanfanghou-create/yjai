@@ -169,6 +169,7 @@ jobs:
           gh release upload "v${VERSION}" dist/latest.json --clobber --repo "$PUBLIC_REPO"
           gh release edit "v${VERSION}" --draft=false --latest --repo "$PUBLIC_REPO"
       - name: Publish installers to CNB domestic release
+        continue-on-error: true
         env:
           CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
           CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
@@ -177,6 +178,7 @@ jobs:
           CNB_RELEASE_NOTES: 艺镜 AI 无限画布正式版，包含 Windows 与 Intel/Apple Silicon macOS 安装包。
         run: node scripts/publish-cnb-release.mjs dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
       - name: Publish installers to Alibaba Cloud OSS
+        if: always()
         env:
           OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
           OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
@@ -195,6 +197,7 @@ jobs:
           "$OSSUTIL" cp dist/YijingAI-Installer-macOS-arm64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-arm64.dmg" -f
           "$OSSUTIL" cp dist/latest.json oss://yjai-releases-cn-20260818/yijing/latest.json -f
       - name: Update CNB latest manifest branch
+        if: always()
         env:
           CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
           CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
