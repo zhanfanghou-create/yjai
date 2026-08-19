@@ -203,15 +203,25 @@ jobs:
           CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
           VERSION: ${{ needs.prepare.outputs.version }}
         run: |
-          BASIC=$(printf 'cnb:%s' "$CNB_TOKEN" | base64 -w0)
-          git clone --depth 1 -c http.extraHeader="AUTHORIZATION: basic $BASIC" "https://cnb.cool/${CNB_REPOSITORY}.git" cnb-release-repo
+          ASKPASS="$RUNNER_TEMP/cnb-askpass.sh"
+          cat > "$ASKPASS" <<'EOF'
+          #!/bin/sh
+          case "$1" in
+            *Username*) printf '%s\n' 'cnb' ;;
+            *Password*) printf '%s\n' "$CNB_TOKEN" ;;
+          esac
+          EOF
+          chmod 700 "$ASKPASS"
+          export GIT_ASKPASS="$ASKPASS"
+          export GIT_TERMINAL_PROMPT=0
+          git clone --depth 1 "https://cnb.cool/${CNB_REPOSITORY}" cnb-release-repo
           cp dist/latest.json cnb-release-repo/latest.json
           cd cnb-release-repo
           git config user.name "YJAI Release Bot"
           git config user.email "release@yjai.top"
           git add latest.json
           git diff --cached --quiet || git commit -m "Update release manifest v${VERSION}"
-          git -c http.extraHeader="AUTHORIZATION: basic $BASIC" push origin main
+          git push origin main
 
   restore-source-privacy:
     if: always()
