@@ -434,9 +434,11 @@ interface StoryboardViewProps {
   onEditPrompt: (id: string, text: string) => void;
   onSelectVideo: (id: string, url: string) => void;
   onAddAsset: (id: string, kind: 'character' | 'scene' | 'prop', name: string) => void;
+  onSaveVideo: (url: string, sb: DramartStoryboard) => void;
+  onDownloadVideo: (url: string, sb: DramartStoryboard) => void;
 }
 
-const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onNext, onGo, onEditPrompt, onSelectVideo, onAddAsset }) => {
+const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onNext, onGo, onEditPrompt, onSelectVideo, onAddAsset, onSaveVideo, onDownloadVideo }) => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const [showParams, setShowParams] = useState(false);
   const [addKind, setAddKind] = useState<'character' | 'scene' | 'prop' | null>(null);
@@ -621,6 +623,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
         )}
         {/* 右：分镜视频生成 */}
         <div className="dwc-sb-gen">
+          <div className="dwc-sb-prompt-window">
           <div className="dwc-sb-gen-head">
             <span className="dwc-sb-gen-title">分镜视频生成</span>
             <div className="dwc-sb-gen-right">
@@ -641,20 +644,28 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               })}
             </div>
           </div>
-          <div className="dwc-sb-preview">
-            {videoUrl ? (
-              <video src={videoUrl} controls className="dwc-sb-video" />
-            ) : status === 'generating' ? (
-              <div className="dwc-sb-preview-placeholder generating"><span className="dwc-spinner" /> 生成中…</div>
-            ) : (
-              <button className="dwc-sb-preview-placeholder" onClick={() => onGenerate(sb?.id || '')}><PlayIcon size={30} /> 点击生成视频预览</button>
-            )}
+          </div>
+          <div className="dwc-sb-preview-window">
+            <div className="dwc-sb-preview">
+              {videoUrl ? (
+                <>
+                  <video src={videoUrl} controls className="dwc-sb-video" />
+                  <div className="dwc-sb-video-actions">
+                    <button className="dwc-sb-video-act" title="下载到本地" onClick={() => onDownloadVideo(videoUrl, sb)}><DownloadIcon size={15} /></button>
+                    <button className="dwc-sb-video-act" title="收藏到资产库" onClick={() => onSaveVideo(videoUrl, sb)}><StarIcon size={15} /></button>
+                  </div>
+                </>
+              ) : status === 'generating' ? (
+                <div className="dwc-sb-preview-placeholder generating"><span className="dwc-spinner" /> 生成中…</div>
+              ) : (
+                <button className="dwc-sb-preview-placeholder" onClick={() => onGenerate(sb?.id || '')}><PlayIcon size={30} /> 点击生成视频预览</button>
+              )}
+            </div>
             {sb?.videoCandidates?.length ? (
               <div className="dwc-sb-cands">
                 {sb.videoCandidates.map((u, i) => (<button key={i} className={`dwc-sb-cand${u === videoUrl ? ' active' : ''}`} onClick={() => onSelectVideo(sb.id, u)} title="切换到该视频"><video src={u} muted /></button>))}
               </div>
             ) : null}
-          </div>
           <div className="dwc-sb-gen-foot">
             {videoModelOptions.length ? <SimpleDropdown value={effectiveVmodel} options={videoModelOptions} onChange={setVmodel} icon={<BoltIcon size={13} />} /> : <span className="dwc-ai-param warn">⚠ 请先设置视频模型</span>}
             <div className="dwc-sb-params-sel">
@@ -671,6 +682,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
             <button className="dwc-sb-gen-btn" onClick={() => onGenerate(sb?.id || '', { model: effectiveVmodel, duration: vdur, count: parseInt(vcount, 10), resolution: vres, format: vfmt })} disabled={status === 'generating' || !videoModelOptions.length}>
               {status === 'generating' ? '生成中…' : <><BoltIcon size={14} /> 生成</>}
             </button>
+          </div>
           </div>
         </div>
       </div>
@@ -809,7 +821,16 @@ function parseRichPrompt(text: string): { type: 'text' | 'ref' | 'dur' | 'line';
   while ((m = re.exec(text || ''))) {
     if (m.index > last) out.push({ type: 'text', value: text.slice(last, m.index) });
     if (m[1]) out.push({ type: 'ref', value: m[1].trim() });
-    else if (m[2]) out.push({ type: 'dur', value: m[2].trim() });
+    else if (m[2]) {
+      const v = m[2].trim();
+      // 4 位及以上数字（如 1990s）是年代/年份，不是时长标签
+      const num = parseFloat(v);
+      if (Number.isFinite(num) && num >= 1000) {
+        out.push({ type: 'text', value: v });
+      } else {
+        out.push({ type: 'dur', value: v });
+      }
+    }
     else if (m[3]) out.push({ type: 'line', value: m[3] });
     last = re.lastIndex;
   }
@@ -2365,7 +2386,42 @@ export const DramaWorkshopPage: React.FC = () => {
     catch { showToast('保存到资产库失败', 'error'); }
   }, [addAsset, showToast]);
 
-  // AI 生成主形象：直接打开统一的生成窗口（与变装生成一致，含参数栏与资产库选择）
+  // 收藏分镜视频到资产库：先把视频落地到本地，再写入全局资产库
+  const collectStoryboardVideo = useCallback(async (url: string, sb: DramartStoryboard) => {
+    if (!url) { showToast('暂无可收藏的视频', 'error'); return; }
+    try {
+      const local = await localizeMedia(url, 'dramart-vid', 'mp4');
+      const finalUrl = normalizeFileSrc(local || url) || url;
+      addAsset({ name: '分镜' + (sb?.index || 1) + '视频', type: 'video', path: finalUrl, thumbnail: finalUrl, size: 0, sourceType: 'drama' });
+      showToast('已收藏到资产库', 'success');
+    } catch { showToast('收藏失败', 'error'); }
+  }, [addAsset, localizeMedia, showToast]);
+
+  // 下载分镜视频到本地：blob 先转 data URL，其余（file:// 或远程地址）直接交给主进程保存对话框
+  const downloadStoryboardVideo = useCallback(async (url: string, sb: DramartStoryboard) => {
+    if (!url) { showToast('暂无可下载的视频', 'error'); return; }
+    const api = (window as any)?.yijingAPI?.system?.saveFileFromData;
+    if (typeof api !== 'function') { showToast('当前环境不支持下载', 'error'); return; }
+    try {
+      let src = url;
+      if (String(url).startsWith('blob:')) {
+        const resp = await fetch(url);
+        const blob = await resp.blob();
+        src = await new Promise<string>(res => {
+          const fr = new FileReader();
+          fr.onload = () => res(String(fr.result || ''));
+          fr.onerror = () => res('');
+          fr.readAsDataURL(blob);
+        });
+        if (!src) { showToast('读取视频失败', 'error'); return; }
+      }
+      const r = await api({ dataUrl: src, suggestedName: '分镜' + (sb?.index || 1) + '.mp4' });
+      if (r?.ok) showToast('已下载到本地', 'success');
+      else if (r?.canceled) { /* 用户取消，不提示 */ }
+      else showToast('下载失败', 'error');
+    } catch (e: any) { showToast('下载失败：' + (e?.message || String(e)), 'error'); }
+  }, [showToast]);
+
   const openAiGen = useCallback((a: DramartAssetItem) => {
     const mainVariant = a.variants?.find(v => v.label === '主形象') || a.variants?.[0];
     setGenOpen({ assetId: a.id, variantId: mainVariant?.id || '' });
@@ -2675,6 +2731,8 @@ export const DramaWorkshopPage: React.FC = () => {
           onEditPrompt={editSbPrompt}
           onSelectVideo={selectSbVideo}
           onAddAsset={addSbAsset}
+          onSaveVideo={collectStoryboardVideo}
+          onDownloadVideo={downloadStoryboardVideo}
         />
       )}
 
