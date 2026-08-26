@@ -342,29 +342,8 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
   }
 
 
-  // 用真实剧本与资产回填分镜：分镜页剧本原文、出镜角色自动取生成的资产名（含图）
-  const assetChars = result.characters.map(a => a.name);
-  const assetScenes = result.scenes.map(a => a.name);
-  const assetProps = result.props.map(a => a.name);
-  const raw = (scriptText || '').trim();
-  if (result.storyboards.length === 0) {
-    result.storyboards = [{ id: rid('sb'), index: 1, label: '分镜1', rawScript: raw, characters: assetChars.slice(0, 2), scenes: assetScenes.slice(0, 1), props: assetProps.slice(0, 1), videoPrompt: '', duration: 11 }];
-  }
-  result.storyboards = result.storyboards.map((sb, i) => {
-    const vid = sb.videoPrompt?.trim() ? sb.videoPrompt : makeVideoPrompt(assetChars[i % Math.max(assetChars.length, 1)] || '角色', assetScenes[i % Math.max(assetScenes.length, 1)] || '场景', assetProps[i % Math.max(assetProps.length, 1)] || '道具', raw.slice(0, 160), styleName, styleWord);
-    return {
-      ...sb,
-      index: i + 1,
-      label: '分镜' + (i + 1),
-      rawScript: raw ? raw.slice(0, 280) : sb.rawScript,
-      characters: assetChars.slice(0, 2).length ? assetChars.slice(0, 2) : sb.characters,
-      scenes: assetScenes.slice(0, 1).length ? assetScenes.slice(0, 1) : sb.scenes,
-      props: assetProps.slice(0, 1).length ? assetProps.slice(0, 1) : sb.props,
-      videoPrompt: vid,
-      videoUrl: undefined,
-      videoStatus: 'idle',
-    };
-  });
+  // 用真实剧本切分生成分镜：按「第*集」切分，逐集生成分镜（真实原文 + 出镜资产）；无集数标记时按段落分块，不再使用演示占位分镜
+  result.storyboards = deriveStoryboardsFromScript({ scriptText, assets: result, styleName, styleWord });
 
   onProgress(total, '完成', 100);
   return result;
@@ -540,6 +519,50 @@ export function splitSupplementEpisodes(scriptText: string): SupplementEpisode[]
   if (cur) episodes.push(cur);
   if (episodes.length === 0 && text) episodes.push({ title: '补充剧情', content: text });
   return episodes;
+}
+
+export interface DeriveStoryboardsInput {
+  scriptText: string;
+  assets: Pick<DramartProject, 'characters' | 'scenes' | 'props'>;
+  styleName: string;
+  styleWord?: string;
+}
+
+/** 从真实剧本切分生成分镜（逐集/逐场景块），并自动匹配出镜资产，不再使用演示占位分镜 */
+export function deriveStoryboardsFromScript(input: DeriveStoryboardsInput): DramartStoryboard[] {
+  const { scriptText, assets, styleName, styleWord } = input;
+  const assetChars = (assets.characters || []).map(a => a.name);
+  const assetScenes = (assets.scenes || []).map(a => a.name);
+  const assetProps = (assets.props || []).map(a => a.name);
+  const raw = String(scriptText || '').trim();
+  const pickNames = (list: DramartAssetItem[], text: string): string[] => {
+    const hit = list.filter(a => text.includes(a.name)).map(a => a.name);
+    return hit.length ? hit : list.slice(0, 1).map(a => a.name);
+  };
+  let episodes = splitSupplementEpisodes(scriptText);
+  if (episodes.length <= 1 && raw) {
+    const blocks = raw.split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
+    if (blocks.length > 1) episodes = blocks.map((b, i) => ({ title: '场景' + (i + 1), content: b }));
+  }
+  if (!episodes.length && raw) episodes = [{ title: '分镜1', content: raw }];
+  return episodes.map((ep, i) => {
+    const chars = pickNames(assets.characters, ep.content).slice(0, 2);
+    const scenes = pickNames(assets.scenes, ep.content).slice(0, 1);
+    const props = pickNames(assets.props, ep.content).slice(0, 1);
+    return {
+      id: rid('sb'),
+      index: i + 1,
+      label: '分镜' + (i + 1),
+      rawScript: ep.content,
+      characters: chars,
+      scenes,
+      props,
+      videoPrompt: makeVideoPrompt(chars[0] || (assetChars[0] || '主角'), scenes[0] || (assetScenes[0] || '场景'), props[0] || (assetProps[0] || '道具'), ep.content.slice(0, 160), styleName, styleWord),
+      duration: 11,
+      videoUrl: undefined,
+      videoStatus: 'idle',
+    };
+  });
 }
 
 export interface SupplementAnalysisOptions {

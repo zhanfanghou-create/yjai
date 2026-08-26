@@ -27,6 +27,7 @@ import {
   DRAMART_RATIOS,
   DRAMART_RESOLUTIONS,
   DRAMART_ANALYSIS_STEPS,
+  deriveStoryboardsFromScript,
   runDramartAnalysis,
   runDramaDraftAnalysis,
   runSupplementAnalysis,
@@ -1989,13 +1990,23 @@ export const DramaWorkshopPage: React.FC = () => {
 
   // 打开创作历史：载入保存的项目并跳到对应页面（记录与操作已自动保存，不会丢失）
   const openHistory = useCallback((p: DramartProject) => {
+    // 旧数据迁移：旧版分析会把演示占位分镜重复填成同一段剧本，打开时按真实剧本重建
+    const sbs = p.storyboards || [];
+    const buggy = !!p.scriptText && sbs.length === 2 && !!sbs[0]?.rawScript && sbs[1]?.rawScript === sbs[0].rawScript;
+    if (buggy) {
+      const rebuilt = deriveStoryboardsFromScript({ scriptText: p.scriptText, assets: p, styleName: p.styleName, styleWord });
+      if (rebuilt.length) {
+        p = { ...p, storyboards: rebuilt, plotEpisodes: rebuilt.map(sb => ({ index: sb.index, title: sb.label, content: sb.rawScript.slice(0, 200) })) };
+        saveDramartProject(p);
+      }
+    }
     setProject(p);
     setHistoryOpen(false);
     if (p.storyboards?.length) setStage('script');
     else if (p.analysis?.status === 'done') setStage('sets');
     else setStage('script');
     showToast('已打开创作历史：' + p.name, 'success');
-  }, [showToast]);
+  }, [showToast, saveDramartProject, styleWord]);
 
   const handleReset = useCallback(() => {
     setStage('create');
