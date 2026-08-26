@@ -384,9 +384,11 @@ interface SimpleDropdownProps {
   icon?: React.ReactNode;
   title?: string;
   renderItemFrame?: (id: string) => React.ReactNode;
+  /** 面板向上展开（上拉框），避免被下方容器/窗口遮盖 */
+  up?: boolean;
 }
 
-const SimpleDropdown: React.FC<SimpleDropdownProps> = ({ value, options, onChange, icon, title, renderItemFrame }) => {
+const SimpleDropdown: React.FC<SimpleDropdownProps> = ({ value, options, onChange, icon, title, renderItemFrame, up }) => {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -396,7 +398,7 @@ const SimpleDropdown: React.FC<SimpleDropdownProps> = ({ value, options, onChang
   }, []);
   const current = options.find(o => o.id === value);
   return (
-    <div className="dwc-select" ref={ref}>
+    <div className={'dwc-select' + (up ? ' up' : '')} ref={ref}>
       <button className="dwc-select-trigger" onClick={() => setOpen(o => !o)}>
         {icon && <span className="dwc-select-icon">{icon}</span>}
         <span>{current?.label || value}</span>
@@ -491,7 +493,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
     if (caret >= 0) requestAnimationFrame(() => restoreCaretOffset(caret));
   };
   const [vmodel, setVmodel] = useState('');
-  const [vdur, setVdur] = useState(6);
+  const [vdur, setVdur] = useState(10);
   const [vcount, setVcount] = useState('1');
   const [vres, setVres] = useState('1080p');
   const [vfmt, setVfmt] = useState('mov');
@@ -667,12 +669,12 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               </div>
             ) : null}
           <div className="dwc-sb-gen-foot">
-            {videoModelOptions.length ? <SimpleDropdown value={effectiveVmodel} options={videoModelOptions} onChange={setVmodel} icon={<BoltIcon size={13} />} /> : <span className="dwc-ai-param warn">⚠ 请先设置视频模型</span>}
+            {videoModelOptions.length ? <SimpleDropdown up value={effectiveVmodel} options={videoModelOptions} onChange={setVmodel} icon={<BoltIcon size={13} />} /> : <span className="dwc-ai-param warn">⚠ 请先设置视频模型</span>}
             <div className="dwc-sb-params-sel">
               <button className="dwc-sb-params-pill" onClick={() => setShowParams(s => !s)}>⏱ {vdur}s | {vcount}个 | {vres} | {vfmt} ▾</button>
               {showParams && (
                 <div className="dwc-sb-params-panel">
-                  <div className="dwc-add-field"><span className="dwc-add-label">视频时长</span><div className="dwc-dur-row"><input type="range" min={2} max={12} value={vdur} onChange={e => setVdur(parseInt(e.target.value, 10))} /><span className="dwc-dur-val">{vdur}s</span></div></div>
+                  <div className="dwc-add-field"><span className="dwc-add-label">视频时长</span><div className="dwc-dur-row"><input type="range" min={5} max={15} value={vdur} onChange={e => setVdur(parseInt(e.target.value, 10))} /><span className="dwc-dur-val">{vdur}s</span></div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频数量</span><div className="dwc-opt-row">{['1','2','3','4'].map(n => <button key={n} className={`dwc-opt${vcount === n ? ' active' : ''}`} onClick={() => setVcount(n)}>{n}个</button>)}</div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频清晰度</span><div className="dwc-opt-row">{['480p','720p','1080p'].map(n => <button key={n} className={`dwc-opt${vres === n ? ' active' : ''}`} onClick={() => setVres(n)}>{n}</button>)}</div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频格式</span><div className="dwc-opt-row">{['mp4','mov'].map(n => <button key={n} className={`dwc-opt${vfmt === n ? ' active' : ''}`} onClick={() => setVfmt(n)}>{n}</button>)}</div></div>

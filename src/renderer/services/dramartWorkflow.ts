@@ -165,8 +165,8 @@ function defaultStoryboards(scriptText: string): DramartStoryboard[] {
   const by1 = '深夜空旷的办公室，电脑屏幕透出蓝光，一名泛黄的老旧全家福照片静躺着。林望独自坐在这里，周围是狭长的阴影，反光映在孤独家具上。';
   const by2 = '陈年农村土墙瓦房，耳边响起长辈熟悉的叮嘱声，一束暖光洒在泛黄的全家福上，岁月印记清晰。';
   return [
-    { id: rid('sb'), index: 1, label: '分镜1', rawScript: by1, characters: ['成年林望'], scenes: ['城市写字楼办公室'], props: ['泛黄全家福照片'], videoPrompt: makeVideoPrompt('成年林望', '城市写字楼办公室', '泛黄全家福照片', by1, undefined, undefined, { index: 1, duration: 11 }), duration: 11 },
-    { id: rid('sb'), index: 2, label: '分镜2', rawScript: by2, characters: ['幼年林望'], scenes: ['农村土墙瓦房室内'], props: ['胸片检查报告单'], videoPrompt: makeVideoPrompt('幼年林望', '农村土墙瓦房室内', '胸片检查报告单', by2, undefined, undefined, { index: 2, duration: 6 }), duration: 6 },
+    { id: rid('sb'), index: 1, label: '分镜1', rawScript: by1, characters: ['成年林望'], scenes: ['城市写字楼办公室'], props: ['泛黄全家福照片'], videoPrompt: makeVideoPrompt('成年林望', '城市写字楼办公室', '泛黄全家福照片', by1, undefined, undefined, { index: 1, duration: 15 }), duration: 15 },
+    { id: rid('sb'), index: 2, label: '分镜2', rawScript: by2, characters: ['幼年林望'], scenes: ['农村土墙瓦房室内'], props: ['胸片检查报告单'], videoPrompt: makeVideoPrompt('幼年林望', '农村土墙瓦房室内', '胸片检查报告单', by2, undefined, undefined, { index: 2, duration: 15 }), duration: 15 },
   ];
 }
 
@@ -174,7 +174,7 @@ function defaultStoryboards(scriptText: string): DramartStoryboard[] {
 export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number }): string {
   const styleWord = explicitWord || stylePromptOf(styleName) || styleName;
   const idx = opts && opts.index ? opts.index : 1;
-  const dur = opts && opts.duration ? opts.duration : 11;
+  const dur = opts && opts.duration ? opts.duration : 15;
   const scriptText = (description || '').trim();
   return [
     '画风：' + styleName + '（' + styleWord + '），全程严格保持该画风',
@@ -464,7 +464,7 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
       const styleLine = '画风：' + shotStyleName + '（' + shotStyleW + '），全程严格保持该画风';
       const shotDesc = vid && vid.trim()
         ? styleLine + '\n' + vid
-        : makeVideoPrompt(charName, sceneName, propName, script, shotStyleName, shotStyleW, { index: idxNum, duration: 11 });
+        : makeVideoPrompt(charName, sceneName, propName, script, shotStyleName, shotStyleW, { index: idxNum, duration: 15 });
       storyboards.push({
         id: rid('sb'),
         index: idxNum,
@@ -474,7 +474,7 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
         scenes: scene ? [sceneName] : scenes.slice(0, 1).map(a => a.name),
         props: prop ? [propName] : props.slice(0, 1).map(a => a.name),
         videoPrompt: shotDesc,
-        duration: 11,
+        duration: 15,
         videoUrl: undefined,
         videoStatus: 'idle',
       });
@@ -584,8 +584,8 @@ export function deriveStoryboardsFromScript(input: DeriveStoryboardsInput): Dram
       characters: chars,
       scenes,
       props,
-      videoPrompt: makeVideoPrompt(chars[0] || (assetChars[0] || '主角'), scenes[0] || (assetScenes[0] || '场景'), props[0] || (assetProps[0] || '道具'), ep.content, styleName, styleWord, { index: i + 1, duration: 11 }),
-      duration: 11,
+      videoPrompt: makeVideoPrompt(chars[0] || (assetChars[0] || '主角'), scenes[0] || (assetScenes[0] || '场景'), props[0] || (assetProps[0] || '道具'), ep.content, styleName, styleWord, { index: i + 1, duration: 15 }),
+      duration: 15,
       videoUrl: undefined,
       videoStatus: 'idle',
     };
@@ -699,8 +699,8 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
       characters: chars,
       scenes,
       props,
-      videoPrompt: makeVideoPrompt(character, scene, prop, ep.content, styleName, styleWord, { index: idx, duration: 11 }),
-      duration: 11,
+      videoPrompt: makeVideoPrompt(character, scene, prop, ep.content, styleName, styleWord, { index: idx, duration: 15 }),
+      duration: 15,
       videoUrl: undefined,
       videoStatus: 'idle',
     };

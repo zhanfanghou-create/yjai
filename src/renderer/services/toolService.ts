@@ -105,9 +105,23 @@ export const toolService = {
 
     const pickUrl = (r: any): string | undefined => {
       if (!r) return undefined;
-      return r.url || r.uri || r.video_url || r.metadata?.url
-        || r.data?.metadata?.url || r.results?.[0]?.url || r.results?.[0]?.uri
-        || r.data?.[0]?.url || r.videos?.[0]?.url || r.filePaths?.[0] || r.urls?.[0];
+      if (typeof r === 'string') return /^https?:|^file:/i.test(r) ? r : undefined;
+      const direct = r.url || r.uri || r.video_url || r.image_url || r.output_url || r.videoUrl;
+      if (direct) return direct;
+      const nested = r.metadata?.url || r.data?.metadata?.url
+        || r.video?.url || r.video?.video_url
+        || r.output?.url || r.output?.video_url
+        || (Array.isArray(r.output) ? (r.output[0]?.url || r.output[0]?.video_url) : undefined);
+      if (nested) return nested;
+      const arr = r.results || r.data || r.images || r.videos || r.urls || r.filePaths;
+      if (Array.isArray(arr)) {
+        for (const item of arr) { const u = pickUrl(item); if (u) return u; }
+      }
+      if (Array.isArray(r.choices) && r.choices[0]?.message?.content) {
+        const c = r.choices[0].message.content;
+        if (Array.isArray(c)) { const x = c.find((i: any) => i && (i.url || i.video_url || i.image_url)); if (x) return x.url || x.video_url || x.image_url; }
+      }
+      return undefined;
     };
 
     try {
@@ -125,13 +139,23 @@ export const toolService = {
           ...options,
         });
 
+        // 主进程明确失败：透出真实错误（例如 API 4xx/5xx、参数错误等）
+        if (res?.ok === false) throw new Error(res?.error?.message || res?.error || '视频生成API返回错误');
+        // 上游出错时主进程仍返回 ok:true（status 为 HTTP 码），这里主动识别并透出真实原因
+        if (typeof res?.status === 'number' && res.status >= 400) {
+          const apiErr = res?.data?.error?.message || res?.data?.error || res?.error?.message || res?.error || res?.message;
+          throw new Error('视频生成API返回HTTP ' + res.status + (apiErr ? '：' + apiErr : ''));
+        }
+
         // 同步直接返回结果
         const directUrl = pickUrl(res) || pickUrl(res?.data);
         if (directUrl) return { url: directUrl, type: 'video' as const };
 
-        // 异步任务：轮询 checkResult 直到完成
+        // 异步任务：轮询 checkResult 直到完成（仅当确实存在异步任务）
         const jobId = res?.id || res?.data?.id;
-        if ((res?.accepted || res?.status) && jobId && win?.yijingAPI?.grsai?.checkResult) {
+        const jobStatus = res?.status || res?.data?.status;
+        const isAsyncJob = res?.accepted === true || (jobId && typeof jobStatus === 'string' && !['succeeded', 'success'].includes(jobStatus));
+        if (isAsyncJob && jobId && win?.yijingAPI?.grsai?.checkResult) {
           const maxAttempts = 120;
           const intervalMs = 3000;
           for (let i = 0; i < maxAttempts; i++) {
@@ -151,8 +175,10 @@ export const toolService = {
           throw new Error('视频生成超时，请稍后在素材库或重试查看结果');
         }
 
-        if (res?.error) throw new Error(res.error?.message || res.error || '视频生成API返回错误');
-        throw new Error('视频生成API返回为空');
+        // 上游在 JSON 里返回了错误对象
+        const apiErr2 = res?.data?.error?.message || res?.data?.error || res?.error?.message || res?.error;
+        if (apiErr2) throw new Error(typeof apiErr2 === 'string' ? apiErr2 : (apiErr2.message || '视频生成API返回错误'));
+        throw new Error('视频生成API返回为空' + (model ? '（模型：' + model + '，接口：' + (baseUrl || '未配置') + '）' : ''));
       }
 
       // Fallback: 无 IPC 时直连 Agnes /videos 端点

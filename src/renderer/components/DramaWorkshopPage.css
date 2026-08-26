@@ -195,6 +195,7 @@
 .dwc-select-avatar { width: 22px; height: 22px; border-radius: 50%; display: inline-block; overflow: hidden; border: 1px solid var(--border-color, #3a3a3a); flex-shrink: 0; }
 
 /* 比例/分辨率下拉菜单 */
+.dwc-select.up .dwc-menu { top: auto; bottom: calc(100% + 6px); max-height: 50vh; overflow-y: auto; }
 .dwc-menu {
   position: absolute;
   top: calc(100% + 6px);
