@@ -1,6 +1,8 @@
 /* ==================== 剧创工厂 · 短剧项目页面 ==================== */
 
 .drama-workshop-page {
+  /* 标题栏高度：固定抽屉（创作历史）以它作为内容区上边界，不溢出软件标题框架 */
+  --app-titlebar-height: 36px;
   position: relative;
   height: 100%;
   padding: 22px;
@@ -1063,8 +1065,8 @@
 /* 创作历史：首页右上角按钮 + 右侧滑出记录窗 */
 .dwc-history-btn { position: absolute; top: 18px; right: 18px; z-index: 5; display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border: 1px solid var(--border-color, #3a3a3a); border-radius: 10px; background: color-mix(in srgb, var(--bg-tertiary, #3a3a3a) 70%, transparent); color: var(--text-secondary, #a0a0a0); font-size: 13px; cursor: pointer; }
 .dwc-history-btn:hover { color: var(--accent-color, #7dd3fc); border-color: var(--accent-color, #7dd3fc); }
-.dwc-history-mask { position: fixed; inset: 0; z-index: 300; background: rgba(0,0,0,0.3); }
-.dwc-history-panel { position: fixed; top: 0; right: 0; bottom: 0; width: 340px; max-width: 88vw; background: var(--bg-secondary, #2a2a2a); border-left: 1px solid var(--border-color, #3a3a3a); box-shadow: -20px 0 60px rgba(0,0,0,0.35); display: flex; flex-direction: column; z-index: 301; overflow: hidden; animation: dwcSlideIn 0.22s ease; }
+.dwc-history-mask { position: fixed; inset: 0; top: var(--app-titlebar-height, 36px); z-index: 300; background: rgba(0,0,0,0.3); }
+.dwc-history-panel { position: fixed; top: var(--app-titlebar-height, 36px); right: 0; bottom: 0; width: 340px; max-width: 88vw; background: var(--bg-secondary, #2a2a2a); border-left: 1px solid var(--border-color, #3a3a3a); box-shadow: -20px 0 60px rgba(0,0,0,0.35); display: flex; flex-direction: column; z-index: 301; overflow: hidden; animation: dwcSlideIn 0.22s ease; }
 @keyframes dwcSlideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
 .dwc-history-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; border-bottom: 1px solid var(--border-color, #3a3a3a); flex-shrink: 0; }
 .dwc-history-title { font-size: 15px; font-weight: 700; color: var(--text-primary, #ffffff); }
