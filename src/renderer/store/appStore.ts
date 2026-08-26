@@ -186,7 +186,7 @@ interface AppState {
   dramartProjects: DramartProject[]; activeDramartId: string | null; dramartDraft: DramartProject | null; dramartCreateParams: { mode: 'agent' | 'manual'; ratio: string; resolution: string; styleId: string }; dramartCustomStyles: DramartStyle[];
   setMediaPreview: (p: AppState['mediaPreview']) => void; showToast: (m: string, t?: 'success' | 'error' | 'info' | 'warning') => void; toggleSidebar: () => void; setActiveSection: (s: NavSection) => void; setActiveCanvas: (id: string | null) => void;
   submitDramaDraft: (project: DramartProject) => void; clearDramartDraft: () => void; setActiveDramartId: (id: string | null) => void; updateDramartProject: (id: string, updater: (p: DramartProject) => DramartProject) => void;
-  saveDramartProject: (project: DramartProject) => void; setDramartCreateParams: (p: Partial<{ mode: 'agent' | 'manual'; ratio: string; resolution: string; styleId: string }>) => void; saveDramartCustomStyle: (style: DramartStyle) => void; deleteDramartCustomStyle: (id: string) => void;
+  saveDramartProject: (project: DramartProject) => void; setDramartCreateParams: (p: Partial<{ mode: 'agent' | 'manual'; ratio: string; resolution: string; styleId: string }>) => void; saveDramartCustomStyle: (style: DramartStyle) => void; deleteDramartCustomStyle: (id: string) => void; deleteDramartProject: (id: string) => void;
   setQueuePanelOpen: (v: boolean) => void;
   addToQueue: (id: string) => void; removeFromQueue: (id: string) => void; clearCompletedTasks: () => void; executeQueue: () => Promise<void>;
   createChatSession: () => string; deleteChatSession: (id: string) => void; setActiveSession: (id: string) => void; updateChatSession: (id: string, u: Partial<ChatSession>) => void; addMessage: (sid: string, m: Omit<ChatMessage, 'id' | 'timestamp'>) => string; updateMessage: (sid: string, mid: string, u: Partial<ChatMessage>) => void; deleteMessage: (sid: string, mid: string) => void;
@@ -498,6 +498,8 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
   updateDramartProject: (id, updater) => set(s => ({ dramartProjects: s.dramartProjects.map(p => p.id === id ? updater(p) : p) })),
   // 剧创工厂：自动保存项目（覆盖写入 + 设为当前），供持久化
   saveDramartProject: (project) => set(s => ({ dramartProjects: [project, ...s.dramartProjects.filter(x => x.id !== project.id)], activeDramartId: project.id })),
+  // 剧创工厂：删除创作历史记录（同时清掉对应当前项目）
+  deleteDramartProject: (id) => set(s => ({ dramartProjects: s.dramartProjects.filter(x => x.id !== id), activeDramartId: s.activeDramartId === id ? null : s.activeDramartId })),
   // 剧创工厂：创建页参数选择自动保存（比例/分辨率/风格/模式）
   setDramartCreateParams: (params) => set(s => ({ dramartCreateParams: { ...s.dramartCreateParams, ...params } })),
   // 剧创工厂：自定义风格保存/删除（持久化）

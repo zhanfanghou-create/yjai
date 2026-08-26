@@ -41,6 +41,7 @@ import {
 } from '../services/dramartWorkflow';
 import JSZip from 'jszip';
 import toolService from '../services/toolService';
+import { localizeMedia, normalizeFileSrc } from '../utils/pathUtils';
 import './DramaWorkshopPage.css';
 
 type Stage = 'create' | 'analyze' | 'script' | 'sets' | 'storyboard' | 'video';
@@ -157,6 +158,23 @@ function gradientDataUrl(seed: string): string {
   const h2 = (h + 40) % 360;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="256" height="320"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${h},45%,38%)"/><stop offset="1" stop-color="hsl(${h2},50%,20%)"/></linearGradient></defs><rect width="256" height="320" fill="url(#g)"/><circle cx="128" cy="150" r="42" fill="hsl(${h},40%,60%)" opacity="0.85"/><rect x="70" y="220" width="116" height="60" rx="12" fill="hsl(${h2},35%,45%)" opacity="0.7"/></svg>`;
   return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+// 将生成的媒体（图片/视频/配音）自动下载到本地：blob URL 先在渲染进程转 data URL 再下载，其余交给 localizeMedia
+async function localizeBlobAware(url: string | null | undefined, prefix: string, ext?: string): Promise<string> {
+  const src = String(url || '').trim();
+  if (!src || !src.startsWith('blob:')) return normalizeFileSrc(await localizeMedia(src, prefix, ext));
+  try {
+    const blob = await fetch(src).then(r => r.blob());
+    const dataUrl = blob && blob.size ? await new Promise<string>((resolve, reject) => {
+      const fr = new FileReader();
+      fr.onload = () => resolve(String(fr.result || ''));
+      fr.onerror = () => reject(fr.error);
+      fr.readAsDataURL(blob);
+    }) : '';
+    if (dataUrl) return normalizeFileSrc(await localizeMedia(dataUrl, prefix, ext));
+  } catch { /* 保留原地址 */ }
+  return src;
 }
 
 function thumbStyle(hue: number, kind: string): React.CSSProperties {
@@ -1700,7 +1718,7 @@ const ScriptDetailView: React.FC<ScriptDetailViewProps> = ({ project, onNext, on
 // ==================== 页 ====================
 
 export const DramaWorkshopPage: React.FC = () => {
-  const { recommendedConfigs, apiConfigs, chatAPIConfigs, videoAPIConfigs, imageAPIConfigs, voiceAPIConfigs, dramartDraft, clearDramartDraft, setActiveSection, assets, showToast, dramartCreateParams, setDramartCreateParams, saveDramartProject, dramartCustomStyles, saveDramartCustomStyle, deleteDramartCustomStyle, addAsset, dramartProjects } = useAppStore();
+  const { recommendedConfigs, apiConfigs, chatAPIConfigs, videoAPIConfigs, imageAPIConfigs, voiceAPIConfigs, dramartDraft, clearDramartDraft, setActiveSection, assets, showToast, dramartCreateParams, setDramartCreateParams, saveDramartProject, dramartCustomStyles, saveDramartCustomStyle, deleteDramartCustomStyle, deleteDramartProject, addAsset, dramartProjects } = useAppStore();
 
   const [stage, setStage] = useState<Stage>('create');
   // 创建页参数：从持久化的剧创工厂参数自动恢复，并在修改时自动保存
@@ -1811,7 +1829,7 @@ export const DramaWorkshopPage: React.FC = () => {
       try {
         const res = await toolService.generateImage(styledPrompt, cfg, { model: opts?.model || cfg.defaultModel, size: opts?.size });
         const url = (res as any)?.url;
-        if (url) return url;
+        if (url) return localizeBlobAware(url, 'dramart-img');
       } catch { /* fall through */ }
     }
     // 无图像 API 或生成失败：用渐变占位图兜底，保证资产有图
@@ -1989,6 +2007,14 @@ export const DramaWorkshopPage: React.FC = () => {
     setSbUrl({});
   }, []);
 
+  // 删除创作历史记录
+  const deleteHistory = useCallback((p: DramartProject) => {
+    if (!window.confirm('确定删除创作记录「' + p.name + '」？删除后不可恢复。')) return;
+    deleteDramartProject(p.id);
+    if (project?.id === p.id) handleReset();
+    showToast('已删除创作记录', 'success');
+  }, [deleteDramartProject, project, handleReset, showToast]);
+
   // 顶部标签页跳转：剧本/设定/分镜/视频 均可点击查看（分镜、视频重置到第一个）
   const goTo = useCallback((s: Stage) => {
     if (s === 'storyboard') setStoryboardIndex(0);
@@ -2038,7 +2064,10 @@ export const DramaWorkshopPage: React.FC = () => {
       if (!fullText.trim()) return null;
 
       const res = await toolService.generateVoice(fullText, voiceCfg, { voice: voiceId });
-      return res?.url || null;
+      const url = res?.url;
+      if (!url) return null;
+      // 配音通常是 blob URL：先在渲染进程转 data URL，再交给主进程下载到本地
+      return localizeBlobAware(url, 'dramart-voice', 'mp3');
     } catch (e) {
       console.warn('配音生成失败:', e);
       return null;
@@ -2070,7 +2099,7 @@ export const DramaWorkshopPage: React.FC = () => {
             duration: params?.duration || sb.duration,
             format: params?.format || 'mp4',
           });
-          if (res?.url) urls.push(res.url);
+          if (res?.url) urls.push(await localizeBlobAware(res.url, 'dramart-vid', 'mp4'));
         }
         if (urls.length) {
           // 等待配音生成完成（最多等5秒，不阻塞视频展示）
@@ -2624,13 +2653,14 @@ export const DramaWorkshopPage: React.FC = () => {
             <div className="dwc-history-list">
               {(dramartProjects || []).length === 0 && <div className="dwc-history-empty">暂无创作历史</div>}
               {(dramartProjects || []).map(p => (
-                <button key={p.id} className="dwc-history-item" onClick={() => openHistory(p)}>
+                <div key={p.id} className="dwc-history-item" role="button" onClick={() => openHistory(p)}>
                   <span className="dwc-history-cover" style={p.cover ? undefined : thumbStyle(210, 'scene')}>{p.cover ? <img src={p.cover} alt={p.name} /> : <ClapperboardIcon size={22} />}</span>
                   <span className="dwc-history-info">
                     <span className="dwc-history-name">{p.name}</span>
                     <span className="dwc-history-meta">{p.styleName || ''} · {p.ratio || ''} · {(p.storyboards?.length || 0)}集 · {new Date(p.createdAt || Date.now()).toLocaleDateString()}</span>
                   </span>
-                </button>
+                  <button className="dwc-history-del" title="删除记录" onClick={e => { e.stopPropagation(); deleteHistory(p); }}><TrashIcon size={13} /></button>
+                </div>
               ))}
             </div>
           </div>
