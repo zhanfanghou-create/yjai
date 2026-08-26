@@ -165,36 +165,63 @@ function defaultStoryboards(scriptText: string): DramartStoryboard[] {
   const by1 = '深夜空旷的办公室，电脑屏幕透出蓝光，一名泛黄的老旧全家福照片静躺着。林望独自坐在这里，周围是狭长的阴影，反光映在孤独家具上。';
   const by2 = '陈年农村土墙瓦房，耳边响起长辈熟悉的叮嘱声，一束暖光洒在泛黄的全家福上，岁月印记清晰。';
   return [
-    { id: rid('sb'), index: 1, label: '分镜1', rawScript: by1, characters: ['成年林望'], scenes: ['城市写字楼办公室'], props: ['泛黄全家福照片'], videoPrompt: makeVideoPrompt('成年林望', '城市写字楼办公室', '泛黄全家福照片', by1), duration: 11 },
-    { id: rid('sb'), index: 2, label: '分镜2', rawScript: by2, characters: ['幼年林望'], scenes: ['农村土墙瓦房室内'], props: ['胸片检查报告单'], videoPrompt: makeVideoPrompt('幼年林望', '农村土墙瓦房室内', '胸片检查报告单', by2), duration: 6 },
+    { id: rid('sb'), index: 1, label: '分镜1', rawScript: by1, characters: ['成年林望'], scenes: ['城市写字楼办公室'], props: ['泛黄全家福照片'], videoPrompt: makeVideoPrompt('成年林望', '城市写字楼办公室', '泛黄全家福照片', by1, undefined, undefined, { index: 1, duration: 11 }), duration: 11 },
+    { id: rid('sb'), index: 2, label: '分镜2', rawScript: by2, characters: ['幼年林望'], scenes: ['农村土墙瓦房室内'], props: ['胸片检查报告单'], videoPrompt: makeVideoPrompt('幼年林望', '农村土墙瓦房室内', '胸片检查报告单', by2, undefined, undefined, { index: 2, duration: 6 }), duration: 6 },
   ];
 }
 
-export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string): string {
+// 分镜视频提示词：按参考格式输出（场次标题 + 时长 + 场景 + 完整分镜剧本原文 + 素材引用），参数均取实际值，不固定具体内容
+export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number }): string {
   const styleWord = explicitWord || stylePromptOf(styleName) || styleName;
+  const idx = opts && opts.index ? opts.index : 1;
+  const dur = opts && opts.duration ? opts.duration : 11;
+  const scriptText = (description || '').trim();
   return [
     '画风：' + styleName + '（' + styleWord + '），全程严格保持该画风',
     '视频中不得出现任何字幕、文字叠加、纯画面，不要bgm，不要配乐。',
     '',
+    '【第' + idx + '场】0:00 - ' + dur + 's（' + scene + ' · 日常）',
+    '时长：' + dur + 's',
+    '场景：' + scene,
+    '',
+    '### 画面与台词（完整分镜剧本原文）',
+    scriptText || '（暂无画面描述）',
+    '',
     '### 素材引用',
-    '',
-    '【人物】',
-    '<' + character + '>对应' + character + '，只采用外貌、发型和服装。',
-    '【场景】',
-    '<' + scene + '>参考' + scene + '，只采用空间布局、建筑和光线，不采用图中人物。',
-    '【道具】',
-    '<' + prop + '>对应' + prop + '，只采用结构、材质和颜色。',
-    '',
-    '### 画面描写',
-    '',
-    '分镜场景设定在： ' + scene,
-    '',
-    '时间： 深夜',
-    '灯光： 主光为屏幕散发出的正面蓝光，冷蓝色温，高反差，将人物面部局部照亮，办公室其余大部分区域陷入灰黑阴影。',
-    '',
-    '分镜具体动作描述：',
-    '镜头1 ' + description,
+    '【人物】<' + character + '>对应' + character + '，只采用外貌、发型和服装。',
+    '【场景】<' + scene + '>参考' + scene + '，只采用空间布局、建筑和光线，不采用图中人物。',
+    '【道具】<' + prop + '>对应' + prop + '，只采用结构、材质和颜色。',
   ].join('\n');
+}
+
+// 资产参考图提示词：按参考格式生成（角色三视图 / 场景四宫格 / 道具特写），参数均取实际资产信息，不固定具体内容
+export function buildAssetImagePrompt(a: { name?: string; kind?: string; imageSummary?: string }): string {
+  const name = a.name || '资产';
+  const summary = a.imageSummary ? a.imageSummary.replace(/^1个形象\s*/, '').trim() : '';
+  const desc = summary || name;
+  if (a.kind === 'character') {
+    return [
+      '任务：完成角色的上半身正面平视特写和该角色的全身三视图。左边是角色的上半身正面平视特写，右边是该角色的全身三视图。三视图不可以有分割线。左侧为角色胸部以上特写大图，占画面约 40% 宽度，用于展示面部、发型、表情、眼神、上半身服装和配饰细节；右侧为同一角色的三视图，占画面约 60% 宽度，依次展示正面全身、侧面全身、背面全身。',
+      '---',
+      '角色描述:',
+      desc,
+    ].join('\n');
+  }
+  if (a.kind === 'scene') {
+    return [
+      '生成四宫格画面，展示同一个场景中的四个不同视角。左上角为正视图，主体正面清晰可见，构图居中，细节完整；右上角为俯视图，从高空俯视整体空间布局，展示环境关系和场景结构；左下角为背视图，从主体后方观察，突出背部轮廓、空间纵深和环境延展；右下角为侧视图，从主体侧面观察，展示主体比例、层次和空间关系。四个画面保持同一场景、同一光照、同一色调、同一时间状态。不输出文字信息。',
+      '1. 只出现场景，不出现人物、道具等无关内容。',
+      '2. 必须只展示静态事物，不能包含人、动物等可以自行运行的事物。',
+      '3. 无动态、特效、技能、光效及战斗相关描写。',
+      '---',
+      '场景描述:',
+      desc,
+    ].join('\n');
+  }
+  if (a.kind === 'prop') {
+    return desc;
+  }
+  return name + '，' + summary;
 }
 
 function defaultProjectData(): Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'> {
@@ -336,7 +363,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
     for (let ai = 0; ai < all.length; ai++) {
       const a = all[ai];
       onProgress(4, '生成资产图', Math.round(((ai + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (ai + 1) + '/' + all.length + '）');
-      const url = await imageFetcher((a.name || '资产') + '，' + (a.imageSummary || '')).catch(() => null);
+      const url = await imageFetcher(buildAssetImagePrompt(a)).catch(() => null);
       if (url) a.img = url;
     }
   }
@@ -437,12 +464,12 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
       const styleLine = '画风：' + shotStyleName + '（' + shotStyleW + '），全程严格保持该画风';
       const shotDesc = vid && vid.trim()
         ? styleLine + '\n' + vid
-        : makeVideoPrompt(charName, sceneName, propName, script.slice(0, 160), shotStyleName, shotStyleW);
+        : makeVideoPrompt(charName, sceneName, propName, script, shotStyleName, shotStyleW, { index: idxNum, duration: 11 });
       storyboards.push({
         id: rid('sb'),
         index: idxNum,
         label: '分镜' + idxNum,
-        rawScript: script.slice(0, 280),
+        rawScript: script,
         characters: chars.length ? chars : characters.slice(0, 2).map(a => a.name),
         scenes: scene ? [sceneName] : scenes.slice(0, 1).map(a => a.name),
         props: prop ? [propName] : props.slice(0, 1).map(a => a.name),
@@ -480,7 +507,7 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const url = await imageFetcher(a.prompt || (a.name + '，' + a.imageSummary)).catch(() => null);
+      const url = await imageFetcher(a.prompt || buildAssetImagePrompt(a)).catch(() => null);
       if (url) a.img = url;
     }
   }
@@ -557,7 +584,7 @@ export function deriveStoryboardsFromScript(input: DeriveStoryboardsInput): Dram
       characters: chars,
       scenes,
       props,
-      videoPrompt: makeVideoPrompt(chars[0] || (assetChars[0] || '主角'), scenes[0] || (assetScenes[0] || '场景'), props[0] || (assetProps[0] || '道具'), ep.content.slice(0, 160), styleName, styleWord),
+      videoPrompt: makeVideoPrompt(chars[0] || (assetChars[0] || '主角'), scenes[0] || (assetScenes[0] || '场景'), props[0] || (assetProps[0] || '道具'), ep.content, styleName, styleWord, { index: i + 1, duration: 11 }),
       duration: 11,
       videoUrl: undefined,
       videoStatus: 'idle',
@@ -664,7 +691,6 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     const character = chars[0] || '主角';
     const scene = scenes[0] || (allScenes[0]?.name || '场景');
     const prop = props[0] || (allProps[0]?.name || '道具');
-    const desc = ep.content.slice(0, 160);
     return {
       id: rid('sb'),
       index: idx,
@@ -673,7 +699,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
       characters: chars,
       scenes,
       props,
-      videoPrompt: makeVideoPrompt(character, scene, prop, desc, styleName, styleWord),
+      videoPrompt: makeVideoPrompt(character, scene, prop, ep.content, styleName, styleWord, { index: idx, duration: 11 }),
       duration: 11,
       videoUrl: undefined,
       videoStatus: 'idle',
@@ -687,7 +713,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const url = await imageFetcher((a.name || '资产') + '，' + (a.imageSummary || '')).catch(() => null);
+      const url = await imageFetcher(buildAssetImagePrompt(a)).catch(() => null);
       if (url) a.img = url;
     }
   }

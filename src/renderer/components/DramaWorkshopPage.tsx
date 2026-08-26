@@ -33,6 +33,7 @@ import {
   runSupplementAnalysis,
   stylePromptOf,
   makeVideoPrompt,
+  buildAssetImagePrompt,
   type DramartProject,
   type DramartStyle,
   type DramartCategory,
@@ -2300,7 +2301,7 @@ export const DramaWorkshopPage: React.FC = () => {
   const genAsset = useCallback(async (assetId: string, prompt: string, opts: { model?: string; size?: string } = {}): Promise<boolean> => {
     const a = assetById(assetId);
     if (!a) return false;
-    const url = await imageFetcher(prompt || (a.name + '，' + a.imageSummary), opts).catch(() => null);
+    const url = await imageFetcher(prompt || buildAssetImagePrompt(a), opts).catch(() => null);
     if (url) { updateAssetImg(assetId, url); return true; }
     return false;
   }, [assetById, imageFetcher, updateAssetImg]);
@@ -2318,7 +2319,7 @@ export const DramaWorkshopPage: React.FC = () => {
       const character = ch[0] || '主角';
       const scene = sc[0] || '场景';
       const prop = pr[0] || '道具';
-      const vid = makeVideoPrompt(character, scene, prop, sb.rawScript.slice(0, 160), p.styleName, styleWord);
+      const vid = makeVideoPrompt(character, scene, prop, sb.rawScript, p.styleName, styleWord, { index: sb.index, duration: sb.duration });
       return { ...sb, characters: ch, scenes: sc, props: pr, videoPrompt: vid };
     }) }) : p);
     showToast('已批量匹配，分镜引用已更新', 'success');
@@ -2331,7 +2332,7 @@ export const DramaWorkshopPage: React.FC = () => {
     let ok = 0;
     for (const id of ids) {
       const a = assetById(id);
-      if (a && await genAsset(id, a.name + '，' + a.imageSummary, { model: opts.model, size })) ok++;
+      if (a && await genAsset(id, buildAssetImagePrompt(a), { model: opts.model, size })) ok++;
     }
     showToast('批量生成完成：成功 ' + ok + ' 个', 'success');
   }, [assetById, genAsset, showToast]);
