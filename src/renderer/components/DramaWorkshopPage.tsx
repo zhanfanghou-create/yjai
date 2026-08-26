@@ -865,10 +865,39 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
   const [exportProgress, setExportProgress] = useState(0);
   const [concatOn, setConcatOn] = useState(true);
   const [playIdx, setPlayIdx] = useState(0);
+  const vidRef = useRef<HTMLVideoElement>(null);
+  // 各片段视频的真实时长（原视频时长），作为截取范围上限
+  const [durations, setDurations] = useState<Record<string, number>>({});
+  const trimsRef = useRef(trims);
+  useEffect(() => { trimsRef.current = trims; }, [trims]);
+  // 进入页面时探测每个片段视频的真实时长，让截取范围能拖满整段原视频
+  useEffect(() => {
+    let cancelled = false;
+    const probes = storyboards
+      .map(s => ({ id: s.id, url: urlMap[s.id] || s.videoUrl || '' }))
+      .filter(x => x.url)
+      .map(({ id, url }) => new Promise<void>((resolve) => {
+        const v = document.createElement('video');
+        v.preload = 'metadata';
+        const finish = () => { v.onloadedmetadata = null; v.onerror = null; v.onabort = null; v.removeAttribute('src'); try { v.load(); } catch { /* 忽略 */ } resolve(); };
+        v.onloadedmetadata = () => {
+          if (!cancelled && v.duration && Number.isFinite(v.duration)) {
+            setDurations(p => (Math.abs((p[id] || 0) - v.duration) < 0.05 ? p : { ...p, [id]: v.duration }));
+          }
+          finish();
+        };
+        v.onerror = finish;
+        v.onabort = finish;
+        try { v.src = url; } catch { finish(); }
+      }));
+    void probes;
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const clampNum = (n: number, lo: number, hi: number) => Math.min(Math.max(n, lo), hi);
   const getTrim = (s: DramartStoryboard) => {
-    const d = Math.max(0.2, s.duration || 1);
+    const d = Math.max(0.2, durations[s.id] || s.duration || 1);
     const t = trims[s.id] || { start: 0, end: d };
     return { start: clampNum(Number(t.start) || 0, 0, Math.max(0, d - 0.2)), end: clampNum(Number(t.end) || d, 0.2, d) };
   };
@@ -879,7 +908,9 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
     const segEl = (e.currentTarget as HTMLElement).parentElement as HTMLElement;
     if (!seg || !segEl) return;
     const rect = segEl.getBoundingClientRect();
-    const d = Math.max(0.2, seg.duration || 1);
+    const d = Math.max(0.2, durations[id] || seg.duration || 1);
+    const shownId = concatOn ? shownItem?.id : cur?.id;
+    if (vidRef.current && id === shownId) { try { vidRef.current.pause(); } catch { /* 忽略 */ } }
     const onMove = (ev: PointerEvent) => {
       const ratio = clampNum((ev.clientX - rect.left) / (rect.width || 1), 0, 1);
       const sec = ratio * d;
@@ -891,7 +922,17 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
         return { ...p, [id]: next };
       });
     };
-    const onUp = () => { window.removeEventListener('pointermove', onMove); window.removeEventListener('pointerup', onUp); };
+    const onUp = () => {
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+      // 拖动结束立即应用（无需回车）：若拖的是当前播放片段，把预览跳到截取起点并继续播放截取部分
+      if (vidRef.current && id === shownId) {
+        const t = trimsRef.current[id] || { start: 0, end: d };
+        const ns = clampNum(Number(t.start) || 0, 0, Math.max(0, d - 0.2));
+        try { vidRef.current.currentTime = ns; vidRef.current.play().catch(() => { /* 忽略 */ }); } catch { /* 忽略 */ }
+      }
+      applyTrims();
+    };
     window.addEventListener('pointermove', onMove);
     window.addEventListener('pointerup', onUp);
   };
@@ -1005,10 +1046,18 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
         <div className="dwc-vid-player-tag">{concatOn && listItems.length ? ('连播 ' + (playPos + 1) + '/' + playListLen + (shownItem ? ' · ' + fmt(shownItem.end - shownItem.start) : '')) : (cur?.label || '分镜')}</div>
         {showUrl ? (
           <video
+            ref={vidRef}
             src={showUrl}
             controls
             className="dwc-vid-video"
-            onLoadedMetadata={(e) => { const v = e.currentTarget; if (shownTrim && shownTrim.start > 0) { try { v.currentTime = shownTrim.start; } catch { /* 忽略 */ } } }}
+            onLoadedMetadata={(e) => {
+              const v = e.currentTarget;
+              const vidId = concatOn ? shownItem?.id : cur?.id;
+              if (vidId && v.duration && Number.isFinite(v.duration)) {
+                setDurations(p => (Math.abs((p[vidId] || 0) - v.duration) < 0.05 ? p : { ...p, [vidId]: v.duration }));
+              }
+              if (shownTrim && shownTrim.start > 0) { try { v.currentTime = shownTrim.start; } catch { /* 忽略 */ } }
+            }}
             onTimeUpdate={(e) => { const v = e.currentTarget; if (concatOn && shownTrim && playListLen && v.currentTime >= shownTrim.end - 0.08) advancePlay(); }}
             onEnded={() => { if (concatOn && playListLen) advancePlay(); }}
           />
@@ -1039,15 +1088,16 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
         </div>
         <div className="dwc-tl-track" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') applyTrims(); }}>
           {segments.map(s => {
-            const dur = Math.max(s.duration || 1, 0.001);
+            const dur = Math.max(durations[s.id] || s.duration || 1, 0.001);
             const t = getTrim(s);
             const pctL = Math.max(0, Math.min(100, (t.start / dur) * 100));
             const pctR = Math.max(0, Math.min(100, (1 - t.end / dur) * 100));
+            const trimLen = Math.max(0, t.end - t.start);
             return (
               <div key={s.id} role="button" tabIndex={0} className={'dwc-tl-seg' + (s.id === cur?.id ? ' active' : '')} style={{ width: s.width + '%' }} onClick={() => selectSeg(storyboards.findIndex(x => x.id === s.id))}>
                 <div className="dwc-tl-thumb" style={thumbStyle(200 + s.index * 40, 'scene')}><PlayIcon size={14} /></div>
-                <div className="dwc-tl-seg-meta"><span>{s.label}</span><span>{fmt(s.duration)}</span></div>
-                <div className="dwc-tl-trim" style={{ left: pctL + '%', right: pctR + '%' }} title="拖动两端手柄截取时长，回车应用" />
+                <div className="dwc-tl-seg-meta"><span>{s.label}</span><span title="截取后时长">{fmt(trimLen)}</span></div>
+                <div className="dwc-tl-trim" style={{ left: pctL + '%', right: pctR + '%' }} title="拖动两端手柄截取时长，松开自动应用" />
                 <div className="dwc-tl-handle left" onPointerDown={(e) => startTrimDrag(e, s.id, 'start')} />
                 <div className="dwc-tl-handle right" onPointerDown={(e) => startTrimDrag(e, s.id, 'end')} />
               </div>
