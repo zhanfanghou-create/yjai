@@ -810,6 +810,8 @@ interface VideoViewProps {
   onBack: () => void;
   onGenerate: (id: string) => void;
   onGo: (s: Stage) => void;
+  onEditRegenerate: (id: string, prompt: string) => void;
+  onDownload: (url: string, sb: DramartStoryboard) => void;
 }
 
 // 把分镜提示词解析成可点击片段：文本 / @引用(角色场景道具音色) / 时长 / 台词
@@ -844,7 +846,7 @@ const fmt = (s: number) => {
   return (m < 10 ? '0' + m : m) + ':' + (ss < 10 ? '0' + ss : ss);
 };
 
-const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onGo }) => {
+const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onGo, onEditRegenerate, onDownload }) => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const total = storyboards.reduce((s, x) => s + (x.duration || 0), 0);
   const cur = storyboards[index];
@@ -852,6 +854,116 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
   const videoUrl = cur ? (urlMap[cur.id] || cur.videoUrl || '') : '';
   let acc = 0;
   const segments = storyboards.map(s => { const start = acc; acc += s.duration; return { ...s, start, width: (s.duration / Math.max(total, 1)) * 100 }; });
+
+  const showToast = useAppStore(s => s.showToast);
+  const [trims, setTrims] = useState<Record<string, { start: number; end: number }>>({});
+  const [editOpen, setEditOpen] = useState(false);
+  const [editText, setEditText] = useState('');
+  const [exporting, setExporting] = useState(false);
+  const [exportProgress, setExportProgress] = useState(0);
+  const [concatOn, setConcatOn] = useState(true);
+  const [playIdx, setPlayIdx] = useState(0);
+
+  const clampNum = (n: number, lo: number, hi: number) => Math.min(Math.max(n, lo), hi);
+  const getTrim = (s: DramartStoryboard) => {
+    const d = Math.max(0.2, s.duration || 1);
+    const t = trims[s.id] || { start: 0, end: d };
+    return { start: clampNum(Number(t.start) || 0, 0, Math.max(0, d - 0.2)), end: clampNum(Number(t.end) || d, 0.2, d) };
+  };
+  const applyTrims = () => { showToast('已应用截取时长（前后拖动已生效）', 'success'); };
+  const startTrimDrag = (e: React.PointerEvent<HTMLDivElement>, id: string, which: 'start' | 'end') => {
+    e.stopPropagation();
+    const seg = storyboards.find(x => x.id === id);
+    const segEl = (e.currentTarget as HTMLElement).parentElement as HTMLElement;
+    if (!seg || !segEl) return;
+    const rect = segEl.getBoundingClientRect();
+    const d = Math.max(0.2, seg.duration || 1);
+    const onMove = (ev: PointerEvent) => {
+      const ratio = clampNum((ev.clientX - rect.left) / (rect.width || 1), 0, 1);
+      const sec = ratio * d;
+      setTrims(p => {
+        const curT = p[id] || { start: 0, end: d };
+        const next = which === 'start'
+          ? { start: clampNum(sec, 0, curT.end - 0.2), end: curT.end }
+          : { start: curT.start, end: clampNum(sec, curT.start + 0.2, d) };
+        return { ...p, [id]: next };
+      });
+    };
+    const onUp = () => { window.removeEventListener('pointermove', onMove); window.removeEventListener('pointerup', onUp); };
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
+  };
+  const listItems = storyboards
+    .map((s, i) => ({ s, i }))
+    .filter(x => !!(urlMap[x.s.id] || x.s.videoUrl))
+    .map(x => { const t = getTrim(x.s); return { id: x.s.id, si: x.i, label: x.s.label, url: (urlMap[x.s.id] || x.s.videoUrl) || '', start: t.start, end: t.end }; });
+  const playListLen = listItems.length;
+  const playPos = concatOn ? clampNum(playIdx, 0, Math.max(0, playListLen - 1)) : Math.max(0, listItems.findIndex(x => x.id === cur?.id));
+  const shownItem = playListLen ? listItems[playPos] : null;
+  const showUrl = (concatOn ? (shownItem?.url || videoUrl) : videoUrl) || '';
+  const shownTrim = concatOn ? shownItem : null;
+  const advancePlay = () => { if (playListLen) setPlayIdx(p => (p + 1) % playListLen); };
+  const selectSeg = (i: number) => {
+    onSelectIndex(i);
+    if (concatOn && listItems.length) { const li = listItems.findIndex(x => x.si === i); if (li >= 0) setPlayIdx(li); }
+  };
+  const toggleConcat = () => {
+    const nv = !concatOn;
+    setConcatOn(nv);
+    if (nv && listItems.length) { const li = listItems.findIndex(x => x.id === cur?.id); if (li >= 0) setPlayIdx(li); }
+  };
+  const fileUrlToLocal = (url: string) => {
+    if (/^[a-zA-Z]:[\\/]/.test(url)) return url.replace(/\\/g, '/');
+    if (url.startsWith('file://')) return decodeURIComponent(url.replace(/^file:\/\/\//, '')).replace(/\\/g, '/');
+    return url;
+  };
+  const exportComposed = async () => {
+    const win = window as any;
+    const api = win?.yijingAPI;
+    if (!api?.video?.render || typeof api.video.render !== 'function') { showToast('当前环境不支持视频合成（需要 FFmpeg）', 'error'); return; }
+    const items = storyboards.map((s, i) => ({ s, i })).filter(x => !!(urlMap[x.s.id] || x.s.videoUrl));
+    if (!items.length) { showToast('暂无可导出的片段（请先生成视频）', 'error'); return; }
+    setExporting(true); setExportProgress(0);
+    try {
+      const videoFiles: string[] = [];
+      const timeRanges: [string, string][] = [];
+      let totalDur = 0;
+      for (const { s } of items) {
+        const url = urlMap[s.id] || s.videoUrl || '';
+        const local = await localizeMedia(url, 'dramart-vid', 'mp4');
+        const p = fileUrlToLocal(local || url);
+        const t = getTrim(s);
+        const start = Math.max(0, t.start);
+        const end = Math.max(start + 0.2, t.end);
+        videoFiles.push(p);
+        timeRanges.push([String(Number(start.toFixed(3))), String(Number(end.toFixed(3)))]);
+        totalDur += end - start;
+      }
+      if (!videoFiles.length) throw new Error('无有效视频片段');
+      const h = parseInt(String(project.resolution || '720'), 10) || 720;
+      const ratio = String(project.ratio || '16:9');
+      let width = Math.round((h * 16) / 9); let height = h;
+      if (ratio === '9:16') width = Math.round((h * 9) / 16);
+      else if (ratio === '1:1') width = h;
+      const firstLocal = videoFiles[0].replace(/\/\[^\/]*$/, '');
+      const tmpOut = firstLocal + '/dramart-export-' + Date.now() + '.mp4';
+      const res: any = await api.video.render({
+        videoFiles, timeRanges,
+        outputSize: { width, height },
+        outputDuration: String(Number(totalDur.toFixed(3))),
+        outputPath: tmpOut,
+      }, (p: number) => setExportProgress(p));
+      if (!res?.ok) throw new Error(res?.error || '合成失败');
+      const saveApi = win?.yijingAPI?.system?.saveFileFromData;
+      if (typeof saveApi === 'function') {
+        const saved = await saveApi({ dataUrl: 'file:///' + tmpOut, suggestedName: (project.name || '剧创') + '-合成视频.mp4' });
+        if (saved?.ok) showToast('已导出合成视频到本地', 'success');
+        else if (saved?.canceled) { /* 用户取消，不提示 */ }
+        else showToast('导出失败', 'error');
+      } else { showToast('已合成：' + tmpOut, 'success'); }
+    } catch (e: any) { showToast('导出失败：' + (e?.message || String(e)), 'error'); }
+    finally { setExporting(false); }
+  };
 
   return (
     <div className="dwc-vid">
@@ -881,15 +993,23 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
       <div className="dwc-vid-toolbar">
         <span className="dwc-vid-label">视频合成预览</span>
         <div className="dwc-vid-actions">
-          <button className="dwc-vid-act" onClick={() => alert('编辑')}><EditIcon size={14} /> 编辑</button>
-          <button className="dwc-vid-act" onClick={() => alert('导出视频')}><SaveIcon size={14} /> 导出视频</button>
-          <button className="dwc-vid-act" onClick={() => alert('下载')}><DownloadIcon size={14} /> 下载</button>
+          <button className={'dwc-vid-act' + (concatOn ? ' on' : '')} onClick={toggleConcat} title="自动按截取时长前后拼接连贯预览"><PlayIcon size={14} /> 连播</button>
+          <button className="dwc-vid-act" onClick={() => { setEditText(cur?.videoPrompt || ''); setEditOpen(true); }}><EditIcon size={14} /> 编辑</button>
+          <button className="dwc-vid-act" disabled={exporting} onClick={exportComposed}><SaveIcon size={14} /> {exporting ? ('合成中…' + (exportProgress > 0 ? Math.round(exportProgress) + '%' : '')) : '导出视频'}</button>
+          <button className="dwc-vid-act" disabled={!videoUrl || !cur} onClick={() => { if (cur && videoUrl) onDownload(videoUrl, cur); }}><DownloadIcon size={14} /> 下载</button>
         </div>
       </div>
       <div className="dwc-vid-player">
-        <div className="dwc-vid-player-tag">{cur?.label || '分镜'}</div>
-        {videoUrl ? (
-          <video src={videoUrl} controls className="dwc-vid-video" />
+        <div className="dwc-vid-player-tag">{concatOn && listItems.length ? ('连播 ' + (playPos + 1) + '/' + playListLen + (shownItem ? ' · ' + fmt(shownItem.end - shownItem.start) : '')) : (cur?.label || '分镜')}</div>
+        {showUrl ? (
+          <video
+            src={showUrl}
+            controls
+            className="dwc-vid-video"
+            onLoadedMetadata={(e) => { const v = e.currentTarget; if (shownTrim && shownTrim.start > 0) { try { v.currentTime = shownTrim.start; } catch { /* 忽略 */ } } }}
+            onTimeUpdate={(e) => { const v = e.currentTarget; if (concatOn && shownTrim && playListLen && v.currentTime >= shownTrim.end - 0.08) advancePlay(); }}
+            onEnded={() => { if (concatOn && playListLen) advancePlay(); }}
+          />
         ) : status === 'generating' ? (
           <div className="dwc-vid-placeholder"><span className="dwc-spinner" /> 生成中…</div>
         ) : (
@@ -915,13 +1035,22 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
           <span>{fmt(total / 2)}</span>
           <span>{fmt(total)}</span>
         </div>
-        <div className="dwc-tl-track">
-          {segments.map(s => (
-            <button key={s.id} className={`dwc-tl-seg${s.id === cur?.id ? ' active' : ''}`} style={{ width: s.width + '%' }} onClick={() => onSelectIndex(storyboards.indexOf(s))}>
-              <div className="dwc-tl-thumb" style={thumbStyle(200 + s.index * 40, 'scene')}><PlayIcon size={14} /></div>
-              <div className="dwc-tl-seg-meta"><span>{s.label}</span><span>{fmt(s.duration)}</span></div>
-            </button>
-          ))}
+        <div className="dwc-tl-track" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') applyTrims(); }}>
+          {segments.map(s => {
+            const dur = Math.max(s.duration || 1, 0.001);
+            const t = getTrim(s);
+            const pctL = Math.max(0, Math.min(100, (t.start / dur) * 100));
+            const pctR = Math.max(0, Math.min(100, (1 - t.end / dur) * 100));
+            return (
+              <div key={s.id} role="button" tabIndex={0} className={'dwc-tl-seg' + (s.id === cur?.id ? ' active' : '')} style={{ width: s.width + '%' }} onClick={() => selectSeg(storyboards.findIndex(x => x.id === s.id))}>
+                <div className="dwc-tl-thumb" style={thumbStyle(200 + s.index * 40, 'scene')}><PlayIcon size={14} /></div>
+                <div className="dwc-tl-seg-meta"><span>{s.label}</span><span>{fmt(s.duration)}</span></div>
+                <div className="dwc-tl-trim" style={{ left: pctL + '%', right: pctR + '%' }} title="拖动两端手柄截取时长，回车应用" />
+                <div className="dwc-tl-handle left" onPointerDown={(e) => startTrimDrag(e, s.id, 'start')} />
+                <div className="dwc-tl-handle right" onPointerDown={(e) => startTrimDrag(e, s.id, 'end')} />
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="dwc-vid-foot">
@@ -931,6 +1060,20 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
           <button className="dwc-bottom-btn" onClick={() => alert('导出并发布')}><DownloadIcon size={15} /> 导出视频</button>
         </div>
       </div>
+      {editOpen && (
+        <div className="dwc-overlay" onClick={() => setEditOpen(false)}>
+          <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
+            <div className="dwc-modal-head"><span className="dwc-modal-title">编辑提示词 · 重新生成当前片段</span><button className="dwc-modal-close" onClick={() => setEditOpen(false)}><CloseIcon size={16} /></button></div>
+            <div className="dwc-modal-body">
+              <textarea className="dwc-sb-prompt-area" rows={9} value={editText} onChange={e => setEditText(e.target.value)} placeholder="输入新的分镜视频提示词…" />
+              <div className="dwc-picker-hint">保存后将用新提示词重新生成当前分镜视频；已生成的其它片段不受影响。</div>
+            </div>
+            <div className="dwc-modal-foot">
+              <button className="dwc-modal-ok" disabled={!editText.trim()} onClick={() => { if (cur) onEditRegenerate(cur.id, editText.trim()); setEditOpen(false); }}>保存并重新生成</button>
+            </div>
+          </div>
+        </div>
+      )}
       {scriptOpen && <ScriptModal script={project.scriptText} fileName={project.scriptFileName} onClose={() => setScriptOpen(false)} />}
     </div>
   );
@@ -2153,7 +2296,7 @@ export const DramaWorkshopPage: React.FC = () => {
     }
   }, [voiceAPIConfigs, project]);
 
-  const handleGenerateVideo = useCallback(async (id: string, params?: { model?: string; duration?: number; count?: number; resolution?: string; format?: string }) => {
+  const handleGenerateVideo = useCallback(async (id: string, params?: { model?: string; duration?: number; count?: number; resolution?: string; format?: string }, promptOverride?: string) => {
     if (!id) { showToast('请先选择分镜', 'error'); return; }
     const sb = project?.storyboards.find(s => s.id === id);
     if (!sb) { showToast('分镜不存在', 'error'); return; }
@@ -2171,7 +2314,7 @@ export const DramaWorkshopPage: React.FC = () => {
         const aspect = project?.ratio || '16:9';
         const urls: string[] = [];
         for (let i = 0; i < count; i++) {
-          const res = await toolService.generateVideo(sb.videoPrompt, vc, {
+          const res = await toolService.generateVideo((promptOverride && promptOverride.trim()) || sb.videoPrompt, vc, {
             model: params?.model || vc.defaultModel,
             aspectRatio: aspect,
             resolution: params?.resolution || project?.resolution || '720p',
@@ -2385,6 +2528,13 @@ export const DramaWorkshopPage: React.FC = () => {
     try { addAsset({ name: a.name, type: 'image', path: a.img, thumbnail: a.img, size: 0, sourceType: 'drama' }); showToast('已保存到资产库', 'success'); }
     catch { showToast('保存到资产库失败', 'error'); }
   }, [addAsset, showToast]);
+
+  // 编辑分镜提示词并重新生成当前片段（视频页右上角「编辑」）
+  const regenerateWithPrompt = useCallback((id: string, prompt: string) => {
+    if (!prompt.trim()) { showToast('提示词不能为空', 'error'); return; }
+    setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, videoPrompt: prompt } : x) }) : p);
+    handleGenerateVideo(id, undefined, prompt);
+  }, [handleGenerateVideo, showToast]);
 
   // 收藏分镜视频到资产库：先把视频落地到本地，再写入全局资产库
   const collectStoryboardVideo = useCallback(async (url: string, sb: DramartStoryboard) => {
@@ -2747,6 +2897,8 @@ export const DramaWorkshopPage: React.FC = () => {
           onBack={() => setStage('storyboard')}
           onGenerate={handleGenerateVideo}
           onGo={goTo}
+          onEditRegenerate={regenerateWithPrompt}
+          onDownload={downloadStoryboardVideo}
         />
       )}
 
