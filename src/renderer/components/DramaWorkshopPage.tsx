@@ -445,6 +445,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const [editLine, setEditLine] = useState<{ raw: string } | null>(null);
   const [refPickOpen, setRefPickOpen] = useState(false);
   const [voiceReplace, setVoiceReplace] = useState<string | null>(null);
+  const [refReplace, setRefReplace] = useState<{ raw: string; kind: 'character' | 'scene' | 'prop' } | null>(null);
   const replaceInPrompt = (from: string, to: string) => { if (sb) onEditPrompt(sb.id, (sb.videoPrompt || '').split(from).join(to)); };
   const insertRef = () => {
     const sel = window.getSelection();
@@ -505,6 +506,27 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const findAsset = (kind: string, name: string) => {
     const list = kind === 'character' ? project.characters : kind === 'scene' ? project.scenes : project.props;
     return list.find(a => a.name === name) || list.find(a => name.includes(a.name)) || list.find(a => a.name.includes(name));
+  };
+
+  // 自动判断 @ 引用是哪种类型（角色/场景/道具）：优先按资产名匹配，其次按提示词【人物】【场景】【道具】分区就近判断
+  const detectRefKind = (value: string): 'character' | 'scene' | 'prop' | null => {
+    if (findAsset('character', value)) return 'character';
+    if (findAsset('scene', value)) return 'scene';
+    if (findAsset('prop', value)) return 'prop';
+    const prompt = sb?.videoPrompt || '';
+    const idx = prompt.indexOf('<' + value + '>');
+    if (idx >= 0) {
+      const before = prompt.slice(0, idx);
+      let type: 'character' | 'scene' | 'prop' | null = null;
+      let lastPos = -1;
+      const marks: [string, 'character' | 'scene' | 'prop'][] = [['【人物】', 'character'], ['【场景】', 'scene'], ['【道具】', 'prop']];
+      for (const [mark, t] of marks) {
+        const p = before.lastIndexOf(mark);
+        if (p > lastPos) { lastPos = p; type = t; }
+      }
+      return type;
+    }
+    return null;
   };
   const status = sb ? (statusMap[sb.id] || 'idle') : 'idle';
   const videoUrl = sb ? (urlMap[sb.id] || sb.videoUrl || '') : '';
@@ -610,9 +632,9 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               {parseRichPrompt(sb ? sb.videoPrompt : '').map((seg, i) => {
                 if (seg.type === 'ref') {
                   const found = findAsset('character', seg.value) || findAsset('scene', seg.value) || findAsset('prop', seg.value) || null;
-                  return <span key={i} className="dwc-rich-ref" contentEditable={false} onClick={() => found ? setPreviewAsset(found) : setVoiceReplace(seg.value)}>{found?.img ? <img src={found.img} alt="" /> : <span className="dwc-rich-at">@</span>}{seg.value}</span>;
+                  return <span key={i} className="dwc-rich-ref" contentEditable={false} onClick={() => { const k = detectRefKind(seg.value); if (k) setRefReplace({ raw: seg.value, kind: k }); else setVoiceReplace(seg.value); }}>{found?.img ? <img src={found.img} alt="" /> : <span className="dwc-rich-at">@</span>}{seg.value}</span>;
                 }
-                if (seg.type === 'dur') return <span key={i} className="dwc-rich-dur" contentEditable={false} onClick={() => setEditDur({ raw: seg.value })}>⏱ {seg.value}s</span>;
+                if (seg.type === 'dur') return <span key={i} className="dwc-rich-dur" contentEditable={false} onClick={() => setEditDur({ raw: seg.value })}>⏱ {seg.value}</span>;
                 if (seg.type === 'line') return <span key={i} className="dwc-rich-line" contentEditable={false} onClick={() => setEditLine({ raw: seg.value })}>{seg.value}</span>;
                 return <span key={i}>{seg.value}</span>;
               })}
@@ -723,6 +745,29 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
           </div>
         </div>
       )}
+      {refReplace && (
+        <div className="dwc-overlay" onClick={() => setRefReplace(null)}>
+          <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
+            <div className="dwc-modal-head"><span className="dwc-modal-title">替换{refReplace.kind === 'character' ? '角色' : refReplace.kind === 'scene' ? '场景' : '道具'}</span><button className="dwc-modal-close" onClick={() => setRefReplace(null)}><CloseIcon size={16} /></button></div>
+            <div className="dwc-modal-body">
+              <div className="dwc-picker-sec">当前引用</div>
+              <div className="dwc-picker-grid">
+                {(() => { const cur = findAsset(refReplace.kind, refReplace.raw); return cur ? (<button key={cur.id} className="dwc-picker-card current">{cur.img ? <img src={cur.img} alt={cur.name} /> : <span className="dwc-picker-ico"><ImageIcon size={20} /></span>}<span>{cur.name}</span></button>) : (<span className="dwc-picker-hint">{refReplace.raw}</span>); })()}
+              </div>
+              <div className="dwc-picker-sec">替换为</div>
+              <div className="dwc-picker-grid">
+                {(refReplace.kind === 'character' ? project.characters : refReplace.kind === 'scene' ? project.scenes : project.props).map(a => (
+                  <button key={a.id} className="dwc-picker-card" onClick={() => { if (sb) replaceInPrompt(refReplace.raw, a.name); setRefReplace(null); }}>
+                    {a.img ? <img src={a.img} alt={a.name} /> : <span className="dwc-picker-ico"><ImageIcon size={20} /></span>}
+                    <span>{a.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {voiceReplace !== null && (
         <div className="dwc-overlay" onClick={() => setVoiceReplace(null)}>
           <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
@@ -757,12 +802,13 @@ interface VideoViewProps {
 // 把分镜提示词解析成可点击片段：文本 / @引用(角色场景道具音色) / 时长 / 台词
 function parseRichPrompt(text: string): { type: 'text' | 'ref' | 'dur' | 'line'; value: string }[] {
   const out: { type: 'text' | 'ref' | 'dur' | 'line'; value: string }[] = [];
-  const re = /<([^<>]+)>|(\d+(?:\.\d+)?)s*s\b|(\{[^}]*\})/g;
+  // 时间引用：仅“明确时长”（如 3s / 3秒 / 几秒）才识别为时间标签；年份、年代等纯数字一律按普通文本处理
+  const re = /<([^<>]+)>|((?:\d+(?:\.\d+)?)\s*(?:s\b|秒)|几秒)|(\{[^}]*\})/g;
   let last = 0; let m: RegExpExecArray | null;
   while ((m = re.exec(text || ''))) {
     if (m.index > last) out.push({ type: 'text', value: text.slice(last, m.index) });
     if (m[1]) out.push({ type: 'ref', value: m[1].trim() });
-    else if (m[2]) out.push({ type: 'dur', value: m[2] });
+    else if (m[2]) out.push({ type: 'dur', value: m[2].trim() });
     else if (m[3]) out.push({ type: 'line', value: m[3] });
     last = re.lastIndex;
   }
