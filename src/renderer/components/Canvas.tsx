@@ -126,6 +126,9 @@ const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
 }>((props, ref) => {
   const innerRef = useRef<HTMLTextAreaElement | null>(null);
   const backdropRef = useRef<HTMLDivElement | null>(null);
+  const [mentionOpen, setMentionOpen] = useState(false);
+  const [mentionQuery, setMentionQuery] = useState('');
+  const [caret, setCaret] = useState(0);
   const setRefs = (el: HTMLTextAreaElement | null) => {
     innerRef.current = el;
     if (typeof ref === 'function') ref(el);
@@ -137,6 +140,28 @@ const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
       backdropRef.current.scrollLeft = innerRef.current.scrollLeft;
     }
   };
+  // 即梦式 @ 唤起：键入 @ 弹出引用选择，光标处插入 @名称
+  const pickMention = (name: string) => {
+    const el = innerRef.current; if (!el) return;
+    const v = props.value; const pos = caret;
+    const atIdx = v.lastIndexOf('@', Math.max(0, pos - 1));
+    const start = atIdx >= 0 ? atIdx : pos;
+    const next = v.slice(0, start) + '@' + name + v.slice(pos);
+    props.onChange(next); setMentionOpen(false);
+    requestAnimationFrame(() => { if (el) { const p = start + 1 + name.length; el.setSelectionRange(p, p); el.focus(); } });
+  };
+  const handleChange = (v: string) => {
+    props.onChange(v);
+    const el = innerRef.current;
+    if (el) { const pos = el.selectionStart; setCaret(pos); const atIdx = v.lastIndexOf('@', Math.max(0, pos - 1)); if (atIdx >= 0) setMentionQuery(v.slice(atIdx + 1, pos)); }
+  };
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) { requestAnimationFrame(() => { const el = innerRef.current; if (el) { setCaret(el.selectionStart); setMentionOpen(true); setMentionQuery(''); } }); }
+    if (e.key === 'Escape') setMentionOpen(false);
+    if ((e.key === 'Enter' || e.key === 'Tab') && mentionOpen) { e.preventDefault(); const f = (props.mentionNames || []).find(n => !mentionQuery || n.toLowerCase().includes(mentionQuery.toLowerCase())); if (f) pickMention(f); else setMentionOpen(false); }
+    props.onKeyDown?.(e);
+  };
+  const filtered = (props.mentionNames || []).filter(n => !mentionQuery || n.toLowerCase().includes(mentionQuery.toLowerCase()));
   return (
     <div className="mention-textarea-wrap">
       <div ref={backdropRef} className="mention-textarea-backdrop" aria-hidden="true">
@@ -146,15 +171,20 @@ const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
         ref={setRefs}
         className={`mention-textarea-input ${props.className || ''}`}
         value={props.value}
-        onChange={(event) => props.onChange(event.target.value)}
+        onChange={(event) => handleChange(event.target.value)}
         onScroll={syncScroll}
-        onKeyDown={props.onKeyDown}
+        onKeyDown={handleKeyDown}
         onPointerDown={props.onPointerDown}
         onMouseDown={props.onMouseDown}
         placeholder={props.placeholder}
         rows={props.rows}
         spellCheck={false}
       />
+      {mentionOpen && (
+        <div className="mention-dropdown" onMouseDown={e => e.preventDefault()}>
+          {filtered.length === 0 ? <div className="mention-empty">无匹配引用</div> : filtered.map(n => (<button key={n} className="mention-item" onClick={() => pickMention(n)}><span className="mention-item-icon">@</span><span className="mention-item-name">{n}</span></button>))}
+        </div>
+      )}
     </div>
   );
 });

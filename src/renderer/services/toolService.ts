@@ -279,32 +279,53 @@ export const toolService = {
       }
 
       // ===== 3. 自定义 API 接口配音 =====
-      // 第三方语音API（主进程代理）
-      if (win?.yijingAPI?.thirdParty?.voiceGenerate) {
-        const res = await win.yijingAPI.thirdParty.voiceGenerate({
-          apiKey: config.apiKey,
-          baseUrl: config.baseUrl,
-          model: config.defaultModel || options.model || '',
-          text,
-          voice: options.voice || 'alloy',
-        });
-        const url = res?.url || res?.data?.[0]?.url;
-        if (url) return { url, type: 'audio' as const };
+      const apiBase = String(config.baseUrl || '').trim().replace(/\/+$/, '');
+      const apiKey = config.apiKey || '';
+      const model = config.defaultModel || options.model || '';
+      const voice = options.voice || options.voiceName || 'alloy';
+
+      // 优先通过主进程 thirdParty.request 代理调用（绕过 CORS，统一错误处理）
+      if (win?.yijingAPI?.thirdParty?.request) {
+        // 尝试多种常见语音 API 端点格式
+        const endpoints = [
+          { url: `${apiBase}/audio/speech`, body: { model, voice, input: text } },
+          { url: `${apiBase}/v1/audio/speech`, body: { model, voice, input: text } },
+          { url: `${apiBase}/tts`, body: { model, voice, text } },
+          { url: `${apiBase}/synthesize`, body: { model, voice, text } },
+        ];
+        let lastErr: any = null;
+        for (const ep of endpoints) {
+          try {
+            const res = await win.yijingAPI.thirdParty.request({
+              url: ep.url,
+              method: 'POST',
+              headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(ep.body),
+              responseType: 'blob',
+            });
+            if (res?.ok && res?.data) {
+              const blob = res.data instanceof Blob ? res.data : new Blob([res.data]);
+              const url = URL.createObjectURL(blob);
+              return { url, type: 'audio' as const };
+            }
+            if (res?.url) return { url: res.url, type: 'audio' as const };
+            lastErr = res?.error || res;
+          } catch (e) { lastErr = e; }
+        }
+        if (lastErr) throw new Error(typeof lastErr === 'string' ? lastErr : (lastErr?.message || JSON.stringify(lastErr).slice(0, 200)));
       }
 
-      // 标准 OpenAI 语音API
-      const apiBase = String(config.baseUrl || '').trim().replace(/\/+$/, '');
+      // Fallback: 渲染进程直接 fetch（可能受 CORS 限制）
       const response = await fetch(`${apiBase}/audio/speech`, {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${config.apiKey}`,
+          'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          model: config.defaultModel || options.model || '',
-          voice: options.voice || 'alloy',
-          input: text,
-        }),
+        body: JSON.stringify({ model, voice, input: text }),
       });
       if (!response.ok) {
         let msg = `HTTP ${response.status}`;
@@ -316,6 +337,97 @@ export const toolService = {
       return { url, type: 'audio' as const };
     } catch (error: any) {
       throw new Error(`配音失败：${error.message}`);
+    }
+  },
+
+  // 音色克隆：上传音频样本，克隆生成自定义音色
+  // 支持常见语音克隆 API（ElevenLabs / Fish Audio / Minimax / OpenAI 兼容等），通过配置的 baseUrl 自动适配
+  async cloneVoice(audioFile: File | string, config: any, options: any = {}): Promise<{ voiceId: string; name: string; previewUrl?: string }> {
+    if (!config) throw new Error('请先在设置页配置语音 API');
+    const win = window as any;
+    const apiBase = String(config.baseUrl || '').trim().replace(/\/+$/, '');
+    const apiKey = config.apiKey || '';
+    const voiceName = options.name || options.voiceName || ('克隆音色_' + Date.now().toString(36));
+
+    // 将 File 转为 base64
+    const fileToBase64 = (file: File): Promise<string> => new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result || ''));
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+
+    try {
+      let audioBase64 = '';
+      let audioFileName = 'sample.mp3';
+      if (typeof audioFile === 'string') {
+        audioBase64 = audioFile;
+      } else {
+        audioBase64 = await fileToBase64(audioFile);
+        audioFileName = audioFile.name || 'sample.mp3';
+      }
+
+      // 优先通过主进程代理调用（绕过 CORS，支持 multipart/form-data）
+      if (win?.yijingAPI?.thirdParty?.request) {
+        // 尝试多种常见克隆 API 端点
+        const cloneEndpoints = [
+          // ElevenLabs 风格
+          { url: `${apiBase}/voices/add`, method: 'POST', isMultipart: true, fields: { name: voiceName, files: 'audio' } },
+          // Fish Audio 风格
+          { url: `${apiBase}/v1/voices`, method: 'POST', isMultipart: true, fields: { name: voiceName, audio: 'audio' } },
+          // Minimax 风格
+          { url: `${apiBase}/v1/t2a_v2/voice_clone`, method: 'POST', isMultipart: false, fields: { voice_name: voiceName, audio_base64: audioBase64 } },
+          // 通用 OpenAI 兼容风格
+          { url: `${apiBase}/voices`, method: 'POST', isMultipart: true, fields: { name: voiceName, file: 'audio' } },
+        ];
+
+        let lastErr: any = null;
+        for (const ep of cloneEndpoints) {
+          try {
+            const res = await win.yijingAPI.thirdParty.request({
+              url: ep.url,
+              method: ep.method,
+              headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                ...(ep.isMultipart ? {} : { 'Content-Type': 'application/json' }),
+              },
+              body: ep.isMultipart
+                ? { __multipart: true, name: voiceName, audio: { __file: true, base64: audioBase64, filename: audioFileName } }
+                : JSON.stringify({ ...ep.fields, voice_name: voiceName, audio_base64: audioBase64 }),
+            });
+            if (res?.ok) {
+              const data = res.data || res;
+              const voiceId = data?.voice_id || data?.id || data?.voiceId || data?.voiceID || '';
+              if (voiceId) {
+                return { voiceId, name: voiceName, previewUrl: data?.preview_url || data?.previewUrl || undefined };
+              }
+            }
+            lastErr = res?.error || res;
+          } catch (e) { lastErr = e; }
+        }
+        if (lastErr) throw new Error(typeof lastErr === 'string' ? lastErr : (lastErr?.message || '音色克隆失败'));
+      }
+
+      // Fallback: 渲染进程直接调用（仅支持 JSON 格式的 API）
+      const response = await fetch(`${apiBase}/v1/t2a_v2/voice_clone`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ voice_name: voiceName, audio_base64: audioBase64 }),
+      });
+      if (!response.ok) {
+        let msg = `HTTP ${response.status}`;
+        try { const err = await response.json(); msg = err?.error?.message || err?.error || msg; } catch {}
+        throw new Error(msg);
+      }
+      const data = await response.json();
+      const voiceId = data?.voice_id || data?.id || data?.voiceId || '';
+      if (!voiceId) throw new Error('克隆成功但未返回 voice_id');
+      return { voiceId, name: voiceName, previewUrl: data?.preview_url || undefined };
+    } catch (error: any) {
+      throw new Error(`音色克隆失败：${error.message}`);
     }
   },
 

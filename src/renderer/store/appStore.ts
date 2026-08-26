@@ -1,7 +1,8 @@
-﻿import { create } from 'zustand';
+import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { resolveWorkflowForFeature } from '../services/comfyCapability';
 import { localizeMedia } from '../utils/pathUtils';
+import type { DramartProject, AIConfigInput, DramartStyle } from '../services/dramartWorkflow';
 
 export type APIProvider = 'comfyui' | 'openai' | 'grsai' | 'siliconflow' | 'zhipu' | 'custom' | 'modelscope';
 export type NavSection = 'home' | 'assets' | 'prompt-library' | 'canvas' | 'drama' | 'money-printer' | 'settings' | 'tools' | 'drama-workshop' | 'comfyui';
@@ -182,7 +183,10 @@ interface AppState {
   canvasHistory: CanvasHistory[]; canvasGridVisible: boolean; nodes: Record<string, AINode>; undoStack: Record<string, AINode>[]; redoStack: Record<string, AINode>[]; clipboard: { nodes: AINode[]; isCut: boolean } | null; activeNodeId: string | null;
   taskQueue: any[]; queuePanelOpen: boolean;
   dramaRecords: DramaRecord[]; currentDramaRecordId: string | null; dramaApiConfigId: string; dramaModel: string; promptLibrary: PromptItem[]; searchQuery: string; searchResults: SearchResult[]; storyboardPresets: StoryboardPreset[];
+  dramartProjects: DramartProject[]; activeDramartId: string | null; dramartDraft: DramartProject | null; dramartCreateParams: { mode: 'agent' | 'manual'; ratio: string; resolution: string; styleId: string }; dramartCustomStyles: DramartStyle[];
   setMediaPreview: (p: AppState['mediaPreview']) => void; showToast: (m: string, t?: 'success' | 'error' | 'info' | 'warning') => void; toggleSidebar: () => void; setActiveSection: (s: NavSection) => void; setActiveCanvas: (id: string | null) => void;
+  submitDramaDraft: (project: DramartProject) => void; clearDramartDraft: () => void; setActiveDramartId: (id: string | null) => void; updateDramartProject: (id: string, updater: (p: DramartProject) => DramartProject) => void;
+  saveDramartProject: (project: DramartProject) => void; setDramartCreateParams: (p: Partial<{ mode: 'agent' | 'manual'; ratio: string; resolution: string; styleId: string }>) => void; saveDramartCustomStyle: (style: DramartStyle) => void; deleteDramartCustomStyle: (id: string) => void;
   setQueuePanelOpen: (v: boolean) => void;
   addToQueue: (id: string) => void; removeFromQueue: (id: string) => void; clearCompletedTasks: () => void; executeQueue: () => Promise<void>;
   createChatSession: () => string; deleteChatSession: (id: string) => void; setActiveSession: (id: string) => void; updateChatSession: (id: string, u: Partial<ChatSession>) => void; addMessage: (sid: string, m: Omit<ChatMessage, 'id' | 'timestamp'>) => string; updateMessage: (sid: string, mid: string, u: Partial<ChatMessage>) => void; deleteMessage: (sid: string, mid: string) => void;
@@ -481,12 +485,24 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
   canvasHistory: [], canvasGridVisible: true, nodes: {}, undoStack: [], redoStack: [], clipboard: null, activeNodeId: null,
   taskQueue: [], queuePanelOpen: false,
   dramaRecords: [], currentDramaRecordId: null, dramaApiConfigId: '', dramaModel: '', promptLibrary: [], searchQuery: '', searchResults: [], storyboardPresets: [],
+  dramartProjects: [], activeDramartId: null, dramartDraft: null, dramartCreateParams: { mode: 'agent', ratio: '9:16', resolution: '720p', styleId: 'modern-city' }, dramartCustomStyles: [],
   modelscopeConfig: null,
   stockMediaSources: [],
 
   setMediaPreview: mediaPreview => set({ mediaPreview }),
   showToast: (message, type = 'info') => { set({ toast: { message, type } }); window.setTimeout(() => useAppStore.setState({ toast: null }), 2400); },
   toggleSidebar: () => set(s => ({ sidebarCollapsed: !s.sidebarCollapsed })), setActiveSection: activeSection => set({ activeSection, activeCanvasId: null }), setActiveCanvas: activeCanvasId => set({ activeCanvasId }), setQueuePanelOpen: v => set({ queuePanelOpen: v }),
+  submitDramaDraft: (project) => set(s => ({ dramartDraft: project, dramartProjects: [project, ...s.dramartProjects.filter(x => x.id !== project.id)], activeDramartId: project.id, activeSection: 'drama-workshop', activeCanvasId: null })),
+  clearDramartDraft: () => set({ dramartDraft: null }),
+  setActiveDramartId: activeDramartId => set({ activeDramartId }),
+  updateDramartProject: (id, updater) => set(s => ({ dramartProjects: s.dramartProjects.map(p => p.id === id ? updater(p) : p) })),
+  // 剧创工厂：自动保存项目（覆盖写入 + 设为当前），供持久化
+  saveDramartProject: (project) => set(s => ({ dramartProjects: [project, ...s.dramartProjects.filter(x => x.id !== project.id)], activeDramartId: project.id })),
+  // 剧创工厂：创建页参数选择自动保存（比例/分辨率/风格/模式）
+  setDramartCreateParams: (params) => set(s => ({ dramartCreateParams: { ...s.dramartCreateParams, ...params } })),
+  // 剧创工厂：自定义风格保存/删除（持久化）
+  saveDramartCustomStyle: (style) => set(s => ({ dramartCustomStyles: [style, ...s.dramartCustomStyles.filter(x => x.id !== style.id)] })),
+  deleteDramartCustomStyle: (id) => set(s => ({ dramartCustomStyles: s.dramartCustomStyles.filter(x => x.id !== id) })),
   addToQueue: nid => set(s => (s.taskQueue.includes(nid) ? s : { taskQueue: [...s.taskQueue, nid] })),
   removeFromQueue: nid => set(s => ({ taskQueue: s.taskQueue.filter(x => x !== nid) })),
   clearCompletedTasks: () => set(s => ({ taskQueue: s.taskQueue.filter(nid => { const n = s.nodes[nid]; return n && n.status !== 'success' && n.status !== 'error'; }) })),
@@ -666,12 +682,8 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
     const gapY = 60;
     const rowGap = 120;
 
+    // 只提交视频节点，不再自动生成文生图→图生视频链路，因此不再创建连线
     const newEdges: any[] = [];
-    let edgeIdx = 0;
-    const makeEdge = (source: string, target: string) => {
-      const eid = `e_${Date.now()}_${edgeIdx++}`;
-      newEdges.push({ id: eid, source, target, type: 'smoothstep' });
-    };
 
     // 新增的组
     const newGroups: Array<{ id: string; nodeIds: string[]; label: string }> = [];
@@ -799,8 +811,13 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
         const colShotType = findCol('景别');
         const colCamParams = findCol('镜头参数', '参数', '焦距');
         const colCamModel = findCol('相机', '机型', '型号');
+        // 新分镜表：出镜人物 / 场景 / 道具 / 文生视频提示词（兼容旧的文生图+图生视频 8 列表）
+        const colChar = findCol('出镜人物', '人物', '角色');
+        const colScene = findCol('场景');
+        const colProp = findCol('道具');
+        const colVideo = findCol('文生视频', '视频提示', '图生视频', '动态');
         const colT2I = findCol('文生图', '图片提示');
-        const colI2V = findCol('图生视频', '视频提示', '动态');
+        const colI2V = findCol('图生视频');
         const colSfx = findCol('音效', '声音', '配乐');
         const parsedRows = tb.rows.map((cells, rowIdx) => {
           const at = (idx: number, fallbackIdx: number) => {
@@ -809,13 +826,17 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
           };
           return {
             shot: at(colShot, 0) || `${rowIdx + 1}`,
-            description: at(colDesc, 1),
-            shotType: at(colShotType, 2),
-            cameraParams: at(colCamParams, 3),
-            cameraModel: at(colCamModel, 4),
-            text2imgPrompt: at(colT2I, 5),
-            img2videoPrompt: at(colI2V, 6),
-            sfx: at(colSfx, 7),
+            description: at(colDesc, -1),
+            shotType: at(colShotType, -1),
+            cameraParams: at(colCamParams, -1),
+            cameraModel: at(colCamModel, -1),
+            characters: at(colChar, 1),
+            scene: at(colScene, 2),
+            props: at(colProp, 3),
+            videoPrompt: at(colVideo, 4),
+            text2imgPrompt: at(colT2I, -1),
+            img2videoPrompt: at(colI2V, -1),
+            sfx: at(colSfx, -1),
           };
         });
         actTables.push({ actName, rows: parsedRows });
@@ -846,7 +867,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       });
       actGroupsList = order.map(a => ({ actName: a, rows: grouped[a] }));
     }
-    // ========== 3) 每一幕：每镜一行，文生图 → 图生视频 直连（生成结果直接显示在各自节点上） ==========
+    // ========== 3) 每一幕：每镜一个文生视频节点（只提交文生视频提示词，不再自动生成文生图+图生视频链路） ==========
     actGroupsList.forEach((actGroup, actIdx) => {
       const actName = (actGroup.actName || `第${actIdx + 1}幕`).replace(/\s+/g, ' ').trim();
       const actGroupId = `group-drama-act-${Date.now()}-${actIdx}`;
@@ -855,22 +876,22 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       actGroup.rows.forEach((row: any, shotIndex: number) => {
         const shotNum = ((row.shot || `${shotIndex + 1}`).toString().trim()) || `${shotIndex + 1}`;
 
-        const t2iX = startX;
-        const i2vX = startX + (nodeWidth + gapX);
+        const videoPrompt = (row.videoPrompt || row.img2videoPrompt || '').trim();
+        if (!videoPrompt) return;
 
-        // 文生图
-        const t2iNodeId = get().addNode({
-          type: 'text-to-image',
+        // 文生视频节点（视频提示词直接驱动生成，无需文生图作为中间步骤）
+        const videoNodeId = get().addNode({
+          type: 'text-to-video',
           provider: 'openai',
-          x: t2iX,
+          x: startX,
           y: currentY,
           width: nodeWidth,
           height: nodeHeight,
           status: 'idle',
-          prompt: (row.text2imgPrompt || '').trim(),
+          prompt: videoPrompt,
           options: {
-            displayName: `${actName}-镜${shotNum}-文生图`,
-            generationType: 'text-to-image',
+            displayName: `${actName}-镜${shotNum}-文生视频`,
+            generationType: 'text-to-video',
             groupId: actGroupId,
             shotMeta: {
               shot: shotNum,
@@ -878,33 +899,14 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
               shotType: row.shotType,
               cameraParams: row.cameraParams,
               cameraModel: row.cameraModel,
+              characters: row.characters,
+              scene: row.scene,
+              props: row.props,
               sfx: row.sfx,
             },
           },
         });
-        actNodeIds.push(t2iNodeId);
-
-        // 图生视频（生成的视频直接显示在本节点上，无需额外结果节点）
-        const img2videoNodeId = get().addNode({
-          type: 'image-to-video',
-          provider: 'openai',
-          x: i2vX,
-          y: currentY,
-          width: nodeWidth,
-          height: nodeHeight,
-          status: 'idle',
-          prompt: (row.img2videoPrompt || '').trim(),
-          options: {
-            displayName: `${actName}-镜${shotNum}-图生视频`,
-            generationType: 'image-to-video',
-            groupId: actGroupId,
-            shotMeta: { shot: shotNum, sfx: row.sfx },
-          },
-        });
-        actNodeIds.push(img2videoNodeId);
-
-        // 连线：文生图 → 图生视频（文生图产出的图片自动作为图生视频参考图）
-        makeEdge(t2iNodeId, img2videoNodeId);
+        actNodeIds.push(videoNodeId);
 
         currentY += nodeHeight + gapY;
       });
@@ -934,7 +936,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
 }), {
   name: 'yijing-ai-storage-v2',
   storage: createJSONStorage(() => localStorage),
-  partialize: s => ({ chatSessions: s.chatSessions, assets: s.assets, assetFolders: s.assetFolders, canvasHistory: s.canvasHistory, apiConfigs: s.apiConfigs, chatAPIConfigs: s.chatAPIConfigs, imageAPIConfigs: s.imageAPIConfigs, videoAPIConfigs: s.videoAPIConfigs, voiceAPIConfigs: s.voiceAPIConfigs, musicAPIConfigs: s.musicAPIConfigs, comfyuiConfigs: s.comfyuiConfigs, recommendedConfigs: s.recommendedConfigs, stockMediaSources: s.stockMediaSources, generationParams: s.generationParams, assistantSettings: s.assistantSettings, comfyWorkflowCache: s.comfyWorkflowCache, promptLibrary: s.promptLibrary, sidebarCollapsed: s.sidebarCollapsed, storyboardPresets: s.storyboardPresets }),
+  partialize: s => ({ chatSessions: s.chatSessions, assets: s.assets, assetFolders: s.assetFolders, canvasHistory: s.canvasHistory, apiConfigs: s.apiConfigs, chatAPIConfigs: s.chatAPIConfigs, imageAPIConfigs: s.imageAPIConfigs, videoAPIConfigs: s.videoAPIConfigs, voiceAPIConfigs: s.voiceAPIConfigs, musicAPIConfigs: s.musicAPIConfigs, comfyuiConfigs: s.comfyuiConfigs, recommendedConfigs: s.recommendedConfigs, stockMediaSources: s.stockMediaSources, generationParams: s.generationParams, assistantSettings: s.assistantSettings, comfyWorkflowCache: s.comfyWorkflowCache, promptLibrary: s.promptLibrary, sidebarCollapsed: s.sidebarCollapsed, storyboardPresets: s.storyboardPresets, dramartProjects: s.dramartProjects, activeDramartId: s.activeDramartId, dramartCreateParams: s.dramartCreateParams, dramartCustomStyles: s.dramartCustomStyles }),
   // 从 localStorage 加载时清理已损坏的乱码数据
   migrate: (persisted: any) => {
     if (!persisted) return persisted;

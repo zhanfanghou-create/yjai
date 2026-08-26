@@ -4,6 +4,7 @@ import { SafeMarkdown } from './SafeMarkdown';
 import { ContextMenu, ContextMenuItem } from './ContextMenu';
 import { SaveToPromptLibraryModal } from './SaveToPromptLibraryModal';
 import { saveToMemory, useGlobalMemoryStore } from '../store/memoryStore';
+import type { DramartProject } from '../services/dramartWorkflow';
 import { usePageSnapshot, useChatAutoSave } from '../hooks/useMemorySystem';
 import { AlertTriangleIcon, BotIcon, BottleIcon, BookIcon, CalendarIcon, CheckIcon, ClapperboardIcon, ClipboardIcon, ClockIcon, CopyIcon, DeleteIcon, DirectorIcon, EditIcon, GhostIcon, ImageIcon, LightbulbIcon, ListCheckIcon, PlusIcon, RefreshIcon, RocketIcon, RulerIcon, ScriptIcon, SendIcon, StoryboardIcon, TvIcon, UserIcon, VideoIcon, WriterIcon, XIcon } from './Icons';
 import './DramaPage.css';
@@ -209,86 +210,94 @@ const SYSTEM_PROMPTS: Record<string, string> = {
 【重要】你必须使用中文回复所有内容。
 输出格式：表格或结构化Markdown，每个镜头都要体现专业判断。`,
 
-  assets: `你是Alinda，一位视觉资产创作专家。你擅长规划和管理影视创作所需的视觉资源，包括概念图、角色设定、道具设计等。
+  assets: `你是Alinda，一位视觉资产创作专家。你擅长从剧本与分镜中提取影视创作所需的全部视觉资产，包括人物、场景、道具，并规划不同版本的人物形象。
 
 ## 核心能力
-1. **视觉规划** - 根据分镜设计规划所需视觉资产
-2. **风格统一** - 确保所有资产风格一致，符合导演阐述
-3. **AI提示词设计** - 为AI生成工具撰写精准提示词
-4. **资源管理** - 系统化组织资产需求
+1. **资产提取** - 从剧本/分镜中系统提取人物、场景、道具等资产
+2. **人物一致性** - 人物外貌特征固定，所有形象变体都保持同一张脸、同一体型
+3. **风格统一** - 所有资产风格一致，符合导演阐述
+4. **AI提示词设计** - 为AI生成工具撰写精准提示词
 
 ## 你的任务
-基于分镜设计，规划视觉资产，包括：
-1. 场景概念图需求（关键场景的氛围和构图）
-2. 角色设定图需求（主要角色的视觉形象）
-3. 道具/服装设计需求（关键道具和服装）
-4. 参考图收集建议（风格参考、情绪板）
-5. AI生成提示词规划（为下一步提示词生成做准备）
+基于分镜设计，提取以下视觉资产：
 
-## 规划原则
-- 每个资产都要服务于情绪目标
-- 风格要符合导演阐述的定位
-- 优先级排序：关键场景 > 主要角色 > 次要元素
-- 考虑AI生成的可行性和一致性
+1. **人物资产**：
+   - 每个角色提取其基准形象（首图），固定其外貌特征：脸型五官、发型、瞳色、体型、头身比、性别、年龄、气质。
+   - 为每个角色扩展「形象变体」：不同季节、不同年龄、不同服装的形象，每个变体都是一个独立的资产项。例如「角色名（夏季短袖）」「角色名（冬季棉衣）」「角色名（童年）」「角色名（西装）」。
+   - **每个变体生成时都必须参考该角色第一个生成的人物形象，保证不改变人物外貌特征**（脸型、五官、发型、体型、气质必须一致），只更换服装、季节、年龄等可变部分。
+
+2. **场景资产**：剧本中出现的每个场景，一个场景一个资产项。
+
+3. **道具资产**：剧本中出现的重要道具，一个道具一个资产项。
+
+## 输出格式
+Markdown清单，按以下分类输出，每个资产一行，名称具体到个体（不要用「角色」「场景」「道具」这种大类做行）：
+- 「人物」：角色名（基准形象）
+- 「人物变体」：角色名（变体描述，如 冬季棉衣 / 童年 / 西装）
+- 「场景」：具体场景名
+- 「道具」：具体道具名
+
+每项附上 1-2 句中文说明该资产的关键特征（外貌特征、服装、材质等）。
 
 【重要】你必须使用中文回复所有内容。
-输出格式：Markdown清单，分类清晰，包含风格描述和情绪关键词。`,
+输出格式：Markdown清单，分类清晰。人物及人物变体必须标注「参考该角色首图生成，保持外貌特征不变」。`,
 
   prompts: `你是Lily，一位提示词优化师。你精通AI绘画和视频生成工具的提示词工程，能将视觉需求转化为AI可理解的精准描述。
 
 ## 核心能力
-1. **提示词结构** - 精通各类AI工具（Midjourney、Stable Diffusion、DALL-E、Flux 等）的提示词语法
-2. **视觉描述** - 用精准的语言描述画面构图、风格、光影、情绪
-3. **风格控制** - 通过艺术家、风格关键词控制输出风格
+1. **提示词结构** - 精通各类AI工具（Midjourney、Stable Diffusion、DALL-E、Flux、可灵、即梦 等）的提示词语法
+2. **视觉描述** - 用精准的中文描述画面构图、风格、光影、情绪
+3. **人物一致性** - 人物各形象变体都参考首图，保持外貌特征不变
 4. **参数优化** - 调整参数获得最佳生成效果
 5. **总结提炼** - 将前面步骤（导演阐述→故事创作→剧本写作→分镜设计→视觉资产）的最终结果凝练整合
 
 ## 你的任务
-总结前面每一步（导演阐述→故事创作→剧本写作→分镜设计→视觉资产）的最终结果，严格按以下两部分输出，不要输出其他内容。
+总结前面每一步（导演阐述→故事创作→剧本写作→分镜设计→视觉资产）的最终结果，严格按以下两部分输出，不要输出其他内容。所有提示词**直接使用中文**。
 
-### 第一部分：上方固定表格 — 视觉资产提示词（**必须只有两列**）
+### 第一部分：上方固定表格 — 资产提示词（文生图，**必须只有两列**）
 表格格式（列名固定，不要新增列，不要合并列）：
-| 名称 | 详细提示词 |
-- **名称**列填写具体的资产名称，例如：场景名称、人物名称（角色姓名）、道具名称、武器名称、载具名称、服装名称、背景名称等。**每一行代表一个具体资产**，不要用「场景/角色/道具/背景」这种大类做行，而是每个具体资产单独一行。所有场景、人物、道具、武器都要拆开写。
-- **详细提示词**列必须写成「可直接复制到 Midjourney / Stable Diffusion / Flux / DALL-E 使用的**英文完整提示词**」，中间用逗号分隔，长句允许用 <br> 换行但不要出现表格分隔符。
-  - 场景类：写清空间结构、材质、色温、光影、时间、氛围、镜头质感、渲染风格、宽高比等。
-  - 人物类**必须**在同一个单元格内详尽描述：性别年龄、种族外貌、脸型五官、发色发型发饰、瞳色、体型、皮肤质感、上衣/外套/内搭/裤装/裙装、饰品（耳环/项链/戒指/手表/腰带）、鞋子袜子、随身道具；然后**只加入这四个视角关键词**：**front view, side view, back view, face close-up**，再加上 **white background**（白底），让**一张图中同时生成正面、侧面、背面、脸部特写四个角度**；**不要**写 turnaround、character sheet、four-view reference sheet、full body 等其它视角或多视图关键词。最后补上风格与质量词（如 photorealistic, 8k, studio lighting, cinematic, --ar 16:9 等）。
-  - 道具/武器/载具：写材质、颜色、磨损、比例、光影、白背景、多角度参考。
+| 名称 | 提示词 |
+- **名称**列填写具体资产名称，例如：人物（角色名 + 形象版本）、场景名、道具名。**每一行代表一个独立资产**，所有场景、人物变体、道具都要拆开写。
+- **提示词**列：写可直接复制到文生图模型使用的中文完整提示词。
 
-### 第二部分：下方分幕表格 — 分镜提示词表（**每一幕单独一个表格**）
-每一幕开头必须用「#### 🎬 第X幕：标题 (时间码)」这样的四级标题起始，方便解析。表格格式与分镜设计页严格一致：
-| 镜号 | 内容 | 景别 | 镜头参数 | 相机型号 | 文生图提示词 | 图生视频提示词 | 音效 |
+**人物提示词规则：**
+1. **人物首张资产图**：必须是「上半身正面平视特写 + 全身三视图」的构图。任务：完成角色的上半身正面平视特写和该角色的全身三视图，左边是角色的上半身正面平视特写，右边是该角色的全身三视图。三视图不可以有分割线，左侧为角色胸部以上特写大图，占画面约 40% 宽度，用于展示面部、发型、表情、眼神、上半身服装和配饰细节，右侧为同一角色的三视图，占画面约 60% 宽度，依次展示正面全身、侧面全身、背面全身。角色描述需包含：时代基底、国家/朝代、人种、类型基底、脸型、发型、耳饰、身材、头身比、上身着装、下身着装、鞋子、性别、年龄。
+2. **人物形象变体**：每个变体独立一行，提示词需声明「以该角色首张图为参考图」，只描述服装/季节/年龄等可变部分的变化，保持外貌特征（脸型、五官、发型、体型、气质）不变。提示词参考格式：性别:男；衣着描述:深色长袖上衣搭配深色长裤，普通布鞋；
+
+**场景提示词规则：**
+- 生成四宫格画面，展示同一个场景中的四个不同视角。左上角为正视图，主体正面清晰可见，构图居中，细节完整；右上角为俯视图，从高空俯视整体空间布局，展示环境关系和场景结构；左下角为背视图，从主体后方观察，突出背部轮廓、空间纵深和环境延展；右下角为侧视图，从主体侧面观察，展示主体比例、层次和空间关系。四个画面保持同一场景、同一光照、同一色调、同一时间状态。不输出文字信息。
+- 1. 只出现场景，不出现人物、道具等无关内容；
+- 2. 必须只展示静态事物，不能包含人、动物等可以自行运行的事物；
+- 3. 无动态、特效、技能、光效及战斗相关描写。
+- 若为全景/室内场景，写清空间结构、材质、色温、光影、时间、氛围、长宽比（如三比一的平铺横向长幅全景图，地平线水平贯穿，无鱼眼、球面弯曲、桶形畸变或小行星效果）等。
+
+**道具提示词规则：**
+- 写清材质、颜色、磨损、形态细节、光影、背景。例如：一张对折后又被攥握过的纸质报告单，纸张表面布满不规则折痕和放射状褶皱，折痕处纤维轻微断裂呈现毛边，纸张为普通医院用纸呈淡黄色调，表面印有黑色表格线和印刷体文字，表格边框为细实线，部分文字因纸张褶皱产生轻微变形，纸张边缘有轻微磨损和卷曲，整体呈现被反复折叠挤压后的不规则形态。
+
+### 第二部分：下方分幕表格 — 分镜提示词表（**每一幕单独一个表格，只保留文生视频部分**）
+每一幕开头必须用「#### 🎬 第X幕：标题 (时间码)」这样的四级标题起始，方便解析。表格格式：
+| 镜号 | 出镜人物 | 场景 | 道具 | 文生视频提示词 |
 
 其中：
 - **镜号**：与分镜设计页保持一致（1、2、3…）。
-- **内容**：一句中文画面描述。
-- **景别**：如全景LS、中景MS、特写CU、近景MCU 等（**同样内容也必须重复写进文生图提示词里**）。
-- **镜头参数**：如 50mm f/1.8、24mm f/2.8、焦距+光圈+运动方式（**同样内容也必须重复写进文生图提示词里**）。
-- **相机型号**：如 ARRI ALEXA Mini、RED Komodo、SONY FX6 等（**同样内容也必须重复写进文生图提示词里**）。
-- **文生图提示词**：**必须**是可直接复制使用的完整**英文** prompt。内容要求：
-  1. 用英文重述该镜头画面主体、人物动作与表情、环境光线；
-  2. **必须显式包含**该镜头的「景别 / shot type」「镜头参数 / focal length + aperture」「相机型号 / camera model」，例如 \`close-up shot, 35mm f/1.8, SONY FX6\`；
-  3. 加入风格/质量词（photorealistic, cinematic, 8k, --ar 16:9 等）；
-  4. 不要出现 <br> 之外的额外换行符，允许用 <br> 换行；
-  5. 复制后应无需任何编辑即可跑图。
-- **图生视频提示词**：**必须**是可直接复制使用的完整**英文** prompt，用「expression:」「dialogue:」「narration:」「action:」「camera:」「effect:」「sfx:」标签分段（用 <br> 换行）：
-  - \`expression:\` 每个出场人物的表情/神态变化；
-  - \`dialogue:\` 每个人物的台词原文（如没有台词则写 none，不要省略这一段）；
-  - \`narration:\` 旁白原文（没有则 none）；
-  - \`action:\` 每个人物的动作细节，多人时用「【人物名】…」隔开；
-  - \`camera:\` 具体的运镜（推、拉、摇、移、跟、升降、手持、稳定器、时长…）；
-  - \`effect:\` 视觉特效/后期（慢动作、颗粒、色差、跳切、闪回…）；
-  - \`sfx:\` 音效/环境音（可与音效列呼应）。
-  - 内容必须完整可直接复制使用，不要用「同上」「参考…」这种偷懒词。
-- **音效**：该镜头需要的音效/环境音/配乐提示。
+- **出镜人物**：该镜头出场的人物，使用「<角色名>」格式引用（例如 <苏桂兰（健康母亲）>、<幼年林望>），对应资产库中的角色参考图，可被用户替换或直接 @ 参考图。
+- **场景**：该镜头所在场景名，对应场景资产。
+- **道具**：该镜头出现的道具，对应道具资产。
+- **文生视频提示词**：**必须**是可直接复制使用的完整**中文**提示词，**不包含文生图部分**。要求：
+  1. 以「### 素材引用」开头，列出本镜使用的【人物】【场景】引用：
+     - 【人物】：<角色名>对应角色名，只采用外貌、发型和服装。
+     - 【场景】：<场景名>参考场景名，只采用空间布局、建筑和光线，不采用图中人物。
+  2. 以「### 画面描写」描述该镜：分镜场景设定、时间、灯光（主光类型、色温、反差、阴影），分镜具体动作描述（每个镜头含镜头编号+时长、站位、动作+景别+运镜）。
+  3. 以「### 约束词」保持人物身份、数量、服装、道具归属、空间方向和声音关系稳定。
+  4. 画风统一：与影片调性一致（如 90年代中国农村电影），视频中不得出现任何字幕、文字叠加、纯画面，不要 bgm，不要配乐。
 
 ## 写作原则
-- 提示词英文主体 + 参数尾缀；每条都要能直接复制运行；
+- 提示词全部使用中文，每条都要能直接复制运行；
 - 不允许出现 \`|---|\` 这样的表格分隔行；
-- 不允许省略人物外观、四个视角关键词（front view / side view / back view / face close-up）、镜头三要素；
+- 不允许省略人物外观、角色引用（<角色名>）、镜头三要素；
 - 每幕之间用「#### 🎬 第X幕：…」分隔，方便下一步自动排版打组。
 
-【重要】你必须使用中文写解释性文字，但**表格里的英文提示词保持英文**。
+【重要】你必须使用中文写解释性文字，**表格里的提示词也保持中文**。
 输出格式：严格按照上述两个部分输出，先输出资产表，再依次输出每一幕的分镜表。`,
 };
 
@@ -361,6 +370,7 @@ const DramaPage: React.FC = () => {
     addPromptItem,
     sendDramaToCanvas,
     submitDramaToCanvas,
+    submitDramaDraft,
   } = useAppStore();
 
   // ---------- 本地状态 ----------
@@ -2066,6 +2076,39 @@ ${conversationText}
     showToast('已提交到画布创作', 'success');
   }, [submitDramaToCanvas, episodes, currentEpisode, currentEpisodeIndex, storyboardRows, showToast]);
 
+  // ---------- 提交到剧创工厂创作 ----------
+  const handleSubmitToDramart = useCallback(() => {
+    if (!currentEpisode && !currentRecord) {
+      showToast('没有可提交的内容', 'error');
+      return;
+    }
+    const scriptText = currentEpisode?.stepContents?.script?.content
+      || currentEpisode?.stepContents?.storyboard?.content
+      || (currentRecord?.name || '');
+    const promptsContent = currentEpisode?.stepContents?.prompts?.content || '';
+    const project: DramartProject = {
+      id: 'dr_' + Date.now().toString(36),
+      name: currentEpisode?.title || currentRecord?.name || '剧创项目',
+      ratio: '9:16',
+      resolution: '720p',
+      styleId: 'rural-90s',
+      styleName: '90年代中国农村电影',
+      scriptText,
+      scriptFileName: (currentEpisode?.title || '剧创') + '.md',
+      mode: 'manual',
+      createdAt: Date.now(),
+      analysis: { step: 0, total: 4, label: '分析剧本', status: 'idle', percent: 0 },
+      characters: [],
+      scenes: [],
+      props: [],
+      storyboards: [],
+      scriptContent: scriptText,
+      promptsContent,
+    };
+    submitDramaDraft(project);
+    showToast('已提交剧创工厂创作', 'success');
+  }, [currentEpisode, currentRecord, submitDramaDraft, showToast]);
+
   // ==================== 渲染 ====================
 
   // ---- 历史记录页 ----
@@ -2426,8 +2469,8 @@ ${conversationText}
                   {stepIndex === 1 && '完善故事大纲、人物设定与叙事结构'}
                   {stepIndex === 2 && '撰写或完善剧本，输出标准剧本格式'}
                   {stepIndex === 3 && '设计分镜，包括镜头编号、景别、构图描述'}
-                  {stepIndex === 4 && '生成视觉资产描述与AI绘图提示词'}
-                  {stepIndex === 5 && '生成文生图/图生视频提示词'}
+                  {stepIndex === 4 && '提取人物（含不同季节/年龄/服装变体，参考首图保持一致）、场景、道具等视觉资产'}
+                  {stepIndex === 5 && '生成资产提示词（文生图）与分镜文生视频提示词'}
                 </div>
               </div>
             )}
@@ -2670,30 +2713,29 @@ style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(-
           <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
             正片 · {currentStep?.label} · {currentEpisode?.title}
           </div>
-          <button
-            onClick={async () => {
-              if (stepIndex === STEPS.length - 1) {
-                // 最后一步 -> 提交到画布创作
-                handleSubmitToCanvas();
-              } else {
-                // 其他步骤 -> 下一步
+          {stepIndex === STEPS.length - 1 ? (
+            <div style={{ display: 'flex', gap: 10 }}>
+              <button onClick={handleSubmitToCanvas} style={{ padding: '7px 20px', background: 'var(--accent-color)', color: '#fff', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 4px 12px rgba(59,130,246,0.3)', whiteSpace: 'nowrap' }}>提交到画布创作 🎬</button>
+              <button onClick={handleSubmitToDramart} style={{ padding: '7px 20px', background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))', color: '#fff', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 4px 12px rgba(139,92,246,0.3)', whiteSpace: 'nowrap' }}>提交剧创工厂创作 🎥</button>
+            </div>
+          ) : (
+            <button
+              onClick={async () => {
                 if (directorStatus !== 'approved') {
                   showToast('请先通过导演审核后再进入下一步', 'warning');
                   return;
                 }
-                const nextIdx = stepIndex + 1;
-                setStepIndex(nextIdx);
-                updateEpisode(currentEpisodeIndex, { stepIndex: nextIdx });
-                setTimeout(async () => {
-                  await handleStepGenerate(nextIdx);
-                }, 200);
-              }
-            }}
-            disabled={false}
-            style={{ padding: '7px 20px', background: stepIndex === STEPS.length - 1 ? 'var(--accent-color)' : directorStatus === 'approved' ? 'var(--accent-color)' : 'var(--bg-tertiary)', color: stepIndex === STEPS.length - 1 ? '#fff' : directorStatus === 'approved' ? '#fff' : 'var(--text-muted)', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s', boxShadow: stepIndex === STEPS.length - 1 ? '0 4px 12px rgba(59,130,246,0.3)' : directorStatus === 'approved' ? '0 4px 12px rgba(59,130,246,0.3)' : 'none' }}
-          >
-            {stepIndex === STEPS.length - 1 ? '提交到画布创作 🎬' : directorStatus === 'approved' ? '下一步 →' : '需审核通过'}
-          </button>
+                const ni = stepIndex + 1;
+                setStepIndex(ni);
+                updateEpisode(currentEpisodeIndex, { stepIndex: ni });
+                setTimeout(async () => { await handleStepGenerate(ni); }, 200);
+              }}
+              disabled={false}
+              style={{ padding: '7px 20px', background: directorStatus === 'approved' ? 'var(--accent-color)' : 'var(--bg-tertiary)', color: directorStatus === 'approved' ? '#fff' : 'var(--text-muted)', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s', boxShadow: directorStatus === 'approved' ? '0 4px 12px rgba(59,130,246,0.3)' : 'none' }}
+            >
+              {directorStatus === 'approved' ? '下一步 →' : '需审核通过'}
+            </button>
+          )}
         </div>
       </div>
     );

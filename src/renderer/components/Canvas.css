@@ -9202,6 +9202,9 @@ body .lib-node {
   color: transparent;
   background: rgba(99, 102, 241, 0.35);
 }
+.mention-textarea-input::-webkit-scrollbar { width: 6px; height: 6px; }
+.mention-textarea-input::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+.mention-textarea-input::-webkit-scrollbar-corner { background: transparent; }
 .mention-textarea-input::-moz-selection {
   color: transparent;
   background: rgba(99, 102, 241, 0.35);
@@ -9211,7 +9214,8 @@ body .lib-node {
 /* 高亮层的 @提及片段：只能改颜色/背景，绝不能改变字符宽度或换行，否则与 textarea 光标错位 */
 .mention-chip {
   display: inline;
-  border-radius: 4px;
+  /* 高亮层内联片段：只允许改颜色/背景圆角，绝不能加 padding/改变字符宽度，否则与 textarea 文字/光标错位 */
+  border-radius: 999px;
   background: rgba(99, 102, 241, 0.22);
   color: #a5b4fc;
   font-weight: inherit;
@@ -9222,6 +9226,7 @@ body .lib-node {
   box-decoration-break: clone;
 }
 
+.mention-empty { padding: 10px 14px; color: var(--text-muted, #888888); font-size: 12px; }
 .mention-dropdown {
   position: absolute;
   top: 100%;
