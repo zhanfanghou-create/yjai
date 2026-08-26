@@ -2314,7 +2314,7 @@ export const DramaWorkshopPage: React.FC = () => {
       {bg}
       {stage === 'create' && (
         <div className="dwc-create">
-          <button className="dwc-history-btn" onClick={() => setHistoryOpen(true)} title="创作历史">
+          <button className="dwc-history-btn" onClick={() => setHistoryOpen(o => !o)} title="创作历史">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" /></svg>
             创作历史
           </button>
@@ -2553,26 +2553,6 @@ export const DramaWorkshopPage: React.FC = () => {
               {voiceAsset && (
                 <VoiceConfigModal asset={voiceAsset} onClose={() => setVoiceAsset(null)} onConfirm={(voiceConfig) => { setAssetVoice(voiceAsset.id, voiceConfig); showToast('音色已配置：' + voiceConfig.name, 'success'); }} />
               )}
-
-              {historyOpen && (
-                <div className="dwc-history-mask" onClick={() => setHistoryOpen(false)}>
-                  <div className="dwc-history-panel" onClick={e => e.stopPropagation()}>
-                    <div className="dwc-history-head"><span className="dwc-history-title">创作历史</span><button className="dwc-modal-close" onClick={() => setHistoryOpen(false)}><CloseIcon size={16} /></button></div>
-                    <div className="dwc-history-list">
-                      {(dramartProjects || []).length === 0 && <div className="dwc-history-empty">暂无创作历史</div>}
-                      {(dramartProjects || []).map(p => (
-                        <button key={p.id} className="dwc-history-item" onClick={() => openHistory(p)}>
-                          <span className="dwc-history-cover" style={p.cover ? undefined : thumbStyle(210, 'scene')}>{p.cover ? <img src={p.cover} alt={p.name} /> : <ClapperboardIcon size={22} />}</span>
-                          <span className="dwc-history-info">
-                            <span className="dwc-history-name">{p.name}</span>
-                            <span className="dwc-history-meta">{p.styleName || ''} · {p.ratio || ''} · {(p.storyboards?.length || 0)}集 · {new Date(p.createdAt || Date.now()).toLocaleDateString()}</span>
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
           <div className="dwc-sets-footer">
@@ -2635,6 +2615,26 @@ export const DramaWorkshopPage: React.FC = () => {
 
       {styleOpen && (
         <StyleLibrary selectedId={selectedStyle?.id || ''} onSelect={s => { setStyleId(s.id); setStyleOpen(false); }} onClose={() => setStyleOpen(false)} onCustomCreate={() => { setStyleOpen(false); setCustomStyleOpen(true); }} onCustomDelete={handleCustomStyleDelete} />
+      )}
+
+      {historyOpen && stage === 'create' && (
+        <div className="dwc-history-mask" onClick={() => setHistoryOpen(false)}>
+          <div className="dwc-history-panel" onClick={e => e.stopPropagation()}>
+            <div className="dwc-history-head"><span className="dwc-history-title">创作历史</span><button className="dwc-modal-close" onClick={() => setHistoryOpen(false)}><CloseIcon size={16} /></button></div>
+            <div className="dwc-history-list">
+              {(dramartProjects || []).length === 0 && <div className="dwc-history-empty">暂无创作历史</div>}
+              {(dramartProjects || []).map(p => (
+                <button key={p.id} className="dwc-history-item" onClick={() => openHistory(p)}>
+                  <span className="dwc-history-cover" style={p.cover ? undefined : thumbStyle(210, 'scene')}>{p.cover ? <img src={p.cover} alt={p.name} /> : <ClapperboardIcon size={22} />}</span>
+                  <span className="dwc-history-info">
+                    <span className="dwc-history-name">{p.name}</span>
+                    <span className="dwc-history-meta">{p.styleName || ''} · {p.ratio || ''} · {(p.storyboards?.length || 0)}集 · {new Date(p.createdAt || Date.now()).toLocaleDateString()}</span>
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );
