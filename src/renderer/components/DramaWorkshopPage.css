@@ -715,9 +715,19 @@
 .dwc-tl-ruler { display: flex; justify-content: space-between; color: var(--text-muted, #888888); font-size: 11px; padding: 0 2px 8px; }
 .dwc-tl-track { display: flex; gap: 8px; }
 
-.dwc-tl-seg { position: relative; border: 1px solid var(--border-color, #3a3a3a); border-radius: 12px; overflow: hidden; background: color-mix(in srgb, var(--bg-secondary, #2a2a2a) 80%, transparent); cursor: pointer; padding: 0; text-align: left; transition: border-color 0.16s ease; }
+.dwc-tl-seg { position: relative; border: 1px solid var(--border-color, #3a3a3a); border-radius: 12px; overflow: hidden; background: color-mix(in srgb, var(--bg-secondary, #2a2a2a) 80%, transparent); cursor: pointer; padding: 0; text-align: left; transition: border-color 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, opacity 0.16s ease, transform 0.16s ease; }
 .dwc-tl-seg:hover { border-color: var(--accent-color, #7dd3fc); }
-.dwc-tl-seg.active { border-color: var(--accent-color, #7dd3fc); box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent-color, #7dd3fc) 55%, transparent); }
+.dwc-tl-seg:not(.active) { opacity: 0.7; }
+.dwc-tl-seg.active {
+  border-color: var(--accent-color, #7dd3fc);
+  background: color-mix(in srgb, var(--accent-color, #7dd3fc) 16%, var(--bg-secondary, #2a2a2a));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent-color, #7dd3fc) 65%, transparent), 0 4px 18px color-mix(in srgb, var(--accent-color, #7dd3fc) 35%, transparent);
+  transform: translateY(-1px);
+  opacity: 1;
+}
+.dwc-tl-seg.active .dwc-tl-thumb { color: var(--accent-color, #7dd3fc); }
+.dwc-tl-seg.active .dwc-tl-seg-meta { color: var(--text-primary, #ffffff); }
+.dwc-tl-seg.active .dwc-tl-seg-meta span:first-child { color: var(--accent-color, #7dd3fc); font-weight: 600; }
 .dwc-tl-thumb { height: 54px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); }
 .dwc-tl-seg-meta { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 6px 8px; font-size: 11px; color: var(--text-secondary, #a0a0a0); }
 .dwc-tl-seg { cursor: grab; }
