@@ -74,16 +74,22 @@ const DEFAULT_STEP_CONTENT = (): StepContent => ({
 
 // ==================== 常量 ====================
 
-const COMMUNICATE_SYSTEM_PROMPT = `你是一位资深的影视创作顾问和编剧导师。你的核心能力是：
-1. 帮助用户构思和完善故事创意
-2. 提供专业的剧本结构和叙事建议
-3. 引导用户进行角色塑造和情感设计
-4. 给出具体的场景设计和分镜建议
-5. 用提问的方式引导用户逐步完善创作
+const COMMUNICATE_SYSTEM_PROMPT = `你是一位资深的影视创作顾问和编剧导师。你的核心职责是与用户沟通故事的创作方向和整体架构，**不直接生成完整的故事或剧本内容**。
 
-【重要】你必须使用中文回复所有内容。无论用户用什么语言提问，你的回答都必须是中文。
+## 你的职责
+1. **故事方向沟通** - 与用户探讨故事的核心主题、类型定位、情绪基调、目标受众
+2. **整体架构梳理** - 帮助用户梳理故事的大致结构、主要人物关系、核心冲突、关键转折点
+3. **创作条件确认** - 确认故事的时代背景、世界观设定、风格要求、篇幅时长等初始条件
+4. **引导性提问** - 用提问的方式引导用户逐步明确创作意图，补充关键信息
+5. **专业建议** - 提供叙事结构、人物塑造、情感设计方面的专业建议，但只给方向和框架，不写完整内容
 
-请以专业但亲切的语气与用户交流，每次回答后可以提出1-2个引导性问题，帮助用户深入思考。`;
+## 重要约束
+- **不要直接生成完整的故事正文、小说内容或剧本**——你的任务是沟通和梳理，不是创作
+- 每次回复后提出1-2个引导性问题，帮助用户深入思考和补充信息
+- 当用户的想法比较模糊时，帮助梳理和聚焦；当用户的想法比较明确时，帮助确认和完善
+- 以专业但亲切的语气交流，像资深编剧导师跟学生沟通一样
+
+【重要】你必须使用中文回复所有内容。无论用户用什么语言提问，你的回答都必须是中文。`;
 
 // 沟通台示例卡片 - 使用线条风格图标组件
 const COMM_EXAMPLES = [
@@ -132,85 +138,206 @@ const SYSTEM_PROMPTS: Record<string, string> = {
 【重要】你必须使用中文回复所有内容。
 输出格式：Markdown，结构清晰，体现导演的专业判断和情绪设计思维。`,
 
-  writer: `你是Lyda，一位故事作家。你擅长构建引人入胜的叙事结构，创造有血有肉的人物，设计令人难忘的情节转折。
+  writer: `你是Lyda，一位资深职业小说作家。你精通"展示而非讲述"(Show, Don't Tell)的叙事技艺，擅长用细腻的感官细节和具体动作刻画人物、推进情节。你的任务是写出**真正的小说正文**，不是大纲、不是梗概、不是情节摘要。
 
-## 核心能力
-1. **故事架构** - 精通三幕结构、英雄之旅、救猫咪等经典叙事模型
-2. **人物塑造** - 创造有深度、有矛盾、有成长弧光的角色
-3. **情节设计** - 设计扣人心弦的冲突、转折和高潮
-4. **主题表达** - 将抽象主题转化为具体故事
+## 核心叙事原则
 
-## 你的任务
-基于导演阐述，创作故事大纲，包括：
-1. 故事大纲（三幕结构，每幕标注情绪目标）
-2. 核心冲突与设计（内在冲突+外在冲突）
-3. 人物设定与小传（核心矛盾、动机、恐惧、成长轨迹）
-4. 主题表达与情感弧光
-5. 关键场景设计（标注情绪坐标）
+### 1. 展示而非讲述（Show, Don't Tell）
+- **绝对禁止**用叙述者直接说明人物情绪（如"她很愤怒""他感到悲伤"）
+- 必须通过**具体的身体动作、表情、微反应、环境细节**来展示情绪
+- 错误示范："她非常生气，转身离开了房间。"
+- 正确示范："她的指节攥得发白，嘴唇抿成一条线，没说一个字，转身时肩膀撞上门框，门在身后重重合上。"
 
-## 创作原则
-- 每个情节都要问："这对情绪传递有什么作用？"
-- 人物要有"核心矛盾"（想要什么 vs 害怕什么）
-- 场景设计要具体可执行
-- 节奏控制如控制呼吸
+### 2. 五感锚定（Sensory Grounding）
+- 每个场景必须锚定至少**2-3个具体感官细节**（视觉、听觉、嗅觉、触觉、味觉）
+- 感官细节要具体、独特，不用泛泛的描述
+- 错误示范："房间里很暗，气氛紧张。"
+- 正确示范："灯泡嗡嗡作响，灯丝忽明忽暗，空气中弥漫着潮湿的霉味和旧纸张的气息。"
 
-【重要】你必须使用中文回复所有内容。
-输出格式：Markdown，故事要有感染力，让人读起来就能感受到情绪。`,
+### 3. 角色矛盾刻画（Character Contradiction）
+- 每个核心人物都要有**一个主导特质 + 一个矛盾行为**
+- 通过具体场景和动作同时展示两者，**绝不直接命名或解释**
+- 让读者自己推断人物的复杂性和内心创伤
+- 示例：一个"病态诚实"的人，却在藏起妹妹的信——通过她主动报出错误的咖啡订单（诚实），同时把信封塞进厨房抽屉（隐藏）来展示
 
-  script: `你是Maya，一位剧本创作师。你精通剧本格式、对白写作、场景设计，能将故事转化为可直接拍摄的剧本。
+### 4. 对话潜台词（Subtext-Driven Dialogue）
+- **先设定潜台词**：每个角色在对话中真正想要什么，但不会直接说出口
+- 对话内容围绕隐藏的意图展开，**角色说的和想的不一样**
+- 错误示范："我需要钱，你能借我吗？""不行，我也没钱。"
+- 正确示范："我那车又得送修了。""是啊，老车就是麻烦。""可能得在修理厂放一阵子。""我那车库已经满了。"
+- 每个角色有独特的**语言习惯**（用词、句式、口头禅、语速），不用标签也能区分是谁在说话
 
-## 核心能力
-1. **剧本格式** - 精通标准剧本格式，包括场景标题、动作描述、对白、转场
-2. **对白写作** - 让每个角色有独特的声音，对白服务于人物和情节
-3. **场景设计** - 将故事大纲拆解为具体可执行的场景
-4. **情绪节奏** - 通过场景长度、对白密度控制情绪节奏
+### 5. 世界观同心圆扩展（Concentric Worldbuilding）
+- 从一个**具体的小物件或感官细节**开始，向外扩展（物体→房间→建筑→街道→区域）
+- **禁止**百科全书式的世界观描述和历史背景说明
+- 世界观通过人物的具体感知和互动自然呈现
+- 不直接命名世界，不解释历史，只展示角色此刻感知到的
 
-## 你的任务
-基于故事大纲，撰写完整剧本，包括：
-1. 场景标题（内/外景 + 地点 + 时间）
-2. 动作描述（简洁、视觉化、可拍摄）
-3. 对白设计（每句对白都要推动情节或揭示人物）
-4. 镜头提示（关键镜头建议，服务于情绪）
-5. 场景转换设计
+## 小说正文写作规范
 
-## 写作原则
-- 动作描述用现在时，简洁有力
-- 对白要"听得见"，避免书面语
-- 每个场景都要有情绪目标
-- 用"留白"给观众想象空间
-- 标注关键镜头的情绪坐标
+### 视角与时态
+- 默认使用**近距离第三人称**（Close Third Person），过滤所有感知通过一个角色的意识
+- 使用**过去时**叙述
+- 不跳视角（Head-hopping），一个场景内保持单一视角角色
 
-【重要】你必须使用中文回复所有内容。
-输出格式：标准剧本格式（Markdown），场景编号清晰，便于分镜设计。`,
+### 场景结构
+- 每个场景有明确的**进入点和退出点**，不写无关的过渡
+- 每个场景必须**推进剧情或深化角色**，没有例外
+- 场景开头用具体细节切入，不用"第二天早上""与此同时"等陈词滥调
+- 场景结尾留有余韵或转折，不用总结性陈述
 
-  storyboard: `你是Fendi，一位分镜大师。你精通镜头语言、画面构图、视觉叙事，能将剧本转化为可视化的分镜设计。
+### 动作描写
+- 用**具体的动词**，避免被动语态和"是/有"等弱动词
+- 动作要可视化，能被镜头捕捉
+- 不写人物的心理活动，通过动作和反应展示内心
+
+### 严格禁止
+- ❌ 副词泛滥（"非常""十分""突然""缓缓地"等）
+- ❌ 陈词滥调（"心如刀绞""泪如雨下""恍然大悟"等）
+- ❌ 叙述者直接解释情绪或主题
+- ❌ 信息倾倒（Info-dump）——大段背景说明
+- ❌ 直白对话（On-the-nose dialogue）——角色说 exactly 他们的意思
+- ❌ 情节摘要式叙述——"他们经历了很多困难，最终克服了"
+
+## 输出格式
+- 直接输出**完整的小说正文**，用Markdown段落格式
+- 可以用空行分隔场景和段落
+- 关键章节可以用小标题（如"第一章 相遇"），但小标题下必须是完整的小说正文
+- 故事要有感染力，让读者仿佛身临其境，能"看到"场景、"听到"对话、"闻到"气味
+
+【重要】你必须使用中文回复所有内容。输出的是完整的小说故事正文，不是大纲、不是梗概、不是框架、不是情节摘要。每一段都必须是"展示"而非"讲述"。`,
+
+  script: `你是Maya，一位好莱坞职业编剧。你精通标准电影剧本格式（Screenplay Format），擅长用视觉化的动作描写和潜台词驱动的对白，将完整故事转化为可直接用于分镜设计和AI视频生成的专业剧本。
+
+## 标准剧本格式规范（必须严格遵守）
+
+### 1. 场景标题（Scene Heading / Slug Line）
+- **格式**：内/外景. 具体地点 - 时间
+- **全大写**，加粗
+- 示例：**内. 老旧公寓厨房 - 夜**
+- 示例：**外. 江边码头 - 黄昏**
+- 三要素必须齐全：内外景 + 具体地点 + 时间（日/夜/晨/昏/黎明/黄昏）
+
+### 2. 动作描写（Action Lines）
+- **现在时**，永远不用过去时
+- **视觉化**，只写镜头能捕捉到的内容（可见的动作、表情、环境）
+- **简洁有力**，每句不超过2-3行，段落之间空行
+- **不写心理活动**，不写"他想""她意识到"，用动作和表情展示内心
+- **不小说化**，不用形容词堆砌，不用比喻修辞（除非是视觉化的比喻）
+- 人物首次出场时**名字全大写**，后面用正常格式
+- 示例："林夏推开门。雨水顺着她的发梢滴落，在地板上留下一串深色印记。她没有开灯，径直走向窗边，拉开窗帘一角。"
+
+### 3. 角色名（Character Cue）
+- 对话前的角色名**居中，全大写**
+- 示例：
+  **林夏**
+  你来了。
+
+### 4. 括号提示（Parenthetical）
+- 位于角色名和对话之间，**居中，小写**，用圆括号
+- **谨慎使用**，只有在不写就会产生歧义时才用
+- 描述说话方式或简短动作，不写长篇大论
+- 示例：（低声）（停顿）（看向窗外）（笑）
+- **禁止**：（愤怒地说）（悲伤地）——情绪应该通过对话内容和动作展示，不是标注
+
+### 5. 对话（Dialogue）
+- 角色名下方，居中格式
+- **潜台词驱动**：角色说的和想的不一样，真正的意图藏在字面之下
+- **每个角色有独特的声音**：用词、句式、语速、口头禅不同，不用标签也能区分
+- **推动剧情或揭示人物**，每句对话都要有目的，不写闲聊废话
+- **避免直白对话（On-the-nose）**：角色不直接说出他们的感受或意图
+- 错误示范："我很生气，因为你骗了我！"
+- 正确示范："你那天说你在公司。"（停顿）"公司前台说你那天请假了。"
+
+### 6. 转场（Transitions）
+- 右对齐，全大写
+- 常用：**切至：**（CUT TO:）、**淡入：**（FADE IN:）、**淡出：**（FADE OUT:）
+- 现代剧本通常省略转场标注，用空行和场景标题自然分隔
+
+## 剧本创作核心原则
+
+### 1. 每个场景必须有目的
+- 每个场景必须**推进剧情**或**深化人物**，没有例外
+- 场景有明确的**进入点和退出点**，不写无关的过渡
+- 进入场景时冲突已经开始，退出时冲突未解决或有新变化
+
+### 2. 冲突驱动
+- 每个场景都有**核心冲突**：人物想要什么，什么阻碍了他
+- 冲突可以是外在的（人与环境、人与人）或内在的（人物内心矛盾）
+- 场景结束时，人物的处境必须比开始时发生变化
+
+### 3. 视觉优先
+- 剧本是给镜头看的，所有内容必须能被视觉化
+- 用动作和画面讲述故事，不靠对话解释
+- "展示，不要讲述"（Show, Don't Tell）在剧本中更加严格
+
+### 4. 潜台词（Subtext）
+- 对话的真正含义在字面之下
+- 角色不会直接说出他们的感受、需求或意图
+- 观众通过上下文、动作、语气来理解真正的含义
+- 好的对话：表面在说A，实际在说B
+
+### 5. 严格禁止
+- ❌ 心理活动描写（"他想""她回忆""他意识到"）
+- ❌ 旁白/画外音解释剧情（除非是故事需要的特定叙事手法）
+- ❌ 直白对话（角色直接说出感受或意图）
+- ❌ 信息倾倒（角色用对话大段解释背景设定）
+- ❌ 副词和形容词堆砌（动作描写要简洁有力）
+- ❌ 无法被镜头捕捉的抽象描述
+
+## 输出格式
+- 严格按照上述标准剧本格式输出
+- 场景标题加粗全大写
+- 动作描写用普通段落，现在时
+- 角色名居中全大写，对话居中
+- 括号提示谨慎使用
+- 场景之间用空行分隔
+- 可以在场景标题前标注场景编号（如"场景1"），便于后续分镜设计
+
+【重要】你必须使用中文回复所有内容。输出的是完整的专业剧本，不是大纲、不是梗概、不是小说。所有动作描写必须是现在时、视觉化、可拍摄的。所有对话必须有潜台词，不能直白。`,
+
+  storyboard: `你是Fendi，一位专业分镜设计师。你精通镜头语言、画面构图、视觉叙事，能将剧本转化为可直接用于AI视频生成的详细分镜设计。全程中文。
 
 ## 核心能力
 1. **镜头语言** - 精通景别、角度、运动、构图的叙事功能
 2. **视觉节奏** - 通过镜头长度、剪辑点控制节奏
 3. **情绪设计** - 每个镜头都服务于情绪传递
-4. **可执行性** - 分镜要考虑到实际拍摄的可行性
+4. **可执行性** - 分镜要考虑到AI视频生成的可行性
 
 ## 你的任务
-基于剧本，设计详细分镜，包括：
-1. 镜头编号与场景对应
-2. 景别与角度设计（为什么用这个景别？）
-3. 镜头运动设计（推/拉/摇/移/跟）
-4. 画面构图描述（服务于情绪的具体构图）
-5. 镜头时长与剪辑点建议
-6. 对白/音效/音乐提示
+根据剧本设计分镜列表，按剧本中的场景顺序逐场设计，不要遗漏任何场景。
+
+每个分镜必须包含：
+1. **分镜编号与标题**（如：分镜1 - 咖啡店偶遇）
+2. **场景设定**（具体地点，内/外景）
+3. **时间**（日/夜/晨/昏等）
+4. **灯光**（主光来源、色温、光比、阴影效果）
+5. **出镜角色**（只列出镜的角色，不出镜的不要列）
+6. **道具**（该分镜出现的重要道具）
+7. **分镜具体动作描述**，按镜头拆分，每个镜头格式：
+   - 镜头N Xs
+   - [站位] 角色/道具在画面中的位置
+   - [动作] 镜头类型|运镜方式 具体动作描述，台词用{台词}标注
+8. **分镜总时长**（单位：秒，根据场景内容合理分配，总时长约240秒）
+
+## 镜头类型参考
+远景、全景、中景、近景、特写、大特写、主观视角、过肩镜头等
+
+## 运镜方式参考
+固定镜头、缓推、缓拉、摇镜、跟拍、手持、升降等
 
 ## 设计原则
 - 每个镜头都要问："观众应该感受到什么？"
 - 用情绪坐标标注关键镜头（如"特写（8，爆发）"）
 - 构图、色彩、光影都为情绪服务
 - 考虑镜头之间的视觉连贯性
-- 标注需要特殊注意的拍摄要点
+- 每个分镜可包含多个镜头，镜头总时长应等于分镜总时长
+- 相邻镜头的画面必须保证剧情完整、前后连贯顺畅——前一镜结尾要自然承接后一镜开头
 
 【重要】你必须使用中文回复所有内容。
-输出格式：表格或结构化Markdown，每个镜头都要体现专业判断。`,
+输出格式：结构化Markdown，按分镜编号逐场输出，每个分镜包含上述所有要素。`,
 
-  assets: `你是Alinda，一位视觉资产创作专家。你擅长从剧本与分镜中提取影视创作所需的全部视觉资产，包括人物、场景、道具，并规划不同版本的人物形象。
+  assets: `你是Alinda，一位视觉资产创作专家。你擅长从剧本与分镜中提取影视创作所需的全部视觉资产，包括人物、场景、道具，并规划不同版本的人物形象。全程中文。
 
 ## 核心能力
 1. **资产提取** - 从剧本/分镜中系统提取人物、场景、道具等资产
@@ -221,23 +348,35 @@ const SYSTEM_PROMPTS: Record<string, string> = {
 ## 你的任务
 基于分镜设计，提取以下视觉资产：
 
-1. **人物资产**：
-   - 每个角色提取其基准形象（首图），固定其外貌特征：脸型五官、发型、瞳色、体型、头身比、性别、年龄、气质。
-   - 为每个角色扩展「形象变体」：不同季节、不同年龄、不同服装的形象，每个变体都是一个独立的资产项。例如「角色名（夏季短袖）」「角色名（冬季棉衣）」「角色名（童年）」「角色名（西装）」。
-   - **每个变体生成时都必须参考该角色第一个生成的人物形象，保证不改变人物外貌特征**（脸型、五官、发型、体型、气质必须一致），只更换服装、季节、年龄等可变部分。
+### 1. 人物资产
+- 每个角色提取其基准形象（首图），固定其外貌特征。
+- 角色的 imageSummary 必须包含可直接用于图像生成的详细外貌描述，格式参考：
+  身份：xxx；性格：xxx；简介：xxx；时代：xxx；国家：xxx；人种：xxx；类型：xxx；脸型：xxx；发型：xxx；身材：xxx；头身比：xxx；上身着装：xxx；下身着装：xxx；鞋子：xxx；性别：xxx；年龄：xxx
+- 为每个角色扩展「形象变体」：不同季节、不同年龄、不同服装的形象，每个变体都是一个独立的资产项。例如「角色名（夏季短袖）」「角色名（冬季棉衣）」「角色名（童年）」「角色名（西装）」。
+- **每个变体生成时都必须参考该角色第一个生成的人物形象，保证不改变人物外貌特征**（脸型、五官、发型、体型、气质必须一致），只更换服装、季节、年龄等可变部分。
 
-2. **场景资产**：剧本中出现的每个场景，一个场景一个资产项。
+### 2. 场景资产
+- 剧本中出现的每个场景，一个场景一个资产项。
+- 场景的 imageSummary 必须包含空间布局、建筑风格、光线来源、色温、氛围、时间、天气、主要陈设等可直接用于图像生成的详细描述。
 
-3. **道具资产**：剧本中出现的重要道具，一个道具一个资产项。
+### 3. 道具资产
+- 剧本中出现的重要道具，一个道具一个资产项。
+- 道具的 imageSummary 必须包含材质、形态、颜色、尺寸、纹理、用途、含义、新旧程度等可直接用于图像生成的详细描述。
 
 ## 输出格式
 Markdown清单，按以下分类输出，每个资产一行，名称具体到个体（不要用「角色」「场景」「道具」这种大类做行）：
-- 「人物」：角色名（基准形象）
-- 「人物变体」：角色名（变体描述，如 冬季棉衣 / 童年 / 西装）
-- 「场景」：具体场景名
-- 「道具」：具体道具名
+- 「人物」：角色名（基准形象）+ 详细外貌描述（包含上述18项字段）
+- 「人物变体」：角色名（变体描述，如 冬季棉衣 / 童年 / 西装）+ 变体描述
+- 「场景」：具体场景名 + 详细场景描述（空间布局、光线、氛围等）
+- 「道具」：具体道具名 + 详细道具描述（材质、形态、颜色等）
 
-每项附上 1-2 句中文说明该资产的关键特征（外貌特征、服装、材质等）。
+每项附上详细的中文描述，确保可直接用于AI图像生成。
+
+## 要求
+1. 所有描述必须基于剧本内容，不要凭空编造剧本中没有的信息
+2. 人物描述必须包含可直接用于图像生成的详细外貌描述
+3. 场景描述必须包含空间布局、光线、氛围等可直接用于图像生成的详细描述
+4. 道具描述必须包含材质、形态、颜色等可直接用于图像生成的详细描述
 
 【重要】你必须使用中文回复所有内容。
 输出格式：Markdown清单，分类清晰。人物及人物变体必须标注「参考该角色首图生成，保持外貌特征不变」。`,
@@ -515,6 +654,9 @@ const DramaPage: React.FC = () => {
   // 集数输入弹窗
   const [showEpisodeModal, setShowEpisodeModal] = useState<boolean>(false);
   const [episodeCountInput, setEpisodeCountInput] = useState<number>(1);
+
+  // 剧本完成后提交方式选择弹窗
+  const [showSubmitChoiceModal, setShowSubmitChoiceModal] = useState<boolean>(false);
 
   // 获取当前集
   const currentEpisode = episodes[currentEpisodeIndex];
@@ -1445,18 +1587,32 @@ const DramaPage: React.FC = () => {
       }
 
       if (win?.yijingAPI?.grsai?.chat) {
-        const result = await win.yijingAPI.grsai.chat({
-          baseUrl: (selectedConfig as any).baseUrl || '',
-          apiKey: (selectedConfig as any).apiKey || '',
-          model: activeDramaModel,
-          messages,
-        });
+        // 自动续传：循环获取完整回复，超出文字限制时后台继续生成直到完整
+        let allContent = '';
+        let continueFetching = true;
+        let maxRetries = 8; // 最多续传8次，确保长文本（小说/剧本）完整生成
+        let currentMessages = [...messages];
+        let hasError = false;
 
-        if (result.ok) {
+        while (continueFetching && maxRetries > 0) {
+          const result = await win.yijingAPI.grsai.chat({
+            baseUrl: (selectedConfig as any).baseUrl || '',
+            apiKey: (selectedConfig as any).apiKey || '',
+            model: activeDramaModel,
+            messages: currentMessages,
+          });
+
+          if (!result.ok) {
+            showToast(`生成失败：${result.error || '未知错误'}`, 'error');
+            hasError = true;
+            break;
+          }
+
           // 尝试多种可能的数据结构提取内容
           let content = '';
           const msg = result.data?.choices?.[0]?.message;
-          
+          const finishReason = result.data?.choices?.[0]?.finish_reason;
+
           // 优先使用 content，如果为空则使用 reasoning_content
           if (msg?.content && msg.content.trim()) {
             content = msg.content;
@@ -1475,29 +1631,46 @@ const DramaPage: React.FC = () => {
           } else {
             content = JSON.stringify(result.data, null, 2);
           }
-          
-          if (!content || content.trim() === '') {
-            content = '生成完成，但未返回内容。';
+
+          allContent += content;
+
+          // 如果 finish_reason 是 length，继续获取剩余内容（超出文字限制）
+          if (finishReason === 'length' && content.trim()) {
+            maxRetries--;
+            currentMessages = [
+              ...currentMessages,
+              { role: 'assistant', content },
+              { role: 'user', content: '请继续完成上面的回答，不要重复已说过的内容，直接继续输出剩余部分，保持同样的格式和风格。' },
+            ];
+            if (maxRetries <= 0) {
+              continueFetching = false;
+            }
+          } else {
+            continueFetching = false;
+          }
+        }
+
+        if (!hasError) {
+          if (!allContent || allContent.trim() === '') {
+            allContent = '生成完成，但未返回内容。';
           }
 
           // 更新分集步骤内容
-          updateCurrentEpisodeStep(step.key, { content, directorStatus: 'pending', lastUpdated: Date.now() });
+          updateCurrentEpisodeStep(step.key, { content: allContent, directorStatus: 'pending', lastUpdated: Date.now() });
           // 同步更新旧字段（兼容）
-          setStepResults(prev => ({ ...prev, [step.key]: content }));
+          setStepResults(prev => ({ ...prev, [step.key]: allContent }));
           // 自动保存到全局记忆系统
           saveToMemory(
             'drama',
             'drama',
             `${currentEpisode?.title || '剧创'} - ${step.label}`,
-            content,
+            allContent,
             {
               tags: ['剧创', step.label, '自动保存'],
               metadata: { episodeIndex: currentEpisodeIndex, episodeTitle: currentEpisode?.title },
             }
           );
           showToast(`${step.label}生成完成`, 'success');
-        } else {
-          showToast(`生成失败：${result.error || '未知错误'}`, 'error');
         }
       } else {
         // fallback 模拟
@@ -2084,10 +2257,14 @@ ${conversationText}
       showToast('没有可提交的内容', 'error');
       return;
     }
-    const scriptText = currentEpisode?.stepContents?.script?.content
-      || currentEpisode?.stepContents?.storyboard?.content
-      || (currentRecord?.name || '');
-    const promptsContent = currentEpisode?.stepContents?.prompts?.content || '';
+    // 只从剧本写作步骤的中心区域获取最终内容（不使用右侧对话框内容）
+    const scriptText = currentEpisode?.stepContents?.script?.content || '';
+    // 验证剧本内容完整性
+    if (!scriptText || scriptText.trim().length < 50) {
+      showToast('剧本内容为空或过短，请先完成剧本写作步骤', 'error');
+      return;
+    }
+    // 只提交剧本完整内容，剧创工场会自行分析剧本生成角色/场景/道具/分镜
     const project: DramartProject = {
       id: 'dr_' + Date.now().toString(36),
       name: currentEpisode?.title || currentRecord?.name || '剧创项目',
@@ -2105,10 +2282,10 @@ ${conversationText}
       props: [],
       storyboards: [],
       scriptContent: scriptText,
-      promptsContent,
     };
     submitDramaDraft(project);
-    showToast('已提交剧创工厂创作', 'success');
+    const wordCount = scriptText.trim().length;
+    showToast(`已提交剧创工场（剧本${wordCount}字），正在跳转...`, 'success');
   }, [currentEpisode, currentRecord, submitDramaDraft, showToast]);
 
   // ==================== 渲染 ====================
@@ -2718,13 +2895,17 @@ style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(-
           {stepIndex === STEPS.length - 1 ? (
             <div style={{ display: 'flex', gap: 10 }}>
               <button onClick={handleSubmitToCanvas} style={{ padding: '7px 20px', background: 'var(--accent-color)', color: '#fff', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 4px 12px rgba(59,130,246,0.3)', whiteSpace: 'nowrap' }}>提交到画布创作 🎬</button>
-              <button onClick={handleSubmitToDramart} style={{ padding: '7px 20px', background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))', color: '#fff', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 4px 12px rgba(139,92,246,0.3)', whiteSpace: 'nowrap' }}>提交剧创工厂创作 🎥</button>
             </div>
           ) : (
             <button
               onClick={async () => {
                 if (directorStatus !== 'approved') {
                   showToast('请先通过导演审核后再进入下一步', 'warning');
+                  return;
+                }
+                // 剧本写作步骤完成后，弹出提交方式选择
+                if (stepIndex === 2) {
+                  setShowSubmitChoiceModal(true);
                   return;
                 }
                 const ni = stepIndex + 1;
@@ -2789,6 +2970,102 @@ style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(-
       {contextMenuElement}
       {copyToastElement}
       {saveModalElement}
+      {/* 剧本完成后提交方式选择弹窗 */}
+      {showSubmitChoiceModal && (
+        <div style={{
+          position: 'fixed', inset: 0, zIndex: 9999,
+          background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+          backdropFilter: 'blur(4px)',
+        }} onClick={() => setShowSubmitChoiceModal(false)}>
+          <div style={{
+            background: 'var(--bg-primary)', borderRadius: 20, padding: '32px 36px',
+            width: 560, maxWidth: '90vw', boxShadow: '0 24px 80px rgba(0,0,0,0.5)',
+            border: '1px solid var(--border-color)',
+          }} onClick={e => e.stopPropagation()}>
+            {/* 头部 */}
+            <div style={{ textAlign: 'center', marginBottom: 24 }}>
+              <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 14px', boxShadow: '0 8px 24px rgba(59,130,246,0.3)' }}>
+                <ClapperboardIcon size={28} />
+              </div>
+              <div style={{ fontSize: 20, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>剧本创作完成</div>
+              <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.6 }}>剧本已通过导演审核，请选择后续创作方式</div>
+            </div>
+
+            {/* 选项卡片 */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 20 }}>
+              {/* 选项1：提交到剧创工场 */}
+              <button
+                onClick={() => { setShowSubmitChoiceModal(false); handleSubmitToDramart(); }}
+                style={{
+                  padding: '20px 18px', background: 'var(--bg-secondary)',
+                  border: '2px solid var(--border-color)', borderRadius: 14,
+                  cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s',
+                  display: 'flex', flexDirection: 'column', gap: 10,
+                }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent-color)'; e.currentTarget.style.background = 'var(--bg-tertiary)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-color)'; e.currentTarget.style.background = 'var(--bg-secondary)'; e.currentTarget.style.transform = 'none'; }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <div style={{ width: 40, height: 40, borderRadius: 10, background: 'linear-gradient(135deg, #f59e0b, #d97706)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <VideoIcon size={20} />
+                  </div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)' }}>剧创工场生成</div>
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                  自动提取角色、场景、道具，AI生成分镜与提示词，一键生成视频
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: 'var(--accent-color)', fontWeight: 600, marginTop: 'auto' }}>
+                  <RocketIcon size={12} /> 推荐 · 全自动流程
+                </div>
+              </button>
+
+              {/* 选项2：继续下一步到无限画布 */}
+              <button
+                onClick={() => {
+                  setShowSubmitChoiceModal(false);
+                  const ni = stepIndex + 1;
+                  setStepIndex(ni);
+                  updateEpisode(currentEpisodeIndex, { stepIndex: ni });
+                  setTimeout(async () => { await handleStepGenerate(ni); }, 200);
+                }}
+                style={{
+                  padding: '20px 18px', background: 'var(--bg-secondary)',
+                  border: '2px solid var(--border-color)', borderRadius: 14,
+                  cursor: 'pointer', textAlign: 'left', transition: 'all 0.2s',
+                  display: 'flex', flexDirection: 'column', gap: 10,
+                }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent-color)'; e.currentTarget.style.background = 'var(--bg-tertiary)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-color)'; e.currentTarget.style.background = 'var(--bg-secondary)'; e.currentTarget.style.transform = 'none'; }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <div style={{ width: 40, height: 40, borderRadius: 10, background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <RulerIcon size={20} />
+                  </div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)' }}>继续分步创作</div>
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                  继续分镜设计、视觉资产、提示词生成步骤，完成后提交到无限画布
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: 'var(--text-secondary)', fontWeight: 500, marginTop: 'auto' }}>
+                  <ListCheckIcon size={12} /> 精细控制 · 6步流程
+                </div>
+              </button>
+            </div>
+
+            {/* 底部取消按钮 */}
+            <div style={{ textAlign: 'center' }}>
+              <button
+                onClick={() => setShowSubmitChoiceModal(false)}
+                style={{ padding: '8px 28px', background: 'transparent', color: 'var(--text-muted)', border: '1px solid var(--border-color)', borderRadius: 10, fontSize: 13, cursor: 'pointer', transition: 'all 0.2s' }}
+                onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = 'var(--text-muted)'; }}
+                onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.borderColor = 'var(--border-color)'; }}
+              >
+                取消
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

@@ -80,6 +80,8 @@ contextBridge.exposeInMainWorld('yijingAPI', {
     saveFileFromData: (opts: { dataUrl: string; suggestedName?: string }) => ipcRenderer.invoke('system:saveFileFromData', opts),
     // 鏃犲璇濇涓嬭浇鍒版湰鍦?assets 鐩綍锛岃繑鍥炴湰鍦拌矾寰勶紙缁熶竴璁╃敓鎴愮粨鏋滃厛钀藉湴鍐嶅憟鐜帮級
     downloadToAssets: (opts: { url?: string; suggestedExt?: string; prefix?: string }) => ipcRenderer.invoke('system:downloadToAssets', opts),
+    // Convert remote URL to data URL (base64) to bypass CORS restrictions in renderer
+    urlToDataUrl: (opts: { url?: string }) => ipcRenderer.invoke('system:urlToDataUrl', opts),
     // 娓叉煋杩涚▼涓婃姤杩愯鏈熼敊璇埌涓昏繘绋嬫棩蹇楋紙crash.log锛?
     reportRendererError: (info: any) => ipcRenderer.invoke('system:reportRendererError', info),
   },

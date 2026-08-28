@@ -8,6 +8,7 @@ import {
   SearchIcon,
   FileTextIcon,
   ChevronLeftIcon,
+  ChevronRightIcon,
   RefreshIcon,
   BoltIcon,
   ImageIcon,
@@ -165,18 +166,42 @@ function gradientDataUrl(seed: string): string {
 // 将生成的媒体（图片/视频/配音）自动下载到本地：blob URL 先在渲染进程转 data URL 再下载，其余交给 localizeMedia
 async function localizeBlobAware(url: string | null | undefined, prefix: string, ext?: string): Promise<string> {
   const src = String(url || '').trim();
-  if (!src || !src.startsWith('blob:')) return normalizeFileSrc(await localizeMedia(src, prefix, ext));
-  try {
-    const blob = await fetch(src).then(r => r.blob());
-    const dataUrl = blob && blob.size ? await new Promise<string>((resolve, reject) => {
-      const fr = new FileReader();
-      fr.onload = () => resolve(String(fr.result || ''));
-      fr.onerror = () => reject(fr.error);
-      fr.readAsDataURL(blob);
-    }) : '';
-    if (dataUrl) return normalizeFileSrc(await localizeMedia(dataUrl, prefix, ext));
-  } catch { /* 保留原地址 */ }
-  return src;
+  if (!src) return src;
+  // 处理 blob URL
+  if (src.startsWith('blob:')) {
+    try {
+      const blob = await fetch(src).then(r => r.blob());
+      const dataUrl = blob && blob.size ? await new Promise<string>((resolve, reject) => {
+        const fr = new FileReader();
+        fr.onload = () => resolve(String(fr.result || ''));
+        fr.onerror = () => reject(fr.error);
+        fr.readAsDataURL(blob);
+      }) : '';
+      if (dataUrl) return normalizeFileSrc(await localizeMedia(dataUrl, prefix, ext));
+    } catch { /* 保留原地址 */ }
+    return src;
+  }
+  // 尝试下载到本地
+  const localized = normalizeFileSrc(await localizeMedia(src, prefix, ext));
+  // 如果仍是远程 URL（下载失败），尝试转 data URL 确保能显示
+  if (localized && /^https?:\/\//i.test(localized)) {
+    try {
+      const resp = await fetch(localized);
+      if (resp.ok) {
+        const blob = await resp.blob();
+        if (blob && blob.size) {
+          const dataUrl = await new Promise<string>((resolve, reject) => {
+            const fr = new FileReader();
+            fr.onload = () => resolve(String(fr.result || ''));
+            fr.onerror = () => reject(fr.error);
+            fr.readAsDataURL(blob);
+          });
+          if (dataUrl) return dataUrl;
+        }
+      }
+    } catch { /* 保留原地址 */ }
+  }
+  return localized || src;
 }
 
 function thumbStyle(hue: number, kind: string): React.CSSProperties {
@@ -436,11 +461,13 @@ interface StoryboardViewProps {
   onEditPrompt: (id: string, text: string) => void;
   onSelectVideo: (id: string, url: string) => void;
   onAddAsset: (id: string, kind: 'character' | 'scene' | 'prop', name: string) => void;
+  onReplaceAsset: (id: string, kind: 'character' | 'scene' | 'prop', oldName: string, newName: string) => void;
+  onRemoveAsset: (id: string, kind: 'character' | 'scene' | 'prop', name: string) => void;
   onSaveVideo: (url: string, sb: DramartStoryboard) => void;
   onDownloadVideo: (url: string, sb: DramartStoryboard) => void;
 }
 
-const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onNext, onGo, onEditPrompt, onSelectVideo, onAddAsset, onSaveVideo, onDownloadVideo }) => {
+const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onNext, onGo, onEditPrompt, onSelectVideo, onAddAsset, onReplaceAsset, onRemoveAsset, onSaveVideo, onDownloadVideo }) => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const [showParams, setShowParams] = useState(false);
   const [addKind, setAddKind] = useState<'character' | 'scene' | 'prop' | null>(null);
@@ -451,6 +478,51 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const [refPickOpen, setRefPickOpen] = useState(false);
   const [voiceReplace, setVoiceReplace] = useState<string | null>(null);
   const [refReplace, setRefReplace] = useState<{ raw: string; kind: 'character' | 'scene' | 'prop' } | null>(null);
+  const [assetReplace, setAssetReplace] = useState<{ kind: 'character' | 'scene' | 'prop'; old: string } | null>(null);
+  // 富文本编辑器状态：避免 React 重新渲染 contentEditable 导致内容追加
+  const valueFromUserInputRef = useRef(false);
+  const lastDomTextRef = useRef('');
+  const initializedRef = useRef(false);
+  const lastSbIdRef = useRef<string | null>(null);
+
+  // 安全地从 contentEditable DOM 提取纯文本（保留换行符和特殊标记）
+  const safeExtractText = (root: HTMLElement): string => {
+    try {
+      let text = '';
+      const walk = (node: Node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          text += node.textContent || '';
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          const el = node as HTMLElement;
+          const tag = el.tagName;
+          if (tag === 'BR') {
+            text += '\n';
+          } else if (el.classList && el.classList.contains('dwc-rich-ref')) {
+            // 从 data-ref 属性提取引用名称，加回尖括号
+            const refName = el.getAttribute('data-ref') || el.textContent || '';
+            text += '<' + refName + '>';
+          } else if (el.classList && el.classList.contains('dwc-rich-dur')) {
+            // 从 data-dur 属性提取时长
+            const dur = el.getAttribute('data-dur') || el.textContent?.replace('⏱ ', '') || '';
+            text += dur;
+          } else if (el.classList && el.classList.contains('dwc-rich-line')) {
+            // 从 data-line 属性提取台词
+            const line = el.getAttribute('data-line') || el.textContent || '';
+            text += line;
+          } else if (tag === 'DIV' || tag === 'P') {
+            if (text.length > 0 && !text.endsWith('\n')) text += '\n';
+            el.childNodes.forEach(walk);
+          } else {
+            el.childNodes.forEach(walk);
+          }
+        }
+      };
+      root.childNodes.forEach(walk);
+      return text;
+    } catch (e) {
+      return root.textContent || '';
+    }
+  };
   const replaceInPrompt = (from: string, to: string) => { if (sb) onEditPrompt(sb.id, (sb.videoPrompt || '').split(from).join(to)); };
   const insertRef = () => {
     const sel = window.getSelection();
@@ -460,37 +532,216 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   };
   const insertRefToken = (token: string) => {
     const dom = promptRef.current;
-    if (!dom) return;
+    if (!dom || !sb) return;
     dom.focus();
+    // 恢复打开弹窗时保存的光标位置
     const range = promptRange.current;
-    if (range) { const sel = window.getSelection(); if (sel) { sel.removeAllRanges(); sel.addRange(range); } }
-    if (document.queryCommandSupported('insertText')) document.execCommand('insertText', false, token);
-    if (sb) { const t = dom.innerText; onEditPrompt(sb.id, t); }
+    if (range) {
+      const sel = window.getSelection();
+      if (sel) { sel.removeAllRanges(); sel.addRange(range); }
+    }
+    // 获取光标位置（基于恢复后的 range）
+    let caret = saveCaretOffset();
+    if (caret < 0) caret = safeExtractText(dom).length;
+    const currentText = safeExtractText(dom);
+    // 在光标位置插入引用文本
+    const newText = currentText.slice(0, caret) + token + currentText.slice(caret);
+    // 直接更新 DOM，确保胶囊效果立即可见
+    const html = renderRichHTML(newText);
+    dom.innerHTML = html;
+    // 更新状态（标记为用户输入，useEffect 不重复更新 DOM）
+    lastDomTextRef.current = newText;
+    valueFromUserInputRef.current = true;
+    onEditPrompt(sb.id, newText);
+    // 恢复光标位置到插入的引用之后
+    const newCaret = caret + token.length;
+    requestAnimationFrame(() => {
+      if (promptRef.current) {
+        restoreCaretOffset(newCaret);
+        promptRef.current.focus();
+      }
+    });
   };
   const saveCaretOffset = (): number => {
     const dom = promptRef.current; const sel = window.getSelection();
     if (!dom || !sel || !sel.rangeCount) return -1;
     const range = sel.getRangeAt(0);
-    const pre = document.createRange(); pre.selectNodeContents(dom); pre.setEnd(range.startContainer, range.startOffset);
-    return pre.toString().length;
+    if (!dom.contains(range.startContainer)) return -1;
+    // 使用和 safeExtractText 相同的逻辑计算光标位置
+    let offset = 0;
+    const walk = (node: Node): boolean => {
+      if (node === range.startContainer) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          offset += range.startOffset;
+        } else {
+          // 光标在元素节点内，计算子节点到 startOffset 的文本长度
+          for (let i = 0; i < range.startOffset && i < node.childNodes.length; i++) {
+            offset += calcNodeTextLength(node.childNodes[i]);
+          }
+        }
+        return true;
+      }
+      if (node.nodeType === Node.TEXT_NODE) {
+        offset += (node.textContent || '').length;
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const el = node as HTMLElement;
+        const tag = el.tagName;
+        if (tag === 'BR') {
+          offset += 1; // 换行符
+        } else if (el.classList && el.classList.contains('dwc-rich-ref')) {
+          const refName = el.getAttribute('data-ref') || el.textContent || '';
+          offset += refName.length + 2; // <引用名>
+        } else if (el.classList && el.classList.contains('dwc-rich-dur')) {
+          const dur = el.getAttribute('data-dur') || el.textContent?.replace('⏱ ', '') || '';
+          offset += dur.length;
+        } else if (el.classList && el.classList.contains('dwc-rich-line')) {
+          const line = el.getAttribute('data-line') || el.textContent || '';
+          offset += line.length;
+        } else {
+          for (let i = 0; i < el.childNodes.length; i++) {
+            if (walk(el.childNodes[i])) return true;
+          }
+        }
+      }
+      return false;
+    };
+    for (let i = 0; i < dom.childNodes.length; i++) {
+      if (walk(dom.childNodes[i])) break;
+    }
+    return offset;
+  };
+  // 计算单个节点的文本长度（用于 saveCaretOffset）
+  const calcNodeTextLength = (node: Node): number => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      return (node.textContent || '').length;
+    }
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      const el = node as HTMLElement;
+      const tag = el.tagName;
+      if (tag === 'BR') return 1;
+      if (el.classList && el.classList.contains('dwc-rich-ref')) {
+        const refName = el.getAttribute('data-ref') || el.textContent || '';
+        return refName.length + 2;
+      }
+      if (el.classList && el.classList.contains('dwc-rich-dur')) {
+        const dur = el.getAttribute('data-dur') || el.textContent?.replace('⏱ ', '') || '';
+        return dur.length;
+      }
+      if (el.classList && el.classList.contains('dwc-rich-line')) {
+        const line = el.getAttribute('data-line') || el.textContent || '';
+        return line.length;
+      }
+      let len = 0;
+      for (let i = 0; i < el.childNodes.length; i++) {
+        len += calcNodeTextLength(el.childNodes[i]);
+      }
+      return len;
+    }
+    return 0;
   };
   const restoreCaretOffset = (offset: number) => {
     const dom = promptRef.current; if (!dom || offset < 0) return;
     dom.focus();
-    const walker = document.createTreeWalker(dom, NodeFilter.SHOW_TEXT);
-    let cur = 0; let node: Node | null; const target = document.createRange(); let found = false;
-    while ((node = walker.nextNode())) {
-      const len = (node.textContent || '').length;
-      if (cur + len >= offset) { target.setStart(node, Math.max(0, offset - cur)); target.collapse(true); found = true; break; }
-      cur += len;
+    // 使用和 safeExtractText 相同的逻辑恢复光标位置
+    let remaining = offset;
+    let found = false;
+    const target = document.createRange();
+    const walk = (node: Node): boolean => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const len = (node.textContent || '').length;
+        if (remaining <= len) {
+          target.setStart(node, Math.max(0, remaining));
+          target.collapse(true);
+          found = true;
+          return true;
+        }
+        remaining -= len;
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const el = node as HTMLElement;
+        const tag = el.tagName;
+        if (tag === 'BR') {
+          if (remaining <= 1) {
+            // 光标在换行符位置，设置到 BR 之后
+            target.setStartAfter(el);
+            target.collapse(true);
+            found = true;
+            return true;
+          }
+          remaining -= 1;
+        } else if (el.classList && el.classList.contains('dwc-rich-ref')) {
+          const refName = el.getAttribute('data-ref') || el.textContent || '';
+          const len = refName.length + 2;
+          if (remaining <= len) {
+            target.setStartAfter(el);
+            target.collapse(true);
+            found = true;
+            return true;
+          }
+          remaining -= len;
+        } else if (el.classList && el.classList.contains('dwc-rich-dur')) {
+          const dur = el.getAttribute('data-dur') || el.textContent?.replace('⏱ ', '') || '';
+          const len = dur.length;
+          if (remaining <= len) {
+            target.setStartAfter(el);
+            target.collapse(true);
+            found = true;
+            return true;
+          }
+          remaining -= len;
+        } else if (el.classList && el.classList.contains('dwc-rich-line')) {
+          const line = el.getAttribute('data-line') || el.textContent || '';
+          const len = line.length;
+          if (remaining <= len) {
+            target.setStartAfter(el);
+            target.collapse(true);
+            found = true;
+            return true;
+          }
+          remaining -= len;
+        } else {
+          for (let i = 0; i < el.childNodes.length; i++) {
+            if (walk(el.childNodes[i])) return true;
+          }
+        }
+      }
+      return false;
+    };
+    for (let i = 0; i < dom.childNodes.length; i++) {
+      if (walk(dom.childNodes[i])) break;
     }
-    if (found) { const sel = window.getSelection(); if (sel) { sel.removeAllRanges(); sel.addRange(target); } }
+    if (!found) {
+      target.selectNodeContents(dom);
+      target.collapse(false);
+    }
+    const sel = window.getSelection(); if (sel) { sel.removeAllRanges(); sel.addRange(target); }
+  };
+  // 保存滚动位置，避免重新渲染后滚动位置丢失
+  const saveScrollPos = () => {
+    const dom = promptRef.current;
+    return dom ? { top: dom.scrollTop, left: dom.scrollLeft } : null;
+  };
+  const restoreScrollPos = (pos: { top: number; left: number } | null) => {
+    if (!pos) return;
+    const dom = promptRef.current;
+    if (dom) { dom.scrollTop = pos.top; dom.scrollLeft = pos.left; }
   };
   const onPromptInput = () => {
     const caret = saveCaretOffset();
-    const t = promptRef.current?.innerText || '';
-    if (sb && t !== sb.videoPrompt) onEditPrompt(sb.id, t);
-    if (caret >= 0) requestAnimationFrame(() => restoreCaretOffset(caret));
+    const scrollPos = saveScrollPos();
+    // 使用 safeExtractText 获取文本，保留换行符
+    const t = promptRef.current ? safeExtractText(promptRef.current) : '';
+    if (sb && t !== sb.videoPrompt) {
+      // 标记这次 value 变化由用户输入导致，useEffect 中不更新 DOM
+      valueFromUserInputRef.current = true;
+      lastDomTextRef.current = t;
+      onEditPrompt(sb.id, t);
+    }
+    if (caret >= 0 || scrollPos) {
+      requestAnimationFrame(() => {
+        restoreScrollPos(scrollPos);
+        if (caret >= 0) restoreCaretOffset(caret);
+      });
+    }
   };
   const [vmodel, setVmodel] = useState('');
   const [vdur, setVdur] = useState(10);
@@ -533,6 +784,83 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
     }
     return null;
   };
+
+  // 将富文本解析结果转换为 HTML 字符串（用于 contentEditable 的 innerHTML）
+  const renderRichHTML = useCallback((text: string): string => {
+    const segs = parseRichPrompt(text);
+    let html = '';
+    for (const seg of segs) {
+      if (seg.type === 'ref') {
+        const found = findAsset('character', seg.value) || findAsset('scene', seg.value) || findAsset('prop', seg.value) || null;
+        const imgHtml = found?.img ? `<img src="${found.img}" alt="" />` : '<span class="dwc-rich-at">@</span>';
+        html += `<span class="dwc-rich-ref" contenteditable="false" data-ref="${seg.value.replace(/"/g, '&quot;')}">${imgHtml}${seg.value}</span>`;
+      } else if (seg.type === 'dur') {
+        html += `<span class="dwc-rich-dur" contenteditable="false" data-dur="${seg.value.replace(/"/g, '&quot;')}">⏱ ${seg.value}</span>`;
+      } else if (seg.type === 'line') {
+        html += `<span class="dwc-rich-line" contenteditable="false" data-line="${seg.value.replace(/"/g, '&quot;')}">${seg.value}</span>`;
+      } else {
+        // 转义 HTML 特殊字符
+        const escaped = seg.value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+        html += escaped;
+      }
+    }
+    return html;
+  }, [project]);
+
+  // 同步外部 videoPrompt 到 contentEditable DOM
+  useEffect(() => {
+    const el = promptRef.current;
+    if (!el || !sb) return;
+    const newValue = sb.videoPrompt || '';
+    const sbId = sb.id;
+
+    // 切换分镜时重新初始化
+    if (lastSbIdRef.current !== sbId) {
+      lastSbIdRef.current = sbId;
+      initializedRef.current = false;
+      valueFromUserInputRef.current = false;
+    }
+
+    // 首次挂载或切换分镜：设置初始内容
+    if (!initializedRef.current) {
+      initializedRef.current = true;
+      const html = renderRichHTML(newValue);
+      if (el.innerHTML !== html) el.innerHTML = html;
+      lastDomTextRef.current = newValue;
+      return;
+    }
+
+    // 用户输入导致的 value 变化：不更新 DOM，只更新记录
+    if (valueFromUserInputRef.current) {
+      valueFromUserInputRef.current = false;
+      lastDomTextRef.current = newValue;
+      return;
+    }
+
+    // 外部 value 与当前 DOM 文本相同：不更新
+    if (newValue === lastDomTextRef.current) return;
+
+    // 外部程序化变更：更新 DOM 并恢复光标和滚动位置
+    lastDomTextRef.current = newValue;
+    const html = renderRichHTML(newValue);
+    if (el.innerHTML !== html) {
+      try {
+        const sel = window.getSelection();
+        const hasFocus = el.contains(document.activeElement) ||
+          (sel && sel.rangeCount > 0 && sel.anchorNode && el.contains(sel.anchorNode));
+        const caret = hasFocus ? saveCaretOffset() : -1;
+        const scrollTop = el.scrollTop;
+        const scrollLeft = el.scrollLeft;
+        el.innerHTML = html;
+        el.scrollTop = scrollTop;
+        el.scrollLeft = scrollLeft;
+        if (hasFocus && caret >= 0) restoreCaretOffset(caret);
+      } catch (e) {
+        // 静默失败
+      }
+    }
+  }, [sb?.id, sb?.videoPrompt, renderRichHTML]);
+
   const status = sb ? (statusMap[sb.id] || 'idle') : 'idle';
   const videoUrl = sb ? (urlMap[sb.id] || sb.videoUrl || '') : '';
 
@@ -582,15 +910,16 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
             <div className="dwc-sb-info-title">分镜信息</div>
             <div className="dwc-sb-field">
               <label>剧本原文</label>
-              <textarea className="dwc-sb-textarea" defaultValue={sb.rawScript} rows={5} />
+              <textarea className="dwc-sb-textarea" key={sb.id} defaultValue={sb.rawScript} rows={5} />
             </div>
             <div className="dwc-sb-field">
               <label>出镜角色</label>
               <div className="dwc-chip-row">
                 {sb.characters.map(c => (
-                  <div key={c} className="dwc-chip">
+                  <div key={c} className="dwc-chip dwc-chip-clickable" onClick={() => setAssetReplace({ kind: 'character', old: c })}>
                     <span className="dwc-chip-avatar" style={thumbStyle(findAsset('character', c)?.hue ?? 210, 'character')}>{findAsset('character', c)?.img ? <img src={findAsset('character', c)?.img} alt="" /> : null}</span>
                     <span>{c}</span>
+                    <button className="dwc-chip-remove" onClick={(e) => { e.stopPropagation(); onRemoveAsset(sb.id, 'character', c); }} title="删除">×</button>
                   </div>
                 ))}
                 <button className="dwc-chip-add" onClick={() => setAddKind('character')}>+ 添加角色</button>
@@ -602,9 +931,10 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
                 {sb.scenes.map(sc => {
                   const s = findAsset('scene', sc);
                   return (
-                    <div key={sc} className="dwc-scene">
+                    <div key={sc} className="dwc-scene dwc-chip-clickable" onClick={() => setAssetReplace({ kind: 'scene', old: sc })}>
                       <div className="dwc-scene-thumb" style={thumbStyle(s?.hue ?? 200, 'scene')}>{s?.img ? <img src={s.img} alt="" /> : <ImageIcon size={16} />}</div>
                       <span>{sc}</span>
+                      <button className="dwc-chip-remove" onClick={(e) => { e.stopPropagation(); onRemoveAsset(sb.id, 'scene', sc); }} title="删除">×</button>
                     </div>
                   );
                 })}
@@ -614,9 +944,10 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               <label>场景道具 <span className="dwc-add-inline" onClick={() => setAddKind('prop')}>+</span></label>
               <div className="dwc-scene-list">
                 {sb.props.map(p => (
-                  <div key={p} className="dwc-chip">
+                  <div key={p} className="dwc-chip dwc-chip-clickable" onClick={() => setAssetReplace({ kind: 'prop', old: p })}>
                     <span className="dwc-chip-avatar" style={thumbStyle(findAsset('prop', p)?.hue ?? 60, 'prop')}>{findAsset('prop', p)?.img ? <img src={findAsset('prop', p)?.img} alt="" /> : null}</span>
                     <span>{p}</span>
+                    <button className="dwc-chip-remove" onClick={(e) => { e.stopPropagation(); onRemoveAsset(sb.id, 'prop', p); }} title="删除">×</button>
                   </div>
                 ))}
               </div>
@@ -634,17 +965,25 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
             </div>
           </div>
           <div className="dwc-sb-prompt">
-            <div className="dwc-sb-rich-editable" ref={promptRef} contentEditable suppressContentEditableWarning onInput={onPromptInput} onKeyDown={(e) => { if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); insertRef(); } }}>
-              {parseRichPrompt(sb ? sb.videoPrompt : '').map((seg, i) => {
-                if (seg.type === 'ref') {
-                  const found = findAsset('character', seg.value) || findAsset('scene', seg.value) || findAsset('prop', seg.value) || null;
-                  return <span key={i} className="dwc-rich-ref" contentEditable={false} onClick={() => { const k = detectRefKind(seg.value); if (k) setRefReplace({ raw: seg.value, kind: k }); else setVoiceReplace(seg.value); }}>{found?.img ? <img src={found.img} alt="" /> : <span className="dwc-rich-at">@</span>}{seg.value}</span>;
-                }
-                if (seg.type === 'dur') return <span key={i} className="dwc-rich-dur" contentEditable={false} onClick={() => setEditDur({ raw: seg.value })}>⏱ {seg.value}</span>;
-                if (seg.type === 'line') return <span key={i} className="dwc-rich-line" contentEditable={false} onClick={() => setEditLine({ raw: seg.value })}>{seg.value}</span>;
-                return <span key={i}>{seg.value}</span>;
-              })}
-            </div>
+            <div className="dwc-sb-rich-editable" ref={promptRef} contentEditable suppressContentEditableWarning onInput={onPromptInput} onKeyDown={(e) => { if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); insertRef(); } }} onClick={(e) => {
+              // 事件委托：处理引用、时长、台词的点击
+              const target = e.target as HTMLElement;
+              const refEl = target.closest('.dwc-rich-ref') as HTMLElement | null;
+              const durEl = target.closest('.dwc-rich-dur') as HTMLElement | null;
+              const lineEl = target.closest('.dwc-rich-line') as HTMLElement | null;
+              if (refEl) {
+                const value = refEl.getAttribute('data-ref') || refEl.textContent || '';
+                const k = detectRefKind(value);
+                if (k) setRefReplace({ raw: value, kind: k });
+                else setVoiceReplace(value);
+              } else if (durEl) {
+                const value = durEl.getAttribute('data-dur') || durEl.textContent?.replace('⏱ ', '') || '';
+                setEditDur({ raw: value });
+              } else if (lineEl) {
+                const value = lineEl.getAttribute('data-line') || lineEl.textContent || '';
+                setEditLine({ raw: value });
+              }
+            }} dangerouslySetInnerHTML={{ __html: '' }} />
           </div>
           </div>
           <div className="dwc-sb-preview-window">
@@ -783,6 +1122,29 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
         </div>
       )}
 
+      {assetReplace && sb && (
+        <div className="dwc-overlay" onClick={() => setAssetReplace(null)}>
+          <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
+            <div className="dwc-modal-head"><span className="dwc-modal-title">替换{assetReplace.kind === 'character' ? '角色' : assetReplace.kind === 'scene' ? '场景' : '道具'}</span><button className="dwc-modal-close" onClick={() => setAssetReplace(null)}><CloseIcon size={16} /></button></div>
+            <div className="dwc-modal-body">
+              <div className="dwc-picker-sec">当前资产</div>
+              <div className="dwc-picker-grid">
+                {(() => { const cur = findAsset(assetReplace.kind, assetReplace.old); return cur ? (<button key={cur.id} className="dwc-picker-card current">{cur.img ? <img src={cur.img} alt={cur.name} /> : <span className="dwc-picker-ico"><ImageIcon size={20} /></span>}<span>{cur.name}</span></button>) : (<span className="dwc-picker-hint">{assetReplace.old}</span>); })()}
+              </div>
+              <div className="dwc-picker-sec">替换为</div>
+              <div className="dwc-picker-grid">
+                {(assetReplace.kind === 'character' ? project.characters : assetReplace.kind === 'scene' ? project.scenes : project.props).map(a => (
+                  <button key={a.id} className="dwc-picker-card" onClick={() => { onReplaceAsset(sb.id, assetReplace.kind, assetReplace.old, a.name); setAssetReplace(null); }}>
+                    {a.img ? <img src={a.img} alt={a.name} /> : <span className="dwc-picker-ico"><ImageIcon size={20} /></span>}
+                    <span>{a.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {voiceReplace !== null && (
         <div className="dwc-overlay" onClick={() => setVoiceReplace(null)}>
           <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
@@ -859,12 +1221,14 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
 
   const showToast = useAppStore(s => s.showToast);
   const [trims, setTrims] = useState<Record<string, { start: number; end: number }>>({});
-  const [editOpen, setEditOpen] = useState(false);
-  const [editText, setEditText] = useState('');
   const [exporting, setExporting] = useState(false);
   const [exportProgress, setExportProgress] = useState(0);
   const [concatOn, setConcatOn] = useState(true);
   const [playIdx, setPlayIdx] = useState(0);
+  const [playbackRate, setPlaybackRate] = useState(1);
+  const [timelineZoom, setTimelineZoom] = useState(1);
+  const [currentEpisode, setCurrentEpisode] = useState(1);
+  const [currentTime, setCurrentTime] = useState(0);
   const vidRef = useRef<HTMLVideoElement>(null);
   // 各片段视频的真实时长（原视频时长），作为截取范围上限
   const [durations, setDurations] = useState<Record<string, number>>({});
@@ -948,6 +1312,7 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
   const advancePlay = () => { if (playListLen) setPlayIdx(p => (p + 1) % playListLen); };
   const selectSeg = (i: number) => {
     onSelectIndex(i);
+    setCurrentTime(0);
     if (concatOn && listItems.length) { const li = listItems.findIndex(x => x.si === i); if (li >= 0) setPlayIdx(li); }
   };
   const toggleConcat = () => {
@@ -1008,8 +1373,64 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
     finally { setExporting(false); }
   };
 
+  // 播放速度切换
+  const togglePlaybackRate = () => {
+    const rates = [0.5, 1, 1.5, 2];
+    const idx = rates.indexOf(playbackRate);
+    const next = rates[(idx + 1) % rates.length];
+    setPlaybackRate(next);
+    if (vidRef.current) { try { vidRef.current.playbackRate = next; } catch { /* 忽略 */ } }
+  };
+
+  // 下载当前视频到本地
+  const downloadCurrentVideo = async () => {
+    const url = showUrl;
+    if (!url) { showToast('暂无视频可下载', 'error'); return; }
+    const win = window as any;
+    const saveApi = win?.yijingAPI?.system?.saveFileFromData;
+    if (typeof saveApi === 'function') {
+      try {
+        const local = await localizeMedia(url, 'dramart-vid', 'mp4');
+        const saved = await saveApi({ dataUrl: local || url, suggestedName: (cur?.label || '分镜视频') + '.mp4' });
+        if (saved?.ok) showToast('已保存视频到本地', 'success');
+        else if (saved?.canceled) { /* 用户取消 */ }
+        else showToast('保存失败', 'error');
+      } catch (e: any) {
+        showToast('保存失败：' + (e?.message || String(e)), 'error');
+      }
+    } else {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = (cur?.label || '分镜视频') + '.mp4';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      showToast('已开始下载', 'success');
+    }
+  };
+
+  // 获取分镜的实际视频时长（优先使用视频元数据，回退到分镜设计时长）
+  const getActualDuration = (sb?: { id: string; duration?: number }) => {
+    if (!sb) return 0;
+    return durations[sb.id] || sb.duration || 0;
+  };
+
+  // 时间轴缩放
+  const zoomTimeline = (delta: number) => {
+    setTimelineZoom(z => Math.max(0.5, Math.min(3, z + delta)));
+  };
+
+  // 上一个/下一个分镜
+  const prevSegment = () => {
+    if (index > 0) selectSeg(index - 1);
+  };
+  const nextSegment = () => {
+    if (index < storyboards.length - 1) selectSeg(index + 1);
+  };
+
   return (
     <div className="dwc-vid">
+      {/* 顶部导航栏（与前面页面对齐） */}
       <div className="dwc-top-bar">
         <button className="dwc-back" onClick={onBack}><ChevronLeftIcon size={16} /> 返回</button>
         <div className="dwc-project-name"><span className="dwc-edit-icon"><EditIcon size={13} /></span>{project.name}</div>
@@ -1033,99 +1454,128 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
           </div>
         ))}
       </div>
-      <div className="dwc-vid-toolbar">
-        <span className="dwc-vid-label">视频合成预览</span>
-        <div className="dwc-vid-actions">
-          <button className={'dwc-vid-act' + (concatOn ? ' on' : '')} onClick={toggleConcat} title="自动按截取时长前后拼接连贯预览"><PlayIcon size={14} /> 连播</button>
-          <button className="dwc-vid-act" onClick={() => { setEditText(cur?.videoPrompt || ''); setEditOpen(true); }}><EditIcon size={14} /> 编辑</button>
-          <button className="dwc-vid-act" disabled={exporting} onClick={exportComposed}><SaveIcon size={14} /> {exporting ? ('合成中…' + (exportProgress > 0 ? Math.round(exportProgress) + '%' : '')) : '导出视频'}</button>
-          <button className="dwc-vid-act" disabled={!videoUrl || !cur} onClick={() => { if (cur && videoUrl) onDownload(videoUrl, cur); }}><DownloadIcon size={14} /> 下载</button>
-        </div>
-      </div>
-      <div className="dwc-vid-player">
-        <div className="dwc-vid-player-tag">{concatOn && listItems.length ? ('连播 ' + (playPos + 1) + '/' + playListLen + (shownItem ? ' · ' + fmt(shownItem.end - shownItem.start) : '')) : (cur?.label || '分镜')}</div>
-        {showUrl ? (
-          <video
-            ref={vidRef}
-            src={showUrl}
-            controls
-            className="dwc-vid-video"
-            onLoadedMetadata={(e) => {
-              const v = e.currentTarget;
-              const vidId = concatOn ? shownItem?.id : cur?.id;
-              if (vidId && v.duration && Number.isFinite(v.duration)) {
-                setDurations(p => (Math.abs((p[vidId] || 0) - v.duration) < 0.05 ? p : { ...p, [vidId]: v.duration }));
-              }
-              if (shownTrim && shownTrim.start > 0) { try { v.currentTime = shownTrim.start; } catch { /* 忽略 */ } }
-            }}
-            onTimeUpdate={(e) => { const v = e.currentTarget; if (concatOn && shownTrim && playListLen && v.currentTime >= shownTrim.end - 0.08) advancePlay(); }}
-            onEnded={() => { if (concatOn && playListLen) advancePlay(); }}
-          />
-        ) : status === 'generating' ? (
-          <div className="dwc-vid-placeholder"><span className="dwc-spinner" /> 生成中…</div>
-        ) : (
-          <button className="dwc-vid-placeholder" onClick={() => cur && onGenerate(cur.id)}>
-            <PlayIcon size={38} />
-            {status === 'done' ? '已生成 · 重新生成此分镜' : '预览分镜视频'}
-          </button>
-        )}
-      </div>
-      {/* 角色配音预览 */}
-      {cur?.voiceUrl && (
-        <div className="dwc-vid-voiceover" style={{ padding: '10px 16px', background: 'rgba(255,255,255,0.03)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
-            <MicrophoneIcon size={14} />
-            <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)' }}>角色配音</span>
+
+      {/* 主体区域：左侧分镜列表 + 右侧上下布局 */}
+      <div className="dwc-vid-body">
+        {/* 左：分镜列表（与分镜页一模一样） */}
+        <div className="dwc-sb-left">
+          <div className="dwc-sb-left-title">集数</div>
+          <div className="dwc-sb-left-sub">分镜表</div>
+          <div className="dwc-episode-list">
+            {storyboards.map((s, i) => (
+              <button key={s.id} className={`dwc-episode${i === index ? ' active' : ''}`} onClick={() => selectSeg(i)}>
+                <span className="dwc-episode-num">{i + 1}</span>
+                <span className="dwc-episode-name">{s.label}</span>
+                <span className="dwc-episode-dur">{s.duration}s</span>
+              </button>
+            ))}
           </div>
-          <audio controls src={cur.voiceUrl} style={{ width: '100%' }} />
         </div>
-      )}
-      <div className="dwc-tl">
-        <div className="dwc-tl-ruler">
-          <span>00:00</span>
-          <span>{fmt(total / 2)}</span>
-          <span>{fmt(total)}</span>
-        </div>
-        <div className="dwc-tl-track" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') applyTrims(); }}>
-          {segments.map(s => {
-            const dur = Math.max(durations[s.id] || s.duration || 1, 0.001);
-            const t = getTrim(s);
-            const pctL = Math.max(0, Math.min(100, (t.start / dur) * 100));
-            const pctR = Math.max(0, Math.min(100, (1 - t.end / dur) * 100));
-            const trimLen = Math.max(0, t.end - t.start);
-            return (
-              <div key={s.id} role="button" tabIndex={0} className={'dwc-tl-seg' + (s.id === cur?.id ? ' active' : '')} style={{ width: s.width + '%' }} onClick={() => selectSeg(storyboards.findIndex(x => x.id === s.id))}>
-                <div className="dwc-tl-thumb" style={thumbStyle(200 + s.index * 40, 'scene')}><PlayIcon size={14} /></div>
-                <div className="dwc-tl-seg-meta"><span>{s.label}</span><span title="截取后时长">{fmt(trimLen)}</span></div>
-                <div className="dwc-tl-trim" style={{ left: pctL + '%', right: pctR + '%' }} title="拖动两端手柄截取时长，松开自动应用" />
-                <div className="dwc-tl-handle left" onPointerDown={(e) => startTrimDrag(e, s.id, 'start')} />
-                <div className="dwc-tl-handle right" onPointerDown={(e) => startTrimDrag(e, s.id, 'end')} />
+
+        {/* 右：上下布局（视频预览在上，时间轴在下） */}
+        <div className="dwc-vid-right">
+          {/* 上：视频预览 + 播放条 */}
+          <div className="dwc-vid-preview-col">
+            <div className="dwc-vid-preview">
+              <div className="dwc-vid-preview-head">
+                <span className="dwc-vid-preview-title">{cur?.label || '分镜 ' + (index + 1)}</span>
+                <div className="dwc-vid-preview-actions">
+                  <button className="dwc-vid-rate-btn" onClick={togglePlaybackRate}>{playbackRate}x</button>
+                  <button className="dwc-vid-download-btn" onClick={downloadCurrentVideo} disabled={!showUrl} title="保存视频到本地">
+                    <DownloadIcon size={16} />
+                  </button>
+                  <button className="dwc-vid-edit-btn" onClick={() => onGo('storyboard')}>编辑</button>
+                </div>
               </div>
-            );
-          })}
-        </div>
-      </div>
-      <div className="dwc-vid-foot">
-        <div className="dwc-footer">平台内容均由人工智能模型生成，不代表平台立场</div>
-        <div className="dwc-vid-foot-actions">
-          <button className="dwc-vid-act danger" onClick={() => alert('删除')}><TrashIcon size={14} /> 删除</button>
-          <button className="dwc-bottom-btn" onClick={() => alert('导出并发布')}><DownloadIcon size={15} /> 导出视频</button>
-        </div>
-      </div>
-      {editOpen && (
-        <div className="dwc-overlay" onClick={() => setEditOpen(false)}>
-          <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
-            <div className="dwc-modal-head"><span className="dwc-modal-title">编辑提示词 · 重新生成当前片段</span><button className="dwc-modal-close" onClick={() => setEditOpen(false)}><CloseIcon size={16} /></button></div>
-            <div className="dwc-modal-body">
-              <textarea className="dwc-sb-prompt-area" rows={9} value={editText} onChange={e => setEditText(e.target.value)} placeholder="输入新的分镜视频提示词…" />
-              <div className="dwc-picker-hint">保存后将用新提示词重新生成当前分镜视频；已生成的其它片段不受影响。</div>
+              <div className="dwc-vid-preview-area">
+                {showUrl ? (
+                  <video
+                    ref={vidRef}
+                    src={showUrl}
+                    className="dwc-vid-video"
+                    onLoadedMetadata={(e) => {
+                      const v = e.currentTarget;
+                      const vidId = concatOn ? shownItem?.id : cur?.id;
+                      if (vidId && v.duration && Number.isFinite(v.duration)) {
+                        setDurations(p => (Math.abs((p[vidId] || 0) - v.duration) < 0.05 ? p : { ...p, [vidId]: v.duration }));
+                      }
+                      v.playbackRate = playbackRate;
+                      if (shownTrim && shownTrim.start > 0) { try { v.currentTime = shownTrim.start; } catch { /* 忽略 */ } }
+                    }}
+                    onTimeUpdate={(e) => { const v = e.currentTarget; setCurrentTime(v.currentTime); if (concatOn && shownTrim && playListLen && v.currentTime >= shownTrim.end - 0.08) advancePlay(); }}
+                    onEnded={() => { if (concatOn && playListLen) advancePlay(); }}
+                  />
+                ) : status === 'generating' ? (
+                  <div className="dwc-vid-placeholder"><span className="dwc-spinner" /> 生成中…</div>
+                ) : (
+                  <button className="dwc-vid-placeholder" onClick={() => cur && onGenerate(cur.id)}>
+                    <PlayIcon size={48} />
+                    <span>点击生成视频预览</span>
+                  </button>
+                )}
+              </div>
+              {/* 播放控制栏（与参考站一致） */}
+              <div className="dwc-vid-controls">
+                <span className="dwc-vid-time">{fmt(currentTime)} / {fmt(getActualDuration(cur))}</span>
+                <button className="dwc-vid-ctrl-btn" onClick={prevSegment} disabled={index === 0}><ChevronLeftIcon size={20} /></button>
+                <button className="dwc-vid-play-btn" onClick={() => { if (vidRef.current) { if (vidRef.current.paused) vidRef.current.play().catch(()=>{}); else vidRef.current.pause(); } }}>
+                  <PlayIcon size={24} />
+                </button>
+                <button className="dwc-vid-ctrl-btn" onClick={nextSegment} disabled={index === storyboards.length - 1}><ChevronRightIcon size={20} /></button>
+              </div>
             </div>
-            <div className="dwc-modal-foot">
-              <button className="dwc-modal-ok" disabled={!editText.trim()} onClick={() => { if (cur) onEditRegenerate(cur.id, editText.trim()); setEditOpen(false); }}>保存并重新生成</button>
+
+            {/* 角色配音预览 */}
+            {cur?.voiceUrl && (
+              <div className="dwc-vid-voiceover">
+                <div className="dwc-vid-voiceover-head"><MicrophoneIcon size={14} /><span>角色配音</span></div>
+                <audio controls src={cur.voiceUrl} className="dwc-vid-audio" />
+              </div>
+            )}
+          </div>
+
+          {/* 下：当前分镜时间轴 + 操作 */}
+          <div className="dwc-vid-right-col">
+            {/* 当前分镜时间轴（仅预览播放，无剪裁） */}
+            <div className="dwc-vid-timeline">
+              <div className="dwc-vid-tl-content">
+                <div className="dwc-vid-tl-ruler">
+                  <span>00:00</span>
+                  <span>{fmt(getActualDuration(cur) / 4)}</span>
+                  <span>{fmt(getActualDuration(cur) / 2)}</span>
+                  <span>{fmt(getActualDuration(cur) * 3 / 4)}</span>
+                  <span>{fmt(getActualDuration(cur))}</span>
+                </div>
+                <div className="dwc-vid-tl-track">
+                  {cur && (() => {
+                    const hasVideo = !!(urlMap[cur.id] || cur.videoUrl);
+                    return (
+                      <div className={'dwc-vid-tl-seg active' + (hasVideo ? '' : ' no-video')} style={{ width: '100%' }}>
+                        {/* 序列帧预览区域 */}
+                        <div className="dwc-vid-tl-frames">
+                          {hasVideo ? (
+                            <div className="dwc-vid-tl-frame-placeholder">
+                              <VideoIcon size={24} />
+                              <span>序列帧预览</span>
+                            </div>
+                          ) : (
+                            <div className="dwc-vid-tl-frame-placeholder empty">
+                              <span>分镜视频未生成</span>
+                            </div>
+                          )}
+                        </div>
+                        <div className="dwc-vid-tl-seg-label">{cur.label} · {fmt(getActualDuration(cur))}</div>
+                      </div>
+                    );
+                  })()}
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
-      )}
+      </div>
+
       {scriptOpen && <ScriptModal script={project.scriptText} fileName={project.scriptFileName} onClose={() => setScriptOpen(false)} />}
     </div>
   );
@@ -1142,13 +1592,15 @@ interface AssetDetailPanelProps {
   onClose: () => void;
   onRename: (id: string, name: string) => void;
   onCollect: (a: DramartAssetItem) => void;
-  onAddVariant: (id: string) => void;
+  onDownload: (imgUrl: string, fileName: string) => void;
+  onAddVariant: (id: string) => string;
   onRemoveVariant: (assetId: string, variantId: string) => void;
   onGenVariant: (assetId: string, variantId: string, prompt: string, opts: { count?: number; model?: string; resolution?: string; ratio?: string }) => void;
   onSetVariantCurrent: (assetId: string, variantId: string, img: string) => void;
   onPicker: () => void;
   onUpload: () => void;
   onOpenGen: (variantId: string) => void;
+  onImgError?: (assetId: string, src: string) => void;
 }
 
 const VAR_MODELS = [
@@ -1166,21 +1618,26 @@ const DEFAULT_MAIN_PROMPT = '任务：完成角色的上半身正面平视特写
 const DEFAULT_SCENE_PROMPT = '生成四宫格画面，展示同一个场景中的四个不同视角：左上角为正视图，主体正面清晰可见，构图居中，细节完整；右上角为俯视图，从高空俯视整体空间布局，展示环境关系和场景结构；左下角为背视图，从主体后方观察，突出背部轮廓、空间纵深和环境延展；右下角为侧视图，从主体侧面观察，展示主体比例、层次和空间关系。四个画面保持同一场景、同一光照、同一色调、同一时间状态。只出现场景，不出现人物、道具等无关内容；仅展示静态事物，不能包含人、动物等可自行运动的事物；无动态、特效、技能、光效及战斗相关描写。不输出文字信息。';
 const DEFAULT_PROP_PROMPT = '生成{name}的高清特写静物图：真实还原物品形态、材质、颜色与细节，质感清晰，光影自然，体现出岁月与材质特征（如真实纹理、边缘磨损、岁月斑点、卷边龟裂等）。仅呈现该物品本身，无人物、无多余元素，无动态特效。不输出文字信息。';
 
-const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, styleName, episode, onClose, onRename, onCollect, onAddVariant, onRemoveVariant, onGenVariant, onSetVariantCurrent, onPicker, onUpload, onOpenGen }) => {
-  const variants = asset.variants || [];
-  const mainVariant = variants.find(v => v.label === '主形象');
+const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, styleName, episode, onClose, onRename, onCollect, onDownload, onAddVariant, onRemoveVariant, onGenVariant, onSetVariantCurrent, onPicker, onUpload, onOpenGen, onImgError }) => {
+  const term = kindTerm(asset.kind);
+  // 确保主形象始终在 variants 列表中（如果资产没有 variants 但有 img，创建默认主形象）
+  const rawVariants = asset.variants || [];
+  const hasMainVariant = rawVariants.some(v => v.label === term.main);
+  const variants = hasMainVariant ? rawVariants : (asset.img ? [{ id: 'main_default', label: term.main, img: asset.img }, ...rawVariants] : rawVariants);
+  const mainVariant = variants.find(v => v.label === term.main) || variants[0];
   const [curVariantId, setCurVariantId] = useState(mainVariant?.id || variants[0]?.id || '');
   const curIdx = variants.findIndex(v => v.id === curVariantId);
   const curVariant = variants[curIdx] || mainVariant;
   const [editing, setEditing] = useState(false);
   const [nameInput, setNameInput] = useState(asset.name);
-  const topImg = curVariant?.img || asset.img;
+  const [previewFull, setPreviewFull] = useState<string | null>(null);
+  // 当前变装的图片：如果没有 img，显示 null（不 fallback 到首图）
+  const topImg = curVariant?.img || null;
   const isSetCurrent = !!curVariant?.img;
-  const pending = variants.filter(v => v.label !== '主形象' && !v.img).length;
+  const pending = variants.filter(v => v.label !== term.main && !v.img).length;
   const gender = /女/.test(asset.imageSummary || '') && !/男/.test(asset.imageSummary || '') ? '女' : '男';
-  const term = kindTerm(asset.kind);
   const isCharacter = asset.kind === 'character';
-  const isMainView = (curVariant?.label === '主形象') || !isCharacter;
+  const isMainView = (curVariant?.label === term.main) || !isCharacter;
   const addLabel = term.add;
   const genBtnLabel = isMainView
     ? (curVariant?.img ? '重绘' + term.main : '生成' + term.main)
@@ -1199,7 +1656,7 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
               <input className="dwc-name-input" value={nameInput} onChange={e => setNameInput(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') commitRename(); }} autoFocus />
             ) : (
               <>
-                <span>{asset.name}{curVariant && curVariant.label !== '主形象' ? '-' + curVariant.label : ''}</span>
+                <span>{asset.name}{curVariant && curVariant.label !== term.main ? '-' + curVariant.label : ''}</span>
                 <button className="dwc-detail-icon" title="重命名角色" onClick={() => { setNameInput(asset.name); setEditing(true); }}><EditIcon size={13} /></button>
               </>
             )}
@@ -1208,7 +1665,7 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
         </div>
         <div className="dwc-detail-head-actions">
           <button className="dwc-detail-icon" title="保存到资产库" onClick={() => onCollect(asset)}><StarIcon size={15} /></button>
-          <button className="dwc-detail-icon" title="导出" onClick={() => onCollect(asset)}><DownloadIcon size={15} /></button>
+          <button className="dwc-detail-icon" title="下载到本地" onClick={() => topImg && onDownload(topImg, asset.name + (curVariant?.label && curVariant.label !== term.main ? '-' + curVariant.label : '') + '.png')}><DownloadIcon size={15} /></button>
           <span className="dwc-detail-sep" />
           <button className="dwc-detail-icon" title="关闭弹窗" onClick={onClose}><CloseIcon size={15} /></button>
         </div>
@@ -1216,7 +1673,7 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
       <div className="dwc-detail-main">
         <button className="dwc-detail-arrow" onClick={prev} aria-label="上一个变装">‹</button>
         <div className="dwc-detail-big" style={(topImg ? undefined : thumbStyle(asset.hue, asset.kind))}>
-          {topImg ? <><img src={topImg} alt={asset.name} className="dwc-detail-big-img" />{isSetCurrent && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前变装形象</span>}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>此变装暂未配置设定图，点击页面下方按钮完成操作。</em></span>}
+          {topImg ? <><img src={topImg} alt={asset.name} className="dwc-detail-big-img" onClick={() => setPreviewFull(topImg)} style={{cursor: 'zoom-in'}} onError={(e) => { const src = (e.target as HTMLImageElement).src; if (src && !src.startsWith('data:') && onImgError) onImgError(asset.id, src); }} />{isSetCurrent && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前变装形象</span>}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>此变装暂未配置设定图，点击页面下方按钮完成操作。</em></span>}
         </div>
         <button className="dwc-detail-arrow" onClick={next} aria-label="下一个变装">›</button>
       </div>
@@ -1224,13 +1681,13 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
         {variants.map((v) => (
           <div key={v.id} className={`dwc-detail-variant-wrap${v.id === curVariantId ? ' active' : ''}`} onClick={() => setCurVariantId(v.id)}>
             <button className={`dwc-detail-variant${!v.img ? ' pending' : ''}`}>
-              <span className="dwc-detail-variant-img" style={v.img ? undefined : thumbStyle(asset.hue + (v.label === '主形象' ? 0 : 30), asset.kind)}>{v.img ? <img src={v.img} alt={v.label} /> : <span className="dwc-detail-variant-ico"><ImageIcon size={16} /></span>}</span>
+              <span className="dwc-detail-variant-img" style={v.img ? undefined : thumbStyle(asset.hue + (v.label === term.main ? 0 : 30), asset.kind)}>{v.img ? <img src={v.img} alt={v.label} onError={(e) => { const src = (e.target as HTMLImageElement).src; if (src && !src.startsWith('data:') && onImgError) onImgError(asset.id, src); }} /> : <span className="dwc-detail-variant-ico"><ImageIcon size={16} /></span>}</span>
               <span className="dwc-detail-variant-label">{v.label}</span>
             </button>
             {v.id !== mainVariant?.id && <button className="dwc-detail-variant-del" onClick={e => { e.stopPropagation(); onRemoveVariant(asset.id, v.id); }} title="删除"><CloseIcon size={12} /></button>}
           </div>
         ))}
-        <button className="dwc-detail-variant add" onClick={() => onAddVariant(asset.id)}><span className="dwc-detail-variant-img add"><span className="dwc-detail-variant-plus">+</span></span><span className="dwc-detail-variant-label">{addLabel}</span></button>
+        <button className="dwc-detail-variant add" onClick={() => { const newId = onAddVariant(asset.id); if (newId) setCurVariantId(newId); }}><span className="dwc-detail-variant-img add"><span className="dwc-detail-variant-plus">+</span></span><span className="dwc-detail-variant-label">{addLabel}</span></button>
       </div>
       <div className="dwc-detail-desc">{asset.imageSummary}</div>
       {pending > 0 && <div className="dwc-detail-pending">🔔 {pending} 个变装待生成</div>}
@@ -1239,6 +1696,12 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
         <button className="dwc-detail-act" onClick={onPicker}><AssetsIcon size={14} /> 从资产库选择</button>
         <button className="dwc-detail-act" onClick={onUpload}><UploadIcon size={14} /> 本地上传</button>
       </div>
+      {previewFull && (
+        <div className="dwc-full-preview" onClick={() => setPreviewFull(null)}>
+          <img src={previewFull} alt="原图预览" className="dwc-full-preview-img" />
+          <button className="dwc-full-preview-close" onClick={() => setPreviewFull(null)}><CloseIcon size={20} /></button>
+        </div>
+      )}
     </div>
   );
 };
@@ -1259,7 +1722,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
   const variants = asset.variants || [];
   const variant = variants.find(v => v.id === variantId);
   const term = kindTerm(asset.kind);
-  const isMain = variant?.label === '主形象' || asset.kind !== 'character';
+  const isMain = variant?.label === term.main || asset.kind !== 'character';
   // 生图模型列表：自动取设置页图像 API 的模型配置（找有模型的那条，defaultModel 为默认），没有才回退内置列表
   const imageAPIConfigs = useAppStore(s => s.imageAPIConfigs);
   const cfg0 = (imageAPIConfigs || []).find((c: any) => (c?.models?.length) || c?.defaultModel) || imageAPIConfigs?.[0];
@@ -1276,6 +1739,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
   const candidates = variant?.candidates || [];
   const curImg = variant?.img || asset.img || '';
   const [previewImg, setPreviewImg] = useState(curImg);
+  const [previewFull, setPreviewFull] = useState<string | null>(null);
   useEffect(() => { setPreviewImg(curImg); }, [variant?.id, asset.img]);
   const emptyText = asset.kind === 'scene' ? '暂无场景' : asset.kind === 'prop' ? '暂无道具' : (isMain ? '暂无角色主图' : '暂无角色变装');
   const genOpts = { count: parseInt(count, 10), model, resolution, ratio };
@@ -1294,7 +1758,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
         </div>
         <div className="dwc-gen-body">
           <div className="dwc-gen-preview" style={previewImg ? undefined : thumbStyle(asset.hue, asset.kind)}>
-            {previewImg ? <><img src={previewImg} alt={title} className="dwc-gen-preview-img" />{curImg && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前</span>}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>{emptyText}</em></span>}
+            {previewImg ? <><img src={previewImg} alt={title} className="dwc-gen-preview-img" onClick={() => setPreviewFull(previewImg)} style={{cursor: 'zoom-in'}} />{curImg && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前</span>}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>{emptyText}</em></span>}
           </div>
           <div className="dwc-gen-side">
             <div className="dwc-gen-side-item"><span className="dwc-gen-side-label">当前</span>{curImg ? <button className="dwc-gen-side-thumb" onClick={() => setPreviewImg(curImg)} title="点击预览"><img src={curImg} alt="" /></button> : <div className="dwc-gen-side-none">暂无</div>}</div>
@@ -1304,7 +1768,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
         </div>
         <div className="dwc-var-gen gen">
           <div className="dwc-var-refs">
-            {asset.img && <div className="dwc-var-ref" title="主形象参考图"><img src={asset.img} alt="主形象" /></div>}
+            {!isMain && asset.img && <div className="dwc-var-ref" title="主形象参考图（自动）"><img src={asset.img} alt="主形象" /></div>}
             <div className="dwc-var-ref add" onClick={onOpenPicker} title="从资产库选择"><AssetsIcon size={16} /></div>
             <span className="dwc-var-ref-label">图片1</span>
             <button className="dwc-detail-act" onClick={onOpenPicker}><AssetsIcon size={14} /> 从资产库选择</button>
@@ -1316,7 +1780,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
             <SimpleDropdown value={resolution} options={VAR_RES} onChange={setResolution} />
             <SimpleDropdown value={ratio} options={VAR_RATIOS} onChange={setRatio} />
             <span className="dwc-ai-param style" title="创建时选择的风格">✱ {styleName || '默认风格'}</span>
-            <button className="dwc-var-gen-btn" disabled={!modelOptions.length} onClick={() => onGen(asset.id, variantId, prompt, genOpts)}><BoltIcon size={14} /> 生成 ✦30</button>
+            <button className="dwc-var-gen-btn" disabled={!modelOptions.length} onClick={() => onGen(asset.id, variantId, prompt, genOpts)}><BoltIcon size={14} /> 生成</button>
           </div>
           {candidates.length > 0 && (
             <div className="dwc-var-cands">
@@ -1333,10 +1797,15 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
           )}
         </div>
       </div>
+      {previewFull && (
+        <div className="dwc-full-preview" onClick={() => setPreviewFull(null)}>
+          <img src={previewFull} alt="原图预览" className="dwc-full-preview-img" />
+          <button className="dwc-full-preview-close" onClick={() => setPreviewFull(null)}><CloseIcon size={20} /></button>
+        </div>
+      )}
     </div>
   );
 };
-
 
 
 interface AddAssetModalProps {
@@ -1996,6 +2465,13 @@ export const DramaWorkshopPage: React.FC = () => {
     setDramartCreateParams({ mode, ratio, resolution, styleId });
   }, [mode, ratio, resolution, styleId, setDramartCreateParams]);
 
+  // 当从剧创页面提交草稿过来时，自动切换到剧创模式（manual）
+  useEffect(() => {
+    if (dramartDraft && mode !== 'manual') {
+      setMode('manual');
+    }
+  }, [dramartDraft, mode]);
+
   const [styleOpen, setStyleOpen] = useState(false);
   const [customStyleOpen, setCustomStyleOpen] = useState(false);
   const [scriptFile, setScriptFile] = useState<{ name: string; text: string; size: number } | null>(null);
@@ -2084,20 +2560,40 @@ export const DramaWorkshopPage: React.FC = () => {
     setScriptFile({ name: file.name, text, size: file.size });
   }, [showToast]);
 
-  // 统一文生图入口：所有图片生成都会强制追加所选风格提示词（内置/自定义），确保出图严格贴合风格
-  const imageFetcher = useCallback(async (prompt: string, opts?: { model?: string; size?: string }): Promise<string | null> => {
+  // 统一文生图/图生图入口：所有图片生成都会强制追加所选风格提示词（内置/自定义），确保出图严格贴合风格
+  const imageFetcher = useCallback(async (prompt: string, opts?: { model?: string; size?: string; referenceImage?: string }): Promise<string | null> => {
     const styledPrompt = styleWord ? `${prompt}
 风格要求（必须严格遵循）：${styleWord}` : prompt;
-    const cfg = imageAPIConfigs?.[0];
-    if (cfg?.apiKey && cfg?.baseUrl) {
+    // 遍历所有图像API配置，找到第一个可用的（有apiKey和baseUrl）
+    const configs = (imageAPIConfigs || []) as any[];
+    for (const cfg of configs) {
+      if (!cfg?.apiKey || !cfg?.baseUrl) continue;
       try {
+        // 如果有参考图，使用图生图；否则使用文生图
+        if (opts?.referenceImage) {
+          // 将 URL/data URL 转换为 File 对象
+          let imageFile: File | null = null;
+          try {
+            const resp = await fetch(opts.referenceImage);
+            const blob = await resp.blob();
+            const ext = blob.type.split('/')[1] || 'png';
+            imageFile = new File([blob], `reference.${ext}`, { type: blob.type });
+          } catch { /* 转换失败，回退到文生图 */ }
+          if (imageFile) {
+            const res = await toolService.generateImageToImage(imageFile, styledPrompt, cfg, { model: opts?.model || cfg.defaultModel, size: opts?.size });
+            const url = (res as any)?.url;
+            if (url) return localizeBlobAware(url, 'dramart-img');
+          }
+        }
+        // 文生图（或图生图失败时回退）
         const res = await toolService.generateImage(styledPrompt, cfg, { model: opts?.model || cfg.defaultModel, size: opts?.size });
         const url = (res as any)?.url;
         if (url) return localizeBlobAware(url, 'dramart-img');
-      } catch { /* fall through */ }
+      } catch { /* 尝试下一个配置 */ }
     }
-    // 无图像 API 或生成失败：用渐变占位图兜底，保证资产有图
-    return gradientDataUrl(styledPrompt || 'asset');
+    // 无图像API或全部生成失败：返回null，由调用方决定是否用占位图兜底
+    // （资产图不自动用占位图，保持"未生成"状态以便用户手动生成；封面等场景调用方自行兜底）
+    return null;
   }, [imageAPIConfigs, styleWord]);
 
   const startAnalysis = useCallback(async (base: DramartProject, config: AIConfigInput | null) => {
@@ -2115,7 +2611,31 @@ export const DramaWorkshopPage: React.FC = () => {
         imageFetcher,
         onProgress: (step, label, percent, msg) => setAnalyzing({ step, total: DRAMART_ANALYSIS_STEPS.length, label, percent, msg: msg || '' }),
       });
-      const cover = await imageFetcher('电影质感海报，' + base.name + '，' + base.styleName + '，大气唯美').catch(() => null);
+      // 生成封面图（根据项目比例动态调整，包含剧本名称大标题，符合短视频封面特点）
+      const coverRatio = base.ratio || '9:16';
+      const coverSizeMap: Record<string, string> = {
+        '9:16': '1080x1920',
+        '16:9': '1920x1080',
+        '4:3': '1440x1080',
+        '3:4': '1080x1440',
+        '1:1': '1080x1080',
+        '21:9': '2520x1080',
+      };
+      const coverSize = coverSizeMap[coverRatio] || '1080x1920';
+      const isVertical = coverRatio === '9:16' || coverRatio === '3:4';
+      const coverPrompt = [
+        '短视频封面图，' + coverRatio + '比例，电影质感，高对比度，强烈视觉冲击力。',
+        '画面' + (isVertical ? '中央或上方' : '中央或左侧') + '用超大醒目的艺术字体显示剧本名称："' + base.name + '"，文字清晰可读，有描边或阴影效果。',
+        '背景是与剧本风格匹配的情绪化场景，有主要人物的特写或剪影，表情富有张力。',
+        '配色鲜明，有暖色调或冷色调的氛围光，整体画面有电影海报的高级感。',
+        '风格：' + base.styleName + '，大气唯美，适合作为短视频发布封面吸引点击。',
+        '重要要求：',
+        '1. 必须清晰显示剧本名称"' + base.name + '"作为大标题，文字占画面约20-30%。',
+        '2. ' + coverRatio + '构图，主体居中，' + (isVertical ? '上下' : '左右') + '留有呼吸空间。',
+        '3. 画面有明确的视觉焦点和情绪氛围，符合短剧类型。',
+        '4. 不要出现其他无关文字、水印或logo。',
+      ].join('\n');
+      const cover = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
       const p: DramartProject = { ...base, ...result,
         cover: cover || gradientDataUrl(base.name),
         outline: (base.scriptText || '').trim().slice(0, 400) || '（暂无大纲）',
@@ -2176,10 +2696,36 @@ export const DramaWorkshopPage: React.FC = () => {
       const result = await runDramaDraftAnalysis({
         draft: base,
         styleWord,
+        ratio: ratio as any,
+        resolution: resolution as any,
         imageFetcher,
         onProgress: (step, label, percent, msg) => setAnalyzing({ step, total: DRAMART_ANALYSIS_STEPS.length, label, percent, msg: msg || '' }),
       });
-      const cover = await imageFetcher('电影质感海报，' + base.name + '，' + base.styleName + '，大气唯美').catch(() => null);
+      // 生成封面图（根据项目比例动态调整，包含剧本名称大标题，符合短视频封面特点）
+      const coverRatio = base.ratio || '9:16';
+      const coverSizeMap: Record<string, string> = {
+        '9:16': '1080x1920',
+        '16:9': '1920x1080',
+        '4:3': '1440x1080',
+        '3:4': '1080x1440',
+        '1:1': '1080x1080',
+        '21:9': '2520x1080',
+      };
+      const coverSize = coverSizeMap[coverRatio] || '1080x1920';
+      const isVertical = coverRatio === '9:16' || coverRatio === '3:4';
+      const coverPrompt = [
+        '短视频封面图，' + coverRatio + '比例，电影质感，高对比度，强烈视觉冲击力。',
+        '画面' + (isVertical ? '中央或上方' : '中央或左侧') + '用超大醒目的艺术字体显示剧本名称："' + base.name + '"，文字清晰可读，有描边或阴影效果。',
+        '背景是与剧本风格匹配的情绪化场景，有主要人物的特写或剪影，表情富有张力。',
+        '配色鲜明，有暖色调或冷色调的氛围光，整体画面有电影海报的高级感。',
+        '风格：' + base.styleName + '，大气唯美，适合作为短视频发布封面吸引点击。',
+        '重要要求：',
+        '1. 必须清晰显示剧本名称"' + base.name + '"作为大标题，文字占画面约20-30%。',
+        '2. ' + coverRatio + '构图，主体居中，' + (isVertical ? '上下' : '左右') + '留有呼吸空间。',
+        '3. 画面有明确的视觉焦点和情绪氛围，符合短剧类型。',
+        '4. 不要出现其他无关文字、水印或logo。',
+      ].join('\n');
+      const cover = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
       const p: DramartProject = { ...base, ...result,
         cover: cover || gradientDataUrl(base.name),
         outline: (base.scriptContent || base.scriptText || '').trim().slice(0, 400) || '（暂无大纲）',
@@ -2312,6 +2858,68 @@ export const DramaWorkshopPage: React.FC = () => {
     showToast('自定义风格已删除', 'info');
   }, [deleteDramartCustomStyle, styleId, showToast]);
 
+  // ===== 角色固定音色分配机制 =====
+  // 预设音色池：覆盖不同性别、年龄、风格，确保每个角色都能分配到稳定的音色
+  const CHARACTER_VOICE_POOL = [
+    // 女声
+    { id: 'zh-CN-XiaoxiaoNeural', name: '温柔女声', gender: 'female', desc: '语调舒缓、咬字温润的温柔女声' },
+    { id: 'zh-CN-XiaoyiNeural', name: '活泼少女', gender: 'female', desc: '清脆明亮、充满活力的少女音' },
+    { id: 'zh-CN-XiaohanNeural', name: '成熟御姐', gender: 'female', desc: '声线浑厚、气场沉稳的成熟御姐音' },
+    { id: 'zh-CN-XiaomengNeural', name: '可爱童声', gender: 'female', desc: '天真烂漫、清脆可爱的女童音' },
+    { id: 'zh-CN-XiaomoNeural', name: '知性女声', gender: 'female', desc: '优雅知性、从容淡定的青年女声' },
+    { id: 'zh-CN-XiaoshuangNeural', name: '爽朗女声', gender: 'female', desc: '开朗大方、语速明快的爽朗女声' },
+    // 男声
+    { id: 'zh-CN-YunxiNeural', name: '年轻少年', gender: 'male', desc: '清澈干净、充满朝气的少年音' },
+    { id: 'zh-CN-YunjianNeural', name: '成熟大叔', gender: 'male', desc: '低沉磁性、沉稳可靠的成熟大叔音' },
+    { id: 'zh-CN-YunyangNeural', name: '新闻男声', gender: 'male', desc: '字正腔圆、庄重沉稳的新闻播音音' },
+    { id: 'zh-CN-YunxiaNeural', name: '可爱男童', gender: 'male', desc: '天真活泼、清脆明亮的男童音' },
+    { id: 'zh-CN-YunyeNeural', name: '儒雅男声', gender: 'male', desc: '温润如玉、书卷气十足的儒雅男声' },
+    { id: 'zh-CN-YunzeNeural', name: '威严总裁', gender: 'male', desc: '深沉冷峻、气场强大的总裁音' },
+  ];
+
+  // 从角色描述中判断性别
+  const detectCharacterGender = (charAsset: any): 'male' | 'female' | 'unknown' => {
+    const text = (charAsset?.imageSummary + charAsset?.name + '').toLowerCase();
+    if (/女|妇|妈|娘|姐|妹|姑|姨|婆|公主|女王|御姐|少女|女孩/.test(text)) return 'female';
+    if (/男|夫|爸|爷|哥|弟|叔|伯|舅|王子|国王|总裁|大叔|少年|男孩/.test(text)) return 'male';
+    return 'unknown';
+  };
+
+  // 简单字符串哈希（用于稳定分配音色）
+  const stringHash = (s: string): number => {
+    let h = 0;
+    for (let i = 0; i < s.length; i++) { h = ((h << 5) - h + s.charCodeAt(i)) | 0; }
+    return Math.abs(h);
+  };
+
+  // 为角色分配固定音色（同一个角色始终分配同一个音色）
+  const getCharacterVoice = (charAsset: any): { id: string; name: string; desc: string; gender: string } => {
+    // 如果角色已配置音色，优先使用配置的音色
+    const configured = charAsset ? parseVoiceConfig(charAsset.voice as any) : null;
+    if (configured?.voiceId) {
+      return { id: configured.voiceId, name: configured.name || '自定义音色', desc: configured.name || '用户配置的音色', gender: 'custom' };
+    }
+    // 否则从预设池中按角色名称稳定分配
+    const name = charAsset?.name || '未知角色';
+    const gender = detectCharacterGender(charAsset);
+    const pool = gender === 'unknown' ? CHARACTER_VOICE_POOL : CHARACTER_VOICE_POOL.filter(v => v.gender === gender);
+    const idx = stringHash(name) % (pool.length || 1);
+    return pool[idx] || CHARACTER_VOICE_POOL[0];
+  };
+
+  // 生成分镜中所有角色的音色描述（用于视频提示词约束，确保同一角色音色一致）
+  const buildCharacterVoiceConstraint = (sb: DramartStoryboard): string => {
+    const charNames = sb.characters || [];
+    if (!charNames.length) return '';
+    const constraints: string[] = [];
+    for (const cn of charNames) {
+      const charAsset = project?.characters.find(c => c.name === cn || cn.includes(c.name) || c.name.includes(cn));
+      const voice = getCharacterVoice(charAsset || { name: cn });
+      constraints.push(`角色「${cn}」：${voice.desc}，全片保持此音色不变`);
+    }
+    return constraints.length ? `【角色音色约束】${constraints.join('；')}。` : '';
+  };
+
   // 为分镜生成角色配音（异步，不阻塞视频生成）
   const generateVoiceover = useCallback(async (sb: DramartStoryboard): Promise<string | null> => {
     try {
@@ -2327,11 +2935,11 @@ export const DramaWorkshopPage: React.FC = () => {
         lines.push((sb.rawScript || prompt).slice(0, 100));
       }
 
-      // 找到分镜中第一个角色及其音色配置
+      // 找到分镜中第一个角色，使用固定音色分配机制（同一角色始终使用同一音色）
       const charName = sb.characters?.[0] || '';
       const charAsset = charName ? project?.characters.find(c => c.name === charName || charName.includes(c.name) || c.name.includes(charName)) : null;
-      const voiceConfig = charAsset ? parseVoiceConfig(charAsset.voice as any) : null;
-      const voiceId = voiceConfig?.voiceId || voiceCfg.defaultModel || 'alloy';
+      const voice = getCharacterVoice(charAsset || { name: charName });
+      const voiceId = voice.id;
 
       // 合并所有台词为一段文本
       const fullText = lines.join('。');
@@ -2352,6 +2960,16 @@ export const DramaWorkshopPage: React.FC = () => {
     if (!id) { showToast('请先选择分镜', 'error'); return; }
     const sb = project?.storyboards.find(s => s.id === id);
     if (!sb) { showToast('分镜不存在', 'error'); return; }
+
+    // 视频生成前检查：分镜中出镜角色是否已生成参考图（参考火山剧创逻辑）
+    const missingChars = (sb.characters || []).filter(cn => {
+      const charAsset = project?.characters.find(c => c.name === cn || cn.includes(c.name) || c.name.includes(cn));
+      return charAsset && !charAsset.img;
+    });
+    if (missingChars.length) {
+      showToast('当前分镜角色「' + missingChars.join('、') + '」形象尚未生成，请先完成角色形象生成后再发起视频生成', 'warning');
+    }
+
     setSbStatus(s => ({ ...s, [id]: 'generating' }));
     setSbUrl(u => ({ ...u, [id]: '' }));
 
@@ -2365,14 +2983,38 @@ export const DramaWorkshopPage: React.FC = () => {
       try {
         const aspect = project?.ratio || '16:9';
         const urls: string[] = [];
+        // 构建角色音色约束提示词（确保同一角色在全片中音色一致，无论是否配置了语音API）
+        const voiceConstraint = buildCharacterVoiceConstraint(sb);
+        const basePrompt = (promptOverride && promptOverride.trim()) || sb.videoPrompt;
+        const finalVideoPrompt = voiceConstraint ? (voiceConstraint + '\n\n' + basePrompt) : basePrompt;
+
+        // 收集分镜引用的资产图片作为参考图（确保视频模型能看到角色/场景/道具的实际形象）
+        const referenceImages: string[] = [];
+        const findAssetImg = (kind: 'character' | 'scene' | 'prop', name: string): string | undefined => {
+          const list = kind === 'character' ? project?.characters : kind === 'scene' ? project?.scenes : project?.props;
+          const asset = list?.find(a => a.name === name || name.includes(a.name) || a.name.includes(name));
+          return asset?.img;
+        };
+        (sb.characters || []).forEach(cn => { const img = findAssetImg('character', cn); if (img) referenceImages.push(img); });
+        (sb.scenes || []).forEach(sn => { const img = findAssetImg('scene', sn); if (img) referenceImages.push(img); });
+        (sb.props || []).forEach(pn => { const img = findAssetImg('prop', pn); if (img) referenceImages.push(img); });
+
         for (let i = 0; i < count; i++) {
-          const res = await toolService.generateVideo((promptOverride && promptOverride.trim()) || sb.videoPrompt, vc, {
+          const videoOptions: any = {
             model: params?.model || vc.defaultModel,
             aspectRatio: aspect,
             resolution: params?.resolution || project?.resolution || '720p',
             duration: params?.duration || sb.duration,
             format: params?.format || 'mp4',
-          });
+          };
+          // 如果有参考图片，传入参考图参数（支持 seedance2.5 等图生视频模型）
+          if (referenceImages.length > 0) {
+            videoOptions.referenceImages = referenceImages;
+            videoOptions.images = referenceImages;
+            // 第一张图作为主参考图
+            videoOptions.image = referenceImages[0];
+          }
+          const res = await toolService.generateVideo(finalVideoPrompt, vc, videoOptions);
           if (res?.url) urls.push(await localizeBlobAware(res.url, 'dramart-vid', 'mp4'));
         }
         if (urls.length) {
@@ -2404,11 +3046,88 @@ export const DramaWorkshopPage: React.FC = () => {
   const editSbPrompt = useCallback((id: string, text: string) => {
     setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, videoPrompt: text } : x) }) : p);
   }, []);
+
+  // 图片加载失败兜底：通过主进程 IPC 获取图片转 data URL（不受 CORS 限制），并更新资产图片
+  const handleAssetImgError = useCallback(async (assetId: string, originalSrc: string) => {
+    if (!originalSrc || originalSrc.startsWith('data:') || originalSrc.startsWith('blob:')) return;
+    try {
+      const api = (window as any)?.yijingAPI?.system;
+      if (api?.urlToDataUrl) {
+        const res = await api.urlToDataUrl({ url: originalSrc });
+        if (res?.ok && res?.dataUrl) {
+          setProject(p => {
+            if (!p) return p;
+            const updateList = (list: any[]) => list.map(a => a.id === assetId ? { ...a, img: res.dataUrl } : a);
+            return {
+              ...p,
+              characters: updateList(p.characters),
+              scenes: updateList(p.scenes),
+              props: updateList(p.props),
+            };
+          });
+          return;
+        }
+      }
+      // 降级：渲染进程 fetch 转 data URL
+      const resp = await fetch(originalSrc);
+      if (resp.ok) {
+        const blob = await resp.blob();
+        if (blob && blob.size) {
+          const dataUrl = await new Promise<string>((resolve, reject) => {
+            const fr = new FileReader();
+            fr.onload = () => resolve(String(fr.result || ''));
+            fr.onerror = () => reject(fr.error);
+            fr.readAsDataURL(blob);
+          });
+          if (dataUrl) {
+            setProject(p => {
+              if (!p) return p;
+              const updateList = (list: any[]) => list.map(a => a.id === assetId ? { ...a, img: dataUrl } : a);
+              return {
+                ...p,
+                characters: updateList(p.characters),
+                scenes: updateList(p.scenes),
+                props: updateList(p.props),
+              };
+            });
+          }
+        }
+      }
+    } catch { /* 忽略，保留原图 */ }
+  }, []);
   const addSbAsset = useCallback((id: string, kind: 'character' | 'scene' | 'prop', name: string) => {
     setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? ({ ...x,
       characters: kind === 'character' ? (x.characters.includes(name) ? x.characters : [...x.characters, name]) : x.characters,
       scenes: kind === 'scene' ? (x.scenes.includes(name) ? x.scenes : [...x.scenes, name]) : x.scenes,
       props: kind === 'prop' ? (x.props.includes(name) ? x.props : [...x.props, name]) : x.props,
+    }) : x) }) : p);
+  }, []);
+  const replaceSbAsset = useCallback((id: string, kind: 'character' | 'scene' | 'prop', oldName: string, newName: string) => {
+    setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => {
+      if (x.id !== id) return x;
+      // 更新资产列表
+      const updated = {
+        ...x,
+        characters: kind === 'character' ? x.characters.map(n => n === oldName ? newName : n) : x.characters,
+        scenes: kind === 'scene' ? x.scenes.map(n => n === oldName ? newName : n) : x.scenes,
+        props: kind === 'prop' ? x.props.map(n => n === oldName ? newName : n) : x.props,
+      };
+      // 同时更新视频提示词中的引用 <旧名称> → <新名称>
+      if (x.videoPrompt && oldName && newName && oldName !== newName) {
+        const oldRef = '<' + oldName + '>';
+        const newRef = '<' + newName + '>';
+        if (x.videoPrompt.includes(oldRef)) {
+          updated.videoPrompt = x.videoPrompt.split(oldRef).join(newRef);
+        }
+      }
+      return updated;
+    }) }) : p);
+  }, []);
+  const removeSbAsset = useCallback((id: string, kind: 'character' | 'scene' | 'prop', name: string) => {
+    setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? ({ ...x,
+      characters: kind === 'character' ? x.characters.filter(n => n !== name) : x.characters,
+      scenes: kind === 'scene' ? x.scenes.filter(n => n !== name) : x.scenes,
+      props: kind === 'prop' ? x.props.filter(n => n !== name) : x.props,
     }) : x) }) : p);
   }, []);
   const selectSbVideo = useCallback((id: string, url: string) => {
@@ -2427,7 +3146,7 @@ export const DramaWorkshopPage: React.FC = () => {
 
   const updateAssetImg = useCallback((id: string, img: string) => {
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === id ? { ...a, img, variants: a.variants?.map(v => v.label === '主形象' ? { ...v, img } : v) } : a),
+      characters: p.characters.map(a => a.id === id ? { ...a, img, variants: a.variants?.map(v => v.label === kindTerm(a.kind).main ? { ...v, img } : v) } : a),
       scenes: p.scenes.map(a => a.id === id ? { ...a, img } : a),
       props: p.props.map(a => a.id === id ? { ...a, img } : a),
     }) : p);
@@ -2452,12 +3171,14 @@ export const DramaWorkshopPage: React.FC = () => {
     }) : p);
   }, [showToast]);
 
-  const addVariant = useCallback((id: string) => {
+  const addVariant = useCallback((id: string): string => {
+    const newId = 'va_' + Date.now().toString(36);
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === id ? { ...a, variants: [...(a.variants || []), { id: 'va_' + Date.now().toString(36), label: kindTerm(a.kind).variant + ((a.variants?.length || 0) + 1) }] } : a),
-      scenes: p.scenes.map(a => a.id === id ? { ...a, variants: [...(a.variants || []), { id: 'va_' + Date.now().toString(36), label: kindTerm(a.kind).variant + ((a.variants?.length || 0) + 1) }] } : a),
-      props: p.props.map(a => a.id === id ? { ...a, variants: [...(a.variants || []), { id: 'va_' + Date.now().toString(36), label: kindTerm(a.kind).variant + ((a.variants?.length || 0) + 1) }] } : a),
+      characters: p.characters.map(a => a.id === id ? { ...a, variants: [...(a.variants || []), { id: newId, label: kindTerm(a.kind).variant + ((a.variants?.length || 0) + 1) }] } : a),
+      scenes: p.scenes.map(a => a.id === id ? { ...a, variants: [...(a.variants || []), { id: newId, label: kindTerm(a.kind).variant + ((a.variants?.length || 0) + 1) }] } : a),
+      props: p.props.map(a => a.id === id ? { ...a, variants: [...(a.variants || []), { id: newId, label: kindTerm(a.kind).variant + ((a.variants?.length || 0) + 1) }] } : a),
     }) : p);
+    return newId;
   }, []);
 
   const updateVariantImg = useCallback((assetId: string, variantId: string, img: string) => {
@@ -2492,9 +3213,9 @@ export const DramaWorkshopPage: React.FC = () => {
 
   const setVariantCurrent = useCallback((assetId: string, variantId: string, img: string) => {
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === '主形象' ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
-      scenes: p.scenes.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === '主形象' ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
-      props: p.props.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === '主形象' ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
+      characters: p.characters.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === kindTerm(a.kind).main ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
+      scenes: p.scenes.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === kindTerm(a.kind).main ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
+      props: p.props.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === kindTerm(a.kind).main ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
     }) : p);
   }, []);
 
@@ -2503,16 +3224,49 @@ export const DramaWorkshopPage: React.FC = () => {
     if (!a) return;
     const n = [1, 2, 4, 9].includes(opts.count || 1) ? (opts.count || 1) : 1;
     const size = genSize(opts.ratio || '16:9', opts.resolution || '1k');
-    showToast('变装生成中…', 'info');
-    const base = prompt || (a.name + '，' + a.imageSummary);
+    const curVariant = (a.variants || []).find(v => v.id === variantId);
+    const isRedraw = !!curVariant?.img; // 当前变装已有图片则为重绘
+    // 获取首图作为参考图（主形象的图片）
+    const mainVariant = (a.variants || []).find(v => v.label === kindTerm(a.kind).main);
+    const referenceImage = mainVariant?.img || a.img || '';
+    showToast(isRedraw ? '重绘生成中…' : '变装生成中…', 'info');
+    // 变装提示词：如果用户输入了提示词，使用用户输入的；否则使用默认的变装提示词（保持人物外貌不变，仅更换服装）
+    // 因为有首图作为参考图，不需要整体首图的提示词参数
+    const defaultVarPrompt = a.kind === 'character'
+      ? '保持人物外貌、脸型、发型、身材、肤色完全不变，仅更换服装、鞋子和配饰，背景保持纯白色'
+      : '保持主体形态、材质、颜色完全不变，仅调整细节或角度，背景保持纯白色';
+    const base = prompt?.trim() || defaultVarPrompt;
     const urls: string[] = [];
     for (let i = 0; i < n; i++) {
-      const url = await imageFetcher(base, { model: opts.model, size }).catch(() => null);
+      const url = await imageFetcher(base, { model: opts.model, size, referenceImage: referenceImage || undefined }).catch(() => null);
       if (url) urls.push(url);
     }
-    if (urls.length) { setVariantCandidates(assetId, variantId, urls, base); showToast('已生成 ' + urls.length + ' 张变装图，请选择设为当前变装', 'success'); }
+    if (urls.length) {
+      if (isRedraw) {
+        // 重绘：保存到候选列表，让用户选择设为当前变装
+        setVariantCandidates(assetId, variantId, urls, base);
+        showToast('已生成 ' + urls.length + ' 张候选图，请选择设为当前变装', 'success');
+      } else {
+        // 生成新变装：自动将第一张保存到当前变装，其余创建新变装
+        if (urls[0]) {
+          updateVariantImg(assetId, variantId, urls[0]);
+        }
+        // 多余的图片自动创建新变装，排到当前变装后面
+        for (let i = 1; i < urls.length; i++) {
+          const newId = 'va_' + Date.now().toString(36) + '_' + i;
+          const term = kindTerm(a.kind);
+          const newLabel = term.variant + ((a.variants?.length || 0) + i);
+          setProject(p => p ? ({ ...p,
+            characters: p.characters.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i] }] } : asset),
+            scenes: p.scenes.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i] }] } : asset),
+            props: p.props.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i] }] } : asset),
+          }) : p);
+        }
+        showToast('已生成 ' + urls.length + ' 张变装图，自动保存到变装列表', 'success');
+      }
+    }
     else showToast('未配置图像 API，生成失败', 'error');
-  }, [assetById, imageFetcher, setVariantCandidates, showToast]);
+  }, [assetById, imageFetcher, setVariantCandidates, updateVariantImg, showToast]);
 
   const genAsset = useCallback(async (assetId: string, prompt: string, opts: { model?: string; size?: string } = {}): Promise<boolean> => {
     const a = assetById(assetId);
@@ -2566,7 +3320,7 @@ export const DramaWorkshopPage: React.FC = () => {
   const addNewAsset = useCallback((data: { name: string; kind: DramartAssetItem['kind']; imageSummary: string; prompt?: string; img?: string; voice?: string }) => {
     const trimmed = String(data.name || '').trim();
     if (!trimmed) { showToast('请填写名称', 'error'); return; }
-    const item: DramartAssetItem = { id: 'as_' + Date.now().toString(36), name: trimmed, kind: data.kind, imageSummary: data.imageSummary || trimmed, hue: 210, img: data.img, prompt: data.prompt, count: 1, voice: data.voice, variants: [{ id: 'va_' + Date.now().toString(36), label: '主形象', img: data.img }] };
+    const item: DramartAssetItem = { id: 'as_' + Date.now().toString(36), name: trimmed, kind: data.kind, imageSummary: data.imageSummary || trimmed, hue: 210, img: data.img, prompt: data.prompt, count: 1, voice: data.voice, variants: [{ id: 'va_' + Date.now().toString(36), label: kindTerm(data.kind).main, img: data.img }] };
     setProject(p => p ? ({ ...p,
       characters: data.kind === 'character' ? [...p.characters, item] : p.characters,
       scenes: data.kind === 'scene' ? [...p.scenes, item] : p.scenes,
@@ -2580,6 +3334,33 @@ export const DramaWorkshopPage: React.FC = () => {
     try { addAsset({ name: a.name, type: 'image', path: a.img, thumbnail: a.img, size: 0, sourceType: 'drama' }); showToast('已保存到资产库', 'success'); }
     catch { showToast('保存到资产库失败', 'error'); }
   }, [addAsset, showToast]);
+
+  // 下载资产图片到本地电脑
+  const downloadAssetImage = useCallback(async (imgUrl: string, fileName: string) => {
+    if (!imgUrl) { showToast('暂无图片可下载', 'error'); return; }
+    const api = (window as any)?.yijingAPI?.system?.saveFileFromData;
+    if (typeof api !== 'function') { showToast('当前环境不支持下载', 'error'); return; }
+    try {
+      let src = imgUrl;
+      // blob URL 先转 data URL
+      if (String(imgUrl).startsWith('blob:')) {
+        const resp = await fetch(imgUrl);
+        const blob = await resp.blob();
+        src = await new Promise<string>(res => {
+          const fr = new FileReader();
+          fr.onload = () => res(String(fr.result || ''));
+          fr.onerror = () => res('');
+          fr.readAsDataURL(blob);
+        });
+        if (!src) { showToast('读取图片失败', 'error'); return; }
+      }
+      // 远程 URL 或 file:// 直接交给主进程
+      const r = await api({ dataUrl: src, suggestedName: fileName });
+      if (r?.ok) showToast('已下载到本地', 'success');
+      else if (r?.canceled) { /* 用户取消，不提示 */ }
+      else showToast('下载失败', 'error');
+    } catch (e: any) { showToast('下载失败：' + (e?.message || String(e)), 'error'); }
+  }, [showToast]);
 
   // 编辑分镜提示词并重新生成当前片段（视频页右上角「编辑」）
   const regenerateWithPrompt = useCallback((id: string, prompt: string) => {
@@ -2625,7 +3406,7 @@ export const DramaWorkshopPage: React.FC = () => {
   }, [showToast]);
 
   const openAiGen = useCallback((a: DramartAssetItem) => {
-    const mainVariant = a.variants?.find(v => v.label === '主形象') || a.variants?.[0];
+    const mainVariant = a.variants?.find(v => v.label === kindTerm(a.kind).main) || a.variants?.[0];
     setGenOpen({ assetId: a.id, variantId: mainVariant?.id || '' });
   }, []);
 
@@ -2731,7 +3512,7 @@ export const DramaWorkshopPage: React.FC = () => {
             <div className="dwc-progress-track"><div className="dwc-progress-fill" style={{ width: `${analyzing.percent}%` }} /></div>
             <div className="dwc-steps">
               {DRAMART_ANALYSIS_STEPS.map((s, i) => {
-                const isDone = analyzing.percent >= ((i + 1) / Math.max(analyzing.total, DRAMART_ANALYSIS_STEPS.length)) * 100;
+                const isDone = i < analyzing.step;
                 const isActive = analyzing.label === s;
                 return (
                   <div key={s} className={`dwc-step${isActive ? ' active' : ''}${isDone ? ' done' : ''}`}>
@@ -2822,7 +3603,7 @@ export const DramaWorkshopPage: React.FC = () => {
                           </div>
                         )}
                         <div className="dwc-card-thumb" style={a.img ? undefined : thumbStyle(a.hue, a.kind)}>
-                          {a.img ? <img src={a.img} alt={a.name} className="dwc-card-thumb-img" /> : <ImageIcon size={36} />}
+                          {a.img ? <img src={a.img} alt={a.name} className="dwc-card-thumb-img" onError={(e) => { const src = (e.target as HTMLImageElement).src; if (src && !src.startsWith('data:')) handleAssetImgError(a.id, src); }} /> : <ImageIcon size={36} />}
                         </div>
                       </div>
                       <div className="dwc-card-caption">{a.name}</div>
@@ -2844,6 +3625,7 @@ export const DramaWorkshopPage: React.FC = () => {
                       onClose={() => setDetailAssetId(null)}
                       onRename={renameAsset}
                       onCollect={collectAsset}
+                      onDownload={downloadAssetImage}
                       onAddVariant={addVariant}
                       onGenVariant={genVariant}
                       onSetVariantCurrent={setVariantCurrent}
@@ -2851,6 +3633,7 @@ export const DramaWorkshopPage: React.FC = () => {
                       onPicker={() => setPickerAsset(assetById(detailAssetId)!)}
                       onUpload={() => setUploadAsset(assetById(detailAssetId)!)}
                       onOpenGen={openGen}
+                      onImgError={handleAssetImgError}
                     />
                   </div>
                 </div>
@@ -2933,6 +3716,8 @@ export const DramaWorkshopPage: React.FC = () => {
           onEditPrompt={editSbPrompt}
           onSelectVideo={selectSbVideo}
           onAddAsset={addSbAsset}
+          onReplaceAsset={replaceSbAsset}
+          onRemoveAsset={removeSbAsset}
           onSaveVideo={collectStoryboardVideo}
           onDownloadVideo={downloadStoryboardVideo}
         />

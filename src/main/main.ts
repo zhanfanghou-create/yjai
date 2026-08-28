@@ -1,4 +1,4 @@
-﻿import { app, BrowserWindow, ipcMain, shell, dialog, session } from 'electron';
+import { app, BrowserWindow, ipcMain, shell, dialog, session } from 'electron';
 import * as crypto from 'crypto';
 import * as os from 'os';
 import * as path from 'path';
@@ -469,9 +469,33 @@ ipcMain.handle('system:downloadToAssets', async (_event, opts: { url?: string; s
         else if (/audio\/wav/.test(meta)) ext = 'wav';
       }
     } else {
-      // 3) 远程 URL
-      const r = await fetch(src);
-      if (!r.ok) return { ok: false, error: `下载失败 HTTP ${r.status}` };
+      // 3) 远程 URL：带常见 headers 下载，避免防盗链/UA 限制导致 403
+      let r: Response | null = null;
+      const fetchOpts: RequestInit = {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+          'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+        },
+      };
+      try {
+        r = await fetch(src, fetchOpts);
+      } catch {
+        r = null;
+      }
+      // 第一次失败时，尝试带 Referer 重试
+      if (!r || !r.ok) {
+        try {
+          const host = new URL(src).hostname;
+          r = await fetch(src, {
+            ...fetchOpts,
+            headers: { ...fetchOpts.headers, 'Referer': `https://${host}/` },
+          } as RequestInit);
+        } catch {
+          r = null;
+        }
+      }
+      if (!r || !r.ok) return { ok: false, error: `下载失败 HTTP ${r?.status || 'network'}` };
       buffer = Buffer.from(await r.arrayBuffer());
       if (!ext) {
         const ct = r.headers.get('content-type') || '';
@@ -491,6 +515,33 @@ ipcMain.handle('system:downloadToAssets', async (_event, opts: { url?: string; s
     const fpath = path.join(assetsDir, fname);
     fs.writeFileSync(fpath, buffer);
     return { ok: true, path: fpath };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
+});
+
+// IPC: 将远程 URL 转换为 data URL（base64），解决渲染进程 fetch 受 CORS 限制导致图片无法显示的问题
+ipcMain.handle('system:urlToDataUrl', async (_event, opts: { url?: string }) => {
+  try {
+    const src = String(opts?.url || '').trim();
+    if (!src) return { ok: false, error: '缺少 url' };
+    // 已经是 data URL 或本地路径，直接返回
+    if (src.startsWith('data:') || src.startsWith('blob:') || /^[a-zA-Z]:[\\/]/.test(src) || src.startsWith('file://')) {
+      return { ok: true, dataUrl: src };
+    }
+    // 主进程 fetch 不受 CORS 限制
+    const r = await fetch(src, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+      },
+    });
+    if (!r.ok) return { ok: false, error: `下载失败 HTTP ${r.status}` };
+    const buffer = Buffer.from(await r.arrayBuffer());
+    if (!buffer || !buffer.length) return { ok: false, error: '下载内容为空' };
+    const ct = r.headers.get('content-type') || 'image/png';
+    const dataUrl = `data:${ct};base64,${buffer.toString('base64')}`;
+    return { ok: true, dataUrl };
   } catch (e) {
     return { ok: false, error: (e as Error).message };
   }
@@ -743,7 +794,7 @@ async function createWindow() {
       nodeIntegration: false,
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js'),
-      webSecurity: true,
+      webSecurity: false,
     },
     title: '艺镜AI.正式版',
   });
@@ -865,21 +916,30 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     const normalizedBase = normalizeApiBase(baseUrl);
     const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.com(?:\/|$)/i.test(normalizedBase);
     const isGrsaiHost = /:\/\/grsai\.dakka\.com\.cn(?:\/|$)/i.test(normalizedBase);
+    // 火山引擎 Agent Plan：baseUrl 形如 https://ark.cn-beijing.volces.com/api/plan
+    const isVolcenginePlan = /:\/\/ark\.cn-beijing\.volces\.com\/api\/plan/i.test(normalizedBase);
     const isAgnesVideo = isAgnesHost && (
       config.apiType === 'seedance-video' ||
       /agnes-video/i.test(String(model || '')) ||
       (config.apiType === 'openai-completions' && /video|seedance/i.test(String(model || '')))
     );
-    const isOpenAIImageGen = !isGrsaiHost && !isAgnesVideo && (
+    // 火山引擎 Agent Plan 视频生成：apiType 为 openai-completions 且模型名含 video/seedance
+    const isVolcenginePlanVideo = isVolcenginePlan && (
+      config.apiType === 'openai-completions' ||
+      /video|seedance/i.test(String(model || ''))
+    );
+    const isOpenAIImageGen = !isGrsaiHost && !isAgnesVideo && !isVolcenginePlanVideo && (
       config.apiType === 'openai-generations' ||
       isAgnesHost ||
       (model && /dall|gpt-image|image/i.test(String(model)))
     );
-    const url = isAgnesVideo
-      ? buildVersionedApiUrl(normalizedBase, '/videos')
-      : isOpenAIImageGen
-        ? buildVersionedApiUrl(normalizedBase, '/images/generations')
-        : buildVersionedApiUrl(normalizedBase, '/api/generate');
+    const url = isVolcenginePlanVideo
+      ? `${normalizedBase}/v3/contents/generations/tasks`
+      : isAgnesVideo
+        ? buildVersionedApiUrl(normalizedBase, '/videos')
+        : isOpenAIImageGen
+          ? buildVersionedApiUrl(normalizedBase, '/images/generations')
+          : buildVersionedApiUrl(normalizedBase, '/api/generate');
 
     const isGenerationRequest = Boolean(
       config.apiType === 'openai-generations' ||
@@ -898,8 +958,39 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     );
 
     const aspectValue = config.aspectRatio || config.aspect_ratio || config.ratio || aspectRatio;
-    const imageSizeValue = config.imageSize || config.image_size || config.size;
+    const rawImageSize = config.imageSize || config.image_size || config.size;
     const resolutionValue = config.resolution || config.pixel || config.pixels;
+
+    // 把 1K/2K/3K/4K + 比例转换成 WIDTHxHEIGHT 格式（兼容火山引擎等要求 WIDTHxHEIGHT 或 2k/3k/4k 的接口）
+    const convertImageSize = (size: string, ratio?: string): string => {
+      if (!size) return size;
+      if (/^\d+x\d+$/i.test(size)) return size;
+      if (/^[234]k$/i.test(size)) return size.toLowerCase();
+      const kMatch = size.match(/^(\d+)k$/i);
+      if (kMatch) {
+        const k = parseInt(kMatch[1], 10);
+        let width: number;
+        switch (k) {
+          case 1: width = 1280; break;
+          case 2: width = 2048; break;
+          case 3: width = 3072; break;
+          case 4: width = 4096; break;
+          default: width = 1024;
+        }
+        let height = width;
+        if (ratio) {
+          const ratioMatch = ratio.match(/^(\d+):(\d+)$/);
+          if (ratioMatch) {
+            const rw = parseInt(ratioMatch[1], 10);
+            const rh = parseInt(ratioMatch[2], 10);
+            height = Math.round(width * rh / rw);
+          }
+        }
+        return `${width}x${height}`;
+      }
+      return size;
+    };
+    const imageSizeValue = convertImageSize(rawImageSize, aspectValue);
     const sourceImage = config.sourceImage || config.image || (Array.isArray(config.images) ? config.images[0] : undefined);
     const imagesValue = Array.isArray(config.images) && config.images.length > 0
       ? config.images
@@ -908,20 +999,30 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
         : [];
     const isPanorama720 = config.panoramaType === '720' || /720°?全景|720 panorama/i.test(String(prompt || ''));
 
-    const body: any = isAgnesVideo
+    const body: any = isVolcenginePlanVideo
       ? {
           model: model || '',
-          prompt,
-          aspectRatio: aspectValue || '16:9',
+          content: [{ type: 'text', text: prompt }],
+          parameters: {
+            ratio: aspectValue || '16:9',
+            resolution: resolutionValue || '720p',
+            duration: config.duration || 5,
+          },
         }
-      : isOpenAIImageGen
+      : isAgnesVideo
         ? {
             model: model || '',
             prompt,
-            size: imageSizeValue || '1024x1024',
-            n: config.n || 1,
+            aspectRatio: aspectValue || '16:9',
           }
-        : { model, prompt, replyType: config.replyType || 'json' };
+        : isOpenAIImageGen
+          ? {
+              model: model || '',
+              prompt,
+              size: imageSizeValue || '1024x1024',
+              n: config.n || 1,
+            }
+          : { model, prompt, replyType: config.replyType || 'json' };
 
     if (imagesValue.length > 0) {
       body.image = imagesValue[0];
@@ -938,7 +1039,15 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       body.resolution = resolutionValue || '2K';
     }
 
-    if (isAgnesVideo) {
+    if (isVolcenginePlanVideo) {
+      // 火山引擎 Agent Plan 视频：参数已在 body.parameters，支持参考图
+      if (imagesValue.length > 0) {
+        body.content = [
+          ...imagesValue.map((img: string) => ({ type: 'image_url', image_url: { url: img } })),
+          { type: 'text', text: prompt },
+        ];
+      }
+    } else if (isAgnesVideo) {
       if (imagesValue.length > 0) body.images = imagesValue;
       if (sourceImage) body.image = sourceImage;
       if (config.duration) {
@@ -1150,7 +1259,11 @@ ipcMain.handle('grsai:checkResult', async (_event, opts: any) => {
     if (!baseUrl) throw new Error('baseUrl required');
     if (!id) throw new Error('id required');
 
-    const url = `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
+    const normalizedBase = normalizeApiBase(baseUrl);
+    const isVolcenginePlan = /:\/\/ark\.cn-beijing\.volces\.com\/api\/plan/i.test(normalizedBase);
+    const url = isVolcenginePlan
+      ? `${normalizedBase}/v3/contents/generations/tasks/${encodeURIComponent(id)}`
+      : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
     const response = await fetch(url, {
       method: 'GET',
       headers: { 'Authorization': `Bearer ${apiKey}` },
@@ -1290,10 +1403,44 @@ ipcMain.handle('openai:generate', async (_event, config: any) => {
     const imagesValue = Array.isArray(config.images) && config.images.length > 0 ? config.images : sourceImage ? [sourceImage] : [];
     const isPanorama720 = config.panoramaType === '720' || /720°?全景|720 panorama/i.test(String(prompt || ''));
     const passthroughKeys = ['aspectRatio', 'aspect_ratio', 'ratio', 'resolution', 'imageRatio', 'imageQuality', 'imageClarity', 'sourceImage', 'referenceImages', 'images', 'image', 'mediaFeature', 'sourceFeature', 'workflowProject', 'githubProject', 'apiCapability', 'outputType', 'panoramaType', 'projectPromptHint', 'gridSplit', 'gridCount', 'viewMode', 'multiView', 'lightingSettings', 'lightingDirection', 'lightingView', 'hdFeature', 'splitMode', 'transparentBackground'];
+    
+    // 把 1K/2K/3K/4K + 比例转换成 WIDTHxHEIGHT 格式
+    const aspectValueForSize = config.ratio || config.aspectRatio || config.aspect_ratio || config.imageRatio;
+    const rawSize = size || config.imageSize || config.size;
+    const convertSize = (s: string, r?: string): string => {
+      if (!s) return s;
+      if (/^\d+x\d+$/i.test(s)) return s;
+      if (/^[234]k$/i.test(s)) return s.toLowerCase();
+      const kMatch = s.match(/^(\d+)k$/i);
+      if (kMatch) {
+        const k = parseInt(kMatch[1], 10);
+        let width: number;
+        switch (k) {
+          case 1: width = 1280; break;
+          case 2: width = 2048; break;
+          case 3: width = 3072; break;
+          case 4: width = 4096; break;
+          default: width = 1024;
+        }
+        let height = width;
+        if (r) {
+          const ratioMatch = r.match(/^(\d+):(\d+)$/);
+          if (ratioMatch) {
+            const rw = parseInt(ratioMatch[1], 10);
+            const rh = parseInt(ratioMatch[2], 10);
+            height = Math.round(width * rh / rw);
+          }
+        }
+        return `${width}x${height}`;
+      }
+      return s;
+    };
+    const convertedSize = convertSize(rawSize, aspectValueForSize);
+    
     const body: any = {
       model: model || '',
       prompt: config.projectPromptHint ? `${prompt || ''}\n\n${config.projectPromptHint}` : prompt,
-      size: size || config.imageSize || config.size || '1024x1024',
+      size: convertedSize || '1024x1024',
       n: n || 1,
     };
     passthroughKeys.forEach((key) => { if (config[key] !== undefined) body[key] = config[key]; });
@@ -2176,8 +2323,14 @@ ipcMain.handle('canvas:list', async () => {
 
 ipcMain.handle('canvas:load', async (_event, filePath: string) => {
   try {
-    if (!fs.existsSync(filePath)) return { ok: false, error: 'file-not-found' };
-    const data = fs.readFileSync(filePath, 'utf-8');
+    // 安全校验：确保加载的画布文件在 canvases 目录内，防止路径遍历
+    const canvasesDir = path.resolve(app.getPath('userData'), 'canvases');
+    const resolvedPath = path.resolve(filePath);
+    if (!resolvedPath.startsWith(canvasesDir + path.sep)) {
+      return { ok: false, error: '路径越界：只能加载 canvases 目录内的画布文件' };
+    }
+    if (!fs.existsSync(resolvedPath)) return { ok: false, error: 'file-not-found' };
+    const data = fs.readFileSync(resolvedPath, 'utf-8');
     return { ok: true, data };
   } catch (error) {
     return { ok: false, error: (error as Error).message };
@@ -2185,9 +2338,20 @@ ipcMain.handle('canvas:load', async (_event, filePath: string) => {
 });
 
 // IPC: Memory file system operations
+// 安全路径校验：防止路径遍历攻击（如 ../../etc/passwd）
+const safeMemoryPath = (relativePath: string): string => {
+  const userDataDir = path.resolve(app.getPath('userData'));
+  const fullPath = path.resolve(userDataDir, relativePath);
+  // 确保解析后的路径仍在 userData 目录内
+  if (fullPath !== userDataDir && !fullPath.startsWith(userDataDir + path.sep)) {
+    throw new Error('路径越界：禁止访问 userData 目录之外的文件');
+  }
+  return fullPath;
+};
+
 ipcMain.handle('memory:writeFile', async (_event, filePath: string, content: string) => {
   try {
-    const fullPath = path.join(app.getPath('userData'), filePath);
+    const fullPath = safeMemoryPath(filePath);
     await fs.promises.writeFile(fullPath, content, 'utf-8');
     return { ok: true };
   } catch (error) {
@@ -2197,7 +2361,7 @@ ipcMain.handle('memory:writeFile', async (_event, filePath: string, content: str
 
 ipcMain.handle('memory:readFile', async (_event, filePath: string) => {
   try {
-    const fullPath = path.join(app.getPath('userData'), filePath);
+    const fullPath = safeMemoryPath(filePath);
     const content = await fs.promises.readFile(fullPath, 'utf-8');
     return { ok: true, content };
   } catch (error) {
@@ -2210,7 +2374,7 @@ ipcMain.handle('memory:readFile', async (_event, filePath: string) => {
 
 ipcMain.handle('memory:deleteFile', async (_event, filePath: string) => {
   try {
-    const fullPath = path.join(app.getPath('userData'), filePath);
+    const fullPath = safeMemoryPath(filePath);
     await fs.promises.unlink(fullPath);
     return { ok: true };
   } catch (error) {
@@ -2223,7 +2387,7 @@ ipcMain.handle('memory:deleteFile', async (_event, filePath: string) => {
 
 ipcMain.handle('memory:listFiles', async (_event, dirPath: string) => {
   try {
-    const fullPath = path.join(app.getPath('userData'), dirPath);
+    const fullPath = safeMemoryPath(dirPath);
     if (!fs.existsSync(fullPath)) {
       return { ok: true, files: [] };
     }
@@ -2236,7 +2400,7 @@ ipcMain.handle('memory:listFiles', async (_event, dirPath: string) => {
 
 ipcMain.handle('memory:ensureDir', async (_event, dirPath: string) => {
   try {
-    const fullPath = path.join(app.getPath('userData'), dirPath);
+    const fullPath = safeMemoryPath(dirPath);
     await fs.promises.mkdir(fullPath, { recursive: true });
     return { ok: true };
   } catch (error) {

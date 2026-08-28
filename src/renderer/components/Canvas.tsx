@@ -28,6 +28,7 @@ const DirectorStageModal = React.lazy(() => import('./DirectorStageModal').then(
 const PanoramaViewerModal = React.lazy(() => import('./PanoramaViewerModal').then(m => ({ default: m.PanoramaViewerModal })));
 import { CAMERA_MOVEMENTS, VIDEO_RATIO_OPTIONS, VIDEO_CLARITY_OPTIONS } from '../data/cameraMovements';
 import { CameraMovementGallery } from './CameraMovementGallery';
+import { RichPromptEditor } from './RichPromptEditor';
 import './VideoParamBar.css';
 
 // ==================== 节点模板（LiblibTV 风格） ====================
@@ -72,20 +73,18 @@ const SvgIcon = ({ name, size = 18 }: { name: CanvasIconName; size?: number }) =
   </svg>
 );
 
-// 将输入文本中的 @参考图名 高亮：只有匹配到「已知参考图名称」才加背景色，
-// 参考图名称后面用户输入的文字会自动分隔开，不再有背景色。
-const renderMentionSegments = (text: string, knownNames: string[] = []): React.ReactNode[] => {
-  const nodes: React.ReactNode[] = [];
-  let key = 0;
-  // 仅高亮已知参考图名称：按长度降序匹配，避免短名抢占长名前缀
+// 将输入文本中的 @参考图名 转为高亮 HTML：只有匹配到「已知参考图名称」才加背景色
+const renderMentionHTML = (text: string, knownNames: string[] = []): string => {
+  if (!text) return '';
   const sortedNames = [...knownNames].filter(Boolean).sort((a, b) => b.length - a.length);
+  let html = '';
   let i = 0;
-  let buffer = '';
-  const flushBuffer = () => {
-    if (buffer) {
-      nodes.push(<span key={`t${key++}`}>{buffer}</span>);
-      buffer = '';
-    }
+  const escapeChar = (c: string) => {
+    if (c === '<') return '&lt;';
+    if (c === '>') return '&gt;';
+    if (c === '&') return '&amp;';
+    if (c === '\n') return '<br>';
+    return c;
   };
   while (i < text.length) {
     if (text[i] === '@') {
@@ -94,90 +93,315 @@ const renderMentionSegments = (text: string, knownNames: string[] = []): React.R
         if (text.startsWith(`@${name}`, i)) { matchedName = name; break; }
       }
       if (matchedName) {
-        flushBuffer();
-        // 高亮层文本必须与 textarea 内容逐字一致，否则光标位置与可见文字会错位；因此不截断名称
-        nodes.push(
-          <span key={`m${key++}`} className="mention-chip" title={matchedName}>@{matchedName}</span>
-        );
+        const safeName = matchedName.replace(/"/g, '&quot;');
+        html += `<span class="mention-chip" contenteditable="false" data-mention="${safeName}">@${matchedName}</span>`;
         i += matchedName.length + 1;
         continue;
       }
     }
-    buffer += text[i];
+    html += escapeChar(text[i]);
     i += 1;
   }
-  flushBuffer();
-  // 末尾追加换行占位，保证 backdrop 高度与 textarea 一致
-  nodes.push(<span key="tail">{'\u200b'}</span>);
-  return nodes;
+  return html;
 };
 
-// 带 @提及高亮的文本输入：透明文本 textarea + 背后 backdrop 渲染高亮
-const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
+// 安全地从 contenteditable DOM 提取纯文本
+const safeExtractText = (root: HTMLElement): string => {
+  try {
+    let text = '';
+    const walk = (node: Node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        text += node.textContent || '';
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const el = node as HTMLElement;
+        const tag = el.tagName;
+        if (tag === 'BR') {
+          text += '\n';
+        } else if (el.classList && el.classList.contains('mention-chip')) {
+          text += el.textContent || '';
+        } else if (tag === 'DIV' || tag === 'P') {
+          if (text.length > 0 && !text.endsWith('\n')) text += '\n';
+          el.childNodes.forEach(walk);
+        } else {
+          el.childNodes.forEach(walk);
+        }
+      }
+    };
+    root.childNodes.forEach(walk);
+    return text;
+  } catch (e) {
+    return root.textContent || '';
+  }
+};
+
+// 安全获取光标偏移
+const safeGetCaret = (root: HTMLElement): number => {
+  try {
+    const sel = window.getSelection();
+    if (!sel || sel.rangeCount === 0) return 0;
+    const range = sel.getRangeAt(0);
+    if (!root.contains(range.endContainer)) return 0;
+    const pre = range.cloneRange();
+    pre.selectNodeContents(root);
+    pre.setEnd(range.endContainer, range.endOffset);
+    return pre.toString().length;
+  } catch (e) {
+    return 0;
+  }
+};
+
+// 安全设置光标偏移
+const safeSetCaret = (root: HTMLElement, target: number) => {
+  try {
+    const textLen = (root.textContent || '').length;
+    const safeTarget = Math.max(0, Math.min(target, textLen));
+    let found = false;
+    let offset = 0;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    let node = walker.nextNode();
+    while (node) {
+      const len = (node.textContent || '').length;
+      if (offset + len >= safeTarget) {
+        const range = document.createRange();
+        range.setStart(node, Math.max(0, safeTarget - offset));
+        range.collapse(true);
+        const sel = window.getSelection();
+        if (sel) {
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
+        found = true;
+        break;
+      }
+      offset += len;
+      node = walker.nextNode();
+    }
+    if (!found) {
+      const range = document.createRange();
+      range.selectNodeContents(root);
+      range.collapse(false);
+      const sel = window.getSelection();
+      if (sel) {
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    }
+  } catch (e) {
+    // 静默失败
+  }
+};
+
+// 带 @提及高亮的文本输入：基于 contenteditable div，光标与文字天然同层
+// 关键：不使用 dangerouslySetInnerHTML，完全由 ref 手动管理 DOM 内容，
+// 避免 React 渲染阶段重设 innerHTML 导致光标重置到开头（倒着输入）
+const MentionTextarea = React.forwardRef<HTMLDivElement, {
   value: string;
   onChange: (value: string) => void;
-  onKeyDown?: (event: React.KeyboardEvent<HTMLTextAreaElement>) => void;
-  onPointerDown?: (event: React.PointerEvent<HTMLTextAreaElement>) => void;
-  onMouseDown?: (event: React.MouseEvent<HTMLTextAreaElement>) => void;
+  onKeyDown?: (event: React.KeyboardEvent<HTMLDivElement>) => void;
+  onPointerDown?: (event: React.PointerEvent<HTMLDivElement>) => void;
+  onMouseDown?: (event: React.MouseEvent<HTMLDivElement>) => void;
   placeholder?: string;
   rows?: number;
   className?: string;
   mentionNames?: string[];
 }>((props, ref) => {
-  const innerRef = useRef<HTMLTextAreaElement | null>(null);
-  const backdropRef = useRef<HTMLDivElement | null>(null);
+  const editorRef = useRef<HTMLDivElement | null>(null);
   const [mentionOpen, setMentionOpen] = useState(false);
   const [mentionQuery, setMentionQuery] = useState('');
-  const [caret, setCaret] = useState(0);
-  const setRefs = (el: HTMLTextAreaElement | null) => {
-    innerRef.current = el;
+  const caretRef = useRef(0);
+  const isComposingRef = useRef(false);
+  const initializedRef = useRef(false);
+  // 记录上一次从 DOM 提取的文本
+  const lastDomTextRef = useRef('');
+  // 标记下一次 value 变化是否由用户输入导致（用户输入时不更新 DOM）
+  const valueFromUserInputRef = useRef(false);
+
+  const setRefs = (el: HTMLDivElement | null) => {
+    editorRef.current = el;
     if (typeof ref === 'function') ref(el);
-    else if (ref) (ref as React.MutableRefObject<HTMLTextAreaElement | null>).current = el;
+    else if (ref) (ref as React.MutableRefObject<HTMLDivElement | null>).current = el;
   };
-  const syncScroll = () => {
-    if (backdropRef.current && innerRef.current) {
-      backdropRef.current.scrollTop = innerRef.current.scrollTop;
-      backdropRef.current.scrollLeft = innerRef.current.scrollLeft;
+
+  // 同步外部 value 到 DOM
+  // 规则：1) 首次挂载时设置初始内容；2) 外部程序化变更时更新 DOM；
+  //       3) 用户输入导致的 value 变化绝不更新 DOM（避免光标重置）
+  useEffect(() => {
+    const el = editorRef.current;
+    if (!el) return;
+    const newValue = props.value || '';
+
+    // 首次挂载：设置初始内容
+    if (!initializedRef.current) {
+      initializedRef.current = true;
+      const html = renderMentionHTML(newValue, props.mentionNames);
+      if (el.innerHTML !== html) el.innerHTML = html;
+      lastDomTextRef.current = newValue;
+      return;
+    }
+
+    // 用户输入导致的 value 变化：不更新 DOM，只更新记录
+    if (valueFromUserInputRef.current) {
+      valueFromUserInputRef.current = false;
+      lastDomTextRef.current = newValue;
+      return;
+    }
+
+    // 外部 value 与当前 DOM 文本相同：不更新
+    if (newValue === lastDomTextRef.current) return;
+
+    // 外部程序化变更：更新 DOM 并恢复光标和滚动位置
+    lastDomTextRef.current = newValue;
+    const html = renderMentionHTML(newValue, props.mentionNames);
+    if (el.innerHTML !== html) {
+      try {
+        const sel = window.getSelection();
+        const hasFocus = el.contains(document.activeElement) ||
+          (sel && sel.rangeCount > 0 && sel.anchorNode && el.contains(sel.anchorNode));
+        const caret = hasFocus ? safeGetCaret(el) : -1;
+        // 保存滚动位置
+        const scrollTop = el.scrollTop;
+        const scrollLeft = el.scrollLeft;
+        el.innerHTML = html;
+        // 恢复滚动位置
+        el.scrollTop = scrollTop;
+        el.scrollLeft = scrollLeft;
+        if (hasFocus && caret >= 0) {
+          safeSetCaret(el, Math.min(caret, newValue.length));
+        }
+      } catch (e) {
+        // 静默失败
+      }
+    }
+  }, [props.value, props.mentionNames]);
+
+  const handleInput = () => {
+    // 输入法组合期间不提取文本（避免把拼音英文提取进去）
+    if (isComposingRef.current) return;
+    const el = editorRef.current;
+    if (!el) return;
+    try {
+      const text = safeExtractText(el);
+      const caret = safeGetCaret(el);
+      caretRef.current = caret;
+      lastDomTextRef.current = text;
+      // 标记这次 value 变化由用户输入导致，useEffect 中不更新 DOM
+      valueFromUserInputRef.current = true;
+      props.onChange(text);
+      // 检测 @ 唤起
+      const atIdx = text.lastIndexOf('@', Math.max(0, caret - 1));
+      if (atIdx >= 0 && !text.slice(atIdx, caret).includes(' ')) {
+        setMentionQuery(text.slice(atIdx + 1, caret));
+        setMentionOpen(true);
+      } else {
+        setMentionOpen(false);
+      }
+    } catch (e) {
+      // 静默失败
     }
   };
-  // 即梦式 @ 唤起：键入 @ 弹出引用选择，光标处插入 @名称
+
   const pickMention = (name: string) => {
-    const el = innerRef.current; if (!el) return;
-    const v = props.value; const pos = caret;
-    const atIdx = v.lastIndexOf('@', Math.max(0, pos - 1));
-    const start = atIdx >= 0 ? atIdx : pos;
-    const next = v.slice(0, start) + '@' + name + v.slice(pos);
-    props.onChange(next); setMentionOpen(false);
-    requestAnimationFrame(() => { if (el) { const p = start + 1 + name.length; el.setSelectionRange(p, p); el.focus(); } });
+    const el = editorRef.current;
+    if (!el) return;
+    try {
+      const v = lastDomTextRef.current;
+      const pos = caretRef.current;
+      const atIdx = v.lastIndexOf('@', Math.max(0, pos - 1));
+      const start = atIdx >= 0 ? atIdx : pos;
+      const next = v.slice(0, start) + '@' + name + v.slice(pos);
+      // 这是程序化更新，需要更新 DOM
+      valueFromUserInputRef.current = false;
+      lastDomTextRef.current = next;
+      props.onChange(next);
+      setMentionOpen(false);
+      const targetCaret = start + 1 + name.length;
+      requestAnimationFrame(() => {
+        if (editorRef.current) {
+          try {
+            const html = renderMentionHTML(next, props.mentionNames);
+            // 保存滚动位置
+            const scrollTop = editorRef.current.scrollTop;
+            const scrollLeft = editorRef.current.scrollLeft;
+            if (editorRef.current.innerHTML !== html) editorRef.current.innerHTML = html;
+            // 恢复滚动位置
+            editorRef.current.scrollTop = scrollTop;
+            editorRef.current.scrollLeft = scrollLeft;
+            safeSetCaret(editorRef.current, targetCaret);
+            editorRef.current.focus();
+          } catch (e) {
+            // 静默失败
+          }
+        }
+      });
+    } catch (e) {
+      // 静默失败
+    }
   };
-  const handleChange = (v: string) => {
-    props.onChange(v);
-    const el = innerRef.current;
-    if (el) { const pos = el.selectionStart; setCaret(pos); const atIdx = v.lastIndexOf('@', Math.max(0, pos - 1)); if (atIdx >= 0) setMentionQuery(v.slice(atIdx + 1, pos)); }
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    try {
+      if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        requestAnimationFrame(() => {
+          const el = editorRef.current;
+          if (el) {
+            caretRef.current = safeGetCaret(el);
+            setMentionOpen(true);
+            setMentionQuery('');
+          }
+        });
+      }
+      if (e.key === 'Escape') setMentionOpen(false);
+      if ((e.key === 'Enter' || e.key === 'Tab') && mentionOpen) {
+        e.preventDefault();
+        const f = (props.mentionNames || []).find(n => !mentionQuery || n.toLowerCase().includes(mentionQuery.toLowerCase()));
+        if (f) pickMention(f); else setMentionOpen(false);
+        return;
+      }
+      props.onKeyDown?.(e);
+    } catch (err) {
+      // 静默失败
+    }
   };
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) { requestAnimationFrame(() => { const el = innerRef.current; if (el) { setCaret(el.selectionStart); setMentionOpen(true); setMentionQuery(''); } }); }
-    if (e.key === 'Escape') setMentionOpen(false);
-    if ((e.key === 'Enter' || e.key === 'Tab') && mentionOpen) { e.preventDefault(); const f = (props.mentionNames || []).find(n => !mentionQuery || n.toLowerCase().includes(mentionQuery.toLowerCase())); if (f) pickMention(f); else setMentionOpen(false); }
-    props.onKeyDown?.(e);
+
+  const handlePaste = (e: React.ClipboardEvent<HTMLDivElement>) => {
+    try {
+      e.preventDefault();
+      const text = e.clipboardData.getData('text/plain');
+      document.execCommand('insertText', false, text);
+    } catch (err) {
+      // 静默失败
+    }
   };
+
+  // 输入法组合开始：标记为组合中，不提取文本
+  const handleCompositionStart = () => {
+    isComposingRef.current = true;
+  };
+  // 输入法组合结束：组合完成后触发一次 input 处理
+  const handleCompositionEnd = () => {
+    isComposingRef.current = false;
+    // 组合结束后手动触发一次文本提取
+    handleInput();
+  };
+
   const filtered = (props.mentionNames || []).filter(n => !mentionQuery || n.toLowerCase().includes(mentionQuery.toLowerCase()));
+  const minHeight = props.rows ? `${props.rows * 19.5 + 16}px` : undefined;
+
   return (
-    <div className="mention-textarea-wrap">
-      <div ref={backdropRef} className="mention-textarea-backdrop" aria-hidden="true">
-        {renderMentionSegments(props.value, props.mentionNames)}
-      </div>
-      <textarea
+    <div className="mention-textarea-wrap" style={minHeight ? { minHeight } : undefined}>
+      <div
         ref={setRefs}
         className={`mention-textarea-input ${props.className || ''}`}
-        value={props.value}
-        onChange={(event) => handleChange(event.target.value)}
-        onScroll={syncScroll}
+        contentEditable
+        suppressContentEditableWarning
+        onInput={handleInput}
         onKeyDown={handleKeyDown}
+        onPaste={handlePaste}
+        onCompositionStart={handleCompositionStart}
+        onCompositionEnd={handleCompositionEnd}
         onPointerDown={props.onPointerDown}
         onMouseDown={props.onMouseDown}
-        placeholder={props.placeholder}
-        rows={props.rows}
+        data-placeholder={props.placeholder || ''}
         spellCheck={false}
       />
       {mentionOpen && (
@@ -188,6 +412,9 @@ const MentionTextarea = React.forwardRef<HTMLTextAreaElement, {
     </div>
   );
 });
+
+
+
 
 // 3D 导演台默认场景缩略图：透视网格地面 + 人物 + 摄影机，画布上一眼可辨识
 const DirectorScenePreview = () => (
@@ -1141,6 +1368,23 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
       : [];
   });
 
+  // 自动保存：输入文字实时写回节点对象，关闭弹窗再打开不丢失
+  const updateNode = useAppStore(s => s.updateNode);
+  const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(() => {
+      const effectivePrompt = isMediaInputNode ? (inputRows[0]?.text || '') : prompt;
+      const update: Partial<AINode> = { prompt: effectivePrompt };
+      if (isMediaInputNode) {
+        update.options = { ...(node.options || {}), inputRows, generationType: activeFeature };
+      }
+      updateNode(node.id, update);
+    }, 300);
+    return () => { if (saveTimerRef.current) clearTimeout(saveTimerRef.current); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [prompt, inputRows, activeFeature]);
+
   // 强制全能参考：进入弹窗（或上游连线变化）时自动切换到 reference（全能参考）
   useEffect(() => {
     if (forceOmniReference && activeFeature !== 'reference') {
@@ -1788,9 +2032,10 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                 const feature = mediaFeatures.find(item => item.id === row.feature) || mediaFeatures[0];
                 return (
                   <div className="popover-video-row single">
-                    <MentionTextarea
+                    <RichPromptEditor
                       className="popover-textarea popover-video-textarea nodrag nowheel"
-                      mentionNames={referenceImages.map(img => img.name)}
+                      referenceNames={referenceImages.map(img => img.name)}
+                      references={referenceImages.map(img => ({ name: img.name, url: img.url, thumbnail: (img as any).thumbnail || img.url, kind: (img as any).type || 'image' }))}
                       onPointerDown={stopInputDrag}
                       onMouseDown={stopInputDrag}
                       value={row.text}
@@ -1807,9 +2052,10 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
             </div>
           </div>
         ) : (
-          <MentionTextarea
+          <RichPromptEditor
             className="popover-textarea nodrag nowheel"
-            mentionNames={referenceImages.map(img => img.name)}
+            referenceNames={referenceImages.map(img => img.name)}
+            references={referenceImages.map(img => ({ name: img.name, url: img.url, thumbnail: (img as any).thumbnail || img.url, kind: (img as any).type || 'image' }))}
             onPointerDown={stopInputDrag}
             onMouseDown={stopInputDrag}
             value={prompt}

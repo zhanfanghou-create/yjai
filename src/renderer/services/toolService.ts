@@ -100,7 +100,7 @@ export const toolService = {
     }
 
     const win = window as any;
-    const model = config.defaultModel || options.model || config.models?.[0] || '';
+    const model = options.model || config.defaultModel || config.models?.[0] || '';
     const baseUrl = config.baseUrl || options.baseUrl;
 
     const pickUrl = (r: any): string | undefined => {
@@ -111,7 +111,9 @@ export const toolService = {
       const nested = r.metadata?.url || r.data?.metadata?.url
         || r.video?.url || r.video?.video_url
         || r.output?.url || r.output?.video_url
-        || (Array.isArray(r.output) ? (r.output[0]?.url || r.output[0]?.video_url) : undefined);
+        || r.content?.url || r.content?.video_url
+        || (Array.isArray(r.output) ? (r.output[0]?.url || r.output[0]?.video_url) : undefined)
+        || (Array.isArray(r.content) ? (r.content[0]?.url || r.content[0]?.video_url) : undefined);
       if (nested) return nested;
       const arr = r.results || r.data || r.images || r.videos || r.urls || r.filePaths;
       if (Array.isArray(arr)) {
@@ -153,8 +155,9 @@ export const toolService = {
 
         // 异步任务：轮询 checkResult 直到完成（仅当确实存在异步任务）
         const jobId = res?.id || res?.data?.id;
-        const jobStatus = res?.status || res?.data?.status;
-        const isAsyncJob = res?.accepted === true || (jobId && typeof jobStatus === 'string' && !['succeeded', 'success'].includes(jobStatus));
+        // res.status 是 HTTP 状态码（数字），任务状态在 res.data.status 中
+        const jobStatus = res?.data?.status || (typeof res?.status === 'string' ? res.status : undefined);
+        const isAsyncJob = res?.accepted === true || (jobId && typeof jobStatus === 'string' && !['succeeded', 'success', 'completed'].includes(jobStatus));
         if (isAsyncJob && jobId && win?.yijingAPI?.grsai?.checkResult) {
           const maxAttempts = 120;
           const intervalMs = 3000;
@@ -191,7 +194,11 @@ export const toolService = {
         body: JSON.stringify({
           model,
           prompt,
-          aspectRatio: options.aspectRatio || '16:9',
+          aspectRatio: options.aspectRatio || options.ratio || '16:9',
+          resolution: options.resolution,
+          duration: options.duration,
+          format: options.format,
+          ...options,
         }),
       });
       const result = await response.json();

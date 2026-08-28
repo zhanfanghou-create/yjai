@@ -9142,75 +9142,76 @@ body .lib-node {
 }
 
 /* ========== @ 引用素材功能 ========== */
+/* contenteditable 输入框容器 */
 .mention-textarea-wrap {
   position: relative;
   width: 100%;
-}
-
-/* backdrop 与 textarea 使用完全一致的盒模型/字体，保证高亮层与文本对齐 */
-.mention-textarea-backdrop,
-.mention-textarea-input {
-  width: 100%;
-  box-sizing: border-box;
   padding: 8px 10px;
-  font-size: 13px;
-  line-height: 1.5;
-  font-family: inherit;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  white-space: pre-wrap;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  letter-spacing: normal;
-}
-
-.mention-textarea-backdrop {
-  position: absolute;
-  inset: 0;
-  margin: 0;
-  pointer-events: none;
-  color: var(--text-primary, #e8e8e8);
-  overflow: hidden;
-  z-index: 1;
-}
-
-.mention-textarea-input {
-  position: relative;
-  z-index: 2;
-  display: block;
-  margin: 0;
-  min-height: 60px;
-  resize: vertical;
-  outline: none;
+  box-sizing: border-box;
   background: rgba(0, 0, 0, 0.3);
-  border-color: rgba(255, 255, 255, 0.06);
-  /* 文本透明，仅用于承接光标与输入；实际文字由 backdrop 高亮呈现 */
-  color: transparent;
-  caret-color: var(--text-primary, #e8e8e8);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  transition: border-color 0.15s ease;
 }
-
-.mention-textarea-input:focus {
+.mention-textarea-wrap:focus-within {
   border-color: var(--primary-color);
 }
 
-.mention-textarea-input::placeholder {
-  color: rgba(255, 255, 255, 0.25);
+/* contenteditable 输入区：文字与光标天然同层 */
+.mention-textarea-input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-weight: 400;
+  color: var(--text-primary, #e8e8e8);
+  caret-color: var(--text-primary, #e8e8e8);
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  letter-spacing: 0;
+  word-spacing: 0;
+  text-indent: 0;
+  text-align: left;
+  outline: none;
+  border: none;
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  -webkit-user-select: text;
+  user-select: text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  tab-size: 4;
+  -moz-tab-size: 4;
 }
 
-/* 透明输入层被选中时保持文字透明，避免与高亮层叠加导致“选中文字变大变粗” */
+/* placeholder：空内容时显示 */
+.mention-textarea-input:empty::before {
+  content: attr(data-placeholder);
+  color: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+
+/* 选中文字样式 */
 .mention-textarea-input::selection {
-  color: transparent;
   background: rgba(99, 102, 241, 0.35);
 }
+.mention-textarea-input::-moz-selection {
+  background: rgba(99, 102, 241, 0.35);
+}
+
+/* 滚动条样式 */
 .mention-textarea-input::-webkit-scrollbar { width: 6px; height: 6px; }
 .mention-textarea-input::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
 .mention-textarea-input::-webkit-scrollbar-corner { background: transparent; }
-.mention-textarea-input::-moz-selection {
-  color: transparent;
-  background: rgba(99, 102, 241, 0.35);
-}
 
-/* 被 @ 的文件名：缩短 + 背景色区分正常文字 */
 /* 高亮层的 @提及片段：只能改颜色/背景，绝不能改变字符宽度或换行，否则与 textarea 光标错位 */
 .mention-chip {
   display: inline;

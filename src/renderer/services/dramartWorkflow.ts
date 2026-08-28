@@ -170,27 +170,45 @@ function defaultStoryboards(scriptText: string): DramartStoryboard[] {
   ];
 }
 
-// 分镜视频提示词：按参考格式输出（场次标题 + 时长 + 场景 + 完整分镜剧本原文 + 素材引用），参数均取实际值，不固定具体内容
+// 分镜视频提示词：按参考格式输出（画风约束 + 素材引用 + 画面描写 + 约束词），参数均取实际值，不固定具体内容
 export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number }): string {
   const styleWord = explicitWord || stylePromptOf(styleName) || styleName;
   const idx = opts && opts.index ? opts.index : 1;
   const dur = opts && opts.duration ? opts.duration : 15;
   const scriptText = (description || '').trim();
+  const charName = character || '主角';
+  const sceneName = scene || '场景';
+  const propName = prop || '道具';
   return [
-    '画风：' + styleName + '（' + styleWord + '），全程严格保持该画风',
+    '画风: ' + styleName,
     '视频中不得出现任何字幕、文字叠加、纯画面，不要bgm，不要配乐。',
     '',
-    '【第' + idx + '场】0:00 - ' + dur + 's（' + scene + ' · 日常）',
-    '时长：' + dur + 's',
-    '场景：' + scene,
+    '### 素材引用',
     '',
-    '### 画面与台词（完整分镜剧本原文）',
+    '【人物】',
+    '<' + charName + '>对应' + charName + '，只采用外貌、发型和服装。',
+    '【场景】',
+    '<' + sceneName + '>参考' + sceneName + '，只采用空间布局、建筑和光线，不采用图中人物。',
+    '【道具】',
+    '<' + propName + '>对应' + propName + '，只采用结构、材质和颜色。',
+    '',
+    '### 画面描写',
+    '',
+    '分镜场景设定在：',
+    sceneName,
+    '',
+    '分镜具体动作描述：',
+    '镜头1',
+    dur + 's',
+    '',
+    '[站位]',
+    charName + (propName !== '道具' ? '（手持' + propName + '）' : '') + '位于画面中。',
+    '[动作]',
     scriptText || '（暂无画面描述）',
     '',
-    '### 素材引用',
-    '【人物】<' + character + '>对应' + character + '，只采用外貌、发型和服装。',
-    '【场景】<' + scene + '>参考' + scene + '，只采用空间布局、建筑和光线，不采用图中人物。',
-    '【道具】<' + prop + '>对应' + prop + '，只采用结构、材质和颜色。',
+    '### 约束词',
+    '【保持一致】',
+    '保持<' + charName + '身份、数量、服装、道具归属、空间方向和声音关系>稳定。',
   ].join('\n');
 }
 
@@ -202,6 +220,11 @@ export function buildAssetImagePrompt(a: { name?: string; kind?: string; imageSu
   if (a.kind === 'character') {
     return [
       '任务：完成角色的上半身正面平视特写和该角色的全身三视图。左边是角色的上半身正面平视特写，右边是该角色的全身三视图。三视图不可以有分割线。左侧为角色胸部以上特写大图，占画面约 40% 宽度，用于展示面部、发型、表情、眼神、上半身服装和配饰细节；右侧为同一角色的三视图，占画面约 60% 宽度，依次展示正面全身、侧面全身、背面全身。',
+      '重要要求：',
+      '1. 纯白色背景，无任何场景、道具、装饰或其他人物，只有该角色一个人。',
+      '2. 左侧特写和右侧三视图必须是同一个角色，外貌、服装、发型完全一致，不能出现不同的人。',
+      '3. 三视图中正面、侧面、背面各一个人物，总共三个人物，加上左侧特写共四个人物形象，不能多也不能少。',
+      '4. 人物站姿标准，全身完整展示，不裁切。',
       '---',
       '角色描述:',
       desc,
@@ -219,7 +242,17 @@ export function buildAssetImagePrompt(a: { name?: string; kind?: string; imageSu
     ].join('\n');
   }
   if (a.kind === 'prop') {
-    return desc;
+    return [
+      '任务：生成道具的高清特写静物图。',
+      '重要要求：',
+      '1. 纯白色背景，无任何场景、人物或其他元素，只有该道具一个物品。',
+      '2. 道具居中展示，真实还原物品形态、材质、颜色与细节，质感清晰，光影自然。',
+      '3. 体现出岁月与材质特征（如真实纹理、边缘磨损、岁月斑点、卷边龟裂等，如适用）。',
+      '4. 仅呈现该物品本身，无人物、无多余元素，无动态特效。不输出文字信息。',
+      '---',
+      '道具描述:',
+      desc,
+    ].join('\n');
   }
   return name + '，' + summary;
 }
@@ -252,34 +285,46 @@ function defaultProjectData(): Pick<DramartProject, 'characters' | 'scenes' | 'p
 export interface AIConfigInput { baseUrl?: string; apiKey?: string; model?: string; }
 
 async function callChat(system: string, user: string, config: AIConfigInput | null): Promise<string | null> {
-  try {
-    const win = window as any;
-    if (win?.yijingAPI?.grsai?.chat && config?.apiKey && config?.baseUrl && config?.model) {
-      const result = await win.yijingAPI.grsai.chat({
-        baseUrl: config.baseUrl,
-        apiKey: config.apiKey,
-        model: config.model,
-        messages: [
-          { role: 'system', content: system },
-          { role: 'user', content: user },
-        ],
-      });
-      if (result?.ok) {
-        return result.data?.choices?.[0]?.message?.content || result.data?.content || result.data?.response || null;
-      }
-    }
-  } catch {
-    // 忽略，走 fallback
+  const win = window as any;
+  // 未配置 API 时返回 null，由调用方决定是否使用本地兜底
+  if (!win?.yijingAPI?.grsai?.chat || !config?.apiKey || !config?.baseUrl || !config?.model) {
+    return null;
   }
-  return null;
+  try {
+    const result = await win.yijingAPI.grsai.chat({
+      baseUrl: config.baseUrl,
+      apiKey: config.apiKey,
+      model: config.model,
+      messages: [
+        { role: 'system', content: system },
+        { role: 'user', content: user },
+      ],
+    });
+    if (result?.ok) {
+      const content = result.data?.choices?.[0]?.message?.content || result.data?.content || result.data?.response || null;
+      if (!content) throw new Error('AI 返回内容为空');
+      return content;
+    }
+    // 有配置但调用失败：抛出明确错误，不让用户无感知地看到演示数据
+    throw new Error(result?.error?.message || result?.msg || 'AI 对话接口调用失败，请检查 API 配置或模型是否可用');
+  } catch (e: any) {
+    if (e?.message) throw e;
+    throw new Error('AI 对话接口调用异常：' + String(e));
+  }
 }
 
 function parseJsonObject(text: string): any | null {
   if (!text) return null;
-  const start = text.indexOf('{');
-  const end = text.lastIndexOf('}');
+  let cleaned = String(text).trim();
+  // 处理 markdown 代码块：```json ... ``` 或 ``` ... ```
+  const codeBlockMatch = cleaned.match(/```(?:json)?\s*([\s\S]*?)```/i);
+  if (codeBlockMatch) {
+    cleaned = codeBlockMatch[1].trim();
+  }
+  const start = cleaned.indexOf('{');
+  const end = cleaned.lastIndexOf('}');
   if (start < 0 || end <= start) return null;
-  try { return JSON.parse(text.slice(start, end + 1)); } catch { return null; }
+  try { return JSON.parse(cleaned.slice(start, end + 1)); } catch { return null; }
 }
 
 function normalizeAssets(raw: any): Pick<DramartProject, 'characters' | 'scenes' | 'props'> | null {
@@ -317,26 +362,78 @@ export interface RunAnalysisOptions {
   ratio: DramartRatio;
   resolution: DramartResolution;
   config: AIConfigInput | null;
-  imageFetcher?: (prompt: string) => Promise<string | null>;
+  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<string | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
+}
+
+// 根据比例和分辨率计算图片 size 参数（WIDTHxHEIGHT 格式）
+function calcImageSize(ratio: DramartRatio, resolution: DramartResolution): string {
+  const baseW: Record<string, number> = { '1k': 1280, '480p': 854, '720p': 1280, '1080p': 1920, '4k': 3840 };
+  const w = baseW[String(resolution || '720p').toLowerCase()] || 1280;
+  const ratioMap: Record<string, [number, number]> = {
+    '1:1': [1, 1], '16:9': [16, 9], '9:16': [9, 16], '4:3': [4, 3], '3:4': [3, 4], '21:9': [21, 9],
+  };
+  const [rw, rh] = ratioMap[ratio] || [16, 9];
+  const h = Math.round((w * rh) / rw);
+  return `${w}x${h}`;
 }
 
 export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'>> {
   const { scriptText, scriptFileName, styleName, styleWord, ratio, resolution, config, imageFetcher, onProgress } = opts;
-  void scriptFileName; void ratio; void resolution;
+  void scriptFileName;
+  const imgSize = calcImageSize(ratio, resolution);
   const total = DRAMART_ANALYSIS_STEPS.length;
-  let result = defaultProjectData();
-  let aiOk = false;
+  // 初始化为空资产，不再使用林望故事等演示占位数据
+  let result: Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'> = { characters: [], scenes: [], props: [], storyboards: [] };
+  let aiStoryboards: DramartStoryboard[] | null = null;
+
+  // 明确检查对话 API 配置：未配置时直接抛出错误，避免静默完成但无资产
+  const win = window as any;
+  if (!win?.yijingAPI?.grsai?.chat || !config?.apiKey || !config?.baseUrl || !config?.model) {
+    throw new Error('未配置可用的对话 API，请先在设置页配置对话接口（需包含 API Key、Base URL 和模型），剧本分析需要调用 AI 提取角色/场景/道具和分镜');
+  }
 
   const assetPrompt = [
     '你是影视创作专家，请从剧本中提取「角色、场景、道具」三类资产。严格输出 JSON，不要输出任何其他文字：',
     '{',
-    '  "characters":[{"name":"角色名","imageSummary":"一句话身份+性格+简介"}],',
-    '  "scenes":[{"name":"场景名","imageSummary":"空间+光线+氛围"}],',
-    '  "props":[{"name":"道具名","imageSummary":"材质+形态+含义"}]',
+    '  "characters":[{"name":"角色名","imageSummary":"详细结构化描述，包含：身份、性格、简介、时代、国家、人种、类型、脸型、发型、身材、头身比、上身着装、下身着装、鞋子、性别、年龄"}],',
+    '  "scenes":[{"name":"场景名","imageSummary":"详细描述：空间布局、建筑风格、光线来源、色温、氛围、时间、天气、主要陈设"}],',
+    '  "props":[{"name":"道具名","imageSummary":"详细描述：材质、形态、颜色、尺寸、纹理、用途、含义、新旧程度"}]',
     '}',
+    '要求：',
+    '1. 角色的 imageSummary 必须包含可直接用于图像生成的详细外貌描述，格式参考：身份：xxx；性格：xxx；简介：xxx；时代：xxx；国家：xxx；人种：xxx；类型：xxx；脸型：xxx；发型：xxx；身材：xxx；头身比：xxx；上身着装：xxx；下身着装：xxx；鞋子：xxx；性别：xxx；年龄：xxx',
+    '2. 场景的 imageSummary 必须包含空间布局、光线、氛围等可直接用于图像生成的详细描述',
+    '3. 道具的 imageSummary 必须包含材质、形态、颜色等可直接用于图像生成的详细描述',
+    '4. 所有描述必须基于剧本内容，不要凭空编造剧本中没有的信息',
     '剧本：',
-    scriptText.slice(0, 3000),
+    scriptText,
+  ].join('\n');
+
+  const storyboardPrompt = [
+    '你是影视分镜设计师，请根据剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
+    '{',
+    '  "storyboards":[',
+    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","duration":15}',
+    '  ]',
+    '}',
+    '要求：',
+    '1. 按剧本中的场景顺序逐场设计，不要遗漏任何场景',
+    '2. rawScript 字段必须是该分镜对应的剧本原文片段，从剧本中原样摘录，不要改写、不要总结、不要添加内容',
+    '3. 每个分镜的 description 必须包含：',
+    '   - 分镜场景设定（具体地点）',
+    '   - 时间（日/夜/晨/昏等）',
+    '   - 灯光（主光来源、色温、光比、阴影效果）',
+    '   - 分镜具体动作描述，按镜头拆分，每个镜头格式：',
+    '     镜头N Xs',
+    '     [站位] 角色/道具在画面中的位置',
+    '     [动作] 镜头类型|运镜方式 具体动作描述，台词用{台词}标注',
+    '4. duration 单位为秒，根据场景内容合理分配（总时长约240秒）',
+    '5. characters 只列出镜的角色，不出镜的不要列',
+    '6. 每个分镜可包含多个镜头，镜头总时长应等于分镜 duration',
+    '7. 镜头类型参考：远景、全景、中景、近景、特写、大特写、主观视角、过肩镜头等',
+    '8. 运镜方式参考：固定镜头、缓推、缓拉、摇镜、跟拍、手持、升降等',
+    '剧本：',
+    scriptText,
   ].join('\n');
 
   for (let i = 0; i < total; i++) {
@@ -345,32 +442,160 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
     await new Promise(r => setTimeout(r, 600));
 
     if (i === 0) {
+      // 第1步：分析剧本 → 提取角色/场景/道具资产
       const system = '你是专业编剧与制片助理。全程中文。严格按用户要求格式输出。';
       const content = await callChat(system, assetPrompt, config);
       if (content) {
         const parsed = parseJsonObject(content);
         const norm = normalizeAssets(parsed);
-        if (norm) { result = { ...result, ...norm }; aiOk = true; }
+        if (norm) { result = { ...result, ...norm }; }
+      }
+    } else if (i === 1) {
+      // 第2步：分镜设计 → 调用AI生成分镜列表
+      const system = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
+      const content = await callChat(system, storyboardPrompt, config);
+      if (content) {
+        const parsed = parseJsonObject(content);
+        const sbList = Array.isArray(parsed?.storyboards) ? parsed.storyboards : [];
+        if (sbList.length) {
+          aiStoryboards = sbList.map((sb: any, idx: number) => {
+            const idxNum = Number(sb?.index) || (idx + 1);
+            const chars = Array.isArray(sb?.characters) ? sb.characters.map((c: any) => String(c).trim()).filter(Boolean) : [];
+            const scenes = sb?.scene ? [String(sb.scene).trim()] : [];
+            const props = Array.isArray(sb?.props) ? sb.props.map((p: any) => String(p).trim()).filter(Boolean) : [];
+            const desc = String(sb?.description || '').trim();
+            // rawScript 优先使用 AI 输出的剧本原文片段，如果没有则回退到分镜描述
+            const rawScript = String(sb?.rawScript || '').trim() || desc;
+            const dur = Number(sb?.duration) || 15;
+            return {
+              id: rid('sb'),
+              index: idxNum,
+              label: sb?.label || ('分镜' + idxNum),
+              rawScript: rawScript,
+              characters: chars,
+              scenes,
+              props,
+              videoPrompt: makeVideoPrompt(chars[0] || (result.characters[0]?.name || '主角'), scenes[0] || (result.scenes[0]?.name || '场景'), props[0] || (result.props[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur }),
+              duration: dur,
+              videoUrl: undefined,
+              videoStatus: 'idle' as const,
+            };
+          });
+        }
       }
     }
+    // 第3步（提取资产）：复用第1步结果，无需额外调用
+    // 第4步（生成提示词）：已在分镜设计中通过 makeVideoPrompt 本地生成
 
     onProgress(i + 1, label, Math.round(((i + 1) / total) * 100));
   }
 
-  // 自动生成人物/场景/道具参考图（best-effort，无图时页面回退渐变占位）
+  // 自动生成人物/场景/道具参考图（批量并发生成，最大并发3个，避免API限流）
   if (imageFetcher) {
     const all = [...result.characters, ...result.scenes, ...result.props];
-    for (let ai = 0; ai < all.length; ai++) {
-      const a = all[ai];
-      onProgress(4, '生成资产图', Math.round(((ai + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (ai + 1) + '/' + all.length + '）');
-      const url = await imageFetcher(buildAssetImagePrompt(a)).catch(() => null);
-      if (url) a.img = url;
+    if (all.length > 0) {
+      onProgress(4, '生成资产图', 0, `批量生成 ${all.length} 个资产图（并发处理）`);
+      let completed = 0;
+      const MAX_CONCURRENT = 3;
+      const queue = [...all];
+      const workers: Promise<void>[] = [];
+
+      const processNext = async (): Promise<void> => {
+        while (queue.length > 0) {
+          const a = queue.shift()!;
+          try {
+            const url = await imageFetcher(buildAssetImagePrompt(a), { size: imgSize });
+            if (url) a.img = url;
+          } catch { /* 单个失败不影响其他 */ }
+          completed++;
+          onProgress(4, '生成资产图', Math.round((completed / all.length) * 100), `已完成 ${completed}/${all.length}：${a.name}`);
+        }
+      };
+
+      // 启动并发 worker
+      for (let i = 0; i < Math.min(MAX_CONCURRENT, all.length); i++) {
+        workers.push(processNext());
+      }
+      await Promise.all(workers);
     }
   }
 
+  // 分镜：优先使用AI生成的分镜设计，否则回退到基于剧本的本地切分
+  if (aiStoryboards && aiStoryboards.length) {
+    result.storyboards = aiStoryboards;
+  } else {
+    result.storyboards = deriveStoryboardsFromScript({ scriptText, assets: result, styleName, styleWord });
+  }
 
-  // 用真实剧本切分生成分镜：按「第*集」切分，逐集生成分镜（真实原文 + 出镜资产）；无集数标记时按段落分块，不再使用演示占位分镜
-  result.storyboards = deriveStoryboardsFromScript({ scriptText, assets: result, styleName, styleWord });
+  // 资产同步：检查分镜中引用的资产是否都在资产列表中，缺失的自动补充
+  const referencedChars = new Set<string>();
+  const referencedScenes = new Set<string>();
+  const referencedProps = new Set<string>();
+  result.storyboards.forEach(sb => {
+    sb.characters.forEach(c => referencedChars.add(c));
+    sb.scenes.forEach(s => referencedScenes.add(s));
+    sb.props.forEach(p => referencedProps.add(p));
+  });
+
+  const existingChars = new Set(result.characters.map(a => a.name));
+  const existingScenes = new Set(result.scenes.map(a => a.name));
+  const existingProps = new Set(result.props.map(a => a.name));
+
+  const missingChars = Array.from(referencedChars).filter(n => n && !existingChars.has(n));
+  const missingScenes = Array.from(referencedScenes).filter(n => n && !existingScenes.has(n));
+  const missingProps = Array.from(referencedProps).filter(n => n && !existingProps.has(n));
+
+  if (missingChars.length || missingScenes.length || missingProps.length) {
+    // 为缺失的资产生成描述（基于资产名称和剧本内容）
+    const supplementPrompt = [
+      '请为以下影视资产生成详细的 imageSummary 描述，严格输出 JSON，不要输出任何其他文字：',
+      '{',
+      missingChars.length ? `  "characters":[${missingChars.map((n, i) => `{"name":"${n}","imageSummary":"详细外貌描述"}`).join(',')}],` : '',
+      missingScenes.length ? `  "scenes":[${missingScenes.map((n, i) => `{"name":"${n}","imageSummary":"详细场景描述"}`).join(',')}],` : '',
+      missingProps.length ? `  "props":[${missingProps.map((n, i) => `{"name":"${n}","imageSummary":"详细道具描述"}`).join(',')}]` : '',
+      '}',
+      '要求：',
+      '1. 角色的 imageSummary 必须包含可直接用于图像生成的详细外貌描述，格式参考：身份：xxx；性格：xxx；简介：xxx；时代：xxx；国家：xxx；人种：xxx；类型：xxx；脸型：xxx；发型：xxx；身材：xxx；头身比：xxx；上身着装：xxx；下身着装：xxx；鞋子：xxx；性别：xxx；年龄：xxx',
+      '2. 场景的 imageSummary 必须包含空间布局、光线、氛围等可直接用于图像生成的详细描述',
+      '3. 道具的 imageSummary 必须包含材质、形态、颜色等可直接用于图像生成的详细描述',
+      '4. 所有描述必须基于剧本内容，不要凭空编造剧本中没有的信息',
+      '剧本：',
+      scriptText,
+    ].join('\n');
+
+    try {
+      const system = '你是专业编剧与制片助理。全程中文。严格按用户要求格式输出。';
+      const content = await callChat(system, supplementPrompt, config);
+      if (content) {
+        const parsed = parseJsonObject(content);
+        const norm = normalizeAssets(parsed);
+        if (norm) {
+          // 合并补充的资产到结果中
+          norm.characters.forEach(a => { if (!existingChars.has(a.name)) { result.characters.push(a); existingChars.add(a.name); } });
+          norm.scenes.forEach(a => { if (!existingScenes.has(a.name)) { result.scenes.push(a); existingScenes.add(a.name); } });
+          norm.props.forEach(a => { if (!existingProps.has(a.name)) { result.props.push(a); existingProps.add(a.name); } });
+        }
+      }
+    } catch { /* 补充失败不影响主流程 */ }
+
+    // 如果AI补充失败，为剩余缺失的资产创建基本描述
+    const stillMissingChars = Array.from(referencedChars).filter(n => n && !existingChars.has(n));
+    const stillMissingScenes = Array.from(referencedScenes).filter(n => n && !existingScenes.has(n));
+    const stillMissingProps = Array.from(referencedProps).filter(n => n && !existingProps.has(n));
+
+    stillMissingChars.forEach((name, i) => {
+      result.characters.push(assetItem(name, 'character', `身份：未知；性格：未知；简介：${name}；时代：现代；国家：中国；人种：黄种人；类型：真人；脸型：标准；发型：标准；身材：标准；头身比：7头身；上身着装：日常服装；下身着装：日常裤子；鞋子：日常鞋子；性别：未知；年龄：未知`, (i * 51 + 20) % 360));
+      existingChars.add(name);
+    });
+    stillMissingScenes.forEach((name, i) => {
+      result.scenes.push(assetItem(name, 'scene', `空间布局：${name}；建筑风格：现代；光线来源：自然光；色温：中性；氛围：普通；时间：白天；天气：晴；主要陈设：基础陈设`, (i * 51 + 80) % 360));
+      existingScenes.add(name);
+    });
+    stillMissingProps.forEach((name, i) => {
+      result.props.push(assetItem(name, 'prop', `材质：未知；形态：${name}；颜色：未知；尺寸：标准；纹理：普通；用途：未知；含义：未知；新旧程度：普通`, (i * 51 + 140) % 360));
+      existingProps.add(name);
+    });
+  }
 
   onProgress(total, '完成', 100);
   return result;
@@ -381,7 +606,11 @@ export interface DramaDraftAnalyzeOptions {
   draft: DramartProject;
   /** 剧创模式：所选风格的提示词（含自定义风格），统一替换剧创草稿里的所有风格提示词 */
   styleWord?: string;
-  imageFetcher?: (prompt: string) => Promise<string | null>;
+  /** 图片比例，如 16:9、1:1 等，用于资产生成 */
+  ratio?: DramartRatio;
+  /** 图片分辨率，如 1k、2k、4k 等，用于资产生成 */
+  resolution?: DramartResolution;
+  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<string | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
 }
 
@@ -411,10 +640,12 @@ function findCol(headers: string[], ...keys: string[]): number {
 }
 
 export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'>> {
-  const { draft, styleWord, imageFetcher, onProgress } = opts;
+  const { draft, styleWord, ratio, resolution, imageFetcher, onProgress } = opts;
   const total = DRAMART_ANALYSIS_STEPS.length;
   const prompts = draft.promptsContent || '';
   const script = draft.scriptContent || draft.scriptText || '';
+  // 计算资产生成的尺寸参数（默认 16:9, 720p）
+  const imgSize = calcImageSize(ratio || '16:9', resolution || '720p');
   const characters: DramartAssetItem[] = [];
   const scenes: DramartAssetItem[] = [];
   const props: DramartAssetItem[] = [];
@@ -465,11 +696,13 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
       const shotDesc = vid && vid.trim()
         ? styleLine + '\n' + vid
         : makeVideoPrompt(charName, sceneName, propName, script, shotStyleName, shotStyleW, { index: idxNum, duration: 15 });
+      // rawScript 使用本分镜对应的视频描述/场景内容，不再使用完整剧本
+      const shotRawScript = vid && vid.trim() ? vid : (scene ? '【' + sceneName + '】' + script.slice(0, 300) : script.slice(0, 300));
       storyboards.push({
         id: rid('sb'),
         index: idxNum,
         label: '分镜' + idxNum,
-        rawScript: script,
+        rawScript: shotRawScript,
         characters: chars.length ? chars : characters.slice(0, 2).map(a => a.name),
         scenes: scene ? [sceneName] : scenes.slice(0, 1).map(a => a.name),
         props: prop ? [propName] : props.slice(0, 1).map(a => a.name),
@@ -481,12 +714,11 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
     });
   });
 
-  // 兜底：没有解析到时用默认
-  if (!characters.length && !scenes.length && !props.length) {
-    const d = defaultProjectData();
-    characters.push(...d.characters); scenes.push(...d.scenes); props.push(...d.props);
+  // 兜底：没有解析到时用空资产 + 基于剧本的分镜切分，不再使用林望故事等演示占位数据
+  if (!storyboards.length) {
+    const derived = deriveStoryboardsFromScript({ scriptText: script, assets: { characters, scenes, props }, styleName: draft.styleName || '现代都市通用', styleWord });
+    storyboards.push(...derived);
   }
-  if (!storyboards.length) storyboards.push(...defaultStoryboards(script));
 
 
   // 给角色补变装（主形象已生成，变装为待生成占位）
@@ -501,13 +733,50 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
 
   const result = { characters, scenes, props, storyboards };
 
+  // 资产同步：检查分镜中引用的资产是否都在资产列表中，缺失的自动补充
+  const referencedChars = new Set<string>();
+  const referencedScenes = new Set<string>();
+  const referencedProps = new Set<string>();
+  storyboards.forEach(sb => {
+    sb.characters.forEach(c => referencedChars.add(c));
+    sb.scenes.forEach(s => referencedScenes.add(s));
+    sb.props.forEach(p => referencedProps.add(p));
+  });
+
+  const existingChars = new Set(characters.map(a => a.name));
+  const existingScenes = new Set(scenes.map(a => a.name));
+  const existingProps = new Set(props.map(a => a.name));
+
+  const missingChars = Array.from(referencedChars).filter(n => n && !existingChars.has(n));
+  const missingScenes = Array.from(referencedScenes).filter(n => n && !existingScenes.has(n));
+  const missingProps = Array.from(referencedProps).filter(n => n && !existingProps.has(n));
+
+  if (missingChars.length || missingScenes.length || missingProps.length) {
+    // 为缺失的资产创建基本描述（剧创模式下基于名称生成）
+    missingChars.forEach((name, i) => {
+      const item = assetItem(name, 'character', `身份：未知；性格：未知；简介：${name}；时代：现代；国家：中国；人种：黄种人；类型：真人；脸型：标准；发型：标准；身材：标准；头身比：7头身；上身着装：日常服装；下身着装：日常裤子；鞋子：日常鞋子；性别：未知；年龄：未知`, (i * 51 + 20) % 360);
+      characters.push(item);
+      existingChars.add(name);
+    });
+    missingScenes.forEach((name, i) => {
+      const item = assetItem(name, 'scene', `空间布局：${name}；建筑风格：现代；光线来源：自然光；色温：中性；氛围：普通；时间：白天；天气：晴；主要陈设：基础陈设`, (i * 51 + 80) % 360);
+      scenes.push(item);
+      existingScenes.add(name);
+    });
+    missingProps.forEach((name, i) => {
+      const item = assetItem(name, 'prop', `材质：未知；形态：${name}；颜色：未知；尺寸：标准；纹理：普通；用途：未知；含义：未知；新旧程度：普通`, (i * 51 + 140) % 360);
+      props.push(item);
+      existingProps.add(name);
+    });
+  }
+
   // 生成资产参考图
   if (imageFetcher) {
     const all = [...characters, ...scenes, ...props];
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const url = await imageFetcher(a.prompt || buildAssetImagePrompt(a)).catch(() => null);
+      const url = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize }).catch(() => null);
       if (url) a.img = url;
     }
   }
@@ -517,9 +786,13 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
 
 // ==================== 补充剧本：资产复用 + 分镜接续 ====================
 
-// 按「第*集」字段切分补充剧本（支持中文数字与阿拉伯数字），无标记时视为一个补充片段
+// 按场景标记切分剧本（支持中文数字与阿拉伯数字，多种格式），无标记时视为一个片段
 const CN_NUM_STR = '一二三四五六七八九十百千零〇';
-const EP_MARK_RE = new RegExp('第[' + CN_NUM_STR + '0-9]+集');
+// 支持：第X集、第X场、场X、场 X、场景X、Scene X、SCENE X
+const EP_MARK_RE = new RegExp(
+  '(?:第[' + CN_NUM_STR + '0-9]+[集场幕]|场\\s*[' + CN_NUM_STR + '0-9]+|场景\\s*[' + CN_NUM_STR + '0-9]+|Scene\\s*\\d+|SCENE\\s*\\d+)',
+  'i'
+);
 
 export interface SupplementEpisode { title: string; content: string; }
 
@@ -635,7 +908,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     '}',
     '注意：仅提取补充剧本中新增出现的角色、场景、道具；与之前剧本中相同的不要重复。',
     '补充剧本：',
-    scriptText.slice(0, 3000),
+    scriptText,
   ].join('\n');
 
   onProgress(0, DRAMART_ANALYSIS_STEPS[0], 10);
@@ -649,7 +922,57 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
   }
   onProgress(1, '分镜设计', 45);
 
-  // 2. 资产去重：补充前已有同名资产直接引用（不重复生成），仅保留真正新增的
+  // 2. 分镜设计：调用AI生成分镜列表（与主流程一致）
+  const storyboardPrompt = [
+    '你是影视分镜设计师，请根据补充剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
+    '{',
+    '  "storyboards":[',
+    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"description":"完整画面描述与台词","duration":15}',
+    '  ]',
+    '}',
+    '要求：',
+    '1. 按补充剧本中的场景顺序逐场设计，不要遗漏任何场景',
+    '2. 每个分镜的 description 必须包含该场景的完整画面描述、台词和动作',
+    '3. duration 单位为秒，根据场景内容合理分配',
+    '4. characters 只列出镜的角色，不出镜的不要列',
+    '补充剧本：',
+    scriptText,
+  ].join('\n');
+  let aiStoryboards: DramartStoryboard[] | null = null;
+  const sbSystem = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
+  const sbContent = await callChat(sbSystem, storyboardPrompt, config);
+  if (sbContent) {
+    const sbParsed = parseJsonObject(sbContent);
+    const sbList = Array.isArray(sbParsed?.storyboards) ? sbParsed.storyboards : [];
+    if (sbList.length) {
+      const allCharsForPrompt = [...(existing.characters || []), ...(extracted?.characters || [])];
+      const allScenesForPrompt = [...(existing.scenes || []), ...(extracted?.scenes || [])];
+      const allPropsForPrompt = [...(existing.props || []), ...(extracted?.props || [])];
+      aiStoryboards = sbList.map((sb: any, idx: number) => {
+        const idxNum = offset + idx + 1;
+        const chars = Array.isArray(sb?.characters) ? sb.characters.map((c: any) => String(c).trim()).filter(Boolean) : [];
+        const scenes = sb?.scene ? [String(sb.scene).trim()] : [];
+        const props = Array.isArray(sb?.props) ? sb.props.map((p: any) => String(p).trim()).filter(Boolean) : [];
+        const desc = String(sb?.description || '').trim();
+        const dur = Number(sb?.duration) || 15;
+        return {
+          id: rid('sb'),
+          index: idxNum,
+          label: sb?.label || ('分镜' + idxNum),
+          rawScript: desc,
+          characters: chars,
+          scenes,
+          props,
+          videoPrompt: makeVideoPrompt(chars[0] || (allCharsForPrompt[0]?.name || '主角'), scenes[0] || (allScenesForPrompt[0]?.name || '场景'), props[0] || (allPropsForPrompt[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur }),
+          duration: dur,
+          videoUrl: undefined,
+          videoStatus: 'idle' as const,
+        };
+      });
+    }
+  }
+
+  // 3. 资产去重：补充前已有同名资产直接引用（不重复生成），仅保留真正新增的
   const added: Pick<DramartProject, 'characters' | 'scenes' | 'props'> = { characters: [], scenes: [], props: [] };
   let reusedCount = 0;
   const hasAsset = (kind: DramartAssetItem['kind'], name: string): boolean => {
@@ -674,37 +997,42 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
   }
   onProgress(2, '提取资产', 70);
 
-  // 3. 分镜：按「第*集」切分补充剧本，集数从既有分镜之后接续
-  const episodes = splitSupplementEpisodes(scriptText);
-  const allChars = [...(existing.characters || []), ...added.characters];
-  const allScenes = [...(existing.scenes || []), ...added.scenes];
-  const allProps = [...(existing.props || []), ...added.props];
-  const pickNames = (list: DramartAssetItem[], text: string): string[] => {
-    const hit = list.filter(a => text.includes(a.name)).map(a => a.name);
-    return hit.length ? hit : list.slice(0, 1).map(a => a.name);
-  };
-  const storyboards: DramartStoryboard[] = episodes.map((ep, i) => {
-    const idx = offset + i + 1;
-    const chars = pickNames(allChars, ep.content).slice(0, 2);
-    const scenes = pickNames(allScenes, ep.content).slice(0, 1);
-    const props = pickNames(allProps, ep.content).slice(0, 1);
-    const character = chars[0] || '主角';
-    const scene = scenes[0] || (allScenes[0]?.name || '场景');
-    const prop = props[0] || (allProps[0]?.name || '道具');
-    return {
-      id: rid('sb'),
-      index: idx,
-      label: '分镜' + idx,
-      rawScript: ep.content,
-      characters: chars,
-      scenes,
-      props,
-      videoPrompt: makeVideoPrompt(character, scene, prop, ep.content, styleName, styleWord, { index: idx, duration: 15 }),
-      duration: 15,
-      videoUrl: undefined,
-      videoStatus: 'idle',
+  // 3. 分镜：优先使用AI生成的分镜设计，否则回退到基于剧本的本地切分
+  let storyboards: DramartStoryboard[];
+  if (aiStoryboards && aiStoryboards.length) {
+    storyboards = aiStoryboards;
+  } else {
+    const episodes = splitSupplementEpisodes(scriptText);
+    const allChars = [...(existing.characters || []), ...added.characters];
+    const allScenes = [...(existing.scenes || []), ...added.scenes];
+    const allProps = [...(existing.props || []), ...added.props];
+    const pickNames = (list: DramartAssetItem[], text: string): string[] => {
+      const hit = list.filter(a => text.includes(a.name)).map(a => a.name);
+      return hit.length ? hit : list.slice(0, 1).map(a => a.name);
     };
-  });
+    storyboards = episodes.map((ep, i) => {
+      const idx = offset + i + 1;
+      const chars = pickNames(allChars, ep.content).slice(0, 2);
+      const scenes = pickNames(allScenes, ep.content).slice(0, 1);
+      const props = pickNames(allProps, ep.content).slice(0, 1);
+      const character = chars[0] || '主角';
+      const scene = scenes[0] || (allScenes[0]?.name || '场景');
+      const prop = props[0] || (allProps[0]?.name || '道具');
+      return {
+        id: rid('sb'),
+        index: idx,
+        label: '分镜' + idx,
+        rawScript: ep.content,
+        characters: chars,
+        scenes,
+        props,
+        videoPrompt: makeVideoPrompt(character, scene, prop, ep.content, styleName, styleWord, { index: idx, duration: 15 }),
+        duration: 15,
+        videoUrl: undefined,
+        videoStatus: 'idle',
+      };
+    });
+  }
   onProgress(3, '提示词生成', 90);
 
   // 4. 仅为新增资产生成参考图（既有资产直接复用，不重复生成）
