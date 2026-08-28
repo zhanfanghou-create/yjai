@@ -1,49 +1,48 @@
-ï»¿; ----- Custom NSIS macros for è‰ºé•œAI -----
+; ----- Custom NSIS macros for ÒÕ¾µAI -----
 ; electron-builder invokes these hooks automatically when defined.
 
-!include "FileFunc.nsh"
-
 !macro customHeader
-  ; æ”¯æŒé™é»˜å®‰è£…å‚æ•°
+  ; Ö§³Ö¾²Ä¬°²×°²ÎÊı
+  !insertmacro MUI_LANGUAGE "SimpChinese"
 !macroend
 
 !macro preInit
-  ; è‡ªåŠ¨æ£€æµ‹æ—§ç‰ˆæœ¬å®‰è£…è·¯å¾„
+  ; ×Ô¶¯¼ì²â¾É°æ±¾°²×°Â·¾¶
   SetRegView 64
-  ReadRegStr $0 HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\è‰ºé•œAI-æ­£å¼ç‰ˆ" "InstallLocation"
+  ReadRegStr $0 HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\ÒÕ¾µAI-ÕıÊ½°æ" "InstallLocation"
   StrCmp $0 "" +2 0
   StrCpy $INSTDIR $0
   
-  ; å¦‚æœæ³¨å†Œè¡¨ä¸­æ²¡æœ‰æ‰¾åˆ°ï¼Œå°è¯•ä»æ¡Œé¢å¿«æ·æ–¹å¼æŸ¥æ‰¾
+  ; Èç¹û×¢²á±íÖĞÃ»ÓĞÕÒµ½£¬³¢ÊÔ´Ó×ÀÃæ¿ì½İ·½Ê½²éÕÒ
   StrCmp $0 "" 0 +5
-  ReadRegStr $0 HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\è‰ºé•œAI-æ­£å¼ç‰ˆ" "DisplayIcon"
+  ReadRegStr $0 HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\ÒÕ¾µAI-ÕıÊ½°æ" "DisplayIcon"
   StrCmp $0 "" 0 +3
-  ${GetFileName} "$0" $0
-  ${GetParent} "$0" $INSTDIR
+  GetFileName $0 "$0"
+  GetParent $INSTDIR "$0"
   
-  ; è®¾ç½®é»˜è®¤å®‰è£…ç›®å½•
+  ; ÉèÖÃÄ¬ÈÏ°²×°Ä¿Â¼
   StrCmp $0 "" 0 +3
-  WriteRegExpandStr HKCU "Software\è‰ºé•œAI-æ­£å¼ç‰ˆ" "" "$LOCALAPPDATA\Programs\è‰ºé•œAI-æ­£å¼ç‰ˆ"
+  WriteRegExpandStr HKCU "Software\ÒÕ¾µAI-ÕıÊ½°æ" "" "$LOCALAPPDATA\Programs\ÒÕ¾µAI-ÕıÊ½°æ"
   SetRegView 32
-  WriteRegExpandStr HKCU "Software\è‰ºé•œAI-æ­£å¼ç‰ˆ" "" "$LOCALAPPDATA\Programs\è‰ºé•œAI-æ­£å¼ç‰ˆ"
+  WriteRegExpandStr HKCU "Software\ÒÕ¾µAI-ÕıÊ½°æ" "" "$LOCALAPPDATA\Programs\ÒÕ¾µAI-ÕıÊ½°æ"
 !macroend
 
 !macro customInstall
-  ; å®‰è£…å‰å…³é—­æ­£åœ¨è¿è¡Œçš„ç¨‹åº
-  nsExec::Exec 'taskkill /F /IM "è‰ºé•œAI-æ­£å¼ç‰ˆ.exe" 2>nul'
+  ; °²×°Ç°¹Ø±ÕÕıÔÚÔËĞĞµÄ³ÌĞò
+  nsExec::Exec 'taskkill /F /IM "ÒÕ¾µAI-ÕıÊ½°æ.exe" 2>nul'
   Pop $0
   
-  ; ç­‰å¾…è¿›ç¨‹å®Œå…¨å…³é—­
+  ; µÈ´ı½ø³ÌÍêÈ«¹Ø±Õ
   Sleep 1000
   
-  DetailPrint "è‰ºé•œAI å·²æˆåŠŸå®‰è£…åˆ° $INSTDIR"
+  DetailPrint "ÒÕ¾µAI ÒÑ³É¹¦°²×°µ½ $INSTDIR"
 !macroend
 
 !macro customUnInstall
-  ; å¸è½½å‰å…³é—­ç¨‹åº
-  nsExec::Exec 'taskkill /F /IM "è‰ºé•œAI-æ­£å¼ç‰ˆ.exe" 2>nul'
+  ; Ğ¶ÔØÇ°¹Ø±Õ³ÌĞò
+  nsExec::Exec 'taskkill /F /IM "ÒÕ¾µAI-ÕıÊ½°æ.exe" 2>nul'
   Pop $0
   Sleep 500
   
-  DetailPrint "æ­£åœ¨å¸è½½è‰ºé•œAI..."
+  DetailPrint "ÕıÔÚĞ¶ÔØÒÕ¾µAI..."
 !macroend
