@@ -1,238 +1,99 @@
-name: Build and publish Yijing AI installers
+name: Build and Release
 
 on:
-  workflow_dispatch:
   push:
-    tags:
-      - 'v*-stable'
-
-permissions:
-  contents: read
+    branches: [ main ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    outputs:
-      version: ${{ steps.version.outputs.value }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-      - name: Read release version
-        id: version
-        run: node -e "console.log('value=' + require('./package.json').version)" >> "$GITHUB_OUTPUT"
-      - name: Verify matching installer version
-        run: node -e "const app=require('./package.json').version; const installer=require('./installer-ui/package.json').version; if(app!==installer) process.exit(1)"
-      - name: Create public draft release
-        env:
-          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
-          VERSION: ${{ steps.version.outputs.value }}
-          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
-        run: |
-          test -n "$GH_TOKEN"
-          TAG="v${VERSION}"
-          if gh release view "$TAG" --repo "$PUBLIC_REPO" >/dev/null 2>&1; then
-            gh release edit "$TAG" --draft --repo "$PUBLIC_REPO"
-          else
-            gh release create "$TAG" --repo "$PUBLIC_REPO" --target main --title "艺镜 AI v${VERSION}" --notes "艺镜 AI 无限画布 v${VERSION} 正式版。包含 Windows 与两种 macOS 芯片安装包。" --draft
-          fi
-
   build:
-    needs: prepare
     strategy:
-      fail-fast: false
       matrix:
-        include:
-          - os: windows-latest
-            platform: win
-            arch: x64
-            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-Windows-x64.exe
-          - os: macos-14
-            platform: mac
-            arch: x64
-            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-macOS-x64.dmg
-          - os: macos-14
-            platform: mac
-            arch: arm64
-            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-macOS-arm64.dmg
+        os: [windows-latest, macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
-    env:
-      ELECTRON_BUILDER_DOWNLOAD_MAX_ATTEMPTS: '8'
-      ELECTRON_BUILDER_DOWNLOAD_RETRY_DELAY: '5000'
-      ELECTRON_BUILDER_DOWNLOADER_PARTS: '1'
-      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+    
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            installer-ui/package-lock.json
-      - name: Install main application dependencies
-        shell: bash
-        run: npm ci --no-audit --no-fund
-      - name: Build main application
-        shell: bash
-        run: |
-          npm run build:renderer
-          npx tsc -p tsconfig.main.json
-      - name: Build unpacked Windows payload
-        if: matrix.platform == 'win'
-        shell: bash
-        run: |
-          unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
-          npx electron-builder --dir --win --x64 --publish never
-      - name: Build unpacked macOS payload
-        if: matrix.platform == 'mac'
-        shell: bash
-        run: |
-          unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
-          npx electron-builder --dir --mac --${{ matrix.arch }} --publish never
-      - name: Install installer dependencies
-        working-directory: installer-ui
-        shell: bash
-        run: npm ci --no-audit --no-fund
-      - name: Install macOS payload tool
-        if: matrix.platform == 'mac'
-        shell: bash
-        run: |
-          brew install sevenzip || brew install p7zip
-          command -v 7zz || command -v 7z
-      - name: Pack installer payload
-        working-directory: installer-ui
-        shell: bash
-        run: |
-          if [ "${{ matrix.platform }}" = "win" ]; then
-            node scripts/pack-payload.mjs ../release/win-unpacked
-          elif [ "${{ matrix.arch }}" = "x64" ]; then
-            app_path=$(find ../release/mac -maxdepth 1 -type d -name '*.app' | head -n 1)
-            test -n "$app_path"
-            node scripts/pack-payload.mjs "$app_path"
-          else
-            app_path=$(find ../release/mac-arm64 -maxdepth 1 -type d -name '*.app' | head -n 1)
-            test -n "$app_path"
-            node scripts/pack-payload.mjs "$app_path"
-          fi
-      - name: Build custom installer
-        working-directory: installer-ui
-        shell: bash
-        run: |
-          unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
-          npm run build
-          for attempt in 1 2 3; do
-            if [ "${{ matrix.platform }}" = "win" ]; then
-              npx electron-builder --win --x64 -c electron-builder.yml --publish never && break
-            else
-              npx electron-builder --mac --${{ matrix.arch }} -c electron-builder.yml --publish never && break
-            fi
-            if [ "$attempt" = 3 ]; then exit 1; fi
-            sleep 15
-          done
-      - name: Upload installer to public draft release
-        env:
-          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
-          VERSION: ${{ needs.prepare.outputs.version }}
-          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
-          ASSET: ${{ matrix.artifact_glob }}
-        shell: bash
-        run: gh release upload "v${VERSION}" "$ASSET" --clobber --repo "$PUBLIC_REPO"
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-  publish:
-    needs: [prepare, build]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      - name: Download installers from public draft release
-        env:
-          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
-          VERSION: ${{ needs.prepare.outputs.version }}
-          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
-        run: |
-          mkdir -p dist
-          gh release download "v${VERSION}" --repo "$PUBLIC_REPO" --dir dist --pattern "YijingAI-Installer-Windows-x64.exe" --pattern "YijingAI-Installer-macOS-x64.dmg" --pattern "YijingAI-Installer-macOS-arm64.dmg"
-      - name: Generate public update manifest
-        env:
-          VERSION: ${{ needs.prepare.outputs.version }}
-        run: node scripts/create-release-manifest.mjs "$VERSION" "zhanfanghou-create/yijing-ai-downloads" "yijingshijue-2026/yijing-ai-downloads" dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
-      - name: Publish GitHub release
-        env:
-          GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
-          VERSION: ${{ needs.prepare.outputs.version }}
-          PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
-        run: |
-          gh release upload "v${VERSION}" dist/latest.json --clobber --repo "$PUBLIC_REPO"
-          gh release edit "v${VERSION}" --draft=false --latest --repo "$PUBLIC_REPO"
-      - name: Publish installers to CNB domestic release
-        continue-on-error: true
-        env:
-          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
-          CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
-          CNB_RELEASE_TAG: v${{ needs.prepare.outputs.version }}
-          CNB_RELEASE_TITLE: 艺镜 AI v${{ needs.prepare.outputs.version }}
-          CNB_RELEASE_NOTES: 艺镜 AI 无限画布正式版，包含 Windows 与 Intel/Apple Silicon macOS 安装包。
-        run: node scripts/publish-cnb-release.mjs dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
-      - name: Publish installers to Alibaba Cloud OSS
-        if: always()
-        env:
-          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          OSS_REGION: cn-hangzhou
-          VERSION: ${{ needs.prepare.outputs.version }}
-        run: |
-          test -n "$OSS_ACCESS_KEY_ID"
-          test -n "$OSS_ACCESS_KEY_SECRET"
-          curl -fsSL https://gosspublic.alicdn.com/ossutil/v2/2.3.0/ossutil-2.3.0-linux-amd64.zip -o ossutil.zip
-          echo "3ae4d9fc85a7a6e9f5654d1599766f1a3a42a3692870887b5ae9338d582ef65a  ossutil.zip" | sha256sum -c -
-          unzip -q ossutil.zip -d ossutil-bin
-          OSSUTIL=$(find ossutil-bin -type f -name ossutil -print -quit)
-          chmod +x "$OSSUTIL"
-          "$OSSUTIL" cp dist/YijingAI-Installer-Windows-x64.exe "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-Windows-x64.exe" -f
-          "$OSSUTIL" cp dist/YijingAI-Installer-macOS-x64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-x64.dmg" -f
-          "$OSSUTIL" cp dist/YijingAI-Installer-macOS-arm64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-arm64.dmg" -f
-          "$OSSUTIL" cp dist/latest.json oss://yjai-releases-cn-20260818/yijing/latest.json -f
-      - name: Update CNB latest manifest branch
-        if: always()
-        env:
-          CNB_TOKEN: ${{ secrets.CNB_TOKEN }}
-          CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
-          VERSION: ${{ needs.prepare.outputs.version }}
-        run: |
-          ASKPASS="$RUNNER_TEMP/cnb-askpass.sh"
-          cat > "$ASKPASS" <<'EOF'
-          #!/bin/sh
-          case "$1" in
-            *Username*) printf '%s\n' 'cnb' ;;
-            *Password*) printf '%s\n' "$CNB_TOKEN" ;;
-          esac
-          EOF
-          chmod 700 "$ASKPASS"
-          export GIT_ASKPASS="$ASKPASS"
-          export GIT_TERMINAL_PROMPT=0
-          git clone --depth 1 "https://cnb.cool/${CNB_REPOSITORY}" cnb-release-repo
-          cp dist/latest.json cnb-release-repo/latest.json
-          cd cnb-release-repo
-          git config user.name "YJAI Release Bot"
-          git config user.email "release@yjai.top"
-          git add latest.json
-          git diff --cached --quiet || git commit -m "Update release manifest v${VERSION}"
-          git push origin main
+          node-version: '20'
+          cache: 'npm'
 
-  restore-source-privacy:
-    if: always()
-    needs: [prepare, build, publish]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Restore source repository privacy
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Build Windows installer
+        if: matrix.os == 'windows-latest'
+        run: npm run dist:win
         env:
-          GH_TOKEN: ${{ secrets.SOURCE_REPOSITORY_ADMIN_TOKEN || secrets.PUBLIC_RELEASE_REPO_TOKEN }}
-          SOURCE_REPOSITORY: ${{ github.repository }}
-        run: |
-          test -n "$GH_TOKEN"
-          gh api --method PATCH "repos/${SOURCE_REPOSITORY}" -F private=true >/dev/null
-          test "$(gh api "repos/${SOURCE_REPOSITORY}" --jq .private)" = "true"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Mac installer
+        if: matrix.os == 'macos-latest'
+        run: npm run dist:mac
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Linux installer
+        if: matrix.os == 'ubuntu-latest'
+        run: npx electron-builder --linux --x64 --publish never
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Windows artifacts
+        if: matrix.os == 'windows-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer
+          path: release/*.exe
+          retention-days: 30
+
+      - name: Upload Mac artifacts
+        if: matrix.os == 'macos-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: mac-installer
+          path: |
+            release/*.dmg
+            release/*.zip
+          retention-days: 30
+
+      - name: Upload Linux artifacts
+        if: matrix.os == 'ubuntu-latest'
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-installer
+          path: |
+            release/*.AppImage
+            release/*.deb
+            release/*.rpm
+          retention-days: 30
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            windows-installer/*.exe
+            mac-installer/*.dmg
+            mac-installer/*.zip
+            linux-installer/*.AppImage
+            linux-installer/*.deb
+            linux-installer/*.rpm
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
