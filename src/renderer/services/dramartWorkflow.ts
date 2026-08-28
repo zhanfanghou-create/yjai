@@ -116,7 +116,15 @@ export const DRAMART_STYLES: DramartStyle[] = [
 ];
 
 // 风格缩略图（由 static public 提供，缺失时页面回退渐变占位）
-DRAMART_STYLES.forEach(s => { s.img = '/dramart-styles/' + s.id + '.png'; });
+// 使用 import.meta.env.BASE_URL 构建相对路径，确保 Electron（file:// 协议）打包后也能正常访问
+function resolveStyleAssetUrl(rawUrl: string): string {
+  if (/^(https?:|data:|blob:)/i.test(rawUrl)) return rawUrl;
+  const baseUrl = import.meta.env.BASE_URL || './';
+  const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+  const normalizedPath = rawUrl.replace(/^\/+/, '');
+  return `${normalizedBase}${normalizedPath}`;
+}
+DRAMART_STYLES.forEach(s => { s.img = resolveStyleAssetUrl('/dramart-styles/' + s.id + '.png'); });
 
 // 按风格名称（或 id）取风格正向提示词，用于图片生成时统一追加，确保严格贴合所选风格
 export function stylePromptOf(styleNameOrId: string): string {
