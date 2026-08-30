@@ -299,18 +299,36 @@ async function callChat(system: string, user: string, config: AIConfigInput | nu
     return null;
   }
   try {
-    const result = await win.yijingAPI.grsai.chat({
-      baseUrl: config.baseUrl,
-      apiKey: config.apiKey,
-      model: config.model,
-      messages: [
-        { role: 'system', content: system },
-        { role: 'user', content: user },
-      ],
-    });
+    // 渲染进程层也加超时保护：即使 IPC/主进程意外挂起也不会无限等待
+    const timeoutMs = 300000; // 5 分钟
+    const result = await Promise.race([
+      win.yijingAPI.grsai.chat({
+        baseUrl: config.baseUrl,
+        apiKey: config.apiKey,
+        model: config.model,
+        messages: [
+          { role: 'system', content: system },
+          { role: 'user', content: user },
+        ],
+      }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('AI 对话响应超时（超过 5 分钟），请检查网络或模型是否正常')), timeoutMs)),
+    ]);
     if (result?.ok) {
-      const content = result.data?.choices?.[0]?.message?.content || result.data?.content || result.data?.response || null;
-      if (!content) throw new Error('AI 返回内容为空');
+      // 尝试多种常见返回字段，兼容不同模型/平台的响应结构
+      const msg = result.data?.choices?.[0]?.message;
+      const content =
+        msg?.content ||
+        msg?.reasoning_content ||
+        result.data?.choices?.[0]?.text ||
+        result.data?.content ||
+        result.data?.response ||
+        result.data?.output_text ||
+        result.data?.output ||
+        null;
+      if (!content) {
+        const dataPreview = JSON.stringify(result.data || {}).slice(0, 500);
+        throw new Error('AI 返回内容为空（模型可能未开通、max_tokens 不足或输出被截断）。原始返回：' + dataPreview);
+      }
       return content;
     }
     // 有配置但调用失败：抛出明确错误，不让用户无感知地看到演示数据

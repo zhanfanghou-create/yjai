@@ -147,15 +147,29 @@ async function installFfmpegWithPackageManager() {
 async function fetchWithRetry(
   url: string,
   init: any,
-  opts: { retries?: number; baseDelayMs?: number } = {}
+  opts: { retries?: number; baseDelayMs?: number; timeoutMs?: number } = {}
 ): Promise<Response> {
   const retries = opts.retries ?? 4;
   const baseDelayMs = opts.baseDelayMs ?? 1500;
+  const timeoutMs = opts.timeoutMs ?? 0; // 0 = 不设超时
   const retryableStatus = new Set([429, 500, 502, 503, 504]);
   let lastError: any = null;
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
-      const response = await fetch(url, init);
+      let controller: AbortController | null = null;
+      let timer: NodeJS.Timeout | null = null;
+      let fetchInit: any = init;
+      if (timeoutMs > 0) {
+        controller = new AbortController();
+        timer = setTimeout(() => controller!.abort(), timeoutMs);
+        fetchInit = { ...init, signal: controller.signal };
+      }
+      let response: Response;
+      try {
+        response = await fetch(url, fetchInit);
+      } finally {
+        if (timer) clearTimeout(timer);
+      }
       if (retryableStatus.has(response.status) && attempt < retries) {
         // 读取并丢弃响应体，释放连接
         try { await response.text(); } catch { /* ignore */ }
@@ -170,6 +184,10 @@ async function fetchWithRetry(
       return response;
     } catch (error) {
       lastError = error;
+      // 超时中止：直接抛出，不再无意义重试
+      if ((error as Error)?.name === 'AbortError') {
+        throw new Error(`请求超时（超过 ${Math.round(timeoutMs / 1000)} 秒），上游响应过慢，请检查 API 配置或模型是否可用`);
+      }
       if (attempt < retries) {
         const delay = baseDelayMs * Math.pow(2, attempt) + Math.floor(Math.random() * 500);
         console.warn(`[Main] fetchWithRetry: 网络错误，第 ${attempt + 1}/${retries} 次重试，${delay}ms 后重试 -> ${url}`, (error as Error).message);
@@ -891,16 +909,21 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
   try {
     const url = buildVersionedApiUrl(baseUrl, '/chat/completions');
     console.log('[IPC] grsai:chat url=', url, 'model=', model);
+    // 对话请求设置超时：长剧本分析可能需要较长时间，但避免请求无限挂起
+    const timeoutMs = config.timeoutMs || 300000; // 默认 5 分钟
+    // max_tokens：长剧本分析需要输出大量 JSON，必须设足够大的值；
+    // 不传时部分模型默认输出极少 token，导致 content 为空被截断
+    const maxTokens = config.maxTokens || 16384;
     const response = await fetchWithRetry(url, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ model, messages, stream: false }),
-    });
+      body: JSON.stringify({ model, messages, stream: false, max_tokens: maxTokens }),
+    }, { timeoutMs });
     const data = await response.json();
-    console.log('[IPC] grsai:chat status=', response.status, 'data=', JSON.stringify(data).slice(0, 500));
+    console.log('[IPC] grsai:chat status=', response.status, 'data=', JSON.stringify(data).slice(0, 800));
     return { ok: true, connected: response.ok, status: response.status, data };
   } catch (error) {
     console.error('[IPC] grsai:chat error=', error);
