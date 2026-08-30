@@ -1206,3 +1206,50 @@
 .dwc-history-name { font-size: 13px; font-weight: 600; color: var(--text-primary, #ffffff); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .dwc-history-meta { font-size: 11px; color: var(--text-muted, #888888); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .dwc-history-empty { text-align: center; color: var(--text-muted, #888888); font-size: 13px; padding: 40px 0; }
+
+/* === 资产生成加载动画 === */
+.dwc-loading-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: dwc-spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.dwc-loading-spinner.large {
+  width: 36px;
+  height: 36px;
+  border-width: 3px;
+  margin-right: 0;
+  margin-bottom: 12px;
+}
+@keyframes dwc-spin {
+  to { transform: rotate(360deg); }
+}
+.dwc-gen-loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 8px;
+}
+.dwc-gen-loading-text {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.dwc-var-gen-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.dwc-modal-ok:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

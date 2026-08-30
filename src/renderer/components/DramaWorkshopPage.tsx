@@ -1740,7 +1740,15 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
   const curImg = variant?.img || asset.img || '';
   const [previewImg, setPreviewImg] = useState(curImg);
   const [previewFull, setPreviewFull] = useState<string | null>(null);
-  useEffect(() => { setPreviewImg(curImg); }, [variant?.id, asset.img]);
+  const [generating, setGenerating] = useState(false);
+  // 修复：依赖项添加 variant?.img，生成成功后自动刷新预览
+  useEffect(() => { setPreviewImg(curImg); }, [variant?.id, variant?.img, asset.img, candidates.length]);
+  const handleGen = async () => {
+    if (generating) return;
+    setGenerating(true);
+    try { await onGen(asset.id, variantId, prompt, genOpts); }
+    finally { setGenerating(false); }
+  };
   const emptyText = asset.kind === 'scene' ? '暂无场景' : asset.kind === 'prop' ? '暂无道具' : (isMain ? '暂无角色主图' : '暂无角色变装');
   const genOpts = { count: parseInt(count, 10), model, resolution, ratio };
   const title = isMain ? (kindLabel + '生成') : (asset.name + (variant ? '-' + variant.label : ''));
@@ -1752,13 +1760,14 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
         <div className="dwc-modal-head">
           <span className="dwc-modal-title">{title}</span>
           <div className="dwc-gen-head-actions">
-            <button className="dwc-modal-ok" onClick={() => onGen(asset.id, variantId, prompt, genOpts)}><BoltIcon size={14} /> 确认</button>
+            <button className="dwc-modal-ok" disabled={generating} onClick={handleGen}>{generating ? '生成中…' : <><BoltIcon size={14} /> 确认</>}</button>
             <button className="dwc-modal-close" onClick={onClose}><CloseIcon size={16} /></button>
           </div>
         </div>
         <div className="dwc-gen-body">
           <div className="dwc-gen-preview" style={previewImg ? undefined : thumbStyle(asset.hue, asset.kind)}>
             {previewImg ? <><img src={previewImg} alt={title} className="dwc-gen-preview-img" onClick={() => setPreviewFull(previewImg)} style={{cursor: 'zoom-in'}} />{curImg && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前</span>}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>{emptyText}</em></span>}
+            {generating && <div className="dwc-gen-loading-overlay"><span className="dwc-loading-spinner large" /><span className="dwc-gen-loading-text">AI 生成中，请稍候…</span></div>}
           </div>
           <div className="dwc-gen-side">
             <div className="dwc-gen-side-item"><span className="dwc-gen-side-label">当前</span>{curImg ? <button className="dwc-gen-side-thumb" onClick={() => setPreviewImg(curImg)} title="点击预览"><img src={curImg} alt="" /></button> : <div className="dwc-gen-side-none">暂无</div>}</div>
@@ -1780,7 +1789,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
             <SimpleDropdown value={resolution} options={VAR_RES} onChange={setResolution} />
             <SimpleDropdown value={ratio} options={VAR_RATIOS} onChange={setRatio} />
             <span className="dwc-ai-param style" title="创建时选择的风格">✱ {styleName || '默认风格'}</span>
-            <button className="dwc-var-gen-btn" disabled={!modelOptions.length} onClick={() => onGen(asset.id, variantId, prompt, genOpts)}><BoltIcon size={14} /> 生成</button>
+            <button className="dwc-var-gen-btn" disabled={!modelOptions.length || generating} onClick={handleGen}>{generating ? <span className="dwc-loading-spinner" /> : <BoltIcon size={14} />}{generating ? ' 生成中…' : ' 生成'}</button>
           </div>
           {candidates.length > 0 && (
             <div className="dwc-var-cands">
