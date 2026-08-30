@@ -390,6 +390,8 @@ export interface RunAnalysisOptions {
   config: AIConfigInput | null;
   imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<string | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
+  /** 分镜最大时长（秒），默认15秒，可选5/10/15/20/25/30 */
+  shotDuration?: number;
 }
 
 // 根据比例和分辨率计算图片 size 参数（WIDTHxHEIGHT 格式）
@@ -405,7 +407,7 @@ function calcImageSize(ratio: DramartRatio, resolution: DramartResolution): stri
 }
 
 export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'>> {
-  const { scriptText, scriptFileName, styleName, styleWord, ratio, resolution, config, imageFetcher, onProgress } = opts;
+  const { scriptText, scriptFileName, styleName, styleWord, ratio, resolution, config, imageFetcher, onProgress, shotDuration = 15 } = opts;
   void scriptFileName;
   const imgSize = calcImageSize(ratio, resolution);
   const total = DRAMART_ANALYSIS_STEPS.length;
@@ -435,32 +437,48 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
     scriptText,
   ].join('\n');
 
-  const storyboardPrompt = [
-    '你是影视分镜设计师，请根据剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
-    '{',
-    '  "storyboards":[',
-    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","duration":15}',
-    '  ]',
-    '}',
-    '要求：',
-    '1. 按剧本中的场景顺序逐场设计，不要遗漏任何场景',
-    '2. rawScript 字段必须是该分镜对应的剧本原文片段，从剧本中原样摘录，不要改写、不要总结、不要添加内容',
-    '3. 每个分镜的 description 必须包含：',
-    '   - 分镜场景设定（具体地点）',
-    '   - 时间（日/夜/晨/昏等）',
-    '   - 灯光（主光来源、色温、光比、阴影效果）',
-    '   - 分镜具体动作描述，按镜头拆分，每个镜头格式：',
-    '     镜头N Xs',
-    '     [站位] 角色/道具在画面中的位置',
-    '     [动作] 镜头类型|运镜方式 具体动作描述，台词用{台词}标注',
-    '4. duration 单位为秒，根据场景内容合理分配（总时长约240秒）',
-    '5. characters 只列出镜的角色，不出镜的不要列',
-    '6. 每个分镜可包含多个镜头，镜头总时长应等于分镜 duration',
-    '7. 镜头类型参考：远景、全景、中景、近景、特写、大特写、主观视角、过肩镜头等',
-    '8. 运镜方式参考：固定镜头、缓推、缓拉、摇镜、跟拍、手持、升降等',
-    '剧本：',
-    scriptText,
-  ].join('\n');
+  // 分镜提示词构建函数：在资产提取完成后调用，传入已提取的资产列表
+  const buildStoryboardPrompt = (assets: { characters: any[]; scenes: any[]; props: any[] }) => {
+    const charNames = assets.characters.map((c: any) => c.name).join('、');
+    const sceneNames = assets.scenes.map((s: any) => s.name).join('、');
+    const propNames = assets.props.map((p: any) => p.name).join('、');
+    return [
+      '你是影视分镜设计师，请根据剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
+      '{',
+      '  "storyboards":[',
+      '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","duration":' + shotDuration + '}',
+      '  ]',
+      '}',
+      '【已提取资产列表 - 分镜引用必须严格从此列表中选择】',
+      '角色：' + (charNames || '（无）'),
+      '场景：' + (sceneNames || '（无）'),
+      '道具：' + (propNames || '（无）'),
+      '',
+      '要求：',
+      '1. 按剧本中的场景顺序逐场设计，不要遗漏任何场景',
+      '2. rawScript 字段必须是该分镜对应的剧本原文片段，从剧本中原样摘录，不要改写、不要总结、不要添加内容',
+      '3. 每个分镜的 description 必须包含：',
+      '   - 分镜场景设定（具体地点）',
+      '   - 时间（日/夜/晨/昏等）',
+      '   - 灯光（主光来源、色温、光比、阴影效果）',
+      '   - 分镜具体动作描述，按镜头拆分，每个镜头格式：',
+      '     镜头N Xs',
+      '     [站位] 角色/道具在画面中的位置',
+      '     [动作] 镜头类型|运镜方式 具体动作描述，台词用{台词}标注',
+      '4. duration 单位为秒，每个分镜的 duration 必须小于等于 ' + shotDuration + ' 秒，绝对不能超过 ' + shotDuration + ' 秒，根据场景内容合理分配',
+      '5. 【资产引用严格约束】',
+      '   - characters、scene、props 字段必须严格从上方已提取资产列表中选择，绝对不能引用列表中不存在的资产',
+      '   - 类似的场景（如同一个房间的不同角度、同一条街道的不同位置）必须合并为同一个场景引用，不要重复生成新场景',
+      '   - 不重要的、只出现一次的背景道具（如路边的树、桌上的杯子），只在 description 中用文字描述，不要在 props 字段中生成资产引用',
+      '   - 只有对剧情有重要作用、多次出现的核心道具才在 props 字段中引用',
+      '   - characters 只列出镜的角色，不出镜的不要列',
+      '6. 每个分镜可包含多个镜头，镜头总时长应小于等于分镜 duration，且每个镜头时长也不能超过 ' + shotDuration + ' 秒',
+      '7. 镜头类型参考：远景、全景、中景、近景、特写、大特写、主观视角、过肩镜头等',
+      '8. 运镜方式参考：固定镜头、缓推、缓拉、摇镜、跟拍、手持、升降等',
+      '剧本：',
+      scriptText,
+    ].join('\n');
+  };
 
   for (let i = 0; i < total; i++) {
     const label = DRAMART_ANALYSIS_STEPS[i];
@@ -477,8 +495,9 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
         if (norm) { result = { ...result, ...norm }; }
       }
     } else if (i === 1) {
-      // 第2步：分镜设计 → 调用AI生成分镜列表
+      // 第2步：分镜设计 → 调用AI生成分镜列表（使用已提取的资产构建提示词，严格约束资产引用）
       const system = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
+      const storyboardPrompt = buildStoryboardPrompt(result);
       const content = await callChat(system, storyboardPrompt, config);
       if (content) {
         const parsed = parseJsonObject(content);
@@ -492,7 +511,9 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
             const desc = String(sb?.description || '').trim();
             // rawScript 优先使用 AI 输出的剧本原文片段，如果没有则回退到分镜描述
             const rawScript = String(sb?.rawScript || '').trim() || desc;
-            const dur = Number(sb?.duration) || 15;
+            // 确保分镜时长不超过用户选择的最大时长
+            const rawDur = Number(sb?.duration) || shotDuration;
+            const dur = Math.min(Math.max(rawDur, 1), shotDuration);
             return {
               id: rid('sb'),
               index: idxNum,

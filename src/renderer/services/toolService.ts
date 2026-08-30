@@ -47,7 +47,9 @@ export const toolService = {
         );
       }
 
-      const url = result?.url || result?.data?.[0]?.url || result?.data?.[0]?.b64_json || result?.images?.[0]?.url || result?.results?.[0]?.url;
+      // 优先使用主进程下载保存的本地文件路径（方舟返回URL仅24小时有效期，主进程已自动落盘）
+      const localPath = result?.filePaths?.[0] || result?.savedPaths?.[0];
+      const url = localPath || result?.url || result?.data?.[0]?.url || result?.data?.[0]?.b64_json || result?.images?.[0]?.url || result?.results?.[0]?.url;
       if (!url) {
         throw new Error(result?.error?.message || 'API返回结果为空');
       }
@@ -55,6 +57,7 @@ export const toolService = {
       return {
         url,
         type: 'image' as const,
+        local: !!localPath,
       };
     } catch (error: any) {
       throw new Error(`文生图失败：${error.message}`);
@@ -79,7 +82,9 @@ export const toolService = {
         }
       );
 
-      const url = result?.url || result?.data?.[0]?.url || result?.data?.[0]?.b64_json;
+      // 优先使用主进程下载保存的本地文件路径
+      const localPath = result?.filePaths?.[0] || result?.savedPaths?.[0];
+      const url = localPath || result?.url || result?.data?.[0]?.url || result?.data?.[0]?.b64_json;
       if (!url) {
         throw new Error(result?.error?.message || 'API返回结果为空');
       }
@@ -87,6 +92,7 @@ export const toolService = {
       return {
         url,
         type: 'image' as const,
+        local: !!localPath,
       };
     } catch (error: any) {
       throw new Error(`图生图失败：${error.message}`);

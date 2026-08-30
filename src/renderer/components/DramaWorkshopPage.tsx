@@ -1725,11 +1725,13 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
   const isMain = variant?.label === term.main || asset.kind !== 'character';
   // 生图模型列表：自动取设置页图像 API 的模型配置（找有模型的那条，defaultModel 为默认），没有才回退内置列表
   const imageAPIConfigs = useAppStore(s => s.imageAPIConfigs);
-  const cfg0 = (imageAPIConfigs || []).find((c: any) => (c?.models?.length) || c?.defaultModel) || imageAPIConfigs?.[0];
+  const cfg0 = (imageAPIConfigs || []).find((c: any) => (c?.models?.length) || c?.defaultModel) || (imageAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl) || imageAPIConfigs?.[0];
   const cfgDefault = (cfg0?.defaultModel as string | undefined) || '';
   const cfgModels = ((cfg0?.models as string[] | undefined) || []).filter(Boolean);
   const allModels = Array.from(new Set([...(cfgDefault ? [cfgDefault] : []), ...cfgModels]));
   const modelOptions = allModels.length ? allModels.map((m: string) => ({ id: m, label: m })) : [];
+  // 修复：只要有可用的 API 配置（有 apiKey 和 baseUrl）就允许生成，不强制要求配置模型列表
+  const hasAvailableConfig = !!(cfg0?.apiKey && cfg0?.baseUrl);
   const kindDefault = asset.kind === 'scene' ? DEFAULT_SCENE_PROMPT : asset.kind === 'prop' ? DEFAULT_PROP_PROMPT.replace('{name}', asset.name || '物品') : (DEFAULT_MAIN_PROMPT + asset.name + '：' + (asset.imageSummary || ''));
   const [prompt, setPrompt] = useState(variant?.prompt || asset.prompt || kindDefault);
   const [model, setModel] = useState(cfgDefault || modelOptions[0]?.id || '');
@@ -1760,7 +1762,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
         <div className="dwc-modal-head">
           <span className="dwc-modal-title">{title}</span>
           <div className="dwc-gen-head-actions">
-            <button className="dwc-modal-ok" disabled={generating} onClick={handleGen}>{generating ? '生成中…' : <><BoltIcon size={14} /> 确认</>}</button>
+            <button className="dwc-modal-ok" disabled={!hasAvailableConfig || generating} onClick={handleGen}>{generating ? '生成中…' : <><BoltIcon size={14} /> 确认</>}</button>
             <button className="dwc-modal-close" onClick={onClose}><CloseIcon size={16} /></button>
           </div>
         </div>
@@ -1784,12 +1786,12 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
           </div>
           <textarea className="dwc-ai-prompt" value={prompt} onChange={e => setPrompt(e.target.value)} rows={5} placeholder={DEFAULT_VAR_PROMPT} />
           <div className="dwc-ai-params">
-            {modelOptions.length ? <SimpleDropdown value={model} options={modelOptions} onChange={setModel} /> : <span className="dwc-ai-param warn">⚠ 请先设置图像模型</span>}
+            {modelOptions.length ? <SimpleDropdown value={model} options={modelOptions} onChange={setModel} /> : hasAvailableConfig ? <span className="dwc-ai-param info">使用配置默认模型</span> : <span className="dwc-ai-param warn">⚠ 请先设置图像API</span>}
             <SimpleDropdown value={count} options={VAR_COUNTS} onChange={setCount} />
             <SimpleDropdown value={resolution} options={VAR_RES} onChange={setResolution} />
             <SimpleDropdown value={ratio} options={VAR_RATIOS} onChange={setRatio} />
             <span className="dwc-ai-param style" title="创建时选择的风格">✱ {styleName || '默认风格'}</span>
-            <button className="dwc-var-gen-btn" disabled={!modelOptions.length || generating} onClick={handleGen}>{generating ? <span className="dwc-loading-spinner" /> : <BoltIcon size={14} />}{generating ? ' 生成中…' : ' 生成'}</button>
+            <button className="dwc-var-gen-btn" disabled={!hasAvailableConfig || generating} onClick={handleGen}>{generating ? <span className="dwc-loading-spinner" /> : <BoltIcon size={14} />}{generating ? ' 生成中…' : ' 生成'}</button>
           </div>
           {candidates.length > 0 && (
             <div className="dwc-var-cands">
@@ -1829,6 +1831,9 @@ interface AddAssetModalProps {
 
 const AddAssetModal: React.FC<AddAssetModalProps> = ({ kindLabel, styleName, modelOptions, img, onClose, onAdd, onPicker }) => {
   const kind = kindLabel === '场景' ? 'scene' : kindLabel === '道具' ? 'prop' : 'character';
+  // 修复：在组件内部获取 imageAPIConfigs，计算是否有可用的 API 配置
+  const imageAPIConfigs = useAppStore(s => s.imageAPIConfigs);
+  const hasAvailableConfig = !!(imageAPIConfigs || []).some((c: any) => c?.apiKey && c?.baseUrl);
   const [name, setName] = useState('');
   const [gender, setGender] = useState('');
   const [age, setAge] = useState('');
@@ -1883,7 +1888,7 @@ const AddAssetModal: React.FC<AddAssetModalProps> = ({ kindLabel, styleName, mod
         </div>
         <div className="dwc-modal-foot">
           <div className="dwc-ai-params">
-            {modelOptions.length ? <SimpleDropdown value={model} options={modelOptions} onChange={setModel} /> : <span className="dwc-ai-param warn">⚠ 请先设置图像模型</span>}
+            {modelOptions.length ? <SimpleDropdown value={model} options={modelOptions} onChange={setModel} /> : hasAvailableConfig ? <span className="dwc-ai-param info">使用配置默认模型</span> : <span className="dwc-ai-param warn">⚠ 请先设置图像API</span>}
             <SimpleDropdown value={resolution} options={VAR_RES} onChange={setResolution} />
             <SimpleDropdown value={ratio} options={VAR_RATIOS} onChange={setRatio} />
             <span className="dwc-ai-param style">✱ {styleName || '默认风格'}</span>
@@ -2147,6 +2152,9 @@ interface BatchGenModalProps {
 }
 
 const BatchGenModal: React.FC<BatchGenModalProps> = ({ items, styleName, modelOptions, onClose, onBatchGen }) => {
+  // 修复：在组件内部获取 imageAPIConfigs，计算是否有可用的 API 配置
+  const imageAPIConfigs = useAppStore(s => s.imageAPIConfigs);
+  const hasAvailableConfig = !!(imageAPIConfigs || []).some((c: any) => c?.apiKey && c?.baseUrl);
   const [sel, setSel] = useState<Set<string>>(new Set());
   const [model, setModel] = useState(modelOptions[0]?.id || '');
   const [resolution, setResolution] = useState(VAR_RES[0].id);
@@ -2180,14 +2188,14 @@ const BatchGenModal: React.FC<BatchGenModalProps> = ({ items, styleName, modelOp
         </div>
         <div className="dwc-modal-foot">
           <div className="dwc-ai-params batch">
-            {modelOptions.length ? <SimpleDropdown value={model} options={modelOptions} onChange={setModel} /> : <span className="dwc-ai-param warn">⚠ 请先设置图像模型</span>}
+            {modelOptions.length ? <SimpleDropdown value={model} options={modelOptions} onChange={setModel} /> : hasAvailableConfig ? <span className="dwc-ai-param info">使用配置默认模型</span> : <span className="dwc-ai-param warn">⚠ 请先设置图像API</span>}
             <SimpleDropdown value={resolution} options={VAR_RES} onChange={setResolution} />
             <SimpleDropdown value={ratio} options={VAR_RATIOS} onChange={setRatio} />
             <span className="dwc-ai-param style">✱ {styleName || '默认风格'}</span>
           </div>
           <button className="dwc-modal-cancel" onClick={selectAll} disabled={!pending.length}>全选</button>
           <button className="dwc-modal-cancel" onClick={onClose}>取消</button>
-          <button className="dwc-modal-ok" disabled={!sel.size || !modelOptions.length} onClick={() => { onBatchGen([...sel], { model, resolution, ratio }); onClose(); }}>确认生成</button>
+          <button className="dwc-modal-ok" disabled={!sel.size || !hasAvailableConfig} onClick={() => { onBatchGen([...sel], { model, resolution, ratio }); onClose(); }}>确认生成</button>
         </div>
       </div>
     </div>
@@ -2507,6 +2515,10 @@ export const DramaWorkshopPage: React.FC = () => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const [supplementOpen, setSupplementOpen] = useState(false);
   const [analyzing, setAnalyzing] = useState<{ step: number; total: number; label: string; percent: number; msg: string }>({ step: 0, total: DRAMART_ANALYSIS_STEPS.length, label: DRAMART_ANALYSIS_STEPS[0], percent: 0, msg: '' });
+  // 分镜时长选择弹窗：默认15秒，可选5/10/15/20/25/30
+  const [shotDurationOpen, setShotDurationOpen] = useState(false);
+  const [selectedShotDuration, setSelectedShotDuration] = useState(15);
+  const SHOT_DURATION_OPTIONS = [5, 10, 15, 20, 25, 30];
   const [hintIdx, setHintIdx] = useState(0);
   // 分析中滚动提示：每 1.8s 轮换
   useEffect(() => {
@@ -2605,7 +2617,7 @@ export const DramaWorkshopPage: React.FC = () => {
     return null;
   }, [imageAPIConfigs, styleWord]);
 
-  const startAnalysis = useCallback(async (base: DramartProject, config: AIConfigInput | null) => {
+  const startAnalysis = useCallback(async (base: DramartProject, config: AIConfigInput | null, shotDuration?: number) => {
     setStage('analyze');
     setAnalyzing({ step: 0, total: DRAMART_ANALYSIS_STEPS.length, label: DRAMART_ANALYSIS_STEPS[0], percent: 2, msg: '' });
     try {
@@ -2619,6 +2631,7 @@ export const DramaWorkshopPage: React.FC = () => {
         config,
         imageFetcher,
         onProgress: (step, label, percent, msg) => setAnalyzing({ step, total: DRAMART_ANALYSIS_STEPS.length, label, percent, msg: msg || '' }),
+        shotDuration: shotDuration || 15,
       });
       // 生成封面图（根据项目比例动态调整，包含剧本名称大标题，符合短视频封面特点）
       const coverRatio = base.ratio || '9:16';
@@ -2663,6 +2676,9 @@ export const DramaWorkshopPage: React.FC = () => {
     }
   }, [imageFetcher, showToast]);
 
+  // 待创建的项目基础数据（弹窗确认后使用）
+  const pendingCreateRef = useRef<{ base: DramartProject; config: AIConfigInput | null } | null>(null);
+
   const handleCreate = useCallback(async () => {
     if (mode === 'manual' && dramartDraft) { return handleCreateDramaDraft(); }
     if (!scriptFile) { showToast('请先上传剧本', 'error'); return; }
@@ -2685,8 +2701,20 @@ export const DramaWorkshopPage: React.FC = () => {
       props: [],
       storyboards: [],
     };
-    await startAnalysis(projectBase, config);
-  }, [scriptFile, selectedStyle, styleWord, ratio, resolution, mode, dramartDraft, pickAIConfig, startAnalysis, handleCreateDramaDraft, showToast]);
+    // 先弹窗选择分镜时长，确认后再开始分析
+    pendingCreateRef.current = { base: projectBase, config };
+    setSelectedShotDuration(15);
+    setShotDurationOpen(true);
+  }, [scriptFile, selectedStyle, styleWord, ratio, resolution, mode, dramartDraft, pickAIConfig, handleCreateDramaDraft, showToast]);
+
+  // 确认分镜时长，开始分析
+  const confirmShotDuration = useCallback(async () => {
+    const pending = pendingCreateRef.current;
+    if (!pending) { setShotDurationOpen(false); return; }
+    setShotDurationOpen(false);
+    pendingCreateRef.current = null;
+    await startAnalysis(pending.base, pending.config, selectedShotDuration);
+  }, [selectedShotDuration, startAnalysis]);
 
   // 剧创模式创建：用剧创草稿 + 用户参数，解析剧创结果填入（不重新生成）
   async function handleCreateDramaDraft() {
@@ -3659,6 +3687,38 @@ export const DramaWorkshopPage: React.FC = () => {
                   onSetCurrent={setVariantCurrent}
                   onOpenPicker={() => setPickerAsset(assetById(genOpen.assetId)!)}
                 />
+              )}
+
+              {/* 分镜时长选择弹窗 */}
+              {shotDurationOpen && (
+                <div className="dwc-overlay" onClick={() => setShotDurationOpen(false)}>
+                  <div className="dwc-modal dwc-shot-duration-modal" onClick={e => e.stopPropagation()}>
+                    <div className="dwc-modal-head">
+                      <span className="dwc-modal-title">选择分镜时长</span>
+                      <button className="dwc-modal-close" onClick={() => setShotDurationOpen(false)}><CloseIcon size={16} /></button>
+                    </div>
+                    <div className="dwc-modal-body">
+                      <div className="dwc-shot-duration-hint">每个分镜的最大时长，AI 将按照此时长进行分镜拆分，单个分镜时长不会超过此值</div>
+                      <div className="dwc-shot-duration-grid">
+                        {SHOT_DURATION_OPTIONS.map(dur => (
+                          <button
+                            key={dur}
+                            className={`dwc-shot-duration-btn${selectedShotDuration === dur ? ' active' : ''}`}
+                            onClick={() => setSelectedShotDuration(dur)}
+                          >
+                            <span className="dwc-shot-duration-num">{dur}</span>
+                            <span className="dwc-shot-duration-unit">秒</span>
+                          </button>
+                        ))}
+                      </div>
+                      <div className="dwc-shot-duration-current">当前选择：<strong>{selectedShotDuration} 秒</strong> / 分镜</div>
+                    </div>
+                    <div className="dwc-modal-foot">
+                      <button className="dwc-modal-cancel" onClick={() => setShotDurationOpen(false)}>取消</button>
+                      <button className="dwc-modal-ok" onClick={confirmShotDuration}><ClapperboardIcon size={14} /> 确认并开始分析</button>
+                    </div>
+                  </div>
+                </div>
               )}
 
               {batchOpen && (

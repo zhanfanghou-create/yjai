@@ -133,6 +133,8 @@ export const openaiService = {
           size: options.size || '1024x1024',
           quality: options.quality || 'standard',
           n: options.n || 1,
+          // 火山引擎 Seedream 扩展参数：关闭AI视觉水印
+          extra_body: { watermark: false, output_format: 'png' },
         });
         return res;
       }
@@ -150,6 +152,11 @@ export const openaiService = {
           size: options.size || '1024x1024',
           quality: options.quality || 'standard',
           n: options.n || 1,
+          // 火山引擎 Seedream 扩展参数：关闭AI视觉水印，输出PNG格式
+          extra_body: {
+            watermark: false,
+            output_format: 'png',
+          },
         }),
       });
 

@@ -1053,6 +1053,12 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
               prompt,
               size: imageSizeValue || '1024x1024',
               n: config.n || 1,
+              // 火山引擎 Seedream 扩展参数：关闭AI视觉水印，输出PNG格式
+              // watermark 必须放在 extra_body 内部才生效，写外层完全无效
+              extra_body: {
+                watermark: false,
+                output_format: 'png',
+              },
             }
           : { model, prompt, replyType: config.replyType || 'json' };
 
