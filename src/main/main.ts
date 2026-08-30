@@ -914,13 +914,22 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
     // max_tokens：长剧本分析需要输出大量 JSON，必须设足够大的值；
     // 不传时部分模型默认输出极少 token，导致 content 为空被截断
     const maxTokens = config.maxTokens || 16384;
+    // 火山方舟 seed 系列推理模型默认开启深度思考，会输出超长 reasoning_content 导致超时；
+    // 检测到火山方舟推理模型时自动关闭深度思考，让模型直接输出结果
+    const isVolcengineArk = /ark\.cn-beijing\.volces\.com/i.test(baseUrl || '');
+    const isReasoningModel = /seed|evolving|reasoning|deepseek|r1/i.test(model || '');
+    const body: any = { model, messages, stream: false, max_tokens: maxTokens };
+    if (isVolcengineArk && isReasoningModel) {
+      body.thinking = { type: 'disabled' };
+      console.log('[IPC] grsai:chat: 检测到火山方舟推理模型，已关闭深度思考 (thinking.disabled)');
+    }
     const response = await fetchWithRetry(url, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ model, messages, stream: false, max_tokens: maxTokens }),
+      body: JSON.stringify(body),
     }, { timeoutMs });
     const data = await response.json();
     console.log('[IPC] grsai:chat status=', response.status, 'data=', JSON.stringify(data).slice(0, 800));
