@@ -45,7 +45,8 @@ export async function runInstall(
 
   await new Promise<void>((resolve, reject) => {
     const args = ["x", archive, `-o${target}`, "-y", "-bsp1"];
-    const proc = spawn(sz, args, { windowsHide: true });
+    // stdin 设为 ignore，避免 Windows 临时目录运行时 stdin 管道创建失败导致 ENOTCONN
+    const proc = spawn(sz, args, { windowsHide: true, stdio: ["ignore", "pipe", "pipe"] });
     let carry = "";
     proc.stdout.on("data", (chunk: Buffer) => {
       carry += chunk.toString("utf8");
@@ -97,7 +98,7 @@ async function runPowerShell(script: string): Promise<void> {
     const proc = spawn(
       "powershell",
       ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", script],
-      { windowsHide: true }
+      { windowsHide: true, stdio: ["ignore", "pipe", "pipe"] }
     );
     let err = "";
     proc.stderr.on("data", (c: Buffer) => (err += c.toString("utf8")));

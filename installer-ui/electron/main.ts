@@ -168,6 +168,21 @@ function registerIpc(): void {
   });
 }
 
+// 全局未捕获异常处理：避免子进程 spawn 等错误导致安装器崩溃白屏
+process.on("uncaughtException", (error) => {
+  console.error("[Installer] uncaughtException:", error);
+  // 尝试通过 IPC 通知渲染进程，如果窗口已创建
+  if (mainWindow && !mainWindow.isDestroyed()) {
+    mainWindow.webContents.send("installer:log", {
+      level: "error",
+      text: `安装过程异常: ${error.message || String(error)}`,
+    });
+  }
+});
+process.on("unhandledRejection", (reason) => {
+  console.error("[Installer] unhandledRejection:", reason);
+});
+
 app.whenReady().then(() => {
   registerIpc();
   createWindow();
