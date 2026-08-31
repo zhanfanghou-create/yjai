@@ -749,16 +749,20 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const [vcount, setVcount] = useState('1');
   const [vres, setVres] = useState<string>((project?.resolution as string) || '1080p');
   const [vfmt, setVfmt] = useState('mov');
-  const videoCfg = ((useAppStore(s => s.videoAPIConfigs) as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || undefined;
+  // 视频配置检测：有 apiKey+baseUrl，或 apiKey/baseUrl 之一 + 默认模型/模型列表 均视为已配置，避免误报"请先设置视频模型"
+  const videoCfg = ((useAppStore(s => s.videoAPIConfigs) as any) || []).find((c: any) =>
+    (c?.apiKey && c?.baseUrl) || (c?.apiKey && (c?.defaultModel || (c?.models || []).length)) || (c?.baseUrl && (c?.defaultModel || (c?.models || []).length))
+  ) || undefined;
   const voiceAPIConfigs = useAppStore(s => s.voiceAPIConfigs);
   const hasVoiceCfg = !!((voiceAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl);
   const voiceCfg2 = ((voiceAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || undefined;
   const voiceLibNames = ((voiceCfg2?.models as string[] | undefined) || []).filter(Boolean);
   const promptRef = useRef<HTMLDivElement>(null);
   const promptRange = useRef<Range | null>(null);
-  const videoModels = ((videoCfg?.models as string[] | undefined) || []).filter(Boolean);
+  // 模型列表：models + defaultModel 合并去重，确保能准确引用设置里的默认模型
+  const videoModels = Array.from(new Set([...(((videoCfg?.models as string[] | undefined) || [])).filter(Boolean), videoCfg?.defaultModel || ''].filter(Boolean)));
   const videoModelOptions = videoModels.length ? videoModels.map((m: string) => ({ id: m, label: m })) : [];
-  const effectiveVmodel = vmodel || videoCfg?.defaultModel || '';
+  const effectiveVmodel = vmodel || videoCfg?.defaultModel || videoModels[0] || '';
   const sb = storyboards[index];
   const findAsset = (kind: string, name: string) => {
     const list = kind === 'character' ? project.characters : kind === 'scene' ? project.scenes : project.props;
@@ -3022,7 +3026,8 @@ export const DramaWorkshopPage: React.FC = () => {
     setSbStatus(s => ({ ...s, [id]: 'generating' }));
     setSbUrl(u => ({ ...u, [id]: '' }));
 
-    const vc = videoAPIConfigs?.[0];
+    // 生成时准确引用设置里第一个有效的视频配置（有 apiKey+baseUrl），而非固定取第一个
+    const vc = ((videoAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || videoAPIConfigs?.[0] || undefined;
     const count = [1, 2, 3, 4].includes(params?.count || 1) ? (params?.count || 1) : 1;
 
     // 异步生成角色配音（不阻塞视频生成）
