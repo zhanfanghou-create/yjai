@@ -1074,7 +1074,7 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
           // 按火山方舟官方文档：视频参数直接放请求体顶层（强校验），并关闭视频水印
           ratio: aspectValue || '16:9',
           resolution: resolutionValue || '720p',
-          duration: config.duration || 5,
+          duration: Math.min(30, Math.max(4, Number(config.duration) || 5)),
           watermark: false,
         }
       : isAgnesVideo
