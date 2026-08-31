@@ -4736,7 +4736,8 @@ function CanvasInner(_props: CanvasProps = {}) {
       const node = state.nodes[id];
       if (!node) return;
       upstreamNodeIds.push(id);
-      const url = node.result?.url || node.thumbnail || (Array.isArray(node.options?.referenceImages) ? node.options.referenceImages[0]?.url : undefined);
+      // 优先使用生成节点保存的方舟 TOS URL（同账号产物受信任、视频参考不卡真人），回退本地路径
+      const url = node.result?.remoteUrl || node.result?.url || node.thumbnail || (Array.isArray(node.options?.referenceImages) ? node.options.referenceImages[0]?.url : undefined);
       const mediaType = node.result?.type || 'image';
       if (url) {
         referenceImages.push({ id: `group-ref-${id}-${Date.now()}`, name: getNodeDisplayName(node), url, type: mediaType, nodeId: id });

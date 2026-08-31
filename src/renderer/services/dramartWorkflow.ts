@@ -25,9 +25,11 @@ export interface DramartAssetItem {
   count: number;
   hue: number;
   img?: string;
+  /** 生图模型返回的远程图片地址（火山方舟 TOS URL 等）。方舟同账号产物受信任，视频参考图优先使用，避免真人拦截 */
+  remoteUrl?: string;
   prompt?: string;
   voice?: string;
-  variants?: { id: string; label: string; img?: string; candidates?: string[]; prompt?: string }[];
+  variants?: { id: string; label: string; img?: string; remoteUrl?: string; candidates?: string[]; prompt?: string }[];
 }
 
 export interface DramartStoryboard {
@@ -390,7 +392,7 @@ export interface RunAnalysisOptions {
   ratio: DramartRatio;
   resolution: DramartResolution;
   config: AIConfigInput | null;
-  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<string | null>;
+  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<{ url: string; remoteUrl?: string } | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
   /** 分镜最大时长（秒），默认15秒，可选5/10/15/20/25/30 */
   shotDuration?: number;
@@ -553,8 +555,8 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
         while (queue.length > 0) {
           const a = queue.shift()!;
           try {
-            const url = await imageFetcher(buildAssetImagePrompt(a), { size: imgSize });
-            if (url) a.img = url;
+            const r = await imageFetcher(buildAssetImagePrompt(a), { size: imgSize });
+            if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
           } catch { /* 单个失败不影响其他 */ }
           completed++;
           onProgress(4, '生成资产图', Math.round((completed / all.length) * 100), `已完成 ${completed}/${all.length}：${a.name}`);
@@ -659,7 +661,7 @@ export interface DramaDraftAnalyzeOptions {
   ratio?: DramartRatio;
   /** 图片分辨率，如 1k、2k、4k 等，用于资产生成 */
   resolution?: DramartResolution;
-  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<string | null>;
+  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<{ url: string; remoteUrl?: string } | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
 }
 
@@ -825,8 +827,8 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const url = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize }).catch(() => null);
-      if (url) a.img = url;
+      const r = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize }).catch(() => null);
+      if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
     }
   }
   onProgress(total, '完成', 100);
@@ -927,7 +929,7 @@ export interface SupplementAnalysisOptions {
   existing: Pick<DramartProject, 'characters' | 'scenes' | 'props'>;
   /** 既有分镜数量：新分镜的集数从该数量之后接续 */
   storyboardOffset: number;
-  imageFetcher?: (prompt: string) => Promise<string | null>;
+  imageFetcher?: (prompt: string) => Promise<{ url: string; remoteUrl?: string } | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
 }
 
@@ -1090,8 +1092,8 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const url = await imageFetcher(buildAssetImagePrompt(a)).catch(() => null);
-      if (url) a.img = url;
+      const r = await imageFetcher(buildAssetImagePrompt(a)).catch(() => null);
+      if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
     }
   }
   await new Promise(r => setTimeout(r, 300));

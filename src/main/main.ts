@@ -960,6 +960,95 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
   }
 });
 
+// ===== 火山方舟素材资产库 AK/SK 签名（HMAC-SHA256）与 CreateAsset 流程 =====
+// 素材资产库 OpenAPI 仅支持 AK/SK 签名（Service=ark, Region=cn-beijing, Version=2024-01-01）
+const VOLC_ASSET_HOST = 'ark.cn-beijing.volcengineapi.com';
+const VOLC_ASSET_BASE = 'https://ark.cn-beijing.volcengineapi.com/';
+const VOLC_ASSET_REGION = 'cn-beijing';
+const VOLC_ASSET_SERVICE = 'ark';
+
+function volcHmacSHA256(key: Buffer, content: string): Buffer {
+  return crypto.createHmac('sha256', key).update(content).digest();
+}
+function volcSha256Hex(data: Buffer | string): string {
+  return crypto.createHash('sha256').update(data).digest('hex');
+}
+function volcSignRequest(opts: { ak: string; sk: string; action: string; body: any }): { url: string; headers: Record<string, string> } {
+  const { ak, sk, action, body } = opts;
+  const bodyBuf = Buffer.from(JSON.stringify(body));
+  const now = new Date();
+  const xDate = now.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const authDate = xDate.slice(0, 8);
+  const payload = volcSha256Hex(bodyBuf);
+  const queries = new URLSearchParams({ Action: action, Version: '2024-01-01' });
+  const queryString = queries.toString().replace(/\+/g, '%20');
+  const path = '/';
+  const signedHeaders = ['host', 'x-date', 'x-content-sha256', 'content-type'];
+  const headerValues: Record<string, string> = {
+    'X-Date': xDate,
+    'X-Content-Sha256': payload,
+    'Content-Type': 'application/json',
+    host: VOLC_ASSET_HOST,
+  };
+  const headerString = signedHeaders.map(h => h + ':' + headerValues[h].trim()).join('\n');
+  const canonicalString = ['POST', path, queryString, headerString + '\n', signedHeaders.join(';'), payload].join('\n');
+  const hashedCanonical = volcSha256Hex(canonicalString);
+  const credentialScope = authDate + '/' + VOLC_ASSET_REGION + '/' + VOLC_ASSET_SERVICE + '/request';
+  const signString = ['HMAC-SHA256', xDate, credentialScope, hashedCanonical].join('\n');
+  const kDate = volcHmacSHA256(Buffer.from(sk), authDate);
+  const kRegion = volcHmacSHA256(kDate, VOLC_ASSET_REGION);
+  const kService = volcHmacSHA256(kRegion, VOLC_ASSET_SERVICE);
+  const kSigning = volcHmacSHA256(kService, 'request');
+  const signature = volcHmacSHA256(kSigning, signString).toString('hex');
+  const authorization = 'HMAC-SHA256 Credential=' + ak + '/' + credentialScope + ', SignedHeaders=' + signedHeaders.join(';') + ', Signature=' + signature;
+  return {
+    url: VOLC_ASSET_BASE + '?' + queryString,
+    headers: { 'Authorization': authorization, 'X-Date': xDate, 'X-Content-Sha256': payload, 'Content-Type': 'application/json' },
+  };
+}
+async function callVolcAssetApi(opts: { ak: string; sk: string; action: string; body: any }): Promise<{ ok: boolean; error?: string; result?: any; status?: number }> {
+  const req = volcSignRequest(opts);
+  const resp = await fetch(req.url, { method: 'POST', headers: req.headers, body: JSON.stringify(opts.body) });
+  const data = await resp.json().catch(() => null);
+  if (!resp.ok || data?.ResponseMetadata?.Error) {
+    const err = data?.ResponseMetadata?.Error?.Message || data?.ResponseMetadata?.Error?.Code || ('HTTP ' + resp.status);
+    return { ok: false, error: String(err), status: resp.status };
+  }
+  return { ok: true, result: data?.Result, status: resp.status };
+}
+
+// IPC: 上传素材资产并返回 asset:// 引用（CreateAssetGroup -> CreateAsset -> 轮询 GetAsset 至 Active）
+ipcMain.handle('volc:createAsset', async (_event, opts: { ak: string; sk: string; url: string; name?: string; projectName?: string; groupId?: string }) => {
+  try {
+    const { ak, sk, url, name, projectName = 'default', groupId } = opts || {};
+    if (!ak || !sk || !url) return { ok: false, error: '缺少 AK/SK 或素材 URL' };
+    // 1. 确保 AssetGroup（优先复用传入的 groupId，否则创建）
+    let gid = groupId;
+    if (!gid) {
+      const gRes = await callVolcAssetApi({ ak, sk, action: 'CreateAssetGroup', body: { GroupType: 'AIGC', ProjectName: projectName } });
+      if (!gRes.ok) return gRes;
+      gid = gRes.result?.GroupId || gRes.result?.Id;
+      if (!gid) return { ok: false, error: '创建素材资产组合失败（未返回 GroupId）' };
+    }
+    // 2. 创建素材资产（异步）
+    const aRes = await callVolcAssetApi({ ak, sk, action: 'CreateAsset', body: { GroupId: gid, URL: url, Name: name || ('asset_' + Date.now()), AssetType: 'Image', ProjectName: projectName } });
+    if (!aRes.ok) return aRes;
+    const assetId = aRes.result?.Id;
+    if (!assetId) return { ok: false, error: '创建素材资产失败（未返回 AssetId）' };
+    // 3. 轮询 GetAsset 至 Active（最长约 60 秒）
+    for (let i = 0; i < 30; i++) {
+      await new Promise(r => setTimeout(r, 2000));
+      const g = await callVolcAssetApi({ ak, sk, action: 'GetAsset', body: { Id: assetId, ProjectName: projectName } });
+      const status = g.result?.Status;
+      if (status === 'Active') return { ok: true, assetId, groupId: gid, assetUri: 'asset://' + assetId };
+      if (status === 'Failed') return { ok: false, error: '素材资产处理失败（Failed）' };
+    }
+    return { ok: false, error: '素材资产处理超时（未在 60 秒内变为 Active）', assetId, groupId: gid };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message };
+  }
+});
+
 // IPC: Call Grsai image/video generation API
 ipcMain.handle('grsai:generate', async (_event, config: any) => {
   console.log('[IPC] grsai:generate called');
@@ -1053,7 +1142,8 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
 
     // 本地参考图转 base64（方舟 API 无法访问本地 file:// 路径，必须转 data URL 才能作为参考图）
     const toVolcImageValue = async (img: string): Promise<string> => {
-      if (/^(data:|https?:\/\/)/i.test(img)) return img;
+      // data: / https: / asset:（素材资产ID，AK/SK 上传后的引用）均原样透传
+      if (/^(data:|https?:\/\/|asset:)/i.test(img)) return img;
       try {
         const p = img.replace(/^file:\/\//i, '');
         const st = await fs.promises.stat(p);

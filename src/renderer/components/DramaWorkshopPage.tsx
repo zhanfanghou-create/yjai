@@ -219,17 +219,17 @@ function kindTerm(kind: string): { main: string; variant: string; add: string } 
 
 // 更新资产的当前变装/主图：确认某张图为当前资产。
 // 找不到对应变装时视为主图（更新 asset.img 并自动创建/补齐主变装），解决场景/道具未预创建主变装导致生成后无法回填的问题
-function applyAssetCurrent(a: DramartAssetItem, variantId: string, img: string): DramartAssetItem {
+function applyAssetCurrent(a: DramartAssetItem, variantId: string, img: string, remoteUrl?: string): DramartAssetItem {
   const term = kindTerm(a.kind);
   const target = (a.variants || []).find(v => v.id === variantId);
   const isMain = !target || target.label === term.main;
   let variants = a.variants || [];
   if (target) {
-    variants = variants.map(v => v.id === variantId ? { ...v, img } : v);
+    variants = variants.map(v => v.id === variantId ? { ...v, img, remoteUrl: remoteUrl || v.remoteUrl } : v);
   } else {
-    variants = [...variants.filter(v => v.label !== term.main), { id: 'va_' + Date.now().toString(36), label: term.main, img }];
+    variants = [...variants.filter(v => v.label !== term.main), { id: 'va_' + Date.now().toString(36), label: term.main, img, remoteUrl: remoteUrl || undefined }];
   }
-  return { ...a, img: isMain ? img : a.img, variants };
+  return { ...a, img: isMain ? img : a.img, remoteUrl: isMain ? (remoteUrl || a.remoteUrl) : a.remoteUrl, variants };
 }
 
 function genSize(ratio: string, resolution: string): string {
@@ -2622,7 +2622,7 @@ export const DramaWorkshopPage: React.FC = () => {
   }, [showToast]);
 
   // 统一文生图/图生图入口：所有图片生成都会强制追加所选风格提示词（内置/自定义），确保出图严格贴合风格
-  const imageFetcher = useCallback(async (prompt: string, opts?: { model?: string; size?: string; referenceImage?: string }): Promise<string | null> => {
+  const imageFetcher = useCallback(async (prompt: string, opts?: { model?: string; size?: string; referenceImage?: string }): Promise<{ url: string; remoteUrl?: string } | null> => {
     const styledPrompt = styleWord ? `${prompt}
 风格要求（必须严格遵循）：${styleWord}` : prompt;
     // 遍历所有图像API配置，找到第一个可用的（有apiKey和baseUrl）
@@ -2643,13 +2643,19 @@ export const DramaWorkshopPage: React.FC = () => {
           if (imageFile) {
             const res = await toolService.generateImageToImage(imageFile, styledPrompt, cfg, { model: opts?.model || cfg.defaultModel, size: opts?.size });
             const url = (res as any)?.url;
-            if (url) return localizeBlobAware(url, 'dramart-img');
+            if (url) {
+              const local = await localizeBlobAware(url, 'dramart-img');
+              return { url: local, remoteUrl: (res as any)?.remoteUrl || undefined };
+            }
           }
         }
         // 文生图（或图生图失败时回退）
         const res = await toolService.generateImage(styledPrompt, cfg, { model: opts?.model || cfg.defaultModel, size: opts?.size });
         const url = (res as any)?.url;
-        if (url) return localizeBlobAware(url, 'dramart-img');
+        if (url) {
+          const local = await localizeBlobAware(url, 'dramart-img');
+          return { url: local, remoteUrl: (res as any)?.remoteUrl || undefined };
+        }
       } catch { /* 尝试下一个配置 */ }
     }
     // 无图像API或全部生成失败：返回null，由调用方决定是否用占位图兜底
@@ -2697,7 +2703,8 @@ export const DramaWorkshopPage: React.FC = () => {
         '3. 画面有明确的视觉焦点和情绪氛围，符合短剧类型。',
         '4. 不要出现其他无关文字、水印或logo。',
       ].join('\n');
-      const cover = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
+      const coverR = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
+      const cover = coverR?.url || null;
       const p: DramartProject = { ...base, ...result,
         cover: cover || gradientDataUrl(base.name),
         outline: (base.scriptText || '').trim().slice(0, 400) || '（暂无大纲）',
@@ -2804,7 +2811,8 @@ export const DramaWorkshopPage: React.FC = () => {
         '3. 画面有明确的视觉焦点和情绪氛围，符合短剧类型。',
         '4. 不要出现其他无关文字、水印或logo。',
       ].join('\n');
-      const cover = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
+      const coverR = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
+      const cover = coverR?.url || null;
       const p: DramartProject = { ...base, ...result,
         cover: cover || gradientDataUrl(base.name),
         outline: (base.scriptContent || base.scriptText || '').trim().slice(0, 400) || '（暂无大纲）',
@@ -3073,11 +3081,30 @@ export const DramaWorkshopPage: React.FC = () => {
         const findAssetImg = (kind: 'character' | 'scene' | 'prop', name: string): string | undefined => {
           const list = kind === 'character' ? project?.characters : kind === 'scene' ? project?.scenes : project?.props;
           const asset = list?.find(a => a.name === name || name.includes(a.name) || a.name.includes(name));
-          return asset?.img;
+          // 优先使用方舟 TOS URL（同账号产物受信任、不卡真人），回退本地图片路径
+          return asset?.remoteUrl || asset?.img;
         };
         (sb.characters || []).forEach(cn => { const img = findAssetImg('character', cn); if (img) referenceImages.push(img); });
         (sb.scenes || []).forEach(sn => { const img = findAssetImg('scene', sn); if (img) referenceImages.push(img); });
         (sb.props || []).forEach(pn => { const img = findAssetImg('prop', pn); if (img) referenceImages.push(img); });
+
+        // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置则回退轨A（TOS URL 直接透传，同账号产物受信任）
+        let refs: string[] = referenceImages;
+        const volcApi = (window as any)?.yijingAPI?.volc;
+        if (vc.accessKeyId && vc.accessKeySecret && volcApi?.createAsset && refs.some(r => /^https?:\/\//i.test(r))) {
+          try {
+            const converted: string[] = [];
+            for (const r of refs) {
+              if (/^https?:\/\//i.test(r)) {
+                const aRes = await volcApi.createAsset({ ak: vc.accessKeyId, sk: vc.accessKeySecret, url: r, name: 'ref_' + Date.now() });
+                converted.push(aRes?.ok && aRes?.assetUri ? aRes.assetUri : r);
+              } else {
+                converted.push(r);
+              }
+            }
+            refs = converted;
+          } catch { /* 转换失败回退轨A（TOS URL 直接透传） */ }
+        }
 
         for (let i = 0; i < count; i++) {
           const videoOptions: any = {
@@ -3088,11 +3115,11 @@ export const DramaWorkshopPage: React.FC = () => {
             format: params?.format || 'mp4',
           };
           // 如果有参考图片，传入参考图参数（支持 seedance2.5 等图生视频模型）
-          if (referenceImages.length > 0) {
-            videoOptions.referenceImages = referenceImages;
-            videoOptions.images = referenceImages;
+          if (refs.length > 0) {
+            videoOptions.referenceImages = refs;
+            videoOptions.images = refs;
             // 第一张图作为主参考图
-            videoOptions.image = referenceImages[0];
+            videoOptions.image = refs[0];
           }
           const res = await toolService.generateVideo(finalVideoPrompt, vc, videoOptions);
           if (res?.url) urls.push(await localizeBlobAware(res.url, 'dramart-vid', 'mp4'));
@@ -3224,11 +3251,11 @@ export const DramaWorkshopPage: React.FC = () => {
     return [...project.characters, ...project.scenes, ...project.props].find(a => a.id === id) || null;
   }, [project]);
 
-  const updateAssetImg = useCallback((id: string, img: string) => {
+  const updateAssetImg = useCallback((id: string, img: string, remoteUrl?: string) => {
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === id ? { ...a, img, variants: a.variants?.map(v => v.label === kindTerm(a.kind).main ? { ...v, img } : v) } : a),
-      scenes: p.scenes.map(a => a.id === id ? { ...a, img } : a),
-      props: p.props.map(a => a.id === id ? { ...a, img } : a),
+      characters: p.characters.map(a => a.id === id ? { ...a, img, remoteUrl: remoteUrl || a.remoteUrl, variants: a.variants?.map(v => v.label === kindTerm(a.kind).main ? { ...v, img, remoteUrl: remoteUrl || v.remoteUrl } : v) } : a),
+      scenes: p.scenes.map(a => a.id === id ? { ...a, img, remoteUrl: remoteUrl || a.remoteUrl } : a),
+      props: p.props.map(a => a.id === id ? { ...a, img, remoteUrl: remoteUrl || a.remoteUrl } : a),
     }) : p);
   }, []);
 
@@ -3261,11 +3288,11 @@ export const DramaWorkshopPage: React.FC = () => {
     return newId;
   }, []);
 
-  const updateVariantImg = useCallback((assetId: string, variantId: string, img: string) => {
+  const updateVariantImg = useCallback((assetId: string, variantId: string, img: string, remoteUrl?: string) => {
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
-      scenes: p.scenes.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
-      props: p.props.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
+      characters: p.characters.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, img, remoteUrl: remoteUrl || v.remoteUrl } : v) } : a),
+      scenes: p.scenes.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, img, remoteUrl: remoteUrl || v.remoteUrl } : v) } : a),
+      props: p.props.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, img, remoteUrl: remoteUrl || v.remoteUrl } : v) } : a),
     }) : p);
   }, []);
 
@@ -3291,11 +3318,11 @@ export const DramaWorkshopPage: React.FC = () => {
     }) : p);
   }, []);
 
-  const setVariantCurrent = useCallback((assetId: string, variantId: string, img: string) => {
+  const setVariantCurrent = useCallback((assetId: string, variantId: string, img: string, remoteUrl?: string) => {
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img) : a),
-      scenes: p.scenes.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img) : a),
-      props: p.props.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img) : a),
+      characters: p.characters.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img, remoteUrl) : a),
+      scenes: p.scenes.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img, remoteUrl) : a),
+      props: p.props.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img, remoteUrl) : a),
     }) : p);
   }, []);
 
@@ -3308,7 +3335,7 @@ export const DramaWorkshopPage: React.FC = () => {
     const isRedraw = !!curVariant?.img; // 当前变装已有图片则为重绘
     // 获取首图作为参考图（主形象的图片）
     const mainVariant = (a.variants || []).find(v => v.label === kindTerm(a.kind).main);
-    const referenceImage = mainVariant?.img || a.img || '';
+    const referenceImage = mainVariant?.remoteUrl || mainVariant?.img || a.remoteUrl || a.img || '';
     showToast(isRedraw ? '重绘生成中…' : '变装生成中…', 'info');
     // 变装提示词：如果用户输入了提示词，使用用户输入的；否则使用默认的变装提示词（保持人物外貌不变，仅更换服装）
     // 因为有首图作为参考图，不需要整体首图的提示词参数
@@ -3317,9 +3344,10 @@ export const DramaWorkshopPage: React.FC = () => {
       : '保持主体形态、材质、颜色完全不变，仅调整细节或角度，背景保持纯白色';
     const base = prompt?.trim() || defaultVarPrompt;
     const urls: string[] = [];
+    const remoteUrls: string[] = [];
     for (let i = 0; i < n; i++) {
-      const url = await imageFetcher(base, { model: opts.model, size, referenceImage: referenceImage || undefined }).catch(() => null);
-      if (url) urls.push(url);
+      const r = await imageFetcher(base, { model: opts.model, size, referenceImage: referenceImage || undefined }).catch(() => null);
+      if (r?.url) { urls.push(r.url); remoteUrls.push(r.remoteUrl || ''); }
     }
     if (urls.length) {
       if (isRedraw) {
@@ -3330,13 +3358,13 @@ export const DramaWorkshopPage: React.FC = () => {
         // 生成新变装/主图：自动将第一张保存到当前变装，其余创建新变装
         if (urls[0]) {
           if (curVariant) {
-            updateVariantImg(assetId, variantId, urls[0]);
+            updateVariantImg(assetId, variantId, urls[0], remoteUrls[0] || undefined);
           } else {
             // 主变装不存在（如场景/道具未预创建主变装）：更新资产主图并创建主变装
             setProject(p => p ? ({ ...p,
-              characters: p.characters.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0]) : x),
-              scenes: p.scenes.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0]) : x),
-              props: p.props.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0]) : x),
+              characters: p.characters.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0], remoteUrls[0] || undefined) : x),
+              scenes: p.scenes.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0], remoteUrls[0] || undefined) : x),
+              props: p.props.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0], remoteUrls[0] || undefined) : x),
             }) : p);
           }
         }
@@ -3346,9 +3374,9 @@ export const DramaWorkshopPage: React.FC = () => {
           const term = kindTerm(a.kind);
           const newLabel = term.variant + ((a.variants?.length || 0) + i);
           setProject(p => p ? ({ ...p,
-            characters: p.characters.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i] }] } : asset),
-            scenes: p.scenes.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i] }] } : asset),
-            props: p.props.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i] }] } : asset),
+            characters: p.characters.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i], remoteUrl: remoteUrls[i] || undefined }] } : asset),
+            scenes: p.scenes.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i], remoteUrl: remoteUrls[i] || undefined }] } : asset),
+            props: p.props.map(asset => asset.id === assetId ? { ...asset, variants: [...(asset.variants || []), { id: newId, label: newLabel, img: urls[i], remoteUrl: remoteUrls[i] || undefined }] } : asset),
           }) : p);
         }
         showToast('已生成 ' + urls.length + ' 张变装图，自动保存到变装列表', 'success');
@@ -3362,8 +3390,8 @@ export const DramaWorkshopPage: React.FC = () => {
   const genAsset = useCallback(async (assetId: string, prompt: string, opts: { model?: string; size?: string } = {}): Promise<boolean> => {
     const a = assetById(assetId);
     if (!a) return false;
-    const url = await imageFetcher(prompt || buildAssetImagePrompt(a), opts).catch(() => null);
-    if (url) { updateAssetImg(assetId, url); return true; }
+    const r = await imageFetcher(prompt || buildAssetImagePrompt(a), opts).catch(() => null);
+    if (r?.url) { updateAssetImg(assetId, r.url, r.remoteUrl); return true; }
     return false;
   }, [assetById, imageFetcher, updateAssetImg]);
 

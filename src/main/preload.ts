@@ -28,6 +28,9 @@ contextBridge.exposeInMainWorld('yijingAPI', {
     checkResult: (opts: any) => ipcRenderer.invoke('grsai:checkResult', opts),
     cancelJob: (opts: any) => ipcRenderer.invoke('grsai:cancelJob', opts),
   },
+  volc: {
+    createAsset: (opts: any) => ipcRenderer.invoke('volc:createAsset', opts),
+  },
   // 璁㈤槄 Grsai 鍚庡彴浣滀笟浜嬩欢
   onGrsaiJobUpdate: (cb: (data: any) => void) => {
     const handler = (_ev: any, data: any) => cb(data);

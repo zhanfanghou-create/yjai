@@ -12,7 +12,7 @@ export type RecommendedAPIType = 'openai-chat' | 'openai-generations' | 'openai-
 
 export interface ChatMessage { id: string; role: 'user' | 'assistant' | 'system'; content: string; timestamp: number; type: 'text' | 'image' | 'video' | 'audio' | 'document'; files?: string[]; model?: string; provider?: string; meta?: Record<string, any>; }
 export interface ChatSession { id: string; title: string; messages: ChatMessage[]; createdAt: number; updatedAt: number; }
-export interface AINode { id: string; type: AINodeType; provider: APIProvider; x: number; y: number; width: number; height: number; status: 'idle' | 'loading' | 'processing' | 'success' | 'error'; prompt?: string; options: Record<string, any>; result?: { url: string; type: 'image' | 'video' | 'audio' | 'text'; text?: string }; error?: string; thumbnail?: string; meta?: Record<string, any>; configId?: string; model?: string; aspectRatio?: string; size?: string; resolution?: string; baseUrl?: string; workflow?: string; }
+export interface AINode { id: string; type: AINodeType; provider: APIProvider; x: number; y: number; width: number; height: number; status: 'idle' | 'loading' | 'processing' | 'success' | 'error'; prompt?: string; options: Record<string, any>; result?: { url: string; type: 'image' | 'video' | 'audio' | 'text'; text?: string; remoteUrl?: string }; error?: string; thumbnail?: string; meta?: Record<string, any>; configId?: string; model?: string; aspectRatio?: string; size?: string; resolution?: string; baseUrl?: string; workflow?: string; }
 export interface APIConfig { id: string; name: string; provider: APIProvider; baseUrl: string; apiKey: string; defaultModel: string; models: string[]; enabled: boolean; connected: boolean; }
 export interface ComfyUIConfig { id: string; name: string; serverUrl: string; dataPath?: string; apiFile?: string; connected: boolean; nodeType?: 'image' | 'video' | 'audio'; runtime?: 'local' | 'cloud'; workflowJSON?: string; description?: string; components?: any[]; parsed?: boolean; generated?: boolean; workflowFiles?: Array<{ name: string; path?: string; content?: string }>; }
 export interface RecommendedConfig { id: string; name: string; baseUrl: string; apiKey: string; apiType: RecommendedAPIType; models: string[]; defaultModel?: string; cardKey?: string; applyUrl?: string; }
@@ -222,6 +222,11 @@ const directImageCapability = (n: AINode, prompt: string) => {
   return {};
 };
 
+const extractRemoteUrl = (r: any): string | undefined => {
+  const u = r?.data?.[0]?.url || r?.data?.url || r?.images?.[0]?.url || r?.results?.[0]?.url || r?.url;
+  return (typeof u === 'string' && /^https?:\/\//i.test(u)) ? u : undefined;
+};
+
 const callApi = async (c: APIConfig, n: AINode) => {
   const mode = modeOf(n), apiBase = redirectAgnesHost(normalizeApiBase(c.baseUrl)), model = n.model || n.options?.model || c.defaultModel, prompt = composePrompt(n.options?.upstreamPrompt, n.prompt) || '', win = window as any;
   const imageRefs = Array.isArray(n.options?.referenceImages) ? n.options.referenceImages.map((item: any) => item?.url).filter(Boolean) : [];
@@ -232,10 +237,25 @@ const callApi = async (c: APIConfig, n: AINode) => {
   const enhancedPrompt = capabilityPayload.projectPromptHint ? composePrompt(prompt, capabilityPayload.projectPromptHint) : prompt;
   const imagePayload = { model, prompt: enhancedPrompt, size: capabilityPayload.size || imageSize, imageSize: capabilityPayload.size || imageSize, n: 1, ...capabilityPayload, ...n.options, image: sourceImage, images: sourceImage ? [sourceImage, ...imageRefs.filter((url: string) => url !== sourceImage)] : imageRefs, sourceImage, panoramaType: isPanorama720 ? '720' : n.options?.panoramaType || (capabilityPayload as any).panoramaType, outputType: isPanorama720 ? 'panorama' : n.options?.outputType || (capabilityPayload as any).outputType, aspectRatio: n.options?.aspectRatio || n.aspectRatio || n.options?.imageRatio || (capabilityPayload as any).aspectRatio || (isPanorama720 ? '2:1' : undefined), resolution: n.options?.resolution || n.resolution || n.options?.imageClarity || (capabilityPayload as any).resolution || (isPanorama720 ? '2K' : undefined) };
   if (mode === 'tts' || mode === 'audio2video') { if (win?.yijingAPI?.edgeTts?.synthesizeToBase64) { const res = await win.yijingAPI.edgeTts.synthesizeToBase64({ text: prompt, voice: n.options?.voice || EDGE_TTS_MODELS[0], options: { rate: n.options?.speed } }); if (res?.ok && res?.base64) { return { url: `data:audio/mpeg;base64,${res.base64}`, type: 'audio' as const }; } throw new Error(res?.error || 'Edge TTS 合成失败，请确认已安装 edge-tts（pip install edge-tts）'); } if (win?.yijingAPI?.edgeTTS?.speak) { const r = await win.yijingAPI.edgeTTS.speak({ text: prompt, voice: n.options?.voice || EDGE_TTS_MODELS[0], rate: n.options?.speed || 1 }); return { url: extractUrl(r), type: 'audio' as const }; } return { url: `edge-tts://${encodeURIComponent(prompt)}`, type: 'audio' as const }; }
-  if (imageModes.has(mode)) { if (win?.yijingAPI?.openai?.generate) { const r = await win.yijingAPI.openai.generate({ apiKey: c.apiKey, baseUrl: apiBase, ...imagePayload }); const errMsg = r?.error?.message || (typeof r?.error === 'string' ? r.error : '') || r?.message; if (errMsg) throw new Error(String(errMsg)); const imgUrl = extractUrl(r); if (!imgUrl) throw new Error('图片生成未返回结果（可能模型不支持或返回了 base64 之外的结构）：' + JSON.stringify(r).slice(0, 200)); return { url: imgUrl, type: 'image' as const }; } const r = await fetch(`${apiBase}/images/generations`, { method: 'POST', headers: { Authorization: `Bearer ${c.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(imagePayload) }); const d = await r.json(); if (!r.ok) throw new Error(d?.error?.message || d?.error || `HTTP ${r.status}`); const imgUrl = extractUrl(d); if (!imgUrl) throw new Error('图片生成未返回结果：' + JSON.stringify(d).slice(0, 200)); return { url: imgUrl, type: 'image' as const }; }
+  if (imageModes.has(mode)) { if (win?.yijingAPI?.openai?.generate) { const r = await win.yijingAPI.openai.generate({ apiKey: c.apiKey, baseUrl: apiBase, ...imagePayload }); const errMsg = r?.error?.message || (typeof r?.error === 'string' ? r.error : '') || r?.message; if (errMsg) throw new Error(String(errMsg)); const imgUrl = extractUrl(r); if (!imgUrl) throw new Error('图片生成未返回结果（可能模型不支持或返回了 base64 之外的结构）：' + JSON.stringify(r).slice(0, 200)); const imgRemote = extractRemoteUrl(r); return { url: imgUrl, type: 'image' as const, remoteUrl: imgRemote }; } const r = await fetch(`${apiBase}/images/generations`, { method: 'POST', headers: { Authorization: `Bearer ${c.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(imagePayload) }); const d = await r.json(); if (!r.ok) throw new Error(d?.error?.message || d?.error || `HTTP ${r.status}`); const imgUrl = extractUrl(d); if (!imgUrl) throw new Error('图片生成未返回结果：' + JSON.stringify(d).slice(0, 200)); const imgRemote = extractRemoteUrl(d); return { url: imgUrl, type: 'image' as const, remoteUrl: imgRemote }; }
   if (videoModes.has(mode)) {
     // 从 videoConfig 或节点选项中提取视频参数
     const vc = n.options?.videoConfig || {};
+    // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置回退轨A（TOS URL 直接透传）
+    let videoRefs = imageRefs;
+    const volcApi = win?.yijingAPI?.volc;
+    if ((c as any).accessKeyId && (c as any).accessKeySecret && volcApi?.createAsset && videoRefs.some((r: string) => /^https?:\/\//i.test(r))) {
+      try {
+        const converted: string[] = [];
+        for (const r of videoRefs) {
+          if (/^https?:\/\//i.test(r)) {
+            const aRes = await volcApi.createAsset({ ak: (c as any).accessKeyId, sk: (c as any).accessKeySecret, url: r, name: 'ref_' + Date.now() });
+            converted.push(aRes?.ok && aRes?.assetUri ? aRes.assetUri : r);
+          } else converted.push(r);
+        }
+        videoRefs = converted;
+      } catch { /* 转换失败回退轨A */ }
+    }
     const payload = {
       model,
       prompt,
@@ -243,6 +263,10 @@ const callApi = async (c: APIConfig, n: AINode) => {
       // 保证「输入框下方参数」（videoConfig / videoRatio 等）真正生效，
       // 而不会被 n.options 中的旧值覆盖掉。
       ...n.options,
+      // 参考图（轨A=TOS URL / 轨B=asset://，主进程原样透传）
+      referenceImages: videoRefs,
+      images: videoRefs,
+      image: videoRefs[0] || n.options?.image,
       // 视频比例（优先使用最新的 videoConfig / videoRatio）
       aspectRatio: vc.ratio || n.options?.videoRatio || n.options?.aspectRatio || n.aspectRatio || '16:9',
       // 清晰度/分辨率
@@ -585,6 +609,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       }
       let url = res.url || res.text || '';
       const isTextResult = res.type === 'text';
+      const genRemoteUrl = (res as any)?.remoteUrl;
       // 统一让生成的媒体先下载到本地再呈现，保证预览秒开
       if (!isTextResult && url) {
         url = await localizeMedia(url, `${mode}`, res.type === 'video' ? 'mp4' : res.type === 'audio' ? 'mp3' : undefined);
@@ -599,7 +624,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
             prompt: s.nodes[nid].prompt,
             result: isTextResult
               ? { url, type: 'text', text: res.text || '' }
-              : { url, type: res.type, text: res.text },
+              : { url, type: res.type, text: res.text, remoteUrl: genRemoteUrl || undefined },
             thumbnail: res.type === 'image' ? url : s.nodes[nid].thumbnail,
             options: s.nodes[nid].options,
           },
@@ -607,7 +632,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
             [targetId]: {
               ...s.nodes[targetId],
               status: 'success',
-              result: { url, type: res.type, text: res.text },
+              result: { url, type: res.type, text: res.text, remoteUrl: genRemoteUrl || undefined },
               thumbnail: res.type === 'image' ? url : s.nodes[targetId].thumbnail,
               prompt: s.nodes[targetId].prompt || s.nodes[nid].prompt,
             },

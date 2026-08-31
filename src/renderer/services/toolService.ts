@@ -54,8 +54,17 @@ export const toolService = {
         throw new Error(result?.error?.message || 'API返回结果为空');
       }
 
+      // 远程原始地址（方舟 TOS URL 等）。方舟同账号产物受信任，视频参考图优先用它，避免真人拦截
+      const remoteUrl =
+        result?.data?.[0]?.url ||
+        result?.url ||
+        result?.images?.[0]?.url ||
+        result?.results?.[0]?.url ||
+        (typeof result?.data?.[0] === 'string' ? result?.data?.[0] : undefined);
+
       return {
         url,
+        remoteUrl: typeof remoteUrl === 'string' && remoteUrl.startsWith('http') ? remoteUrl : undefined,
         type: 'image' as const,
         local: !!localPath,
       };
@@ -89,8 +98,11 @@ export const toolService = {
         throw new Error(result?.error?.message || 'API返回结果为空');
       }
 
+      const remoteUrl = result?.data?.[0]?.url || result?.url || (typeof result?.data?.[0] === 'string' ? result?.data?.[0] : undefined);
+
       return {
         url,
+        remoteUrl: typeof remoteUrl === 'string' && remoteUrl.startsWith('http') ? remoteUrl : undefined,
         type: 'image' as const,
         local: !!localPath,
       };
