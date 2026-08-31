@@ -1051,6 +1051,22 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
         : [];
     const isPanorama720 = config.panoramaType === '720' || /720°?全景|720 panorama/i.test(String(prompt || ''));
 
+    // 本地参考图转 base64（方舟 API 无法访问本地 file:// 路径，必须转 data URL 才能作为参考图）
+    const toVolcImageValue = async (img: string): Promise<string> => {
+      if (/^(data:|https?:\/\/)/i.test(img)) return img;
+      try {
+        const p = img.replace(/^file:\/\//i, '');
+        const st = await fs.promises.stat(p);
+        if (!st.isFile() || st.size > 25 * 1024 * 1024) return ''; // 超大图片跳过，避免请求体超限
+        const buf = await fs.promises.readFile(p);
+        const ext = (path.extname(p).slice(1) || 'png').toLowerCase();
+        const mime = ext === 'jpg' ? 'jpeg' : ext === 'svg' ? 'svg+xml' : ext;
+        return 'data:image/' + mime + ';base64,' + buf.toString('base64');
+      } catch {
+        return '';
+      }
+    };
+
     const body: any = isVolcenginePlanVideo
       ? {
           model: model || '',
@@ -1082,7 +1098,8 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
             }
           : { model, prompt, replyType: config.replyType || 'json' };
 
-    if (imagesValue.length > 0) {
+    if (imagesValue.length > 0 && !isVolcenginePlanVideo) {
+      // 非方舟视频分支才写 body.image（方舟视频参考图已放 content 内）
       body.image = imagesValue[0];
       body.images = imagesValue;
       body.sourceImage = sourceImage || imagesValue[0];
@@ -1098,10 +1115,15 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     }
 
     if (isVolcenginePlanVideo) {
-      // 火山引擎 Agent Plan 视频：参数已在 body.parameters，支持参考图
+      // 火山引擎 方舟 视频：参考图支持（本地路径需转 base64，方舟无法访问 file:// 本地路径）
       if (imagesValue.length > 0) {
+        const refs: string[] = [];
+        for (const img of imagesValue) {
+          const v = await toVolcImageValue(img);
+          if (v) refs.push(v);
+        }
         body.content = [
-          ...imagesValue.map((img: string) => ({ type: 'image_url', image_url: { url: img }, role: 'reference_image' })),
+          ...refs.map((img: string) => ({ type: 'image_url', image_url: { url: img }, role: 'reference_image' })),
           { type: 'text', text: prompt },
         ];
       }
