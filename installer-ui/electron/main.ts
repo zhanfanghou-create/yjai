@@ -60,7 +60,7 @@ function readLicenseText(): string {
   }
   return `艺镜AI-正式版 最终用户许可协议 (EULA)
 
-版本: 1.1.0
+版本: ${app.getVersion()}
 
 请在使用本软件前仔细阅读本协议全部内容。安装或使用本软件即表示您已阅读、理解并接受本协议全部条款。`;
 }

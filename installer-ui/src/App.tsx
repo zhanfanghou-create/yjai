@@ -44,6 +44,7 @@ export default function App() {
           {step === "license" && (
             <div key="license" className="absolute inset-0">
               <License
+                version={meta?.version || "1.1.0"}
                 licenseText={meta?.licenseText}
                 onBack={() => setStep("welcome")}
                 onNext={() => setStep("mode")}

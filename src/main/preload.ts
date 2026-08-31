@@ -62,7 +62,7 @@ contextBridge.exposeInMainWorld('yijingAPI', {
   system: {
     platform: process.platform,
     versions: process.versions,
-    version: process.env.npm_package_version,
+    version: ipcRenderer.sendSync('system:getVersion'),
     openPath: (p: string) => ipcRenderer.invoke('system:openPath', p),
     checkUpdate: () => ipcRenderer.invoke('system:checkUpdate'),
     downloadUpdate: () => ipcRenderer.invoke('system:downloadUpdate'),

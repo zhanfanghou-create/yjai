@@ -717,6 +717,11 @@ async function writeUpdateFile(response: Response, savePath: string): Promise<nu
   }
 }
 
+// 同步返回应用版本号（打包后 process.env.npm_package_version 不存在，必须用 app.getVersion()）
+ipcMain.on('system:getVersion', (event) => {
+  event.returnValue = app.getVersion();
+});
+
 ipcMain.handle('system:checkUpdate', async () => {
   try {
     const manifest = await fetchLatestManifest();

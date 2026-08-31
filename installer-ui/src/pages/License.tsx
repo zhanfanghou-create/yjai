@@ -4,14 +4,15 @@ import { GlassCard } from "../components/GlassCard";
 import { GradientButton } from "../components/GradientButton";
 
 interface Props {
+  version?: string;
   licenseText?: string;
   onBack: () => void;
   onNext: () => void;
 }
 
-const FALLBACK_LICENSE = `艺镜AI-正式版 最终用户许可协议 (EULA)
+const buildFallbackLicense = (version: string) => `艺镜AI-正式版 最终用户许可协议 (EULA)
 
-版本: 1.1.0
+版本: ${version}
 版权所有 (c) 2026 艺镜 AI 团队
 
 一、协议接受
@@ -30,11 +31,11 @@ const FALLBACK_LICENSE = `艺镜AI-正式版 最终用户许可协议 (EULA)
 本协议可能随软件更新而修订，最新版本将在软件启动时向您展示。
 `;
 
-export function License({ licenseText, onBack, onNext }: Props) {
+export function License({ version, licenseText, onBack, onNext }: Props) {
   const [agreed, setAgreed] = useState(false);
   const [scrolledEnd, setScrolledEnd] = useState(false);
   const scRef = useRef<HTMLDivElement>(null);
-  const text = licenseText && licenseText.trim().length > 0 ? licenseText : FALLBACK_LICENSE;
+  const text = licenseText && licenseText.trim().length > 0 ? licenseText : buildFallbackLicense(version || '1.1.0');
 
   useEffect(() => {
     setAgreed(false);
