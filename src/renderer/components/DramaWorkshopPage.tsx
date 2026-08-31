@@ -3689,38 +3689,6 @@ export const DramaWorkshopPage: React.FC = () => {
                 />
               )}
 
-              {/* 分镜时长选择弹窗 */}
-              {shotDurationOpen && (
-                <div className="dwc-overlay" onClick={() => setShotDurationOpen(false)}>
-                  <div className="dwc-modal dwc-shot-duration-modal" onClick={e => e.stopPropagation()}>
-                    <div className="dwc-modal-head">
-                      <span className="dwc-modal-title">选择分镜时长</span>
-                      <button className="dwc-modal-close" onClick={() => setShotDurationOpen(false)}><CloseIcon size={16} /></button>
-                    </div>
-                    <div className="dwc-modal-body">
-                      <div className="dwc-shot-duration-hint">每个分镜的最大时长，AI 将按照此时长进行分镜拆分，单个分镜时长不会超过此值</div>
-                      <div className="dwc-shot-duration-grid">
-                        {SHOT_DURATION_OPTIONS.map(dur => (
-                          <button
-                            key={dur}
-                            className={`dwc-shot-duration-btn${selectedShotDuration === dur ? ' active' : ''}`}
-                            onClick={() => setSelectedShotDuration(dur)}
-                          >
-                            <span className="dwc-shot-duration-num">{dur}</span>
-                            <span className="dwc-shot-duration-unit">秒</span>
-                          </button>
-                        ))}
-                      </div>
-                      <div className="dwc-shot-duration-current">当前选择：<strong>{selectedShotDuration} 秒</strong> / 分镜</div>
-                    </div>
-                    <div className="dwc-modal-foot">
-                      <button className="dwc-modal-cancel" onClick={() => setShotDurationOpen(false)}>取消</button>
-                      <button className="dwc-modal-ok" onClick={confirmShotDuration}><ClapperboardIcon size={14} /> 确认并开始分析</button>
-                    </div>
-                  </div>
-                </div>
-              )}
-
               {batchOpen && (
                 <BatchGenModal
                   items={TAB_STAT_KEY[tab](project)}
@@ -3806,6 +3774,38 @@ export const DramaWorkshopPage: React.FC = () => {
           onEditRegenerate={regenerateWithPrompt}
           onDownload={downloadStoryboardVideo}
         />
+      )}
+
+      {/* 分镜时长选择弹窗（顶层，所有stage共用） */}
+      {shotDurationOpen && (
+        <div className="dwc-overlay" onClick={() => setShotDurationOpen(false)}>
+          <div className="dwc-modal dwc-shot-duration-modal" onClick={e => e.stopPropagation()}>
+            <div className="dwc-modal-head">
+              <span className="dwc-modal-title">选择分镜时长</span>
+              <button className="dwc-modal-close" onClick={() => setShotDurationOpen(false)}><CloseIcon size={16} /></button>
+            </div>
+            <div className="dwc-modal-body">
+              <div className="dwc-shot-duration-hint">每个分镜的最大时长，AI 将按照此时长进行分镜拆分，单个分镜时长不会超过此值</div>
+              <div className="dwc-shot-duration-grid">
+                {SHOT_DURATION_OPTIONS.map(dur => (
+                  <button
+                    key={dur}
+                    className={`dwc-shot-duration-btn${selectedShotDuration === dur ? ' active' : ''}`}
+                    onClick={() => setSelectedShotDuration(dur)}
+                  >
+                    <span className="dwc-shot-duration-num">{dur}</span>
+                    <span className="dwc-shot-duration-unit">秒</span>
+                  </button>
+                ))}
+              </div>
+              <div className="dwc-shot-duration-current">当前选择：<strong>{selectedShotDuration} 秒</strong> / 分镜</div>
+            </div>
+            <div className="dwc-modal-foot">
+              <button className="dwc-modal-cancel" onClick={() => setShotDurationOpen(false)}>取消</button>
+              <button className="dwc-modal-ok" onClick={confirmShotDuration}><ClapperboardIcon size={14} /> 确认并开始分析</button>
+            </div>
+          </div>
+        </div>
       )}
 
       {supplementOpen && project && (
