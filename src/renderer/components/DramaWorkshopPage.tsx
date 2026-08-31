@@ -217,6 +217,21 @@ function kindTerm(kind: string): { main: string; variant: string; add: string } 
   return { main: '主角色', variant: '变装', add: '添加变装' };
 }
 
+// 更新资产的当前变装/主图：确认某张图为当前资产。
+// 找不到对应变装时视为主图（更新 asset.img 并自动创建/补齐主变装），解决场景/道具未预创建主变装导致生成后无法回填的问题
+function applyAssetCurrent(a: DramartAssetItem, variantId: string, img: string): DramartAssetItem {
+  const term = kindTerm(a.kind);
+  const target = (a.variants || []).find(v => v.id === variantId);
+  const isMain = !target || target.label === term.main;
+  let variants = a.variants || [];
+  if (target) {
+    variants = variants.map(v => v.id === variantId ? { ...v, img } : v);
+  } else {
+    variants = [...variants.filter(v => v.label !== term.main), { id: 'va_' + Date.now().toString(36), label: term.main, img }];
+  }
+  return { ...a, img: isMain ? img : a.img, variants };
+}
+
 function genSize(ratio: string, resolution: string): string {
   const base: Record<string, [number, number]> = {
     '1:1': [1024, 1024],
@@ -1631,6 +1646,11 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
   const variants = hasMainVariant ? rawVariants : (asset.img ? [{ id: 'main_default', label: term.main, img: asset.img }, ...rawVariants] : rawVariants);
   const mainVariant = variants.find(v => v.label === term.main) || variants[0];
   const [curVariantId, setCurVariantId] = useState(mainVariant?.id || variants[0]?.id || '');
+  // 资产/变装更新后，若当前选中的变装已不存在（如生成确认后主变装被补齐），自动切回主变装，保证大图立即刷新
+  useEffect(() => {
+    setCurVariantId(prev => (variants.some(v => v.id === prev) ? prev : (mainVariant?.id || variants[0]?.id || '')));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [asset.variants, asset.img, asset.id]);
   const curIdx = variants.findIndex(v => v.id === curVariantId);
   const curVariant = variants[curIdx] || mainVariant;
   const [editing, setEditing] = useState(false);
@@ -3267,9 +3287,9 @@ export const DramaWorkshopPage: React.FC = () => {
 
   const setVariantCurrent = useCallback((assetId: string, variantId: string, img: string) => {
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === kindTerm(a.kind).main ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
-      scenes: p.scenes.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === kindTerm(a.kind).main ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
-      props: p.props.map(a => a.id === assetId ? { ...a, img: a.variants?.find(v => v.id === variantId)?.label === kindTerm(a.kind).main ? img : a.img, variants: a.variants?.map(v => v.id === variantId ? { ...v, img } : v) } : a),
+      characters: p.characters.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img) : a),
+      scenes: p.scenes.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img) : a),
+      props: p.props.map(a => a.id === assetId ? applyAssetCurrent(a, variantId, img) : a),
     }) : p);
   }, []);
 
@@ -3301,9 +3321,18 @@ export const DramaWorkshopPage: React.FC = () => {
         setVariantCandidates(assetId, variantId, urls, base);
         showToast('已生成 ' + urls.length + ' 张候选图，请选择设为当前变装', 'success');
       } else {
-        // 生成新变装：自动将第一张保存到当前变装，其余创建新变装
+        // 生成新变装/主图：自动将第一张保存到当前变装，其余创建新变装
         if (urls[0]) {
-          updateVariantImg(assetId, variantId, urls[0]);
+          if (curVariant) {
+            updateVariantImg(assetId, variantId, urls[0]);
+          } else {
+            // 主变装不存在（如场景/道具未预创建主变装）：更新资产主图并创建主变装
+            setProject(p => p ? ({ ...p,
+              characters: p.characters.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0]) : x),
+              scenes: p.scenes.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0]) : x),
+              props: p.props.map(x => x.id === assetId ? applyAssetCurrent(x, '', urls[0]) : x),
+            }) : p);
+          }
         }
         // 多余的图片自动创建新变装，排到当前变装后面
         for (let i = 1; i < urls.length; i++) {
