@@ -744,9 +744,10 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
     }
   };
   const [vmodel, setVmodel] = useState('');
-  const [vdur, setVdur] = useState(10);
+  // 视频时长默认对应用户提交剧本时选择的分镜时长；清晰度默认对应用户创建时选择的分辨率
+  const [vdur, setVdur] = useState<number>(project?.shotDuration || 15);
   const [vcount, setVcount] = useState('1');
-  const [vres, setVres] = useState('1080p');
+  const [vres, setVres] = useState<string>((project?.resolution as string) || '1080p');
   const [vfmt, setVfmt] = useState('mov');
   const videoCfg = ((useAppStore(s => s.videoAPIConfigs) as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || undefined;
   const voiceAPIConfigs = useAppStore(s => s.voiceAPIConfigs);
@@ -1008,19 +1009,19 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               </div>
             ) : null}
           <div className="dwc-sb-gen-foot">
-            {videoModelOptions.length ? <SimpleDropdown up value={effectiveVmodel} options={videoModelOptions} onChange={setVmodel} icon={<BoltIcon size={13} />} /> : <span className="dwc-ai-param warn">⚠ 请先设置视频模型</span>}
+            {videoModelOptions.length ? <SimpleDropdown up value={effectiveVmodel} options={videoModelOptions} onChange={setVmodel} icon={<BoltIcon size={13} />} /> : videoCfg ? <span className="dwc-ai-param info">使用配置默认视频模型{videoCfg.defaultModel ? ' · ' + videoCfg.defaultModel : ''}</span> : <span className="dwc-ai-param warn">⚠ 请先设置视频模型</span>}
             <div className="dwc-sb-params-sel">
               <button className="dwc-sb-params-pill" onClick={() => setShowParams(s => !s)}>⏱ {vdur}s | {vcount}个 | {vres} | {vfmt} ▾</button>
               {showParams && (
                 <div className="dwc-sb-params-panel">
-                  <div className="dwc-add-field"><span className="dwc-add-label">视频时长</span><div className="dwc-dur-row"><input type="range" min={5} max={15} value={vdur} onChange={e => setVdur(parseInt(e.target.value, 10))} /><span className="dwc-dur-val">{vdur}s</span></div></div>
+                  <div className="dwc-add-field"><span className="dwc-add-label">视频时长</span><div className="dwc-dur-row"><input type="range" min={5} max={30} value={vdur} onChange={e => setVdur(parseInt(e.target.value, 10))} /><span className="dwc-dur-val">{vdur}s</span></div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频数量</span><div className="dwc-opt-row">{['1','2','3','4'].map(n => <button key={n} className={`dwc-opt${vcount === n ? ' active' : ''}`} onClick={() => setVcount(n)}>{n}个</button>)}</div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频清晰度</span><div className="dwc-opt-row">{['480p','720p','1080p'].map(n => <button key={n} className={`dwc-opt${vres === n ? ' active' : ''}`} onClick={() => setVres(n)}>{n}</button>)}</div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频格式</span><div className="dwc-opt-row">{['mp4','mov'].map(n => <button key={n} className={`dwc-opt${vfmt === n ? ' active' : ''}`} onClick={() => setVfmt(n)}>{n}</button>)}</div></div>
                 </div>
               )}
             </div>
-            <button className="dwc-sb-gen-btn" onClick={() => onGenerate(sb?.id || '', { model: effectiveVmodel, duration: vdur, count: parseInt(vcount, 10), resolution: vres, format: vfmt })} disabled={status === 'generating' || !videoModelOptions.length}>
+            <button className="dwc-sb-gen-btn" onClick={() => onGenerate(sb?.id || '', { model: effectiveVmodel, duration: vdur, count: parseInt(vcount, 10), resolution: vres, format: vfmt })} disabled={status === 'generating' || !videoCfg}>
               {status === 'generating' ? '生成中…' : <><BoltIcon size={14} /> 生成</>}
             </button>
           </div>
@@ -2722,7 +2723,8 @@ export const DramaWorkshopPage: React.FC = () => {
     if (!pending) { setShotDurationOpen(false); return; }
     setShotDurationOpen(false);
     pendingCreateRef.current = null;
-    await startAnalysis(pending.base, pending.config, selectedShotDuration);
+    // 把用户选择的分镜时长写入项目，供分镜页视频参数默认值使用
+    await startAnalysis({ ...pending.base, shotDuration: selectedShotDuration }, pending.config, selectedShotDuration);
   }, [selectedShotDuration, startAnalysis]);
 
   // 剧创模式创建：用剧创草稿 + 用户参数，解析剧创结果填入（不重新生成）
@@ -2735,6 +2737,7 @@ export const DramaWorkshopPage: React.FC = () => {
       resolution: resolution as any,
       styleId: selectedStyle.id,
       styleName: selectedStyle.name,
+      shotDuration: 15,
     };
     setStage('analyze');
     setAnalyzing({ step: 0, total: DRAMART_ANALYSIS_STEPS.length, label: DRAMART_ANALYSIS_STEPS[0], percent: 2, msg: '' });

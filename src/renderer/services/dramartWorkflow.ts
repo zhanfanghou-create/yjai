@@ -71,6 +71,8 @@ export interface DramartProject {
   scenes: DramartAssetItem[];
   props: DramartAssetItem[];
   storyboards: DramartStoryboard[];
+  /** 创建短剧项目时选择的分镜最大时长（秒），默认15，可选5/10/15/20/25/30；用于分镜视频时长默认值 */
+  shotDuration?: number;
   /** 剧创模式：来自剧创的剧本步骤最终结果（用于分镜页剧本原文） */
   scriptContent?: string;
   /** 剧创模式：来自剧创的提示词生成页内容（资产表 + 分幕分镜表，直接解析） */
