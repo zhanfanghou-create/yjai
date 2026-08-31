@@ -1050,11 +1050,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       ? {
           model: model || '',
           content: [{ type: 'text', text: prompt }],
-          parameters: {
-            ratio: aspectValue || '16:9',
-            resolution: resolutionValue || '720p',
-            duration: config.duration || 5,
-          },
+          // 按火山方舟官方文档：视频参数直接放请求体顶层（强校验），并关闭视频水印
+          ratio: aspectValue || '16:9',
+          resolution: resolutionValue || '720p',
+          duration: config.duration || 5,
+          watermark: false,
         }
       : isAgnesVideo
         ? {
@@ -1096,7 +1096,7 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       // 火山引擎 Agent Plan 视频：参数已在 body.parameters，支持参考图
       if (imagesValue.length > 0) {
         body.content = [
-          ...imagesValue.map((img: string) => ({ type: 'image_url', image_url: { url: img } })),
+          ...imagesValue.map((img: string) => ({ type: 'image_url', image_url: { url: img }, role: 'reference_image' })),
           { type: 'text', text: prompt },
         ];
       }

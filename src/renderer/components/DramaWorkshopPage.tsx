@@ -759,11 +759,11 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
     }
   };
   const [vmodel, setVmodel] = useState('');
-  // 视频时长默认对应用户提交剧本时选择的分镜时长；清晰度默认对应用户创建时选择的分辨率
+  // 视频时长默认对应当前分镜的总时长（切换分镜自动同步）；清晰度默认对应用户创建时选择的分辨率
   const [vdur, setVdur] = useState<number>(project?.shotDuration || 15);
   const [vcount, setVcount] = useState('1');
   const [vres, setVres] = useState<string>((project?.resolution as string) || '1080p');
-  const [vfmt, setVfmt] = useState('mov');
+  const [vfmt, setVfmt] = useState('mp4');
   // 视频配置检测：有 apiKey+baseUrl，或 apiKey/baseUrl 之一 + 默认模型/模型列表 均视为已配置，避免误报"请先设置视频模型"
   const videoCfg = ((useAppStore(s => s.videoAPIConfigs) as any) || []).find((c: any) =>
     (c?.apiKey && c?.baseUrl) || (c?.apiKey && (c?.defaultModel || (c?.models || []).length)) || (c?.baseUrl && (c?.defaultModel || (c?.models || []).length))
@@ -779,6 +779,11 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const videoModelOptions = videoModels.length ? videoModels.map((m: string) => ({ id: m, label: m })) : [];
   const effectiveVmodel = vmodel || videoCfg?.defaultModel || videoModels[0] || '';
   const sb = storyboards[index];
+  // 切换分镜时，视频时长默认同步为该分镜的总时长
+  useEffect(() => {
+    if (sb?.duration) setVdur(sb.duration);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sb?.id]);
   const findAsset = (kind: string, name: string) => {
     const list = kind === 'character' ? project.characters : kind === 'scene' ? project.scenes : project.props;
     return list.find(a => a.name === name) || list.find(a => name.includes(a.name)) || list.find(a => a.name.includes(name));
@@ -1033,7 +1038,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               <button className="dwc-sb-params-pill" onClick={() => setShowParams(s => !s)}>⏱ {vdur}s | {vcount}个 | {vres} | {vfmt} ▾</button>
               {showParams && (
                 <div className="dwc-sb-params-panel">
-                  <div className="dwc-add-field"><span className="dwc-add-label">视频时长</span><div className="dwc-dur-row"><input type="range" min={5} max={30} value={vdur} onChange={e => setVdur(parseInt(e.target.value, 10))} /><span className="dwc-dur-val">{vdur}s</span></div></div>
+                  <div className="dwc-add-field"><span className="dwc-add-label">视频时长</span><div className="dwc-dur-row"><input type="range" min={1} max={30} value={vdur} onChange={e => setVdur(parseInt(e.target.value, 10))} /><span className="dwc-dur-val">{vdur}s</span></div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频数量</span><div className="dwc-opt-row">{['1','2','3','4'].map(n => <button key={n} className={`dwc-opt${vcount === n ? ' active' : ''}`} onClick={() => setVcount(n)}>{n}个</button>)}</div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频清晰度</span><div className="dwc-opt-row">{['480p','720p','1080p'].map(n => <button key={n} className={`dwc-opt${vres === n ? ' active' : ''}`} onClick={() => setVres(n)}>{n}</button>)}</div></div>
                   <div className="dwc-add-field"><span className="dwc-add-label">视频格式</span><div className="dwc-opt-row">{['mp4','mov'].map(n => <button key={n} className={`dwc-opt${vfmt === n ? ' active' : ''}`} onClick={() => setVfmt(n)}>{n}</button>)}</div></div>
