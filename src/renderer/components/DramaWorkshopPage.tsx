@@ -1713,7 +1713,7 @@ interface GenerationModalProps {
   kindLabel: string;
   styleName: string;
   onClose: () => void;
-  onGen: (assetId: string, variantId: string, prompt: string, opts: { count?: number; model?: string; resolution?: string; ratio?: string }) => void;
+  onGen: (assetId: string, variantId: string, prompt: string, opts: { count?: number; model?: string; resolution?: string; ratio?: string }) => Promise<string[]>;
   onSetCurrent: (assetId: string, variantId: string, img: string) => void;
   onOpenPicker: () => void;
 }
@@ -1748,8 +1748,17 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
   const handleGen = async () => {
     if (generating) return;
     setGenerating(true);
-    try { await onGen(asset.id, variantId, prompt, genOpts); }
-    finally { setGenerating(false); }
+    try {
+      const urls = await onGen(asset.id, variantId, prompt, genOpts);
+      // 生成成功后立即更新预览图显示，不依赖 prop 更新
+      if (urls && urls.length) setPreviewImg(urls[0]);
+    } finally { setGenerating(false); }
+  };
+  // 确认当前预览图为当前资产：更新到资产弹窗页和默认资产页
+  const handleConfirm = () => {
+    if (!previewImg || generating) return;
+    onSetCurrent(asset.id, variantId, previewImg);
+    onClose();
   };
   const emptyText = asset.kind === 'scene' ? '暂无场景' : asset.kind === 'prop' ? '暂无道具' : (isMain ? '暂无角色主图' : '暂无角色变装');
   const genOpts = { count: parseInt(count, 10), model, resolution, ratio };
@@ -1762,7 +1771,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
         <div className="dwc-modal-head">
           <span className="dwc-modal-title">{title}</span>
           <div className="dwc-gen-head-actions">
-            <button className="dwc-modal-ok" disabled={!hasAvailableConfig || generating} onClick={handleGen}>{generating ? '生成中…' : <><BoltIcon size={14} /> 确认</>}</button>
+            <button className="dwc-modal-ok" disabled={!previewImg || generating} onClick={handleConfirm} title="将当前预览图设为该资产的主形象/变装并保存"><CheckIcon size={14} /> 确认</button>
             <button className="dwc-modal-close" onClick={onClose}><CloseIcon size={16} /></button>
           </div>
         </div>
@@ -3256,9 +3265,9 @@ export const DramaWorkshopPage: React.FC = () => {
     }) : p);
   }, []);
 
-  const genVariant = useCallback(async (assetId: string, variantId: string, prompt: string, opts: { count?: number; model?: string; resolution?: string; ratio?: string } = {}) => {
+  const genVariant = useCallback(async (assetId: string, variantId: string, prompt: string, opts: { count?: number; model?: string; resolution?: string; ratio?: string } = {}): Promise<string[]> => {
     const a = assetById(assetId);
-    if (!a) return;
+    if (!a) return [];
     const n = [1, 2, 4, 9].includes(opts.count || 1) ? (opts.count || 1) : 1;
     const size = genSize(opts.ratio || '16:9', opts.resolution || '1k');
     const curVariant = (a.variants || []).find(v => v.id === variantId);
@@ -3301,8 +3310,10 @@ export const DramaWorkshopPage: React.FC = () => {
         }
         showToast('已生成 ' + urls.length + ' 张变装图，自动保存到变装列表', 'success');
       }
+      return urls;
     }
     else showToast('未配置图像 API，生成失败', 'error');
+    return [];
   }, [assetById, imageFetcher, setVariantCandidates, updateVariantImg, showToast]);
 
   const genAsset = useCallback(async (assetId: string, prompt: string, opts: { model?: string; size?: string } = {}): Promise<boolean> => {
