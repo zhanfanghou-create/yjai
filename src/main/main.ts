@@ -335,6 +335,21 @@ function normalizeApiBase(baseUrl: string | undefined): string {
   return base;
 }
 
+// 识别火山方舟视频接口地址：/api/plan（Agent Plan）或 /api/v3（标准方舟）+ 可选 /contents/generations/tasks
+// 返回 isVolc 是否火山方舟、taskUrl 视频任务创建/查询基础地址（已含 /contents/generations/tasks）
+function detectVolcengineVideoBase(base: string): { isVolc: boolean; taskUrl: string } {
+  if (!/:\/\/ark\.cn-beijing\.volces\.com\/api\/(?:plan|v\d+)/i.test(base)) {
+    return { isVolc: false, taskUrl: base };
+  }
+  if (/\/contents\/generations\/tasks$/i.test(base)) {
+    return { isVolc: true, taskUrl: base };
+  }
+  const taskUrl = /\/api\/v\d+/i.test(base)
+    ? `${base}/contents/generations/tasks`
+    : `${base}/v3/contents/generations/tasks`;
+  return { isVolc: true, taskUrl };
+}
+
 function hasVersionSegment(url: string): boolean {
   return /\/v\d+(?:\/|$)/i.test(url);
 }
@@ -948,15 +963,15 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     const normalizedBase = normalizeApiBase(baseUrl);
     const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.com(?:\/|$)/i.test(normalizedBase);
     const isGrsaiHost = /:\/\/grsai\.dakka\.com\.cn(?:\/|$)/i.test(normalizedBase);
-    // 火山引擎 Agent Plan：baseUrl 形如 https://ark.cn-beijing.volces.com/api/plan
-    const isVolcenginePlan = /:\/\/ark\.cn-beijing\.volces\.com\/api\/plan/i.test(normalizedBase);
+    // 火山方舟视频接口：/api/plan（Agent Plan）或 /api/v3（标准方舟），兼容完整任务端点
+    const volcVideo = detectVolcengineVideoBase(normalizedBase);
     const isAgnesVideo = isAgnesHost && (
       config.apiType === 'seedance-video' ||
       /agnes-video/i.test(String(model || '')) ||
       (config.apiType === 'openai-completions' && /video|seedance/i.test(String(model || '')))
     );
-    // 火山引擎 Agent Plan 视频生成：apiType 为 openai-completions 且模型名含 video/seedance
-    const isVolcenginePlanVideo = isVolcenginePlan && (
+    // 火山方舟视频生成：apiType 为 openai-completions 或模型名含 video/seedance
+    const isVolcenginePlanVideo = volcVideo.isVolc && (
       config.apiType === 'openai-completions' ||
       /video|seedance/i.test(String(model || ''))
     );
@@ -966,7 +981,7 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       (model && /dall|gpt-image|image/i.test(String(model)))
     );
     const url = isVolcenginePlanVideo
-      ? `${normalizedBase}/v3/contents/generations/tasks`
+      ? volcVideo.taskUrl
       : isAgnesVideo
         ? buildVersionedApiUrl(normalizedBase, '/videos')
         : isOpenAIImageGen
@@ -1298,9 +1313,9 @@ ipcMain.handle('grsai:checkResult', async (_event, opts: any) => {
     if (!id) throw new Error('id required');
 
     const normalizedBase = normalizeApiBase(baseUrl);
-    const isVolcenginePlan = /:\/\/ark\.cn-beijing\.volces\.com\/api\/plan/i.test(normalizedBase);
-    const url = isVolcenginePlan
-      ? `${normalizedBase}/v3/contents/generations/tasks/${encodeURIComponent(id)}`
+    const volcVideo = detectVolcengineVideoBase(normalizedBase);
+    const url = volcVideo.isVolc
+      ? `${volcVideo.taskUrl}/${encodeURIComponent(id)}`
       : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
     const response = await fetch(url, {
       method: 'GET',
