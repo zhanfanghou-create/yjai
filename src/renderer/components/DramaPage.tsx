@@ -953,7 +953,8 @@ const DramaPage: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     pageState, stepIndex, ideaMessages, storyboardRows,
-    imgConfigId, videoConfigId, selectedConfigId, selectedModel,
+    imgConfigId, imgModel, imgRatio, videoConfigId, videoModel, videoRatio, videoPixel,
+    selectedConfigId, selectedModel,
     episodes, currentEpisodeIndex, stepChatMessages, stepResults,
   ]);
 
@@ -2253,6 +2254,7 @@ ${conversationText}
 
   // ---------- 提交到剧创工厂创作 ----------
   const handleSubmitToDramart = useCallback(() => {
+    persistRecord(); // 提交前确保最新剧本内容已实时保存到历史记录
     if (!currentEpisode && !currentRecord) {
       showToast('没有可提交的内容', 'error');
       return;
@@ -2286,7 +2288,7 @@ ${conversationText}
     submitDramaDraft(project);
     const wordCount = scriptText.trim().length;
     showToast(`已提交剧创工场（剧本${wordCount}字），正在跳转...`, 'success');
-  }, [currentEpisode, currentRecord, submitDramaDraft, showToast]);
+  }, [currentEpisode, currentRecord, submitDramaDraft, showToast, persistRecord]);
 
   // ==================== 渲染 ====================
 
@@ -2358,7 +2360,7 @@ ${conversationText}
       <div className="drama-page" style={{ padding: 0, height: '100%', display: 'flex', flexDirection: 'column', background: 'var(--bg-primary)' }}>
         {/* 顶栏 */}
         <div style={{ padding: '12px 24px', borderBottom: '1px solid var(--border-color)', background: 'var(--bg-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <button onClick={() => { setPageState(0); setIdeaMessages([]); }} style={{ padding: '6px 16px', background: 'transparent', color: 'var(--text-secondary)', border: '1px solid var(--border-light)', borderRadius: 8, fontSize: 13, cursor: 'pointer' }}>← 返回历史</button>
+          <button onClick={() => { persistRecord(); setPageState(0); }} style={{ padding: '6px 16px', background: 'transparent', color: 'var(--text-secondary)', border: '1px solid var(--border-light)', borderRadius: 8, fontSize: 13, cursor: 'pointer' }}>← 返回历史</button>
           <h2 style={{ fontSize: 18, fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>创作沟通台</h2>
           <div style={{ width: 90 }} />
         </div>

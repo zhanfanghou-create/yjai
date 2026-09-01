@@ -2555,12 +2555,15 @@ export const DramaWorkshopPage: React.FC = () => {
     setDramartCreateParams({ mode, ratio, resolution, styleId });
   }, [mode, ratio, resolution, styleId, setDramartCreateParams]);
 
-  // 当从剧创页面提交草稿过来时，自动切换到剧创模式（manual）
+  // 当从剧创页面提交草稿过来时，仅首次自动切换到剧创模式（manual）；
+  // 之后允许用户自由切换回 agent 模式，两个模式已提交的内容（剧本草稿/上传文件）均保留
+  const draftHandledRef = useRef(false);
   useEffect(() => {
-    if (dramartDraft && mode !== 'manual') {
+    if (dramartDraft && !draftHandledRef.current) {
+      draftHandledRef.current = true;
       setMode('manual');
     }
-  }, [dramartDraft, mode]);
+  }, [dramartDraft]);
 
   const [styleOpen, setStyleOpen] = useState(false);
   const [customStyleOpen, setCustomStyleOpen] = useState(false);
@@ -2797,72 +2800,34 @@ export const DramaWorkshopPage: React.FC = () => {
     await startAnalysis({ ...pending.base, shotDuration: selectedShotDuration }, pending.config, selectedShotDuration);
   }, [selectedShotDuration, startAnalysis]);
 
-  // 剧创模式创建：用剧创草稿 + 用户参数，解析剧创结果填入（不重新生成）
+  // 剧创模式创建：用剧创草稿的完整剧本，走与 agent 相同的完整真实 AI 分析流程
+  // （先弹分镜时长选择 → 自动进度 → 真实提取角色/场景/道具/分镜 → 批量生成资产图 → 封面）
   async function handleCreateDramaDraft() {
     if (!dramartDraft) { showToast('未接收到剧创数据', 'error'); return; }
+    const scriptText = String(dramartDraft.scriptContent || dramartDraft.scriptText || '').trim();
+    if (!scriptText) { showToast('剧创草稿中未包含完整剧本内容', 'error'); return; }
     const base: DramartProject = {
       ...dramartDraft,
       id: 'dr_' + Date.now().toString(36),
+      name: dramartDraft.name || '剧创项目',
       ratio: ratio as any,
       resolution: resolution as any,
       styleId: selectedStyle.id,
       styleName: selectedStyle.name,
-      shotDuration: 15,
+      scriptText,
+      scriptContent: scriptText,
+      scriptFileName: dramartDraft.scriptFileName || ((dramartDraft.name || '剧创') + '.md'),
+      mode: 'manual',
+      analysis: { step: 0, total: DRAMART_ANALYSIS_STEPS.length, label: DRAMART_ANALYSIS_STEPS[0], status: 'idle', percent: 0 },
+      characters: [],
+      scenes: [],
+      props: [],
+      storyboards: [],
     };
-    setStage('analyze');
-    setAnalyzing({ step: 0, total: DRAMART_ANALYSIS_STEPS.length, label: DRAMART_ANALYSIS_STEPS[0], percent: 2, msg: '' });
-    try {
-      const result = await runDramaDraftAnalysis({
-        draft: base,
-        styleWord,
-        ratio: ratio as any,
-        resolution: resolution as any,
-        imageFetcher,
-        onProgress: (step, label, percent, msg) => setAnalyzing({ step, total: DRAMART_ANALYSIS_STEPS.length, label, percent, msg: msg || '' }),
-      });
-      // 生成封面图（根据项目比例动态调整，包含剧本名称大标题，符合短视频封面特点）
-      const coverRatio = base.ratio || '9:16';
-      const coverSizeMap: Record<string, string> = {
-        '9:16': '1080x1920',
-        '16:9': '1920x1080',
-        '4:3': '1440x1080',
-        '3:4': '1080x1440',
-        '1:1': '1080x1080',
-        '21:9': '2520x1080',
-      };
-      const coverSize = coverSizeMap[coverRatio] || '1080x1920';
-      const isVertical = coverRatio === '9:16' || coverRatio === '3:4';
-      const coverPrompt = [
-        '短视频封面图，' + coverRatio + '比例，电影质感，高对比度，强烈视觉冲击力。',
-        '画面' + (isVertical ? '中央或上方' : '中央或左侧') + '用超大醒目的艺术字体显示剧本名称："' + base.name + '"，文字清晰可读，有描边或阴影效果。',
-        '背景是与剧本风格匹配的情绪化场景，有主要人物的特写或剪影，表情富有张力。',
-        '配色鲜明，有暖色调或冷色调的氛围光，整体画面有电影海报的高级感。',
-        '风格：' + base.styleName + '，大气唯美，适合作为短视频发布封面吸引点击。',
-        '重要要求：',
-        '1. 必须清晰显示剧本名称"' + base.name + '"作为大标题，文字占画面约20-30%。',
-        '2. ' + coverRatio + '构图，主体居中，' + (isVertical ? '上下' : '左右') + '留有呼吸空间。',
-        '3. 画面有明确的视觉焦点和情绪氛围，符合短剧类型。',
-        '4. 不要出现其他无关文字、水印或logo。',
-      ].join('\n');
-      const coverR = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
-      const cover = coverR?.url || null;
-      const p: DramartProject = { ...base, ...result,
-        cover: cover || gradientDataUrl(base.name),
-        outline: (base.scriptContent || base.scriptText || '').trim().slice(0, 400) || '（暂无大纲）',
-        genres: ['现代','年代剧','家庭','治愈','喜剧','成长'],
-        scriptType: 'AI短剧',
-        storyboardStyle: '分镜解析 1.5',
-        plotEpisodes: result.storyboards.map(sb => ({ index: sb.index, title: sb.label, content: sb.rawScript.slice(0, 200) })),
-        analysis: { step: 4, total: 4, label: '完成', status: 'done', percent: 100 } };
-      setProject(p);
-      setStage('sets');
-      setTab('character');
-      clearDramartDraft();
-      showToast('分析完成，已从剧创结果生成角色/场景/道具', 'success');
-    } catch (e: any) {
-      showToast('分析失败：' + (e?.message || String(e)), 'error');
-      setStage('create');
-    }
+    // 与 agent 模式一致：先弹窗选择分镜时长，确认后进入自动进度真实生成
+    pendingCreateRef.current = { base, config: pickAIConfig() };
+    setSelectedShotDuration(15);
+    setShotDurationOpen(true);
   }
 
 
