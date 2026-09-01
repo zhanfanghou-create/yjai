@@ -21,30 +21,46 @@ function defaultInstallDir(): string {
 
 async function pathDiskInfo(p: string): Promise<{ freeGB: number; totalGB: number }> {
   try {
+    // 使用 Node 原生 fs.statfs 获取磁盘空间，替代已废弃的 wmic（Win11 已移除 wmic 导致误报“存储不足”）
     if (process.platform === "win32") {
       const drive = (p.match(/^[A-Za-z]:/) || ["C:"])[0];
-      const out = await new Promise<string>((resolve, reject) => {
-        execFile(
-          "wmic",
-          ["logicaldisk", "where", `Caption='${drive}'`, "get", "FreeSpace,Size", "/format:list"],
-          { windowsHide: true },
-          (err, stdout) => (err ? reject(err) : resolve(stdout))
-        );
-      });
-      const free = Number((out.match(/FreeSpace=(\d+)/) || [])[1] || 0);
-      const size = Number((out.match(/Size=(\d+)/) || [])[1] || 0);
-      return { freeGB: free / 1024 ** 3, totalGB: size / 1024 ** 3 };
+      const root = drive + "\\";
+      const s = await fs.promises.statfs(root);
+      const free = Number(s.bavail) * Number(s.bsize);
+      const total = Number(s.blocks) * Number(s.bsize);
+      return { freeGB: free / 1024 ** 3, totalGB: total / 1024 ** 3 };
     }
-    const out = await new Promise<string>((resolve, reject) => {
-      execFile("df", ["-Pk", p], (err, stdout) => (err ? reject(err) : resolve(stdout)));
-    });
-    const line = out.trim().split(/\n/).pop() || "";
-    const cols = line.split(/\s+/);
-    const totalK = Number(cols[1] || 0);
-    const availK = Number(cols[3] || 0);
-    return { freeGB: (availK * 1024) / 1024 ** 3, totalGB: (totalK * 1024) / 1024 ** 3 };
+    const s = await fs.promises.statfs(p);
+    const free = Number(s.bavail) * Number(s.bsize);
+    const total = Number(s.blocks) * Number(s.bsize);
+    return { freeGB: free / 1024 ** 3, totalGB: total / 1024 ** 3 };
   } catch {
     return { freeGB: 0, totalGB: 0 };
+  }
+}
+
+async function findExistingInstallDir(): Promise<string | null> {
+  try {
+    if (process.platform !== "win32") {
+      const macApp = path.join("/Applications", `${APP_NAME}.app`);
+      if (fs.existsSync(macApp)) return macApp;
+      return null;
+    }
+    const key = `HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`;
+    try {
+      const out = await new Promise<string>((resolve, reject) => {
+        execFile("reg", ["query", key, "/v", "InstallLocation"], { windowsHide: true }, (err, stdout) =>
+          err ? reject(err) : resolve(stdout)
+        );
+      });
+      const m = out.match(/InstallLocation\s+REG_SZ\s+(.+)/);
+      if (m && m[1].trim() && fs.existsSync(m[1].trim())) return m[1].trim();
+    } catch { /* 注册表无记录则走默认目录 */ }
+    const def = defaultInstallDir();
+    if (fs.existsSync(def)) return def;
+    return null;
+  } catch {
+    return null;
   }
 }
 
@@ -101,7 +117,7 @@ function registerIpc(): void {
   ipcMain.handle("installer:getMeta", async () => ({
     appName: APP_NAME,
     version: app.getVersion(),
-    defaultPath: defaultInstallDir(),
+    defaultPath: (await findExistingInstallDir()) || defaultInstallDir(),
     licenseText: readLicenseText(),
     platform: process.platform,
   }));
@@ -156,7 +172,7 @@ function registerIpc(): void {
     }
     installing = true;
     try {
-      await runInstall(opts, (payload) => send("installer:progress", payload), (log) => send("installer:log", log));
+      await runInstall({ ...opts, version: app.getVersion() }, (payload) => send("installer:progress", payload), (log) => send("installer:log", log));
       return { ok: true };
     } catch (e: any) {
       const msg = String(e && (e.message || e));

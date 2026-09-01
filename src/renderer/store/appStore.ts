@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { resolveWorkflowForFeature } from '../services/comfyCapability';
 import { localizeMedia } from '../utils/pathUtils';
+import { toolService } from '../services/toolService';
 import type { DramartProject, AIConfigInput, DramartStyle } from '../services/dramartWorkflow';
 
 export type APIProvider = 'comfyui' | 'openai' | 'grsai' | 'siliconflow' | 'zhipu' | 'custom' | 'modelscope';
@@ -117,7 +118,7 @@ const extractBase64Image = (d: any): string => {
   if (b64.startsWith('data:')) return b64;
   return `data:image/png;base64,${b64}`;
 };
-const extractUrl = (d: any) => d?.url || d?.filePaths?.[0] || d?.urls?.[0] || d?.metadata?.url || d?.data?.metadata?.url || d?.data?.[0]?.url || d?.images?.[0]?.url || d?.results?.[0]?.url || d?.results?.[0]?.videos?.[0]?.url || d?.results?.[0]?.image_url || d?.output?.[0] || d?.files?.[0] || d?.video_url || d?.output?.url || d?.video?.url || d?.data?.video_url || d?.data?.[0]?.video_url || extractBase64Image(d) || '';
+const extractUrl = (d: any) => d?.url || d?.content?.video_url || d?.content?.url || d?.content?.file_url || d?.filePaths?.[0] || d?.urls?.[0] || d?.metadata?.url || d?.data?.metadata?.url || d?.data?.[0]?.url || d?.images?.[0]?.url || d?.results?.[0]?.url || d?.results?.[0]?.videos?.[0]?.url || d?.results?.[0]?.image_url || d?.output?.[0] || d?.files?.[0] || d?.video_url || d?.output?.url || d?.video?.url || d?.data?.video_url || d?.data?.[0]?.video_url || extractBase64Image(d) || '';
 const resultType = (url: string, fallback: 'image' | 'video' | 'audio' | 'text' = 'image') => /\.(mp4|webm|mov|ogg)$/i.test(url) ? 'video' : /\.(mp3|wav|m4a|aac|flac)$/i.test(url) ? 'audio' : fallback;
 const modeOf = (n: AINode) => String(n.options?.generationType || n.type);
 const videoModes = new Set(['text-to-video', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'lip-sync', 'video-super-resolution', 'live-portrait', 'video-to-music', 'video-interpolate', 'video-realtime']);
@@ -207,6 +208,24 @@ interface AppState {
 
 const testConfig = async (c?: APIConfig) => { if (!c?.baseUrl) return false; try { const win = window as any; if (win?.yijingAPI?.grsai?.refreshModels) return !!(await win.yijingAPI.grsai.refreshModels({ baseUrl: c.baseUrl, apiKey: c.apiKey, apiType: 'openai-chat' }))?.ok; const r = await fetch(`${normalizeApiBase(c.baseUrl)}/models`, { headers: c.apiKey ? { Authorization: `Bearer ${c.apiKey}` } : {} }); return r.ok; } catch { return false; } };
 
+// 语音连接测试：豆包语音（openspeech.bytedance.com）使用 X-Api-Key 头 + text_prompt 格式，需单独适配
+const testVoiceConfig = async (c?: APIConfig): Promise<boolean> => {
+  if (!c?.baseUrl) return false;
+  const baseUrl = String(c.baseUrl || '').trim().replace(/\/+$/, '');
+  if (/openspeech\.bytedance\.com/i.test(baseUrl)) {
+    try {
+      const url = /\/tts\/create$/i.test(baseUrl) ? baseUrl : `${baseUrl}/api/v3/tts/create`;
+      const resp = await fetch(url, {
+        method: 'POST',
+        headers: { 'X-Api-Key': c.apiKey || '', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: c.defaultModel || 'seed-audio-1.0', text_prompt: '你好，测试。', audio_config: { format: 'mp3' } }),
+      });
+      return resp.ok;
+    } catch { return false; }
+  }
+  return testConfig(c);
+};
+
 const directImageCapability = (n: AINode, prompt: string) => {
   const featureText = `${n.options?.mediaFeature || ''} ${n.options?.sourceFeature || ''} ${n.options?.workflowProject || ''} ${n.options?.apiCapability || ''} ${n.options?.panoramaFeature || ''} ${prompt}`.toLowerCase();
   const has = (...keys: string[]) => keys.some(key => featureText.includes(key.toLowerCase()));
@@ -236,7 +255,18 @@ const callApi = async (c: APIConfig, n: AINode) => {
   const capabilityPayload = directImageCapability(n, prompt);
   const enhancedPrompt = capabilityPayload.projectPromptHint ? composePrompt(prompt, capabilityPayload.projectPromptHint) : prompt;
   const imagePayload = { model, prompt: enhancedPrompt, size: capabilityPayload.size || imageSize, imageSize: capabilityPayload.size || imageSize, n: 1, ...capabilityPayload, ...n.options, image: sourceImage, images: sourceImage ? [sourceImage, ...imageRefs.filter((url: string) => url !== sourceImage)] : imageRefs, sourceImage, panoramaType: isPanorama720 ? '720' : n.options?.panoramaType || (capabilityPayload as any).panoramaType, outputType: isPanorama720 ? 'panorama' : n.options?.outputType || (capabilityPayload as any).outputType, aspectRatio: n.options?.aspectRatio || n.aspectRatio || n.options?.imageRatio || (capabilityPayload as any).aspectRatio || (isPanorama720 ? '2:1' : undefined), resolution: n.options?.resolution || n.resolution || n.options?.imageClarity || (capabilityPayload as any).resolution || (isPanorama720 ? '2K' : undefined) };
-  if (mode === 'tts' || mode === 'audio2video') { if (win?.yijingAPI?.edgeTts?.synthesizeToBase64) { const res = await win.yijingAPI.edgeTts.synthesizeToBase64({ text: prompt, voice: n.options?.voice || EDGE_TTS_MODELS[0], options: { rate: n.options?.speed } }); if (res?.ok && res?.base64) { return { url: `data:audio/mpeg;base64,${res.base64}`, type: 'audio' as const }; } throw new Error(res?.error || 'Edge TTS 合成失败，请确认已安装 edge-tts（pip install edge-tts）'); } if (win?.yijingAPI?.edgeTTS?.speak) { const r = await win.yijingAPI.edgeTTS.speak({ text: prompt, voice: n.options?.voice || EDGE_TTS_MODELS[0], rate: n.options?.speed || 1 }); return { url: extractUrl(r), type: 'audio' as const }; } return { url: `edge-tts://${encodeURIComponent(prompt)}`, type: 'audio' as const }; }
+  if (mode === 'tts' || mode === 'audio2video') {
+    // 优先使用设置页配置的语音 API（支持豆包语音 / OpenAI 兼容等自定义语音接口）；未配置时回退内置 Edge TTS
+    if (c.apiKey && c.baseUrl && !String(c.baseUrl).trim().startsWith('edge-tts://')) {
+      try {
+        const vres = await toolService.generateVoice(prompt, c, { voice: n.options?.voice || c.defaultModel || '' });
+        if (vres?.url) return { url: vres.url, type: 'audio' as const };
+      } catch (e: any) {
+        throw new Error('语音生成失败：' + (e?.message || String(e)));
+      }
+    }
+    if (win?.yijingAPI?.edgeTts?.synthesizeToBase64) { const res = await win.yijingAPI.edgeTts.synthesizeToBase64({ text: prompt, voice: n.options?.voice || EDGE_TTS_MODELS[0], options: { rate: n.options?.speed } }); if (res?.ok && res?.base64) { return { url: `data:audio/mpeg;base64,${res.base64}`, type: 'audio' as const }; } throw new Error(res?.error || 'Edge TTS 合成失败，请确认已安装 edge-tts（pip install edge-tts）'); } if (win?.yijingAPI?.edgeTTS?.speak) { const r = await win.yijingAPI.edgeTTS.speak({ text: prompt, voice: n.options?.voice || EDGE_TTS_MODELS[0], rate: n.options?.speed || 1 }); return { url: extractUrl(r), type: 'audio' as const }; } return { url: `edge-tts://${encodeURIComponent(prompt)}`, type: 'audio' as const };
+  }
   if (imageModes.has(mode)) { if (win?.yijingAPI?.openai?.generate) { const r = await win.yijingAPI.openai.generate({ apiKey: c.apiKey, baseUrl: apiBase, ...imagePayload }); const errMsg = r?.error?.message || (typeof r?.error === 'string' ? r.error : '') || r?.message; if (errMsg) throw new Error(String(errMsg)); const imgUrl = extractUrl(r); if (!imgUrl) throw new Error('图片生成未返回结果（可能模型不支持或返回了 base64 之外的结构）：' + JSON.stringify(r).slice(0, 200)); const imgRemote = extractRemoteUrl(r); return { url: imgUrl, type: 'image' as const, remoteUrl: imgRemote }; } const r = await fetch(`${apiBase}/images/generations`, { method: 'POST', headers: { Authorization: `Bearer ${c.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(imagePayload) }); const d = await r.json(); if (!r.ok) throw new Error(d?.error?.message || d?.error || `HTTP ${r.status}`); const imgUrl = extractUrl(d); if (!imgUrl) throw new Error('图片生成未返回结果：' + JSON.stringify(d).slice(0, 200)); const imgRemote = extractRemoteUrl(d); return { url: imgUrl, type: 'image' as const, remoteUrl: imgRemote }; }
   if (videoModes.has(mode)) {
     // 从 videoConfig 或节点选项中提取视频参数
@@ -545,7 +575,7 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
   updateAPIConfig: (cid, u) => set(s => { const apiConfigs = s.apiConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c); const chatAPIConfigs = s.chatAPIConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c); return { apiConfigs, chatAPIConfigs }; }), deleteAPIConfig: cid => set(s => ({ apiConfigs: s.apiConfigs.filter(c => c.id !== cid), chatAPIConfigs: s.chatAPIConfigs.filter(c => c.id !== cid) })), testAPIConnection: async cid => { const ok = await testConfig(get().apiConfigs.find(c => c.id === cid)); get().updateAPIConfig(cid, { connected: ok }); return ok; },
   addImageAPIConfig: c => { const cid = id(); set(s => ({ imageAPIConfigs: [...s.imageAPIConfigs, { ...c, id: cid, models: [] }] })); return cid; }, updateImageAPIConfig: (cid, u) => set(s => ({ imageAPIConfigs: s.imageAPIConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c) })), deleteImageAPIConfig: cid => set(s => ({ imageAPIConfigs: s.imageAPIConfigs.filter(c => c.id !== cid) })), testImageAPIConnection: async cid => { const ok = await testConfig(get().imageAPIConfigs.find(c => c.id === cid)); get().updateImageAPIConfig(cid, { connected: ok }); return ok; },
   addVideoAPIConfig: c => { const cid = id(); set(s => ({ videoAPIConfigs: [...s.videoAPIConfigs, { ...c, id: cid, models: [] }] })); return cid; }, updateVideoAPIConfig: (cid, u) => set(s => ({ videoAPIConfigs: s.videoAPIConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c) })), deleteVideoAPIConfig: cid => set(s => ({ videoAPIConfigs: s.videoAPIConfigs.filter(c => c.id !== cid) })), testVideoAPIConnection: async cid => { const ok = await testConfig(get().videoAPIConfigs.find(c => c.id === cid)); get().updateVideoAPIConfig(cid, { connected: ok }); return ok; },
-  addVoiceAPIConfig: c => { const cid = id(); set(s => ({ voiceAPIConfigs: [...s.voiceAPIConfigs, { ...c, id: cid, models: [] }] })); return cid; }, updateVoiceAPIConfig: (cid, u) => set(s => ({ voiceAPIConfigs: s.voiceAPIConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c) })), deleteVoiceAPIConfig: cid => set(s => ({ voiceAPIConfigs: s.voiceAPIConfigs.filter(c => c.id !== cid) })), testVoiceAPIConnection: async cid => { const ok = await testConfig(get().voiceAPIConfigs.find(c => c.id === cid)); get().updateVoiceAPIConfig(cid, { connected: ok }); return ok; },
+  addVoiceAPIConfig: c => { const cid = id(); set(s => ({ voiceAPIConfigs: [...s.voiceAPIConfigs, { ...c, id: cid, models: [] }] })); return cid; }, updateVoiceAPIConfig: (cid, u) => set(s => ({ voiceAPIConfigs: s.voiceAPIConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c) })), deleteVoiceAPIConfig: cid => set(s => ({ voiceAPIConfigs: s.voiceAPIConfigs.filter(c => c.id !== cid) })), testVoiceAPIConnection: async cid => { const ok = await testVoiceConfig(get().voiceAPIConfigs.find(c => c.id === cid)); get().updateVoiceAPIConfig(cid, { connected: ok }); return ok; },
   addMusicAPIConfig: c => { const cid = id(); set(s => ({ musicAPIConfigs: [...s.musicAPIConfigs, { ...c, id: cid, models: [] }] })); return cid; }, updateMusicAPIConfig: (cid, u) => set(s => ({ musicAPIConfigs: s.musicAPIConfigs.map(c => c.id === cid ? { ...c, ...u, models: u.models || [] } : c) })), deleteMusicAPIConfig: cid => set(s => ({ musicAPIConfigs: s.musicAPIConfigs.filter(c => c.id !== cid) })), testMusicAPIConnection: async cid => { const ok = await testConfig(get().musicAPIConfigs.find(c => c.id === cid)); get().updateMusicAPIConfig(cid, { connected: ok }); return ok; },
   addComfyUIConfig: c => { const cid = id(); set(s => ({ comfyuiConfigs: [...s.comfyuiConfigs, { ...c, id: cid, port: undefined }] })); return cid; }, updateComfyUIConfig: (cid, u) => set(s => ({ comfyuiConfigs: s.comfyuiConfigs.map(c => c.id === cid ? { ...c, ...u, port: undefined } : c) })), deleteComfyUIConfig: cid => set(s => ({ comfyuiConfigs: s.comfyuiConfigs.filter(c => c.id !== cid) })), testComfyUIConnection: async cid => {const c = get().comfyuiConfigs.find(x => x.id === cid);if (!c?.serverUrl) return false;try {const win = window as any, url = base(c.serverUrl);if (win?.yijingAPI?.comfyui?.connect) {const result = await win.yijingAPI.comfyui.connect({ serverUrl: url, dataPath: c.dataPath });if (result?.ok) {get().updateComfyUIConfig(cid, { connected: true });return true;} else {get().updateComfyUIConfig(cid, { connected: false });return false;}} else {const resp = await fetch(`${url}/system_stats`);if (resp.ok) {get().updateComfyUIConfig(cid, { connected: true });return true;} else {get().updateComfyUIConfig(cid, { connected: false });return false;}}} catch {get().updateComfyUIConfig(cid, { connected: false });return false;}},
   addStockMediaSource: c => { const cid = id(); set(s => ({ stockMediaSources: [...(s.stockMediaSources || []), { ...c, id: cid }] })); return cid; }, updateStockMediaSource: (cid, u) => set(s => ({ stockMediaSources: (s.stockMediaSources || []).map(c => c.id === cid ? { ...c, ...u } : c) })), deleteStockMediaSource: cid => set(s => ({ stockMediaSources: (s.stockMediaSources || []).filter(c => c.id !== cid) })),

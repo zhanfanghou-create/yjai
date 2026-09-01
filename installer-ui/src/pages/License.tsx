@@ -35,7 +35,7 @@ export function License({ version, licenseText, onBack, onNext }: Props) {
   const [agreed, setAgreed] = useState(false);
   const [scrolledEnd, setScrolledEnd] = useState(false);
   const scRef = useRef<HTMLDivElement>(null);
-  const text = licenseText && licenseText.trim().length > 0 ? licenseText : buildFallbackLicense(version || '1.1.0');
+  const text = licenseText && licenseText.trim().length > 0 ? licenseText : buildFallbackLicense(version || '1.2.17');
 
   useEffect(() => {
     setAgreed(false);

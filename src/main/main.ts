@@ -201,7 +201,10 @@ async function fetchWithRetry(
 
 async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: string) {
   try {
-    const url = (id: string) => `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
+    const volcV = detectVolcengineVideoBase(baseUrl);
+    const url = (id: string) => volcV.isVolc
+      ? `${volcV.taskUrl}/${encodeURIComponent(id)}`
+      : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
     const assetsDir = path.join(app.getPath('userData'), 'assets');
     fs.mkdirSync(assetsDir, { recursive: true });
 
@@ -375,6 +378,11 @@ function extractJobResultUrls(data: any): string[] {
     if (Array.isArray(arr)) arr.forEach((r: any) => { const u = pick(r); if (u) urls.push(u); });
   };
   if (data.metadata && typeof data.metadata.url === 'string') urls.push(data.metadata.url);
+  // 火山方舟视频任务查询响应：视频地址在 content.video_url / content.file_url / content.last_frame_url
+  if (data.content && typeof data.content === 'object') {
+    const cu = data.content.video_url || data.content.url || data.content.file_url || data.content.last_frame_url;
+    if (typeof cu === 'string' && /^https?:|^data:/i.test(cu)) urls.push(cu);
+  }
   pushArray(data.results);
   pushArray(data.images);
   pushArray(data.data);
@@ -386,6 +394,9 @@ function extractJobResultUrls(data: any): string[] {
 }
 
 // IPC: Read file from main process and return as Data URL
+// 允许读取的媒体扩展名白名单：本 IPC 仅用于加载图片/视频/音频素材，防止读取任意系统文件
+const ALLOWED_MEDIA_EXTS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.bmp', '.svg', '.mp4', '.webm', '.mov', '.mkv', '.mp3', '.wav', '.m4a', '.aac', '.flac', '.ogg', '.opus', '.fbx', '.obj', '.gltf', '.glb', '.stl']);
+
 ipcMain.handle('fs:readFileAsDataUrl', async (_event, p: string) => {
   try {
     if (!p) throw new Error('path required');
@@ -397,6 +408,11 @@ ipcMain.handle('fs:readFileAsDataUrl', async (_event, p: string) => {
       const u = new URL(fsPath);
       fsPath = u.pathname;
       if (process.platform === 'win32' && fsPath.startsWith('/')) fsPath = fsPath.slice(1);
+    }
+
+    // 扩展名白名单：仅允许读取媒体文件，阻止读取配置/密钥/脚本等任意系统文件
+    if (!ALLOWED_MEDIA_EXTS.has(path.extname(fsPath).toLowerCase())) {
+      return { ok: false, error: 'unsupported-file-type' };
     }
 
     if (!fs.existsSync(fsPath)) return { ok: false, error: 'file-not-found' };
@@ -1327,9 +1343,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     const data = await response.json().catch(() => null);
 
     // If async job returned, start polling
-    if (data && data.id && data.status && data.status !== 'succeeded') {
+    // 注意：火山方舟创建视频任务只返回 {id:"cgt-..."}，没有 status 字段，必须单独判定
+    const isAsyncJobResp = !!(data && data.id && (isVolcenginePlanVideo || data.status));
+    if (isAsyncJobResp && data.status !== 'succeeded') {
       startGrsaiJobPolling(data.id, normalizedBase, apiKey).catch((e) => console.error('start polling failed', e));
-      return { ok: true, accepted: true, id: data.id, status: data.status, data };
+      return { ok: true, accepted: true, id: data.id, status: data.status || 'queued', data };
     }
 
     // If direct result with URLs, download and return local paths

@@ -335,6 +335,42 @@ export const toolService = {
       const model = config.defaultModel || options.model || '';
       const voice = options.voice || options.voiceName || 'alloy';
 
+      // 3.0 豆包语音（openspeech.bytedance.com）：X-Api-Key 鉴权 + text_prompt/speaker 格式（同步返回 audio base64 / url）
+      if (/openspeech\.bytedance\.com/i.test(apiBase)) {
+        const url = /\/tts\/create$/i.test(apiBase) ? apiBase : `${apiBase}/api/v3/tts/create`;
+        const body: any = {
+          model: model || 'seed-audio-1.0',
+          text_prompt: text,
+          audio_config: { format: 'mp3', sample_rate: 24000 },
+        };
+        if (voice && voice !== 'alloy' && voice !== 'default') body.speaker = voice;
+        // 参考音频（克隆音色）：sampleUrl 为 data URL 时提取 base64 作为音色参考
+        if (options.sampleUrl && /^data:/.test(String(options.sampleUrl || ''))) {
+          body.audio_data = String(options.sampleUrl).split(',')[1];
+        } else if (options.audioData) {
+          body.audio_data = String(options.audioData);
+        }
+        const resp = await fetch(url, {
+          method: 'POST',
+          headers: { 'X-Api-Key': apiKey, 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        });
+        const data = await resp.json().catch(() => null);
+        if (!resp.ok || !data) throw new Error(data?.message || data?.code || `HTTP ${resp.status}`);
+        if (data.url) return { url: String(data.url), type: 'audio' as const };
+        if (data.audio) {
+          try {
+            const bin = atob(String(data.audio));
+            const bytes = new Uint8Array(bin.length);
+            for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+            return { url: URL.createObjectURL(new Blob([bytes], { type: 'audio/mp3' })), type: 'audio' as const };
+          } catch {
+            return { url: `data:audio/mp3;base64,${data.audio}`, type: 'audio' as const };
+          }
+        }
+        throw new Error('豆包语音未返回音频');
+      }
+
       // 优先通过主进程 thirdParty.request 代理调用（绕过 CORS，统一错误处理）
       if (win?.yijingAPI?.thirdParty?.request) {
         // 尝试多种常见语音 API 端点格式
@@ -416,6 +452,33 @@ export const toolService = {
       } else {
         audioBase64 = await fileToBase64(audioFile);
         audioFileName = audioFile.name || 'sample.mp3';
+      }
+
+      // 豆包语音（openspeech.bytedance.com）：通过 audio_data 参考音频实现音色克隆
+      // 上传样本后，后续生成时以 audio_data 作为音色参考（无需独立克隆端点）
+      if (/openspeech\.bytedance\.com/i.test(apiBase)) {
+        const dataPart = audioBase64.includes(',') ? String(audioBase64).split(',')[1] : audioBase64;
+        const previewUrl = await (async () => {
+          try {
+            const resp = await fetch(/\/tts\/create$/i.test(apiBase) ? apiBase : `${apiBase}/api/v3/tts/create`, {
+              method: 'POST',
+              headers: { 'X-Api-Key': apiKey, 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                model: config.defaultModel || 'seed-audio-1.0',
+                text_prompt: '你好，这是克隆音色的试听。',
+                audio_data: dataPart,
+                audio_config: { format: 'mp3' },
+              }),
+            });
+            const d = await resp.json().catch(() => null);
+            if (!resp.ok || !d) return undefined;
+            if (d.url) return String(d.url);
+            if (d.audio) return `data:audio/mp3;base64,${d.audio}`;
+            return undefined;
+          } catch { return undefined; }
+        })();
+        const voiceId = 'clone_' + Date.now().toString(36);
+        return { voiceId, name: voiceName, previewUrl };
       }
 
       // 优先通过主进程代理调用（绕过 CORS，支持 multipart/form-data）

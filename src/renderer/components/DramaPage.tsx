@@ -2532,6 +2532,47 @@ ${conversationText}
   }
 
   // ---- 工作台页 ----
+  // 右键菜单
+  const contextMenuElement = contextMenu ? (
+    <ContextMenu
+      x={contextMenu.x}
+      y={contextMenu.y}
+      items={contextMenu.items}
+      onClose={contextMenu.onClose}
+    />
+  ) : null;
+
+  // 复制成功提示
+  const copyToastElement = copyToast ? (
+    <div style={{
+      position: 'fixed',
+      top: '20px',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      padding: '10px 20px',
+      background: 'var(--accent-color)',
+      color: '#fff',
+      borderRadius: '8px',
+      fontSize: '14px',
+      zIndex: 10000,
+      boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+    }}>
+      {copyToast}
+    </div>
+  ) : null;
+
+  // 存入提示词库弹窗
+  const saveModalElement = (
+    <SaveToPromptLibraryModal
+      isOpen={saveToPromptModal.isOpen}
+      defaultPrompt={saveToPromptModal.prompt}
+      defaultName={saveToPromptModal.name}
+      thumbnail={saveToPromptModal.thumbnail}
+      sourceType={saveToPromptModal.sourceType}
+      onClose={() => setSaveToPromptModal(prev => ({ ...prev, isOpen: false }))}
+    />
+  );
+
   if (pageState === 2) {
     const currentStep = STEPS[stepIndex];
     const isCurrentStepGenerating = stepIsGenerating[currentStep?.key];
@@ -2920,58 +2961,12 @@ style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(-
             </button>
           )}
         </div>
-      </div>
-    );
-  }
 
-  // 右键菜单
-  const contextMenuElement = contextMenu ? (
-    <ContextMenu
-      x={contextMenu.x}
-      y={contextMenu.y}
-      items={contextMenu.items}
-      onClose={contextMenu.onClose}
-    />
-  ) : null;
-
-  // 复制成功提示
-  const copyToastElement = copyToast ? (
-    <div style={{
-      position: 'fixed',
-      top: '20px',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      padding: '10px 20px',
-      background: 'var(--accent-color)',
-      color: '#fff',
-      borderRadius: '8px',
-      fontSize: '14px',
-      zIndex: 10000,
-      boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
-    }}>
-      {copyToast}
-    </div>
-  ) : null;
-
-  // 存入提示词库弹窗
-  const saveModalElement = (
-    <SaveToPromptLibraryModal
-      isOpen={saveToPromptModal.isOpen}
-      defaultPrompt={saveToPromptModal.prompt}
-      defaultName={saveToPromptModal.name}
-      thumbnail={saveToPromptModal.thumbnail}
-      sourceType={saveToPromptModal.sourceType}
-      onClose={() => setSaveToPromptModal(prev => ({ ...prev, isOpen: false }))}
-    />
-  );
-
-  return (
-    <>
-      {contextMenuElement}
-      {copyToastElement}
-      {saveModalElement}
-      {/* 剧本完成后提交方式选择弹窗 */}
-      {showSubmitChoiceModal && (
+        {/* 右键菜单 / 复制提示 / 保存弹窗 / 剧本提交方式选择弹窗 */}
+        {contextMenuElement}
+        {copyToastElement}
+        {saveModalElement}
+{showSubmitChoiceModal && (
         <div style={{
           position: 'fixed', inset: 0, zIndex: 9999,
           background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -3066,8 +3061,11 @@ style={{ flex: 1, padding: '7px 0', background: isCurrentStepGenerating ? 'var(-
           </div>
         </div>
       )}
-    </>
-  );
+      </div>
+    );
+  }
+
+
 };
 
 export default DramaPage;

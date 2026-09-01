@@ -27,6 +27,7 @@ export async function runInstall(
     createDesktopShortcut: boolean;
     createStartMenuShortcut: boolean;
     autoStart: boolean;
+    version?: string;
   },
   onProgress: ProgressCb,
   onLog: LogCb
@@ -78,7 +79,7 @@ export async function runInstall(
   if (process.platform === "win32") {
     try { await createWindowsShortcuts(target, opts); } catch (e) { onLog({ level: "warn", text: `快捷方式创建失败: ${String(e)}` }); }
     try { await writeUninstaller(target); } catch (e) { onLog({ level: "warn", text: `卸载器写入失败: ${String(e)}` }); }
-    try { await writeUninstallRegistry(target); } catch (e) { onLog({ level: "warn", text: `卸载登记写入失败: ${String(e)}` }); }
+    try { await writeUninstallRegistry(target, opts.version || "1.2.17"); } catch (e) { onLog({ level: "warn", text: `卸载登记写入失败: ${String(e)}` }); }
     if (opts.autoStart) {
       try { await writeAutoStart(target); } catch (e) { onLog({ level: "warn", text: `开机自启写入失败: ${String(e)}` }); }
     }
@@ -167,13 +168,13 @@ async function writeUninstaller(target: string): Promise<void> {
   await fs.promises.writeFile(bat, cmd, { encoding: "utf8" });
 }
 
-async function writeUninstallRegistry(target: string): Promise<void> {
+async function writeUninstallRegistry(target: string, version: string): Promise<void> {
   const uninstBat = path.join(target, "Uninstall.cmd");
   const iconExe = path.join(target, `${APP_NAME}.exe`);
   const key = `HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`;
   const script = [
     `reg add ${psQuote(key)} /v DisplayName /t REG_SZ /d ${psQuote(APP_NAME)} /f`,
-    `reg add ${psQuote(key)} /v DisplayVersion /t REG_SZ /d ${psQuote("1.1.0")} /f`,
+    `reg add ${psQuote(key)} /v DisplayVersion /t REG_SZ /d ${psQuote(version || "1.2.17")} /f`,
     `reg add ${psQuote(key)} /v InstallLocation /t REG_SZ /d ${psQuote(target)} /f`,
     `reg add ${psQuote(key)} /v DisplayIcon /t REG_SZ /d ${psQuote(iconExe)} /f`,
     `reg add ${psQuote(key)} /v UninstallString /t REG_SZ /d ${psQuote('"' + uninstBat + '"')} /f`,

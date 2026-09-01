@@ -772,7 +772,10 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const voiceAPIConfigs = useAppStore(s => s.voiceAPIConfigs);
   const hasVoiceCfg = !!((voiceAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl);
   const voiceCfg2 = ((voiceAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || undefined;
-  const voiceLibNames = ((voiceCfg2?.models as string[] | undefined) || []).filter(Boolean);
+  const voiceLibNames = Array.from(new Set([
+    ...(((voiceCfg2?.models as string[] | undefined) || [])).filter(Boolean),
+    ...OFFICIAL_VOICE_LIB.map(v => v.name),
+  ]));
   const promptRef = useRef<HTMLDivElement>(null);
   const promptRange = useRef<Range | null>(null);
   // 模型列表：models + defaultModel 合并去重，确保能准确引用设置里的默认模型
@@ -1944,6 +1947,26 @@ const AddAssetModal: React.FC<AddAssetModalProps> = ({ kindLabel, styleName, mod
   );
 };
 
+// 内置官方音色库（豆包语音 / seed-audio 官方 voice_id + 通用 OpenAI 兼容音色）
+// 配置语音 API 后自动填充音色库，避免依赖手动 models 列表为空导致音色库空白
+const OFFICIAL_VOICE_LIB: { name: string; desc: string }[] = [
+  { name: 'alloy', desc: '通用音色 · OpenAI 兼容' },
+  { name: 'echo', desc: '通用音色 · OpenAI 兼容' },
+  { name: 'fable', desc: '通用音色 · OpenAI 兼容' },
+  { name: 'onyx', desc: '通用音色 · OpenAI 兼容' },
+  { name: 'nova', desc: '通用音色 · OpenAI 兼容' },
+  { name: 'shimmer', desc: '通用音色 · OpenAI 兼容' },
+  { name: 'kian_en_zh', desc: 'seed-audio · 中英双语暖男旁白' },
+  { name: 'vivi_mixed_en_zh_ja_es_id', desc: 'seed-audio · 多语全能女声' },
+  { name: 'monkey_king_zh', desc: 'seed-audio · 孙悟空角色音' },
+  { name: 'zh_female_vv_uranus_bigtts', desc: '豆包语音 · VV 新闻女声' },
+  { name: 'zh_male_naiqimengwa_mars_bigtts', desc: '豆包语音 · 奶气萌娃男声' },
+  { name: 'zh_female_shaoergushi_mars_bigtts', desc: '豆包语音 · 少儿故事女声' },
+  { name: 'zh_male_ruyayichen_uranus_bigtts', desc: '豆包语音 · 儒雅男声' },
+  { name: 'zh_female_tianmeitaozi_uranus_bigtts', desc: '豆包语音 · 甜美桃子女声' },
+  { name: 'zh_female_cancan_uranus_bigtts', desc: '豆包语音 · 灿灿女声' },
+];
+
 const VOICE_PRESETS = [
   { name: '婆婆', desc: '语调舒缓、声线慈祥，自带岁月感的长辈…' },
   { name: '幽默大爷', desc: '幽默沧桑的乐观爷爷，通透豁达又从容…' },
@@ -2002,7 +2025,10 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
   const voiceCfg = (voiceAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl) || voiceAPIConfigs?.[0];
   const hasVoiceCfg = !!(voiceCfg?.apiKey && voiceCfg?.baseUrl);
   const apiVoiceNames = ((voiceCfg?.models as string[] | undefined) || []).filter(Boolean);
-  const voiceLib = apiVoiceNames.length ? apiVoiceNames.map((m: string) => ({ name: m, desc: '来自音频API模型：' + m })) : [];
+  const voiceLib = [
+    ...OFFICIAL_VOICE_LIB,
+    ...apiVoiceNames.filter(n => !OFFICIAL_VOICE_LIB.some(v => v.name === n)).map((m: string) => ({ name: m, desc: '来自音频API模型：' + m })),
+  ];
   const filtered = voiceLib.filter(v => !q.trim() || v.name.includes(q.trim()));
   const [audioUrl, setAudioUrl] = useState('');
   const [generating, setGenerating] = useState(false);
@@ -2048,11 +2074,18 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
     setCloneError('');
     try {
       const result = await toolService.cloneVoice(uploadFile, voiceCfg, { name: cloneName.trim() || ('克隆音色_' + Date.now().toString(36)) });
+      // 把上传样本转为 data URL 保存，作为后续配音的参考音频（blob URL 无法跨会话复用）
+      const sampleDataUrl = await new Promise<string>(resolve => {
+        const r = new FileReader();
+        r.onload = () => resolve(String(r.result || ''));
+        r.onerror = () => resolve('');
+        r.readAsDataURL(uploadFile);
+      });
       const cfg: VoiceConfig = {
         type: 'clone',
         voiceId: result.voiceId,
         name: result.name,
-        sampleUrl: URL.createObjectURL(uploadFile),
+        sampleUrl: sampleDataUrl || URL.createObjectURL(uploadFile),
         previewUrl: result.previewUrl,
       };
       setClonedVoice(cfg);
@@ -2980,11 +3013,11 @@ export const DramaWorkshopPage: React.FC = () => {
   };
 
   // 为角色分配固定音色（同一个角色始终分配同一个音色）
-  const getCharacterVoice = (charAsset: any): { id: string; name: string; desc: string; gender: string } => {
+  const getCharacterVoice = (charAsset: any): { id: string; name: string; desc: string; gender: string; sampleUrl?: string } => {
     // 如果角色已配置音色，优先使用配置的音色
     const configured = charAsset ? parseVoiceConfig(charAsset.voice as any) : null;
     if (configured?.voiceId) {
-      return { id: configured.voiceId, name: configured.name || '自定义音色', desc: configured.name || '用户配置的音色', gender: 'custom' };
+      return { id: configured.voiceId, name: configured.name || '自定义音色', desc: configured.name || '用户配置的音色', gender: 'custom', sampleUrl: configured.sampleUrl };
     }
     // 否则从预设池中按角色名称稳定分配
     const name = charAsset?.name || '未知角色';
@@ -3032,7 +3065,7 @@ export const DramaWorkshopPage: React.FC = () => {
       const fullText = lines.join('。');
       if (!fullText.trim()) return null;
 
-      const res = await toolService.generateVoice(fullText, voiceCfg, { voice: voiceId });
+      const res = await toolService.generateVoice(fullText, voiceCfg, { voice: voiceId, sampleUrl: voice.sampleUrl });
       const url = res?.url;
       if (!url) return null;
       // 配音通常是 blob URL：先在渲染进程转 data URL，再交给主进程下载到本地

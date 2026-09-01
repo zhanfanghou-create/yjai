@@ -4,9 +4,10 @@ import { STEPS, StepKey } from "../steps";
 
 interface Props {
   current: StepKey;
+  version?: string;
 }
 
-export function StepSidebar({ current }: Props) {
+export function StepSidebar({ current, version }: Props) {
   const currentIndex = STEPS.findIndex((s) => s.key === current);
 
   return (
@@ -54,7 +55,7 @@ export function StepSidebar({ current }: Props) {
           );
         })}
       </nav>
-      <div className="px-5 pb-4 pt-2 text-[10px] text-white/30">艺镜AI-正式版 · v1.1.0</div>
+      <div className="px-5 pb-4 pt-2 text-[10px] text-white/30">艺镜AI-正式版 · v{version || "1.2.17"}</div>
     </aside>
   );
 }
