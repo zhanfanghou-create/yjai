@@ -637,8 +637,8 @@ const GITHUB_RELEASE_REPOSITORY = 'zhanfanghou-create/yijing-ai-downloads';
 const CNB_RELEASE_REPOSITORY = 'yijingshijue-2026/yijing-ai-downloads';
 const OSS_RELEASE_PREFIX = 'https://yjai-releases-cn-20260818.oss-cn-hangzhou.aliyuncs.com/yijing/';
 const RELEASE_MANIFEST_URLS = [
-  `${OSS_RELEASE_PREFIX}latest.json`,
   `https://cnb.cool/${CNB_RELEASE_REPOSITORY}/-/releases/latest/download/latest.json`,
+  `${OSS_RELEASE_PREFIX}latest.json`,
   `https://github.com/${GITHUB_RELEASE_REPOSITORY}/releases/latest/download/latest.json`,
 ];
 const GITHUB_RELEASE_PREFIX = `https://github.com/${GITHUB_RELEASE_REPOSITORY}/releases/download/`;
@@ -683,7 +683,7 @@ function selectInstallerAsset(manifest: any): any {
 
 function releaseCandidates(asset: any): Array<{ name: string; url: string }> {
   const mirrors = Array.isArray(asset?.mirrors) ? asset.mirrors : [];
-  const priority = new Map([['oss', 0], ['cnb', 1], ['github', 2]]);
+  const priority = new Map([['cnb', 0], ['oss', 1], ['github', 2]]);
   const candidates: Array<{ name: string; url: string }> = mirrors
     .filter((mirror: any) => mirror?.url && isAllowedReleaseUrl(mirror.url))
     .sort((left: any, right: any) => (priority.get(String(left?.id)) ?? 99) - (priority.get(String(right?.id)) ?? 99))

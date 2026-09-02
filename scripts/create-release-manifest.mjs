@@ -27,10 +27,10 @@ async function asset(filePath) {
     fileName,
     size: statSync(filePath).size,
     sha256: await sha256(filePath),
-    url: ossUrl,
+    url: cnbUrl,
     mirrors: [
-      { id: 'oss', name: '阿里云 OSS', url: ossUrl },
       { id: 'cnb', name: 'CNB 国内节点', url: cnbUrl },
+      { id: 'oss', name: '阿里云 OSS', url: ossUrl },
       { id: 'github', name: 'GitHub 官方', url: githubUrl },
     ],
   };

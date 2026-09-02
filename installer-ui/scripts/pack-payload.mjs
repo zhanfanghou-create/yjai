@@ -41,19 +41,46 @@ function download(url, dest) {
   });
 }
 
+// 校验 7z 运行时文件确实是有效可执行文件（防止下载到 0 字节 / HTML 错误页导致打包后
+// 安装阶段 7za.exe ENOENT）
+function verifyRuntime(dest) {
+  try {
+    const st = fs.statSync(dest);
+    if (!st.isFile() || st.size < 200 * 1024) {
+      console.error('7z runtime file invalid or too small: ' + dest + ' (' + st.size + ' bytes)');
+      return false;
+    }
+    const fd = fs.openSync(dest, 'r');
+    const headBuf = Buffer.alloc(2);
+    fs.readSync(fd, headBuf, 0, 2, 0);
+    fs.closeSync(fd);
+    if (headBuf.toString('ascii') !== 'MZ') {
+      console.error('7z runtime file missing MZ header: ' + dest);
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.error('7z runtime verify error: ' + e.message);
+    return false;
+  }
+}
+
 async function ensure7z() {
-  const isWin = process.platform === "win32";
-  const runtimeName = isWin ? "7za.exe" : "7zz";
+  const isWin = process.platform === 'win32';
+  const runtimeName = isWin ? '7za.exe' : '7zz';
   const runtimeDest = path.join(binDir, runtimeName);
-  // 优先使用resources目录下的本地7za.exe
-  const local7z = path.join(installerRoot, "resources", runtimeName);
+  // 优先使用resources目录下的本地7za.exe（随仓库提交，CI 不再依赖外网下载）
+  const local7z = path.join(installerRoot, 'resources', runtimeName);
   if (fs.existsSync(local7z)) {
-    console.log("使用本地7z:", local7z);
+    if (!verifyRuntime(local7z)) {
+      console.error('local 7z invalid, check installer-ui/resources/' + runtimeName);
+      process.exit(1);
+    }
+    console.log('使用本地7z:', local7z);
     fs.copyFileSync(local7z, runtimeDest);
     if (!isWin) fs.chmodSync(runtimeDest, 0o755);
     return runtimeDest;
   }
-
   if (!fs.existsSync(runtimeDest)) {
     if (isWin) {
       // 7zr.exe 是官方发布的独立单文件版本，不依赖 7z.dll，可作为运行时解压器
@@ -76,6 +103,9 @@ async function ensure7z() {
         }
       }
       if (lastError) throw lastError;
+      if (!verifyRuntime(runtimeDest)) {
+        throw new Error('downloaded 7z runtime is invalid: ' + runtimeDest);
+      }
     } else {
       // macOS runners provide 7zz through Homebrew's sevenzip formula; some systems use 7z.
       const p = ["7zz", "7z"]

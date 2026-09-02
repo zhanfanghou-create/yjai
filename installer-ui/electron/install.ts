@@ -42,6 +42,9 @@ export async function runInstall(
   const archive = payloadArchive();
   const sz = sevenZipExe();
 
+  // 覆盖/升级安装前，先结束正在运行的目标目录主程序，避免 exe 被占用导致解压失败
+  try { await closeRunningApp(target); } catch (e) { onLog({ level: "warn", text: `关闭运行中程序失败: ${String(e)}` }); }
+
   onProgress({ percent: 10, phase: "extract", label: "正在释放主程序文件" });
 
   await new Promise<void>((resolve, reject) => {
@@ -92,6 +95,17 @@ export async function runInstall(
 
 function psQuote(s: string): string {
   return "'" + s.replace(/'/g, "''") + "'";
+}
+
+// 结束运行中的旧版主程序（覆盖/升级安装时需要，避免文件被占用导致解压失败）
+async function closeRunningApp(target: string): Promise<void> {
+  if (process.platform !== "win32") return;
+  const exe = path.join(target, `${APP_NAME}.exe`);
+  if (!fs.existsSync(exe)) return;
+  try {
+    await runPowerShell(`Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.Path -eq ${psQuote(exe)} } | Stop-Process -Force -ErrorAction SilentlyContinue`);
+    await new Promise((r) => setTimeout(r, 500));
+  } catch { /* 无运行实例时忽略 */ }
 }
 
 async function runPowerShell(script: string): Promise<void> {
