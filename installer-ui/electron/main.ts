@@ -53,7 +53,7 @@ async function findExistingInstallDir(): Promise<string | null> {
           err ? reject(err) : resolve(stdout)
         );
       });
-      const m = out.match(/InstallLocation\s+REG_SZ\s+(.+)/);
+      const m = out.match(/InstallLocation\s+REG_(?:SZ|EXPAND_SZ|MULTI_SZ)\s+(.+)/);
       if (m && m[1].trim() && fs.existsSync(m[1].trim())) return m[1].trim();
     } catch { /* 注册表无记录则走默认目录 */ }
     const def = defaultInstallDir();
