@@ -11,7 +11,8 @@ contextBridge.exposeInMainWorld('yijingAPI', {
     selectWorkflowFile: () => ipcRenderer.invoke('comfyui:selectWorkflowFile'),
     capability: (config: any) => ipcRenderer.invoke('comfyui:capability', config),
     templates: (config: any) => ipcRenderer.invoke('comfyui:templates', config),
-    templateWorkflow: (config: any) => ipcRenderer.invoke('comfyui:templateWorkflow', config),
+    templateWorkflow: (config: any) => ipcRenderer.invoke('comfyui:templateWorkflow', config),    listWorkflows: (config: any) => ipcRenderer.invoke('comfyui:listWorkflows', config),
+
   },
   
   // OpenAI 鐩稿叧
@@ -74,6 +75,11 @@ contextBridge.exposeInMainWorld('yijingAPI', {
       const handler = (_ev: any, data: any) => cb(data);
       ipcRenderer.on('system:updateProgress', handler);
       return () => ipcRenderer.removeListener('system:updateProgress', handler);
+    },
+    onUpdateAvailable: (cb: (data: any) => void) => {
+      const handler = (_ev: any, data: any) => cb(data);
+      ipcRenderer.on('system:updateAvailable', handler);
+      return () => ipcRenderer.removeListener('system:updateAvailable', handler);
     },
     // 鐢ㄧ郴缁熼粯璁ゆ祻瑙堝櫒鎵撳紑澶栭儴缃戝潃锛堥厤缃〉鈥滅敵璇?API鈥濈瓑閾炬帴锛?
     openExternal: (url: string) => ipcRenderer.invoke('system:openExternal', url),

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { useAppStore } from '../store/appStore';
+import { findPresetByBase, PROVIDER_PRESETS } from '../data/providerPresets';
 import {
   ClapperboardIcon,
   PlusIcon,
@@ -35,6 +36,7 @@ import {
   stylePromptOf,
   makeVideoPrompt,
   buildAssetImagePrompt,
+  type AssetImageSource,
   type DramartProject,
   type DramartStyle,
   type DramartCategory,
@@ -45,6 +47,7 @@ import {
 import JSZip from 'jszip';
 import toolService from '../services/toolService';
 import { localizeMedia, normalizeFileSrc } from '../utils/pathUtils';
+import DramaSetupModal, { type SetupChoice } from './DramaSetupModal';
 import './DramaWorkshopPage.css';
 
 type Stage = 'create' | 'analyze' | 'script' | 'sets' | 'storyboard' | 'video';
@@ -758,7 +761,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
       });
     }
   };
-  const [vmodel, setVmodel] = useState('');
+  const [vmodel, setVmodel] = useState(project?.videoModel || '');
   // 视频时长默认对应当前分镜的总时长（切换分镜自动同步）；清晰度默认对应用户创建时选择的分辨率
   // 视频时长默认对应当前分镜总时长，clamp 到模型支持范围 [4,30]（Seedance 2.5 不支持 <4s）
   const [vdur, setVdur] = useState<number>(Math.min(30, Math.max(4, project?.shotDuration || 15)));
@@ -766,22 +769,95 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const [vres, setVres] = useState<string>((project?.resolution as string) || '1080p');
   const [vfmt, setVfmt] = useState('mp4');
   // 视频配置检测：有 apiKey+baseUrl，或 apiKey/baseUrl 之一 + 默认模型/模型列表 均视为已配置，避免误报"请先设置视频模型"
-  const videoCfg = ((useAppStore(s => s.videoAPIConfigs) as any) || []).find((c: any) =>
-    (c?.apiKey && c?.baseUrl) || (c?.apiKey && (c?.defaultModel || (c?.models || []).length)) || (c?.baseUrl && (c?.defaultModel || (c?.models || []).length))
-  ) || undefined;
+  const allVideoCfgs = (useAppStore(s => s.videoAPIConfigs) as any) || [];
+  const videoCfg = allVideoCfgs.find((c: any) => c?.id === project?.videoConfigId && (c?.apiKey || c?.baseUrl))
+    || allVideoCfgs.find((c: any) =>
+      (c?.apiKey && c?.baseUrl) || (c?.apiKey && (c?.defaultModel || (c?.models || []).length)) || (c?.baseUrl && (c?.defaultModel || (c?.models || []).length))
+    ) || undefined;
   const voiceAPIConfigs = useAppStore(s => s.voiceAPIConfigs);
+  const voiceLibrary = useAppStore(s => s.voiceLibrary);
+  const comfyuiConfigs = useAppStore(s => s.comfyuiConfigs);
   const hasVoiceCfg = !!((voiceAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl);
   const voiceCfg2 = ((voiceAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || undefined;
   const voiceLibNames = Array.from(new Set([
+    ...(voiceLibrary || []).map((v: any) => v.name),
     ...(((voiceCfg2?.models as string[] | undefined) || [])).filter(Boolean),
     ...OFFICIAL_VOICE_LIB.map(v => v.name),
   ]));
+  // 引用弹窗用的完整音色信息（含 platform/configId，支持试听）
+  const findVoiceCfgByPlatformRef = (pf: string) => {
+    if (!pf) return undefined;
+    return (voiceAPIConfigs || []).find((c: any) => {
+      const preset = (c?.baseUrl && String(c.baseUrl).includes('bytedance')) ? '豆包语音' :
+                     (c?.baseUrl && String(c.baseUrl).includes('volces')) ? 'seed-audio' :
+                     (c?.baseUrl && (String(c.baseUrl).includes('dashscope') || String(c.baseUrl).includes('aliyuncs'))) ? '千问语音' :
+                     (c?.baseUrl && String(c.baseUrl).includes('openai')) ? '通用音色' : '';
+      return preset && pf.includes(preset);
+    });
+  };
+  const voiceLibFull = Array.from(new Map<string, any>([
+    ...(voiceLibrary || []).map((v: any) => [String(v.name || v.voiceId || ''), { name: String(v.name || v.voiceId || ''), label: String(v.name || v.voiceId || ''), platform: v.platform || '收藏音色', desc: v.platform || '收藏音色', configId: v.configId || '' }] as [string, any]),
+    ...(((voiceCfg2?.models as string[] | undefined) || [])).filter(Boolean).map((m: string) => [m, { name: m, label: m, platform: voiceCfg2?.platform || '自定义音色', desc: voiceCfg2?.platform || '自定义音色', configId: voiceCfg2?.id || '' }] as [string, any]),
+    ...OFFICIAL_VOICE_LIB.map(v => {
+      const parts = String(v.desc || v.name).split('·');
+      const platform = (parts[0] || '官方音色').trim();
+      const cfg = findVoiceCfgByPlatformRef(platform);
+      return [v.name, { name: v.name, label: (parts.slice(1).join('·') || v.name).trim(), platform, desc: platform, configId: cfg?.id || '' }] as [string, any];
+    }),
+  ].filter(([k]) => !!k)).values());
+  // 引用弹窗试听状态
+  const [refPreviewingVoice, setRefPreviewingVoice] = useState('');
+  const [refPreviewPlaySeq, setRefPreviewPlaySeq] = useState(0);
+  const previewLibVoiceRef = async (v: any, silent = false) => {
+    if (!v?.name) return;
+    const cacheKey = String(v.configId || '') + '::' + String(v.name);
+    if (voicePreviewCacheStore[cacheKey]) {
+      setRefPreviewPlaySeq(s => s + 1);
+      return;
+    }
+    setRefPreviewingVoice(v.name);
+    try {
+      const targetCfg = v.configId ? (voiceAPIConfigs || []).find((c: any) => c?.id === v.configId) : voiceCfg2;
+      if (!targetCfg?.apiKey || !targetCfg?.baseUrl) {
+        if (!silent) alert(v?.platform ? `试听「${v.label || v.name}」需要${v.platform}语音 API，请在设置页配置` : '该平台语音 API 未配置，无法试听');
+        setRefPreviewingVoice('');
+        return;
+      }
+      const res = await toolService.generateVoice('你好，我是音色「' + (v.label || v.name || '') + '」，为你试听这一句。', targetCfg, { voice: v.name });
+      if (res?.url) {
+        voicePreviewCacheStore[cacheKey] = res.url;
+        setRefPreviewPlaySeq(s => s + 1);
+      } else if (!silent) {
+        alert('试听失败，请检查语音 API 配置');
+      }
+    } catch (e: any) {
+      if (!silent) alert(`试听失败：${e?.message || String(e)}`);
+      else console.warn('[RefPreviewVoice] 试听失败', v?.name, e?.message || String(e));
+    } finally {
+      setRefPreviewingVoice('');
+    }
+  };
   const promptRef = useRef<HTMLDivElement>(null);
   const promptRange = useRef<Range | null>(null);
-  // 模型列表：models + defaultModel 合并去重，确保能准确引用设置里的默认模型
-  const videoModels = Array.from(new Set([...(((videoCfg?.models as string[] | undefined) || [])).filter(Boolean), videoCfg?.defaultModel || ''].filter(Boolean)));
+  // ComfyUI 视频工作流（分镜也可直接用 ComfyUI 工作流生成视频）
+  const comfyVidSrc = ((comfyuiConfigs as any) || []).find((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.length);
+  const comfyVidWfsAll = (((comfyVidSrc?.workflowFiles as any[]) || []));
+  // 只显示视频类工作流（过滤图片/音频），无视频类型标注时回退全部（兼容旧数据）
+  const comfyVidWfsV = comfyVidWfsAll.filter((w: any) => w?.type === 'video' || w?.kind === 'video');
+  const comfyVidWfsRaw = (comfyVidWfsV.length ? comfyVidWfsV : comfyVidWfsAll).map((w: any) => w.name || w);
+  const comfyVidPre = comfyVidSrc?.categoryPresets?.video;
+  const comfyVidWfs = comfyVidWfsRaw.filter((n: string) => n === comfyVidPre) // 分类预设优先置顶
+    .concat(comfyVidWfsRaw.filter((n: string) => n !== comfyVidPre));
+  // 视频模型：显示所有已配置视频 API 的默认模型 + 所有 ComfyUI 视频工作流 + 内置工作流；
+  // 默认选中创建项目时选的模型，用户可在此下拉自由切换
+  const BUILTIN_VIDEO_WF_NAMES = ['艺镜内置·MiniMax H3 全能参考视频'];
+  const videoModels = Array.from(new Set([
+    ...(allVideoCfgs || []).map((c: any) => String(c?.defaultModel || '').trim()).filter(Boolean),
+    ...comfyVidWfs,
+    ...BUILTIN_VIDEO_WF_NAMES,
+  ].filter(Boolean)));
   const videoModelOptions = videoModels.length ? videoModels.map((m: string) => ({ id: m, label: m })) : [];
-  const effectiveVmodel = vmodel || videoCfg?.defaultModel || videoModels[0] || '';
+  const effectiveVmodel = vmodel || project?.videoModel || videoCfg?.defaultModel || comfyVidPre || comfyVidWfs[0] || videoModels[0] || '';
   const sb = storyboards[index];
   // 切换分镜时，视频时长默认同步为该分镜的总时长
   useEffect(() => {
@@ -1028,7 +1104,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               ) : status === 'generating' ? (
                 <div className="dwc-sb-preview-placeholder generating"><span className="dwc-spinner" /> 生成中…</div>
               ) : (
-                <button className="dwc-sb-preview-placeholder" onClick={() => onGenerate(sb?.id || '')}><PlayIcon size={30} /> 点击生成视频预览</button>
+                <button className="dwc-sb-preview-placeholder" onClick={() => onGenerate(sb?.id || '', { model: effectiveVmodel, duration: vdur, count: parseInt(vcount, 10), resolution: vres, format: vfmt })}><PlayIcon size={30} /> 点击生成视频预览</button>
               )}
             </div>
             {sb?.videoCandidates?.length ? (
@@ -1049,7 +1125,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
                 </div>
               )}
             </div>
-            <button className="dwc-sb-gen-btn" onClick={() => onGenerate(sb?.id || '', { model: effectiveVmodel, duration: vdur, count: parseInt(vcount, 10), resolution: vres, format: vfmt })} disabled={status === 'generating' || !videoCfg}>
+            <button className="dwc-sb-gen-btn" onClick={() => onGenerate(sb?.id || '', { model: effectiveVmodel, duration: vdur, count: parseInt(vcount, 10), resolution: vres, format: vfmt })} disabled={status === 'generating' || (!videoCfg && !comfyVidWfs.includes(effectiveVmodel))}>
               {status === 'generating' ? '生成中…' : <><BoltIcon size={14} /> 生成</>}
             </button>
           </div>
@@ -1114,9 +1190,21 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
               </div>
               <div className="dwc-picker-sec">音色</div>
               {hasVoiceCfg ? (
-              voiceLibNames.length ? (
+              voiceLibFull.length ? (
               <div className="dwc-voice-grid">
-                {voiceLibNames.map(v => (<button key={v} className="dwc-voice-item" onClick={() => { insertRefToken('<' + v + '>'); setRefPickOpen(false); }}><span className="dwc-voice-avatar"><MicrophoneIcon size={12} /></span><span className="dwc-voice-item-info"><span className="dwc-voice-item-name">{v}</span></span></button>))}
+                {voiceLibFull.map((v: any) => (<div key={v.name} className="dwc-voice-item" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, padding: '8px 10px', cursor: 'pointer' }} onClick={() => { insertRefToken('<' + v.name + '>'); setRefPickOpen(false); }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 8, minWidth: 0 }}>
+                    <span className="dwc-voice-avatar"><MicrophoneIcon size={12} /></span>
+                    <span className="dwc-voice-item-info" style={{ minWidth: 0 }}>
+                      <span className="dwc-voice-item-name" style={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{v.label || v.name}</span>
+                      <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)' }}>{v.platform || ''}</span>
+                    </span>
+                  </span>
+                  <span className="dwc-voice-play" style={{ flexShrink: 0, fontSize: 11, color: 'rgba(255,255,255,0.6)', cursor: 'pointer', padding: '2px 6px', borderRadius: 4, background: 'rgba(255,255,255,0.08)' }} title="试听该音色" onClick={e => { e.stopPropagation(); previewLibVoiceRef(v); }}>
+                    {refPreviewingVoice === v.name ? '合成中…' : '▶ 试听'}
+                  </span>
+                  {voicePreviewCacheStore[String(v.configId || '') + '::' + String(v.name)] && <audio key={voicePreviewCacheStore[String(v.configId || '') + '::' + String(v.name)] + '::' + refPreviewPlaySeq} src={voicePreviewCacheStore[String(v.configId || '') + '::' + String(v.name)]} autoPlay style={{ display: 'none' }} />}
+                </div>))}
               </div>
               ) : (<div className="dwc-picker-hint">该语音模型暂无官方音色列表</div>)
               ) : (
@@ -1178,8 +1266,20 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
         <div className="dwc-overlay" onClick={() => setVoiceReplace(null)}>
           <div className="dwc-modal dwc-picker-modal" onClick={e => e.stopPropagation()}>
             <div className="dwc-modal-head"><span className="dwc-modal-title">替换音色</span><button className="dwc-modal-close" onClick={() => setVoiceReplace(null)}><CloseIcon size={16} /></button></div>
-            <div className="dwc-modal-body">{voiceLibNames.length ? <div className="dwc-voice-grid">
-              {voiceLibNames.map(v => (<button key={v} className="dwc-voice-item" onClick={() => { if (sb) replaceInPrompt(voiceReplace, v); setVoiceReplace(null); }}><span className="dwc-voice-avatar"><MicrophoneIcon size={14} /></span><span className="dwc-voice-item-info"><span className="dwc-voice-item-name">{v}</span></span></button>))}
+            <div className="dwc-modal-body">{voiceLibFull.length ? <div className="dwc-voice-grid">
+              {voiceLibFull.map((v: any) => (<div key={v.name} className="dwc-voice-item" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, padding: '8px 10px', cursor: 'pointer' }} onClick={() => { if (sb) replaceInPrompt(voiceReplace, v.name); setVoiceReplace(null); }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: 8, minWidth: 0 }}>
+                  <span className="dwc-voice-avatar"><MicrophoneIcon size={14} /></span>
+                  <span className="dwc-voice-item-info" style={{ minWidth: 0 }}>
+                    <span className="dwc-voice-item-name" style={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{v.label || v.name}</span>
+                    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)' }}>{v.platform || ''}</span>
+                  </span>
+                </span>
+                <span className="dwc-voice-play" style={{ flexShrink: 0, fontSize: 11, color: 'rgba(255,255,255,0.6)', cursor: 'pointer', padding: '2px 6px', borderRadius: 4, background: 'rgba(255,255,255,0.08)' }} title="试听该音色" onClick={e => { e.stopPropagation(); previewLibVoiceRef(v); }}>
+                  {refPreviewingVoice === v.name ? '合成中…' : '▶ 试听'}
+                </span>
+                {voicePreviewCacheStore[String(v.configId || '') + '::' + String(v.name)] && <audio key={voicePreviewCacheStore[String(v.configId || '') + '::' + String(v.name)] + '::' + refPreviewPlaySeq} src={voicePreviewCacheStore[String(v.configId || '') + '::' + String(v.name)]} autoPlay style={{ display: 'none' }} />}
+              </div>))}
             </div> : <div className="dwc-picker-hint">⚠ 请先设置语音模型 API（或该模型暂无官方音色列表）</div>}</div>
           </div>
         </div>
@@ -1205,6 +1305,8 @@ interface VideoViewProps {
   onGo: (s: Stage) => void;
   onEditRegenerate: (id: string, prompt: string) => void;
   onDownload: (url: string, sb: DramartStoryboard) => void;
+  /** 保存某分镜的序列帧到项目（持久化，下次打开直接读取） */
+  onSaveFrames: (id: string, frames: string[]) => void;
 }
 
 // 把分镜提示词解析成可点击片段：文本 / @引用(角色场景道具音色) / 时长 / 台词
@@ -1239,7 +1341,47 @@ const fmt = (s: number) => {
   return (m < 10 ? '0' + m : m) + ':' + (ss < 10 ? '0' + ss : ss);
 };
 
-const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onGo, onEditRegenerate, onDownload }) => {
+// 从视频抽取关键帧缩略图（序列帧预览），返回 dataURL 数组；失败回退空数组
+const _videoFrameCache: Record<string, string[]> = {};
+async function extractVideoFrames(url: string, count = 8): Promise<string[]> {
+  if (_videoFrameCache[url]) return _videoFrameCache[url];
+  try {
+    const vid = document.createElement('video');
+    vid.muted = true;
+    vid.preload = 'auto';
+    vid.crossOrigin = 'anonymous';
+    vid.src = url;
+    await new Promise<void>((resolve, reject) => {
+      const t = setTimeout(() => reject(new Error('timeout')), 15000);
+      vid.onloadedmetadata = () => { clearTimeout(t); resolve(); };
+      vid.onerror = () => { clearTimeout(t); reject(new Error('load fail')); };
+    });
+    const dur = vid.duration;
+    if (!dur || !Number.isFinite(dur) || dur <= 0) throw new Error('bad duration');
+    const canvas = document.createElement('canvas');
+    const w = 192, h = 108;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('no ctx');
+    const frames: string[] = [];
+    for (let i = 0; i < count; i++) {
+      const t = Math.min(Math.max(dur - 0.05, 0), (i / Math.max(count, 1)) * dur);
+      await new Promise<void>((resolve) => {
+        let done = false;
+        const finish = () => { if (!done) { done = true; resolve(); } };
+        vid.onseeked = finish;
+        try { vid.currentTime = t; } catch { finish(); }
+        setTimeout(finish, 800);
+      });
+      try { ctx.drawImage(vid, 0, 0, w, h); frames.push(canvas.toDataURL('image/jpeg', 0.6)); }
+      catch { frames.push(''); }
+    }
+    _videoFrameCache[url] = frames;
+    return frames;
+  } catch { return []; }
+}
+
+const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onGo, onEditRegenerate, onDownload, onSaveFrames }) => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const total = storyboards.reduce((s, x) => s + (x.duration || 0), 0);
   const cur = storyboards[index];
@@ -1334,20 +1476,61 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
     .filter(x => !!(urlMap[x.s.id] || x.s.videoUrl))
     .map(x => { const t = getTrim(x.s); return { id: x.s.id, si: x.i, label: x.s.label, url: (urlMap[x.s.id] || x.s.videoUrl) || '', start: t.start, end: t.end }; });
   const playListLen = listItems.length;
-  const playPos = concatOn ? clampNum(playIdx, 0, Math.max(0, playListLen - 1)) : Math.max(0, listItems.findIndex(x => x.id === cur?.id));
-  const shownItem = playListLen ? listItems[playPos] : null;
+  // 预览严格跟随当前选中分镜：concatOn 时若当前分镜无视频则播放位置为 -1（显示“无媒体”），
+  // 避免点击无视频分镜后仍残留上一个分镜（如第一个）的视频
+  const playPos = concatOn
+    ? (playIdx >= 0 && playIdx < playListLen ? playIdx : -1)
+    : listItems.findIndex(x => x.id === cur?.id);
+  const shownItem = playPos >= 0 ? listItems[playPos] : null;
   const showUrl = (concatOn ? (shownItem?.url || videoUrl) : videoUrl) || '';
   const shownTrim = concatOn ? shownItem : null;
+  // 序列帧预览：优先读取项目已保存的帧（视频生成时已自动抽取并持久化），
+  // 没有则现场抽帧并回调保存，保证每次打开立即显示、无需等待
+  const [videoFrames, setVideoFrames] = useState<string[]>([]);
+  useEffect(() => {
+    let alive = true;
+    setVideoFrames([]);
+    if (!showUrl) return () => { alive = false; };
+    const ownerSb = storyboards.find(x => x.id === (concatOn ? shownItem?.id : cur?.id));
+    const saved = ownerSb?.frameStrip;
+    if (saved && saved.length) { setVideoFrames(saved); return () => { alive = false; }; }
+    extractVideoFrames(showUrl, 30).then(fs => {
+      if (!alive) return;
+      setVideoFrames(fs);
+      if (fs.length && ownerSb?.id) onSaveFrames(ownerSb.id, fs);
+    });
+    return () => { alive = false; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showUrl, concatOn]);
+  // 帧条拖动预览：点击/拖动帧条或播放进度线 → 实时定位视频播放时间
+  const stripRef = useRef<HTMLDivElement>(null);
+  const frameSeek = (clientX: number) => {
+    const el = stripRef.current; const v = vidRef.current;
+    if (!el || !v) return;
+    const rect = el.getBoundingClientRect();
+    const ratio = Math.min(1, Math.max(0, (clientX - rect.left) / (rect.width || 1)));
+    const d = durations[cur?.id] || cur?.duration || 0;
+    if (d > 0) { try { v.currentTime = ratio * d; } catch { /* 忽略 */ } }
+  };
+  const startFrameDrag = (e: React.PointerEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    frameSeek(e.clientX);
+    const onMove = (ev: PointerEvent) => frameSeek(ev.clientX);
+    const onUp = () => { window.removeEventListener('pointermove', onMove); window.removeEventListener('pointerup', onUp); };
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
+  };
+  const playheadPct = (() => { const d = durations[cur?.id] || cur?.duration || 0; return d > 0 ? Math.min(100, Math.max(0, (currentTime / d) * 100)) : 0; })();
   const advancePlay = () => { if (playListLen) setPlayIdx(p => (p + 1) % playListLen); };
   const selectSeg = (i: number) => {
     onSelectIndex(i);
     setCurrentTime(0);
-    if (concatOn && listItems.length) { const li = listItems.findIndex(x => x.si === i); if (li >= 0) setPlayIdx(li); }
+    if (concatOn) { const li = listItems.findIndex(x => x.si === i); setPlayIdx(li >= 0 ? li : -1); }
   };
   const toggleConcat = () => {
     const nv = !concatOn;
     setConcatOn(nv);
-    if (nv && listItems.length) { const li = listItems.findIndex(x => x.id === cur?.id); if (li >= 0) setPlayIdx(li); }
+    if (nv) { const li = listItems.findIndex(x => x.id === cur?.id); setPlayIdx(li >= 0 ? li : -1); }
   };
   const fileUrlToLocal = (url: string) => {
     if (/^[a-zA-Z]:[\\/]/.test(url)) return url.replace(/\\/g, '/');
@@ -1537,10 +1720,10 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
                 ) : status === 'generating' ? (
                   <div className="dwc-vid-placeholder"><span className="dwc-spinner" /> 生成中…</div>
                 ) : (
-                  <button className="dwc-vid-placeholder" onClick={() => cur && onGenerate(cur.id)}>
-                    <PlayIcon size={48} />
-                    <span>点击生成视频预览</span>
-                  </button>
+                  <div className="dwc-vid-placeholder no-media">
+                    <VideoIcon size={44} />
+                    <span>无媒体</span>
+                  </div>
                 )}
               </div>
               {/* 播放控制栏（与参考站一致） */}
@@ -1580,13 +1763,24 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
                     const hasVideo = !!(urlMap[cur.id] || cur.videoUrl);
                     return (
                       <div className={'dwc-vid-tl-seg active' + (hasVideo ? '' : ' no-video')} style={{ width: '100%' }}>
-                        {/* 序列帧预览区域 */}
+                        {/* 序列帧预览区域：帧图按当前时长铺满整个时间轴 + 可拖动播放进度线 */}
                         <div className="dwc-vid-tl-frames">
                           {hasVideo ? (
-                            <div className="dwc-vid-tl-frame-placeholder">
-                              <VideoIcon size={24} />
-                              <span>序列帧预览</span>
-                            </div>
+                            videoFrames.length ? (
+                              <div className="dwc-vid-tl-strip-wrap">
+                                <div className="dwc-vid-tl-strip" ref={stripRef} onPointerDown={startFrameDrag}>
+                                  {videoFrames.map((f, i) => (
+                                    <div key={i} className={'dwc-vid-tl-strip-cell' + (f ? '' : ' empty')} style={f ? { backgroundImage: `url(${f})` } : undefined} />
+                                  ))}
+                                </div>
+                                <div className="dwc-vid-tl-playhead" style={{ left: playheadPct + '%' }} onPointerDown={startFrameDrag} title="拖动定位预览" />
+                              </div>
+                            ) : (
+                              <div className="dwc-vid-tl-frame-placeholder">
+                                <VideoIcon size={24} />
+                                <span>序列帧预览</span>
+                              </div>
+                            )
                           ) : (
                             <div className="dwc-vid-tl-frame-placeholder empty">
                               <span>分镜视频未生成</span>
@@ -1630,6 +1824,8 @@ interface AssetDetailPanelProps {
   onUpload: () => void;
   onOpenGen: (variantId: string) => void;
   onImgError?: (assetId: string, src: string) => void;
+  /** 创建项目时选的图像生成源（默认模型/工作流），默认选中它且可更换 */
+  defaultImageSource?: { kind: 'api' | 'comfyui'; model?: string; workflow?: string; serverUrl?: string } | null;
 }
 
 const VAR_MODELS = [
@@ -1647,7 +1843,7 @@ const DEFAULT_MAIN_PROMPT = '任务：完成角色的上半身正面平视特写
 const DEFAULT_SCENE_PROMPT = '生成四宫格画面，展示同一个场景中的四个不同视角：左上角为正视图，主体正面清晰可见，构图居中，细节完整；右上角为俯视图，从高空俯视整体空间布局，展示环境关系和场景结构；左下角为背视图，从主体后方观察，突出背部轮廓、空间纵深和环境延展；右下角为侧视图，从主体侧面观察，展示主体比例、层次和空间关系。四个画面保持同一场景、同一光照、同一色调、同一时间状态。只出现场景，不出现人物、道具等无关内容；仅展示静态事物，不能包含人、动物等可自行运动的事物；无动态、特效、技能、光效及战斗相关描写。不输出文字信息。';
 const DEFAULT_PROP_PROMPT = '生成{name}的高清特写静物图：真实还原物品形态、材质、颜色与细节，质感清晰，光影自然，体现出岁月与材质特征（如真实纹理、边缘磨损、岁月斑点、卷边龟裂等）。仅呈现该物品本身，无人物、无多余元素，无动态特效。不输出文字信息。';
 
-const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, styleName, episode, onClose, onRename, onCollect, onDownload, onAddVariant, onRemoveVariant, onGenVariant, onSetVariantCurrent, onPicker, onUpload, onOpenGen, onImgError }) => {
+const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, styleName, episode, onClose, onRename, onCollect, onDownload, onAddVariant, onRemoveVariant, onGenVariant, onSetVariantCurrent, onPicker, onUpload, onOpenGen, onImgError, defaultImageSource }) => {
   const term = kindTerm(asset.kind);
   // 确保主形象始终在 variants 列表中（如果资产没有 variants 但有 img，创建默认主形象）
   const rawVariants = asset.variants || [];
@@ -1750,19 +1946,36 @@ interface GenerationModalProps {
   onGen: (assetId: string, variantId: string, prompt: string, opts: { count?: number; model?: string; resolution?: string; ratio?: string }) => Promise<string[]>;
   onSetCurrent: (assetId: string, variantId: string, img: string) => void;
   onOpenPicker: () => void;
+  /** 创建项目时选的图像生成源（默认模型/工作流），默认选中它且可更换 */
+  defaultImageSource?: { kind: 'api' | 'comfyui'; model?: string; workflow?: string; serverUrl?: string } | null;
 }
 
-const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kindLabel, styleName, onClose, onGen, onSetCurrent, onOpenPicker }) => {
+const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kindLabel, styleName, onClose, onGen, onSetCurrent, onOpenPicker, defaultImageSource }) => {
   const variants = asset.variants || [];
   const variant = variants.find(v => v.id === variantId);
   const term = kindTerm(asset.kind);
   const isMain = variant?.label === term.main || asset.kind !== 'character';
-  // 生图模型列表：自动取设置页图像 API 的模型配置（找有模型的那条，defaultModel 为默认），没有才回退内置列表
+  // 生图模型列表：显示所有已配置图像 API 的默认模型 + 所有 ComfyUI 图片工作流（可切换，默认第一个可用）
   const imageAPIConfigs = useAppStore(s => s.imageAPIConfigs);
-  const cfg0 = (imageAPIConfigs || []).find((c: any) => (c?.models?.length) || c?.defaultModel) || (imageAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl) || imageAPIConfigs?.[0];
-  const cfgDefault = (cfg0?.defaultModel as string | undefined) || '';
-  const cfgModels = ((cfg0?.models as string[] | undefined) || []).filter(Boolean);
-  const allModels = Array.from(new Set([...(cfgDefault ? [cfgDefault] : []), ...cfgModels]));
+  const comfyCfg2 = useAppStore(s => s.comfyuiConfigs);
+  const cfg0 = (imageAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl) || imageAPIConfigs?.[0];
+  const cfgDefaults = Array.from(new Set((imageAPIConfigs || []).map((c: any) => String(c?.defaultModel || '').trim()).filter(Boolean)));
+  const comfyImgWfs = Array.from(new Set(((comfyCfg2 as any[]) || []).flatMap((c: any) => {
+    if (!c?.serverUrl || !Array.isArray(c.workflowFiles)) return [];
+    const pre = c?.categoryPresets?.image;
+    const all = (c.workflowFiles as any[]);
+    const hits = all.filter((w: any) => String(w?.name || '') === pre || w?.type === 'image' || w?.kind === 'image');
+    const list = (hits.length ? hits : (pre ? all.filter((w: any) => String(w?.name || '') === pre) : [])).filter(Boolean);
+    const final = list.length ? list : all.filter((w: any) => w?.type === 'image');
+    return (final.length ? final : all).map((w: any) => String(w?.name || w || '').trim()).filter(Boolean);
+  })));
+  // 默认内置工作流：艺镜ai生图（永久性可选择，用户选择后自动用内置的标准工作流JSON）
+  const BUILTIN_WORKFLOW_NAME = '艺镜ai生图';
+  if (!comfyImgWfs.includes(BUILTIN_WORKFLOW_NAME)) comfyImgWfs.push(BUILTIN_WORKFLOW_NAME);
+  // 默认选中创建项目时选的图像生成模型/工作流（仍可在弹窗内更换为其他模型）
+  const projDefault = (defaultImageSource?.kind === 'comfyui' ? (defaultImageSource.workflow || '') : (defaultImageSource?.model || '')).trim();
+  const cfgDefault = projDefault || cfgDefaults[0] || comfyImgWfs[0] || '__builtin_asset_image__';
+  const allModels = Array.from(new Set([...cfgDefaults, ...comfyImgWfs, ...(projDefault ? [projDefault] : [])].filter(Boolean)));
   const modelOptions = allModels.length ? allModels.map((m: string) => ({ id: m, label: m })) : [];
   // 修复：只要有可用的 API 配置（有 apiKey 和 baseUrl）就允许生成，不强制要求配置模型列表
   const hasAvailableConfig = !!(cfg0?.apiKey && cfg0?.baseUrl);
@@ -1797,7 +2010,6 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
   const emptyText = asset.kind === 'scene' ? '暂无场景' : asset.kind === 'prop' ? '暂无道具' : (isMain ? '暂无角色主图' : '暂无角色变装');
   const genOpts = { count: parseInt(count, 10), model, resolution, ratio };
   const title = isMain ? (kindLabel + '生成') : (asset.name + (variant ? '-' + variant.label : ''));
-  const latest = candidates[candidates.length - 1];
 
   return (
     <div className="dwc-overlay" onClick={onClose}>
@@ -1816,7 +2028,7 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
           </div>
           <div className="dwc-gen-side">
             <div className="dwc-gen-side-item"><span className="dwc-gen-side-label">当前</span>{curImg ? <button className="dwc-gen-side-thumb" onClick={() => setPreviewImg(curImg)} title="点击预览"><img src={curImg} alt="" /></button> : <div className="dwc-gen-side-none">暂无</div>}</div>
-            <div className="dwc-gen-side-item"><span className="dwc-gen-side-label">最新</span>{latest ? <button className="dwc-gen-side-thumb" onClick={() => setPreviewImg(latest)} title="点击预览"><img src={latest} alt="" /></button> : <div className="dwc-gen-side-none">暂无</div>}</div>
+            <div className="dwc-gen-side-item"><span className="dwc-gen-side-label">最新</span>{candidates.length ? <div className="dwc-gen-side-thumbs">{candidates.map((c, i) => <button key={i} className="dwc-gen-side-thumb" onClick={() => setPreviewImg(c)} title={'生成图' + (i + 1)}><img src={c} alt="" /></button>)}</div> : <div className="dwc-gen-side-none">暂无</div>}</div>
             <div className="dwc-gen-side-item"><span className="dwc-gen-side-label">{term.variant}</span><div className="dwc-gen-side-none">暂无</div></div>
           </div>
         </div>
@@ -1836,19 +2048,6 @@ const GenerationModal: React.FC<GenerationModalProps> = ({ asset, variantId, kin
             <span className="dwc-ai-param style" title="创建时选择的风格">✱ {styleName || '默认风格'}</span>
             <button className="dwc-var-gen-btn" disabled={!hasAvailableConfig || generating} onClick={handleGen}>{generating ? <span className="dwc-loading-spinner" /> : <BoltIcon size={14} />}{generating ? ' 生成中…' : ' 生成'}</button>
           </div>
-          {candidates.length > 0 && (
-            <div className="dwc-var-cands">
-              {candidates.map((c, i) => {
-                const isCur = c === curImg;
-                return (
-                  <button key={i} className={`dwc-var-cand${isCur ? ' current' : ''}`} onClick={() => onSetCurrent(asset.id, variantId, c)} title={isCur ? '已设为当前变装形象' : '设置为当前变装形象'}>
-                    <img src={c} alt={'生成图' + (i + 1)} />
-                    <span className="dwc-var-cand-check">{isCur && <CheckIcon size={13} />}</span>
-                  </button>
-                );
-              })}
-            </div>
-          )}
         </div>
       </div>
       {previewFull && (
@@ -1947,6 +2146,10 @@ const AddAssetModal: React.FC<AddAssetModalProps> = ({ kindLabel, styleName, mod
   );
 };
 
+// 跨弹窗会话持久化的音色试听缓存：同一音色首次合成后固定复用，杜绝「同音色两次试听声音不同」（大模型 TTS 每次合成随机）
+const voicePreviewCacheStore: Record<string, string> = {};
+// 试听播放计数：每次点击 +1，用于强制重挂载 <audio> 重新播放同一缓存音频
+let voicePreviewPlaySeq = 0;
 // 内置官方音色库（豆包语音 / seed-audio 官方 voice_id + 通用 OpenAI 兼容音色）
 // 配置语音 API 后自动填充音色库，避免依赖手动 models 列表为空导致音色库空白
 const OFFICIAL_VOICE_LIB: { name: string; desc: string }[] = [
@@ -1996,6 +2199,9 @@ export interface VoiceConfig {
   prompt?: string;        // 自定义音色设计的提示词（type=custom 时使用）
   sampleUrl?: string;     // 克隆音色的样本音频地址（type=clone 时使用）
   previewUrl?: string;    // 试听音频地址
+  source?: 'api' | 'comfyui'; // 音色生成来源：云API 或 ComfyUI 工作流
+  configId?: string;      // 来源配置 id（音频 API 或 ComfyUI 配置）
+  workflowName?: string;  // 使用的 ComfyUI 语音工作流名称
 }
 
 // 解析资产上的 voice 字段（兼容旧版字符串和新版结构化对象）
@@ -2025,11 +2231,61 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
   const voiceCfg = (voiceAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl) || voiceAPIConfigs?.[0];
   const hasVoiceCfg = !!(voiceCfg?.apiKey && voiceCfg?.baseUrl);
   const apiVoiceNames = ((voiceCfg?.models as string[] | undefined) || []).filter(Boolean);
+  // 音色列表：显示全部平台预设的官方音色（火山 / 千问 / OpenAI 等），不局限于当前配置的单个平台。
+  // 显示规则：名字=简洁音色名（去掉括号注释），简介=平台名称，一目了然；
+  // 每项记录所属平台语音配置的 configId，用于试听/配音时调用对应平台的语音 API。
+  const shortVoiceName = (n: string) => String(n || '').replace(/[（(].*?[）)]/g, '').trim() || String(n || '').trim();
+  // 按音色所属平台查找对应语音配置，避免跨平台错配（如把 seed-audio 音色误送千问导致 418/411）
+  const findVoiceCfgByPlatform = (platform?: string) => {
+    const arr = (voiceAPIConfigs || []);
+    const p = String(platform || '').toLowerCase();
+    const pick = (re: RegExp) => arr.find((c: any) => c?.apiKey && c?.baseUrl && re.test(String(c.baseUrl)));
+    if (/seed-audio|豆包|火山|openspeech/.test(p)) return pick(/openspeech\.bytedance\.com/i);
+    if (/千问|百炼|cosyvoice|dashscope|maas/.test(p)) return pick(/dashscope|maas/i);
+    if (/openai|通用|alloy|echo|fable|onyx|nova|shimmer/.test(p)) {
+      return arr.find((c: any) => c?.apiKey && c?.baseUrl && !/openspeech|dashscope|maas/i.test(String(c.baseUrl)));
+    }
+    return undefined;
+  };
+  const hostOf2 = (u?: string) => { if (!u) return ''; try { return new URL(String(u).trim().replace(/\/+$/, '')).host; } catch { return ''; } };
+  const allPlatformVoices = (PROVIDER_PRESETS || []).flatMap((p: any) => {
+    const sp = p?.speech;
+    if (!sp?.voices?.length) return [];
+    const platform = String(sp.label || p.label || p.key || '语音').split('（')[0].split('(')[0].trim();
+    const cfg = (voiceAPIConfigs || []).find((c: any) => hostOf2(c?.baseUrl) && hostOf2(c.baseUrl) === hostOf2(sp.baseUrl));
+    // 该平台未配置语音 API → 不展示其音色（只显示已配置平台对应的音色）
+    if (!cfg?.apiKey || !cfg?.baseUrl) return [];
+    return (sp.voices || []).map((v: any) => ({ name: v.id, label: shortVoiceName(v.name), platform, desc: platform, configId: cfg?.id || '' }));
+  });
+  const knownNames = allPlatformVoices.map((x: any) => x.name);
   const voiceLib = [
-    ...OFFICIAL_VOICE_LIB,
-    ...apiVoiceNames.filter(n => !OFFICIAL_VOICE_LIB.some(v => v.name === n)).map((m: string) => ({ name: m, desc: '来自音频API模型：' + m })),
+    ...allPlatformVoices,
+    // 补充未收录到预设的官方通用音色（seed-audio / 豆包 bigtts 等）
+    ...OFFICIAL_VOICE_LIB.filter((v: any) => !knownNames.includes(v.name)).map((v: any) => {
+      const parts = String(v.desc || v.name).split('·');
+      const platform = (parts[0] || '官方音色').trim();
+      return { name: v.name, label: (parts.slice(1).join('·') || v.name).trim(), platform, desc: platform, configId: findVoiceCfgByPlatform(platform)?.id || '' };
+    }).filter((x: any) => !!x.configId),
+    // 补充各配置 API 返回的自定义音色
+    ...apiVoiceNames.filter(n => !knownNames.includes(n)).map((m: string) => {
+      const vc2 = (voiceAPIConfigs || []).find((c: any) => Array.isArray(c?.models) && c.models.includes(m));
+      const pf2 = vc2 ? (findPresetByBase(vc2.baseUrl)?.speech?.label || '自定义音色').split('（')[0].split('(')[0].trim() : '自定义音色';
+      return { name: m, label: m, platform: pf2, desc: pf2, configId: vc2?.id || '' };
+    }),
   ];
   const filtered = voiceLib.filter(v => !q.trim() || v.name.includes(q.trim()));
+  // ComfyUI 双生成源：云API / ComfyUI 工作流
+  const comfyuiConfigs = useAppStore(s => s.comfyuiConfigs);
+  const voiceLibrary = useAppStore(s => s.voiceLibrary);
+  const addVoiceToLibrary = useAppStore(s => s.addVoiceToLibrary);
+  const removeVoiceFromLibrary = useAppStore(s => s.removeVoiceFromLibrary);
+  const [source, setSource] = useState<'api' | 'comfyui'>('api');
+  const [comfyCfgId, setComfyCfgId] = useState('');
+  const [comfyWorkflowName, setComfyWorkflowName] = useState('');
+  const [designName, setDesignName] = useState('');
+  const activeComfy = (comfyuiConfigs || []).find((c: any) => c.id === comfyCfgId) || (comfyuiConfigs || [])[0] || null;
+  const comfyWorkflows = ((activeComfy?.workflowFiles as any[]) || []).filter((w: any) => w);
+  const hasComfyUI = !!((comfyuiConfigs || []).find((c: any) => c?.serverUrl && (c?.workflowFiles || []).length));
   const [audioUrl, setAudioUrl] = useState('');
   const [generating, setGenerating] = useState(false);
 
@@ -2039,6 +2295,10 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
     if (existing) {
       setVoice(existing.voiceId);
       if (existing.prompt) setPrompt(existing.prompt);
+      if (existing.source) setSource(existing.source);
+      if (existing.configId) setComfyCfgId(existing.configId);
+      if (existing.workflowName) setComfyWorkflowName(existing.workflowName);
+      if (existing.name && existing.type === 'custom') setDesignName(existing.name);
       if (existing.type === 'clone') { setClonedVoice(existing); setTab('upload'); }
       else if (existing.type === 'custom') { setTab('ai'); }
       else { setTab('lib'); }
@@ -2046,14 +2306,91 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
   }, [asset.voice]);
 
   const generate = async () => {
+    if (source === 'comfyui') {
+      if (!activeComfy?.serverUrl) { alert('请先配置并选择 ComfyUI 服务器'); return; }
+      if (!comfyWorkflows.length) { alert('所选 ComfyUI 服务器下没有可用工作流，请先刷新工作流'); return; }
+      setGenerating(true);
+      try {
+        const wf = comfyWorkflows.find((w: any) => w.name === comfyWorkflowName) || comfyWorkflows[0];
+        const text = listen.trim() || prompt.trim() || '你好，我的声音，为你演尽喜怒哀乐。';
+        const res = await toolService.generateVoice(text, activeComfy, { workflowFile: wf, voice: '', text });
+        if (res?.url) {
+          setAudioUrl(res.url);
+          const libName = designName.trim() || ('自定义音色_' + Date.now().toString(36));
+          addVoiceToLibrary({ type: 'custom', source: 'comfyui', configId: activeComfy.id, workflowName: wf?.name || '', voiceId: 'comfy_custom_' + Date.now().toString(36), name: libName, prompt, previewUrl: res.url });
+          setDesignName(libName);
+        } else { alert('音色生成失败，请检查 ComfyUI 工作流'); }
+      } catch (e: any) { alert('音色生成失败：' + (e?.message || String(e))); }
+      setGenerating(false);
+      return;
+    }
     if (!hasVoiceCfg) return;
     setGenerating(true);
     try {
       const res = await toolService.generateVoice(listen.trim() || prompt.trim() || '你好，我的声音，为你演尽喜怒哀乐。', voiceCfg, { voice: voice || voiceCfg.defaultModel || 'alloy' });
-      if (res?.url) { setAudioUrl(res.url); } else { alert('音色生成失败，请检查音频 API 配置'); }
+      if (res?.url) {
+        setAudioUrl(res.url);
+        const libName = designName.trim() || ('自定义音色_' + Date.now().toString(36));
+        addVoiceToLibrary({ type: 'custom', source: 'api', configId: voiceCfg?.id || '', voiceId: 'custom_' + Date.now().toString(36), name: libName, prompt, previewUrl: res.url });
+        setDesignName(libName);
+      } else { alert('音色生成失败，请检查音频 API 配置'); }
     } catch (e: any) { alert('音色生成失败：' + (e?.message || String(e))); }
     setGenerating(false);
   };
+
+  // 音色库音色试听：用当前语音 API 配置合成一句试听文本
+  const [previewingVoice, setPreviewingVoice] = useState('');
+  // 试听缓存：同一音色（按平台配置+音色名）首次合成后缓存，之后点击直接播放，音色稳定一致且不重复合成；
+  // 缓存存放于模块级 store，弹窗关闭重开仍保留，避免重复合成导致同音色声音漂移
+  const [previewCache, setPreviewCache] = useState<Record<string, string>>(() => ({ ...voicePreviewCacheStore }));
+  const [playSeq, setPlaySeq] = useState(0);
+  const updatePreviewCache = (k: string, url: string) => { voicePreviewCacheStore[k] = url; setPreviewCache(c => ({ ...c, [k]: url })); };
+  const previewLibVoice = async (v: any, silent = false) => {
+    if (previewingVoice) return;
+    // 缓存命中：直接播放首次合成结果，不再合成（同音色永远同一声音）
+    const cacheKey = (v?.configId || '') + '::' + (v?.name || '');
+    if (voicePreviewCacheStore[cacheKey] || previewCache[cacheKey]) {
+      setAudioUrl(voicePreviewCacheStore[cacheKey] || previewCache[cacheKey]);
+      setPlaySeq(s => s + 1);
+      return;
+    }
+    // 优先用该音色所属平台的语音配置试听；平台明确但未配置对应 API 时明确提示（不盲目回退到其他平台）
+    let targetCfg = (v?.configId ? (voiceAPIConfigs || []).find((c: any) => c.id === v.configId) : undefined);
+    if (!targetCfg && v?.platform) targetCfg = findVoiceCfgByPlatform(v.platform);
+    if (!targetCfg && !v?.platform) targetCfg = voiceCfg;
+    console.warn('[PreviewVoice]', JSON.stringify({ name: v?.name, label: v?.label, platform: v?.platform, configId: v?.configId, cfg: targetCfg?.baseUrl, model: targetCfg?.defaultModel }));
+    if (!targetCfg?.apiKey || !targetCfg?.baseUrl) {
+      if (!silent) alert(v?.platform && v.platform !== '官方音色' ? `试听「${v.label || v.name}」需要${v.platform}语音 API，请在设置页配置` : '该平台语音 API 未配置，无法试听');
+      return;
+    }
+    setPreviewingVoice(v.name);
+    const timer = setTimeout(() => setPreviewingVoice(''), 45000); // 兜底：防止接口无响应导致「合成中」卡死
+    try {
+      const res = await toolService.generateVoice('你好，我是音色「' + (v.label || v.name || '') + '」，为你试听这一句。', targetCfg, { voice: v.name });
+      if (res?.url) { setAudioUrl(res.url); updatePreviewCache(cacheKey, res.url); setPlaySeq(s => s + 1); }
+      else if (!silent) alert('试听失败，请检查语音 API 配置');
+    } catch (e: any) {
+      // 失败时给出完整诊断：音色名/所属平台/所用配置与模型，便于定位「音色与平台错配」问题
+      if (!silent) alert(`试听失败：${e?.message || String(e)}
+
+音色：${v?.name}（${v?.label || ''}）
+平台：${v?.platform || ''}
+所用配置：${targetCfg?.baseUrl || ''} / 模型 ${targetCfg?.defaultModel || ''}`);
+      else console.warn('[PreviewVoice] 试听失败', v?.name, v?.platform, targetCfg?.baseUrl, e?.message || String(e));
+    }
+    clearTimeout(timer);
+    setPreviewingVoice('');
+  };
+
+  // 打开音色库时自动试听当前/默认音色（官方音色通过配置的语音 API 自动合成试听）
+  useEffect(() => {
+    if (tab !== 'lib') return;
+    const target = voice || '';
+    if (!target || !hasVoiceCfg) return;
+    const item = voiceLib.find(vv => vv.name === target);
+    if (item) previewLibVoice(item, true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tab, hasVoiceCfg]);
 
   // 处理文件选择
   const handleFileSelect = (file: File | null) => {
@@ -2069,6 +2406,28 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
 
   // 执行音色克隆
   const doClone = async () => {
+    if (!uploadFile) return;
+    if (source === 'comfyui') {
+      if (!activeComfy?.serverUrl) { setCloneError('请先配置并选择 ComfyUI 服务器'); return; }
+      setCloning(true); setCloneError('');
+      try {
+        const wf = comfyWorkflows.find((w: any) => w.name === comfyWorkflowName) || comfyWorkflows[0];
+        if (!wf) { setCloneError('所选 ComfyUI 服务器下没有可用语音克隆工作流，请先刷新工作流'); setCloning(false); return; }
+        const result = await toolService.cloneVoice(uploadFile, activeComfy, { name: cloneName.trim() || ('克隆音色_' + Date.now().toString(36)), previewText: listen.trim() || '你好，这是克隆音色的试听。', workflowFile: wf });
+        const sampleDataUrl = await new Promise<string>(resolve => {
+          const r = new FileReader();
+          r.onload = () => resolve(String(r.result || ''));
+          r.onerror = () => resolve('');
+          r.readAsDataURL(uploadFile);
+        });
+        const cfg: VoiceConfig = { type: 'clone', source: 'comfyui', configId: activeComfy.id, workflowName: wf?.name || '', voiceId: result.voiceId, name: result.name, sampleUrl: sampleDataUrl || URL.createObjectURL(uploadFile), previewUrl: result.previewUrl };
+        setClonedVoice(cfg); setVoice(result.voiceId);
+        if (result.previewUrl) setAudioUrl(result.previewUrl);
+        addVoiceToLibrary(cfg);
+      } catch (e: any) { setCloneError(e?.message || String(e)); }
+      setCloning(false);
+      return;
+    }
     if (!hasVoiceCfg || !uploadFile) return;
     setCloning(true);
     setCloneError('');
@@ -2083,6 +2442,8 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
       });
       const cfg: VoiceConfig = {
         type: 'clone',
+        source: 'api',
+        configId: voiceCfg?.id || '',
         voiceId: result.voiceId,
         name: result.name,
         sampleUrl: sampleDataUrl || URL.createObjectURL(uploadFile),
@@ -2090,6 +2451,7 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
       };
       setClonedVoice(cfg);
       setVoice(result.voiceId);
+      addVoiceToLibrary(cfg);
       // 自动试听克隆音色
       try {
         const preview = await toolService.generateVoice('你好，这是我克隆的音色。', voiceCfg, { voice: result.voiceId });
@@ -2107,17 +2469,29 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
     if (tab === 'upload' && clonedVoice) {
       config = clonedVoice;
     } else if (tab === 'ai') {
+      const libName = designName.trim() || '自定义音色';
       config = {
         type: 'custom',
+        source,
+        configId: source === 'comfyui' ? (activeComfy?.id || '') : (voiceCfg?.id || ''),
+        workflowName: source === 'comfyui' ? (comfyWorkflowName || comfyWorkflows[0]?.name || '') : undefined,
         voiceId: 'custom_' + Date.now().toString(36),
-        name: '自定义音色',
+        name: libName,
         prompt,
         previewUrl: audioUrl || undefined,
       };
     } else {
       const selected = voice || voiceCfg?.defaultModel || '';
       if (!selected) { alert('请选择一个音色'); return; }
-      config = { type: 'lib', voiceId: selected, name: selected };
+      const libItem = (voiceLibrary || []).find((v: any) => v.voiceId === selected || v.id === selected);
+      if (libItem) {
+        config = { type: libItem.type || 'custom', voiceId: libItem.voiceId, name: libItem.name, prompt: libItem.prompt, sampleUrl: libItem.sampleUrl, previewUrl: libItem.previewUrl, source: libItem.source, configId: libItem.configId, workflowName: libItem.workflowName };
+      } else {
+        const plItem = voiceLib.find(v => v.name === selected);
+        config = plItem
+          ? { type: 'lib', voiceId: selected, name: plItem.label || selected, configId: plItem.configId || undefined }
+          : { type: 'lib', voiceId: selected, name: selected };
+      }
     }
     onConfirm(config);
     onClose();
@@ -2133,19 +2507,55 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
           <button className={`dwc-voice-tab${tab === 'upload' ? ' active' : ''}`} onClick={() => setTab('upload')}>本地上传克隆</button>
         </div>
         <div className="dwc-modal-body">
-          {!hasVoiceCfg && <div className="dwc-voice-hint">⚠ 请先在设置页配置音频 API，才能使用音色设计 / 音色库 / 本地上传克隆功能</div>}
+          {tab !== 'lib' && (
+            <div className="dwc-voice-source">
+              <button className={`dwc-voice-src${source === 'api' ? ' active' : ''}`} onClick={() => setSource('api')}>云 API</button>
+              <button className={`dwc-voice-src${source === 'comfyui' ? ' active' : ''}`} onClick={() => setSource('comfyui')}>ComfyUI 工作流</button>
+            </div>
+          )}
+          {source === 'comfyui' && (tab === 'ai' || tab === 'upload') && (
+            <div className="dwc-voice-comfy">
+              <label className="dwc-add-field"><span className="dwc-add-label">ComfyUI 服务器</span>
+                <select className="dwc-add-input" value={comfyCfgId || activeComfy?.id || ''} onChange={e => { setComfyCfgId(e.target.value); setComfyWorkflowName(''); }}>
+                  {(comfyuiConfigs || []).map((c: any) => (<option key={c.id} value={c.id}>{c.name || c.serverUrl}</option>))}
+                </select>
+              </label>
+              <label className="dwc-add-field"><span className="dwc-add-label">语音工作流（音频）</span>
+                <select className="dwc-add-input" value={comfyWorkflowName || comfyWorkflows[0]?.name || ''} onChange={e => setComfyWorkflowName(e.target.value)}>
+                  {(comfyWorkflows || []).map((w: any) => (<option key={w.name} value={w.name}>{w.name}{w.type === 'audio' ? '（音频）' : ''}</option>))}
+                </select>
+              </label>
+            </div>
+          )}
+          {source === 'api' && !hasVoiceCfg && <div className="dwc-voice-hint">⚠ 使用云 API 生成音色需先配置音频 API；也可切换到「ComfyUI 工作流」直接生成音色</div>}
           {tab === 'ai' && (
             <div className="dwc-voice-ai">
               <div className="dwc-voice-col">
+                <label className="dwc-add-field"><span className="dwc-add-label">音色名称（可选，生成后自动保存到音色库）</span><input className="dwc-add-input" value={designName} onChange={e => setDesignName(e.target.value)} placeholder="为生成的音色命名" /></label>
                 <label className="dwc-add-field"><span className="dwc-add-label">① 音色描述提示词</span><textarea className="dwc-add-input area" value={prompt} onChange={e => setPrompt(e.target.value)} rows={3} placeholder="描述 desired 音色特征，如：男童声，音调偏高，质感清脆雅嫩..." /></label>
                 <label className="dwc-add-field"><span className="dwc-add-label">② 试听文本（可选）</span><textarea className="dwc-add-input area" value={listen} onChange={e => setListen(e.target.value)} rows={2} placeholder="输入一段文本用于试听生成的音色" /></label>
-                <button className="dwc-voice-gen" disabled={!hasVoiceCfg || generating} onClick={generate}>{generating ? '生成中…' : '生成并试听'}</button>
+                <button className="dwc-voice-gen" disabled={(source === 'api' ? !hasVoiceCfg : !hasComfyUI) || generating} onClick={generate}>{generating ? '生成中…' : '生成并试听'}</button>
               </div>
-              <div className="dwc-voice-history"><span className="dwc-voice-history-title">试听结果</span>{audioUrl ? <audio controls src={audioUrl} style={{ width: '100%' }} /> : <div className="dwc-voice-empty"><MicrophoneIcon size={22} /><span>点击上方按钮生成音色试听</span></div>}</div>
+              <div className="dwc-voice-history"><span className="dwc-voice-history-title">试听结果</span>{audioUrl ? <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.55)', fontSize: 12 }}><audio key={audioUrl + '::' + playSeq} src={audioUrl} autoPlay style={{ display: 'none' }} /><span>正在播放试听…</span></div> : <div className="dwc-voice-empty"><MicrophoneIcon size={22} /><span>点击上方按钮生成音色试听</span></div>}</div>
             </div>
           )}
           {tab === 'lib' && (
             <div className="dwc-voice-lib">
+              {(voiceLibrary || []).length > 0 && (
+                <div className="dwc-voice-mylib">
+                  <span className="dwc-voice-history-title">我的音色库（{voiceLibrary.length}）</span>
+                  <div className="dwc-voice-grid">
+                    {(voiceLibrary || []).map((v: any) => (
+                      <div key={v.id || v.voiceId} className={`dwc-voice-item my${voice === v.voiceId ? ' active' : ''}`} onClick={() => setVoice(v.voiceId)}>
+                        <span className="dwc-voice-avatar"><MicrophoneIcon size={14} /></span>
+                        <span className="dwc-voice-item-info"><span className="dwc-voice-item-name">{v.name}</span><span className="dwc-voice-item-desc">{v.source === 'comfyui' ? 'ComfyUI 音色' : '云 API 音色'}{v.type === 'clone' ? ' · 克隆' : ' · 设计'}</span></span>
+                        {v.previewUrl && <audio controls src={v.previewUrl} onClick={e => e.stopPropagation()} style={{ height: 30, width: 130, marginLeft: 6 }} />}
+                        <button className="dwc-voice-del" title="删除该音色" onClick={e => { e.stopPropagation(); removeVoiceFromLibrary(v.id); }}><CloseIcon size={12} /></button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="dwc-voice-search"><SearchIcon size={14} /><input value={q} onChange={e => setQ(e.target.value)} placeholder="搜索音色" /></div>
               {filtered.length === 0 ? (
                 <div className="dwc-picker-empty"><MicrophoneIcon size={26} /><div>暂无音色（请先在设置页配置语音 API 并刷新模型列表）</div></div>
@@ -2154,7 +2564,8 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
                 {filtered.map(v => (
                   <button key={v.name} className={`dwc-voice-item${voice === v.name ? ' active' : ''}`} onClick={() => setVoice(v.name)}>
                     <span className="dwc-voice-avatar"><MicrophoneIcon size={14} /></span>
-                    <span className="dwc-voice-item-info"><span className="dwc-voice-item-name">{v.name}</span><span className="dwc-voice-item-desc">{v.desc}</span></span>
+                    <span className="dwc-voice-item-info"><span className="dwc-voice-item-name">{v.label || v.name}</span><span className="dwc-voice-item-desc">{v.platform || v.desc}</span></span>
+                    <span className="dwc-voice-play" title="试听该音色" onClick={e => { e.stopPropagation(); previewLibVoice(v); }}>{previewingVoice === v.name ? '合成中…' : '▶ 试听'}</span>
                   </button>
                 ))}
               </div>
@@ -2193,7 +2604,7 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
                       ✓ 克隆成功：{clonedVoice.name}（voice_id: {clonedVoice.voiceId}）
                     </div>
                   )}
-                  <button className="dwc-voice-gen" style={{ marginTop: 12 }} disabled={!hasVoiceCfg || cloning || !uploadFile} onClick={doClone}>
+                  <button className="dwc-voice-gen" style={{ marginTop: 12 }} disabled={(source === 'api' ? !hasVoiceCfg : !hasComfyUI) || cloning || !uploadFile} onClick={doClone}>
                     {cloning ? '克隆中…（可能需要 10-30 秒）' : clonedVoice ? '重新克隆' : '开始克隆音色'}
                   </button>
                 </div>
@@ -2204,13 +2615,14 @@ const VoiceConfigModal: React.FC<VoiceConfigModalProps> = ({ asset, onClose, onC
           {audioUrl && tab !== 'ai' && (
             <div className="dwc-voice-preview" style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid rgba(255,255,255,0.1)' }}>
               <span className="dwc-voice-history-title">试听</span>
-              <audio controls src={audioUrl} style={{ width: '100%', marginTop: 6 }} />
+              <audio key={audioUrl + '::' + playSeq} src={audioUrl} autoPlay style={{ display: 'none' }} />
+              <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: 12, marginTop: 4, display: 'block' }}>正在播放试听…</span>
             </div>
           )}
         </div>
         <div className="dwc-modal-foot">
           <button className="dwc-modal-cancel" onClick={onClose}>取消</button>
-          <button className="dwc-modal-ok" disabled={!hasVoiceCfg} onClick={confirm}>确认使用</button>
+          <button className="dwc-modal-ok" disabled={source === 'api' && !hasVoiceCfg} onClick={confirm}>确认使用</button>
         </div>
       </div>
     </div>
@@ -2541,7 +2953,7 @@ const ScriptDetailView: React.FC<ScriptDetailViewProps> = ({ project, onNext, on
 // ==================== 页 ====================
 
 export const DramaWorkshopPage: React.FC = () => {
-  const { recommendedConfigs, apiConfigs, chatAPIConfigs, videoAPIConfigs, imageAPIConfigs, voiceAPIConfigs, dramartDraft, clearDramartDraft, setActiveSection, assets, showToast, dramartCreateParams, setDramartCreateParams, saveDramartProject, dramartCustomStyles, saveDramartCustomStyle, deleteDramartCustomStyle, deleteDramartProject, addAsset, dramartProjects } = useAppStore();
+  const { recommendedConfigs, apiConfigs, chatAPIConfigs, videoAPIConfigs, imageAPIConfigs, voiceAPIConfigs, comfyuiConfigs, voiceLibrary, dramartDraft, clearDramartDraft, setActiveSection, assets, showToast, dramartCreateParams, setDramartCreateParams, saveDramartProject, dramartCustomStyles, saveDramartCustomStyle, deleteDramartCustomStyle, deleteDramartProject, addAsset, dramartProjects } = useAppStore();
 
   const [stage, setStage] = useState<Stage>('create');
   // 创建页参数：从持久化的剧创工厂参数自动恢复，并在修改时自动保存
@@ -2549,11 +2961,34 @@ export const DramaWorkshopPage: React.FC = () => {
   const [ratio, setRatio] = useState<string>(() => dramartCreateParams?.ratio || '9:16');
   const [resolution, setResolution] = useState<string>(() => dramartCreateParams?.resolution || '720p');
   const [styleId, setStyleId] = useState<string>(() => dramartCreateParams?.styleId || 'modern-city');
-
+  // 资产图默认生成源（创建项目时选择）：null=默认 API 图片模型；api=指定 API 模型；comfyui=ComfyUI 图片工作流
+  const [assetImageSource, setAssetImageSource] = useState<AssetImageSource | null>(() => dramartCreateParams?.assetImageSource || null);
+  // 资产图默认生成源选项：AI 图片 API 模型 + ComfyUI 图片工作流聚合到同一下拉（API 模型在前，ComfyUI 工作流在后）
+  const assetSourceOptions = useMemo(() => {
+    const opts: { id: string; label: string }[] = [{ id: '__auto', label: '默认（AI 图片 API）' }];
+    const seen = new Set<string>(['__auto']);
+    ((imageAPIConfigs as any[]) || []).forEach((cfg: any) => {
+      if (!cfg?.apiKey || !cfg?.baseUrl) return;
+      const d = String(cfg?.defaultModel || '').trim();
+      const key = 'api:' + d;
+      if (d && !seen.has(key)) { seen.add(key); opts.push({ id: key, label: 'API · ' + d }); }
+    });
+    ((comfyuiConfigs as any[]) || []).forEach((c: any) => {
+      const pre = c?.categoryPresets?.image;
+      const hits = ((c?.workflowFiles as any[]) || []).filter((w: any) => String(w?.name || '') === pre || w?.type === 'image' || w?.kind === 'image');
+      const list = (hits.length ? hits : (pre ? ((c?.workflowFiles as any[]) || []).filter((w: any) => String(w?.name || '') === pre) : [])).filter(Boolean);
+      (list.length ? list : ((c?.workflowFiles as any[]) || []).filter((w: any) => w?.type === 'image')).forEach((w: any) => {
+        const n = String(w?.name || '');
+        const key = 'comfyui:' + n;
+        if (n && !seen.has(key)) { seen.add(key); opts.push({ id: key, label: 'ComfyUI · ' + n }); }
+      });
+    });
+    return opts;
+  }, [imageAPIConfigs, comfyuiConfigs]);
   // 参数选择自动保存
   useEffect(() => {
-    setDramartCreateParams({ mode, ratio, resolution, styleId });
-  }, [mode, ratio, resolution, styleId, setDramartCreateParams]);
+    setDramartCreateParams({ mode, ratio, resolution, styleId, assetImageSource });
+  }, [mode, ratio, resolution, styleId, assetImageSource, setDramartCreateParams]);
 
   // 当从剧创页面提交草稿过来时，仅首次自动切换到剧创模式（manual）；
   // 之后允许用户自由切换回 agent 模式，两个模式已提交的内容（剧本草稿/上传文件）均保留
@@ -2570,6 +3005,9 @@ export const DramaWorkshopPage: React.FC = () => {
   const [scriptFile, setScriptFile] = useState<{ name: string; text: string; size: number } | null>(null);
   const [dragging, setDragging] = useState(false);
   const [project, setProject] = useState<DramartProject | null>(null);
+  // 当前项目资产图生成源：imageFetcher 在变装/手动重绘等未显式传 source 的场景自动回退到项目创建时选择的生成源
+  const assetSourceRef = useRef<AssetImageSource | undefined>(undefined);
+  useEffect(() => { assetSourceRef.current = project?.assetImageSource || undefined; }, [project?.assetImageSource]);
   const [tab, setTab] = useState<Tab>('character');
   const [storyboardIndex, setStoryboardIndex] = useState(0);
   const [sbStatus, setSbStatus] = useState<Record<string, VideoStatus>>({});
@@ -2592,8 +3030,10 @@ export const DramaWorkshopPage: React.FC = () => {
   const [supplementOpen, setSupplementOpen] = useState(false);
   const [analyzing, setAnalyzing] = useState<{ step: number; total: number; label: string; percent: number; msg: string }>({ step: 0, total: DRAMART_ANALYSIS_STEPS.length, label: DRAMART_ANALYSIS_STEPS[0], percent: 0, msg: '' });
   // 分镜时长选择弹窗：默认15秒，可选5/10/15/20/25/30
-  const [shotDurationOpen, setShotDurationOpen] = useState(false);
   const [selectedShotDuration, setSelectedShotDuration] = useState(15);
+  // 项目生成配置弹窗（推理/图像/视频/分镜时长一次选定）
+  const [setupOpen, setSetupOpen] = useState(false);
+  const [curInferenceLabel, setCurInferenceLabel] = useState('');
   const SHOT_DURATION_OPTIONS = [5, 10, 15, 20, 25, 30];
   const [hintIdx, setHintIdx] = useState(0);
   // 分析中滚动提示：每 1.8s 轮换
@@ -2620,14 +3060,29 @@ export const DramaWorkshopPage: React.FC = () => {
     if (project) saveDramartProject(project);
   }, [project, saveDramartProject]);
 
-  // 生图模型选项：统一从设置页图像 API 配置读取（无则空，提示去配置）
+  // 生图模型选项：统一从设置页图像 API 配置读取 + 全部 ComfyUI 图片工作流（无则空，提示去配置）
   const genModelOptions = useMemo(() => {
-    const cfg = (imageAPIConfigs || []).find((c: any) => (c?.models?.length) || c?.defaultModel) || imageAPIConfigs?.[0];
-    const d = (cfg?.defaultModel as string | undefined) || '';
-    const m = ((cfg?.models as string[] | undefined) || []).filter(Boolean);
-    const all = Array.from(new Set([...(d ? [d] : []), ...m]));
-    return all.length ? all.map((x: string) => ({ id: x, label: x })) : [];
-  }, [imageAPIConfigs]);
+    // 正式调用页：图像模型显示所有已配置图像 API 的默认模型 + 所有 ComfyUI 图片工作流
+    const out: { id: string; label: string }[] = [];
+    const seen = new Set<string>();
+    ((imageAPIConfigs as any[]) || []).forEach((cfg: any) => {
+      const d = String(cfg?.defaultModel || '').trim();
+      if (d && !seen.has(d)) { seen.add(d); out.push({ id: d, label: d }); }
+    });
+    ((comfyuiConfigs as any[]) || []).forEach((c: any) => {
+      if (!c?.serverUrl || !Array.isArray(c.workflowFiles)) return;
+      const pre = c?.categoryPresets?.image;
+      const all = (c.workflowFiles as any[]);
+      const hits = all.filter((w: any) => String(w?.name || '') === pre || w?.type === 'image' || w?.kind === 'image');
+      const list = (hits.length ? hits : (pre ? all.filter((w: any) => String(w?.name || '') === pre) : [])).filter(Boolean);
+      const final = list.length ? list : all.filter((w: any) => w?.type === 'image');
+      (final.length ? final : all).forEach((w: any) => {
+        const n = String(w?.name || w || '').trim();
+        if (n && !seen.has(n)) { seen.add(n); out.push({ id: n, label: n }); }
+      });
+    });
+    return out;
+  }, [imageAPIConfigs, comfyuiConfigs]);
 
   // 挑选可调用的对话配置（无则返回 null，走内置示例）
   const pickAIConfig = useCallback((): AIConfigInput | null => {
@@ -2636,6 +3091,67 @@ export const DramaWorkshopPage: React.FC = () => {
     if (!c) return null;
     return { baseUrl: c.baseUrl, apiKey: c.apiKey, model: c.defaultModel || c.models?.[0] };
   }, [recommendedConfigs, apiConfigs, chatAPIConfigs]);
+
+  // 项目生成配置弹窗：推理（对话）模型选项（所有可调用配置 × 可用模型）
+  const chatSetupOptions = useMemo(() => {
+    const source = [recommendedConfigs, apiConfigs, chatAPIConfigs].flat() as any[];
+    const out: { id: string; label: string; config: AIConfigInput }[] = [];
+    const seen = new Set<string>();
+    source.forEach((c: any) => {
+      if (!c?.apiKey || !c?.baseUrl) return;
+      // 只显示用户配置好的默认模型（一个配置一项）
+      const model = String(c?.defaultModel || '').trim() || c.models?.[0] || '';
+      if (!model) return;
+      const key = (c.id || c.name || c.baseUrl) + '|' + model;
+      if (seen.has(key)) return; // 同一配置同时存在于 apiConfigs 与 chatAPIConfigs，去重避免 React key 冲突
+      seen.add(key);
+      out.push({
+        id: key,
+        label: `${c.name || c.provider || '配置'} · ${model}`,
+        config: { baseUrl: c.baseUrl, apiKey: c.apiKey, model },
+      });
+    });
+    return out;
+  }, [recommendedConfigs, apiConfigs, chatAPIConfigs]);
+
+  // 项目生成配置弹窗：视频生成模型选项（API 视频模型 + ComfyUI 视频工作流）
+  const videoSetupOptions = useMemo(() => {
+    const out: { id: string; label: string }[] = [];
+    const seen = new Set<string>();
+    ((videoAPIConfigs as any[]) || []).forEach((cfg: any) => {
+      if (!cfg?.apiKey || !cfg?.baseUrl) return;
+      const m = String(cfg?.defaultModel || '').trim();
+      const key = 'vid:' + cfg.id + '|' + m;
+      if (m && !seen.has(key)) { seen.add(key); out.push({ id: key, label: 'API · ' + m }); }
+    });
+    ((comfyuiConfigs as any[]) || []).forEach((c: any) => {
+      const wfs = ((c?.workflowFiles as any[]) || []).filter((w: any) => w?.type === 'video' || w?.kind === 'video');
+      (wfs.length ? wfs : ((c?.workflowFiles as any[]) || [])).forEach((w: any) => {
+        const n = String(w?.name || '');
+        const key = 'comfy:' + n;
+        if (n && !seen.has(key)) { seen.add(key); out.push({ id: key, label: 'ComfyUI · ' + n }); }
+      });
+    });
+    // 内置视频工作流（永久性可选择，不需要用户手动导入JSON）
+    const BUILTIN_VIDEO_WFS = [
+      { name: '艺镜内置·MiniMax H3 全能参考视频', key: 'builtin:minimax_h3_video' },
+    ];
+    BUILTIN_VIDEO_WFS.forEach((w) => {
+      if (!seen.has(w.key)) { seen.add(w.key); out.push({ id: w.key, label: '内置 · ' + w.name }); }
+    });
+    return out;
+  }, [videoAPIConfigs, comfyuiConfigs]);
+
+  // 弹窗默认值：图像源跟随创建页当前选择；推理跟随当前自动挑选的对话配置
+  const setupDefaults = useMemo(() => {
+    const cur = pickAIConfig();
+    return {
+      chatId: cur ? chatSetupOptions.find(o => o.config?.baseUrl === cur.baseUrl && o.config?.model === cur.model)?.id : undefined,
+      imageId: assetImageSource ? (assetImageSource.kind + ':' + (assetImageSource.workflow || assetImageSource.model || '')) : '__auto',
+      videoId: undefined,
+      shotDuration: selectedShotDuration,
+    };
+  }, [pickAIConfig, chatSetupOptions, assetImageSource, selectedShotDuration]);
 
   const handleFile = useCallback(async (file: File | null) => {
     if (!file) return;
@@ -2658,9 +3174,59 @@ export const DramaWorkshopPage: React.FC = () => {
   }, [showToast]);
 
   // 统一文生图/图生图入口：所有图片生成都会强制追加所选风格提示词（内置/自定义），确保出图严格贴合风格
-  const imageFetcher = useCallback(async (prompt: string, opts?: { model?: string; size?: string; referenceImage?: string }): Promise<{ url: string; remoteUrl?: string } | null> => {
+  // 按资产类型内置系统负向提示词（提交给 ComfyUI 负向节点）
+  const buildAssetNegative = (kind?: string): string => {
+    const base = 'lowres, low quality, worst quality, blurry, jpeg artifacts, watermark, signature, text, logo, deformed, bad anatomy, extra limbs, missing fingers, extra fingers, fused fingers, mutated hands, disfigured, cropped, out of frame, duplicate';
+    if (kind === 'character') {
+      return 'background, scene, building, wall, roof, ground, sky, environment, outdoor, indoor, props, decorations, furniture, landscape, nature, water, mountain, tree, plant, flower, grass, road, street, city, village, house, room, interior, exterior, multiple people, different person, crowd, group, ' + base;
+    }
+    if (kind === 'scene') {
+      return 'person, people, human, character, man, woman, boy, girl, child, face, body, animal, pet, moving, dynamic, motion, action, effect, light, glow, beam, particle, explosion, fire, smoke, battle, fight, weapon, ' + base;
+    }
+    if (kind === 'prop') {
+      return 'person, people, human, character, man, woman, boy, girl, child, face, body, animal, pet, background, scene, building, wall, roof, ground, sky, environment, outdoor, indoor, furniture, landscape, nature, water, mountain, tree, plant, flower, grass, road, street, city, village, house, room, interior, exterior, ' + base;
+    }
+    return base;
+  };
+  const imageFetcher = useCallback(async (prompt: string, opts?: { model?: string; size?: string; referenceImage?: string; source?: AssetImageSource; assetKind?: 'character' | 'scene' | 'prop' }): Promise<{ url: string; remoteUrl?: string } | null> => {
     const styledPrompt = styleWord ? `${prompt}
 风格要求（必须严格遵循）：${styleWord}` : prompt;
+    // 资产图默认生成源：显式 opts.source 优先，否则回退当前项目的生成源（变装/手动重绘等场景）
+    const aSrc: AssetImageSource | undefined = opts?.source || assetSourceRef.current;
+    if (aSrc?.kind === 'comfyui' && aSrc.workflow) {
+      // 艺镜ai生图：内置工作流，自动用第一个可用的 ComfyUI 配置，不需要用户手动导入工作流
+      const BUILTIN_WORKFLOW_NAME = '艺镜ai生图';
+      const isBuiltinWorkflow = aSrc.workflow === BUILTIN_WORKFLOW_NAME;
+      // ComfyUI 图片工作流：选中工作流名命中 ComfyUI 配置则直接用 ComfyUI 工作流生成资产图
+      const comfyImgCfg = isBuiltinWorkflow
+        ? ((comfyuiConfigs as any) || []).find((c: any) => c?.serverUrl)
+        : ((comfyuiConfigs as any) || []).find((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.some((w: any) => String(w?.name || '') === aSrc.workflow));
+      const wf = comfyImgCfg?.workflowFiles?.find((w: any) => String(w?.name || '') === aSrc.workflow) || comfyImgCfg?.workflowFiles?.[0];
+      if (comfyImgCfg && (wf || isBuiltinWorkflow)) {
+        try {
+          // 从 size（如 1280x720）解析出宽高比与基础边长，注入 ComfyUI 图片节点（EmptyLatentImage 等）
+          const mSz = String(opts?.size || '').match(/^(\d+)\s*[x×]\s*(\d+)$/i);
+          const imgWH = mSz ? (mSz[1] + ':' + mSz[2]) : undefined;
+          const imgBase = mSz ? String(Math.max(Number(mSz[1]), Number(mSz[2]))) : undefined;
+          const _neg = buildAssetNegative(opts?.assetKind);
+          console.log('[IMGDBG] ComfyUI 生成 assetKind=', opts?.assetKind, 'isBuiltinWorkflow=', isBuiltinWorkflow, 'workflow=', aSrc.workflow, 'negativePrompt=', _neg.slice(0, 100));
+          const res = await (window as any)?.yijingAPI?.comfyui?.generate({
+            serverUrl: comfyImgCfg.serverUrl,
+            workflowJson: isBuiltinWorkflow ? undefined : (wf?.content || ''),
+            useBuiltin: isBuiltinWorkflow ? 'asset_image' : undefined,
+            prompt: isBuiltinWorkflow ? prompt : styledPrompt,
+            options: { imageClarity: imgBase || '1K', imageRatio: imgWH, negativePrompt: _neg },
+            model: aSrc.workflow,
+            params: { components: comfyImgCfg.components || [] },
+            referenceMedia: opts?.referenceImage ? [{ url: opts.referenceImage, kind: 'image' }] : [],
+          });
+          if (res?.ok && res.url) {
+            const local = await localizeBlobAware(res.url, 'dramart-img');
+            return { url: local, remoteUrl: res.remoteUrl || undefined };
+          }
+        } catch { /* ComfyUI 生成失败时回退到 API 生成 */ }
+      }
+    }
     // 遍历所有图像API配置，找到第一个可用的（有apiKey和baseUrl）
     const configs = (imageAPIConfigs || []) as any[];
     for (const cfg of configs) {
@@ -2697,7 +3263,7 @@ export const DramaWorkshopPage: React.FC = () => {
     // 无图像API或全部生成失败：返回null，由调用方决定是否用占位图兜底
     // （资产图不自动用占位图，保持"未生成"状态以便用户手动生成；封面等场景调用方自行兜底）
     return null;
-  }, [imageAPIConfigs, styleWord]);
+  }, [imageAPIConfigs, styleWord, comfyuiConfigs, assetSourceRef]);
 
   const startAnalysis = useCallback(async (base: DramartProject, config: AIConfigInput | null, shotDuration?: number) => {
     setStage('analyze');
@@ -2711,6 +3277,7 @@ export const DramaWorkshopPage: React.FC = () => {
         ratio: base.ratio,
         resolution: base.resolution,
         config,
+        imageSource: base.assetImageSource,
         imageFetcher,
         onProgress: (step, label, percent, msg) => setAnalyzing({ step, total: DRAMART_ANALYSIS_STEPS.length, label, percent, msg: msg || '' }),
         shotDuration: shotDuration || 15,
@@ -2739,7 +3306,7 @@ export const DramaWorkshopPage: React.FC = () => {
         '3. 画面有明确的视觉焦点和情绪氛围，符合短剧类型。',
         '4. 不要出现其他无关文字、水印或logo。',
       ].join('\n');
-      const coverR = await imageFetcher(coverPrompt, { size: coverSize }).catch(() => null);
+      const coverR = await imageFetcher(coverPrompt, { size: coverSize, source: base.assetImageSource }).catch(() => null);
       const cover = coverR?.url || null;
       const p: DramartProject = { ...base, ...result,
         cover: cover || gradientDataUrl(base.name),
@@ -2774,6 +3341,7 @@ export const DramaWorkshopPage: React.FC = () => {
       resolution: resolution as any,
       styleId: selectedStyle.id,
       styleName: selectedStyle.name,
+      assetImageSource,
       scriptText: scriptFile.text,
       scriptFileName: scriptFile.name,
       mode,
@@ -2784,21 +3352,30 @@ export const DramaWorkshopPage: React.FC = () => {
       props: [],
       storyboards: [],
     };
-    // 先弹窗选择分镜时长，确认后再开始分析
+    // 弹窗一次选定 推理/图像/视频 模型与分镜时长，确认后再开始分析
     pendingCreateRef.current = { base: projectBase, config };
     setSelectedShotDuration(15);
-    setShotDurationOpen(true);
+    setSetupOpen(true);
   }, [scriptFile, selectedStyle, styleWord, ratio, resolution, mode, dramartDraft, pickAIConfig, handleCreateDramaDraft, showToast]);
 
-  // 确认分镜时长，开始分析
-  const confirmShotDuration = useCallback(async () => {
+  // 确认项目生成配置：应用选定的推理/图像/视频模型与分镜时长，开始分析
+  const confirmSetup = useCallback(async (sel: SetupChoice) => {
     const pending = pendingCreateRef.current;
-    if (!pending) { setShotDurationOpen(false); return; }
-    setShotDurationOpen(false);
+    setSetupOpen(false);
+    if (!pending) return;
     pendingCreateRef.current = null;
-    // 把用户选择的分镜时长写入项目，供分镜页视频参数默认值使用
-    await startAnalysis({ ...pending.base, shotDuration: selectedShotDuration }, pending.config, selectedShotDuration);
-  }, [selectedShotDuration, startAnalysis]);
+    setCurInferenceLabel(sel.chatLabel || '');
+    setAssetImageSource(sel.imageSource);
+    const base: DramartProject = {
+      ...pending.base,
+      assetImageSource: sel.imageSource || undefined,
+      shotDuration: sel.shotDuration,
+      inferenceModelLabel: sel.chatLabel || undefined,
+      videoModel: sel.videoModel || undefined,
+      videoConfigId: sel.videoConfigId,
+    };
+    await startAnalysis(base, sel.chatConfig, sel.shotDuration);
+  }, [startAnalysis, setAssetImageSource]);
 
   // 剧创模式创建：用剧创草稿的完整剧本，走与 agent 相同的完整真实 AI 分析流程
   // （先弹分镜时长选择 → 自动进度 → 真实提取角色/场景/道具/分镜 → 批量生成资产图 → 封面）
@@ -2814,6 +3391,7 @@ export const DramaWorkshopPage: React.FC = () => {
       resolution: resolution as any,
       styleId: selectedStyle.id,
       styleName: selectedStyle.name,
+      assetImageSource,
       scriptText,
       scriptContent: scriptText,
       scriptFileName: dramartDraft.scriptFileName || ((dramartDraft.name || '剧创') + '.md'),
@@ -2824,10 +3402,10 @@ export const DramaWorkshopPage: React.FC = () => {
       props: [],
       storyboards: [],
     };
-    // 与 agent 模式一致：先弹窗选择分镜时长，确认后进入自动进度真实生成
+    // 与 agent 模式一致：弹窗一次选定 推理/图像/视频 模型与分镜时长，确认后进入自动进度真实生成
     pendingCreateRef.current = { base, config: pickAIConfig() };
     setSelectedShotDuration(15);
-    setShotDurationOpen(true);
+    setSetupOpen(true);
   }
 
 
@@ -2852,6 +3430,7 @@ export const DramaWorkshopPage: React.FC = () => {
         ratio: project.ratio,
         resolution: project.resolution,
         config,
+        imageSource: project.assetImageSource,
         existing: { characters: project.characters, scenes: project.scenes, props: project.props },
         storyboardOffset: project.storyboards.length,
         imageFetcher,
@@ -2906,6 +3485,7 @@ export const DramaWorkshopPage: React.FC = () => {
     setStage('create');
     setProject(null);
     setScriptFile(null);
+    setCurInferenceLabel('');
     setTab('character');
     setStoryboardIndex(0);
     setSbStatus({});
@@ -2978,11 +3558,11 @@ export const DramaWorkshopPage: React.FC = () => {
   };
 
   // 为角色分配固定音色（同一个角色始终分配同一个音色）
-  const getCharacterVoice = (charAsset: any): { id: string; name: string; desc: string; gender: string; sampleUrl?: string } => {
+  const getCharacterVoice = (charAsset: any): { id: string; name: string; desc: string; gender: string; sampleUrl?: string; config?: VoiceConfig | null } => {
     // 如果角色已配置音色，优先使用配置的音色
     const configured = charAsset ? parseVoiceConfig(charAsset.voice as any) : null;
     if (configured?.voiceId) {
-      return { id: configured.voiceId, name: configured.name || '自定义音色', desc: configured.name || '用户配置的音色', gender: 'custom', sampleUrl: configured.sampleUrl };
+      return { id: configured.voiceId, name: configured.name || '自定义音色', desc: configured.name || '用户配置的音色', gender: 'custom', sampleUrl: configured.sampleUrl, config: configured };
     }
     // 否则从预设池中按角色名称稳定分配
     const name = charAsset?.name || '未知角色';
@@ -3008,9 +3588,6 @@ export const DramaWorkshopPage: React.FC = () => {
   // 为分镜生成角色配音（异步，不阻塞视频生成）
   const generateVoiceover = useCallback(async (sb: DramartStoryboard): Promise<string | null> => {
     try {
-      const voiceCfg = (voiceAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl) || voiceAPIConfigs?.[0];
-      if (!voiceCfg?.apiKey || !voiceCfg?.baseUrl) return null;
-
       // 从分镜提示词中提取台词（匹配 {台词内容} 格式）
       const prompt = sb.videoPrompt || sb.rawScript || '';
       const lineMatches = prompt.match(/\{([^}]+)\}/g);
@@ -3023,6 +3600,9 @@ export const DramaWorkshopPage: React.FC = () => {
       // 找到分镜中第一个角色，使用固定音色分配机制（同一角色始终使用同一音色）
       const charName = sb.characters?.[0] || '';
       const charAsset = charName ? project?.characters.find(c => c.name === charName || charName.includes(c.name) || c.name.includes(charName)) : null;
+      // 未显式配置音色：跳过外部 TTS 配音，由视频模型按提示词中的音色约束自行生成（同一角色全片保持同一音色）
+      const existingVoice = charAsset ? parseVoiceConfig(charAsset.voice as any) : null;
+      if (!existingVoice?.voiceId) return null;
       const voice = getCharacterVoice(charAsset || { name: charName });
       const voiceId = voice.id;
 
@@ -3030,6 +3610,24 @@ export const DramaWorkshopPage: React.FC = () => {
       const fullText = lines.join('。');
       if (!fullText.trim()) return null;
 
+      // ComfyUI 来源的音色：用对应 ComfyUI 语音工作流 + 参考音频（克隆音色）生成
+      const vcfg = voice?.config;
+      if (vcfg?.source === 'comfyui') {
+        const cc = ((comfyuiConfigs as any) || []).find((c: any) => c.id === vcfg.configId) || (comfyuiConfigs as any)?.[0];
+        if (cc?.serverUrl) {
+          const wfName = vcfg.workflowName || '';
+          const wf = (cc.workflowFiles || []).find((w: any) => w.name === wfName) || (cc.workflowFiles || []).find((w: any) => w.type === 'audio') || (cc.workflowFiles || [])[0];
+          const res = await toolService.generateVoice(fullText, cc, { voice: voiceId, sampleUrl: vcfg.sampleUrl, workflowFile: wf });
+          const url = res?.url;
+          if (!url) return null;
+          return localizeBlobAware(url, 'dramart-voice', 'mp3');
+        }
+      }
+
+      // 配音优先用角色音色所属平台的语音配置（跨平台音色）；未配置该平台则回退第一个有效配置
+      const preferredCfg = vcfg?.configId ? (voiceAPIConfigs || []).find((c: any) => c.id === vcfg.configId) : undefined;
+      const voiceCfg = (preferredCfg && preferredCfg.apiKey && preferredCfg.baseUrl ? preferredCfg : (voiceAPIConfigs || []).find((c: any) => c?.apiKey && c?.baseUrl)) || voiceAPIConfigs?.[0];
+      if (!voiceCfg?.apiKey || !voiceCfg?.baseUrl) return null;
       const res = await toolService.generateVoice(fullText, voiceCfg, { voice: voiceId, sampleUrl: voice.sampleUrl });
       const url = res?.url;
       if (!url) return null;
@@ -3039,7 +3637,20 @@ export const DramaWorkshopPage: React.FC = () => {
       console.warn('配音生成失败:', e);
       return null;
     }
-  }, [voiceAPIConfigs, project]);
+  }, [voiceAPIConfigs, comfyuiConfigs, project]);
+
+  // 分镜视频生成后自动抽取序列帧并保存到项目（持久化，视频页每次打开直接显示）
+  const saveFramesForStoryboard = useCallback((id: string, url: string) => {
+    if (!id || !url) return;
+    extractVideoFrames(url, 30).then(fs => {
+      if (fs.length) persistFrames(id, fs);
+    });
+  }, []);
+  // 直接持久化已抽好的序列帧到项目（VideoView 现场抽帧后回调使用）
+  const persistFrames = useCallback((id: string, frames: string[]) => {
+    if (!id || !frames.length) return;
+    setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, frameStrip: frames } : x) }) : p);
+  }, []);
 
   const handleGenerateVideo = useCallback(async (id: string, params?: { model?: string; duration?: number; count?: number; resolution?: string; format?: string }, promptOverride?: string) => {
     if (!id) { showToast('请先选择分镜', 'error'); return; }
@@ -3059,11 +3670,124 @@ export const DramaWorkshopPage: React.FC = () => {
     setSbUrl(u => ({ ...u, [id]: '' }));
 
     // 生成时准确引用设置里第一个有效的视频配置（有 apiKey+baseUrl），而非固定取第一个
-    const vc = ((videoAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl) || videoAPIConfigs?.[0] || undefined;
+    const vc = ((videoAPIConfigs as any) || []).find((c: any) => c?.id === project?.videoConfigId && (c?.apiKey || c?.baseUrl))
+      || ((videoAPIConfigs as any) || []).find((c: any) => c?.apiKey && c?.baseUrl)
+      || videoAPIConfigs?.[0] || undefined;
     const count = [1, 2, 3, 4].includes(params?.count || 1) ? (params?.count || 1) : 1;
 
     // 异步生成角色配音（不阻塞视频生成）
     const voiceoverPromise = generateVoiceover(sb);
+
+    // 收集分镜引用的资产图片作为参考图（角色/场景/道具）
+    const collectShotRefs = (): string[] => {
+      const refs: string[] = [];
+      const findAssetImg = (kind: 'character' | 'scene' | 'prop', name: string): string | undefined => {
+        const list = kind === 'character' ? project?.characters : kind === 'scene' ? project?.scenes : project?.props;
+        const asset = list?.find(a => a.name === name || name.includes(a.name) || a.name.includes(name));
+        return asset?.remoteUrl || asset?.img;
+      };
+      (sb.characters || []).forEach(cn => { const img = findAssetImg('character', cn); if (img) refs.push(img); });
+      (sb.scenes || []).forEach(sn => { const img = findAssetImg('scene', sn); if (img) refs.push(img); });
+      (sb.props || []).forEach(pn => { const img = findAssetImg('prop', pn); if (img) refs.push(img); });
+      return refs;
+    };
+
+    // 解析提示词中的 @标签：@图片(名称)、@台词(文本)、@时长(秒)
+    const parsePromptTags = (rawPrompt: string): { prompt: string; refImages: string[]; duration: number | null; dialogue: string } => {
+      let prompt = rawPrompt;
+      const refImages: string[] = [];
+      let duration: number | null = null;
+      let dialogue = '';
+      const findAssetImgByName = (name: string): string | undefined => {
+        const allAssets = [...(project?.characters || []), ...(project?.scenes || []), ...(project?.props || [])];
+        const asset = allAssets.find(a => a.name === name || name.includes(a.name) || a.name.includes(name));
+        return asset?.remoteUrl || asset?.img;
+      };
+      // @图片(名称)
+      prompt = prompt.replace(/@图片[（(]([^）)]+)[）)]/g, (_match, name) => {
+        const img = findAssetImgByName(name.trim());
+        if (img) refImages.push(img);
+        return '';
+      });
+      // @台词(文本)
+      prompt = prompt.replace(/@台词[（(]([^）)]+)[）)]/g, (_match, text) => {
+        dialogue = text.trim();
+        return '';
+      });
+      // @时长(秒)
+      prompt = prompt.replace(/@时长[（(]([^）)]+)[）)]/g, (_match, sec) => {
+        const d = parseFloat(sec.trim());
+        if (!isNaN(d) && d > 0) duration = d;
+        return '';
+      });
+      // 清理多余空行和空格
+      prompt = prompt.replace(/\n{3,}/g, '\n\n').trim();
+      return { prompt, refImages, duration, dialogue };
+    };
+
+    // ComfyUI 视频工作流生成：选中工作流名命中 ComfyUI 配置，或内置工作流
+    const wantComfyWf = params?.model || '';
+    // 内置视频工作流名称映射
+    const BUILTIN_VIDEO_WORKFLOWS: Record<string, string> = {
+      '艺镜内置·MiniMax H3 全能参考视频': 'minimax_h3_video',
+    };
+    const isBuiltinVideoWf = !!BUILTIN_VIDEO_WORKFLOWS[wantComfyWf];
+    const builtinVideoType = BUILTIN_VIDEO_WORKFLOWS[wantComfyWf];
+    // 内置工作流：自动用第一个可用的 ComfyUI 配置；普通工作流：精确匹配工作流名
+    const comfyVideoCfg = isBuiltinVideoWf
+      ? ((comfyuiConfigs as any) || []).find((c: any) => c?.serverUrl)
+      : ((comfyuiConfigs as any) || []).find((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.some((w: any) => String(w.name || '') === wantComfyWf));
+    if (comfyVideoCfg && wantComfyWf) {
+      const wfName = wantComfyWf;
+      const wf = isBuiltinVideoWf ? null : (comfyVideoCfg.workflowFiles || []).find((w: any) => String(w.name || '') === wfName) || comfyVideoCfg.workflowFiles?.[0];
+      try {
+        const aspect = project?.ratio || '16:9';
+        const rawPrompt = (promptOverride && promptOverride.trim()) || sb.videoPrompt || '';
+        // 解析提示词中的 @图片、@台词、@时长 标签
+        const parsed = parsePromptTags(rawPrompt);
+        const refs = [...collectShotRefs(), ...parsed.refImages].filter((u, i, a) => a.indexOf(u) === i);
+        const durationSec = parsed.duration || Number(params?.duration || sb.duration || 4);
+        const frameCount = Math.max(17, Math.round(durationSec * 24)); // MiniMax 帧数，对齐网格
+        // @台词融入提示词（作为对白/旁白描述）
+        const finalPrompt = parsed.dialogue ? (parsed.prompt + '\n\n对白：' + parsed.dialogue) : parsed.prompt;
+        const res = await (window as any)?.yijingAPI?.comfyui?.generate({
+          serverUrl: comfyVideoCfg.serverUrl,
+          workflowJson: isBuiltinVideoWf ? undefined : (wf?.content || ''),
+          useBuiltin: isBuiltinVideoWf ? builtinVideoType : undefined,
+          prompt: finalPrompt,
+          options: {
+            videoConfig: {
+              ratio: aspect,
+              clarity: params?.resolution || '720p',
+              duration: parsed.duration || params?.duration || sb.duration,
+              fps: 24,
+              generateAudio: true,
+            },
+          },
+          model: wfName,
+          params: { components: comfyVideoCfg.components || [], length: frameCount },
+          referenceMedia: refs.map(u => ({ url: u, kind: 'image' })),
+        });
+        if (res?.ok && (res.videoFiles || []).length) {
+          const url = res.videoFiles[0];
+          const voiceoverUrl = await Promise.race([
+            voiceoverPromise,
+            new Promise<string | null>(resolve => setTimeout(() => resolve(null), 5000))
+          ]);
+          // 累加候选视频（保留历史生成，增加缩略框供切换），新生成的默认选中
+          setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, videoCandidates: [...(x.videoCandidates || []), url].filter((v: string, i: number, a: string[]) => a.indexOf(v) === i), videoUrl: url || x.videoUrl, voiceUrl: voiceoverUrl || x.voiceUrl } : x) }) : p);
+          if (url) saveFramesForStoryboard(id, url);
+          setSbStatus(s => ({ ...s, [id]: 'done' }));
+          showToast('已用 ComfyUI 工作流「' + wfName + '」生成视频' + (voiceoverUrl ? '（含角色配音）' : ''), 'success');
+          return;
+        }
+        throw new Error(res?.error || 'ComfyUI 视频生成未返回结果');
+      } catch (e: any) {
+        setSbStatus(s => ({ ...s, [id]: 'error' }));
+        showToast('ComfyUI 视频生成失败：' + (e?.message || String(e)), 'error');
+        return;
+      }
+    }
 
     if (vc?.apiKey && vc?.baseUrl) {
       try {
@@ -3071,7 +3795,12 @@ export const DramaWorkshopPage: React.FC = () => {
         const urls: string[] = [];
         // 构建角色音色约束提示词（确保同一角色在全片中音色一致，无论是否配置了语音API）
         const voiceConstraint = buildCharacterVoiceConstraint(sb);
-        const basePrompt = (promptOverride && promptOverride.trim()) || sb.videoPrompt;
+        const rawPrompt = (promptOverride && promptOverride.trim()) || sb.videoPrompt || '';
+        // 解析提示词中的 @图片、@台词、@时长 标签
+        const parsed = parsePromptTags(rawPrompt);
+        const tagDuration = parsed.duration;
+        // @台词融入提示词
+        const basePrompt = parsed.dialogue ? (parsed.prompt + '\n\n对白：' + parsed.dialogue) : parsed.prompt;
         const finalVideoPrompt = voiceConstraint ? (voiceConstraint + '\n\n' + basePrompt) : basePrompt;
 
         // 收集分镜引用的资产图片作为参考图（确保视频模型能看到角色/场景/道具的实际形象）
@@ -3085,6 +3814,8 @@ export const DramaWorkshopPage: React.FC = () => {
         (sb.characters || []).forEach(cn => { const img = findAssetImg('character', cn); if (img) referenceImages.push(img); });
         (sb.scenes || []).forEach(sn => { const img = findAssetImg('scene', sn); if (img) referenceImages.push(img); });
         (sb.props || []).forEach(pn => { const img = findAssetImg('prop', pn); if (img) referenceImages.push(img); });
+        // @图片标签引用的资产图也加入参考图
+        parsed.refImages.forEach(u => { if (u && !referenceImages.includes(u)) referenceImages.push(u); });
 
         // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置则回退轨A（TOS URL 直接透传，同账号产物受信任）
         let refs: string[] = referenceImages;
@@ -3128,7 +3859,9 @@ export const DramaWorkshopPage: React.FC = () => {
             voiceoverPromise,
             new Promise<string | null>(resolve => setTimeout(() => resolve(null), 5000))
           ]);
-          setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, videoCandidates: urls, videoUrl: urls[0], voiceUrl: voiceoverUrl || undefined } : x) }) : p);
+          // 累加候选视频（保留历史生成，增加缩略框供切换），新生成的默认选中
+          setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, videoCandidates: [...(x.videoCandidates || []), ...urls].filter((v: string, i: number, a: string[]) => a.indexOf(v) === i), videoUrl: urls[0] || x.videoUrl, voiceUrl: voiceoverUrl || x.voiceUrl } : x) }) : p);
+          if (urls.length && urls[0]) saveFramesForStoryboard(id, urls[0]);
           setSbStatus(s => ({ ...s, [id]: 'done' }));
           showToast('已生成 ' + urls.length + ' 条视频' + (voiceoverUrl ? '（含角色配音）' : '') + '，可点击缩略图切换使用', 'success');
           return;
@@ -3330,7 +4063,7 @@ export const DramaWorkshopPage: React.FC = () => {
     const n = [1, 2, 4, 9].includes(opts.count || 1) ? (opts.count || 1) : 1;
     const size = genSize(opts.ratio || '16:9', opts.resolution || '1k');
     const curVariant = (a.variants || []).find(v => v.id === variantId);
-    const isRedraw = !!curVariant?.img; // 当前变装已有图片则为重绘
+    const isRedraw = !!(curVariant?.img || a.img || a.remoteUrl); // 当前变装或资产主图已有图片则为重绘（走候选列表，不直接覆盖）
     // 获取首图作为参考图（主形象的图片）
     const mainVariant = (a.variants || []).find(v => v.label === kindTerm(a.kind).main);
     const referenceImage = mainVariant?.remoteUrl || mainVariant?.img || a.remoteUrl || a.img || '';
@@ -3341,10 +4074,20 @@ export const DramaWorkshopPage: React.FC = () => {
       ? '保持人物外貌、脸型、发型、身材、肤色完全不变，仅更换服装、鞋子和配饰，背景保持纯白色'
       : '保持主体形态、材质、颜色完全不变，仅调整细节或角度，背景保持纯白色';
     const base = prompt?.trim() || defaultVarPrompt;
+    // 强制布局模板仅作用于内置工作流「艺镜ai生图」，不影响 API 模型的原本提示词和风格
+    const isBuiltinWorkflow = opts.model === '艺镜ai生图';
+    // character: 角色四视图（特写+左侧身+右侧身+背面），纯白背景
+    // scene: 场景四宫格（2x2布局，四个不同角度/时间的场景图）
+    // prop: 道具白底图（纯白背景，单个道具居中）
+    const enforcedBase = !isBuiltinWorkflow ? base : (a.kind === 'character'
+      ? `纯白色背景，绝对纯白，无任何场景、建筑、房子、墙面、屋顶、地面、天空、草地、树木、道具、装饰、阴影、光影效果，整个画面除了人物之外全部是纯白色。pure white background, only character, absolutely no scene, no building, no house, no wall, no ground, no sky, no tree, no prop, no shadow, studio white backdrop. 任务：角色四视图，标准角色设定图布局，必须完整出现四个人物，一个都不能少。画面左侧约40%宽度是一个大特写，画面右侧约60%宽度是三个全身人物紧凑并排排列。左侧特写：角色的头部和肩部大特写（胸部以上），正面平视，面部清晰。右侧全身（从左到右，三个角度各不相同）：第1个全身左侧身（面朝左），第2个全身右侧身（面朝右），第3个全身背面（背对镜头）。四个视图的人物外貌、发型、服装、身材完全一致。无分割线。${base}`
+      : a.kind === 'scene'
+      ? `任务：场景四宫格设定图。画面必须严格平均分为2行2列共4个等大的方格，每个方格大小完全一致，方格之间有清晰的黑色细分隔线。左上、右上、左下、右下每个方格内各放一个完整的场景画面，四个场景是同一场景的不同角度或不同时间，风格色调完全一致。每个方格内的场景画面必须完整填满该方格，不得有空白，不得跨格。无人物，无动物，无文字。${base}`
+      : `纯白色背景，无任何场景、建筑、墙面、地面、天空、人物、动物，画面中只有道具。pure white background, only prop, no scene, no building, no environment, studio white backdrop. 任务：道具展示图，纯白背景，单个道具居中展示，清晰呈现道具的形态、材质、颜色和细节。无人物，无其他道具，无多角度。${base}`);
     const urls: string[] = [];
     const remoteUrls: string[] = [];
     for (let i = 0; i < n; i++) {
-      const r = await imageFetcher(base, { model: opts.model, size, referenceImage: referenceImage || undefined }).catch(() => null);
+      const r = await imageFetcher(enforcedBase, { model: opts.model, size, referenceImage: referenceImage || undefined, assetKind: a.kind as 'character' | 'scene' | 'prop' }).catch(() => null);
       if (r?.url) { urls.push(r.url); remoteUrls.push(r.remoteUrl || ''); }
     }
     if (urls.length) {
@@ -3388,7 +4131,7 @@ export const DramaWorkshopPage: React.FC = () => {
   const genAsset = useCallback(async (assetId: string, prompt: string, opts: { model?: string; size?: string } = {}): Promise<boolean> => {
     const a = assetById(assetId);
     if (!a) return false;
-    const r = await imageFetcher(prompt || buildAssetImagePrompt(a), opts).catch(() => null);
+    const r = await imageFetcher(prompt || buildAssetImagePrompt(a), { ...opts, assetKind: a.kind as 'character' | 'scene' | 'prop' }).catch(() => null);
     if (r?.url) { updateAssetImg(assetId, r.url, r.remoteUrl); return true; }
     return false;
   }, [assetById, imageFetcher, updateAssetImg]);
@@ -3625,6 +4368,7 @@ export const DramaWorkshopPage: React.FC = () => {
         <div className="dwc-analyze">
           <div className="dwc-analyze-card">
             <h2 className="dwc-analyze-title">正在{analyzing.label}</h2>
+            {curInferenceLabel && <div className="dwc-analyze-model">推理模型：{curInferenceLabel}</div>}
             <p className="dwc-analyze-sub">{analyzeSub}</p>
             <div className="dwc-progress-track"><div className="dwc-progress-fill" style={{ width: `${analyzing.percent}%` }} /></div>
             <div className="dwc-steps">
@@ -3751,6 +4495,7 @@ export const DramaWorkshopPage: React.FC = () => {
                       onUpload={() => setUploadAsset(assetById(detailAssetId)!)}
                       onOpenGen={openGen}
                       onImgError={handleAssetImgError}
+                      defaultImageSource={project?.assetImageSource}
                     />
                   </div>
                 </div>
@@ -3766,6 +4511,7 @@ export const DramaWorkshopPage: React.FC = () => {
                   onGen={genVariant}
                   onSetCurrent={setVariantCurrent}
                   onOpenPicker={() => setPickerAsset(assetById(genOpen.assetId)!)}
+                  defaultImageSource={project?.assetImageSource}
                 />
               )}
 
@@ -3853,39 +4599,20 @@ export const DramaWorkshopPage: React.FC = () => {
           onGo={goTo}
           onEditRegenerate={regenerateWithPrompt}
           onDownload={downloadStoryboardVideo}
+          onSaveFrames={persistFrames}
         />
       )}
 
-      {/* 分镜时长选择弹窗（顶层，所有stage共用） */}
-      {shotDurationOpen && (
-        <div className="dwc-overlay" onClick={() => setShotDurationOpen(false)}>
-          <div className="dwc-modal dwc-shot-duration-modal" onClick={e => e.stopPropagation()}>
-            <div className="dwc-modal-head">
-              <span className="dwc-modal-title">选择分镜时长</span>
-              <button className="dwc-modal-close" onClick={() => setShotDurationOpen(false)}><CloseIcon size={16} /></button>
-            </div>
-            <div className="dwc-modal-body">
-              <div className="dwc-shot-duration-hint">每个分镜的最大时长，AI 将按照此时长进行分镜拆分，单个分镜时长不会超过此值</div>
-              <div className="dwc-shot-duration-grid">
-                {SHOT_DURATION_OPTIONS.map(dur => (
-                  <button
-                    key={dur}
-                    className={`dwc-shot-duration-btn${selectedShotDuration === dur ? ' active' : ''}`}
-                    onClick={() => setSelectedShotDuration(dur)}
-                  >
-                    <span className="dwc-shot-duration-num">{dur}</span>
-                    <span className="dwc-shot-duration-unit">秒</span>
-                  </button>
-                ))}
-              </div>
-              <div className="dwc-shot-duration-current">当前选择：<strong>{selectedShotDuration} 秒</strong> / 分镜</div>
-            </div>
-            <div className="dwc-modal-foot">
-              <button className="dwc-modal-cancel" onClick={() => setShotDurationOpen(false)}>取消</button>
-              <button className="dwc-modal-ok" onClick={confirmShotDuration}><ClapperboardIcon size={14} /> 确认并开始分析</button>
-            </div>
-          </div>
-        </div>
+      {/* 项目生成配置弹窗（顶层，所有stage共用）：推理/图像/视频/分镜时长一次选定 */}
+      {setupOpen && (
+        <DramaSetupModal
+          chatOptions={chatSetupOptions}
+          imageOptions={assetSourceOptions}
+          videoOptions={videoSetupOptions}
+          defaults={setupDefaults}
+          onClose={() => setSetupOpen(false)}
+          onConfirm={confirmSetup}
+        />
       )}
 
       {supplementOpen && project && (

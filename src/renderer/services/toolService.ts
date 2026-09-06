@@ -183,14 +183,19 @@ export const toolService = {
             await new Promise((r) => setTimeout(r, intervalMs));
             const poll = await win.yijingAPI.grsai.checkResult({ baseUrl, apiKey: config.apiKey, id: jobId });
             const pdata = poll?.data || poll;
-            const status = pdata?.status;
+            // DashScope 原生任务：状态在 output.task_status（SUCCEEDED / FAILED）
+            const dsStatus = pdata?.output?.task_status || pdata?.output?.status;
+            const status = dsStatus === 'SUCCEEDED' ? 'succeeded' : (dsStatus ? String(dsStatus).toLowerCase() : pdata?.status);
             if (status === 'completed' || status === 'succeeded' || status === 'success') {
               const u = pickUrl(pdata);
               if (u) return { url: u, type: 'video' as const };
               throw new Error('视频生成完成但未返回可用地址');
             }
             if (status === 'failed' || status === 'error') {
-              throw new Error(pdata?.error?.message || pdata?.error || '视频生成失败');
+              // 透出 DashScope/上游真实失败原因（output.message / output.code / message / error）
+              const dsErr = pdata?.output?.message || pdata?.output?.code || pdata?.message || pdata?.error?.message || pdata?.error;
+              const detail = dsErr ? String(dsErr) : (pdata ? JSON.stringify(pdata).slice(0, 400) : '');
+              throw new Error(detail ? ('视频生成失败：' + detail) : '视频生成失败');
             }
           }
           throw new Error('视频生成超时，请稍后在素材库或重试查看结果');
@@ -309,6 +314,9 @@ export const toolService = {
         if (!workflowJson) {
           throw new Error('未找到可用的 ComfyUI 语音工作流，请在设置页配置工作流文件');
         }
+        const refs: Array<{ url: string; kind: string }> = [];
+        if (options.sampleUrl && /^data:/.test(String(options.sampleUrl))) refs.push({ url: String(options.sampleUrl), kind: 'audio' });
+        else if (options.audioData) refs.push({ url: String(options.audioData), kind: 'audio' });
         const res = await win.yijingAPI.comfyui.generate({
           serverUrl,
           workflowJson,
@@ -316,6 +324,7 @@ export const toolService = {
           options: { ...options, text, voice: options.voice || options.voiceName },
           model: options.model || config.defaultModel || '',
           params: { components: options.comfyComponents || config.components || [] },
+          ...(refs.length ? { referenceMedia: refs } : {}),
         });
         if (res?.ok === false) throw new Error(res?.error || 'ComfyUI 生成失败');
         const url =
@@ -337,9 +346,17 @@ export const toolService = {
 
       // 3.0 豆包语音（openspeech.bytedance.com）：X-Api-Key 鉴权 + text_prompt/speaker 格式（同步返回 audio base64 / url）
       if (/openspeech\.bytedance\.com/i.test(apiBase)) {
-        const url = /\/tts\/create$/i.test(apiBase) ? apiBase : `${apiBase}/api/v3/tts/create`;
+        // 豆包语音正确端点固定在 https://openspeech.bytedance.com/api/v3/tts/create
+        const origin = (() => { try { return new URL(apiBase).origin; } catch { return apiBase; } })();
+        const url = `${origin}/api/v3/tts/create`;
+        // 豆包语音：BV 系列音色（BV001_streaming 等）对应 model=volcano_tts + speaker=音色ID；
+        // 若把 BV 音色名当 model 会报「fail to convert model to resource_id」403
+        const isBvVoice = /^BV\d+/i.test(voice || '') || /^BV\d+/i.test(model || '');
+        // 官方接口 model 仅支持 seed-audio-1.0；BV 系列音色（豆包语音合成模型2.0）通过 speaker 字段指定，
+        // 绝不能把 BV 音色名当 model（会报 fail to convert model to resource_id 403）
+        const ttsModel = (model && !/^BV\d+/i.test(model) && !/^volcano/i.test(model)) ? model : 'seed-audio-1.0';
         const body: any = {
-          model: model || 'seed-audio-1.0',
+          model: ttsModel,
           text_prompt: text,
           audio_config: { format: 'mp3', sample_rate: 24000 },
         };
@@ -356,7 +373,11 @@ export const toolService = {
           body: JSON.stringify(body),
         });
         const data = await resp.json().catch(() => null);
-        if (!resp.ok || !data) throw new Error(data?.message || data?.code || `HTTP ${resp.status}`);
+        if (!resp.ok || !data) {
+          const em = data?.message || data?.code || data?.error?.message || (data ? JSON.stringify(data).slice(0, 300) : '') || '';
+          console.error('[Volc TTS] 失败', resp.status, JSON.stringify(data || {}).slice(0, 600));
+          throw new Error(em || `HTTP ${resp.status}`);
+        }
         if (data.url) return { url: String(data.url), type: 'audio' as const };
         if (data.audio) {
           try {
@@ -369,6 +390,71 @@ export const toolService = {
           }
         }
         throw new Error('豆包语音未返回音频');
+      }
+
+      // 3.1 千问/百炼 DashScope 原生 TTS（CosyVoice / Qwen-Audio-TTS）
+      // 官方明确：语音合成不支持 OpenAI 兼容 /audio/speech，须走原生 SpeechSynthesizer（output.audio.url 返回音频）
+      if (/:\/\/dashscope[a-z0-9-]*\.aliyuncs\.com(?:\/|$)/i.test(apiBase) || /:\/\/[a-z0-9-]+\.maas\.aliyuncs\.com(?:\/|$)/i.test(apiBase)) {
+        const origin = (() => { try { return new URL(apiBase).origin; } catch { return apiBase; } })();
+        // 官方 SpeechSynthesizer 仅接受以下精确枚举；其他值（含不存在的 cosyvoice-flash）一律回退 cosyvoice-v2
+        const DS_TTS_MODELS = ['cosyvoice-v2', 'cosyvoice-v3-plus', 'cosyvoice-v3-flash', 'cosyvoice-v3.5-plus', 'cosyvoice-v3.5-flash', 'qwen-audio-3.0-tts-plus', 'qwen-audio-3.0-tts-flash'];
+        const synthModel = DS_TTS_MODELS.includes(model) ? model : 'cosyvoice-v2';
+        const v = (voice && voice !== 'alloy' && voice !== 'default') ? voice : '';
+        // 单次合成（带 45s 超时），返回 { err?, status?, data? }
+        const doSynth = async (m: string, vv: string): Promise<any> => {
+          const ctl = new AbortController();
+          const timer = setTimeout(() => ctl.abort(), 45000);
+          try {
+            const resp = await fetch(`${origin}/api/v1/services/audio/tts/SpeechSynthesizer`, {
+              method: 'POST',
+              headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                model: m,
+                input: { text, voice: vv || undefined, format: 'mp3', sample_rate: 24000 },
+              }),
+              signal: ctl.signal,
+            });
+            const data = await resp.json().catch(() => null);
+            if (!resp.ok || !data) {
+              const em = data?.output?.message || data?.output?.code || data?.message || data?.code || (data?.output ? JSON.stringify(data.output).slice(0, 300) : '') || '';
+              return { err: em || `HTTP ${resp.status}`, status: resp.status, data };
+            }
+            return { data };
+          } catch (e: any) {
+            return { err: e?.name === 'AbortError' ? '合成超时（45s）' : (e?.message || String(e)) };
+          } finally { clearTimeout(timer); }
+        };
+        let r = await doSynth(synthModel, v);
+        // 418 = 音色与模型版本不匹配：遍历官方各版本模型，并自动补版本后缀（如 longxiaochun→longxiaochun_v2）匹配 cosyvoice-v2
+        if (r?.err && /418/.test(r.err)) {
+          const base = v.replace(/_(v\d+)$/, '');
+          const combos: Array<[string, string]> = [];
+          for (const m of DS_TTS_MODELS) {
+            combos.push([m, v]);
+            if (!/_v\d+$/.test(v)) {
+              if (m === 'cosyvoice-v2') combos.push([m, base + '_v2']);
+              if (m === 'cosyvoice-v3-flash') combos.push([m, base + '_v3']);
+            }
+          }
+          const seen = new Set<string>();
+          for (const [m, vv] of combos) {
+            const key = m + '|' + vv;
+            if (seen.has(key) || (m === synthModel && vv === v)) continue;
+            seen.add(key);
+            console.warn('[DashScope TTS] 418，尝试', m, vv);
+            r = await doSynth(m, vv);
+            if (!r?.err) break;
+          }
+        }
+        if (r?.err) {
+          console.error('[DashScope TTS] 失败', r?.status, JSON.stringify(r?.data || {}).slice(0, 600));
+          throw new Error(r.err);
+        }
+        const data = r.data;
+        const audioUrl = data?.output?.audio?.url;
+        if (audioUrl) return { url: String(audioUrl), type: 'audio' as const };
+        if (data?.output?.audio?.data) return { url: `data:audio/mp3;base64,${data.output.audio.data}`, type: 'audio' as const };
+        throw new Error('千问语音未返回音频');
       }
 
       // 优先通过主进程 thirdParty.request 代理调用（绕过 CORS，统一错误处理）
@@ -429,7 +515,7 @@ export const toolService = {
 
   // 音色克隆：上传音频样本，克隆生成自定义音色
   // 支持常见语音克隆 API（ElevenLabs / Fish Audio / Minimax / OpenAI 兼容等），通过配置的 baseUrl 自动适配
-  async cloneVoice(audioFile: File | string, config: any, options: any = {}): Promise<{ voiceId: string; name: string; previewUrl?: string }> {
+  async cloneVoice(audioFile: File | string, config: any, options: any = {}): Promise<{ voiceId: string; name: string; previewUrl?: string; sampleUrl?: string }> {
     if (!config) throw new Error('请先在设置页配置语音 API');
     const win = window as any;
     const apiBase = String(config.baseUrl || '').trim().replace(/\/+$/, '');
@@ -454,17 +540,43 @@ export const toolService = {
         audioFileName = audioFile.name || 'sample.mp3';
       }
 
+      // ComfyUI 工作流音色克隆：上传参考音频到 ComfyUI，用语音克隆工作流（F5-TTS / GPT-SoVITS / CosyVoice 等）生成试听
+      const isComfyUI = config?.source === 'comfyui' || config?.provider === 'comfyui' || Boolean((config?.serverUrl || '').trim());
+      if (isComfyUI) {
+        if (!win?.yijingAPI?.comfyui?.generate) throw new Error('ComfyUI 接口不可用');
+        const serverUrl = String(config.serverUrl || config.baseUrl || '').trim().replace(/\/+$/, '');
+        const workflowFile = options.workflowFile || config.workflowFiles?.find((w: any) => w.name === (options.model || config.defaultModel)) || config.workflowFiles?.[0];
+        const workflowJson = config.workflowJSON || workflowFile?.content || options.workflowJson || '';
+        if (!workflowJson) throw new Error('未找到可用的 ComfyUI 语音克隆工作流，请在设置页配置工作流文件');
+        const previewText = options.previewText || '你好，这是克隆音色的试听。';
+        const res = await win.yijingAPI.comfyui.generate({
+          serverUrl,
+          workflowJson,
+          prompt: previewText,
+          options: { ...options, text: previewText, voice: options.voice || options.voiceName || '' },
+          model: options.model || config.defaultModel || '',
+          params: { components: options.comfyComponents || config.components || [] },
+          referenceMedia: [{ url: audioBase64, kind: 'audio' }],
+        });
+        if (res?.ok === false) throw new Error(res?.error || 'ComfyUI 音色克隆失败');
+        const cUrl = res?.url || res?.audio || res?.data?.url || res?.data?.[0]?.url || res?.results?.[0]?.url;
+        if (!cUrl) throw new Error('ComfyUI 未返回克隆音色试听结果');
+        return { voiceId: 'comfy_clone_' + Date.now().toString(36), name: voiceName, previewUrl: cUrl, sampleUrl: audioBase64 };
+      }
+
       // 豆包语音（openspeech.bytedance.com）：通过 audio_data 参考音频实现音色克隆
       // 上传样本后，后续生成时以 audio_data 作为音色参考（无需独立克隆端点）
       if (/openspeech\.bytedance\.com/i.test(apiBase)) {
         const dataPart = audioBase64.includes(',') ? String(audioBase64).split(',')[1] : audioBase64;
         const previewUrl = await (async () => {
           try {
-            const resp = await fetch(/\/tts\/create$/i.test(apiBase) ? apiBase : `${apiBase}/api/v3/tts/create`, {
+            const origin2 = (() => { try { return new URL(apiBase).origin; } catch { return apiBase; } })();
+            const resp = await fetch(`${origin2}/api/v3/tts/create`, {
               method: 'POST',
               headers: { 'X-Api-Key': apiKey, 'Content-Type': 'application/json' },
               body: JSON.stringify({
-                model: config.defaultModel || 'seed-audio-1.0',
+                // 官方 model 仅支持 seed-audio-1.0；BV 音色名不能当 model（会 403）
+                model: (config.defaultModel && !/^BV\d+/i.test(String(config.defaultModel)) && !/^volcano/i.test(String(config.defaultModel))) ? config.defaultModel : 'seed-audio-1.0',
                 text_prompt: '你好，这是克隆音色的试听。',
                 audio_data: dataPart,
                 audio_config: { format: 'mp3' },

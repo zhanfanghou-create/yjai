@@ -1753,12 +1753,11 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
 
   // 工具函数：规范化模型列表
   const normalizeSavedModels = (models?: string[], defaultModel?: string) => {
-    const modelSet = new Set<string>();
-    [...(models || []), defaultModel].forEach(model => {
-      const value = String(model || '').trim();
-      if (value) modelSet.add(value);
-    });
-    return Array.from(modelSet);
+    // 正式调用页：模型选择只显示用户配置好的默认模型（不展示 /models 拉取的全量列表）；旧配置无默认时回退首个
+    const def = String(defaultModel || '').trim();
+    const first = String((models || [])[0] || '').trim();
+    const value = def || first;
+    return value ? [value] : [];
   };
 
   // 工具函数：检查配置是否完整可调用
@@ -1820,38 +1819,40 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     // 图片类节点
     if (['text-to-image', 'image-to-image', 'image-upscale', 'image-blend', 'character-view'].includes(node.type)) {
       configs = [
-        ...imageAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
+        ...imageAPIConfigs.filter(config => hasSavedCallableApiConfig(config)).map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'image' as const })),
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
         // ComfyUI 也可以用于图片生成
-        ...comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: ms[0], _source: 'comfyui' as const }); }),
+        ...comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); const pre = c?.categoryPresets?.image; const defM = ms.find((m: string) => m === pre) || ms[0]; return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: defM, _source: 'comfyui' as const }); }),
       ];
     }
     // 视频类节点
     else if (['text-to-video', 'video-composite', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'lip-sync', 'video-super-resolution', 'live-portrait', 'video-to-music', 'video-interpolate', 'video-realtime'].includes(node.type)) {
       configs = [
-        ...videoAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
+        ...videoAPIConfigs.filter(config => hasSavedCallableApiConfig(config)).map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'video' as const })),
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
         // ComfyUI 也可以用于视频生成
-        ...comfyuiConfigs.map(c => ({ ...c, name: c.name || 'ComfyUI', models: (c.workflowFiles && c.workflowFiles.length ? c.workflowFiles.map((w: any) => w.name || w) : [c.name || 'ComfyUI 工作流']), defaultModel: (c.workflowFiles?.[0]?.name) || c.name || 'ComfyUI 工作流', _source: 'comfyui' as const })),
+        ...comfyuiConfigs.map(c => { const wfs = (c.workflowFiles && c.workflowFiles.length ? c.workflowFiles.map((w: any) => w.name || w) : []); const pre = c?.categoryPresets?.video; const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI 工作流'; return ({ ...c, name: c.name || 'ComfyUI', models: (wfs.length ? wfs : [c.name || 'ComfyUI 工作流']), defaultModel: defM, _source: 'comfyui' as const }); }),
       ];
     }
     // 语音类节点
     else if (['tts', 'audio2video', 'audio-to-text'].includes(node.type)) {
       configs = [
-        ...voiceAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
+        ...voiceAPIConfigs.filter(config => hasSavedCallableApiConfig(config)).map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'voice' as const })),
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
+        // ComfyUI 音频工作流（配音设计/声音克隆）：默认选中音频分类预设
+        ...comfyuiConfigs.map(c => { const wfs = ((c.workflowFiles || []) as any[]).map((w: any) => w.name || w); const pre = c?.categoryPresets?.audio; const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI 工作流'; return ({ ...c, name: c.name || 'ComfyUI', models: (wfs.length ? wfs : [c.name || 'ComfyUI 工作流']), defaultModel: defM, _source: 'comfyui' as const }); }),
       ];
     }
     // 音乐类节点
     else if (['video-to-music'].includes(node.type)) {
       configs = [
-        ...musicAPIConfigs.filter(config => hasSavedCallableApiConfig(config)),
+        ...musicAPIConfigs.filter(config => hasSavedCallableApiConfig(config)).map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'music' as const })),
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
@@ -3683,13 +3684,14 @@ function storeNodesToFlowNodes(nodes: Record<string, AINode>, edges: FlowEdge[] 
       }
     }
   });
-  return Object.values(nodes).map((n) => {
-    const incomingKinds = incomingMediaKinds[n.id] || [];
+  return Object.entries(nodes).map(([entryKey, n]) => {
+    const nid = (n && n.id) || entryKey;
+    const incomingKinds = incomingMediaKinds[nid] || [];
     // 强制全能参考的条件：
     // 1. 上游连线中包含视频节点（前面连线视频为节点）
     // 2. 上游连线为多种媒体格式组合（视频/图片/音频混合，多格式组合作为参考）
     const forceOmniReference = incomingKinds.includes('video') || incomingKinds.length > 1;
-    const connected = inputConnected.has(n.id) || outputConnected.has(n.id);
+    const connected = inputConnected.has(nid) || outputConnected.has(nid);
     const hasMediaContent = !!n.result?.url || !!n.thumbnail;
     const storedAspectRatio = Number(n.options?.previewAspectRatio || n.meta?.previewAspectRatio || 0);
     const isAudioContent = n.result?.type === 'audio';
@@ -3705,13 +3707,13 @@ function storeNodesToFlowNodes(nodes: Record<string, AINode>, edges: FlowEdge[] 
       || !!n.result?.text
       || !!n.thumbnail;
     return {
-      id: n.id,
+      id: nid,
       type: 'workflowNode',
       position: { x: n.x, y: n.y },
       width: hasDisplayContent ? 280 : n.width,
       height: hasDisplayContent ? mediaHeight : n.height,
       style: hasDisplayContent ? { width: 280, height: mediaHeight } : { width: n.width, height: n.height },
-      data: { node: n, isInputConnected: inputConnected.has(n.id), isOutputConnected: outputConnected.has(n.id), incomingImageNodeIds: incomingImageNodes[n.id] || [], incomingImageCount: incomingImageCounts[n.id] || 0, incomingMediaKinds: incomingKinds, forceOmniReference, activeInputNodeId: null, setActiveInputNodeId: undefined },
+      data: { node: n, isInputConnected: inputConnected.has(nid), isOutputConnected: outputConnected.has(nid), incomingImageNodeIds: incomingImageNodes[nid] || [], incomingImageCount: incomingImageCounts[nid] || 0, incomingMediaKinds: incomingKinds, forceOmniReference, activeInputNodeId: null, setActiveInputNodeId: undefined },
     };
   });
 }

@@ -305,6 +305,35 @@ async function generateAIResponse(sessionId: string, userPrompt: string, store: 
     const apiType = config.apiType;
     const isGrsai = apiType === 'openai-chat' || apiType === 'openai-generations' || apiType === 'openai-completions';
 
+    // ComfyUI 工作流作为对话生成源：用选中工作流生成对应媒体，结果作为消息回传
+    if (config._source === 'comfyui' && win.yijingAPI.comfyui) {
+      const wf = ((config.workflowFiles || []) as any[]).find((w: any) => String(w.name || '') === model) || (config.workflowFiles || [])[0];
+      const workflowJson = config.workflowJSON || wf?.content || '';
+      if (!workflowJson) { addResp(sessionId, '该 ComfyUI 工作流缺少内容，请在设置页刷新保存后重试。', store); return; }
+      const res = await win.yijingAPI.comfyui.generate({
+        serverUrl: config.serverUrl,
+        workflowJson,
+        prompt: parsed.text || userPrompt,
+        options: {},
+        model,
+        params: { components: config.components || [] },
+        referenceMedia: [],
+      });
+      if (res?.ok) {
+        const files: string[] = [...(res.files || []), ...(res.videoFiles || []), ...(res.audioFiles || [])];
+        if (files.length) {
+          const isVid = (res.videoFiles || []).length > 0;
+          const isAud = !isVid && (res.audioFiles || []).length > 0;
+          store.addMessage(sessionId, { role: 'assistant', content: '', type: isVid ? 'video' : isAud ? 'audio' : 'image', model, provider: 'comfyui', files });
+        } else {
+          addResp(sessionId, `ComfyUI 生成完成（${model}）`, store);
+        }
+      } else {
+        addResp(sessionId, `ComfyUI 生成失败：${res?.error || '未知错误'}`, store);
+      }
+      return;
+    }
+
     if (isGrsai && win.yijingAPI.grsai) {
       if (apiType === 'openai-chat') {
         const result = await win.yijingAPI.grsai.chat({ baseUrl: config.baseUrl, apiKey: config.apiKey, model, messages: [{ role: 'user', content: userPrompt }] });
@@ -473,5 +502,12 @@ function buildAllConfigs(store: ReturnType<typeof useAppStore.getState>) {
     ...store.apiConfigs.filter(hasCallable).map(c => ({ ...c, apiType: 'openai-chat' as const, models: normalizeSavedModels(c.models, c.defaultModel), _source: 'chat' as const })),
     ...store.imageAPIConfigs.filter(hasCallable).map(c => ({ ...c, apiType: 'openai-generations' as const, models: normalizeSavedModels(c.models, c.defaultModel), _source: 'image' as const })),
     ...store.videoAPIConfigs.filter(hasCallable).map(c => ({ ...c, apiType: 'openai-completions' as const, models: normalizeSavedModels(c.models, c.defaultModel), _source: 'video' as const })),
+    // ComfyUI 工作流也作为对话生成源：默认选中「对话」分类预设工作流
+    ...(store.comfyuiConfigs || []).filter((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.length).map((c: any) => {
+      const wfs = (c.workflowFiles || []).map((w: any) => w.name || w);
+      const pre = c?.categoryPresets?.chat;
+      const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI';
+      return ({ ...c, apiType: 'openai-chat' as const, models: (wfs.length ? wfs : [defM]), defaultModel: defM, _source: 'comfyui' as const });
+    }),
   ];
 }

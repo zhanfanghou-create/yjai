@@ -1,8 +1,8 @@
-{
+﻿{
   "name": "yijing-ai-installer",
   "productName": "艺镜AI-正式版",
   "private": true,
-  "version": "1.2.20",
+  "version": "1.2.21",
   "description": "艺镜AI-正式版 图形安装引导器",
   "main": "dist-electron/main.js",
   "scripts": {
@@ -36,3 +36,4 @@
     "vite": "^5.3.4"
   }
 }
+

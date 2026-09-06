@@ -437,10 +437,18 @@ export async function speakAssistantReply(text: string): Promise<void> {
       if (cfg && cfg.baseUrl && cfg.apiKey) {
         try {
           const apiBase = redirectAgnesHost(normalizeApiBase(cfg.baseUrl));
-          const resp = await withTimeout(fetch(`${apiBase}/audio/speech`, {
+          const modelId = settings.voiceModel || cfg.defaultModel || cfg.models?.[0] || 'tts-1';
+          const isDS = /:\/\/dashscope[a-z0-9-]*\.aliyuncs\.com(?:\/|$)/i.test(apiBase) || /:\/\/[a-z0-9-]+\.maas\.aliyuncs\.com(?:\/|$)/i.test(apiBase);
+          const ttsUrl = isDS
+            ? (() => { try { return new URL(apiBase).origin; } catch { return apiBase; } })() + '/api/v1/services/audio/tts/SpeechSynthesizer'
+            : `${apiBase}/audio/speech`;
+          const ttsBody = isDS
+            ? JSON.stringify({ model: modelId, input: { text: clean, voice: (settings.voiceModel && settings.voiceModel !== 'alloy' ? settings.voiceModel : undefined), format: 'mp3', sample_rate: 24000 } })
+            : JSON.stringify({ model: modelId, input: clean, voice: settings.voiceModel || 'alloy' });
+          const resp = await withTimeout(fetch(ttsUrl, {
             method: 'POST',
             headers: { Authorization: `Bearer ${cfg.apiKey}`, 'Content-Type': 'application/json' },
-            body: JSON.stringify({ model: settings.voiceModel || cfg.defaultModel || cfg.models?.[0] || 'tts-1', input: clean, voice: settings.voiceModel || 'alloy' }),
+            body: ttsBody,
           }), 30000, 'voice-api-fetch');
           if (resp.ok) {
             const buf = await resp.arrayBuffer();

@@ -58,6 +58,7 @@ export const App: React.FC = () => {
   } | null>(null);
   const [savePromptTarget, setSavePromptTarget] = useState<LibraryContextTarget | null>(null);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [updateModalData, setUpdateModalData] = useState<any>(null);
 
   useEffect(() => {
     const handleGlobalContextMenu = (event: MouseEvent) => {
@@ -117,6 +118,19 @@ export const App: React.FC = () => {
     document.addEventListener('contextmenu', handleGlobalContextMenu);
     return () => document.removeEventListener('contextmenu', handleGlobalContextMenu);
   }, [addAsset, showToast]);
+
+  // 监听主进程推送的新版本通知，自动弹窗提醒更新
+  useEffect(() => {
+    const api = (window as any)?.yijingAPI?.system;
+    if (typeof api?.onUpdateAvailable !== 'function') return;
+    const unsub = api.onUpdateAvailable((data: any) => {
+      if (data?.hasUpdate) {
+        console.log('[App] 收到新版本通知 v' + data.latestVersion + '，显示更新弹窗');
+        setUpdateModalData(data);
+      }
+    });
+    return () => { if (typeof unsub === 'function') unsub(); };
+  }, []);
 
   const closeContextMenu = useCallback(() => {
     setContextMenu(null);
@@ -263,6 +277,71 @@ export const App: React.FC = () => {
         isCanvasMode={activeSection === 'canvas'}
       />
       <HelpPanel isOpen={isHelpOpen} onClose={() => setIsHelpOpen(false)} />
+
+      {/* 全局更新提醒弹窗 */}
+      {updateModalData && createPortal(
+        <div style={{
+          position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+          background: 'rgba(0,0,0,0.6)', zIndex: 100000,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+        }} onClick={() => setUpdateModalData(null)}>
+          <div style={{
+            width: 420, background: '#1e1e2e', borderRadius: 16,
+            padding: 28, boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
+            border: '1px solid rgba(255,255,255,0.1)',
+          }} onClick={(e) => e.stopPropagation()}>
+            <div style={{ fontSize: 20, fontWeight: 700, color: '#fff', marginBottom: 8 }}>
+              🎉 发现新版本
+            </div>
+            <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', marginBottom: 16 }}>
+              当前版本 v{updateModalData.currentVersion} → 最新版本 <span style={{ color: '#8b5cf6', fontWeight: 600 }}>v{updateModalData.latestVersion}</span>
+            </div>
+            {updateModalData.releaseNotes && (
+              <div style={{
+                background: 'rgba(255,255,255,0.05)', borderRadius: 8,
+                padding: '12px 14px', marginBottom: 20, maxHeight: 160, overflowY: 'auto',
+              }}>
+                <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', marginBottom: 6 }}>更新内容</div>
+                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.8)', whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
+                  {updateModalData.releaseNotes}
+                </div>
+              </div>
+            )}
+            <div style={{ display: 'flex', gap: 12 }}>
+              <button
+                style={{
+                  flex: 1, height: 40, borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)',
+                  background: 'transparent', color: 'rgba(255,255,255,0.7)', fontSize: 14, cursor: 'pointer',
+                }}
+                onClick={() => setUpdateModalData(null)}
+              >稍后再说</button>
+              <button
+                style={{
+                  flex: 1, height: 40, borderRadius: 8, border: 'none',
+                  background: 'linear-gradient(135deg, #8b5cf6, #6366f1)', color: '#fff',
+                  fontSize: 14, fontWeight: 600, cursor: 'pointer',
+                }}
+                onClick={() => {
+                  setUpdateModalData(null);
+                  // 跳转到设置页的更新区域
+                  const api = (window as any)?.yijingAPI?.system;
+                  if (typeof api?.downloadUpdate === 'function') {
+                    // 直接开始下载
+                    window.location.hash = '#/settings';
+                    setTimeout(() => {
+                      const evt = new CustomEvent('trigger-update-download');
+                      window.dispatchEvent(evt);
+                    }, 500);
+                  } else {
+                    window.location.hash = '#/settings';
+                  }
+                }}
+              >立即更新</button>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
     </div>
     </LicenseGuard>
   );

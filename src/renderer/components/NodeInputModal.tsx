@@ -48,11 +48,15 @@ export const NodeInputModal: React.FC<NodeInputModalProps> = ({
     return apiConfigs.filter(c => c.baseUrl && c.defaultModel);
   })();
 
-  // Get models from selected config
+  // 正式调用页：模型选择只显示用户配置好的默认模型（ComfyUI 工作流保持全部可选）
   const availableModels = (() => {
     if (!selectedConfigId) return [];
     const config = relevantConfigs.find(c => c.id === selectedConfigId);
-    return config?.models || [];
+    if (nodeType === 'comfyui') return config?.models || [];
+    const def = String(config?.defaultModel || '').trim();
+    const first = String((config?.models || [])[0] || '').trim();
+    const value = def || first;
+    return value ? [value] : [];
   })();
 
   useEffect(() => {

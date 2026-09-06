@@ -312,6 +312,7 @@ export const HomePage: React.FC = () => {
     apiConfigs,
     imageAPIConfigs,
     videoAPIConfigs,
+    comfyuiConfigs,
     recommendedConfigs,
     generationParams,
     setGenerationParams,
@@ -389,7 +390,22 @@ export const HomePage: React.FC = () => {
         models: normalizeSavedModels(config.models, config.defaultModel),
         _source: 'video' as const,
       })),
-  ], [recommendedConfigs, apiConfigs, imageAPIConfigs, videoAPIConfigs]);
+    // ComfyUI 工作流作为对话/创作生成源：默认选中「对话」分类预设工作流
+    ...(comfyuiConfigs || [])
+      .filter((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.length)
+      .map((c: any) => {
+        const wfs = (c.workflowFiles || []).map((w: any) => w.name || w);
+        const pre = c?.categoryPresets?.chat;
+        const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI';
+        return ({
+          ...c,
+          apiType: 'openai-chat' as const,
+          models: (wfs.length ? wfs : [defM]),
+          defaultModel: defM,
+          _source: 'comfyui' as const,
+        });
+      }),
+  ], [recommendedConfigs, apiConfigs, imageAPIConfigs, videoAPIConfigs, comfyuiConfigs]);
 
   const selectedConfig = allAvailableConfigs.find(c => c.id === selectedConfigId);
 

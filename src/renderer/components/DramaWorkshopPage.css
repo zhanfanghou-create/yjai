@@ -65,6 +65,8 @@
   border-radius: 22px;
   padding: 22px;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+  position: relative;
+  z-index: 2;
   backdrop-filter: blur(var(--blur-amount, 20px));
 }
 
@@ -169,6 +171,10 @@
 }
 
 .dwc-config-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+/* 创建页资产图源等下拉：提升层级，避免弹出菜单被"创建短剧项目"按钮遮挡 */
+.dwc-config-row .dwc-select { z-index: 50; }
+.dwc-config-row .dwc-select.up .dwc-menu, .dwc-config-row .dwc-menu { z-index: 60; }
 
 .dwc-select { position: relative; display: inline-flex; }
 
@@ -823,8 +829,15 @@
 .dwc-vid-tl-seg.no-video { background: color-mix(in srgb, var(--bg-tertiary, #3a3a3a) 30%, transparent); }
 
 /* 序列帧预览区域 */
-.dwc-vid-tl-frames { flex: 1; min-height: 60px; border-radius: 8px; overflow: hidden; background: var(--bg-primary, #1a1a1a); display: flex; align-items: center; justify-content: center; }
-.dwc-vid-tl-frame-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: var(--text-muted, #888888); font-size: 12px; }
+.dwc-vid-tl-frames { position: relative; flex: 1; min-height: 60px; border-radius: 8px; overflow: hidden; background: var(--bg-primary, #1a1a1a); }
+.dwc-vid-tl-strip-wrap { position: absolute; inset: 0; }
+.dwc-vid-tl-strip { position: absolute; inset: 0; display: flex; cursor: crosshair; }
+.dwc-vid-tl-strip-cell { flex: 1 1 0; min-width: 0; background-size: cover; background-position: center; }
+.dwc-vid-tl-strip-cell.empty { background: #000; }
+.dwc-vid-tl-playhead { position: absolute; top: 0; bottom: 0; width: 11px; transform: translateX(-50%); cursor: ew-resize; z-index: 3; }
+.dwc-vid-tl-playhead::before { content: ''; position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: #ff7a3d; box-shadow: 0 0 4px rgba(255,122,61,.6); }
+.dwc-vid-tl-playhead::after { content: ''; position: absolute; top: -1px; left: 50%; transform: translateX(-50%); border: 5px solid transparent; border-top: 6px solid #ff7a3d; }
+.dwc-vid-tl-frame-placeholder { position: absolute; inset: 0; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: var(--text-muted, #888888); font-size: 12px; }
 .dwc-vid-tl-frame-placeholder.empty { color: var(--text-muted, #888888); }
 
 .dwc-vid-tl-seg-label { font-size: 12px; color: var(--text-primary, #ffffff); font-weight: 600; text-align: center; }
@@ -1022,6 +1035,8 @@
 .dwc-voice-item-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .dwc-voice-item-name { font-size: 13px; font-weight: 600; }
 .dwc-voice-item-desc { font-size: 11px; color: var(--text-muted, #888888); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dwc-voice-play { margin-left: auto; flex-shrink: 0; font-size: 12px; color: var(--text-muted, #888888); cursor: pointer; user-select: none; white-space: nowrap; padding: 3px 6px; border-radius: 6px; }
+.dwc-voice-play:hover { color: var(--accent-color, #7dd3fc); background: color-mix(in srgb, var(--accent-color, #7dd3fc) 12%, transparent); }
 .dwc-voice-upload .dwc-upload-drop { min-height: 240px; }
 .dwc-detail-pending { font-size: 12px; color: var(--warning-color, #f59e0b); }
 .dwc-detail-actions { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -1278,3 +1293,32 @@
 .dwc-shot-duration-unit { font-size: 12px; margin-top: 4px; opacity: 0.8; }
 .dwc-shot-duration-current { text-align: center; font-size: 14px; color: var(--text-secondary, #a0a0a0); padding: 10px; background: var(--bg-secondary, #2a2a2a); border-radius: 8px; }
 .dwc-shot-duration-current strong { color: var(--accent-color, #7dd3fc); font-size: 16px; }
+
+/* ===== 配音双生成源（云API / ComfyUI 工作流） ===== */
+.dwc-voice-source { display: flex; gap: 8px; margin-bottom: 12px; }
+.dwc-voice-src { flex: 1; padding: 9px 10px; border: 1px solid var(--border-color, #3a3a3a); border-radius: 8px; background: var(--bg-secondary, #2a2a2a); color: var(--text-secondary, #a0a0a0); font-size: 13px; cursor: pointer; transition: all .2s ease; }
+.dwc-voice-src:hover { border-color: var(--accent-color, #7dd3fc); color: var(--accent-color, #7dd3fc); }
+.dwc-voice-src.active { border-color: var(--accent-color, #7dd3fc); background: color-mix(in srgb, var(--accent-color, #7dd3fc) 14%, transparent); color: var(--accent-color, #7dd3fc); font-weight: 600; }
+.dwc-voice-comfy { display: flex; flex-direction: column; gap: 10px; padding: 10px; margin-bottom: 12px; background: rgba(125,211,252,0.05); border: 1px solid rgba(125,211,252,0.18); border-radius: 10px; }
+.dwc-voice-comfy .dwc-add-field { margin: 0; }
+.dwc-voice-comfy select.dwc-add-input { background: var(--bg-secondary, #2a2a2a); color: var(--text-color, #e5e5e5); }
+.dwc-voice-mylib { margin-bottom: 12px; padding-top: 4px; }
+.dwc-voice-mylib .dwc-voice-grid { max-height: 220px; overflow-y: auto; margin-top: 8px; }
+.dwc-voice-item.my { display: flex; align-items: center; gap: 6px; padding: 8px; }
+.dwc-voice-item.my audio { flex: 0 0 auto; }
+.dwc-voice-del { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border: none; border-radius: 50%; background: rgba(231,76,60,0.15); color: #e74c3c; cursor: pointer; transition: all .2s ease; }
+.dwc-voice-del:hover { background: rgba(231,76,60,0.35); color: #fff; }
+
+/* 项目生成配置弹窗（推理/图像/视频/分镜时长一次选定） */
+.dwc-setup-modal { width: min(620px, 94vw); }
+.dwc-setup-desc { font-size: 12.5px; color: var(--text-secondary, #a0a0a0); line-height: 1.6; padding: 10px 12px; background: color-mix(in srgb, var(--accent-color, #7dd3fc) 8%, transparent); border-radius: 8px; border-left: 3px solid var(--accent-color, #7dd3fc); margin: 0; }
+.dwc-setup-field { display: flex; flex-direction: column; gap: 8px; }
+.dwc-setup-label { font-size: 13px; font-weight: 600; color: var(--text-primary, #fff); display: flex; align-items: center; gap: 8px; }
+.dwc-setup-tag { font-size: 11px; font-weight: 400; color: var(--accent-color, #7dd3fc); background: color-mix(in srgb, var(--accent-color, #7dd3fc) 12%, transparent); border-radius: 20px; padding: 2px 8px; }
+.dwc-setup-select { width: 100%; padding: 9px 12px; border: 1px solid var(--border-color, #3a3a3a); border-radius: 9px; background: var(--bg-primary, #1f1f1f); color: var(--text-primary, #fff); font-size: 13px; font-family: inherit; outline: none; }
+.dwc-setup-select:focus { border-color: var(--accent-color, #7dd3fc); }
+.dwc-setup-empty { font-size: 12.5px; color: #f0a35c; background: rgba(240,163,92,0.1); border: 1px dashed rgba(240,163,92,0.4); border-radius: 9px; padding: 9px 12px; }
+
+/* 分析进度页：显示当前推理模型 */
+.dwc-analyze-model { font-size: 12.5px; color: var(--accent-color, #7dd3fc); background: color-mix(in srgb, var(--accent-color, #7dd3fc) 10%, transparent); display: inline-block; padding: 4px 12px; border-radius: 20px; margin: 8px 0 4px; }
+

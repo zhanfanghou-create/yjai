@@ -202,9 +202,13 @@ async function fetchWithRetry(
 async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: string) {
   try {
     const volcV = detectVolcengineVideoBase(baseUrl);
-    const url = (id: string) => volcV.isVolc
-      ? `${volcV.taskUrl}/${encodeURIComponent(id)}`
-      : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
+    const dsScope = /:\/\/dashscope[a-z0-9-]*\.aliyuncs\.com(?:\/|$)/i.test(baseUrl) || /:\/\/[a-z0-9-]+\.maas\.aliyuncs\.com(?:\/|$)/i.test(baseUrl);
+    const dsOrigin = dsScope ? (() => { try { return new URL(baseUrl).origin; } catch { return baseUrl; } })() : '';
+    const url = (id: string) => dsScope
+      ? `${dsOrigin}/api/v1/tasks/${encodeURIComponent(id)}`
+      : (volcV.isVolc
+        ? `${volcV.taskUrl}/${encodeURIComponent(id)}`
+        : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`);
     const assetsDir = path.join(app.getPath('userData'), 'assets');
     fs.mkdirSync(assetsDir, { recursive: true });
 
@@ -221,8 +225,9 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
         });
         const data = await resp.json().catch(() => null);
         if (data) {
-          const status = data.status;
-          const isDone = status === 'succeeded' || status === 'completed' || status === 'success';
+          // DashScope 原生任务：状态在 output.task_status（SUCCEEDED），视频地址在 output.video_url
+          const status = dsScope ? (data?.output?.task_status || data?.output?.status) : data.status;
+          const isDone = dsScope ? status === 'SUCCEEDED' : (status === 'succeeded' || status === 'completed' || status === 'success');
           const fileUrls: string[] = isDone ? extractJobResultUrls(data) : [];
           if (isDone && fileUrls.length > 0) {
             // Download result files and save locally
@@ -266,7 +271,8 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
             clearInterval(timer);
             grsaiJobMap.delete(jobId);
             return;
-          } else if (status === 'failed' || status === 'error') {
+          } else if (dsScope ? (status === 'FAILED' || status === 'CANCELED' || status === 'UNKNOWN') : (status === 'failed' || status === 'error')) {
+            console.error('[Grsai Poll] job FAILED', jobId, JSON.stringify(data).slice(0, 1000));
             if (mainWindow && !mainWindow.isDestroyed() && mainWindow.webContents) {
               safeSend('grsai:jobUpdate', { id: jobId, status: 'failed', data });
             }
@@ -386,6 +392,13 @@ function extractJobResultUrls(data: any): string[] {
   pushArray(data.results);
   pushArray(data.images);
   pushArray(data.data);
+  // DashScope 原生协议：output.results[].url / output.url / output.video_url / output.image_url
+  if (data.output && typeof data.output === 'object') {
+    const ores = data.output.results;
+    if (Array.isArray(ores)) ores.forEach((r: any) => { const u = pick(r); if (u) urls.push(u); });
+    const ou = data.output.url || data.output.video_url || data.output.image_url;
+    if (typeof ou === 'string' && /^https?:|^data:/i.test(ou) && !urls.includes(ou)) urls.push(ou);
+  }
   if (urls.length === 0) {
     const top = pick(data) || pick(data.output) || pick(data.video) || (data.data ? pick(data.data) : undefined);
     if (top) urls.push(top);
@@ -848,7 +861,9 @@ async function createWindow() {
       nodeIntegration: false,
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js'),
-      webSecurity: false,
+      // 生产/打包模式开启 webSecurity（更安全）；开发模式关闭以便 Vite 热更新与调试，
+      // 渲染进程直连第三方 API 已由 onHeadersReceived 注入宽松 CORS 头兜底
+      webSecurity: process.env.NODE_ENV === 'development' ? false : true,
     },
     title: '艺镜AI.正式版',
   });
@@ -954,10 +969,18 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
     // 检测到火山方舟推理模型时自动关闭深度思考，让模型直接输出结果
     const isVolcengineArk = /ark\.cn-beijing\.volces\.com/i.test(baseUrl || '');
     const isReasoningModel = /seed|evolving|reasoning|deepseek|r1/i.test(model || '');
+    // 千问 qwen3 系列为混合思考模型，DashScope 官方用 enable_thinking=false 关闭深度思考，
+    // 否则会输出超长 reasoning_content 导致长剧本分析超时
+    const isDashScopeChat = /dashscope\.aliyuncs\.com/i.test(baseUrl || '') || /\.maas\.aliyuncs\.com/i.test(baseUrl || '');
+    const isQwenReasoning = /qwen3|qwen-r1|qwen2\.5-r1/i.test(model || '');
     const body: any = { model, messages, stream: false, max_tokens: maxTokens };
     if (isVolcengineArk && isReasoningModel) {
       body.thinking = { type: 'disabled' };
       console.log('[IPC] grsai:chat: 检测到火山方舟推理模型，已关闭深度思考 (thinking.disabled)');
+    }
+    if (isDashScopeChat && isQwenReasoning) {
+      body.enable_thinking = false;
+      console.log('[IPC] grsai:chat: 检测到千问 qwen3 推理模型，已关闭深度思考 (enable_thinking=false)');
     }
     const response = await fetchWithRetry(url, {
       method: 'POST',
@@ -1090,13 +1113,38 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       isAgnesHost ||
       (model && /dall|gpt-image|image/i.test(String(model)))
     );
+    // —— 千问/阿里百炼 DashScope 原生协议 ——
+    // 官方明确：Qwen-Image 文生图不支持 OpenAI 兼容（compatible-mode）模式，图像/视频必须走 DashScope 原生接口；
+    // 用户配置的 baseUrl 通常是 dashscope.aliyuncs.com/compatible-mode/v1，这里按主机识别后改用原生 /api/v1/services 路径。
+    const isDashScope = /:\/\/dashscope[a-z0-9-]*\.aliyuncs\.com(?:\/|$)/i.test(normalizedBase) || /:\/\/[a-z0-9-]+\.maas\.aliyuncs\.com(?:\/|$)/i.test(normalizedBase);
+    const _modelLc = String(model || '').toLowerCase();
+    const isDashScopeVideo = isDashScope && !/image/i.test(_modelLc) && (
+      config.apiType === 'openai-completions' ||
+      /video|seedance|^wan|wan\d/i.test(_modelLc)
+    );
+    const isDashScopeImage = isDashScope && !isDashScopeVideo && (
+      config.apiType === 'openai-generations' ||
+      /image|z-image/i.test(_modelLc)
+    );
+    // 通用 OpenAI 兼容视频（非火山/agnes/dashscope）：Sora 风格 POST /videos，返回任务 id 后轮询 GET /videos/{id}
+    const isGenericVideo = !isGrsaiHost && !isVolcenginePlanVideo && !isAgnesVideo && !isDashScope && (
+      config.apiType === 'openai-completions' ||
+      (/video|seedance|sora|wan/i.test(_modelLc) && !/image/i.test(_modelLc))
+    );
+    const dashScopeOrigin = isDashScope ? (() => { try { return new URL(normalizedBase).origin; } catch { return normalizedBase; } })() : '';
     const url = isVolcenginePlanVideo
       ? volcVideo.taskUrl
-      : isAgnesVideo
-        ? buildVersionedApiUrl(normalizedBase, '/videos')
-        : isOpenAIImageGen
-          ? buildVersionedApiUrl(normalizedBase, '/images/generations')
-          : buildVersionedApiUrl(normalizedBase, '/api/generate');
+      : isDashScopeVideo
+        ? `${dashScopeOrigin}/api/v1/services/aigc/video-generation/video-synthesis`
+        : isAgnesVideo
+          ? buildVersionedApiUrl(normalizedBase, '/videos')
+          : isDashScopeImage
+            ? `${dashScopeOrigin}/api/v1/services/aigc/${/^wan/i.test(_modelLc) ? 'image-generation/generation' : 'multimodal-generation/generation'}`
+            : isGenericVideo
+              ? buildVersionedApiUrl(normalizedBase, '/videos')
+              : isOpenAIImageGen
+                ? buildVersionedApiUrl(normalizedBase, '/images/generations')
+                : buildVersionedApiUrl(normalizedBase, '/api/generate');
 
     const isGenerationRequest = Boolean(
       config.apiType === 'openai-generations' ||
@@ -1173,6 +1221,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       }
     };
 
+    const dsSizeValue = (() => {
+      const sz = String(imageSizeValue || config.imageSize || config.size || '').trim();
+      if (!sz) return /^wan/i.test(_modelLc) ? '2K' : '2048*2048';
+      return /^[234]k$/i.test(sz) ? sz.toLowerCase() : sz.replace(/[xX\u00d7]/g, '*');
+    })();
     const body: any = isVolcenginePlanVideo
       ? {
           model: model || '',
@@ -1183,26 +1236,76 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
           duration: Math.min(30, Math.max(4, Number(config.duration) || 5)),
           watermark: false,
         }
-      : isAgnesVideo
+      : isDashScopeVideo
         ? {
             model: model || '',
-            prompt,
-            aspectRatio: aspectValue || '16:9',
+            input: {
+              prompt,
+              negative_prompt: String(config.negativePrompt || config.negative_prompt || ''),
+              // 图生视频关键：参考图必须放进 input.media（wan2.7/wan3.0 统一用 media 数组，
+              // 第1张 first_frame 作首帧/主参考，其余 reference_image 作参考图）或 input.img_url（老 wan i2v）。
+              // 若只写在顶层 body.image/images，DashScope 会忽略，请求退化为纯文生视频。
+              ...(imagesValue.length > 0
+                ? /^wan2\.2|^wan2\.1|^wanx/i.test(_modelLc)
+                  ? { img_url: imagesValue[0] }
+                  : /wan3/i.test(_modelLc)
+                    ? {
+                        // wan3.0 全能参考（All-in-One）：官方规定 reference_xx 与 first_frame/last_frame 互斥，
+                        // 多张角色/场景/道具参考图统一用 reference_image（最多10张），全部生效且不报错
+                        media: imagesValue.slice(0, 10).map((img: string) => ({ type: 'reference_image', url: img })),
+                      }
+                    : {
+                        // wan2.7 等 i2v：仅用第1张作首帧
+                        media: [{ type: 'first_frame', url: imagesValue[0] }],
+                      }
+                : {}),
+            },
+            // 万相视频官方参数：resolution(720P/1080P)、ratio(16:9)、duration、watermark
+            parameters: {
+              // DashScope 要求 resolution 大写（720P/1080P），小写 720p 会被参数校验拒绝
+              resolution: resolutionValue ? String(resolutionValue).toUpperCase().replace(/^720$/i, '720P').replace(/^1080$/i, '1080P') : '720P',
+              ratio: aspectValue || '16:9',
+              duration: Math.min(30, Math.max(4, Number(config.duration) || 5)),
+              watermark: false,
+            },
           }
-        : isOpenAIImageGen
+        : isDashScopeImage
           ? {
               model: model || '',
-              prompt,
-              size: imageSizeValue || '1024x1024',
-              n: config.n || 1,
-              // 火山引擎 Seedream 扩展参数：关闭AI视觉水印，输出PNG格式
-              // watermark 必须放在 extra_body 内部才生效，写外层完全无效
-              extra_body: {
+              input: { messages: [{ role: 'user', content: [{ text: prompt }] }] },
+              parameters: {
+                size: dsSizeValue,
+                n: config.n || 1,
                 watermark: false,
-                output_format: 'png',
+                ...(String(config.negativePrompt || config.negative_prompt || '').trim() ? { negative_prompt: String(config.negativePrompt || config.negative_prompt).trim() } : {}),
               },
             }
-          : { model, prompt, replyType: config.replyType || 'json' };
+          : isAgnesVideo
+            ? {
+                model: model || '',
+                prompt,
+                aspectRatio: aspectValue || '16:9',
+              }
+            : isGenericVideo
+              ? {
+                  model: model || '',
+                  prompt,
+                  aspectRatio: aspectValue || '16:9',
+                }
+              : isOpenAIImageGen
+                ? {
+                    model: model || '',
+                    prompt,
+                    size: imageSizeValue || '1024x1024',
+                    n: config.n || 1,
+                    // 火山引擎 Seedream 扩展参数：关闭AI视觉水印，输出PNG格式
+                    // watermark 必须放在 extra_body 内部才生效，写外层完全无效
+                    extra_body: {
+                      watermark: false,
+                      output_format: 'png',
+                    },
+                  }
+                : { model, prompt, replyType: config.replyType || 'json' };
 
     if (imagesValue.length > 0 && !isVolcenginePlanVideo) {
       // 非方舟视频分支才写 body.image（方舟视频参考图已放 content 内）
@@ -1330,24 +1433,31 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       }
     }
 
+    const headers: any = {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    };
+    // DashScope 原生：万相视频/万相图像为异步接口，必须带 X-DashScope-Async: enable；
+    // qwen-image 走 multimodal-generation（同步返回 output.results[].url），不带该头
+    if (isDashScopeVideo || (isDashScopeImage && /^wan/i.test(_modelLc))) headers['X-DashScope-Async'] = 'enable';
     const response = await fetchWithRetry(url, {
       method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
+      headers,
       body: JSON.stringify(body),
     // 视频队列经常瞬时过载（publish_video_queue_failed / 500），给视频创建请求更多重试次数。
-    }, isAgnesVideo ? { retries: 8, baseDelayMs: 2000 } : undefined);
+    }, (isAgnesVideo || isDashScopeVideo || isGenericVideo) ? { retries: 8, baseDelayMs: 2000 } : undefined);
 
     const data = await response.json().catch(() => null);
 
     // If async job returned, start polling
-    // 注意：火山方舟创建视频任务只返回 {id:"cgt-..."}，没有 status 字段，必须单独判定
-    const isAsyncJobResp = !!(data && data.id && (isVolcenginePlanVideo || data.status));
+    // 注意：火山方舟创建视频任务只返回 {id:"cgt-..."}，没有 status 字段，必须单独判定；
+    // DashScope 原生异步任务返回 output.task_id（万相视频/万相图像）
+    const dashscopeTaskId = (data && data.output && typeof data.output === 'object') ? (data.output.task_id || undefined) : undefined;
+    const isAsyncJobResp = !!((dashscopeTaskId || (data && data.id)) && (isVolcenginePlanVideo || isDashScope || data.status));
     if (isAsyncJobResp && data.status !== 'succeeded') {
-      startGrsaiJobPolling(data.id, normalizedBase, apiKey).catch((e) => console.error('start polling failed', e));
-      return { ok: true, accepted: true, id: data.id, status: data.status || 'queued', data };
+      const jobId = dashscopeTaskId || data.id;
+      startGrsaiJobPolling(jobId, normalizedBase, apiKey).catch((e) => console.error('start polling failed', e));
+      return { ok: true, accepted: true, id: jobId, status: data.status || data?.output?.task_status || 'queued', data };
     }
 
     // If direct result with URLs, download and return local paths
@@ -1377,6 +1487,16 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
             base64Items.push({ b64: r.b64_json, ext: '.png' });
           }
         });
+      }
+      // DashScope 原生图像/视频：output.results[].url / output.url / output.video_url
+      if (data.output && typeof data.output === 'object') {
+        const ores = data.output.results;
+        if (Array.isArray(ores) && ores.length > 0) {
+          ores.forEach((r: any) => { const u = pickUrl(r); if (u) fileUrls.push(u); });
+        } else {
+          const ou = pickUrl(data.output);
+          if (ou) fileUrls.push(ou);
+        }
       }
       // Some responses put the url at the top level
       if (fileUrls.length === 0 && base64Items.length === 0) {
@@ -1449,9 +1569,13 @@ ipcMain.handle('grsai:checkResult', async (_event, opts: any) => {
 
     const normalizedBase = normalizeApiBase(baseUrl);
     const volcVideo = detectVolcengineVideoBase(normalizedBase);
-    const url = volcVideo.isVolc
-      ? `${volcVideo.taskUrl}/${encodeURIComponent(id)}`
-      : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`;
+    const dsScope = /:\/\/dashscope[a-z0-9-]*\.aliyuncs\.com(?:\/|$)/i.test(normalizedBase) || /:\/\/[a-z0-9-]+\.maas\.aliyuncs\.com(?:\/|$)/i.test(normalizedBase);
+    const dsOrigin = dsScope ? (() => { try { return new URL(normalizedBase).origin; } catch { return normalizedBase; } })() : '';
+    const url = dsScope
+      ? `${dsOrigin}/api/v1/tasks/${encodeURIComponent(id)}`
+      : (volcVideo.isVolc
+        ? `${volcVideo.taskUrl}/${encodeURIComponent(id)}`
+        : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`);
     const response = await fetch(url, {
       method: 'GET',
       headers: { 'Authorization': `Bearer ${apiKey}` },
@@ -1866,14 +1990,297 @@ ipcMain.handle('comfyui:templateWorkflow', async (_event, config: any) => {
   return { ok: false, error: `未找到模板 ${name}` };
 });
 
+// ── ComfyUI 工作流扫描（只枚举/拉取 userdata 下已保存的工作流，不加载模型）──────────
+async function scanComfyWorkflows(base: string) {
+  const files: Array<{ name: string; path: string }> = [];
+  const seen = new Set<string>();
+  const addFile = (entry: any) => {
+    if (!entry || entry.type !== 'file') return;
+    const nm = String(entry.name || '');
+    if (!/\.json$/i.test(nm)) return;
+    const p = String(entry.path || nm);
+    if (seen.has(p)) return;
+    seen.add(p);
+    files.push({ name: nm, path: p });
+  };
+  // 1) v2 递归枚举
+  try {
+    const r = await fetch(`${base}/v2/userdata?recursive=true`);
+    if (r.ok) {
+      const data = await r.json(); 
+      // v2/userdata?recursive=true 返回的是目录树（folder.children 嵌套），需要递归遍历提取所有文件条目 
+      const walk = (node: any, depth: number = 0) => { 
+        if (depth > 8 || node == null) return; 
+        if (Array.isArray(node)) { node.forEach((n: any) => walk(n, depth + 1)); return; } 
+        if (typeof node === 'object') { 
+          if (Array.isArray(node.children)) { 
+            if (node.type === 'file' || (node.name && node.path)) addFile(node); 
+            node.children.forEach((c: any) => walk(c, depth + 1)); 
+            return; 
+          } 
+          if (node.type === 'file' || (node.name && node.path)) { addFile(node); return; } 
+          Object.values(node).forEach((v: any) => { if (v && typeof v === 'object') walk(v, depth + 1); }); 
+        } 
+      }; 
+      walk(data); 
+    } 
+  } catch { /* 尝试下一种 */ }
+  // 2) legacy 逐目录枚举
+  if (files.length === 0) {
+    for (const dir of ['', 'workflows', 'api', 'comfyui']) {
+      try {
+        const r = await fetch(`${base}/userdata${dir ? '?dir=' + encodeURIComponent(dir) : ''}`);
+        if (!r.ok) continue;
+        const data = await r.json();
+        if (!Array.isArray(data)) continue;
+        data.forEach(addFile);
+      } catch { /* 忽略 */ }
+    }
+  }
+  // 3) 逐个拉取内容（并行，最多 40 个），提取工作流
+  const fetchFile = async (path: string): Promise<any | null> => {
+    const urls = [
+      `${base}/userdata/${path.split('/').map(encodeURIComponent).join('/')}`,
+      `${base}/userdata/${encodeURIComponent(path)}`,
+      `${base}/v2/userdata/file?path=${encodeURIComponent(path)}`,
+    ];
+    for (const url of urls) {
+      try {
+        const r = await fetch(url);
+        if (!r.ok) continue;
+        const text = await r.text();
+        try { return JSON.parse(text); } catch { continue; }
+      } catch { /* 尝试下一个 URL */ }
+    }
+    return null;
+  };
+  const extractWorkflow = (obj: any): { kind: 'ui' | 'api'; workflow: any } | null => {
+    if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return null;
+    const looksApi = (w: any) => w && typeof w === 'object' && !Array.isArray(w)
+      && Object.keys(w).some(k => w[k] && typeof w[k] === 'object' && w[k].class_type);
+    if (obj.workflow && typeof obj.workflow === 'object' && (Array.isArray(obj.workflow.nodes) || looksApi(obj.workflow))) {
+      return { kind: 'ui', workflow: obj.workflow };
+    }
+    if (obj.prompt && looksApi(obj.prompt)) {
+      return { kind: 'api', workflow: obj.prompt };
+    }
+    const keys = Object.keys(obj);
+    if (keys.length > 0 && keys.every(k => /^\d+$/.test(k)) && keys.some(k => obj[k] && obj[k].class_type)) {
+      return { kind: 'api', workflow: obj };
+    }
+    if (Array.isArray(obj.nodes) && obj.nodes.length > 0) {
+      return { kind: 'ui', workflow: obj };
+    }
+    return null;
+  };
+  const detectKind = (workflow: any): 'image' | 'video' | 'audio' | 'chat' => {
+    const classTypes: string[] = [];
+    const collect = (node: any) => {
+      const ct = String(node?.class_type || node?.type || '');
+      if (ct) classTypes.push(ct);
+    };
+    if (Array.isArray(workflow?.nodes)) workflow.nodes.forEach(collect);
+    else if (workflow && typeof workflow === 'object') Object.keys(workflow).forEach(k => collect(workflow[k]));
+    if (workflow && workflow.definitions && Array.isArray(workflow.definitions.subgraphs)) {
+      for (const sg of workflow.definitions.subgraphs) { if (Array.isArray(sg.nodes)) sg.nodes.forEach(collect); }
+    }
+    const all = classTypes.join('|').toLowerCase();
+    const hasVideo = /videocombine|savevideo|createvideo|vhs_videocombine|saveanimatedwebp|wanvideo|cogvideo|hunyuanvideo|mochi|ltxv|svd|cosmos|animatediff/i.test(all);
+    const hasAudio = /saveaudio|save_audio|av_saveaudio|vhs_audio|audio/i.test(all);
+    const hasImage = /saveimage|save_image|vhs_saveimage|previewimage/i.test(all);
+    if (hasVideo) return 'video';
+    if (hasAudio && !hasImage) return 'audio';
+    if (hasImage) return 'image';
+    // 纯对话/文本类工作流（LLM 等），无媒体输出节点
+    if (/llm|textgen|text_generation|chatglm|deepseek|openai|text2text|completion/i.test(all)) return 'chat';
+    return 'image';
+  };
+  const slice = files.slice(0, 40);
+  const settled = await Promise.all(slice.map(async f => {
+    const obj = await fetchFile(f.path);
+    const ext = obj ? extractWorkflow(obj) : null;
+    if (!ext) return null;
+    return { name: f.name.replace(/\.json$/i, ''), path: f.path, kind: ext.kind, type: detectKind(ext.workflow), workflow: ext.workflow };
+  }));
+  return settled.filter(Boolean);
+}
+
+// IPC: 扫描并拉取 ComfyUI 服务器上已保存的工作流（不加载模型）
+ipcMain.handle('comfyui:listWorkflows', async (_event, config: any) => {
+  const base = String(config?.serverUrl || '').replace(/\/+$/, '');
+  if (!base) return { ok: false, error: '缺少 ComfyUI 地址' };
+  try {
+    const workflows = await scanComfyWorkflows(base);
+    return { ok: true, workflows, count: workflows.length };
+  } catch (e) {
+    return { ok: false, error: (e as Error).message || '扫描工作流失败' };
+  }
+});
+
 // IPC: ComfyUI execute workflow
 ipcMain.handle('comfyui:generate', async (_event, config: any) => {
   const base = String(config?.serverUrl || '').replace(/\/+$/, '');
   const { workflowName, workflowJson, params = {}, prompt: incomingPrompt = '', options = {}, referenceMedia = [] } = config || {};
 
+  // 内置工作流支持：用户选择内置工作流时，使用预设的标准工作流结构（独立负向节点），自动匹配用户服务器上的模型
+  const useBuiltin: string | null = config?.useBuiltin || null;
+  let effectiveWorkflowJson = workflowJson;
+  if (useBuiltin === 'asset_image') {
+    console.log('[COMFYDBG] 使用内置资产图工作流（独立负向CLIP节点）');
+    effectiveWorkflowJson = JSON.parse(JSON.stringify({
+      '1': { class_type: 'UNETLoader', inputs: { unet_name: '', weight_dtype: 'default' } },
+      '2': { class_type: 'CLIPLoader', inputs: { clip_name: '', type: 'qwen_image' } },
+      '3': { class_type: 'VAELoader', inputs: { vae_name: '' } },
+      '4': { class_type: 'CLIPTextEncode', inputs: { text: '', clip: ['2', 0] } },
+      '5': { class_type: 'CLIPTextEncode', inputs: { text: '', clip: ['2', 0] } },
+      '6': { class_type: 'EmptyLatentImage', inputs: { width: 1920, height: 1080, batch_size: 1 } },
+      '7': { class_type: 'KSampler', inputs: { model: ['1', 0], positive: ['4', 0], negative: ['5', 0], latent_image: ['6', 0], seed: 0, steps: 12, cfg: 1.8, sampler_name: 'res_multistep', scheduler: 'simple', denoise: 1.0 } },
+      '8': { class_type: 'VAEDecode', inputs: { samples: ['7', 0], vae: ['3', 0] } },
+      '9': { class_type: 'SaveImage', inputs: { images: ['8', 0], filename_prefix: 'yijing_asset' } },
+    }));
+    // 自动检测用户 ComfyUI 服务器上的可用模型，匹配替换
+    try {
+      const detectModels = async (nodeType: string, inputKey: string): Promise<string> => {
+        try {
+          const r = await fetch(base + '/object_info/' + encodeURIComponent(nodeType));
+          if (!r.ok) return '';
+          const d = await r.json();
+          const spec = d?.[nodeType]?.input?.required?.[inputKey];
+          if (Array.isArray(spec) && spec.length > 0 && Array.isArray(spec[0])) {
+            const list: string[] = spec[0];
+            // 优先匹配 z_image_turbo / qwen_image / ae / qwen_3_4b
+            const priorities: Record<string, string[]> = {
+              unet_name: ['z_image_turbo', 'z_image', 'qwen_image', 'flux1-dev', 'flux'],
+              clip_name: ['qwen_3_4b', 'qwen', 'clip_l', 't5xxl'],
+              vae_name: ['ae.safetensors', 'ae.sft', 'qwen_image_vae', 'flux2-vae', 'sdxl_vae'],
+            };
+            const pri = priorities[inputKey] || [];
+            for (const key of pri) {
+              const hit = list.find((m: string) => m.toLowerCase().includes(key.toLowerCase()));
+              if (hit) return hit;
+            }
+            return list[0] || '';
+          }
+        } catch { /* ignore */ }
+        return '';
+      };
+      const unet = await detectModels('UNETLoader', 'unet_name');
+      const clip = await detectModels('CLIPLoader', 'clip_name');
+      const vae = await detectModels('VAELoader', 'vae_name');
+      if (unet) effectiveWorkflowJson['1'].inputs.unet_name = unet;
+      if (clip) effectiveWorkflowJson['2'].inputs.clip_name = clip;
+      if (vae) effectiveWorkflowJson['3'].inputs.vae_name = vae;
+      console.log('[COMFYDBG] 内置工作流自动匹配模型: unet=' + unet + ', clip=' + clip + ', vae=' + vae);
+    } catch (e) {
+      console.log('[COMFYDBG] 内置工作流模型自动检测失败:', (e as Error).message);
+    }
+  } else if (useBuiltin === 'minimax_h3_video') {
+    console.log('[COMFYDBG] 使用内置 MiniMax H3 全能参考视频工作流（动态参考图数量）');
+    const refCount = Math.max(1, Math.min(9, Array.isArray(referenceMedia) ? referenceMedia.length : 1));
+    const length = Math.min(360, Math.max(49, Number(params?.length || options?.length || 124)));
+    const wf: Record<string, any> = {
+      '1': { class_type: 'UNETLoader', inputs: { unet_name: '', weight_dtype: 'default' } },
+      '2': { class_type: 'MiniMaxH3SigmaShift', inputs: { model: ['1', 0], shift_video: 12.0, shift_audio: 3.0 } },
+      '3': { class_type: 'LoraLoader', inputs: { model: ['2', 0], clip: ['4', 0], lora_name: 'Minimax H3/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors', strength_model: 1.0, strength_clip: 1.0 } },
+      '4': { class_type: 'CLIPLoader', inputs: { clip_name: '', type: 'minimax' } },
+      '5': { class_type: 'VAELoader', inputs: { vae_name: '' } },
+      '6': { class_type: 'VAELoader', inputs: { vae_name: '' } },
+    };
+    // 动态创建 LoadImage 节点
+    const refImageList: any[] = [];
+    for (let i = 0; i < refCount; i++) {
+      const imgNodeId = String(7 + i);
+      wf[imgNodeId] = { class_type: 'LoadImage', inputs: { image: '', upload: 'image' } };
+      refImageList.push([imgNodeId, 0]);
+    }
+    const refNodeId = String(7 + refCount);
+    const zeroOutId = String(8 + refCount);
+    const ksamplerId = String(9 + refCount);
+    const decodeId = String(10 + refCount);
+    const audioDecodeId = String(11 + refCount);
+    const combineId = String(12 + refCount);
+    wf[refNodeId] = {
+      class_type: 'MiniMaxH3ReferenceToVideo',
+      inputs: {
+        clip: ['4', 0],
+        vae: ['5', 0],
+        audio_vae: ['6', 0],
+        prompt: '',
+        width: 1344,
+        height: 768,
+        length: length,
+        ref_image_size: 'match',
+        ref_images: refImageList,
+      },
+    };
+    wf[zeroOutId] = { class_type: 'ConditioningZeroOut', inputs: { conditioning: [refNodeId, 0] } };
+    wf[ksamplerId] = {
+      class_type: 'KSampler',
+      inputs: { model: ['3', 0], positive: [refNodeId, 0], negative: [zeroOutId, 0], latent_image: [refNodeId, 1], seed: 0, steps: 4, cfg: 1.0, sampler_name: 'euler', scheduler: 'sgm_uniform', denoise: 1.0 },
+    };
+    wf[decodeId] = { class_type: 'VAEDecode', inputs: { vae: ['5', 0], samples: [ksamplerId, 0] } };
+    wf[audioDecodeId] = { class_type: 'VAEDecodeAudio', inputs: { samples: [ksamplerId, 0], vae: ['6', 0] } };
+    wf[combineId] = {
+      class_type: 'VHS_VideoCombine',
+      inputs: { images: [decodeId, 0], audio: [audioDecodeId, 0], frame_rate: 24, loop_count: 0, filename_prefix: 'yijing_h3_video', format: 'video/h264-mp4', pix_fmt: 'yuv420p', crf: 19, save_metadata: true, pingpong: false, save_output: true },
+    };
+    effectiveWorkflowJson = wf;
+    // 自动检测 MiniMax H3 模型
+    try {
+      const detectH3Model = async (nodeType: string, inputKey: string, keywords: string[]): Promise<string> => {
+        try {
+          const r = await fetch(base + '/object_info/' + encodeURIComponent(nodeType));
+          if (!r.ok) return '';
+          const d = await r.json();
+          const spec = d?.[nodeType]?.input?.required?.[inputKey];
+          if (Array.isArray(spec) && spec.length > 0 && Array.isArray(spec[0])) {
+            const list: string[] = spec[0];
+            for (const key of keywords) {
+              const hit = list.find((m: string) => m.toLowerCase().includes(key.toLowerCase()));
+              if (hit) return hit;
+            }
+            return list[0] || '';
+          }
+        } catch { /* ignore */ }
+        return '';
+      };
+      const unet = await detectH3Model('UNETLoader', 'unet_name', ['minimax_h3_ref2va', 'minimax_h3', 'h3']);
+      const clip = await detectH3Model('CLIPLoader', 'clip_name', ['qwen3vl_32b_minimax_h3', 'minimax_h3', 'qwen3vl']);
+      const videoVae = await detectH3Model('VAELoader', 'vae_name', ['minimax_h3_video_vae', 'h3_video_vae', 'minimax_h3_video']);
+      const audioVae = await detectH3Model('VAELoader', 'vae_name', ['minimax_h3_audio_vae', 'h3_audio_vae', 'minimax_h3_audio']);
+      if (unet) effectiveWorkflowJson['1'].inputs.unet_name = unet;
+      if (clip) effectiveWorkflowJson['4'].inputs.clip_name = clip;
+      if (videoVae) effectiveWorkflowJson['5'].inputs.vae_name = videoVae;
+      if (audioVae) effectiveWorkflowJson['6'].inputs.vae_name = audioVae;
+      console.log('[COMFYDBG] H3内置工作流自动匹配模型: unet=' + unet + ', clip=' + clip + ', videoVae=' + videoVae + ', audioVae=' + audioVae + ', refCount=' + refCount);
+    } catch (e) {
+      console.log('[COMFYDBG] H3内置工作流模型自动检测失败:', (e as Error).message);
+    }
+  }
+
+  console.log('[COMFYDBG] === comfyui:generate ENTRY ===');
+  console.log('[COMFYDBG] serverUrl:', base);
+  console.log('[COMFYDBG] workflowName:', workflowName);
+  console.log('[COMFYDBG] model:', config?.model);
+  console.log('[COMFYDBG] prompt(截断前300):', String(incomingPrompt || '').slice(0, 300));
+  console.log('[COMFYDBG] options:', JSON.stringify(options));
+  console.log('[COMFYDBG] params.components:', JSON.stringify(params?.components || []));
+  console.log('[COMFYDBG] referenceMedia count:', Array.isArray(referenceMedia) ? referenceMedia.length : 0);
+  const _wfStr = JSON.stringify(workflowJson || '');
+  console.log('[COMFYDBG] workflowJson: typeof=', typeof workflowJson, 'Array.isArray(nodes)=', Array.isArray(workflowJson?.nodes), 'has definitions.subgraphs=', !!(workflowJson?.definitions?.subgraphs), 'jsonLength=', _wfStr.length);
+  if (Array.isArray(workflowJson?.nodes)) {
+    console.log('[COMFYDBG] workflow top-level node types:', workflowJson.nodes.map((n: any) => `${n.id}:${n.type}`).join(', '));
+    if (Array.isArray(workflowJson.nodes)) {
+      for (const _dbgId of ['94', '95']) {
+        const _dbgN = (workflowJson.nodes as any[]).find((n: any) => String(n.id) === _dbgId);
+        console.log(`[COMFYDBG] wf node ${_dbgId}: widgets_values=`, JSON.stringify(_dbgN?.widgets_values), ' wvn=', JSON.stringify(_dbgN?.widgets_values_named), ' hasWvn=', !!(_dbgN && _dbgN.widgets_values_named && typeof _dbgN.widgets_values_named === 'object'));
+      }
+    }
+  }
+
   try {
-    // 1. 读取工作流 JSON
-    let workflow = workflowJson;
+    // 1. 读取工作流 JSON（内置工作流时使用 effectiveWorkflowJson）
+    let workflow = effectiveWorkflowJson;
     if (!workflow && workflowName) {
       // 从本地读取工作流文件
       const workflowPath = path.join(app.getPath('userData'), 'comfyui-workflows', `${workflowName}.json`);
@@ -1913,7 +2320,7 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
       };
       const widgetOrderFromSpec = (spec: any): Array<{ name: string; cag: boolean }> => {
         if (!spec || !spec.input) return [];
-        const isWidget = (s: any) => Array.isArray(s) && (Array.isArray(s[0]) || ['INT', 'FLOAT', 'STRING', 'BOOLEAN'].includes(String(s[0])));
+        const isWidget = (s: any) => Array.isArray(s) && (Array.isArray(s[0]) || ['INT', 'FLOAT', 'STRING', 'BOOLEAN', 'COMFY_DYNAMICCOMBO_V3'].includes(String(s[0])));
         const order = [...Object.keys(spec.input.required || {}), ...Object.keys(spec.input.optional || {})];
         const out: Array<{ name: string; cag: boolean }> = [];
         for (const name of order) {
@@ -1922,41 +2329,164 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
         }
         return out;
       };
+      // 新版 ComfyUI 模板（frontend 1.4x）可能使用 subgraph（definitions.subgraphs）：
+      // 核心节点/连线藏在子图里，顶层只有代理节点（type 为子图 UUID + proxyWidgets）。
+      // 这里扁平化：合并子图内部节点与连线、丢弃代理节点/UI节点/哨兵连线，
+      // 并把顶层「代理节点 → 外部消费节点」的连线重连到子图实际输出源，还原成可提交的平面图。
+      const _subgraphs = Array.isArray((workflow as any)?.definitions?.subgraphs) ? (workflow as any).definitions.subgraphs : [];
+      if (_subgraphs.length > 0) {
+        const _subIds = new Set(_subgraphs.map((sg: any) => sg && sg.id));
+        const _UI_ONLY = /^(note|markdownnote|reroute|groupnode|primitivenode)$/i;
+        const _linkArr = (l: any): any[] | null => {
+          if (Array.isArray(l)) return l.length >= 5 ? l : null;
+          if (l && typeof l === 'object' && l.id !== undefined && l.origin_id !== undefined && l.target_id !== undefined) {
+            return [l.id, l.origin_id, l.origin_slot ?? 0, l.target_id, l.target_slot ?? 0, l.type || ''];
+          }
+          return null;
+        };
+        const _dropNodes = new Set<number>();
+        const _proxyTypeById: Record<number, string> = {};
+        for (const n of (Array.isArray(workflow.nodes) ? workflow.nodes : [])) {
+          if (!n || n.id === undefined) continue;
+          if (_subIds.has(n.type)) _proxyTypeById[n.id] = String(n.type);
+          if (n && (_subIds.has(n.type) || _UI_ONLY.test(String(n.type)) || (Array.isArray(n.proxyWidgets) && n.proxyWidgets.length > 0))) _dropNodes.add(n.id);
+        }
+        // 每个子图：target=-20 的连线即子图实际输出源（-20 的 target_slot 对应代理输出槽），
+        // 不依赖可能缺失的 outputNode.outputs。
+        const _proxyOutSrc: Record<string, Array<[string, number]>> = {};
+        for (const sg of _subgraphs) {
+          const _outMap: Array<[string, number]> = [];
+          for (const l of (Array.isArray(sg.links) ? sg.links : [])) {
+            const a = _linkArr(l);
+            if (a && a[3] === -20) _outMap[a[4]] = [String(a[1]), a[2]];
+          }
+          _proxyOutSrc[String(sg.id)] = _outMap;
+        }
+        const _flatNodes: any[] = [];
+        const _seen = new Set<number>();
+        const _push = (n: any) => { if (n && n.id !== undefined && !_seen.has(n.id)) { _seen.add(n.id); _flatNodes.push(n); } };
+        for (const n of (Array.isArray(workflow.nodes) ? workflow.nodes : [])) { if (!_dropNodes.has(n.id)) _push(n); }
+        for (const sg of _subgraphs) { for (const n of (Array.isArray(sg.nodes) ? sg.nodes : [])) { if (!_dropNodes.has(n.id)) _push(n); } }
+        workflow.nodes = _flatNodes;
+        const _allLinks: any[] = [];
+        for (const l of (Array.isArray(workflow.links) ? workflow.links : [])) { const a = _linkArr(l); if (a) _allLinks.push(a); }
+        for (const sg of _subgraphs) { for (const l of (Array.isArray(sg.links) ? sg.links : [])) { const a = _linkArr(l); if (a) _allLinks.push(a); } }
+        const _flatLinks: any[] = [];
+        const _lseen = new Set<number>();
+        for (const l of _allLinks) {
+          if (!Array.isArray(l) || l.length < 5) continue;
+          if (l[1] < 0 || l[3] < 0) continue; // 哨兵输入/输出节点 -10 / -20
+          if (_dropNodes.has(l[3])) continue; // 目标为代理/UI 节点
+          let _src = l[1]; let _sslot = l[2];
+          if (_dropNodes.has(_src)) { // 源为代理节点 -> 重连到子图实际输出源
+            const _sid = _proxyTypeById[_src];
+            const _m = _sid ? (_proxyOutSrc[_sid] || [])[_sslot] : null;
+            if (!_m) continue;
+            _src = Number(_m[0]); _sslot = _m[1];
+          }
+          if (_dropNodes.has(_src)) continue;
+          if (_lseen.has(l[0])) continue;
+          _lseen.add(l[0]); _flatLinks.push([l[0], _src, _sslot, l[3], l[4], l[5] || '']);
+        }
+        workflow.links = _flatLinks;
+      }
       const links = Array.isArray(workflow.links) ? workflow.links : [];
       const linkById = new Map<any, any>();
       for (const l of links) { if (Array.isArray(l) && l.length >= 5) linkById.set(l[0], l); }
       apiWorkflow = {};
+      const _UI_ONLY2 = /^(note|markdownnote|reroute|groupnode|primitivenode)$/i;
       for (const node of workflow.nodes) {
         if (!node || node.id === undefined || node.id === null) continue;
         const id = String(node.id);
         const classType = node.type;
+        if (_UI_ONLY2.test(String(classType))) continue; // 纯 UI 节点（注释/路由等），后端不识别，跳过
         const inputs: any = {};
+        const spec = await fetchObjInfo(classType);
         // 1. 连接：inputs 数组里带 link 的项 -> [srcNodeId, srcSlot]
+        //    支持中文/本地化别名输入（如「模型」→model、「提示词」→voice_description）映射回 API 输入名
         if (Array.isArray(node.inputs)) {
+          const apiKeys = new Set([
+            ...Object.keys(spec?.input?.required || {}),
+            ...Object.keys(spec?.input?.optional || {}),
+          ].map((k: string) => k.replace(/_control_after_generate$/, '')));
+          const usedKeys = new Set<string>();
           for (const inp of node.inputs) {
             if (!inp || inp.link === null || inp.link === undefined) continue;
             const l = linkById.get(inp.link);
-            if (l) inputs[inp.name] = [String(l[1]), l[2]];
+            if (!l) continue;
+            let key = inp.name;
+            if (!apiKeys.has(key)) {
+              // 别名项：从同节点 API 名输入里按 语义/类型 匹配
+              const candidates = (node.inputs as any[]).filter((x: any) => x && x.name && apiKeys.has(x.name) && !usedKeys.has(x.name));
+              const t0 = String(inp.type || '');
+              const mapped =
+                (t0 === 'STRING' ? candidates.find((x: any) => /voice|desc|prompt|台词|提示/i.test(String(x.name))) : undefined) ||
+                candidates.find((x: any) => String(x.type || '').replace(/\d+/g, '') === t0.replace(/\d+/g, '') && String(x.type || '') !== t0) ||
+                candidates.find((x: any) => String(x.type || '') === t0) ||
+                candidates[0];
+              if (!mapped) continue;
+              key = mapped.name;
+            }
+            if (apiKeys.has(key) && !usedKeys.has(key)) {
+              inputs[key] = [String(l[1]), l[2]];
+              usedKeys.add(key);
+            }
           }
         } else if (node.inputs && typeof node.inputs === 'object') {
           // 已经是 API 风格的 inputs 对象（部分导出），直接沿用
           Object.assign(inputs, node.inputs);
         }
         // 2. widgets_values：按 object_info 输入顺序还原为具名参数
+        //    优先用新版 ComfyUI 工作流自带的 widgets_values_named（具名映射，能覆盖
+        //    COMFY_DYNAMICCOMBO_V3 动态下拉及其子参数如 format.bit_depth / format.input_color_space），
+        //    否则回退到「按 object_info 输入顺序猜名」的数组映射。
+        const _wvn = (node.widgets_values_named && typeof node.widgets_values_named === 'object') ? node.widgets_values_named : null;
+        if (_wvn) {
+          // 具名映射优先：能覆盖 COMFY_DYNAMICCOMBO_V3 动态下拉及其子参数（如 format.bit_depth）
+          for (const wname of Object.keys(_wvn)) {
+            if (!(wname in inputs)) inputs[wname] = _wvn[wname];
+          }
+        }
+        // 数组兜底（非 else-if）：具名映射未覆盖的 widget 仍按 object_info 顺序补齐，
+        // 避免节点带 wvn 但缺 format 等字段时丢失参数
         if (Array.isArray(node.widgets_values)) {
-          const spec = await fetchObjInfo(classType);
           const widgetNames = widgetOrderFromSpec(spec);
           if (widgetNames.length > 0) {
             let wi = 0;
             for (const w of widgetNames) {
               if (wi >= node.widgets_values.length) break;
-              inputs[w.name] = node.widgets_values[wi];
+              // 已被连线输入占用（如 TTS 的 model/voice_description）时不覆盖，保留连线引用
+              if (!(w.name in inputs)) inputs[w.name] = node.widgets_values[wi];
               wi += 1;
               if (w.cag) wi += 1; // 跳过 control_after_generate 额外占位
             }
           }
         } else if (node.widgets_values && typeof node.widgets_values === 'object') {
           for (const k of Object.keys(node.widgets_values)) inputs[k] = node.widgets_values[k];
+        }
+        // 2b. 值合法性归一：类型不合法/超出范围时回退 object_info 默认值（防 widgets 顺序错位导致的 400）
+        for (const key of Object.keys(inputs)) {
+          if (Array.isArray(inputs[key])) continue; // 连线引用不动
+          const conf = spec?.input?.required?.[key] || spec?.input?.optional?.[key];
+          if (!conf) continue;
+          const type = Array.isArray(conf[0]) ? 'COMBO' : String(conf[0]);
+          const def = conf[1]?.default;
+          if (type === 'COMBO') {
+            const list = conf[0];
+            if (Array.isArray(list) && !list.includes(inputs[key])) inputs[key] = def !== undefined ? def : list[0];
+          } else if (type === 'INT' || type === 'FLOAT') {
+            const n = Number(inputs[key]);
+            if (!Number.isFinite(n)) {
+              if (def !== undefined) inputs[key] = def;
+            } else {
+              const min = conf[1]?.min, max = conf[1]?.max;
+              if ((min !== undefined && n < min) || (max !== undefined && n > max)) {
+                if (def !== undefined) inputs[key] = def;
+              } else if (type === 'INT') {
+                inputs[key] = Math.round(n);
+              }
+            }
+          }
         }
         apiWorkflow[id] = { inputs, class_type: classType, _meta: { title: node.title || classType } };
       }
@@ -2005,6 +2535,7 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
       const key = String(inputKey2 || '').toLowerCase();
       const tt = String(title || '').toLowerCase();
       if (/loadvideo|vhs_loadvideo/.test(ct) && (key === 'video' || key === 'file')) return 'reference-video';
+      if (/loadaudio|vhs_loadaudio|av_loadaudio|load_audio/.test(ct) && (key === 'audio' || key === 'file')) return 'reference-audio';
       if (/loadimage/.test(ct) && key === 'image') return 'reference-image';
       if (/cliptextencode|cliptext/.test(ct) && key === 'text') {
         if (/negative|负向|neg/.test(tt) || /negative|负向/.test(key)) return 'negative';
@@ -2017,6 +2548,7 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
     // role 指定的参考媒体加载节点（优先于启发式猜测）
     const roleImageTargets: Array<{ nodeId: string; inputKey: string }> = [];
     const roleVideoTargets: Array<{ nodeId: string; inputKey: string }> = [];
+    const roleAudioTargets: Array<{ nodeId: string; inputKey: string }> = [];
     let promptRoleHandled = false;
     if (componentParams.length > 0) {
       for (const comp of componentParams) {
@@ -2037,6 +2569,8 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
           roleImageTargets.push({ nodeId: targetId, inputKey });
         } else if (role === 'reference-video') {
           roleVideoTargets.push({ nodeId: targetId, inputKey });
+        } else if (role === 'reference-audio') {
+          roleAudioTargets.push({ nodeId: targetId, inputKey });
         } else {
           applyValue(node.inputs, inputKey, coerceValue(comp.value, String(comp.type || 'string')));
         }
@@ -2050,13 +2584,179 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
         textNodeIds[0];
       if (positiveId && apiWorkflow[positiveId]?.inputs) {
         applyValue(apiWorkflow[positiveId].inputs, 'text', incomingText);
+      } else {
+        // TTS/语音工作流：无 CLIPTextEncode，把台词注入到语音类节点的 text 输入
+        const ttsId = Object.keys(apiWorkflow).find(id => {
+          const n = apiWorkflow[id];
+          return n && /tts|voice|speak/i.test(String(n.class_type || '')) && n.inputs && 'text' in n.inputs;
+        });
+        if (ttsId) {
+          applyValue(apiWorkflow[ttsId].inputs, 'text', incomingText);
+        } else {
+          // MiniMax H3 等参考生成视频工作流：无 CLIPTextEncode，prompt 直接在参考生成节点的 prompt 字段
+          const refVideoId = Object.keys(apiWorkflow).find(id => {
+            const n = apiWorkflow[id];
+            return n && /minimaxh3|referencetovideo|ref2video/i.test(String(n.class_type || '')) && n.inputs && 'prompt' in n.inputs;
+          });
+          if (refVideoId) {
+            // MiniMax H3 音频生成会读出整个 prompt，需要明确区分画面描述和台词，只生成指定台词
+            let h3Prompt = incomingText;
+            let dialogue = '';
+            // 提取"对白："后面的内容作为台词（简单字符串处理，避免复杂正则转义问题）
+            const dIdx1 = h3Prompt.indexOf('对白：');
+            const dIdx2 = h3Prompt.indexOf('对白:');
+            const dIdx = dIdx1 >= 0 ? dIdx1 : dIdx2;
+            if (dIdx >= 0) {
+              const afterDialogue = h3Prompt.slice(dIdx + 3);
+              const nextMatch = afterDialogue.match(/\n\n|\n###|\n\[|\n【|$/);
+              const endPos = nextMatch ? nextMatch.index : afterDialogue.length;
+              dialogue = afterDialogue.slice(0, endPos).trim();
+              h3Prompt = (h3Prompt.slice(0, dIdx) + afterDialogue.slice(endPos)).trim();
+            }
+            // 清理元数据（剧本标题、系列名称等），避免被当成台词读出
+            h3Prompt = h3Prompt.replace(/《[^》]*》[\s\S]*?(?=\n\n|\n###|\n\[|\n【|$)/g, '');
+            h3Prompt = h3Prompt.replace(/^系列名称[：:].*$/gm, '');
+            h3Prompt = h3Prompt.replace(/^影视剧本.*$/gm, '');
+            h3Prompt = h3Prompt.replace(/^AI可解析版.*$/gm, '');
+            h3Prompt = h3Prompt.replace(/^POV第一视角.*$/gm, '');
+            h3Prompt = h3Prompt.replace(/\n{3,}/g, '\n\n').trim();
+            // 构建最终 prompt：画面描述 + 明确的音频生成指令
+            let finalH3Prompt = h3Prompt;
+            if (dialogue) {
+              finalH3Prompt += '\n\n【音频生成指令】音频生成以下台词和旁白，以及环境音和音效。不要读出画面描述、场景说明、镜头指令、剧本标题、系列名称等无关内容：\n' + dialogue;
+            } else {
+              finalH3Prompt += '\n\n【音频生成指令】音频只生成环境音和音效，不要生成任何语音、台词或旁白。';
+            }
+            console.log('[COMFYDBG] MiniMax H3 prompt处理: 原长度=', incomingText.length, '处理后长度=', finalH3Prompt.length, '有台词=', !!dialogue);
+            applyValue(apiWorkflow[refVideoId].inputs, 'prompt', finalH3Prompt);
+          }
+        }
       }
     }
-    // 负向提示词若仍未设置则留空默认（启发式回退）
-    const negativeId =
-      textNodeIds.find(id => /negative|负向|n$/i.test(String(apiWorkflow[id]?._meta?.title || apiWorkflow[id]?.class_type || '')));
-    if (negativeId && apiWorkflow[negativeId]?.inputs && apiWorkflow[negativeId].inputs.text === undefined) {
-      apiWorkflow[negativeId].inputs.text = '';
+    // 负向提示词：用户一般不填，系统自动提交一份默认负面词（只填空节点，不覆盖用户已填内容）。
+    // 优先使用画布层按正向提示词自动推理的上下文负面词（options.negativePrompt），否则用内置基础负面词兜底。
+    const defaultNegative = String(options?.negativePrompt || options?.negative_prompt || '').trim();
+    const builtinNegative = 'lowres, low quality, worst quality, blurry, jpeg artifacts, watermark, signature, text, logo, deformed, bad anatomy, extra limbs, missing fingers, extra fingers, fused fingers, mutated hands, disfigured, cropped, out of frame, duplicate';
+    const negText = defaultNegative || builtinNegative;
+    // 1) 负向角色组件值仍为空 → 写入默认负面词
+    for (const comp of componentParams) {
+      if (!comp || comp.role !== 'negative' || !comp.targetNodeId) continue;
+      const ni = apiWorkflow[comp.targetNodeId]?.inputs;
+      const nk = comp.inputKey || 'text';
+      if (ni && Object.prototype.hasOwnProperty.call(ni, nk) && !Array.isArray(ni[nk])
+        && (ni[nk] === undefined || ni[nk] === null || ni[nk] === '')) {
+        ni[nk] = negText;
+      }
+    }
+    // 2) 定位负向 CLIPTextEncode 节点：优先通过 KSampler 的 negative 输入连接查找（最可靠），
+    //    其次用 title 启发式匹配（negative/负向/n结尾）。找到后若 text 为空则注入负向提示词。
+    let negativeId: string | undefined;
+    const ksamplerIdForNeg = Object.keys(apiWorkflow).find(id => /ksampler/i.test(String(apiWorkflow[id]?.class_type || '')));
+    // 沿着条件连接链递归查找真正的 CLIPTextEncode 节点（可能经过 ConditioningZeroOut / ConditioningCombine 等中间节点）
+    const findTextNodeAlongChain = (startId: string, visited = new Set<string>() ): string | undefined => {
+      if (visited.has(startId)) return undefined;
+      visited.add(startId);
+      const node = apiWorkflow[startId];
+      if (!node) return undefined;
+      if (/cliptextencode|cliptext/i.test(String(node.class_type || ''))) return startId;
+      const conditionKeys = ['conditioning', 'text', 'positive', 'negative', 'cond', 'conditioning_1', 'conditioning_2'];
+      for (const key of conditionKeys) {
+        const val = node.inputs?.[key];
+        if (Array.isArray(val) && val[0] !== undefined && val[0] !== null) {
+          const found = findTextNodeAlongChain(String(val[0]), visited);
+          if (found) return found;
+        }
+      }
+      return undefined;
+    };
+    if (ksamplerIdForNeg) {
+      const negConn = apiWorkflow[ksamplerIdForNeg]?.inputs?.negative;
+      console.log('[COMFYDBG] KSampler', ksamplerIdForNeg, 'negative 连接=', JSON.stringify(negConn));
+      if (Array.isArray(negConn) && negConn[0] !== undefined && negConn[0] !== null) {
+        const directId = String(negConn[0]);
+        const directNode = apiWorkflow[directId];
+        console.log('[COMFYDBG] negative 直接目标节点', directId, 'class_type=', directNode?.class_type, 'inputs keys=', directNode ? Object.keys(directNode?.inputs || {}) : 'N/A');
+        negativeId = findTextNodeAlongChain(directId);
+        console.log('[COMFYDBG] 沿链查找负向文本节点结果=', negativeId || '未找到');
+      }
+    }
+    if (!negativeId) {
+      negativeId = textNodeIds.find(id => /negative|负向|n$/i.test(String(apiWorkflow[id]?._meta?.title || apiWorkflow[id]?.class_type || '')));
+    }
+    // 正向文本节点（用于判断负向是否与正向共用 + 复用 CLIP 源）
+    const positiveTextId = textNodeIds.find(id => /positive|正向|p$/i.test(String(apiWorkflow[id]?._meta?.title || ''))) || textNodeIds[0];
+    // 关键修复：负向与正向共用同一文本节点（通常中间经 ConditioningZeroOut 将条件归零），
+    // 说明工作流硬编码了空负向，不支持负向提示词。此时动态创建独立的负向 CLIPTextEncode 节点，
+    // 复用正向 CLIP 源，注入负向提示词，并把 KSampler negative 直接改连到新节点（绕过 ConditioningZeroOut）。
+    if (negativeId && negativeId === positiveTextId && ksamplerIdForNeg && negText) {
+      const posClip = positiveTextId ? apiWorkflow[positiveTextId]?.inputs?.clip : undefined;
+      if (posClip && Array.isArray(posClip)) {
+        const negNodeId = 'neg_auto_' + Date.now();
+        apiWorkflow[negNodeId] = {
+          inputs: { clip: posClip, text: negText },
+          class_type: 'CLIPTextEncode',
+          _meta: { title: 'Negative (auto)' }
+        };
+        apiWorkflow[ksamplerIdForNeg].inputs.negative = [negNodeId, 0];
+        negativeId = negNodeId;
+        console.log('[COMFYDBG] 负向与正向共用节点(经ConditioningZeroOut归零)，动态创建独立负向节点', negNodeId, '→ KSampler', ksamplerIdForNeg, 'text=', negText.slice(0, 150));
+      } else {
+        console.log('[COMFYDBG] 负向与正向共用节点，但正向 CLIP 源未找到，无法创建独立负向节点，posClip=', JSON.stringify(posClip));
+      }
+    } else if (negativeId && apiWorkflow[negativeId]?.inputs
+      && (apiWorkflow[negativeId].inputs.text === undefined || apiWorkflow[negativeId].inputs.text === null || apiWorkflow[negativeId].inputs.text === '')) {
+      apiWorkflow[negativeId].inputs.text = negText;
+      console.log('[COMFYDBG] 负向提示词已注入节点', negativeId, 'title=', apiWorkflow[negativeId]?._meta?.title, 'text=', negText.slice(0, 150));
+    } else if (negativeId) {
+      console.log('[COMFYDBG] 负向节点', negativeId, '已有 text，跳过覆盖，现有 text=', String(apiWorkflow[negativeId]?.inputs?.text || '').slice(0, 100));
+    }
+    // 3) KSampler negative 未连接时，动态创建负向节点并连接
+    if (!negativeId && negText && ksamplerIdForNeg) {
+      const ks = apiWorkflow[ksamplerIdForNeg];
+      const negInput = ks?.inputs?.negative;
+      if (!Array.isArray(negInput)) {
+        const posClip2 = positiveTextId ? apiWorkflow[positiveTextId]?.inputs?.clip : undefined;
+        if (posClip2 && Array.isArray(posClip2)) {
+          const negNodeId = 'neg_auto_' + Date.now();
+          apiWorkflow[negNodeId] = {
+            inputs: { clip: posClip2, text: negText },
+            class_type: 'CLIPTextEncode',
+            _meta: { title: 'Negative (auto)' }
+          };
+          ks.inputs.negative = [negNodeId, 0];
+          console.log('[COMFYDBG] 动态创建负向节点', negNodeId, '→ KSampler', ksamplerIdForNeg, 'negative，text=', negText.slice(0, 120));
+        } else {
+          console.log('[COMFYDBG] 无法动态创建负向节点：正向 CLIP 源未找到');
+        }
+      }
+    }
+
+    // 3.42 资产图生成（负向提示词含 background/scene/building）时自动微调 KSampler：
+    // z_image_turbo 等蒸馏模型工作流默认 cfg=1/steps=8，负向提示词几乎无效；
+    // cfg 微升到 1.8（避免 2.5+ 导致色彩过艳），steps 提升到 12（更多步数遵循纯白背景约束）
+    const _assetCfgBoost = (negText && /background|scene|building|wall|roof|ground|environment/i.test(negText)) ? 1.8 : undefined;
+    const _assetStepsBoost = (negText && /background|scene|building|wall|roof|ground|environment/i.test(negText)) ? 12 : undefined;
+
+    // 3.45 移除纯注释/标签类节点（Label/Note/GroupNode 等，不参与计算；未安装对应自定义节点时会导致整图拒绝执行）
+    const _ANNOTATION_RE = /^(note|markdownnote|reroute|groupnode|primitivenode|label)/i;
+    const _removedAnnot = new Set<string>();
+    for (const _nid of Object.keys(apiWorkflow)) {
+      const _nd = apiWorkflow[_nid];
+      if (_nd && _ANNOTATION_RE.test(String(_nd.class_type || _nd.type || ''))) {
+        _removedAnnot.add(_nid);
+        delete apiWorkflow[_nid];
+      }
+    }
+    if (_removedAnnot.size > 0) {
+      for (const _nid of Object.keys(apiWorkflow)) {
+        const _nd = apiWorkflow[_nid];
+        if (!_nd || !_nd.inputs) continue;
+        for (const _k of Object.keys(_nd.inputs)) {
+          const _v = _nd.inputs[_k];
+          if (Array.isArray(_v) && _v.length >= 1 && _removedAnnot.has(String(_v[0]))) delete _nd.inputs[_k];
+        }
+      }
+      console.log('[COMFYDBG] 移除纯注释节点(' + _removedAnnot.size + '):', Array.from(_removedAnnot).join(','));
     }
 
     // 3.5 上传参考图/参考视频到 ComfyUI，并注入到对应的加载节点（LoadImage / VHS_LoadVideo 等）
@@ -2068,13 +2768,17 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
           return Buffer.from(src.slice(comma + 1), 'base64');
         }
         if (/^file:\/\//i.test(src) || /^[a-zA-Z]:[\\/]/.test(src)) {
-          const fp = src.replace(/^file:\/\//i, '');
-          return fs.existsSync(fp) ? fs.readFileSync(fp) : null;
+          let fp = src.replace(/^file:\/\//i, '');
+          // Windows 路径：file:///C:/... 替换后变成 /C:/...，需要去掉开头的斜杠
+          if (/^\/[a-zA-Z]:[\\/]/.test(fp)) fp = fp.slice(1);
+          const exists = fs.existsSync(fp);
+          console.log('[COMFYDBG] 读取本地文件:', fp, '存在=', exists);
+          return exists ? fs.readFileSync(fp) : null;
         }
         const resp = await fetch(src);
         if (!resp.ok) return null;
         return Buffer.from(await resp.arrayBuffer());
-      } catch { return null; }
+      } catch (e) { console.log('[COMFYDBG] fetchToBuffer 失败:', (e as Error).message); return null; }
     };
     const uploadToComfy = async (buf: Buffer, filename: string): Promise<string | null> => {
       try {
@@ -2082,22 +2786,30 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
         form.append('image', new Blob([new Uint8Array(buf)]), filename);
         form.append('overwrite', 'true');
         const up = await fetch(`${base}/upload/image`, { method: 'POST', body: form as any });
-        if (!up.ok) return null;
+        if (!up.ok) {
+          console.log('[COMFYDBG] 上传失败 HTTP', up.status, up.statusText);
+          return null;
+        }
         const data = await up.json().catch(() => null);
-        if (!data) return null;
-        return data.subfolder ? `${data.subfolder}/${data.name}` : data.name;
-      } catch { return null; }
+        if (!data) { console.log('[COMFYDBG] 上传响应解析失败'); return null; }
+        const name = data.subfolder ? `${data.subfolder}/${data.name}` : data.name;
+        console.log('[COMFYDBG] 上传成功:', name, '大小=', buf.length, 'bytes');
+        return name;
+      } catch (e) { console.log('[COMFYDBG] 上传异常:', (e as Error).message); return null; }
     };
     const mediaList = Array.isArray(referenceMedia) ? referenceMedia.filter((m: any) => m && m.url) : [];
+    console.log('[COMFYDBG] 参考图数量:', mediaList.length, 'URL格式:', mediaList.map((m: any) => String(m.url).slice(0, 80)).join(' | '));
     if (mediaList.length > 0) {
       // 优先使用 role 指定的加载节点；否则按 class_type 启发式查找加载节点
       const heuristicImageIds: string[] = [];
       const heuristicVideoIds: string[] = [];
+      const heuristicAudioIds: string[] = [];
       for (const nodeId of Object.keys(apiWorkflow)) {
         const node = apiWorkflow[nodeId];
         if (!node || typeof node !== 'object' || !node.inputs) continue;
         const ct = String(node.class_type || node.type || '');
         if (/loadvideo|vhs_loadvideo/i.test(ct) && ('video' in node.inputs || 'file' in node.inputs)) heuristicVideoIds.push(nodeId);
+        else if (/loadaudio|vhs_loadaudio|av_loadaudio|load_audio/i.test(ct) && ('audio' in node.inputs || 'file' in node.inputs)) heuristicAudioIds.push(nodeId);
         else if (/loadimage/i.test(ct) && 'image' in node.inputs) heuristicImageIds.push(nodeId);
       }
       const imageTargets = roleImageTargets.length > 0
@@ -2106,14 +2818,19 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
       const videoTargets = roleVideoTargets.length > 0
         ? roleVideoTargets
         : heuristicVideoIds.map(id => ({ nodeId: id, inputKey: ('video' in (apiWorkflow[id]?.inputs || {})) ? 'video' : 'file' }));
+      const audioTargets = roleAudioTargets.length > 0
+        ? roleAudioTargets
+        : heuristicAudioIds.map(id => ({ nodeId: id, inputKey: ('audio' in (apiWorkflow[id]?.inputs || {})) ? 'audio' : 'file' }));
       let imgIdx = 0;
       let vidIdx = 0;
+      let audIdx = 0;
       for (const media of mediaList) {
         const isVideo = media.kind === 'video';
-        const ext = isVideo ? 'mp4' : 'png';
+        const isAudio = media.kind === 'audio';
+        const ext = isVideo ? 'mp4' : isAudio ? 'mp3' : 'png';
         const buf = await fetchToBuffer(media.url);
         if (!buf) continue;
-        const uploaded = await uploadToComfy(buf, `yijing_ref_${Date.now()}_${(isVideo ? vidIdx : imgIdx)}.${ext}`);
+        const uploaded = await uploadToComfy(buf, `yijing_ref_${Date.now()}_${(isVideo ? vidIdx : isAudio ? audIdx : imgIdx)}.${ext}`);
         if (!uploaded) continue;
         if (isVideo) {
           const target = videoTargets[vidIdx] || videoTargets[0];
@@ -2124,6 +2841,15 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
             if (!Array.isArray(apiWorkflow[target.nodeId].inputs[key])) apiWorkflow[target.nodeId].inputs[key] = uploaded;
           }
           vidIdx += 1;
+        } else if (isAudio) {
+          const target = audioTargets[audIdx] || audioTargets[0];
+          if (target && apiWorkflow[target.nodeId]?.inputs) {
+            const key = Object.prototype.hasOwnProperty.call(apiWorkflow[target.nodeId].inputs, target.inputKey)
+              ? target.inputKey
+              : ('audio' in apiWorkflow[target.nodeId].inputs ? 'audio' : 'file');
+            if (!Array.isArray(apiWorkflow[target.nodeId].inputs[key])) apiWorkflow[target.nodeId].inputs[key] = uploaded;
+          }
+          audIdx += 1;
         } else {
           const target = imageTargets[imgIdx] || imageTargets[0];
           if (target && apiWorkflow[target.nodeId]?.inputs && !Array.isArray(apiWorkflow[target.nodeId].inputs[target.inputKey])) {
@@ -2131,6 +2857,29 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
           }
           imgIdx += 1;
         }
+      }
+    }
+
+    // 3.55 多余空 LoadImage 节点（未被传图的）断开输出连接（相当于UI里禁用），避免无图报错；
+    // 节点本身保留不删除，下个分镜若需更多图可重新启用。每次生成从原始工作流重新解析，不影响下次。
+    const _allImgIds2 = Object.keys(apiWorkflow).filter(_id => {
+      const _n = apiWorkflow[_id];
+      return _n && /loadimage/i.test(String(_n.class_type || _n.type || '')) && 'image' in (_n.inputs || {});
+    }).sort((a, b) => Number(a) - Number(b));
+    if (_allImgIds2.length > 0 && mediaList.length > 0) {
+      const _imgCount2 = mediaList.filter((m: any) => m && m.url && m.kind !== 'video' && m.kind !== 'audio').length;
+      const _usedCount2 = Math.min(_imgCount2, _allImgIds2.length);
+      const _emptyIds = _allImgIds2.slice(_usedCount2);
+      if (_emptyIds.length > 0) {
+        for (const _nid of Object.keys(apiWorkflow)) {
+          const _n = apiWorkflow[_nid];
+          if (!_n || !_n.inputs) continue;
+          for (const _k of Object.keys(_n.inputs)) {
+            const _v = _n.inputs[_k];
+            if (Array.isArray(_v) && _v.length >= 1 && _emptyIds.includes(String(_v[0]))) delete _n.inputs[_k];
+          }
+        }
+        console.log('[COMFYDBG] 断开多余空LoadImage节点(' + _emptyIds.length + '，保留节点):', _emptyIds.join(','), '| 启用前' + _usedCount2 + '个用于' + _imgCount2 + '张参考图');
       }
     }
 
@@ -2256,6 +3005,18 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
           setIf(inputs, 'sampler_name', sampler);
           setIf(inputs, 'scheduler', scheduler);
           setIf(inputs, 'denoise', typeof denoise === 'string' ? Number(denoise) : denoise);
+          // 资产图生成自动提升 cfg（蒸馏模型 cfg=1 时负向提示词几乎无效）
+          if (_assetCfgBoost && (inputs.cfg === undefined || Number(inputs.cfg) < 2)) {
+            const _oldCfg = inputs.cfg;
+            inputs.cfg = _assetCfgBoost;
+            console.log('[COMFYDBG] 资产图生成自动提升 cfg:', _oldCfg, '→', _assetCfgBoost, '(节点', nid, ')');
+          }
+          // 资产图生成自动提升 steps（更多步数遵循纯白背景约束）
+          if (_assetStepsBoost && (inputs.steps === undefined || Number(inputs.steps) < 10)) {
+            const _oldSteps = inputs.steps;
+            inputs.steps = _assetStepsBoost;
+            console.log('[COMFYDBG] 资产图生成自动提升 steps:', _oldSteps, '→', _assetStepsBoost, '(节点', nid, ')');
+          }
         }
         if (/VideoCombine|SaveAnimatedWEBP|SaveAnimatedPNG|CreateVideo|SaveVideo|VHS_VideoCombine/i.test(ct)) {
           if (fps > 0) { setIf(inputs, 'frame_rate', fps); setIf(inputs, 'fps', fps); }
@@ -2271,6 +3032,26 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
       console.warn('[comfyui:generate] auto-inject params failed', paramErr);
     }
 
+    console.log('[COMFYDBG] === POST-INJECTION apiWorkflow snapshot ===');
+    console.log('[COMFYDBG] node ids:', Object.keys(apiWorkflow));
+    for (const _nid of Object.keys(apiWorkflow)) {
+      const _nd = apiWorkflow[_nid];
+      const _ct = String(_nd?.class_type || '');
+      if (/CLIPTextEncode/i.test(_ct)) {
+        console.log(`[COMFYDBG] node ${_nid} (${_ct}) title=${_nd?._meta?.title} text=`, JSON.stringify(String(_nd?.inputs?.text || '').slice(0, 300)));
+      } else if (/EmptySD3LatentImage|EmptyLatentImage|EmptyImage/i.test(_ct)) {
+        console.log(`[COMFYDBG] node ${_nid} (${_ct}) width=`, _nd?.inputs?.width, 'height=', _nd?.inputs?.height, 'batch_size=', _nd?.inputs?.batch_size);
+      } else if (/KSampler/i.test(_ct)) {
+        console.log(`[COMFYDBG] node ${_nid} (${_ct}) steps=`, _nd?.inputs?.steps, 'cfg=', _nd?.inputs?.cfg, 'seed=', _nd?.inputs?.seed, 'sampler=', _nd?.inputs?.sampler_name, 'scheduler=', _nd?.inputs?.scheduler);
+      } else if (/ResolutionSelector/i.test(_ct)) {
+        console.log(`[COMFYDBG] node ${_nid} (${_ct}) inputs=`, JSON.stringify(_nd?.inputs));
+      } else if (/SaveImageAdvanced|SaveImage/i.test(_ct)) {
+        console.log(`[COMFYDBG] node ${_nid} (${_ct}) filename_prefix=`, _nd?.inputs?.filename_prefix);
+      } else if (/UNETLoader|CLIPLoader|VAELoader/i.test(_ct)) {
+        console.log(`[COMFYDBG] node ${_nid} (${_ct}) unet_name=`, _nd?.inputs?.unet_name, 'clip_name=', _nd?.inputs?.clip_name, 'vae_name=', _nd?.inputs?.vae_name);
+      }
+    }
+
     // 4. 提交执行
     const clientId = `yijing_${Date.now()}`;
     const response = await fetch(`${base}/prompt`, {
@@ -2284,6 +3065,9 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
 
     // ComfyUI 校验失败时返回 400，并带 node_errors / error 详情，需回传给用户便于排查
     const submitData = await response.json().catch(() => null);
+    console.log('[COMFYDBG] === /prompt RESPONSE ===');
+    console.log('[COMFYDBG] HTTP status:', response.status, response.statusText);
+    console.log('[COMFYDBG] response body:', JSON.stringify(submitData));
     if (!response.ok) {
       let msg = submitData?.error?.message || submitData?.error || `HTTP ${response.status}`;
       const nodeErrors = submitData?.node_errors;
@@ -2307,7 +3091,7 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
     // 且只有在「history 无结果」且「queue 中也查不到该任务」时才判定失败，避免过早超时。
     let outputs: any = null;
     let lastError = '';
-    const maxAttempts = 600; // 600 * 1s = 10 分钟
+    const maxAttempts = 1800; // 1800 * 1s = 30 分钟（云端生成大视频可能需要更长时间）
     for (let i = 0; i < maxAttempts; i++) {
       await new Promise(resolve => setTimeout(resolve, 1000));
       try {
@@ -2317,6 +3101,16 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
           const entry = historyData?.[jobId];
           if (entry?.outputs && Object.keys(entry.outputs).length > 0) {
             outputs = entry.outputs;
+            console.log('[COMFYDBG] 任务完成，outputs节点:', Object.keys(outputs));
+            for (const nid in outputs) {
+              console.log('[COMFYDBG] 节点', nid, '输出keys:', Object.keys(outputs[nid]));
+              for (const k of Object.keys(outputs[nid])) {
+                const arr = outputs[nid][k];
+                if (Array.isArray(arr)) {
+                  console.log('[COMFYDBG]   ', k, '数量:', arr.length, '首个:', JSON.stringify(arr[0]).slice(0, 150));
+                }
+              }
+            }
             break;
           }
           // 任务已完成但报错（status.status_str === 'error'）
@@ -2383,10 +3177,13 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
     };
     for (const nodeId in outputs) {
       const nodeOutput = outputs[nodeId] || {};
+      console.log('[COMFYDBG] 处理节点', nodeId, '输出:', Object.keys(nodeOutput));
       // 图片输出（部分自定义节点会把 gif/webm 也放进 images / gifs 字段）
       for (const item of [...(nodeOutput.images || []), ...(nodeOutput.gifs || [])]) {
         const name = item.filename || item.name || '';
+        console.log('[COMFYDBG]   处理文件:', name, 'isVideo:', isVideoName(name), 'isAudio:', isAudioName(name));
         const local = await downloadToLocal(buildViewUrl(item), name);
+        console.log('[COMFYDBG]   下载结果:', local ? local.slice(0, 80) : 'null');
         if (isVideoName(name)) videoFiles.push(local);
         else if (isAudioName(name)) audioFiles.push(local);
         else files.push(local);
@@ -2404,6 +3201,8 @@ ipcMain.handle('comfyui:generate', async (_event, config: any) => {
     }
     // 返回首个可用结果作为 url，供渲染层直接生成对应类型的结果节点
     const primaryUrl = videoFiles[0] || files[0] || audioFiles[0] || '';
+    console.log('[COMFYDBG] 结果返回: videoFiles=', videoFiles.length, 'files=', files.length, 'audioFiles=', audioFiles.length);
+    console.log('[COMFYDBG] primaryUrl:', primaryUrl ? primaryUrl.slice(0, 100) : '空');
     return { ok: true, jobId, outputs, files, videoFiles, audioFiles, url: primaryUrl, remoteUrls };
   } catch (error) {
     return { ok: false, error: (error as Error).message };
@@ -2832,6 +3631,22 @@ ipcMain.handle('license:getInfo', async (_event, machineCode: string) => {
       });
       if (r.ok) {
         const s = await r.json();
+        // 【SP 特殊码】不绑定机器码，后台按机器码查不到激活记录，check-trial 恒返回试用/过期。
+        // 本地已用 SP 码激活且未过期时，以本地激活为准，避免被后台试用状态覆盖。
+        const isSpActivated =
+          data.activated && data.expiresAt &&
+          new Date(data.expiresAt).getTime() > Date.now() &&
+          String(data.activationCode || '').toUpperCase().startsWith('SP-');
+        if (isSpActivated) {
+          return {
+            status: 'activated',
+            machineCode,
+            activationCode: data.activationCode,
+            activatedAt: data.activatedAt,
+            expiresAt: data.expiresAt,
+            daysLeft: Math.ceil((new Date(data.expiresAt).getTime() - Date.now()) / (1000 * 60 * 60 * 24)),
+          };
+        }
         // 后台已激活（付费）
         if (s.status === 'activated' && s.expiresAt) {
           data.activated = true;
@@ -2959,6 +3774,32 @@ app.whenReady().then(() => {
   registerShortVideoFactoryIPC();
   
   createWindow();
+
+  // 启动后自动检查更新（延迟3秒，避免影响启动速度），发现新版本时通知渲染层弹窗提醒
+  setTimeout(async () => {
+    try {
+      const manifest = await fetchLatestManifest();
+      const latestVersion = String(manifest?.version || '').replace(/^v/, '');
+      const currentVersion = app.getVersion();
+      const asset = selectInstallerAsset(manifest);
+      if (/^\d+\.\d+\.\d+$/.test(latestVersion) && asset?.fileName && asset?.sha256 && isAllowedReleaseUrl(asset.url) && compareVersions(latestVersion, currentVersion) > 0) {
+        console.log('[Main] 发现新版本 v' + latestVersion + '，通知渲染层弹窗提醒');
+        safeSend('system:updateAvailable', {
+          hasUpdate: true,
+          currentVersion,
+          latestVersion,
+          releaseName: '艺镜 AI 无限画布',
+          releaseNotes: manifest?.notes || '',
+          publishDate: manifest?.publishedAt || '',
+          downloadUrl: asset?.url || '',
+          fileName: asset?.fileName || '',
+          fileSize: asset?.size || 0,
+        });
+      }
+    } catch (e) {
+      console.warn('[Main] 自动检查更新失败:', (e as Error)?.message || String(e));
+    }
+  }, 3000);
 });
 
 app.on('window-all-closed', () => {

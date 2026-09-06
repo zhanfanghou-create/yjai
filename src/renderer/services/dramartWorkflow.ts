@@ -47,6 +47,8 @@ export interface DramartStoryboard {
   videoStatus?: 'idle' | 'generating' | 'done' | 'error';
   /** 角色配音音频地址（生成视频时同步生成） */
   voiceUrl?: string;
+  /** 序列帧缩略图 dataURL 数组（视频生成后自动抽取并持久化，视频页直接读取，无需每次重新抽帧） */
+  frameStrip?: string[];
 }
 
 export interface DramartAnalysisState {
@@ -55,6 +57,16 @@ export interface DramartAnalysisState {
   label: string;
   status: 'idle' | 'running' | 'done' | 'error';
   percent: number;
+}
+
+export type AssetImageSource = {
+  kind: 'api' | 'comfyui';
+  /** kind=api 时：API 图片模型名 */
+  model?: string;
+  /** kind=comfyui 时：ComfyUI 图片工作流名 */
+  workflow?: string;
+  /** kind=comfyui 时：ComfyUI 服务器地址 */
+  serverUrl?: string;
 }
 
 export interface DramartProject {
@@ -73,8 +85,16 @@ export interface DramartProject {
   scenes: DramartAssetItem[];
   props: DramartAssetItem[];
   storyboards: DramartStoryboard[];
+  /** 资产图默认生成源（创建项目时选择）：api=API 图片模型，comfyui=ComfyUI 图片工作流 */
+  assetImageSource?: AssetImageSource;
   /** 创建短剧项目时选择的分镜最大时长（秒），默认15，可选5/10/15/20/25/30；用于分镜视频时长默认值 */
   shotDuration?: number;
+  /** 创建项目时选定的推理（对话）模型显示标签（分析进度提示区分用） */
+  inferenceModelLabel?: string;
+  /** 创建项目时选定的视频生成模型默认值：API 视频模型名 或 ComfyUI 视频工作流名 */
+  videoModel?: string;
+  /** 创建项目时选定的视频 API 配置 ID（分镜视频生成优先使用该配置） */
+  videoConfigId?: string;
   /** 剧创模式：来自剧创的剧本步骤最终结果（用于分镜页剧本原文） */
   scriptContent?: string;
   /** 剧创模式：来自剧创的提示词生成页内容（资产表 + 分幕分镜表，直接解析） */
@@ -392,7 +412,9 @@ export interface RunAnalysisOptions {
   ratio: DramartRatio;
   resolution: DramartResolution;
   config: AIConfigInput | null;
-  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<{ url: string; remoteUrl?: string } | null>;
+  /** 资产图默认生成源（来自项目创建选择），透传给 imageFetcher */
+  imageSource?: AssetImageSource;
+  imageFetcher?: (prompt: string, opts?: { size?: string; source?: AssetImageSource }) => Promise<{ url: string; remoteUrl?: string } | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
   /** 分镜最大时长（秒），默认15秒，可选5/10/15/20/25/30 */
   shotDuration?: number;
@@ -555,7 +577,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
         while (queue.length > 0) {
           const a = queue.shift()!;
           try {
-            const r = await imageFetcher(buildAssetImagePrompt(a), { size: imgSize });
+            const r = await imageFetcher(buildAssetImagePrompt(a), { size: imgSize, source: opts.imageSource });
             if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
           } catch { /* 单个失败不影响其他 */ }
           completed++;
@@ -661,7 +683,9 @@ export interface DramaDraftAnalyzeOptions {
   ratio?: DramartRatio;
   /** 图片分辨率，如 1k、2k、4k 等，用于资产生成 */
   resolution?: DramartResolution;
-  imageFetcher?: (prompt: string, opts?: { size?: string }) => Promise<{ url: string; remoteUrl?: string } | null>;
+  /** 资产图默认生成源（来自项目创建选择），透传给 imageFetcher */
+  imageSource?: AssetImageSource;
+  imageFetcher?: (prompt: string, opts?: { size?: string; source?: AssetImageSource }) => Promise<{ url: string; remoteUrl?: string } | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
 }
 
@@ -827,7 +851,7 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const r = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize }).catch(() => null);
+      const r = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize, source: opts.imageSource }).catch(() => null);
       if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
     }
   }
@@ -925,11 +949,13 @@ export interface SupplementAnalysisOptions {
   ratio: DramartRatio;
   resolution: DramartResolution;
   config: AIConfigInput | null;
+  /** 资产图默认生成源（来自项目创建选择），透传给 imageFetcher */
+  imageSource?: AssetImageSource;
   /** 补充前已有资产（角色/场景/道具），用于去重复用 */
   existing: Pick<DramartProject, 'characters' | 'scenes' | 'props'>;
   /** 既有分镜数量：新分镜的集数从该数量之后接续 */
   storyboardOffset: number;
-  imageFetcher?: (prompt: string) => Promise<{ url: string; remoteUrl?: string } | null>;
+  imageFetcher?: (prompt: string, opts?: { source?: AssetImageSource }) => Promise<{ url: string; remoteUrl?: string } | null>;
   onProgress: (step: number, label: string, percent: number, msg?: string) => void;
 }
 
@@ -1092,7 +1118,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const r = await imageFetcher(buildAssetImagePrompt(a)).catch(() => null);
+      const r = await imageFetcher(buildAssetImagePrompt(a), { source: opts.imageSource }).catch(() => null);
       if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
     }
   }

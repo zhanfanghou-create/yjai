@@ -744,3 +744,137 @@
   padding: 12px 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* ══════════════════════════════════════════════════════
+   傻瓜式：扫描工作流列表 & 摘要
+   ══════════════════════════════════════════════════════ */
+.comfy-count-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--sp-accent-bg, rgba(120, 140, 255, 0.12));
+  border: 1px solid var(--sp-accent, #788cff);
+  color: var(--sp-accent, #788cff);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sp-btn-scan {
+  border-color: var(--sp-accent);
+  color: var(--sp-accent);
+}
+.sp-btn-scan:hover:not(:disabled) {
+  background: var(--sp-accent-bg);
+  border-color: var(--sp-accent);
+}
+
+.comfy-scan-block {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px dashed var(--border-color);
+  border-radius: 10px;
+  background: var(--bg-secondary);
+}
+.comfy-scan-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.comfy-scan-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.comfy-scan-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex-direction: column;
+}
+.comfy-scan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.comfy-scan-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-primary);
+  transition: all 0.15s;
+}
+.comfy-scan-item:hover {
+  border-color: var(--sp-accent);
+}
+.comfy-scan-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.comfy-wf-type-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.comfy-wf-type-image { background: rgba(139, 200, 234, 0.16); color: #2e7fb5; }
+.comfy-wf-type-video { background: rgba(233, 130, 130, 0.14); color: #d05656; }
+.comfy-wf-type-audio { background: rgba(148, 216, 195, 0.18); color: #2f9d78; }
+.comfy-wf-kind-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 10px;
+}
+.comfy-simple-hint {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(120, 140, 255, 0.06);
+  border: 1px solid var(--border-light);
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.comfy-scan-group { margin-bottom: 8px; }
+.comfy-scan-group-head {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; color: var(--text-primary);
+  padding: 4px 2px;
+}
+.comfy-scan-group-count {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px;
+  background: var(--bg-tertiary); color: var(--text-muted);
+  font-size: 11px;
+}
+.comfy-default-tag {
+  display: inline-flex; align-items: center; padding: 1px 8px;
+  border-radius: 999px; background: rgba(82,196,26,0.14); color: #389E0D;
+  font-size: 11px; font-weight: 600; margin-left: 4px;
+}
+

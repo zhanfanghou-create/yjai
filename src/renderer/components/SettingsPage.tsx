@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { EDGE_TTS_MODELS, useAppStore, StockMediaProvider } from '../store/appStore';
+import { PROVIDER_PRESETS, classifyModel, findPresetByBase, featuredOf } from '../data/providerPresets';
+import { ProviderSetupModal } from './ProviderSetupModal';
 import './SettingsPage.css';
 
 // 用系统默认浏览器打开外部网址（申请 API 等链接），避免在应用内窗口打开；无 IPC 时回退到 window.open
@@ -58,88 +60,105 @@ const Section = ({ title, sub, icon, onAdd, addLabel, children }: any) => (
 );
 
 // ─────────────────────────────────────────────
-//  快速配置预设 — 一键填入主流 AI 服务
+//  模型服务一键接入 — 预设火山引擎 / 千问 / 通用 OpenAI 等平台
+//  点击自动填入官方接口地址，填好 API Key 后自动拉取可用模型；
+//  语音接口独立配置，自动填入官方音色清单。
 // ─────────────────────────────────────────────
-const QUICK_PRESETS: Array<{
-  label: string; desc: string; icon: string; color: string;
-  section: 'image' | 'video' | 'chat';
-  baseUrl: string; defaultModel: string; helpUrl?: string; helpLabel?: string;
-}> = [
-  {
-    label: '火山方舟', desc: 'doubao-vision / Seedance 视频生成',
-    icon: '◆', color: '#ff6b35',
-    section: 'video',
-    baseUrl: 'https://ark.cn-beijing.volces.com/api/v3', defaultModel: 'doubao-vision',
-    helpUrl: 'https://www.volcengine.com/product/ark', helpLabel: '申请 API Key',
-  },
-  {
-    label: 'agnes AI', desc: '2K/4K 图像 + 视频生成',
-    icon: '◇', color: '#a78bfa',
-    section: 'image',
-    baseUrl: 'https://api.agnes-ai.com/v1', defaultModel: 'agnes-pro',
-    helpUrl: 'https://agnes-ai.com/docs', helpLabel: '申请 agnes Key',
-  },
-  {
-    label: 'SiliconFlow', desc: '多模型聚合平台',
-    icon: '○', color: '#38bdf8',
-    section: 'image',
-    baseUrl: 'https://api.siliconflow.cn/v1', defaultModel: 'Qwen/Qwen2.5-7B-Instruct',
-    helpUrl: 'https://www.siliconflow.cn', helpLabel: '申请 SiliconFlow',
-  },
-  {
-    label: '智谱 GLM', desc: 'GLM-4 图像 / 对话模型',
-    icon: '●', color: '#34d399',
-    section: 'chat',
-    baseUrl: 'https://open.bigmodel.cn/api/paas/v4', defaultModel: 'glm-4',
-    helpUrl: 'https://open.bigmodel.cn', helpLabel: '申请智谱 Key',
-  },
-  {
-    label: 'ModelScope', desc: '通义千问 / Wan2.1 视频',
-    icon: '▲', color: '#fb923c',
-    section: 'video',
-    baseUrl: 'https://api.modelscope.cn/v1', defaultModel: 'Qwen/Qwen2.5-7B-Instruct',
-    helpUrl: 'https://modelscope.cn', helpLabel: '申请 ModelScope',
-  },
-];
+const scrollToSection = (sec: string) => {
+  setTimeout(() => {
+    document.querySelector(`[data-section="${sec}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 80);
+};
 
-const QuickSetupSection: React.FC<{ s: any }> = ({ s }) => {
-  const [added, setAdded] = React.useState<string[]>([]);
-
-  const handleAddPreset = (preset: typeof QUICK_PRESETS[0]) => {
-    const id = s.addAPIConfig({
-    });
-    setAdded(prev => [...prev, id]);
-    setTimeout(() => setAdded(prev => prev.filter(x => x !== id)), 2000);
-    // 跳转到对应 section
-    document.querySelector(`[data-section="${preset.section}-api"]`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+const ProviderSetupSection: React.FC<{ s: any }> = ({ s }) => {
+  const [done, setDone] = React.useState<string[]>([]);
+  const mark = (key: string) => {
+    setDone(prev => [...prev, key]);
+    setTimeout(() => setDone(prev => prev.filter(x => x !== key)), 2500);
   };
+
+  const [wizard, setWizard] = React.useState<null | { preset: typeof PROVIDER_PRESETS[0]; capability: 'chat' | 'image' | 'video' | 'voice' }>(null);
+  const openWizard = (p: typeof PROVIDER_PRESETS[0], capability: 'chat' | 'image' | 'video' | 'voice') => setWizard({ preset: p, capability });
+  const onWizardDone = (key: string) => {
+    mark(key);
+    if (key.startsWith('chat-')) scrollToSection('chat-api');
+    else if (key.startsWith('image-')) scrollToSection('image-api');
+    else if (key.startsWith('video-')) scrollToSection('video-api');
+    else if (key.startsWith('voice-')) scrollToSection('voice-api');
+  };
+
+
+
+
 
   return (
     <div className="sp-quick">
       <div className="sp-quick-head">
-        <span className="sp-quick-title">快速配置</span>
-        <span className="sp-quick-sub">点击一键添加，无需手动填写地址</span>
+        <span className="sp-quick-title">模型服务一键接入</span>
+        <span className="sp-quick-sub">弹窗引导 · 填 Key → 选精选模型 → 测试通过即保存</span>
       </div>
       <div className="sp-quick-grid">
-        {QUICK_PRESETS.map(preset => {
-          const isAdded = added.includes(preset.label);
+        {PROVIDER_PRESETS.map(p => {
+          const doneChat = done.includes('chat-' + p.key);
+          const doneSpeech = done.includes('voice-' + p.key);
+          const doneImage = done.includes('image-' + p.key);
+          const doneVideo = done.includes('video-' + p.key);
+          // 固定 2x2 能力位：不支持的能力保留空位，保证所有卡片等高校对齐
+          const capCells: { cap: 'chat' | 'image' | 'video' | 'voice'; label: string; ok: boolean; done: boolean }[] = [
+            { cap: 'chat',  label: '对话模型', ok: true,             done: doneChat },
+            { cap: 'image', label: '图片模型', ok: !!p.imageBaseUrl, done: doneImage },
+            { cap: 'video', label: '视频模型', ok: !!p.videoBaseUrl, done: doneVideo },
+            { cap: 'voice', label: '语音音色', ok: !!p.speech,       done: doneSpeech },
+          ];
           return (
-            <button
-              key={preset.label}
-              className={`sp-preset-btn${isAdded ? ' sp-preset-added' : ''}`}
-              style={{ '--preset-color': preset.color } as any}
-              onClick={() => !isAdded && handleAddPreset(preset)}
-              disabled={isAdded}
-              title={preset.helpUrl ? `${preset.helpLabel} → ${preset.helpUrl}` : preset.desc}
+            <div
+              key={p.key}
+              className={`sp-provider-card${doneChat || doneSpeech || doneImage || doneVideo ? ' sp-provider-added' : ''}`}
+              style={{ '--preset-color': p.color } as any}
             >
-              <span className="sp-preset-icon">{preset.icon}</span>
-              <span className="sp-preset-label">{preset.label}</span>
-              <span className="sp-preset-desc">{preset.desc}</span>
-              {isAdded && <span className="sp-preset-check">?</span>}
-            </button>
+              <div className="sp-provider-top">
+                <span className="sp-provider-icon">{p.icon}</span>
+                <span className="sp-provider-label">{p.label}</span>
+                <a className="sp-provider-apply" href={p.chatApplyUrl} target="_blank" rel="noreferrer"
+                   onClick={e => { e.preventDefault(); openExternalUrl(p.chatApplyUrl); }}>申请 API Key ↗</a>
+                {p.modelPlazaUrl && (
+                  <a className="sp-provider-apply" href={p.modelPlazaUrl} target="_blank" rel="noreferrer"
+                     onClick={e => { e.preventDefault(); openExternalUrl(p.modelPlazaUrl!); }}>精选模型 ↗</a>
+                )}
+              </div>
+              <div className="sp-provider-desc" title={p.desc}>{p.desc}</div>
+              <div className="sp-provider-actions">
+                {capCells.map(c => c.ok ? (
+                  <button key={c.cap} className={`sp-provider-btn${c.cap === 'voice' ? ' sp-provider-voice' : ''}`}
+                          onClick={() => openWizard(p, c.cap)} disabled={c.done}>
+                    {c.done ? '✓ 已接入' : `接入${c.label}`}
+                  </button>
+                ) : (
+                  <span key={c.cap} className="sp-provider-slot" />
+                ))}
+              </div>
+              <div className="sp-provider-foot">
+                {p.speech && <span className="sp-provider-note" title={p.speech.baseUrl}>语音接口独立：{p.speech.baseUrl}</span>}
+                {p.needsAccessKey && (
+                  <a className="sp-provider-ak" href={p.akskApplyUrl || p.chatApplyUrl} target="_blank" rel="noreferrer"
+                     onClick={e => { e.preventDefault(); openExternalUrl(p.akskApplyUrl || p.chatApplyUrl || ''); }}>
+                    {p.akskApplyLabel || '创建 AK/SK'} ↗
+                  </a>
+                )}
+              </div>
+            </div>
           );
         })}
       </div>
+      {wizard && (
+        <ProviderSetupModal
+          preset={wizard.preset}
+          capability={wizard.capability}
+          s={s}
+          onClose={() => setWizard(null)}
+          onDone={onWizardDone}
+        />
+      )}
     </div>
   );
 };
@@ -162,9 +181,11 @@ interface ConfigCardProps {
   onTest:  (id: string) => Promise<boolean>;
   defaultName: string;
   showAccessKey?: boolean;
+  kind?: 'chat' | 'image' | 'video' | 'voice' | 'music';
+  onFetchModels?: (id: string, overrides?: { baseUrl?: string; apiKey?: string }, kind?: string) => Promise<{ ok: boolean; models?: string[]; error?: string }>;
 }
 
-export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defaultName, showAccessKey }: ConfigCardProps) => {
+export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defaultName, showAccessKey, kind = 'chat', onFetchModels }: ConfigCardProps) => {
   // ── 草稿值（ref 存原始值，state 驱动 UI）─────────────
   const draftRef = useRef({ name: config.name, baseUrl: config.baseUrl, apiKey: config.apiKey, defaultModel: config.defaultModel, accessKeyId: config.accessKeyId, accessKeySecret: config.accessKeySecret });
 
@@ -180,6 +201,23 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
   const [testing,  setTesting]  = useState(false);
   const [testResult, setTestResult] = useState<'idle' | 'ok' | 'err'>('idle');
   const [saving,   setSaving]   = useState(false);
+  const [fetchingModels, setFetchingModels] = useState(false);
+  const preset = findPresetByBase(draft.baseUrl);
+  const voicePreset = kind === 'voice' ? (preset?.speech || null) : null;
+  // 模型数组为空时回退到该类型的精选清单（对话/图像/视频分别显示对应精选），保证首次接入即有模型可选
+  const fallbackKind = kind === 'image' ? 'image' : kind === 'video' ? 'video' : (kind === 'chat' ? 'chat' : '');
+  const featuredFallback = (fallbackKind && preset) ? featuredOf(preset, fallbackKind) : [];
+  const modelOptionsRaw = Array.from(new Set([
+    ...(config.models || []),
+    ...((config.models?.length || 0) === 0 ? featuredFallback : []),
+    draft.defaultModel,
+  ].filter(Boolean))) as string[];
+  // 对话/图像/视频区块只显示对应类型的模型；语音/音乐走音色清单不过滤；当前默认值始终保留可见
+  const modelOptions = modelOptionsRaw.filter(m => {
+    if (kind === 'voice' || kind === 'music') return true;
+    const want: 'chat' | 'image' | 'video' = kind === 'image' ? 'image' : kind === 'video' ? 'video' : 'chat';
+    return classifyModel(String(m), preset) === want;
+  });
 
   // ── config 从外部变化时（save 后 / 加载时）同步到草稿 ──
   useEffect(() => {
@@ -201,6 +239,32 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
     });
     setTestResult('idle');
   }, [config.id]); // 仅在 id 变化时重置（新增配置走此路径）
+
+  const handleFetchModels = async () => {
+    if (!draft.baseUrl.trim()) return;
+    setFetchingModels(true);
+    try {
+      const r = await onFetchModels?.(config.id, { baseUrl: draft.baseUrl, apiKey: draft.apiKey }, kind);
+      if (r?.ok && Array.isArray(r.models) && r.models.length) {
+        onUpdate(config.id, { models: r.models.map(String) });
+        if (!draft.defaultModel.trim() && r.models[0]) set('defaultModel', String(r.models[0]));
+      }
+    } catch { /* 静默失败，允许手动输入 */ }
+    finally { setFetchingModels(false); }
+  };
+
+  // 填写 API Key 且尚未拉取到模型时，自动拉取该平台的可用模型（防抖）；
+  // 语音/音乐用官方音色清单，不走 /models
+  const isVoiceLike = kind === 'voice' || kind === 'music';
+  const autoFetchKey = `${draft.baseUrl}|${draft.apiKey}`;
+  useEffect(() => {
+    if (isVoiceLike) return;
+    if (!draft.apiKey.trim() || !draft.baseUrl.trim()) return;
+    if ((config.models?.length || 0) > 0) return;
+    const t = setTimeout(() => { void handleFetchModels(); }, 900);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoFetchKey]);
 
   // ── 是否与 store 中原始值有差异 ─────────────────────
   const isDirty = draft.name !== draftRef.current.name
@@ -304,8 +368,18 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
         />
       </div>
 
-      {/* 火山方舟 AK/SK（素材资产库鉴权，用于视频参考图 asset:// 引用） */}
-      {showAccessKey && (<>
+      {/* API Key 申请链接（由平台预设提供） */}
+      {preset && (
+        <div className="sp-f">
+          <a className="sp-apply-link" href={preset.chatApplyUrl} target="_blank" rel="noreferrer"
+             onClick={e => { e.preventDefault(); openExternalUrl(preset.chatApplyUrl); }}>
+            {preset.chatApplyLabel} ↗
+          </a>
+        </div>
+      )}
+
+      {/* 火山方舟 AK/SK（素材资产库鉴权，用于视频参考图 asset:// 引用）——仅需要的平台引导 */}
+      {showAccessKey && preset?.needsAccessKey && (<>
         <div className="sp-f">
           <label className="sp-lb">方舟 Access Key ID（AK）</label>
           <input
@@ -327,20 +401,55 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
             placeholder="…"
             autoComplete="off"
           />
-          <a className="sp-lb sp-help" href="https://console.volcengine.com/iam/keymanage/" target="_blank" rel="noreferrer" style={{ fontSize: 12, textDecoration: 'underline', cursor: 'pointer' }}>申请 AK/SK（火山引擎访问控制）</a>
+          <a
+            className="sp-apply-link"
+            href={preset?.akskApplyUrl || 'https://console.volcengine.com/iam/keymanage/'}
+            target="_blank"
+            rel="noreferrer"
+            onClick={e => { e.preventDefault(); openExternalUrl(preset?.akskApplyUrl || 'https://console.volcengine.com/iam/keymanage/'); }}
+          >{preset?.akskApplyLabel || '创建 AK/SK（火山引擎访问控制）'} ↗</a>
         </div>
       </>)}
 
-      {/* 默认模型 */}
+      {/* 默认模型（下拉框选择）+ 获取可用模型；语音展示全部官方音色，无需选择默认 */}
       <div className="sp-f">
-        <label className="sp-lb">默认模型</label>
-        <input
-          className="sp-inp"
-          type="text"
-          value={draft.defaultModel}
-          onChange={e => set('defaultModel', e.target.value)}
-          placeholder="手动输入模型名称"
-        />
+        <div className="sp-f-row">
+          <label className="sp-lb">{voicePreset ? '官方音色' : '默认模型'}</label>
+          {!isVoiceLike && (
+            <button className="sp-mini-btn" onClick={() => void handleFetchModels()} disabled={fetchingModels || !draft.baseUrl.trim()}>
+              {fetchingModels ? '获取中…' : '↻ 获取可用模型'}
+            </button>
+          )}
+        </div>
+        {voicePreset ? (
+          <>
+            <div className="sp-voices-grid">
+              {voicePreset.voices.map(v => (
+                <span key={v.id} className="sp-voice-chip" title={`${v.id} — ${v.name}`}>{v.name}</span>
+              ))}
+            </div>
+            <div className="sp-hint" style={{ marginTop: 8 }}>已展示全部官方音色（{voicePreset.voices.length} 个），无需选择默认音色，生成时在配音处选择使用</div>
+            {voicePreset.note && <div className="sp-hint" style={{ marginTop: 6 }}>{voicePreset.note}</div>}
+          </>
+        ) : (
+          <>
+            <input
+              className="sp-inp sp-sel"
+              list={`sp-models-${config.id}`}
+              value={draft.defaultModel || ''}
+              onChange={e => set('defaultModel', e.target.value)}
+              placeholder={modelOptions.length ? '选择或输入模型名' : '输入模型名（未拉取到模型）'}
+              spellCheck={false}
+              autoComplete="off"
+            />
+            <datalist id={`sp-models-${config.id}`}>
+              {modelOptions.map(m => <option key={m} value={m} />)}
+            </datalist>
+            {modelOptions.length === 0 && (
+              <div className="sp-hint">未拉取到模型，可直接在上方输入模型名；或点「获取可用模型」重试</div>
+            )}
+          </>
+        )}
       </div>
 
       {/* 按钮行 */}
@@ -527,7 +636,7 @@ export const SettingsPage: React.FC = () => {
       </header>
 
       {/* 快速配置预设 */}
-      <QuickSetupSection s={s} />
+      <ProviderSetupSection s={s} />
 
       {/* Edge TTS — 只读 */}
       <Section title="Edge TTS 本地配音" sub="软件集成的本地语音服务，配置固定且不可编辑" icon={<Icon type="voice" />}>
@@ -559,7 +668,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateAPIConfig)}
             onDelete={del(s.deleteAPIConfig)}
             onTest={s.testAPIConnection}
-            defaultName="对话 API"
+            defaultName="对话 API" kind="chat" onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>
@@ -578,8 +687,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateImageAPIConfig)}
             onDelete={del(s.deleteImageAPIConfig)}
             onTest={s.testImageAPIConnection}
-            defaultName="图片 API"
-            showAccessKey
+            defaultName="图片 API" kind="image" showAccessKey onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>
@@ -598,8 +706,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateVideoAPIConfig)}
             onDelete={del(s.deleteVideoAPIConfig)}
             onTest={s.testVideoAPIConnection}
-            defaultName="视频 API"
-            showAccessKey
+            defaultName="视频 API" kind="video" showAccessKey onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>
@@ -618,7 +725,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateVoiceAPIConfig)}
             onDelete={del(s.deleteVoiceAPIConfig)}
             onTest={s.testVoiceAPIConnection}
-            defaultName="语音 API"
+            defaultName="语音 API" kind="voice" onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>
@@ -637,7 +744,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateMusicAPIConfig)}
             onDelete={del(s.deleteMusicAPIConfig)}
             onTest={s.testMusicAPIConnection}
-            defaultName="音乐 API"
+            defaultName="音乐 API" kind="music" onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>
