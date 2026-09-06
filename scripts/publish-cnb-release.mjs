@@ -84,5 +84,8 @@ async function uploadAsset(release, filePath) {
 }
 
 const release = await ensureRelease();
+console.log("[CNB DEBUG] release object:", JSON.stringify(release, null, 2));
+console.log("[CNB DEBUG] release.id:", release?.id, "type:", typeof release?.id);
+console.log("[CNB DEBUG] release.tag_name:", release?.tag_name);
 for (const filePath of files) await uploadAsset(release, filePath);
 console.log(`CNB release published: ${repository}@${tag}`);
