@@ -36,16 +36,20 @@ async function apiRequest(route, init = {}) {
 
 async function ensureRelease() {
   const encodedTag = encodeURIComponent(tag);
+  let release = null;
   try {
-    const release = await apiRequest(`/-/releases/tags/${encodedTag}`);
-    return apiRequest(`/-/releases/${release.id}`, {
+    release = await apiRequest(`/-/releases/tags/${encodedTag}`);
+    console.log("[CNB DEBUG] found existing release by tag, id:", release?.id);
+    // 更新release信息（PATCH可能返回空字符串，不使用其返回值）
+    await apiRequest(`/-/releases/${release.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: title, body: notes, draft: false, prerelease: false, make_latest: "true" }),
     });
   } catch (error) {
     if (!String(error.message).includes(" 404:")) throw error;
-    return apiRequest("/-/releases", {
+    // 创建新release
+    await apiRequest("/-/releases", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -58,7 +62,12 @@ async function ensureRelease() {
         make_latest: "true",
       }),
     });
+    console.log("[CNB DEBUG] created new release");
   }
+  // 无论创建还是更新，都重新通过tag获取完整的release对象，确保包含id字段
+  release = await apiRequest(`/-/releases/tags/${encodedTag}`);
+  console.log("[CNB DEBUG] final release id:", release?.id, "tag_name:", release?.tag_name);
+  return release;
 }
 
 async function uploadAsset(release, filePath) {
