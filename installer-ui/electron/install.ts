@@ -8,7 +8,28 @@ const isDev = process.env.NODE_ENV === "development";
 
 function payloadRoot(): string {
   if (isDev) return path.resolve(__dirname, "..", "payload");
-  return path.join(process.resourcesPath, "payload");
+  // 多个fallback路径，确保portable模式下能找到payload目录
+  const candidates: string[] = [
+    path.join(process.resourcesPath, "payload"), // extraResources路径（标准）
+    path.join(path.dirname(process.execPath), "resources", "payload"), // 可执行文件同级resources
+  ];
+  // asarUnpack路径：app.asar.unpacked/payload
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const electron = require("electron");
+    const appPath = electron?.app?.getAppPath?.() || __dirname;
+    if (appPath) {
+      candidates.push(path.join(path.dirname(appPath), "app.asar.unpacked", "payload"));
+    }
+  } catch { /* ignore */ }
+  // 返回第一个包含app.7z的路径
+  for (const p of candidates) {
+    try {
+      if (fs.existsSync(p) && fs.existsSync(path.join(p, "app.7z"))) return p;
+    } catch { /* ignore */ }
+  }
+  // 都没找到时返回第一个候选（让后续错误检查给出明确报错）
+  return candidates[0];
 }
 export function payloadArchive(): string {
   return path.join(payloadRoot(), "app.7z");

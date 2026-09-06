@@ -5,11 +5,14 @@ directories:
   buildResources: build
   output: dist-installer
 asar: true
+asarUnpack:
+  - payload/**/*
 files:
   - dist-electron/**/*
   - dist-renderer/**/*
   - public/**/*
   - package.json
+  - payload/**/*
 extraResources:
   - from: payload
     to: payload
@@ -25,23 +28,12 @@ extraResources:
       - "license.txt"
 win:
   target:
-    - target: nsis
+    - target: portable
       arch:
         - x64
   icon: build/icon.ico
   artifactName: YijingAI-Installer-Windows-x64.${ext}
-nsis:
-  oneClick: false
-  perMachine: false
-  allowElevation: true
-  allowToChangeInstallationDirectory: true
-  createDesktopShortcut: true
-  createStartMenuShortcut: true
-  shortcutName: 艺镜AI
-  installerIcon: build/icon.ico
-  uninstallerIcon: build/icon.ico
-  installerHeaderIcon: build/icon.ico
-  runAfterFinish: true
+portable:
   artifactName: YijingAI-Installer-Windows-x64.${ext}
 mac:
   category: public.app-category.graphics-design
