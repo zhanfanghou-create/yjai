@@ -1,4 +1,4 @@
-﻿import { contextBridge, ipcRenderer } from 'electron';
+import { contextBridge, ipcRenderer } from 'electron';
 
 // 鏆撮湶缁欐覆鏌撹繘绋嬬殑 API
 contextBridge.exposeInMainWorld('yijingAPI', {
