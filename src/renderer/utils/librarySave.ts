@@ -1,4 +1,4 @@
-﻿import { AssetItem, useAppStore } from '../store/appStore';
+import { AssetItem, useAppStore } from '../store/appStore';
 
 export type MediaKind = 'image' | 'video' | 'audio';
 
