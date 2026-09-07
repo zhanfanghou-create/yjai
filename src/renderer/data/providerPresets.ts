@@ -363,7 +363,7 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
     imageBaseUrl: 'https://apihub.agnes-ai.com/v1',
     imageDefaultModel: 'agnes-image-2.5-flash',
     videoBaseUrl: 'https://apihub.agnes-ai.com/v1',
-    videoDefaultModel: 'agnes-video-2.5-flash',
+    videoDefaultModel: 'agnes-video-25-flash',
     modelListSupported: false,
     // 精选对话（agnes 当前代际：2.5 pro/flash 系列，附 2.0）
     featuredChat: [

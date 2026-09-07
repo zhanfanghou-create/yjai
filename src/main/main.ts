@@ -204,11 +204,20 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
     const volcV = detectVolcengineVideoBase(baseUrl);
     const dsScope = /:\/\/dashscope[a-z0-9-]*\.aliyuncs\.com(?:\/|$)/i.test(baseUrl) || /:\/\/[a-z0-9-]+\.maas\.aliyuncs\.com(?:\/|$)/i.test(baseUrl);
     const dsOrigin = dsScope ? (() => { try { return new URL(baseUrl).origin; } catch { return baseUrl; } })() : '';
+    // Agnes Video 2.5 Flash 官方查询端点：/agnesapi?video_id=<id>&model_name=<model>
+    // 其他 OpenAI 兼容视频用 /v1/videos/<id>
+    const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.(?:com|cn)(?:\/|$)/i.test(baseUrl);
+    const agnesModelName = (() => {
+      // 从 grsaiJobMap 或全局无法直接拿到 model，用约定的默认值；创建任务时已存入 job 元数据
+      return 'agnes-video-2.5-flash';
+    })();
     const url = (id: string) => dsScope
       ? `${dsOrigin}/api/v1/tasks/${encodeURIComponent(id)}`
       : (volcV.isVolc
         ? `${volcV.taskUrl}/${encodeURIComponent(id)}`
-        : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`);
+        : isAgnesHost
+          ? `${baseUrl.replace(/\/v1\/?$/, '')}/agnesapi?video_id=${encodeURIComponent(id)}&model_name=${encodeURIComponent(agnesModelName)}`
+          : `${buildVersionedApiUrl(baseUrl, '/videos')}/${encodeURIComponent(id)}`);
     const assetsDir = path.join(app.getPath('userData'), 'assets');
     fs.mkdirSync(assetsDir, { recursive: true });
 
@@ -1103,12 +1112,17 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       /agnes-video/i.test(String(model || '')) ||
       (config.apiType === 'openai-completions' && /video|seedance/i.test(String(model || '')))
     );
+    // Agnes Image 2.5 Flash：图生图参考图必须放 extra_body.image，response_format 必须放 extra_body
+    const isAgnesImage = isAgnesHost && !isAgnesVideo && (
+      config.apiType === 'openai-generations' ||
+      /agnes-image|image/i.test(String(model || ''))
+    );
     // 火山方舟视频生成：apiType 为 openai-completions 或模型名含 video/seedance
     const isVolcenginePlanVideo = volcVideo.isVolc && (
       config.apiType === 'openai-completions' ||
       /video|seedance/i.test(String(model || ''))
     );
-    const isOpenAIImageGen = !isGrsaiHost && !isAgnesVideo && !isVolcenginePlanVideo && (
+    const isOpenAIImageGen = !isGrsaiHost && !isAgnesVideo && !isAgnesImage && !isVolcenginePlanVideo && (
       config.apiType === 'openai-generations' ||
       isAgnesHost ||
       (model && /dall|gpt-image|image/i.test(String(model)))
@@ -1297,7 +1311,21 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
                   prompt,
                   aspectRatio: aspectValue || '16:9',
                 }
-              : isOpenAIImageGen
+              : isAgnesImage
+                ? {
+                    model: model || '',
+                    prompt,
+                    // Agnes Image 2.5 Flash：size 支持 1K/2K/3K/4K 档位或精确尺寸
+                    size: imageSizeValue || '2K',
+                    // ratio 与 size 配合使用
+                    ratio: aspectValue || '1:1',
+                    n: config.n || 1,
+                    // Agnes 官方要求：response_format 必须放在 extra_body 中，不能放顶层
+                    extra_body: {
+                      response_format: 'url',
+                    },
+                  }
+                : isOpenAIImageGen
                 ? {
                     model: model || '',
                     prompt,
@@ -1312,11 +1340,16 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
                   }
                 : { model, prompt, replyType: config.replyType || 'json' };
 
-    if (imagesValue.length > 0 && !isVolcenginePlanVideo) {
-      // 非方舟视频分支才写 body.image（方舟视频参考图已放 content 内）
+    if (imagesValue.length > 0 && !isVolcenginePlanVideo && !isAgnesImage) {
+      // 非方舟视频、非Agnes图片分支才写 body.image（方舟视频参考图已放 content 内）
       body.image = imagesValue[0];
       body.images = imagesValue;
       body.sourceImage = sourceImage || imagesValue[0];
+    }
+    // Agnes Image 2.5 Flash 图生图：参考图必须放在 extra_body.image 数组中（官方规范）
+    if (isAgnesImage && imagesValue.length > 0) {
+      body.extra_body = body.extra_body || {};
+      body.extra_body.image = imagesValue;
     }
 
     if (isPanorama720) {
@@ -1411,30 +1444,33 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     }
 
     if (isAgnesVideo) {
-      if (imagesValue.length > 0) body.images = imagesValue;
-      if (sourceImage) body.image = sourceImage;
+      // Agnes Video 2.5 Flash 官方规范：mode 必填（text/reference/keyframe），size 固定 "720P"，seconds 为字符串
+      const hasRefImages = imagesValue.length > 0;
+      body.mode = hasRefImages ? 'reference' : 'text';
+      body.size = '720P'; // Flash 模型固定 720P，其他值返回 400
+      body.n = 1;
+      if (hasRefImages) {
+        body.images = imagesValue.slice(0, 5); // Flash 最多 5 张参考图
+      }
+      if (sourceImage && !hasRefImages) {
+        // 单张首帧图走 keyframe 模式
+        body.mode = 'keyframe';
+        body.first_frame = sourceImage;
+        delete body.images;
+      }
       if (config.duration) {
         body.duration = config.duration;
-        // OpenAI/Sora 兼容视频接口用 seconds（字符串）表示时长；同时带上以兼容不同上游实现。
-        body.seconds = String(config.duration);
+        // Agnes 官方要求 seconds 为字符串 "4"-"12"
+        const dur = Math.min(12, Math.max(4, Number(config.duration) || 5));
+        body.seconds = String(dur);
+      } else {
+        body.seconds = '5';
       }
 
       if (aspectValue) {
         body.aspectRatio = aspectValue;
         body.aspect_ratio = aspectValue;
         body.ratio = aspectValue;
-      }
-
-      if (imageSizeValue) {
-        body.imageSize = imageSizeValue;
-        body.image_size = imageSizeValue;
-        body.size = imageSizeValue;
-      }
-
-      if (resolutionValue) {
-        body.resolution = resolutionValue;
-        body.pixel = resolutionValue;
-        body.pixels = resolutionValue;
       }
     }
 
