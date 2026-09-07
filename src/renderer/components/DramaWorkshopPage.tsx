@@ -1737,13 +1737,14 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
               </div>
             </div>
 
-            {/* 角色配音预览 */}
+            {/* 角色配音预览 - 已隐藏，视频页只预览视频
             {cur?.voiceUrl && (
               <div className="dwc-vid-voiceover">
                 <div className="dwc-vid-voiceover-head"><MicrophoneIcon size={14} /><span>角色配音</span></div>
                 <audio controls src={cur.voiceUrl} className="dwc-vid-audio" />
               </div>
             )}
+            */}
           </div>
 
           {/* 下：当前分镜时间轴 + 操作 */}
@@ -3818,9 +3819,11 @@ export const DramaWorkshopPage: React.FC = () => {
         parsed.refImages.forEach(u => { if (u && !referenceImages.includes(u)) referenceImages.push(u); });
 
         // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置则回退轨A（TOS URL 直接透传，同账号产物受信任）
+        // 注意：视频生成 API 不支持 asset:// 作为 image_url（会报 resource download failed），因此视频生成时强制使用轨A（TOS URL 直接透传）
         let refs: string[] = referenceImages;
         const volcApi = (window as any)?.yijingAPI?.volc;
-        if (vc.accessKeyId && vc.accessKeySecret && volcApi?.createAsset && refs.some(r => /^https?:\/\//i.test(r))) {
+        const isVideoGen = true; // 此处为视频生成流程，禁用 asset:// 转换
+        if (!isVideoGen && vc.accessKeyId && vc.accessKeySecret && volcApi?.createAsset && refs.some(r => /^https?:\/\//i.test(r))) {
           try {
             const converted: string[] = [];
             for (const r of refs) {

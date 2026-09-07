@@ -1206,8 +1206,13 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
 
     // 本地参考图转 base64（方舟 API 无法访问本地 file:// 路径，必须转 data URL 才能作为参考图）
     const toVolcImageValue = async (img: string): Promise<string> => {
-      // data: / https: / asset:（素材资产ID，AK/SK 上传后的引用）均原样透传
-      if (/^(data:|https?:\/\/|asset:)/i.test(img)) return img;
+      // data: / https: 原样透传；asset: 视频API不支持（会报 resource download failed），返回空字符串跳过
+      if (/^data:/i.test(img)) return img;
+      if (/^https?:\/\//i.test(img)) return img;
+      if (/^asset:/i.test(img)) {
+        console.warn('[VolcVideo] asset:// 引用不支持作为视频参考图，已跳过:', img.slice(0, 80));
+        return '';
+      }
       try {
         const p = img.replace(/^file:\/\//i, '');
         const st = await fs.promises.stat(p);

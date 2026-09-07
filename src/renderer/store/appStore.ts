@@ -285,9 +285,11 @@ const callApi = async (c: APIConfig, n: AINode) => {
     // 从 videoConfig 或节点选项中提取视频参数
     const vc = n.options?.videoConfig || {};
     // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置回退轨A（TOS URL 直接透传）
+    // 注意：视频生成 API 不支持 asset:// 作为 image_url（会报 resource download failed），因此视频生成时强制使用轨A（TOS URL 直接透传）
     let videoRefs = imageRefs;
     const volcApi = win?.yijingAPI?.volc;
-    if ((c as any).accessKeyId && (c as any).accessKeySecret && volcApi?.createAsset && videoRefs.some((r: string) => /^https?:\/\//i.test(r))) {
+    const isVideoGen = true; // 此处为视频生成流程，禁用 asset:// 转换
+    if (!isVideoGen && (c as any).accessKeyId && (c as any).accessKeySecret && volcApi?.createAsset && videoRefs.some((r: string) => /^https?:\/\//i.test(r))) {
       try {
         const converted: string[] = [];
         for (const r of videoRefs) {
