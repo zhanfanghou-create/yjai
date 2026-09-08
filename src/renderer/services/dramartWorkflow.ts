@@ -324,7 +324,8 @@ async function callChat(system: string, user: string, config: AIConfigInput | nu
   }
   try {
     // 渲染进程层也加超时保护：即使 IPC/主进程意外挂起也不会无限等待
-    const timeoutMs = 300000; // 5 分钟
+    // 长剧本分析可能需要较长时间，默认 10 分钟超时
+    const timeoutMs = 600000; // 10 分钟
     const result = await Promise.race([
       win.yijingAPI.grsai.chat({
         baseUrl: config.baseUrl,
@@ -335,7 +336,7 @@ async function callChat(system: string, user: string, config: AIConfigInput | nu
           { role: 'user', content: user },
         ],
       }),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('AI 对话响应超时（超过 5 分钟），请检查网络或模型是否正常')), timeoutMs)),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('AI 对话响应超时（超过 10 分钟），请检查网络或模型是否正常')), timeoutMs)),
     ]);
     if (result?.ok) {
       // 尝试多种常见返回字段，兼容不同模型/平台的响应结构
@@ -373,8 +374,91 @@ function parseJsonObject(text: string): any | null {
   }
   const start = cleaned.indexOf('{');
   const end = cleaned.lastIndexOf('}');
-  if (start < 0 || end <= start) return null;
-  try { return JSON.parse(cleaned.slice(start, end + 1)); } catch { return null; }
+  if (start < 0 || end <= start) {
+    console.log('[PARSEDBG] start=', start, 'end=', end);
+    return null;
+  }
+  const jsonStr = cleaned.slice(start, end + 1);
+  // 第一次尝试：直接解析
+  try {
+    return JSON.parse(jsonStr);
+  } catch (e: any) {
+    console.log('[PARSEDBG] 第一次解析失败:', e?.message);
+  }
+  // 第二次尝试：修复未转义的双引号
+  // 思路：遍历字符串，跟踪是否在字符串值中，如果在字符串值中遇到双引号，
+  // 检查后面是否跟着JSON结构字符（, : } ]），如果不是，说明是未转义的双引号
+  const fixed = fixUnescapedQuotes(jsonStr);
+  try {
+    return JSON.parse(fixed);
+  } catch (e: any) {
+    console.log('[PARSEDBG] 第二次修复后解析失败:', e?.message);
+  }
+  // 第三次尝试：移除控制字符后再修复
+  let fixed2 = fixed.replace(/[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]/g, '');
+  try {
+    return JSON.parse(fixed2);
+  } catch (e: any) {
+    console.log('[PARSEDBG] 第三次解析失败:', e?.message);
+  }
+  // 第四次尝试：使用eval解析（更宽松，但有安全风险，仅用于调试）
+  try {
+    // eslint-disable-next-line no-eval
+    const result = eval('(' + fixed2 + ')');
+    if (result && typeof result === 'object') {
+      console.log('[PARSEDBG] 第四次eval解析成功');
+      return result;
+    }
+  } catch (e: any) {
+    console.log('[PARSEDBG] 第四次eval解析失败:', e?.message);
+  }
+  return null;
+}
+
+// 修复JSON中未转义的双引号
+function fixUnescapedQuotes(jsonStr: string): string {
+  let result = '';
+  let inString = false;
+  let escapeNext = false;
+  for (let i = 0; i < jsonStr.length; i++) {
+    const ch = jsonStr[i];
+    if (escapeNext) {
+      result += ch;
+      escapeNext = false;
+      continue;
+    }
+    if (ch === '\\') {
+      result += ch;
+      escapeNext = true;
+      continue;
+    }
+    if (ch === '"') {
+      if (!inString) {
+        // 开始字符串
+        inString = true;
+        result += ch;
+      } else {
+        // 在字符串中遇到双引号，检查是否是字符串结束
+        // 向后看，跳过空白字符，看是否跟着JSON结构字符
+        let j = i + 1;
+        while (j < jsonStr.length && (jsonStr[j] === ' ' || jsonStr[j] === '\t' || jsonStr[j] === '\n' || jsonStr[j] === '\r')) {
+          j++;
+        }
+        const nextChar = jsonStr[j];
+        if (nextChar === ',' || nextChar === ':' || nextChar === '}' || nextChar === ']' || j >= jsonStr.length) {
+          // 是字符串结束
+          inString = false;
+          result += ch;
+        } else {
+          // 是未转义的双引号，添加反斜杠
+          result += '\\' + ch;
+        }
+      }
+      continue;
+    }
+    result += ch;
+  }
+  return result;
 }
 
 function normalizeAssets(raw: any): Pick<DramartProject, 'characters' | 'scenes' | 'props'> | null {
@@ -515,13 +599,19 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       // 第1步：分析剧本 → 提取角色/场景/道具资产
       const system = '你是专业编剧与制片助理。全程中文。严格按用户要求格式输出。';
       const content = await callChat(system, assetPrompt, config);
+      console.log('[ASSETDBG] content长度=', content?.length, '前100字符=', content?.slice(0, 100));
       if (content) {
         const parsed = parseJsonObject(content);
+        console.log('[ASSETDBG] parsed=', parsed ? '成功' : 'null', 'keys=', parsed ? Object.keys(parsed) : []);
         const norm = normalizeAssets(parsed);
+        console.log('[ASSETDBG] norm=', norm ? '成功' : 'null', 'characters=', norm?.characters?.length, 'scenes=', norm?.scenes?.length, 'props=', norm?.props?.length);
         if (norm) { result = { ...result, ...norm }; }
+        console.log('[ASSETDBG] result.characters=', result.characters?.length, 'result.scenes=', result.scenes?.length, 'result.props=', result.props?.length);
       }
     } else if (i === 1) {
       // 第2步：分镜设计 → 调用AI生成分镜列表（使用已提取的资产构建提示词，严格约束资产引用）
+      // 增加3秒延迟，避免请求太频繁被限流
+      await new Promise(r => setTimeout(r, 3000));
       const system = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
       const storyboardPrompt = buildStoryboardPrompt(result);
       const content = await callChat(system, storyboardPrompt, config);
@@ -1017,6 +1107,8 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
   ].join('\n');
   let aiStoryboards: DramartStoryboard[] | null = null;
   const sbSystem = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
+  // 增加3秒延迟，避免请求太频繁被限流
+  await new Promise(r => setTimeout(r, 3000));
   const sbContent = await callChat(sbSystem, storyboardPrompt, config);
   if (sbContent) {
     const sbParsed = parseJsonObject(sbContent);

@@ -980,7 +980,7 @@ export const SettingsPage: React.FC = () => {
         <div className="sp-help-grid">
           {[
             { name: '火山方舟 Ark', url: 'https://www.volcengine.com/product/ark', desc: 'doubao / Seedance 视频' },
-            { name: 'agnes AI', url: 'https://agnes-ai.com', desc: '2K/4K 图像/视频生成' },
+            { name: 'agnes AI', url: 'https://agnes-ai.cn', desc: '2K/4K 图像/视频生成' },
             { name: 'SiliconFlow', url: 'https://www.siliconflow.cn', desc: '多模型聚合平台' },
             { name: '智谱 GLM', url: 'https://open.bigmodel.cn', desc: 'GLM-4 对话/图像模型' },
             { name: 'ModelScope', url: 'https://modelscope.cn', desc: '通义千问 / Wan2.1 视频' },

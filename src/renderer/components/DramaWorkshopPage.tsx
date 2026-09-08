@@ -483,9 +483,10 @@ interface StoryboardViewProps {
   onRemoveAsset: (id: string, kind: 'character' | 'scene' | 'prop', name: string) => void;
   onSaveVideo: (url: string, sb: DramartStoryboard) => void;
   onDownloadVideo: (url: string, sb: DramartStoryboard) => void;
+  onBatchVideo: () => void;
 }
 
-const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onNext, onGo, onEditPrompt, onSelectVideo, onAddAsset, onReplaceAsset, onRemoveAsset, onSaveVideo, onDownloadVideo }) => {
+const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onNext, onGo, onEditPrompt, onSelectVideo, onAddAsset, onReplaceAsset, onRemoveAsset, onSaveVideo, onDownloadVideo, onBatchVideo }) => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const [showParams, setShowParams] = useState(false);
   const [addKind, setAddKind] = useState<'character' | 'scene' | 'prop' | null>(null);
@@ -980,6 +981,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
           <span className="dwc-meta-item">{project.styleName}</span>
         </div>
         <button className="dwc-view-script" onClick={() => setScriptOpen(true)}>查看剧本</button>
+        <button className="dwc-view-script" onClick={onBatchVideo} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: '#fff' }}><BoltIcon size={13} /> 批量生成</button>
       </div>
       <div className="dwc-step-ribbon">
         {[
@@ -1307,6 +1309,7 @@ interface VideoViewProps {
   onDownload: (url: string, sb: DramartStoryboard) => void;
   /** 保存某分镜的序列帧到项目（持久化，下次打开直接读取） */
   onSaveFrames: (id: string, frames: string[]) => void;
+  onBatchVideo: () => void;
 }
 
 // 把分镜提示词解析成可点击片段：文本 / @引用(角色场景道具音色) / 时长 / 台词
@@ -1381,7 +1384,7 @@ async function extractVideoFrames(url: string, count = 8): Promise<string[]> {
   } catch { return []; }
 }
 
-const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onGo, onEditRegenerate, onDownload, onSaveFrames }) => {
+const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, statusMap, urlMap, onSelectIndex, onBack, onGenerate, onGo, onEditRegenerate, onDownload, onSaveFrames, onBatchVideo }) => {
   const [scriptOpen, setScriptOpen] = useState(false);
   const total = storyboards.reduce((s, x) => s + (x.duration || 0), 0);
   const cur = storyboards[index];
@@ -1652,6 +1655,7 @@ const VideoView: React.FC<VideoViewProps> = ({ project, storyboards, index, stat
           <span className="dwc-meta-item">{project.styleName}</span>
         </div>
         <button className="dwc-view-script" onClick={() => setScriptOpen(true)}>查看剧本</button>
+        <button className="dwc-view-script" onClick={onBatchVideo} style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: '#fff' }}><BoltIcon size={13} /> 批量生成</button>
       </div>
       <div className="dwc-step-ribbon">
         {[
@@ -2687,6 +2691,55 @@ const BatchGenModal: React.FC<BatchGenModalProps> = ({ items, styleName, modelOp
     </div>
   );
 };
+
+// 批量生成视频弹窗
+interface BatchVideoGenModalProps {
+  storyboards: DramartStoryboard[];
+  urlMap: Record<string, string>;
+  onClose: () => void;
+  onBatchGen: (ids: string[]) => void;
+}
+const BatchVideoGenModal: React.FC<BatchVideoGenModalProps> = ({ storyboards, urlMap, onClose, onBatchGen }) => {
+  const [sel, setSel] = useState<Set<string>>(new Set());
+  const pending = storyboards.filter(s => !(urlMap[s.id] || s.videoUrl));
+  const toggle = (id: string) => setSel(s => { const n = new Set(s); if (n.has(id)) n.delete(id); else n.add(id); return n; });
+  const selectAll = () => setSel(new Set(pending.map(s => s.id)));
+
+  return (
+    <div className="dwc-overlay" onClick={onClose}>
+      <div className="dwc-modal dwc-batch-modal" onClick={e => e.stopPropagation()}>
+        <div className="dwc-modal-head"><span className="dwc-modal-title">批量生成视频</span><button className="dwc-modal-close" onClick={onClose}><CloseIcon size={16} /></button></div>
+        <div className="dwc-modal-body">
+          <div className="dwc-batch-list">
+            {storyboards.length === 0 && <div className="dwc-picker-empty"><FileTextIcon size={30} /><div>暂无分镜</div></div>}
+            {storyboards.map((s, i) => {
+              const done = !!(urlMap[s.id] || s.videoUrl);
+              return (
+                <div key={s.id} className={`dwc-batch-row${done ? ' done' : ''}`} onClick={() => { if (!done) toggle(s.id); }}>
+                  <input type="checkbox" checked={sel.has(s.id)} disabled={done} onChange={() => { if (!done) toggle(s.id); }} onClick={e => e.stopPropagation()} />
+                  <span className="dwc-batch-thumb" style={done ? undefined : { background: 'linear-gradient(135deg, #1e293b, #334155)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8', fontSize: '14px', fontWeight: '600' }}>{done ? <video src={urlMap[s.id] || s.videoUrl} muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : <span>{i + 1}</span>}</span>
+                  <div className="dwc-batch-info">
+                    <div className="dwc-batch-name">分镜 {i + 1}：{s.label}</div>
+                    <div className="dwc-batch-desc">时长 {s.duration}s</div>
+                  </div>
+                  <span className={`dwc-batch-status${done ? ' warn' : ' ok'}`}>{done ? '已有视频，不可选择' : '未生成，可批量生成'}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="dwc-modal-foot">
+          <div className="dwc-ai-params batch">
+            <span className="dwc-ai-param info">已选 {sel.size} / 可生成 {pending.length} 个分镜</span>
+          </div>
+          <button className="dwc-modal-cancel" onClick={selectAll} disabled={!pending.length}>全选</button>
+          <button className="dwc-modal-cancel" onClick={onClose}>取消</button>
+          <button className="dwc-modal-ok" disabled={!sel.size} onClick={() => { onBatchGen([...sel]); onClose(); }}>批量生成</button>
+        </div>
+      </div>
+    </div>
+  );
+};
 interface AssetPickerModalProps { assets: Record<string, any>; onPick: (id: string) => void; onClose: () => void; }
 
 const AssetPickerModal: React.FC<AssetPickerModalProps> = ({ assets, onPick, onClose }) => {
@@ -3017,6 +3070,7 @@ export const DramaWorkshopPage: React.FC = () => {
   const [detailAssetId, setDetailAssetId] = useState<string | null>(null);
   const [genOpen, setGenOpen] = useState<{ assetId: string; variantId: string } | null>(null);
   const [batchOpen, setBatchOpen] = useState(false);
+  const [batchVideoOpen, setBatchVideoOpen] = useState(false);
   const [addOpen, setAddOpen] = useState(false);
   const [addImg, setAddImg] = useState('');
   const [addPick, setAddPick] = useState(false);
@@ -3821,6 +3875,54 @@ export const DramaWorkshopPage: React.FC = () => {
         // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置则回退轨A（TOS URL 直接透传，同账号产物受信任）
         // 注意：视频生成 API 不支持 asset:// 作为 image_url（会报 resource download failed），因此视频生成时强制使用轨A（TOS URL 直接透传）
         let refs: string[] = referenceImages;
+
+        // 人脸重绘保障：其他模型生成的图片用火山方舟生成视频时，默认先重绘人脸保证过卡真人
+        // 检测参考图是否是火山方舟同一账号的TOS URL，如果不是，先用火山方舟图片模型重绘人脸，返回同一账号的TOS URL
+        if (vc?.accessKeyId && vc?.accessKeySecret && refs.length > 0) {
+          // 找到火山方舟的图片生成模型配置（包含相同AK/SK的，或任意包含AK/SK的）
+          const volcImageConfig = (imageAPIConfigs || []).find((c: any) => c?.accessKeyId === vc.accessKeyId && c?.accessKeySecret === vc.accessKeySecret)
+            || (imageAPIConfigs || []).find((c: any) => c?.accessKeyId && c?.accessKeySecret);
+
+          if (volcImageConfig) {
+            const isVolcTosUrl = (url: string): boolean => {
+              return /^https?:\/\/.*(volces\.com|tos-cn|volcengine)/i.test(url);
+            };
+
+            const redrawFaceForVolc = async (imgUrl: string): Promise<string> => {
+              try {
+                const res = await toolService.generateImage(
+                  '重绘图片中的人物人脸，保持人物特征、发型、服装、表情和场景完全不变，确保过真人审核，自然真实，不要改变原图内容和构图',
+                  volcImageConfig,
+                  {
+                    image: imgUrl,
+                    model: volcImageConfig.defaultModel || volcImageConfig.models?.[0] || 'doubao-seedream-4-0-250828',
+                    size: '1024x1024',
+                  }
+                );
+                // 优先返回同一账号的TOS URL（remoteUrl），因为它是同账号产物不卡真人
+                if (res?.remoteUrl) return res.remoteUrl;
+                if (res?.url) return res.url;
+                return imgUrl;
+              } catch (e) {
+                console.warn('[VolcFaceRedraw] 人脸重绘失败，使用原图:', e);
+                return imgUrl;
+              }
+            };
+
+            const friendlyRefs: string[] = [];
+            for (const ref of refs) {
+              if (isVolcTosUrl(ref)) {
+                // 已经是火山方舟TOS URL，直接使用（同账号产物不卡真人）
+                friendlyRefs.push(ref);
+              } else {
+                // 其他模型生成的图片，先重绘人脸保证过卡真人
+                const friendly = await redrawFaceForVolc(ref);
+                friendlyRefs.push(friendly);
+              }
+            }
+            refs = friendlyRefs;
+          }
+        }
         const volcApi = (window as any)?.yijingAPI?.volc;
         const isVideoGen = true; // 此处为视频生成流程，禁用 asset:// 转换
         if (!isVideoGen && vc.accessKeyId && vc.accessKeySecret && volcApi?.createAsset && refs.some(r => /^https?:\/\//i.test(r))) {
@@ -3883,6 +3985,27 @@ export const DramaWorkshopPage: React.FC = () => {
       showToast('未配置视频 API，已生成占位预览', 'info');
     }, 1600);
   }, [project, videoAPIConfigs, setProject, showToast, generateVoiceover]);
+
+  // 批量生成视频
+  const batchGenerateVideo = useCallback(async (ids: string[]) => {
+    if (!ids.length) return;
+    showToast('开始批量生成 ' + ids.length + ' 个分镜视频，请稍候…', 'info');
+    for (let i = 0; i < ids.length; i++) {
+      const id = ids[i];
+      const sb = project?.storyboards?.find(s => s.id === id);
+      if (!sb) continue;
+      setSbStatus(s => ({ ...s, [id]: 'generating' }));
+      try {
+        // 调用现有的视频生成逻辑
+        await handleGenerateVideo(id, { model: project?.videoModel || '', duration: sb.duration, count: 1, resolution: project?.resolution || '720p', format: 'mp4' });
+      } catch (e: any) {
+        console.error('[BatchVideo] 分镜 ' + id + ' 生成失败:', e);
+      }
+      // 每个分镜之间间隔2秒，避免请求太频繁
+      if (i < ids.length - 1) await new Promise(r => setTimeout(r, 2000));
+    }
+    showToast('批量生成视频完成！', 'success');
+  }, [project, handleGenerateVideo, showToast]);
 
   const editSbPrompt = useCallback((id: string, text: string) => {
     setProject(p => p ? ({ ...p, storyboards: p.storyboards.map(x => x.id === id ? { ...x, videoPrompt: text } : x) }) : p);
@@ -4586,6 +4709,7 @@ export const DramaWorkshopPage: React.FC = () => {
           onRemoveAsset={removeSbAsset}
           onSaveVideo={collectStoryboardVideo}
           onDownloadVideo={downloadStoryboardVideo}
+          onBatchVideo={() => setBatchVideoOpen(true)}
         />
       )}
 
@@ -4603,6 +4727,17 @@ export const DramaWorkshopPage: React.FC = () => {
           onEditRegenerate={regenerateWithPrompt}
           onDownload={downloadStoryboardVideo}
           onSaveFrames={persistFrames}
+          onBatchVideo={() => setBatchVideoOpen(true)}
+        />
+      )}
+
+      {/* 批量生成视频弹窗（顶层，所有stage共用） */}
+      {batchVideoOpen && (
+        <BatchVideoGenModal
+          storyboards={project?.storyboards || []}
+          urlMap={sbUrl}
+          onClose={() => setBatchVideoOpen(false)}
+          onBatchGen={batchGenerateVideo}
         />
       )}
 

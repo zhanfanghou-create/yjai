@@ -149,8 +149,8 @@ async function fetchWithRetry(
   init: any,
   opts: { retries?: number; baseDelayMs?: number; timeoutMs?: number } = {}
 ): Promise<Response> {
-  const retries = opts.retries ?? 4;
-  const baseDelayMs = opts.baseDelayMs ?? 1500;
+  const retries = opts.retries ?? 8;
+  const baseDelayMs = opts.baseDelayMs ?? 3000;
   const timeoutMs = opts.timeoutMs ?? 0; // 0 = 不设超时
   const retryableStatus = new Set([429, 500, 502, 503, 504]);
   let lastError: any = null;
@@ -340,7 +340,7 @@ ipcMain.handle('grsai:cancelJob', async (_event, opts: any) => {
 });
 
 function redirectAgnesHost(url: string): string {
-  return url.replace(/^(https?:\/\/)api\.agnes-ai\.com(\/|$)/i, '$1apihub.agnes-ai.com$2');
+  return url.replace(/^(https?:\/\/)api\.agnes-ai\.com(\/|$)/i, '$1apihub.agnes-ai.cn$2');
 }
 
 function normalizeApiBase(baseUrl: string | undefined): string {
@@ -970,10 +970,10 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
     const url = buildVersionedApiUrl(baseUrl, '/chat/completions');
     console.log('[IPC] grsai:chat url=', url, 'model=', model);
     // 对话请求设置超时：长剧本分析可能需要较长时间，但避免请求无限挂起
-    const timeoutMs = config.timeoutMs || 300000; // 默认 5 分钟
+    const timeoutMs = config.timeoutMs || 600000; // 默认 10 分钟
     // max_tokens：长剧本分析需要输出大量 JSON，必须设足够大的值；
     // 不传时部分模型默认输出极少 token，导致 content 为空被截断
-    const maxTokens = config.maxTokens || 16384;
+    const maxTokens = config.maxTokens || 32768;
     // 火山方舟 seed 系列推理模型默认开启深度思考，会输出超长 reasoning_content 导致超时；
     // 检测到火山方舟推理模型时自动关闭深度思考，让模型直接输出结果
     const isVolcengineArk = /ark\.cn-beijing\.volces\.com/i.test(baseUrl || '');
@@ -1103,7 +1103,7 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
   const { baseUrl, apiKey, model, prompt, aspectRatio } = config;
   try {
     const normalizedBase = normalizeApiBase(baseUrl);
-    const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.com(?:\/|$)/i.test(normalizedBase);
+    const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.(?:com|cn)(?:\/|$)/i.test(normalizedBase);
     const isGrsaiHost = /:\/\/grsai\.dakka\.com\.cn(?:\/|$)/i.test(normalizedBase);
     // 火山方舟视频接口：/api/plan（Agent Plan）或 /api/v3（标准方舟），兼容完整任务端点
     const volcVideo = detectVolcengineVideoBase(normalizedBase);
@@ -1156,9 +1156,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
             ? `${dashScopeOrigin}/api/v1/services/aigc/${/^wan/i.test(_modelLc) ? 'image-generation/generation' : 'multimodal-generation/generation'}`
             : isGenericVideo
               ? buildVersionedApiUrl(normalizedBase, '/videos')
-              : isOpenAIImageGen
+              : isAgnesImage
                 ? buildVersionedApiUrl(normalizedBase, '/images/generations')
-                : buildVersionedApiUrl(normalizedBase, '/api/generate');
+                : isOpenAIImageGen
+                  ? buildVersionedApiUrl(normalizedBase, '/images/generations')
+                  : buildVersionedApiUrl(normalizedBase, '/api/generate');
 
     const isGenerationRequest = Boolean(
       config.apiType === 'openai-generations' ||
@@ -1296,7 +1298,6 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
             ? {
                 model: model || '',
                 prompt,
-                aspectRatio: aspectValue || '16:9',
               }
             : isGenericVideo
               ? {
@@ -1333,7 +1334,7 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
                   }
                 : { model, prompt, replyType: config.replyType || 'json' };
 
-    if (imagesValue.length > 0 && !isVolcenginePlanVideo && !isAgnesImage) {
+    if (imagesValue.length > 0 && !isVolcenginePlanVideo && !isAgnesImage && !isAgnesVideo) {
       // 非方舟视频、非Agnes图片分支才写 body.image（方舟视频参考图已放 content 内）
       body.image = imagesValue[0];
       body.images = imagesValue;
@@ -1368,30 +1369,30 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
         ];
       }
     } else if (isAgnesVideo) {
-      if (imagesValue.length > 0) body.images = imagesValue;
-      if (sourceImage) body.image = sourceImage;
-      if (config.duration) {
-        body.duration = config.duration;
-        // OpenAI/Sora 兼容视频接口用 seconds（字符串）表示时长；同时带上以兼容不同上游实现。
-        body.seconds = String(config.duration);
+      // Agnes Video 2.5 Flash 官方规范：只保留支持的参数，避免400错误
+      // mode 必填（text/reference/keyframe），size 固定 "720P"，seconds 为字符串 "4"-"12"
+      const hasRefImages = imagesValue.length > 0;
+      body.mode = hasRefImages ? 'reference' : 'text';
+      body.size = '720P'; // Flash 模型固定 720P，其他值返回 400
+      body.n = 1;
+
+      if (hasRefImages) {
+        body.images = imagesValue.slice(0, 5); // Flash 最多 5 张参考图
+      }
+      if (sourceImage && !hasRefImages) {
+        // 单张首帧图走 keyframe 模式
+        body.mode = 'keyframe';
+        body.first_frame = sourceImage;
+        delete body.images;
       }
 
+      // 时长：Agnes 官方要求 seconds 为字符串 "4"-"12"，默认 "5"
+      const dur = config.duration ? Math.min(12, Math.max(4, Number(config.duration) || 5)) : 5;
+      body.seconds = String(dur);
+
+      // 宽高比：只保留 aspect_ratio（官方参数名）
       if (aspectValue) {
-        body.aspectRatio = aspectValue;
         body.aspect_ratio = aspectValue;
-        body.ratio = aspectValue;
-      }
-
-      if (imageSizeValue) {
-        body.imageSize = imageSizeValue;
-        body.image_size = imageSizeValue;
-        body.size = imageSizeValue;
-      }
-
-      if (resolutionValue) {
-        body.resolution = resolutionValue;
-        body.pixel = resolutionValue;
-        body.pixels = resolutionValue;
       }
     } else if (!isOpenAIImageGen) {
       body.images = imagesValue;
@@ -1436,37 +1437,6 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       }
     }
 
-    if (isAgnesVideo) {
-      // Agnes Video 2.5 Flash 官方规范：mode 必填（text/reference/keyframe），size 固定 "720P"，seconds 为字符串
-      const hasRefImages = imagesValue.length > 0;
-      body.mode = hasRefImages ? 'reference' : 'text';
-      body.size = '720P'; // Flash 模型固定 720P，其他值返回 400
-      body.n = 1;
-      if (hasRefImages) {
-        body.images = imagesValue.slice(0, 5); // Flash 最多 5 张参考图
-      }
-      if (sourceImage && !hasRefImages) {
-        // 单张首帧图走 keyframe 模式
-        body.mode = 'keyframe';
-        body.first_frame = sourceImage;
-        delete body.images;
-      }
-      if (config.duration) {
-        body.duration = config.duration;
-        // Agnes 官方要求 seconds 为字符串 "4"-"12"
-        const dur = Math.min(12, Math.max(4, Number(config.duration) || 5));
-        body.seconds = String(dur);
-      } else {
-        body.seconds = '5';
-      }
-
-      if (aspectValue) {
-        body.aspectRatio = aspectValue;
-        body.aspect_ratio = aspectValue;
-        body.ratio = aspectValue;
-      }
-    }
-
     const headers: any = {
       'Authorization': `Bearer ${apiKey}`,
       'Content-Type': 'application/json',
@@ -1474,6 +1444,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     // DashScope 原生：万相视频/万相图像为异步接口，必须带 X-DashScope-Async: enable；
     // qwen-image 走 multimodal-generation（同步返回 output.results[].url），不带该头
     if (isDashScopeVideo || (isDashScopeImage && /^wan/i.test(_modelLc))) headers['X-DashScope-Async'] = 'enable';
+    // [AGNESDBG] 打印Agnes视频生成请求详情
+    if (isAgnesVideo) {
+      console.log('[AGNESDBG] URL=', url);
+      console.log('[AGNESDBG] 请求体=', JSON.stringify(body, null, 2));
+    }
     const response = await fetchWithRetry(url, {
       method: 'POST',
       headers,
@@ -1482,6 +1457,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     }, (isAgnesVideo || isDashScopeVideo || isGenericVideo) ? { retries: 8, baseDelayMs: 2000 } : undefined);
 
     const data = await response.json().catch(() => null);
+    // [AGNESDBG] 打印Agnes视频生成响应详情
+    if (isAgnesVideo) {
+      console.log('[AGNESDBG] 响应状态=', response.status);
+      console.log('[AGNESDBG] 响应体=', JSON.stringify(data, null, 2));
+    }
 
     // If async job returned, start polling
     // 注意：火山方舟创建视频任务只返回 {id:"cgt-..."}，没有 status 字段，必须单独判定；
@@ -1815,6 +1795,58 @@ ipcMain.handle('openai:generate', async (_event, config: any) => {
       body.ratio = body.aspectRatio;
       body.resolution = config.resolution || '2K';
     }
+
+    // Agnes Image 2.5 Flash 专门处理：参考图必须放 extra_body.image，response_format 必须放 extra_body
+    const normalizedBaseForAgnes = normalizeApiBase(baseUrl);
+    const isAgnesImageHost = /:\/\/(?:api|apihub)\.agnes-ai\.(?:com|cn)(?:\/|$)/i.test(normalizedBaseForAgnes);
+    if (isAgnesImageHost) {
+      console.log('[AGNES-IMG] 检测到 Agnes 图片生成，应用专门参数处理');
+      // 1. 把参考图从顶层移到 extra_body.image 数组
+      if (imagesValue.length > 0) {
+        body.extra_body = body.extra_body || {};
+        body.extra_body.image = imagesValue;
+        // 删除顶层不支持的参数
+        delete body.image;
+        delete body.images;
+        delete body.sourceImage;
+        delete body.referenceImages;
+        console.log('[AGNES-IMG] 参考图已移到 extra_body.image，共 ' + imagesValue.length + ' 张');
+      }
+      // 2. 把 response_format 从顶层移到 extra_body.response_format
+      if (body.response_format) {
+        body.extra_body = body.extra_body || {};
+        body.extra_body.response_format = body.response_format;
+        delete body.response_format;
+        console.log('[AGNES-IMG] response_format 已移到 extra_body.response_format');
+      }
+      // 3. 删除 Agnes 不支持的参数
+      delete body.panoramaType;
+      delete body.outputType;
+      delete body.mediaFeature;
+      delete body.sourceFeature;
+      delete body.workflowProject;
+      delete body.githubProject;
+      delete body.apiCapability;
+      delete body.projectPromptHint;
+      delete body.gridSplit;
+      delete body.gridCount;
+      delete body.viewMode;
+      delete body.multiView;
+      delete body.lightingSettings;
+      delete body.lightingDirection;
+      delete body.lightingView;
+      delete body.hdFeature;
+      delete body.splitMode;
+      delete body.transparentBackground;
+      // 4. 确保 size 格式正确（Agnes 支持 1K/2K/3K/4K 档位或精确尺寸）
+      if (body.size && /^\d+x\d+$/i.test(String(body.size))) {
+        // 精确尺寸保持不变
+      } else if (body.size && /^[1-4]k$/i.test(String(body.size))) {
+        body.size = String(body.size).toLowerCase();
+      }
+      console.log('[AGNES-IMG] 最终请求体:', JSON.stringify(body, null, 2));
+    }
+
     const response = await fetchWithRetry(url, {
       method: 'POST',
       headers: {
