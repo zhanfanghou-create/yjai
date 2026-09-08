@@ -1218,24 +1218,41 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
         : [];
     const isPanorama720 = config.panoramaType === '720' || /720°?全景|720 panorama/i.test(String(prompt || ''));
 
-    // 本地参考图转 base64（方舟 API 无法访问本地 file:// 路径，必须转 data URL 才能作为参考图）
+    // 参考图转 base64（方舟 API 无法访问本地 file:// 路径，远程 URL 也可能过期或无权限，统一转 data URL 确保可访问）
     const toVolcImageValue = async (img: string): Promise<string> => {
-      // data: / https: 原样透传；asset: 视频API不支持（会报 resource download failed），返回空字符串跳过
+      // data: 原样透传
       if (/^data:/i.test(img)) return img;
-      if (/^https?:\/\//i.test(img)) return img;
+      // asset: 视频API不支持（会报 resource download failed），返回空字符串跳过
       if (/^asset:/i.test(img)) {
         console.warn('[VolcVideo] asset:// 引用不支持作为视频参考图，已跳过:', img.slice(0, 80));
         return '';
       }
       try {
-        const p = img.replace(/^file:\/\//i, '');
-        const st = await fs.promises.stat(p);
-        if (!st.isFile() || st.size > 25 * 1024 * 1024) return ''; // 超大图片跳过，避免请求体超限
-        const buf = await fs.promises.readFile(p);
-        const ext = (path.extname(p).slice(1) || 'png').toLowerCase();
+        let buf: Buffer;
+        let ext: string;
+        if (/^https?:\/\//i.test(img)) {
+          // 远程 URL：下载后转 base64（避免 TOS URL 过期或跨账号无权限导致 resource download failed）
+          const resp = await fetch(img);
+          if (!resp.ok) {
+            console.warn('[VolcImage] 下载远程参考图失败:', resp.status, img.slice(0, 100));
+            return '';
+          }
+          buf = Buffer.from(await resp.arrayBuffer());
+          if (buf.length > 25 * 1024 * 1024) return ''; // 超大图片跳过
+          const ct = resp.headers.get('content-type') || '';
+          ext = ct.includes('jpeg') ? 'jpg' : ct.includes('png') ? 'png' : ct.includes('webp') ? 'webp' : (path.extname(new URL(img).pathname).slice(1) || 'png').toLowerCase();
+        } else {
+          // 本地路径：读取文件转 base64
+          const p = img.replace(/^file:\/\//i, '');
+          const st = await fs.promises.stat(p);
+          if (!st.isFile() || st.size > 25 * 1024 * 1024) return ''; // 超大图片跳过，避免请求体超限
+          buf = await fs.promises.readFile(p);
+          ext = (path.extname(p).slice(1) || 'png').toLowerCase();
+        }
         const mime = ext === 'jpg' ? 'jpeg' : ext === 'svg' ? 'svg+xml' : ext;
         return 'data:image/' + mime + ';base64,' + buf.toString('base64');
-      } catch {
+      } catch (e) {
+        console.warn('[VolcImage] 参考图转base64失败:', img.slice(0, 80), e);
         return '';
       }
     };
