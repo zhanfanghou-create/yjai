@@ -368,7 +368,6 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
     // 精选对话（agnes 当前代际：2.5 pro/flash 系列，附 2.0）
     featuredChat: [
       'agnes-3.0-flash',
-      'agnes-3.0-pro',
       'agnes-2.5-pro',
       'agnes-2.5-flash',
       'agnes-2.5-pro-beta',
