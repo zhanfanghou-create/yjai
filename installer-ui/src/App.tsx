@@ -1,3 +1,4 @@
+import pkg from '../package.json';
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { InstallerWindow } from "./components/InstallerWindow";
@@ -30,13 +31,13 @@ export default function App() {
 
   return (
     <InstallerWindow onClose={() => window.installer?.quit()} onMinimize={() => window.installer?.minimize()}>
-      <StepSidebar current={step} version={meta?.version || "1.2.17"} />
+      <StepSidebar current={step} version={meta?.version || pkg.version} />
       <main className="relative flex-1 overflow-hidden">
         <AnimatePresence mode="wait">
           {step === "welcome" && (
             <div key="welcome" className="absolute inset-0">
               <Welcome
-                version={meta?.version || "1.2.17"}
+                version={meta?.version || pkg.version}
                 onNext={() => setStep("license")}
               />
             </div>
@@ -44,7 +45,7 @@ export default function App() {
           {step === "license" && (
             <div key="license" className="absolute inset-0">
               <License
-                version={meta?.version || "1.2.17"}
+                version={meta?.version || pkg.version}
                 licenseText={meta?.licenseText}
                 onBack={() => setStep("welcome")}
                 onNext={() => setStep("mode")}
@@ -88,7 +89,7 @@ export default function App() {
           {step === "finish" && (
             <div key="finish" className="absolute inset-0">
               <Finish
-                version={meta?.version || "1.2.17"}
+                version={meta?.version || pkg.version}
                 targetPath={targetPath}
                 result={installResult}
                 onLaunch={() => window.installer?.launchApp(targetPath).then(() => window.installer?.quit())}

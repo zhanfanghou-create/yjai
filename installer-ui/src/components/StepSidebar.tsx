@@ -1,3 +1,4 @@
+import pkg from '../../package.json';
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { STEPS, StepKey } from "../steps";
@@ -55,7 +56,7 @@ export function StepSidebar({ current, version }: Props) {
           );
         })}
       </nav>
-      <div className="px-5 pb-4 pt-2 text-[10px] text-white/30">艺镜AI-正式版 · v{version || "1.2.17"}</div>
+      <div className="px-5 pb-4 pt-2 text-[10px] text-white/30">艺镜AI-正式版 · v{version || pkg.version}</div>
     </aside>
   );
 }

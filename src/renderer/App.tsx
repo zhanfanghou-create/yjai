@@ -59,6 +59,10 @@ export const App: React.FC = () => {
   const [savePromptTarget, setSavePromptTarget] = useState<LibraryContextTarget | null>(null);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
   const [updateModalData, setUpdateModalData] = useState<any>(null);
+  const [updateDownloading, setUpdateDownloading] = useState(false);
+  const [updateDownloadProgress, setUpdateDownloadProgress] = useState(0);
+  const [updateDownloadedPath, setUpdateDownloadedPath] = useState<string | null>(null);
+  const [updateDownloadError, setUpdateDownloadError] = useState<string | null>(null);
 
   useEffect(() => {
     const handleGlobalContextMenu = (event: MouseEvent) => {
@@ -127,10 +131,70 @@ export const App: React.FC = () => {
       if (data?.hasUpdate) {
         console.log('[App] 收到新版本通知 v' + data.latestVersion + '，显示更新弹窗');
         setUpdateModalData(data);
+        // 重置下载状态
+        setUpdateDownloading(false);
+        setUpdateDownloadProgress(0);
+        setUpdateDownloadedPath(null);
+        setUpdateDownloadError(null);
       }
     });
     return () => { if (typeof unsub === 'function') unsub(); };
   }, []);
+
+  // 监听下载进度
+  useEffect(() => {
+    const api = (window as any)?.yijingAPI?.system;
+    if (typeof api?.onUpdateProgress !== 'function') return;
+    const unsub = api.onUpdateProgress((data: any) => {
+      if (data?.progress !== undefined) {
+        setUpdateDownloadProgress(data.progress);
+        console.log('[App] 更新下载进度:', data.progress + '%');
+      }
+    });
+    return () => { if (typeof unsub === 'function') unsub(); };
+  }, []);
+
+  // 开始下载更新
+  const startUpdateDownload = async () => {
+    const api = (window as any)?.yijingAPI?.system;
+    if (typeof api?.downloadUpdate !== 'function') {
+      setUpdateDownloadError('不支持自动下载，请手动下载');
+      return;
+    }
+    setUpdateDownloading(true);
+    setUpdateDownloadProgress(0);
+    setUpdateDownloadError(null);
+    try {
+      const result = await api.downloadUpdate();
+      if (result?.ok && result?.path) {
+        console.log('[App] 更新下载完成:', result.path);
+        setUpdateDownloadedPath(result.path);
+        setUpdateDownloadProgress(100);
+      } else {
+        setUpdateDownloadError(result?.error || '下载失败');
+      }
+    } catch (e: any) {
+      setUpdateDownloadError(e?.message || '下载异常');
+    } finally {
+      setUpdateDownloading(false);
+    }
+  };
+
+  // 安装更新
+  const installUpdate = async () => {
+    if (!updateDownloadedPath) return;
+    const api = (window as any)?.yijingAPI?.system;
+    if (typeof api?.installUpdate !== 'function') {
+      // 降级：打开文件所在目录
+      window.location.hash = '#/settings';
+      return;
+    }
+    try {
+      await api.installUpdate(updateDownloadedPath);
+    } catch (e: any) {
+      console.error('[App] 安装更新失败:', e);
+    }
+  };
 
   const closeContextMenu = useCallback(() => {
     setContextMenu(null);
@@ -307,36 +371,99 @@ export const App: React.FC = () => {
                 </div>
               </div>
             )}
+            {/* 下载进度条区域 */}
+            {(updateDownloading || updateDownloadedPath || updateDownloadError) && (
+              <div style={{ marginBottom: 20 }}>
+                {updateDownloading && (
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6 }}>
+                      <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)' }}>正在下载更新包...</span>
+                      <span style={{ fontSize: 13, color: '#8b5cf6', fontWeight: 600 }}>{Math.round(updateDownloadProgress)}%</span>
+                    </div>
+                    <div style={{
+                      width: '100%', height: 8, borderRadius: 4,
+                      background: 'rgba(255,255,255,0.1)', overflow: 'hidden',
+                    }}>
+                      <div style={{
+                        width: updateDownloadProgress + '%', height: '100%',
+                        background: 'linear-gradient(90deg, #8b5cf6, #6366f1)',
+                        borderRadius: 4, transition: 'width 0.3s ease',
+                      }} />
+                    </div>
+                  </div>
+                )}
+                {updateDownloadedPath && !updateDownloading && (
+                  <div style={{
+                    padding: '10px 14px', borderRadius: 8,
+                    background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.3)',
+                  }}>
+                    <div style={{ fontSize: 13, color: '#10b981', fontWeight: 600 }}>✓ 下载完成</div>
+                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', marginTop: 4, wordBreak: 'break-all' }}>{updateDownloadedPath}</div>
+                  </div>
+                )}
+                {updateDownloadError && (
+                  <div style={{
+                    padding: '10px 14px', borderRadius: 8,
+                    background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)',
+                  }}>
+                    <div style={{ fontSize: 13, color: '#ef4444', fontWeight: 600 }}>✗ 下载失败</div>
+                    <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>{updateDownloadError}</div>
+                  </div>
+                )}
+              </div>
+            )}
+
             <div style={{ display: 'flex', gap: 12 }}>
               <button
                 style={{
                   flex: 1, height: 40, borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)',
                   background: 'transparent', color: 'rgba(255,255,255,0.7)', fontSize: 14, cursor: 'pointer',
                 }}
-                onClick={() => setUpdateModalData(null)}
-              >稍后再说</button>
-              <button
-                style={{
-                  flex: 1, height: 40, borderRadius: 8, border: 'none',
-                  background: 'linear-gradient(135deg, #8b5cf6, #6366f1)', color: '#fff',
-                  fontSize: 14, fontWeight: 600, cursor: 'pointer',
-                }}
                 onClick={() => {
-                  setUpdateModalData(null);
-                  // 跳转到设置页的更新区域
-                  const api = (window as any)?.yijingAPI?.system;
-                  if (typeof api?.downloadUpdate === 'function') {
-                    // 直接开始下载
-                    window.location.hash = '#/settings';
-                    setTimeout(() => {
-                      const evt = new CustomEvent('trigger-update-download');
-                      window.dispatchEvent(evt);
-                    }, 500);
-                  } else {
-                    window.location.hash = '#/settings';
-                  }
+                  if (!updateDownloading) setUpdateModalData(null);
                 }}
-              >立即更新</button>
+                disabled={updateDownloading}
+              >{updateDownloading ? '下载中...' : '稍后再说'}</button>
+              {!updateDownloadedPath && !updateDownloading && (
+                <button
+                  style={{
+                    flex: 1, height: 40, borderRadius: 8, border: 'none',
+                    background: 'linear-gradient(135deg, #8b5cf6, #6366f1)', color: '#fff',
+                    fontSize: 14, fontWeight: 600, cursor: 'pointer',
+                  }}
+                  onClick={startUpdateDownload}
+                >立即更新</button>
+              )}
+              {updateDownloading && (
+                <button
+                  style={{
+                    flex: 1, height: 40, borderRadius: 8, border: 'none',
+                    background: 'rgba(139,92,246,0.5)', color: '#fff',
+                    fontSize: 14, fontWeight: 600, cursor: 'not-allowed',
+                  }}
+                  disabled
+                >下载中...</button>
+              )}
+              {updateDownloadedPath && !updateDownloading && (
+                <button
+                  style={{
+                    flex: 1, height: 40, borderRadius: 8, border: 'none',
+                    background: 'linear-gradient(135deg, #10b981, #059669)', color: '#fff',
+                    fontSize: 14, fontWeight: 600, cursor: 'pointer',
+                  }}
+                  onClick={installUpdate}
+                >立即安装</button>
+              )}
+              {updateDownloadError && !updateDownloading && (
+                <button
+                  style={{
+                    flex: 1, height: 40, borderRadius: 8, border: 'none',
+                    background: 'linear-gradient(135deg, #8b5cf6, #6366f1)', color: '#fff',
+                    fontSize: 14, fontWeight: 600, cursor: 'pointer',
+                  }}
+                  onClick={startUpdateDownload}
+                >重试下载</button>
+              )}
             </div>
           </div>
         </div>,

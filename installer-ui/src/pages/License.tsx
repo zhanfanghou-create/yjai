@@ -1,3 +1,4 @@
+import pkg from '../../package.json';
 import { useEffect, useRef, useState } from "react";
 import { PageShell } from "../components/PageShell";
 import { GlassCard } from "../components/GlassCard";
@@ -35,7 +36,7 @@ export function License({ version, licenseText, onBack, onNext }: Props) {
   const [agreed, setAgreed] = useState(false);
   const [scrolledEnd, setScrolledEnd] = useState(false);
   const scRef = useRef<HTMLDivElement>(null);
-  const text = licenseText && licenseText.trim().length > 0 ? licenseText : buildFallbackLicense(version || '1.2.17');
+  const text = licenseText && licenseText.trim().length > 0 ? licenseText : buildFallbackLicense(version || pkg.version);
 
   useEffect(() => {
     setAgreed(false);

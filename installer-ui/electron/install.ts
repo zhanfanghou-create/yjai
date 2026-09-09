@@ -9,27 +9,58 @@ const isDev = process.env.NODE_ENV === "development";
 function payloadRoot(): string {
   if (isDev) return path.resolve(__dirname, "..", "payload");
   // 多个fallback路径，确保portable模式下能找到payload目录
-  const candidates: string[] = [
-    path.join(process.resourcesPath, "payload"), // extraResources路径（标准）
-    path.join(path.dirname(process.execPath), "resources", "payload"), // 可执行文件同级resources
-  ];
-  // asarUnpack路径：app.asar.unpacked/payload
+  const candidates: string[] = [];
+
+  // 1. extraResources路径（标准）
+  if (process.resourcesPath) {
+    candidates.push(path.join(process.resourcesPath, "payload"));
+  }
+
+  // 2. 可执行文件同级resources
+  try {
+    candidates.push(path.join(path.dirname(process.execPath), "resources", "payload"));
+  } catch { /* ignore */ }
+
+  // 3. asarUnpack路径：app.asar.unpacked/payload
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const electron = require("electron");
     const appPath = electron?.app?.getAppPath?.() || __dirname;
     if (appPath) {
       candidates.push(path.join(path.dirname(appPath), "app.asar.unpacked", "payload"));
+      // 4. 也检查 app.asar.unpacked 本身
+      candidates.push(path.join(appPath, "..", "app.asar.unpacked", "payload"));
     }
   } catch { /* ignore */ }
+
+  // 5. 检查 __dirname 上级目录的 payload（dev 或特殊打包模式）
+  try {
+    candidates.push(path.resolve(__dirname, "..", "payload"));
+  } catch { /* ignore */ }
+
+  // 打印所有候选路径，方便调试
+  console.log("[Installer] payload 候选路径:", candidates);
+
   // 返回第一个包含app.7z的路径
   for (const p of candidates) {
     try {
-      if (fs.existsSync(p) && fs.existsSync(path.join(p, "app.7z"))) return p;
+      if (p && fs.existsSync(p) && fs.existsSync(path.join(p, "app.7z"))) {
+        console.log("[Installer] 找到 payload 目录:", p);
+        return p;
+      }
+    } catch (e) {
+      console.warn("[Installer] 检查路径失败:", p, e);
+    }
+  }
+
+  // 都没找到时，返回第一个存在的目录，或者第一个候选
+  console.error("[Installer] 未找到包含 app.7z 的 payload 目录!");
+  for (const p of candidates) {
+    try {
+      if (p && fs.existsSync(p)) return p;
     } catch { /* ignore */ }
   }
-  // 都没找到时返回第一个候选（让后续错误检查给出明确报错）
-  return candidates[0];
+  return candidates[0] || path.join(process.resourcesPath || "", "payload");
 }
 export function payloadArchive(): string {
   return path.join(payloadRoot(), "app.7z");
@@ -103,7 +134,7 @@ export async function runInstall(
   if (process.platform === "win32") {
     try { await createWindowsShortcuts(target, opts); } catch (e) { onLog({ level: "warn", text: `快捷方式创建失败: ${String(e)}` }); }
     try { await writeUninstaller(target); } catch (e) { onLog({ level: "warn", text: `卸载器写入失败: ${String(e)}` }); }
-    try { await writeUninstallRegistry(target, opts.version || "1.2.17"); } catch (e) { onLog({ level: "warn", text: `卸载登记写入失败: ${String(e)}` }); }
+    try { await writeUninstallRegistry(target, opts.version || require("../package.json").version); } catch (e) { onLog({ level: "warn", text: `卸载登记写入失败: ${String(e)}` }); }
     if (opts.autoStart) {
       try { await writeAutoStart(target); } catch (e) { onLog({ level: "warn", text: `开机自启写入失败: ${String(e)}` }); }
     }
@@ -209,7 +240,7 @@ async function writeUninstallRegistry(target: string, version: string): Promise<
   const key = `HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`;
   const script = [
     `reg add ${psQuote(key)} /v DisplayName /t REG_SZ /d ${psQuote(APP_NAME)} /f`,
-    `reg add ${psQuote(key)} /v DisplayVersion /t REG_SZ /d ${psQuote(version || "1.2.17")} /f`,
+    `reg add ${psQuote(key)} /v DisplayVersion /t REG_SZ /d ${psQuote(version || require("../package.json").version)} /f`,
     `reg add ${psQuote(key)} /v InstallLocation /t REG_SZ /d ${psQuote(target)} /f`,
     `reg add ${psQuote(key)} /v DisplayIcon /t REG_SZ /d ${psQuote(iconExe)} /f`,
     `reg add ${psQuote(key)} /v UninstallString /t REG_SZ /d ${psQuote('"' + uninstBat + '"')} /f`,
