@@ -280,6 +280,58 @@ export async function runInstall(
   const archive = payloadArchive();
   const sz = sevenZipExe();
 
+  // 【关键】在开始安装前，先验证7za.exe和app.7z是否真的可用
+  // 这是终极保障：避免spawn 7za.exe ENOENT错误
+  onLog({ level: "info", text: `验证解压工具: ${sz}` });
+  onLog({ level: "info", text: `验证主程序数据包: ${archive}` });
+  
+  if (!fs.existsSync(sz)) {
+    const errorMsg = `解压工具不存在: ${sz}。请重新下载安装包。`;
+    onLog({ level: "error", text: errorMsg });
+    throw new Error(errorMsg);
+  }
+  if (!fs.existsSync(archive)) {
+    const errorMsg = `主程序数据包不存在: ${archive}。请重新下载安装包。`;
+    onLog({ level: "error", text: errorMsg });
+    throw new Error(errorMsg);
+  }
+  
+  // 验证7za.exe可以执行（检查文件大小是否合理）
+  try {
+    const szStat = fs.statSync(sz);
+    if (szStat.size < 100000) {
+      const errorMsg = `解压工具文件大小异常: ${szStat.size} 字节（预期大于100KB）。请重新下载安装包。`;
+      onLog({ level: "error", text: errorMsg });
+      throw new Error(errorMsg);
+    }
+    onLog({ level: "info", text: `解压工具验证通过，大小: ${(szStat.size / 1024).toFixed(1)} KB` });
+  } catch (e) {
+    if (e instanceof Error && e.message.includes("解压工具")) {
+      throw e;
+    }
+    const errorMsg = `解压工具验证失败: ${String(e)}`;
+    onLog({ level: "error", text: errorMsg });
+    throw new Error(errorMsg);
+  }
+  
+  // 验证app.7z文件大小是否合理
+  try {
+    const archiveStat = fs.statSync(archive);
+    if (archiveStat.size < 1000000) {
+      const errorMsg = `主程序数据包文件大小异常: ${(archiveStat.size / 1024 / 1024).toFixed(1)} MB（预期大于1MB）。请重新下载安装包。`;
+      onLog({ level: "error", text: errorMsg });
+      throw new Error(errorMsg);
+    }
+    onLog({ level: "info", text: `主程序数据包验证通过，大小: ${(archiveStat.size / 1024 / 1024).toFixed(1)} MB` });
+  } catch (e) {
+    if (e instanceof Error && e.message.includes("主程序数据包")) {
+      throw e;
+    }
+    const errorMsg = `主程序数据包验证失败: ${String(e)}`;
+    onLog({ level: "error", text: errorMsg });
+    throw new Error(errorMsg);
+  }
+
   // 覆盖/升级安装前，先结束正在运行的目标目录主程序，避免 exe 被占用导致解压失败
   try { await closeRunningApp(target); } catch (e) { onLog({ level: "warn", text: `关闭运行中程序失败: ${String(e)}` }); }
 
@@ -308,7 +360,12 @@ export async function runInstall(
     proc.stderr.on("data", (chunk: Buffer) => {
       onLog({ level: "warn", text: chunk.toString("utf8").trim() });
     });
-    proc.on("error", reject);
+    proc.on("error", (err) => {
+      // 提供更详细的错误信息，特别是ENOENT错误
+      const errorMsg = `解压工具执行失败: ${err.message}。工具路径: ${sz}。请重新下载安装包。`;
+      onLog({ level: "error", text: errorMsg });
+      reject(new Error(errorMsg));
+    });
     proc.on("close", (code) => {
       if (code === 0) resolve();
       else reject(new Error(`7-Zip 解压失败, exit=${code}`));
@@ -355,7 +412,12 @@ async function runPowerShell(script: string): Promise<void> {
     );
     let err = "";
     proc.stderr.on("data", (c: Buffer) => (err += c.toString("utf8")));
-    proc.on("error", reject);
+    proc.on("error", (err) => {
+      // 提供更详细的错误信息，特别是ENOENT错误
+      const errorMsg = `解压工具执行失败: ${err.message}。工具路径: ${sz}。请重新下载安装包。`;
+      onLog({ level: "error", text: errorMsg });
+      reject(new Error(errorMsg));
+    });
     proc.on("close", (code) =>
       code === 0 ? resolve() : reject(new Error(`powershell exit ${code}: ${err.trim()}`))
     );
