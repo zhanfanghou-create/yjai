@@ -46,20 +46,91 @@ async function findExistingInstallDir(): Promise<string | null> {
       if (fs.existsSync(macApp)) return macApp;
       return null;
     }
-    const key = `HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`;
+    const appExe = `${APP_NAME}.exe`;
+
+    // 1. 检查 HKCU 注册表（用户级安装）
+    const hkcuKey = `HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`;
     try {
       const out = await new Promise<string>((resolve, reject) => {
-        execFile("reg", ["query", key, "/v", "InstallLocation"], { windowsHide: true }, (err, stdout) =>
+        execFile("reg", ["query", hkcuKey, "/v", "InstallLocation"], { windowsHide: true }, (err, stdout) =>
           err ? reject(err) : resolve(stdout)
         );
       });
-      const m = out.match(/InstallLocation\s+REG_(?:SZ|EXPAND_SZ|MULTI_SZ)\s+(.+)/);
-      if (m && m[1].trim() && fs.existsSync(m[1].trim())) return m[1].trim();
-    } catch { /* 注册表无记录则走默认目录 */ }
-    const def = defaultInstallDir();
-    if (fs.existsSync(def)) return def;
+      const m = out.match(/InstallLocation\\s+REG_(?:SZ|EXPAND_SZ|MULTI_SZ)\\s+(.+)/);
+      if (m && m[1].trim()) {
+        const dir = m[1].trim();
+        if (fs.existsSync(dir) && fs.existsSync(path.join(dir, appExe))) {
+          console.log("[Installer] 从HKCU注册表找到安装目录:", dir);
+          return dir;
+        }
+      }
+    } catch { /* HKCU注册表无记录 */ }
+
+    // 2. 检查 HKLM 注册表（系统级安装）
+    const hklmKeys = [
+      `HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`,
+      `HKLM\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\${APP_NAME}`,
+    ];
+    for (const key of hklmKeys) {
+      try {
+        const out = await new Promise<string>((resolve, reject) => {
+          execFile("reg", ["query", key, "/v", "InstallLocation"], { windowsHide: true }, (err, stdout) =>
+            err ? reject(err) : resolve(stdout)
+          );
+        });
+        const m = out.match(/InstallLocation\\s+REG_(?:SZ|EXPAND_SZ|MULTI_SZ)\\s+(.+)/);
+        if (m && m[1].trim()) {
+          const dir = m[1].trim();
+          if (fs.existsSync(dir) && fs.existsSync(path.join(dir, appExe))) {
+            console.log("[Installer] 从HKLM注册表找到安装目录:", dir);
+            return dir;
+          }
+        }
+      } catch { /* 该注册表位置无记录 */ }
+    }
+
+    // 3. 扫描常见安装目录
+    const commonDirs = [
+      defaultInstallDir(), // %LOCALAPPDATA%\Programs\艺镜AI-正式版
+      path.join(process.env.PROGRAMFILES || "C:\\Program Files", APP_NAME),
+      path.join(process.env["PROGRAMFILES(X86)"] || "C:\\Program Files (x86)", APP_NAME),
+      path.join(process.env.LOCALAPPDATA || path.join(os.homedir(), "AppData", "Local"), APP_NAME),
+      path.join(process.env.APPDATA || path.join(os.homedir(), "AppData", "Roaming"), APP_NAME),
+      path.join("C:\\Program Files", APP_NAME),
+      path.join("D:\\Program Files", APP_NAME),
+      path.join("E:\\Program Files", APP_NAME),
+    ];
+    for (const dir of commonDirs) {
+      try {
+        if (dir && fs.existsSync(dir) && fs.existsSync(path.join(dir, appExe))) {
+          console.log("[Installer] 从常见目录找到安装目录:", dir);
+          return dir;
+        }
+      } catch { /* 忽略 */ }
+    }
+
+    // 4. 通过正在运行的进程查找安装目录
+    try {
+      const out = await new Promise<string>((resolve) => {
+        execFile("wmic", ["process", "where", `name='${appExe}'`, "get", "ExecutablePath", "/format:list"], { windowsHide: true }, (err, stdout) =>
+          resolve(stdout || "")
+        );
+      });
+      const m = out.match(/ExecutablePath=(.+)/);
+      if (m && m[1].trim()) {
+        const exePath = m[1].trim();
+        const dir = path.dirname(exePath);
+        if (fs.existsSync(dir)) {
+          console.log("[Installer] 从运行进程找到安装目录:", dir);
+          return dir;
+        }
+      }
+    } catch { /* wmic可能不可用 */ }
+
+    console.log("[Installer] 未找到已有的安装目录，将使用默认目录");
     return null;
-  } catch {
+  } catch (e) {
+    console.error("[Installer] findExistingInstallDir 异常:", e);
     return null;
   }
 }

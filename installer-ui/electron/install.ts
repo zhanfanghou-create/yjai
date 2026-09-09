@@ -8,32 +8,32 @@ const isDev = process.env.NODE_ENV === "development";
 
 function payloadRoot(): string {
   if (isDev) return path.resolve(__dirname, "..", "payload");
-  // 多个fallback路径，确保portable模式下能找到payload目录
   const candidates: string[] = [];
 
-  // 1. extraResources路径（标准）
-  if (process.resourcesPath) {
-    candidates.push(path.join(process.resourcesPath, "payload"));
-  }
-
-  // 2. 可执行文件同级resources
-  try {
-    candidates.push(path.join(path.dirname(process.execPath), "resources", "payload"));
-  } catch { /* ignore */ }
-
-  // 3. asarUnpack路径：app.asar.unpacked/payload
+  // 1. asarUnpack路径（最可靠，portable模式下也能正常解压）
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const electron = require("electron");
     const appPath = electron?.app?.getAppPath?.() || __dirname;
     if (appPath) {
+      // app.asar.unpacked/payload
       candidates.push(path.join(path.dirname(appPath), "app.asar.unpacked", "payload"));
-      // 4. 也检查 app.asar.unpacked 本身
+      // resources/app.asar.unpacked/payload
       candidates.push(path.join(appPath, "..", "app.asar.unpacked", "payload"));
     }
   } catch { /* ignore */ }
 
-  // 5. 检查 __dirname 上级目录的 payload（dev 或特殊打包模式）
+  // 2. extraResources路径（标准）
+  if (process.resourcesPath) {
+    candidates.push(path.join(process.resourcesPath, "payload"));
+  }
+
+  // 3. 可执行文件同级resources
+  try {
+    candidates.push(path.join(path.dirname(process.execPath), "resources", "payload"));
+  } catch { /* ignore */ }
+
+  // 4. __dirname上级目录的payload（dev或特殊打包模式）
   try {
     candidates.push(path.resolve(__dirname, "..", "payload"));
   } catch { /* ignore */ }
@@ -41,10 +41,13 @@ function payloadRoot(): string {
   // 打印所有候选路径，方便调试
   console.log("[Installer] payload 候选路径:", candidates);
 
-  // 返回第一个包含app.7z的路径
+  // 返回第一个同时包含 app.7z 和 bin/7za.exe 的路径（关键修复：两个都要检查）
+  const binName = process.platform === "win32" ? "7za.exe" : "7zz";
   for (const p of candidates) {
     try {
-      if (p && fs.existsSync(p) && fs.existsSync(path.join(p, "app.7z"))) {
+      if (p && fs.existsSync(p) &&
+          fs.existsSync(path.join(p, "app.7z")) &&
+          fs.existsSync(path.join(p, "bin", binName))) {
         console.log("[Installer] 找到 payload 目录:", p);
         return p;
       }
@@ -54,7 +57,18 @@ function payloadRoot(): string {
   }
 
   // 都没找到时，返回第一个存在的目录，或者第一个候选
-  console.error("[Installer] 未找到包含 app.7z 的 payload 目录!");
+  console.error("[Installer] 未找到同时包含 app.7z 和 bin/7za.exe 的 payload 目录!");
+  // 详细打印每个候选路径的状态
+  for (const p of candidates) {
+    try {
+      const hasDir = p && fs.existsSync(p);
+      const has7z = hasDir && fs.existsSync(path.join(p, "app.7z"));
+      const hasBin = hasDir && fs.existsSync(path.join(p, "bin", binName));
+      console.error(`[Installer]   ${p}: dir=${hasDir}, app.7z=${has7z}, bin/${binName}=${hasBin}`);
+    } catch (e) {
+      console.error(`[Installer]   ${p}: 检查异常 ${e}`);
+    }
+  }
   for (const p of candidates) {
     try {
       if (p && fs.existsSync(p)) return p;
