@@ -43,7 +43,7 @@ export interface AssistantResult {
 const base = (url = '') => String(url).trim().replace(/\/+$/, '');
 const normalizeApiBase = (url = '') => base(url)
   .replace(/\/(?:chat\/completions|images\/generations|images\/edits|videos\/generations|api\/generate|api\/result|models|agnesapi)(?:\/.*)?$/i, '');
-const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)api\.agnes-ai\.com(\/|$)/i, '$1apihub.agnes-ai.cn$2');
+const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
 
 // 选择用户已配置的对话(聊天)模型。
 // 注意：只能用聊天类配置(apiConfigs/chatAPIConfigs)，绝不能用 generationParams.selectedModel，

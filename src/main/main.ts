@@ -340,7 +340,7 @@ ipcMain.handle('grsai:cancelJob', async (_event, opts: any) => {
 });
 
 function redirectAgnesHost(url: string): string {
-  return url.replace(/^(https?:\/\/)api\.agnes-ai\.com(\/|$)/i, '$1apihub.agnes-ai.cn$2');
+  return url.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
 }
 
 function normalizeApiBase(baseUrl: string | undefined): string {

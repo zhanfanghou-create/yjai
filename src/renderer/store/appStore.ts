@@ -91,7 +91,7 @@ const base = (url = '') => String(url).trim().replace(/\/+$/, '');
 // 规范化 API 基础地址：剥离 /chat/completions、/images/generations 等端点后缀，避免与端点拼接产生错误 URL
 const normalizeApiBase = (url = '') => base(url)
   .replace(/\/(?:chat\/completions|chat\/completions\/chat|images\/generations|images\/edits|videos\/generations|api\/generate|api\/result|models|agnesapi)(?:\/.*)?$/i, '');
-const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)api\.agnes-ai\.com(\/|$)/i, '$1apihub.agnes-ai.cn$2');
+const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
 // 清理损坏的 UTF-8 字符（检测乱码后回退为默认名称）
 const sanitizeText = (s: string | undefined, fallback = '新对话') => {
   if (!s) return fallback;
@@ -1065,14 +1065,22 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       const nb = persisted.assistantSettings.nodeBackend;
       if (nb !== 'ask' && nb !== 'comfyui' && nb !== 'api') persisted.assistantSettings.nodeBackend = 'ask';
     } catch { persisted.assistantSettings = { voiceSource: 'edge-tts', speakReplies: false, nodeBackend: 'ask' } as any; }
-    // Agnes API 地址自动迁移：旧国际站 .com -> 新国内节点 .cn
-    // 2026年7月29日 Agnes 做了国内入口迁移，旧 .com 跨境链路不稳定
+    // Agnes API 地址自动迁移：
+    // 1. 旧国际站 .com -> 新国内节点 .cn
+    // 2. 旧 apihub.agnes-ai.cn -> 新正式地址 api.agnes-ai.cn（2026年9月官方文档确认）
     const agnesConfigKeys = ['apiConfigs', 'chatAPIConfigs', 'imageAPIConfigs', 'videoAPIConfigs', 'voiceAPIConfigs', 'musicAPIConfigs'];
     for (const key of agnesConfigKeys) {
       if (Array.isArray(persisted[key])) {
         persisted[key] = persisted[key].map((cfg: any) => {
-          if (cfg && typeof cfg.baseUrl === 'string' && cfg.baseUrl.includes('agnes-ai.com')) {
-            cfg.baseUrl = cfg.baseUrl.replace('agnes-ai.com', 'agnes-ai.cn');
+          if (cfg && typeof cfg.baseUrl === 'string') {
+            // 迁移1：旧国际站 .com -> 新国内节点 .cn
+            if (cfg.baseUrl.includes('agnes-ai.com')) {
+              cfg.baseUrl = cfg.baseUrl.replace('agnes-ai.com', 'agnes-ai.cn');
+            }
+            // 迁移2：旧 apihub.agnes-ai.cn -> 新正式地址 api.agnes-ai.cn
+            if (cfg.baseUrl.includes('apihub.agnes-ai.cn')) {
+              cfg.baseUrl = cfg.baseUrl.replace('apihub.agnes-ai.cn', 'api.agnes-ai.cn');
+            }
           }
           return cfg;
         });
