@@ -47,15 +47,15 @@ jobs:
           - os: windows-latest
             platform: win
             arch: x64
-            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-Windows-x64.exe
+            artifact_glob: release/艺镜AI-正式版-*.exe
           - os: macos-14
             platform: mac
             arch: x64
-            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-macOS-x64.dmg
+            artifact_glob: release/yijing-ai-*-mac-x64.dmg
           - os: macos-14
             platform: mac
             arch: arm64
-            artifact_glob: installer-ui/dist-installer/YijingAI-Installer-macOS-arm64.dmg
+            artifact_glob: release/yijing-ai-*-mac-arm64.dmg
     runs-on: ${{ matrix.os }}
     env:
       ELECTRON_BUILDER_DOWNLOAD_MAX_ATTEMPTS: '8'
@@ -70,7 +70,6 @@ jobs:
           cache: npm
           cache-dependency-path: |
             package-lock.json
-            installer-ui/package-lock.json
       - name: Install main application dependencies
         shell: bash
         run: npm ci --no-audit --no-fund
@@ -79,58 +78,31 @@ jobs:
         run: |
           npm run build:renderer
           npx tsc -p tsconfig.main.json
-      - name: Build unpacked Windows payload
+      - name: Build Windows installer with default NSIS
         if: matrix.platform == 'win'
         shell: bash
         run: |
           unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
-          npx electron-builder --dir --win --x64 --publish never
-      - name: Build unpacked macOS payload
+          for attempt in 1 2 3; do
+            npx electron-builder --win --x64 --publish never && break
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep 15
+          done
+      - name: Build macOS installer with default DMG
         if: matrix.platform == 'mac'
         shell: bash
         run: |
           unset ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
-          npx electron-builder --dir --mac --${{ matrix.arch }} --publish never
-      - name: Install installer dependencies
-        working-directory: installer-ui
-        shell: bash
-        run: npm ci --no-audit --no-fund
-      - name: Install macOS payload tool
-        if: matrix.platform == 'mac'
-        shell: bash
-        run: |
-          brew install sevenzip || brew install p7zip
-          command -v 7zz || command -v 7z
-      - name: Pack installer payload
-        working-directory: installer-ui
-        shell: bash
-        run: |
-          if [ "${{ matrix.platform }}" = "win" ]; then
-            node scripts/pack-payload.mjs ../release/win-unpacked
-          elif [ "${{ matrix.arch }}" = "x64" ]; then
-            app_path=$(find ../release/mac -maxdepth 1 -type d -name '*.app' | head -n 1)
-            test -n "$app_path"
-            node scripts/pack-payload.mjs "$app_path"
-          else
-            app_path=$(find ../release/mac-arm64 -maxdepth 1 -type d -name '*.app' | head -n 1)
-            test -n "$app_path"
-            node scripts/pack-payload.mjs "$app_path"
-          fi
-      - name: Build custom installer
-        working-directory: installer-ui
-        shell: bash
-        run: |
-          unset GH_TOKEN ELECTRON_MIRROR ELECTRON_CUSTOM_DIR ELECTRON_CUSTOM_FILENAME npm_config_electron_mirror NPM_CONFIG_ELECTRON_MIRROR
-          npm run build
           for attempt in 1 2 3; do
-            if [ "${{ matrix.platform }}" = "win" ]; then
-              npx electron-builder --win --x64 -c electron-builder.yml --publish never && break
-            else
-              npx electron-builder --mac --${{ matrix.arch }} -c electron-builder.yml --publish never && break
-            fi
+            npx electron-builder --mac --${{ matrix.arch }} --publish never && break
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep 15
           done
+      - name: Verify installer artifact exists
+        shell: bash
+        run: |
+          ls -la "${{ matrix.artifact_glob }}"
+          test -f "${{ matrix.artifact_glob }}"
       - name: Upload installer to public draft release
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
@@ -155,11 +127,19 @@ jobs:
           PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
         run: |
           mkdir -p dist
-          gh release download "v${VERSION}" --repo "$PUBLIC_REPO" --dir dist --pattern "YijingAI-Installer-Windows-x64.exe" --pattern "YijingAI-Installer-macOS-x64.dmg" --pattern "YijingAI-Installer-macOS-arm64.dmg"
+          gh release download "v${VERSION}" --repo "$PUBLIC_REPO" --dir dist --pattern "艺镜AI-正式版-*.exe" --pattern "yijing-ai-*-mac-*.dmg"
+          ls -la dist/
       - name: Generate public update manifest
         env:
           VERSION: ${{ needs.prepare.outputs.version }}
-        run: node scripts/create-release-manifest.mjs "$VERSION" "zhanfanghou-create/yijing-ai-downloads" "yijingshijue-2026/yijing-ai-downloads" dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
+        run: |
+          WIN_EXE=$(find dist -name '艺镜AI-正式版-*.exe' -print -quit)
+          MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
+          MAC_ARM64=$(find dist -name 'yijing-ai-*-mac-arm64.dmg' -print -quit)
+          test -n "$WIN_EXE"
+          test -n "$MAC_X64"
+          test -n "$MAC_ARM64"
+          node scripts/create-release-manifest.mjs "$VERSION" "zhanfanghou-create/yijing-ai-downloads" "yijingshijue-2026/yijing-ai-downloads" "$WIN_EXE" "$MAC_X64" "$MAC_ARM64" dist/latest.json
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
@@ -176,7 +156,11 @@ jobs:
           CNB_RELEASE_TAG: v${{ needs.prepare.outputs.version }}
           CNB_RELEASE_TITLE: 艺镜 AI v${{ needs.prepare.outputs.version }}
           CNB_RELEASE_NOTES: 艺镜 AI 无限画布正式版，包含 Windows 与 Intel/Apple Silicon macOS 安装包。
-        run: node scripts/publish-cnb-release.mjs dist/YijingAI-Installer-Windows-x64.exe dist/YijingAI-Installer-macOS-x64.dmg dist/YijingAI-Installer-macOS-arm64.dmg dist/latest.json
+        run: |
+          WIN_EXE=$(find dist -name '艺镜AI-正式版-*.exe' -print -quit)
+          MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
+          MAC_ARM64=$(find dist -name 'yijing-ai-*-mac-arm64.dmg' -print -quit)
+          node scripts/publish-cnb-release.mjs "$WIN_EXE" "$MAC_X64" "$MAC_ARM64" dist/latest.json
       - name: Publish installers to Alibaba Cloud OSS
         if: always()
         env:
@@ -192,9 +176,12 @@ jobs:
           unzip -q ossutil.zip -d ossutil-bin
           OSSUTIL=$(find ossutil-bin -type f -name ossutil -print -quit)
           chmod +x "$OSSUTIL"
-          "$OSSUTIL" cp dist/YijingAI-Installer-Windows-x64.exe "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-Windows-x64.exe" -f
-          "$OSSUTIL" cp dist/YijingAI-Installer-macOS-x64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-x64.dmg" -f
-          "$OSSUTIL" cp dist/YijingAI-Installer-macOS-arm64.dmg "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/YijingAI-Installer-macOS-arm64.dmg" -f
+          WIN_EXE=$(find dist -name '艺镜AI-正式版-*.exe' -print -quit)
+          MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
+          MAC_ARM64=$(find dist -name 'yijing-ai-*-mac-arm64.dmg' -print -quit)
+          "$OSSUTIL" cp "$WIN_EXE" "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/$(basename "$WIN_EXE")" -f
+          "$OSSUTIL" cp "$MAC_X64" "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/$(basename "$MAC_X64")" -f
+          "$OSSUTIL" cp "$MAC_ARM64" "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/$(basename "$MAC_ARM64")" -f
           "$OSSUTIL" cp dist/latest.json oss://yjai-releases-cn-20260818/yijing/latest.json -f
       - name: Update CNB latest manifest branch
         if: always()
