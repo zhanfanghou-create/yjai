@@ -360,12 +360,7 @@ export async function runInstall(
     proc.stderr.on("data", (chunk: Buffer) => {
       onLog({ level: "warn", text: chunk.toString("utf8").trim() });
     });
-    proc.on("error", (err) => {
-      // 提供更详细的错误信息，特别是ENOENT错误
-      const errorMsg = `解压工具执行失败: ${err.message}。工具路径: ${sz}。请重新下载安装包。`;
-      onLog({ level: "error", text: errorMsg });
-      reject(new Error(errorMsg));
-    });
+    proc.on("error", reject);
     proc.on("close", (code) => {
       if (code === 0) resolve();
       else reject(new Error(`7-Zip 解压失败, exit=${code}`));
@@ -412,12 +407,7 @@ async function runPowerShell(script: string): Promise<void> {
     );
     let err = "";
     proc.stderr.on("data", (c: Buffer) => (err += c.toString("utf8")));
-    proc.on("error", (err) => {
-      // 提供更详细的错误信息，特别是ENOENT错误
-      const errorMsg = `解压工具执行失败: ${err.message}。工具路径: ${sz}。请重新下载安装包。`;
-      onLog({ level: "error", text: errorMsg });
-      reject(new Error(errorMsg));
-    });
+    proc.on("error", reject);
     proc.on("close", (code) =>
       code === 0 ? resolve() : reject(new Error(`powershell exit ${code}: ${err.trim()}`))
     );
