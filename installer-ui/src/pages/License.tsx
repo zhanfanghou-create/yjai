@@ -1,5 +1,5 @@
 import pkg from '../../package.json';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { PageShell } from "../components/PageShell";
 import { GlassCard } from "../components/GlassCard";
 import { GradientButton } from "../components/GradientButton";
@@ -34,20 +34,11 @@ const buildFallbackLicense = (version: string) => `艺镜AI-正式版 最终用�
 
 export function License({ version, licenseText, onBack, onNext }: Props) {
   const [agreed, setAgreed] = useState(false);
-  const [scrolledEnd, setScrolledEnd] = useState(false);
-  const scRef = useRef<HTMLDivElement>(null);
   const text = licenseText && licenseText.trim().length > 0 ? licenseText : buildFallbackLicense(version || pkg.version);
 
   useEffect(() => {
     setAgreed(false);
-    setScrolledEnd(false);
   }, [text]);
-
-  const onScroll = () => {
-    const el = scRef.current;
-    if (!el) return;
-    if (el.scrollTop + el.clientHeight >= el.scrollHeight - 8) setScrolledEnd(true);
-  };
 
   return (
     <PageShell>
@@ -60,8 +51,6 @@ export function License({ version, licenseText, onBack, onNext }: Props) {
 
         <GlassCard className="mt-6 flex flex-1 flex-col overflow-hidden p-0">
           <div
-            ref={scRef}
-            onScroll={onScroll}
             className="scroll-thin flex-1 overflow-auto whitespace-pre-wrap px-6 py-5 text-[12.5px] leading-[1.65] text-white/70"
           >
             {text}
@@ -71,20 +60,17 @@ export function License({ version, licenseText, onBack, onNext }: Props) {
         <div className="mt-4 flex items-center justify-between">
           <label className="flex cursor-pointer items-center gap-3 text-[13px] text-white/75 select-none">
             <span
-              onClick={() => scrolledEnd && setAgreed((v) => !v)}
+              onClick={() => setAgreed((v) => !v)}
               className={
                 "relative grid h-5 w-5 place-items-center rounded-md border transition-all " +
                 (agreed
                   ? "border-transparent bg-brand-gradient shadow-glow-soft"
-                  : scrolledEnd
-                  ? "border-white/30 bg-white/[0.03] hover:border-brand-400/60"
-                  : "border-white/10 bg-white/[0.02] cursor-not-allowed")
+                  : "border-white/30 bg-white/[0.03] hover:border-brand-400/60")
               }
             >
               {agreed && <span className="h-2 w-2 rounded-sm bg-white" />}
             </span>
-            <span className={scrolledEnd ? "" : "text-white/40"}>我已阅读并同意上述条款</span>
-            {!scrolledEnd && <span className="text-[11px] text-brand-300">请先滑到底部</span>}
+            <span>我已阅读并同意上述条款</span>
           </label>
           <div className="flex gap-3">
             <GradientButton variant="ghost" onClick={onBack}>

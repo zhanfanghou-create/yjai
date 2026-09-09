@@ -141,6 +141,97 @@ export function sevenZipExe(): string {
   return path.join(payloadRoot(), "bin", bin);
 }
 
+// 初始化payload：在安装器启动时调用，确保7za.exe和app.7z可用
+// 这是终极保障：如果所有路径都找不到，就从app.asar中提取到临时目录
+export function initializePayload(): { ok: boolean; payloadDir: string; error?: string } {
+  try {
+    const binName = process.platform === "win32" ? "7za.exe" : "7zz";
+    const dir = payloadRoot();
+    const app7z = path.join(dir, "app.7z");
+    const sevenZip = path.join(dir, "bin", binName);
+
+    console.log("[Installer] initializePayload: payloadDir =", dir);
+    console.log("[Installer] initializePayload: app.7z exists =", fs.existsSync(app7z));
+    console.log("[Installer] initializePayload: 7za.exe exists =", fs.existsSync(sevenZip));
+
+    // 如果7za.exe不存在，尝试从app.asar中提取
+    if (!fs.existsSync(sevenZip)) {
+      console.warn("[Installer] 7za.exe 不存在，尝试从 app.asar 提取...");
+      try {
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const electron = require("electron");
+        const appPath = electron?.app?.getAppPath?.() || __dirname;
+        const asarPayloadPath = path.join(appPath, "payload");
+        console.log("[Installer] app.asar payload path =", asarPayloadPath);
+        console.log("[Installer] app.asar payload exists =", fs.existsSync(asarPayloadPath));
+
+        if (fs.existsSync(asarPayloadPath)) {
+          const tempDir = path.join(os.tmpdir(), `yijing-payload-${Date.now()}`);
+          fs.mkdirSync(tempDir, { recursive: true });
+          fs.mkdirSync(path.join(tempDir, "bin"), { recursive: true });
+
+          // 复制 app.7z
+          const src7z = path.join(asarPayloadPath, "app.7z");
+          const dst7z = path.join(tempDir, "app.7z");
+          if (fs.existsSync(src7z)) {
+            const stat = fs.statSync(src7z);
+            console.log(`[Installer] 正在复制 app.7z (${(stat.size / 1024 / 1024).toFixed(1)} MB)...`);
+            fs.copyFileSync(src7z, dst7z);
+            console.log("[Installer] app.7z 复制完成");
+          } else {
+            console.error("[Installer] app.asar 中找不到 app.7z");
+          }
+
+          // 复制 bin 目录下的所有文件
+          const srcBin = path.join(asarPayloadPath, "bin");
+          const dstBin = path.join(tempDir, "bin");
+          if (fs.existsSync(srcBin)) {
+            const binFiles = fs.readdirSync(srcBin);
+            console.log("[Installer] bin 目录文件列表:", binFiles);
+            for (const f of binFiles) {
+              const srcFile = path.join(srcBin, f);
+              const dstFile = path.join(dstBin, f);
+              if (fs.statSync(srcFile).isFile()) {
+                fs.copyFileSync(srcFile, dstFile);
+                console.log(`[Installer] 已复制 ${f}`);
+              }
+            }
+          } else {
+            console.error("[Installer] app.asar 中找不到 bin 目录");
+          }
+
+          // 验证复制结果
+          if (fs.existsSync(path.join(tempDir, "app.7z")) && fs.existsSync(path.join(tempDir, "bin", binName))) {
+            console.log("[Installer] 从 app.asar 提取 payload 成功:", tempDir);
+            cachedPayloadRoot = tempDir;
+            return { ok: true, payloadDir: tempDir };
+          } else {
+            console.error("[Installer] 从 app.asar 提取 payload 失败：文件不完整");
+            return { ok: false, payloadDir: tempDir, error: "从 app.asar 提取的文件不完整" };
+          }
+        } else {
+          console.error("[Installer] app.asar 中找不到 payload 目录");
+          return { ok: false, payloadDir: dir, error: "app.asar 中找不到 payload 目录" };
+        }
+      } catch (e) {
+        console.error("[Installer] 从 app.asar 提取 payload 异常:", e);
+        return { ok: false, payloadDir: dir, error: `从 app.asar 提取 payload 异常: ${String(e)}` };
+      }
+    }
+
+    if (!fs.existsSync(app7z)) {
+      console.error("[Installer] app.7z 不存在");
+      return { ok: false, payloadDir: dir, error: "app.7z 不存在" };
+    }
+
+    console.log("[Installer] payload 初始化成功");
+    return { ok: true, payloadDir: dir };
+  } catch (e) {
+    console.error("[Installer] payload 初始化异常:", e);
+    return { ok: false, payloadDir: "", error: `payload 初始化异常: ${String(e)}` };
+  }
+}
+
 type ProgressCb = (p: { percent: number; phase: string; label: string }) => void;
 type LogCb = (p: { level: "info" | "warn" | "error"; text: string }) => void;
 

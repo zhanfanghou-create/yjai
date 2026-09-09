@@ -3,7 +3,7 @@ import * as path from "node:path";
 import * as fs from "node:fs";
 import * as os from "node:os";
 import { execFile, spawn } from "node:child_process";
-import { runInstall, payloadArchive, sevenZipExe } from "./install";
+import { runInstall, payloadArchive, sevenZipExe, initializePayload } from "./install";
 
 const isDev = process.env.NODE_ENV === "development";
 const APP_NAME = "艺镜AI-正式版";
@@ -325,6 +325,20 @@ function registerIpc(): void {
 
   ipcMain.handle("installer:start", async (_e, opts) => {
     if (installing) return { ok: false, reason: "已在安装" };
+
+    // 【关键】在安装开始前再次验证payload是否可用
+    // 如果不可用，尝试重新初始化（从app.asar提取）
+    let payloadResult = initializePayload();
+    if (!payloadResult.ok) {
+      console.error("[Installer] payload 不可用，尝试重新初始化...");
+      payloadResult = initializePayload();
+    }
+    if (!payloadResult.ok) {
+      const errorMsg = `安装初始化失败: ${payloadResult.error || "解压工具或主程序数据包不存在"}。请重新下载安装包后重试。`;
+      console.error("[Installer]", errorMsg);
+      return { ok: false, reason: errorMsg };
+    }
+
     if (!fs.existsSync(payloadArchive())) {
       return { ok: false, reason: `未找到主程序数据包: ${payloadArchive()}` };
     }
@@ -361,6 +375,23 @@ process.on("unhandledRejection", (reason) => {
 });
 
 app.whenReady().then(() => {
+  // 【关键】在启动时就初始化payload，确保7za.exe和app.7z可用
+  // 这是终极保障：如果所有路径都找不到，就从app.asar中提取到临时目录
+  const payloadResult = initializePayload();
+  console.log("[Installer] payload 初始化结果:", payloadResult);
+  if (!payloadResult.ok) {
+    console.error("[Installer] payload 初始化失败:", payloadResult.error);
+    // 延迟通知渲染进程，确保窗口已创建
+    setTimeout(() => {
+      if (mainWindow && !mainWindow.isDestroyed()) {
+        mainWindow.webContents.send("installer:log", {
+          level: "error",
+          text: `初始化失败: ${payloadResult.error || "未知错误"}。请尝试重新下载安装包。`,
+        });
+      }
+    }, 1000);
+  }
+
   registerIpc();
   createWindow();
   app.on("activate", () => {
