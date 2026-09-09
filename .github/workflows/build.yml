@@ -101,16 +101,28 @@ jobs:
       - name: Verify installer artifact exists
         shell: bash
         run: |
-          ls -la "${{ matrix.artifact_glob }}"
-          test -f "${{ matrix.artifact_glob }}"
+          echo "查找安装包文件..."
+          find release -name "*.exe" -o -name "*.dmg" | head -20
+          if [ "${{ matrix.platform }}" = "win" ]; then
+            ARTIFACT=$(find release -name "艺镜AI-正式版-*.exe" -print -quit)
+          elif [ "${{ matrix.arch }}" = "x64" ]; then
+            ARTIFACT=$(find release -name "yijing-ai-*-mac-x64.dmg" -print -quit)
+          else
+            ARTIFACT=$(find release -name "yijing-ai-*-mac-arm64.dmg" -print -quit)
+          fi
+          test -n "$ARTIFACT"
+          test -f "$ARTIFACT"
+          ls -la "$ARTIFACT"
+          echo "ARTIFACT_PATH=$ARTIFACT" >> "$GITHUB_ENV"
       - name: Upload installer to public draft release
         env:
           GH_TOKEN: ${{ secrets.PUBLIC_RELEASE_REPO_TOKEN }}
           VERSION: ${{ needs.prepare.outputs.version }}
           PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
-          ASSET: ${{ matrix.artifact_glob }}
         shell: bash
-        run: gh release upload "v${VERSION}" "$ASSET" --clobber --repo "$PUBLIC_REPO"
+        run: |
+          echo "上传安装包: $ARTIFACT_PATH"
+          gh release upload "v${VERSION}" "$ARTIFACT_PATH" --clobber --repo "$PUBLIC_REPO"
 
   publish:
     needs: [prepare, build]
