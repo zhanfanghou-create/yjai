@@ -6,9 +6,14 @@ import { spawn } from "node:child_process";
 export const APP_NAME = "艺镜AI-正式版";
 const isDev = process.env.NODE_ENV === "development";
 
+let cachedPayloadRoot: string | null = null;
+
 function payloadRoot(): string {
   if (isDev) return path.resolve(__dirname, "..", "payload");
+  if (cachedPayloadRoot) return cachedPayloadRoot;
+
   const candidates: string[] = [];
+  const binName = process.platform === "win32" ? "7za.exe" : "7zz";
 
   // 1. asarUnpack路径（最可靠，portable模式下也能正常解压）
   try {
@@ -16,9 +21,9 @@ function payloadRoot(): string {
     const electron = require("electron");
     const appPath = electron?.app?.getAppPath?.() || __dirname;
     if (appPath) {
-      // app.asar.unpacked/payload
-      candidates.push(path.join(path.dirname(appPath), "app.asar.unpacked", "payload"));
       // resources/app.asar.unpacked/payload
+      candidates.push(path.join(path.dirname(appPath), "app.asar.unpacked", "payload"));
+      // app.asar.unpacked/payload（另一种路径形式）
       candidates.push(path.join(appPath, "..", "app.asar.unpacked", "payload"));
     }
   } catch { /* ignore */ }
@@ -41,22 +46,24 @@ function payloadRoot(): string {
   // 打印所有候选路径，方便调试
   console.log("[Installer] payload 候选路径:", candidates);
 
-  // 返回第一个同时包含 app.7z 和 bin/7za.exe 的路径（关键修复：两个都要检查）
-  const binName = process.platform === "win32" ? "7za.exe" : "7zz";
-  for (const p of candidates) {
+  // 检查候选路径是否有效（同时包含 app.7z 和 bin/7za.exe）
+  const isValidPath = (p: string): boolean => {
     try {
-      if (p && fs.existsSync(p) &&
-          fs.existsSync(path.join(p, "app.7z")) &&
-          fs.existsSync(path.join(p, "bin", binName))) {
-        console.log("[Installer] 找到 payload 目录:", p);
-        return p;
-      }
-    } catch (e) {
-      console.warn("[Installer] 检查路径失败:", p, e);
+      return !!(p && fs.existsSync(p) &&
+        fs.existsSync(path.join(p, "app.7z")) &&
+        fs.existsSync(path.join(p, "bin", binName)));
+    } catch { return false; }
+  };
+
+  for (const p of candidates) {
+    if (isValidPath(p)) {
+      console.log("[Installer] 找到 payload 目录:", p);
+      cachedPayloadRoot = p;
+      return p;
     }
   }
 
-  // 都没找到时，返回第一个存在的目录，或者第一个候选
+  // 都没找到时，尝试从 app.asar 中复制 payload 到临时目录（终极fallback）
   console.error("[Installer] 未找到同时包含 app.7z 和 bin/7za.exe 的 payload 目录!");
   // 详细打印每个候选路径的状态
   for (const p of candidates) {
@@ -69,12 +76,62 @@ function payloadRoot(): string {
       console.error(`[Installer]   ${p}: 检查异常 ${e}`);
     }
   }
+
+  // 尝试从 app.asar 中读取 payload 并复制到临时目录
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const electron = require("electron");
+    const appPath = electron?.app?.getAppPath?.() || __dirname;
+    const asarPayloadPath = path.join(appPath, "payload"); // app.asar 中的 payload 目录
+    console.log("[Installer] 尝试从 app.asar 复制 payload:", asarPayloadPath);
+
+    if (fs.existsSync(asarPayloadPath)) {
+      const tempDir = path.join(os.tmpdir(), `yijing-payload-${Date.now()}`);
+      fs.mkdirSync(tempDir, { recursive: true });
+
+      // 复制 app.7z
+      const src7z = path.join(asarPayloadPath, "app.7z");
+      const dst7z = path.join(tempDir, "app.7z");
+      if (fs.existsSync(src7z)) {
+        console.log("[Installer] 正在复制 app.7z 到临时目录...");
+        fs.copyFileSync(src7z, dst7z);
+        console.log("[Installer] app.7z 复制完成");
+      }
+
+      // 复制 bin 目录
+      const srcBin = path.join(asarPayloadPath, "bin");
+      const dstBin = path.join(tempDir, "bin");
+      if (fs.existsSync(srcBin)) {
+        fs.mkdirSync(dstBin, { recursive: true });
+        const binFiles = fs.readdirSync(srcBin);
+        for (const f of binFiles) {
+          fs.copyFileSync(path.join(srcBin, f), path.join(dstBin, f));
+        }
+        console.log("[Installer] bin 目录复制完成");
+      }
+
+      if (isValidPath(tempDir)) {
+        console.log("[Installer] 从 app.asar 复制 payload 成功:", tempDir);
+        cachedPayloadRoot = tempDir;
+        return tempDir;
+      }
+    }
+  } catch (e) {
+    console.error("[Installer] 从 app.asar 复制 payload 失败:", e);
+  }
+
+  // 最后fallback：返回第一个存在的目录
   for (const p of candidates) {
     try {
-      if (p && fs.existsSync(p)) return p;
+      if (p && fs.existsSync(p)) {
+        cachedPayloadRoot = p;
+        return p;
+      }
     } catch { /* ignore */ }
   }
-  return candidates[0] || path.join(process.resourcesPath || "", "payload");
+  const fallback = candidates[0] || path.join(process.resourcesPath || "", "payload");
+  cachedPayloadRoot = fallback;
+  return fallback;
 }
 export function payloadArchive(): string {
   return path.join(payloadRoot(), "app.7z");

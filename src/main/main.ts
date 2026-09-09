@@ -3,7 +3,7 @@ import * as crypto from 'crypto';
 import * as os from 'os';
 import * as path from 'path';
 import * as fs from 'fs';
-import { exec } from 'child_process';
+import { exec, spawn } from 'child_process';
 import { promisify } from 'util';
 import { registerShortVideoFactoryIPC } from './shortVideoFactory';
 
@@ -818,12 +818,31 @@ ipcMain.handle('system:downloadUpdate', async (_event) => {
 ipcMain.handle('system:installUpdate', async (_event, installerPath: string) => {
   try {
     if (!installerPath || !fs.existsSync(installerPath)) throw new Error('更新安装包不存在');
-    const result = await shell.openPath(installerPath);
-    if (result) throw new Error(result);
-    setTimeout(() => app.quit(), 800);
+    // 获取当前安装目录，传递给安装器以便自动识别覆盖升级
+    const currentInstallDir = path.dirname(app.getPath('exe'));
+    console.log('[Update] 启动安装器，当前安装目录:', currentInstallDir);
+    console.log('[Update] 安装器路径:', installerPath);
+    // 使用 spawn 启动安装器，传递 --install-dir 参数
+    const proc = spawn(installerPath, ['--install-dir', currentInstallDir], {
+      detached: true,
+      stdio: 'ignore',
+      windowsHide: true,
+    });
+    proc.unref();
+    // 延迟退出，让安装器有时间启动
+    setTimeout(() => app.quit(), 1000);
     return { ok: true };
   } catch (error) {
-    return { ok: false, error: (error as Error).message };
+    console.error('[Update] 启动安装器失败:', error);
+    // fallback：使用 shell.openPath
+    try {
+      const result = await shell.openPath(installerPath);
+      if (result) throw new Error(result);
+      setTimeout(() => app.quit(), 800);
+      return { ok: true };
+    } catch (fallbackError) {
+      return { ok: false, error: (fallbackError as Error).message };
+    }
   }
 });
 
