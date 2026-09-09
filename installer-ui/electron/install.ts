@@ -2,6 +2,7 @@ import * as path from "node:path";
 import * as fs from "node:fs";
 import * as os from "node:os";
 import { spawn } from "node:child_process";
+import { extractEmbedded7za } from "./embedded7za";
 
 export const APP_NAME = "艺镜AI-正式版";
 const isDev = process.env.NODE_ENV === "development";
@@ -138,25 +139,48 @@ export function payloadArchive(): string {
 }
 export function sevenZipExe(): string {
   const bin = process.platform === "win32" ? "7za.exe" : "7zz";
+  // 【终极保障】优先使用内嵌的7za.exe，确保无论portable模式如何都能找到
+  if (process.platform === "win32") {
+    try {
+      const embedded = extractEmbedded7za();
+      if (embedded && fs.existsSync(embedded)) {
+        return embedded;
+      }
+    } catch (e) {
+      console.error("[Installer] 内嵌7za.exe提取失败，回退到payload目录:", e);
+    }
+  }
   return path.join(payloadRoot(), "bin", bin);
 }
 
 // 初始化payload：在安装器启动时调用，确保7za.exe和app.7z可用
-// 这是终极保障：如果所有路径都找不到，就从app.asar中提取到临时目录
+// 这是终极保障：7za.exe使用内嵌资源，app.7z从app.asar中提取
 export function initializePayload(): { ok: boolean; payloadDir: string; error?: string } {
   try {
     const binName = process.platform === "win32" ? "7za.exe" : "7zz";
+    
+    // 【终极保障1】优先使用内嵌的7za.exe
+    let sevenZipPath = "";
+    if (process.platform === "win32") {
+      try {
+        sevenZipPath = extractEmbedded7za();
+        console.log("[Installer] initializePayload: 使用内嵌7za.exe =", sevenZipPath);
+      } catch (e) {
+        console.error("[Installer] 内嵌7za.exe提取失败:", e);
+      }
+    }
+    
     const dir = payloadRoot();
     const app7z = path.join(dir, "app.7z");
-    const sevenZip = path.join(dir, "bin", binName);
+    const sevenZip = sevenZipPath || path.join(dir, "bin", binName);
 
     console.log("[Installer] initializePayload: payloadDir =", dir);
     console.log("[Installer] initializePayload: app.7z exists =", fs.existsSync(app7z));
     console.log("[Installer] initializePayload: 7za.exe exists =", fs.existsSync(sevenZip));
 
-    // 如果7za.exe不存在，尝试从app.asar中提取
+    // 如果7za.exe不存在（内嵌也失败了），尝试从app.asar中提取
     if (!fs.existsSync(sevenZip)) {
-      console.warn("[Installer] 7za.exe 不存在，尝试从 app.asar 提取...");
+      console.warn("[Installer] 7za.exe 不存在（内嵌也失败），尝试从 app.asar 提取...");
       try {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const electron = require("electron");
