@@ -368,9 +368,7 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
     // 精选对话（agnes 当前代际：2.5 pro/flash 系列，附 2.0）
     featuredChat: [
       'agnes-3.0-flash',
-      'agnes-2.5-pro',
       'agnes-2.5-flash',
-      'agnes-2.5-pro-beta',
       'agnes-2.0-flash',
     ],
     // 精选图像（agnes 原生 image 系列，附 GPT-Image 备选）
@@ -378,7 +376,6 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
       'agnes-image-2.5-flash',
       'agnes-image-2.1-flash',
       'agnes-image-2.0-flash',
-      'gpt-image-2',
     ],
     // 精选视频（agnes 原生 video 系列）
     featuredVideo: [
