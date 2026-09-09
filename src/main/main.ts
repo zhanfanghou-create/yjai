@@ -784,7 +784,7 @@ ipcMain.handle('system:checkUpdate', async () => {
   }
 });
 
-// 下载自定义安装器。按 OSS、CNB、GitHub 的顺序重试，避免单一线路失败。
+// 下载自定义安装器。按 CNB、OSS、GitHub 的顺序重试，CNB为第一首选，避免单一线路失败。
 ipcMain.handle('system:downloadUpdate', async (_event) => {
   try {
     const manifest = await fetchLatestManifest();
