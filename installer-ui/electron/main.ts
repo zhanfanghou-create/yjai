@@ -69,14 +69,21 @@ function readLicenseText(): string {
     path.join(__dirname, "..", "resources", "license.txt"),
     process.resourcesPath ? path.join(process.resourcesPath, "license.txt") : "",
   ].filter(Boolean);
+  const currentVersion = app.getVersion();
   for (const p of candidates) {
     try {
-      if (fs.existsSync(p)) return fs.readFileSync(p, "utf8");
+      if (fs.existsSync(p)) {
+        let text = fs.readFileSync(p, "utf8");
+        // 动态替换协议中的版本号为当前版本
+        text = text.replace(/版本[：:]\s*[\d.]+/g, `版本：${currentVersion}`);
+        text = text.replace(/Version[：:]\s*[\d.]+/gi, `Version: ${currentVersion}`);
+        return text;
+      }
     } catch {}
   }
   return `艺镜AI-正式版 最终用户许可协议 (EULA)
 
-版本: ${app.getVersion()}
+版本: ${currentVersion}
 
 请在使用本软件前仔细阅读本协议全部内容。安装或使用本软件即表示您已阅读、理解并接受本协议全部条款。`;
 }

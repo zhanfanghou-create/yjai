@@ -216,7 +216,27 @@ interface AppState {
   addPromptItem: (i: Omit<PromptItem, 'id' | 'createdAt' | 'updatedAt'>) => string; updatePromptItem: (id: string, u: Partial<PromptItem>) => void; deletePromptItem: (id: string) => void; setSearchQuery: (q: string) => void; runGlobalSearch: () => void; clearSearch: () => void; addStoryboardPreset: (p: Omit<StoryboardPreset, 'id' | 'createdAt'>) => string; updateStoryboardPreset: (id: string, u: Partial<Omit<StoryboardPreset, 'id' | 'createdAt'>>) => void; deleteStoryboardPreset: (id: string) => void; exportStoryboardPreset: (id: string) => string; importStoryboardPreset: (json: string) => { ok: boolean; error?: string };
 }
 
-const testConfig = async (c?: APIConfig) => { if (!c?.baseUrl) return false; try { const win = window as any; if (win?.yijingAPI?.grsai?.refreshModels) return !!(await win.yijingAPI.grsai.refreshModels({ baseUrl: c.baseUrl, apiKey: c.apiKey, apiType: 'openai-chat' }))?.ok; const r = await fetch(`${normalizeApiBase(c.baseUrl)}/models`, { headers: c.apiKey ? { Authorization: `Bearer ${c.apiKey}` } : {} }); return r.ok; } catch { return false; } };
+const testConfig = async (c?: APIConfig) => {
+  if (!c?.baseUrl) return false;
+  try {
+    const win = window as any;
+    if (win?.yijingAPI?.grsai?.refreshModels) {
+      return !!(await win.yijingAPI.grsai.refreshModels({ baseUrl: c.baseUrl, apiKey: c.apiKey, apiType: 'openai-chat' }))?.ok;
+    }
+    const baseUrl = normalizeApiBase(c.baseUrl);
+    // Agnes API 不支持 /models 端点，使用 /v1/chat/completions 测试连接
+    if (/agnes-ai\.(?:com|cn)/i.test(baseUrl)) {
+      const r = await fetch(`${baseUrl}/chat/completions`, {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${c.apiKey}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: c.defaultModel || 'agnes-3.0-flash', messages: [{ role: 'user', content: 'hi' }], max_tokens: 1 })
+      });
+      return r.ok;
+    }
+    const r = await fetch(`${baseUrl}/models`, { headers: c.apiKey ? { Authorization: `Bearer ${c.apiKey}` } : {} });
+    return r.ok;
+  } catch { return false; }
+};
 
 // 语音连接测试：豆包语音（openspeech.bytedance.com）使用 X-Api-Key 头 + text_prompt 格式，需单独适配
 const testVoiceConfig = async (c?: APIConfig): Promise<boolean> => {
