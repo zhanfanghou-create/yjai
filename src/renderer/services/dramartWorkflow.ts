@@ -33,6 +33,23 @@ export interface DramartAssetItem {
   variants?: { id: string; label: string; img?: string; remoteUrl?: string; candidates?: string[]; prompt?: string }[];
 }
 
+/** 结构化台词：带说话人与镜头顺序，AI 输出时优先使用，解决"音效当台词/顺序乱/人物错"三大问题 */
+export interface DramartDialogue {
+  /** 台词在分镜内的顺序号（从1开始，按镜头时间轴排列） */
+  order: number;
+  /** 说话人角色名（必须从资产列表中选择）；旁白/画外音填"旁白" */
+  speaker: string;
+  /** 台词文本（不含引号） */
+  text: string;
+}
+
+/** 结构化音效：带镜头顺序 */
+export interface DramartSfx {
+  /** 音效在分镜内的顺序号 */
+  order: number;
+  /** 音效描述（如"敲门声咚咚咚"、"雨声淅沥"） */
+  description: string;
+}
 export interface DramartStoryboard {
   id: string;
   index: number;
@@ -50,6 +67,10 @@ export interface DramartStoryboard {
   voiceUrl?: string;
   /** 序列帧缩略图 dataURL 数组（视频生成后自动抽取并持久化，视频页直接读取，无需每次重新抽帧） */
   frameStrip?: string[];
+  /** 结构化台词列表（AI 输出 dialogues 字段时填充；旧数据/不支持的模型回退为 undefined，走正则提取） */
+  dialogues?: DramartDialogue[];
+  /** 结构化音效列表（AI 输出 sfx 字段时填充） */
+  sfxList?: DramartSfx[];
 }
 
 export interface DramartAnalysisState {
@@ -241,23 +262,64 @@ export function extractSoundParts(text: string): { dialogue: string[]; narration
   // 引号内容若已被旁白标记引用则归旁白，否则归台词
   quotedSet.forEach(q => { if (!narration.includes(q)) seen(dialogue, q); });
 
-  // 3) 音效：音效：前缀 或 括号内含声音关键词的描述（如 雨声淅沥、风声呼啸、远处雷声轰鸣）
+  // 3) 音效：多种格式识别（先于台词后处理，确保音效不被误归为台词）
   let sm: RegExpExecArray | null;
-  const sfxRe1 = /音效\s*[:：]\s*([^。\n]{1,80})/g;
+  // 3a) "音效：xxx" / "SFX: xxx" 前缀格式
+  const sfxRe1 = /(?:音效|SFX|sfx)\s*[:：]\s*([^。\n\]】）)]{1,80})/g;
   while ((sm = sfxRe1.exec(src))) seen(sfx, sm[1].trim());
-  const sfxRe2 = /[（(]([^（()）]{1,40})[）)]/g;
-  while ((sm = sfxRe2.exec(src))) {
+  // 3b) "[音效：xxx]" / "【音效：xxx】" / "[SFX: xxx]" 方括号包裹格式
+  const sfxRe2 = /[\[【](?:音效|SFX|sfx)\s*[:：]?\s*([^\]】]{1,80})[\]】]/g;
+  while ((sm = sfxRe2.exec(src))) seen(sfx, sm[1].trim());
+  // 3c) 括号内含声音关键词的描述（如 （雨声淅沥）、(风声呼啸)）
+  const sfxRe3 = /[（(]([^（()）]{1,40})[）)]/g;
+  while ((sm = sfxRe3.exec(src))) {
     const v = sm[1].trim();
-    // 含声音关键词即视为音效；排除"低声道"这类语气描述
-    if (v && /(声|音|响|轰鸣|呼啸|淅沥|滴答|脚步|音乐)/.test(v) && !/说道|喊道|笑道|哭道|低声道|轻声道|沉声道/.test(v)) seen(sfx, v);
+    if (v && /(声|音|响|轰鸣|呼啸|淅沥|滴答|脚步|音乐|叮咚|咔嚓|轰隆|噼啪|沙沙|哗哗|咚咚|铃|哨|笛|鼓|琴)/.test(v) && !/说道|喊道|笑道|哭道|低声道|轻声道|沉声道|声音|嗓音/.test(v)) seen(sfx, v);
+  }
+  // 3d) 后处理：从台词中移除已被识别为音效的内容（防止引号包裹的音效被误归为台词）
+  const sfxSet = new Set(sfx.map(s => s.trim()));
+  for (let i = dialogue.length - 1; i >= 0; i--) {
+    const d = dialogue[i].trim();
+    if (sfxSet.has(d) || (/^(雨声|风声|雷声|敲门声|电话铃|门铃声|脚步声|水滴声|玻璃碎|爆炸声|枪声|剑|刀|风|雨|雷|雪|火|水|铃|鼓|琴|笛|哨|咔嚓|轰隆|噼啪|沙沙|哗哗|咚咚|叮咚|淅沥|呼啸|轰鸣|滴答)/.test(d) && !/我|你|他|她|它|咱|你们|他们|她们|大家|人/.test(d))) {
+      dialogue.splice(i, 1);
+      if (!sfxSet.has(d)) seen(sfx, d);
+    }
   }
   return { dialogue, narration, sfx };
 }
 
 // 生成「### 台词与声音」段落（{...} 形式，可被富文本编辑器识别为台词胶囊、被配音逻辑提取）
-export function buildSoundSection(soundSource: string): string {
-  const { dialogue, narration, sfx } = extractSoundParts(soundSource);
+// structured 参数：AI 输出的结构化台词/音效（优先使用，带说话人、按顺序排列）；不传则回退到从 soundSource 正则提取
+export function buildSoundSection(soundSource: string, structured?: { dialogues?: DramartDialogue[]; sfxList?: DramartSfx[] }): string {
   const parts: string[] = [];
+
+  // 优先使用结构化数据（解决：台词带说话人、按镜头顺序排列、音效独立分类）
+  if (structured && (structured.dialogues?.length || structured.sfxList?.length)) {
+    parts.push('### 台词与声音', '');
+    // 按 order 排序，分离台词和旁白（speaker 为"旁白/画外音/内心独白"的归旁白）
+    const sortedDialogues = (structured.dialogues || []).slice().sort((a, b) => a.order - b.order);
+    const isNarr = (s: string) => s === '旁白' || s === '画外音' || s === '内心独白' || s === '自述';
+    const pureDialogues = sortedDialogues.filter(d => !isNarr(d.speaker));
+    const narrations = sortedDialogues.filter(d => isNarr(d.speaker));
+    if (pureDialogues.length) {
+      parts.push('【台词】');
+      // 带说话人前缀：{角色名：台词内容}
+      pureDialogues.slice(0, 8).forEach(d => parts.push('{' + d.speaker + '：' + d.text + '}'));
+    }
+    if (narrations.length) {
+      parts.push('【旁白】');
+      narrations.slice(0, 5).forEach(d => parts.push('{' + d.text + '}'));
+    }
+    if (structured.sfxList?.length) {
+      parts.push('【音效】');
+      const sortedSfx = structured.sfxList.slice().sort((a, b) => a.order - b.order);
+      sortedSfx.slice(0, 5).forEach(s => parts.push('{' + s.description + '}'));
+    }
+    return parts.join('\n');
+  }
+
+  // 回退：从 soundSource 正则提取（旧模型/旧数据路径，行为与修复前一致）
+  const { dialogue, narration, sfx } = extractSoundParts(soundSource);
   if (dialogue.length || narration.length || sfx.length) {
     parts.push('### 台词与声音', '');
     if (dialogue.length) {
@@ -275,8 +337,7 @@ export function buildSoundSection(soundSource: string): string {
   }
   return parts.length ? parts.join('\n') : '';
 }
-
-export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number; soundSource?: string }): string {
+export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number; soundSource?: string; dialogues?: DramartDialogue[]; sfxList?: DramartSfx[]; allCharacters?: string[] }): string {
   const styleWord = explicitWord || stylePromptOf(styleName) || styleName;
   const idx = opts && opts.index ? opts.index : 1;
   const dur = opts && opts.duration ? opts.duration : 15;
@@ -284,8 +345,21 @@ export function makeVideoPrompt(character: string, scene: string, prop: string, 
   const charName = character || '主角';
   const sceneName = scene || '场景';
   const propName = prop || '道具';
-  // 台词/旁白/音效优先从剧本原文提取（描述可能被 LLM 改写），无原文时用描述本身
-  const soundSection = buildSoundSection(String((opts && opts.soundSource) || scriptText));
+  // 多角色：所有出场角色（去重、排除空值），主角色排在最前
+  const allChars = Array.from(new Set((opts?.allCharacters || []).map(c => String(c).trim()).filter(Boolean)));
+  if (charName && charName !== '主角' && !allChars.includes(charName)) allChars.unshift(charName);
+  // 台词/旁白/音效：优先使用结构化数据（带说话人、按镜头顺序），否则从剧本原文正则提取
+  const structured = (opts?.dialogues?.length || opts?.sfxList?.length) ? { dialogues: opts.dialogues, sfxList: opts.sfxList } : undefined;
+  const soundSection = buildSoundSection(String((opts && opts.soundSource) || scriptText), structured);
+  // 素材引用：多角色时列出所有出场角色
+  const charRefLines: string[] = [];
+  if (allChars.length > 1) {
+    allChars.forEach(c => charRefLines.push('<' + c + '>对应' + c + '，只采用外貌、发型和服装。'));
+  } else {
+    charRefLines.push('<' + charName + '>对应' + charName + '，只采用外貌、发型和服装。');
+  }
+  // 约束词：多角色时保持所有出场角色一致
+  const consistencyTarget = allChars.length > 1 ? allChars.join('、') : charName;
   return [
     '画风: ' + styleName,
     '视频中不得出现任何字幕、文字叠加、纯画面，不要bgm，不要配乐。',
@@ -293,7 +367,7 @@ export function makeVideoPrompt(character: string, scene: string, prop: string, 
     '### 素材引用',
     '',
     '【人物】',
-    '<' + charName + '>对应' + charName + '，只采用外貌、发型和服装。',
+    ...charRefLines,
     '【场景】',
     '<' + sceneName + '>参考' + sceneName + '，只采用空间布局、建筑和光线，不采用图中人物。',
     '【道具】',
@@ -316,10 +390,9 @@ export function makeVideoPrompt(character: string, scene: string, prop: string, 
     '',
     '### 约束词',
     '【保持一致】',
-    '保持<' + charName + '身份、数量、服装、道具归属、空间方向和声音关系>稳定。',
+    '保持<' + consistencyTarget + '身份、数量、服装、道具归属、空间方向和声音关系>稳定。',
   ].join('\n');
 }
-
 // 资产参考图提示词：按参考格式生成（角色三视图 / 场景四宫格 / 道具特写），参数均取实际资产信息，不固定具体内容
 export function buildAssetImagePrompt(a: { name?: string; kind?: string; imageSummary?: string }): string {
   const name = a.name || '资产';
@@ -634,7 +707,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       '你是影视分镜设计师，请根据剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
       '{',
       '  "storyboards":[',
-      '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","duration":' + shotDuration + '}',
+      '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","dialogues":[{"order":1,"speaker":"角色名","text":"台词内容"}],"sfx":[{"order":1,"description":"音效描述"}],"duration":' + shotDuration + '}',
       '  ]',
       '}',
       '【已提取资产列表 - 分镜引用必须严格从此列表中选择】',
@@ -652,7 +725,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       '   - 分镜具体动作描述，按镜头拆分，每个镜头格式：',
       '     镜头N Xs',
       '     [站位] 角色/道具在画面中的位置',
-      '     [动作] 镜头类型|运镜方式 具体动作描述，台词用{台词}标注',
+      '     [动作] 镜头类型|运镜方式 具体动作描述，台词写「说话人：{台词内容}」，音效写「[音效：描述]」',
       '4. duration 单位为秒，每个分镜的 duration 必须小于等于 ' + shotDuration + ' 秒，绝对不能超过 ' + shotDuration + ' 秒，根据场景内容合理分配',
       '5. 【资产引用严格约束】',
       '   - characters、scene、props 字段必须严格从上方已提取资产列表中选择，绝对不能引用列表中不存在的资产',
@@ -663,6 +736,16 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       '6. 每个分镜可包含多个镜头，镜头总时长应小于等于分镜 duration，且每个镜头时长也不能超过 ' + shotDuration + ' 秒',
       '7. 镜头类型参考：远景、全景、中景、近景、特写、大特写、主观视角、过肩镜头等',
       '8. 运镜方式参考：固定镜头、缓推、缓拉、摇镜、跟拍、手持、升降等',
+      '9. 【台词与音效 - 必须严格按以下格式输出，这是配音和剪辑的核心依据】',
+      '   - dialogues 字段：该分镜所有台词的结构化列表，按镜头时间顺序排列',
+      '     - order：台词在分镜内的顺序号（从1开始，按说话先后排列）',
+      '     - speaker：说话人角色名，必须从上方角色资产列表中选择；旁白/画外音填"旁白"；绝对不能把音效描述填进speaker',
+      '     - text：台词文本，只写人物说的话，不要加引号，不要包含动作描写，不要包含音效',
+      '   - sfx 字段：该分镜所有音效的结构化列表，按出现顺序排列',
+      '     - order：音效顺序号（从1开始）',
+      '     - description：音效描述（如"敲门声咚咚咚"、"雨声淅沥"、"电话铃声"），只写声音效果，不要写台词',
+      '   - 关键区分：人物说的话→dialogues；环境声/动作声/音乐→sfx；两者绝对不能混淆',
+      '   - 没有台词的分镜，dialogues 填空数组 []；没有音效的分镜，sfx 填空数组 []',
       '剧本：',
       scriptText,
     ].join('\n');
@@ -708,6 +791,17 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
             // 确保分镜时长不超过用户选择的最大时长
             const rawDur = Number(sb?.duration) || shotDuration;
             const dur = Math.min(Math.max(rawDur, 1), shotDuration);
+            // 解析结构化台词（AI 输出 dialogues 字段时使用，带说话人和镜头顺序；解决"人物不对/顺序乱"）
+            const dialogues: DramartDialogue[] = Array.isArray(sb?.dialogues) ? sb.dialogues.map((d: any, di: number) => ({
+              order: Number(d?.order) || (di + 1),
+              speaker: String(d?.speaker || '').trim() || (chars[0] || '主角'),
+              text: String(d?.text || '').trim(),
+            })).filter((d: DramartDialogue) => d.text) : [];
+            // 解析结构化音效（AI 输出 sfx 字段时使用；解决"音效被当台词"）
+            const sfxList: DramartSfx[] = Array.isArray(sb?.sfx) ? sb.sfx.map((s: any, si: number) => ({
+              order: Number(s?.order) || (si + 1),
+              description: String(s?.description || '').trim(),
+            })).filter((s: DramartSfx) => s.description) : [];
             return {
               id: rid('sb'),
               index: idxNum,
@@ -716,7 +810,9 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
               characters: chars,
               scenes,
               props,
-              videoPrompt: makeVideoPrompt(chars[0] || (result.characters[0]?.name || '主角'), scenes[0] || (result.scenes[0]?.name || '场景'), props[0] || (result.props[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur, soundSource: rawScript }),
+              dialogues: dialogues.length ? dialogues : undefined,
+              sfxList: sfxList.length ? sfxList : undefined,
+              videoPrompt: makeVideoPrompt(chars[0] || (result.characters[0]?.name || '主角'), scenes[0] || (result.scenes[0]?.name || '场景'), props[0] || (result.props[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur, soundSource: rawScript, dialogues: dialogues.length ? dialogues : undefined, sfxList: sfxList.length ? sfxList : undefined, allCharacters: chars }),
               duration: dur,
               videoUrl: undefined,
               videoStatus: 'idle' as const,
@@ -1185,14 +1281,24 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     '你是影视分镜设计师，请根据补充剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
     '{',
     '  "storyboards":[',
-    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"description":"完整画面描述与台词","duration":15}',
+    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"description":"完整画面描述与台词","dialogues":[{"order":1,"speaker":"角色名","text":"台词内容"}],"sfx":[{"order":1,"description":"音效描述"}],"duration":15}',
     '  ]',
     '}',
     '要求：',
     '1. 按补充剧本中的场景顺序逐场设计，不要遗漏任何场景',
-    '2. 每个分镜的 description 必须包含该场景的完整画面描述、台词和动作',
+    '2. 每个分镜的 description 必须包含该场景的完整画面描述、台词和动作，台词写「说话人：{台词内容}」，音效写「[音效：描述]」',
     '3. duration 单位为秒，根据场景内容合理分配',
     '4. characters 只列出镜的角色，不出镜的不要列',
+    '5. 【台词与音效 - 必须严格按以下格式输出】',
+    '   - dialogues 字段：该分镜所有台词的结构化列表，按镜头时间顺序排列',
+    '     - order：台词顺序号（从1开始）',
+    '     - speaker：说话人角色名，必须从出场角色中选择；旁白/画外音填"旁白"；绝对不能把音效描述填进speaker',
+    '     - text：台词文本，只写人物说的话，不要加引号，不要包含音效',
+    '   - sfx 字段：该分镜所有音效的结构化列表，按出现顺序排列',
+    '     - order：音效顺序号（从1开始）',
+    '     - description：音效描述（如"敲门声咚咚咚"、"雨声淅沥"），只写声音效果，不要写台词',
+    '   - 关键区分：人物说的话→dialogues；环境声/动作声/音乐→sfx；两者绝对不能混淆',
+    '   - 没有台词的分镜 dialogues 填 []，没有音效的分镜 sfx 填 []',
     '补充剧本：',
     scriptText,
   ].join('\n');
@@ -1215,6 +1321,16 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
         const props = Array.isArray(sb?.props) ? sb.props.map((p: any) => String(p).trim()).filter(Boolean) : [];
         const desc = String(sb?.description || '').trim();
         const dur = Number(sb?.duration) || 15;
+        // 解析结构化台词与音效（与主流程一致）
+        const dialogues: DramartDialogue[] = Array.isArray(sb?.dialogues) ? sb.dialogues.map((d: any, di: number) => ({
+          order: Number(d?.order) || (di + 1),
+          speaker: String(d?.speaker || '').trim() || (chars[0] || '主角'),
+          text: String(d?.text || '').trim(),
+        })).filter((d: DramartDialogue) => d.text) : [];
+        const sfxList: DramartSfx[] = Array.isArray(sb?.sfx) ? sb.sfx.map((s: any, si: number) => ({
+          order: Number(s?.order) || (si + 1),
+          description: String(s?.description || '').trim(),
+        })).filter((s: DramartSfx) => s.description) : [];
         return {
           id: rid('sb'),
           index: idxNum,
@@ -1223,7 +1339,9 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
           characters: chars,
           scenes,
           props,
-          videoPrompt: makeVideoPrompt(chars[0] || (allCharsForPrompt[0]?.name || '主角'), scenes[0] || (allScenesForPrompt[0]?.name || '场景'), props[0] || (allPropsForPrompt[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur }),
+          dialogues: dialogues.length ? dialogues : undefined,
+          sfxList: sfxList.length ? sfxList : undefined,
+          videoPrompt: makeVideoPrompt(chars[0] || (allCharsForPrompt[0]?.name || '主角'), scenes[0] || (allScenesForPrompt[0]?.name || '场景'), props[0] || (allPropsForPrompt[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur, soundSource: desc, dialogues: dialogues.length ? dialogues : undefined, sfxList: sfxList.length ? sfxList : undefined, allCharacters: chars }),
           duration: dur,
           videoUrl: undefined,
           videoStatus: 'idle' as const,
