@@ -2,8 +2,7 @@
 ; electron-builder invokes these hooks automatically when defined.
 
 !macro customHeader
-  ; 支持静默安装参数
-  !insertmacro MUI_LANGUAGE "SimpChinese"
+  ; 支持静默安装参数（electron-builder已自动加载语言文件，无需重复加载）
 !macroend
 
 !macro preInit
