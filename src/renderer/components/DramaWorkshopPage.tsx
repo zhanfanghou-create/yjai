@@ -180,6 +180,15 @@ function ratioIconStyle(ratio: string): React.CSSProperties {
   return { width: Math.round(Math.max(7, w)), height: Math.round(Math.max(7, h)) };
 }
 
+// 比例 → CSS 变量值（'9:16' → '9 / 16'）：分镜预览框/资产卡片随项目比例呈现，
+// 修复竖屏项目的视频预览被写死的 16:9 + object-fit:cover 裁切成"假横屏"
+function ratioCssVar(ratio?: string): React.CSSProperties {
+  const parts = String(ratio || '16:9').split(':').map(Number);
+  const wn = Number.isFinite(parts[0]) && parts[0] > 0 ? parts[0] : 16;
+  const hn = Number.isFinite(parts[1]) && parts[1] > 0 ? parts[1] : 9;
+  return { ['--dwc-ratio' as any]: `${wn} / ${hn}` } as React.CSSProperties;
+}
+
 // 为资产卡片生成占位缩略图的渐变样式
 
 // 生成渐变占位图（dataURL，无图像 API 时也保证资产有图）
@@ -569,25 +578,37 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
     }
   };
   const replaceInPrompt = (from: string, to: string) => { if (sb) onEditPrompt(sb.id, (sb.videoPrompt || '').split(from).join(to)); };
+  // 编辑器内最后已知光标位置（文本偏移）。点按钮/开弹窗会导致选区丢失，
+  // 之后插入 @引用 必须回到用户最后一次点选/输入的位置，而不是追加到末尾。
+  const lastCaretRef = useRef<number>(-1);
+  const rememberCaret = () => {
+    const c = saveCaretOffset();
+    if (c >= 0) lastCaretRef.current = c;
+  };
   const insertRef = () => {
     const sel = window.getSelection();
     const dom = promptRef.current;
-    if (sel && sel.rangeCount && dom) promptRange.current = sel.getRangeAt(0).cloneRange();
+    // 只有当前选区仍在编辑器内才更新记录；点击「@ 引用」按钮后选区已跑到按钮上，
+    // 此时保留上次记录的光标位置，避免把按钮选区当成插入点。
+    if (sel && sel.rangeCount && dom && dom.contains(sel.anchorNode)) {
+      promptRange.current = sel.getRangeAt(0).cloneRange();
+      rememberCaret();
+    }
     setRefPickOpen(true);
   };
   const insertRefToken = (token: string) => {
     const dom = promptRef.current;
     if (!dom || !sb) return;
     dom.focus();
-    // 恢复打开弹窗时保存的光标位置
+    // 恢复打开弹窗时保存的光标位置（仅在编辑器内有效，防止指向弹窗/按钮的选区）
     const range = promptRange.current;
-    if (range) {
+    if (range && dom.contains(range.startContainer)) {
       const sel = window.getSelection();
       if (sel) { sel.removeAllRanges(); sel.addRange(range); }
     }
-    // 获取光标位置（基于恢复后的 range）
+    // 获取光标位置：优先恢复后的选区；选区无效（如从未点进编辑器）时用最后已知位置；再兜底到末尾
     let caret = saveCaretOffset();
-    if (caret < 0) caret = safeExtractText(dom).length;
+    if (caret < 0) caret = lastCaretRef.current >= 0 ? lastCaretRef.current : safeExtractText(dom).length;
     const currentText = safeExtractText(dom);
     // 在光标位置插入引用文本
     const newText = currentText.slice(0, caret) + token + currentText.slice(caret);
@@ -600,6 +621,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
     onEditPrompt(sb.id, newText);
     // 恢复光标位置到插入的引用之后
     const newCaret = caret + token.length;
+    lastCaretRef.current = newCaret;
     requestAnimationFrame(() => {
       if (promptRef.current) {
         restoreCaretOffset(newCaret);
@@ -772,6 +794,8 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   };
   const onPromptInput = () => {
     const caret = saveCaretOffset();
+    // 输入也会移动光标：同步记录最后已知位置，供 @引用 插入使用
+    if (caret >= 0) lastCaretRef.current = caret;
     const scrollPos = saveScrollPos();
     // 使用 safeExtractText 获取文本，保留换行符
     const t = promptRef.current ? safeExtractText(promptRef.current) : '';
@@ -998,7 +1022,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
   const videoUrl = sb ? (urlMap[sb.id] || sb.videoUrl || '') : '';
 
   return (
-    <div className="dwc-sb">
+    <div className="dwc-sb" style={ratioCssVar(project.ratio)}>
       <div className="dwc-top-bar">
         <button className="dwc-back" onClick={onBack}><ChevronLeftIcon size={16} /> 返回</button>
         <div className="dwc-project-name"><span className="dwc-edit-icon"><EditIcon size={13} /></span>{project.name}</div>
@@ -1099,7 +1123,9 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
             </div>
           </div>
           <div className="dwc-sb-prompt">
-            <div className="dwc-sb-rich-editable" ref={promptRef} contentEditable suppressContentEditableWarning onInput={onPromptInput} onKeyDown={(e) => { if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); insertRef(); } }} onClick={(e) => {
+            <div className="dwc-sb-rich-editable" ref={promptRef} contentEditable suppressContentEditableWarning onInput={onPromptInput} onKeyUp={rememberCaret} onMouseUp={rememberCaret} onKeyDown={(e) => { if (e.key === '@' && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); insertRef(); } }} onClick={(e) => {
+              // 鼠标点选后立即记录光标位置（@引用插入将回到此位置）
+              rememberCaret();
               // 事件委托：处理引用、时长、台词的点击
               const target = e.target as HTMLElement;
               const refEl = target.closest('.dwc-rich-ref') as HTMLElement | null;
@@ -1902,6 +1928,11 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
   const [editing, setEditing] = useState(false);
   const [nameInput, setNameInput] = useState(asset.name);
   const [previewFull, setPreviewFull] = useState<string | null>(null);
+  // 候选图预览：临时查看某张候选（不直接改动当前变装），点「应用」才生效
+  const [viewImg, setViewImg] = useState<string | null>(null);
+  useEffect(() => { setViewImg(null); }, [curVariantId, asset.id]);
+  // 当前变装最新生成的候选图（重绘/生成后自动补进来，随时可切换预览与应用）
+  const curCandidates = curVariant?.candidates || [];
   // 当前变装的图片：如果没有 img，显示 null（不 fallback 到首图）
   const topImg = curVariant?.img || null;
   const isSetCurrent = !!curVariant?.img;
@@ -1943,8 +1974,10 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
       </div>
       <div className="dwc-detail-main">
         <button className="dwc-detail-arrow" onClick={prev} aria-label="上一个变装">‹</button>
-        <div className="dwc-detail-big" style={(topImg ? undefined : thumbStyle(asset.hue, asset.kind))}>
-          {topImg ? <><img src={topImg} alt={asset.name} className="dwc-detail-big-img" onClick={() => setPreviewFull(topImg)} style={{cursor: 'zoom-in'}} onError={(e) => { const src = (e.target as HTMLImageElement).src; if (src && !src.startsWith('data:') && onImgError) onImgError(asset.id, src); }} />{isSetCurrent && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前变装形象</span>}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>此变装暂未配置设定图，点击页面下方按钮完成操作。</em></span>}
+        <div className="dwc-detail-big" style={((viewImg || topImg) ? undefined : thumbStyle(asset.hue, asset.kind))}>
+          {(viewImg || topImg) ? <><img src={viewImg || topImg || ''} alt={asset.name} className="dwc-detail-big-img" onClick={() => setPreviewFull(viewImg || topImg || '')} style={{cursor: 'zoom-in'}} onError={(e) => { const src = (e.target as HTMLImageElement).src; if (src && !src.startsWith('data:') && onImgError) onImgError(asset.id, src); }} />{viewImg
+            ? <span className="dwc-detail-cand-actions"><button className="dwc-detail-cand-apply" onClick={() => { onSetVariantCurrent(asset.id, curVariant?.id || '', viewImg); setViewImg(null); }}><CheckIcon size={13} /> 应用为当前{term.main}</button><button className="dwc-detail-cand-cancel" onClick={() => setViewImg(null)}>取消预览</button></span>
+            : (isSetCurrent && <span className="dwc-detail-current-badge"><CheckIcon size={13} /> 已设为当前变装形象</span>)}</> : <span className="dwc-detail-empty"><ImageIcon size={40} /><em>此变装暂未配置设定图，点击页面下方按钮完成操作。</em></span>}
         </div>
         <button className="dwc-detail-arrow" onClick={next} aria-label="下一个变装">›</button>
       </div>
@@ -1960,6 +1993,21 @@ const AssetDetailPanel: React.FC<AssetDetailPanelProps> = ({ asset, kindLabel, s
         ))}
         <button className="dwc-detail-variant add" onClick={() => { const newId = onAddVariant(asset.id); if (newId) setCurVariantId(newId); }}><span className="dwc-detail-variant-img add"><span className="dwc-detail-variant-plus">+</span></span><span className="dwc-detail-variant-label">{addLabel}</span></button>
       </div>
+      {curCandidates.length > 0 && (
+        <div className="dwc-detail-cands">
+          <div className="dwc-detail-cands-head">
+            <span className="dwc-detail-cands-title">最新生成 · {curCandidates.length} 张</span>
+            <span className="dwc-detail-cands-hint">点击缩略图预览，预览后可应用为当前</span>
+          </div>
+          <div className="dwc-detail-cands-row">
+            {curCandidates.map((c, i) => (
+              <button key={i} className={`dwc-detail-cand${c === (viewImg || topImg) ? ' active' : ''}`} onClick={() => setViewImg(c)} title={'候选图' + (i + 1) + '，点击预览'}>
+                <img src={c} alt={'候选' + (i + 1)} onError={(e) => { const src = (e.target as HTMLImageElement).src; if (src && !src.startsWith('data:') && onImgError) onImgError(asset.id, src); }} />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="dwc-detail-desc">{asset.imageSummary}</div>
       {pending > 0 && <div className="dwc-detail-pending">🔔 {pending} 个变装待生成</div>}
       <div className="dwc-detail-actions">
@@ -3712,10 +3760,14 @@ export const DramaWorkshopPage: React.FC = () => {
   // 为分镜生成角色配音（异步，不阻塞视频生成）
   const generateVoiceover = useCallback(async (sb: DramartStoryboard): Promise<string | null> => {
     try {
-      // 从分镜提示词中提取台词（匹配 {台词内容} 格式）
+      // 从分镜提示词中提取台词/旁白（{内容} 胶囊）；【音效】小节下的 {} 是环境声描述，不参与配音
       const prompt = sb.videoPrompt || sb.rawScript || '';
-      const lineMatches = prompt.match(/\{([^}]+)\}/g);
-      const lines = lineMatches ? lineMatches.map(m => m.slice(1, -1)) : [];
+      const speechPart = String(prompt).split(/【音效】/)[0];
+      const lineMatches = speechPart.match(/\{([^}]+)\}/g);
+      const lines = lineMatches
+        ? lineMatches.map(m => m.slice(1, -1).replace(/^(台词|旁白|画外音)\s*[:：]\s*/, '').trim())
+            .filter(t => t && t !== '台词内容' && t !== '旁白' && t !== '无')
+        : [];
       if (!lines.length) {
         // 没有明确台词标记，使用分镜原文的前100字作为配音文本
         lines.push((sb.rawScript || prompt).slice(0, 100));
@@ -3724,13 +3776,10 @@ export const DramaWorkshopPage: React.FC = () => {
       // 找到分镜中第一个角色，使用固定音色分配机制（同一角色始终使用同一音色）
       const charName = sb.characters?.[0] || '';
       const charAsset = charName ? project?.characters.find(c => c.name === charName || charName.includes(c.name) || c.name.includes(charName)) : null;
-      // 未显式配置音色：跳过外部 TTS 配音，由视频模型按提示词中的音色约束自行生成（同一角色全片保持同一音色）
+      // 未显式配置音色：静默跳过外部 TTS 配音——对白已写入视频提示词，由视频模型自动生成对白语音，
+      // 不再弹提示打扰（配置音色后走 TTS 配音，效果更稳定）。
       const existingVoice = charAsset ? parseVoiceConfig(charAsset.voice as any) : null;
       if (!existingVoice?.voiceId) {
-        // 该角色尚未配置音色：不静默跳过，明确告知用户配音不会生成，并给出配置入口提示。
-        // （之前这里直接 return null，用户只会看到"已生成视频"，最终成片全程无声却毫无提示。）
-        const who = charAsset?.name || charName || '角色';
-        showToast(`「${who}」尚未配置音色，本次未生成配音。请在「角色」卡片点击「配置音色」后再生成。`, 'warning');
         return null;
       }
       const voice = getCharacterVoice(charAsset || { name: charName });
@@ -3875,6 +3924,21 @@ export const DramaWorkshopPage: React.FC = () => {
         if (!isNaN(d) && d > 0) duration = d;
         return '';
       });
+      // {台词/旁白} 胶囊：分析时写入的「### 台词与声音」段落使用 {内容} 格式，
+      // 生成视频时提取为对白（统一附加到提示词末尾的「对白」小节，交给视频模型生成口型/语音），
+      // 胶囊本体从画面提示词中剔除，避免与「对白」小节重复。
+      // 【音效】小节下的 {} 不属于对白（环境声），保留在提示词中供视频模型参考氛围。
+      const sfxSplit = prompt.split(/【音效】/);
+      const dialogueList: string[] = [];
+      sfxSplit[0] = sfxSplit[0].replace(/\{([^{}]{1,300})\}/g, (_m: string, inner: string) => {
+        const t = inner.trim();
+        // 跳过占位符与「无」标记
+        if (t && t !== '台词内容' && t !== '无' && t !== '旁白' && t !== '音效') dialogueList.push(t);
+        return '';
+      });
+      prompt = sfxSplit.length > 1 ? sfxSplit[0] + '【音效】' + sfxSplit.slice(1).join('【音效】') : sfxSplit[0];
+      const braceDialogue = dialogueList.join('\n');
+      if (braceDialogue && !dialogue) dialogue = braceDialogue;
       // 音色只用于「分镜台词/旁白/音效」的语音合成，绝不进入视频/图像提示词：
       // 剔除形如 <音色名> 的音色引用 token；角色/场景/道具的 <名称> 引用属于素材引用，必须保留。
       // 使用模块级 stripVoiceTokens，同时启用「音色库白名单」+「音色特征词」+「素材名保护」三重判定，
@@ -4301,17 +4365,48 @@ export const DramaWorkshopPage: React.FC = () => {
   }, []);
 
   const setVariantCandidates = useCallback((assetId: string, variantId: string, candidates: string[], prompt: string) => {
+    const patch = (a: DramartAssetItem): DramartAssetItem => {
+      const term = kindTerm(a.kind);
+      const variants = a.variants || [];
+      // 目标变装不存在（场景/道具未预创建主变装，或详情面板合成的临时 id）：
+      // 先补建主变装再挂候选，否则候选图落不了库——「最新」缩略图永远是"暂无"
+      if (!variants.some(v => v.id === variantId)) {
+        return { ...a, variants: [
+          ...variants.filter(v => v.label !== term.main),
+          { id: 'va_' + Date.now().toString(36) + '_m', label: term.main, candidates, prompt },
+        ] };
+      }
+      return { ...a, variants: variants.map(v => v.id === variantId ? { ...v, candidates, prompt } : v) };
+    };
     setProject(p => p ? ({ ...p,
-      characters: p.characters.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, candidates, prompt } : v) } : a),
-      scenes: p.scenes.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, candidates, prompt } : v) } : a),
-      props: p.props.map(a => a.id === assetId ? { ...a, variants: a.variants?.map(v => v.id === variantId ? { ...v, candidates, prompt } : v) } : a),
+      characters: p.characters.map(a => a.id === assetId ? patch(a) : a),
+      scenes: p.scenes.map(a => a.id === assetId ? patch(a) : a),
+      props: p.props.map(a => a.id === assetId ? patch(a) : a),
     }) : p);
   }, []);
 
+  // 规范化生成弹窗的 variantId：目标变装不存在（场景/道具无预创建主变装、详情面板合成 id）时
+  // 先补建主变装再打开弹窗，保证重绘候选图能落库到真实变装（「最新」缩略图可见可切换）
+  const ensureVariantForGen = useCallback((a: DramartAssetItem | null | undefined, variantId: string): string => {
+    if (!a) return variantId;
+    const term = kindTerm(a.kind);
+    const variants = a.variants || [];
+    if (variants.some(v => v.id === variantId)) return variantId;
+    const main = variants.find(v => v.label === term.main);
+    if (main) return main.id;
+    const newId = 'va_' + Date.now().toString(36) + '_g';
+    setProject(p => p ? ({ ...p,
+      characters: p.characters.map(x => x.id === a.id ? { ...x, variants: [...(x.variants || []), { id: newId, label: term.main }] } : x),
+      scenes: p.scenes.map(x => x.id === a.id ? { ...x, variants: [...(x.variants || []), { id: newId, label: term.main }] } : x),
+      props: p.props.map(x => x.id === a.id ? { ...x, variants: [...(x.variants || []), { id: newId, label: term.main }] } : x),
+    }) : p);
+    return newId;
+  }, [setProject]);
+
   const openGen = useCallback((variantId: string) => {
     if (!detailAssetId) return;
-    setGenOpen({ assetId: detailAssetId, variantId });
-  }, [detailAssetId]);
+    setGenOpen({ assetId: detailAssetId, variantId: ensureVariantForGen(assetById(detailAssetId), variantId) });
+  }, [detailAssetId, assetById, ensureVariantForGen]);
   const closeGen = useCallback(() => setGenOpen(null), []);
 
   const removeVariant = useCallback((assetId: string, variantId: string) => {
@@ -4540,8 +4635,8 @@ export const DramaWorkshopPage: React.FC = () => {
 
   const openAiGen = useCallback((a: DramartAssetItem) => {
     const mainVariant = a.variants?.find(v => v.label === kindTerm(a.kind).main) || a.variants?.[0];
-    setGenOpen({ assetId: a.id, variantId: mainVariant?.id || '' });
-  }, []);
+    setGenOpen({ assetId: a.id, variantId: ensureVariantForGen(a, mainVariant?.id || '') });
+  }, [ensureVariantForGen]);
 
   const pickFromAssets = useCallback((assetId: string) => {
     if (!pickerAsset) return;
@@ -4665,7 +4760,7 @@ export const DramaWorkshopPage: React.FC = () => {
       )}
 
       {stage === 'sets' && project && (
-        <div className="dwc-sets">
+        <div className="dwc-sets" style={ratioCssVar(project.ratio)}>
           <div className="dwc-top-bar">
             <button className="dwc-back" onClick={handleReset}><ChevronLeftIcon size={16} /> 返回</button>
             {editingName ? (

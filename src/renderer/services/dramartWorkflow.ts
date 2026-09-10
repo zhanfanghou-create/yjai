@@ -204,7 +204,79 @@ function defaultStoryboards(scriptText: string): DramartStoryboard[] {
 }
 
 // 分镜视频提示词：按参考格式输出（画风约束 + 素材引用 + 画面描写 + 约束词），参数均取实际值，不固定具体内容
-export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number }): string {
+// 从剧本文本中提取台词/旁白/音效（写入分镜提示词供引用与配音使用）
+// - 台词：成对引号内的内容（中英文引号）
+// - 旁白：带 旁白/画外音/内心独白 标记的句子
+// - 音效：音效：前缀 或 括号内带 声/音/响 的描述
+export function extractSoundParts(text: string): { dialogue: string[]; narration: string[]; sfx: string[] } {
+  const src = String(text || '');
+  const dialogue: string[] = [];
+  const narration: string[] = [];
+  const sfx: string[] = [];
+  if (!src.trim()) return { dialogue, narration, sfx };
+  const seen = (arr: string[], v: string) => { const t = v.trim(); if (t && !arr.includes(t)) { arr.push(t); return true; } return false; };
+
+  // 1) 引号台词（先于旁白提取，避免“旁白：”后接引号被重复归类）
+  const quoteRes: RegExp[] = [
+    /“([^“”]{1,300})”/g,
+    /"([^"]{1,300})"/g,
+    /「([^」]{1,300})」/g,
+    /『([^』]{1,300})』/g,
+  ];
+  const quotedSet = new Set<string>();
+  for (const re of quoteRes) {
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(src))) {
+      const inner = m[1].trim();
+      if (inner && !quotedSet.has(inner)) { quotedSet.add(inner); }
+    }
+  }
+  // 2) 旁白/画外音标记（标记后的整句或其后引号内容）
+  const narrRe = /(?:旁白|画外音|内心独白|自述)\s*[:：]?\s*(?:[“"]([^”"]{1,200})[”"]|([^。\n]{1,150}[。！？!?…]))/g;
+  let nm: RegExpExecArray | null;
+  while ((nm = narrRe.exec(src))) {
+    const v = (nm[1] || nm[2] || '').trim();
+    if (v) seen(narration, v);
+  }
+  // 引号内容若已被旁白标记引用则归旁白，否则归台词
+  quotedSet.forEach(q => { if (!narration.includes(q)) seen(dialogue, q); });
+
+  // 3) 音效：音效：前缀 或 括号内含声音关键词的描述（如 雨声淅沥、风声呼啸、远处雷声轰鸣）
+  let sm: RegExpExecArray | null;
+  const sfxRe1 = /音效\s*[:：]\s*([^。\n]{1,80})/g;
+  while ((sm = sfxRe1.exec(src))) seen(sfx, sm[1].trim());
+  const sfxRe2 = /[（(]([^（()）]{1,40})[）)]/g;
+  while ((sm = sfxRe2.exec(src))) {
+    const v = sm[1].trim();
+    // 含声音关键词即视为音效；排除"低声道"这类语气描述
+    if (v && /(声|音|响|轰鸣|呼啸|淅沥|滴答|脚步|音乐)/.test(v) && !/说道|喊道|笑道|哭道|低声道|轻声道|沉声道/.test(v)) seen(sfx, v);
+  }
+  return { dialogue, narration, sfx };
+}
+
+// 生成「### 台词与声音」段落（{...} 形式，可被富文本编辑器识别为台词胶囊、被配音逻辑提取）
+export function buildSoundSection(soundSource: string): string {
+  const { dialogue, narration, sfx } = extractSoundParts(soundSource);
+  const parts: string[] = [];
+  if (dialogue.length || narration.length || sfx.length) {
+    parts.push('### 台词与声音', '');
+    if (dialogue.length) {
+      parts.push('【台词】');
+      dialogue.slice(0, 8).forEach(d => parts.push('{' + d + '}'));
+    }
+    if (narration.length) {
+      parts.push('【旁白】');
+      narration.slice(0, 5).forEach(d => parts.push('{' + d + '}'));
+    }
+    if (sfx.length) {
+      parts.push('【音效】');
+      sfx.slice(0, 5).forEach(d => parts.push('{' + d + '}'));
+    }
+  }
+  return parts.length ? parts.join('\n') : '';
+}
+
+export function makeVideoPrompt(character: string, scene: string, prop: string, description: string, styleName = '90年代中国农村电影', explicitWord?: string, opts?: { index?: number; duration?: number; soundSource?: string }): string {
   const styleWord = explicitWord || stylePromptOf(styleName) || styleName;
   const idx = opts && opts.index ? opts.index : 1;
   const dur = opts && opts.duration ? opts.duration : 15;
@@ -212,6 +284,8 @@ export function makeVideoPrompt(character: string, scene: string, prop: string, 
   const charName = character || '主角';
   const sceneName = scene || '场景';
   const propName = prop || '道具';
+  // 台词/旁白/音效优先从剧本原文提取（描述可能被 LLM 改写），无原文时用描述本身
+  const soundSection = buildSoundSection(String((opts && opts.soundSource) || scriptText));
   return [
     '画风: ' + styleName,
     '视频中不得出现任何字幕、文字叠加、纯画面，不要bgm，不要配乐。',
@@ -238,6 +312,7 @@ export function makeVideoPrompt(character: string, scene: string, prop: string, 
     charName + (propName !== '道具' ? '（手持' + propName + '）' : '') + '位于画面中。',
     '[动作]',
     scriptText || '（暂无画面描述）',
+    ...(soundSection ? ['', soundSection] : []),
     '',
     '### 约束词',
     '【保持一致】',
@@ -641,7 +716,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
               characters: chars,
               scenes,
               props,
-              videoPrompt: makeVideoPrompt(chars[0] || (result.characters[0]?.name || '主角'), scenes[0] || (result.scenes[0]?.name || '场景'), props[0] || (result.props[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur }),
+              videoPrompt: makeVideoPrompt(chars[0] || (result.characters[0]?.name || '主角'), scenes[0] || (result.scenes[0]?.name || '场景'), props[0] || (result.props[0]?.name || '道具'), desc, styleName, styleWord, { index: idxNum, duration: dur, soundSource: rawScript }),
               duration: dur,
               videoUrl: undefined,
               videoStatus: 'idle' as const,
