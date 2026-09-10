@@ -47,7 +47,7 @@ jobs:
           - os: windows-latest
             platform: win
             arch: x64
-            artifact_glob: release/艺镜AI-正式版-*.exe
+            artifact_glob: release/YijingAI-Setup-*.exe
           - os: macos-14
             platform: mac
             arch: x64
@@ -104,7 +104,7 @@ jobs:
           echo "查找安装包文件..."
           find release -name "*.exe" -o -name "*.dmg" | head -20
           if [ "${{ matrix.platform }}" = "win" ]; then
-            ARTIFACT=$(find release -name "艺镜AI-正式版-*.exe" -print -quit)
+            ARTIFACT=$(find release -name "YijingAI-Setup-*.exe" -print -quit)
           elif [ "${{ matrix.arch }}" = "x64" ]; then
             ARTIFACT=$(find release -name "yijing-ai-*-mac-x64.dmg" -print -quit)
           else
@@ -139,13 +139,13 @@ jobs:
           PUBLIC_REPO: zhanfanghou-create/yijing-ai-downloads
         run: |
           mkdir -p dist
-          gh release download "v${VERSION}" --repo "$PUBLIC_REPO" --dir dist --pattern "艺镜AI-正式版-*.exe" --pattern "yijing-ai-*-mac-*.dmg"
+          gh release download "v${VERSION}" --repo "$PUBLIC_REPO" --dir dist --pattern "YijingAI-Setup-*.exe" --pattern "yijing-ai-*-mac-*.dmg"
           ls -la dist/
       - name: Generate public update manifest
         env:
           VERSION: ${{ needs.prepare.outputs.version }}
         run: |
-          WIN_EXE=$(find dist -name '艺镜AI-正式版-*.exe' -print -quit)
+          WIN_EXE=$(find dist -name 'YijingAI-Setup-*.exe' -print -quit)
           MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
           MAC_ARM64=$(find dist -name 'yijing-ai-*-mac-arm64.dmg' -print -quit)
           test -n "$WIN_EXE"
@@ -169,7 +169,7 @@ jobs:
           CNB_RELEASE_TITLE: 艺镜 AI v${{ needs.prepare.outputs.version }}
           CNB_RELEASE_NOTES: 艺镜 AI 无限画布正式版，包含 Windows 与 Intel/Apple Silicon macOS 安装包。
         run: |
-          WIN_EXE=$(find dist -name '艺镜AI-正式版-*.exe' -print -quit)
+          WIN_EXE=$(find dist -name 'YijingAI-Setup-*.exe' -print -quit)
           MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
           MAC_ARM64=$(find dist -name 'yijing-ai-*-mac-arm64.dmg' -print -quit)
           node scripts/publish-cnb-release.mjs "$WIN_EXE" "$MAC_X64" "$MAC_ARM64" dist/latest.json
@@ -188,7 +188,7 @@ jobs:
           unzip -q ossutil.zip -d ossutil-bin
           OSSUTIL=$(find ossutil-bin -type f -name ossutil -print -quit)
           chmod +x "$OSSUTIL"
-          WIN_EXE=$(find dist -name '艺镜AI-正式版-*.exe' -print -quit)
+          WIN_EXE=$(find dist -name 'YijingAI-Setup-*.exe' -print -quit)
           MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
           MAC_ARM64=$(find dist -name 'yijing-ai-*-mac-arm64.dmg' -print -quit)
           "$OSSUTIL" cp "$WIN_EXE" "oss://yjai-releases-cn-20260818/yijing/v${VERSION}/$(basename "$WIN_EXE")" -f
