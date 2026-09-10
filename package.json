@@ -1,6 +1,6 @@
 {
   "name": "yijing-ai",
-  "version": "1.2.31",
+  "version": "1.2.32",
   "description": "Yijing AI - Infinite Canvas AI Creation Tool",
   "main": "dist/main/main.js",
   "scripts": {
@@ -126,8 +126,7 @@
       "displayLanguageSelector": false,
       "runAfterFinish": true,
       "menuCategory": "艺镜AI",
-      "artifactName": "YijingAI-Setup-${version}.${ext}",
-      "include": "build/installer.nsh"
+      "artifactName": "YijingAI-Setup-${version}.${ext}"
     },
     "dmg": {
       "artifactName": "yijing-ai-${version}-mac-${arch}.${ext}"

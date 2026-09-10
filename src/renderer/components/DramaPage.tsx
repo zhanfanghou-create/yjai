@@ -2266,7 +2266,10 @@ ${conversationText}
       showToast('剧本内容为空或过短，请先完成剧本写作步骤', 'error');
       return;
     }
-    // 只提交剧本完整内容，剧创工场会自行分析剧本生成角色/场景/道具/分镜
+    // 同时携带「提示词」步骤产出的结构化内容（资产表 + 分幕分镜表）。
+    // 剧创工场会优先解析它，从而完整保留逐镜提示词与 <角色名> 素材引用，
+    // 并避免再用推理模型从零分析剧本（长耗时、易超时）。
+    const promptsContent = currentEpisode?.stepContents?.prompts?.content || '';
     const project: DramartProject = {
       id: 'dr_' + Date.now().toString(36),
       name: currentEpisode?.title || currentRecord?.name || '剧创项目',
@@ -2284,6 +2287,7 @@ ${conversationText}
       props: [],
       storyboards: [],
       scriptContent: scriptText,
+      promptsContent: promptsContent || undefined,
     };
     submitDramaDraft(project);
     const wordCount = scriptText.trim().length;

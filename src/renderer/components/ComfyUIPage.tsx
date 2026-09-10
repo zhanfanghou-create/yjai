@@ -170,6 +170,11 @@ const ComfyConfigCard: React.FC<ComfyConfigCardProps> = React.memo(({ config, s,
           <Icon type="cpu" size={16} />
           <span className="sp-title-text">{name || 'ComfyUI 工作流'}</span>
           {config.connected && <span className="sp-connected-dot" />}
+          {!config.connected && (
+            <span className="comfy-count-badge" style={{ opacity: 0.75 }} title="未连接：模型窗口不会显示此 ComfyUI 的工作流">
+              未连接
+            </span>
+          )}
           {wfCount > 0 && <span className="comfy-count-badge">{wfCount} 个工作流</span>}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -191,7 +196,14 @@ const ComfyConfigCard: React.FC<ComfyConfigCardProps> = React.memo(({ config, s,
             className="sp-inp"
             type="text"
             value={serverUrl}
-            onChange={e => setServerUrl(e.target.value)}
+            onChange={e => {
+              setServerUrl(e.target.value);
+              // 地址一改，原有连接状态即失效：立即置 connected=false（脏值，不落库），
+              // 使模型窗口立即隐藏该 ComfyUI 的工作流选项，直到重新测试连接成功。
+              if (config.connected && e.target.value.trim() !== String(config.serverUrl || '').trim()) {
+                s.updateComfyUIConfig(config.id, { connected: false });
+              }
+            }}
             placeholder="http://127.0.0.1:8188"
             onClick={e => e.stopPropagation()}
             style={{ width: '100%' }}
@@ -210,6 +222,11 @@ const ComfyConfigCard: React.FC<ComfyConfigCardProps> = React.memo(({ config, s,
           {testResult === 'ok'  && <span className="sp-test-ok">✓ 连接成功</span>}
           {testResult === 'err' && <span className="sp-test-err">✗ 连接失败</span>}
         </div>
+        {!config.connected && (
+          <div className="sp-hint" style={{ marginTop: 8 }}>
+            未连接时，画布/剧创工场的模型窗口<b>不会显示</b>此 ComfyUI 的任何工作流；请填写服务器地址并点「测试连接」通过后才会出现。
+          </div>
+        )}
       </div>
 
       {showScan && (

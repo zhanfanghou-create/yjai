@@ -43,7 +43,8 @@ export interface AssistantResult {
 const base = (url = '') => String(url).trim().replace(/\/+$/, '');
 const normalizeApiBase = (url = '') => base(url)
   .replace(/\/(?:chat\/completions|images\/generations|images\/edits|videos\/generations|api\/generate|api\/result|models|agnesapi)(?:\/.*)?$/i, '');
-const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
+// agnes 统一走国内正式节点 api.agnes-ai.cn（兼容国际站 api/apihub.agnes-ai.com 与旧 apihub.agnes-ai.cn）
+const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)(?:api|apihub)\.agnes-ai\.(?:com|cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
 
 // 选择用户已配置的对话(聊天)模型。
 // 注意：只能用聊天类配置(apiConfigs/chatAPIConfigs)，绝不能用 generationParams.selectedModel，
@@ -67,22 +68,22 @@ export function resolveChatConfig(): { config: APIConfig | null; model: string }
   return { config, model };
 }
 
-// 按名称（可选）挑选 ComfyUI 配置；无名时优先已连接、其次第一个有地址的
+// 按名称（可选）挑选 ComfyUI 配置；仅使用「已填写地址且连接成功」的配置
 export function pickComfyConfig(byName?: string) {
   const list = useAppStore.getState().comfyuiConfigs || [];
-  const withUrl = list.filter(c => c.serverUrl);
+  const withUrl = list.filter(c => String(c?.serverUrl || '').trim() && c?.connected === true);
   if (byName) {
     const n = byName.trim().toLowerCase();
     const hit = withUrl.find(c => (c.name || '').trim().toLowerCase() === n)
       || withUrl.find(c => (c.name || '').trim().toLowerCase().includes(n));
     if (hit) return hit;
   }
-  return withUrl.find(c => c.connected) || withUrl[0];
+  return withUrl[0];
 }
 
-// 已配置的 ComfyUI 名称清单（供助手/提示展示）
+// 已配置且已连接的 ComfyUI 名称清单（供助手/提示展示）
 export function listComfyConfigNames(): string[] {
-  return (useAppStore.getState().comfyuiConfigs || []).filter(c => c.serverUrl).map(c => c.name || 'ComfyUI');
+  return (useAppStore.getState().comfyuiConfigs || []).filter(c => String(c?.serverUrl || '').trim() && c?.connected === true).map(c => c.name || 'ComfyUI');
 }
 
 // 取当前可用的 ComfyUI 地址

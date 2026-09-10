@@ -155,7 +155,7 @@ export function DirectorStageModal({
     if (!cfg) return null;
     let base = String(cfg.baseUrl || '').trim().replace(/\/+$/, '');
     if (!/\/v\d+$/.test(base)) base = base + '/v1';
-    base = base.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
+    base = base.replace(/^(https?:\/\/)(?:api|apihub)\.agnes-ai\.(?:com|cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
     return { base, key: cfg.apiKey as string, model: (cfg.defaultModel || cfg.models?.[0]) as string };
   }, []);
 

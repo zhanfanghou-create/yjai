@@ -1804,6 +1804,10 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
   ], [recommendedConfigs, allAPIConfigs, chatAPIConfigs]);
 
   // 根据节点类型选择对应的 API 配置
+  // ComfyUI 可用性门槛：必须已填写服务器地址、且连接测试通过（connected=true）。
+  // 未配置地址 / 地址连接失败时，不在模型窗口展示任何 ComfyUI 工作流选项。
+  const isComfyReady = (c: any) => !!String(c?.serverUrl || '').trim() && c?.connected === true;
+  const readyComfyConfigs = (comfyuiConfigs || []).filter(isComfyReady);
   const comfyModelsFor = (c: any) => {
     const b = String(c.serverUrl || '').trim().replace(/\/+$/, '');
     const cached = (comfyWorkflowCache || [])
@@ -1823,8 +1827,8 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
-        // ComfyUI 也可以用于图片生成
-        ...comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); const pre = c?.categoryPresets?.image; const defM = ms.find((m: string) => m === pre) || ms[0]; return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: defM, _source: 'comfyui' as const }); }),
+        // ComfyUI 也可以用于图片生成（仅显示已连接成功的配置）
+        ...readyComfyConfigs.map(c => { const ms = comfyModelsFor(c); const pre = c?.categoryPresets?.image; const defM = ms.find((m: string) => m === pre) || ms[0]; return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: defM, _source: 'comfyui' as const }); }),
       ];
     }
     // 视频类节点
@@ -1834,8 +1838,8 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
-        // ComfyUI 也可以用于视频生成
-        ...comfyuiConfigs.map(c => { const wfs = (c.workflowFiles && c.workflowFiles.length ? c.workflowFiles.map((w: any) => w.name || w) : []); const pre = c?.categoryPresets?.video; const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI 工作流'; return ({ ...c, name: c.name || 'ComfyUI', models: (wfs.length ? wfs : [c.name || 'ComfyUI 工作流']), defaultModel: defM, _source: 'comfyui' as const }); }),
+        // ComfyUI 也可以用于视频生成（仅显示已连接成功的配置）
+        ...readyComfyConfigs.map(c => { const wfs = (c.workflowFiles && c.workflowFiles.length ? c.workflowFiles.map((w: any) => w.name || w) : []); const pre = c?.categoryPresets?.video; const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI 工作流'; return ({ ...c, name: c.name || 'ComfyUI', models: (wfs.length ? wfs : [c.name || 'ComfyUI 工作流']), defaultModel: defM, _source: 'comfyui' as const }); }),
       ];
     }
     // 语音类节点
@@ -1845,8 +1849,8 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
         ...getCallableRecommendedConfigs(recommendedConfigs)
           .filter(config => hasSavedCallableApiConfig(config))
           .map(config => ({ ...config, models: normalizeSavedModels(config.models, config.defaultModel), _source: 'recommended' as const })),
-        // ComfyUI 音频工作流（配音设计/声音克隆）：默认选中音频分类预设
-        ...comfyuiConfigs.map(c => { const wfs = ((c.workflowFiles || []) as any[]).map((w: any) => w.name || w); const pre = c?.categoryPresets?.audio; const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI 工作流'; return ({ ...c, name: c.name || 'ComfyUI', models: (wfs.length ? wfs : [c.name || 'ComfyUI 工作流']), defaultModel: defM, _source: 'comfyui' as const }); }),
+        // ComfyUI 音频工作流（配音设计/声音克隆）：默认选中音频分类预设（仅显示已连接成功的配置）
+        ...readyComfyConfigs.map(c => { const wfs = ((c.workflowFiles || []) as any[]).map((w: any) => w.name || w); const pre = c?.categoryPresets?.audio; const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI 工作流'; return ({ ...c, name: c.name || 'ComfyUI', models: (wfs.length ? wfs : [c.name || 'ComfyUI 工作流']), defaultModel: defM, _source: 'comfyui' as const }); }),
       ];
     }
     // 音乐类节点
@@ -1860,7 +1864,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
     }
     // ComfyUI 节点
     else if (node.type === 'comfyui') {
-      configs = comfyuiConfigs.map(c => { const ms = comfyModelsFor(c); return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: ms[0], _source: 'comfyui' as const }); });
+      configs = readyComfyConfigs.map(c => { const ms = comfyModelsFor(c); return ({ ...c, name: c.name || 'ComfyUI', models: ms, defaultModel: ms[0], _source: 'comfyui' as const }); });
     }
     // 默认返回所有可用配置
     else {
@@ -2112,7 +2116,7 @@ function NodeInputPopover({ node, onClose, onSend, anchorRect, hasIncomingImageN
                               setSelectedModel(m);
                               setModelDropdownOpen(false);
                               // 把所选接口/模型提交到节点，确保 executeNode 路由到正确的 provider（含 ComfyUI）
-                              const isComfy = (cfg as any)._source === 'comfyui' || comfyuiConfigs.some(cc => cc.id === cfg.id);
+                              const isComfy = (cfg as any)._source === 'comfyui' || readyComfyConfigs.some(cc => cc.id === cfg.id);
                               // ComfyUI：把所选“工作流名”映射到缓存 id；选“自动搭建”则清空以现搭
                               let nextOptions = node.options || {};
                               if (isComfy) {
@@ -3371,15 +3375,28 @@ function WorkflowNode({ id, data, selected }: any) {
                 : node.result.type === 'audio'
                   ? <div className="lib-node-audio-player"><SvgIcon name="audio" size={26} /><audio src={normalizeFileSrc(node.result.url)} controls data-media-url={node.result.url} data-media-type="audio" data-prompt={node.prompt || node.options?.prompt || ''} data-name={getNodeDisplayName(node)} data-source-id={node.id} data-source-type="canvas" onClick={(event) => event.stopPropagation()} /></div>
                   : <video src={normalizeFileSrc(node.result.url)} controls data-media-url={node.result.url} data-media-type="video" data-prompt={node.prompt || node.options?.prompt || ''} data-name={getNodeDisplayName(node)} data-source-id={node.id} data-source-type="canvas" />}
-              {/* 结果节点上的「重新生成」小按钮：无论图片/视频/音频，都可再次打开输入框、改参数后再次提交 */}
+              {/* 结果节点上的小按钮：打开输入框改参数后再次提交；另提供一键重试（沿用原参数直接重跑） */}
               <button
                 type="button"
                 className="lib-node-regen-btn"
-                title="打开输入框修改后重新生成"
+                title="打开输入框，修改提示词或参数后再次生成"
                 onClick={(event) => { event.stopPropagation(); setImageToolbarOpen(false); setActiveInputNodeId?.(node.id); }}
               >
                 <SvgIcon name="canvas" size={13} />
-                <span>重新生成</span>
+                <span>改参数</span>
+              </button>
+              <button
+                type="button"
+                className="lib-node-regen-btn"
+                title="沿用当前参数直接重新生成"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setImageToolbarOpen(false);
+                  try { useAppStore.getState().retryNode?.(node.id); } catch { /* ignore */ }
+                }}
+              >
+                <SvgIcon name="loading" size={13} />
+                <span>重试</span>
               </button>
             </div>
           )}

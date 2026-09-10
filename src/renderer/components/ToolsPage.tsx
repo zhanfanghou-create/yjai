@@ -125,7 +125,7 @@ export const ToolsPage: React.FC = () => {
     (recommendedConfigs || []).forEach((c: any) => addConfig(c));
     // ComfyUI 工作流配置（用于配音等步骤，通过 serverUrl 判断是否可用）
     (comfyuiConfigs || []).forEach((c: any) => {
-      if (c && (c.serverUrl || '').trim() && !configs.find(ex => ex.id === c.id)) {
+      if (c && (c.serverUrl || '').trim() && c?.connected === true && !configs.find(ex => ex.id === c.id)) {
         configs.push({
           ...c,
           _apiType: 'comfyui',

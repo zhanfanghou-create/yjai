@@ -60,12 +60,6 @@ export interface ProviderPreset {
   speech?: ProviderSpeechPreset;
   /** 该平台是否提供 /models 模型列表接口 */
   modelListSupported?: boolean;
-  /** 图片/视频接口是否需要额外的 AK/SK（如火山方舟素材资产库）；需要时配置卡才会引导填写 */
-  needsAccessKey?: boolean;
-  /** AK/SK 创建/申请地址 */
-  akskApplyUrl?: string;
-  /** AK/SK 申请链接文案 */
-  akskApplyLabel?: string;
   /** 平台「模型广场/精选模型」页面（默认展示该页面每类模型的精选清单） */
   modelPlazaUrl?: string;
   /** 模型广场链接文案 */
@@ -113,12 +107,11 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
     ],
     imageModelRule: ['seedream'],
     videoModelRule: ['seedance'],
-    needsAccessKey: true,
-    akskApplyUrl: 'https://console.volcengine.com/iam/keymanage/',
-    akskApplyLabel: '创建火山引擎 AK/SK（访问控制 IAM）',
     speech: {
       label: '火山引擎语音（豆包语音合成）',
-      baseUrl: 'https://openspeech.bytedance.com/api/v1/tts',
+      // 2026-09 实测：应用走的是 v3 合成接口 + X-Api-Key 鉴权（官方 v1 /api/v1/tts 用 Bearer;token，
+      // 与新版控制台 API Key 不通用，会 401）。这里同步为真实使用的端点，避免误导填写。
+      baseUrl: 'https://openspeech.bytedance.com/api/v3/tts/create',
       applyUrl: 'https://console.volcengine.com/speech/app',
       applyLabel: '申请火山引擎语音（语音技术控制台）',
       defaultModel: 'BV001_streaming',
@@ -162,15 +155,16 @@ export const PROVIDER_PRESETS: ProviderPreset[] = [
     videoBaseUrl: 'https://dashscope.aliyuncs.com/compatible-mode/v1',
     videoDefaultModel: 'wan3.0-video-prime',
     modelListSupported: true,
+    // 2026-09 实测（百炼 compatible-mode）：
+    //   qwen3-plus / qwen3-235b-a22b-instruct 已被上游下线（404 model_not_found）→ 移除/更正
+    //   qwq-plus 仅支持 stream 模式，本应用统一用非流式调用，放进来必失败 → 移除
     featuredChat: [
       'qwen-max',
       'qwen-plus',
       'qwen-turbo',
       'qwen-long',
       'qwen3-max',
-      'qwen3-plus',
-      'qwen3-235b-a22b-instruct',
-      'qwq-plus',
+      'qwen3-235b-a22b',
       'deepseek-v3',
       'deepseek-r1',
     ],

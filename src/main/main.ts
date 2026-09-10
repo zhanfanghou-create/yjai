@@ -73,6 +73,9 @@ function safeSend(channel: string, ...args: any[]) {
 
 // Background job tracking
 const grsaiJobMap: Map<string, NodeJS.Timeout> = new Map();
+// 异步任务 → 创建时使用的模型名。Agnes 视频查询端点要求回传 model_name，必须用真实模型名，
+// 之前硬编码 'agnes-video-2.5-flash' 会导致其它 agnes 视频模型查询失败/超时。
+const grsaiJobModelMap: Map<string, string> = new Map();
 
 // Configurable polling params
 let grsaiPollingIntervalMs = 3000;
@@ -207,10 +210,9 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
     // Agnes Video 2.5 Flash 官方查询端点：/agnesapi?video_id=<id>&model_name=<model>
     // 其他 OpenAI 兼容视频用 /v1/videos/<id>
     const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.(?:com|cn)(?:\/|$)/i.test(baseUrl);
-    const agnesModelName = (() => {
-      // 从 grsaiJobMap 或全局无法直接拿到 model，用约定的默认值；创建任务时已存入 job 元数据
-      return 'agnes-video-2.5-flash';
-    })();
+    // Agnes 视频查询必须回传创建时的真实模型名；从 jobModel 取出（创建任务处写入），
+    // 取不到时再回退官方默认名。
+    const agnesModelName = grsaiJobModelMap.get(jobId) || 'agnes-video-2.5-flash';
     const url = (id: string) => dsScope
       ? `${dsOrigin}/api/v1/tasks/${encodeURIComponent(id)}`
       : (volcV.isVolc
@@ -271,6 +273,7 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
             }
             clearInterval(timer);
             grsaiJobMap.delete(jobId);
+            grsaiJobModelMap.delete(jobId);
             return;
           } else if (isDone) {
             // 已完成但未解析到结果地址：把原始响应回传，交给渲染进程兜底解析
@@ -279,6 +282,7 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
             }
             clearInterval(timer);
             grsaiJobMap.delete(jobId);
+            grsaiJobModelMap.delete(jobId);
             return;
           } else if (dsScope ? (status === 'FAILED' || status === 'CANCELED' || status === 'UNKNOWN') : (status === 'failed' || status === 'error')) {
             console.error('[Grsai Poll] job FAILED', jobId, JSON.stringify(data).slice(0, 1000));
@@ -287,6 +291,7 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
             }
             clearInterval(timer);
             grsaiJobMap.delete(jobId);
+            grsaiJobModelMap.delete(jobId);
             return;
           }
         }
@@ -300,6 +305,7 @@ async function startGrsaiJobPolling(jobId: string, baseUrl: string, apiKey: stri
         }
         clearInterval(timer);
         grsaiJobMap.delete(jobId);
+        grsaiJobModelMap.delete(jobId);
       }
     }, intervalMs);
 
@@ -331,6 +337,7 @@ ipcMain.handle('grsai:cancelJob', async (_event, opts: any) => {
     if (timer) {
       clearInterval(timer);
       grsaiJobMap.delete(jobId);
+      grsaiJobModelMap.delete(jobId);
       return { ok: true, cancelled: true };
     }
     return { ok: true, cancelled: false };
@@ -339,8 +346,10 @@ ipcMain.handle('grsai:cancelJob', async (_event, opts: any) => {
   }
 });
 
+// agnes 统一走国内正式节点：把任意旧主机（国际站 api/apihub.agnes-ai.com、旧国内 apihub.agnes-ai.cn）
+// 全部重定向到 https://api.agnes-ai.cn，避免请求打到国际站或已废弃的 apihub 节点
 function redirectAgnesHost(url: string): string {
-  return url.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
+  return url.replace(/^(https?:\/\/)(?:api|apihub)\.agnes-ai\.(?:com|cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
 }
 
 function normalizeApiBase(baseUrl: string | undefined): string {
@@ -993,14 +1002,19 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
     // max_tokens：长剧本分析需要输出大量 JSON，必须设足够大的值；
     // 不传时部分模型默认输出极少 token，导致 content 为空被截断
     const maxTokens = config.maxTokens || 32768;
-    // 火山方舟 seed 系列推理模型默认开启深度思考，会输出超长 reasoning_content 导致超时；
+    // 火山方舟 seed / thinking 系列推理模型默认开启深度思考，会输出超长 reasoning_content 导致超时；
     // 检测到火山方舟推理模型时自动关闭深度思考，让模型直接输出结果
     const isVolcengineArk = /ark\.cn-beijing\.volces\.com/i.test(baseUrl || '');
-    const isReasoningModel = /seed|evolving|reasoning|deepseek|r1/i.test(model || '');
-    // 千问 qwen3 系列为混合思考模型，DashScope 官方用 enable_thinking=false 关闭深度思考，
+    // 覆盖：doubao-seed-1.6 / doubao-1.5-thinking-pro / deepseek-r1 / kimi-thinking 等
+    const isReasoningModel = /seed|evolving|reasoning|thinking|deepseek|r1/i.test(model || '');
+    // 千问/通义混合思考模型（qwen3 系列、qwq、qwen-r1）：DashScope 官方用 enable_thinking=false 关闭深度思考，
     // 否则会输出超长 reasoning_content 导致长剧本分析超时
     const isDashScopeChat = /dashscope\.aliyuncs\.com/i.test(baseUrl || '') || /\.maas\.aliyuncs\.com/i.test(baseUrl || '');
-    const isQwenReasoning = /qwen3|qwen-r1|qwen2\.5-r1/i.test(model || '');
+    const isQwenReasoning = /qwen3|qwq|qwen-r1|qwen2\.5-r1/i.test(model || '');
+    // agnes 3.0 系列同为推理模型，默认把答案写进 reasoning_content；用 chat_template_kwargs 关闭思考，
+    // 既避免长剧本分析超时，也让 JSON 直接落在 content 里
+    const isAgnesChat = /:\/\/(?:api|apihub)\.agnes-ai\.(?:com|cn)(?:\/|$)/i.test(baseUrl || '');
+    const isAgnesReasoning = /agnes-3|reason|thinking/i.test(model || '');
     const body: any = { model, messages, stream: false, max_tokens: maxTokens };
     if (isVolcengineArk && isReasoningModel) {
       body.thinking = { type: 'disabled' };
@@ -1008,7 +1022,11 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
     }
     if (isDashScopeChat && isQwenReasoning) {
       body.enable_thinking = false;
-      console.log('[IPC] grsai:chat: 检测到千问 qwen3 推理模型，已关闭深度思考 (enable_thinking=false)');
+      console.log('[IPC] grsai:chat: 检测到千问/通义推理模型，已关闭深度思考 (enable_thinking=false)');
+    }
+    if (isAgnesChat && isAgnesReasoning) {
+      body.chat_template_kwargs = { enable_thinking: false };
+      console.log('[IPC] grsai:chat: 检测到 agnes 推理模型，已关闭思考 (chat_template_kwargs.enable_thinking=false)');
     }
     const response = await fetchWithRetry(url, {
       method: 'POST',
@@ -1024,95 +1042,6 @@ ipcMain.handle('grsai:chat', async (_event, config: any) => {
   } catch (error) {
     console.error('[IPC] grsai:chat error=', error);
     return { ok: false, error: (error as Error).message };
-  }
-});
-
-// ===== 火山方舟素材资产库 AK/SK 签名（HMAC-SHA256）与 CreateAsset 流程 =====
-// 素材资产库 OpenAPI 仅支持 AK/SK 签名（Service=ark, Region=cn-beijing, Version=2024-01-01）
-const VOLC_ASSET_HOST = 'ark.cn-beijing.volcengineapi.com';
-const VOLC_ASSET_BASE = 'https://ark.cn-beijing.volcengineapi.com/';
-const VOLC_ASSET_REGION = 'cn-beijing';
-const VOLC_ASSET_SERVICE = 'ark';
-
-function volcHmacSHA256(key: Buffer, content: string): Buffer {
-  return crypto.createHmac('sha256', key).update(content).digest();
-}
-function volcSha256Hex(data: Buffer | string): string {
-  return crypto.createHash('sha256').update(data).digest('hex');
-}
-function volcSignRequest(opts: { ak: string; sk: string; action: string; body: any }): { url: string; headers: Record<string, string> } {
-  const { ak, sk, action, body } = opts;
-  const bodyBuf = Buffer.from(JSON.stringify(body));
-  const now = new Date();
-  const xDate = now.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
-  const authDate = xDate.slice(0, 8);
-  const payload = volcSha256Hex(bodyBuf);
-  const queries = new URLSearchParams({ Action: action, Version: '2024-01-01' });
-  const queryString = queries.toString().replace(/\+/g, '%20');
-  const path = '/';
-  const signedHeaders = ['host', 'x-date', 'x-content-sha256', 'content-type'];
-  const headerValues: Record<string, string> = {
-    'X-Date': xDate,
-    'X-Content-Sha256': payload,
-    'Content-Type': 'application/json',
-    host: VOLC_ASSET_HOST,
-  };
-  const headerString = signedHeaders.map(h => h + ':' + headerValues[h].trim()).join('\n');
-  const canonicalString = ['POST', path, queryString, headerString + '\n', signedHeaders.join(';'), payload].join('\n');
-  const hashedCanonical = volcSha256Hex(canonicalString);
-  const credentialScope = authDate + '/' + VOLC_ASSET_REGION + '/' + VOLC_ASSET_SERVICE + '/request';
-  const signString = ['HMAC-SHA256', xDate, credentialScope, hashedCanonical].join('\n');
-  const kDate = volcHmacSHA256(Buffer.from(sk), authDate);
-  const kRegion = volcHmacSHA256(kDate, VOLC_ASSET_REGION);
-  const kService = volcHmacSHA256(kRegion, VOLC_ASSET_SERVICE);
-  const kSigning = volcHmacSHA256(kService, 'request');
-  const signature = volcHmacSHA256(kSigning, signString).toString('hex');
-  const authorization = 'HMAC-SHA256 Credential=' + ak + '/' + credentialScope + ', SignedHeaders=' + signedHeaders.join(';') + ', Signature=' + signature;
-  return {
-    url: VOLC_ASSET_BASE + '?' + queryString,
-    headers: { 'Authorization': authorization, 'X-Date': xDate, 'X-Content-Sha256': payload, 'Content-Type': 'application/json' },
-  };
-}
-async function callVolcAssetApi(opts: { ak: string; sk: string; action: string; body: any }): Promise<{ ok: boolean; error?: string; result?: any; status?: number }> {
-  const req = volcSignRequest(opts);
-  const resp = await fetch(req.url, { method: 'POST', headers: req.headers, body: JSON.stringify(opts.body) });
-  const data = await resp.json().catch(() => null);
-  if (!resp.ok || data?.ResponseMetadata?.Error) {
-    const err = data?.ResponseMetadata?.Error?.Message || data?.ResponseMetadata?.Error?.Code || ('HTTP ' + resp.status);
-    return { ok: false, error: String(err), status: resp.status };
-  }
-  return { ok: true, result: data?.Result, status: resp.status };
-}
-
-// IPC: 上传素材资产并返回 asset:// 引用（CreateAssetGroup -> CreateAsset -> 轮询 GetAsset 至 Active）
-ipcMain.handle('volc:createAsset', async (_event, opts: { ak: string; sk: string; url: string; name?: string; projectName?: string; groupId?: string }) => {
-  try {
-    const { ak, sk, url, name, projectName = 'default', groupId } = opts || {};
-    if (!ak || !sk || !url) return { ok: false, error: '缺少 AK/SK 或素材 URL' };
-    // 1. 确保 AssetGroup（优先复用传入的 groupId，否则创建）
-    let gid = groupId;
-    if (!gid) {
-      const gRes = await callVolcAssetApi({ ak, sk, action: 'CreateAssetGroup', body: { GroupType: 'AIGC', ProjectName: projectName } });
-      if (!gRes.ok) return gRes;
-      gid = gRes.result?.GroupId || gRes.result?.Id;
-      if (!gid) return { ok: false, error: '创建素材资产组合失败（未返回 GroupId）' };
-    }
-    // 2. 创建素材资产（异步）
-    const aRes = await callVolcAssetApi({ ak, sk, action: 'CreateAsset', body: { GroupId: gid, URL: url, Name: name || ('asset_' + Date.now()), AssetType: 'Image', ProjectName: projectName } });
-    if (!aRes.ok) return aRes;
-    const assetId = aRes.result?.Id;
-    if (!assetId) return { ok: false, error: '创建素材资产失败（未返回 AssetId）' };
-    // 3. 轮询 GetAsset 至 Active（最长约 60 秒）
-    for (let i = 0; i < 30; i++) {
-      await new Promise(r => setTimeout(r, 2000));
-      const g = await callVolcAssetApi({ ak, sk, action: 'GetAsset', body: { Id: assetId, ProjectName: projectName } });
-      const status = g.result?.Status;
-      if (status === 'Active') return { ok: true, assetId, groupId: gid, assetUri: 'asset://' + assetId };
-      if (status === 'Failed') return { ok: false, error: '素材资产处理失败（Failed）' };
-    }
-    return { ok: false, error: '素材资产处理超时（未在 60 秒内变为 Active）', assetId, groupId: gid };
-  } catch (e) {
-    return { ok: false, error: (e as Error).message };
   }
 });
 
@@ -1239,6 +1168,54 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
         : [];
     const isPanorama720 = config.panoramaType === '720' || /720°?全景|720 panorama/i.test(String(prompt || ''));
 
+    // Agnes 图片的 ratio 只接受固定档位：1:1 / 3:4 / 4:3 / 16:9 / 9:16 / 2:3 / 3:2 / 21:9。
+    // 调用方未给比例时从精确尺寸推导最接近档位，避免固定写死 1:1 与 size 冲突（竖屏剧本会变成方图）。
+    const agnesImageRatio = (() => {
+      const allowed = ['1:1', '3:4', '4:3', '16:9', '9:16', '2:3', '3:2', '21:9'];
+      const r = String(aspectValue || '').trim();
+      if (allowed.includes(r)) return r;
+      const m = String(imageSizeValue || '').match(/^(\d+)\s*[x×]\s*(\d+)$/i);
+      if (!m) return '1:1';
+      const w = Number(m[1]);
+      const h = Number(m[2]);
+      if (!w || !h) return '1:1';
+      let best = '1:1';
+      let bestDiff = Infinity;
+      for (const cand of allowed) {
+        const [cw, ch] = cand.split(':').map(Number);
+        const diff = Math.abs((w / h) - (cw / ch));
+        if (diff < bestDiff - 1e-9) { bestDiff = diff; best = cand; }
+      }
+      return best;
+    })();
+
+    // 火山方舟 Seedream 4.5 / 5.0（非 pro）对输出像素有硬下限：实测必须 ≥ 3,686,400 px。
+    // 应用批量生成传的是 1536×864 / 864×1536 这类小尺寸，会被上游直接 400
+    // "image size must be at least 3686400 pixels"，导致选到这些模型时出图全部失败。
+    // 这里按模型自动等比抬到合规尺寸（档位写法 1K/2K/4K 原样透传）。
+    const VOLC_SEEDREAM_MIN_PIXELS = 3686400;
+    const isArkImageHost = /:\/\/ark\.cn-beijing\.volces\.com\/api\/v\d+(?:\/|$)/i.test(normalizedBase);
+    const arkSeedreamNeedsMinPixels = isArkImageHost && (
+      /seedream-4-5/i.test(String(model || '')) ||
+      (/seedream-5-0/i.test(String(model || '')) && !/pro/i.test(String(model || '')))
+    );
+    const arkImageSizeValue = (() => {
+      if (!arkSeedreamNeedsMinPixels) return imageSizeValue;
+      const m = String(imageSizeValue || '').match(/^(\d+)\s*[xX×]\s*(\d+)$/);
+      if (!m) return imageSizeValue;
+      let w = Number(m[1]);
+      let h = Number(m[2]);
+      if (!w || !h || w * h >= VOLC_SEEDREAM_MIN_PIXELS) return imageSizeValue;
+      const up16 = (v: number) => Math.ceil(v / 16) * 16;
+      const f = Math.sqrt(VOLC_SEEDREAM_MIN_PIXELS / (w * h));
+      w = up16(w * f);
+      h = up16(h * f);
+      let guard = 0;
+      while (w * h < VOLC_SEEDREAM_MIN_PIXELS && guard++ < 50) { w = up16(w * 1.02); h = up16(h * 1.02); }
+      console.log(`[ARK-IMG] Seedream 4.5/5.0 最小像素限制：${imageSizeValue} -> ${w}x${h}（模型 ${model}）`);
+      return `${w}x${h}`;
+    })();
+
     // 火山方舟视频参考图：只支持公网可访问的图片URL（TOS URL），保持同一账号身份不卡人脸；
     // 不支持本地图片/base64（会失去账号身份导致卡真人审核），asset:// 视频API不支持直接跳过。
     const toVolcImageValue = async (img: string): Promise<string> => {
@@ -1326,12 +1303,14 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
                 }
               : isAgnesImage
                 ? {
+                    // Agnes Image 2.5 Flash 官方规范：请求体只保留 model / prompt / size / ratio / n / extra_body。
+                    // 该上游对未支持字段是强校验直接 400，因此绝不追加 images / aspectRatio / imageSize 等字段。
                     model: model || '',
                     prompt,
-                    // Agnes Image 2.5 Flash：size 支持 1K/2K/3K/4K 档位或精确尺寸
+                    // size 支持 1K/2K/3K/4K 档位或精确尺寸
                     size: imageSizeValue || '2K',
-                    // ratio 与 size 配合使用
-                    ratio: aspectValue || '1:1',
+                    // ratio 与 size 配合使用（只接受固定档位，缺省时由尺寸推导）
+                    ratio: agnesImageRatio,
                     n: config.n || 1,
                     // Agnes 官方要求：response_format 必须放在 extra_body 中，不能放顶层
                     extra_body: {
@@ -1365,7 +1344,8 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       body.extra_body.image = imagesValue;
     }
 
-    if (isPanorama720) {
+    // 720 全景参数同样会被 Agnes 拒绝（panoramaType/aspectRatio 非法字段），仅对非 Agnes 请求注入
+    if (isPanorama720 && !isAgnesImage && !isAgnesVideo) {
       body.panoramaType = '720';
       body.outputType = 'panorama';
       body.aspectRatio = aspectValue || '2:1';
@@ -1409,11 +1389,24 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       const dur = config.duration ? Math.min(12, Math.max(4, Number(config.duration) || 5)) : 5;
       body.seconds = String(dur);
 
-      // 宽高比：只保留 aspect_ratio（官方参数名）
-      if (aspectValue) {
-        body.aspect_ratio = aspectValue;
+      // 宽高比：只保留 aspect_ratio（官方参数名），并只接受 "数字:数字" 形式，避免非法值触发 400
+      const agnesAspect = String(aspectValue || '').trim();
+      if (/^\d{1,2}:\d{1,2}$/.test(agnesAspect)) {
+        body.aspect_ratio = agnesAspect;
       }
-    } else if (!isOpenAIImageGen) {
+
+      // 白名单兜底：Agnes 视频对未支持字段是强校验直接 400（例如 aspectRatio / ratio / quality 等一律拒绝），
+      // 这里显式剔除白名单之外的键，确保任何上游拼装都不会污染 Agnes 视频请求体。
+      const agnesVideoAllowed = new Set(['model', 'prompt', 'mode', 'size', 'n', 'seconds', 'aspect_ratio', 'images', 'first_frame']);
+      for (const k of Object.keys(body)) {
+        if (!agnesVideoAllowed.has(k)) delete body[k];
+      }
+    } else if (!isOpenAIImageGen && !isAgnesImage && !isAgnesVideo) {
+      // 注意：此分支是"通用 OpenAI 兼容图片/原生协议"的参数兜底，会补写 images/aspectRatio/imageSize 等字段。
+      // Agnes 官方对未支持字段是强校验直接 400，绝不能让这些字段落到 Agnes 请求体上：
+      //   - 文生图带上顶层 images（含空数组）→ 400 "images is not supported by text image queue"
+      //   - 视频带上顶层 aspectRatio → 400 "aspectRatio is not an allowed request field"
+      // 因此这里显式排除 Agnes 图片/视频，其余协议（火山、DashScope、grsai、通用 OpenAI）行为完全不变。
       body.images = imagesValue;
 
       if (aspectValue) {
@@ -1446,10 +1439,11 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
       }
 
       // 分辨率/尺寸：兼容像素尺寸与 1K/2K/4K 档位。
-      if (imageSizeValue) {
-        body.size = imageSizeValue;
-        body.imageSize = imageSizeValue;
-        body.image_size = imageSizeValue;
+      // 火山方舟 Seedream 4.5/5.0 需要 ≥3,686,400 px，用 arkImageSizeValue 兜底抬升后的尺寸。
+      if (arkImageSizeValue) {
+        body.size = arkImageSizeValue;
+        body.imageSize = arkImageSizeValue;
+        body.image_size = arkImageSizeValue;
       }
       if (resolutionValue) {
         body.resolution = resolutionValue;
@@ -1489,6 +1483,8 @@ ipcMain.handle('grsai:generate', async (_event, config: any) => {
     const isAsyncJobResp = !!((dashscopeTaskId || (data && data.id)) && (isVolcenginePlanVideo || isDashScope || data.status));
     if (isAsyncJobResp && data.status !== 'succeeded') {
       const jobId = dashscopeTaskId || data.id;
+      // 记录创建任务时使用的模型名，供 Agnes 查询端点回传 model_name。
+      if (model) grsaiJobModelMap.set(jobId, model);
       startGrsaiJobPolling(jobId, normalizedBase, apiKey).catch((e) => console.error('start polling failed', e));
       return { ok: true, accepted: true, id: jobId, status: data.status || data?.output?.task_status || 'queued', data };
     }
@@ -1839,6 +1835,9 @@ ipcMain.handle('openai:generate', async (_event, config: any) => {
         console.log('[AGNES-IMG] response_format 已移到 extra_body.response_format');
       }
       // 3. 删除 Agnes 不支持的参数
+      // Agnes 图片对 aspectRatio / aspect_ratio 强校验直接 400（只接受 ratio 固定档位）
+      delete body.aspectRatio;
+      delete body.aspect_ratio;
       delete body.panoramaType;
       delete body.outputType;
       delete body.mediaFeature;

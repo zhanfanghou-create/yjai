@@ -2,7 +2,8 @@
 // 负责：风格库、自动分析（分析剧本→分镜设计→提取资产→提示词生成）、结构化结果生成
 // 原则：有可用对话 API 时调用 AI 生成；否则回退到内置的结构化示例，确保界面始终可用。
 
-export type DramartRatio = '16:9' | '4:3' | '3:4' | '9:16' | '21:9';
+// 注意：剧创页 ratio 默认值为 '1:1'，此处原先缺 1:1，会导致选择方图时被静默兜底成 16:9。
+export type DramartRatio = '16:9' | '4:3' | '3:4' | '9:16' | '1:1' | '21:9';
 export type DramartResolution = '480p' | '720p' | '1080p' | '4k';
 export type DramartMode = 'agent' | 'manual';
 export type DramartCategory = 'real' | '3d' | '2d' | 'custom';
@@ -516,11 +517,13 @@ function calcImageSize(ratio: DramartRatio, resolution: DramartResolution): stri
   return `${w}x${h}`;
 }
 
-export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'>> {
+export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'> & { failedAssets?: string[]; totalAssets?: number }> {
   const { scriptText, scriptFileName, styleName, styleWord, ratio, resolution, config, imageFetcher, onProgress, shotDuration = 15 } = opts;
   void scriptFileName;
   const imgSize = calcImageSize(ratio, resolution);
   const total = DRAMART_ANALYSIS_STEPS.length;
+  // 记录生成失败的资产名，供上层提示与重试（之前失败被完全吞掉，用户看不到"哪些没生成成功"）
+  const failedAssets: string[] = [];
   // 初始化为空资产，不再使用林望故事等演示占位数据
   let result: Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'> = { characters: [], scenes: [], props: [], storyboards: [] };
   let aiStoryboards: DramartStoryboard[] | null = null;
@@ -669,7 +672,12 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
           try {
             const r = await imageFetcher(buildAssetImagePrompt(a), { size: imgSize, source: opts.imageSource });
             if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
-          } catch { /* 单个失败不影响其他 */ }
+            else failedAssets.push(a.name);
+          } catch (e: any) {
+            // 单个失败不影响其他资产，但必须记录，便于上层提示与重试
+            failedAssets.push(a.name);
+            console.warn('[dramart] 资产图生成失败:', a.name, e?.message || e);
+          }
           completed++;
           onProgress(4, '生成资产图', Math.round((completed / all.length) * 100), `已完成 ${completed}/${all.length}：${a.name}`);
         }
@@ -761,7 +769,8 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
   }
 
   onProgress(total, '完成', 100);
-  return result;
+  const totalAssets = result.characters.length + result.scenes.length + result.props.length;
+  return { ...result, failedAssets, totalAssets };
 }
 // ==================== 剧创模式：解析剧创结果 ====================
 
@@ -804,11 +813,13 @@ function findCol(headers: string[], ...keys: string[]): number {
   return headers.findIndex(h => keys.some(k => (h || '').includes(k)));
 }
 
-export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'>> {
+export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'> & { failedAssets?: string[]; totalAssets?: number }> {
   const { draft, styleWord, ratio, resolution, imageFetcher, onProgress } = opts;
   const total = DRAMART_ANALYSIS_STEPS.length;
   const prompts = draft.promptsContent || '';
   const script = draft.scriptContent || draft.scriptText || '';
+  // 与 runDramartAnalysis 一致：记录资产图生成失败的名称，供上层提示（这条路径是剧创模式的主路径）
+  const failedAssets: string[] = [];
   // 计算资产生成的尺寸参数（默认 16:9, 720p）
   const imgSize = calcImageSize(ratio || '16:9', resolution || '720p');
   const characters: DramartAssetItem[] = [];
@@ -941,12 +952,17 @@ export async function runDramaDraftAnalysis(opts: DramaDraftAnalyzeOptions): Pro
     for (let i = 0; i < all.length; i++) {
       const a = all[i];
       onProgress(4, '生成资产图', Math.round(((i + 1) / all.length) * 100), '正在生成' + a.name + (a.kind === 'character' ? '形象' : '') + '（' + (i + 1) + '/' + all.length + '）');
-      const r = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize, source: opts.imageSource }).catch(() => null);
+      const r = await imageFetcher(a.prompt || buildAssetImagePrompt(a), { size: imgSize, source: opts.imageSource }).catch((e: any) => {
+        console.warn('[dramart] 剧创资产图生成失败:', a.name, e?.message || e);
+        return null;
+      });
       if (r?.url) { a.img = r.url; if (r.remoteUrl) a.remoteUrl = r.remoteUrl; }
+      else failedAssets.push(a.name);
     }
   }
   onProgress(total, '完成', 100);
-  return result;
+  const totalAssets = characters.length + scenes.length + props.length;
+  return { ...result, failedAssets, totalAssets };
 }
 
 // ==================== 补充剧本：资产复用 + 分镜接续 ====================

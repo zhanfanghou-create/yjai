@@ -139,12 +139,6 @@ const ProviderSetupSection: React.FC<{ s: any }> = ({ s }) => {
               </div>
               <div className="sp-provider-foot">
                 {p.speech && <span className="sp-provider-note" title={p.speech.baseUrl}>语音接口独立：{p.speech.baseUrl}</span>}
-                {p.needsAccessKey && (
-                  <a className="sp-provider-ak" href={p.akskApplyUrl || p.chatApplyUrl} target="_blank" rel="noreferrer"
-                     onClick={e => { e.preventDefault(); openExternalUrl(p.akskApplyUrl || p.chatApplyUrl || ''); }}>
-                    {p.akskApplyLabel || '创建 AK/SK'} ↗
-                  </a>
-                )}
               </div>
             </div>
           );
@@ -180,22 +174,19 @@ interface ConfigCardProps {
   onDelete: (id: string) => void;
   onTest:  (id: string) => Promise<boolean>;
   defaultName: string;
-  showAccessKey?: boolean;
   kind?: 'chat' | 'image' | 'video' | 'voice' | 'music';
   onFetchModels?: (id: string, overrides?: { baseUrl?: string; apiKey?: string }, kind?: string) => Promise<{ ok: boolean; models?: string[]; error?: string }>;
 }
 
-export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defaultName, showAccessKey, kind = 'chat', onFetchModels }: ConfigCardProps) => {
+export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defaultName, kind = 'chat', onFetchModels }: ConfigCardProps) => {
   // ── 草稿值（ref 存原始值，state 驱动 UI）─────────────
-  const draftRef = useRef({ name: config.name, baseUrl: config.baseUrl, apiKey: config.apiKey, defaultModel: config.defaultModel, accessKeyId: config.accessKeyId, accessKeySecret: config.accessKeySecret });
+  const draftRef = useRef({ name: config.name, baseUrl: config.baseUrl, apiKey: config.apiKey, defaultModel: config.defaultModel });
 
   const [draft, setDraft] = useState({
     name:        draftRef.current.name,
     baseUrl:     draftRef.current.baseUrl,
     apiKey:      draftRef.current.apiKey,
     defaultModel:draftRef.current.defaultModel,
-    accessKeyId: draftRef.current.accessKeyId,
-    accessKeySecret: draftRef.current.accessKeySecret,
   });
 
   const [testing,  setTesting]  = useState(false);
@@ -226,16 +217,12 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
       baseUrl:     config.baseUrl,
       apiKey:      config.apiKey,
       defaultModel:config.defaultModel,
-      accessKeyId: config.accessKeyId,
-      accessKeySecret: config.accessKeySecret,
     };
     setDraft({
       name:        config.name,
       baseUrl:     config.baseUrl,
       apiKey:      config.apiKey,
       defaultModel:config.defaultModel,
-      accessKeyId: config.accessKeyId,
-      accessKeySecret: config.accessKeySecret,
     });
     setTestResult('idle');
   }, [config.id]); // 仅在 id 变化时重置（新增配置走此路径）
@@ -270,9 +257,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
   const isDirty = draft.name !== draftRef.current.name
     || draft.baseUrl !== draftRef.current.baseUrl
     || draft.apiKey !== draftRef.current.apiKey
-    || draft.defaultModel !== draftRef.current.defaultModel
-    || (draft.accessKeyId || '') !== (draftRef.current.accessKeyId || '')
-    || (draft.accessKeySecret || '') !== (draftRef.current.accessKeySecret || '');
+    || draft.defaultModel !== draftRef.current.defaultModel;
 
   // ── 字段更新（只更新本地 state）───────────────────────
   const set = (key: keyof typeof draft, value: string) => {
@@ -284,7 +269,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
     const models = config.models || [];
     const dm = draft.defaultModel.trim();
     if (dm && !models.includes(dm)) models.push(dm);
-    onUpdate(config.id, { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm, models, accessKeyId: draft.accessKeyId, accessKeySecret: draft.accessKeySecret });
+    onUpdate(config.id, { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm, models });
     draftRef.current = { ...draft, defaultModel: dm };
     setSaving(true);
     setTimeout(() => setSaving(false), 600);
@@ -293,7 +278,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
   // ── 取消：草稿 → 回退到 store 原始值 ─────────────────
   const handleCancel = () => {
     const original = draftRef.current;
-    setDraft({ name: original.name, baseUrl: original.baseUrl, apiKey: original.apiKey, defaultModel: original.defaultModel, accessKeyId: original.accessKeyId, accessKeySecret: original.accessKeySecret });
+    setDraft({ name: original.name, baseUrl: original.baseUrl, apiKey: original.apiKey, defaultModel: original.defaultModel });
     setTestResult('idle');
   };
 
@@ -303,7 +288,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
     const dm = draft.defaultModel.trim();
     if (dm && !models.includes(dm)) models.push(dm);
     // 临时写入 store 以便 testAPIConnection 读到最新值
-    onUpdate(config.id, { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm, models, accessKeyId: draft.accessKeyId, accessKeySecret: draft.accessKeySecret });
+    onUpdate(config.id, { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm, models });
     setTesting(true);
     setTestResult('idle');
     let ok = false;
@@ -316,7 +301,7 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
       setTesting(false);
       if (testResult === 'ok' || ok) {
         // 测试通过 → 同步草稿到 store 状态（实现「测试成功即保存」）
-        const savedDraft = { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm, accessKeyId: draft.accessKeyId, accessKeySecret: draft.accessKeySecret };
+        const savedDraft = { name: draft.name, baseUrl: draft.baseUrl, apiKey: draft.apiKey, defaultModel: dm };
         draftRef.current = savedDraft;
         setDraft(savedDraft);
         setSaving(true);
@@ -377,39 +362,6 @@ export const ConfigCard = React.memo(({ config, onUpdate, onDelete, onTest, defa
           </a>
         </div>
       )}
-
-      {/* 火山方舟 AK/SK（素材资产库鉴权，用于视频参考图 asset:// 引用）——仅需要的平台引导 */}
-      {showAccessKey && preset?.needsAccessKey && (<>
-        <div className="sp-f">
-          <label className="sp-lb">方舟 Access Key ID（AK）</label>
-          <input
-            className="sp-inp"
-            type="password"
-            value={draft.accessKeyId || ''}
-            onChange={e => set('accessKeyId', e.target.value)}
-            placeholder="AKLT…"
-            autoComplete="off"
-          />
-        </div>
-        <div className="sp-f">
-          <label className="sp-lb">方舟 Secret Access Key（SK）</label>
-          <input
-            className="sp-inp"
-            type="password"
-            value={draft.accessKeySecret || ''}
-            onChange={e => set('accessKeySecret', e.target.value)}
-            placeholder="…"
-            autoComplete="off"
-          />
-          <a
-            className="sp-apply-link"
-            href={preset?.akskApplyUrl || 'https://console.volcengine.com/iam/keymanage/'}
-            target="_blank"
-            rel="noreferrer"
-            onClick={e => { e.preventDefault(); openExternalUrl(preset?.akskApplyUrl || 'https://console.volcengine.com/iam/keymanage/'); }}
-          >{preset?.akskApplyLabel || '创建 AK/SK（火山引擎访问控制）'} ↗</a>
-        </div>
-      </>)}
 
       {/* 默认模型（下拉框选择）+ 获取可用模型；语音展示全部官方音色，无需选择默认 */}
       <div className="sp-f">
@@ -687,7 +639,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateImageAPIConfig)}
             onDelete={del(s.deleteImageAPIConfig)}
             onTest={s.testImageAPIConnection}
-            defaultName="图片 API" kind="image" showAccessKey onFetchModels={s.fetchModelsForConfig}
+            defaultName="图片 API" kind="image" onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>
@@ -706,7 +658,7 @@ export const SettingsPage: React.FC = () => {
             onUpdate={upd(s.updateVideoAPIConfig)}
             onDelete={del(s.deleteVideoAPIConfig)}
             onTest={s.testVideoAPIConnection}
-            defaultName="视频 API" kind="video" showAccessKey onFetchModels={s.fetchModelsForConfig}
+            defaultName="视频 API" kind="video" onFetchModels={s.fetchModelsForConfig}
           />
         ))}
       </Section>

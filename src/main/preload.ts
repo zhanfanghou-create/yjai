@@ -29,9 +29,6 @@ contextBridge.exposeInMainWorld('yijingAPI', {
     checkResult: (opts: any) => ipcRenderer.invoke('grsai:checkResult', opts),
     cancelJob: (opts: any) => ipcRenderer.invoke('grsai:cancelJob', opts),
   },
-  volc: {
-    createAsset: (opts: any) => ipcRenderer.invoke('volc:createAsset', opts),
-  },
   // 璁㈤槄 Grsai 鍚庡彴浣滀笟浜嬩欢
   onGrsaiJobUpdate: (cb: (data: any) => void) => {
     const handler = (_ev: any, data: any) => cb(data);
@@ -136,6 +133,10 @@ contextBridge.exposeInMainWorld('yijingAPI', {
     fileSystem: {
       selectFolder: (options?: any) => ipcRenderer.invoke('fileSystem:selectFolder', options),
       listFilesFromFolder: (options: any) => ipcRenderer.invoke('fileSystem:listFilesFromFolder', options),
+      // 写入临时文本文件（如视频合成所需的 SRT 字幕文件），返回 { ok, path }
+      writeTextFile: (params: { content: string; ext?: string; prefix?: string }) => ipcRenderer.invoke('fileSystem:writeTextFile', params),
+      // 申请一个临时输出文件路径，返回 { ok, path }
+      tempPath: (params: { prefix?: string; ext?: string }) => ipcRenderer.invoke('fileSystem:tempPath', params),
     },
 
     // 鏈哄櫒鐮?& 婵€娲荤爜

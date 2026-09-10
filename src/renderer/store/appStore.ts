@@ -91,7 +91,8 @@ const base = (url = '') => String(url).trim().replace(/\/+$/, '');
 // 规范化 API 基础地址：剥离 /chat/completions、/images/generations 等端点后缀，避免与端点拼接产生错误 URL
 const normalizeApiBase = (url = '') => base(url)
   .replace(/\/(?:chat\/completions|chat\/completions\/chat|images\/generations|images\/edits|videos\/generations|api\/generate|api\/result|models|agnesapi)(?:\/.*)?$/i, '');
-const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)(?:api\.agnes-ai\.com|apihub\.agnes-ai\.cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
+// agnes 统一走国内正式节点 api.agnes-ai.cn（兼容国际站 api/apihub.agnes-ai.com 与旧 apihub.agnes-ai.cn）
+const redirectAgnesHost = (url = '') => url.replace(/^(https?:\/\/)(?:api|apihub)\.agnes-ai\.(?:com|cn)(\/|$)/i, '$1api.agnes-ai.cn$2');
 // 清理损坏的 UTF-8 字符（检测乱码后回退为默认名称）
 const sanitizeText = (s: string | undefined, fallback = '新对话') => {
   if (!s) return fallback;
@@ -131,8 +132,13 @@ const extractBase64Image = (d: any): string => {
 const extractUrl = (d: any) => d?.url || d?.output?.url || d?.output?.video_url || d?.output?.image_url || d?.output?.results?.[0]?.url || d?.content?.video_url || d?.content?.url || d?.content?.file_url || d?.filePaths?.[0] || d?.urls?.[0] || d?.metadata?.url || d?.data?.metadata?.url || d?.data?.[0]?.url || d?.images?.[0]?.url || d?.results?.[0]?.url || d?.results?.[0]?.videos?.[0]?.url || d?.results?.[0]?.image_url || d?.output?.[0] || d?.files?.[0] || d?.video_url || d?.output?.url || d?.video?.url || d?.data?.video_url || d?.data?.[0]?.video_url || extractBase64Image(d) || '';
 const resultType = (url: string, fallback: 'image' | 'video' | 'audio' | 'text' = 'image') => /\.(mp4|webm|mov|ogg)$/i.test(url) ? 'video' : /\.(mp3|wav|m4a|aac|flac)$/i.test(url) ? 'audio' : fallback;
 const modeOf = (n: AINode) => String(n.options?.generationType || n.type);
-const videoModes = new Set(['text-to-video', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'lip-sync', 'video-super-resolution', 'live-portrait', 'video-to-music', 'video-interpolate', 'video-realtime']);
+// 视频生成模式（走 videoAPIConfigs）。注意：video-to-music 不在此集合内，它走 musicAPIConfigs。
+const videoModes = new Set(['text-to-video', 'image-to-video', 'img2video', 'frame-to-video', 'video-extend', 'video-remix', 'lip-sync', 'video-super-resolution', 'live-portrait', 'video-interpolate', 'video-realtime', 'video-composite', 'subtitle']);
 const imageModes = new Set(['text-to-image', 'image-to-image', 'image-upscale', 'image-blend', 'character-view']);
+// 音乐生成模式（走 musicAPIConfigs）
+const musicModes = new Set(['video-to-music', 'text-to-music', 'music']);
+// 音频生成模式（走 voiceAPIConfigs）
+const audioModes = new Set(['tts', 'audio2video']);
 // 计算 workflow 缓存的参数指纹：仅采纳会影响 workflow 结构/尺寸/帧数的关键字段，避免噪声。
 // 相同指纹 = 可直接复用之前搭建好的 workflow；指纹变化 = 参数变了，需重新按新参数搭建。
 function buildWorkflowParamFingerprint(opts: any): string {
@@ -288,6 +294,82 @@ const callApi = async (c: APIConfig, n: AINode) => {
   const capabilityPayload = directImageCapability(n, prompt);
   const enhancedPrompt = capabilityPayload.projectPromptHint ? composePrompt(prompt, capabilityPayload.projectPromptHint) : prompt;
   const imagePayload = { model, prompt: enhancedPrompt, size: capabilityPayload.size || imageSize, imageSize: capabilityPayload.size || imageSize, n: 1, ...capabilityPayload, ...n.options, image: sourceImage, images: sourceImage ? [sourceImage, ...imageRefs.filter((url: string) => url !== sourceImage)] : imageRefs, sourceImage, panoramaType: isPanorama720 ? '720' : n.options?.panoramaType || (capabilityPayload as any).panoramaType, outputType: isPanorama720 ? 'panorama' : n.options?.outputType || (capabilityPayload as any).outputType, aspectRatio: n.options?.aspectRatio || n.aspectRatio || n.options?.imageRatio || (capabilityPayload as any).aspectRatio || (isPanorama720 ? '2:1' : undefined), resolution: n.options?.resolution || n.resolution || n.options?.imageClarity || (capabilityPayload as any).resolution || (isPanorama720 ? '2K' : undefined) };
+  // 视频合成 / 字幕生成：本地媒体加工能力，不走「文生」模型。
+  // 之前这两个模式不在任何集合中，会一路落到最后的 chat 分支，把合成请求当文本发给 LLM，
+  // 上游必然返回文本或 400。这里改为走主进程本地 ffmpeg 合成通道（video.render）。
+  if (mode === 'video-composite' || mode === 'subtitle') {
+    const compositeVideo = n.options?.sourceVideo || n.options?.videoUrl
+      || imageRefs.find((u: string) => /\.(mp4|webm|mov)$/i.test(u)) || '';
+    if (!compositeVideo) {
+      throw new Error(mode === 'video-composite'
+        ? '视频合成需要先连接一个视频节点作为输入素材'
+        : '字幕生成需要先连接一个视频节点作为输入素材');
+    }
+    const render = win?.yijingAPI?.video?.render;
+    if (!render) throw new Error('当前环境未提供本地视频合成能力（需要桌面端运行）');
+    // 输出尺寸按节点比例计算
+    const outRatio = String(n.options?.videoRatio || n.options?.aspectRatio || '16:9');
+    const [rww, rhh] = outRatio.split(':').map((x: string) => parseFloat(x)).filter((x: number) => Number.isFinite(x) && x > 0);
+    const baseH = parseInt(String(n.options?.resolution || n.resolution || '720').replace(/\D/g, ''), 10) || 720;
+    const outW = rww && rhh ? Math.round((baseH * rww) / rhh) : Math.round((baseH * 16) / 9);
+    // 字幕文件（SRT）由字幕节点内容生成；视频合成节点不传
+    let subtitleFile: string | undefined;
+    if (mode === 'subtitle') {
+      const text = (prompt || '').trim();
+      if (!text) throw new Error('字幕生成需要提供字幕文本（在节点输入框中填写，或来自上游文本节点）');
+      const toSrtTime = (sec: number) => {
+        const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = Math.floor(sec % 60), ms = Math.floor((sec % 1) * 1000);
+        return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')},${String(ms).padStart(3, '0')}`;
+      };
+      const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+      const dur = Number(n.options?.duration) || 3;
+      const srt = lines.map((line, i) => `${i + 1}\n${toSrtTime(i * dur)} --> ${toSrtTime((i + 1) * dur)}\n${line}\n`).join('\n');
+      const writeRes = await win?.yijingAPI?.fileSystem?.writeTextFile?.({ content: srt, ext: 'srt', prefix: 'subtitle' });
+      if (!writeRes?.ok || !writeRes?.path) throw new Error('字幕文件写入失败：' + (writeRes?.error || '未知错误'));
+      subtitleFile = writeRes.path;
+    }
+    const tmpRes = await win?.yijingAPI?.fileSystem?.tempPath?.({ prefix: 'composite', ext: 'mp4' });
+    const outPath = tmpRes?.ok ? tmpRes.path : '';
+    if (!outPath) throw new Error('无法创建输出文件路径：' + (tmpRes?.error || '未知错误'));
+    const r = await render({
+      videoFiles: [compositeVideo],
+      // timeRanges 的 end 传大值表示"保留整段"（ffmpeg trim end 为 0 会截断成空片）
+      timeRanges: [['0', '99999']],
+      audioFiles: n.options?.audioUrl ? { voice: n.options.audioUrl, bgm: n.options?.backgroundMusicUrl } : (n.options?.backgroundMusicUrl ? { bgm: n.options.backgroundMusicUrl } : undefined),
+      subtitleFile,
+      outputSize: { width: outW, height: baseH },
+      outputDuration: String(n.options?.duration || 0),
+      outputPath: outPath,
+    });
+    if (r?.ok === false || r?.error) throw new Error(String(r?.error?.message || r?.error || '本地合成失败'));
+    // video:render 返回 { ok, result: { stdout, stderr, code, outputPath } }；
+    // 真实产物路径在 result.outputPath（ffmpeg 可能因去重改写文件名）。
+    const out = r?.result?.outputPath || r?.outputPath || r?.path || extractUrl(r);
+    if (!out) throw new Error('视频合成未返回结果地址' + (r?.result?.code ? `（ffmpeg 退出码 ${r.result.code}）` : ''));
+    return { url: out, type: 'video' as const };
+  }
+
+  // 音乐生成（文字生音乐）：走 musicAPIConfigs，不能落到 chat 分支。
+  if (musicModes.has(mode)) {
+    // 主进程目前没有内置音乐生成能力（无 music:generate IPC）。
+    // 这里按 OpenAI 兼容的音频生成端点尝试一次；失败则给出可读原因，绝不退回 chat 通道。
+    if (!c.apiKey || !c.baseUrl) throw new Error('请先在设置页面配置音乐生成 API（需要 API Key 与 Base URL）');
+    try {
+      const r = await fetch(`${apiBase}/audio/generations`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${c.apiKey}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model, prompt, duration: n.options?.duration || 30, response_format: 'url' }),
+      });
+      const d = await r.json().catch(() => null);
+      if (!r.ok) throw new Error(d?.error?.message || d?.error || `HTTP ${r.status}`);
+      const out = extractUrl(d);
+      if (!out) throw new Error('音乐生成未返回结果：' + JSON.stringify(d).slice(0, 200));
+      return { url: out, type: 'audio' as const };
+    } catch (e: any) {
+      throw new Error('音乐生成失败：' + (e?.message || String(e)) + '（请确认该音乐模型支持 /audio/generations 端点）');
+    }
+  }
+
   if (mode === 'tts' || mode === 'audio2video') {
     // 优先使用设置页配置的语音 API（支持豆包语音 / OpenAI 兼容等自定义语音接口）；未配置时回退内置 Edge TTS
     if (c.apiKey && c.baseUrl && !String(c.baseUrl).trim().startsWith('edge-tts://')) {
@@ -304,23 +386,8 @@ const callApi = async (c: APIConfig, n: AINode) => {
   if (videoModes.has(mode)) {
     // 从 videoConfig 或节点选项中提取视频参数
     const vc = n.options?.videoConfig || {};
-    // 智能双轨·轨B：配置了方舟 AK/SK 时，把 TOS URL 参考图转 asset:// 素材资产引用（增强信任、规避真人卡图）；未配置回退轨A（TOS URL 直接透传）
-    // 注意：视频生成 API 不支持 asset:// 作为 image_url（会报 resource download failed），因此视频生成时强制使用轨A（TOS URL 直接透传）
-    let videoRefs = imageRefs;
-    const volcApi = win?.yijingAPI?.volc;
-    const isVideoGen = true; // 此处为视频生成流程，禁用 asset:// 转换
-    if (!isVideoGen && (c as any).accessKeyId && (c as any).accessKeySecret && volcApi?.createAsset && videoRefs.some((r: string) => /^https?:\/\//i.test(r))) {
-      try {
-        const converted: string[] = [];
-        for (const r of videoRefs) {
-          if (/^https?:\/\//i.test(r)) {
-            const aRes = await volcApi.createAsset({ ak: (c as any).accessKeyId, sk: (c as any).accessKeySecret, url: r, name: 'ref_' + Date.now() });
-            converted.push(aRes?.ok && aRes?.assetUri ? aRes.assetUri : r);
-          } else converted.push(r);
-        }
-        videoRefs = converted;
-      } catch { /* 转换失败回退轨A */ }
-    }
+    // 参考图直接使用节点传入的图片引用（同账号 TOS 直链受信任；跨模型的真人卡控规避在剧创工场侧处理）
+    const videoRefs = imageRefs;
     const payload = {
       model,
       prompt,
@@ -605,7 +672,27 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
   addToQueue: nid => set(s => (s.taskQueue.includes(nid) ? s : { taskQueue: [...s.taskQueue, nid] })),
   removeFromQueue: nid => set(s => ({ taskQueue: s.taskQueue.filter(x => x !== nid) })),
   clearCompletedTasks: () => set(s => ({ taskQueue: s.taskQueue.filter(nid => { const n = s.nodes[nid]; return n && n.status !== 'success' && n.status !== 'error'; }) })),
-  executeQueue: async () => { const queue = [...get().taskQueue]; for (const nid of queue) { const n = get().nodes[nid]; if (!n || n.status === 'success') continue; await get().executeNode(nid); } set(s => ({ taskQueue: s.taskQueue.filter(nid => { const n = s.nodes[nid]; return n && n.status !== 'success' && n.status !== 'error'; }) })); },
+  executeQueue: async () => {
+    // 逐个执行队列；注意异步任务（视频等返回 jobId）不会在 executeNode 内 await 完成，
+    // 因此这里在每轮结束后等待节点离开 loading/processing（或超时），避免"队列跑完但结果还没出"。
+    const queue = [...get().taskQueue];
+    const waitSettled = async (nid: string, timeoutMs = 15 * 60 * 1000) => {
+      const t0 = Date.now();
+      while (Date.now() - t0 < timeoutMs) {
+        const n = get().nodes[nid];
+        if (!n) return;
+        if (n.status !== 'loading' && n.status !== 'processing') return;
+        await new Promise(r => setTimeout(r, 1500));
+      }
+    };
+    for (const nid of queue) {
+      const n = get().nodes[nid];
+      if (!n || n.status === 'success') continue;
+      await get().executeNode(nid);
+      await waitSettled(nid);
+    }
+    set(s => ({ taskQueue: s.taskQueue.filter(nid => { const n = s.nodes[nid]; return n && n.status !== 'success' && n.status !== 'error'; }) }));
+  },
   createChatSession: () => { const cid = id(); const session: ChatSession = { id: cid, title: '新对话', messages: [], createdAt: Date.now(), updatedAt: Date.now() }; set(s => ({ chatSessions: [session, ...s.chatSessions], activeSessionId: cid })); return cid; },
   deleteChatSession: sid => set(s => ({ chatSessions: s.chatSessions.filter(x => x.id !== sid), activeSessionId: s.activeSessionId === sid ? null : s.activeSessionId })),
   setActiveSession: activeSessionId => set({ activeSessionId }), updateChatSession: (sid, u) => set(s => ({ chatSessions: s.chatSessions.map(x => x.id === sid ? { ...x, ...u, title: u.title !== undefined ? sanitizeText(u.title, '新对话') : x.title, updatedAt: Date.now() } : x) })),
@@ -664,13 +751,18 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       const mode = modeOf(n);
       const cfg = n.provider === 'comfyui'
         ? undefined
-        : (videoModes.has(mode) ? get().videoAPIConfigs : imageModes.has(mode) ? get().imageAPIConfigs : mode === 'tts' ? get().voiceAPIConfigs : mode === 'video-to-music' ? get().musicAPIConfigs : get().apiConfigs).find(c => c.id === n.configId)
+        : (videoModes.has(mode) ? get().videoAPIConfigs : imageModes.has(mode) ? get().imageAPIConfigs : audioModes.has(mode) ? get().voiceAPIConfigs : musicModes.has(mode) ? get().musicAPIConfigs : get().apiConfigs).find(c => c.id === n.configId)
           || get().apiConfigs.find(c => c.id === n.configId)
           || get().imageAPIConfigs[0]
           || get().videoAPIConfigs[0]
           || get().apiConfigs[0];
-      const comfy = n.provider === 'comfyui' ? get().comfyuiConfigs.find(c => c.id === n.configId) || get().comfyuiConfigs[0] : undefined;
-      if (!cfg && !comfy && mode !== 'tts') throw new Error('请在设置页面配置可用的 API');
+      const comfy = n.provider === 'comfyui'
+        ? (get().comfyuiConfigs.find(c => c.id === n.configId && String(c?.serverUrl || '').trim() && (c as any)?.connected === true)
+          || get().comfyuiConfigs.find(c => String(c?.serverUrl || '').trim() && (c as any)?.connected === true))
+        : undefined;
+      // 本地加工模式（视频合成/字幕）与 tts 不依赖模型 API 配置，不强制要求
+      const isLocalProcess = mode === 'video-composite' || mode === 'subtitle';
+      if (!cfg && !comfy && mode !== 'tts' && !isLocalProcess) throw new Error('请在设置页面配置可用的 API');
       // 合并 videoConfig 到节点选项
       const nodeWithConfig = videoConfig ? { ...n, options: { ...n.options, videoConfig } } : n;
       const res: any = comfy
@@ -1036,10 +1128,19 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
 }), {
   name: 'yijing-ai-storage-v2',
   storage: createJSONStorage(() => localStorage),
-  partialize: s => ({ chatSessions: s.chatSessions, assets: s.assets, assetFolders: s.assetFolders, canvasHistory: s.canvasHistory, nodes: s.nodes, activeCanvasId: s.activeCanvasId, apiConfigs: s.apiConfigs, chatAPIConfigs: s.chatAPIConfigs, imageAPIConfigs: s.imageAPIConfigs, videoAPIConfigs: s.videoAPIConfigs, voiceAPIConfigs: s.voiceAPIConfigs, musicAPIConfigs: s.musicAPIConfigs, comfyuiConfigs: s.comfyuiConfigs, voiceLibrary: s.voiceLibrary, recommendedConfigs: s.recommendedConfigs, stockMediaSources: s.stockMediaSources, generationParams: s.generationParams, assistantSettings: s.assistantSettings, comfyWorkflowCache: s.comfyWorkflowCache, promptLibrary: s.promptLibrary, sidebarCollapsed: s.sidebarCollapsed, storyboardPresets: s.storyboardPresets, dramartProjects: s.dramartProjects, activeDramartId: s.activeDramartId, dramartCreateParams: s.dramartCreateParams, dramartCustomStyles: s.dramartCustomStyles, dramartDraft: s.dramartDraft }),
+  // 注意：comfyuiConfigs 持久化时剔除 connected。
+  // connected 是"本次运行时"的连接态，重启后必然失效；若把 true 存下来，
+  // 重启后即使 ComfyUI 已离线，模型窗口仍会显示其工作流（用户会选到不可用的源）。
+  // 统一落库为 false，等用户重新「测试连接」通过后再置 true。
+  partialize: s => ({ chatSessions: s.chatSessions, assets: s.assets, assetFolders: s.assetFolders, canvasHistory: s.canvasHistory, nodes: s.nodes, activeCanvasId: s.activeCanvasId, apiConfigs: s.apiConfigs, chatAPIConfigs: s.chatAPIConfigs, imageAPIConfigs: s.imageAPIConfigs, videoAPIConfigs: s.videoAPIConfigs, voiceAPIConfigs: s.voiceAPIConfigs, musicAPIConfigs: s.musicAPIConfigs, comfyuiConfigs: (s.comfyuiConfigs || []).map(c => ({ ...c, connected: false })), voiceLibrary: s.voiceLibrary, recommendedConfigs: s.recommendedConfigs, stockMediaSources: s.stockMediaSources, generationParams: s.generationParams, assistantSettings: s.assistantSettings, comfyWorkflowCache: s.comfyWorkflowCache, promptLibrary: s.promptLibrary, sidebarCollapsed: s.sidebarCollapsed, storyboardPresets: s.storyboardPresets, dramartProjects: s.dramartProjects, activeDramartId: s.activeDramartId, dramartCreateParams: s.dramartCreateParams, dramartCustomStyles: s.dramartCustomStyles, dramartDraft: s.dramartDraft }),
   // 从 localStorage 加载时清理已损坏的乱码数据
   migrate: (persisted: any) => {
     if (!persisted) return persisted;
+    // ComfyUI 连接态不可跨会话复用：历史数据里可能存了 connected:true，
+    // 加载时一律重置为 false，避免离线状态下模型窗口仍展示其工作流。
+    if (Array.isArray(persisted.comfyuiConfigs)) {
+      persisted.comfyuiConfigs = persisted.comfyuiConfigs.map((c: any) => ({ ...c, connected: false }));
+    }
     if (Array.isArray(persisted.chatSessions)) {
       persisted.chatSessions = persisted.chatSessions.map((s: any) => ({
         ...s,
@@ -1065,22 +1166,17 @@ export const useAppStore = create<AppState>()(persist((set, get) => ({
       const nb = persisted.assistantSettings.nodeBackend;
       if (nb !== 'ask' && nb !== 'comfyui' && nb !== 'api') persisted.assistantSettings.nodeBackend = 'ask';
     } catch { persisted.assistantSettings = { voiceSource: 'edge-tts', speakReplies: false, nodeBackend: 'ask' } as any; }
-    // Agnes API 地址自动迁移：
-    // 1. 旧国际站 .com -> 新国内节点 .cn
-    // 2. 旧 apihub.agnes-ai.cn -> 新正式地址 api.agnes-ai.cn（2026年9月官方文档确认）
+    // Agnes API 地址自动迁移：任意旧主机统一到国内正式节点 api.agnes-ai.cn
+    // 覆盖：国际站 api.agnes-ai.com / apihub.agnes-ai.com，旧国内 apihub.agnes-ai.cn
     const agnesConfigKeys = ['apiConfigs', 'chatAPIConfigs', 'imageAPIConfigs', 'videoAPIConfigs', 'voiceAPIConfigs', 'musicAPIConfigs'];
     for (const key of agnesConfigKeys) {
       if (Array.isArray(persisted[key])) {
         persisted[key] = persisted[key].map((cfg: any) => {
           if (cfg && typeof cfg.baseUrl === 'string') {
-            // 迁移1：旧国际站 .com -> 新国内节点 .cn
-            if (cfg.baseUrl.includes('agnes-ai.com')) {
-              cfg.baseUrl = cfg.baseUrl.replace('agnes-ai.com', 'agnes-ai.cn');
-            }
-            // 迁移2：旧 apihub.agnes-ai.cn -> 新正式地址 api.agnes-ai.cn
-            if (cfg.baseUrl.includes('apihub.agnes-ai.cn')) {
-              cfg.baseUrl = cfg.baseUrl.replace('apihub.agnes-ai.cn', 'api.agnes-ai.cn');
-            }
+            cfg.baseUrl = cfg.baseUrl.replace(
+              /^(https?:\/\/)(?:api|apihub)\.agnes-ai\.(?:com|cn)(?=\/|$)/i,
+              '$1api.agnes-ai.cn'
+            );
           }
           return cfg;
         });
@@ -1190,6 +1286,38 @@ try {
     });
   }
 } catch { /* noop */ }
+
+// 异步任务兜底：主进程轮询异常/事件丢失时，节点可能永久停留在 processing。
+// 这里对进入 processing 的节点启动看门狗，超时未收到结果则标记为超时错误，避免"永远转圈"。
+const ASYNC_JOB_TIMEOUT_MS = 20 * 60 * 1000; // 20 分钟
+const jobWatchdogs = new Map<string, ReturnType<typeof setTimeout>>();
+(function installJobWatchdog() {
+  if (typeof window === 'undefined') return;
+  const clear = (nid: string) => { const t = jobWatchdogs.get(nid); if (t) { clearTimeout(t); jobWatchdogs.delete(nid); } };
+  useAppStore.subscribe((state, prev) => {
+    // 节点被整体删除时，及时回收其看门狗，避免定时器泄漏
+    for (const nid of Array.from(jobWatchdogs.keys())) {
+      if (!state.nodes[nid]) clear(nid);
+    }
+    for (const [nid, n] of Object.entries(state.nodes)) {
+      const p = prev.nodes[nid];
+      const jobId = (n as any)?.meta?.jobId;
+      if ((n as any).status === 'processing' && jobId && (!p || (p as any).status !== 'processing')) {
+        clear(nid);
+        const timer = setTimeout(() => {
+          const cur = useAppStore.getState().nodes[nid];
+          if (cur && cur.status === 'processing' && cur.meta?.jobId === jobId) {
+            useAppStore.setState(s => ({ nodes: { ...s.nodes, [nid]: { ...s.nodes[nid], status: 'error', error: '生成超时（长时间未收到结果），可点击重试' } } }));
+          }
+          clear(nid);
+        }, ASYNC_JOB_TIMEOUT_MS);
+        jobWatchdogs.set(nid, timer);
+      } else if ((n as any).status !== 'processing') {
+        clear(nid);
+      }
+    }
+  });
+})();
 
 
 

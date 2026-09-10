@@ -503,7 +503,8 @@ function buildAllConfigs(store: ReturnType<typeof useAppStore.getState>) {
     ...store.imageAPIConfigs.filter(hasCallable).map(c => ({ ...c, apiType: 'openai-generations' as const, models: normalizeSavedModels(c.models, c.defaultModel), _source: 'image' as const })),
     ...store.videoAPIConfigs.filter(hasCallable).map(c => ({ ...c, apiType: 'openai-completions' as const, models: normalizeSavedModels(c.models, c.defaultModel), _source: 'video' as const })),
     // ComfyUI 工作流也作为对话生成源：默认选中「对话」分类预设工作流
-    ...(store.comfyuiConfigs || []).filter((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.length).map((c: any) => {
+    // 门槛：必须已填服务器地址且连接成功（connected===true），否则不展示任何工作流
+    ...(store.comfyuiConfigs || []).filter((c: any) => String(c?.serverUrl || '').trim() && c?.connected === true && Array.isArray(c.workflowFiles) && c.workflowFiles.length).map((c: any) => {
       const wfs = (c.workflowFiles || []).map((w: any) => w.name || w);
       const pre = c?.categoryPresets?.chat;
       const defM = wfs.find((m: string) => m === pre) || wfs[0] || c.name || 'ComfyUI';

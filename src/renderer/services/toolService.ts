@@ -80,16 +80,39 @@ export const toolService = {
     }
 
     try {
-      const result = await openaiService.editImage(
-        config.apiKey,
-        imageFile,
-        prompt,
-        {
-          baseUrl: config.baseUrl || options.baseUrl,
-          model: config.defaultModel || options.model,
-          ...options,
-        }
-      );
+      const win = window as any;
+      const baseUrl = String(config.baseUrl || options.baseUrl || '');
+      // Agnes 官方 /images/edits 端点实测不可用（带 model 也返回 404 upstream），
+      // 图生图/多图合成必须走 /images/generations + extra_body.image（官方文档规范）。
+      const isAgnesHost = /:\/\/(?:api|apihub)\.agnes-ai\.(?:com|cn)(?:\/|$)/i.test(baseUrl);
+      let result: any;
+      if (isAgnesHost && win?.yijingAPI?.grsai?.generate) {
+        const dataUrl = await fileToBase64(imageFile);
+        result = await win.yijingAPI.grsai.generate({
+          baseUrl,
+          apiKey: config.apiKey,
+          model: options.model || config.defaultModel,
+          prompt,
+          apiType: 'openai-generations',
+          size: options.size || '1024x1024',
+          images: [dataUrl],
+          ratio: options.ratio,
+          n: options.n || 1,
+        });
+        if (result?.ok && result?.data) result = result.data;
+        if (result?.error) throw new Error(result.error?.message || result.error || 'API请求失败');
+      } else {
+        result = await openaiService.editImage(
+          config.apiKey,
+          imageFile,
+          prompt,
+          {
+            baseUrl: config.baseUrl || options.baseUrl,
+            model: config.defaultModel || options.model,
+            ...options,
+          }
+        );
+      }
 
       // 优先使用主进程下载保存的本地文件路径
       const localPath = result?.filePaths?.[0] || result?.savedPaths?.[0];

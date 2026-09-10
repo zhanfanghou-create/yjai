@@ -253,6 +253,8 @@ interface ExecuteFFmpegResult {
   stdout: string;
   stderr: string;
   code: number;
+  /** 实际产物路径（由 renderVideo 填充；ffmpeg 去重后可能不同于入参 outputPath） */
+  outputPath?: string;
 }
 
 async function executeFFmpeg(
@@ -417,7 +419,10 @@ async function renderVideo(
     uniqueOutputPath
   );
 
-  return executeFFmpeg(args, { onProgress, abortSignal: params.abortSignal });
+  const execResult = await executeFFmpeg(args, { onProgress, abortSignal: params.abortSignal });
+  // 回传真实输出路径：ffmpeg 通过 generateUniqueFileName 可能改写了文件名，
+  // 调用方（画布视频合成/字幕节点、剧创导出）需要知道最终产物落在哪里。
+  return { ...execResult, outputPath: uniqueOutputPath };
 }
 
 function generateUniqueFileName(filePath: string): string {
@@ -571,6 +576,35 @@ export function registerShortVideoFactoryIPC() {
       }
       
       return { ok: true, folderPath: result.filePaths[0] };
+    } catch (error) {
+      return { ok: false, error: (error as Error).message };
+    }
+  });
+
+  // 写入临时文本文件（供视频合成节点生成 SRT 字幕文件使用）
+  ipcMain.handle('fileSystem:writeTextFile', async (_event, params: { content: string; ext?: string; prefix?: string }) => {
+    try {
+      const ext = String(params?.ext || 'txt').replace(/^\./, '');
+      const prefix = String(params?.prefix || 'text').replace(/[^\w.-]/g, '_');
+      const dir = path.join(app.getPath('temp'), 'yijing-ai', 'text');
+      fs.mkdirSync(dir, { recursive: true });
+      const filePath = path.join(dir, `${prefix}_${Date.now()}.${ext}`);
+      fs.writeFileSync(filePath, String(params?.content ?? ''), 'utf8');
+      return { ok: true, path: filePath };
+    } catch (error) {
+      return { ok: false, error: (error as Error).message };
+    }
+  });
+
+  // 申请一个临时输出文件路径（供视频合成输出使用）
+  ipcMain.handle('fileSystem:tempPath', async (_event, params?: { prefix?: string; ext?: string }) => {
+    try {
+      const ext = String(params?.ext || 'mp4').replace(/^\./, '');
+      const prefix = String(params?.prefix || 'out').replace(/[^\w.-]/g, '_');
+      const dir = path.join(app.getPath('temp'), 'yijing-ai', 'output');
+      fs.mkdirSync(dir, { recursive: true });
+      const filePath = path.join(dir, `${prefix}_${Date.now()}.${ext}`);
+      return { ok: true, path: filePath };
     } catch (error) {
       return { ok: false, error: (error as Error).message };
     }

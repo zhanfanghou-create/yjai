@@ -392,7 +392,7 @@ export const HomePage: React.FC = () => {
       })),
     // ComfyUI 工作流作为对话/创作生成源：默认选中「对话」分类预设工作流
     ...(comfyuiConfigs || [])
-      .filter((c: any) => c?.serverUrl && Array.isArray(c.workflowFiles) && c.workflowFiles.length)
+      .filter((c: any) => String(c?.serverUrl || '').trim() && c?.connected === true && Array.isArray(c.workflowFiles) && c.workflowFiles.length)
       .map((c: any) => {
         const wfs = (c.workflowFiles || []).map((w: any) => w.name || w);
         const pre = c?.categoryPresets?.chat;

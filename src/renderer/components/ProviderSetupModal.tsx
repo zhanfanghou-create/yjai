@@ -49,8 +49,6 @@ export const ProviderSetupModal: React.FC<ProviderSetupModalProps> = ({ preset, 
 
   const [step, setStep] = useState(1);
   const [apiKey, setApiKey] = useState('');
-  const [ak, setAk] = useState('');
-  const [sk, setSk] = useState('');
   const [showKey, setShowKey] = useState(false);
   const [models, setModels] = useState<string[]>([]);
   const [fetching, setFetching] = useState(false);
@@ -66,7 +64,6 @@ export const ProviderSetupModal: React.FC<ProviderSetupModalProps> = ({ preset, 
   const [testMsg, setTestMsg] = useState('');
   const [saving, setSaving] = useState(false);
 
-  const needAK = !isChat && !isVoice && preset.needsAccessKey === true;
   const voiceName = (id: string) => voiceList.find(v => v.id === id)?.name || '';
 
   // Esc 关闭
@@ -162,13 +159,13 @@ export const ProviderSetupModal: React.FC<ProviderSetupModalProps> = ({ preset, 
       } else if (capability === 'image') {
         const cid = s.addImageAPIConfig({
           ...common, name: `${preset.label} 图片`, provider: 'openai',
-          defaultModel: selected, models, accessKeyId: ak, accessKeySecret: sk,
+          defaultModel: selected, models,
         });
         s.updateImageAPIConfig(cid, { models });
       } else if (capability === 'video') {
         const cid = s.addVideoAPIConfig({
           ...common, name: `${preset.label} 视频`, provider: 'openai',
-          defaultModel: selected, models, accessKeyId: ak, accessKeySecret: sk,
+          defaultModel: selected, models,
         });
         s.updateVideoAPIConfig(cid, { models });
       } else {
@@ -242,22 +239,6 @@ export const ProviderSetupModal: React.FC<ProviderSetupModalProps> = ({ preset, 
                 {applyLabel} ↗
               </a>
             </div>
-            {needAK && (
-              <>
-                <div className="sp-f">
-                  <label className="sp-lb">方舟 Access Key ID（AK）</label>
-                  <input className="sp-inp" type="password" value={ak} onChange={e => setAk(e.target.value)} placeholder="AKLT…" autoComplete="off" />
-                </div>
-                <div className="sp-f">
-                  <label className="sp-lb">方舟 Secret Access Key（SK）</label>
-                  <input className="sp-inp" type="password" value={sk} onChange={e => setSk(e.target.value)} placeholder="…" autoComplete="off" />
-                  <a className="sp-apply-link" href={preset.akskApplyUrl || 'https://console.volcengine.com/iam/keymanage/'} target="_blank" rel="noreferrer"
-                     onClick={e => { e.preventDefault(); openExternalUrl(preset.akskApplyUrl || 'https://console.volcengine.com/iam/keymanage/'); }}>
-                    {preset.akskApplyLabel || '创建 AK/SK（火山引擎访问控制）'} ↗
-                  </a>
-                </div>
-              </>
-            )}
             {!canNext && <div className="sp-hint">填写 API Key 后可继续；没有 Key 请先点击上方申请链接免费创建</div>}
           </div>
         )}

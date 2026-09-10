@@ -44,7 +44,7 @@ export const NodeInputModal: React.FC<NodeInputModalProps> = ({
     if (['text-to-video', 'video-composite', 'image-to-video'].includes(nodeType)) return videoAPIConfigs.filter(c => c.baseUrl && c.defaultModel);
     if (['tts', 'audio2video'].includes(nodeType)) return voiceAPIConfigs.filter(c => c.baseUrl && c.defaultModel);
     if (['video-to-music'].includes(nodeType)) return musicAPIConfigs.filter(c => c.baseUrl && c.defaultModel);
-    if (nodeType === 'comfyui') return comfyuiConfigs.filter(c => c.serverUrl).map(c => ({ id: c.id, name: c.name, models: c.workflowFiles || [], defaultModel: c.workflowFiles?.[0] || '', baseUrl: c.serverUrl } as any));
+    if (nodeType === 'comfyui') return comfyuiConfigs.filter(c => String(c?.serverUrl || '').trim() && (c as any)?.connected === true).map(c => ({ id: c.id, name: c.name, models: c.workflowFiles || [], defaultModel: c.workflowFiles?.[0] || '', baseUrl: c.serverUrl } as any));
     return apiConfigs.filter(c => c.baseUrl && c.defaultModel);
   })();
 
