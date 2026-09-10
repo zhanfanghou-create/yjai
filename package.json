@@ -126,8 +126,7 @@
       "displayLanguageSelector": false,
       "runAfterFinish": true,
       "menuCategory": "艺镜AI",
-      "artifactName": "艺镜AI-正式版-${version}.${ext}",
-      "include": "build/installer.nsh"
+      "artifactName": "艺镜AI-正式版-${version}.${ext}"
     },
     "dmg": {
       "artifactName": "yijing-ai-${version}-mac-${arch}.${ext}"
