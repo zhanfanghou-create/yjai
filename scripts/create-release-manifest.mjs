@@ -43,7 +43,7 @@ const manifest = {
   publishedAt: new Date().toISOString(),
   repository: githubRepository,
   cnbRepository,
-  notes: '艺镜 AI 无限画布正式版更新。',
+  notes: '艺镜 AI 无限画布正式版更新。macOS 首次打开若提示「已损坏」，请在终端执行 xattr -cr "/Applications/艺镜AI-正式版.app" 后再打开。',
   assets: {
     windows: await asset(windowsPath),
     macosX64: await asset(macX64Path),

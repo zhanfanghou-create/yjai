@@ -35,7 +35,7 @@ jobs:
           if gh release view "$TAG" --repo "$PUBLIC_REPO" >/dev/null 2>&1; then
             gh release edit "$TAG" --draft --repo "$PUBLIC_REPO"
           else
-            gh release create "$TAG" --repo "$PUBLIC_REPO" --target main --title "艺镜 AI v${VERSION}" --notes "艺镜 AI 无限画布 v${VERSION} 正式版。包含 Windows 与两种 macOS 芯片安装包。" --draft
+            gh release create "$TAG" --repo "$PUBLIC_REPO" --target main --title "艺镜 AI v${VERSION}" --notes "$(printf '艺镜 AI 无限画布 v%s 正式版。\n\n## macOS 安装提示（重要）\nmacOS 安全策略下，未签名应用首次打开可能提示「已损坏，无法打开」。这不是安装包真的损坏，在终端执行以下命令即可正常使用：\n\n```\nxattr -cr "/Applications/艺镜AI-正式版.app"\n```\n\n若提示权限不足则加 sudo。执行后双击打开即可。' "$VERSION")" --draft
           fi
 
   build:
@@ -167,7 +167,7 @@ jobs:
           CNB_REPOSITORY: yijingshijue-2026/yijing-ai-downloads
           CNB_RELEASE_TAG: v${{ needs.prepare.outputs.version }}
           CNB_RELEASE_TITLE: 艺镜 AI v${{ needs.prepare.outputs.version }}
-          CNB_RELEASE_NOTES: 艺镜 AI 无限画布正式版，包含 Windows 与 Intel/Apple Silicon macOS 安装包。
+          CNB_RELEASE_NOTES: '艺镜 AI 无限画布正式版。macOS 首次打开若提示「已损坏」，请在终端执行 xattr -cr "/Applications/艺镜AI-正式版.app" 后再打开。'
         run: |
           WIN_EXE=$(find dist -name 'YijingAI-Setup-*.exe' -print -quit)
           MAC_X64=$(find dist -name 'yijing-ai-*-mac-x64.dmg' -print -quit)
