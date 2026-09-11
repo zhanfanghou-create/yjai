@@ -667,7 +667,7 @@
 .dwc-preview-modal { width: min(520px, 92vw); }
 .dwc-mini-modal { width: min(340px, 92vw); }
 
-.dwc-sb-preview { position: relative; height: 320px; width: min(100%, 460px); margin: 0 auto; flex-shrink: 0; border: 1px solid var(--border-color, #3a3a3a); border-radius: 12px; overflow: hidden; background: #000; }
+.dwc-sb-preview { position: relative; height: 260px; width: min(100%, 560px); margin: 0 auto; flex-shrink: 0; border: 1px solid var(--border-color, #3a3a3a); border-radius: 12px; overflow: hidden; background: #000; }
 .dwc-sb-video-actions { position: absolute; top: 8px; right: 8px; display: flex; gap: 6px; z-index: 3; }
 .dwc-sb-video-act { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 8px; background: rgba(0,0,0,0.55); color: #fff; border: 1px solid rgba(255,255,255,0.25); cursor: pointer; backdrop-filter: blur(4px); }
 .dwc-sb-video-act:hover { background: var(--accent-color, #7dd3fc); color: #000; }

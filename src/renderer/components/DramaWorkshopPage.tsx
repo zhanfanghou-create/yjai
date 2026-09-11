@@ -1118,7 +1118,7 @@ const StoryboardView: React.FC<StoryboardViewProps> = ({ project, storyboards, i
           <div className="dwc-sb-gen-head">
             <span className="dwc-sb-gen-title">分镜视频生成</span>
             <div className="dwc-sb-gen-right">
-              <span className="dwc-sb-tool-hint">使用 @ 引用角色、场景、道具、台词等参考资料，编辑更灵活，分镜更精准（音色仅用于台词/旁白/音效配音，不会写入画面提示词）</span>
+              <span className="dwc-sb-tool-hint">使用@引用角色/场景/道具/台词等</span>
               <button className="dwc-sb-tool" onClick={insertRef}>@ 引用</button>
             </div>
           </div>
