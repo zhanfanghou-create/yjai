@@ -3926,11 +3926,11 @@ export const DramaWorkshopPage: React.FC = () => {
       });
       // {台词/旁白} 胶囊：分析时写入的「### 台词与声音」段落使用 {内容} 格式，
       // 生成视频时提取为对白（统一附加到提示词末尾的「对白」小节，交给视频模型生成口型/语音），
-      // 胶囊本体从画面提示词中剔除，避免与「对白」小节重复。
+      // 支持两种格式：{纯台词} 和 角色名（情绪）：{纯台词} —— 后者会整体移除（含前缀），{}内只取纯台词用于配音
       // 【音效】小节下的 {} 不属于对白（环境声），保留在提示词中供视频模型参考氛围。
       const sfxSplit = prompt.split(/【音效】/);
       const dialogueList: string[] = [];
-      sfxSplit[0] = sfxSplit[0].replace(/\{([^{}]{1,300})\}/g, (_m: string, inner: string) => {
+      sfxSplit[0] = sfxSplit[0].replace(/(?:[\u4e00-\u9fa5A-Za-z0-9·]{1,20}(?:（[^）]{0,50}）)?\s*[：:]\s*)?\{([^{}]{1,300})\}/g, (_m: string, inner: string) => {
         const t = inner.trim();
         // 跳过占位符与「无」标记
         if (t && t !== '台词内容' && t !== '无' && t !== '旁白' && t !== '音效') dialogueList.push(t);

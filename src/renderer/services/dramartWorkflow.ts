@@ -41,6 +41,8 @@ export interface DramartDialogue {
   speaker: string;
   /** 台词文本（不含引号） */
   text: string;
+  /** 情绪/语气标注（如"自言自语""抬头""低声""愤怒"等，来自剧本中的括号标注，可选） */
+  emotion?: string;
 }
 
 /** 结构化音效：带镜头顺序 */
@@ -303,8 +305,11 @@ export function buildSoundSection(soundSource: string, structured?: { dialogues?
     const narrations = sortedDialogues.filter(d => isNarr(d.speaker));
     if (pureDialogues.length) {
       parts.push('【台词】');
-      // 带说话人前缀：{角色名：台词内容}
-      pureDialogues.slice(0, 8).forEach(d => parts.push('{' + d.speaker + '：' + d.text + '}'));
+      // 带说话人前缀：角色名（情绪）：{台词内容} —— {}内只放纯台词，配音时只念纯内容，不念角色名和情绪
+      pureDialogues.slice(0, 8).forEach(d => {
+        const emo = d.emotion ? '（' + d.emotion + '）' : '';
+        parts.push(d.speaker + emo + '：{' + d.text + '}');
+      });
     }
     if (narrations.length) {
       parts.push('【旁白】');
@@ -665,6 +670,142 @@ function calcImageSize(ratio: DramartRatio, resolution: DramartResolution): stri
   return `${w}x${h}`;
 }
 
+// ==================== 系统提示词（按推理模型区分：Agnes 用专用结构化，其他模型用剧创原始数据） ====================
+
+// 判断是否为 Agnes 模型（不区分大小写，匹配 agnes 关键词）
+function isAgnesModel(model?: string): boolean {
+  return /agnes/i.test(String(model || ''));
+}
+
+// ---------- 1. 分镜系统提示词 ----------
+
+// 剧创 Fendi 分镜系统提示词（从 DramaPage SYSTEM_PROMPTS.storyboard 原始数据同步，参考火山剧创输出格式优化：台词用"角色名: 台词"、时间灯光详细描述、[站位]/[动作]明确区分，用于除 Agnes 外的其他模型）
+const FENDI_STORYBOARD_SYSTEM = `你是Fendi，一位专业分镜设计师。你精通镜头语言、画面构图、视觉叙事，能将剧本转化为可直接用于AI视频生成的详细分镜设计。全程中文。
+
+## 核心能力
+1. **镜头语言** - 精通景别、角度、运动、构图的叙事功能
+2. **视觉节奏** - 通过镜头长度、剪辑点控制节奏
+3. **情绪设计** - 每个镜头都服务于情绪传递
+4. **可执行性** - 分镜要考虑到AI视频生成的可行性
+
+## 你的任务
+根据剧本设计分镜列表，按剧本中的场景顺序逐场设计，不要遗漏任何场景。
+
+每个分镜必须包含：
+1. **分镜编号与标题**（如：分镜1 - 咖啡店偶遇）
+2. **场景设定**（具体地点，内/外景）
+3. **时间**（白天/夜晚/清晨/黄昏/雨夜等，必须明确写出）
+4. **灯光**（主光来源、色温、光比、阴影效果，必须详细描述，如"白天阴雨漫射光从靠窗玻璃一侧进入，色温偏冷，室内辅助光柔和，光比低"）
+5. **出镜角色**（只列出镜的角色，不出镜的不要列）
+6. **道具**（该分镜出现的重要道具）
+7. **分镜具体动作描述**，按镜头拆分，每个镜头格式：
+   - 镜头N Xs
+   - [站位] 角色名：详细描述角色在画面中的位置、朝向、视线、手持物品（多角色时分别描述每个角色的站位，用相对方位如"在XX的12点钟约1.2米处"）
+   - [动作] 景别｜运镜方式 详细的相机运动和角色动作描述
+   - 台词单独一行，格式为：角色名（情绪）: 台词内容（如"林晓雨（自言自语）: 今天一定要把方案写完。"），情绪来自剧本中的括号标注（如"（自言自语）""（抬头）""（低声）"），没有情绪标注时省略括号，不要用花括号，不要加引号
+8. **分镜总时长**（单位：秒，根据场景内容合理分配）
+
+## 镜头类型参考
+远景、全景、中景、近景、特写、大特写、主观视角、过肩镜头等
+
+## 运镜方式参考
+固定镜头、缓推、缓拉、摇镜、跟拍、手持、升降等
+
+## 设计原则
+- 每个镜头都要问："观众应该感受到什么？"
+- 构图、色彩、光影都为情绪服务，[站位]和[动作]必须明确区分：[站位]只写位置和朝向，[动作]写相机运动和角色动作，台词必须紧跟在对应镜头的[动作]描述之后，格式为"角色名（情绪）: 台词内容"，情绪来自剧本中的括号标注，没有情绪时省略括号
+- 构图、色彩、光影都为情绪服务
+- 考虑镜头之间的视觉连贯性
+- 每个分镜可包含多个镜头，镜头总时长应等于分镜总时长
+- 相邻镜头的画面必须保证剧情完整、前后连贯顺畅——前一镜结尾要自然承接后一镜开头
+
+【重要】你必须使用中文回复所有内容。严格按用户要求的JSON格式输出。`;
+
+// Agnes 专用分镜系统提示词（强调台词/音效分离、说话人标注、时序严谨）
+const AGNES_STORYBOARD_SYSTEM = `你是专业影视分镜设计师，擅长将剧本转化为结构化的AI视频生成分镜数据。全程中文。
+
+## 核心能力
+1. 镜头语言 - 精通景别、角度、运动、构图的叙事功能
+2. 视觉节奏 - 通过镜头长度、剪辑点控制节奏
+3. 台词与音效严格分离 - 人物对白、旁白、环境音效分属不同字段，绝不混淆
+4. 角色归属准确 - 每句台词必须标注说话人，多角色场景不得错配
+5. 时序严谨 - 台词和音效按镜头时间轴顺序排列
+
+## 严格要求
+- dialogues 字段：只包含人物说的话，每条必须带 speaker（说话人）、order（说话先后顺序，从1开始）、text（台词文本），可选带 emotion（情绪/语气标注，来自剧本中的括号标注，如"自言自语""抬头""低声"，没有则省略）
+- sfx 字段：只包含环境声、动作声、音乐等声音效果，绝对不能写入台词
+- 旁白/画外音/内心独白：speaker 填"旁白"
+- 没有台词的分镜，dialogues 填空数组 []；没有音效的分镜，sfx 填空数组 []
+- 台词文本只写人物说的话，不要加引号，不要包含动作描写；情绪标注单独放在 emotion 字段，不要写进 text
+
+输出严格遵循用户提供的JSON格式，不要输出任何其他文字。`;
+
+// 根据推理模型选择分镜系统提示词：Agnes 用专用结构化提示词，其他模型用剧创 Fendi 原始提示词
+function getStoryboardSystem(model?: string): string {
+  return isAgnesModel(model) ? AGNES_STORYBOARD_SYSTEM : FENDI_STORYBOARD_SYSTEM;
+}
+
+// ---------- 2. 资产提取系统提示词 ----------
+
+// 剧创 Alinda 资产提取系统提示词（从 DramaPage SYSTEM_PROMPTS.assets 原始数据同步，参考火山剧创输出格式优化：角色18项结构化字段、场景空间布局/光线/氛围详细描述，用于除 Agnes 外的其他模型）
+const FENDI_ASSET_SYSTEM = `你是Alinda，一位视觉资产创作专家。你擅长从剧本与分镜中提取影视创作所需的全部视觉资产，包括人物、场景、道具，并规划不同版本的人物形象。全程中文。
+
+## 核心能力
+1. **资产提取** - 从剧本/分镜中系统提取人物、场景、道具等资产
+2. **人物一致性** - 人物外貌特征固定，所有形象变体都保持同一张脸、同一体型
+3. **风格统一** - 所有资产风格一致，符合导演阐述
+4. **AI提示词设计** - 为AI生成工具撰写精准提示词
+
+## 你的任务
+基于剧本，提取以下视觉资产：
+
+1. **人物资产**：
+   - 每个角色提取其基准形象，固定其外貌特征。角色的 imageSummary 必须严格按以下18项字段格式输出（用分号分隔）：身份：xxx；性格：xxx；简介：xxx；时代：xxx；国家：xxx；人种：xxx；类型：xxx；脸型：xxx；发型：xxx；身材：xxx；头身比：xxx；上身着装：xxx；下身着装：xxx；鞋子：xxx；性别：xxx；年龄：xxx
+   - 为每个角色扩展「形象变体」：不同季节、不同年龄、不同服装的形象，每个变体都是一个独立的资产项。
+   - 每个变体生成时都必须参考该角色第一个生成的人物形象，保证不改变人物外貌特征（脸型、五官、发型、体型、气质必须一致），只更换服装、季节、年龄等可变部分。
+
+2. **场景资产**：剧本中出现的每个场景，一个场景一个资产项。
+
+3. **道具资产**：剧本中出现的重要道具，一个道具一个资产项。
+
+## 输出要求
+- 人物的 imageSummary 必须包含上述18项结构化字段（身份/性格/简介/时代/国家/人种/类型/脸型/发型/身材/头身比/上身着装/下身着装/鞋子/性别/年龄），可直接用于图像生成
+- 场景的 imageSummary 必须包含空间布局、建筑风格、光线来源、色温、氛围、时间、天气、主要陈设等详细描述
+- 道具的 imageSummary 必须包含材质、形态、颜色等可直接用于图像生成的详细描述
+- 所有描述必须基于剧本内容，不要凭空编造剧本中没有的信息
+
+【重要】你必须使用中文回复所有内容。严格按用户要求的JSON格式输出。`;
+
+// Agnes 专用资产提取系统提示词（强调结构化JSON、分类准确、特征详尽、不遗漏不编造）
+const AGNES_ASSET_SYSTEM = `你是专业影视资产提取专家，擅长从剧本中系统提取人物、场景、道具三类视觉资产，并输出结构化JSON数据。全程中文。
+
+## 核心能力
+1. 资产分类准确 - 严格区分人物、场景、道具三类，不混淆不遗漏
+2. 人物特征详尽 - 脸型、五官、发型、体型、年龄、气质、服装逐项描述
+3. 场景细节完整 - 空间结构、材质、光影、时间、氛围全面覆盖
+4. 道具描述精准 - 材质、颜色、形态、磨损细节可直接用于出图
+5. 不遗漏不编造 - 只提取剧本中明确出现的资产，不凭空添加剧本中没有的内容
+
+## 严格要求
+- characters 数组：每个角色必须有 name、kind（固定为"character"）、imageSummary
+- scenes 数组：每个场景必须有 name、kind（固定为"scene"）、imageSummary
+- props 数组：每个道具必须有 name、kind（固定为"prop"）、imageSummary
+- imageSummary 用中文，包含可直接用于文生图的详细视觉描述
+- 同一资产不要重复提取
+- 没有某类资产时，对应数组填空 []
+
+输出严格遵循用户提供的JSON格式，不要输出任何其他文字。`;
+
+// 根据推理模型选择资产提取系统提示词：Agnes 用专用结构化提示词，其他模型用剧创 Alinda 原始提示词
+function getAssetSystem(model?: string): string {
+  return isAgnesModel(model) ? AGNES_ASSET_SYSTEM : FENDI_ASSET_SYSTEM;
+}
+
+// ---------- 3. 资产文生图提示词：见 buildAssetImagePrompt() 函数 ----------
+// ---------- 4. 分镜全能参考提示词：见 makeVideoPrompt() 函数 ----------
+
+
+
 export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick<DramartProject, 'characters' | 'scenes' | 'props' | 'storyboards'> & { failedAssets?: string[]; totalAssets?: number }> {
   const { scriptText, scriptFileName, styleName, styleWord, ratio, resolution, config, imageFetcher, onProgress, shotDuration = 15 } = opts;
   void scriptFileName;
@@ -707,7 +848,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       '你是影视分镜设计师，请根据剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
       '{',
       '  "storyboards":[',
-      '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","dialogues":[{"order":1,"speaker":"角色名","text":"台词内容"}],"sfx":[{"order":1,"description":"音效描述"}],"duration":' + shotDuration + '}',
+      '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"rawScript":"该分镜对应的剧本原文片段，必须从剧本中原样摘录，不要改写","description":"完整分镜描述，包含场景设定、时间、灯光、以及每个镜头的站位和动作描述","dialogues":[{"order":1,"speaker":"角色名","text":"台词内容","emotion":"情绪标注（可选，如自言自语/抬头/低声，没有则省略）"}],"sfx":[{"order":1,"description":"音效描述"}],"duration":' + shotDuration + '}',
       '  ]',
       '}',
       '【已提取资产列表 - 分镜引用必须严格从此列表中选择】',
@@ -741,6 +882,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       '     - order：台词在分镜内的顺序号（从1开始，按说话先后排列）',
       '     - speaker：说话人角色名，必须从上方角色资产列表中选择；旁白/画外音填"旁白"；绝对不能把音效描述填进speaker',
       '     - text：台词文本，只写人物说的话，不要加引号，不要包含动作描写，不要包含音效',
+      '     - emotion：情绪/语气标注（可选），来自剧本中的括号标注（如"自言自语""抬头""低声""愤怒"），没有情绪标注时省略该字段，不要写进text',
       '   - sfx 字段：该分镜所有音效的结构化列表，按出现顺序排列',
       '     - order：音效顺序号（从1开始）',
       '     - description：音效描述（如"敲门声咚咚咚"、"雨声淅沥"、"电话铃声"），只写声音效果，不要写台词',
@@ -758,7 +900,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
 
     if (i === 0) {
       // 第1步：分析剧本 → 提取角色/场景/道具资产
-      const system = '你是专业编剧与制片助理。全程中文。严格按用户要求格式输出。';
+      const system = getAssetSystem(config?.model);
       const content = await callChat(system, assetPrompt, config);
       console.log('[ASSETDBG] content长度=', content?.length, '前100字符=', content?.slice(0, 100));
       if (content) {
@@ -773,7 +915,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
       // 第2步：分镜设计 → 调用AI生成分镜列表（使用已提取的资产构建提示词，严格约束资产引用）
       // 增加3秒延迟，避免请求太频繁被限流
       await new Promise(r => setTimeout(r, 3000));
-      const system = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
+      const system = getStoryboardSystem(config?.model);
       const storyboardPrompt = buildStoryboardPrompt(result);
       const content = await callChat(system, storyboardPrompt, config);
       if (content) {
@@ -796,6 +938,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
               order: Number(d?.order) || (di + 1),
               speaker: String(d?.speaker || '').trim() || (chars[0] || '主角'),
               text: String(d?.text || '').trim(),
+              emotion: d?.emotion ? String(d.emotion).trim() : undefined,
             })).filter((d: DramartDialogue) => d.text) : [];
             // 解析结构化音效（AI 输出 sfx 字段时使用；解决"音效被当台词"）
             const sfxList: DramartSfx[] = Array.isArray(sb?.sfx) ? sb.sfx.map((s: any, si: number) => ({
@@ -906,7 +1049,7 @@ export async function runDramartAnalysis(opts: RunAnalysisOptions): Promise<Pick
     ].join('\n');
 
     try {
-      const system = '你是专业编剧与制片助理。全程中文。严格按用户要求格式输出。';
+      const system = getAssetSystem(config?.model);
       const content = await callChat(system, supplementPrompt, config);
       if (content) {
         const parsed = parseJsonObject(content);
@@ -1267,7 +1410,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
 
   onProgress(0, DRAMART_ANALYSIS_STEPS[0], 10);
   await new Promise(r => setTimeout(r, 400));
-  const system = '你是专业编剧与制片助理。全程中文。严格按用户要求格式输出。';
+  const system = getAssetSystem(config?.model);
   const content = await callChat(system, assetPrompt, config);
   if (content) {
     const parsed = parseJsonObject(content);
@@ -1281,7 +1424,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     '你是影视分镜设计师，请根据补充剧本设计分镜列表。严格输出 JSON，不要输出任何其他文字：',
     '{',
     '  "storyboards":[',
-    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"description":"完整画面描述与台词","dialogues":[{"order":1,"speaker":"角色名","text":"台词内容"}],"sfx":[{"order":1,"description":"音效描述"}],"duration":15}',
+    '    {"index":1,"label":"分镜1","scene":"场景名","characters":["角色名"],"props":["道具名"],"description":"完整画面描述与台词","dialogues":[{"order":1,"speaker":"角色名","text":"台词内容","emotion":"情绪标注（可选，如自言自语/抬头/低声，没有则省略）"}],"sfx":[{"order":1,"description":"音效描述"}],"duration":15}',
     '  ]',
     '}',
     '要求：',
@@ -1294,6 +1437,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     '     - order：台词顺序号（从1开始）',
     '     - speaker：说话人角色名，必须从出场角色中选择；旁白/画外音填"旁白"；绝对不能把音效描述填进speaker',
     '     - text：台词文本，只写人物说的话，不要加引号，不要包含音效',
+    '     - emotion：情绪/语气标注（可选），来自剧本中的括号标注（如"自言自语""抬头""低声"），没有时省略该字段，不要写进text',
     '   - sfx 字段：该分镜所有音效的结构化列表，按出现顺序排列',
     '     - order：音效顺序号（从1开始）',
     '     - description：音效描述（如"敲门声咚咚咚"、"雨声淅沥"），只写声音效果，不要写台词',
@@ -1303,7 +1447,7 @@ export async function runSupplementAnalysis(opts: SupplementAnalysisOptions): Pr
     scriptText,
   ].join('\n');
   let aiStoryboards: DramartStoryboard[] | null = null;
-  const sbSystem = '你是专业分镜设计师。全程中文。严格按用户要求格式输出。';
+  const sbSystem = getStoryboardSystem(config?.model);
   // 增加3秒延迟，避免请求太频繁被限流
   await new Promise(r => setTimeout(r, 3000));
   const sbContent = await callChat(sbSystem, storyboardPrompt, config);
